@@ -1,0 +1,17 @@
+services:
+  tvtime:
+    build: .
+    # Ou, pour utiliser l'image publiée sans compiler :
+    # image: ghcr.io/qgely/tv-time:latest
+    container_name: tvtime
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # Optionnel : peut aussi être saisie dans l'application (Paramètres) une fois connecté en admin.
+      - TMDB_API_KEY=${TMDB_API_KEY:-}
+      - TMDB_LANGUAGE=${TMDB_LANGUAGE:-fr-FR}
+      # Fréquence (en heures) de la mise à jour automatique des séries suivies.
+      - REFRESH_HOURS=6
+    volumes:
+      - ./data:/data
