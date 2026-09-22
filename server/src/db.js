@@ -145,3 +145,15 @@ export function setSetting(key, value) {
 export function today() {
   return new Date().toISOString().slice(0, 10);
 }
+
+db.exec(`
+CREATE TABLE IF NOT EXISTS collection_items (
+  collection_id TEXT NOT NULL,
+  item_key TEXT NOT NULL,
+  type TEXT NOT NULL,
+  tmdb_id INTEGER,
+  status TEXT NOT NULL DEFAULT 'ok',
+  resolved_at TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (collection_id, item_key)
+);
+`);

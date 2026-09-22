@@ -16,6 +16,9 @@ via une clé API gratuite. Toutes **vos** données (comptes, progression, histor
 - **Listes** : en cours, à jour, pas commencée, pour plus tard, arrêtée, favoris. Tri et filtre.
 - **Calendrier** : vue agenda et vue mois des épisodes à venir (et récents) de vos séries.
 - **Explorer** : recherche séries/films, tendances, populaires, diffusées en ce moment, recommandations basées sur votre liste.
+- **Collections** : des univers entiers dans le bon ordre (MCU chronologique avec les One-Shots et les séries, DCEU, The Boys,
+  Star Wars, Harry Potter, Terre du Milieu, Game of Thrones, Star Trek, Arcane, Naruto, Fast & Furious, James Bond, Conjuring…),
+  avec bascule ordre chronologique / ordre de sortie, titres optionnels masquables, et progression par collection.
 - **Profil et statistiques** : temps passé (mois / jours / heures), épisodes et séries, activité sur 12 mois, genres préférés,
   jours de visionnage, top séries, badges, séries de jours consécutifs.
 - **Multi-utilisateurs** : chaque membre du foyer a son compte et sa progression ; fil d'activité commun.
@@ -81,6 +84,33 @@ Tout est dans le dossier `data/` (fichier `tvtime.db` + fichiers WAL). Sauvegard
 
 Placez l'application derrière votre reverse proxy habituel (Synology Reverse Proxy, Nginx Proxy Manager, Traefik, Caddy…)
 avec HTTPS. L'application écoute sur le port 3000 en HTTP et fait confiance aux en-têtes du proxy.
+
+## Ajouter ou modifier une collection
+
+Les collections sont de simples fichiers JSON dans `server/src/data/collections/`. Un fichier par collection :
+
+```json
+{
+  "id": "ma-collection",
+  "name": "Ma collection",
+  "description": "Une phrase en français.",
+  "icon": "🎬",
+  "category": "action",
+  "items": [
+    { "type": "movie", "title_en": "Iron Man", "title_fr": "Iron Man", "year": 2008, "tmdb_id": 1726,
+      "chronological_order": 2, "release_order": 1, "group": "Phase 1", "note": "Se déroule en 2010", "optional": false }
+  ]
+}
+```
+
+- `type` : `movie` ou `tv` (une série = une seule entrée).
+- `tmdb_id` est facultatif : le serveur retrouve chaque titre sur TMDB à partir de `title_en` + `year` et vérifie qu'un
+  identifiant fourni correspond bien (titre ou année) avant de l'utiliser. Les résultats sont mis en cache en base.
+- `chronological_order` et `release_order` doivent chacun être une permutation de 1 à N.
+- Catégories disponibles : `marvel`, `dc`, `scifi`, `fantasy`, `action`, `horror`, `series`, `animation`.
+
+Vérifiez vos fichiers avec `npm run validate:collections`, puis redémarrez le serveur (ou appelez `POST /api/collections/reload`
+en admin).
 
 ## Variables d'environnement
 

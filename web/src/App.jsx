@@ -13,6 +13,8 @@ import { Library } from './pages/Library.jsx';
 import { Calendar } from './pages/Calendar.jsx';
 import { Profile } from './pages/Profile.jsx';
 import { Settings } from './pages/Settings.jsx';
+import { Collections } from './pages/Collections.jsx';
+import { Collection } from './pages/Collection.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,6 +35,8 @@ function Gate() {
         <Route path="movie/:id" element={<Movie />} />
         <Route path="library" element={<Library />} />
         <Route path="movies" element={<Navigate to="/library?kind=movies" replace />} />
+        <Route path="collections" element={<Collections />} />
+        <Route path="collections/:id" element={<Collection />} />
         <Route path="calendar" element={<Calendar />} />
         <Route path="profile" element={<Profile />} />
         <Route path="settings" element={<Settings />} />

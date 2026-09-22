@@ -12,6 +12,7 @@ import showRoutes from './routes/shows.js';
 import movieRoutes from './routes/movies.js';
 import libraryRoutes from './routes/library.js';
 import profileRoutes from './routes/profile.js';
+import collectionRoutes from './routes/collections.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT) || 3000;
@@ -31,6 +32,7 @@ app.use('/api/shows', showRoutes);
 app.use('/api/movies', movieRoutes);
 app.use('/api/library', libraryRoutes);
 app.use('/api/profile', profileRoutes);
+app.use('/api/collections', collectionRoutes);
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Route inconnue' }));
 
 // Serve the built frontend (web/dist) if present.

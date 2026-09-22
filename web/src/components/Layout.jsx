@@ -6,6 +6,7 @@ import { Avatar } from './Avatar.jsx';
 const links = [
   { to: '/', label: 'Accueil', icon: Icon.Home, end: true },
   { to: '/explore', label: 'Explorer', icon: Icon.Compass },
+  { to: '/collections', label: 'Collections', icon: Icon.Stack, desktopOnly: true },
   { to: '/calendar', label: 'Calendrier', icon: Icon.Calendar },
   { to: '/library', label: 'Ma liste', icon: Icon.Library },
   { to: '/profile', label: 'Profil', icon: Icon.User },
@@ -36,7 +37,7 @@ export function Layout() {
         <Outlet />
       </main>
       <nav className="bottomnav">
-        {links.map((l) => (
+        {links.filter((l) => !l.desktopOnly).map((l) => (
           <NavLink key={l.to} to={l.to} end={l.end} className={({ isActive }) => (isActive ? 'active' : '')}>
             <l.icon /> {l.label}
           </NavLink>

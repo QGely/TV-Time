@@ -4,6 +4,7 @@ import { api } from '../lib/api.js';
 import { MediaCard } from '../components/MediaCard.jsx';
 import { Icon } from '../components/Icons.jsx';
 import { Empty, ErrorBox, SectionHead, Spinner } from '../components/Misc.jsx';
+import { CollectionCard } from './Collections.jsx';
 
 const SECTIONS = {
   tv: [
@@ -81,6 +82,7 @@ export function Explore() {
         ) : null
       ) : (
         <>
+          <CollectionsRow />
           {type === 'tv' ? <Recommendations /> : null}
           {SECTIONS[type].map((s) => <DiscoverRow key={s.key} listKey={s.key} title={s.title} />)}
         </>
@@ -102,6 +104,23 @@ function DiscoverRow({ listKey, title }) {
     <section className="section">
       <SectionHead title={title} />
       {!items ? <Spinner /> : <div className="hscroll">{items.map((r) => <MediaCard key={r.id} item={r} />)}</div>}
+    </section>
+  );
+}
+
+function CollectionsRow() {
+  const [items, setItems] = useState(null);
+  useEffect(() => {
+    let c = false;
+    api.get('/api/collections').then((d) => !c && setItems(d)).catch(() => !c && setItems([]));
+    return () => { c = true; };
+  }, []);
+  if (!items || !items.length) return null;
+  const sorted = [...items].sort((a, b) => b.started_count - a.started_count || a.name.localeCompare(b.name, 'fr'));
+  return (
+    <section className="section">
+      <SectionHead title="Collections" to="/collections" linkText="Toutes les collections" />
+      <div className="hscroll coll-scroll">{sorted.slice(0, 12).map((c) => <CollectionCard key={c.id} c={c} />)}</div>
     </section>
   );
 }
