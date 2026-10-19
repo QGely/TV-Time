@@ -1,0 +1,129 @@
+{
+  "id": "jurassic-park",
+  "name": "Jurassic Park",
+  "description": "Toute la saga Jurassic Park et Jurassic World, des films aux séries animées et au court métrage. L'ordre affiché par défaut suit la chronologie de l'histoire, qui diffère de l'ordre de sortie pour les séries et Battle at Big Rock.",
+  "icon": "🦖",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Jurassic Park",
+      "title_fr": "Jurassic Park",
+      "year": 1993,
+      "tmdb_id": 329,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Trilogie Jurassic Park",
+      "note": "Se déroule en 1993 sur Isla Nublar, le film fondateur.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Lost World: Jurassic Park",
+      "title_fr": "Le Monde perdu : Jurassic Park",
+      "year": 1997,
+      "tmdb_id": 330,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Trilogie Jurassic Park",
+      "note": "Quatre ans plus tard, sur Isla Sorna (le site B).",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Jurassic Park III",
+      "title_fr": "Jurassic Park III",
+      "year": 2001,
+      "tmdb_id": 331,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Trilogie Jurassic Park",
+      "note": "Se déroule en 2001, nouveau retour sur Isla Sorna.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Jurassic World",
+      "title_fr": "Jurassic World",
+      "year": 2015,
+      "tmdb_id": 135397,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Trilogie Jurassic World",
+      "note": "Se déroule en 2015, 22 ans après le premier film.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Jurassic World: Camp Cretaceous",
+      "title_fr": "Jurassic World : La Colo du Crétacé",
+      "year": 2020,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 7,
+      "group": "Séries animées",
+      "note": "La saison 1 se déroule pendant Jurassic World, la suite mène vers Fallen Kingdom.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Jurassic World: Fallen Kingdom",
+      "title_fr": "Jurassic World : Fallen Kingdom",
+      "year": 2018,
+      "tmdb_id": 351286,
+      "chronological_order": 6,
+      "release_order": 5,
+      "group": "Trilogie Jurassic World",
+      "note": "Se déroule en 2018, trois ans après Jurassic World.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Battle at Big Rock",
+      "title_fr": "Battle at Big Rock",
+      "year": 2019,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 6,
+      "group": "Trilogie Jurassic World",
+      "note": "Court métrage, un an après Fallen Kingdom, avant Dominion.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Jurassic World Dominion",
+      "title_fr": "Jurassic World : Le Monde d'après",
+      "year": 2022,
+      "tmdb_id": 507086,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Trilogie Jurassic World",
+      "note": "Se déroule en 2022, quatre ans après Fallen Kingdom.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Jurassic World: Chaos Theory",
+      "title_fr": "Jurassic World : La Théorie du chaos",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 9,
+      "release_order": 9,
+      "group": "Séries animées",
+      "note": "Suite de La Colo du Crétacé, après les événements de Dominion.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Jurassic World Rebirth",
+      "title_fr": "Jurassic World : Renaissance",
+      "year": 2025,
+      "tmdb_id": 1234821,
+      "chronological_order": 10,
+      "release_order": 10,
+      "group": "Nouvelle ère",
+      "note": "Se déroule en 2027, cinq ans après Dominion.",
+      "optional": false
+    }
+  ]
+}

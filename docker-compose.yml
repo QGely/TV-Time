@@ -1,0 +1,36 @@
+# Trois applications indépendantes, chacune avec sa propre base de données.
+# Commentez les services que vous n'utilisez pas.
+services:
+  tvtime:
+    build: ./apps/tvtime
+    # image: ghcr.io/qgely/tv-time-tvtime:latest   # image publiée (sans compiler)
+    container_name: tvtime
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - TMDB_API_KEY=${TMDB_API_KEY:-}        # optionnel : sinon à saisir dans l'application
+      - TMDB_LANGUAGE=${TMDB_LANGUAGE:-fr-FR}
+      - REFRESH_HOURS=6
+    volumes:
+      - ./data/tvtime:/data
+
+  sport:
+    build: ./apps/sport
+    # image: ghcr.io/qgely/tv-time-sport:latest
+    container_name: sport
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./data/sport:/data
+
+  learn:
+    build: ./apps/learn
+    # image: ghcr.io/qgely/tv-time-learn:latest
+    container_name: apprendre
+    restart: unless-stopped
+    ports:
+      - "3002:3002"
+    volumes:
+      - ./data/learn:/data

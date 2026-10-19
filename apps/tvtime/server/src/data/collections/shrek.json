@@ -1,0 +1,93 @@
+{
+  "id": "shrek",
+  "name": "Shrek",
+  "description": "L'univers de Shrek et du Chat Potté. L'ordre affiché par défaut est celui de l'histoire : Le Chat Potté se déroule avant Shrek 2, et sa suite après Shrek 4.",
+  "icon": "🧌",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Shrek",
+      "title_fr": "Shrek",
+      "year": 2001,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Shrek",
+      "note": "L'ogre, l'âne et la princesse Fiona",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Puss in Boots",
+      "title_fr": "Le Chat Potté",
+      "year": 2011,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 5,
+      "group": "Le Chat Potté",
+      "note": "Préquelle : les aventures du Chat avant sa rencontre avec Shrek",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Shrek 2",
+      "title_fr": "Shrek 2",
+      "year": 2004,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 2,
+      "group": "Shrek",
+      "note": "Rencontre avec les parents de Fiona ; première apparition du Chat",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Shrek the Third",
+      "title_fr": "Shrek le troisième",
+      "year": 2007,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 3,
+      "group": "Shrek",
+      "note": "Shrek cherche un héritier pour Fort Fort Lointain",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Shrek Forever After",
+      "title_fr": "Shrek 4 : Il était une fin",
+      "year": 2010,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 4,
+      "group": "Shrek",
+      "note": "Un monde alternatif où Shrek n'a jamais existé",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Puss in Boots: The Last Wish",
+      "title_fr": "Le Chat Potté 2 : La Dernière Quête",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Le Chat Potté",
+      "note": "Le Chat n'a plus qu'une vie ; se déroule après Shrek 4",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Shrek 5",
+      "title_fr": "Shrek 5",
+      "year": 2027,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Shrek",
+      "note": "Sortie prévue en 2027",
+      "optional": true
+    }
+  ]
+}

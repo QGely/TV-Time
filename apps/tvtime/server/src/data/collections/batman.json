@@ -1,0 +1,153 @@
+{
+  "id": "batman",
+  "name": "Batman (films)",
+  "description": "Tous les films Batman en prise de vues réelles, regroupés par ère (Adam West, Burton/Schumacher, trilogie Nolan, Matt Reeves avec la série The Penguin) plus les deux Joker en option. L'ordre affiché par défaut suit les ères et place Joker (2019) après l'univers de Reeves, ce qui diffère légèrement de l'ordre de sortie.",
+  "icon": "🦇",
+  "category": "dc",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Batman",
+      "title_fr": "Batman",
+      "year": 1966,
+      "tmdb_id": 2661,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Adam West",
+      "note": "Film tiré de la série TV des années 60, ton kitsch et second degré",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Batman",
+      "title_fr": "Batman",
+      "year": 1989,
+      "tmdb_id": 268,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Burton/Schumacher",
+      "note": "Premier Batman de Tim Burton, avec Michael Keaton et Jack Nicholson",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Batman Returns",
+      "title_fr": "Batman : Le Défi",
+      "year": 1992,
+      "tmdb_id": 364,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Burton/Schumacher",
+      "note": "Suite directe de Batman (1989), Pingouin et Catwoman",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Batman Forever",
+      "title_fr": "Batman Forever",
+      "year": 1995,
+      "tmdb_id": 414,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Burton/Schumacher",
+      "note": "Joel Schumacher reprend la saga, Val Kilmer en Batman",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Batman & Robin",
+      "title_fr": "Batman & Robin",
+      "year": 1997,
+      "tmdb_id": 415,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Burton/Schumacher",
+      "note": "Dernier film de l'ère Burton/Schumacher, George Clooney en Batman",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Batman Begins",
+      "title_fr": "Batman Begins",
+      "year": 2005,
+      "tmdb_id": 272,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Trilogie Nolan",
+      "note": "Reboot par Christopher Nolan, les origines de Bruce Wayne",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Dark Knight",
+      "title_fr": "The Dark Knight : Le Chevalier noir",
+      "year": 2008,
+      "tmdb_id": 155,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Trilogie Nolan",
+      "note": "Suite directe de Batman Begins, le Joker de Heath Ledger",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Dark Knight Rises",
+      "title_fr": "The Dark Knight Rises",
+      "year": 2012,
+      "tmdb_id": 49026,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Trilogie Nolan",
+      "note": "Huit ans après The Dark Knight, conclusion de la trilogie",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Batman",
+      "title_fr": "The Batman",
+      "year": 2022,
+      "tmdb_id": 414906,
+      "chronological_order": 9,
+      "release_order": 10,
+      "group": "Matt Reeves",
+      "note": "Nouvel univers indépendant, Robert Pattinson en Batman",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Penguin",
+      "title_fr": "The Penguin",
+      "year": 2024,
+      "tmdb_id": 194764,
+      "chronological_order": 10,
+      "release_order": 11,
+      "group": "Matt Reeves",
+      "note": "Série située juste après The Batman, à voir avant The Batman Part II",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Joker",
+      "title_fr": "Joker",
+      "year": 2019,
+      "tmdb_id": 475557,
+      "chronological_order": 11,
+      "release_order": 9,
+      "group": "Joker",
+      "note": "Univers à part, sans lien avec les autres films",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Joker: Folie à Deux",
+      "title_fr": "Joker : Folie à deux",
+      "year": 2024,
+      "tmdb_id": 889737,
+      "chronological_order": 12,
+      "release_order": 12,
+      "group": "Joker",
+      "note": "Suite directe de Joker (2019), deux ans après",
+      "optional": true
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "mad-max",
+  "name": "Mad Max",
+  "description": "La saga de George Miller dans l'ordre de l'histoire : Furiosa se déroule avant Fury Road. L'ordre de sortie est différent pour ces deux derniers films.",
+  "icon": "🛣️",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Mad Max",
+      "title_fr": "Mad Max",
+      "year": 1979,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": null,
+      "note": "Max Rockatansky, policier dans une Australie à la dérive",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mad Max 2",
+      "title_fr": "Mad Max 2 : Le Défi",
+      "year": 1981,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "Le guerrier de la route et la raffinerie assiégée",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mad Max Beyond Thunderdome",
+      "title_fr": "Mad Max : Au-delà du dôme du tonnerre",
+      "year": 1985,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": null,
+      "note": "Bartertown et le Dôme du tonnerre, avec Tina Turner",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Furiosa: A Mad Max Saga",
+      "title_fr": "Furiosa : Une saga Mad Max",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 5,
+      "group": null,
+      "note": "La jeunesse de Furiosa, 15 ans avant Fury Road",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mad Max: Fury Road",
+      "title_fr": "Mad Max : Fury Road",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 4,
+      "group": null,
+      "note": "La fuite de Furiosa et des épouses d'Immortan Joe",
+      "optional": false
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "indiana-jones",
+  "name": "Indiana Jones",
+  "description": "Les cinq films Indiana Jones dans l'ordre de l'histoire (Le Temple maudit se déroule avant Les Aventuriers de l'arche perdue), avec la série sur sa jeunesse en option.",
+  "icon": "🤠",
+  "category": "action",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "The Young Indiana Jones Chronicles",
+      "title_fr": "Les Aventures du jeune Indiana Jones",
+      "year": 1992,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 4,
+      "group": null,
+      "note": "Série sur l'enfance et la jeunesse d'Indy (1908-1920)",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Indiana Jones and the Temple of Doom",
+      "title_fr": "Indiana Jones et le Temple maudit",
+      "year": 1984,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "Se déroule en 1935, un an avant l'Arche perdue",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Raiders of the Lost Ark",
+      "title_fr": "Les Aventuriers de l'arche perdue",
+      "year": 1981,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 1,
+      "group": null,
+      "note": "Se déroule en 1936 : la course à l'Arche d'alliance",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Indiana Jones and the Last Crusade",
+      "title_fr": "Indiana Jones et la Dernière Croisade",
+      "year": 1989,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 3,
+      "group": null,
+      "note": "Se déroule en 1938 : Indy et son père à la recherche du Graal",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Indiana Jones and the Kingdom of the Crystal Skull",
+      "title_fr": "Indiana Jones et le Royaume du crâne de cristal",
+      "year": 2008,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": null,
+      "note": "Se déroule en 1957, en pleine guerre froide",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Indiana Jones and the Dial of Destiny",
+      "title_fr": "Indiana Jones et le Cadran de la destinée",
+      "year": 2023,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": null,
+      "note": "Se déroule en 1969 : la dernière aventure d'Indy",
+      "optional": false
+    }
+  ]
+}

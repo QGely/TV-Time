@@ -1,0 +1,105 @@
+{
+  "id": "transformers",
+  "name": "Transformers",
+  "description": "Toute la saga Transformers en prise de vues réelles plus Transformers : Le Commencement. L'ordre affiché par défaut est celui de l'histoire (Cybertron, puis 1987, 1994, 2007...), différent de l'ordre de sortie.",
+  "icon": "🚛",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Transformers One",
+      "title_fr": "Transformers : Le Commencement",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 8,
+      "group": "Origines",
+      "note": "Film d'animation : Orion Pax et D-16 sur Cybertron, avant la guerre",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Bumblebee",
+      "title_fr": "Bumblebee",
+      "year": 2018,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 6,
+      "group": "Préquelles",
+      "note": "Se déroule en 1987 : Bumblebee se cache en Californie",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Transformers: Rise of the Beasts",
+      "title_fr": "Transformers : Rise of the Beasts",
+      "year": 2023,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 7,
+      "group": "Préquelles",
+      "note": "Se déroule en 1994 : les Maximals à Brooklyn et au Pérou",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Transformers",
+      "title_fr": "Transformers",
+      "year": 2007,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 1,
+      "group": "Saga Michael Bay",
+      "note": "Sam Witwicky et le Cube AllSpark",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Transformers: Revenge of the Fallen",
+      "title_fr": "Transformers 2 : La Revanche",
+      "year": 2009,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 2,
+      "group": "Saga Michael Bay",
+      "note": "Deux ans plus tard : le Fallen et la Moissonneuse",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Transformers: Dark of the Moon",
+      "title_fr": "Transformers 3 : La Face cachée de la Lune",
+      "year": 2011,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 3,
+      "group": "Saga Michael Bay",
+      "note": "Sentinel Prime et la bataille de Chicago",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Transformers: Age of Extinction",
+      "title_fr": "Transformers : L'Âge de l'extinction",
+      "year": 2014,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 4,
+      "group": "Saga Michael Bay",
+      "note": "Cinq ans après Chicago : Cade Yeager et les Dinobots",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Transformers: The Last Knight",
+      "title_fr": "Transformers : The Last Knight",
+      "year": 2017,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 5,
+      "group": "Saga Michael Bay",
+      "note": "Les Transformers au temps du roi Arthur ; Quintessa",
+      "optional": false
+    }
+  ]
+}

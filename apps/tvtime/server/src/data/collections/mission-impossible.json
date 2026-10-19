@@ -1,0 +1,129 @@
+{
+  "id": "mission-impossible",
+  "name": "Mission: Impossible",
+  "description": "Tous les films Mission : Impossible avec Ethan Hunt, de 1996 à The Final Reckoning (2025), plus les séries originales de 1966 et 1988 en option. L'ordre chronologique de l'histoire correspond ici à l'ordre de sortie.",
+  "icon": "🕵️",
+  "category": "action",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Mission: Impossible",
+      "title_fr": "Mission impossible",
+      "year": 1966,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Séries originales",
+      "note": "Série originale (1966-1973) avec Jim Phelps, à l'origine de la saga",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Mission: Impossible",
+      "title_fr": "Mission impossible, 20 ans après",
+      "year": 1988,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Séries originales",
+      "note": "Revival (1988-1990), Jim Phelps reprend du service",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible",
+      "title_fr": "Mission : Impossible",
+      "year": 1996,
+      "tmdb_id": 954,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Films",
+      "note": "Premier film, Ethan Hunt est accusé de trahison",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible II",
+      "title_fr": "Mission : Impossible 2",
+      "year": 2000,
+      "tmdb_id": 955,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Films",
+      "note": "Réalisé par John Woo, mission autour du virus Chimera",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible III",
+      "title_fr": "Mission : Impossible 3",
+      "year": 2006,
+      "tmdb_id": 956,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Films",
+      "note": "Réalisé par J.J. Abrams, introduit Benji et la femme d'Ethan",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible - Ghost Protocol",
+      "title_fr": "Mission : Impossible - Protocole fantôme",
+      "year": 2011,
+      "tmdb_id": 56292,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Films",
+      "note": "L'IMF est désavouée, scène du Burj Khalifa",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible - Rogue Nation",
+      "title_fr": "Mission : Impossible - Rogue Nation",
+      "year": 2015,
+      "tmdb_id": 177677,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Films",
+      "note": "Introduit Ilsa Faust et le Syndicat",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible - Fallout",
+      "title_fr": "Mission : Impossible - Fallout",
+      "year": 2018,
+      "tmdb_id": 353081,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Films",
+      "note": "Suite directe de Rogue Nation, retour de Solomon Lane",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible - Dead Reckoning Part One",
+      "title_fr": "Mission : Impossible - Dead Reckoning Partie 1",
+      "year": 2023,
+      "tmdb_id": 575264,
+      "chronological_order": 9,
+      "release_order": 9,
+      "group": "Films",
+      "note": "Première partie du diptyque final, face à l'IA l'Entité",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Mission: Impossible - The Final Reckoning",
+      "title_fr": "Mission : Impossible - The Final Reckoning",
+      "year": 2025,
+      "tmdb_id": 575265,
+      "chronological_order": 10,
+      "release_order": 10,
+      "group": "Films",
+      "note": "Conclusion du diptyque et de la saga d'Ethan Hunt",
+      "optional": false
+    }
+  ]
+}

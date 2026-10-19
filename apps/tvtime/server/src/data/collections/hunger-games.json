@@ -1,0 +1,81 @@
+{
+  "id": "hunger-games",
+  "name": "Hunger Games",
+  "description": "La saga Hunger Games dans l'ordre de l'histoire de Panem : les préquelles sur Snow et Haymitch, puis la révolte de Katniss. L'ordre de sortie est différent.",
+  "icon": "🔥",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "The Hunger Games: The Ballad of Songbirds & Snakes",
+      "title_fr": "Hunger Games : La Ballade du serpent et de l'oiseau chanteur",
+      "year": 2023,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 5,
+      "group": "Préquelles",
+      "note": "64 ans avant Katniss : le jeune Coriolanus Snow aux 10e Hunger Games",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hunger Games: Sunrise on the Reaping",
+      "title_fr": "Hunger Games : Lever de soleil sur la moisson",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 6,
+      "group": "Préquelles",
+      "note": "Les 50e Hunger Games de Haymitch, 24 ans avant Katniss ; sortie en novembre 2026",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hunger Games",
+      "title_fr": "Hunger Games",
+      "year": 2012,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 1,
+      "group": "Trilogie Katniss",
+      "note": "Katniss se porte volontaire aux 74e Hunger Games",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hunger Games: Catching Fire",
+      "title_fr": "Hunger Games : L'Embrasement",
+      "year": 2013,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 2,
+      "group": "Trilogie Katniss",
+      "note": "L'Expiation : les vainqueurs renvoyés dans l'arène",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hunger Games: Mockingjay - Part 1",
+      "title_fr": "Hunger Games : La Révolte, 1re partie",
+      "year": 2014,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 3,
+      "group": "Trilogie Katniss",
+      "note": "Katniss devient le Geai moqueur du District 13",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hunger Games: Mockingjay - Part 2",
+      "title_fr": "Hunger Games : La Révolte, 2e partie",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 4,
+      "group": "Trilogie Katniss",
+      "note": "L'assaut final sur le Capitole",
+      "optional": false
+    }
+  ]
+}

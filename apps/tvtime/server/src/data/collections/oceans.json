@@ -1,0 +1,69 @@
+{
+  "id": "oceans",
+  "name": "Ocean's",
+  "description": "Les casses de Danny Ocean et de sa bande, de Las Vegas à New York, puis le spin-off mené par sa sœur Debbie. L'ordre affiché par défaut suit la saga moderne (2001-2018) ; l'original de 1960 avec le Rat Pack est proposé en bonus à la fin.",
+  "icon": "🎰",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Ocean's Eleven",
+      "title_fr": "Ocean's Eleven",
+      "year": 2001,
+      "tmdb_id": 161,
+      "chronological_order": 1,
+      "release_order": 2,
+      "group": "Trilogie Danny Ocean",
+      "note": "Le casse simultané de trois casinos de Las Vegas.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ocean's Twelve",
+      "title_fr": "Ocean's Twelve",
+      "year": 2004,
+      "tmdb_id": 163,
+      "chronological_order": 2,
+      "release_order": 3,
+      "group": "Trilogie Danny Ocean",
+      "note": "La bande doit rembourser Benedict en Europe.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ocean's Thirteen",
+      "title_fr": "Ocean's Thirteen",
+      "year": 2007,
+      "tmdb_id": 298,
+      "chronological_order": 3,
+      "release_order": 4,
+      "group": "Trilogie Danny Ocean",
+      "note": "Retour à Las Vegas pour venger Reuben.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ocean's Eight",
+      "title_fr": "Ocean's 8",
+      "year": 2018,
+      "tmdb_id": 402900,
+      "chronological_order": 4,
+      "release_order": 5,
+      "group": "Spin-off",
+      "note": "Debbie Ocean, sœur de Danny, monte un casse au Met Gala.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ocean's Eleven",
+      "title_fr": "L'Inconnu de Las Vegas",
+      "year": 1960,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 1,
+      "group": "Original",
+      "note": "Film original avec le Rat Pack (Sinatra), refait en 2001 ; en bonus.",
+      "optional": true
+    }
+  ]
+}

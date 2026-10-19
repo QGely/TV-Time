@@ -1,0 +1,105 @@
+{
+  "id": "scream",
+  "name": "Scream",
+  "description": "Toutes les apparitions de Ghostface, de Woodsboro à New York, films et série incluse. L'ordre chronologique affiché par défaut correspond ici à l'ordre de sortie.",
+  "icon": "🔪",
+  "category": "horror",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Scream",
+      "title_fr": "Scream",
+      "year": 1996,
+      "tmdb_id": 4232,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Ère Wes Craven",
+      "note": "Le film fondateur : Sidney Prescott face à Ghostface à Woodsboro.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Scream 2",
+      "title_fr": "Scream 2",
+      "year": 1997,
+      "tmdb_id": 4233,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Ère Wes Craven",
+      "note": "Deux ans plus tard, le tueur frappe sur le campus de Windsor.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Scream 3",
+      "title_fr": "Scream 3",
+      "year": 2000,
+      "tmdb_id": 4234,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Ère Wes Craven",
+      "note": "Fin de la trilogie originale, sur le tournage de Stab 3 à Hollywood.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Scream 4",
+      "title_fr": "Scream 4",
+      "year": 2011,
+      "tmdb_id": 41446,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Ère Wes Craven",
+      "note": "Retour à Woodsboro 15 ans après ; dernier film de Wes Craven.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Scream",
+      "title_fr": "Scream",
+      "year": 2015,
+      "tmdb_id": 62286,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Série TV",
+      "note": "Série MTV/VH1 (3 saisons) sans lien direct avec les films.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Scream",
+      "title_fr": "Scream",
+      "year": 2022,
+      "tmdb_id": 646385,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Nouvelle génération",
+      "note": "Requel : nouvelle génération à Woodsboro, réalisé par Radio Silence.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Scream VI",
+      "title_fr": "Scream VI",
+      "year": 2023,
+      "tmdb_id": 934433,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Nouvelle génération",
+      "note": "Les sœurs Carpenter traquées par Ghostface à New York.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Scream 7",
+      "title_fr": "Scream 7",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Nouvelle génération",
+      "note": "Sorti en février 2026 ; retour de Sidney Prescott, réalisé par Kevin Williamson.",
+      "optional": false
+    }
+  ]
+}

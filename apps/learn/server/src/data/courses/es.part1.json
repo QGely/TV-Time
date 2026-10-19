@@ -1,0 +1,394 @@
+{
+  "id": "es",
+  "title": "Espagnol",
+  "lang_name": "espagnol",
+  "flag": "🇪🇸",
+  "tts_lang": "es-ES",
+  "description": "Apprends l'espagnol pas à pas : salutations, nombres, famille, nourriture, courses et vêtements.",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Les bases 1",
+      "description": "Se présenter, saluer, dire oui ou non et rester poli.",
+      "color": "#58cc02",
+      "skills": [
+        {
+          "id": "u1s1",
+          "title": "Salutations",
+          "icon": "👋",
+          "tips": "« Hola » s'emploie à toute heure et avec tout le monde. « Buenos días » se dit le matin, « buenas tardes » l'après-midi et « buenas noches » le soir, aussi bien pour dire bonsoir que bonne nuit. En espagnol, les questions et les exclamations commencent par un point d'interrogation ou d'exclamation inversé : « ¿Qué tal? », « ¡Hola! ».",
+          "vocab": [
+            { "term": "hola", "translation": "bonjour / salut", "emoji": "👋" },
+            { "term": "buenos días", "translation": "bonjour (le matin)", "emoji": "🌅" },
+            { "term": "buenas tardes", "translation": "bonjour (l'après-midi) / bonsoir", "emoji": "☀️" },
+            { "term": "buenas noches", "translation": "bonsoir / bonne nuit", "emoji": "🌙" },
+            { "term": "adiós", "translation": "au revoir", "emoji": "👋" },
+            { "term": "hasta luego", "translation": "à plus tard", "emoji": "⏰" },
+            { "term": "sí", "translation": "oui", "emoji": "✅" },
+            { "term": "no", "translation": "non", "emoji": "❌" },
+            { "term": "¿qué tal?", "translation": "comment ça va ?", "emoji": "❓" },
+            { "term": "¿cómo estás?", "translation": "comment vas-tu ?", "emoji": "❓" },
+            { "term": "muy bien", "translation": "très bien", "emoji": "😊" },
+            { "term": "¿y tú?", "translation": "et toi ?", "emoji": "🔁" }
+          ],
+          "sentences": [
+            { "source": "Hola, ¿cómo estás?", "target": "Bonjour, comment vas-tu ?" },
+            { "source": "Muy bien, ¿y tú?", "target": "Très bien, et toi ?" },
+            { "source": "Buenos días, hasta luego.", "target": "Bonjour, à plus tard." },
+            { "source": "Sí, muy bien.", "target": "Oui, très bien." },
+            { "source": "Buenas tardes, ¿qué tal?", "target": "Bonjour, comment ça va ?" },
+            { "source": "Adiós, buenas noches.", "target": "Au revoir, bonne nuit." },
+            { "source": "Hola, ¿qué tal?", "target": "Salut, comment ça va ?" },
+            { "source": "Hola, sí, muy bien.", "target": "Bonjour, oui, très bien." }
+          ]
+        },
+        {
+          "id": "u1s2",
+          "title": "Se présenter",
+          "icon": "🙂",
+          "tips": "Pour se présenter, on dit « Me llamo... » (je m'appelle) ou « Soy... » (je suis). Le pronom sujet (yo, tú) est souvent omis, car la terminaison du verbe suffit : « Soy francés ». Les adjectifs de nationalité s'accordent au féminin (francés → francesa, español → española) et s'écrivent sans majuscule, contrairement aux noms de pays : Francia, España.",
+          "vocab": [
+            { "term": "yo", "translation": "je / moi", "emoji": "🙋" },
+            { "term": "me llamo", "translation": "je m'appelle", "emoji": "🏷️" },
+            { "term": "¿cómo te llamas?", "translation": "comment t'appelles-tu ?", "emoji": "❓" },
+            { "term": "mucho gusto", "translation": "enchanté(e)", "emoji": "🤝" },
+            { "term": "soy", "translation": "je suis", "emoji": "🙂" },
+            { "term": "soy de", "translation": "je viens de", "emoji": "📍" },
+            { "term": "¿de dónde eres?", "translation": "d'où viens-tu ?", "emoji": "🌍" },
+            { "term": "Francia", "translation": "la France", "emoji": "🇫🇷" },
+            { "term": "España", "translation": "l'Espagne", "emoji": "🇪🇸" },
+            { "term": "francés / francesa", "translation": "français / française", "emoji": "🥖" },
+            { "term": "español / española", "translation": "espagnol / espagnole", "emoji": "💃" },
+            { "term": "estudiante", "translation": "étudiant / étudiante", "emoji": "🎓" }
+          ],
+          "sentences": [
+            { "source": "Me llamo Pablo.", "target": "Je m'appelle Pablo." },
+            { "source": "¿Cómo te llamas?", "target": "Comment t'appelles-tu ?" },
+            { "source": "Mucho gusto, soy Ana.", "target": "Enchantée, je suis Ana." },
+            { "source": "Soy de Francia.", "target": "Je viens de France." },
+            { "source": "¿De dónde eres?", "target": "D'où viens-tu ?" },
+            { "source": "Yo soy francés.", "target": "Je suis français." },
+            { "source": "Hola, soy estudiante.", "target": "Bonjour, je suis étudiant." },
+            { "source": "Soy española, ¿y tú?", "target": "Je suis espagnole, et toi ?" }
+          ]
+        },
+        {
+          "id": "u1s3",
+          "title": "Les nombres 0-20",
+          "icon": "🔢",
+          "tips": "Les nombres de 0 à 15 s'apprennent par cœur : cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince. De 16 à 19, on écrit en un seul mot : dieciséis, diecisiete, dieciocho, diecinueve. Attention : « uno » devient « un » devant un nom masculin (un euro) et « una » devant un nom féminin (una mesa).",
+          "vocab": [
+            { "term": "cero", "translation": "zéro", "emoji": "0️⃣" },
+            { "term": "uno", "translation": "un", "emoji": "1️⃣" },
+            { "term": "dos", "translation": "deux", "emoji": "2️⃣" },
+            { "term": "tres", "translation": "trois", "emoji": "3️⃣" },
+            { "term": "cuatro", "translation": "quatre", "emoji": "4️⃣" },
+            { "term": "cinco", "translation": "cinq", "emoji": "5️⃣" },
+            { "term": "seis", "translation": "six", "emoji": "6️⃣" },
+            { "term": "siete", "translation": "sept", "emoji": "7️⃣" },
+            { "term": "ocho", "translation": "huit", "emoji": "8️⃣" },
+            { "term": "nueve", "translation": "neuf", "emoji": "9️⃣" },
+            { "term": "diez", "translation": "dix", "emoji": "🔟" },
+            { "term": "veinte", "translation": "vingt", "emoji": "🔢" }
+          ],
+          "sentences": [
+            { "source": "Uno, dos, tres, cuatro.", "target": "Un, deux, trois, quatre." },
+            { "source": "Cinco, seis, siete, ocho.", "target": "Cinq, six, sept, huit." },
+            { "source": "Nueve, diez, veinte.", "target": "Neuf, dix, vingt." },
+            { "source": "Tres, dos, uno, cero.", "target": "Trois, deux, un, zéro." },
+            { "source": "Diez, nueve, ocho, siete.", "target": "Dix, neuf, huit, sept." },
+            { "source": "Tres y siete son diez.", "target": "Trois et sept font dix." },
+            { "source": "Cuatro, cinco, seis.", "target": "Quatre, cinq, six." },
+            { "source": "Diez y diez son veinte.", "target": "Dix et dix font vingt." }
+          ]
+        },
+        {
+          "id": "u1s4",
+          "title": "Politesse",
+          "icon": "🙏",
+          "tips": "« Por favor » (s'il vous plaît) et « gracias » (merci) s'emploient à chaque occasion, et l'on répond « de nada » (de rien). « Perdón » et « lo siento » servent à s'excuser, tandis que « disculpe » sert à attirer l'attention de quelqu'un que l'on vouvoie. « Señor » et « señora » s'utilisent pour s'adresser poliment à un homme ou à une femme.",
+          "vocab": [
+            { "term": "por favor", "translation": "s'il vous plaît / s'il te plaît", "emoji": "🙏" },
+            { "term": "gracias", "translation": "merci", "emoji": "🙏" },
+            { "term": "muchas gracias", "translation": "merci beaucoup", "emoji": "💐" },
+            { "term": "de nada", "translation": "de rien", "emoji": "😊" },
+            { "term": "perdón", "translation": "pardon", "emoji": "😳" },
+            { "term": "lo siento", "translation": "je suis désolé(e)", "emoji": "😔" },
+            { "term": "disculpe", "translation": "excusez-moi", "emoji": "🙋" },
+            { "term": "señor", "translation": "Monsieur", "emoji": "👨" },
+            { "term": "señora", "translation": "Madame", "emoji": "👩" },
+            { "term": "bienvenido / bienvenida", "translation": "bienvenue", "emoji": "🎉" },
+            { "term": "claro", "translation": "bien sûr", "emoji": "👍" },
+            { "term": "no pasa nada", "translation": "ce n'est pas grave / pas de problème", "emoji": "🤷" }
+          ],
+          "sentences": [
+            { "source": "Muchas gracias, señor.", "target": "Merci beaucoup, Monsieur." },
+            { "source": "De nada, señora.", "target": "De rien, Madame." },
+            { "source": "Disculpe, por favor.", "target": "Excusez-moi, s'il vous plaît." },
+            { "source": "Perdón, lo siento.", "target": "Pardon, je suis désolé." },
+            { "source": "No pasa nada, gracias.", "target": "Ce n'est pas grave, merci." },
+            { "source": "Bienvenida, señora.", "target": "Bienvenue, Madame." },
+            { "source": "Sí, claro, por favor.", "target": "Oui, bien sûr, s'il vous plaît." },
+            { "source": "Gracias, hasta luego.", "target": "Merci, à plus tard." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Les bases 2",
+      "description": "La famille, les couleurs, les jours, la météo et les questions simples.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u2s1",
+          "title": "La famille",
+          "icon": "👨‍👩‍👧‍👦",
+          "tips": "Le possessif « mi » (mon, ma) devient « mis » au pluriel (mes) : « mi madre », « mis padres ». Attention, « los padres » signifie « les parents » et non « les pères ». Pour présenter quelqu'un, on dit « este es » (voici, au masculin) ou « esta es » (voici, au féminin) : « Esta es mi hermana ».",
+          "vocab": [
+            { "term": "la familia", "translation": "la famille", "emoji": "👨‍👩‍👧‍👦" },
+            { "term": "la madre", "translation": "la mère", "emoji": "👩" },
+            { "term": "el padre", "translation": "le père", "emoji": "👨" },
+            { "term": "los padres", "translation": "les parents", "emoji": "👫" },
+            { "term": "el hermano", "translation": "le frère", "emoji": "👦" },
+            { "term": "la hermana", "translation": "la sœur", "emoji": "👧" },
+            { "term": "el hijo", "translation": "le fils", "emoji": "👶" },
+            { "term": "la hija", "translation": "la fille", "emoji": "🧒" },
+            { "term": "la abuela", "translation": "la grand-mère", "emoji": "👵" },
+            { "term": "el abuelo", "translation": "le grand-père", "emoji": "👴" },
+            { "term": "mi / mis", "translation": "mon / ma / mes", "emoji": "❤️" },
+            { "term": "este es / esta es", "translation": "voici / c'est", "emoji": "👉" }
+          ],
+          "sentences": [
+            { "source": "Esta es mi familia.", "target": "Voici ma famille." },
+            { "source": "Esta es mi madre.", "target": "Voici ma mère." },
+            { "source": "Mi padre es francés.", "target": "Mon père est français." },
+            { "source": "Este es mi hermano.", "target": "Voici mon frère." },
+            { "source": "Mi hermana es española.", "target": "Ma sœur est espagnole." },
+            { "source": "Mis padres son de Francia.", "target": "Mes parents viennent de France." },
+            { "source": "Esta es mi abuela.", "target": "Voici ma grand-mère." },
+            { "source": "Este es mi hijo, Pablo.", "target": "Voici mon fils, Pablo." }
+          ]
+        },
+        {
+          "id": "u2s2",
+          "title": "Les couleurs",
+          "icon": "🎨",
+          "tips": "En espagnol, l'adjectif de couleur se place après le nom et s'accorde en genre et en nombre : « el coche rojo », « la camisa blanca ». Certaines couleurs sont invariables en genre : azul, verde, gris, rosa, naranja, marrón. Pour demander une couleur, on dit « ¿De qué color es? ».",
+          "vocab": [
+            { "term": "rojo / roja", "translation": "rouge", "emoji": "🔴" },
+            { "term": "azul", "translation": "bleu / bleue", "emoji": "🔵" },
+            { "term": "verde", "translation": "vert / verte", "emoji": "🟢" },
+            { "term": "amarillo / amarilla", "translation": "jaune", "emoji": "🟡" },
+            { "term": "negro / negra", "translation": "noir / noire", "emoji": "⚫" },
+            { "term": "blanco / blanca", "translation": "blanc / blanche", "emoji": "⚪" },
+            { "term": "naranja", "translation": "orange", "emoji": "🟠" },
+            { "term": "rosa", "translation": "rose", "emoji": "🌸" },
+            { "term": "gris", "translation": "gris / grise", "emoji": "🩶" },
+            { "term": "marrón", "translation": "marron", "emoji": "🟤" },
+            { "term": "el coche", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "¿de qué color es?", "translation": "de quelle couleur est-ce ?", "emoji": "🎨" }
+          ],
+          "sentences": [
+            { "source": "¿De qué color es?", "target": "De quelle couleur est-ce ?" },
+            { "source": "Es rojo.", "target": "C'est rouge." },
+            { "source": "El coche es azul.", "target": "La voiture est bleue." },
+            { "source": "Mi coche es negro.", "target": "Ma voiture est noire." },
+            { "source": "El coche es blanco y verde.", "target": "La voiture est blanche et verte." },
+            { "source": "Es amarillo, no es naranja.", "target": "C'est jaune, ce n'est pas orange." },
+            { "source": "El coche de mi padre es gris.", "target": "La voiture de mon père est grise." },
+            { "source": "Sí, es marrón.", "target": "Oui, c'est marron." }
+          ]
+        },
+        {
+          "id": "u2s3",
+          "title": "Les jours et le temps",
+          "icon": "📅",
+          "tips": "Les jours de la semaine s'écrivent sans majuscule en espagnol : lunes, martes, miércoles, jueves, viernes, sábado, domingo. Ils sont masculins et s'emploient avec l'article : « el lunes ». Pour la météo, on utilise le verbe « hacer » : « hace sol » (il y a du soleil), « hace calor » (il fait chaud), « hace frío » (il fait froid), mais on dit « llueve » (il pleut).",
+          "vocab": [
+            { "term": "lunes", "translation": "lundi", "emoji": "📅" },
+            { "term": "martes", "translation": "mardi", "emoji": "📅" },
+            { "term": "miércoles", "translation": "mercredi", "emoji": "📅" },
+            { "term": "jueves", "translation": "jeudi", "emoji": "📅" },
+            { "term": "viernes", "translation": "vendredi", "emoji": "📅" },
+            { "term": "sábado", "translation": "samedi", "emoji": "🎉" },
+            { "term": "domingo", "translation": "dimanche", "emoji": "🛋️" },
+            { "term": "hoy", "translation": "aujourd'hui", "emoji": "📍" },
+            { "term": "mañana", "translation": "demain", "emoji": "🌄" },
+            { "term": "¿qué día es hoy?", "translation": "quel jour sommes-nous ?", "emoji": "❓" },
+            { "term": "hace sol", "translation": "il y a du soleil", "emoji": "☀️" },
+            { "term": "llueve", "translation": "il pleut", "emoji": "🌧️" }
+          ],
+          "sentences": [
+            { "source": "¿Qué día es hoy?", "target": "Quel jour sommes-nous ?" },
+            { "source": "Hoy es lunes.", "target": "Aujourd'hui, c'est lundi." },
+            { "source": "Mañana es martes.", "target": "Demain, c'est mardi." },
+            { "source": "Hoy hace sol.", "target": "Aujourd'hui, il y a du soleil." },
+            { "source": "El sábado llueve.", "target": "Samedi, il pleut." },
+            { "source": "Hoy es viernes, hasta luego.", "target": "Aujourd'hui, c'est vendredi, à plus tard." },
+            { "source": "El domingo hace sol.", "target": "Dimanche, il y a du soleil." },
+            { "source": "¿Hoy es jueves? No, es miércoles.", "target": "C'est jeudi aujourd'hui ? Non, c'est mercredi." }
+          ]
+        },
+        {
+          "id": "u2s4",
+          "title": "Questions simples",
+          "icon": "❓",
+          "tips": "Les mots interrogatifs portent toujours un accent écrit : qué, quién, dónde, cuándo, por qué, cómo, cuánto. La question commence par « ¿ » et se termine par « ? ». « Cuánto » s'accorde avec le nom qui suit : « ¿cuántos hermanos? », « ¿cuántas hijas? ». Attention : « por qué » (pourquoi) s'écrit en deux mots, mais « porque » (parce que) en un seul.",
+          "vocab": [
+            { "term": "¿qué?", "translation": "quoi ? / que ?", "emoji": "❓" },
+            { "term": "¿quién?", "translation": "qui ?", "emoji": "👤" },
+            { "term": "¿dónde?", "translation": "où ?", "emoji": "📍" },
+            { "term": "¿cuándo?", "translation": "quand ?", "emoji": "⏰" },
+            { "term": "¿por qué?", "translation": "pourquoi ?", "emoji": "🤔" },
+            { "term": "¿cómo?", "translation": "comment ?", "emoji": "🛠️" },
+            { "term": "¿cuánto?", "translation": "combien ?", "emoji": "🔢" },
+            { "term": "¿qué es esto?", "translation": "qu'est-ce que c'est ?", "emoji": "🧐" },
+            { "term": "¿quién es?", "translation": "qui est-ce ?", "emoji": "🕵️" },
+            { "term": "¿dónde está?", "translation": "où est... ?", "emoji": "🗺️" },
+            { "term": "no sé", "translation": "je ne sais pas", "emoji": "🤷" },
+            { "term": "porque", "translation": "parce que", "emoji": "💬" }
+          ],
+          "sentences": [
+            { "source": "¿Qué es esto?", "target": "Qu'est-ce que c'est ?" },
+            { "source": "¿Quién es?", "target": "Qui est-ce ?" },
+            { "source": "¿Dónde está mi coche?", "target": "Où est ma voiture ?" },
+            { "source": "No sé, lo siento.", "target": "Je ne sais pas, désolé." },
+            { "source": "¿Cuándo es? Hoy.", "target": "C'est quand ? Aujourd'hui." },
+            { "source": "¿Por qué? Porque sí.", "target": "Pourquoi ? Parce que c'est comme ça." },
+            { "source": "¿Quién es? Es mi hermano.", "target": "Qui est-ce ? C'est mon frère." },
+            { "source": "¿Cómo estás hoy?", "target": "Comment vas-tu aujourd'hui ?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Au quotidien",
+      "description": "Manger, commander au restaurant, faire les courses et parler de ses vêtements.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u3s1",
+          "title": "La nourriture",
+          "icon": "🍎",
+          "tips": "Pour dire ce que l'on aime, on utilise « me gusta » (au singulier) ou « me gustan » (au pluriel) : « me gusta el pan », « me gustan las manzanas ». Comme en français, l'article défini accompagne le nom après « me gusta ». « Como » signifie « je mange » et « bebo » « je bois », sans article partitif : « como pan » (je mange du pain).",
+          "vocab": [
+            { "term": "el pan", "translation": "le pain", "emoji": "🍞" },
+            { "term": "el agua", "translation": "l'eau", "emoji": "💧" },
+            { "term": "la leche", "translation": "le lait", "emoji": "🥛" },
+            { "term": "el queso", "translation": "le fromage", "emoji": "🧀" },
+            { "term": "la manzana", "translation": "la pomme", "emoji": "🍎" },
+            { "term": "la carne", "translation": "la viande", "emoji": "🥩" },
+            { "term": "el pescado", "translation": "le poisson", "emoji": "🐟" },
+            { "term": "el arroz", "translation": "le riz", "emoji": "🍚" },
+            { "term": "el café", "translation": "le café", "emoji": "☕" },
+            { "term": "como", "translation": "je mange", "emoji": "🍽️" },
+            { "term": "bebo", "translation": "je bois", "emoji": "🥤" },
+            { "term": "me gusta", "translation": "j'aime", "emoji": "❤️" }
+          ],
+          "sentences": [
+            { "source": "Como pan.", "target": "Je mange du pain." },
+            { "source": "Bebo agua.", "target": "Je bois de l'eau." },
+            { "source": "Me gusta el queso.", "target": "J'aime le fromage." },
+            { "source": "Hoy como pescado.", "target": "Aujourd'hui, je mange du poisson." },
+            { "source": "Bebo café y leche.", "target": "Je bois du café et du lait." },
+            { "source": "No me gusta la carne.", "target": "Je n'aime pas la viande." },
+            { "source": "Como arroz y carne.", "target": "Je mange du riz et de la viande." },
+            { "source": "Me gusta la manzana roja.", "target": "J'aime la pomme rouge." }
+          ]
+        },
+        {
+          "id": "u3s2",
+          "title": "Au restaurant",
+          "icon": "🍽️",
+          "tips": "Pour commander poliment, on dit « quisiera » (je voudrais) : « Quisiera un café, por favor ». En Espagne, « la carta » désigne la carte du restaurant, tandis que « el menú » est souvent le menu du jour. Pour payer, on demande « la cuenta, por favor ». « ¡Buen provecho! » ou « ¡Que aproveche! » signifient « bon appétit ».",
+          "vocab": [
+            { "term": "el restaurante", "translation": "le restaurant", "emoji": "🍽️" },
+            { "term": "la carta", "translation": "la carte / le menu", "emoji": "📋" },
+            { "term": "una mesa para dos", "translation": "une table pour deux", "emoji": "🪑" },
+            { "term": "la cuenta", "translation": "l'addition", "emoji": "🧾" },
+            { "term": "el camarero / la camarera", "translation": "le serveur / la serveuse", "emoji": "🤵" },
+            { "term": "quisiera", "translation": "je voudrais", "emoji": "💬" },
+            { "term": "un vaso de", "translation": "un verre de", "emoji": "🥛" },
+            { "term": "una taza de", "translation": "une tasse de", "emoji": "☕" },
+            { "term": "delicioso / deliciosa", "translation": "délicieux / délicieuse", "emoji": "😋" },
+            { "term": "el postre", "translation": "le dessert", "emoji": "🍰" },
+            { "term": "la sopa", "translation": "la soupe", "emoji": "🍲" },
+            { "term": "¡buen provecho!", "translation": "bon appétit !", "emoji": "🍴" }
+          ],
+          "sentences": [
+            { "source": "Una mesa para dos, por favor.", "target": "Une table pour deux, s'il vous plaît." },
+            { "source": "¿Dónde está el camarero?", "target": "Où est le serveur ?" },
+            { "source": "Quisiera un vaso de agua.", "target": "Je voudrais un verre d'eau." },
+            { "source": "La cuenta, por favor.", "target": "L'addition, s'il vous plaît." },
+            { "source": "La sopa es deliciosa.", "target": "La soupe est délicieuse." },
+            { "source": "Quisiera una taza de café.", "target": "Je voudrais une tasse de café." },
+            { "source": "¡Buen provecho, señora!", "target": "Bon appétit, Madame !" },
+            { "source": "El postre es delicioso, gracias.", "target": "Le dessert est délicieux, merci." }
+          ]
+        },
+        {
+          "id": "u3s3",
+          "title": "Les courses",
+          "icon": "🛒",
+          "tips": "Pour demander un prix, on dit « ¿Cuánto cuesta? » (combien ça coûte ?) ou « ¿Cuánto es? » (ça fait combien ?). La réponse utilise « cuesta » : « Cuesta diez euros ». « Caro » (cher) et « barato » (bon marché) s'accordent avec le nom : « una manzana cara », « un café barato ».",
+          "vocab": [
+            { "term": "la tienda", "translation": "le magasin", "emoji": "🏪" },
+            { "term": "el mercado", "translation": "le marché", "emoji": "🧺" },
+            { "term": "el supermercado", "translation": "le supermarché", "emoji": "🛒" },
+            { "term": "compro", "translation": "j'achète", "emoji": "🛍️" },
+            { "term": "¿cuánto cuesta?", "translation": "combien ça coûte ?", "emoji": "💰" },
+            { "term": "cuesta", "translation": "ça coûte", "emoji": "🏷️" },
+            { "term": "caro / cara", "translation": "cher / chère", "emoji": "💸" },
+            { "term": "barato / barata", "translation": "bon marché / pas cher", "emoji": "👍" },
+            { "term": "el dinero", "translation": "l'argent", "emoji": "💵" },
+            { "term": "euros", "translation": "des euros", "emoji": "💶" },
+            { "term": "un kilo de", "translation": "un kilo de", "emoji": "⚖️" },
+            { "term": "necesito", "translation": "j'ai besoin de", "emoji": "🙋" }
+          ],
+          "sentences": [
+            { "source": "¿Cuánto cuesta?", "target": "Combien ça coûte ?" },
+            { "source": "Cuesta diez euros.", "target": "Ça coûte dix euros." },
+            { "source": "¡Es muy caro!", "target": "C'est très cher !" },
+            { "source": "Compro un kilo de manzanas.", "target": "J'achète un kilo de pommes." },
+            { "source": "Necesito dinero.", "target": "J'ai besoin d'argent." },
+            { "source": "El pan es barato.", "target": "Le pain est bon marché." },
+            { "source": "¿Dónde está el supermercado?", "target": "Où est le supermarché ?" },
+            { "source": "El café cuesta dos euros.", "target": "Le café coûte deux euros." }
+          ]
+        },
+        {
+          "id": "u3s4",
+          "title": "Les vêtements",
+          "icon": "👕",
+          "tips": "« Llevo » signifie « je porte » (un vêtement). L'adjectif de couleur se place après le nom du vêtement et s'accorde avec lui : « una camisa blanca », « unos zapatos negros ». « Los pantalones », « los zapatos » et « los calcetines » s'emploient généralement au pluriel. Pour la taille d'un vêtement, on dit « la talla ».",
+          "vocab": [
+            { "term": "la ropa", "translation": "les vêtements", "emoji": "👕" },
+            { "term": "la camisa", "translation": "la chemise", "emoji": "👔" },
+            { "term": "la camiseta", "translation": "le t-shirt", "emoji": "👕" },
+            { "term": "los pantalones", "translation": "le pantalon", "emoji": "👖" },
+            { "term": "el vestido", "translation": "la robe", "emoji": "👗" },
+            { "term": "la chaqueta", "translation": "la veste", "emoji": "🧥" },
+            { "term": "el abrigo", "translation": "le manteau", "emoji": "🧣" },
+            { "term": "los zapatos", "translation": "les chaussures", "emoji": "👟" },
+            { "term": "el sombrero", "translation": "le chapeau", "emoji": "🎩" },
+            { "term": "los calcetines", "translation": "les chaussettes", "emoji": "🧦" },
+            { "term": "llevo", "translation": "je porte", "emoji": "🙋" },
+            { "term": "la talla", "translation": "la taille", "emoji": "📏" }
+          ],
+          "sentences": [
+            { "source": "Llevo una camisa azul.", "target": "Je porte une chemise bleue." },
+            { "source": "Mi vestido es rojo.", "target": "Ma robe est rouge." },
+            { "source": "Llevo una chaqueta negra.", "target": "Je porte une veste noire." },
+            { "source": "¿Cuánto cuesta el abrigo?", "target": "Combien coûte le manteau ?" },
+            { "source": "Los zapatos son blancos.", "target": "Les chaussures sont blanches." },
+            { "source": "Necesito calcetines.", "target": "J'ai besoin de chaussettes." },
+            { "source": "¿Qué talla es?", "target": "C'est quelle taille ?" },
+            { "source": "Hoy llevo pantalones grises.", "target": "Aujourd'hui, je porte un pantalon gris." }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "id": "de",
+  "title": "Allemand",
+  "lang_name": "allemand",
+  "flag": "🇩🇪",
+  "tts_lang": "de-DE",
+  "description": "Apprenez l'allemand pas à pas, de la ville au voyage, pour vous débrouiller partout.",
+  "units": [
+    {
+      "id": "u4",
+      "title": "En ville",
+      "description": "Se repérer, demander son chemin, réserver un hôtel et prendre les transports.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u4s1",
+          "title": "Se déplacer",
+          "icon": "🚶",
+          "tips": "« Gehen » signifie aller à pied, tandis que « fahren » s'emploie pour un véhicule. Pour demander où se trouve un lieu : « Wo ist... ? » (Où est... ?) : « Wo ist die Brücke? ». La préposition « in » prend l'accusatif pour un déplacement (« Ich gehe in die Stadt », Je vais en ville) et le datif pour une position (« Ich bin in der Stadt », Je suis en ville).",
+          "vocab": [
+            { "term": "die Stadt", "translation": "la ville", "emoji": "🏙️" },
+            { "term": "die Straße", "translation": "la rue", "emoji": "🛣️" },
+            { "term": "gehen", "translation": "aller (à pied), marcher", "emoji": "🚶" },
+            { "term": "der Stadtplan", "translation": "le plan de la ville", "emoji": "🗺️" },
+            { "term": "weit", "translation": "loin", "emoji": null },
+            { "term": "nah", "translation": "près, proche", "emoji": null },
+            { "term": "hier", "translation": "ici", "emoji": "📍" },
+            { "term": "dort", "translation": "là-bas", "emoji": null },
+            { "term": "die Brücke", "translation": "le pont", "emoji": "🌉" },
+            { "term": "der Platz", "translation": "la place", "emoji": null },
+            { "term": "überqueren", "translation": "traverser", "emoji": null },
+            { "term": "der Weg", "translation": "le chemin", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Die Stadt ist groß.", "target": "La ville est grande." },
+            { "source": "Ich gehe in die Stadt.", "target": "Je vais en ville." },
+            { "source": "Ist es weit?", "target": "Est-ce loin ?" },
+            { "source": "Die Brücke ist nah.", "target": "Le pont est proche." },
+            { "source": "Wo ist der Platz?", "target": "Où est la place ?" },
+            { "source": "Ich habe einen Stadtplan.", "target": "J'ai un plan de la ville." },
+            { "source": "Der Platz ist dort.", "target": "La place est là-bas." },
+            { "source": "Ich überquere die Straße.", "target": "Je traverse la rue." }
+          ]
+        },
+        {
+          "id": "u4s2",
+          "title": "Les directions",
+          "icon": "🧭",
+          "tips": "Pour indiquer un chemin, on utilise l'impératif de politesse : « Gehen Sie geradeaus » (Allez tout droit), « Biegen Sie links ab » (Tournez à gauche). Le verbe « abbiegen » est à particule séparable : « ab » se place en fin de phrase. « Neben » (à côté de), « vor » (devant) et « hinter » (derrière) sont suivis du datif pour indiquer une position : « neben dem Bahnhof », « hinter der Kirche ».",
+          "vocab": [
+            { "term": "links", "translation": "à gauche", "emoji": "⬅️" },
+            { "term": "rechts", "translation": "à droite", "emoji": "➡️" },
+            { "term": "geradeaus", "translation": "tout droit", "emoji": "⬆️" },
+            { "term": "abbiegen", "translation": "tourner (changer de direction)", "emoji": null },
+            { "term": "die Ecke", "translation": "le coin", "emoji": null },
+            { "term": "neben", "translation": "à côté de", "emoji": null },
+            { "term": "vor", "translation": "devant", "emoji": null },
+            { "term": "hinter", "translation": "derrière", "emoji": null },
+            { "term": "die Ampel", "translation": "le feu (de circulation)", "emoji": "🚦" },
+            { "term": "die Kreuzung", "translation": "le carrefour", "emoji": null },
+            { "term": "der Bahnhof", "translation": "la gare", "emoji": "🚉" },
+            { "term": "die Kirche", "translation": "l'église", "emoji": "⛪" }
+          ],
+          "sentences": [
+            { "source": "Gehen Sie geradeaus.", "target": "Allez tout droit." },
+            { "source": "Biegen Sie links ab.", "target": "Tournez à gauche." },
+            { "source": "Der Bahnhof ist rechts.", "target": "La gare est à droite." },
+            { "source": "Die Kirche ist an der Ecke.", "target": "L'église est au coin." },
+            { "source": "Die Ampel ist dort.", "target": "Le feu est là-bas." },
+            { "source": "Die Kirche ist neben dem Bahnhof.", "target": "L'église est à côté de la gare." },
+            { "source": "Die Kreuzung ist vor der Brücke.", "target": "Le carrefour est devant le pont." },
+            { "source": "Biegen Sie an der Ampel rechts ab.", "target": "Tournez à droite au feu." }
+          ]
+        },
+        {
+          "id": "u4s3",
+          "title": "À l'hôtel",
+          "icon": "🏨",
+          "tips": "Pour réserver, on dit « Ich möchte ein Zimmer reservieren » (Je voudrais réserver une chambre) : « möchte » est la forme polie qui correspond à « je voudrais ». Les nuits se comptent avec « die Nacht », pluriel « die Nächte » : « für zwei Nächte » (pour deux nuits). À la réception, on demande « Haben Sie ein Zimmer frei? » (Avez-vous une chambre libre ?).",
+          "vocab": [
+            { "term": "das Hotel", "translation": "l'hôtel", "emoji": "🏨" },
+            { "term": "das Zimmer", "translation": "la chambre", "emoji": "🛏️" },
+            { "term": "reservieren", "translation": "réserver", "emoji": null },
+            { "term": "der Schlüssel", "translation": "la clé", "emoji": "🔑" },
+            { "term": "die Nacht", "translation": "la nuit", "emoji": "🌙" },
+            { "term": "das Frühstück", "translation": "le petit-déjeuner", "emoji": "🥐" },
+            { "term": "die Rezeption", "translation": "la réception", "emoji": "🛎️" },
+            { "term": "der Aufzug", "translation": "l'ascenseur", "emoji": null },
+            { "term": "das Bad", "translation": "la salle de bains", "emoji": "🛁" },
+            { "term": "frei", "translation": "libre", "emoji": null },
+            { "term": "der Stock", "translation": "l'étage", "emoji": null },
+            { "term": "inklusive", "translation": "compris, inclus", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Ich möchte ein Zimmer reservieren.", "target": "Je voudrais réserver une chambre." },
+            { "source": "Haben Sie ein Zimmer frei?", "target": "Avez-vous une chambre libre ?" },
+            { "source": "Für zwei Nächte, bitte.", "target": "Pour deux nuits, s'il vous plaît." },
+            { "source": "Hier ist der Schlüssel.", "target": "Voici la clé." },
+            { "source": "Das Frühstück ist inklusive.", "target": "Le petit-déjeuner est compris." },
+            { "source": "Das Zimmer hat ein Bad.", "target": "La chambre a une salle de bains." },
+            { "source": "Wo ist die Rezeption?", "target": "Où est la réception ?" },
+            { "source": "Das Hotel hat einen Aufzug.", "target": "L'hôtel a un ascenseur." }
+          ]
+        },
+        {
+          "id": "u4s4",
+          "title": "Les transports",
+          "icon": "🚌",
+          "tips": "Pour les moyens de transport, on utilise « mit » + datif : « mit dem Bus » (en bus), « mit der U-Bahn » (en métro), « mit dem Fahrrad » (à vélo). Le verbe « fahren » signifie aller en véhicule : « Ich fahre mit dem Zug » (Je prends le train). « Abfahren » (partir) et « ankommen » (arriver) sont des verbes à particule séparable : « Der Zug fährt um acht ab ».",
+          "vocab": [
+            { "term": "der Bus", "translation": "le bus", "emoji": "🚌" },
+            { "term": "der Zug", "translation": "le train", "emoji": "🚆" },
+            { "term": "die U-Bahn", "translation": "le métro", "emoji": "🚇" },
+            { "term": "das Taxi", "translation": "le taxi", "emoji": "🚕" },
+            { "term": "die Fahrkarte", "translation": "le billet (de transport)", "emoji": "🎫" },
+            { "term": "die Haltestelle", "translation": "l'arrêt (de bus, de tram)", "emoji": "🚏" },
+            { "term": "fahren", "translation": "aller (en véhicule), rouler", "emoji": null },
+            { "term": "abfahren", "translation": "partir (pour un véhicule)", "emoji": null },
+            { "term": "ankommen", "translation": "arriver", "emoji": null },
+            { "term": "der Flughafen", "translation": "l'aéroport", "emoji": "✈️" },
+            { "term": "das Fahrrad", "translation": "le vélo", "emoji": "🚲" },
+            { "term": "die Verspätung", "translation": "le retard", "emoji": "⏰" }
+          ],
+          "sentences": [
+            { "source": "Ich fahre mit dem Bus.", "target": "Je prends le bus." },
+            { "source": "Der Zug fährt um acht ab.", "target": "Le train part à huit heures." },
+            { "source": "Wo ist die Haltestelle?", "target": "Où est l'arrêt ?" },
+            { "source": "Eine Fahrkarte nach Berlin, bitte.", "target": "Un billet pour Berlin, s'il vous plaît." },
+            { "source": "Der Zug hat Verspätung.", "target": "Le train a du retard." },
+            { "source": "Wir nehmen ein Taxi.", "target": "Nous prenons un taxi." },
+            { "source": "Der Bus kommt um neun an.", "target": "Le bus arrive à neuf heures." },
+            { "source": "Ich fahre mit dem Fahrrad zum Flughafen.", "target": "Je vais à l'aéroport à vélo." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Vie quotidienne",
+      "description": "Parler de sa maison, de son travail, de ses loisirs et de sa santé.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u5s1",
+          "title": "La maison",
+          "icon": "🏠",
+          "tips": "Les pièces de la maison sont souvent des mots composés avec « -zimmer » : « das Schlafzimmer » (la chambre à coucher), « das Wohnzimmer » (le salon). Le genre d'un mot composé est toujours celui du dernier élément. Pour dire où l'on habite, on utilise « wohnen » + « in » + datif : « Ich wohne in einer Wohnung » (J'habite dans un appartement).",
+          "vocab": [
+            { "term": "das Haus", "translation": "la maison", "emoji": "🏠" },
+            { "term": "die Wohnung", "translation": "l'appartement", "emoji": "🏢" },
+            { "term": "die Küche", "translation": "la cuisine", "emoji": "🍳" },
+            { "term": "das Schlafzimmer", "translation": "la chambre à coucher", "emoji": "🛏️" },
+            { "term": "das Wohnzimmer", "translation": "le salon", "emoji": "🛋️" },
+            { "term": "der Garten", "translation": "le jardin", "emoji": "🌳" },
+            { "term": "die Tür", "translation": "la porte", "emoji": "🚪" },
+            { "term": "das Fenster", "translation": "la fenêtre", "emoji": "🪟" },
+            { "term": "der Tisch", "translation": "la table", "emoji": null },
+            { "term": "der Stuhl", "translation": "la chaise", "emoji": "🪑" },
+            { "term": "wohnen", "translation": "habiter", "emoji": null },
+            { "term": "das Bett", "translation": "le lit", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Ich wohne in einer Wohnung.", "target": "J'habite dans un appartement." },
+            { "source": "Das Haus hat einen Garten.", "target": "La maison a un jardin." },
+            { "source": "Die Küche ist klein.", "target": "La cuisine est petite." },
+            { "source": "Das Bett ist im Schlafzimmer.", "target": "Le lit est dans la chambre." },
+            { "source": "Der Tisch ist im Wohnzimmer.", "target": "La table est dans le salon." },
+            { "source": "Das Fenster ist groß.", "target": "La fenêtre est grande." },
+            { "source": "Wo ist der Stuhl?", "target": "Où est la chaise ?" },
+            { "source": "Der Stuhl ist neben der Tür.", "target": "La chaise est à côté de la porte." }
+          ]
+        },
+        {
+          "id": "u5s2",
+          "title": "Le travail",
+          "icon": "💼",
+          "tips": "Pour dire son métier, on n'utilise pas d'article : « Ich bin Lehrer » (Je suis professeur), « Er ist Arzt » (Il est médecin). Beaucoup de noms de métiers ont une forme féminine en « -in » : Lehrer / Lehrerin, Arzt / Ärztin, Kollege / Kollegin. Pour demander la profession de quelqu'un : « Was bist du von Beruf? » (Quel est ton métier ?).",
+          "vocab": [
+            { "term": "die Arbeit", "translation": "le travail", "emoji": "💼" },
+            { "term": "arbeiten", "translation": "travailler", "emoji": null },
+            { "term": "das Büro", "translation": "le bureau (lieu de travail)", "emoji": "🏢" },
+            { "term": "der Chef", "translation": "le chef, le patron", "emoji": null },
+            { "term": "der Kollege", "translation": "le collègue", "emoji": null },
+            { "term": "der Lehrer", "translation": "le professeur, l'enseignant", "emoji": "👨‍🏫" },
+            { "term": "der Arzt", "translation": "le médecin", "emoji": "👨‍⚕️" },
+            { "term": "der Computer", "translation": "l'ordinateur", "emoji": "💻" },
+            { "term": "die Besprechung", "translation": "la réunion", "emoji": null },
+            { "term": "der Beruf", "translation": "le métier, la profession", "emoji": null },
+            { "term": "die E-Mail", "translation": "l'e-mail, le courriel", "emoji": "📧" },
+            { "term": "schreiben", "translation": "écrire", "emoji": "✍️" }
+          ],
+          "sentences": [
+            { "source": "Ich arbeite im Büro.", "target": "Je travaille au bureau." },
+            { "source": "Was bist du von Beruf?", "target": "Quel est ton métier ?" },
+            { "source": "Ich bin Lehrer.", "target": "Je suis professeur." },
+            { "source": "Mein Vater ist Arzt.", "target": "Mon père est médecin." },
+            { "source": "Die Besprechung ist um zehn.", "target": "La réunion est à dix heures." },
+            { "source": "Ich schreibe eine E-Mail.", "target": "J'écris un e-mail." },
+            { "source": "Mein Chef ist nett.", "target": "Mon chef est gentil." },
+            { "source": "Mein Kollege arbeitet am Computer.", "target": "Mon collègue travaille sur l'ordinateur." }
+          ]
+        },
+        {
+          "id": "u5s3",
+          "title": "Les loisirs",
+          "icon": "⚽",
+          "tips": "Pour dire ce que l'on aime faire, on ajoute « gern » après le verbe : « Ich lese gern » (J'aime lire), « Ich spiele gern Fußball » (J'aime jouer au football). « Am Wochenende » signifie « le week-end ». Les verbes « lesen » et « fernsehen » changent de voyelle au singulier : ich lese, du liest, er liest ; ich sehe fern, er sieht fern.",
+          "vocab": [
+            { "term": "das Hobby", "translation": "le loisir, le passe-temps", "emoji": "🎨" },
+            { "term": "der Sport", "translation": "le sport", "emoji": "🏃" },
+            { "term": "Fußball spielen", "translation": "jouer au football", "emoji": "⚽" },
+            { "term": "lesen", "translation": "lire", "emoji": "📖" },
+            { "term": "das Buch", "translation": "le livre", "emoji": "📚" },
+            { "term": "die Musik", "translation": "la musique", "emoji": "🎵" },
+            { "term": "hören", "translation": "écouter, entendre", "emoji": "🎧" },
+            { "term": "fernsehen", "translation": "regarder la télévision", "emoji": "📺" },
+            { "term": "das Kino", "translation": "le cinéma", "emoji": "🎬" },
+            { "term": "schwimmen", "translation": "nager", "emoji": "🏊" },
+            { "term": "das Wochenende", "translation": "le week-end", "emoji": null },
+            { "term": "gern", "translation": "volontiers (aimer faire quelque chose)", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Ich lese gern.", "target": "J'aime lire." },
+            { "source": "Was ist dein Hobby?", "target": "Quel est ton passe-temps ?" },
+            { "source": "Ich spiele gern Fußball.", "target": "J'aime jouer au football." },
+            { "source": "Wir hören Musik.", "target": "Nous écoutons de la musique." },
+            { "source": "Am Wochenende gehe ich ins Kino.", "target": "Le week-end, je vais au cinéma." },
+            { "source": "Er sieht gern fern.", "target": "Il aime regarder la télévision." },
+            { "source": "Das Buch ist interessant.", "target": "Le livre est intéressant." },
+            { "source": "Wir schwimmen am Wochenende.", "target": "Nous nageons le week-end." }
+          ]
+        },
+        {
+          "id": "u5s4",
+          "title": "La santé",
+          "icon": "🩺",
+          "tips": "Pour dire que l'on a mal, on utilise « Schmerzen » ou « weh tun » : « Ich habe Kopfschmerzen » (J'ai mal à la tête), « Mein Bauch tut weh » (J'ai mal au ventre). Chez le médecin, on dit « Ich bin krank » (Je suis malade) ou « Ich habe Fieber » (J'ai de la fièvre). Pour prendre rendez-vous : « Ich habe einen Termin beim Arzt » (J'ai un rendez-vous chez le médecin).",
+          "vocab": [
+            { "term": "krank", "translation": "malade", "emoji": "🤒" },
+            { "term": "gesund", "translation": "en bonne santé", "emoji": "💪" },
+            { "term": "der Kopf", "translation": "la tête", "emoji": null },
+            { "term": "die Kopfschmerzen", "translation": "le mal de tête", "emoji": "🤕" },
+            { "term": "der Bauch", "translation": "le ventre", "emoji": null },
+            { "term": "das Fieber", "translation": "la fièvre", "emoji": "🌡️" },
+            { "term": "die Apotheke", "translation": "la pharmacie", "emoji": "💊" },
+            { "term": "das Medikament", "translation": "le médicament", "emoji": null },
+            { "term": "weh tun", "translation": "faire mal", "emoji": null },
+            { "term": "das Krankenhaus", "translation": "l'hôpital", "emoji": "🏥" },
+            { "term": "müde", "translation": "fatigué", "emoji": "😴" },
+            { "term": "der Termin", "translation": "le rendez-vous", "emoji": "📅" }
+          ],
+          "sentences": [
+            { "source": "Ich bin krank.", "target": "Je suis malade." },
+            { "source": "Ich habe Kopfschmerzen.", "target": "J'ai mal à la tête." },
+            { "source": "Mein Bauch tut weh.", "target": "J'ai mal au ventre." },
+            { "source": "Er hat Fieber.", "target": "Il a de la fièvre." },
+            { "source": "Wo ist die Apotheke?", "target": "Où est la pharmacie ?" },
+            { "source": "Ich bin sehr müde.", "target": "Je suis très fatigué." },
+            { "source": "Ich habe einen Termin beim Arzt.", "target": "J'ai un rendez-vous chez le médecin." },
+            { "source": "Das Krankenhaus ist neben der Apotheke.", "target": "L'hôpital est à côté de la pharmacie." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Conversation",
+      "description": "Raconter le passé, parler de l'avenir, donner son avis et voyager.",
+      "color": "#ff9600",
+      "skills": [
+        {
+          "id": "u6s1",
+          "title": "Le passé",
+          "icon": "🕰️",
+          "tips": "Le passé composé allemand (Perfekt) se forme avec « haben » ou « sein » + participe passé placé en fin de phrase : « Ich habe gegessen » (J'ai mangé), « Ich bin gefahren » (Je suis parti). Les verbes de déplacement comme « fahren » ou « gehen » utilisent « sein ». Le participe des verbes réguliers se forme avec « ge- » + radical + « -t » : gemacht, gespielt, gekauft.",
+          "vocab": [
+            { "term": "gestern", "translation": "hier", "emoji": null },
+            { "term": "letzte Woche", "translation": "la semaine dernière", "emoji": "📅" },
+            { "term": "gemacht", "translation": "fait (participe de « machen »)", "emoji": null },
+            { "term": "gegessen", "translation": "mangé (participe de « essen »)", "emoji": "🍽️" },
+            { "term": "gesehen", "translation": "vu (participe de « sehen »)", "emoji": "👀" },
+            { "term": "gefahren", "translation": "parti, allé en véhicule (participe de « fahren »)", "emoji": "🚗" },
+            { "term": "gewesen", "translation": "été (participe de « sein »)", "emoji": null },
+            { "term": "gekauft", "translation": "acheté (participe de « kaufen »)", "emoji": "🛍️" },
+            { "term": "gespielt", "translation": "joué (participe de « spielen »)", "emoji": null },
+            { "term": "gelesen", "translation": "lu (participe de « lesen »)", "emoji": "📖" },
+            { "term": "früher", "translation": "autrefois, avant", "emoji": null },
+            { "term": "schon", "translation": "déjà", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Gestern habe ich Fußball gespielt.", "target": "Hier, j'ai joué au football." },
+            { "source": "Was hast du gemacht?", "target": "Qu'as-tu fait ?" },
+            { "source": "Ich habe Pizza gegessen.", "target": "J'ai mangé une pizza." },
+            { "source": "Wir sind nach Berlin gefahren.", "target": "Nous sommes allés à Berlin." },
+            { "source": "Ich habe das Buch gelesen.", "target": "J'ai lu le livre." },
+            { "source": "Letzte Woche bin ich krank gewesen.", "target": "La semaine dernière, j'ai été malade." },
+            { "source": "Ich habe ein Buch gekauft.", "target": "J'ai acheté un livre." },
+            { "source": "Hast du das schon gesehen?", "target": "As-tu déjà vu ça ?" }
+          ]
+        },
+        {
+          "id": "u6s2",
+          "title": "Le futur",
+          "icon": "🔮",
+          "tips": "En allemand, on exprime très souvent le futur avec le présent et un indicateur de temps : « Morgen fahre ich nach Berlin » (Demain, je vais à Berlin). Le futur avec « werden » + infinitif en fin de phrase existe aussi : « Ich werde später kommen » (Je viendrai plus tard). « Werden » se conjugue : ich werde, du wirst, er wird, wir werden.",
+          "vocab": [
+            { "term": "morgen", "translation": "demain", "emoji": "🌅" },
+            { "term": "nächste Woche", "translation": "la semaine prochaine", "emoji": "📅" },
+            { "term": "werden", "translation": "devenir (auxiliaire du futur)", "emoji": null },
+            { "term": "der Plan", "translation": "le projet, le plan", "emoji": "📝" },
+            { "term": "planen", "translation": "planifier, prévoir", "emoji": null },
+            { "term": "bald", "translation": "bientôt", "emoji": null },
+            { "term": "später", "translation": "plus tard", "emoji": "⏳" },
+            { "term": "die Zukunft", "translation": "l'avenir, le futur", "emoji": "🔮" },
+            { "term": "vielleicht", "translation": "peut-être", "emoji": null },
+            { "term": "hoffentlich", "translation": "espérons-le, j'espère que", "emoji": "🤞" },
+            { "term": "nächstes Jahr", "translation": "l'année prochaine", "emoji": null },
+            { "term": "der Urlaub", "translation": "les vacances, les congés", "emoji": "🏖️" }
+          ],
+          "sentences": [
+            { "source": "Morgen fahre ich nach Berlin.", "target": "Demain, je vais à Berlin." },
+            { "source": "Ich werde später kommen.", "target": "Je viendrai plus tard." },
+            { "source": "Nächste Woche habe ich Urlaub.", "target": "La semaine prochaine, je suis en vacances." },
+            { "source": "Was sind deine Pläne?", "target": "Quels sont tes projets ?" },
+            { "source": "Wir werden bald ankommen.", "target": "Nous arriverons bientôt." },
+            { "source": "Wir gehen vielleicht ins Kino.", "target": "Nous irons peut-être au cinéma." },
+            { "source": "Hoffentlich wird es morgen schön.", "target": "J'espère qu'il fera beau demain." },
+            { "source": "Ich plane meinen Urlaub.", "target": "Je planifie mes vacances." }
+          ]
+        },
+        {
+          "id": "u6s3",
+          "title": "Donner son avis",
+          "icon": "💬",
+          "tips": "Pour donner son avis, on utilise « Ich glaube, dass... » (Je crois que...) ou « Ich finde... » (Je trouve...). Attention : après « dass », le verbe conjugué se place en fin de proposition : « Ich glaube, dass du recht hast » (Je crois que tu as raison). « Meiner Meinung nach » (À mon avis) est une expression très courante pour commencer une phrase.",
+          "vocab": [
+            { "term": "die Meinung", "translation": "l'avis, l'opinion", "emoji": "💬" },
+            { "term": "glauben", "translation": "croire", "emoji": null },
+            { "term": "finden", "translation": "trouver (avoir une opinion)", "emoji": null },
+            { "term": "denken", "translation": "penser", "emoji": "🤔" },
+            { "term": "meiner Meinung nach", "translation": "à mon avis", "emoji": null },
+            { "term": "richtig", "translation": "juste, correct", "emoji": "✅" },
+            { "term": "falsch", "translation": "faux", "emoji": "❌" },
+            { "term": "einverstanden", "translation": "d'accord", "emoji": "👍" },
+            { "term": "wichtig", "translation": "important", "emoji": null },
+            { "term": "langweilig", "translation": "ennuyeux", "emoji": "😴" },
+            { "term": "dass", "translation": "que (conjonction)", "emoji": null },
+            { "term": "recht haben", "translation": "avoir raison", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Was denkst du?", "target": "Qu'en penses-tu ?" },
+            { "source": "Ich glaube, dass du recht hast.", "target": "Je crois que tu as raison." },
+            { "source": "Meiner Meinung nach ist das richtig.", "target": "À mon avis, c'est juste." },
+            { "source": "Das ist falsch.", "target": "C'est faux." },
+            { "source": "Ich bin einverstanden.", "target": "Je suis d'accord." },
+            { "source": "Ich finde das Buch langweilig.", "target": "Je trouve le livre ennuyeux." },
+            { "source": "Das ist sehr wichtig.", "target": "C'est très important." },
+            { "source": "Was ist deine Meinung?", "target": "Quel est ton avis ?" }
+          ]
+        },
+        {
+          "id": "u6s4",
+          "title": "Voyager",
+          "icon": "✈️",
+          "tips": "« Reisen » signifie voyager et « die Reise » le voyage : « Gute Reise! » (Bon voyage !). Pour une destination, on utilise « nach » avec les villes et la plupart des pays : « nach Berlin », « nach Deutschland ». Avec la mer, on dit « ans Meer » (à la mer). « Ich packe meinen Koffer » (Je fais ma valise) est l'expression courante avant de partir.",
+          "vocab": [
+            { "term": "die Reise", "translation": "le voyage", "emoji": "🧳" },
+            { "term": "reisen", "translation": "voyager", "emoji": "🌍" },
+            { "term": "der Koffer", "translation": "la valise", "emoji": "🧳" },
+            { "term": "der Reisepass", "translation": "le passeport", "emoji": "🛂" },
+            { "term": "das Flugzeug", "translation": "l'avion", "emoji": "✈️" },
+            { "term": "der Flug", "translation": "le vol", "emoji": "🛫" },
+            { "term": "das Meer", "translation": "la mer", "emoji": "🌊" },
+            { "term": "der Strand", "translation": "la plage", "emoji": "🏖️" },
+            { "term": "das Ausland", "translation": "l'étranger (pays étranger)", "emoji": null },
+            { "term": "packen", "translation": "faire ses valises, emballer", "emoji": null },
+            { "term": "die Sehenswürdigkeit", "translation": "le site touristique, la curiosité", "emoji": "🏛️" },
+            { "term": "Gute Reise!", "translation": "Bon voyage !", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Ich reise gern ins Ausland.", "target": "J'aime voyager à l'étranger." },
+            { "source": "Ich packe meinen Koffer.", "target": "Je fais ma valise." },
+            { "source": "Hast du deinen Reisepass?", "target": "As-tu ton passeport ?" },
+            { "source": "Der Flug ist um sieben.", "target": "Le vol est à sept heures." },
+            { "source": "Wir fahren ans Meer.", "target": "Nous allons à la mer." },
+            { "source": "Der Strand ist schön.", "target": "La plage est belle." },
+            { "source": "Gute Reise, bis bald!", "target": "Bon voyage, à bientôt !" },
+            { "source": "Berlin hat viele Sehenswürdigkeiten.", "target": "Berlin a beaucoup de sites touristiques." }
+          ]
+        }
+      ]
+    }
+  ]
+}

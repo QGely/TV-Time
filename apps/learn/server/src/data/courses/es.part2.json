@@ -1,0 +1,394 @@
+{
+  "id": "es",
+  "title": "Espagnol",
+  "lang_name": "espagnol",
+  "flag": "🇪🇸",
+  "tts_lang": "es-ES",
+  "description": "Apprenez l'espagnol pas à pas, de la ville au voyage, pour vous débrouiller partout.",
+  "units": [
+    {
+      "id": "u4",
+      "title": "En ville",
+      "description": "Se repérer, demander son chemin, réserver un hôtel et prendre les transports.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u4s1",
+          "title": "Se déplacer",
+          "icon": "🚶",
+          "tips": "Le verbe « ir » (aller) est irrégulier : voy, vas, va, vamos, vais, van. Il se construit avec « a » : « Voy a la plaza » (Je vais à la place) ; « a + el » devient « al » : « Voy al puente ». Pour demander où se trouve un lieu, on utilise « ¿Dónde está... ? » : « ¿Dónde está la calle? » (Où est la rue ?).",
+          "vocab": [
+            { "term": "la calle", "translation": "la rue", "emoji": "🛣️" },
+            { "term": "la ciudad", "translation": "la ville", "emoji": "🏙️" },
+            { "term": "caminar", "translation": "marcher", "emoji": "🚶" },
+            { "term": "el mapa", "translation": "la carte, le plan", "emoji": "🗺️" },
+            { "term": "lejos", "translation": "loin", "emoji": null },
+            { "term": "cerca", "translation": "près", "emoji": null },
+            { "term": "aquí", "translation": "ici", "emoji": "📍" },
+            { "term": "allí", "translation": "là-bas", "emoji": null },
+            { "term": "ir", "translation": "aller", "emoji": null },
+            { "term": "cruzar", "translation": "traverser", "emoji": null },
+            { "term": "el puente", "translation": "le pont", "emoji": "🌉" },
+            { "term": "la plaza", "translation": "la place", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "La ciudad es grande.", "target": "La ville est grande." },
+            { "source": "Camino por la calle.", "target": "Je marche dans la rue." },
+            { "source": "¿Está lejos?", "target": "Est-ce loin ?" },
+            { "source": "El puente está cerca.", "target": "Le pont est près." },
+            { "source": "Vamos a la plaza.", "target": "Nous allons à la place." },
+            { "source": "Tengo un mapa.", "target": "J'ai une carte." },
+            { "source": "La plaza está allí.", "target": "La place est là-bas." },
+            { "source": "Cruzo la calle.", "target": "Je traverse la rue." }
+          ]
+        },
+        {
+          "id": "u4s2",
+          "title": "Les directions",
+          "icon": "🧭",
+          "tips": "Pour indiquer un chemin, on utilise l'impératif : « Gira a la izquierda » (Tourne à gauche), « Sigue todo recto » (Continue tout droit). Avec « usted » (vouvoiement), on dit « gire », « siga ». « Al lado de » (à côté de), « delante de » (devant) et « detrás de » (derrière) sont des locutions de lieu : « La parada está delante de la plaza ».",
+          "vocab": [
+            { "term": "la izquierda", "translation": "la gauche", "emoji": "⬅️" },
+            { "term": "la derecha", "translation": "la droite", "emoji": "➡️" },
+            { "term": "todo recto", "translation": "tout droit", "emoji": "⬆️" },
+            { "term": "girar", "translation": "tourner", "emoji": "🔄" },
+            { "term": "seguir", "translation": "continuer, suivre", "emoji": null },
+            { "term": "la esquina", "translation": "le coin (de la rue)", "emoji": null },
+            { "term": "al lado de", "translation": "à côté de", "emoji": null },
+            { "term": "delante de", "translation": "devant", "emoji": null },
+            { "term": "detrás de", "translation": "derrière", "emoji": null },
+            { "term": "el semáforo", "translation": "le feu (de circulation)", "emoji": "🚦" },
+            { "term": "perdido", "translation": "perdu", "emoji": "😕" },
+            { "term": "la parada", "translation": "l'arrêt", "emoji": "🚏" }
+          ],
+          "sentences": [
+            { "source": "Gira a la izquierda.", "target": "Tourne à gauche." },
+            { "source": "Sigue todo recto.", "target": "Continue tout droit." },
+            { "source": "La parada está a la derecha.", "target": "L'arrêt est à droite." },
+            { "source": "Estoy perdido.", "target": "Je suis perdu." },
+            { "source": "El semáforo está en la esquina.", "target": "Le feu est au coin de la rue." },
+            { "source": "La plaza está detrás del puente.", "target": "La place est derrière le pont." },
+            { "source": "Gira a la derecha en el semáforo.", "target": "Tourne à droite au feu." },
+            { "source": "La parada está delante de la plaza.", "target": "L'arrêt est devant la place." }
+          ]
+        },
+        {
+          "id": "u4s3",
+          "title": "À l’hôtel",
+          "icon": "🏨",
+          "tips": "Pour réserver, on dit « Quiero reservar una habitación » (Je veux réserver une chambre). « Para dos noches » signifie « pour deux nuits ». Le petit-déjeuner est « el desayuno » ; on demande « ¿Está incluido el desayuno? » (Le petit-déjeuner est-il inclus ?). Attention : « habitación » est féminin et s'écrit avec un accent.",
+          "vocab": [
+            { "term": "el hotel", "translation": "l'hôtel", "emoji": "🏨" },
+            { "term": "la habitación", "translation": "la chambre", "emoji": "🚪" },
+            { "term": "la llave", "translation": "la clé", "emoji": "🔑" },
+            { "term": "reservar", "translation": "réserver", "emoji": "📅" },
+            { "term": "la noche", "translation": "la nuit", "emoji": "🌙" },
+            { "term": "el desayuno", "translation": "le petit-déjeuner", "emoji": "🥐" },
+            { "term": "la recepción", "translation": "la réception", "emoji": "🛎️" },
+            { "term": "la cama", "translation": "le lit", "emoji": "🛏️" },
+            { "term": "el ascensor", "translation": "l'ascenseur", "emoji": "🛗" },
+            { "term": "la maleta", "translation": "la valise", "emoji": "🧳" },
+            { "term": "el baño", "translation": "la salle de bain", "emoji": "🛁" },
+            { "term": "incluido", "translation": "inclus", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Quiero reservar una habitación.", "target": "Je veux réserver une chambre." },
+            { "source": "¿Dónde está el hotel?", "target": "Où est l'hôtel ?" },
+            { "source": "Aquí está la llave.", "target": "Voici la clé." },
+            { "source": "Dos noches, por favor.", "target": "Deux nuits, s'il vous plaît." },
+            { "source": "¿Está incluido el desayuno?", "target": "Le petit-déjeuner est-il inclus ?" },
+            { "source": "La habitación tiene un baño.", "target": "La chambre a une salle de bain." },
+            { "source": "El ascensor está a la derecha.", "target": "L'ascenseur est à droite." },
+            { "source": "Mi maleta está en la recepción.", "target": "Ma valise est à la réception." }
+          ]
+        },
+        {
+          "id": "u4s4",
+          "title": "Les transports",
+          "icon": "🚌",
+          "tips": "On prend un transport avec « tomar » (ou « coger » en Espagne) : « Tomo el autobús » (Je prends le bus). On se déplace « en » + moyen de transport : « en taxi », « en tren », « en bicicleta ». Pour demander un horaire : « ¿A qué hora sale el tren? » (À quelle heure part le train ?).",
+          "vocab": [
+            { "term": "el autobús", "translation": "le bus", "emoji": "🚌" },
+            { "term": "el tren", "translation": "le train", "emoji": "🚆" },
+            { "term": "el metro", "translation": "le métro", "emoji": "🚇" },
+            { "term": "el taxi", "translation": "le taxi", "emoji": "🚕" },
+            { "term": "el billete", "translation": "le billet, le ticket", "emoji": "🎫" },
+            { "term": "la estación", "translation": "la gare, la station", "emoji": "🚉" },
+            { "term": "el aeropuerto", "translation": "l'aéroport", "emoji": "✈️" },
+            { "term": "tomar", "translation": "prendre", "emoji": null },
+            { "term": "salir", "translation": "partir, sortir", "emoji": null },
+            { "term": "llegar", "translation": "arriver", "emoji": null },
+            { "term": "el coche", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "la bicicleta", "translation": "le vélo", "emoji": "🚲" }
+          ],
+          "sentences": [
+            { "source": "Tomo el autobús.", "target": "Je prends le bus." },
+            { "source": "¿A qué hora sale el tren?", "target": "À quelle heure part le train ?" },
+            { "source": "Un billete, por favor.", "target": "Un billet, s'il vous plaît." },
+            { "source": "La estación está cerca.", "target": "La gare est près." },
+            { "source": "Vamos al aeropuerto en taxi.", "target": "Nous allons à l'aéroport en taxi." },
+            { "source": "El metro llega a las ocho.", "target": "Le métro arrive à huit heures." },
+            { "source": "Tengo un coche.", "target": "J'ai une voiture." },
+            { "source": "Voy en bicicleta.", "target": "Je vais à vélo." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Vie quotidienne",
+      "description": "Parler de sa maison, de son travail, de ses loisirs et de sa santé.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u5s1",
+          "title": "La maison",
+          "icon": "🏠",
+          "tips": "« Hay » signifie « il y a » et ne change jamais : « Hay una mesa en el salón » (Il y a une table dans le salon). « En » se traduit par « dans » ou « sur » selon le contexte : « en la cocina » (dans la cuisine). « Vivir en » : habiter dans : « Vivo en un piso » (J'habite dans un appartement).",
+          "vocab": [
+            { "term": "la casa", "translation": "la maison", "emoji": "🏠" },
+            { "term": "la cocina", "translation": "la cuisine", "emoji": "🍳" },
+            { "term": "el salón", "translation": "le salon", "emoji": "🛋️" },
+            { "term": "el dormitorio", "translation": "la chambre (à coucher)", "emoji": "🛏️" },
+            { "term": "la puerta", "translation": "la porte", "emoji": "🚪" },
+            { "term": "la ventana", "translation": "la fenêtre", "emoji": "🪟" },
+            { "term": "la mesa", "translation": "la table", "emoji": null },
+            { "term": "la silla", "translation": "la chaise", "emoji": "🪑" },
+            { "term": "el jardín", "translation": "le jardin", "emoji": "🌳" },
+            { "term": "limpiar", "translation": "nettoyer", "emoji": "🧹" },
+            { "term": "cocinar", "translation": "cuisiner", "emoji": "👩‍🍳" },
+            { "term": "el piso", "translation": "l'appartement", "emoji": "🏢" }
+          ],
+          "sentences": [
+            { "source": "Mi casa es pequeña.", "target": "Ma maison est petite." },
+            { "source": "Limpio la cocina.", "target": "Je nettoie la cuisine." },
+            { "source": "Hay una mesa en el salón.", "target": "Il y a une table dans le salon." },
+            { "source": "La puerta está cerca de la ventana.", "target": "La porte est près de la fenêtre." },
+            { "source": "Cocino en la cocina.", "target": "Je cuisine dans la cuisine." },
+            { "source": "El jardín es grande.", "target": "Le jardin est grand." },
+            { "source": "Hay dos sillas.", "target": "Il y a deux chaises." },
+            { "source": "Vivo en un piso.", "target": "J'habite dans un appartement." }
+          ]
+        },
+        {
+          "id": "u5s2",
+          "title": "Le travail",
+          "icon": "💼",
+          "tips": "« Trabajar » (travailler) est un verbe régulier en -ar : trabajo, trabajas, trabaja, trabajamos. On dit « trabajar en » + lieu : « Trabajo en una oficina ». Pour le métier, pas d'article après « ser » : « Soy médico » (Je suis médecin), « Es profesor » (Il est professeur). « Ocupado » s'emploie avec « estar » : « Está ocupado ».",
+          "vocab": [
+            { "term": "el trabajo", "translation": "le travail", "emoji": "💼" },
+            { "term": "trabajar", "translation": "travailler", "emoji": null },
+            { "term": "la oficina", "translation": "le bureau", "emoji": "🏢" },
+            { "term": "el jefe", "translation": "le chef, le patron", "emoji": "👔" },
+            { "term": "la reunión", "translation": "la réunion", "emoji": "👥" },
+            { "term": "el ordenador", "translation": "l'ordinateur", "emoji": "💻" },
+            { "term": "el correo", "translation": "le courrier, l'e-mail", "emoji": "📧" },
+            { "term": "el médico", "translation": "le médecin", "emoji": "🩺" },
+            { "term": "el profesor", "translation": "le professeur", "emoji": "👨‍🏫" },
+            { "term": "ganar", "translation": "gagner", "emoji": "💰" },
+            { "term": "el dinero", "translation": "l'argent", "emoji": "💶" },
+            { "term": "ocupado", "translation": "occupé", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Trabajo en una oficina.", "target": "Je travaille dans un bureau." },
+            { "source": "Mi jefe está ocupado.", "target": "Mon chef est occupé." },
+            { "source": "Tengo una reunión a las diez.", "target": "J'ai une réunion à dix heures." },
+            { "source": "Soy médico.", "target": "Je suis médecin." },
+            { "source": "Él es profesor.", "target": "Il est professeur." },
+            { "source": "Trabajo con el ordenador.", "target": "Je travaille avec l'ordinateur." },
+            { "source": "Gano dinero.", "target": "Je gagne de l'argent." },
+            { "source": "Me gusta mi trabajo.", "target": "J'aime mon travail." }
+          ]
+        },
+        {
+          "id": "u5s3",
+          "title": "Les loisirs",
+          "icon": "🎸",
+          "tips": "« Me gusta » (j'aime) se construit avec un infinitif ou un nom singulier : « Me gusta leer », « Me gusta la música » ; avec un pluriel, on dit « me gustan » : « Me gustan los deportes ». « Jugar a » s'emploie pour les jeux et les sports : « Juego al fútbol » (Je joue au football). « Jugar » change o en ue : juego, juegas, juega.",
+          "vocab": [
+            { "term": "el deporte", "translation": "le sport", "emoji": "🏅" },
+            { "term": "jugar", "translation": "jouer", "emoji": "🎮" },
+            { "term": "el fútbol", "translation": "le football", "emoji": "⚽" },
+            { "term": "leer", "translation": "lire", "emoji": "📖" },
+            { "term": "la música", "translation": "la musique", "emoji": "🎵" },
+            { "term": "cantar", "translation": "chanter", "emoji": "🎤" },
+            { "term": "bailar", "translation": "danser", "emoji": "💃" },
+            { "term": "la película", "translation": "le film", "emoji": "🎬" },
+            { "term": "nadar", "translation": "nager", "emoji": "🏊" },
+            { "term": "la playa", "translation": "la plage", "emoji": "🏖️" },
+            { "term": "el fin de semana", "translation": "le week-end", "emoji": "📅" },
+            { "term": "el parque", "translation": "le parc", "emoji": "🏞️" }
+          ],
+          "sentences": [
+            { "source": "Me gusta leer.", "target": "J'aime lire." },
+            { "source": "Juego al fútbol.", "target": "Je joue au football." },
+            { "source": "Bailamos el fin de semana.", "target": "Nous dansons le week-end." },
+            { "source": "Ella canta muy bien.", "target": "Elle chante très bien." },
+            { "source": "Nado en la playa.", "target": "Je nage à la plage." },
+            { "source": "La película es buena.", "target": "Le film est bon." },
+            { "source": "Me gusta la música.", "target": "J'aime la musique." },
+            { "source": "Vamos al parque.", "target": "Nous allons au parc." }
+          ]
+        },
+        {
+          "id": "u5s4",
+          "title": "La santé",
+          "icon": "💊",
+          "tips": "Pour dire qu'on a mal, on utilise « me duele » + partie du corps au singulier : « Me duele la cabeza » (J'ai mal à la tête), et « me duelen » au pluriel. « Estar enfermo » signifie « être malade » : on utilise « estar » car c'est un état passager. « Tener fiebre » : avoir de la fièvre (sans article).",
+          "vocab": [
+            { "term": "la salud", "translation": "la santé", "emoji": "💚" },
+            { "term": "enfermo", "translation": "malade", "emoji": "🤒" },
+            { "term": "el dolor", "translation": "la douleur", "emoji": null },
+            { "term": "doler", "translation": "faire mal", "emoji": null },
+            { "term": "la cabeza", "translation": "la tête", "emoji": "🙂" },
+            { "term": "el estómago", "translation": "l'estomac, le ventre", "emoji": null },
+            { "term": "la fiebre", "translation": "la fièvre", "emoji": "🌡️" },
+            { "term": "la medicina", "translation": "le médicament", "emoji": "💊" },
+            { "term": "la farmacia", "translation": "la pharmacie", "emoji": "⚕️" },
+            { "term": "el hospital", "translation": "l'hôpital", "emoji": "🏥" },
+            { "term": "descansar", "translation": "se reposer", "emoji": "😴" },
+            { "term": "la cita", "translation": "le rendez-vous", "emoji": "📅" }
+          ],
+          "sentences": [
+            { "source": "Estoy enfermo.", "target": "Je suis malade." },
+            { "source": "Me duele la cabeza.", "target": "J'ai mal à la tête." },
+            { "source": "Tengo fiebre.", "target": "J'ai de la fièvre." },
+            { "source": "¿Dónde está la farmacia?", "target": "Où est la pharmacie ?" },
+            { "source": "Tengo una cita con el médico.", "target": "J'ai un rendez-vous avec le médecin." },
+            { "source": "Quiero descansar.", "target": "Je veux me reposer." },
+            { "source": "Me duele el estómago.", "target": "J'ai mal au ventre." },
+            { "source": "El hospital está lejos.", "target": "L'hôpital est loin." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Conversation",
+      "description": "Raconter le passé, parler de l'avenir, donner son avis et voyager.",
+      "color": "#ff9600",
+      "skills": [
+        {
+          "id": "u6s1",
+          "title": "Le passé",
+          "icon": "⏳",
+          "tips": "Le passé composé espagnol (pretérito perfecto) se forme avec « haber » au présent + participe passé : he, has, ha, hemos, habéis, han + comido / hablado / visitado. Les participes réguliers se terminent en -ado (verbes en -ar) et -ido (verbes en -er, -ir). Avec « ayer » ou « la semana pasada », on préfère le passé simple : « Ayer fui al parque » (Hier je suis allé au parc), « Vi una película » (J'ai vu un film).",
+          "vocab": [
+            { "term": "ayer", "translation": "hier", "emoji": "📆" },
+            { "term": "anoche", "translation": "hier soir", "emoji": "🌙" },
+            { "term": "la semana pasada", "translation": "la semaine dernière", "emoji": null },
+            { "term": "el año pasado", "translation": "l'année dernière", "emoji": null },
+            { "term": "he comido", "translation": "j'ai mangé", "emoji": "🍽️" },
+            { "term": "he hablado", "translation": "j'ai parlé", "emoji": "💬" },
+            { "term": "he visitado", "translation": "j'ai visité", "emoji": null },
+            { "term": "fui", "translation": "je suis allé(e)", "emoji": null },
+            { "term": "vi", "translation": "j'ai vu", "emoji": "👀" },
+            { "term": "compré", "translation": "j'ai acheté", "emoji": "🛍️" },
+            { "term": "ya", "translation": "déjà", "emoji": null },
+            { "term": "todavía no", "translation": "pas encore", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Ayer fui al parque.", "target": "Hier je suis allé au parc." },
+            { "source": "Hoy he comido mucho.", "target": "Aujourd'hui j'ai beaucoup mangé." },
+            { "source": "He visitado la ciudad.", "target": "J'ai visité la ville." },
+            { "source": "Anoche vi una película.", "target": "Hier soir j'ai vu un film." },
+            { "source": "Compré un billete.", "target": "J'ai acheté un billet." },
+            { "source": "La semana pasada fui a la playa.", "target": "La semaine dernière je suis allé à la plage." },
+            { "source": "Ya he hablado con el médico.", "target": "J'ai déjà parlé avec le médecin." },
+            { "source": "Todavía no he comido.", "target": "Je n'ai pas encore mangé." }
+          ]
+        },
+        {
+          "id": "u6s2",
+          "title": "Le futur",
+          "icon": "🔮",
+          "tips": "Le futur proche se forme avec « ir a » + infinitif : « Voy a trabajar » (Je vais travailler), « Vamos a visitar » (Nous allons visiter). Le futur simple ajoute -é, -ás, -á, -emos, -éis, -án à l'infinitif : « Comeré » (Je mangerai), « Iré » (J'irai). « Mañana » (demain) et « la semana que viene » (la semaine prochaine) situent l'action.",
+          "vocab": [
+            { "term": "mañana", "translation": "demain", "emoji": "🌅" },
+            { "term": "la semana que viene", "translation": "la semaine prochaine", "emoji": null },
+            { "term": "el año que viene", "translation": "l'année prochaine", "emoji": null },
+            { "term": "voy a", "translation": "je vais (faire quelque chose)", "emoji": null },
+            { "term": "el plan", "translation": "le projet, le plan", "emoji": "📋" },
+            { "term": "pronto", "translation": "bientôt", "emoji": "⏰" },
+            { "term": "luego", "translation": "plus tard, ensuite", "emoji": null },
+            { "term": "comeré", "translation": "je mangerai", "emoji": "🍽️" },
+            { "term": "iré", "translation": "j'irai", "emoji": null },
+            { "term": "seré", "translation": "je serai", "emoji": null },
+            { "term": "el futuro", "translation": "l'avenir, le futur", "emoji": "🔮" },
+            { "term": "esperar", "translation": "attendre, espérer", "emoji": "⏳" }
+          ],
+          "sentences": [
+            { "source": "Mañana voy a trabajar.", "target": "Demain je vais travailler." },
+            { "source": "Iré a la playa la semana que viene.", "target": "J'irai à la plage la semaine prochaine." },
+            { "source": "Comeré en casa.", "target": "Je mangerai à la maison." },
+            { "source": "Seré médico.", "target": "Je serai médecin." },
+            { "source": "Tengo un plan para mañana.", "target": "J'ai un projet pour demain." },
+            { "source": "Vamos a visitar la ciudad.", "target": "Nous allons visiter la ville." },
+            { "source": "Voy a esperar aquí.", "target": "Je vais attendre ici." },
+            { "source": "Pronto iré al hospital.", "target": "Bientôt j'irai à l'hôpital." }
+          ]
+        },
+        {
+          "id": "u6s3",
+          "title": "Donner son avis",
+          "icon": "💬",
+          "tips": "Pour donner son avis, on utilise « creo que » (je crois que) ou « pienso que » (je pense que) : « Creo que es verdad » (Je crois que c'est vrai). « Estar de acuerdo » : être d'accord : « Estoy de acuerdo ». « Me parece » (il me semble, je trouve) est très courant : « Me parece interesante » (Je trouve ça intéressant).",
+          "vocab": [
+            { "term": "creo que", "translation": "je crois que", "emoji": "💭" },
+            { "term": "pienso que", "translation": "je pense que", "emoji": null },
+            { "term": "la opinión", "translation": "l'opinion, l'avis", "emoji": null },
+            { "term": "estar de acuerdo", "translation": "être d'accord", "emoji": "👍" },
+            { "term": "verdad", "translation": "vrai, la vérité", "emoji": "✅" },
+            { "term": "me parece", "translation": "il me semble, je trouve", "emoji": null },
+            { "term": "interesante", "translation": "intéressant", "emoji": null },
+            { "term": "aburrido", "translation": "ennuyeux", "emoji": "😴" },
+            { "term": "mejor", "translation": "meilleur, mieux", "emoji": null },
+            { "term": "peor", "translation": "pire", "emoji": null },
+            { "term": "quizás", "translation": "peut-être", "emoji": "🤔" },
+            { "term": "claro", "translation": "bien sûr", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Creo que es verdad.", "target": "Je crois que c'est vrai." },
+            { "source": "Estoy de acuerdo.", "target": "Je suis d'accord." },
+            { "source": "Me parece interesante.", "target": "Je trouve ça intéressant." },
+            { "source": "La película es aburrida.", "target": "Le film est ennuyeux." },
+            { "source": "Pienso que el tren es mejor.", "target": "Je pense que le train est mieux." },
+            { "source": "El autobús es peor.", "target": "Le bus est pire." },
+            { "source": "Quizás mañana.", "target": "Peut-être demain." },
+            { "source": "Es mi opinión.", "target": "C'est mon avis." }
+          ]
+        },
+        {
+          "id": "u6s4",
+          "title": "Voyager",
+          "icon": "✈️",
+          "tips": "« Viajar » (voyager) est régulier : viajo, viajas, viaja, viajamos. Le passeport est « el pasaporte » et le vol « el vuelo ». « Equipaje » (bagages) est un nom singulier en espagnol : « Mi equipaje está aquí » (Mes bagages sont ici). « ¡Buen viaje! » signifie « Bon voyage ! ».",
+          "vocab": [
+            { "term": "el viaje", "translation": "le voyage", "emoji": "✈️" },
+            { "term": "viajar", "translation": "voyager", "emoji": null },
+            { "term": "el pasaporte", "translation": "le passeport", "emoji": "🛂" },
+            { "term": "el vuelo", "translation": "le vol", "emoji": "🛫" },
+            { "term": "el extranjero", "translation": "l'étranger", "emoji": "🌍" },
+            { "term": "el turista", "translation": "le touriste", "emoji": "📸" },
+            { "term": "la frontera", "translation": "la frontière", "emoji": null },
+            { "term": "el país", "translation": "le pays", "emoji": "🗺️" },
+            { "term": "la aduana", "translation": "la douane", "emoji": null },
+            { "term": "el equipaje", "translation": "les bagages", "emoji": "🧳" },
+            { "term": "el seguro", "translation": "l'assurance", "emoji": null },
+            { "term": "¡Buen viaje!", "translation": "Bon voyage !", "emoji": "👋" }
+          ],
+          "sentences": [
+            { "source": "Me gusta viajar.", "target": "J'aime voyager." },
+            { "source": "¿Dónde está mi pasaporte?", "target": "Où est mon passeport ?" },
+            { "source": "El vuelo sale mañana.", "target": "Le vol part demain." },
+            { "source": "Vivo en el extranjero.", "target": "Je vis à l'étranger." },
+            { "source": "Cruzamos la frontera.", "target": "Nous traversons la frontière." },
+            { "source": "Mi equipaje está en el aeropuerto.", "target": "Mes bagages sont à l'aéroport." },
+            { "source": "Hay muchos turistas en la playa.", "target": "Il y a beaucoup de touristes à la plage." },
+            { "source": "¡Buen viaje!", "target": "Bon voyage !" }
+          ]
+        }
+      ]
+    }
+  ]
+}

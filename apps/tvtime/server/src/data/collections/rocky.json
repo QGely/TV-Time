@@ -1,0 +1,117 @@
+{
+  "id": "rocky",
+  "name": "Rocky & Creed",
+  "description": "Les six Rocky puis les trois Creed, dans l'ordre de sortie qui est aussi celui de l'histoire d'Adonis et de Rocky Balboa.",
+  "icon": "🥊",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Rocky",
+      "title_fr": "Rocky",
+      "year": 1976,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Rocky",
+      "note": "Rocky Balboa affronte Apollo Creed pour le titre",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rocky II",
+      "title_fr": "Rocky II : La Revanche",
+      "year": 1979,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Rocky",
+      "note": "La revanche contre Apollo",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rocky III",
+      "title_fr": "Rocky III : L'Œil du tigre",
+      "year": 1982,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Rocky",
+      "note": "Face à Clubber Lang, avec Apollo comme entraîneur",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rocky IV",
+      "title_fr": "Rocky IV",
+      "year": 1985,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Rocky",
+      "note": "Rocky contre Ivan Drago, en pleine guerre froide",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rocky V",
+      "title_fr": "Rocky V",
+      "year": 1990,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Rocky",
+      "note": "Rocky ruiné devient entraîneur de Tommy Gunn",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rocky Balboa",
+      "title_fr": "Rocky Balboa",
+      "year": 2006,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Rocky",
+      "note": "Seize ans plus tard, un dernier combat",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Creed",
+      "title_fr": "Creed : L'Héritage de Rocky Balboa",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Creed",
+      "note": "Adonis, fils d'Apollo, entraîné par Rocky",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Creed II",
+      "title_fr": "Creed II",
+      "year": 2018,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Creed",
+      "note": "Adonis face à Viktor Drago, le fils d'Ivan",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Creed III",
+      "title_fr": "Creed III",
+      "year": 2023,
+      "tmdb_id": null,
+      "chronological_order": 9,
+      "release_order": 9,
+      "group": "Creed",
+      "note": "Adonis retrouve son ami d'enfance Damian ; sans Rocky",
+      "optional": false
+    }
+  ]
+}
