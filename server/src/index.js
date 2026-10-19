@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { attachUser } from './auth.js';
 import { refreshFollowedShows } from './sync.js';
+import { warmUpCollections } from './collections.js';
 import authRoutes from './routes/auth.js';
 import settingsRoutes from './routes/settings.js';
 import discoverRoutes from './routes/discover.js';
@@ -60,3 +61,8 @@ app.listen(PORT, () => {
 const REFRESH_MS = (Number(process.env.REFRESH_HOURS) || 6) * 3600e3;
 setTimeout(() => refreshFollowedShows().catch((e) => console.error('[refresh]', e.message)), 60e3);
 setInterval(() => refreshFollowedShows().catch((e) => console.error('[refresh]', e.message)), REFRESH_MS);
+
+// Warm up the curated collections (TMDB lookups) a couple of minutes after boot, then daily
+// so collections edited on disk or newly configured API keys get picked up.
+setTimeout(() => warmUpCollections().catch((e) => console.error('[collections]', e.message)), 120e3);
+setInterval(() => warmUpCollections().catch((e) => console.error('[collections]', e.message)), 24 * 3600e3);

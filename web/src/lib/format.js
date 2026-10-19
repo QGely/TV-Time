@@ -124,3 +124,19 @@ export const AVATARS = ['🍿', '📺', '🎬', '🦊', '🐼', '🦄', '👾', 
 export function initials(name) {
   return (name || '?').trim().split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
 }
+
+export function bytes(n) {
+  if (n === null || n === undefined || Number.isNaN(n)) return '—';
+  const units = ['o', 'Ko', 'Mo', 'Go', 'To', 'Po'];
+  let i = 0;
+  let v = Number(n);
+  while (v >= 1024 && i < units.length - 1) { v /= 1024; i++; }
+  return `${v < 10 && i > 0 ? v.toFixed(1) : Math.round(v)} ${units[i]}`;
+}
+
+export function uptime(seconds) {
+  const d = Math.floor(seconds / 86400), h = Math.floor((seconds % 86400) / 3600), m = Math.floor((seconds % 3600) / 60);
+  if (d) return `${d} j ${h} h`;
+  if (h) return `${h} h ${m} min`;
+  return `${m} min`;
+}

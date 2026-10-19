@@ -1,0 +1,69 @@
+{
+  "id": "matrix",
+  "name": "Matrix",
+  "description": "Les quatre films Matrix des Wachowski, complétés par l'anthologie animée Animatrix. L'ordre affiché par défaut est l'ordre chronologique de l'histoire, qui diffère de l'ordre de sortie pour Animatrix.",
+  "icon": "💊",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "The Matrix",
+      "title_fr": "Matrix",
+      "year": 1999,
+      "tmdb_id": 603,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Trilogie originale",
+      "note": "Le film original, point de départ de la saga.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Animatrix",
+      "title_fr": "Animatrix",
+      "year": 2003,
+      "tmdb_id": 55931,
+      "chronological_order": 2,
+      "release_order": 3,
+      "group": "Anthologie animée",
+      "note": "Courts animés ; « Le Dernier Vol de l'Osiris » mène directement à Reloaded.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "The Matrix Reloaded",
+      "title_fr": "Matrix Reloaded",
+      "year": 2003,
+      "tmdb_id": 604,
+      "chronological_order": 3,
+      "release_order": 2,
+      "group": "Trilogie originale",
+      "note": "Suite directe du premier film, sortie en mai 2003.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Matrix Revolutions",
+      "title_fr": "Matrix Revolutions",
+      "year": 2003,
+      "tmdb_id": 605,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Trilogie originale",
+      "note": "Conclusion de la trilogie originale, sortie en novembre 2003.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Matrix Resurrections",
+      "title_fr": "Matrix Resurrections",
+      "year": 2021,
+      "tmdb_id": 624860,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Suite",
+      "note": "Se déroule environ 60 ans après Revolutions.",
+      "optional": false
+    }
+  ]
+}

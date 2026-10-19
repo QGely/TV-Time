@@ -5,7 +5,8 @@ import { useToast } from '../lib/toast.jsx';
 import { Avatar } from '../components/Avatar.jsx';
 import { Icon } from '../components/Icons.jsx';
 import { Spinner } from '../components/Misc.jsx';
-import { AVATARS } from '../lib/format.js';
+import { AVATARS, bytes, uptime } from '../lib/format.js';
+import { DiskGauge, useSystemInfo } from '../components/DiskGauge.jsx';
 
 export function Settings() {
   const { user, setUser, refresh, logout } = useAuth();
@@ -18,6 +19,7 @@ export function Settings() {
   const [avatar, setAvatar] = useState(user.avatar || '');
   const [pw, setPw] = useState({ current: '', next: '' });
   const [busy, setBusy] = useState(false);
+  const system = useSystemInfo();
 
   const load = () => api.get('/api/settings').then((s) => { setSettings(s); setLanguage(s.language); if (s.is_admin) api.get('/api/settings/users').then(setUsers).catch(() => {}); });
   useEffect(() => { load(); }, []);
@@ -63,6 +65,11 @@ export function Settings() {
   const refreshAll = async () => {
     setBusy(true);
     try { const r = await api.post('/api/settings/refresh'); toast(`${r.ok} série(s) mise(s) à jour sur ${r.due} à rafraîchir`, 'success'); } catch (err) { toast(err.message, 'error'); } finally { setBusy(false); }
+  };
+
+  const warmUp = async () => {
+    setBusy(true);
+    try { const r = await api.post('/api/settings/warm-up-collections'); toast(r.skipped ? 'Clé TMDB manquante' : `Collections préparées (${r.pending} titre(s) recherché(s))`, 'success'); } catch (err) { toast(err.message, 'error'); } finally { setBusy(false); }
   };
 
   const deleteUser = async (u) => {
@@ -131,6 +138,7 @@ export function Settings() {
               <div className="row wrap">
                 <button className="btn btn-primary" disabled={busy}>Enregistrer et tester</button>
                 <button type="button" className="btn" disabled={busy} onClick={refreshAll}><Icon.Refresh /> Actualiser toutes les séries</button>
+                <button type="button" className="btn" disabled={busy} onClick={warmUp} title="Recherche sur TMDB tous les titres des collections (affiches, progression)"><Icon.Stack /> Préparer les collections</button>
               </div>
             </form>
           </section>
@@ -151,6 +159,22 @@ export function Settings() {
           </section>
         </>
       ) : null}
+
+      <section className="settings-section card card-pad">
+        <h2>Serveur et stockage</h2>
+        {!system ? <Spinner /> : (
+          <>
+            <DiskGauge compact={false} />
+            <dl className="info-list mt-16">
+              <dt>Base de données</dt><dd>{bytes(system.db_bytes)} · {system.data_dir}</dd>
+              <dt>Contenu en cache</dt><dd>{system.counts.shows} séries · {system.counts.episodes} épisodes · {system.counts.movies} films</dd>
+              <dt>Utilisateurs</dt><dd>{system.counts.users}</dd>
+              <dt>En ligne depuis</dt><dd>{uptime(system.uptime_seconds)}</dd>
+              <dt>Version</dt><dd>TV Time {system.version} · Node {system.node}</dd>
+            </dl>
+          </>
+        )}
+      </section>
 
       <section className="settings-section">
         <button className="btn btn-ghost" onClick={logout}><Icon.Logout /> Se déconnecter</button>

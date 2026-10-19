@@ -7,6 +7,14 @@ import { Empty, ErrorBox, SectionHead, Spinner } from '../components/Misc.jsx';
 import { CollectionCard } from './Collections.jsx';
 
 const SECTIONS = {
+  all: [
+    { key: 'trending_tv', title: 'Séries tendances' },
+    { key: 'trending_movie', title: 'Films tendances' },
+    { key: 'on_the_air', title: 'Séries diffusées en ce moment' },
+    { key: 'now_playing', title: 'Films au cinéma' },
+    { key: 'popular_tv', title: 'Séries populaires' },
+    { key: 'popular_movie', title: 'Films populaires' },
+  ],
   tv: [
     { key: 'trending_tv', title: 'Tendances de la semaine' },
     { key: 'on_the_air', title: 'Diffusées en ce moment' },
@@ -31,7 +39,7 @@ function useDebounced(value, ms) {
 export function Explore() {
   const [params, setParams] = useSearchParams();
   const q = params.get('q') || '';
-  const type = params.get('type') === 'movie' ? 'movie' : 'tv';
+  const type = ['movie', 'tv'].includes(params.get('type')) ? params.get('type') : 'all';
   const [input, setInput] = useState(q);
   const debounced = useDebounced(input, 350);
   const [results, setResults] = useState(null);
@@ -48,7 +56,7 @@ export function Explore() {
     if (!q) { setResults(null); return; }
     setLoading(true);
     setError(null);
-    api.get(`/api/discover/search?q=${encodeURIComponent(q)}&type=${type}`)
+    api.get(`/api/discover/search?q=${encodeURIComponent(q)}&type=${type === 'all' ? 'multi' : type}`)
       .then((d) => !cancelled && setResults(d.results))
       .catch((e) => !cancelled && setError(e))
       .finally(() => !cancelled && setLoading(false));
@@ -64,10 +72,11 @@ export function Explore() {
       </div>
       <div className="searchbar mb-16">
         <Icon.Search />
-        <input ref={inputRef} className="input" placeholder={type === 'movie' ? 'Rechercher un film…' : 'Rechercher une série…'} value={input} onChange={(e) => setInput(e.target.value)} autoFocus />
+        <input ref={inputRef} className="input" placeholder={type === 'movie' ? 'Rechercher un film…' : type === 'tv' ? 'Rechercher une série…' : 'Rechercher une série ou un film…'} value={input} onChange={(e) => setInput(e.target.value)} autoFocus />
         {input ? <button className="clear" onClick={() => { setInput(''); inputRef.current?.focus(); }} aria-label="Effacer"><Icon.X /></button> : null}
       </div>
       <div className="tabs mb-16">
+        <button className={'tab' + (type === 'all' ? ' active' : '')} onClick={() => setType('all')}>Tout</button>
         <button className={'tab' + (type === 'tv' ? ' active' : '')} onClick={() => setType('tv')}>Séries</button>
         <button className={'tab' + (type === 'movie' ? ' active' : '')} onClick={() => setType('movie')}>Films</button>
       </div>
@@ -83,7 +92,7 @@ export function Explore() {
       ) : (
         <>
           <CollectionsRow />
-          {type === 'tv' ? <Recommendations /> : null}
+          {type !== 'movie' ? <Recommendations /> : null}
           {SECTIONS[type].map((s) => <DiscoverRow key={s.key} listKey={s.key} title={s.title} />)}
         </>
       )}

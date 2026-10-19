@@ -1,0 +1,81 @@
+{
+  "id": "john-wick",
+  "name": "John Wick",
+  "description": "Tous les films et la série de l'univers John Wick. L'ordre affiché par défaut est l'ordre chronologique de l'histoire (The Continental dans les années 1970, Ballerina entre les chapitres 3 et 4), qui diffère de l'ordre de sortie.",
+  "icon": "🐕",
+  "category": "action",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "The Continental: From the World of John Wick",
+      "title_fr": "The Continental",
+      "year": 2023,
+      "tmdb_id": 106379,
+      "chronological_order": 1,
+      "release_order": 5,
+      "group": "Préquel",
+      "note": "Se déroule dans les années 1970, jeunesse de Winston",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "John Wick",
+      "title_fr": "John Wick",
+      "year": 2014,
+      "tmdb_id": 245891,
+      "chronological_order": 2,
+      "release_order": 1,
+      "group": "Films principaux",
+      "note": "Le retour de Baba Yaga",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "John Wick: Chapter 2",
+      "title_fr": "John Wick 2",
+      "year": 2017,
+      "tmdb_id": 324552,
+      "chronological_order": 3,
+      "release_order": 2,
+      "group": "Films principaux",
+      "note": "Quelques jours après le premier film",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "John Wick: Chapter 3 - Parabellum",
+      "title_fr": "John Wick Parabellum",
+      "year": 2019,
+      "tmdb_id": 458156,
+      "chronological_order": 4,
+      "release_order": 3,
+      "group": "Films principaux",
+      "note": "Reprend immédiatement après le chapitre 2",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ballerina",
+      "title_fr": "Ballerina",
+      "year": 2025,
+      "tmdb_id": 541671,
+      "chronological_order": 5,
+      "release_order": 6,
+      "group": "Spin-off",
+      "note": "Se déroule entre Parabellum et le chapitre 4",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "John Wick: Chapter 4",
+      "title_fr": "John Wick : Chapitre 4",
+      "year": 2023,
+      "tmdb_id": 603692,
+      "chronological_order": 6,
+      "release_order": 4,
+      "group": "Films principaux",
+      "note": "Le duel final contre la Grande Table",
+      "optional": false
+    }
+  ]
+}

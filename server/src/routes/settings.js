@@ -1,8 +1,12 @@
 import { Router } from 'express';
-import { db, getSetting, setSetting } from '../db.js';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { db, getSetting, setSetting, DATA_DIR } from '../db.js';
 import { requireAdmin, requireAuth, publicUser } from '../auth.js';
 import { getApiKey, getLanguage, tmdb } from '../tmdb.js';
 import { refreshFollowedShows } from '../sync.js';
+import { warmUpCollections } from '../collections.js';
 
 const r = Router();
 
@@ -43,6 +47,14 @@ r.post('/refresh', requireAdmin, async (_req, res) => {
   }
 });
 
+r.post('/warm-up-collections', requireAdmin, async (_req, res) => {
+  try {
+    res.json(await warmUpCollections());
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 r.get('/users', requireAdmin, (_req, res) => {
   res.json(db.prepare('SELECT * FROM users ORDER BY id').all().map(publicUser));
 });
@@ -52,6 +64,44 @@ r.delete('/users/:id', requireAdmin, (req, res) => {
   if (id === req.user.id) return res.status(400).json({ error: 'Impossible de supprimer votre propre compte' });
   db.prepare('DELETE FROM users WHERE id = ?').run(id);
   res.json({ ok: true });
+});
+
+
+const pkg = JSON.parse(fs.readFileSync(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../package.json'), 'utf8'));
+
+function fileSize(p) {
+  try { return fs.statSync(p).size; } catch { return 0; }
+}
+
+/** Disk usage of the data directory, database size and server facts (visible to every signed-in user). */
+r.get('/system', requireAuth, async (_req, res) => {
+  let disk = null;
+  try {
+    const st = await fs.promises.statfs(DATA_DIR);
+    const total = Number(st.blocks) * Number(st.bsize);
+    const free = Number(st.bfree) * Number(st.bsize);
+    const available = Number(st.bavail) * Number(st.bsize);
+    disk = { total, free, available, used: total - free, percent_used: total ? Math.round(((total - free) / total) * 100) : 0 };
+  } catch (e) {
+    disk = { error: e.message };
+  }
+  const dbPath = path.join(DATA_DIR, 'tvtime.db');
+  const counts = {
+    users: db.prepare('SELECT COUNT(*) AS n FROM users').get().n,
+    shows: db.prepare('SELECT COUNT(*) AS n FROM shows').get().n,
+    episodes: db.prepare('SELECT COUNT(*) AS n FROM episodes').get().n,
+    movies: db.prepare('SELECT COUNT(*) AS n FROM movies').get().n,
+    watched: db.prepare('SELECT COUNT(*) AS n FROM watched_episodes').get().n,
+  };
+  res.json({
+    version: pkg.version,
+    node: process.version,
+    uptime_seconds: Math.round(process.uptime()),
+    data_dir: DATA_DIR,
+    db_bytes: fileSize(dbPath) + fileSize(dbPath + '-wal'),
+    disk,
+    counts,
+  });
 });
 
 export default r;

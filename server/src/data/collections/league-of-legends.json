@@ -1,0 +1,33 @@
+{
+  "id": "league-of-legends",
+  "name": "League of Legends (Arcane)",
+  "description": "Tout ce qui se regarde dans l'univers de League of Legends : la série Arcane de Netflix (2 saisons) et le documentaire sur la naissance de Riot Games.",
+  "icon": "🎮",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "League of Legends: Origins",
+      "title_fr": "League of Legends: Origins",
+      "year": 2019,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Documentaires",
+      "note": "Documentaire Netflix sur la naissance de Riot Games et du jeu.",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Arcane",
+      "title_fr": "Arcane",
+      "year": 2021,
+      "tmdb_id": 94605,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Série principale",
+      "note": "Série Netflix en 2 saisons (2021, 2024) : Vi, Jinx et la guerre Piltover/Zaun.",
+      "optional": false
+    }
+  ]
+}

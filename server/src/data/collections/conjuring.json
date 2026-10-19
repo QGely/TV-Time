@@ -1,0 +1,129 @@
+{
+  "id": "conjuring",
+  "name": "Conjuring Universe",
+  "description": "Tous les films de l'univers Conjuring (les Warren, Annabelle, La Nonne, La Llorona). L'ordre affiché par défaut est l'ordre chronologique de l'histoire (1952 à 1986), qui diffère de l'ordre de sortie en salles.",
+  "icon": "👻",
+  "category": "horror",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "The Nun",
+      "title_fr": "La Nonne",
+      "year": 2018,
+      "tmdb_id": 439079,
+      "chronological_order": 1,
+      "release_order": 5,
+      "group": "La Nonne",
+      "note": "Se déroule en 1952 en Roumanie, origine du démon Valak",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Annabelle: Creation",
+      "title_fr": "Annabelle 2 : La Création du Mal",
+      "year": 2017,
+      "tmdb_id": 396422,
+      "chronological_order": 2,
+      "release_order": 4,
+      "group": "Annabelle",
+      "note": "Se déroule en 1955, naissance de la poupée Annabelle",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Nun II",
+      "title_fr": "La Nonne : La Malédiction de Sainte-Lucie",
+      "year": 2023,
+      "tmdb_id": 968051,
+      "chronological_order": 3,
+      "release_order": 9,
+      "group": "La Nonne",
+      "note": "Se déroule en 1956 en France, retour de Valak",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Annabelle",
+      "title_fr": "Annabelle",
+      "year": 2014,
+      "tmdb_id": 250546,
+      "chronological_order": 4,
+      "release_order": 2,
+      "group": "Annabelle",
+      "note": "Se déroule en 1967, juste avant le prologue du premier Conjuring",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Conjuring",
+      "title_fr": "Conjuring : Les Dossiers Warren",
+      "year": 2013,
+      "tmdb_id": 138843,
+      "chronological_order": 5,
+      "release_order": 1,
+      "group": "Les Warren",
+      "note": "Se déroule en 1971, affaire de la famille Perron",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Annabelle Comes Home",
+      "title_fr": "Annabelle : La Maison du Mal",
+      "year": 2019,
+      "tmdb_id": 521029,
+      "chronological_order": 6,
+      "release_order": 7,
+      "group": "Annabelle",
+      "note": "Se déroule en 1972, une nuit chez les Warren",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Curse of La Llorona",
+      "title_fr": "La Malédiction de la Dame blanche",
+      "year": 2019,
+      "tmdb_id": 480414,
+      "chronological_order": 7,
+      "release_order": 6,
+      "group": "Spin-off",
+      "note": "Se déroule en 1973 à Los Angeles, lien ténu avec l'univers",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "The Conjuring 2",
+      "title_fr": "Conjuring 2 : Le Cas Enfield",
+      "year": 2016,
+      "tmdb_id": 259693,
+      "chronological_order": 8,
+      "release_order": 3,
+      "group": "Les Warren",
+      "note": "Se déroule en 1977 à Londres, affaire d'Enfield",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Conjuring: The Devil Made Me Do It",
+      "title_fr": "Conjuring 3 : Sous l'emprise du Diable",
+      "year": 2021,
+      "tmdb_id": 423108,
+      "chronological_order": 9,
+      "release_order": 8,
+      "group": "Les Warren",
+      "note": "Se déroule en 1981, procès d'Arne Cheyenne Johnson",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Conjuring: Last Rites",
+      "title_fr": "Conjuring : L'Heure du jugement",
+      "year": 2025,
+      "tmdb_id": 1038392,
+      "chronological_order": 10,
+      "release_order": 10,
+      "group": "Les Warren",
+      "note": "Se déroule en 1986, affaire de la famille Smurl, dernière enquête",
+      "optional": false
+    }
+  ]
+}

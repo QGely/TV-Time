@@ -2,6 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { Icon, Logo } from './Icons.jsx';
 import { useAuth } from '../lib/auth.jsx';
 import { Avatar } from './Avatar.jsx';
+import { DiskGauge } from './DiskGauge.jsx';
 
 const links = [
   { to: '/', label: 'Accueil', icon: Icon.Home, end: true },
@@ -27,6 +28,7 @@ export function Layout() {
           </NavLink>
         ))}
         <div className="spacer" />
+        <DiskGauge />
         <NavLink to="/settings" className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}><Icon.Settings /> Paramètres</NavLink>
         <NavLink to="/profile" className="nav-user">
           <Avatar user={user} />

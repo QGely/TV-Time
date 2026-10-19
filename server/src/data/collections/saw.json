@@ -1,0 +1,129 @@
+{
+  "id": "saw",
+  "name": "Saw",
+  "description": "L'intégrale de la saga Saw, des pièges de Jigsaw jusqu'à Spirale. L'ordre affiché par défaut est l'ordre chronologique de l'histoire (Saw X se situe entre Saw et Saw II), qui diffère de l'ordre de sortie.",
+  "icon": "🪚",
+  "category": "horror",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Saw",
+      "title_fr": "Saw",
+      "year": 2004,
+      "tmdb_id": 176,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Saga originale",
+      "note": "Le film fondateur : deux hommes enchaînés dans une salle de bain.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw X",
+      "title_fr": "Saw X",
+      "year": 2023,
+      "tmdb_id": 951491,
+      "chronological_order": 2,
+      "release_order": 10,
+      "group": "Saga originale",
+      "note": "Se déroule entre Saw et Saw II : John Kramer se venge à Mexico.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw II",
+      "title_fr": "Saw 2",
+      "year": 2005,
+      "tmdb_id": 215,
+      "chronological_order": 3,
+      "release_order": 2,
+      "group": "Saga originale",
+      "note": "Suite directe : la maison piégée ; Amanda révélée comme apprentie de Jigsaw.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw III",
+      "title_fr": "Saw 3",
+      "year": 2006,
+      "tmdb_id": 214,
+      "chronological_order": 4,
+      "release_order": 3,
+      "group": "Saga originale",
+      "note": "Les derniers jours de Jigsaw ; se déroule en parallèle de Saw 4.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw IV",
+      "title_fr": "Saw 4",
+      "year": 2007,
+      "tmdb_id": 663,
+      "chronological_order": 5,
+      "release_order": 4,
+      "group": "Saga originale",
+      "note": "Simultané à Saw 3 ; révèle le passé de Kramer.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw V",
+      "title_fr": "Saw 5",
+      "year": 2008,
+      "tmdb_id": 12819,
+      "chronological_order": 6,
+      "release_order": 5,
+      "group": "Saga originale",
+      "note": "Hoffman couvre ses traces, l'agent Strahm enquête.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw VI",
+      "title_fr": "Saw 6",
+      "year": 2009,
+      "tmdb_id": 22804,
+      "chronological_order": 7,
+      "release_order": 6,
+      "group": "Saga originale",
+      "note": "Le testament de Jigsaw et les assurances santé.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Saw 3D",
+      "title_fr": "Saw 3D : Chapitre final",
+      "year": 2010,
+      "tmdb_id": 41439,
+      "chronological_order": 8,
+      "release_order": 7,
+      "group": "Saga originale",
+      "note": "Conclusion de la saga originale (aussi appelé Saw : Chapitre final).",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Jigsaw",
+      "title_fr": "Jigsaw",
+      "year": 2017,
+      "tmdb_id": null,
+      "chronological_order": 9,
+      "release_order": 8,
+      "group": "Nouvelle ère",
+      "note": "Dix ans après la mort de Kramer, les jeux reprennent.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Spiral: From the Book of Saw",
+      "title_fr": "Spirale : L'Héritage de Saw",
+      "year": 2021,
+      "tmdb_id": null,
+      "chronological_order": 10,
+      "release_order": 9,
+      "group": "Spin-off",
+      "note": "Spin-off avec Chris Rock : un imitateur de Jigsaw, sans John Kramer.",
+      "optional": true
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "cars",
+  "name": "Cars",
+  "description": "Les aventures de Flash McQueen et de ses amis de Radiator Springs, avec les spin-offs Planes et la série Cars : Sur la route. L'ordre affiché par défaut suit l'ordre de sortie, qui correspond ici à l'ordre chronologique de l'histoire.",
+  "icon": "🏁",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Cars",
+      "title_fr": "Cars",
+      "year": 2006,
+      "tmdb_id": 920,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Trilogie Cars",
+      "note": "Flash McQueen découvre Radiator Springs.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Cars 2",
+      "title_fr": "Cars 2",
+      "year": 2011,
+      "tmdb_id": 49013,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Trilogie Cars",
+      "note": "Martin embarqué dans une intrigue d'espionnage lors du Grand Prix mondial.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Planes",
+      "title_fr": "Planes",
+      "year": 2013,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Spin-off Planes",
+      "note": "Spin-off DisneyToon dans l'univers de Cars, sans les personnages principaux.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Planes: Fire & Rescue",
+      "title_fr": "Planes 2",
+      "year": 2014,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Spin-off Planes",
+      "note": "Suite de Planes : Dusty devient pompier du ciel.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Cars 3",
+      "title_fr": "Cars 3",
+      "year": 2017,
+      "tmdb_id": 260514,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Trilogie Cars",
+      "note": "Flash McQueen face à la nouvelle génération de coureurs.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Cars on the Road",
+      "title_fr": "Cars : Sur la route",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Série",
+      "note": "Mini-série Disney+ : road trip de Flash et Martin après Cars 3.",
+      "optional": true
+    }
+  ]
+}

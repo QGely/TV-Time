@@ -1,0 +1,129 @@
+{
+  "id": "alien",
+  "name": "Alien",
+  "description": "Tous les films et la série de la saga Alien, y compris les préquelles de Ridley Scott et les crossovers avec Predator. L'ordre affiché par défaut est l'ordre chronologique de l'histoire (de Prometheus à Alien, la résurrection), qui diffère de l'ordre de sortie en salles.",
+  "icon": "👽",
+  "category": "horror",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "AVP: Alien vs. Predator",
+      "title_fr": "Alien vs. Predator",
+      "year": 2004,
+      "tmdb_id": 395,
+      "chronological_order": 1,
+      "release_order": 5,
+      "group": "Crossovers Predator",
+      "note": "Se déroule en 2004 ; crossover non canonique, à ignorer si besoin",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Aliens vs Predator: Requiem",
+      "title_fr": "Aliens vs. Predator: Requiem",
+      "year": 2007,
+      "tmdb_id": 440,
+      "chronological_order": 2,
+      "release_order": 6,
+      "group": "Crossovers Predator",
+      "note": "Suite directe d'Alien vs. Predator, toujours en 2004",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Prometheus",
+      "title_fr": "Prometheus",
+      "year": 2012,
+      "tmdb_id": 70981,
+      "chronological_order": 3,
+      "release_order": 7,
+      "group": "Préquelles",
+      "note": "Se déroule en 2093, près de 30 ans avant Alien",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Alien: Covenant",
+      "title_fr": "Alien: Covenant",
+      "year": 2017,
+      "tmdb_id": 126889,
+      "chronological_order": 4,
+      "release_order": 8,
+      "group": "Préquelles",
+      "note": "Se déroule en 2104, dix ans après Prometheus",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Alien: Earth",
+      "title_fr": "Alien: Earth",
+      "year": 2025,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 10,
+      "group": "Série",
+      "note": "Se déroule en 2120, deux ans avant le premier Alien",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Alien",
+      "title_fr": "Alien, le huitième passager",
+      "year": 1979,
+      "tmdb_id": 348,
+      "chronological_order": 6,
+      "release_order": 1,
+      "group": "Saga principale",
+      "note": "Se déroule en 2122 ; le film fondateur de Ridley Scott",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Alien: Romulus",
+      "title_fr": "Alien: Romulus",
+      "year": 2024,
+      "tmdb_id": 945961,
+      "chronological_order": 7,
+      "release_order": 9,
+      "group": "Saga principale",
+      "note": "Se déroule en 2142, entre Alien et Aliens",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Aliens",
+      "title_fr": "Aliens, le retour",
+      "year": 1986,
+      "tmdb_id": 679,
+      "chronological_order": 8,
+      "release_order": 2,
+      "group": "Saga principale",
+      "note": "Se déroule en 2179, 57 ans après Alien",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Alien³",
+      "title_fr": "Alien³",
+      "year": 1992,
+      "tmdb_id": 8077,
+      "chronological_order": 9,
+      "release_order": 3,
+      "group": "Saga principale",
+      "note": "Suite directe d'Aliens, toujours en 2179",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Alien Resurrection",
+      "title_fr": "Alien, la résurrection",
+      "year": 1997,
+      "tmdb_id": 8078,
+      "chronological_order": 10,
+      "release_order": 4,
+      "group": "Saga principale",
+      "note": "Se déroule en 2379, 200 ans après Alien³",
+      "optional": false
+    }
+  ]
+}

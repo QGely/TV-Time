@@ -1,0 +1,81 @@
+{
+  "id": "bourne",
+  "name": "Jason Bourne",
+  "description": "Jason Bourne, agent amnésique de la CIA, traque ceux qui l'ont créé. L'ordre de sortie des films suit ici la chronologie de l'histoire (Legacy se déroule en parallèle d'Ultimatum).",
+  "icon": "🧳",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "The Bourne Identity",
+      "title_fr": "La Mémoire dans la peau",
+      "year": 2002,
+      "tmdb_id": 2501,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Trilogie originale",
+      "note": "Bourne est repêché en Méditerranée, sans aucun souvenir.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Bourne Supremacy",
+      "title_fr": "La Mort dans la peau",
+      "year": 2004,
+      "tmdb_id": 2502,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Trilogie originale",
+      "note": "Deux ans après Identity ; de Goa à Berlin puis Moscou.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Bourne Ultimatum",
+      "title_fr": "La Vengeance dans la peau",
+      "year": 2007,
+      "tmdb_id": 2503,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Trilogie originale",
+      "note": "Reprend directement après la fin de Supremacy.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Bourne Legacy",
+      "title_fr": "Jason Bourne : L'Héritage",
+      "year": 2012,
+      "tmdb_id": 49040,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Spin-off",
+      "note": "Spin-off avec Aaron Cross ; se déroule pendant Ultimatum.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Jason Bourne",
+      "title_fr": "Jason Bourne",
+      "year": 2016,
+      "tmdb_id": 324668,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Retour de Bourne",
+      "note": "Dix ans après Ultimatum ; ignore les événements de Legacy.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Treadstone",
+      "title_fr": "Treadstone",
+      "year": 2019,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Série dérivée",
+      "note": "Série sans Bourne : origines du programme en 1973 et agents en 2019.",
+      "optional": true
+    }
+  ]
+}

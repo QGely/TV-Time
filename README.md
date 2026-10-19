@@ -21,6 +21,9 @@ via une clé API gratuite. Toutes **vos** données (comptes, progression, histor
   avec bascule ordre chronologique / ordre de sortie, titres optionnels masquables, et progression par collection.
 - **Profil et statistiques** : temps passé (mois / jours / heures), épisodes et séries, activité sur 12 mois, genres préférés,
   jours de visionnage, top séries, badges, séries de jours consécutifs.
+- **Espace disque** : jauge de l'espace restant sur le NAS dans la barre latérale et dans Paramètres (taille de la base, uptime).
+- **Pensé pour l'ordinateur, le téléphone et la télé** : barre de navigation en bas sur mobile, mise à l'échelle sur grands
+  écrans, navigation au clavier ou à la télécommande avec focus visible.
 - **Multi-utilisateurs** : chaque membre du foyer a son compte et sa progression ; fil d'activité commun.
 - **Mise à jour automatique** des séries suivies (nouveaux épisodes, dates) toutes les 6 h.
 - Interface en français, responsive (barre de navigation en bas sur mobile), installable comme application web (PWA basique).

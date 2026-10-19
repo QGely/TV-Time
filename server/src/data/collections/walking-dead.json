@@ -1,0 +1,93 @@
+{
+  "id": "walking-dead",
+  "name": "The Walking Dead",
+  "description": "Toutes les séries de l'univers The Walking Dead, de Fear the Walking Dead aux spin-offs récents (Dead City, Daryl Dixon, The Ones Who Live). L'ordre affiché par défaut suit la chronologie de l'histoire, qui diffère de l'ordre de diffusion.",
+  "icon": "🧟",
+  "category": "series",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Fear the Walking Dead",
+      "title_fr": "Fear the Walking Dead",
+      "year": 2015,
+      "tmdb_id": 62286,
+      "chronological_order": 1,
+      "release_order": 2,
+      "group": "Spin-off",
+      "note": "Débute dès les premiers jours de l'épidémie, à Los Angeles.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Walking Dead",
+      "title_fr": "The Walking Dead",
+      "year": 2010,
+      "tmdb_id": 1402,
+      "chronological_order": 2,
+      "release_order": 1,
+      "group": "Série principale",
+      "note": "La série mère : Rick se réveille du coma après le début de l'apocalypse.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Walking Dead: World Beyond",
+      "title_fr": "The Walking Dead: World Beyond",
+      "year": 2020,
+      "tmdb_id": 94305,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Spin-off",
+      "note": "Dix ans après l'épidémie ; introduit le CRM, utile pour The Ones Who Live.",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Tales of the Walking Dead",
+      "title_fr": "Tales of the Walking Dead",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Anthologie",
+      "note": "Anthologie d'épisodes indépendants, sans lien avec l'intrigue principale.",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "The Walking Dead: The Ones Who Live",
+      "title_fr": "The Walking Dead: The Ones Who Live",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 7,
+      "group": "Suites",
+      "note": "Retrouvailles de Rick et Michonne, juste après la fin de la série mère.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Walking Dead: Dead City",
+      "title_fr": "The Walking Dead: Dead City",
+      "year": 2023,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 5,
+      "group": "Suites",
+      "note": "Maggie et Negan à Manhattan, quelques années après la fin de The Walking Dead.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Walking Dead: Daryl Dixon",
+      "title_fr": "The Walking Dead: Daryl Dixon",
+      "year": 2023,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 6,
+      "group": "Suites",
+      "note": "Daryl échoué en France, après la fin de la série mère.",
+      "optional": false
+    }
+  ]
+}

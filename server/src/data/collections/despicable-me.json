@@ -1,0 +1,93 @@
+{
+  "id": "despicable-me",
+  "name": "Moi, moche et méchant & Minions",
+  "description": "Toute la saga Illumination autour de Gru et de ses Minions, des origines des petites créatures jaunes aux aventures de la famille Gru. L'ordre affiché par défaut suit la chronologie de l'histoire (les Minions d'abord), qui diffère de l'ordre de sortie en salles.",
+  "icon": "🍌",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Minions",
+      "title_fr": "Les Minions",
+      "year": 2015,
+      "tmdb_id": 211672,
+      "chronological_order": 1,
+      "release_order": 3,
+      "group": "Minions",
+      "note": "Préquelle : 1968, les Minions cherchent un maître (Scarlet Overkill).",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Minions: The Rise of Gru",
+      "title_fr": "Les Minions 2 : Il était une fois Gru",
+      "year": 2022,
+      "tmdb_id": 438148,
+      "chronological_order": 2,
+      "release_order": 5,
+      "group": "Minions",
+      "note": "1976 : le jeune Gru rêve de devenir super-méchant.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Despicable Me",
+      "title_fr": "Moi, moche et méchant",
+      "year": 2010,
+      "tmdb_id": 20352,
+      "chronological_order": 3,
+      "release_order": 1,
+      "group": "Moi, moche et méchant",
+      "note": "Le film original : Gru adopte Margo, Edith et Agnès.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Despicable Me 2",
+      "title_fr": "Moi, moche et méchant 2",
+      "year": 2013,
+      "tmdb_id": 93456,
+      "chronological_order": 4,
+      "release_order": 2,
+      "group": "Moi, moche et méchant",
+      "note": "Gru rejoint la Ligue anti-vilains et rencontre Lucy.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Despicable Me 3",
+      "title_fr": "Moi, moche et méchant 3",
+      "year": 2017,
+      "tmdb_id": 324852,
+      "chronological_order": 5,
+      "release_order": 4,
+      "group": "Moi, moche et méchant",
+      "note": "Gru découvre son frère jumeau Dru face à Balthazar Bratt.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Despicable Me 4",
+      "title_fr": "Moi, moche et méchant 4",
+      "year": 2024,
+      "tmdb_id": 519182,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Moi, moche et méchant",
+      "note": "Naissance de Gru Jr. ; la famille se cache de Maxime Le Mal.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Minions 3",
+      "title_fr": "Les Minions 3",
+      "year": 2027,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Minions",
+      "note": "Annoncé pour 2027 ; place dans la chronologie encore inconnue.",
+      "optional": true
+    }
+  ]
+}

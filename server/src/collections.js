@@ -181,6 +181,25 @@ export function resolveCollection(collection, { force = false } = {}) {
   return run;
 }
 
+/**
+ * Background warm-up: resolves every collection one after the other so posters and
+ * progress are available without opening each collection first. Cheap once cached.
+ */
+export async function warmUpCollections() {
+  if (!hasApiKey()) return { skipped: true };
+  let pending = 0;
+  for (const c of loadCollections()) {
+    const resolved = resolvedMap(c.id);
+    const todo = c.items.filter((it) => !resolved.has(it.key)).length;
+    if (!todo) continue;
+    pending += todo;
+    await resolveCollection(c);
+    await new Promise((r) => setTimeout(r, 500));
+  }
+  if (pending) console.log(`[collections] préchauffage terminé (${pending} titres recherchés sur TMDB)`);
+  return { pending };
+}
+
 export function isResolving(collectionId) {
   return inflight.has(collectionId);
 }
@@ -227,12 +246,14 @@ export function listCollections(userId) {
         if (p) { started++; if (p.watched_count > 0 && p.remaining_count === 0) done++; }
       }
     }
-    const posters = c.items.slice(0, 4).map((it) => {
+    const posters = [];
+    for (const it of c.items) {
+      if (posters.length >= 4) break;
       const r = resolved.get(it.key);
-      if (!r || r.status !== 'ok') return null;
+      if (!r || r.status !== 'ok') continue;
       const row = it.type === 'movie' ? db.prepare('SELECT poster_path FROM movies WHERE id = ?').get(r.tmdb_id) : db.prepare('SELECT poster_path FROM shows WHERE id = ?').get(r.tmdb_id);
-      return row?.poster_path || null;
-    });
+      if (row?.poster_path) posters.push(row.poster_path);
+    }
     return {
       id: c.id,
       name: c.name,
