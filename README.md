@@ -1,160 +1,74 @@
-# TV Time — suivi de séries auto-hébergé
+# Trois applications pour la maison : TV Time · Sport · Apprendre
 
-Une application web à installer sur votre NAS (ou n'importe quel serveur Docker) qui reprend le principe de l'application TV Time :
-suivre ses séries épisode par épisode, savoir quoi regarder ensuite, voir les prochaines diffusions dans un calendrier,
-réagir aux épisodes et consulter ses statistiques de visionnage. Les films sont aussi pris en charge (liste à voir, vus, notes).
+Trois sites web indépendants, pensés pour tourner sur un NAS (ou un PC) avec Docker, chacun avec ses comptes, sa base de
+données et son look. Toutes vos données restent chez vous.
 
-Les métadonnées (affiches, épisodes, dates de diffusion, distribution) proviennent de [The Movie Database (TMDB)](https://www.themoviedb.org/),
-via une clé API gratuite. Toutes **vos** données (comptes, progression, historique) restent chez vous, dans une base SQLite.
+| Application | Port | Ce qu'elle fait | Dossier |
+|-------------|------|-----------------|---------|
+| **TV Time** | 3000 | Suivi de séries et de films façon TV Time : épisode par épisode, calendrier, collections (MCU, Star Wars…), stats | [`apps/tvtime`](apps/tvtime) |
+| **Sport** | 3001 | Carnet d'entraînement : 97 exercices avec schémas musculaires, programmes, routines, séances avec minuteur de repos, records, stats | [`apps/sport`](apps/sport) |
+| **Apprendre** | 3002 | Apprentissage des langues avec un parcours façon Duolingo : unités, leçons, XP, cœurs, série, classement du foyer | [`apps/learn`](apps/learn) |
 
-## Fonctionnalités
+Chaque application a son propre README avec le détail des fonctionnalités.
 
-- **Accueil « À regarder »** : vos séries en cours avec le prochain épisode à voir et un bouton pour le cocher en un clic.
-- **Fiche série** : saisons dépliables, coche par épisode, « marquer la saison comme vue », « tout marquer comme vu »,
-  clic droit sur un épisode pour cocher aussi tous les précédents, progression, prochain épisode diffusé, distribution, bande-annonce.
-- **Réactions et notes** : emoji (👍 😂 🤯 ❤️ 😢 👎) et note sur 10 par épisode ou par film, date de visionnage modifiable.
-- **Listes** : en cours, à jour, pas commencée, pour plus tard, arrêtée, favoris. Tri et filtre.
-- **Calendrier** : vue agenda et vue mois des épisodes à venir (et récents) de vos séries.
-- **Explorer** : recherche séries/films, tendances, populaires, diffusées en ce moment, recommandations basées sur votre liste.
-- **Collections** : des univers entiers dans le bon ordre (MCU chronologique avec les One-Shots et les séries, DCEU, The Boys,
-  Star Wars, Harry Potter, Terre du Milieu, Game of Thrones, Star Trek, Arcane, Naruto, Fast & Furious, James Bond, Conjuring…),
-  avec bascule ordre chronologique / ordre de sortie, titres optionnels masquables, et progression par collection.
-- **Profil et statistiques** : temps passé (mois / jours / heures), épisodes et séries, activité sur 12 mois, genres préférés,
-  jours de visionnage, top séries, badges, séries de jours consécutifs.
-- **Espace disque** : jauge de l'espace restant sur le NAS dans la barre latérale et dans Paramètres (taille de la base, uptime).
-- **Pensé pour l'ordinateur, le téléphone et la télé** : barre de navigation en bas sur mobile, mise à l'échelle sur grands
-  écrans, navigation au clavier ou à la télécommande avec focus visible.
-- **Multi-utilisateurs** : chaque membre du foyer a son compte et sa progression ; fil d'activité commun.
-- **Mise à jour automatique** des séries suivies (nouveaux épisodes, dates) toutes les 6 h.
-- Interface en français, responsive (barre de navigation en bas sur mobile), installable comme application web (PWA basique).
+## Installation avec Docker (NAS Synology, QNAP, Unraid, Portainer, PC)
 
-## Installation sur un NAS avec Docker
-
-### 1. Obtenir une clé API TMDB (gratuite)
-
-1. Créez un compte sur https://www.themoviedb.org/signup
-2. Allez dans **Paramètres → API** et demandez une clé (usage personnel).
-3. Copiez la **clé API (v3)** ou le **jeton d'accès en lecture (v4)** : les deux fonctionnent.
-
-Vous pourrez la saisir directement dans l'application (Paramètres) après la création du compte admin,
-ou la fournir via la variable d'environnement `TMDB_API_KEY`.
-
-### 2. Lancer avec Docker Compose (Synology Container Manager, QNAP Container Station, Unraid, Portainer…)
-
-Créez un dossier (par ex. `/volume1/docker/tvtime`) contenant ce fichier `docker-compose.yml` :
-
-```yaml
-services:
-  tvtime:
-    image: ghcr.io/qgely/tv-time:latest
-    container_name: tvtime
-    restart: unless-stopped
-    ports:
-      - "3000:3000"
-    environment:
-      - TMDB_API_KEY=            # optionnel : sinon à saisir dans l'application
-      - TMDB_LANGUAGE=fr-FR
-      - REFRESH_HOURS=6
-    volumes:
-      - ./data:/data              # base de données SQLite
-```
-
-Puis démarrez le projet (Container Manager → Projet → Créer, ou en ligne de commande) :
+1. Récupérez le dépôt (bouton « Code → Download ZIP » ou `git clone`).
+2. Dans le dossier, lancez :
 
 ```bash
-docker compose up -d
-```
-
-Ouvrez `http://IP-DU-NAS:3000`. Le **premier compte créé devient administrateur** : il configure la clé TMDB,
-la langue et peut ouvrir ou fermer les inscriptions pour les autres membres du foyer.
-
-> L'image est publiée automatiquement sur GitHub Container Registry (amd64 et arm64) par le workflow `.github/workflows/docker.yml`.
-> Si vous préférez construire l'image vous-même sur le NAS, remplacez `image:` par `build: .` après avoir cloné le dépôt.
-
-### Construire l'image soi-même
-
-```bash
-git clone https://github.com/qgely/tv-time.git
-cd tv-time
 docker compose up -d --build
 ```
 
+3. Ouvrez :
+   - TV Time : `http://IP-DU-NAS:3000`
+   - Sport : `http://IP-DU-NAS:3001`
+   - Apprendre : `http://IP-DU-NAS:3002`
+
+Sur chaque site, **le premier compte créé est administrateur**. Les autres membres du foyer créent ensuite leur compte
+(l'admin peut fermer les inscriptions).
+
+Pour TV Time, une clé API TMDB gratuite est nécessaire : voir [`apps/tvtime/README.md`](apps/tvtime/README.md).
+Elle se saisit dans l'application, jamais dans le dépôt.
+
+Vous n'utilisez qu'une ou deux applications ? Commentez les autres services dans `docker-compose.yml`.
+
+Les images sont aussi publiées sur GitHub Container Registry (`ghcr.io/qgely/tv-time-tvtime`, `…-sport`, `…-learn`,
+amd64 et arm64) : remplacez `build:` par `image:` dans le compose pour ne rien compiler sur le NAS.
+
 ### Sauvegarde
 
-Tout est dans le dossier `data/` (fichier `tvtime.db` + fichiers WAL). Sauvegardez ce dossier.
+Tout est dans `data/` : `data/tvtime`, `data/sport`, `data/learn` (un fichier SQLite chacun). Sauvegardez ce dossier.
 
 ### Accès depuis l'extérieur
 
-Placez l'application derrière votre reverse proxy habituel (Synology Reverse Proxy, Nginx Proxy Manager, Traefik, Caddy…)
-avec HTTPS. L'application écoute sur le port 3000 en HTTP et fait confiance aux en-têtes du proxy.
+Placez les applications derrière votre reverse proxy habituel (HTTPS). Chaque application écoute en HTTP sur son port et
+fait confiance aux en-têtes du proxy.
 
-## Ajouter ou modifier une collection
-
-Les collections sont de simples fichiers JSON dans `server/src/data/collections/`. Un fichier par collection :
-
-```json
-{
-  "id": "ma-collection",
-  "name": "Ma collection",
-  "description": "Une phrase en français.",
-  "icon": "🎬",
-  "category": "action",
-  "items": [
-    { "type": "movie", "title_en": "Iron Man", "title_fr": "Iron Man", "year": 2008, "tmdb_id": 1726,
-      "chronological_order": 2, "release_order": 1, "group": "Phase 1", "note": "Se déroule en 2010", "optional": false }
-  ]
-}
-```
-
-- `type` : `movie` ou `tv` (une série = une seule entrée).
-- `tmdb_id` est facultatif : le serveur retrouve chaque titre sur TMDB à partir de `title_en` + `year` et vérifie qu'un
-  identifiant fourni correspond bien (titre ou année) avant de l'utiliser. Les résultats sont mis en cache en base.
-- `chronological_order` et `release_order` doivent chacun être une permutation de 1 à N.
-- Catégories disponibles : `marvel`, `dc`, `scifi`, `fantasy`, `action`, `horror`, `series`, `animation`.
-
-Vérifiez vos fichiers avec `npm run validate:collections`, puis redémarrez le serveur (ou appelez `POST /api/collections/reload`
-en admin).
-
-## Variables d'environnement
-
-| Variable          | Défaut   | Description                                                                 |
-|-------------------|----------|-----------------------------------------------------------------------------|
-| `PORT`            | `3000`   | Port d'écoute                                                               |
-| `DATA_DIR`        | `/data`  | Dossier de la base SQLite                                                   |
-| `TMDB_API_KEY`    | —        | Clé API TMDB. Si absente, elle est saisie dans l'application (Paramètres).  |
-| `TMDB_LANGUAGE`   | `fr-FR`  | Langue des métadonnées (modifiable dans l'application si non définie ici)   |
-| `REFRESH_HOURS`   | `6`      | Intervalle de mise à jour automatique des séries suivies                    |
-
-## Développement local (sans Docker)
+## Sans Docker (test sur un PC)
 
 Prérequis : Node.js 22.
 
 ```bash
-npm install            # installe "concurrently" pour lancer les deux parties
-npm run install:all    # dépendances du serveur et du frontend
-cp .env.example .env   # puis renseignez TMDB_API_KEY (ou faites-le dans l'application)
-npm run dev            # API sur http://localhost:3000, frontend Vite sur http://localhost:5173
+npm install            # outil pour lancer les trois serveurs ensemble
+npm run install:all    # dépendances des trois applications
+npm run build          # compile les trois interfaces
+npm start              # lance TV Time (3000), Sport (3001) et Apprendre (3002)
 ```
 
-Pour un déploiement sans Docker : `npm run build` puis `npm start` (le serveur sert le frontend compilé depuis `web/dist`).
+Une seule application : `npm run install:sport`, `npm run build:sport`, `npm run start:sport` (idem `tvtime`, `learn`).
+En développement : `npm run dev:learn` (API + rechargement à chaud).
 
-## Architecture
+## Structure
 
 ```
-server/   API Node.js (Express 5) + SQLite (better-sqlite3), synchronisation TMDB, tâche de rafraîchissement
-web/      Frontend React 19 + Vite, sans dépendance UI externe (CSS maison, thème sombre + jaune)
+apps/
+  tvtime/   server (Express + SQLite + TMDB) · web (React/Vite) · Dockerfile
+  sport/    server (Express + SQLite, bibliothèque d'exercices et programmes en JSON) · web · Dockerfile
+  learn/    server (Express + SQLite, cours en JSON, générateur de leçons) · web · Dockerfile
+docker-compose.yml     les trois services
+.github/workflows/     publication des trois images Docker
 ```
 
-Principales routes de l'API (toutes sous `/api`, authentification par cookie de session) :
-
-- `auth/*` : inscription, connexion, profil
-- `discover/search`, `discover/list/:name`, `discover/recommendations`
-- `shows/:id` (+ `follow`, `list`, `episodes/:id/watch`, `episodes/:id/reaction`, `seasons/:n/watch`, `watch-all`, `refresh`)
-- `movies`, `movies/:id` (+ `watchlist`, `watched`, `reaction`)
-- `library`, `library/home`, `library/calendar`
-- `profile/stats`, `profile/feed`
-- `settings` (admin) : clé TMDB, langue, inscriptions, utilisateurs, rafraîchissement manuel
-
-## Crédits
-
-Ce projet utilise l'API de TMDB mais n'est ni approuvé ni certifié par TMDB. Il n'est pas affilié à TV Time.
+Les contenus (collections de séries, exercices, programmes, cours de langues) sont de simples fichiers JSON dans
+`apps/*/server/src/data/`, faciles à compléter.

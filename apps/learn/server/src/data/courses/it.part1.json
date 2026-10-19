@@ -1,0 +1,394 @@
+{
+  "id": "it",
+  "title": "Italien",
+  "lang_name": "italien",
+  "flag": "🇮🇹",
+  "tts_lang": "it-IT",
+  "description": "Apprends l'italien pas à pas : salutations, nombres, famille, nourriture, courses et vêtements.",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Les bases 1",
+      "description": "Se présenter, saluer, dire oui ou non et rester poli.",
+      "color": "#58cc02",
+      "skills": [
+        {
+          "id": "u1s1",
+          "title": "Salutations",
+          "icon": "👋",
+          "tips": "« Ciao » est familier et sert aussi bien pour dire bonjour que au revoir. « Buongiorno » s'emploie le matin et jusqu'en début d'après-midi, « buonasera » ensuite ; « buonanotte » se dit seulement au moment d'aller dormir. « Arrivederci » est la formule polie pour prendre congé. Pour demander comment ça va, on dit « Come stai? » et on répond « Sto bene » (je vais bien).",
+          "vocab": [
+            { "term": "ciao", "translation": "salut (bonjour / au revoir)", "emoji": "👋" },
+            { "term": "buongiorno", "translation": "bonjour", "emoji": "🌅" },
+            { "term": "buonasera", "translation": "bonsoir", "emoji": "🌇" },
+            { "term": "buonanotte", "translation": "bonne nuit", "emoji": "🌙" },
+            { "term": "arrivederci", "translation": "au revoir", "emoji": "👋" },
+            { "term": "a presto", "translation": "à bientôt", "emoji": "⏰" },
+            { "term": "sì", "translation": "oui", "emoji": "✅" },
+            { "term": "no", "translation": "non", "emoji": "❌" },
+            { "term": "come stai?", "translation": "comment vas-tu ?", "emoji": "❓" },
+            { "term": "sto bene", "translation": "je vais bien", "emoji": "😊" },
+            { "term": "molto bene", "translation": "très bien", "emoji": "🌟" },
+            { "term": "e tu?", "translation": "et toi ?", "emoji": "🔁" }
+          ],
+          "sentences": [
+            { "source": "Ciao, come stai?", "target": "Salut, comment vas-tu ?" },
+            { "source": "Sto bene, e tu?", "target": "Je vais bien, et toi ?" },
+            { "source": "Sì, molto bene, e tu?", "target": "Oui, très bien, et toi ?" },
+            { "source": "Buongiorno, a presto.", "target": "Bonjour, à bientôt." },
+            { "source": "Buonasera, come stai?", "target": "Bonsoir, comment vas-tu ?" },
+            { "source": "Arrivederci, a presto.", "target": "Au revoir, à bientôt." },
+            { "source": "Ciao, buonanotte, a presto.", "target": "Salut, bonne nuit, à bientôt." },
+            { "source": "No, sto bene.", "target": "Non, je vais bien." }
+          ]
+        },
+        {
+          "id": "u1s2",
+          "title": "Se présenter",
+          "icon": "🙂",
+          "tips": "Pour se présenter, on dit « Mi chiamo... » (je m'appelle) ou « Sono... » (je suis). Le pronom sujet (io, tu) est généralement omis, car la terminaison du verbe suffit : « Sono francese ». Les adjectifs de nationalité s'écrivent sans majuscule (francese, italiano), contrairement aux noms de pays : la Francia, l'Italia. « Italiano » devient « italiana » au féminin, mais « francese » ne change pas.",
+          "vocab": [
+            { "term": "io", "translation": "je / moi", "emoji": "🙋" },
+            { "term": "mi chiamo", "translation": "je m'appelle", "emoji": "🏷️" },
+            { "term": "come ti chiami?", "translation": "comment t'appelles-tu ?", "emoji": "❓" },
+            { "term": "piacere", "translation": "enchanté(e)", "emoji": "🤝" },
+            { "term": "sono", "translation": "je suis", "emoji": "🙂" },
+            { "term": "francese", "translation": "français / française", "emoji": "🇫🇷" },
+            { "term": "italiano", "translation": "italien (au féminin : italiana)", "emoji": "🇮🇹" },
+            { "term": "la Francia", "translation": "la France", "emoji": "🗼" },
+            { "term": "l'Italia", "translation": "l'Italie", "emoji": "🍕" },
+            { "term": "di dove sei?", "translation": "d'où es-tu ?", "emoji": "🌍" },
+            { "term": "sono di...", "translation": "je suis de...", "emoji": "📍" },
+            { "term": "abito a...", "translation": "j'habite à...", "emoji": "🏠" }
+          ],
+          "sentences": [
+            { "source": "Ciao, mi chiamo Marco.", "target": "Salut, je m'appelle Marco." },
+            { "source": "Come ti chiami?", "target": "Comment t'appelles-tu ?" },
+            { "source": "Piacere, io sono Anna.", "target": "Enchantée, je suis Anna." },
+            { "source": "Sono francese, e tu?", "target": "Je suis français, et toi ?" },
+            { "source": "Di dove sei?", "target": "D'où es-tu ?" },
+            { "source": "Sono di Roma.", "target": "Je suis de Rome." },
+            { "source": "Abito a Milano.", "target": "J'habite à Milan." },
+            { "source": "Sì, sono italiano.", "target": "Oui, je suis italien." }
+          ]
+        },
+        {
+          "id": "u1s3",
+          "title": "Les nombres 0-20",
+          "icon": "🔢",
+          "tips": "Les nombres de 0 à 10 s'apprennent par cœur : zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci. De 11 à 16, on ajoute -dici : undici, dodici, tredici, quattordici, quindici, sedici ; de 17 à 19, le « dieci » passe devant : diciassette, diciotto, diciannove. Vingt se dit « venti ». Pour additionner, on dit « due e due fa quattro » (deux et deux font quatre). Attention : « uno » devient « un » devant un nom masculin (un caffè) et « una » devant un nom féminin (una pizza).",
+          "vocab": [
+            { "term": "zero", "translation": "zéro", "emoji": "0️⃣" },
+            { "term": "uno", "translation": "un", "emoji": "1️⃣" },
+            { "term": "due", "translation": "deux", "emoji": "2️⃣" },
+            { "term": "tre", "translation": "trois", "emoji": "3️⃣" },
+            { "term": "quattro", "translation": "quatre", "emoji": "4️⃣" },
+            { "term": "cinque", "translation": "cinq", "emoji": "5️⃣" },
+            { "term": "sei", "translation": "six", "emoji": "6️⃣" },
+            { "term": "sette", "translation": "sept", "emoji": "7️⃣" },
+            { "term": "otto", "translation": "huit", "emoji": "8️⃣" },
+            { "term": "nove", "translation": "neuf", "emoji": "9️⃣" },
+            { "term": "dieci", "translation": "dix", "emoji": "🔟" },
+            { "term": "venti", "translation": "vingt", "emoji": "2️⃣0️⃣" }
+          ],
+          "sentences": [
+            { "source": "Uno, due, tre, quattro.", "target": "Un, deux, trois, quatre." },
+            { "source": "Cinque, sei, sette, otto.", "target": "Cinq, six, sept, huit." },
+            { "source": "Nove, dieci, venti.", "target": "Neuf, dix, vingt." },
+            { "source": "Tre, due, uno, zero.", "target": "Trois, deux, un, zéro." },
+            { "source": "Dieci, nove, otto, sette.", "target": "Dix, neuf, huit, sept." },
+            { "source": "Tre e sette fa dieci.", "target": "Trois et sept font dix." },
+            { "source": "Quattro, cinque, sei.", "target": "Quatre, cinq, six." },
+            { "source": "Dieci e dieci fa venti.", "target": "Dix et dix font vingt." }
+          ]
+        },
+        {
+          "id": "u1s4",
+          "title": "Politesse",
+          "icon": "🙏",
+          "tips": "« Grazie » sert à remercier, et l'on répond « prego » (je vous en prie / de rien). « Per favore » signifie s'il te plaît ou s'il vous plaît. Pour s'excuser ou attirer l'attention, on dit « scusa » à quelqu'un que l'on tutoie et « scusi » à quelqu'un que l'on vouvoie. Le vouvoiement se fait avec « Lei » et le verbe à la 3e personne du singulier : « Come sta? » (comment allez-vous ?).",
+          "vocab": [
+            { "term": "grazie", "translation": "merci", "emoji": "🙏" },
+            { "term": "grazie mille", "translation": "merci beaucoup", "emoji": "💐" },
+            { "term": "prego", "translation": "je vous en prie / de rien", "emoji": "😊" },
+            { "term": "per favore", "translation": "s'il te plaît / s'il vous plaît", "emoji": "🙏" },
+            { "term": "scusa", "translation": "excuse-moi / pardon", "emoji": "😅" },
+            { "term": "scusi", "translation": "excusez-moi (vouvoiement)", "emoji": "🙇" },
+            { "term": "mi dispiace", "translation": "je suis désolé(e)", "emoji": "😔" },
+            { "term": "signore", "translation": "monsieur", "emoji": "👨" },
+            { "term": "signora", "translation": "madame", "emoji": "👩" },
+            { "term": "Lei", "translation": "vous (de politesse)", "emoji": "🧑‍💼" },
+            { "term": "come sta?", "translation": "comment allez-vous ?", "emoji": "❓" },
+            { "term": "va bene", "translation": "d'accord / ça va", "emoji": "👌" }
+          ],
+          "sentences": [
+            { "source": "Grazie mille, signora.", "target": "Merci beaucoup, madame." },
+            { "source": "Prego, signore, arrivederci.", "target": "Je vous en prie, monsieur, au revoir." },
+            { "source": "Scusi, signore, come sta?", "target": "Excusez-moi, monsieur, comment allez-vous ?" },
+            { "source": "Sì, per favore.", "target": "Oui, s'il te plaît." },
+            { "source": "Scusa, mi dispiace.", "target": "Excuse-moi, je suis désolé." },
+            { "source": "Va bene, grazie.", "target": "D'accord, merci." },
+            { "source": "Buongiorno, signora, come sta?", "target": "Bonjour, madame, comment allez-vous ?" },
+            { "source": "Sto bene, grazie, e Lei?", "target": "Je vais bien, merci, et vous ?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Les bases 2",
+      "description": "La famille, les couleurs, les jours de la semaine, la météo et les premières questions.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u2s1",
+          "title": "La famille",
+          "icon": "👨‍👩‍👧",
+          "tips": "Les noms de la famille sont masculins ou féminins : il padre / la madre, il fratello / la sorella. Avec un seul membre de la famille au singulier, le possessif s'emploie sans article : « mio padre », « mia madre », « mia sorella ». Avec les autres noms, l'article revient : « la mia famiglia », « la mia casa ». « Ho » signifie « j'ai » et « è » signifie « il est / elle est / c'est ».",
+          "vocab": [
+            { "term": "la famiglia", "translation": "la famille", "emoji": "👨‍👩‍👧" },
+            { "term": "il padre", "translation": "le père", "emoji": "👨" },
+            { "term": "la madre", "translation": "la mère", "emoji": "👩" },
+            { "term": "il fratello", "translation": "le frère", "emoji": "👦" },
+            { "term": "la sorella", "translation": "la sœur", "emoji": "👧" },
+            { "term": "il figlio", "translation": "le fils", "emoji": "👶" },
+            { "term": "il nonno", "translation": "le grand-père", "emoji": "👴" },
+            { "term": "la nonna", "translation": "la grand-mère", "emoji": "👵" },
+            { "term": "mio", "translation": "mon", "emoji": "🫶" },
+            { "term": "mia", "translation": "ma", "emoji": "💝" },
+            { "term": "ho", "translation": "j'ai", "emoji": "✋" },
+            { "term": "è", "translation": "il est / elle est / c'est", "emoji": "➡️" }
+          ],
+          "sentences": [
+            { "source": "Mio padre è italiano.", "target": "Mon père est italien." },
+            { "source": "Mia madre è francese.", "target": "Ma mère est française." },
+            { "source": "Ho un fratello.", "target": "J'ai un frère." },
+            { "source": "Ho una sorella, e tu?", "target": "J'ai une sœur, et toi ?" },
+            { "source": "Mio nonno è di Roma.", "target": "Mon grand-père est de Rome." },
+            { "source": "Ciao, nonna, come stai?", "target": "Salut, grand-mère, comment vas-tu ?" },
+            { "source": "Marco è il figlio di Anna.", "target": "Marco est le fils d'Anna." },
+            { "source": "La mia famiglia è a Roma.", "target": "Ma famille est à Rome." }
+          ]
+        },
+        {
+          "id": "u2s2",
+          "title": "Les couleurs",
+          "icon": "🎨",
+          "tips": "Les adjectifs de couleur se placent après le nom et s'accordent en genre et en nombre : « il libro rosso », « la macchina rossa », « i libri rossi ». Les couleurs en -e (verde, arancione) ont la même forme au masculin et au féminin. « Blu », « rosa » et « viola » sont invariables : « la casa rosa », « le scarpe blu ».",
+          "vocab": [
+            { "term": "il colore", "translation": "la couleur", "emoji": "🎨" },
+            { "term": "la casa", "translation": "la maison", "emoji": "🏠" },
+            { "term": "la macchina", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "rosso", "translation": "rouge", "emoji": "🔴" },
+            { "term": "blu", "translation": "bleu", "emoji": "🔵" },
+            { "term": "verde", "translation": "vert", "emoji": "🟢" },
+            { "term": "giallo", "translation": "jaune", "emoji": "🟡" },
+            { "term": "nero", "translation": "noir", "emoji": "⚫" },
+            { "term": "bianco", "translation": "blanc", "emoji": "⚪" },
+            { "term": "arancione", "translation": "orange", "emoji": "🟠" },
+            { "term": "rosa", "translation": "rose", "emoji": "🌸" },
+            { "term": "viola", "translation": "violet", "emoji": "🟣" }
+          ],
+          "sentences": [
+            { "source": "La casa è bianca.", "target": "La maison est blanche." },
+            { "source": "La macchina è rossa.", "target": "La voiture est rouge." },
+            { "source": "Bianco, rosso e verde.", "target": "Blanc, rouge et vert." },
+            { "source": "Il colore è blu.", "target": "La couleur est bleue." },
+            { "source": "La mia casa è gialla.", "target": "Ma maison est jaune." },
+            { "source": "La macchina è nera.", "target": "La voiture est noire." },
+            { "source": "Rosa, viola e arancione.", "target": "Rose, violet et orange." },
+            { "source": "La macchina di mio padre è verde.", "target": "La voiture de mon père est verte." }
+          ]
+        },
+        {
+          "id": "u2s3",
+          "title": "Les jours et le temps",
+          "icon": "📅",
+          "tips": "Les jours de la semaine ne prennent pas de majuscule et sont tous masculins, sauf « la domenica ». On dit « oggi è lunedì » (aujourd'hui, c'est lundi) et « domani è martedì ». Avec l'article, le jour devient habituel : « la domenica » = le dimanche (tous les dimanches). Pour la météo : « c'è il sole » (il y a du soleil), « piove » (il pleut), « fa caldo » (il fait chaud), « fa freddo » (il fait froid).",
+          "vocab": [
+            { "term": "lunedì", "translation": "lundi", "emoji": "1️⃣" },
+            { "term": "martedì", "translation": "mardi", "emoji": "2️⃣" },
+            { "term": "mercoledì", "translation": "mercredi", "emoji": "3️⃣" },
+            { "term": "giovedì", "translation": "jeudi", "emoji": "4️⃣" },
+            { "term": "venerdì", "translation": "vendredi", "emoji": "5️⃣" },
+            { "term": "sabato", "translation": "samedi", "emoji": "6️⃣" },
+            { "term": "domenica", "translation": "dimanche", "emoji": "7️⃣" },
+            { "term": "oggi", "translation": "aujourd'hui", "emoji": "📍" },
+            { "term": "domani", "translation": "demain", "emoji": "⏭️" },
+            { "term": "che giorno è oggi?", "translation": "quel jour sommes-nous ?", "emoji": "❓" },
+            { "term": "c'è il sole", "translation": "il y a du soleil", "emoji": "☀️" },
+            { "term": "piove", "translation": "il pleut", "emoji": "🌧️" }
+          ],
+          "sentences": [
+            { "source": "Che giorno è oggi?", "target": "Quel jour sommes-nous ?" },
+            { "source": "Oggi è lunedì.", "target": "Aujourd'hui, c'est lundi." },
+            { "source": "Domani è martedì.", "target": "Demain, c'est mardi." },
+            { "source": "Venerdì c'è il sole.", "target": "Vendredi, il y a du soleil." },
+            { "source": "Oggi piove, domani c'è il sole.", "target": "Aujourd'hui il pleut, demain il y a du soleil." },
+            { "source": "Oggi è sabato, a presto.", "target": "Aujourd'hui, c'est samedi, à bientôt." },
+            { "source": "La domenica c'è il sole.", "target": "Le dimanche, il y a du soleil." },
+            { "source": "Oggi è giovedì? No, è mercoledì.", "target": "C'est jeudi aujourd'hui ? Non, c'est mercredi." }
+          ]
+        },
+        {
+          "id": "u2s4",
+          "title": "Questions simples",
+          "icon": "❓",
+          "tips": "Les mots interrogatifs essentiels : chi (qui), che cosa (quoi), dove (où), quando (quand), perché (pourquoi), come (comment), quanto (combien). La question se forme simplement avec l'intonation montante, sans inversion : « Parli italiano? ». Devant « è », « dove » et « che cosa » s'élident : « Dov'è? », « Che cos'è? ». La négation se fait avec « non » devant le verbe : « Non capisco ». « Perché » signifie à la fois « pourquoi » et « parce que ».",
+          "vocab": [
+            { "term": "chi?", "translation": "qui ?", "emoji": "🧑" },
+            { "term": "che cosa?", "translation": "quoi ? / qu'est-ce que ?", "emoji": "❓" },
+            { "term": "dove?", "translation": "où ?", "emoji": "📍" },
+            { "term": "quando?", "translation": "quand ?", "emoji": "🕒" },
+            { "term": "perché?", "translation": "pourquoi ?", "emoji": "🤔" },
+            { "term": "come?", "translation": "comment ?", "emoji": "🔍" },
+            { "term": "quanto?", "translation": "combien ?", "emoji": "🔢" },
+            { "term": "non", "translation": "ne... pas", "emoji": "🚫" },
+            { "term": "non capisco", "translation": "je ne comprends pas", "emoji": "🤷" },
+            { "term": "parlo", "translation": "je parle", "emoji": "🗣️" },
+            { "term": "parli italiano?", "translation": "parles-tu italien ?", "emoji": "💬" },
+            { "term": "o", "translation": "ou", "emoji": "🔀" }
+          ],
+          "sentences": [
+            { "source": "Chi è Marco?", "target": "Qui est Marco ?" },
+            { "source": "Dov'è la casa?", "target": "Où est la maison ?" },
+            { "source": "Parli italiano? No, parlo francese.", "target": "Tu parles italien ? Non, je parle français." },
+            { "source": "Non capisco, scusa.", "target": "Je ne comprends pas, excuse-moi." },
+            { "source": "Perché non parli italiano?", "target": "Pourquoi tu ne parles pas italien ?" },
+            { "source": "Che cos'è?", "target": "Qu'est-ce que c'est ?" },
+            { "source": "Quando? Oggi o domani?", "target": "Quand ? Aujourd'hui ou demain ?" },
+            { "source": "Come stai oggi?", "target": "Comment vas-tu aujourd'hui ?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Au quotidien",
+      "description": "Manger, commander au restaurant, faire les courses et parler des vêtements.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u3s1",
+          "title": "La nourriture",
+          "icon": "🍝",
+          "tips": "Les noms en -o sont généralement masculins (il pane, il formaggio) et ceux en -a féminins (la pasta, la pizza). L'article défini est « il » ou « la » au singulier ; devant une voyelle, il devient « l' » : l'acqua. « Mangio » signifie je mange et « bevo » je bois. Pour dire que l'on aime quelque chose : « mi piace » + nom au singulier (mi piace la pizza).",
+          "vocab": [
+            { "term": "il pane", "translation": "le pain", "emoji": "🍞" },
+            { "term": "la pasta", "translation": "les pâtes", "emoji": "🍝" },
+            { "term": "la pizza", "translation": "la pizza", "emoji": "🍕" },
+            { "term": "il formaggio", "translation": "le fromage", "emoji": "🧀" },
+            { "term": "la frutta", "translation": "les fruits", "emoji": "🍇" },
+            { "term": "la mela", "translation": "la pomme", "emoji": "🍎" },
+            { "term": "l'acqua", "translation": "l'eau", "emoji": "💧" },
+            { "term": "il caffè", "translation": "le café", "emoji": "☕" },
+            { "term": "il latte", "translation": "le lait", "emoji": "🥛" },
+            { "term": "mangio", "translation": "je mange", "emoji": "🍽️" },
+            { "term": "bevo", "translation": "je bois", "emoji": "🥤" },
+            { "term": "mi piace", "translation": "j'aime", "emoji": "😋" }
+          ],
+          "sentences": [
+            { "source": "Mangio la pasta.", "target": "Je mange des pâtes." },
+            { "source": "Bevo un caffè.", "target": "Je bois un café." },
+            { "source": "Mi piace la pizza.", "target": "J'aime la pizza." },
+            { "source": "Mangio il pane e il formaggio.", "target": "Je mange du pain et du fromage." },
+            { "source": "Bevo l'acqua, non il latte.", "target": "Je bois de l'eau, pas du lait." },
+            { "source": "Mi piace la frutta.", "target": "J'aime les fruits." },
+            { "source": "Oggi mangio una mela.", "target": "Aujourd'hui, je mange une pomme." },
+            { "source": "Il caffè è nero.", "target": "Le café est noir." }
+          ]
+        },
+        {
+          "id": "u3s2",
+          "title": "Au restaurant",
+          "icon": "🍽️",
+          "tips": "Au restaurant, on commande avec « vorrei » (je voudrais), plus poli que « voglio » (je veux). Le repas italien se compose de l'antipasto, du primo (pâtes, risotto), du secondo (viande, poisson) et du dolce. Pour appeler le serveur, on dit « Scusi! », et pour demander la note : « Il conto, per favore ». « Buon appetito! » se dit avant de manger.",
+          "vocab": [
+            { "term": "il ristorante", "translation": "le restaurant", "emoji": "🍽️" },
+            { "term": "il menù", "translation": "le menu / la carte", "emoji": "📋" },
+            { "term": "vorrei", "translation": "je voudrais", "emoji": "🙋" },
+            { "term": "il cameriere", "translation": "le serveur", "emoji": "🧑‍🍳" },
+            { "term": "il tavolo", "translation": "la table", "emoji": "🪑" },
+            { "term": "un tavolo per due", "translation": "une table pour deux", "emoji": "👥" },
+            { "term": "il conto", "translation": "l'addition", "emoji": "🧾" },
+            { "term": "il vino", "translation": "le vin", "emoji": "🍷" },
+            { "term": "la birra", "translation": "la bière", "emoji": "🍺" },
+            { "term": "il dolce", "translation": "le dessert", "emoji": "🍰" },
+            { "term": "buon appetito", "translation": "bon appétit", "emoji": "😋" },
+            { "term": "è buono", "translation": "c'est bon", "emoji": "👍" }
+          ],
+          "sentences": [
+            { "source": "Un tavolo per due, per favore.", "target": "Une table pour deux, s'il vous plaît." },
+            { "source": "Vorrei il menù, per favore.", "target": "Je voudrais la carte, s'il vous plaît." },
+            { "source": "Vorrei una pizza e una birra.", "target": "Je voudrais une pizza et une bière." },
+            { "source": "Il conto, per favore.", "target": "L'addition, s'il vous plaît." },
+            { "source": "Buon appetito! Grazie.", "target": "Bon appétit ! Merci." },
+            { "source": "Il vino è buono.", "target": "Le vin est bon." },
+            { "source": "Scusi, vorrei il dolce.", "target": "Excusez-moi, je voudrais le dessert." },
+            { "source": "Il cameriere è mio fratello.", "target": "Le serveur est mon frère." }
+          ]
+        },
+        {
+          "id": "u3s3",
+          "title": "Les courses",
+          "icon": "🛒",
+          "tips": "Pour demander le prix : « Quanto costa? » (combien ça coûte ?) au singulier et « Quanto costano? » au pluriel. « Euro » est invariable : « dieci euro ». Au marché, on demande « un chilo di mele » (un kilo de pommes) : le pluriel des noms en -a se fait en -e (mela → mele) et celui des noms en -o en -i (euro reste euro). « Il mercato » est le marché et « il supermercato » le supermarché.",
+          "vocab": [
+            { "term": "il mercato", "translation": "le marché", "emoji": "🧺" },
+            { "term": "il supermercato", "translation": "le supermarché", "emoji": "🛒" },
+            { "term": "il negozio", "translation": "le magasin", "emoji": "🏪" },
+            { "term": "quanto costa?", "translation": "combien ça coûte ?", "emoji": "💶" },
+            { "term": "costa", "translation": "ça coûte", "emoji": "💰" },
+            { "term": "l'euro", "translation": "l'euro", "emoji": "💶" },
+            { "term": "caro", "translation": "cher", "emoji": "💸" },
+            { "term": "economico", "translation": "bon marché", "emoji": "🏷️" },
+            { "term": "i soldi", "translation": "l'argent", "emoji": "💵" },
+            { "term": "compro", "translation": "j'achète", "emoji": "🛍️" },
+            { "term": "un chilo", "translation": "un kilo", "emoji": "⚖️" },
+            { "term": "troppo", "translation": "trop", "emoji": "⚠️" }
+          ],
+          "sentences": [
+            { "source": "Quanto costa il pane?", "target": "Combien coûte le pain ?" },
+            { "source": "Costa dieci euro.", "target": "Ça coûte dix euros." },
+            { "source": "È troppo caro!", "target": "C'est trop cher !" },
+            { "source": "Compro un chilo di mele.", "target": "J'achète un kilo de pommes." },
+            { "source": "Il supermercato è economico.", "target": "Le supermarché est bon marché." },
+            { "source": "Vorrei un caffè, quanto costa?", "target": "Je voudrais un café, combien ça coûte ?" },
+            { "source": "Non ho soldi.", "target": "Je n'ai pas d'argent." },
+            { "source": "Il negozio è troppo caro.", "target": "Le magasin est trop cher." }
+          ]
+        },
+        {
+          "id": "u3s4",
+          "title": "Les vêtements",
+          "icon": "👕",
+          "tips": "« I pantaloni » (le pantalon) et « le scarpe » (les chaussures) sont toujours au pluriel en italien, avec les articles pluriels « i » et « le » ; au pluriel, « sono » signifie « ils / elles sont ». « Indosso » signifie « je porte » (un vêtement). L'adjectif de couleur s'accorde avec le vêtement : « una maglietta rossa », « le scarpe nere ». Attention : « il vestito » est la robe, alors que « i vestiti » désigne les vêtements en général.",
+          "vocab": [
+            { "term": "la maglietta", "translation": "le t-shirt", "emoji": "👕" },
+            { "term": "la camicia", "translation": "la chemise", "emoji": "👔" },
+            { "term": "i pantaloni", "translation": "le pantalon", "emoji": "👖" },
+            { "term": "la gonna", "translation": "la jupe", "emoji": "🩳" },
+            { "term": "il vestito", "translation": "la robe", "emoji": "👗" },
+            { "term": "le scarpe", "translation": "les chaussures", "emoji": "👟" },
+            { "term": "la giacca", "translation": "la veste", "emoji": "🧥" },
+            { "term": "il cappotto", "translation": "le manteau", "emoji": "🧥" },
+            { "term": "il cappello", "translation": "le chapeau", "emoji": "🎩" },
+            { "term": "indosso", "translation": "je porte (un vêtement)", "emoji": "🧍" },
+            { "term": "piccolo", "translation": "petit", "emoji": "🔽" },
+            { "term": "grande", "translation": "grand", "emoji": "🔼" }
+          ],
+          "sentences": [
+            { "source": "Indosso una maglietta rossa.", "target": "Je porte un t-shirt rouge." },
+            { "source": "Le scarpe sono nere.", "target": "Les chaussures sont noires." },
+            { "source": "I pantaloni sono blu.", "target": "Le pantalon est bleu." },
+            { "source": "La camicia è bianca.", "target": "La chemise est blanche." },
+            { "source": "Il cappotto e il cappello sono neri.", "target": "Le manteau et le chapeau sont noirs." },
+            { "source": "Vorrei una gonna gialla.", "target": "Je voudrais une jupe jaune." },
+            { "source": "La giacca è troppo piccola.", "target": "La veste est trop petite." },
+            { "source": "Quanto costa il vestito?", "target": "Combien coûte la robe ?" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+[
+  {
+    "id": "developpe-couche-barre",
+    "name": "Développé couché à la barre",
+    "name_en": "Barbell Bench Press",
+    "category": "pectoraux",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["front_delts", "triceps"],
+    "instructions": [
+      "Allonge-toi sur le banc, les yeux sous la barre, pieds bien ancrés au sol.",
+      "Saisis la barre un peu plus large que les épaules, omoplates serrées vers l'arrière.",
+      "Décroche la barre et stabilise-la au-dessus de la poitrine, bras tendus.",
+      "Descends la barre en contrôle jusqu'à effleurer le bas des pectoraux.",
+      "Pousse la barre vers le haut en expirant, sans décoller les fesses du banc."
+    ],
+    "tips": "Garde les coudes à environ 45° du buste pour protéger les épaules et serre les omoplates pendant tout le mouvement.",
+    "mistakes": [
+      "Faire rebondir la barre sur la poitrine",
+      "Décoller les fesses du banc",
+      "Écarter les coudes à 90° du buste"
+    ]
+  },
+  {
+    "id": "developpe-incline-halteres",
+    "name": "Développé incliné aux haltères",
+    "name_en": "Incline Dumbbell Press",
+    "category": "pectoraux",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest", "front_delts"],
+    "secondary_muscles": ["triceps"],
+    "instructions": [
+      "Règle le banc entre 30 et 45° et assieds-toi avec un haltère sur chaque cuisse.",
+      "Allonge-toi en amenant les haltères au niveau des épaules, paumes vers l'avant.",
+      "Pousse les haltères vers le haut au-dessus du haut de la poitrine, sans verrouiller les coudes.",
+      "Redescends lentement jusqu'à ce que les haltères soient au niveau de la poitrine.",
+      "Garde les omoplates serrées et le dos en contact avec le banc."
+    ],
+    "tips": "Une inclinaison de 30° suffit : au-delà, le travail bascule vers les épaules.",
+    "mistakes": [
+      "Incliner le banc trop haut",
+      "Cogner les haltères en haut du mouvement",
+      "Cambrer excessivement le bas du dos"
+    ]
+  },
+  {
+    "id": "pompes",
+    "name": "Pompes",
+    "name_en": "Push-Up",
+    "category": "pectoraux",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["triceps", "front_delts", "abs"],
+    "instructions": [
+      "Place les mains au sol un peu plus larges que les épaules, bras tendus.",
+      "Tends les jambes derrière toi : le corps forme une ligne droite de la tête aux talons.",
+      "Fléchis les coudes pour descendre la poitrine vers le sol en inspirant.",
+      "Remonte en poussant fort dans les mains jusqu'à tendre les bras.",
+      "Garde les abdos et les fessiers contractés tout au long de la série."
+    ],
+    "tips": "Trop dur ? Surélève les mains sur une chaise ou un mur : plus les mains sont hautes, plus c'est facile.",
+    "mistakes": [
+      "Laisser les hanches tomber ou les lever trop haut",
+      "Écarter les coudes à 90° du buste",
+      "Faire un mouvement trop court"
+    ]
+  },
+  {
+    "id": "pompes-declinees",
+    "name": "Pompes déclinées",
+    "name_en": "Decline Push-Up",
+    "category": "pectoraux",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest", "front_delts"],
+    "secondary_muscles": ["triceps", "abs"],
+    "instructions": [
+      "Pose les pieds sur un banc ou une chaise et les mains au sol, largeur des épaules.",
+      "Aligne le corps de la tête aux talons, abdos gainés.",
+      "Descends la poitrine vers le sol en gardant les coudes à 45° du buste.",
+      "Pousse pour remonter jusqu'à tendre les bras.",
+      "Contrôle la descente : environ deux secondes."
+    ],
+    "tips": "Plus les pieds sont hauts, plus le haut des pectoraux et les épaules travaillent.",
+    "mistakes": [
+      "Laisser la tête tomber vers le sol",
+      "Cambrer le bas du dos",
+      "Rebondir en bas du mouvement"
+    ]
+  },
+  {
+    "id": "ecartes-halteres",
+    "name": "Écartés aux haltères",
+    "name_en": "Dumbbell Fly",
+    "category": "pectoraux",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["front_delts"],
+    "instructions": [
+      "Allonge-toi sur un banc plat, un haltère dans chaque main au-dessus de la poitrine, paumes face à face.",
+      "Garde les coudes légèrement fléchis et fixes pendant tout le mouvement.",
+      "Ouvre les bras en arc de cercle jusqu'à sentir un étirement dans les pectoraux.",
+      "Ramène les haltères au-dessus de la poitrine en contractant les pectoraux.",
+      "Ne cogne pas les haltères en haut pour garder la tension."
+    ],
+    "tips": "Choisis une charge légère : l'écarté est un exercice d'étirement et de contraction, pas de force.",
+    "mistakes": [
+      "Prendre trop lourd et transformer l'écarté en développé",
+      "Descendre trop bas et forcer sur l'épaule",
+      "Tendre complètement les bras"
+    ]
+  },
+  {
+    "id": "dips-pectoraux",
+    "name": "Dips (orientation pectoraux)",
+    "name_en": "Chest Dips",
+    "category": "pectoraux",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "avance",
+    "primary_muscles": ["chest", "triceps"],
+    "secondary_muscles": ["front_delts"],
+    "instructions": [
+      "Place-toi sur les barres parallèles, bras tendus, pieds croisés derrière toi.",
+      "Penche le buste vers l'avant d'environ 30° et rentre le menton.",
+      "Fléchis les coudes pour descendre jusqu'à ce que les épaules soient au niveau des coudes.",
+      "Pousse dans les mains pour remonter en gardant le buste penché.",
+      "Expire en remontant et garde les épaules basses, loin des oreilles."
+    ],
+    "tips": "Penche le buste vers l'avant pour cibler les pectoraux ; buste droit, ce sont surtout les triceps qui travaillent.",
+    "mistakes": [
+      "Descendre trop bas et tirer sur les épaules",
+      "Hausser les épaules vers les oreilles",
+      "Balancer les jambes pour prendre de l'élan"
+    ]
+  },
+  {
+    "id": "pec-deck",
+    "name": "Pec deck (butterfly)",
+    "name_en": "Pec Deck Fly",
+    "category": "pectoraux",
+    "equipment": "machine",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["front_delts"],
+    "instructions": [
+      "Règle le siège pour que les poignées soient à hauteur de la poitrine.",
+      "Assieds-toi dos bien plaqué au dossier, pieds à plat au sol.",
+      "Saisis les poignées, coudes légèrement fléchis.",
+      "Rapproche les bras devant toi en contractant les pectoraux.",
+      "Reviens lentement en arrière sans laisser la charge retomber."
+    ],
+    "tips": "Marque une seconde de contraction quand les poignées se touchent, puis reviens en contrôle.",
+    "mistakes": [
+      "Laisser la charge retomber en arrière",
+      "Décoller le dos du dossier",
+      "Régler le siège trop haut ou trop bas"
+    ]
+  },
+  {
+    "id": "pompes-diamant",
+    "name": "Pompes diamant",
+    "name_en": "Diamond Push-Up",
+    "category": "pectoraux",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["triceps", "chest"],
+    "secondary_muscles": ["front_delts", "abs"],
+    "instructions": [
+      "Place les mains sous la poitrine, pouces et index se touchant pour former un losange.",
+      "Tends les jambes et gaine le corps en ligne droite.",
+      "Descends la poitrine vers les mains, coudes près du corps.",
+      "Pousse pour remonter jusqu'à tendre les bras.",
+      "Garde les poignets alignés sous la poitrine, pas sous le visage."
+    ],
+    "tips": "Si les poignets tirent, écarte légèrement les mains : l'important est de garder les coudes serrés.",
+    "mistakes": [
+      "Écarter les coudes sur les côtés",
+      "Placer les mains trop haut, sous le visage",
+      "Casser la ligne du corps"
+    ]
+  },
+  {
+    "id": "developpe-decline-barre",
+    "name": "Développé décliné à la barre",
+    "name_en": "Decline Barbell Bench Press",
+    "category": "pectoraux",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["triceps", "front_delts"],
+    "instructions": [
+      "Règle le banc en déclin (15 à 30°) et cale les jambes sous les supports.",
+      "Saisis la barre un peu plus large que les épaules, omoplates serrées.",
+      "Décroche la barre et stabilise-la au-dessus du bas de la poitrine.",
+      "Descends la barre en contrôle jusqu'au bas des pectoraux.",
+      "Pousse vers le haut en expirant, sans verrouiller brutalement les coudes."
+    ],
+    "tips": "Fais-toi assister pour décrocher et reposer la barre : en position déclinée, la sortie de barre est délicate.",
+    "mistakes": [
+      "Descendre la barre vers le cou",
+      "Rebondir sur la poitrine",
+      "Travailler lourd sans pareur"
+    ]
+  },
+  {
+    "id": "cable-crossover",
+    "name": "Crossover à la poulie",
+    "name_en": "Cable Crossover",
+    "category": "pectoraux",
+    "equipment": "poulie",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["front_delts"],
+    "instructions": [
+      "Règle les poulies en position haute et saisis une poignée dans chaque main.",
+      "Avance d'un pas, un pied devant l'autre, buste légèrement penché en avant.",
+      "Garde les coudes légèrement fléchis et ramène les mains devant le bassin.",
+      "Serre les pectoraux une seconde quand les mains se rejoignent.",
+      "Reviens lentement en ouvrant les bras jusqu'à sentir l'étirement."
+    ],
+    "tips": "Varie la hauteur des poulies : haute pour le bas des pectoraux, basse pour le haut des pectoraux.",
+    "mistakes": [
+      "Prendre trop lourd et tirer avec les épaules",
+      "Plier les coudes et transformer le mouvement en développé",
+      "Se pencher excessivement en avant"
+    ]
+  },
+  {
+    "id": "pompes-sur-genoux",
+    "name": "Pompes sur les genoux",
+    "name_en": "Knee Push-Up",
+    "category": "pectoraux",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["chest"],
+    "secondary_muscles": ["triceps", "front_delts"],
+    "instructions": [
+      "Mets-toi à genoux, mains au sol un peu plus larges que les épaules.",
+      "Avance les mains pour que le corps forme une ligne droite des genoux à la tête.",
+      "Fléchis les coudes et descends la poitrine vers le sol.",
+      "Pousse pour remonter jusqu'à tendre les bras.",
+      "Serre les fessiers pour ne pas casser les hanches."
+    ],
+    "tips": "Pose un coussin sous les genoux et, dès que 15 répétitions deviennent faciles, passe aux pompes classiques.",
+    "mistakes": [
+      "Plier les hanches et pointer les fesses vers le haut",
+      "Garder les mains trop près des genoux",
+      "Ne descendre qu'à moitié"
+    ]
+  },
+  {
+    "id": "pull-over-haltere",
+    "name": "Pull-over avec haltère",
+    "name_en": "Dumbbell Pullover",
+    "category": "pectoraux",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["chest", "lats"],
+    "secondary_muscles": ["triceps"],
+    "instructions": [
+      "Allonge-toi en travers d'un banc, seules les épaules en appui, pieds au sol.",
+      "Tiens un haltère à deux mains au-dessus de la poitrine, bras presque tendus.",
+      "Descends l'haltère derrière la tête en arc de cercle, en inspirant profondément.",
+      "Arrête-toi quand tu sens l'étirement des pectoraux et des grands dorsaux.",
+      "Ramène l'haltère au-dessus de la poitrine en expirant."
+    ],
+    "tips": "Garde les coudes légèrement fléchis et fixes : seule l'épaule bouge pendant le mouvement.",
+    "mistakes": [
+      "Plier les coudes en descendant",
+      "Descendre trop bas et cambrer excessivement",
+      "Prendre un haltère trop lourd"
+    ]
+  },
+  {
+    "id": "tractions",
+    "name": "Tractions (pronation)",
+    "name_en": "Pull-Up",
+    "category": "dos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["lats"],
+    "secondary_muscles": ["biceps", "upper_back", "rear_delts", "forearms"],
+    "instructions": [
+      "Suspends-toi à la barre, mains en pronation, un peu plus larges que les épaules.",
+      "Abaisse les épaules loin des oreilles avant de tirer.",
+      "Tire les coudes vers le bas et l'arrière pour amener le menton au-dessus de la barre.",
+      "Descends en contrôle jusqu'à tendre complètement les bras.",
+      "Garde les jambes immobiles, abdos gainés."
+    ],
+    "tips": "Pas encore une traction ? Utilise un élastique sous les pieds ou travaille la descente lente (négatives).",
+    "mistakes": [
+      "Se balancer pour prendre de l'élan",
+      "Ne pas descendre bras tendus",
+      "Hausser les épaules vers les oreilles"
+    ]
+  },
+  {
+    "id": "tractions-supination",
+    "name": "Tractions en supination",
+    "name_en": "Chin-Up",
+    "category": "dos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["lats", "biceps"],
+    "secondary_muscles": ["upper_back", "forearms"],
+    "instructions": [
+      "Saisis la barre paumes vers toi, mains à largeur des épaules.",
+      "Suspends-toi bras tendus, épaules abaissées et abdos contractés.",
+      "Tire pour amener le menton au-dessus de la barre en serrant les coudes vers les côtes.",
+      "Marque un temps en haut puis descends lentement.",
+      "Tends complètement les bras avant la répétition suivante."
+    ],
+    "tips": "La prise en supination sollicite davantage les biceps : c'est souvent la variante la plus facile pour débuter.",
+    "mistakes": [
+      "Faire des demi-répétitions",
+      "Donner des coups de reins",
+      "Pencher la tête en arrière pour passer la barre"
+    ]
+  },
+  {
+    "id": "rowing-barre",
+    "name": "Rowing à la barre",
+    "name_en": "Barbell Row",
+    "category": "dos",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["lats", "upper_back"],
+    "secondary_muscles": ["biceps", "rear_delts", "lower_back", "forearms"],
+    "instructions": [
+      "Debout, pieds largeur de hanches, saisis la barre en pronation, mains un peu plus larges que les épaules.",
+      "Penche le buste à environ 45°, dos plat, genoux légèrement fléchis.",
+      "Tire la barre vers le bas du ventre en serrant les omoplates.",
+      "Redescends la barre en contrôle jusqu'à tendre les bras.",
+      "Garde le buste immobile pendant toute la série."
+    ],
+    "tips": "Pense à tirer avec les coudes plutôt qu'avec les mains pour mieux sentir le dos travailler.",
+    "mistakes": [
+      "Arrondir le bas du dos",
+      "Se redresser à chaque répétition pour aider",
+      "Tirer la barre vers la poitrine avec les coudes écartés"
+    ]
+  },
+  {
+    "id": "rowing-haltere",
+    "name": "Rowing haltère un bras",
+    "name_en": "One-Arm Dumbbell Row",
+    "category": "dos",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["lats", "upper_back"],
+    "secondary_muscles": ["biceps", "rear_delts", "forearms"],
+    "instructions": [
+      "Pose une main et un genou sur un banc, l'autre pied au sol, dos plat.",
+      "Saisis l'haltère de la main libre, bras tendu vers le sol.",
+      "Tire l'haltère vers la hanche en gardant le coude près du corps.",
+      "Serre l'omoplate en haut, puis redescends lentement.",
+      "Fais toutes les répétitions d'un côté avant de changer."
+    ],
+    "tips": "Tire vers la hanche, pas vers l'épaule, et évite de tourner le buste pour monter plus haut.",
+    "mistakes": [
+      "Tourner le buste pour soulever plus lourd",
+      "Tirer avec le bras plutôt qu'avec le dos",
+      "Arrondir le dos"
+    ]
+  },
+  {
+    "id": "tirage-vertical",
+    "name": "Tirage vertical",
+    "name_en": "Lat Pulldown",
+    "category": "dos",
+    "equipment": "poulie",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["lats"],
+    "secondary_muscles": ["biceps", "upper_back", "rear_delts"],
+    "instructions": [
+      "Règle les cale-cuisses et saisis la barre large, en pronation.",
+      "Assieds-toi, buste légèrement incliné en arrière, poitrine sortie.",
+      "Tire la barre vers le haut de la poitrine en abaissant les coudes.",
+      "Serre les omoplates en bas, puis remonte la barre en contrôle.",
+      "Tends complètement les bras en haut sans relâcher les épaules."
+    ],
+    "tips": "Tire la barre devant toi, jamais derrière la nuque : c'est inutile et risqué pour les épaules.",
+    "mistakes": [
+      "Se pencher très en arrière pour tirer plus lourd",
+      "Tirer la barre derrière la nuque",
+      "Lâcher la charge en remontant"
+    ]
+  },
+  {
+    "id": "tirage-horizontal-elastique",
+    "name": "Tirage horizontal à l'élastique",
+    "name_en": "Seated Band Row",
+    "category": "dos",
+    "equipment": "elastique",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["upper_back", "lats"],
+    "secondary_muscles": ["biceps", "rear_delts"],
+    "instructions": [
+      "Assieds-toi au sol, jambes tendues, l'élastique passé sous la plante des pieds.",
+      "Tiens une extrémité dans chaque main, dos droit, bras tendus devant toi.",
+      "Tire les mains vers le ventre en ramenant les coudes le long du corps.",
+      "Serre les omoplates en fin de mouvement pendant une seconde.",
+      "Reviens lentement en gardant le buste immobile."
+    ],
+    "tips": "Pour augmenter la résistance, raccourcis la prise sur l'élastique plutôt que de te pencher en arrière.",
+    "mistakes": [
+      "Se pencher en arrière pour tirer",
+      "Arrondir le dos",
+      "Laisser l'élastique revenir d'un coup"
+    ]
+  },
+  {
+    "id": "souleve-de-terre-jambes-tendues",
+    "name": "Soulevé de terre jambes tendues",
+    "name_en": "Stiff-Leg Deadlift",
+    "category": "dos",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["hamstrings", "lower_back", "glutes"],
+    "secondary_muscles": ["upper_back", "forearms"],
+    "instructions": [
+      "Debout, pieds largeur de hanches, tiens la barre devant les cuisses en pronation.",
+      "Garde les genoux presque tendus mais pas verrouillés, dos plat, épaules en arrière.",
+      "Pousse les hanches vers l'arrière et descends la barre le long des jambes.",
+      "Arrête-toi quand tu sens l'étirement des ischio-jambiers, sans arrondir le dos.",
+      "Remonte en contractant les fessiers et en ramenant les hanches vers l'avant."
+    ],
+    "tips": "La barre reste collée aux jambes ; c'est la hanche qui recule, pas le dos qui se penche.",
+    "mistakes": [
+      "Arrondir le bas du dos",
+      "Verrouiller complètement les genoux",
+      "Descendre trop bas au détriment de la posture"
+    ]
+  },
+  {
+    "id": "face-pull",
+    "name": "Face pull",
+    "name_en": "Face Pull",
+    "category": "dos",
+    "equipment": "poulie",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["rear_delts", "upper_back"],
+    "secondary_muscles": ["traps"],
+    "instructions": [
+      "Fixe une corde à la poulie haute, à hauteur du visage ou un peu au-dessus.",
+      "Saisis la corde paumes face à face et recule d'un pas, bras tendus.",
+      "Tire la corde vers le visage en écartant les mains et en montant les coudes.",
+      "Termine avec les mains de chaque côté de la tête, omoplates serrées.",
+      "Reviens lentement sans laisser les épaules partir en avant."
+    ],
+    "tips": "Reste léger et propre : le face pull sert à équilibrer les épaules, pas à soulever lourd. Un élastique convient très bien.",
+    "mistakes": [
+      "Prendre trop lourd et tirer avec le dos",
+      "Garder les coudes bas",
+      "Pencher le buste en arrière"
+    ]
+  },
+  {
+    "id": "rowing-inverse",
+    "name": "Rowing inversé",
+    "name_en": "Inverted Row",
+    "category": "dos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["upper_back", "lats"],
+    "secondary_muscles": ["biceps", "rear_delts", "abs"],
+    "instructions": [
+      "Allonge-toi sous une barre fixée à hauteur de hanches (ou une table solide).",
+      "Saisis la barre en pronation, un peu plus large que les épaules, talons au sol.",
+      "Gaine le corps en ligne droite des talons à la tête.",
+      "Tire la poitrine vers la barre en serrant les omoplates.",
+      "Redescends lentement jusqu'à tendre les bras, sans casser la ligne du corps."
+    ],
+    "tips": "Plus ton corps est horizontal, plus c'est dur : fléchis les genoux ou monte la barre pour faciliter.",
+    "mistakes": [
+      "Laisser les hanches tomber",
+      "Ne pas toucher la barre avec la poitrine",
+      "Tirer avec le cou et les épaules"
+    ]
+  },
+  {
+    "id": "shrugs-halteres",
+    "name": "Shrugs aux haltères",
+    "name_en": "Dumbbell Shrugs",
+    "category": "dos",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["traps"],
+    "secondary_muscles": ["forearms", "neck"],
+    "instructions": [
+      "Debout, un haltère dans chaque main le long du corps, bras tendus.",
+      "Garde le dos droit et le regard devant toi.",
+      "Hausse les épaules le plus haut possible vers les oreilles.",
+      "Tiens la contraction une seconde en haut.",
+      "Redescends lentement jusqu'à l'étirement complet des trapèzes."
+    ],
+    "tips": "Ne fais pas de rotation avec les épaules : le mouvement est strictement vertical, haut puis bas.",
+    "mistakes": [
+      "Faire des cercles avec les épaules",
+      "Plier les coudes pour aider",
+      "Projeter la tête en avant"
+    ]
+  },
+  {
+    "id": "hyperextensions",
+    "name": "Hyperextensions (banc à lombaires)",
+    "name_en": "Back Extension",
+    "category": "dos",
+    "equipment": "machine",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["lower_back"],
+    "secondary_muscles": ["glutes", "hamstrings"],
+    "instructions": [
+      "Règle le coussin juste sous le pli des hanches et cale les talons sous les supports.",
+      "Croise les bras sur la poitrine ou derrière la tête, corps aligné.",
+      "Descends le buste en contrôle jusqu'à ce qu'il soit presque perpendiculaire au sol.",
+      "Remonte en contractant les lombaires et les fessiers jusqu'à l'alignement du corps.",
+      "Ne dépasse pas l'alignement : pas d'hyperextension excessive."
+    ],
+    "tips": "Arrête-toi quand le corps est en ligne droite ; remonter plus haut comprime les lombaires sans bénéfice.",
+    "mistakes": [
+      "Remonter trop haut en cambrant",
+      "Prendre de l'élan avec le buste",
+      "Faire le mouvement trop vite"
+    ]
+  },
+  {
+    "id": "superman",
+    "name": "Superman",
+    "name_en": "Superman",
+    "category": "dos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["lower_back"],
+    "secondary_muscles": ["glutes", "upper_back", "rear_delts"],
+    "instructions": [
+      "Allonge-toi sur le ventre, bras tendus devant toi, jambes tendues.",
+      "Contracte les fessiers et le bas du dos pour décoller en même temps bras et jambes du sol.",
+      "Garde le regard vers le sol pour ne pas casser la nuque.",
+      "Tiens la position deux secondes en haut.",
+      "Redescends lentement et recommence."
+    ],
+    "tips": "Pour un gainage plus long, tiens la position 20 à 30 secondes au lieu de répéter.",
+    "mistakes": [
+      "Relever la tête et casser la nuque",
+      "Monter trop haut par à-coups",
+      "Retenir sa respiration"
+    ]
+  },
+  {
+    "id": "tirage-poulie-basse",
+    "name": "Tirage horizontal à la poulie basse",
+    "name_en": "Seated Cable Row",
+    "category": "dos",
+    "equipment": "poulie",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["upper_back", "lats"],
+    "secondary_muscles": ["biceps", "rear_delts", "lower_back"],
+    "instructions": [
+      "Assieds-toi face à la poulie basse, pieds calés sur les supports, genoux légèrement fléchis.",
+      "Saisis la poignée en V, dos droit et poitrine sortie.",
+      "Tire la poignée vers le nombril en ramenant les coudes le long du corps.",
+      "Serre les omoplates une seconde en fin de mouvement.",
+      "Reviens en contrôle en laissant les épaules s'étirer vers l'avant sans arrondir le dos."
+    ],
+    "tips": "Le buste reste quasi immobile : ce sont les bras et les omoplates qui bougent, pas les hanches.",
+    "mistakes": [
+      "Se balancer d'avant en arrière à chaque répétition",
+      "Arrondir le dos sur le retour",
+      "Hausser les épaules en tirant"
+    ]
+  },
+  {
+    "id": "tractions-australiennes",
+    "name": "Tractions australiennes pieds surélevés",
+    "name_en": "Feet-Elevated Australian Pull-Up",
+    "category": "dos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["lats", "upper_back"],
+    "secondary_muscles": ["biceps", "rear_delts", "abs"],
+    "instructions": [
+      "Place une barre basse (ou des anneaux) à hauteur de hanches et un banc en face pour les pieds.",
+      "Allonge-toi dessous, talons sur le banc, et saisis la barre en supination, largeur des épaules.",
+      "Gaine le corps à l'horizontale, des talons à la tête.",
+      "Tire pour amener le bas de la poitrine à la barre, coudes le long du corps.",
+      "Descends lentement jusqu'à tendre les bras sans relâcher le gainage."
+    ],
+    "tips": "C'est l'étape après le rowing inversé : surélever les pieds te rapproche de la vraie traction.",
+    "mistakes": [
+      "Laisser les hanches s'affaisser",
+      "Faire des demi-répétitions",
+      "Rentrer le menton vers la barre au lieu de tirer avec le dos"
+    ]
+  }
+]

@@ -1,14 +1,25 @@
 {
-  "name": "tvtime",
+  "name": "home-apps",
   "version": "1.0.0",
   "private": true,
-  "description": "Suivi de séries et de films auto-hébergé, inspiré de TV Time.",
+  "description": "Trois applications web auto-hébergées pour le foyer : TV Time (séries et films), Sport (entraînement) et Apprendre (langues, parcours façon Duolingo).",
   "scripts": {
-    "install:all": "npm install --prefix server && npm install --prefix web",
-    "build": "npm run build --prefix web",
-    "validate:collections": "node server/scripts/validate-collections.mjs",
-    "dev": "concurrently -n api,web -c yellow,cyan \"npm run dev --prefix server\" \"npm run dev --prefix web\"",
-    "start": "npm start --prefix server"
+    "install:all": "npm run install:tvtime && npm run install:sport && npm run install:learn",
+    "install:tvtime": "npm install --prefix apps/tvtime/server && npm install --prefix apps/tvtime/web",
+    "install:sport": "npm install --prefix apps/sport/server && npm install --prefix apps/sport/web",
+    "install:learn": "npm install --prefix apps/learn/server && npm install --prefix apps/learn/web",
+    "build": "npm run build:tvtime && npm run build:sport && npm run build:learn",
+    "build:tvtime": "npm run build --prefix apps/tvtime/web",
+    "build:sport": "npm run build --prefix apps/sport/web",
+    "build:learn": "npm run build --prefix apps/learn/web",
+    "start": "concurrently -n tvtime,sport,learn -c yellow,red,green \"npm run start:tvtime\" \"npm run start:sport\" \"npm run start:learn\"",
+    "start:tvtime": "npm start --prefix apps/tvtime/server",
+    "start:sport": "npm start --prefix apps/sport/server",
+    "start:learn": "npm start --prefix apps/learn/server",
+    "dev:tvtime": "concurrently -n api,web -c yellow,cyan \"npm run dev --prefix apps/tvtime/server\" \"npm run dev --prefix apps/tvtime/web\"",
+    "dev:sport": "concurrently -n api,web -c red,cyan \"npm run dev --prefix apps/sport/server\" \"npm run dev --prefix apps/sport/web\"",
+    "dev:learn": "concurrently -n api,web -c green,cyan \"npm run dev --prefix apps/learn/server\" \"npm run dev --prefix apps/learn/web\"",
+    "validate:collections": "node apps/tvtime/server/scripts/validate-collections.mjs"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"
