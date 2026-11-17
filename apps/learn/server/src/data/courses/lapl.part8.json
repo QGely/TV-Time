@@ -13,14 +13,38 @@
           "icon": "⚖️",
           "tips": "La masse et le centrage conditionnent la sécurité : un avion trop lourd décolle long, monte mal et décroche à une vitesse plus élevée ; un avion mal centré peut devenir incontrôlable. Les limites figurent dans le manuel de vol, la masse à vide et son bras de levier dans la fiche de pesée.\n\nLes masses à connaître :\n• Masse à vide : avion équipé, avec le carburant inutilisable et les fluides prévus par la fiche de pesée (huile notamment).\n• Masse maximale au décollage (MTOM) : limite à ne jamais dépasser.\n• Masse maximale à l'atterrissage (MLM) : souvent égale à la MTOM sur un avion léger, parfois inférieure.\n• Charge utile = masse maximale au décollage − masse à vide : elle se partage entre occupants, bagages et carburant.\n\nCarburant : 1 litre d'AVGAS 100LL pèse environ 0,72 kg. Masse (kg) = volume (L) × 0,72 ; volume (L) = masse (kg) / 0,72. Exemple : 150 L = 108 kg.\n\nBras de levier et moment :\n• Le bras de levier d d'une masse est sa distance à une référence fixe choisie par le constructeur (par exemple la cloison pare-feu ou le bord d'attaque de l'aile).\n• Le moment vaut M = m × d (en kg·m).\n• Le centre de gravité se calcule par CG = ΣM / Σm : on additionne les moments de chaque élément (avion vide, occupants, bagages, carburant) et on divise par la masse totale.\n• Ajout d'une masse : on ajoute sa masse et son moment, puis on redivise.\n• Déplacement d'une masse m sur une distance Δd dans un avion de masse totale M : ΔCG = m × Δd / M.\n\nLes limites de centrage (avant et arrière) sont souvent présentées sous forme d'enveloppe sur un graphique masse/moment ou masse/CG : le point représentatif doit rester à l'intérieur.\n\nCentrage avant : avion plus stable mais lourd à cabrer ; l'empennage doit fournir plus de déportance, donc la vitesse de décrochage et la consommation augmentent légèrement. Au-delà de la limite avant, la profondeur peut manquer d'efficacité pour la rotation ou l'arrondi.\nCentrage arrière : commandes légères, stabilité réduite. Au-delà de la limite arrière, l'avion devient instable en tangage et la sortie de décrochage ou de vrille peut devenir impossible : c'est le cas le plus dangereux.\n\nÉvolution en vol : la consommation de carburant diminue la masse et déplace le CG. Si le réservoir est en arrière du CG, le CG avance au fil du vol ; s'il est en avant, le CG recule. On vérifie donc le centrage au décollage ET à l'atterrissage (masse à l'atterrissage = masse au décollage − carburant consommé).",
           "vocab": [
-            { "term": "Masse à vide", "translation": "Avion équipé, carburant inutilisable et fluides prévus compris" },
-            { "term": "MTOM", "translation": "Masse maximale au décollage, à ne jamais dépasser" },
-            { "term": "MLM", "translation": "Masse maximale à l'atterrissage" },
-            { "term": "Charge utile", "translation": "MTOM − masse à vide : occupants, bagages et carburant" },
-            { "term": "Bras de levier", "translation": "Distance d'une masse à la référence choisie par le constructeur" },
-            { "term": "Moment", "translation": "M = m × d, exprimé en kg·m" },
-            { "term": "Centre de gravité (CG)", "translation": "CG = ΣM / Σm, à maintenir entre les limites de centrage" },
-            { "term": "Enveloppe de centrage", "translation": "Zone du graphique masse/moment où l'avion doit se situer" }
+            {
+              "term": "Masse à vide",
+              "translation": "Avion équipé, carburant inutilisable et fluides prévus compris"
+            },
+            {
+              "term": "MTOM",
+              "translation": "Masse maximale au décollage, à ne jamais dépasser"
+            },
+            {
+              "term": "MLM",
+              "translation": "Masse maximale à l'atterrissage"
+            },
+            {
+              "term": "Charge utile",
+              "translation": "MTOM − masse à vide : occupants, bagages et carburant"
+            },
+            {
+              "term": "Bras de levier",
+              "translation": "Distance d'une masse à la référence choisie par le constructeur"
+            },
+            {
+              "term": "Moment",
+              "translation": "M = m × d, exprimé en kg·m"
+            },
+            {
+              "term": "Centre de gravité (CG)",
+              "translation": "CG = ΣM / Σm, à maintenir entre les limites de centrage"
+            },
+            {
+              "term": "Enveloppe de centrage",
+              "translation": "Zone du graphique masse/moment où l'avion doit se situer"
+            }
           ],
           "questions": [
             {
@@ -111,9 +135,9 @@
               "id": "u8s1q08",
               "q": "Quel est le principal danger d'un chargement qui place le centre de gravité en arrière de la limite arrière ?",
               "choices": [
-                "L'avion ne peut plus cabrer suffisamment pour décoller",
-                "La vitesse de décrochage augmente fortement",
-                "La profondeur manque d'efficacité pour réaliser l'arrondi",
+                "L'avion ne peut plus cabrer suffisamment pour effectuer la rotation au décollage",
+                "La vitesse de décrochage augmente fortement, surtout en virage et en approche",
+                "La profondeur manque d'efficacité pour réaliser l'arrondi à l'atterrissage",
                 "L'avion devient instable en tangage et la sortie de décrochage ou de vrille peut devenir impossible"
               ],
               "answer": 3,
@@ -175,14 +199,38 @@
           "icon": "🛫",
           "tips": "Les distances de décollage et d'atterrissage se lisent dans le manuel de vol (tableaux ou abaques). Elles ont été établies avec un avion neuf, par un pilote d'essai, sur une piste en dur sèche et horizontale : en exploitation réelle, il faut les corriger et ajouter des marges.\n\nDistances données par le manuel :\n• Décollage : distance de roulement, et distance jusqu'au passage d'une hauteur de 15 m (50 ft).\n• Atterrissage : distance depuis le passage de 15 m jusqu'à l'arrêt complet, et distance de roulement.\n\nDistances déclarées (publiées sur la carte VAC) :\n• TORA : longueur de piste utilisable pour le roulement au décollage.\n• TODA : TORA + prolongement dégagé (clearway).\n• ASDA : TORA + prolongement d'arrêt (stopway).\n• LDA : longueur utilisable pour l'atterrissage ; un seuil décalé la réduit.\nLa distance de roulement se compare à la TORA, la distance de décollage (15 m) à la TODA et la distance d'atterrissage à la LDA.\n\nFacteurs qui allongent les distances :\n• Masse élevée : vitesses de décollage et d'approche plus grandes, accélération plus faible. +10 % de masse ≈ +20 % de distance de décollage.\n• Altitude-densité élevée (terrain en altitude, chaleur, humidité) : air moins dense, moteur et hélice moins performants, vitesse vraie plus grande pour une même vitesse indiquée. Altitude-densité ≈ altitude-pression + 120 ft par °C d'écart à l'ISA (15 °C au niveau de la mer, −2 °C par 1 000 ft). L'air humide est moins dense que l'air sec.\n• Vent : le vent de face réduit la vitesse sol, donc les distances ; le vent arrière les augmente fortement.\n• Pente : une pente montante allonge le décollage et raccourcit l'atterrissage ; une pente descendante fait l'inverse.\n• État de piste : herbe, sol mou ou neige freinent l'accélération ; herbe et piste mouillées dégradent le freinage.\n\nMajorations indicatives, si le manuel ne donne rien :\n• herbe sèche : décollage +20 %, atterrissage +15 % ;\n• herbe mouillée : décollage +30 %, atterrissage +35 % (jusqu'à +60 % sur herbe courte mouillée) ;\n• +10 °C ou +1 000 ft d'altitude : décollage +10 % ;\n• pente de 2 % : +10 % (montante au décollage, descendante à l'atterrissage).\nLes corrections se multiplient entre elles : on n'additionne pas les pourcentages.\n\nCoefficients de sécurité recommandés : distance de décollage × 1,33 et distance d'atterrissage × 1,43 (on n'utilise ainsi que 70 % de la LDA).\n\nLecture d'abaque : on suit les entrées dans l'ordre imposé (souvent température, altitude-pression, masse, vent, obstacle de 15 m), parallèlement aux courbes guides, en interpolant entre les lignes.",
           "vocab": [
-            { "term": "TORA", "translation": "Longueur de piste utilisable pour le roulement au décollage" },
-            { "term": "TODA", "translation": "TORA + prolongement dégagé (clearway)" },
-            { "term": "ASDA", "translation": "TORA + prolongement d'arrêt (stopway)" },
-            { "term": "LDA", "translation": "Longueur de piste utilisable pour l'atterrissage" },
-            { "term": "Seuil décalé", "translation": "Seuil en retrait de l'extrémité de piste : il réduit la LDA" },
-            { "term": "Altitude-densité", "translation": "Altitude ISA ayant la même masse volumique que l'air réel" },
-            { "term": "Abaque", "translation": "Graphique du manuel de vol donnant une performance" },
-            { "term": "Coefficient de sécurité", "translation": "Marge multiplicative : × 1,33 au décollage, × 1,43 à l'atterrissage" }
+            {
+              "term": "TORA",
+              "translation": "Longueur de piste utilisable pour le roulement au décollage"
+            },
+            {
+              "term": "TODA",
+              "translation": "TORA + prolongement dégagé (clearway)"
+            },
+            {
+              "term": "ASDA",
+              "translation": "TORA + prolongement d'arrêt (stopway)"
+            },
+            {
+              "term": "LDA",
+              "translation": "Longueur de piste utilisable pour l'atterrissage"
+            },
+            {
+              "term": "Seuil décalé",
+              "translation": "Seuil en retrait de l'extrémité de piste : il réduit la LDA"
+            },
+            {
+              "term": "Altitude-densité",
+              "translation": "Altitude ISA ayant la même masse volumique que l'air réel"
+            },
+            {
+              "term": "Abaque",
+              "translation": "Graphique du manuel de vol donnant une performance"
+            },
+            {
+              "term": "Coefficient de sécurité",
+              "translation": "Marge multiplicative : × 1,33 au décollage, × 1,43 à l'atterrissage"
+            }
           ],
           "questions": [
             {
@@ -273,10 +321,10 @@
               "id": "u8s2q08",
               "q": "Par rapport au vent nul, un décollage avec une composante de vent arrière :",
               "choices": [
-                "réduit la distance de décollage, l'avion étant poussé par le vent",
-                "ne modifie que la pente de montée, pas la distance de roulement",
+                "réduit la distance de décollage, l'avion étant poussé par le vent pendant le roulement",
+                "ne modifie que la pente de montée après l'envol, pas la distance de roulement",
                 "augmente nettement la distance de décollage, car la vitesse sol à atteindre est plus élevée",
-                "n'allonge la distance de décollage que sur une piste en herbe"
+                "n'allonge la distance de décollage que sur une piste en herbe ou mouillée"
               ],
               "answer": 2,
               "explanation": "L'avion décolle à une vitesse donnée par rapport à l'air. Avec du vent arrière, la vitesse sol correspondante est plus grande : il faut accélérer plus longtemps. Un vent arrière égal à 10 % de la vitesse de décollage allonge la distance d'environ 20 %."
@@ -335,16 +383,40 @@
           "id": "u8s3",
           "title": "Montée, croisière et autonomie",
           "icon": "📈",
-          "tips": "Montée\n• Vx, vitesse de meilleur angle de montée : plus grand gain de hauteur pour une distance horizontale donnée. Elle correspond à l'excès de poussée maximal et sert au franchissement d'obstacles après le décollage.\n• Vy, vitesse de meilleur taux de montée : plus grand gain de hauteur par unité de temps (ft/min). Elle correspond à l'excès de puissance maximal ; c'est la vitesse de montée normale vers l'altitude de croisière.\n• Vx est inférieure à Vy. En vitesse indiquée, quand l'altitude augmente, Vx augmente légèrement et Vy diminue : elles deviennent égales au plafond absolu.\n• Le vent ne modifie pas le taux de montée (vitesse verticale dans la masse d'air) mais modifie la pente par rapport au sol : vent de face, pente sol plus forte ; vent arrière, pente sol plus faible.\n• Une masse plus élevée réduit le taux et l'angle de montée.\n\nPlafonds\n• Plafond absolu : altitude où le taux de montée maximal devient nul.\n• Plafond pratique : altitude où le taux de montée maximal n'est plus que de 100 ft/min (0,5 m/s).\nIls baissent quand la masse ou la température augmentent.\n\nInfluence de l'altitude : un moteur à pistons atmosphérique perd de la puissance quand la densité de l'air diminue. Le taux de montée diminue et, à vitesse indiquée constante, la vitesse vraie augmente.\n\nCroisière\nLe manuel donne, pour chaque altitude, le régime (tr/min) correspondant à un pourcentage de la puissance maximale continue (souvent 55 à 75 %), avec la vitesse vraie et la consommation horaire. Plus de puissance donne plus de vitesse, mais la consommation horaire augmente plus vite que la vitesse : la distance parcourue par litre diminue.\n\nAutonomie et distance franchissable\n• Autonomie maximale (temps de vol le plus long) : vitesse de puissance nécessaire minimale, qui donne la consommation horaire minimale. Utile en attente.\n• Distance franchissable maximale (vent nul) : vitesse de finesse maximale (traînée minimale) pour un avion à hélice, qui donne la consommation par kilomètre minimale.\n• La vitesse d'autonomie maximale est inférieure à celle de distance franchissable maximale.\n• Autonomie (h) = carburant utilisable (L) / consommation (L/h) ; distance sol = autonomie × vitesse sol.\n\nInfluence du vent\n• Le vent ne change pas l'autonomie en temps, mais change la distance parcourue par rapport au sol : vent de face, distance réduite ; vent arrière, distance augmentée.\n• Par vent de face, on augmente légèrement la vitesse pour optimiser la distance sol ; par vent arrière, on peut la réduire un peu.\n• Rayon d'action : distance maximale à laquelle on peut aller puis revenir au point de départ avec le carburant disponible, réserve exclue. Temps aller = autonomie × Vs retour / (Vs aller + Vs retour). Tout vent réduit le rayon d'action par rapport au vent nul.",
+          "tips": "Montée\n• Vx, vitesse de meilleur angle de montée : plus grand gain de hauteur pour une distance horizontale donnée. Excès de poussée maximal : c'est la vitesse de franchissement d'obstacles.\n• Vy, vitesse de meilleur taux de montée : plus grand gain de hauteur par unité de temps (ft/min). Excès de puissance maximal : c'est la vitesse de montée normale.\n• Vx est inférieure à Vy. En vitesse indiquée, quand l'altitude augmente, Vx augmente légèrement et Vy diminue : elles deviennent égales au plafond absolu.\n• Le vent ne modifie pas le taux de montée (vitesse verticale dans la masse d'air) mais modifie la pente par rapport au sol : vent de face, pente sol plus forte ; vent arrière, pente sol plus faible.\n• Une masse plus élevée réduit le taux et l'angle de montée.\n\nPlafonds\n• Plafond absolu : altitude où le taux de montée maximal devient nul.\n• Plafond pratique : altitude où le taux de montée maximal n'est plus que de 100 ft/min (0,5 m/s).\nIls baissent quand la masse ou la température augmentent.\n\nInfluence de l'altitude : un moteur à pistons atmosphérique perd de la puissance quand la densité de l'air diminue. Le taux de montée diminue et, à vitesse indiquée constante, la vitesse vraie augmente.\n\nCroisière\nLe manuel donne, pour chaque altitude, le régime (tr/min) correspondant à un pourcentage de la puissance maximale continue (souvent 55 à 75 %), avec la vitesse vraie et la consommation horaire. Plus de puissance donne plus de vitesse, mais la consommation horaire augmente plus vite que la vitesse : la distance parcourue par litre diminue.\n\nAutonomie et distance franchissable\n• Autonomie maximale (temps de vol le plus long) : vitesse de puissance nécessaire minimale, qui donne la consommation horaire minimale.\n• Distance franchissable maximale (vent nul) : vitesse de finesse maximale (traînée minimale) pour un avion à hélice, qui donne la consommation par kilomètre minimale.\n• La vitesse d'autonomie maximale est inférieure à celle de distance franchissable maximale.\n• Autonomie (h) = carburant utilisable (L) / consommation (L/h) ; distance sol = autonomie × vitesse sol.\n\nInfluence du vent\n• Le vent ne change pas l'autonomie en temps, mais change la distance parcourue par rapport au sol : vent de face, distance réduite ; vent arrière, distance augmentée.\n• Par vent de face, voler un peu plus vite améliore la distance sol ; par vent arrière, un peu moins vite.\n• Rayon d'action : distance maximale à laquelle on peut aller puis revenir au point de départ avec le carburant disponible, réserve exclue. Temps aller = autonomie × Vs retour / (Vs aller + Vs retour). Tout vent réduit le rayon d'action par rapport au vent nul.",
           "vocab": [
-            { "term": "Vx", "translation": "Vitesse de meilleur angle de montée (franchissement d'obstacle)" },
-            { "term": "Vy", "translation": "Vitesse de meilleur taux de montée (ft/min maximal)" },
-            { "term": "Plafond absolu", "translation": "Altitude où le taux de montée maximal devient nul" },
-            { "term": "Plafond pratique", "translation": "Altitude où le taux de montée maximal tombe à 100 ft/min" },
-            { "term": "Autonomie", "translation": "Temps de vol possible avec le carburant utilisable" },
-            { "term": "Distance franchissable", "translation": "Distance que l'on peut parcourir avec le carburant utilisable" },
-            { "term": "Rayon d'action", "translation": "Distance maximale aller-retour vers le départ, réserve exclue" },
-            { "term": "Finesse maximale", "translation": "Rapport portance/traînée maximal : distance max (avion à hélice)" }
+            {
+              "term": "Vx",
+              "translation": "Vitesse de meilleur angle de montée (franchissement d'obstacle)"
+            },
+            {
+              "term": "Vy",
+              "translation": "Vitesse de meilleur taux de montée (ft/min maximal)"
+            },
+            {
+              "term": "Plafond absolu",
+              "translation": "Altitude où le taux de montée maximal devient nul"
+            },
+            {
+              "term": "Plafond pratique",
+              "translation": "Altitude où le taux de montée maximal tombe à 100 ft/min"
+            },
+            {
+              "term": "Autonomie",
+              "translation": "Temps de vol possible avec le carburant utilisable"
+            },
+            {
+              "term": "Distance franchissable",
+              "translation": "Distance que l'on peut parcourir avec le carburant utilisable"
+            },
+            {
+              "term": "Rayon d'action",
+              "translation": "Distance maximale aller-retour vers le départ, réserve exclue"
+            },
+            {
+              "term": "Finesse maximale",
+              "translation": "Rapport portance/traînée maximal : distance max (avion à hélice)"
+            }
           ],
           "questions": [
             {
@@ -499,14 +571,38 @@
           "icon": "🗂️",
           "tips": "Avant tout vol, le commandant de bord prend connaissance de toutes les informations utiles (SERA.2010). Pour un vol quittant les abords de l'aérodrome, la préparation comprend l'étude des bulletins et prévisions météorologiques à jour, compte tenu du carburant nécessaire et d'une solution de rechange si le vol ne peut pas se dérouler comme prévu.\n\nLes étapes\n• Météo : METAR et TAF des aérodromes, cartes TEMSI (temps significatif) et WINTEM (vents et températures en altitude), SIGMET.\n• Informations aéronautiques : le SIA (Service de l'information aéronautique) publie l'AIP France (parties GEN, ENR et AD), les cartes VAC, les SUP AIP et les NOTAM. NOTAM et SUP AIP signalent les changements temporaires : zones réglementées temporaires (ZRT), travaux, pannes de moyens radio, activation de zones.\n• Cartes VAC : cheminements d'arrivée et de départ, altitude du tour de piste, fréquences, distances déclarées, consignes particulières.\n• Carte aéronautique au 1/500 000 : tracé de la route, espaces aériens et zones P, R et D avec leurs limites verticales, obstacles, altitudes de sécurité.\n\nLog de navigation\nPour chaque branche : route, distance, cap et vitesse sol corrigés du vent, temps estimé, carburant, fréquences et repères. Temps (min) = distance (NM) / vitesse sol (kt) × 60.\n\nCarburant\n• Délestage : carburant consommé pendant le vol (durée × consommation horaire).\n• On y ajoute la mise en route et le roulage, la réserve finale et, si besoin, un dégagement et une marge pour les imprévus.\n• Réserve finale en VFR de jour vers un autre aérodrome (Part-NCO) : 30 minutes de vol à l'altitude de croisière normale ; 45 minutes de nuit.\n\nPlan de vol\nObligatoire notamment pour un vol devant bénéficier du contrôle, un vol franchissant une frontière (sauf disposition contraire des États) et un vol de nuit quittant les abords de l'aérodrome. À l'arrivée, il faut le clôturer au plus vite, faute de quoi le service d'alerte déclenche les recherches.\n\nDocuments\n• Pilote (FCL.045) : licence, certificat médical en état de validité et pièce d'identité avec photo.\n• Avion (NCO.GEN.135) : manuel de vol, certificat d'immatriculation et certificat de navigabilité (originaux), attestation d'assurance, licence de station radio le cas échéant, carnet de route, cartes à jour.\n\nRisque et minima personnels\nLes minima personnels sont des limites plus restrictives que la réglementation, fixées à l'avance par le pilote selon son expérience et son entraînement récent (vent de travers, visibilité, plafond, longueur de piste). Le jour du vol, on évalue le pilote, l'avion, l'environnement et la pression extérieure : si un minimum personnel n'est pas respecté, on reporte ou on modifie le vol.",
           "vocab": [
-            { "term": "SIA", "translation": "Service de l'information aéronautique : AIP, VAC, NOTAM" },
-            { "term": "AIP", "translation": "Publication d'information aéronautique : parties GEN, ENR, AD" },
-            { "term": "NOTAM", "translation": "Avis aux navigants : information temporaire ou urgente" },
-            { "term": "SUP AIP", "translation": "Supplément à l'AIP : modification temporaire, souvent longue" },
-            { "term": "Carte VAC", "translation": "Carte d'approche et d'atterrissage à vue d'un aérodrome" },
-            { "term": "Délestage", "translation": "Carburant consommé pendant le vol" },
-            { "term": "Log de navigation", "translation": "Tableau de préparation : routes, caps, temps, carburant par branche" },
-            { "term": "Minima personnels", "translation": "Limites que le pilote se fixe, plus strictes que la réglementation" }
+            {
+              "term": "SIA",
+              "translation": "Service de l'information aéronautique : AIP, VAC, NOTAM"
+            },
+            {
+              "term": "AIP",
+              "translation": "Publication d'information aéronautique : parties GEN, ENR, AD"
+            },
+            {
+              "term": "NOTAM",
+              "translation": "Avis aux navigants : information temporaire ou urgente"
+            },
+            {
+              "term": "SUP AIP",
+              "translation": "Supplément à l'AIP : modification temporaire, souvent longue"
+            },
+            {
+              "term": "Carte VAC",
+              "translation": "Carte d'approche et d'atterrissage à vue d'un aérodrome"
+            },
+            {
+              "term": "Délestage",
+              "translation": "Carburant consommé pendant le vol"
+            },
+            {
+              "term": "Log de navigation",
+              "translation": "Tableau de préparation : routes, caps, temps, carburant par branche"
+            },
+            {
+              "term": "Minima personnels",
+              "translation": "Limites que le pilote se fixe, plus strictes que la réglementation"
+            }
           ],
           "questions": [
             {
@@ -549,9 +645,9 @@
               "id": "u8s4q04",
               "q": "Lors de la préparation, la carte VAC de l'aérodrome de destination vous renseigne notamment sur :",
               "choices": [
-                "les cheminements d'arrivée, l'altitude du tour de piste, les fréquences et les consignes particulières",
+                "les cheminements d'arrivée, l'altitude du tour de piste et les fréquences",
                 "les prévisions météorologiques et le vent attendu à l'heure d'arrivée",
-                "les NOTAM en vigueur sur l'aérodrome le jour du vol",
+                "les NOTAM et les travaux en cours sur l'aérodrome le jour du vol",
                 "les vents et températures en altitude le long de la route"
               ],
               "answer": 0,
