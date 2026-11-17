@@ -42,7 +42,7 @@
                 "L'exploitant de l'aérodrome de départ",
                 "Chaque passager, en lisant la notice placée à bord",
                 "Le service d'information de vol, lors du dépôt du plan de vol",
-                "Le commandant de bord"
+                "Le commandant de bord, avant le vol ou pendant si nécessaire"
               ],
               "answer": 3,
               "explanation": "Le Part-NCO charge le commandant de bord de veiller à ce que, avant le vol ou, si nécessaire, pendant le vol, les passagers soient informés des procédures d'urgence et de l'utilisation des équipements de secours (ceintures, portes, extincteur, gilets…)."
@@ -77,13 +77,13 @@
               "id": "u7s1q06",
               "q": "Au début du roulement au décollage, le vent de travers vient de la gauche. Comment positionner le manche en roulis ?",
               "choices": [
-                "Braqué à gauche, côté vent, puis rendu progressivement quand la vitesse augmente",
-                "Braqué à droite, à l'opposé du vent, pour soulager l'aile gauche",
-                "Au neutre : seule la gouverne de direction corrige le vent de travers",
-                "Braqué à gauche, en augmentant le braquage jusqu'à la rotation"
+                "Braqué à gauche, côté vent, puis réduit à mesure que la vitesse augmente",
+                "Braqué à droite, à l'opposé du vent, pour soulager l'aile gauche au vent",
+                "Au neutre : au sol, le palonnier suffit à corriger l'effet du vent de travers",
+                "Braqué à gauche, en augmentant le braquage à mesure que la vitesse augmente"
               ],
               "answer": 0,
-              "explanation": "Ailerons braqués côté vent, l'aile au vent ne peut pas être soulevée. Leur efficacité croissant avec la vitesse, on réduit le braquage pendant l'accélération ; l'axe est tenu aux palonniers."
+              "explanation": "Ailerons braqués côté vent, l'aile au vent ne peut pas être soulevée. Leur efficacité croissant avec la vitesse, on réduit le braquage pendant l'accélération (l'augmenter ferait au contraire incliner l'avion) ; l'axe est tenu aux palonniers."
             },
             {
               "id": "u7s1q07",
@@ -181,13 +181,13 @@
               "id": "u7s2q02",
               "q": "Pourquoi ne faut-il pas tenter de revenir vers la piste après une panne moteur à basse hauteur ?",
               "choices": [
-                "Le virage augmente le taux de chute et la vitesse de décrochage, et l'on arriverait vent arrière",
-                "La réglementation interdit tout virage en dessous de 500 ft",
-                "Sans moteur, les ailerons perdent toute efficacité en virage",
-                "Le compensateur, réglé pour la montée, rend tout virage impossible"
+                "Le virage accroît le taux de chute et la vitesse de décrochage ; on arriverait vent arrière",
+                "La réglementation interdit tout virage à moins de 500 ft au-dessus de la piste",
+                "Sans moteur, les ailerons perdent leur efficacité et l'avion ne peut plus virer",
+                "Le virage réduit la vitesse de décrochage, ce qui incite à voler beaucoup trop lentement"
               ],
               "answer": 0,
-              "explanation": "En virage, le facteur de charge augmente la vitesse de décrochage et la perte de hauteur ; rejoindre l'axe demande bien plus de 180° et l'on se poserait vent arrière. Se poser à peu près droit devant est la solution la plus sûre."
+              "explanation": "Ce n'est pas une interdiction réglementaire : en virage, le facteur de charge augmente (et non réduit) la vitesse de décrochage et la perte de hauteur ; rejoindre l'axe demande bien plus de 180° et l'on se poserait vent arrière. Se poser à peu près droit devant est la solution la plus sûre."
             },
             {
               "id": "u7s2q03",
@@ -212,10 +212,10 @@
               "id": "u7s2q05",
               "q": "Lors d'un feu moteur en vol, pourquoi ferme-t-on le chauffage cabine ?",
               "choices": [
-                "Pour réserver toute l'énergie électrique à la radio",
-                "Parce que le chauffage envoie de l'air chaud au moteur et attise le feu",
-                "Pour éviter le givrage du carburateur pendant la descente",
-                "Parce que son air, réchauffé autour de l'échappement, amènerait fumée et flammes en cabine"
+                "Pour réserver toute l'énergie électrique à la radio et au transpondeur",
+                "Son circuit renvoie de l'air chaud vers le moteur, ce qui attiserait le feu",
+                "Pour éviter le givrage du carburateur pendant la descente vers le terrain choisi",
+                "Son air, réchauffé autour de l'échappement, amènerait fumées et flammes en cabine"
               ],
               "answer": 3,
               "explanation": "Sur la plupart des avions légers, l'air de chauffage est réchauffé par un échangeur autour du pot d'échappement, dans le compartiment moteur. En cas de feu, il ferait entrer fumées et gaz toxiques dans la cabine."
@@ -224,10 +224,10 @@
               "id": "u7s2q06",
               "q": "Un feu moteur se déclare en croisière. Quel est le principe général de la procédure, à appliquer selon le manuel de vol ?",
               "choices": [
-                "Couper l'arrivée de carburant, fermer le chauffage et préparer un atterrissage forcé sans redémarrer",
-                "Enrichir le mélange et augmenter la puissance pour souffler les flammes",
+                "Couper le carburant, fermer le chauffage, préparer un atterrissage forcé sans redémarrer",
+                "Enrichir le mélange et augmenter la puissance pour chasser les flammes vers l'arrière",
                 "Couper puis rallumer les magnétos pour relancer le moteur une fois le feu éteint",
-                "Ouvrir le chauffage pour évacuer la fumée du compartiment moteur"
+                "Ouvrir le chauffage cabine pour évacuer la fumée du compartiment moteur"
               ],
               "answer": 0,
               "explanation": "On prive le feu de carburant (robinet fermé, mélange sur étouffoir), on protège la cabine et on se pose au plus vite. On ne redémarre jamais un moteur qui a pris feu."
@@ -260,10 +260,10 @@
               "id": "u7s2q09",
               "q": "Sur un avion léger classique à moteur à pistons, l'alternateur tombe en panne. Pourquoi le moteur continue-t-il de tourner ?",
               "choices": [
-                "Parce que la batterie alimente directement les bougies",
-                "Parce qu'un alternateur de secours prend toujours le relais",
-                "Parce que l'allumage est assuré par les magnétos, indépendantes du circuit électrique",
-                "Parce que le moteur ne s'arrête qu'une fois la batterie entièrement vide"
+                "Parce que la batterie prend le relais et alimente directement les bougies",
+                "Parce qu'un alternateur de secours, entraîné par l'hélice, prend le relais",
+                "Parce que l'allumage vient des magnétos, indépendantes du circuit électrique",
+                "Parce que le moteur ne s'arrêtera qu'une fois la batterie entièrement déchargée"
               ],
               "answer": 2,
               "explanation": "Les magnétos, entraînées par le moteur, produisent elles-mêmes le courant d'allumage. La panne d'alternateur prive seulement l'avion de recharge : la batterie alimente les équipements électriques pour un temps limité."
@@ -284,10 +284,10 @@
               "id": "u7s2q11",
               "q": "Juste après le décollage, la porte passager s'entrouvre. Quelle est la conduite à tenir ?",
               "choices": [
-                "Lâcher les commandes un instant pour la refermer à deux mains",
-                "Accélérer au maximum pour plaquer la porte contre le fuselage",
-                "Se poser immédiatement dans le premier champ venu",
-                "Continuer à piloter normalement, faire un tour de piste et se poser pour la refermer"
+                "Lâcher les commandes un instant pour la claquer à deux mains, puis poursuivre",
+                "Accélérer au maximum pour que le flux d'air plaque la porte contre le fuselage",
+                "Couper le moteur et se poser droit devant, dans le premier champ venu",
+                "Piloter d'abord, faire un tour de piste et se poser pour la refermer au sol"
               ],
               "answer": 3,
               "explanation": "Une porte ouverte est surtout bruyante : l'avion reste pilotable. Le vrai danger est la distraction ; on pilote d'abord, on réduit la vitesse selon le manuel et on revient se poser pour la refermer au sol."
@@ -298,8 +298,8 @@
               "choices": [
                 "Couper la pompe électrique et appauvrir le mélange au maximum",
                 "Réchauffage carburateur, sélecteur de réservoir, mélange et magnétos",
-                "Réduire au ralenti et couper le contact général",
-                "Ouvrir le chauffage cabine et sortir les volets"
+                "Réduire au ralenti, puis couper le contact général et les magnétos",
+                "Ouvrir le chauffage cabine, sortir les volets et réduire les gaz"
               ],
               "answer": 1,
               "explanation": "Les causes les plus fréquentes sont le givrage carburateur et un problème d'alimentation (réservoir vide, sélecteur mal placé, mélange). La check-list du manuel prévoit typiquement : réchauffage, changement de réservoir, pompe électrique, mélange, essai des magnétos."
@@ -386,13 +386,13 @@
               "id": "u7s3q06",
               "q": "Pourquoi le givrage de la cellule est-il dangereux pour un avion léger ?",
               "choices": [
-                "Il augmente la portance en épaississant le profil de l'aile",
-                "Il ne gêne que la visibilité à travers le pare-brise",
-                "Il ne concerne que l'hélice, dont il réduit la traction",
+                "Il épaissit le profil, ce qui augmente la portance mais aussi la traînée",
+                "Il alourdit l'avion, mais la vitesse de décrochage reste celle du manuel de vol",
+                "Il réduit surtout la traction de l'hélice, la portance de l'aile restant intacte",
                 "Il alourdit l'avion, augmente la traînée et élève la vitesse de décrochage"
               ],
               "answer": 3,
-              "explanation": "Quelques millimètres de givre déforment le profil et dégradent fortement la portance, alors que masse et traînée augmentent. Un avion non certifié pour le givrage doit quitter ces conditions sans attendre."
+              "explanation": "Quelques millimètres de givre déforment le profil et dégradent fortement la portance, alors que masse et traînée augmentent : la vitesse de décrochage s'élève au-dessus des valeurs du manuel de vol. Un avion non certifié pour le givrage doit quitter ces conditions sans attendre."
             },
             {
               "id": "u7s3q07",
@@ -411,9 +411,9 @@
               "q": "Comment un pilote VFR doit-il éviter un cumulonimbus isolé ?",
               "choices": [
                 "En le contournant très largement, sans passer sous sa base ni sous son enclume",
-                "En passant sous sa base, où la visibilité reste souvent bonne",
-                "En passant sous l'enclume, à l'écart des précipitations principales",
-                "En le traversant au plus vite, à la vitesse maximale"
+                "En passant sous sa base, où la visibilité reste souvent bonne hors averses",
+                "En passant sous l'enclume, à l'écart des précipitations du cœur de l'orage",
+                "En le traversant par le plus court chemin, à la vitesse maximale autorisée"
               ],
               "answer": 0,
               "explanation": "Sous la base règnent rafales descendantes et cisaillement ; de la grêle peut tomber de l'enclume, loin du cœur de l'orage. Turbulence, foudre et givrage complètent les dangers : seul un large contournement est sûr."
@@ -422,9 +422,9 @@
               "id": "u7s3q09",
               "q": "En VFR, vous entrez par inadvertance dans un nuage. Quelle est la conduite recommandée ?",
               "choices": [
-                "Descendre rapidement pour retrouver la vue du sol",
-                "Passer sur les instruments, ailes à plat, puis faire demi-tour à inclinaison modérée",
-                "Virer serré à forte inclinaison pour ressortir au plus vite",
+                "Réduire, puis descendre rapidement pour retrouver au plus vite la vue du sol",
+                "Passer aux instruments, ailes à plat, puis faire demi-tour à inclinaison modérée",
+                "Virer serré, à forte inclinaison, pour ressortir du nuage au plus vite",
                 "Poursuivre tout droit en montée jusqu'à sortir au-dessus de la couche"
               ],
               "answer": 1,
@@ -462,7 +462,7 @@
           "id": "u7s4",
           "title": "Sécurité, survie et sauvetage",
           "icon": "🛟",
-          "tips": "Balise de détresse (ELT) : déclenchement automatique au choc, ou manuel.\n• 406 MHz : signal numérique capté par les satellites Cospas-Sarsat ; il contient l'identité de la balise (enregistrée) et souvent sa position GNSS.\n• 121,5 MHz : signal de radioralliement sur lequel se guident les moyens de recherche. Les satellites ne le traitent plus depuis 2009.\n• Part-NCO : ELT et balises personnelles (PLB) émettent simultanément sur 121,5 et 406 MHz ; un avion certifié pour 6 sièges passagers au plus peut se contenter d'une ELT de survie ou d'une PLB portée par un occupant.\n• Déclenchement intempestif : prévenir l'ATC. Après un atterrissage dur, écouter le 121,5 MHz.\n\nRecherche et sauvetage (SAR) : phases INCERFA (incertitude), ALERFA (alerte), DETRESFA (détresse). La phase d'incertitude est déclarée notamment si un aéronef n'arrive pas dans les 30 min suivant sa dernière heure d'arrivée prévue. Avec un plan de vol, faire un compte rendu d'arrivée ; sans organisme ATS sur place, le transmettre au plus vite à l'organisme le plus proche.\n\nSurvie : rester près de l'avion, plus visible qu'une personne isolée. Signaux sol-air : V = besoin d'assistance ; X = besoin d'assistance médicale ; N = non ; Y = oui ; flèche = direction suivie. Au-dessus des zones où le SAR serait difficile, emporter des moyens de signalisation (fusées, miroir) et de survie (eau, couverture).\n\nAmerrissage : portes déverrouillées avant l'impact, ceintures serrées, train escamotable rentré ; toucher à la vitesse la plus faible possible, assiette cabrée, parallèlement à la houle si elle est forte. Le gilet s'enfile avant, mais ne se gonfle qu'une fois sorti de l'avion. Part-NCO : gilet pour chaque occupant d'un monomoteur terrestre survolant l'eau au-delà de la distance de plané de la terre, ou si la trajectoire de décollage ou d'approche rend un amerrissage probable.\n\nCarburant VFR (Part-NCO) : de quoi rejoindre la destination puis voler encore au moins 30 min de jour et 45 min de nuit, à l'altitude de croisière normale (10 min pour un vol local de jour restant en vue de l'aérodrome). Ex. : 1 h 30 de vol de jour à 24 L/h → (1,5 + 0,5) × 24 = 48 L, plus roulage et carburant inutilisable.\n\nÉvacuation : couper carburant et contact général, évacuer sans délai, emporter si possible l'équipement de survie et s'éloigner en remontant le vent.\n\nExtincteurs, classes de feu :\n• A : solides formant des braises (bois, papier, tissus) ;\n• B : liquides ou solides liquéfiables (essence, huile) ;\n• C : gaz ; D : métaux ; F : huiles de cuisson.\n• Feu électrique : agent non conducteur (halon ou substitut, CO₂). Jamais de jet d'eau sur un feu électrique ni sur un feu d'essence. Viser la base des flammes, puis aérer la cabine.",
+          "tips": "Balise de détresse (ELT) : déclenchement automatique au choc, ou manuel.\n• 406 MHz : signal numérique capté par les satellites Cospas-Sarsat ; il contient l'identité de la balise (enregistrée) et souvent sa position GNSS.\n• 121,5 MHz : signal de radioralliement sur lequel se guident les moyens de recherche. Les satellites ne le traitent plus depuis 2009.\n• Part-NCO : ELT et balises personnelles (PLB) émettent simultanément sur 121,5 et 406 MHz ; un avion certifié pour 6 sièges passagers au plus peut se contenter d'une ELT de survie ou d'une PLB portée par un occupant.\n• Déclenchement intempestif : prévenir l'ATC. Après un atterrissage dur, écouter le 121,5 MHz.\n\nRecherche et sauvetage (SAR) : phases INCERFA (incertitude), ALERFA (alerte), DETRESFA (détresse). La phase d'incertitude est déclarée notamment si un aéronef n'arrive pas dans les 30 min suivant sa dernière heure d'arrivée prévue. Avec un plan de vol, faire un compte rendu d'arrivée ; sans organisme ATS sur place, le transmettre au plus vite à l'organisme le plus proche.\n\nSurvie : rester près de l'avion, plus visible qu'une personne isolée. Signaux sol-air : V = besoin d'assistance ; X = besoin d'assistance médicale ; N = non ; Y = oui ; flèche = direction suivie. Au-dessus des zones où le SAR serait difficile, emporter des moyens de signalisation (fusées, miroir) et de survie (eau, couverture).\n\nAmerrissage : portes déverrouillées avant l'impact, ceintures serrées, train escamotable rentré ; toucher à la vitesse la plus faible possible, assiette cabrée, parallèlement à la houle si elle est forte. Le gilet s'enfile avant, mais ne se gonfle qu'une fois sorti de l'avion. Part-NCO : gilet pour chaque occupant d'un monomoteur terrestre survolant l'eau au-delà de la distance de plané de la terre, ou si la trajectoire de décollage ou d'approche rend un amerrissage probable.\n\nCarburant VFR (Part-NCO, NCO.OP.125 et AMC1 NCO.OP.125(b), avions) : de quoi rejoindre la destination en conservant une réserve finale d'au moins 30 min de vol de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination (10 min à la puissance maximale de croisière continue pour un vol local de jour : décollage et atterrissage au même aérodrome, en restant en vue de celui-ci). Cette réserve finale ne doit pas être entamée en exploitation normale. Ex. : 1 h 30 de vol de jour à 24 L/h → (1,5 + 0,5) × 24 = 48 L, plus roulage et carburant inutilisable (calculer la réserve avec la consommation de croisière va dans le sens de la sécurité).\n\nÉvacuation : couper carburant et contact général, évacuer sans délai, emporter si possible l'équipement de survie et s'éloigner en remontant le vent.\n\nExtincteurs, classes de feu :\n• A : solides formant des braises (bois, papier, tissus) ;\n• B : liquides ou solides liquéfiables (essence, huile) ;\n• C : gaz ; D : métaux ; F : huiles de cuisson.\n• Feu électrique : agent non conducteur (halon ou substitut, CO₂). Jamais de jet d'eau sur un feu électrique ni sur un feu d'essence. Viser la base des flammes, puis aérer la cabine.",
           "vocab": [
             { "term": "ELT", "translation": "Balise de détresse d'aéronef, émettant sur 406 et 121,5 MHz" },
             { "term": "PLB", "translation": "Balise de détresse personnelle, portée par une personne" },
@@ -470,7 +470,7 @@
             { "term": "Radioralliement", "translation": "Guidage des secours vers la balise grâce à son signal 121,5 MHz" },
             { "term": "SAR", "translation": "Search And Rescue : recherche et sauvetage" },
             { "term": "INCERFA / ALERFA / DETRESFA", "translation": "Phases d'urgence successives : incertitude, alerte, détresse" },
-            { "term": "Réserve de carburant VFR", "translation": "Part-NCO : 30 min de vol de jour, 45 min de nuit" },
+            { "term": "Réserve finale (VFR)", "translation": "Avion, Part-NCO : 30 min de jour, 45 min de nuit (attente, 1 500 ft)" },
             { "term": "Feu de classe B", "translation": "Feu de liquides ou solides liquéfiables : essence, huile" }
           ],
           "questions": [
@@ -478,10 +478,10 @@
               "id": "u7s4q01",
               "q": "Quel est l'intérêt principal de l'émission d'une balise ELT sur 406 MHz ?",
               "choices": [
-                "Elle est captée par les satellites Cospas-Sarsat et transmet l'identité codée de la balise",
-                "Elle permet au pilote de dialoguer en phonie avec les secours",
-                "Elle est entendue par tous les avions en vol sur leur fréquence de travail",
-                "Elle n'émet que lorsque le pilote l'active manuellement depuis le tableau de bord"
+                "Captée par les satellites Cospas-Sarsat, elle transmet l'identité codée de la balise",
+                "Elle permet au pilote de dialoguer en phonie avec les secours depuis l'épave",
+                "Elle est relayée sur la fréquence de travail des avions qui survolent la zone",
+                "Elle affiche la position de l'épave sur le radar du contrôleur, avec le code 7700"
               ],
               "answer": 0,
               "explanation": "Le signal numérique sur 406 MHz est relayé par les satellites vers les centres de secours ; il contient l'identité de la balise, enregistrée, et souvent une position GNSS. Le 121,5 MHz sert au radioralliement final."
@@ -515,12 +515,12 @@
               "q": "Vous avez déposé un plan de vol VFR et vous vous posez sur un aérodrome dépourvu d'organisme des services de la circulation aérienne (ATS). Que devez-vous faire ?",
               "choices": [
                 "Rien : le plan de vol se clôture automatiquement à l'heure d'arrivée prévue",
-                "Transmettre au plus vite un compte rendu d'arrivée à l'organisme ATS le plus proche",
-                "Clôturer le plan de vol lors du dépôt de votre prochain plan de vol",
-                "Prévenir uniquement votre aéroclub, qui avertira les secours si besoin"
+                "Envoyer au plus vite un compte rendu d'arrivée à l'organisme ATS le plus proche",
+                "Clôturer le plan de vol plus tard, lors du dépôt de votre prochain plan de vol",
+                "Confier à votre aéroclub la clôture du plan de vol, à sa réouverture le lendemain"
               ],
               "answer": 1,
-              "explanation": "Les règles de l'air (SERA) imposent un compte rendu d'arrivée dès que possible après l'atterrissage. Sans organisme sur place, on le transmet par le moyen le plus rapide à l'organisme ATS le plus proche ; sinon, des recherches risquent d'être déclenchées."
+              "explanation": "Les règles de l'air (SERA) imposent un compte rendu d'arrivée dès que possible après l'atterrissage. Sans organisme sur place, on le transmet par le moyen le plus rapide à l'organisme ATS le plus proche ; attendre le lendemain ou le prochain plan de vol risquerait de déclencher des recherches inutiles."
             },
             {
               "id": "u7s4q05",
@@ -557,13 +557,13 @@
               "id": "u7s4q08",
               "q": "Après un atterrissage forcé, un début d'incendie apparaît au moteur. Comment évacuer ?",
               "choices": [
-                "Rester attaché à son siège jusqu'à l'arrivée des secours",
-                "Se regrouper sous le vent de l'avion, près de l'aile, à l'abri",
+                "Rester attaché à son siège, portes fermées, jusqu'à l'arrivée des secours",
+                "Couper carburant et contact, évacuer et se regrouper sous le vent, près de l'aile",
                 "Couper carburant et contact général, évacuer et s'éloigner en remontant le vent",
-                "Tenter de redémarrer le moteur pour souffler les flammes"
+                "Tenter de redémarrer le moteur pour souffler les flammes avec l'hélice"
               ],
               "answer": 2,
-              "explanation": "On coupe ce qui alimente le feu (carburant, électricité), on évacue sans délai et on s'éloigne en remontant le vent, pour ne pas être exposé aux flammes et aux fumées poussées par celui-ci."
+              "explanation": "On coupe ce qui alimente le feu (carburant, électricité), on évacue sans délai et on s'éloigne en remontant le vent : sous le vent de l'avion, on serait exposé aux flammes et aux fumées poussées par celui-ci."
             },
             {
               "id": "u7s4q09",
@@ -579,22 +579,22 @@
             },
             {
               "id": "u7s4q10",
-              "q": "Vol VFR de jour de 1 h 20 jusqu'à destination, consommation 30 L/h. Hors roulage et carburant inutilisable, quelle quantité minimale de carburant faut-il emporter selon le Part-NCO ?",
+              "q": "Vol VFR de jour de 1 h 20 jusqu'à destination, consommation 30 L/h (retenue aussi pour la réserve). Hors roulage et carburant inutilisable, quelle quantité minimale de carburant faut-il emporter selon le Part-NCO ?",
               "choices": ["40 L", "62,5 L", "45 L", "55 L"],
               "answer": 3,
-              "explanation": "De jour, il faut une réserve de 30 min à l'altitude de croisière normale : 1 h 20 + 0 h 30 = 1 h 50, soit 110 min × 0,5 L/min = 55 L. Roulage et carburant inutilisable s'y ajoutent."
+              "explanation": "De jour, il faut conserver une réserve finale de 30 min (AMC1 NCO.OP.125(b) : en vitesse d'attente à 1 500 ft au-dessus de la destination ; la calculer avec la consommation de croisière va dans le sens de la sécurité) : 1 h 20 + 0 h 30 = 1 h 50, soit 110 min × 0,5 L/min = 55 L. Roulage et carburant inutilisable s'y ajoutent."
             },
             {
               "id": "u7s4q11",
-              "q": "Pour un vol VFR de nuit, quelle réserve minimale de carburant le Part-NCO exige-t-il au-delà de l'arrivée à destination ?",
+              "q": "En avion, pour un vol VFR de nuit, quelle réserve finale minimale de carburant le Part-NCO prévoit-il à l'arrivée à destination ?",
               "choices": [
-                "45 minutes de vol à l'altitude de croisière normale",
-                "30 minutes de vol à l'altitude de croisière normale",
-                "60 minutes de vol à l'altitude de croisière normale",
-                "20 minutes de vol à l'altitude de croisière normale"
+                "45 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
+                "30 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
+                "60 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
+                "20 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination"
               ],
               "answer": 0,
-              "explanation": "En VFR, le Part-NCO exige de quoi rejoindre l'aérodrome de destination puis voler au moins 30 min de jour et 45 min de nuit, à l'altitude de croisière normale."
+              "explanation": "Depuis le 30 octobre 2022 (règlement (UE) 2021/1296), le Part-NCO impose une réserve finale. Pour un avion en VFR, l'AMC1 NCO.OP.125(b) la fixe à 30 min de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination."
             },
             {
               "id": "u7s4q12",

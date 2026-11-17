@@ -148,12 +148,12 @@
               "q": "Lorsqu'il exerce les privilèges de sa licence, que doit porter le pilote sur lui ?",
               "choices": [
                 "Sa licence, son certificat médical et une pièce d'identité avec photo",
-                "Sa licence et son carnet de vol, le certificat médical restant au club",
+                "Sa licence et son carnet de vol, mais pas son certificat médical",
                 "Son certificat médical et son attestation de réussite au théorique",
-                "Sa licence seulement, le certificat médical étant inscrit dessus"
+                "Sa licence, sur laquelle le certificat médical est déjà inscrit"
               ],
               "answer": 0,
-              "explanation": "Selon FCL.045, une licence et un certificat médical en état de validité doivent toujours être portés par le pilote qui exerce ses privilèges, ainsi qu'un document d'identité avec photo."
+              "explanation": "Selon FCL.045, une licence et un certificat médical en état de validité doivent toujours être portés par le pilote qui exerce ses privilèges, ainsi qu'un document d'identité avec photo. Le certificat médical est un document distinct de la licence."
             },
             {
               "id": "u1s1q10",
@@ -197,11 +197,11 @@
           "id": "u1s2",
           "title": "Licences et qualifications",
           "icon": "🪪",
-          "tips": "Deux licences permettent le vol privé sur avion :\n• LAPL(A) : commandant de bord sur avion monomoteur à pistons ou motoplaneur (TMG) de masse maximale au décollage (MTOM) ≤ 2 000 kg, avec au plus 3 passagers (jamais plus de 4 personnes à bord). Licence européenne non conforme OACI : elle s'exerce dans les États de l'EASA ; ailleurs, l'accord de l'État concerné est nécessaire. Pas de qualification de classe à proroger, mais une exigence de maintien de compétence.\n• PPL(A) : licence conforme à l'annexe 1 de l'OACI, reconnue internationalement, sans limite de masse ni de passagers propre à la licence ; les avions pilotables dépendent des qualifications de classe ou de type détenues (SEP pour les monomoteurs à pistons). Vols non commerciaux, sans rémunération (sauf, sous conditions, pour l'instruction et les examens).\n\nÂges minimaux :\n• premier vol solo : 16 ans, avec l'autorisation de l'instructeur et un certificat médical\n• délivrance du LAPL(A) ou du PPL(A) : 17 ans\n\nCertificats médicaux (Part-MED) : classe 2 au minimum pour le PPL ; certificat LAPL (ou classe 2) pour le LAPL. La validité dépend de l'âge à la date de l'examen :\n• classe 2 : 60 mois avant 40 ans, 24 mois de 40 à 50 ans, 12 mois après 50 ans\n• LAPL : 60 mois avant 40 ans, 24 mois ensuite\nUn certificat délivré avant 40 ans cesse d'être valable à 42 ans.\n\nQualification SEP : valable 24 mois. Prorogation par un contrôle de compétences avec un examinateur dans les 3 mois précédant l'échéance, ou par expérience dans les 12 mois précédant l'échéance : 12 h de vol dont 6 h de commandant de bord (CdB), 12 décollages, 12 atterrissages et un vol d'entraînement d'au moins 1 h avec un instructeur.\n\nMaintien de compétence LAPL(A) (FCL.140.A) : sur les 24 derniers mois, 12 h de vol comme CdB dont 12 décollages et atterrissages, et 1 h d'entraînement avec un instructeur. À défaut : contrôle de compétences, ou vols complémentaires en double ou en solo supervisé.\n\nExpérience récente (FCL.060) : pour emporter des passagers, 3 décollages, approches et atterrissages dans les 90 jours précédents sur un avion de même type ou classe.\n\nCarnet de vol (FCL.050) : le pilote y consigne tous ses vols.\n\nCompétence linguistique (FCL.055) : mention obligatoire pour utiliser la radiotéléphonie ; niveau 4 (fonctionnel) au minimum, puis 5 (avancé) et 6 (expert, sans limite de validité).\n\nExamen théorique (FCL.025) : 75 % exigés par épreuve, 4 tentatives au plus par épreuve. Toutes les épreuves doivent être réussies dans les 18 mois suivant la fin du mois calendaire de la première tentative. La réussite reste valable 24 mois pour la délivrance de la licence.",
+          "tips": "Deux licences permettent le vol privé sur avion :\n• LAPL(A) : commandant de bord sur avion monomoteur à pistons ou motoplaneur (TMG) de masse maximale au décollage (MTOM) ≤ 2 000 kg, avec au plus 3 passagers (jamais plus de 4 personnes à bord). Le titulaire d'un LAPL(A) ne peut emmener de passagers qu'après avoir effectué, depuis la délivrance de sa licence, 10 h de vol comme commandant de bord sur avion ou TMG (FCL.105.A ; exemption s'il a déjà détenu un PPL, CPL, MPL ou ATPL avion). Licence européenne non conforme OACI : elle s'exerce dans les États de l'EASA ; ailleurs, l'accord de l'État concerné est nécessaire. Pas de qualification de classe à proroger, mais une exigence de maintien de compétence.\n• PPL(A) : licence conforme à l'annexe 1 de l'OACI, reconnue internationalement, sans limite de masse ni de passagers propre à la licence ; les avions pilotables dépendent des qualifications de classe ou de type détenues (SEP pour les monomoteurs à pistons). Vols non commerciaux, sans rémunération (sauf, sous conditions, pour l'instruction et les examens).\n\nÂges minimaux :\n• premier vol solo : 16 ans, avec l'autorisation de l'instructeur et un certificat médical\n• délivrance du LAPL(A) ou du PPL(A) : 17 ans\n\nCertificats médicaux (Part-MED) : classe 2 au minimum pour le PPL ; certificat LAPL (ou classe 2) pour le LAPL. La validité dépend de l'âge à la date de l'examen :\n• classe 2 : 60 mois avant 40 ans (un certificat délivré avant 40 ans cesse d'être valable à 42 ans), 24 mois de 40 à 50 ans (un certificat délivré avant 50 ans cesse d'être valable à 51 ans), 12 mois après 50 ans\n• LAPL : 60 mois avant 40 ans (fin de validité à 42 ans au plus tard), 24 mois ensuite\n\nQualification SEP : valable 24 mois. Prorogation par un contrôle de compétences avec un examinateur dans les 3 mois précédant l'échéance, ou par expérience dans les 12 mois précédant l'échéance : 12 h de vol dont 6 h de commandant de bord (CdB), 12 décollages, 12 atterrissages et un vol d'entraînement d'au moins 1 h avec un instructeur.\n\nMaintien de compétence LAPL(A) (FCL.140.A) : sur les 24 derniers mois, 12 h de vol comme CdB dont 12 décollages et atterrissages, et 1 h d'entraînement avec un instructeur. À défaut : contrôle de compétences, ou vols complémentaires en double ou en solo supervisé.\n\nExpérience récente (FCL.060) : pour emporter des passagers, 3 décollages, approches et atterrissages dans les 90 jours précédents sur un avion de même type ou classe.\n\nCarnet de vol (FCL.050) : le pilote y consigne tous ses vols.\n\nCompétence linguistique (FCL.055) : mention obligatoire pour utiliser la radiotéléphonie ; niveau 4 (fonctionnel) au minimum, puis 5 (avancé) et 6 (expert, sans limite de validité).\n\nExamen théorique (FCL.025) : 75 % exigés par épreuve, 4 tentatives au plus par épreuve. Toutes les épreuves doivent être réussies dans les 18 mois suivant la fin du mois calendaire de la première tentative. La réussite reste valable 24 mois pour la délivrance de la licence.",
           "vocab": [
             {
               "term": "LAPL(A)",
-              "translation": "Licence de pilote d'aéronef léger : ≤ 2 000 kg, 3 passagers au plus"
+              "translation": "Licence de pilote d'aéronef léger : ≤ 2 000 kg, ≤ 3 pax après 10 h CdB"
             },
             {
               "term": "PPL(A)",
@@ -235,7 +235,7 @@
           "questions": [
             {
               "id": "u1s2q01",
-              "q": "Lequel de ces vols sort des privilèges d'un titulaire du LAPL(A) expérimenté et à jour de ses obligations ?",
+              "q": "Lequel de ces vols sort des privilèges d'un titulaire du LAPL(A) qui a effectué 50 h de vol comme commandant de bord depuis la délivrance de sa licence et qui est à jour de ses obligations ?",
               "choices": [
                 "Emmener 3 passagers à bord d'un DR400 de 1 100 kg de masse maximale au décollage",
                 "Piloter un monomoteur à pistons de 2 200 kg de masse maximale au décollage",
@@ -243,7 +243,7 @@
                 "Faire un vol local de jour, seul à bord"
               ],
               "answer": 1,
-              "explanation": "Le LAPL(A) est limité aux monomoteurs à pistons (ou TMG) de MTOM ≤ 2 000 kg, avec au plus 3 passagers. Ses privilèges s'exercent dans tous les États de l'EASA, dont l'Allemagne."
+              "explanation": "Le LAPL(A) est limité aux monomoteurs à pistons (ou TMG) de MTOM ≤ 2 000 kg, avec au plus 3 passagers, après 10 h de vol comme CdB effectuées depuis la délivrance de la licence. Ses privilèges s'exercent dans tous les États de l'EASA, dont l'Allemagne."
             },
             {
               "id": "u1s2q02",
@@ -263,7 +263,7 @@
               "choices": [
                 "Voler en solo, autorisée par son instructeur, mais pas encore obtenir sa licence",
                 "Obtenir son PPL(A) dès la réussite de son test en vol, sans attendre ses 17 ans",
-                "Uniquement voler en double commande, le premier solo n'étant permis qu'à 17 ans",
+                "Voler en double commande, le premier solo n'étant permis qu'à partir de 17 ans",
                 "Voler en solo sans autorisation particulière, puisqu'elle a plus de 16 ans"
               ],
               "answer": 0,
@@ -423,9 +423,9 @@
               "id": "u1s3q01",
               "q": "Selon SERA, quels feux un avion en vol doit-il allumer de nuit ?",
               "choices": [
-                "Uniquement ses phares d'atterrissage",
-                "Uniquement ses feux de navigation",
-                "Ses feux de navigation, seulement en espace contrôlé",
+                "Ses phares d'atterrissage et ses feux de navigation",
+                "Ses feux de navigation et son phare de roulage",
+                "Ses feux de navigation, le feu anticollision restant facultatif",
                 "Ses feux anticollision et ses feux de navigation"
               ],
               "answer": 3,
@@ -507,7 +507,7 @@
               "id": "u1s3q08",
               "q": "Hors agglomération et rassemblement de personnes, quelle hauteur minimale SERA impose-t-il à un vol VFR, hors décollage et atterrissage ?",
               "choices": [
-                "300 ft au-dessus du sol ou de l'eau, quels que soient les obstacles environnants",
+                "300 ft au-dessus du sol ou de l'eau, ou de l'obstacle le plus élevé à moins de 150 m",
                 "500 ft au-dessus du sol ou de l'eau, ou de l'obstacle le plus élevé dans un rayon de 150 m",
                 "1 000 ft au-dessus de l'obstacle le plus élevé dans un rayon de 600 m autour de l'avion",
                 "500 ft au-dessus du sol ou de l'eau, sans tenir compte des obstacles alentour"
@@ -569,7 +569,7 @@
           "id": "u1s4",
           "title": "Espaces aériens et conditions VMC",
           "icon": "☁️",
-          "tips": "Classes d'espace (SERA) et services rendus au VFR :\n• A : VFR interdit.\n• B : clairance ; tous les vols sont séparés entre eux.\n• C : clairance ; le VFR est séparé des IFR et reçoit l'information de trafic sur les autres VFR.\n• D : clairance ; le VFR n'est pas séparé mais reçoit l'information de trafic sur tous les autres vols.\n• E : contrôlé pour les IFR ; le VFR n'a pas besoin de clairance et reçoit l'information de trafic dans la mesure du possible.\n• G : non contrôlé ; information de vol sur demande.\nEn France, on rencontre surtout les classes A, C, D, E et G.\n\nEspaces contrôlés : la CTR (zone de contrôle) part de la surface autour d'un ou plusieurs aérodromes ; la TMA (région de contrôle terminale) et la CTA (région de contrôle) commencent à une limite inférieure au-dessus du sol.\n\nMinimums VMC (SERA.5001) :\n• à 10 000 ft AMSL (FL 100) et au-dessus : visibilité 8 km ; 1 500 m horizontalement et 1 000 ft verticalement des nuages\n• au-dessous, mais au-dessus de 3 000 ft AMSL ou de 1 000 ft au-dessus du relief (la plus haute des deux valeurs) : 5 km ; 1 500 m et 1 000 ft\n• à ou sous cette limite : en classes B à E, 5 km, 1 500 m et 1 000 ft ; en classe G, 5 km, hors des nuages et en vue de la surface (l'autorité peut admettre 1 500 m de visibilité à 140 kt IAS ou moins)\n\nAérodrome situé en CTR (SERA.5005(b)) : pour décoller, atterrir ou entrer dans le circuit, il faut un plafond d'au moins 1 500 ft et une visibilité au sol d'au moins 5 km, sinon une clairance VFR spécial.\n\nVFR spécial (SERA.5010), en CTR, sur clairance et en principe de jour : hors des nuages et en vue de la surface, visibilité en vol d'au moins 1 500 m, vitesse de 140 kt au plus. Le contrôle exige une visibilité au sol d'au moins 1 500 m et un plafond d'au moins 600 ft.\n\nZones :\n• P (interdite) : vol interdit\n• R (réglementée) : pénétration soumise aux conditions publiées\n• D (dangereuse) : activités dangereuses possibles ; pénétration non interdite, sous la responsabilité du pilote\n• TMZ : transpondeur obligatoire ; RMZ : radio obligatoire (annonce et veille sur la fréquence, sans clairance)\nLe SIV (secteur d'information de vol) rend l'information de vol et l'alerte aux vols qui le contactent.\n\nVFR de nuit (SERA.5005(c)), principes : qualification de vol de nuit ; plan de vol si l'on quitte les abords de l'aérodrome ; contact radio maintenu quand c'est possible ; plafond d'au moins 1 500 ft ; aucune réduction de visibilité ; vue continue de la surface sous 3 000 ft AMSL ou 1 000 ft sol.",
+          "tips": "Classes d'espace (SERA) et services rendus au VFR :\n• A : VFR interdit.\n• B : clairance ; tous les vols sont séparés entre eux.\n• C : clairance ; le VFR est séparé des IFR et reçoit l'information de trafic sur les autres VFR.\n• D : clairance ; le VFR n'est pas séparé mais reçoit l'information de trafic sur tous les autres vols.\n• E : contrôlé pour les IFR ; le VFR n'a pas besoin de clairance et reçoit l'information de trafic dans la mesure du possible.\n• G : non contrôlé ; information de vol sur demande.\nEn France, on rencontre surtout les classes A, C, D, E et G.\n\nEspaces contrôlés : la CTR (zone de contrôle) part de la surface autour d'un ou plusieurs aérodromes ; la TMA (région de contrôle terminale) et la CTA (région de contrôle) commencent à une limite inférieure au-dessus du sol.\n\nMinimums VMC (SERA.5001) :\n• à 10 000 ft AMSL (FL 100) et au-dessus : visibilité 8 km ; 1 500 m horizontalement et 1 000 ft verticalement des nuages\n• au-dessous, mais au-dessus de 3 000 ft AMSL ou de 1 000 ft au-dessus du relief (la plus haute des deux valeurs) : 5 km ; 1 500 m et 1 000 ft\n• à ou sous cette limite : en classes B à E, 5 km, 1 500 m et 1 000 ft ; en classe G, 5 km, hors des nuages et en vue de la surface (en France, de jour, la visibilité en vol peut être réduite à 1 500 m pour les avions volant à 140 kt IAS ou moins ; cet allègement ne s'applique pas de nuit)\n\nAérodrome situé en CTR (SERA.5005(b)) : pour décoller, atterrir ou entrer dans le circuit, il faut un plafond d'au moins 1 500 ft et une visibilité au sol d'au moins 5 km, sinon une clairance VFR spécial.\n\nVFR spécial (SERA.5010), en CTR, sur clairance et en principe de jour : hors des nuages et en vue de la surface, visibilité en vol d'au moins 1 500 m, vitesse de 140 kt au plus. Le contrôle exige une visibilité au sol d'au moins 1 500 m et un plafond d'au moins 600 ft.\n\nZones :\n• P (interdite) : vol interdit\n• R (réglementée) : pénétration soumise aux conditions publiées\n• D (dangereuse) : activités dangereuses possibles ; pénétration non interdite, sous la responsabilité du pilote\n• TMZ : transpondeur obligatoire ; RMZ : radio obligatoire (annonce et veille sur la fréquence, sans clairance)\nLe SIV (secteur d'information de vol) rend l'information de vol et l'alerte aux vols qui le contactent.\n\nVFR de nuit (SERA.5005(c)), principes : qualification de vol de nuit ; plan de vol si l'on quitte les abords de l'aérodrome ; contact radio maintenu quand c'est possible ; plafond d'au moins 1 500 ft ; aucune réduction de visibilité ; vue continue de la surface sous 3 000 ft AMSL ou 1 000 ft sol.",
           "vocab": [
             {
               "term": "CTR",
@@ -705,9 +705,9 @@
               "id": "u1s4q09",
               "q": "Une zone dangereuse (D) est active sur votre trajet. Que prévoit la réglementation ?",
               "choices": [
-                "Toute pénétration y est interdite pendant ses horaires d'activité publiés",
+                "Sa traversée est interdite pendant ses horaires d'activité publiés",
                 "Sa traversée exige une clairance de l'organisme de contrôle chargé de la zone",
-                "Sa traversée n'est pas interdite, mais des activités dangereuses peuvent s'y dérouler",
+                "Sa traversée n'est pas interdite mais se fait sous la responsabilité du pilote",
                 "Elle est réservée aux aéronefs militaires pendant ses horaires d'activité publiés"
               ],
               "answer": 2,
@@ -729,10 +729,10 @@
               "id": "u1s4q11",
               "q": "Quels services un SIV (secteur d'information de vol) rend-il aux vols VFR qui le contactent ?",
               "choices": [
-                "L'information de vol et l'alerte",
-                "Le contrôle et la séparation",
-                "Uniquement des clairances de traversée",
-                "Uniquement les informations météorologiques"
+                "L'information de vol et le service d'alerte",
+                "Le contrôle et la séparation avec les IFR",
+                "La délivrance de clairances de traversée",
+                "La météo en route, sans service d'alerte"
               ],
               "answer": 0,
               "explanation": "Le SIV fournit l'information de vol (trafic connu, activité des zones, météo) et le service d'alerte. Ce n'est pas un organisme de contrôle : il ne délivre pas de clairance et n'assure pas de séparation."
@@ -744,7 +744,7 @@
                 "Une visibilité en vol de 1 500 m suffit si vous volez à 140 kt IAS ou moins",
                 "Un plafond de 1 000 ft suffit, puisque vous volez à moins de 3 000 ft",
                 "Aucune exigence propre à la nuit : les minimums VMC de jour s'appliquent tels quels",
-                "Garder la vue continue de la surface"
+                "Garder la vue continue de la surface, puisque vous êtes sous 3 000 ft AMSL"
               ],
               "answer": 3,
               "explanation": "SERA.5005(c) : de nuit, à ou sous 3 000 ft AMSL ou 1 000 ft au-dessus du relief (la plus haute des deux valeurs), le pilote garde la vue continue de la surface. Le plafond doit être d'au moins 1 500 ft et la réduction de visibilité admise de jour ne s'applique pas."
@@ -831,9 +831,9 @@
               "id": "u1s5q04",
               "q": "Dans lequel de ces cas SERA rend-il le dépôt d'un plan de vol obligatoire ?",
               "choices": [
-                "Un vol local de jour en classe G",
+                "Un vol local de jour en classe G, sans passager",
                 "Un vol VFR de nuit qui quitte les abords de l'aérodrome",
-                "Des tours de piste de jour sur un aérodrome non contrôlé",
+                "Des tours de piste de jour sur un terrain non contrôlé",
                 "Un vol de jour en classe G en contact avec le SIV"
               ],
               "answer": 1,
@@ -1041,10 +1041,10 @@
               "id": "u1s6q06",
               "q": "Dans l'aire à signaux d'un aérodrome non contrôlé, vous voyez une flèche coudée vers la droite, de couleur voyante. Comment effectuez-vous le tour de piste ?",
               "choices": [
-                "Main gauche, la flèche indiquant seulement la direction d'où vient le vent",
+                "Main gauche, la flèche indiquant la direction d'où vient le vent",
                 "Main gauche, la flèche indiquant le côté de dégagement de la piste",
                 "Main droite : virages à droite avant l'atterrissage et après le décollage",
-                "Main droite, mais uniquement pour les planeurs et leurs remorqueurs"
+                "Main droite pour planeurs et remorqueurs, main gauche pour les avions"
               ],
               "answer": 2,
               "explanation": "Sauf indication contraire, le tour de piste se fait main gauche. La flèche coudée vers la droite indique que les virages se font à droite avant l'atterrissage et après le décollage."
@@ -1092,7 +1092,7 @@
                 "Un incident dont les circonstances indiquent une forte probabilité d'accident",
                 "Un incident ayant entraîné un retard ou un déroutement de plus d'une heure",
                 "Un accident n'ayant fait aucun blessé parmi les occupants de l'aéronef",
-                "Tout incident survenu en espace contrôlé et signalé par le contrôleur"
+                "Un incident survenu en espace contrôlé et signalé par le contrôleur"
               ],
               "answer": 0,
               "explanation": "Un incident grave est un incident dont les circonstances indiquent une forte probabilité d'accident (quasi-abordage, perte de contrôle rattrapée de justesse...). Comme un accident, il doit être notifié sans délai au BEA."
@@ -1114,12 +1114,12 @@
               "q": "Sur un monomoteur terrestre exploité selon la Part-NCO, dans quel cas un gilet de sauvetage est-il exigé pour chaque occupant ?",
               "choices": [
                 "Dès que l'avion survole un lac, même à distance de plané de la rive",
-                "Uniquement pour les vols de plus de 100 NM au-dessus de la mer",
-                "Uniquement lors des vols de nuit au-dessus de l'eau",
+                "Au-delà de 50 NM de la côte ; en deçà, le gilet reste facultatif",
+                "Lors des vols de nuit au-dessus de l'eau, dès la côte franchie",
                 "Lors du survol de l'eau au-delà de la distance de vol plané de la terre"
               ],
               "answer": 3,
-              "explanation": "La Part-NCO exige un gilet par occupant sur monomoteur terrestre survolant l'eau au-delà de la distance de vol plané, ou lorsque le décollage ou l'approche se fait au-dessus de l'eau avec un risque d'amerrissage forcé."
+              "explanation": "La Part-NCO (NCO.IDE.A.175) exige un gilet par occupant sur monomoteur terrestre survolant l'eau au-delà de la distance de vol plané, ou lorsque le décollage ou l'approche se fait au-dessus de l'eau avec un risque d'amerrissage forcé. Le critère « 30 min de vol ou 50 NM » vise les autres avions, comme les multimoteurs : un monomoteur terrestre est concerné bien avant, dès qu'il sort de la distance de plané."
             }
           ]
         }

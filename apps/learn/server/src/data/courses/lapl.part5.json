@@ -13,21 +13,45 @@
           "icon": "🌍",
           "tips": "La position d'un point se repère par ses coordonnées géographiques.\n• Latitude : angle compté depuis l'équateur, de 0 à 90° Nord ou Sud. Les points de même latitude forment un parallèle.\n• Longitude : angle compté depuis le méridien origine de Greenwich, de 0 à 180° Est ou Ouest. Les méridiens sont des demi-grands cercles qui joignent les pôles.\n• Notation en degrés et minutes (1° = 60′) : 48°43′N 002°23′E.\n\nLe mille nautique (NM) vaut 1 852 m : c'est la longueur d'une minute d'arc de méridien (et de tout grand cercle).\n• Le long d'un méridien : 1′ de latitude = 1 NM et 1° = 60 NM ≈ 111 km. Ex. : de 43°20′N à 44°50′N, 1°30′ = 90′ = 90 NM.\n• Le long de l'équateur, qui est un grand cercle : 1′ de longitude = 1 NM.\n• Le long d'un autre parallèle, les méridiens se rapprochent : 1′ de longitude vaut cos(latitude) NM. À 60° N, 1° de longitude ne vaut plus que 30 NM.\n• Deux longitudes de même nom (deux Est ou deux Ouest) : on soustrait ; de noms contraires : on additionne.\n\nOrthodromie et loxodromie :\n• Orthodromie : arc de grand cercle, plus court chemin entre deux points. Elle coupe les méridiens sous des angles qui varient (sauf le long d'un méridien ou de l'équateur).\n• Loxodromie : ligne qui coupe tous les méridiens sous le même angle, donc à route vraie constante. Elle est plus longue que l'orthodromie, mais l'écart est négligeable sur les distances d'un vol VFR.\n\nLe temps :\n• L'heure aéronautique est l'heure UTC, notée Z (0930Z). Plans de vol, METAR, TAF et NOTAM sont rédigés en UTC.\n• Heure légale en France métropolitaine : UTC+1 en hiver, UTC+2 en été. Ex. : 10 h 15 locale en août = 08:15 UTC.\n• La Terre tourne de 360° en 24 h : 15° de longitude = 1 heure, 1° = 4 min. Un lieu situé plus à l'est voit le soleil passer au méridien plus tôt : 5° d'écart de longitude = 20 min d'écart d'heure solaire.\n\nNuit aéronautique (SERA) : période comprise entre la fin du crépuscule civil du soir et le début du crépuscule civil du matin, le crépuscule civil prenant fin quand le centre du soleil est à 6° sous l'horizon. En France métropolitaine, on retient en pratique le coucher du soleil + 30 min et le lever du soleil − 30 min, heures données en UTC par les éphémérides.",
           "vocab": [
-            { "term": "Latitude", "translation": "Angle compté depuis l'équateur, de 0 à 90° Nord ou Sud" },
-            { "term": "Longitude", "translation": "Angle compté depuis Greenwich, de 0 à 180° Est ou Ouest" },
-            { "term": "Mille nautique (NM)", "translation": "1 852 m, soit une minute d'arc de méridien" },
-            { "term": "Orthodromie", "translation": "Arc de grand cercle : plus court chemin entre deux points" },
-            { "term": "Loxodromie", "translation": "Ligne coupant tous les méridiens sous le même angle" },
-            { "term": "UTC (Z)", "translation": "Temps universel coordonné, heure de référence en aéronautique" },
-            { "term": "Heure légale", "translation": "Heure officielle en métropole : UTC+1 en hiver, UTC+2 en été" },
-            { "term": "Nuit aéronautique", "translation": "De la fin du crépuscule civil du soir au début de celui du matin" }
+            {
+              "term": "Latitude",
+              "translation": "Angle compté depuis l'équateur, de 0 à 90° Nord ou Sud"
+            },
+            {
+              "term": "Longitude",
+              "translation": "Angle compté depuis Greenwich, de 0 à 180° Est ou Ouest"
+            },
+            {
+              "term": "Mille nautique (NM)",
+              "translation": "1 852 m, soit une minute d'arc de méridien"
+            },
+            {
+              "term": "Orthodromie",
+              "translation": "Arc de grand cercle : plus court chemin entre deux points"
+            },
+            {
+              "term": "Loxodromie",
+              "translation": "Ligne coupant tous les méridiens sous le même angle"
+            },
+            {
+              "term": "UTC (Z)",
+              "translation": "Temps universel coordonné, heure de référence en aéronautique"
+            },
+            {
+              "term": "Heure légale",
+              "translation": "Heure officielle en métropole : UTC+1 en hiver, UTC+2 en été"
+            },
+            {
+              "term": "Nuit aéronautique",
+              "translation": "De la fin du crépuscule civil du soir au début de celui du matin"
+            }
           ],
           "questions": [
             {
               "id": "u5s1q01",
               "q": "Que représente la latitude d'un point ?",
               "choices": [
-                "L'angle entre le méridien de Greenwich et le méridien du point, de 0 à 180° Est ou Ouest",
+                "L'angle entre le méridien de Greenwich et celui du point, de 0 à 180° Est ou Ouest",
                 "L'angle compté depuis l'équateur le long du méridien du point, de 0 à 90° Nord ou Sud",
                 "La distance en milles nautiques entre le point et le pôle le plus proche",
                 "L'angle entre le nord vrai et le nord magnétique au point considéré"
@@ -87,13 +111,13 @@
               "id": "u5s1q06",
               "q": "Quelle est la caractéristique de l'orthodromie ?",
               "choices": [
-                "C'est le plus court chemin entre deux points, mais sa route vraie varie en général le long du trajet",
+                "C'est le plus court chemin, mais sa route vraie varie sauf sur un méridien ou l'équateur",
                 "Elle coupe tous les méridiens sous le même angle, ce qui en fait le plus court chemin",
-                "Elle suit toujours le parallèle passant par les deux points",
-                "Elle est plus longue que la loxodromie mais plus simple à suivre au compas"
+                "Elle suit le parallèle des deux points, plus court que l'arc de grand cercle",
+                "Elle est plus longue que la loxodromie, mais se suit au compas à cap constant"
               ],
               "answer": 0,
-              "explanation": "L'orthodromie est un arc de grand cercle : c'est la distance la plus courte, mais elle coupe les méridiens sous des angles variables (sauf le long d'un méridien ou de l'équateur). La ligne à angle constant est la loxodromie, plus longue."
+              "explanation": "L'orthodromie est un arc de grand cercle : c'est la distance la plus courte, mais elle coupe les méridiens sous des angles variables (sauf le long d'un méridien ou de l'équateur). La ligne à angle constant est la loxodromie, plus longue ; un arc de parallèle (hors équateur) est lui aussi plus long que l'arc de grand cercle."
             },
             {
               "id": "u5s1q07",
@@ -147,13 +171,13 @@
               "id": "u5s1q11",
               "q": "Selon la définition européenne (SERA), la nuit correspond à la période :",
               "choices": [
-                "comprise entre le coucher et le lever du soleil",
-                "pendant laquelle le centre du soleil est à plus de 12° sous l'horizon",
-                "comprise entre 20 h et 6 h, heure légale",
-                "comprise entre la fin du crépuscule civil du soir et le début du crépuscule civil du matin"
+                "comprise entre le coucher et le lever du soleil, heures lues sur les éphémérides",
+                "comprise entre la fin du crépuscule nautique du soir et le début de celui du matin",
+                "comprise entre 30 min avant le coucher et 30 min après le lever du soleil",
+                "comprise entre la fin du crépuscule civil du soir et le début de celui du matin"
               ],
               "answer": 3,
-              "explanation": "SERA définit la nuit à partir du crépuscule civil, qui prend fin lorsque le centre du soleil est à 6° sous l'horizon. 12° correspond au crépuscule nautique ; au coucher du soleil, la nuit aéronautique n'a pas encore commencé."
+              "explanation": "SERA définit la nuit à partir du crépuscule civil, qui prend fin lorsque le centre du soleil est à 6° sous l'horizon. 12° correspond au crépuscule nautique ; au coucher du soleil, la nuit aéronautique n'a pas encore commencé. En France métropolitaine, la règle pratique est coucher + 30 min et lever − 30 min, et non l'inverse."
             },
             {
               "id": "u5s1q12",
@@ -175,14 +199,38 @@
           "icon": "🗺️",
           "tips": "En France, la carte de référence du pilote VFR est la carte OACI au 1/500 000, établie en projection conique conforme de Lambert.\n\nProjection de Lambert : un cône sécant au globe le long de deux parallèles de référence (automécoïques).\n• Conforme : les angles sont conservés, on mesure donc les routes directement au rapporteur.\n• Échelle quasi constante sur toute la carte, exacte sur les deux parallèles de référence.\n• Méridiens : droites convergeant vers le pôle ; parallèles : arcs de cercles concentriques.\n• Une ligne droite représente pratiquement une orthodromie.\n• Les méridiens n'étant pas parallèles, l'angle d'une droite avec eux varie le long du trajet : on mesure la route vraie au méridien situé au milieu du segment.\n\nÉchelle :\n• 1/500 000 : 1 cm sur la carte = 500 000 cm = 5 km. 20 cm = 100 km ; 100 NM ≈ 37 cm.\n• 1/1 000 000 : 1 cm = 10 km.\n• Mesurez les distances avec une règle graduée à l'échelle de la carte, ou au compas à pointes sèches sur l'échelle des latitudes (1′ = 1 NM), jamais sur celle des longitudes.\n\nLecture de la carte :\n• Les altitudes (points cotés, obstacles) sont en pieds. Un obstacle noté 1 280 (350) culmine à 1 280 ft d'altitude et à 350 ft au-dessus du sol.\n• Le relief est figuré par des teintes hypsométriques, de plus en plus soutenues avec l'altitude.\n• Aérodromes, balises, espaces aériens, zones réglementées (R), dangereuses (D) et interdites (P) sont représentés selon la légende : lisez-la et vérifiez que l'édition est en vigueur.\n• Les isogones relient les points d'égale déclinaison magnétique (ex. « 2°E ») ; la ligne agonique est celle de déclinaison nulle.\n\nChoix des points de report :\n• repères uniques, visibles de loin et sans ambiguïté : confluent, croisement autoroute–voie ferrée, lac à la forme caractéristique, grande ville ;\n• espacés d'environ 10 à 15 min de vol ;\n• à éviter : petit village parmi d'autres, route secondaire, lisière de forêt uniforme.\n\nPréparation du trait de route :\n• tracer les segments entre les points tournants ;\n• mesurer la route vraie (Rv) au méridien médian, puis la distance ;\n• relever de part et d'autre de la route le relief et les obstacles les plus hauts pour fixer une altitude de sécurité, ainsi que les espaces aériens traversés ;\n• graduer le trait (tous les 10 NM ou toutes les 5 min) et reporter le tout sur le log de navigation.",
           "vocab": [
-            { "term": "Projection de Lambert", "translation": "Projection conique conforme, échelle quasi constante" },
-            { "term": "Projection conforme", "translation": "Projection qui conserve les angles (routes lues au rapporteur)" },
-            { "term": "Échelle 1/500 000", "translation": "1 cm sur la carte = 5 km sur le terrain" },
-            { "term": "Isogone", "translation": "Ligne reliant les points de même déclinaison magnétique" },
-            { "term": "Ligne agonique", "translation": "Isogone de déclinaison nulle" },
-            { "term": "Point de report", "translation": "Repère au sol unique et bien visible qui jalonne la navigation" },
-            { "term": "Teintes hypsométriques", "translation": "Couleurs figurant le relief selon l'altitude" },
-            { "term": "Route vraie (Rv)", "translation": "Angle entre le nord vrai et la trajectoire, mesuré sur la carte" }
+            {
+              "term": "Projection de Lambert",
+              "translation": "Projection conique conforme, échelle quasi constante"
+            },
+            {
+              "term": "Projection conforme",
+              "translation": "Projection qui conserve les angles (routes lues au rapporteur)"
+            },
+            {
+              "term": "Échelle 1/500 000",
+              "translation": "1 cm sur la carte = 5 km sur le terrain"
+            },
+            {
+              "term": "Isogone",
+              "translation": "Ligne reliant les points de même déclinaison magnétique"
+            },
+            {
+              "term": "Ligne agonique",
+              "translation": "Isogone de déclinaison nulle"
+            },
+            {
+              "term": "Point de report",
+              "translation": "Repère au sol unique et bien visible qui jalonne la navigation"
+            },
+            {
+              "term": "Teintes hypsométriques",
+              "translation": "Couleurs figurant le relief selon l'altitude"
+            },
+            {
+              "term": "Route vraie (Rv)",
+              "translation": "Angle entre le nord vrai et la trajectoire, mesuré sur la carte"
+            }
           ],
           "questions": [
             {
@@ -225,19 +273,19 @@
               "id": "u5s2q04",
               "q": "Votre segment de route traverse une grande partie de la carte d'ouest en est. Où mesurez-vous la route vraie au rapporteur ?",
               "choices": [
-                "Au méridien du point de départ",
-                "Au méridien situé au milieu du segment",
-                "Au méridien du point d'arrivée",
-                "Sur n'importe quel parallèle coupé par le segment"
+                "Sur le méridien du point de départ",
+                "Sur le méridien situé au milieu du segment",
+                "Sur le méridien du point d'arrivée",
+                "Sur la rose d'un VOR proche du segment"
               ],
               "answer": 1,
-              "explanation": "Les méridiens convergeant vers le pôle, l'angle entre la droite tracée et les méridiens varie le long du segment. La mesure au méridien médian donne la route moyenne à suivre."
+              "explanation": "Les méridiens convergeant vers le pôle, l'angle entre la droite tracée et les méridiens varie le long du segment. La mesure au méridien médian donne la route moyenne à suivre. Une rose VOR, orientée sur le nord magnétique, ne donne pas une route vraie."
             },
             {
               "id": "u5s2q05",
               "q": "Au compas à pointes sèches, sur quelle échelle reporter une distance pour la lire en NM sur une carte dépourvue de réglette en NM ?",
               "choices": [
-                "Sur l'échelle des longitudes graduée le long d'un parallèle, 1′ = 1 NM",
+                "Sur l'échelle des longitudes graduée sur un parallèle, 1′ = 1 NM",
                 "Sur l'échelle des latitudes graduée le long d'un méridien, 1′ = 1 NM",
                 "Sur l'échelle des longitudes, 1° = 60 km",
                 "Sur l'échelle des latitudes, 1° = 100 NM"
@@ -249,7 +297,7 @@
               "id": "u5s2q06",
               "q": "Sur la carte OACI au 1/500 000, un obstacle porte l'indication 1 150 (420). Que signifie-t-elle ?",
               "choices": [
-                "Hauteur de 1 150 ft au-dessus du sol, terrain à 420 ft d'altitude",
+                "Hauteur de 1 150 ft au-dessus du sol, terrain à 420 ft",
                 "Altitude du sommet 1 150 m, hauteur au-dessus du sol 420 m",
                 "Altitude minimale de survol 1 150 ft, obstacle de 420 ft",
                 "Altitude du sommet 1 150 ft, hauteur au-dessus du sol 420 ft"
@@ -261,10 +309,10 @@
               "id": "u5s2q07",
               "q": "Quel est le meilleur choix de point de report pour une navigation VFR ?",
               "choices": [
-                "Le croisement d'une autoroute et d'une voie ferrée près d'un lac",
-                "Un petit village au milieu de villages semblables",
-                "La lisière d'une grande forêt homogène",
-                "Une route départementale rectiligne"
+                "Le croisement d'une autoroute et d'une voie ferrée, près d'un lac",
+                "Un petit village parmi d'autres villages semblables de la plaine",
+                "La lisière d'une grande forêt homogène, visible de très loin",
+                "Une longue route départementale rectiligne à travers la plaine"
               ],
               "answer": 0,
               "explanation": "Un bon point de report est unique, visible de loin et identifiable sans ambiguïté, idéalement confirmé par plusieurs éléments. Villages semblables, lisières uniformes et petites routes se confondent facilement."
@@ -309,10 +357,10 @@
               "id": "u5s2q11",
               "q": "Que peut-on dire de l'échelle d'une carte en projection de Lambert utilisée en VFR ?",
               "choices": [
-                "Elle n'est exacte que le long de l'équateur",
+                "Elle n'est exacte que le long de l'équateur et se dégrade vers les pôles",
                 "Elle augmente fortement vers le nord de la carte, comme sur une Mercator",
-                "Elle est pratiquement constante, et exacte sur les deux parallèles de référence",
-                "Elle est exacte sur tous les méridiens et fausse sur tous les parallèles"
+                "Elle est pratiquement constante, exacte sur les deux parallèles de référence",
+                "Elle est exacte le long des méridiens, mais fausse le long des parallèles"
               ],
               "answer": 2,
               "explanation": "Le cône est sécant au globe le long de deux parallèles de référence (automécoïques) où l'échelle est exacte ; ailleurs l'écart reste très faible sur l'étendue d'une carte. Une seule règle graduée suffit donc."
@@ -321,10 +369,10 @@
               "id": "u5s2q12",
               "q": "Lors de la préparation, pourquoi graduer le trait de route, par exemple tous les 10 NM ?",
               "choices": [
-                "Pour connaître la déclinaison magnétique en chaque point",
-                "Pour situer rapidement l'avion en vol et évaluer son avance ou son retard sur l'horaire prévu",
-                "Pour respecter l'obligation de compte rendu de position tous les 10 NM",
-                "Pour y lire l'altitude minimale de sécurité de chaque tronçon"
+                "Pour reporter la déclinaison magnétique à appliquer en chaque point de la route",
+                "Pour situer l'avion d'un coup d'œil et comparer l'heure réelle à l'estimée",
+                "Pour respecter l'obligation VFR de compte rendu de position tous les 10 NM",
+                "Pour y lire l'altitude minimale de sécurité de chaque tronçon de la route"
               ],
               "answer": 1,
               "explanation": "Les graduations permettent de situer l'avion le long de la route d'un coup d'œil et de comparer l'heure de passage réelle à l'estimée, pour corriger les heures suivantes. Aucun compte rendu tous les 10 NM n'est imposé en VFR."
@@ -337,14 +385,38 @@
           "icon": "🧭",
           "tips": "Trois nords :\n• Nord vrai (Nv) : direction du pôle Nord géographique, donnée par les méridiens de la carte.\n• Nord magnétique (Nm) : direction que prend une aiguille aimantée soumise au seul champ terrestre.\n• Nord compas (Nc) : direction indiquée par le compas de l'avion, perturbé par les masses métalliques et les circuits électriques de bord.\n\nDéclinaison magnétique (Dm) : angle entre le nord vrai et le nord magnétique. Elle est Est (positive) si le nord magnétique est à l'est du nord vrai, Ouest (négative) sinon. Elle dépend du lieu (isogones de la carte), évolue lentement avec les années et reste faible en France métropolitaine.\n• Rv = Rm + Dm, donc Rm = Rv − Dm ; de même Cv = Cm + Dm.\n• Ex. : Rv 245°, Dm 1°E → Rm 244°. Rv 010°, Dm 3°W (−3°) → Rm 013°.\n• Mémo : déclinaison Est, le magnétique est plus petit que le vrai ; Ouest, il est plus grand.\n\nDéviation (d) : angle entre le nord magnétique et le nord compas. Propre à chaque avion, elle varie avec le cap. Après compensation, la déviation résiduelle figure sur la carte de déviation placée près du compas (« pour Cm 180, afficher 178 »), établie moteur tournant et équipements électriques en marche.\n• Cm = Cc + d (d Est positive), d'où Cv = Cc + d + Dm.\n• Un objet métallique ou électrique (téléphone, casque, tablette) posé près du compas ajoute une déviation inconnue.\n\nErreurs du compas : le champ terrestre est fortement incliné sur l'horizontale en France (inclinaison magnétique). La suspension du compas compense cet effet en vol rectiligne stabilisé, mais pas en virage ni en accélération. Dans l'hémisphère nord :\n• Virages : erreurs maximales vers les caps nord et sud, nulles vers l'est et l'ouest. En virage vers le nord, le compas est en retard : on sort du virage avant qu'il n'indique le cap voulu. Vers le sud, il est en avance : on sort après (« au nord avant, au sud après »).\n• Accélérations : erreurs maximales aux caps est et ouest, nulles aux caps nord et sud. Une accélération fait indiquer un virage vers le nord, une décélération un virage vers le sud (mémo ANDS : Accélération Nord, Décélération Sud).\n• On ne lit donc le compas qu'en vol rectiligne, ailes horizontales, à vitesse constante.\n\nConservateur de cap : gyroscope sans référence magnétique, stable et exempt d'erreurs de virage, mais qui dérive avec le temps. On l'aligne sur le compas avant le décollage, puis toutes les 10 à 15 min environ, en vol rectiligne stabilisé.",
           "vocab": [
-            { "term": "Nord vrai (Nv)", "translation": "Direction du pôle Nord géographique, donnée par les méridiens" },
-            { "term": "Nord magnétique (Nm)", "translation": "Direction prise par une aiguille aimantée hors perturbations" },
-            { "term": "Nord compas (Nc)", "translation": "Direction indiquée par le compas de bord, perturbé par l'avion" },
-            { "term": "Déclinaison (Dm)", "translation": "Angle entre Nv et Nm, Est positive : Rv = Rm + Dm" },
-            { "term": "Déviation (d)", "translation": "Angle entre Nm et Nc, dû à l'avion et variable avec le cap" },
-            { "term": "Carte de déviation", "translation": "Tableau près du compas : cap compas à afficher pour chaque Cm" },
-            { "term": "Inclinaison magnétique", "translation": "Angle du champ terrestre avec l'horizontale, source d'erreurs" },
-            { "term": "Conservateur de cap", "translation": "Gyroscope de cap sans erreur de virage, à recaler sur le compas" }
+            {
+              "term": "Nord vrai (Nv)",
+              "translation": "Direction du pôle Nord géographique, donnée par les méridiens"
+            },
+            {
+              "term": "Nord magnétique (Nm)",
+              "translation": "Direction prise par une aiguille aimantée hors perturbations"
+            },
+            {
+              "term": "Nord compas (Nc)",
+              "translation": "Direction indiquée par le compas de bord, perturbé par l'avion"
+            },
+            {
+              "term": "Déclinaison (Dm)",
+              "translation": "Angle entre Nv et Nm, Est positive : Rv = Rm + Dm"
+            },
+            {
+              "term": "Déviation (d)",
+              "translation": "Angle entre Nm et Nc, dû à l'avion et variable avec le cap"
+            },
+            {
+              "term": "Carte de déviation",
+              "translation": "Tableau près du compas : cap compas à afficher pour chaque Cm"
+            },
+            {
+              "term": "Inclinaison magnétique",
+              "translation": "Angle du champ terrestre avec l'horizontale, source d'erreurs"
+            },
+            {
+              "term": "Conservateur de cap",
+              "translation": "Gyroscope de cap sans erreur de virage, à recaler sur le compas"
+            }
           ],
           "questions": [
             {
@@ -352,9 +424,9 @@
               "q": "Qu'appelle-t-on déclinaison magnétique ?",
               "choices": [
                 "L'angle entre le nord magnétique et le nord compas",
-                "L'angle entre le champ magnétique terrestre et l'horizontale",
+                "L'angle entre le champ magnétique et l'horizontale",
                 "L'angle entre le cap vrai et la route vraie",
-                "L'angle entre le nord vrai et le nord magnétique"
+                "L'angle entre le nord vrai et le nord magnétique local"
               ],
               "answer": 3,
               "explanation": "La déclinaison est l'angle Nv–Nm, propre au lieu et à l'époque. L'angle Nm–Nc est la déviation, l'angle avec l'horizontale l'inclinaison, et l'angle cap–route la dérive."
@@ -411,13 +483,13 @@
               "id": "u5s3q06",
               "q": "Un passager pose son téléphone et un objet métallique sur la planche de bord, juste à côté du compas. Quelle est la conséquence ?",
               "choices": [
-                "Aucune, le compas n'est sensible qu'au champ terrestre",
-                "La déclinaison à appliquer change",
-                "Le conservateur de cap dérive plus vite",
-                "Une déviation supplémentaire, non prise en compte par la carte de déviation"
+                "Aucune, à condition que le téléphone soit éteint ou en mode avion",
+                "Une erreur de déclinaison, à corriger avec la valeur lue sur les isogones",
+                "Le conservateur de cap dérive plus vite et doit être recalé plus souvent",
+                "Une déviation supplémentaire, que la carte de déviation ne corrige pas"
               ],
               "answer": 3,
-              "explanation": "Tout objet magnétique ou électrique placé près du compas crée une déviation qui s'ajoute à celle mesurée lors de la compensation : il faut l'éloigner. La déclinaison est une propriété du lieu, et le conservateur de cap n'est pas magnétique."
+              "explanation": "Tout objet magnétique ou électrique placé près du compas crée une déviation qui s'ajoute à celle mesurée lors de la compensation : il faut l'éloigner. Même éteint ou en mode avion, un téléphone contient des aimants et des pièces métalliques. La déclinaison est une propriété du lieu, et le conservateur de cap n'est pas magnétique."
             },
             {
               "id": "u5s3q07",
@@ -448,8 +520,8 @@
               "q": "Quelle est l'origine des erreurs du compas magnétique en virage et en accélération ?",
               "choices": [
                 "La déviation due aux masses métalliques de l'avion",
-                "La déclinaison magnétique du lieu",
-                "La précession du gyroscope du compas",
+                "La déclinaison magnétique, qui varie selon le lieu survolé",
+                "La précession du gyroscope qui stabilise la rose du compas",
                 "L'inclinaison du champ magnétique terrestre sur l'horizontale"
               ],
               "answer": 3,
@@ -462,7 +534,7 @@
                 "En virage au voisinage des caps nord et sud",
                 "En virage au voisinage des caps est et ouest",
                 "En vol rectiligne à vitesse constante",
-                "Uniquement à proximité de l'équateur"
+                "À basse latitude, près de l'équateur magnétique"
               ],
               "answer": 0,
               "explanation": "Les erreurs de virage sont maximales près des caps nord et sud et nulles près des caps est et ouest ; les erreurs d'accélération suivent la répartition inverse. Elles croissent avec la latitude et disparaissent près de l'équateur magnétique."
@@ -471,10 +543,10 @@
               "id": "u5s3q11",
               "q": "Comment recaler correctement le conservateur de cap en vol ?",
               "choices": [
-                "En virage à inclinaison constante, sur l'indication du compas",
-                "Régulièrement, en vol rectiligne stabilisé à vitesse constante, sur l'indication du compas",
-                "Une seule fois avant la mise en route, car il ne dérive pas",
-                "En montée initiale, sur la route vraie mesurée sur la carte"
+                "Régulièrement, en virage à inclinaison constante, sur le compas magnétique",
+                "Régulièrement, en vol rectiligne à vitesse constante, sur le compas magnétique",
+                "Avant la mise en route seulement, sa dérive étant négligeable en vol",
+                "En montée initiale, sur la route vraie mesurée au rapporteur sur la carte"
               ],
               "answer": 1,
               "explanation": "Le conservateur de cap dérive avec le temps ; on le recale avant le décollage puis toutes les 10 à 15 min environ, quand le compas est fiable : ailes horizontales, vitesse constante. Il se cale sur le compas, jamais sur une route vraie."
@@ -499,14 +571,38 @@
           "icon": "📐",
           "tips": "Le triangle des vitesses traduit l'égalité vectorielle : vitesse propre + vent = vitesse sol.\n• Vitesse propre (Vp, TAS) : vitesse de l'avion par rapport à l'air, portée par le cap (Cv).\n• Vent (Vw) : direction d'où il vient et force en kt. Les messages et cartes météo (METAR, TAF, WINTEM) le donnent par rapport au nord vrai ; la tour et l'ATIS le donnent par rapport au nord magnétique.\n• Vitesse sol (Vs, GS) : vitesse par rapport au sol, portée par la route (Rv).\n• Dérive (X) : angle entre le cap et la route. Le vent pousse l'avion du côté opposé à celui d'où il vient : vent de gauche, dérive droite. On corrige en prenant un cap décalé du côté du vent : Cv = Rv − X (X positif pour une dérive droite).\n\nMéthode de calcul mental :\n• Facteur de base : Fb = 60 / Vp (Vp en kt), temps en minutes pour parcourir 1 NM sans vent. Vp 120 kt → 0,5 ; 100 kt → 0,6 ; 90 kt → 0,67 ; 80 kt → 0,75.\n• Dérive maximale, par vent de travers pur : Xmax = Vw × Fb, en degrés. Ex. : vent 15 kt, Vp 90 kt → Xmax = 15 × 0,67 = 10°.\n• Angle au vent (α) : angle entre la route et la direction d'où vient le vent.\n• Dérive : X = Xmax × sin α.\n• Vent traversier = Vw × sin α ; vent effectif (de face ou arrière) = Vw × cos α.\n• À retenir : sin 30° = 0,5 ; sin 45° ≈ 0,7 ; sin 60° ≈ 0,9 ; sin 90° = 1. Et cos 30° ≈ 0,9 ; cos 45° ≈ 0,7 ; cos 60° = 0,5.\n• Vitesse sol ≈ Vp − vent effectif de face, ou Vp + vent effectif arrière.\n\nExemple : Rv 270°, vent 300°/30 kt, Vp 100 kt.\n• Fb = 0,6 et Xmax = 30 × 0,6 = 18°. Le vent vient de 30° à droite de la route.\n• X = 18 × 0,5 = 9°, dérive gauche : on corrige à droite, Cv = 279°.\n• Vent effectif de face ≈ 30 × 0,9 = 27 kt, donc Vs ≈ 73 kt.\n\nPoints clés :\n• La dérive est maximale vent de travers et nulle vent de face ou arrière, qui ne modifient que la vitesse sol.\n• Sur un aller-retour, le vent allonge toujours la durée totale : on passe plus de temps face au vent qu'avec le vent arrière.\n• En vol, on constate la dérive en comparant la route réellement suivie (repères au sol) au cap tenu, et l'on recalcule la vitesse sol entre deux repères.",
           "vocab": [
-            { "term": "Vitesse propre (Vp)", "translation": "Vitesse par rapport à l'air (TAS), portée par le cap" },
-            { "term": "Vitesse sol (Vs)", "translation": "Vitesse par rapport au sol (GS), portée par la route" },
-            { "term": "Dérive (X)", "translation": "Angle entre le cap et la route, dû au vent traversier" },
-            { "term": "Facteur de base (Fb)", "translation": "60 / Vp : minutes pour parcourir 1 NM sans vent" },
-            { "term": "Xmax", "translation": "Dérive maximale, par vent de travers : Xmax = Vw × Fb" },
-            { "term": "Angle au vent (α)", "translation": "Angle entre la route et la direction d'où vient le vent" },
-            { "term": "Vent effectif", "translation": "Composante de face ou arrière du vent : Vw × cos α" },
-            { "term": "Vent traversier", "translation": "Composante du vent perpendiculaire à la route : Vw × sin α" }
+            {
+              "term": "Vitesse propre (Vp)",
+              "translation": "Vitesse par rapport à l'air (TAS), portée par le cap"
+            },
+            {
+              "term": "Vitesse sol (Vs)",
+              "translation": "Vitesse par rapport au sol (GS), portée par la route"
+            },
+            {
+              "term": "Dérive (X)",
+              "translation": "Angle entre le cap et la route, dû au vent traversier"
+            },
+            {
+              "term": "Facteur de base (Fb)",
+              "translation": "60 / Vp : minutes pour parcourir 1 NM sans vent"
+            },
+            {
+              "term": "Xmax",
+              "translation": "Dérive maximale, par vent de travers : Xmax = Vw × Fb"
+            },
+            {
+              "term": "Angle au vent (α)",
+              "translation": "Angle entre la route et la direction d'où vient le vent"
+            },
+            {
+              "term": "Vent effectif",
+              "translation": "Composante de face ou arrière du vent : Vw × cos α"
+            },
+            {
+              "term": "Vent traversier",
+              "translation": "Composante du vent perpendiculaire à la route : Vw × sin α"
+            }
           ],
           "questions": [
             {
@@ -633,10 +729,10 @@
               "id": "u5s4q11",
               "q": "À vitesse propre et force du vent identiques, dans quelle situation la dérive est-elle la plus forte ?",
               "choices": [
-                "Vent de face",
-                "Vent à 30° de la route",
-                "Vent perpendiculaire à la route",
-                "Vent arrière"
+                "Vent de face, dans l'axe de la route",
+                "Vent à 30° de l'axe de la route",
+                "Vent perpendiculaire à l'axe de la route",
+                "Vent arrière, dans l'axe de la route"
               ],
               "answer": 2,
               "explanation": "La dérive vaut Xmax × sin α : elle est maximale pour α = 90° (vent de travers) et nulle par vent de face ou arrière, qui ne modifient que la vitesse sol."
@@ -659,16 +755,40 @@
           "id": "u5s5",
           "title": "Calculs de navigation et carburant",
           "icon": "⛽",
-          "tips": "Temps et distance :\n• Temps (h) = distance (NM) / vitesse sol (kt) ; en minutes, T = D × 60 / Vs.\n• Raisonnez en NM par minute : 60 kt = 1 NM/min ; 90 kt = 1,5 NM/min ; 120 kt = 2 NM/min.\n• Ex. : 75 NM à 90 kt → 75 × 60 / 90 = 50 min.\n\nConversions :\n• 1 NM = 1,852 km, donc 1 kt = 1,852 km/h (100 kt ≈ 185 km/h ; 150 km/h ≈ 81 kt).\n• 1 ft = 0,3048 m (1 000 ft ≈ 305 m ; 1 000 m ≈ 3 280 ft).\n• 1 USG (gallon américain) ≈ 3,785 l.\n• Densité de l'AVGAS ≈ 0,72, soit 0,72 kg par litre : 100 l ≈ 72 kg. Masse = volume × 0,72 ; volume = masse / 0,72.\n• Températures : °C = (°F − 32) × 5/9 et °F = °C × 9/5 + 32. Ex. : 59 °F = 15 °C ; 68 °F = 20 °C.\n\nCarburant :\n• Carburant d'étape = consommation horaire × temps de vol, calculé avec la vitesse sol.\n• Réserve minimale (Part-NCO, avion, VFR de jour) : de quoi rejoindre l'aérodrome de destination puis voler au moins 30 min à l'altitude de croisière normale. Les vols de nuit exigent davantage.\n• Ajoutez le roulage, un éventuel dégagement et une marge personnelle ; le carburant inutilisable ne compte jamais.\n• Autonomie = carburant utilisable / consommation horaire. Ex. : 100 l à 25 l/h = 4 h, dont 30 min de réserve : 3 h 30 disponibles pour le trajet.\n• Ex. : 90 NM à Vs 100 kt = 0,9 h = 54 min ; à 25 l/h → 22,5 l ; + 12,5 l de réserve = 35 l au minimum, hors roulage. Attention aux conversions : 1 h 12 min = 1,2 h et non 1,12 h.\n\nRègle du 1 sur 60 : à 60 NM, un écart latéral de 1 NM correspond à 1°.\n• Erreur de route (°) = écart (NM) × 60 / distance parcourue (NM).\n• Angle de convergence vers la destination (°) = écart × 60 / distance restante.\n• Ex. : 3 NM à droite après 30 NM, 30 NM restants : erreur 6°, convergence 6°, correction totale 12° à gauche.\n\nDescente :\n• Une pente de 5 % (≈ 3°) correspond à environ 300 ft par NM.\n• Taux de descente (ft/min) ≈ Vs (kt) × 5. Ex. : Vs 90 kt → 450 ft/min ; Vs 120 kt → 600 ft/min.\n• Distance de début de descente (NM) = hauteur à perdre (ft) / 300. Ex. : 2 400 ft à perdre → 8 NM.",
+          "tips": "Temps et distance :\n• Temps (h) = distance (NM) / vitesse sol (kt) ; en minutes, T = D × 60 / Vs.\n• Raisonnez en NM par minute : 60 kt = 1 NM/min ; 90 kt = 1,5 NM/min ; 120 kt = 2 NM/min.\n• Ex. : 75 NM à 90 kt → 75 × 60 / 90 = 50 min.\n\nConversions :\n• 1 NM = 1,852 km, donc 1 kt = 1,852 km/h (100 kt ≈ 185 km/h ; 150 km/h ≈ 81 kt).\n• 1 ft = 0,3048 m (1 000 ft ≈ 305 m ; 1 000 m ≈ 3 280 ft).\n• 1 USG (gallon américain) ≈ 3,785 l.\n• Densité de l'AVGAS ≈ 0,72, soit 0,72 kg par litre : 100 l ≈ 72 kg. Masse = volume × 0,72 ; volume = masse / 0,72.\n• Températures : °C = (°F − 32) × 5/9 et °F = °C × 9/5 + 32. Ex. : 59 °F = 15 °C ; 68 °F = 20 °C.\n\nCarburant :\n• Carburant d'étape = consommation horaire × temps de vol, calculé avec la vitesse sol.\n• Réserve minimale (Part-NCO, avion, VFR de jour) : de quoi rejoindre l'aérodrome de destination en conservant une réserve finale d'au moins 30 min de vol en vitesse d'attente à 1 500 ft au-dessus de la destination (AMC1 NCO.OP.125(b)). De nuit : 45 min.\n• Ajoutez le roulage, un éventuel dégagement et une marge personnelle ; le carburant inutilisable ne compte jamais.\n• Autonomie = carburant utilisable / consommation horaire. Ex. : 100 l à 25 l/h = 4 h, dont 30 min de réserve : 3 h 30 disponibles pour le trajet.\n• Ex. : 90 NM à Vs 100 kt = 0,9 h = 54 min ; à 25 l/h → 22,5 l ; + 12,5 l de réserve = 35 l au minimum, hors roulage. Attention aux conversions : 1 h 12 min = 1,2 h et non 1,12 h.\n\nRègle du 1 sur 60 : à 60 NM, un écart latéral de 1 NM correspond à 1°.\n• Erreur de route (°) = écart (NM) × 60 / distance parcourue (NM).\n• Angle de convergence vers la destination (°) = écart × 60 / distance restante.\n• Ex. : 3 NM à droite après 30 NM, 30 NM restants : erreur 6°, convergence 6°, correction totale 12° à gauche.\n\nDescente :\n• Une pente de 5 % (≈ 3°) correspond à environ 300 ft par NM.\n• Taux de descente (ft/min) ≈ Vs (kt) × 5. Ex. : Vs 90 kt → 450 ft/min ; Vs 120 kt → 600 ft/min.\n• Distance de début de descente (NM) = hauteur à perdre (ft) / 300. Ex. : 2 400 ft à perdre → 8 NM.",
           "vocab": [
-            { "term": "Nœud (kt)", "translation": "Un NM par heure, soit 1,852 km/h" },
-            { "term": "USG", "translation": "Gallon américain : environ 3,785 litres" },
-            { "term": "AVGAS", "translation": "Essence aviation, densité ≈ 0,72 (0,72 kg par litre)" },
-            { "term": "Consommation horaire", "translation": "Carburant consommé par heure de vol (l/h ou USG/h)" },
-            { "term": "Autonomie", "translation": "Durée de vol possible avec le carburant utilisable à bord" },
-            { "term": "Réserve VFR de jour", "translation": "Au moins 30 min de vol à l'altitude de croisière normale" },
-            { "term": "Règle du 1 sur 60", "translation": "À 60 NM, un écart latéral de 1 NM correspond à 1°" },
-            { "term": "Pente de 5 %", "translation": "Environ 300 ft par NM ; taux ≈ Vs (kt) × 5 en ft/min" }
+            {
+              "term": "Nœud (kt)",
+              "translation": "Un NM par heure, soit 1,852 km/h"
+            },
+            {
+              "term": "USG",
+              "translation": "Gallon américain : environ 3,785 litres"
+            },
+            {
+              "term": "AVGAS",
+              "translation": "Essence aviation, densité ≈ 0,72 (0,72 kg par litre)"
+            },
+            {
+              "term": "Consommation horaire",
+              "translation": "Carburant consommé par heure de vol (l/h ou USG/h)"
+            },
+            {
+              "term": "Autonomie",
+              "translation": "Durée de vol possible avec le carburant utilisable à bord"
+            },
+            {
+              "term": "Réserve VFR de jour",
+              "translation": "30 min en vitesse d'attente à 1 500 ft au-dessus de la destination"
+            },
+            {
+              "term": "Règle du 1 sur 60",
+              "translation": "À 60 NM, un écart latéral de 1 NM correspond à 1°"
+            },
+            {
+              "term": "Pente de 5 %",
+              "translation": "Environ 300 ft par NM ; taux ≈ Vs (kt) × 5 en ft/min"
+            }
           ],
           "questions": [
             {
@@ -823,14 +943,38 @@
           "icon": "📡",
           "tips": "VOR : balise VHF (108,00 à 117,95 MHz) à portée optique, qui croît avec l'altitude. Elle définit 360 radiales.\n• Radiale = QDR : route magnétique qui s'éloigne de la station. QDM = route magnétique pour rejoindre la station = QDR ± 180°. Ex. : sur la radiale 130, QDM 310.\n• On affiche une route à l'OBS ; l'aiguille du CDI indique de quel côté se trouve cette route. En volant un cap voisin de la route affichée, aiguille à droite = route à droite. Sur un CDI à 5 points, chaque point vaut environ 2°.\n• L'indicateur TO/FROM précise si la route affichée rapproche (TO) ou éloigne (FROM) de la station. OBS 180, FROM, aiguille centrée : l'avion est sur la radiale 180, au sud de la station.\n• Les indications dépendent de la position de l'avion, jamais de son cap.\n• Identifiez toujours la station par son indicatif morse.\n\nADF / NDB : la balise NDB émet en LF/MF (environ 190 à 1 750 kHz) et l'aiguille de l'ADF pointe vers elle.\n• Gisement (G) : angle entre l'axe de l'avion et la direction de la balise, compté de 0 à 360° dans le sens horaire depuis le nez.\n• Relèvement magnétique de la balise : QDM = Cm + G (moins 360 si nécessaire) ; QDR = QDM ± 180°.\n• Ex. : Cm 120°, G 300° → QDM 060°, QDR 240°.\n• Le NDB est sensible aux orages, à l'effet de nuit et au relief.\n\nDME : mesure en UHF, par le temps d'aller-retour d'une impulsion, la distance oblique avion–station en NM. À la verticale, il affiche la hauteur au-dessus de la station (1 NM ≈ 6 076 ft) : environ 2 NM à 12 000 ft. Loin de la station, l'écart avec la distance au sol est négligeable.\n\nRadar secondaire (SSR) : la station sol interroge le transpondeur de bord, qui répond. Mode A : code à 4 chiffres ; mode C : en plus, l'altitude-pression (référence 1013,25 hPa, quel que soit le calage de l'altimètre) ; mode S : adresse propre à l'avion et données supplémentaires. Codes particuliers : 7700 détresse, 7600 panne radio, 7500 intervention illicite.\n\nGNSS (GPS, Galileo…) : le récepteur calcule sa position à partir des distances à plusieurs satellites ; il en faut au moins 4 pour une position en trois dimensions.\n• RAIM : contrôle autonome de l'intégrité par le récepteur, grâce à des satellites supplémentaires ; il alerte si la position n'est plus fiable.\n• Limites : brouillage, masquage, base de données périmée, erreur de saisie, regard trop longtemps fixé sur l'écran. L'altitude GNSS est géométrique : elle ne sert pas à respecter les limites verticales des espaces aériens.\n• Le GNSS reste une aide : la navigation VFR s'appuie sur la carte et l'observation du sol, et le pilote doit pouvoir la poursuivre sans lui.",
           "vocab": [
-            { "term": "Radiale (QDR)", "translation": "Route magnétique qui s'éloigne d'une station VOR" },
-            { "term": "QDM", "translation": "Route magnétique pour rejoindre la station (QDR ± 180°)" },
-            { "term": "OBS / CDI", "translation": "Sélecteur de route / aiguille d'écart à la route affichée" },
-            { "term": "Gisement", "translation": "Angle entre l'axe de l'avion et la balise, sens horaire" },
-            { "term": "DME", "translation": "Équipement mesurant la distance oblique avion–station en NM" },
-            { "term": "Transpondeur", "translation": "Répondeur de bord interrogé par le radar secondaire" },
-            { "term": "GNSS", "translation": "Positionnement par satellites (GPS, Galileo…)" },
-            { "term": "RAIM", "translation": "Contrôle par le récepteur de l'intégrité de la position GNSS" }
+            {
+              "term": "Radiale (QDR)",
+              "translation": "Route magnétique qui s'éloigne d'une station VOR"
+            },
+            {
+              "term": "QDM",
+              "translation": "Route magnétique pour rejoindre la station (QDR ± 180°)"
+            },
+            {
+              "term": "OBS / CDI",
+              "translation": "Sélecteur de route / aiguille d'écart à la route affichée"
+            },
+            {
+              "term": "Gisement",
+              "translation": "Angle entre l'axe de l'avion et la balise, sens horaire"
+            },
+            {
+              "term": "DME",
+              "translation": "Équipement mesurant la distance oblique avion–station en NM"
+            },
+            {
+              "term": "Transpondeur",
+              "translation": "Répondeur de bord interrogé par le radar secondaire"
+            },
+            {
+              "term": "GNSS",
+              "translation": "Positionnement par satellites (GPS, Galileo…)"
+            },
+            {
+              "term": "RAIM",
+              "translation": "Contrôle par le récepteur de l'intégrité de la position GNSS"
+            }
           ],
           "questions": [
             {
@@ -839,7 +983,7 @@
               "choices": [
                 "LF/MF, de 190 à 1 750 kHz",
                 "VHF, de 108,00 à 117,95 MHz",
-                "VHF, de 118,000 à 136,975 MHz",
+                "VHF, de 118 à 137 MHz",
                 "UHF, de 962 à 1 213 MHz"
               ],
               "answer": 1,
@@ -885,10 +1029,10 @@
               "id": "u5s6q05",
               "q": "Aiguille centrée et indication TO, le pilote effectue un virage de 180° sans toucher à l'OBS. Que deviennent les indications du VOR ?",
               "choices": [
-                "L'indicateur passe sur FROM et l'aiguille reste centrée",
-                "L'indicateur passe sur FROM et l'aiguille part en butée",
-                "L'indicateur reste sur TO et l'aiguille part en butée",
-                "Elles ne changent pas, car elles dépendent de la position de l'avion et non de son cap"
+                "L'indicateur passe sur FROM, car l'avion s'éloigne désormais de la station",
+                "L'indicateur passe sur FROM et l'aiguille part en butée du côté opposé",
+                "L'indicateur reste sur TO, mais l'aiguille part en butée d'un côté",
+                "Elles ne changent pas : elles dépendent de la position de l'avion, pas du cap"
               ],
               "answer": 3,
               "explanation": "Le VOR situe l'avion par rapport à la route affichée, indépendamment du cap. Seule la lecture change : en volant à l'opposé de la route affichée, l'aiguille s'interprète à l'envers."
@@ -909,9 +1053,9 @@
               "id": "u5s6q07",
               "q": "En navigation VFR, la position affichée par le GNSS ne correspond pas aux repères au sol que vous avez identifiés sans ambiguïté sur la carte. Quelle est la bonne attitude ?",
               "choices": [
-                "Suivre le GNSS, plus précis que l'observation visuelle",
-                "Éteindre le GNSS et poursuivre au cap compas sans chercher d'autres repères",
-                "Privilégier les repères visuels recoupés sur la carte, puis vérifier le GNSS (saisie, base de données, réception)",
+                "Suivre le GNSS, plus précis que l'œil, et recaler sa position sur la carte d'après lui",
+                "Éteindre le GNSS et poursuivre à l'estime au cap compas, sans chercher d'autres repères",
+                "Se fier aux repères visuels recoupés, puis vérifier la saisie et la base de données GNSS",
                 "Monter pour améliorer la réception et attendre que les deux positions concordent"
               ],
               "answer": 2,
@@ -933,13 +1077,13 @@
               "id": "u5s6q09",
               "q": "Que transmet un transpondeur en mode C, en plus du code affiché ?",
               "choices": [
-                "L'altitude lue sur l'altimètre avec le QNH affiché par le pilote",
-                "La vitesse sol et la route de l'avion",
-                "L'immatriculation et le type de l'avion",
-                "L'altitude-pression, rapportée à 1013,25 hPa quel que soit le calage de l'altimètre"
+                "L'altitude lue sur l'altimètre, avec le QNH que le pilote a affiché",
+                "La vitesse sol et la route de l'avion, calculées par son GNSS",
+                "L'immatriculation et le type de l'avion, saisis avant le vol",
+                "L'altitude-pression (réf. 1013,25 hPa), quel que soit le calage affiché"
               ],
               "answer": 3,
-              "explanation": "Le mode C transmet l'altitude-pression (référence 1013,25 hPa) ; c'est le système sol qui la convertit au besoin avec le QNH. L'adresse individuelle de l'avion relève du mode S."
+              "explanation": "Le mode C transmet l'altitude-pression (référence 1013,25 hPa) ; c'est le système sol qui la convertit au besoin avec le QNH. L'adresse individuelle et l'identification de vol relèvent du mode S."
             },
             {
               "id": "u5s6q10",
@@ -957,10 +1101,10 @@
               "id": "u5s6q11",
               "q": "Que désigne le RAIM sur un récepteur GNSS ?",
               "choices": [
-                "Un contrôle autonome, par le récepteur, de l'intégrité de la position grâce à des satellites supplémentaires",
-                "Un réseau de satellites géostationnaires qui corrige les erreurs du GPS",
-                "La mise à jour automatique de la base de données aéronautique",
-                "Un mode de secours qui calcule la position à partir des VOR"
+                "Un contrôle autonome de l'intégrité de la position grâce aux satellites en surnombre",
+                "Un réseau de satellites géostationnaires qui transmet des corrections GPS",
+                "La mise à jour automatique, par le récepteur, de sa base de données aéronautique",
+                "Un mode de secours où le récepteur calcule la position à partir des balises VOR"
               ],
               "answer": 0,
               "explanation": "RAIM (Receiver Autonomous Integrity Monitoring) : le récepteur compare les mesures redondantes de plusieurs satellites et alerte si la position n'est plus fiable. Les satellites géostationnaires de correction relèvent du SBAS (EGNOS en Europe)."
@@ -969,13 +1113,13 @@
               "id": "u5s6q12",
               "q": "Pourquoi ne faut-il pas utiliser l'altitude GNSS pour respecter le plancher d'un espace aérien ?",
               "choices": [
-                "Parce que le GNSS ne fournit aucune information verticale",
-                "Parce que l'altitude GNSS est toujours supérieure de 1 000 ft à l'altitude réelle",
-                "Parce que c'est une altitude géométrique, alors que les limites verticales se réfèrent à l'altimètre calé au QNH ou au 1013",
-                "Parce que l'altitude GNSS n'est affichée qu'en mètres"
+                "Parce que le GNSS ne fournit qu'une position horizontale, sans information verticale",
+                "Parce que l'altitude GNSS est une hauteur au-dessus du sol, et non une altitude",
+                "Parce qu'elle est géométrique, alors que les limites se réfèrent au calage QNH ou 1013",
+                "Parce que l'altitude GNSS n'est affichée qu'en mètres, sans conversion possible"
               ],
               "answer": 2,
-              "explanation": "L'altitude GNSS est géométrique et s'écarte de l'altitude barométrique selon la température et la pression. Les limites d'espaces et l'espacement vertical reposent sur l'altimètre calé (QNH ou 1013) : c'est lui qui fait foi."
+              "explanation": "L'altitude GNSS est géométrique et s'écarte de l'altitude barométrique selon la température et la pression. Les limites d'espaces et l'espacement vertical reposent sur l'altimètre calé (QNH ou 1013) : c'est lui qui fait foi. L'altitude GNSS n'est pas pour autant une hauteur au-dessus du sol."
             }
           ]
         }

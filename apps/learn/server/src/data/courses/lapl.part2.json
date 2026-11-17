@@ -113,7 +113,7 @@
               "choices": [
                 "Elle provoque d'emblée une sensation d'étouffement qui fait paniquer",
                 "Elle n'apparaît qu'au-dessus de 25 000 ft, où le pilote n'est pas entraîné",
-                "Elle s'accompagne toujours d'une douleur thoracique qui le distrait",
+                "Elle s'accompagne d'une douleur thoracique qui le distrait du pilotage",
                 "Elle altère le jugement, souvent sans que le pilote s'en aperçoive"
               ],
               "answer": 3,
@@ -123,10 +123,10 @@
               "id": "u2s1q07",
               "q": "Que désigne le temps de conscience utile (TCU) ?",
               "choices": [
-                "La durée pendant laquelle un pilote privé d'oxygène reste capable d'agir efficacement",
+                "Le temps dont dispose un pilote privé d'oxygène pour agir efficacement",
                 "Le délai entre la privation d'oxygène et la perte de connaissance complète",
-                "La durée maximale autorisée au-dessus de 10 000 ft sans oxygène",
-                "Le temps nécessaire pour récupérer après un épisode d'hypoxie"
+                "La durée maximale autorisée au-dessus de 10 000 ft sans utiliser d'oxygène",
+                "Le temps nécessaire pour récupérer toutes ses capacités après une hypoxie"
               ],
               "answer": 0,
               "explanation": "Le TCU prend fin quand le pilote ne peut plus accomplir de gestes utiles (mettre un masque, descendre), bien avant la perte de connaissance. Il diminue fortement avec l'altitude : environ 20 à 30 min à 18 000 ft, 3 à 5 min à 25 000 ft."
@@ -135,9 +135,9 @@
               "id": "u2s1q08",
               "q": "À 2 500 ft, chauffage coupé, un élève stressé respire vite et ressent des fourmillements autour de la bouche et dans les doigts. Quelle est la cause la plus probable ?",
               "choices": [
-                "Une hypoxie d'altitude",
+                "Une hypoxie d'altitude, qui réduit l'O2 du sang",
                 "Une hyperventilation, qui fait baisser le CO2 du sang",
-                "Une intoxication au monoxyde de carbone",
+                "Une intoxication au CO, qui bloque l'hémoglobine",
                 "Une hausse excessive du CO2 du sang (hypercapnie)"
               ],
               "answer": 1,
@@ -149,8 +149,8 @@
               "choices": [
                 "Respirer plus vite et plus profondément pour mieux s'oxygéner",
                 "Monter de quelques milliers de pieds pour respirer un air plus pur",
-                "Fermer les aérations pour réchauffer la cabine",
-                "Ralentir volontairement la respiration, par exemple en parlant à voix haute"
+                "Fermer les aérations et augmenter le chauffage pour réchauffer la cabine",
+                "Ralentir volontairement sa respiration, par exemple en parlant à voix haute"
               ],
               "answer": 3,
               "explanation": "Il faut rétablir le taux de CO2 en ralentissant le rythme respiratoire : parler, compter, respirer calmement. En altitude, si l'on hésite entre hypoxie et hyperventilation, on traite d'abord l'hypoxie (oxygène, descente)."
@@ -162,7 +162,7 @@
                 "Couper le chauffage, ouvrir les aérations et envisager un atterrissage rapide",
                 "Augmenter le chauffage, car ces symptômes sont dus au froid",
                 "Fermer toutes les aérations pour empêcher l'entrée des gaz d'échappement",
-                "Monter pour trouver un air plus pur et poursuivre le vol"
+                "Monter pour trouver un air plus pur et poursuivre le vol comme prévu"
               ],
               "answer": 0,
               "explanation": "Ces symptômes évoquent une intoxication au CO par l'échangeur du chauffage (échappement fissuré). On coupe le chauffage, on ventile avec de l'air frais, on utilise l'oxygène s'il y en a et on se pose au plus tôt ; monter aggraverait l'hypoxie."
@@ -185,7 +185,7 @@
               "choices": [
                 "L'audition des sons graves",
                 "L'équilibre assuré par l'oreille interne",
-                "La vision de nuit",
+                "La sensibilité de la vision nocturne",
                 "La force musculaire des jambes"
               ],
               "answer": 2,
@@ -287,8 +287,8 @@
               "choices": [
                 "Il se déplace rapidement d'un côté à l'autre du pare-brise",
                 "Il reste immobile, en grossissant d'abord lentement puis très vite",
-                "Il monte progressivement vers le haut du pare-brise",
-                "Il apparaît déjà gros dès qu'il devient visible"
+                "Il monte progressivement vers le haut du pare-brise en grossissant",
+                "Il apparaît déjà gros dès qu'il devient visible, puis grossit lentement"
               ],
               "answer": 1,
               "explanation": "Deux avions en route de collision gardent un relèvement constant : l'autre avion ne bouge pas dans le pare-brise, ce qui le rend difficile à détecter. Sa taille apparente reste petite longtemps puis augmente brutalement dans les dernières secondes."
@@ -310,9 +310,9 @@
               "q": "Par ciel bleu uniforme, sans aucun repère visuel, que fait naturellement l'œil ?",
               "choices": [
                 "Il accommode à l'infini, ce qui facilite la détection des avions lointains",
-                "Il devient plus sensible aux couleurs grâce aux bâtonnets",
-                "Il accommode à courte distance, ce qui retarde la détection des avions lointains",
-                "Il élargit son champ de vision net à plus de 30°"
+                "Il devient plus sensible aux couleurs, car les bâtonnets prennent le relais",
+                "Il accommode de près, ce qui retarde la détection des avions lointains",
+                "Il élargit son champ de vision net à plus de 30° de chaque côté"
               ],
               "answer": 2,
               "explanation": "C'est la myopie du champ vide : sans objet sur lequel faire la mise au point, l'œil se règle à quelques mètres. Il faut fixer régulièrement un objet lointain (relief, nuage, bout d'aile) pour réaccommoder au loin."
@@ -357,7 +357,7 @@
               "id": "u2s2q11",
               "q": "Quel effet a une exposition répétée au bruit du moteur sans protection auditive ?",
               "choices": [
-                "Une surdité de transmission, toujours réversible après quelques jours de repos",
+                "Une surdité de transmission, qui guérit après quelques jours de repos",
                 "Une perte d'audition touchant d'abord les sons graves",
                 "Une gêne passagère, sans conséquence au-dessous de 120 dB",
                 "Une surdité de perception irréversible, touchant d'abord les sons aigus"
@@ -435,7 +435,7 @@
               "id": "u2s3q02",
               "q": "Pourquoi les otolithes peuvent-ils tromper le pilote lors d'un décollage de nuit ?",
               "choices": [
-                "Ils confondent une accélération vers l'avant avec une tête basculée en arrière",
+                "Ils assimilent une accélération vers l'avant à une tête penchée en arrière",
                 "Ils cessent de fonctionner au-delà d'une certaine vitesse de roulage",
                 "Ils ne détectent que les rotations autour de l'axe de lacet de l'avion",
                 "Ils sont perturbés par la baisse de pression atmosphérique en montée"
@@ -531,8 +531,8 @@
               "id": "u2s3q10",
               "q": "En descente, un passager ressent une vive douleur à l'oreille que la déglutition ne soulage pas. Quelle est la meilleure action ?",
               "choices": [
-                "Remonter un peu, puis redescendre plus lentement en rééquilibrant (Valsalva)",
-                "Accélérer la descente pour abréger au maximum la durée de la gêne",
+                "Remonter un peu, puis redescendre lentement en rééquilibrant (Valsalva)",
+                "Accélérer la descente pour abréger au maximum la durée de la douleur",
                 "Couper le chauffage et ouvrir les aérations pour rafraîchir la cabine",
                 "Lui demander de retenir sa respiration jusqu'à l'atterrissage"
               ],
@@ -555,8 +555,8 @@
               "id": "u2s3q12",
               "q": "Un passager souffre du mal de l'air. Quelle mesure est la plus appropriée ?",
               "choices": [
-                "Lui faire lire la carte pour l'occuper",
-                "Fermer les aérations pour éviter les courants d'air",
+                "Lui faire lire la carte pour fixer son regard et occuper son esprit",
+                "Fermer les aérations et chauffer la cabine pour éviter les frissons",
                 "Lui faire regarder l'horizon, aérer et éviter les manœuvres brusques",
                 "Enchaîner des virages serrés pour l'habituer au mouvement"
               ],
@@ -645,10 +645,10 @@
               "id": "u2s4q04",
               "q": "Concernant l'élimination de l'alcool par l'organisme, quelle affirmation est exacte ?",
               "choices": [
-                "Elle se fait à vitesse à peu près constante, que rien ne permet d'accélérer",
-                "Un café fort permet de l'accélérer nettement",
+                "Elle se fait à vitesse à peu près constante, sans moyen de l'accélérer",
+                "Un café fort ou une douche froide permettent de l'accélérer nettement",
                 "Elle est plus rapide en altitude, grâce à la baisse de pression",
-                "Un effort physique intense divise sa durée par deux"
+                "Un effort physique intense, en faisant transpirer, divise sa durée par deux"
               ],
               "answer": 0,
               "explanation": "Le foie élimine l'alcool à vitesse à peu près constante, de l'ordre de 0,10 à 0,15 g/l par heure. Café, douche froide ou sport peuvent masquer la somnolence mais ne font pas baisser l'alcoolémie plus vite."
@@ -658,9 +658,9 @@
               "q": "Après une soirée bien arrosée, un pilote a laissé passer 8 heures entre son dernier verre et le décollage. Quelle affirmation est exacte ?",
               "choices": [
                 "Il est forcément apte, puisque la règle des 8 heures est respectée",
-                "Il peut voler s'il boit beaucoup d'eau avant le départ",
+                "Il peut voler s'il boit beaucoup d'eau pour éliminer l'alcool restant",
                 "Il peut voler s'il reste sous 3 000 ft pour limiter l'hypoxie",
-                "Il n'est pas forcément apte : l'alcoolémie et les effets peuvent persister"
+                "Il n'est pas forcément apte : l'alcool et ses effets peuvent persister"
               ],
               "answer": 3,
               "explanation": "Les 8 heures sont un minimum, pas une garantie : après une forte consommation, l'alcoolémie peut rester élevée bien plus longtemps, et la « gueule de bois » (fatigue, troubles de l'équilibre) rend inapte même une fois l'alcool éliminé."
@@ -705,7 +705,7 @@
               "id": "u2s4q09",
               "q": "Concernant la dette de sommeil, quelle affirmation est exacte ?",
               "choices": [
-                "Elle n'apparaît qu'après une nuit blanche complète, jamais avant",
+                "Elle ne concerne que les pilotes ayant passé une nuit blanche complète",
                 "Elle s'accumule sur plusieurs nuits courtes et favorise les erreurs",
                 "Elle est entièrement compensée par la prise régulière de café",
                 "Elle affecte la force physique, mais pas le jugement du pilote"
@@ -720,7 +720,7 @@
                 "Le point de piqûre risque de saigner sous l'effet de la baisse de pression",
                 "Le sang restant se charge en azote, d'où un risque d'accident de décompression",
                 "Le volume sanguin et le transport d'oxygène sont réduits, d'où un risque de malaise",
-                "Le don de sang provoque une hyperventilation durable"
+                "Le don de sang provoque une hyperventilation durable, d'où des vertiges"
               ],
               "answer": 2,
               "explanation": "Après un don, le volume sanguin et le nombre de globules rouges diminuent temporairement : la tolérance à l'altitude et au facteur de charge baisse et un malaise est possible. C'est une forme d'hypoxie hypémique."
@@ -732,7 +732,7 @@
                 "L'altitude de sécurité",
                 "L'aérodrome de dégagement",
                 "L'avitaillement en carburant",
-                "L'alcool"
+                "La consommation d'alcool"
               ],
               "answer": 3,
               "explanation": "IMSAFE : Illness (maladie), Medication (médicaments), Stress, Alcohol (alcool), Fatigue, Emotion ou Eating (alimentation). C'est une auto-évaluation de l'aptitude du pilote, pas de la préparation du vol."
@@ -743,7 +743,7 @@
               "choices": [
                 "Il gêne l'utilisation de l'oxygène par des cellules déjà moins oxygénées",
                 "La baisse de pression fait augmenter le taux d'alcool dans le sang",
-                "Le froid ralentit l'élimination de l'alcool par le foie",
+                "Le froid de l'altitude ralentit l'élimination de l'alcool par le foie",
                 "L'alcool se dilate dans l'estomac selon la loi de Boyle-Mariotte"
               ],
               "answer": 0,
@@ -879,7 +879,7 @@
               "id": "u2s5q08",
               "q": "Quels sont, dans l'ordre, les trois niveaux de la conscience de la situation ?",
               "choices": [
-                "Anticiper, percevoir, agir",
+                "Comprendre, percevoir, anticiper",
                 "Percevoir, décider, évaluer",
                 "Percevoir, comprendre, anticiper",
                 "Comprendre, choisir, agir"

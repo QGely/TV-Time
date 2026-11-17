@@ -63,10 +63,10 @@
               "id": "u6s1q04",
               "q": "Que mesure la prise du tube de Pitot, ouverte face à l'écoulement ?",
               "choices": [
-                "La pression statique",
-                "La pression dynamique seule",
+                "La pression statique de l'air ambiant",
+                "La pression dynamique seule, due à la vitesse",
                 "La différence de pression entre l'extrados et l'intrados",
-                "La pression totale"
+                "La pression totale, celle de l'air arrêté dans le tube"
               ],
               "answer": 3,
               "explanation": "L'air s'arrête à l'entrée du tube de Pitot : on y mesure la pression totale Pt = Ps + ½ρV². L'anémomètre en retranche la pression statique pour obtenir la pression dynamique, donc la vitesse."
@@ -114,7 +114,7 @@
                 "un extrados plus bombé que l'intrados",
                 "une portance positive à incidence nulle",
                 "une ligne moyenne confondue avec la corde",
-                "une épaisseur constante sur toute la corde"
+                "une épaisseur constante sur la corde"
               ],
               "answer": 2,
               "explanation": "Les deux faces d'un profil symétrique sont identiques : la ligne moyenne est confondue avec la corde, la cambrure est nulle et la portance est nulle à incidence nulle. Un extrados plus bombé caractérise un profil cambré."
@@ -160,9 +160,9 @@
               "q": "Pourquoi les planeurs ont-ils des ailes de très grand allongement ?",
               "choices": [
                 "Pour réduire la traînée induite et améliorer la finesse",
-                "Pour augmenter l'incidence critique de l'aile",
-                "Pour améliorer la maniabilité en roulis",
-                "Pour réduire le frottement de la couche limite"
+                "Pour augmenter l'incidence critique et retarder le décrochage",
+                "Pour améliorer la maniabilité et le taux de roulis",
+                "Pour réduire la traînée de frottement de la couche limite"
               ],
               "answer": 0,
               "explanation": "Un grand allongement limite l'effet des tourbillons marginaux, donc la traînée induite, ce qui améliore la finesse. Une grande envergure rend au contraire l'avion moins vif en roulis."
@@ -215,7 +215,7 @@
               "choices": [
                 "Le frottement de l'air sur l'ensemble du revêtement de l'avion",
                 "Les éléments extérieurs non profilés, comme le train et les antennes",
-                "Les tourbillons marginaux créés par le passage de l'air de l'intrados vers l'extrados",
+                "Les tourbillons marginaux, l'air passant de l'intrados à l'extrados",
                 "Le souffle hélicoïdal de l'hélice qui frappe la dérive et l'empennage"
               ],
               "answer": 2,
@@ -285,10 +285,10 @@
               "id": "u6s2q09",
               "q": "Sur la polaire Cz = f(Cx) d'un avion, où lit-on la finesse maximale ?",
               "choices": [
-                "Au sommet de la courbe, là où Cz est maximal",
-                "Au point où Cx est minimal",
-                "Au point où la polaire coupe l'axe des Cz",
-                "Au point de contact de la tangente menée depuis l'origine"
+                "Au sommet de la courbe, là où le Cz est maximal",
+                "Au point le plus à gauche, là où le Cx est minimal",
+                "Au point où la polaire coupe l'axe des Cx, à portance nulle",
+                "Au point de contact de la tangente issue de l'origine"
               ],
               "answer": 3,
               "explanation": "Pour chaque point de la polaire, Cz/Cx est la pente de la droite qui le relie à l'origine. Cette pente est maximale pour la droite tangente à la courbe. Le sommet correspond au Cz max, donc au décrochage."
@@ -309,9 +309,9 @@
               "id": "u6s2q11",
               "q": "Quel est le rôle des becs de bord d'attaque ?",
               "choices": [
-                "Augmenter la vitesse maximale en croisière",
-                "Réduire la traînée induite en bout d'aile",
-                "Retarder le décollement des filets d'air et augmenter l'incidence critique",
+                "Augmenter la vitesse maximale en réduisant la traînée de forme",
+                "Réduire la traînée induite en atténuant les tourbillons marginaux",
+                "Retarder le décollement des filets et augmenter l'incidence critique",
                 "Diminuer la cambrure pour réduire la portance à l'atterrissage"
               ],
               "answer": 2,
@@ -399,10 +399,10 @@
               "id": "u6s3q05",
               "q": "Sur l'anémomètre, à quelle vitesse correspond le début (côté basses vitesses) de l'arc blanc ?",
               "choices": [
-                "À VS1, vitesse de décrochage en configuration lisse",
-                "À VFE, vitesse maximale volets sortis",
+                "À VS1, vitesse de décrochage en configuration lisse (croisière)",
+                "À VFE, vitesse maximale autorisée volets sortis",
                 "À VS0, vitesse de décrochage en configuration atterrissage",
-                "À VNO, vitesse maximale en air turbulent"
+                "À VNO, vitesse maximale de croisière en air turbulent"
               ],
               "answer": 2,
               "explanation": "L'arc blanc (plage d'utilisation des volets) va de VS0, décrochage en configuration atterrissage à la masse maximale, jusqu'à VFE. L'arc vert commence à VS1 et l'arc jaune à VNO."
@@ -423,9 +423,9 @@
               "id": "u6s3q07",
               "q": "Lequel de ces signes annonce l'approche du décrochage ?",
               "choices": [
-                "Des commandes de plus en plus dures et efficaces",
-                "Une vitesse qui augmente à assiette constante",
-                "Un bruit aérodynamique de plus en plus fort",
+                "Des commandes de plus en plus dures et plus efficaces",
+                "Une vitesse qui augmente alors que l'assiette est stable",
+                "Un bruit aérodynamique de plus en plus fort (sifflement)",
                 "Des vibrations de la cellule et des gouvernes (buffeting)"
               ],
               "answer": 3,
@@ -436,9 +436,9 @@
               "q": "Quelle est l'action prioritaire pour sortir d'un décrochage ?",
               "choices": [
                 "Diminuer l'incidence en rendant la main (manche vers l'avant)",
-                "Tirer sur le manche pour relever le nez",
-                "Remettre les ailes à plat aux ailerons avant toute autre action",
-                "Sortir les volets en grand"
+                "Tirer sur le manche pour relever le nez et freiner la chute",
+                "Remettre d'abord les ailes à plat en braquant les ailerons",
+                "Sortir les volets en grand sans toucher au manche"
               ],
               "answer": 0,
               "explanation": "Le décrochage étant dû à une incidence excessive, on la réduit d'abord en poussant sur le manche. On ajuste ensuite la puissance, on remet les ailes à plat une fois l'incidence réduite, puis on effectue une ressource douce."
@@ -448,8 +448,8 @@
               "q": "Qu'est-ce qu'une vrille ?",
               "choices": [
                 "Une spirale engagée, avion non décroché, à vitesse croissante",
-                "Un virage à très grande inclinaison stabilisé en palier",
-                "Une descente en autorotation, avion décroché, sur une trajectoire hélicoïdale",
+                "Un virage serré à très grande inclinaison, stabilisé en palier",
+                "Une autorotation, avion décroché, en descente hélicoïdale",
                 "Une abattée symétrique, sans rotation, après un décrochage"
               ],
               "answer": 2,
@@ -633,7 +633,7 @@
               "id": "u6s4q11",
               "q": "En palier stabilisé, vous inclinez l'avion à 30° aux seuls ailerons, sans toucher à la profondeur ni à la puissance. Que se passe-t-il ?",
               "choices": [
-                "Il descend : la composante verticale de la portance devient inférieure au poids",
+                "Il descend : la composante verticale de la portance est inférieure au poids",
                 "Il monte : l'inclinaison augmente le facteur de charge et donc la portance",
                 "Il garde son altitude : la portance totale reste la même qu'en palier",
                 "Il garde son altitude, mais sa vitesse diminue peu à peu"
@@ -723,9 +723,9 @@
               "id": "u6s5q05",
               "q": "Votre avion est chargé avec un centrage proche de la limite avant. À quoi devez-vous vous attendre ?",
               "choices": [
-                "Une profondeur lourde, notamment à l'arrondi, et une Vs un peu plus élevée",
-                "Un avion instable, avec des efforts au manche très faibles",
-                "Une tendance plus marquée au départ en vrille",
+                "Une profondeur lourde à l'arrondi et une Vs un peu plus élevée",
+                "Un avion instable en tangage, avec des efforts au manche très faibles",
+                "Une tendance plus marquée au départ en vrille, difficile à arrêter",
                 "Une vitesse de décrochage plus faible et une meilleure maniabilité"
               ],
               "answer": 0,
@@ -736,9 +736,9 @@
               "q": "À quoi sert le compensateur de profondeur ?",
               "choices": [
                 "À augmenter le braquage maximal de la gouverne de profondeur",
-                "À déplacer le centre de gravité de l'avion",
-                "À contrer le lacet inverse à la mise en virage",
-                "À annuler l'effort au manche pour une assiette et une vitesse données"
+                "À déplacer le centre de gravité pour corriger un centrage arrière",
+                "À contrer le lacet inverse lors de la mise en virage aux ailerons",
+                "À annuler l'effort au manche à une assiette et une vitesse données"
               ],
               "answer": 3,
               "explanation": "Le compensateur (trim) permet de voler sans effort au manche dans une situation stabilisée. Il ne déplace pas le centre de gravité ; on le règle après chaque changement de vitesse, de puissance ou de configuration."
@@ -759,10 +759,10 @@
               "id": "u6s5q08",
               "q": "Vous inclinez l'avion à droite aux seuls ailerons et le nez part d'abord vers la gauche. Quelle en est la cause ?",
               "choices": [
-                "La traînée accrue de l'aile droite, dont l'aileron est levé",
+                "La traînée de forme accrue de l'aile droite, aileron levé",
                 "Le souffle hélicoïdal qui frappe la dérive par la droite",
-                "La traînée induite accrue de l'aile gauche, dont l'aileron est baissé",
-                "Le couple de renversement de l'hélice"
+                "La traînée induite accrue de l'aile gauche, aileron baissé",
+                "Le couple de renversement dû à la rotation de l'hélice"
               ],
               "answer": 2,
               "explanation": "C'est le lacet inverse : l'aileron baissé de l'aile qui monte augmente sa portance, donc sa traînée induite, et retient cette aile. On le contre au palonnier du côté du virage ; les ailerons différentiels le réduisent."
@@ -796,9 +796,9 @@
               "q": "Dans quelle situation le facteur P (dissymétrie de traction de l'hélice) est-il le plus marqué ?",
               "choices": [
                 "En croisière rapide, à faible incidence",
-                "En descente, moteur réduit",
+                "En descente, moteur réduit, à vitesse élevée",
                 "En montée à basse vitesse et pleine puissance",
-                "En palier à la vitesse maximale"
+                "En palier à la vitesse maximale, plein gaz"
               ],
               "answer": 2,
               "explanation": "À grande incidence, la pale descendante attaque l'air avec une incidence plus forte que la pale montante et tire davantage. L'effet est maximal à forte puissance et grande incidence : montée lente, roulage au décollage d'un train classique queue basse."
@@ -809,7 +809,7 @@
               "choices": [
                 "Il augmente la traînée induite et fait chuter brutalement l'avion",
                 "Il ne concerne que les avions à aile haute",
-                "Il n'agit qu'au décollage, jamais pendant l'atterrissage",
+                "Il n'agit qu'au décollage, pas pendant l'atterrissage",
                 "Il réduit la traînée induite : l'avion peut flotter à l'arrondi"
               ],
               "answer": 3,

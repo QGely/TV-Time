@@ -51,7 +51,7 @@
               "id": "u8s1q01",
               "q": "Dans le manuel de vol d'un avion léger, la charge utile désigne :",
               "choices": [
-                "la différence entre la masse maximale au décollage et la masse à vide, à répartir entre occupants, bagages et carburant",
+                "la masse maximale au décollage moins la masse à vide, à répartir entre occupants, bagages et carburant",
                 "la masse maximale des passagers et des bagages, le carburant étant déjà compté dans la masse à vide",
                 "la différence entre la masse maximale au décollage et la masse maximale à l'atterrissage",
                 "la masse de l'avion avec le plein de carburant, avant l'embarquement des occupants et des bagages"
@@ -138,7 +138,7 @@
                 "L'avion ne peut plus cabrer suffisamment pour effectuer la rotation au décollage",
                 "La vitesse de décrochage augmente fortement, surtout en virage et en approche",
                 "La profondeur manque d'efficacité pour réaliser l'arrondi à l'atterrissage",
-                "La stabilité en tangage devient insuffisante et la sortie de vrille peut être impossible"
+                "La stabilité en tangage devient insuffisante et la vrille peut être irrécupérable"
               ],
               "answer": 3,
               "explanation": "Un CG trop arrière réduit puis supprime la stabilité longitudinale, et la profondeur peut ne plus suffire à faire piquer l'avion pour sortir d'un décrochage ou d'une vrille. Le manque d'autorité à cabrer concerne au contraire un centrage trop avant."
@@ -148,9 +148,9 @@
               "q": "Les bras de levier utilisés dans le calcul de centrage sont mesurés à partir :",
               "choices": [
                 "du centre de gravité de l'avion à vide",
-                "de l'axe des roues du train principal",
-                "d'une référence fixe définie par le constructeur",
-                "du centre de poussée de l'aile"
+                "du point d'appui des roues du train principal",
+                "d'une référence fixe choisie par le constructeur",
+                "du centre de poussée de l'aile en croisière"
               ],
               "answer": 2,
               "explanation": "Le constructeur choisit une référence (datum), par exemple la cloison pare-feu ou le bord d'attaque de l'aile ; toutes les distances (avion vide, sièges, soute, réservoirs) sont données par rapport à elle dans le manuel de vol."
@@ -185,7 +185,7 @@
               "choices": [
                 "Parce que les limites de centrage sont différentes en approche, volets sortis",
                 "Parce que la consommation de carburant déplace le CG, qui peut sortir de l'enveloppe en fin de vol",
-                "Parce que la masse maximale à l'atterrissage est toujours inférieure à la masse maximale au décollage",
+                "Parce que la réglementation impose une marge de centrage plus grande à l'atterrissage qu'au décollage",
                 "Parce que le centrage n'a d'importance qu'à basse vitesse, lors de l'arrondi"
               ],
               "answer": 1,
@@ -285,10 +285,10 @@
               "id": "u8s2q05",
               "q": "Pourquoi applique-t-on un coefficient de sécurité aux distances lues dans le manuel de vol ?",
               "choices": [
-                "Parce que les abaques ne tiennent pas compte de la masse de l'avion",
-                "Parce qu'elles ont été obtenues avec un avion neuf, par un pilote d'essai, dans des conditions bien définies",
+                "Parce que les abaques ne tiennent compte ni de la masse de l'avion ni de la température extérieure",
+                "Parce qu'elles ont été obtenues avec un avion neuf et un pilote d'essai, sur piste en dur sèche",
                 "Parce que les distances du manuel sont exprimées en pieds et doivent être converties en mètres",
-                "Parce que la réglementation impose de doubler toutes les distances calculées"
+                "Parce que la réglementation impose de doubler les distances calculées pour un avion léger"
               ],
               "answer": 1,
               "explanation": "Les performances du manuel correspondent à un avion neuf, piloté de façon optimale sur une piste en dur sèche. Un avion usagé, un pilote moyen et des conditions réelles font moins bien : on recommande × 1,33 au décollage et × 1,43 à l'atterrissage."
@@ -447,9 +447,9 @@
               "id": "u8s3q03",
               "q": "En vitesse indiquée, comment évoluent Vx et Vy lorsque l'altitude augmente ?",
               "choices": [
-                "Elles restent constantes quelle que soit l'altitude",
-                "L'écart entre elles augmente avec l'altitude",
-                "Vx devient supérieure à Vy au-dessus de 5 000 ft",
+                "Elles restent constantes, comme la vitesse de décrochage",
+                "Elles s'écartent : Vx diminue et Vy augmente avec l'altitude",
+                "Vx devient supérieure à Vy au-dessus de 5 000 ft environ",
                 "Elles se rapprochent jusqu'à devenir égales au plafond absolu"
               ],
               "answer": 3,
@@ -519,10 +519,10 @@
               "id": "u8s3q09",
               "q": "Dans le tableau de croisière, vous passez de 55 % à 75 % de puissance à la même altitude. Quelle affirmation est exacte ?",
               "choices": [
-                "La vitesse vraie augmente, mais la consommation horaire augmente plus vite : la distance parcourue par litre diminue",
+                "La vitesse vraie augmente, mais la consommation horaire augmente plus vite : la distance par litre diminue",
                 "La vitesse vraie augmente et la consommation horaire diminue, car le moteur tourne à un meilleur régime",
                 "La vitesse vraie augmente dans la même proportion que la puissance, soit d'environ 36 %",
-                "La distance franchissable augmente, car on arrive plus vite à destination"
+                "La distance franchissable augmente, car le temps de vol jusqu'à destination est plus court"
               ],
               "answer": 0,
               "explanation": "La puissance nécessaire croît à peu près comme le cube de la vitesse : un gain de vitesse modeste coûte beaucoup de carburant. Le temps de vol diminue, mais le carburant consommé par distance parcourue augmente."
@@ -569,7 +569,7 @@
           "id": "u8s4",
           "title": "Préparation d'un vol VFR",
           "icon": "🗂️",
-          "tips": "Avant tout vol, le commandant de bord prend connaissance de toutes les informations utiles (SERA.2010). Pour un vol quittant les abords de l'aérodrome, la préparation comprend l'étude des bulletins et prévisions météorologiques à jour, compte tenu du carburant nécessaire et d'une solution de rechange si le vol ne peut pas se dérouler comme prévu.\n\nLes étapes\n• Météo : METAR et TAF des aérodromes, cartes TEMSI (temps significatif) et WINTEM (vents et températures en altitude), SIGMET.\n• Informations aéronautiques : le SIA (Service de l'information aéronautique) publie l'AIP France (parties GEN, ENR et AD), les cartes VAC, les SUP AIP et les NOTAM. NOTAM et SUP AIP signalent les changements temporaires : zones réglementées temporaires (ZRT), travaux, pannes de moyens radio, activation de zones.\n• Cartes VAC : cheminements d'arrivée et de départ, altitude du tour de piste, fréquences, distances déclarées, consignes particulières.\n• Carte aéronautique au 1/500 000 : tracé de la route, espaces aériens et zones P, R et D avec leurs limites verticales, relief et obstacles.\n\nLog de navigation\nPour chaque branche : route, distance, cap et vitesse sol corrigés du vent, temps estimé, carburant, fréquences et repères. Temps (min) = distance (NM) / vitesse sol (kt) × 60.\n\nCarburant\n• Délestage : carburant consommé pendant le vol (durée × consommation horaire).\n• On y ajoute la mise en route et le roulage, la réserve réglementaire et, si besoin, un dégagement et une marge pour les imprévus.\n• Réserve réglementaire (Part-NCO, avion) : de quoi rejoindre la destination puis voler encore 30 minutes à l'altitude de croisière normale de jour, 45 minutes de nuit ; 10 minutes seulement pour un vol local de jour restant en vue de l'aérodrome.\n\nPlan de vol\nObligatoire notamment pour un vol devant bénéficier du contrôle, un vol franchissant une frontière (sauf disposition contraire des États) et un vol de nuit quittant les abords de l'aérodrome. À l'arrivée, il faut le clôturer au plus vite, faute de quoi le service d'alerte déclenche les recherches.\n\nDocuments\n• Pilote (FCL.045) : licence, certificat médical en état de validité et pièce d'identité avec photo.\n• Avion (NCO.GEN.135) : manuel de vol, certificat d'immatriculation et certificat de navigabilité (originaux), attestation d'assurance, certificat acoustique et licence de station radio le cas échéant, carnet de route, cartes à jour. Pour un vol local (départ et retour au même aérodrome), les certificats, l'attestation d'assurance et le carnet de route peuvent rester à l'aérodrome.\n\nRisque et minima personnels\nLes minima personnels sont des limites plus restrictives que la réglementation, fixées à l'avance par le pilote selon son expérience et son entraînement récent (vent de travers, visibilité, plafond, longueur de piste). Le jour du vol, on évalue le pilote, l'avion, l'environnement et la pression extérieure : si un minimum personnel n'est pas respecté, on reporte ou on modifie le vol.",
+          "tips": "Avant tout vol, le commandant de bord prend connaissance de toutes les informations utiles (SERA.2010). Pour un vol quittant les abords de l'aérodrome, la préparation comprend l'étude des bulletins et prévisions météorologiques à jour, compte tenu du carburant nécessaire et d'une solution de rechange si le vol ne peut pas se dérouler comme prévu.\n\nLes étapes\n• Météo : METAR et TAF des aérodromes, cartes TEMSI (temps significatif) et WINTEM (vents et températures en altitude), SIGMET.\n• Informations aéronautiques : le SIA (Service de l'information aéronautique) publie l'AIP France (parties GEN, ENR et AD), les cartes VAC, les SUP AIP et les NOTAM. NOTAM et SUP AIP signalent les changements temporaires : zones réglementées temporaires (ZRT), travaux, pannes de moyens radio, activation de zones.\n• Cartes VAC : cheminements d'arrivée et de départ, altitude du tour de piste, fréquences, distances déclarées, consignes particulières.\n• Carte aéronautique au 1/500 000 : tracé de la route, espaces aériens et zones P, R et D avec leurs limites verticales, relief et obstacles.\n\nLog de navigation\nPour chaque branche : route, distance, cap et vitesse sol corrigés du vent, temps estimé, carburant, fréquences et repères. Temps (min) = distance (NM) / vitesse sol (kt) × 60.\n\nCarburant\n• Délestage : carburant consommé pendant le vol (durée × consommation horaire).\n• On y ajoute la mise en route et le roulage, la réserve finale réglementaire et, si besoin, un dégagement et une marge pour les imprévus.\n• Réserve finale réglementaire (Part-NCO, avion, NCO.OP.125 et AMC1 NCO.OP.125(b)) : de quoi rejoindre la destination en conservant au moins 30 minutes de vol de jour et 45 minutes de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination ; pour un vol local de jour (même aérodrome au départ et à l'arrivée, toujours en vue de celui-ci), 10 minutes seulement, à la puissance maximale continue de croisière à 1 500 ft. Cette réserve ne doit pas être consommée en exploitation normale.\n\nPlan de vol\nObligatoire notamment pour un vol devant bénéficier du contrôle, un vol franchissant une frontière (sauf disposition contraire des États) et un vol de nuit quittant les abords de l'aérodrome. À l'arrivée, il faut le clôturer au plus vite, faute de quoi le service d'alerte déclenche les recherches.\n\nDocuments\n• Pilote (FCL.045) : licence, certificat médical en état de validité et pièce d'identité avec photo.\n• Avion (NCO.GEN.135) : manuel de vol, certificat d'immatriculation et certificat de navigabilité (originaux), attestation d'assurance, certificat acoustique et licence de station radio le cas échéant, carnet de route, cartes à jour. Pour un vol local (départ et retour au même aérodrome), les certificats, l'attestation d'assurance et le carnet de route peuvent rester à l'aérodrome.\n\nRisque et minima personnels\nLes minima personnels sont des limites plus restrictives que la réglementation, fixées à l'avance par le pilote selon son expérience et son entraînement récent (vent de travers, visibilité, plafond, longueur de piste). Le jour du vol, on évalue le pilote, l'avion, l'environnement et la pression extérieure : si un minimum personnel n'est pas respecté, on reporte ou on modifie le vol.",
           "vocab": [
             {
               "term": "SIA",
@@ -679,7 +679,7 @@
             },
             {
               "id": "u8s4q07",
-              "q": "Vol VFR de jour vers un autre aérodrome : durée prévue 1 h 40 min, consommation 24 L/h, mise en route et roulage 4 L. Quelle quantité minimale de carburant faut-il au départ, réserve réglementaire comprise ?",
+              "q": "Vol VFR de jour vers un autre aérodrome : durée prévue 1 h 40 min, consommation 24 L/h (valeur à retenir aussi pour la réserve), mise en route et roulage 4 L. Quelle quantité minimale de carburant faut-il au départ, réserve réglementaire comprise ?",
               "choices": [
                 "44 L",
                 "52 L",
@@ -687,7 +687,7 @@
                 "62 L"
               ],
               "answer": 2,
-              "explanation": "Délestage : 1 h 40 min = 5/3 h, × 24 = 40 L. Réserve VFR de jour vers un autre aérodrome : 30 min × 24 L/h = 12 L. Total : 4 + 40 + 12 = 56 L (62 L correspondrait à la réserve de 45 min exigée de nuit)."
+              "explanation": "Délestage : 1 h 40 min = 5/3 h, × 24 = 40 L. Réserve finale VFR de jour vers un autre aérodrome : 30 min, comptées ici par prudence à la consommation de croisière : 0,5 × 24 = 12 L. Total : 4 + 40 + 12 = 56 L (62 L correspondrait à la réserve de 45 min exigée de nuit)."
             },
             {
               "id": "u8s4q08",
@@ -705,10 +705,10 @@
               "id": "u8s4q09",
               "q": "Vous avez déposé un plan de vol et atterrissez sur un aérodrome dépourvu d'organisme de la circulation aérienne. Que devez-vous faire ?",
               "choices": [
-                "Le clôturer au plus vite (compte rendu d'arrivée), sans quoi des recherches seront déclenchées",
-                "Rien : le plan de vol se clôture automatiquement à l'heure d'arrivée prévue",
-                "Le clôturer seulement si vous arrivez avec plus de 30 minutes de retard",
-                "Le clôturer lors du dépôt de votre plan de vol suivant"
+                "Le clôturer au plus vite par un compte rendu d'arrivée, sinon l'alerte est donnée",
+                "Rien : le plan de vol est clôturé automatiquement à l'heure d'arrivée prévue",
+                "Attendre 30 minutes après l'heure d'arrivée prévue, puis clôturer le plan de vol",
+                "Le clôturer lors du dépôt de votre plan de vol suivant, pour le vol de retour"
               ],
               "answer": 0,
               "explanation": "Le compte rendu d'arrivée doit être transmis dès que possible après l'atterrissage. Sans clôture, le service d'alerte considère l'avion en retard, déclenche les phases d'urgence puis les recherches."
@@ -717,13 +717,13 @@
               "id": "u8s4q10",
               "q": "Lors d'un vol comme commandant de bord avec une licence PPL(A), quels documents le pilote doit-il avoir sur lui ?",
               "choices": [
-                "Sa licence et son carnet de vol uniquement",
-                "Sa licence uniquement, le certificat médical restant consultable à l'aéroclub",
-                "Sa licence, son certificat médical en état de validité et une pièce d'identité avec photo",
+                "Sa licence et son carnet de vol, preuve de son expérience récente",
+                "Sa licence, le certificat médical pouvant rester consultable à l'aéroclub",
+                "Sa licence, son certificat médical valide et une pièce d'identité avec photo",
                 "Son certificat médical et l'attestation de réussite à l'examen théorique"
               ],
               "answer": 2,
-              "explanation": "Part-FCL (FCL.045) : le pilote porte toujours sur lui une licence valide et un certificat médical valide lorsqu'il exerce les privilèges de sa licence, ainsi qu'un document d'identité avec photo."
+              "explanation": "Part-FCL (FCL.045) : le pilote porte toujours sur lui une licence valide et un certificat médical valide lorsqu'il exerce les privilèges de sa licence, ainsi qu'un document d'identité avec photo. Le carnet de vol n'a pas à être emporté : il est présenté sans délai sur demande."
             },
             {
               "id": "u8s4q11",

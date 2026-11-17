@@ -13,97 +13,181 @@
           "icon": "🛩️",
           "tips": "La cellule est la structure de l'avion : fuselage, voilure, empennages et train d'atterrissage.\n\nStructure :\n• Fuselage : il porte l'équipage, la charge et le moteur, et relie la voilure aux empennages. Construction en treillis de tubes soudés entoilé, ou semi-monocoque : revêtement travaillant raidi par des cadres et des lisses.\n• Voilure : le longeron, poutre orientée dans le sens de l'envergure, reprend la flexion due à la portance ; les nervures donnent la forme du profil et transmettent au longeron les efforts reçus par le revêtement. Aile haute ou basse, cantilever (sans hauban) ou haubanée.\n• Empennage horizontal : plan fixe et gouverne de profondeur (ou plan monobloc). Empennage vertical : dérive et gouverne de direction.\n\nTrain d'atterrissage :\n• Tricycle : deux roues principales en arrière du centre de gravité et une roulette de nez. Stable au roulage, bonne visibilité vers l'avant.\n• Classique : deux roues principales en avant du centre de gravité et une roulette de queue. Le CG étant derrière les roues principales, tout écart de trajectoire au sol tend à s'amplifier : risque de cheval de bois.\n• Freins : généralement à disque et à commande hydraulique, actionnés par la partie haute des palonniers. Le freinage différentiel (un seul côté) aide à diriger l'avion au sol ; le frein de parc l'immobilise à l'arrêt.\n\nCommandes de vol :\n• Manche à gauche ou à droite : ailerons braqués en sens opposés, roulis. Manche à gauche : aileron gauche levé, aileron droit baissé.\n• Manche avant ou arrière : gouverne de profondeur, tangage. Palonniers : gouverne de direction, lacet.\n• La timonerie (câbles, poulies, guignols, bielles) transmet les ordres. Un câble mal remonté peut inverser une commande : on contrôle le sens de débattement à chaque prévol.\n• Volets de courbure : ils augmentent la portance et la traînée et diminuent la vitesse de décrochage ; ils permettent une approche plus lente et plus pentue.\n• Compensateur (tab) : petite surface au bord de fuite d'une gouverne, braquée en sens inverse de celle-ci. Il annule l'effort au manche : après chaque changement de régime ou d'assiette, on compense jusqu'à ne plus rien tenir (effort à pousser → compenser à piquer).\n\nEntretien et visite prévol :\n• L'avion est entretenu selon son programme d'entretien ; les travaux sont consignés dans ses documents.\n• La prévol suit la check-list du manuel de vol : revêtement (chocs, criques, rivets), gouvernes libres et dans le bon sens, charnières et fixations, pneus et amortisseurs, freins (fuites), hélice (entailles, criques), niveau d'huile, purges carburant, cales, housses et attaches retirées.\n• Dommage douteux (entaille d'hélice, crique de structure) : on ne vole pas sans l'avis d'un mécanicien.",
           "vocab": [
-            { "term": "Longeron", "translation": "Poutre principale de l'aile, reprend la flexion due à la portance" },
-            { "term": "Nervure", "translation": "Élément qui donne sa forme au profil de l'aile" },
-            { "term": "Semi-monocoque", "translation": "Structure à revêtement travaillant raidi par cadres et lisses" },
-            { "term": "Train tricycle", "translation": "Roues principales en arrière du CG et roulette de nez" },
-            { "term": "Train classique", "translation": "Roues principales en avant du CG et roulette de queue" },
-            { "term": "Timonerie", "translation": "Câbles, poulies et bielles transmettant les ordres aux gouvernes" },
-            { "term": "Compensateur (tab)", "translation": "Petite surface de gouverne qui annule l'effort au manche" },
-            { "term": "Volets de courbure", "translation": "Hypersustentateurs : plus de portance et de traînée, VS plus faible" }
+            {
+              "term": "Longeron",
+              "translation": "Poutre principale de l'aile, reprend la flexion due à la portance"
+            },
+            {
+              "term": "Nervure",
+              "translation": "Élément qui donne sa forme au profil de l'aile"
+            },
+            {
+              "term": "Semi-monocoque",
+              "translation": "Structure à revêtement travaillant raidi par cadres et lisses"
+            },
+            {
+              "term": "Train tricycle",
+              "translation": "Roues principales en arrière du CG et roulette de nez"
+            },
+            {
+              "term": "Train classique",
+              "translation": "Roues principales en avant du CG et roulette de queue"
+            },
+            {
+              "term": "Timonerie",
+              "translation": "Câbles, poulies et bielles transmettant les ordres aux gouvernes"
+            },
+            {
+              "term": "Compensateur (tab)",
+              "translation": "Petite surface de gouverne qui annule l'effort au manche"
+            },
+            {
+              "term": "Volets de courbure",
+              "translation": "Hypersustentateurs : plus de portance et de traînée, VS plus faible"
+            }
           ],
           "questions": [
             {
               "id": "u9s1q01",
               "q": "Dans une aile, quel élément reprend l'essentiel des efforts de flexion dus à la portance ?",
-              "choices": ["Les nervures", "Le bord de fuite", "Le longeron", "Le saumon"],
+              "choices": [
+                "Les nervures",
+                "Le bord de fuite",
+                "Le longeron",
+                "Le saumon"
+              ],
               "answer": 2,
               "explanation": "Le longeron est la poutre principale de l'aile, orientée dans le sens de l'envergure : c'est lui qui encaisse la flexion due à la portance. Les nervures, elles, donnent la forme du profil."
             },
             {
               "id": "u9s1q02",
               "q": "Quel est le rôle principal des nervures d'une aile ?",
-              "choices": ["Donner sa forme au profil et transmettre les efforts au longeron", "Reprendre seules la flexion de l'aile, à la place du longeron principal", "Relier l'aile au fuselage par des ferrures d'attache", "Contenir le carburant dans l'épaisseur de l'aile"],
+              "choices": [
+                "Donner sa forme au profil et transmettre les efforts au longeron",
+                "Reprendre l'essentiel de la flexion de l'aile, à la place du longeron",
+                "Relier l'aile au fuselage par des ferrures d'attache",
+                "Contenir le carburant dans l'épaisseur de l'aile"
+              ],
               "answer": 0,
               "explanation": "Les nervures, disposées dans le sens de la corde, donnent sa forme au profil et transmettent au longeron les efforts aérodynamiques reçus par le revêtement. La flexion est reprise par le longeron."
             },
             {
               "id": "u9s1q03",
               "q": "Un train d'atterrissage tricycle comprend :",
-              "choices": ["deux roues principales en avant du centre de gravité et une roulette de queue", "une roue principale sous le fuselage et deux balancines sous les ailes", "deux roues principales en avant du centre de gravité et une roulette de nez", "deux roues principales en arrière du centre de gravité et une roulette de nez"],
+              "choices": [
+                "deux roues principales en avant du centre de gravité et une roulette de queue",
+                "une roue principale sous le fuselage et deux balancines sous les ailes",
+                "deux roues principales en avant du centre de gravité et une roulette de nez",
+                "deux roues principales en arrière du centre de gravité et une roulette de nez"
+              ],
               "answer": 3,
               "explanation": "Sur un train tricycle, les roues principales sont légèrement en arrière du centre de gravité et une roulette de nez soutient l'avant : l'avion est stable en ligne droite au roulage. Le train classique place les roues principales en avant du CG, avec une roulette de queue."
             },
             {
               "id": "u9s1q04",
               "q": "Le risque de « cheval de bois » au roulage et à l'atterrissage concerne surtout :",
-              "choices": ["les avions à train tricycle, à cause de la roulette de nez orientable", "les avions à train classique, au CG situé derrière les roues principales", "les avions à train rentrant, en cas d'oubli de sortie du train", "les avions à aile haute, plus sensibles au vent de travers"],
+              "choices": [
+                "les avions à train tricycle, à cause de la roulette de nez orientable",
+                "les avions à train classique, au CG situé derrière les roues principales",
+                "les avions à train rentrant, en cas d'oubli de sortie du train",
+                "les avions à aile haute, plus sensibles au vent de travers"
+              ],
               "answer": 1,
               "explanation": "Sur un train classique, le centre de gravité est derrière les roues principales : un écart de trajectoire au sol tend à s'amplifier jusqu'à la perte de contrôle en lacet (cheval de bois). Le pilote doit corriger tôt aux palonniers."
             },
             {
               "id": "u9s1q05",
               "q": "Au roulage, le pilote appuie uniquement sur le frein du palonnier droit. Quel est l'effet ?",
-              "choices": ["L'avion ralentit en ligne droite", "L'avion tourne à gauche", "L'avion tourne à droite", "L'avion s'incline sur l'aile gauche"],
+              "choices": [
+                "L'avion ralentit en ligne droite",
+                "L'avion pivote et tourne à gauche",
+                "L'avion pivote et tourne à droite",
+                "L'avion s'incline sur l'aile gauche"
+              ],
               "answer": 2,
               "explanation": "Le freinage différentiel ne freine que la roue principale droite : l'avion pivote autour de cette roue et tourne à droite. On l'utilise pour diriger l'avion au sol, en complément de la roulette orientable."
             },
             {
               "id": "u9s1q06",
               "q": "En vol, le pilote déplace le manche vers la gauche. Quelle est la position des ailerons ?",
-              "choices": ["Aileron gauche levé, aileron droit baissé", "Aileron gauche baissé, aileron droit levé", "Les deux ailerons levés", "Les deux ailerons baissés"],
+              "choices": [
+                "Aileron gauche levé, aileron droit baissé",
+                "Aileron gauche baissé, aileron droit levé",
+                "Les deux ailerons levés",
+                "Les deux ailerons baissés"
+              ],
               "answer": 0,
               "explanation": "Manche à gauche, l'aileron gauche se lève (moins de portance sur l'aile gauche) et l'aileron droit s'abaisse (plus de portance à droite) : l'avion s'incline à gauche. Les ailerons braquent toujours en sens opposés."
             },
             {
               "id": "u9s1q07",
               "q": "Le braquage des volets de courbure a pour effet :",
-              "choices": ["d'augmenter la portance et de diminuer la traînée, pour monter plus vite", "d'augmenter la vitesse de décrochage en raison de la traînée supplémentaire", "de diminuer la portance et la traînée pour faciliter la descente", "d'augmenter la portance et la traînée, et de diminuer la vitesse de décrochage"],
+              "choices": [
+                "d'augmenter la portance et de diminuer la traînée, pour monter plus vite",
+                "d'augmenter la vitesse de décrochage en raison de la traînée supplémentaire",
+                "de diminuer la portance et la traînée pour faciliter la descente",
+                "d'augmenter la portance et la traînée, et de diminuer la vitesse de décrochage"
+              ],
               "answer": 3,
               "explanation": "Les volets augmentent la courbure du profil : le coefficient de portance maximal augmente, donc la vitesse de décrochage diminue, mais la traînée augmente aussi. Cela permet une approche plus lente et plus pentue."
             },
             {
               "id": "u9s1q08",
               "q": "Quel est le rôle du compensateur de profondeur ?",
-              "choices": ["Empêcher le flottement (flutter) de la gouverne", "Annuler l'effort à tenir au manche", "Augmenter le débattement maximal de la gouverne", "Diminuer la vitesse de décrochage"],
+              "choices": [
+                "Empêcher le flottement (flutter) de la gouverne",
+                "Annuler l'effort permanent à tenir au manche",
+                "Augmenter le débattement maximal de la gouverne",
+                "Diminuer la vitesse de décrochage"
+              ],
               "answer": 1,
               "explanation": "Le compensateur (tab) crée une petite force aérodynamique qui maintient la gouverne dans la position voulue : le pilote n'a plus d'effort à tenir au manche. La prévention du flottement relève de l'équilibrage des gouvernes (masses d'équilibrage)."
             },
             {
               "id": "u9s1q09",
               "q": "Après une mise en palier, vous devez pousser en permanence sur le manche pour conserver l'assiette. Que faites-vous ?",
-              "choices": ["Vous compensez à cabrer", "Vous sortez un cran de volets", "Vous compensez à piquer", "Vous réduisez la puissance au ralenti"],
+              "choices": [
+                "Vous compensez à cabrer",
+                "Vous sortez un cran de volets",
+                "Vous compensez à piquer",
+                "Vous réduisez la puissance au ralenti"
+              ],
               "answer": 2,
               "explanation": "Un effort permanent à pousser se supprime en compensant à piquer : le compensateur maintient alors la profondeur dans la position voulue. On compense après chaque changement de régime ou d'assiette."
             },
             {
               "id": "u9s1q10",
               "q": "Pourquoi faut-il vérifier le sens de débattement des gouvernes, en particulier après une intervention d'entretien ?",
-              "choices": ["Parce que l'entretien modifie systématiquement les butées de débattement", "Parce que le compensateur est déposé à chaque visite", "Parce que la peinture fraîche peut bloquer les charnières", "Parce qu'un câble de timonerie mal remonté peut inverser une commande"],
+              "choices": [
+                "Parce qu'une butée mal réglée peut inverser le sens de la commande",
+                "Parce que le compensateur est déposé à chaque visite",
+                "Parce que la peinture fraîche peut bloquer les charnières",
+                "Parce qu'un câble de timonerie mal remonté peut inverser une commande"
+              ],
               "answer": 3,
-              "explanation": "La timonerie (câbles, poulies, guignols) peut être remontée croisée : la gouverne bouge alors en sens inverse de l'ordre donné, ce qui est catastrophique dès le décollage. On contrôle donc que chaque gouverne est libre et débat dans le bon sens."
+              "explanation": "La timonerie (câbles, poulies, guignols) peut être remontée croisée : la gouverne bouge alors en sens inverse de l'ordre donné, ce qui est catastrophique dès le décollage. Une butée, elle, ne fait que limiter l'amplitude du débattement. On contrôle donc que chaque gouverne est libre et débat dans le bon sens."
             },
             {
               "id": "u9s1q11",
               "q": "Au cours de la visite prévol, quel constat doit vous faire renoncer au vol en attendant l'avis d'un mécanicien ?",
-              "choices": ["Une entaille sur le bord d'attaque d'une pale d'hélice", "Quelques insectes collés sur le bord d'attaque de l'aile", "Des repères de glissement pneu/jante bien alignés", "Un niveau d'huile compris entre le minimum et le maximum"],
+              "choices": [
+                "Une entaille sur le bord d'attaque d'une pale d'hélice",
+                "Quelques insectes collés sur le bord d'attaque de l'aile",
+                "Des repères de glissement pneu/jante bien alignés",
+                "Un niveau d'huile compris entre le minimum et le maximum"
+              ],
               "answer": 0,
               "explanation": "Une entaille de pale crée une concentration de contraintes pouvant conduire à la rupture de l'hélice, qui tourne à grande vitesse : seul un mécanicien peut décider de la réparation. Les autres constats sont normaux (les insectes se nettoient)."
             },
             {
               "id": "u9s1q12",
               "q": "Dans une structure de fuselage semi-monocoque, les efforts sont repris :",
-              "choices": ["uniquement par un treillis de tubes soudés recouvert de toile", "par le revêtement travaillant, raidi par des cadres et des lisses", "uniquement par les cadres, le revêtement n'ayant qu'un rôle aérodynamique", "par des haubans extérieurs reliés au train"],
+              "choices": [
+                "par un treillis de tubes soudés, recouvert d'une toile tendue",
+                "par le revêtement travaillant, raidi par des cadres et des lisses",
+                "par les cadres, le revêtement n'ayant qu'un rôle aérodynamique",
+                "par des haubans extérieurs reliés au train et à la voilure"
+              ],
               "answer": 1,
               "explanation": "En semi-monocoque, le revêtement métallique ou composite participe à la résistance (revêtement travaillant) ; cadres et lisses le raidissent et évitent son flambage. Le treillis entoilé est une autre technique, où la toile ne reprend pas d'effort."
             }
@@ -115,97 +199,181 @@
           "icon": "⚙️",
           "tips": "La plupart des avions légers ont un moteur à pistons à 4 temps, à cylindres opposés à plat (4 ou 6 cylindres), refroidi par air : ailettes sur les cylindres et déflecteurs qui canalisent l'air. La surchauffe guette en montée prolongée à forte puissance et faible vitesse.\n\nCycle à 4 temps (2 tours de vilebrequin) :\n• Admission : le piston descend, la soupape d'admission est ouverte, le mélange entre.\n• Compression : soupapes fermées, le piston remonte.\n• Combustion-détente : l'étincelle enflamme le mélange, les gaz repoussent le piston : seul temps moteur.\n• Échappement : le piston remonte, la soupape d'échappement est ouverte.\n\nAllumage :\n• Deux magnétos indépendantes, deux bougies par cylindre : sécurité et meilleure combustion. La magnéto produit son propre courant : le moteur tourne même sans batterie ni alternateur.\n• Le contacteur sur OFF met les magnétos à la masse. Si un fil de masse est coupé, la magnéto reste « chaude » : tourner l'hélice à la main peut lancer le moteur. Une hélice est toujours à considérer comme dangereuse.\n• Essai magnétos au point fixe : sur L puis sur R, une légère chute de régime est normale (chute maximale et écart admissible au manuel de vol). Une chute excessive ou un moteur irrégulier est anormal ; une absence totale de chute fait suspecter un fil de masse coupé.\n\nMélange :\n• Le dosage théorique (stœchiométrique) est d'environ 1 g d'essence pour 15 g d'air. En montée, l'air est moins dense : sans action du pilote, le mélange s'enrichit. On appauvrit (manette rouge) pour retrouver le bon dosage, réduire la consommation et éviter l'encrassement des bougies.\n• Un mélange trop pauvre à forte puissance provoque surchauffe et détonation.\n\nCarburateur et givrage :\n• Dans le venturi, l'air accélère, se détend et aspire l'essence ; le papillon, commandé par la manette des gaz, dose le mélange admis.\n• La détente de l'air et la vaporisation de l'essence refroidissent fortement : du givre peut se former dans une large plage de températures (couramment de −10 °C à +30 °C), surtout par air humide et à puissance réduite.\n• Symptômes (pas fixe) : baisse lente du régime, moteur irrégulier. Réchauffage plein chaud : le régime baisse encore, puis remonte quand le givre fond. L'air chaud, moins dense, réduit la puissance et enrichit le mélange.\n• Injection : l'essence est injectée sous pression près des soupapes, sans venturi : pas de givrage carburateur, mais redémarrage à chaud plus délicat.\n\nLubrification : l'huile lubrifie, refroidit, nettoie et assure l'étanchéité. Pression d'huile basse et température élevée : défaillance probable, atterrir au plus tôt.\n\nDétonation : combustion explosive du mélange restant après l'allumage (moteur chaud, mélange pauvre, indice d'octane insuffisant). Pré-allumage : inflammation avant l'étincelle par un point chaud (calamine, bougie surchauffée).",
           "vocab": [
-            { "term": "Magnéto", "translation": "Générateur autonome du courant d'allumage, entraîné par le moteur" },
-            { "term": "Double allumage", "translation": "Deux magnétos indépendantes et deux bougies par cylindre" },
-            { "term": "Mélange", "translation": "Dosage air/essence, réglé par la manette rouge" },
-            { "term": "Appauvrir", "translation": "Réduire la part d'essence du mélange, surtout en altitude" },
-            { "term": "Givrage carburateur", "translation": "Givre dans le venturi dû à la détente et à l'évaporation" },
-            { "term": "Injection", "translation": "Essence injectée sous pression près des soupapes, sans venturi" },
-            { "term": "Détonation", "translation": "Combustion explosive du mélange après l'étincelle" },
-            { "term": "Pré-allumage", "translation": "Inflammation du mélange par un point chaud, avant l'étincelle" }
+            {
+              "term": "Magnéto",
+              "translation": "Générateur autonome du courant d'allumage, entraîné par le moteur"
+            },
+            {
+              "term": "Double allumage",
+              "translation": "Deux magnétos indépendantes et deux bougies par cylindre"
+            },
+            {
+              "term": "Mélange",
+              "translation": "Dosage air/essence, réglé par la manette rouge"
+            },
+            {
+              "term": "Appauvrir",
+              "translation": "Réduire la part d'essence du mélange, surtout en altitude"
+            },
+            {
+              "term": "Givrage carburateur",
+              "translation": "Givre dans le venturi dû à la détente et à l'évaporation"
+            },
+            {
+              "term": "Injection",
+              "translation": "Essence injectée sous pression près des soupapes, sans venturi"
+            },
+            {
+              "term": "Détonation",
+              "translation": "Combustion explosive du mélange après l'étincelle"
+            },
+            {
+              "term": "Pré-allumage",
+              "translation": "Inflammation du mélange par un point chaud, avant l'étincelle"
+            }
           ],
           "questions": [
             {
               "id": "u9s2q01",
               "q": "Dans un moteur à 4 temps, au cours de quel temps les deux soupapes sont-elles fermées pendant que le piston remonte ?",
-              "choices": ["L'admission", "La compression", "La combustion-détente", "L'échappement"],
+              "choices": [
+                "L'admission",
+                "La compression",
+                "La combustion-détente",
+                "L'échappement"
+              ],
               "answer": 1,
               "explanation": "Pendant la compression, soupapes fermées, le piston remonte et comprime le mélange. Pendant la combustion-détente, les soupapes sont aussi fermées, mais le piston descend."
             },
             {
               "id": "u9s2q02",
               "q": "En vol, la batterie et l'alternateur tombent en panne. Pourquoi le moteur continue-t-il de tourner ?",
-              "choices": ["Parce que la batterie de secours alimente les bougies", "Parce que le démarreur fonctionne alors en génératrice", "Parce que l'allumage se fait par la seule compression, comme sur un diesel", "Parce que les magnétos produisent leur propre courant d'allumage"],
+              "choices": [
+                "Parce que la batterie de secours alimente les bougies",
+                "Parce que le démarreur fonctionne alors en génératrice",
+                "Parce que l'allumage se fait par compression, comme sur un diesel",
+                "Parce que les magnétos produisent leur propre courant d'allumage"
+              ],
               "answer": 3,
               "explanation": "Chaque magnéto est un générateur autonome entraîné par le moteur : l'allumage ne dépend ni de la batterie ni de l'alternateur. Le moteur tourne donc normalement après une panne électrique totale."
             },
             {
               "id": "u9s2q03",
               "q": "Lors de l'essai magnétos au point fixe, le régime ne varie absolument pas quand vous sélectionnez une seule magnéto. Que faut-il suspecter ?",
-              "choices": ["Un fil de masse coupé, laissant une magnéto active", "Un fonctionnement parfait des deux magnétos et des bougies", "Une bougie encrassée sur l'un des cylindres", "Un mélange trop riche pour le régime du point fixe"],
+              "choices": [
+                "Un fil de masse coupé, qui laisse une magnéto active",
+                "Un fonctionnement parfait des deux magnétos",
+                "Une bougie encrassée sur l'un des cylindres",
+                "Un mélange trop riche pour le régime du point fixe"
+              ],
               "answer": 0,
               "explanation": "Sur une seule magnéto, une légère chute de régime est normale, car une seule bougie par cylindre fonctionne. Une absence totale de chute indique que l'autre magnéto n'a pas été coupée, donc un défaut de mise à la masse : l'hélice reste dangereuse même contacteur sur OFF."
             },
             {
               "id": "u9s2q04",
               "q": "Au point fixe, vous tirez le réchauffage carburateur alors qu'il n'y a pas de givre. Quel est l'effet sur le mélange et sur la puissance ?",
-              "choices": ["Le mélange s'appauvrit et la puissance augmente", "Le mélange s'enrichit et la puissance augmente", "Le mélange s'enrichit et la puissance diminue", "Le mélange s'appauvrit et la puissance diminue"],
+              "choices": [
+                "Le mélange s'appauvrit et la puissance augmente",
+                "Le mélange s'enrichit et la puissance augmente",
+                "Le mélange s'enrichit et la puissance diminue",
+                "Le mélange s'appauvrit et la puissance diminue"
+              ],
               "answer": 2,
               "explanation": "L'air réchauffé est moins dense : pour le même débit d'essence, la masse d'air admise diminue, donc le mélange s'enrichit et la puissance baisse. Avec une hélice à pas fixe, cela se traduit par une légère chute de régime, que l'on vérifie au point fixe."
             },
             {
               "id": "u9s2q05",
               "q": "En montée, si le pilote ne touche pas à la commande de mélange, le mélange :",
-              "choices": ["s'enrichit, car la masse volumique de l'air diminue", "s'appauvrit, car la masse volumique de l'air diminue", "reste constant, le carburateur compensant automatiquement", "s'appauvrit, car la pression d'essence diminue"],
+              "choices": [
+                "s'enrichit, car la masse volumique de l'air diminue",
+                "s'appauvrit, car la masse volumique de l'air diminue",
+                "reste constant, le carburateur compensant automatiquement",
+                "s'appauvrit, car la pression d'essence diminue"
+              ],
               "answer": 0,
               "explanation": "Avec l'altitude, l'air est moins dense : pour un même débit d'essence, la masse d'air admise diminue et le mélange devient trop riche. Le pilote appauvrit pour retrouver le bon dosage."
             },
             {
               "id": "u9s2q06",
               "q": "Quel est le principal risque d'un mélange trop pauvre à forte puissance ?",
-              "choices": ["L'encrassement des bougies", "Le givrage du carburateur", "Une baisse anormale de la température des cylindres", "La surchauffe des cylindres et la détonation"],
+              "choices": [
+                "L'encrassement des bougies par la calamine",
+                "Le givrage du carburateur à forte puissance",
+                "Une baisse de la température des cylindres",
+                "La surchauffe des cylindres et la détonation"
+              ],
               "answer": 3,
               "explanation": "Un mélange trop pauvre fait monter la température des cylindres et favorise la détonation, qui peut endommager pistons et cylindres. L'encrassement des bougies est au contraire lié à un mélange trop riche."
             },
             {
               "id": "u9s2q07",
               "q": "Dans laquelle de ces situations le risque de givrage carburateur est-il le plus élevé ?",
-              "choices": ["−25 °C, air sec, pleine puissance en montée", "35 °C, air sec, pleine puissance en montée initiale", "15 °C, air très humide, descente moteur réduit", "5 °C, air sec, pleine puissance au décollage"],
+              "choices": [
+                "−25 °C, air sec, pleine puissance en montée",
+                "35 °C, air sec, pleine puissance en montée initiale",
+                "15 °C, air très humide, descente moteur réduit",
+                "5 °C, air sec, pleine puissance au décollage"
+              ],
               "answer": 2,
               "explanation": "Le givrage carburateur est favorisé par une forte humidité, une température modérée et une puissance réduite, le papillon presque fermé accentuant le refroidissement. Par grand froid, l'air contient très peu d'eau."
             },
             {
               "id": "u9s2q08",
               "q": "En croisière, sur un avion à hélice à pas fixe et carburateur, le régime baisse lentement sans action de votre part. Vous tirez le réchauffage carburateur : le régime baisse encore, puis remonte au-dessus de la valeur précédente. Conclusion ?",
-              "choices": ["Le réchauffage carburateur est défectueux et doit être repoussé", "Du givre s'était formé dans le carburateur et a fondu", "Le mélange était trop riche ; l'air chaud l'a appauvri", "Une magnéto défaillante s'est remise à fonctionner"],
+              "choices": [
+                "Le réchauffage est défectueux et doit être repoussé",
+                "Du givre s'était formé dans le carburateur et a fondu",
+                "Le mélange était trop riche ; l'air chaud l'a appauvri",
+                "Une magnéto défaillante s'est remise à fonctionner"
+              ],
               "answer": 1,
               "explanation": "L'air chaud, moins dense, fait d'abord baisser le régime, et l'eau de fonte peut rendre le moteur irrégulier ; puis le givre disparaît et le régime remonte. Cette séquence confirme un givrage carburateur."
             },
             {
               "id": "u9s2q09",
               "q": "Sur un moteur refroidi par air, dans quelle phase le risque de surchauffe des cylindres est-il le plus élevé ?",
-              "choices": ["En descente prolongée, moteur réduit et volets sortis", "En croisière rapide à puissance moyenne et mélange réglé", "Au point fixe par temps froid, après la mise en route", "En montée prolongée à forte puissance et à faible vitesse"],
+              "choices": [
+                "En descente prolongée, moteur réduit et volets sortis",
+                "En croisière rapide à puissance moyenne et mélange réglé",
+                "Au point fixe par temps froid, après la mise en route",
+                "En montée prolongée à forte puissance et à faible vitesse"
+              ],
               "answer": 3,
               "explanation": "Le refroidissement dépend du débit d'air autour des cylindres : en montée lente à forte puissance, la chaleur produite est maximale alors que le flux d'air est faible. On surveille la température d'huile et on prend si besoin une vitesse de montée plus élevée."
             },
             {
               "id": "u9s2q10",
               "q": "Quel avantage présente un moteur à injection par rapport à un moteur à carburateur ?",
-              "choices": ["Il ne connaît pas le givrage carburateur", "Il n'a plus besoin de réglage du mélange", "Il redémarre plus facilement moteur chaud", "Il n'a plus besoin de double allumage"],
+              "choices": [
+                "Il ne connaît pas le givrage carburateur",
+                "Il n'a plus besoin de réglage du mélange",
+                "Il redémarre plus facilement moteur chaud",
+                "Il n'a plus besoin de double allumage"
+              ],
               "answer": 0,
               "explanation": "L'injection envoie l'essence sous pression près des soupapes d'admission, sans venturi : le givrage carburateur disparaît. Le mélange reste à régler, et le redémarrage à chaud est au contraire plus délicat."
             },
             {
               "id": "u9s2q11",
               "q": "Le pré-allumage se définit comme :",
-              "choices": ["la combustion explosive du mélange restant après l'étincelle", "l'allumage simultané du mélange par les deux bougies", "l'inflammation par un point chaud avant l'étincelle", "un retour de flamme dans le carburateur au démarrage"],
+              "choices": [
+                "la combustion explosive du mélange restant après l'étincelle",
+                "l'allumage simultané du mélange par les deux bougies",
+                "l'inflammation du mélange par un point chaud avant l'étincelle",
+                "un retour de flamme dans le carburateur au démarrage"
+              ],
               "answer": 2,
               "explanation": "Le pré-allumage est une inflammation prématurée du mélange par un point chaud (calamine, bougie ou soupape surchauffée), avant l'étincelle. La combustion explosive après l'étincelle est la détonation."
             },
             {
               "id": "u9s2q12",
               "q": "En croisière, la pression d'huile diminue nettement tandis que la température d'huile augmente. Quelle est l'interprétation la plus prudente ?",
-              "choices": ["Un mélange trop riche : appauvrir progressivement", "Une défaillance de lubrification : atterrir au plus tôt", "Un givrage carburateur : mettre le réchauffage", "Une erreur d'indication : poursuivre le vol prévu"],
+              "choices": [
+                "Un mélange trop riche : appauvrir progressivement",
+                "Une défaillance de lubrification : atterrir au plus tôt",
+                "Un givrage carburateur : tirer le réchauffage à fond",
+                "Une erreur d'indication : poursuivre le vol en surveillant"
+              ],
               "answer": 1,
               "explanation": "Deux indications cohérentes (pression basse et température haute) traduisent une vraie défaillance de lubrification, souvent une perte d'huile : la panne moteur peut suivre. On se dirige vers un terrain en se préparant à un atterrissage forcé."
             }
@@ -217,97 +385,181 @@
           "icon": "⛽",
           "tips": "Hélice :\n• Chaque pale est une aile tournante qui produit la traction. Le calage est l'angle entre la corde du profil et le plan de rotation ; l'incidence est l'angle entre la corde et le vent relatif résultant (vitesse de l'avion + rotation).\n• La vitesse due à la rotation augmente vers l'extrémité : le calage diminue du moyeu vers le bout de pale (vrillage) pour garder une incidence à peu près constante.\n• Pas fixe : un seul calage, compromis entre montée (petit pas) et croisière (grand pas). Une seule manette, les gaz ; le compte-tours sert d'indicateur de puissance. En descente sans réduire, le régime augmente.\n• Pas variable à vitesse constante : la manette de pas (bleue) affiche un régime, le régulateur ajuste le calage pour le maintenir ; la manette des gaz règle la pression d'admission. Décollage : petit pas, régime maximal. Si la vitesse augmente (descente), le régulateur augmente le calage et le régime reste constant.\n• Rendement = puissance utile (traction × vitesse) / puissance fournie par le moteur, toujours inférieur à 1 (environ 0,8 au mieux). L'hélice à pas variable garde un bon rendement sur une large plage de vitesses.\n\nCarburants :\n• AVGAS 100LL (Low Lead) : colorée en bleu, carburant le plus courant des moteurs à pistons.\n• Carburant automobile (SP95, SP98) : uniquement si l'avion et le moteur sont approuvés pour ce carburant (manuel de vol ou modification approuvée). Plus volatil (risque de bouchon de vapeur), il peut contenir de l'éthanol.\n• Jet A1 (kérosène) : incolore à jaune paille, pour turbines et moteurs diesel aéronautiques. Dans un moteur à essence, il provoque détonation et panne : vérifier le carburant à chaque avitaillement.\n• Densité : AVGAS ≈ 0,72 ; Jet A1 ≈ 0,80. Masse (kg) = volume (L) × densité. Exemple : 100 L d'AVGAS = 72 kg.\n\nEau et purges :\n• L'eau, plus dense que l'essence, se dépose aux points bas. On purge avant le premier vol de la journée et après chaque avitaillement, à chaque point de purge, dans un récipient transparent : l'eau apparaît en bulles ou en couche au fond. On purge jusqu'à n'obtenir que du carburant propre.\n• Réservoirs pleins pour la nuit : moins d'air, donc moins de condensation.\n\nCapacité et réservoirs :\n• Capacité totale = carburant utilisable + carburant inutilisable. Seul le carburant utilisable entre dans le calcul de l'autonomie.\n• Sélection : suivre le manuel de vol (G, D, G+D, OFF). Décoller sur un réservoir contrôlé au roulage et au point fixe ; changer de réservoir en croisière, loin du sol, en surveillant la pression d'essence. Arrêt moteur juste après un changement : revenir aussitôt sur le réservoir précédent.\n• Les évents de réservoir doivent être dégagés, sinon la dépression créée empêche l'alimentation.",
           "vocab": [
-            { "term": "Calage", "translation": "Angle entre la corde de la pale et le plan de rotation" },
-            { "term": "Vrillage", "translation": "Calage décroissant du moyeu vers l'extrémité de la pale" },
-            { "term": "Pas variable", "translation": "Hélice dont le calage change en vol" },
-            { "term": "Régulateur", "translation": "Ajuste le calage pour garder le régime affiché" },
-            { "term": "Rendement d'hélice", "translation": "Puissance utile / puissance moteur, toujours inférieur à 1" },
-            { "term": "AVGAS 100LL", "translation": "Essence aviation à faible teneur en plomb, colorée en bleu" },
-            { "term": "Purge", "translation": "Prélèvement au point bas pour détecter eau et impuretés" },
-            { "term": "Carburant inutilisable", "translation": "Carburant qui ne peut pas alimenter le moteur en vol" }
+            {
+              "term": "Calage",
+              "translation": "Angle entre la corde de la pale et le plan de rotation"
+            },
+            {
+              "term": "Vrillage",
+              "translation": "Calage décroissant du moyeu vers l'extrémité de la pale"
+            },
+            {
+              "term": "Pas variable",
+              "translation": "Hélice dont le calage change en vol"
+            },
+            {
+              "term": "Régulateur",
+              "translation": "Ajuste le calage pour garder le régime affiché"
+            },
+            {
+              "term": "Rendement d'hélice",
+              "translation": "Puissance utile / puissance moteur, toujours inférieur à 1"
+            },
+            {
+              "term": "AVGAS 100LL",
+              "translation": "Essence aviation à faible teneur en plomb, colorée en bleu"
+            },
+            {
+              "term": "Purge",
+              "translation": "Prélèvement au point bas pour détecter eau et impuretés"
+            },
+            {
+              "term": "Carburant inutilisable",
+              "translation": "Carburant qui ne peut pas alimenter le moteur en vol"
+            }
           ],
           "questions": [
             {
               "id": "u9s3q01",
               "q": "Le calage d'une pale d'hélice est l'angle formé par :",
-              "choices": ["la corde du profil et le plan de rotation", "la corde du profil et le vent relatif", "l'axe de rotation et la corde du profil", "la corde du profil et l'axe longitudinal du fuselage"],
+              "choices": [
+                "la corde du profil et le plan de rotation",
+                "la corde du profil et le vent relatif",
+                "l'axe de rotation et la corde du profil",
+                "la corde du profil et l'axe du fuselage"
+              ],
               "answer": 0,
               "explanation": "Le calage est l'angle entre la corde de la pale et le plan de rotation de l'hélice. L'angle entre la corde et le vent relatif résultant est l'incidence de la pale."
             },
             {
               "id": "u9s3q02",
               "q": "Pourquoi le calage d'une pale diminue-t-il du moyeu vers l'extrémité ?",
-              "choices": ["Pour alléger l'extrémité de la pale et réduire la force centrifuge", "Pour garder une incidence à peu près constante sur toute la pale", "Pour que l'extrémité décroche la première et prévienne le pilote", "Pour réduire le bruit en diminuant la vitesse en bout de pale"],
+              "choices": [
+                "Pour alléger l'extrémité de la pale et réduire la force centrifuge",
+                "Pour garder une incidence à peu près constante sur toute la pale",
+                "Pour que l'extrémité décroche la première et prévienne le pilote",
+                "Pour réduire le bruit en diminuant la vitesse en bout de pale"
+              ],
               "answer": 1,
               "explanation": "Plus on s'éloigne du moyeu, plus la vitesse de rotation de la section est grande et plus le vent relatif se rapproche du plan de rotation. Le vrillage réduit le calage vers l'extrémité pour garder une incidence voisine sur toute la pale."
             },
             {
               "id": "u9s3q03",
               "q": "Sur un avion équipé d'une hélice à vitesse constante, quelle position de la manette de pas utilise-t-on au décollage ?",
-              "choices": ["Grand pas, régime minimal", "Position drapeau", "Position intermédiaire, pour ménager le moteur", "Petit pas, régime maximal"],
+              "choices": [
+                "Grand pas, régime minimal, pour une traction maximale",
+                "Indifférente : le régulateur adapte seul le pas",
+                "Position intermédiaire, pour ménager le moteur",
+                "Petit pas, régime maximal, pour la pleine puissance"
+              ],
               "answer": 3,
-              "explanation": "Au décollage, la vitesse est faible : un petit calage (petit pas) donne une bonne incidence de pale et permet au moteur d'atteindre son régime maximal, donc sa pleine puissance. La manette de pas est en avant, plein petit pas."
+              "explanation": "Au décollage, la vitesse est faible : un petit calage (petit pas) donne une bonne incidence de pale et permet au moteur d'atteindre son régime maximal, donc sa pleine puissance. Le régulateur ne fait que maintenir le régime affiché : la manette de pas doit donc être en avant, plein petit pas."
             },
             {
               "id": "u9s3q04",
               "q": "En croisière avec une hélice à vitesse constante, vous passez en descente sans toucher aux manettes. Le régime :",
-              "choices": ["augmente nettement, comme avec une hélice à pas fixe", "diminue, le régulateur réduisant le calage", "reste à peu près constant, le régulateur augmentant le calage", "devient instable, le régulateur étant inopérant en descente"],
+              "choices": [
+                "augmente nettement, comme avec une hélice à pas fixe",
+                "diminue, le régulateur réduisant le calage",
+                "reste à peu près constant, le régulateur augmentant le calage",
+                "devient instable, le régulateur étant inopérant en descente"
+              ],
               "answer": 2,
               "explanation": "La vitesse augmente et tend à entraîner l'hélice plus vite ; le régulateur augmente alors le calage (plus grand pas) pour maintenir le régime affiché. Avec une hélice à pas fixe, au contraire, le régime augmenterait."
             },
             {
               "id": "u9s3q05",
               "q": "Le rendement d'une hélice est le rapport entre :",
-              "choices": ["la puissance utile (traction × vitesse) et la puissance fournie par le moteur", "la puissance fournie par le moteur et la puissance utile (traction × vitesse)", "la traction de l'hélice et la traînée totale de l'avion", "la puissance fournie par le moteur et sa puissance maximale"],
+              "choices": [
+                "la puissance utile (traction × vitesse) et la puissance fournie par le moteur",
+                "la puissance fournie par le moteur et la puissance utile (traction × vitesse)",
+                "la traction de l'hélice et la traînée totale de l'avion",
+                "la puissance fournie par le moteur et sa puissance maximale"
+              ],
               "answer": 0,
               "explanation": "Rendement = puissance utile / puissance absorbée, la puissance utile étant le produit traction × vitesse. Il est toujours inférieur à 1 (environ 0,8 au mieux) ; le rapport inverse serait supérieur à 1."
             },
             {
               "id": "u9s3q06",
               "q": "Quelle est la couleur de l'AVGAS 100LL ?",
-              "choices": ["Rouge", "Verte", "Bleue", "Incolore à jaune paille"],
+              "choices": [
+                "Rouge",
+                "Verte",
+                "Bleue",
+                "Incolore"
+              ],
               "answer": 2,
               "explanation": "L'AVGAS 100LL est colorée en bleu, ce qui aide à l'identifier lors de la purge. Le kérosène Jet A1, incolore à jaune paille, ne doit jamais être utilisé dans un moteur à essence."
             },
             {
               "id": "u9s3q07",
               "q": "Vous embarquez 120 L d'AVGAS, de densité 0,72. Quelle masse de carburant cela représente-t-il ?",
-              "choices": ["96 kg", "166,7 kg", "72 kg", "86,4 kg"],
+              "choices": [
+                "96 kg",
+                "166,7 kg",
+                "72 kg",
+                "86,4 kg"
+              ],
               "answer": 3,
               "explanation": "Masse = volume × densité = 120 × 0,72 = 86,4 kg. Diviser par la densité (166,7) ou prendre la densité du Jet A1 (120 × 0,80 = 96 kg) sont des erreurs classiques."
             },
             {
               "id": "u9s3q08",
               "q": "Un avion a une capacité totale de 110 L, dont 6 L de carburant inutilisable, et consomme 26 L/h. Quelle est son autonomie théorique, réservoirs pleins, jusqu'à épuisement du carburant utilisable ?",
-              "choices": ["4 h 14 min", "4 h", "3 h 46 min", "4 h 30 min"],
+              "choices": [
+                "4 h 14 min",
+                "4 h",
+                "3 h 46 min",
+                "4 h 30 min"
+              ],
               "answer": 1,
               "explanation": "Seul le carburant utilisable compte : 110 − 6 = 104 L, et 104 / 26 = 4 h. En prenant à tort les 110 L, on obtiendrait environ 4 h 14 min ; la réserve se déduit ensuite de cette autonomie."
             },
             {
               "id": "u9s3q09",
               "q": "Lors de la purge d'un réservoir, comment se présente l'eau éventuellement présente dans le carburant ?",
-              "choices": ["En surface de l'essence, en fine pellicule irisée", "Dissoute dans l'essence, qu'elle colore en vert", "Au fond du récipient, en bulles ou en couche distincte", "Elle est invisible : seule l'odeur permet de la détecter"],
+              "choices": [
+                "En surface de l'essence, en fine pellicule irisée",
+                "Dissoute dans l'essence, qu'elle colore en vert",
+                "Au fond du récipient, en bulles ou en couche distincte",
+                "Elle est invisible : seule l'odeur permet de la détecter"
+              ],
               "answer": 2,
               "explanation": "L'eau, plus dense que l'essence et non miscible, tombe au fond du récipient transparent sous forme de bulles ou d'une couche nette. On purge à chaque point de purge jusqu'à ne plus en voir."
             },
             {
               "id": "u9s3q10",
               "q": "Pourquoi conseille-t-on de laisser les réservoirs pleins lorsque l'avion passe la nuit au parking ?",
-              "choices": ["Pour limiter la condensation dans les réservoirs", "Pour améliorer le centrage au vol suivant", "Pour éviter que les réservoirs vides ne se déforment au soleil", "Pour empêcher le gel de l'essence par temps froid"],
+              "choices": [
+                "Pour limiter la condensation dans les réservoirs",
+                "Pour améliorer le centrage au vol suivant",
+                "Pour éviter la déformation des réservoirs au soleil",
+                "Pour empêcher le gel de l'essence par temps froid"
+              ],
               "answer": 0,
               "explanation": "Un réservoir plein contient peu d'air, donc peu de vapeur d'eau susceptible de se condenser sur les parois froides pendant la nuit. Cela limite l'eau dans le carburant, mais la purge avant le vol reste indispensable."
             },
             {
               "id": "u9s3q11",
               "q": "À quelle condition peut-on utiliser du carburant automobile (SP95, SP98) dans un avion léger à moteur à pistons ?",
-              "choices": ["Toujours, à condition que son indice d'octane dépasse 95", "En le mélangeant à parts égales avec de l'AVGAS", "Jamais : ces carburants sont interdits en aviation", "Si l'avion et le moteur sont approuvés pour l'utiliser"],
+              "choices": [
+                "Si son indice d'octane est au moins égal à 95",
+                "En le mélangeant à parts égales avec de l'AVGAS",
+                "Si l'usage est noté sur le carnet de route de l'avion",
+                "Si l'avion et le moteur sont approuvés pour l'utiliser"
+              ],
               "answer": 3,
-              "explanation": "Le carburant automobile n'est utilisable que si le manuel de vol ou une modification approuvée l'autorise pour l'avion et son moteur. Il est plus volatil (bouchon de vapeur) et peut contenir de l'éthanol, incompatible avec certains circuits."
+              "explanation": "Le carburant automobile n'est utilisable que si le manuel de vol ou une modification approuvée l'autorise pour l'avion et son moteur : un indice d'octane élevé ne suffit pas, pas plus qu'une simple mention au carnet de route. Il est plus volatil (bouchon de vapeur) et peut contenir de l'éthanol, incompatible avec certains circuits."
             },
             {
               "id": "u9s3q12",
               "q": "En croisière, le moteur s'arrête quelques secondes après que vous avez changé de réservoir, sans autre signe d'anomalie. Quelle est la cause la plus probable et la réaction appropriée ?",
-              "choices": ["Un givrage carburateur : mettre le réchauffage et attendre", "Un défaut d'alimentation : revenir sur le réservoir précédent", "Une panne de magnéto : sélectionner l'autre magnéto", "Une surchauffe moteur : réduire les gaz et enrichir"],
+              "choices": [
+                "Un givrage carburateur : garder ce réservoir, tirer le réchauffage",
+                "Un défaut d'alimentation : revenir sur le réservoir précédent",
+                "Une panne de magnéto : sélectionner l'autre magnéto",
+                "Une surchauffe moteur : réduire les gaz et enrichir"
+              ],
               "answer": 1,
               "explanation": "La coïncidence avec le changement de réservoir désigne l'alimentation : réservoir vide, sélecteur mal positionné ou évent bouché. On revient aussitôt sur le réservoir qui alimentait le moteur (pompe électrique en marche si l'avion en est équipé), tout en tenant la vitesse de plané."
             }
@@ -319,97 +571,181 @@
           "icon": "🔋",
           "tips": "Circuit électrique (courant continu, 14 V ou 28 V) :\n• Batterie : fournit le courant au démarrage et sert de réserve. Elle est mise en circuit par le contacteur général (BAT ou MASTER).\n• Alternateur : entraîné par le moteur, il alimente les équipements et recharge la batterie ; un régulateur maintient la tension (environ 14 V avec une batterie de 12 V).\n• Ampèremètre de charge (zéro au centre) : positif, la batterie se recharge (forte charge normale juste après le démarrage, puis décroissante) ; négatif, la batterie se décharge. Certains avions ont plutôt un indicateur de débit de l'alternateur (zéro à gauche).\n• Voltmètre : une tension retombée à celle de la batterie seule, moteur tournant, signale que l'alternateur ne charge plus.\n• Barre omnibus (bus) : elle distribue le courant aux équipements.\n• Protections : le fusible fond et doit être remplacé ; le disjoncteur s'ouvre et peut être réarmé. Après un déclenchement, on attend quelques instants et on le réarme une seule fois ; s'il saute à nouveau, on le laisse ouvert (risque d'échauffement et d'incendie).\n\nPanne d'alternateur (voyant ALT, ampèremètre négatif, tension en baisse) :\n• Vérifier le disjoncteur et appliquer la check-list (réenclenchement de l'alternateur).\n• Sinon, délester : couper les équipements non indispensables (phares, réchauffage pitot hors givrage, radios en surnombre) pour préserver la batterie, et écourter le vol.\n• Le moteur continue de tourner grâce aux magnétos ; les instruments à dépression restent disponibles. Batterie vide : plus de radio, de transpondeur, de volets électriques ni de jauges électriques.\n\nCircuit de dépression :\n• Il entraîne par un jet d'air les gyroscopes de l'horizon artificiel et du conservateur de cap. L'indicateur de virage est souvent électrique, ce qui assure une redondance.\n• Source : venturi extérieur (efficace seulement en vol à vitesse suffisante, sensible au givre) ou pompe à vide entraînée par le moteur.\n• Panne : indicateur de dépression hors de l'arc vert, dérive lente des gyroscopes, difficile à déceler sans contrôle croisé des instruments.\n\nChauffage cabine et monoxyde de carbone :\n• L'air de chauffage est souvent réchauffé dans un échangeur autour de l'échappement. Une fissure laisse entrer du CO, gaz incolore et inodore qui se fixe sur l'hémoglobine à la place de l'oxygène.\n• Symptômes : maux de tête, somnolence, nausées, troubles visuels, jugement altéré.\n• Conduite : couper le chauffage, ouvrir les aérateurs, oxygène si disponible, atterrir dès que possible. Un détecteur de CO est vivement recommandé.\n\nRéchauffage pitot : une résistance électrique chauffe le tube pitot pour éviter son obstruction par le givre. Gros consommateur, il se coupe lors d'un délestage hors conditions givrantes ; au sol, on ne le teste que brièvement.",
           "vocab": [
-            { "term": "Alternateur", "translation": "Générateur entraîné par le moteur, qui recharge la batterie" },
-            { "term": "Ampèremètre", "translation": "Mesure le courant : charge ou décharge de la batterie" },
-            { "term": "Voltmètre", "translation": "Mesure la tension du circuit électrique" },
-            { "term": "Disjoncteur", "translation": "Coupe le circuit en cas de surintensité ; réarmable" },
-            { "term": "Délestage", "translation": "Coupure des équipements électriques non indispensables" },
-            { "term": "Pompe à vide", "translation": "Pompe entraînée par le moteur qui alimente les gyroscopes" },
-            { "term": "CO", "translation": "Monoxyde de carbone : gaz toxique, incolore et inodore" },
-            { "term": "Réchauffage pitot", "translation": "Résistance électrique qui empêche le givrage du tube pitot" }
+            {
+              "term": "Alternateur",
+              "translation": "Générateur entraîné par le moteur, qui recharge la batterie"
+            },
+            {
+              "term": "Ampèremètre",
+              "translation": "Mesure le courant : charge ou décharge de la batterie"
+            },
+            {
+              "term": "Voltmètre",
+              "translation": "Mesure la tension du circuit électrique"
+            },
+            {
+              "term": "Disjoncteur",
+              "translation": "Coupe le circuit en cas de surintensité ; réarmable"
+            },
+            {
+              "term": "Délestage",
+              "translation": "Coupure des équipements électriques non indispensables"
+            },
+            {
+              "term": "Pompe à vide",
+              "translation": "Pompe entraînée par le moteur qui alimente les gyroscopes"
+            },
+            {
+              "term": "CO",
+              "translation": "Monoxyde de carbone : gaz toxique, incolore et inodore"
+            },
+            {
+              "term": "Réchauffage pitot",
+              "translation": "Résistance électrique qui empêche le givrage du tube pitot"
+            }
           ],
           "questions": [
             {
               "id": "u9s4q01",
               "q": "Juste après la mise en route, l'ampèremètre de charge (zéro au centre) indique une forte valeur positive qui diminue en quelques minutes. Qu'en concluez-vous ?",
-              "choices": ["C'est normal : la batterie se recharge après le démarrage", "Anormal : la batterie se décharge rapidement", "Anormal : le régulateur de tension est défaillant", "Anormal : le démarreur est resté engagé après la mise en route"],
+              "choices": [
+                "C'est normal : la batterie se recharge après le démarrage",
+                "Anormal : la batterie se décharge rapidement",
+                "Anormal : le régulateur de tension est défaillant",
+                "Anormal : le démarreur est resté engagé après la mise en route"
+              ],
               "answer": 0,
               "explanation": "Le démarrage a puisé dans la batterie : l'alternateur la recharge d'abord fortement, puis le courant de charge décroît à mesure qu'elle se remplit. Une indication positive signifie que la batterie se charge."
             },
             {
               "id": "u9s4q02",
               "q": "En croisière, l'ampèremètre de charge (zéro au centre) indique une valeur négative persistante. Cela signifie :",
-              "choices": ["que la batterie reçoit une charge excessive du régulateur", "que le circuit fonctionne normalement, batterie chargée", "que la batterie se décharge, l'alternateur ne débitant plus assez", "qu'une magnéto est en panne et ne produit plus de courant"],
+              "choices": [
+                "que la batterie est surchargée par un régulateur défaillant",
+                "que le circuit fonctionne normalement, la batterie étant pleine",
+                "que la batterie se décharge, l'alternateur débitant trop peu",
+                "qu'une magnéto est en panne et ne recharge plus la batterie"
+              ],
               "answer": 2,
               "explanation": "Une valeur négative indique que la batterie fournit du courant au lieu d'en recevoir : l'alternateur ne débite plus, ou pas assez. On applique la procédure de panne d'alternateur et on déleste."
             },
             {
               "id": "u9s4q03",
               "q": "En vol, le disjoncteur de la radio saute. Quelle est la conduite à tenir ?",
-              "choices": ["Le réarmer immédiatement et le maintenir enfoncé pour qu'il tienne", "Attendre, le réarmer une fois, le laisser ouvert s'il ressaute", "Couper aussitôt le contacteur général et les magnétos", "Le réarmer autant de fois que nécessaire jusqu'à ce qu'il tienne"],
+              "choices": [
+                "Le réarmer immédiatement et le maintenir enfoncé pour qu'il tienne",
+                "Attendre, le réarmer une fois, le laisser ouvert s'il ressaute",
+                "Couper aussitôt le contacteur général et les magnétos",
+                "Le réarmer autant de fois que nécessaire jusqu'à ce qu'il tienne"
+              ],
               "answer": 1,
               "explanation": "Un disjoncteur s'ouvre sur surintensité, signe possible d'un court-circuit. On le laisse refroidir puis on le réarme une fois ; s'il déclenche de nouveau, le défaut est réel et insister risquerait un incendie."
             },
             {
               "id": "u9s4q04",
               "q": "Quelle est la différence entre un fusible et un disjoncteur ?",
-              "choices": ["Le fusible protège contre les surtensions, le disjoncteur contre les surintensités", "Le fusible fond et doit être remplacé, le disjoncteur s'ouvre et peut être réarmé", "Le fusible se réarme, le disjoncteur doit être remplacé", "Le fusible protège la batterie, le disjoncteur seulement l'alternateur"],
+              "choices": [
+                "Le fusible protège contre les surtensions, le disjoncteur contre les surintensités",
+                "Le fusible fond et doit être remplacé, le disjoncteur s'ouvre et peut être réarmé",
+                "Le fusible se réarme, le disjoncteur doit être remplacé",
+                "Le fusible protège la batterie, le disjoncteur seulement l'alternateur"
+              ],
               "answer": 1,
               "explanation": "Tous deux coupent un circuit en cas de surintensité. Le fusible est détruit (son élément fond) et doit être remplacé ; le disjoncteur s'ouvre mécaniquement et se réarme."
             },
             {
               "id": "u9s4q05",
               "q": "Le voyant ALT s'allume en vol et l'alternateur ne peut pas être remis en service. Quelle conduite est appropriée ?",
-              "choices": ["Couper les magnétos pour économiser la batterie", "Poursuivre normalement : la batterie se recharge tant que le moteur tourne", "Couper le contacteur général et poursuivre le vol prévu sans radio", "Délester les équipements non indispensables et écourter le vol"],
+              "choices": [
+                "Couper les magnétos pour économiser la batterie",
+                "Poursuivre : la batterie se recharge tant que le moteur tourne",
+                "Couper le contacteur général et poursuivre le vol sans radio",
+                "Délester les équipements non indispensables et écourter le vol"
+              ],
               "answer": 3,
               "explanation": "Sans alternateur, seule la batterie alimente le circuit, pour une durée limitée. On coupe les équipements non indispensables pour préserver radio et transpondeur, et on se pose dès que possible ; le moteur, lui, continue de tourner grâce aux magnétos."
             },
             {
               "id": "u9s4q06",
               "q": "Après une panne d'alternateur, la batterie finit par être vide. Quel équipement continue de fonctionner normalement ?",
-              "choices": ["La radio VHF de communication", "Le transpondeur et son codeur altimétrique", "Les volets de courbure électriques", "L'horizon artificiel à dépression"],
+              "choices": [
+                "La radio VHF de communication",
+                "Le transpondeur et son mode C",
+                "Les volets de courbure électriques",
+                "L'horizon artificiel à dépression"
+              ],
               "answer": 3,
               "explanation": "Un horizon artificiel pneumatique est entraîné par le circuit de dépression (venturi ou pompe à vide entraînée par le moteur), indépendant du circuit électrique. La radio, le transpondeur et les volets électriques sont perdus."
             },
             {
               "id": "u9s4q07",
               "q": "Quel est l'inconvénient d'un circuit de dépression alimenté par un venturi extérieur ?",
-              "choices": ["Il consomme beaucoup de courant électrique", "Il ne fonctionne bien qu'en vol et peut givrer", "Il prélève de la puissance au moteur au décollage", "Il ne peut alimenter que le compas magnétique"],
+              "choices": [
+                "Il consomme beaucoup de courant électrique",
+                "Il ne fonctionne bien qu'en vol et peut givrer",
+                "Il prélève de la puissance au moteur au décollage",
+                "Il ne peut alimenter que le compas magnétique"
+              ],
               "answer": 1,
               "explanation": "Le venturi crée la dépression grâce à l'écoulement de l'air : il est inefficace au sol et à faible vitesse, et le givre peut l'obstruer. La pompe à vide entraînée par le moteur n'a pas ces défauts."
             },
             {
               "id": "u9s4q08",
               "q": "Quel est le symptôme typique d'une panne du circuit de dépression ?",
-              "choices": ["Une chute immédiate du régime moteur et de la pression d'huile", "Une indication bloquée à zéro de l'anémomètre et du variomètre", "Une dérive lente de l'horizon et du conservateur de cap", "Le blocage du compas magnétique sur le dernier cap"],
+              "choices": [
+                "Une chute immédiate du régime moteur et de la pression d'huile",
+                "Une indication bloquée à zéro de l'anémomètre et du variomètre",
+                "Une dérive lente de l'horizon et du conservateur de cap",
+                "Le blocage du compas magnétique sur le dernier cap"
+              ],
               "answer": 2,
               "explanation": "Privés de jet d'air, les gyroscopes ralentissent progressivement : les indications dérivent lentement, ce qui rend la panne difficile à déceler. L'indicateur de dépression et le contrôle croisé des instruments permettent de la détecter."
             },
             {
               "id": "u9s4q09",
               "q": "Sur un avion léger classique, quels instruments sont généralement entraînés par le circuit de dépression ?",
-              "choices": ["L'horizon artificiel et le conservateur de cap", "L'anémomètre et l'altimètre", "Le variomètre et le compas", "Le compte-tours et le manomètre de pression d'huile"],
+              "choices": [
+                "L'horizon artificiel et le conservateur de cap",
+                "L'anémomètre et l'altimètre",
+                "Le variomètre et le compas",
+                "Le compte-tours et le manomètre de pression d'huile"
+              ],
               "answer": 0,
               "explanation": "L'horizon artificiel et le conservateur de cap utilisent des gyroscopes entraînés par un jet d'air. L'anémomètre, l'altimètre et le variomètre sont reliés au système pitot-statique ; l'indicateur de virage est souvent électrique."
             },
             {
               "id": "u9s4q10",
               "q": "D'où provient le plus souvent le monoxyde de carbone dans la cabine d'un avion léger ?",
-              "choices": ["D'une fuite de carburant sous le tableau de bord", "Des gaz dégagés par la batterie en surcharge", "D'une fissure de l'échangeur de chauffage sur l'échappement", "De la pompe à vide, qui aspire l'air du compartiment moteur"],
+              "choices": [
+                "D'une fuite de carburant sous le tableau de bord",
+                "Des gaz dégagés par la batterie en surcharge",
+                "D'une fissure de l'échangeur de chauffage sur l'échappement",
+                "De la pompe à vide, qui aspire l'air du compartiment moteur"
+              ],
               "answer": 2,
               "explanation": "Le chauffage cabine utilise de l'air réchauffé au contact de l'échappement. Une fissure du collecteur ou de l'échangeur laisse passer des gaz d'échappement, riches en CO, dans l'air envoyé en cabine."
             },
             {
               "id": "u9s4q11",
               "q": "En vol, chauffage cabine en marche, vous ressentez maux de tête et somnolence. Que faites-vous ?",
-              "choices": ["Vous augmentez le chauffage pour lutter contre le froid et la fatigue", "Vous fermez les aérateurs pour éviter les courants d'air froid", "Vous montez pour trouver un air plus pur et plus frais", "Vous coupez le chauffage, aérez la cabine et atterrissez au plus tôt"],
+              "choices": [
+                "Vous augmentez le chauffage pour combattre le froid et la fatigue",
+                "Vous fermez les aérateurs pour éviter les courants d'air froid",
+                "Vous montez pour trouver un air plus pur et plus frais",
+                "Vous coupez le chauffage, aérez la cabine et atterrissez au plus tôt"
+              ],
               "answer": 3,
               "explanation": "Ces symptômes, chauffage en marche, font suspecter une intoxication au CO. On coupe la source (chauffage), on ventile la cabine, on utilise l'oxygène s'il est disponible et on se pose rapidement ; monter aggraverait le manque d'oxygène."
             },
             {
               "id": "u9s4q12",
               "q": "En panne d'alternateur, par air sec et sans aucun risque de givrage, que faire du réchauffage pitot ?",
-              "choices": ["Le couper : c'est un gros consommateur électrique", "Le laisser en marche : il ne consomme presque rien", "Le mettre en marche pour dégivrer les prises statiques", "Le laisser en marche : sans lui, l'anémomètre devient inutilisable"],
+              "choices": [
+                "Le couper : c'est un gros consommateur électrique",
+                "Le laisser en marche : il ne consomme presque rien",
+                "Le mettre en marche pour dégivrer les prises statiques",
+                "Le laisser en marche : sans lui, l'anémomètre sera faux"
+              ],
               "answer": 0,
               "explanation": "Le réchauffage pitot est une résistance électrique qui consomme beaucoup. Hors conditions givrantes, il est inutile : on le coupe lors du délestage pour préserver la batterie."
             }
@@ -421,97 +757,181 @@
           "icon": "🕹️",
           "tips": "Système pitot-statique :\n• Tube pitot, face au vent : pression totale (statique + dynamique).\n• Prises statiques, sur les flancs du fuselage : pression statique ambiante.\n• Anémomètre : relié au pitot et aux prises statiques ; il mesure la pression dynamique (totale − statique) et affiche la vitesse indiquée (Vi).\n• Altimètre : relié à la statique seule ; une capsule anéroïde mesure la pression et affiche l'altitude selon le calage (QNH : altitude ; QFE : hauteur ; 1013 hPa : niveau de vol).\n• Variomètre : relié à la statique seule ; il mesure la variation de pression grâce à une fuite calibrée, avec un léger retard.\n\nArcs de l'anémomètre :\n• Arc blanc : utilisation des volets, de VS0 (décrochage en configuration d'atterrissage) à VFE (vitesse maximale volets sortis).\n• Arc vert : utilisation normale, de VS1 (décrochage en lisse) à VNO (vitesse maximale en croisière normale).\n• Arc jaune : de VNO à VNE, uniquement en air calme et avec prudence.\n• Trait rouge : VNE, vitesse à ne jamais dépasser.\n\nObstructions :\n• Pitot et son orifice de purge bouchés : l'anémomètre se comporte comme un altimètre ; la vitesse indiquée augmente en montée et diminue en descente.\n• Prise statique bouchée : altimètre figé, variomètre à zéro ; l'anémomètre indique trop peu en montée et trop en descente (risque de voler trop lentement). La prise statique de secours, en cabine, fait lire l'altimètre et l'anémomètre un peu trop haut.\n\nGyroscopes (rigidité dans l'espace, précession) :\n• Horizon artificiel : assiette et inclinaison.\n• Conservateur de cap : sans référence magnétique, il dérive ; on le recale sur le compas toutes les 10 à 15 min environ, en vol rectiligne stabilisé.\n• Indicateur de virage : taux de virage ; taux 1 = 3°/s, soit 360° en 2 min. La bille, simple inclinomètre, indique la symétrie du vol : « le pied chasse la bille » (bille à droite, pied à droite).\n\nCompas magnétique : fiable seulement en vol rectiligne stabilisé. Dans l'hémisphère nord, aux caps est et ouest, une accélération fait tourner l'indication vers le nord et une décélération vers le sud (ANDS). La déviation propre à l'avion figure sur la carte de déviation.\n\nCompte-tours : régime moteur en tr/min, avec arc vert et trait rouge de régime maximal ; c'est l'indicateur de puissance d'un avion à hélice à pas fixe.",
           "vocab": [
-            { "term": "Pression dynamique", "translation": "Pression totale − pression statique, mesurée par l'anémomètre" },
-            { "term": "Prise statique", "translation": "Orifice qui capte la pression atmosphérique ambiante" },
-            { "term": "VS0", "translation": "Vitesse de décrochage en configuration d'atterrissage" },
-            { "term": "VFE", "translation": "Vitesse maximale volets sortis, fin de l'arc blanc" },
-            { "term": "VNO", "translation": "Vitesse maximale en croisière normale, fin de l'arc vert" },
-            { "term": "VNE", "translation": "Vitesse à ne jamais dépasser, trait rouge" },
-            { "term": "Taux 1", "translation": "Virage à 3°/s, soit 360° en 2 minutes" },
-            { "term": "ANDS", "translation": "Compas, hémisphère nord : accélération nord, décélération sud" }
+            {
+              "term": "Pression dynamique",
+              "translation": "Pression totale − pression statique, mesurée par l'anémomètre"
+            },
+            {
+              "term": "Prise statique",
+              "translation": "Orifice qui capte la pression atmosphérique ambiante"
+            },
+            {
+              "term": "VS0",
+              "translation": "Vitesse de décrochage en configuration d'atterrissage"
+            },
+            {
+              "term": "VFE",
+              "translation": "Vitesse maximale volets sortis, fin de l'arc blanc"
+            },
+            {
+              "term": "VNO",
+              "translation": "Vitesse maximale en croisière normale, fin de l'arc vert"
+            },
+            {
+              "term": "VNE",
+              "translation": "Vitesse à ne jamais dépasser, trait rouge"
+            },
+            {
+              "term": "Taux 1",
+              "translation": "Virage à 3°/s, soit 360° en 2 minutes"
+            },
+            {
+              "term": "ANDS",
+              "translation": "Compas, hémisphère nord : accélération nord, décélération sud"
+            }
           ],
           "questions": [
             {
               "id": "u9s5q01",
               "q": "L'horizon artificiel fournit au pilote :",
-              "choices": ["le taux de virage et la symétrie du vol", "le cap et l'inclinaison", "la vitesse verticale et l'assiette", "l'assiette en tangage et l'inclinaison"],
+              "choices": [
+                "le taux de virage et la symétrie du vol",
+                "le cap et l'inclinaison en roulis",
+                "la vitesse verticale et l'assiette",
+                "l'assiette en tangage et l'inclinaison"
+              ],
               "answer": 3,
               "explanation": "L'horizon artificiel, gyroscope à axe vertical, représente la position de l'avion par rapport à l'horizon : assiette (tangage) et inclinaison (roulis). Le taux de virage et la symétrie sont donnés par l'indicateur de virage et la bille."
             },
             {
               "id": "u9s5q02",
               "q": "Quel instrument, relié uniquement à la prise statique, mesure la variation de pression grâce à une fuite calibrée ?",
-              "choices": ["L'altimètre", "L'anémomètre", "Le variomètre", "Le conservateur de cap"],
+              "choices": [
+                "L'altimètre",
+                "L'anémomètre",
+                "Le variomètre",
+                "Le conservateur de cap"
+              ],
               "answer": 2,
               "explanation": "Le variomètre compare la pression statique actuelle à celle d'une capacité qui se met en équilibre à travers une fuite calibrée : il indique la vitesse verticale. L'altimètre est aussi relié à la statique, mais il mesure la pression elle-même."
             },
             {
               "id": "u9s5q03",
               "q": "Sur l'anémomètre, la limite inférieure de l'arc blanc correspond à :",
-              "choices": ["VS0, vitesse de décrochage en configuration d'atterrissage", "VS1, vitesse de décrochage en configuration lisse", "VFE, vitesse maximale avec les volets sortis", "VNO, vitesse maximale en croisière normale"],
+              "choices": [
+                "VS0, vitesse de décrochage en configuration d'atterrissage",
+                "VS1, vitesse de décrochage en configuration lisse",
+                "VFE, vitesse maximale autorisée avec les volets sortis",
+                "VNO, vitesse maximale de croisière en utilisation normale"
+              ],
               "answer": 0,
               "explanation": "L'arc blanc, plage d'utilisation des volets, va de VS0 (décrochage en configuration d'atterrissage, à la masse maximale) à VFE. VS1 marque le début de l'arc vert."
             },
             {
               "id": "u9s5q04",
               "q": "L'aiguille de l'anémomètre se trouve dans l'arc jaune. Dans quelles conditions est-ce acceptable ?",
-              "choices": ["En turbulence modérée, pour traverser plus vite la zone", "Uniquement en air calme, avec prudence", "Volets sortis, en approche", "Jamais : c'est une plage interdite"],
+              "choices": [
+                "En turbulence modérée, pour traverser plus vite la zone",
+                "Uniquement en air calme, en évitant les grands braquages",
+                "Volets sortis, en approche, pour freiner l'avion",
+                "Jamais : c'est une plage interdite d'utilisation"
+              ],
               "answer": 1,
-              "explanation": "L'arc jaune, de VNO à VNE, est une plage de prudence : on ne l'utilise qu'en air calme, car une rafale pourrait faire dépasser les limites de la structure. En turbulence, on reste dans l'arc vert."
+              "explanation": "L'arc jaune, de VNO à VNE, est une plage de prudence : on ne l'utilise qu'en air calme et en évitant les grands braquages des gouvernes, car une rafale ou une manœuvre brutale pourrait faire dépasser les limites de la structure. En turbulence, on reste dans l'arc vert."
             },
             {
               "id": "u9s5q05",
               "q": "Un anémomètre porte un arc blanc de 45 à 85 kt, un arc vert de 50 à 120 kt, un arc jaune de 120 à 155 kt et un trait rouge à 155 kt. Quelles sont respectivement la VFE et la VNO ?",
-              "choices": ["85 kt et 155 kt", "50 kt et 120 kt", "85 kt et 120 kt", "120 kt et 155 kt"],
+              "choices": [
+                "85 kt et 155 kt",
+                "50 kt et 120 kt",
+                "85 kt et 120 kt",
+                "120 kt et 155 kt"
+              ],
               "answer": 2,
               "explanation": "La VFE est la fin de l'arc blanc (85 kt) et la VNO la fin de l'arc vert, début de l'arc jaune (120 kt). Le trait rouge (155 kt) est la VNE."
             },
             {
               "id": "u9s5q06",
               "q": "En montée, le tube pitot et son orifice de purge sont obstrués par le givre, la prise statique restant libre. Comment évolue l'indication de l'anémomètre ?",
-              "choices": ["Elle reste figée à la valeur du moment de l'obstruction", "Elle diminue progressivement", "Elle tombe immédiatement à zéro", "Elle augmente, comme celle d'un altimètre"],
+              "choices": [
+                "Elle reste figée à sa valeur d'avant l'obstruction",
+                "Elle diminue progressivement avec l'altitude",
+                "Elle tombe à zéro en quelques secondes",
+                "Elle augmente avec l'altitude, comme un altimètre"
+              ],
               "answer": 3,
-              "explanation": "La pression totale est piégée alors que la pression statique diminue avec l'altitude : leur différence augmente et la vitesse indiquée croît en montée. Le pilote risque de cabrer pour la réduire, jusqu'au décrochage."
+              "explanation": "La pression totale est piégée alors que la pression statique diminue avec l'altitude : leur différence augmente et la vitesse indiquée croît en montée. Le pilote risque de cabrer pour la réduire, jusqu'au décrochage. Si la purge était restée libre, la pression totale se serait évacuée et l'indication serait tombée à zéro."
             },
             {
               "id": "u9s5q07",
               "q": "La prise statique est obstruée et aucune prise de secours n'est utilisée. Quelles indications obtient-on ?",
-              "choices": ["Altimètre figé et variomètre bloqué à zéro", "Anémomètre à zéro et altimètre normal", "Altimètre normal et variomètre bloqué à zéro", "Horizon artificiel et conservateur de cap inopérants"],
+              "choices": [
+                "Altimètre figé et variomètre bloqué à zéro",
+                "Anémomètre à zéro et altimètre normal",
+                "Altimètre normal et variomètre bloqué à zéro",
+                "Horizon et conservateur de cap inopérants"
+              ],
               "answer": 0,
               "explanation": "Altimètre et variomètre ne dépendent que de la pression statique : piégée, elle ne varie plus, donc l'altimètre reste figé et le variomètre indique zéro. L'anémomètre devient lui aussi faux ; les gyroscopes ne sont pas concernés."
             },
             {
               "id": "u9s5q08",
               "q": "La prise statique est obstruée et l'avion descend. Que fait l'anémomètre ?",
-              "choices": ["Il indique trop peu : risque de survitesse", "Il indique trop : risque de voler trop lentement", "Il indique correctement, le tube pitot étant libre", "Il indique zéro, faute de pression statique"],
+              "choices": [
+                "Il indique trop peu : risque de survitesse",
+                "Il indique trop : risque de voler trop lentement",
+                "Il indique correctement, le tube pitot étant libre",
+                "Il indique zéro, faute de pression statique"
+              ],
               "answer": 1,
               "explanation": "En descente, la pression totale augmente alors que la pression statique piégée reste celle de l'altitude de départ, plus faible : la différence mesurée est exagérée et la vitesse indiquée trop élevée. La vitesse réelle est plus faible qu'affichée, avec un risque de décrochage."
             },
             {
               "id": "u9s5q09",
               "q": "Au taux standard (taux 1), combien de temps faut-il pour changer de cap de 90° ?",
-              "choices": ["30 s", "45 s", "1 min", "15 s"],
+              "choices": [
+                "30 s",
+                "45 s",
+                "1 min",
+                "15 s"
+              ],
               "answer": 0,
               "explanation": "Le taux 1 correspond à 3° par seconde : 90 / 3 = 30 s. Un tour complet de 360° demande donc 120 s, soit 2 minutes."
             },
             {
               "id": "u9s5q10",
               "q": "En virage à gauche, la bille est décalée vers la droite. Quelle correction appliquez-vous ?",
-              "choices": ["Appuyer davantage sur le palonnier gauche", "Réduire l'inclinaison sans toucher aux palonniers", "Appuyer sur le palonnier droit", "Tirer davantage sur le manche"],
+              "choices": [
+                "Appuyer davantage sur le palonnier gauche, côté virage",
+                "Réduire l'inclinaison sans toucher aux palonniers",
+                "Appuyer sur le palonnier droit, du côté de la bille",
+                "Tirer sur le manche pour resserrer le virage"
+              ],
               "answer": 2,
               "explanation": "« Le pied chasse la bille » : bille à droite, on agit sur le palonnier droit (ou l'on relâche le gauche). Ici l'avion dérape vers l'extérieur du virage par excès de pied à gauche."
             },
             {
               "id": "u9s5q11",
               "q": "Pourquoi faut-il recaler régulièrement le conservateur de cap sur le compas magnétique ?",
-              "choices": ["Parce qu'il est sensible aux erreurs d'accélération, comme le compas", "Parce qu'il n'a aucune référence magnétique et dérive avec le temps", "Parce qu'il indique le cap vrai et non le cap magnétique", "Parce qu'il ne fonctionne correctement qu'en virage"],
+              "choices": [
+                "Parce qu'il subit les mêmes erreurs d'accélération que le compas",
+                "Parce qu'il n'a aucune référence magnétique et dérive avec le temps",
+                "Parce qu'il indique le cap vrai et non le cap magnétique",
+                "Parce qu'il ne fonctionne correctement qu'en virage"
+              ],
               "answer": 1,
               "explanation": "Le conservateur de cap est un gyroscope sans référence magnétique : la précession due aux frottements et la rotation de la Terre le font dériver. On le recale sur le compas toutes les 10 à 15 minutes environ, en vol rectiligne stabilisé."
             },
             {
               "id": "u9s5q12",
               "q": "Au cap 090, dans l'hémisphère nord, l'avion accélère en palier. Que montre momentanément le compas magnétique ?",
-              "choices": ["Un virage apparent vers le sud", "Aucune variation : l'erreur n'existe qu'en virage", "Une oscillation de 90° de part et d'autre du cap", "Un virage apparent vers le nord"],
+              "choices": [
+                "Un virage apparent vers le sud, qui cesse en vol stabilisé",
+                "Aucune variation : l'erreur n'existe qu'en virage",
+                "Une oscillation autour du cap, sans direction privilégiée",
+                "Un virage apparent vers le nord, qui cesse en vol stabilisé"
+              ],
               "answer": 3,
               "explanation": "Erreur d'accélération (ANDS : accélération nord, décélération sud) : aux caps est et ouest, dans l'hémisphère nord, une accélération fait indiquer un virage vers le nord, une décélération un virage vers le sud. On ne lit le compas qu'en vol stabilisé."
             }
