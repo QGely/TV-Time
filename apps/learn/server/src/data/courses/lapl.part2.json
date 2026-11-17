@@ -1,0 +1,943 @@
+{
+  "id": "lapl",
+  "units": [
+    {
+      "id": "u2",
+      "title": "Performance humaine",
+      "description": "Physiologie et psychologie du pilote : hypoxie, vision, oreille interne, aptitude au vol et prise de décision (examen : 12 questions, 18 min).",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u2s1",
+          "title": "Atmosphère, respiration et hypoxie",
+          "icon": "🫁",
+          "tips": "L'air sec contient environ 78 % d'azote, 21 % d'oxygène et 1 % d'autres gaz (argon, CO2…). Ces proportions restent les mêmes en altitude : c'est la pression qui diminue.\n• Loi de Dalton : pression partielle d'un gaz = sa proportion × pression totale, soit PO2 ≈ 0,21 × P. Au niveau de la mer (1013 hPa), PO2 ≈ 213 hPa ; vers 18 000 ft (≈ 500 hPa), elle est divisée par deux.\n• Loi de Boyle-Mariotte : à température constante, P × V = constante. Les gaz piégés (oreille moyenne, sinus, intestins, dents abîmées) se dilatent en montée.\n• Loi de Henry : la quantité de gaz dissous dans un liquide est proportionnelle à sa pression partielle. Une baisse de pression trop rapide libère des bulles d'azote (accident de décompression, surtout après une plongée).\n\nL'hypoxie est un manque d'oxygène dans les tissus. Quatre types :\n• hypoxique : PO2 trop faible (altitude) ;\n• hypémique ou anémique : le sang transporte mal l'O2 (monoxyde de carbone, anémie, don de sang) ;\n• stagnante : circulation insuffisante (facteur de charge, froid) ;\n• histotoxique : les cellules utilisent mal l'O2 (alcool, drogues).\nSymptômes : euphorie, excès de confiance, jugement altéré, maux de tête, fourmillements, cyanose (lèvres, ongles), vision réduite, somnolence. L'hypoxie est insidieuse : le pilote se croit performant. La vision de nuit se dégrade dès 5 000 ft environ.\nLe temps de conscience utile (TCU) diminue avec l'altitude : environ 20 à 30 min à 18 000 ft, 3 à 5 min à 25 000 ft, 1 à 2 min à 30 000 ft.\n\nOxygène en NCO (NCO.OP.190) : l'équipage l'utilise en continu dès que l'altitude cabine dépasse 10 000 ft pendant plus de 30 minutes, et en permanence au-dessus de 13 000 ft.\n\nHyperventilation : respiration trop rapide ou trop profonde (stress, peur) qui fait chuter le CO2 du sang. Signes : vertiges, fourmillements des doigts et autour de la bouche, crampes, voire perte de connaissance. Remède : ralentir volontairement la respiration, parler à voix haute. En altitude, si l'on hésite avec l'hypoxie, traiter d'abord l'hypoxie.\n\nMonoxyde de carbone (CO) : gaz incolore et inodore des gaz d'échappement, qui peut entrer par le réchauffage cabine (échangeur fissuré). Il se fixe sur l'hémoglobine plus de 200 fois plus facilement que l'O2. Signes : maux de tête, nausées, somnolence. Action : chauffage coupé, aérations ouvertes, oxygène si disponible, atterrissage au plus tôt. Les fumeurs ont déjà une partie de leur hémoglobine bloquée par le CO et tolèrent moins l'altitude.",
+          "vocab": [
+            {
+              "term": "Hypoxie",
+              "translation": "Manque d'oxygène au niveau des tissus"
+            },
+            {
+              "term": "Pression partielle",
+              "translation": "Part de la pression totale due à un gaz (PO2 ≈ 0,21 × P)"
+            },
+            {
+              "term": "TCU (temps de conscience utile)",
+              "translation": "Durée pendant laquelle on agit encore efficacement sans oxygène"
+            },
+            {
+              "term": "Hyperventilation",
+              "translation": "Respiration excessive qui fait chuter le CO2 du sang"
+            },
+            {
+              "term": "Cyanose",
+              "translation": "Coloration bleutée des lèvres et des ongles par manque d'O2"
+            },
+            {
+              "term": "Monoxyde de carbone (CO)",
+              "translation": "Gaz inodore des gaz d'échappement qui bloque l'hémoglobine"
+            },
+            {
+              "term": "Hémoglobine",
+              "translation": "Protéine des globules rouges qui transporte l'oxygène"
+            },
+            {
+              "term": "Loi de Boyle-Mariotte",
+              "translation": "P × V = constante : un gaz piégé se dilate en montée"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u2s1q01",
+              "q": "Quel est approximativement le pourcentage d'oxygène dans l'air ambiant à 10 000 ft ?",
+              "choices": [
+                "Environ 14 %",
+                "Environ 18 %",
+                "Environ 21 %",
+                "Environ 10 %"
+              ],
+              "answer": 2,
+              "explanation": "Dans la basse atmosphère, la composition de l'air reste constante (≈ 21 % d'O2). C'est la pression totale, donc la pression partielle d'oxygène, qui diminue avec l'altitude."
+            },
+            {
+              "id": "u2s1q02",
+              "q": "À une altitude où la pression atmosphérique vaut 500 hPa (environ 18 000 ft), quelle est la pression partielle d'oxygène de l'air ?",
+              "choices": [
+                "Environ 105 hPa",
+                "Environ 50 hPa",
+                "Environ 213 hPa",
+                "Environ 395 hPa"
+              ],
+              "answer": 0,
+              "explanation": "Loi de Dalton : PO2 = 0,21 × P = 0,21 × 500 = 105 hPa, soit environ la moitié de la valeur au niveau de la mer (0,21 × 1013 ≈ 213 hPa)."
+            },
+            {
+              "id": "u2s1q03",
+              "q": "Quel type d'hypoxie une intoxication au monoxyde de carbone provoque-t-elle ?",
+              "choices": [
+                "Une hypoxie hypoxique",
+                "Une hypoxie stagnante",
+                "Une hypoxie histotoxique",
+                "Une hypoxie hypémique"
+              ],
+              "answer": 3,
+              "explanation": "Le CO se fixe sur l'hémoglobine à la place de l'oxygène : le sang transporte moins d'O2 alors que la pression partielle d'oxygène est normale. C'est une hypoxie hypémique, comme en cas d'anémie ou après un don de sang."
+            },
+            {
+              "id": "u2s1q04",
+              "q": "Un avion non pressurisé exploité en NCO va croiser à 11 500 ft pendant 45 minutes. Que prévoit la réglementation pour l'équipage ?",
+              "choices": [
+                "Rien : l'oxygène n'est exigé qu'au-dessus de 13 000 ft",
+                "L'usage de l'oxygène, car le vol dure plus de 30 minutes au-dessus de 10 000 ft",
+                "Rien : l'oxygène n'est exigé qu'au-dessus de 12 500 ft",
+                "L'usage de l'oxygène pour les passagers seulement, pas pour le pilote"
+              ],
+              "answer": 1,
+              "explanation": "NCO.OP.190 : l'équipage utilise l'oxygène en continu dès que l'altitude cabine dépasse 10 000 ft pendant plus de 30 minutes, et en permanence au-dessus de 13 000 ft. 45 minutes à 11 500 ft dépassent ce seuil."
+            },
+            {
+              "id": "u2s1q05",
+              "q": "Au-dessus de quelle altitude cabine l'équipage d'un avion exploité en NCO doit-il utiliser l'oxygène en permanence, quelle que soit la durée ?",
+              "choices": [
+                "10 000 ft",
+                "12 500 ft",
+                "13 000 ft",
+                "15 000 ft"
+              ],
+              "answer": 2,
+              "explanation": "NCO.OP.190 : au-dessus de 13 000 ft d'altitude cabine, l'oxygène est obligatoire en permanence ; entre 10 000 et 13 000 ft, il l'est au-delà de 30 minutes."
+            },
+            {
+              "id": "u2s1q06",
+              "q": "Pourquoi l'hypoxie d'altitude est-elle particulièrement dangereuse pour un pilote seul à bord ?",
+              "choices": [
+                "Elle provoque d'emblée une sensation d'étouffement qui fait paniquer",
+                "Elle n'apparaît qu'au-dessus de 25 000 ft, où le pilote n'est pas entraîné",
+                "Elle s'accompagne toujours d'une douleur thoracique qui le distrait",
+                "Elle altère le jugement, souvent sans que le pilote s'en aperçoive"
+              ],
+              "answer": 3,
+              "explanation": "L'hypoxie est insidieuse : euphorie, excès de confiance et ralentissement intellectuel apparaissent sans douleur ni essoufflement (l'envie de respirer est déclenchée par le CO2, pas par le manque d'O2). Le pilote se croit performant."
+            },
+            {
+              "id": "u2s1q07",
+              "q": "Que désigne le temps de conscience utile (TCU) ?",
+              "choices": [
+                "La durée pendant laquelle un pilote privé d'oxygène reste capable d'agir efficacement",
+                "Le délai entre la privation d'oxygène et la perte de connaissance complète",
+                "La durée maximale autorisée au-dessus de 10 000 ft sans oxygène",
+                "Le temps nécessaire pour récupérer après un épisode d'hypoxie"
+              ],
+              "answer": 0,
+              "explanation": "Le TCU prend fin quand le pilote ne peut plus accomplir de gestes utiles (mettre un masque, descendre), bien avant la perte de connaissance. Il diminue fortement avec l'altitude : environ 20 à 30 min à 18 000 ft, 3 à 5 min à 25 000 ft."
+            },
+            {
+              "id": "u2s1q08",
+              "q": "À 2 500 ft, chauffage coupé, un élève stressé respire vite et ressent des fourmillements autour de la bouche et dans les doigts. Quelle est la cause la plus probable ?",
+              "choices": [
+                "Une hypoxie d'altitude",
+                "Une hyperventilation, qui fait baisser le CO2 du sang",
+                "Une intoxication au monoxyde de carbone",
+                "Une hausse excessive du CO2 du sang (hypercapnie)"
+              ],
+              "answer": 1,
+              "explanation": "Une respiration trop rapide liée au stress élimine trop de CO2 : vertiges, fourmillements des extrémités et autour de la bouche. À 2 500 ft, l'hypoxie d'altitude est exclue, et chauffage coupé, le CO est peu probable."
+            },
+            {
+              "id": "u2s1q09",
+              "q": "Quelle est la conduite à tenir face à une hyperventilation à basse altitude ?",
+              "choices": [
+                "Respirer plus vite et plus profondément pour mieux s'oxygéner",
+                "Monter de quelques milliers de pieds pour respirer un air plus pur",
+                "Fermer les aérations pour réchauffer la cabine",
+                "Ralentir volontairement la respiration, par exemple en parlant à voix haute"
+              ],
+              "answer": 3,
+              "explanation": "Il faut rétablir le taux de CO2 en ralentissant le rythme respiratoire : parler, compter, respirer calmement. En altitude, si l'on hésite entre hypoxie et hyperventilation, on traite d'abord l'hypoxie (oxygène, descente)."
+            },
+            {
+              "id": "u2s1q10",
+              "q": "En hiver, chauffage cabine en marche, le pilote ressent maux de tête, nausées et somnolence. Quelles sont les premières actions ?",
+              "choices": [
+                "Couper le chauffage, ouvrir les aérations et envisager un atterrissage rapide",
+                "Augmenter le chauffage, car ces symptômes sont dus au froid",
+                "Fermer toutes les aérations pour empêcher l'entrée des gaz d'échappement",
+                "Monter pour trouver un air plus pur et poursuivre le vol"
+              ],
+              "answer": 0,
+              "explanation": "Ces symptômes évoquent une intoxication au CO par l'échangeur du chauffage (échappement fissuré). On coupe le chauffage, on ventile avec de l'air frais, on utilise l'oxygène s'il y en a et on se pose au plus tôt ; monter aggraverait l'hypoxie."
+            },
+            {
+              "id": "u2s1q11",
+              "q": "Au niveau de la mer (1 000 hPa), 300 ml de gaz sont piégés dans l'intestin d'un pilote. À température constante, quel sera ce volume à une altitude où la pression vaut 750 hPa ?",
+              "choices": [
+                "225 ml",
+                "400 ml",
+                "300 ml",
+                "600 ml"
+              ],
+              "answer": 1,
+              "explanation": "Loi de Boyle-Mariotte : P1 × V1 = P2 × V2, donc V2 = 300 × 1 000 ÷ 750 = 400 ml. Les gaz piégés se dilatent en montée, d'où des douleurs abdominales, dentaires ou sinusiennes."
+            },
+            {
+              "id": "u2s1q12",
+              "q": "Quelle fonction est l'une des premières dégradées par une légère hypoxie, dès 5 000 ft environ ?",
+              "choices": [
+                "L'audition des sons graves",
+                "L'équilibre assuré par l'oreille interne",
+                "La vision de nuit",
+                "La force musculaire des jambes"
+              ],
+              "answer": 2,
+              "explanation": "La rétine, et en particulier les bâtonnets, consomme beaucoup d'oxygène : la vision nocturne diminue dès 4 000 à 5 000 ft. De nuit, l'hypoxie se fait donc sentir à des altitudes modérées."
+            }
+          ]
+        },
+        {
+          "id": "u2s2",
+          "title": "Vision et ouïe",
+          "icon": "👁️",
+          "tips": "L'œil : la cornée et le cristallin concentrent la lumière sur la rétine ; l'iris règle l'ouverture de la pupille ; le cristallin se déforme pour faire la mise au point (accommodation), capacité qui diminue avec l'âge (presbytie).\n• Cônes : concentrés dans la fovéa, au centre de la rétine. Ils donnent l'acuité et les couleurs mais exigent beaucoup de lumière (vision de jour).\n• Bâtonnets : en périphérie, très sensibles à la faible lumière et au mouvement, ils ne distinguent pas les couleurs (vision de nuit).\n• Point aveugle : zone sans photorécepteurs, là où le nerf optique quitte l'œil. La vision des deux yeux le compense, sauf si un montant de verrière masque un œil : bouger la tête.\n\nDe nuit, la fovéa devient une tache aveugle centrale : pour voir un objet peu éclairé, regarder légèrement à côté (vision décalée). L'adaptation complète à l'obscurité demande environ 30 minutes ; une lumière vive l'annule en quelques secondes. Garder un éclairage cabine faible. L'hypoxie et le tabac dégradent la vision nocturne.\n\nAnticollision :\n• l'œil détecte mal pendant un mouvement continu : balayer le ciel par secteurs d'environ 10 à 15°, en marquant un arrêt d'au moins une seconde sur chacun ;\n• dans un ciel vide (bleu uniforme, brume), l'œil se règle à quelques mètres (myopie du champ vide) : fixer régulièrement un objet lointain ;\n• un avion en route de collision reste immobile dans le pare-brise et ne fait que grossir, lentement puis brutalement ;\n• face à face, les vitesses s'additionnent : 120 kt + 120 kt = 240 kt, soit 4 NM par minute.\n\nIllusions en approche (le pilote corrige dans le mauvais sens) :\n• piste montante ou plus étroite que d'habitude : impression d'être trop haut → approche trop basse ;\n• piste descendante ou plus large : impression d'être trop bas → approche trop haute, arrondi haut, atterrissage long ;\n• trou noir (de nuit, au-dessus de la mer ou d'une zone sans lumière) : impression d'être trop haut → risque d'atterrir court ;\n• pluie sur le pare-brise, brume : impression d'être plus haut ou plus loin → approche trop basse.\nParade : suivre le PAPI et un plan de descente calculé (environ 300 ft par NM pour 3°).\n\nOuïe : le bruit se mesure en décibels, sur une échelle logarithmique (+3 dB = énergie doublée, +10 dB = énergie multipliée par 10). Une exposition prolongée au-delà d'environ 85 dB(A) détruit les cellules de la cochlée : la surdité de perception qui en résulte est définitive et touche d'abord les aigus (vers 4 000 Hz). La presbyacousie (liée à l'âge) est aussi une surdité de perception ; la surdité de transmission (conduit, tympan, oreille moyenne) est souvent soignable. Porter un casque antibruit.",
+          "vocab": [
+            {
+              "term": "Cônes",
+              "translation": "Cellules de la fovéa : acuité et couleurs, besoin de lumière"
+            },
+            {
+              "term": "Bâtonnets",
+              "translation": "Cellules périphériques : vision de nuit et mouvement, sans couleurs"
+            },
+            {
+              "term": "Fovéa",
+              "translation": "Centre de la rétine, zone de vision la plus nette"
+            },
+            {
+              "term": "Point aveugle",
+              "translation": "Zone de la rétine sans photorécepteurs (sortie du nerf optique)"
+            },
+            {
+              "term": "Myopie du champ vide",
+              "translation": "Mise au point de l'œil à courte distance faute de repère"
+            },
+            {
+              "term": "Illusion du trou noir",
+              "translation": "De nuit, sans repère au sol, on se croit trop haut"
+            },
+            {
+              "term": "PAPI",
+              "translation": "Indicateur lumineux du plan d'approche (feux rouges et blancs)"
+            },
+            {
+              "term": "Décibel (dB)",
+              "translation": "Unité de niveau sonore ; +3 dB = énergie doublée"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u2s2q01",
+              "q": "Quelles cellules de la rétine assurent la vision des couleurs et la meilleure acuité visuelle ?",
+              "choices": [
+                "Les cônes, concentrés dans la fovéa",
+                "Les bâtonnets, concentrés dans la fovéa",
+                "Les bâtonnets, répartis en périphérie de la rétine",
+                "Les cônes, répartis surtout en périphérie de la rétine"
+              ],
+              "answer": 0,
+              "explanation": "Les cônes, concentrés au centre de la rétine (fovéa), donnent l'acuité et les couleurs mais ont besoin de lumière. Les bâtonnets, en périphérie, sont sensibles à la faible lumière et au mouvement, sans voir les couleurs."
+            },
+            {
+              "id": "u2s2q02",
+              "q": "De nuit, comment repérer au mieux un avion faiblement éclairé ?",
+              "choices": [
+                "En le fixant directement, car la fovéa est riche en bâtonnets",
+                "En éclairant fortement le tableau de bord pour stimuler les cônes",
+                "En regardant légèrement à côté, car la fovéa est peu sensible en faible lumière",
+                "En fermant un œil pour supprimer l'effet du point aveugle"
+              ],
+              "answer": 2,
+              "explanation": "La fovéa ne contient que des cônes, inefficaces en faible lumière : de nuit, elle forme une tache aveugle centrale. On utilise les bâtonnets périphériques en regardant légèrement à côté de l'objet (vision décalée)."
+            },
+            {
+              "id": "u2s2q03",
+              "q": "Combien de temps faut-il environ pour que l'œil soit complètement adapté à l'obscurité ?",
+              "choices": [
+                "Environ 30 secondes",
+                "Environ 30 minutes",
+                "Environ 2 minutes",
+                "Environ 3 heures"
+              ],
+              "answer": 1,
+              "explanation": "Les cônes s'adaptent en quelques minutes, mais les bâtonnets ont besoin d'environ 30 minutes pour atteindre leur sensibilité maximale. Une lumière vive annule cette adaptation en quelques secondes."
+            },
+            {
+              "id": "u2s2q04",
+              "q": "À quoi correspond le point aveugle de l'œil ?",
+              "choices": [
+                "À la fovéa, où se concentrent les cônes et où l'acuité est maximale",
+                "À la partie de la rétine masquée en permanence par l'iris",
+                "Au cristallin lorsqu'il ne parvient plus à accommoder",
+                "À la sortie du nerf optique, zone sans photorécepteurs"
+              ],
+              "answer": 3,
+              "explanation": "Là où le nerf optique quitte l'œil, la rétine n'a ni cônes ni bâtonnets. Avec les deux yeux, le cerveau compense ; mais si un montant de verrière masque l'autre œil, un avion peut disparaître dans cette zone : il faut bouger la tête."
+            },
+            {
+              "id": "u2s2q05",
+              "q": "Comment se présente, dans le pare-brise, un avion en route de collision avec le vôtre ?",
+              "choices": [
+                "Il se déplace rapidement d'un côté à l'autre du pare-brise",
+                "Il reste immobile, en grossissant d'abord lentement puis très vite",
+                "Il monte progressivement vers le haut du pare-brise",
+                "Il apparaît déjà gros dès qu'il devient visible"
+              ],
+              "answer": 1,
+              "explanation": "Deux avions en route de collision gardent un relèvement constant : l'autre avion ne bouge pas dans le pare-brise, ce qui le rend difficile à détecter. Sa taille apparente reste petite longtemps puis augmente brutalement dans les dernières secondes."
+            },
+            {
+              "id": "u2s2q06",
+              "q": "Deux avions volent l'un vers l'autre, à 100 kt et à 140 kt. Ils se repèrent à 2 NM de distance. De combien de temps disposent-ils avant l'impact s'ils ne manœuvrent pas ?",
+              "choices": [
+                "30 secondes",
+                "1 minute",
+                "50 secondes",
+                "3 minutes"
+              ],
+              "answer": 0,
+              "explanation": "Face à face, les vitesses s'additionnent : 100 + 140 = 240 kt, soit 240 ÷ 60 = 4 NM par minute. Temps = 2 ÷ 4 = 0,5 min = 30 s, dont il faut encore retrancher le temps de réaction et de manœuvre."
+            },
+            {
+              "id": "u2s2q07",
+              "q": "Par ciel bleu uniforme, sans aucun repère visuel, que fait naturellement l'œil ?",
+              "choices": [
+                "Il accommode à l'infini, ce qui facilite la détection des avions lointains",
+                "Il devient plus sensible aux couleurs grâce aux bâtonnets",
+                "Il accommode à courte distance, ce qui retarde la détection des avions lointains",
+                "Il élargit son champ de vision net à plus de 30°"
+              ],
+              "answer": 2,
+              "explanation": "C'est la myopie du champ vide : sans objet sur lequel faire la mise au point, l'œil se règle à quelques mètres. Il faut fixer régulièrement un objet lointain (relief, nuage, bout d'aile) pour réaccommoder au loin."
+            },
+            {
+              "id": "u2s2q08",
+              "q": "En approche vers une piste montante (qui monte dans le sens de l'atterrissage), sans PAPI, quel est le risque si le pilote ne tient pas compte de cette pente ?",
+              "choices": [
+                "Se croire trop bas et faire une approche trop haute",
+                "Se croire trop rapide et laisser chuter la vitesse",
+                "Voir la piste plus large qu'elle n'est et arrondir trop tôt",
+                "Se croire trop haut et faire une approche trop basse"
+              ],
+              "answer": 3,
+              "explanation": "Une piste montante paraît plus « relevée », comme si l'avion était au-dessus du plan : le pilote réduit et descend, puis se retrouve trop bas, avec un risque d'atterrir court. Une piste descendante produit l'effet inverse."
+            },
+            {
+              "id": "u2s2q09",
+              "q": "De nuit, en finale au-dessus de la mer vers une piste éclairée, aucune lumière n'est visible entre l'avion et le seuil. Quelle illusion menace le pilote ?",
+              "choices": [
+                "Se croire plus haut qu'en réalité, avec un risque d'atterrir court",
+                "Se croire plus bas qu'en réalité, avec un risque d'atterrissage long",
+                "Une sensation de rotation due aux canaux semi-circulaires",
+                "Voir la piste plus étroite et faire une approche trop haute"
+              ],
+              "answer": 0,
+              "explanation": "C'est l'illusion du trou noir : privé de repères au sol, le pilote a l'impression d'être trop haut et descend sous le plan normal. Il faut suivre le PAPI ou un plan de descente calculé (environ 300 ft par NM pour 3°)."
+            },
+            {
+              "id": "u2s2q10",
+              "q": "Un pilote habitué à une piste de 20 m de large se pose pour la première fois sur une piste de 45 m de large. Quelle erreur doit-il anticiper ?",
+              "choices": [
+                "Se croire trop haut, d'où une approche trop basse et un atterrissage court",
+                "Se croire trop bas, d'où une approche et un arrondi trop hauts",
+                "Se croire trop lent et augmenter inutilement la vitesse en finale",
+                "Se croire aligné sur l'axe alors qu'il en est nettement décalé"
+              ],
+              "answer": 1,
+              "explanation": "Une piste plus large que d'habitude donne l'impression d'être plus bas qu'en réalité : approche trop haute et arrondi trop haut, avec un atterrissage long ou dur. Une piste plus étroite produit l'illusion inverse."
+            },
+            {
+              "id": "u2s2q11",
+              "q": "Quel effet a une exposition répétée au bruit du moteur sans protection auditive ?",
+              "choices": [
+                "Une surdité de transmission, toujours réversible après quelques jours de repos",
+                "Une perte d'audition touchant d'abord les sons graves",
+                "Une gêne passagère, sans conséquence au-dessous de 120 dB",
+                "Une surdité de perception irréversible, touchant d'abord les sons aigus"
+              ],
+              "answer": 3,
+              "explanation": "Le bruit détruit les cellules ciliées de la cochlée (oreille interne) : c'est une surdité de perception définitive, qui commence vers les fréquences aiguës (environ 4 000 Hz). Le risque existe dès une exposition prolongée à environ 85 dB(A)."
+            },
+            {
+              "id": "u2s2q12",
+              "q": "Le niveau sonore dans un poste de pilotage passe de 85 dB à 88 dB. Comment évolue l'énergie sonore reçue par le pilote ?",
+              "choices": [
+                "Elle augmente d'environ 3,5 %",
+                "Elle triple",
+                "Elle double environ",
+                "Elle est multipliée par 10"
+              ],
+              "answer": 2,
+              "explanation": "L'échelle des décibels est logarithmique : +3 dB correspond à une énergie multipliée par 10^0,3 ≈ 2, et +10 dB à une énergie multipliée par 10."
+            }
+          ]
+        },
+        {
+          "id": "u2s3",
+          "title": "Désorientation et oreille interne",
+          "icon": "🌀",
+          "tips": "En vol, l'orientation repose sur la vue (environ 80 % de l'information), l'oreille interne (système vestibulaire) et les capteurs de pression de la peau, des muscles et des articulations. Sans repères visuels, ces deux derniers trompent le pilote.\n\nSystème vestibulaire :\n• trois canaux semi-circulaires, perpendiculaires entre eux et remplis d'un liquide (endolymphe), détectent les accélérations angulaires (début et fin d'une rotation). Une rotation constante n'est plus ressentie après 10 à 20 secondes, et une rotation très lente, sous le seuil de détection, passe inaperçue ;\n• les otolithes (utricule et saccule) détectent les accélérations linéaires et la pesanteur. Ils ne distinguent pas une accélération d'une inclinaison de la tête.\n\nPrincipales illusions :\n• « leans » : après une mise en inclinaison lente non perçue, le retour rapide aux ailes horizontales donne l'impression de s'incliner du côté opposé ; le pilote se penche vers l'inclinaison initiale ;\n• spirale : dans un virage prolongé, la sensation de virage disparaît ; le pilote qui voit l'altitude diminuer tire sur le manche, ce qui resserre la spirale ;\n• illusion somatogravique : une forte accélération (décollage, remise de gaz) de nuit ou en IMC donne une impression de cabré ; le pilote rend la main et risque de percuter le sol. Une décélération donne l'impression inverse ;\n• illusion de Coriolis : un mouvement de tête (ramasser une carte) pendant un virage prolongé stimule plusieurs canaux à la fois et provoque une sensation de culbute, la plus violente des désorientations.\nParade : sans références visuelles, croire les instruments et eux seuls. Un pilote VFR non entraîné qui entre en IMC perd le contrôle en quelques minutes : ne pas y entrer, ou faire demi-tour sans attendre.\n\nBarotraumatismes : l'oreille moyenne communique avec la gorge par la trompe d'Eustache. En montée, l'air s'échappe facilement ; en descente, il faut rééquilibrer activement (déglutir, bâiller, manœuvre de Valsalva). Avec un rhume, la trompe et les orifices des sinus se bouchent : douleurs violentes, voire rupture du tympan en descente. Ne pas voler enrhumé ; si l'oreille se bloque en descente, remonter un peu puis redescendre plus lentement.\n\nPlongée sous-marine : l'azote dissous sous pression peut former des bulles si l'on monte en altitude trop tôt (accident de décompression). Délais recommandés avant de voler : au moins 12 h après une plongée sans palier de décompression, au moins 24 h après une plongée avec paliers.\n\nMal de l'air (cinétose) : conflit entre les informations de la vue et celles de l'oreille interne. Prévention : regarder l'horizon, aérer, limiter les mouvements de tête, piloter en douceur. Les médicaments contre le mal des transports rendent somnolent : à proscrire pour le pilote.",
+          "vocab": [
+            {
+              "term": "Canaux semi-circulaires",
+              "translation": "Organes de l'oreille interne qui détectent les rotations"
+            },
+            {
+              "term": "Otolithes",
+              "translation": "Capteurs de l'oreille interne : accélérations linéaires et gravité"
+            },
+            {
+              "term": "Trompe d'Eustache",
+              "translation": "Conduit reliant l'oreille moyenne à l'arrière-gorge"
+            },
+            {
+              "term": "Manœuvre de Valsalva",
+              "translation": "Souffler nez pincé, bouche fermée, pour rééquilibrer l'oreille"
+            },
+            {
+              "term": "Illusion somatogravique",
+              "translation": "Accélération ressentie comme un cabré (et inversement)"
+            },
+            {
+              "term": "Illusion de Coriolis",
+              "translation": "Sensation de culbute en bougeant la tête pendant un virage"
+            },
+            {
+              "term": "Barotraumatisme",
+              "translation": "Lésion due à une différence de pression (oreille, sinus, dents)"
+            },
+            {
+              "term": "Cinétose",
+              "translation": "Mal des transports : conflit entre vue et oreille interne"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u2s3q01",
+              "q": "Que détectent les canaux semi-circulaires de l'oreille interne ?",
+              "choices": [
+                "Les accélérations linéaires et la pesanteur",
+                "Les accélérations angulaires (débuts et fins de rotation)",
+                "Les différences de pression entre l'oreille moyenne et l'extérieur",
+                "Les rotations à vitesse constante, quelle que soit leur durée"
+              ],
+              "answer": 1,
+              "explanation": "Les trois canaux semi-circulaires, perpendiculaires entre eux, détectent les accélérations angulaires grâce au mouvement de l'endolymphe. Une rotation constante n'est plus perçue au bout de quelques secondes ; les accélérations linéaires relèvent des otolithes."
+            },
+            {
+              "id": "u2s3q02",
+              "q": "Pourquoi les otolithes peuvent-ils tromper le pilote lors d'un décollage de nuit ?",
+              "choices": [
+                "Ils confondent une accélération vers l'avant avec une tête basculée en arrière",
+                "Ils cessent de fonctionner au-delà d'une certaine vitesse de roulage",
+                "Ils ne détectent que les rotations autour de l'axe de lacet de l'avion",
+                "Ils sont perturbés par la baisse de pression atmosphérique en montée"
+              ],
+              "answer": 0,
+              "explanation": "Les otolithes réagissent à la résultante de la pesanteur et des accélérations linéaires. Une accélération vers l'avant les sollicite comme une tête basculée vers l'arrière : le pilote ressent un cabré qui n'existe pas (illusion somatogravique)."
+            },
+            {
+              "id": "u2s3q03",
+              "q": "De nuit, au-dessus d'une zone sans lumière, un pilote remet les gaz et ressent un cabré excessif. Que risque-t-il s'il se fie à cette sensation ?",
+              "choices": [
+                "Cabrer davantage et décrocher",
+                "S'incliner involontairement à gauche",
+                "Rendre la main et se rapprocher dangereusement du sol",
+                "Rien : l'oreille interne reste fiable sans repères visuels"
+              ],
+              "answer": 2,
+              "explanation": "C'est l'illusion somatogravique : l'accélération de la remise de gaz est ressentie comme une assiette à cabrer exagérée. Le pilote qui pousse sur le manche pour la corriger met l'avion en descente près du sol ; seule l'assiette lue aux instruments est fiable."
+            },
+            {
+              "id": "u2s3q04",
+              "q": "En IMC, l'avion s'est incliné très lentement à droite sans que le pilote le perçoive. Le pilote remet brusquement les ailes à plat. Que ressent-il ?",
+              "choices": [
+                "Une inclinaison à droite, qui l'incite à se pencher à gauche",
+                "Une sensation de cabré, due aux otolithes",
+                "Aucune sensation particulière, puisque l'avion revient à plat",
+                "Une inclinaison à gauche, qui l'incite à se pencher à droite"
+              ],
+              "answer": 3,
+              "explanation": "C'est l'illusion des « leans » : l'inclinaison lente, sous le seuil de détection, n'a pas été perçue, alors que le retour rapide à plat l'est, comme une mise en virage à gauche. Le pilote se penche alors à droite et risque de réincliner l'avion de ce côté."
+            },
+            {
+              "id": "u2s3q05",
+              "q": "En virage prolongé en IMC, le pilote baisse brusquement la tête pour ramasser une carte et ressent une violente sensation de culbute. De quelle illusion s'agit-il ?",
+              "choices": [
+                "L'illusion de Coriolis",
+                "L'illusion somatogravique",
+                "L'illusion des « leans »",
+                "L'illusion du trou noir"
+              ],
+              "answer": 0,
+              "explanation": "Un mouvement de tête pendant une rotation prolongée stimule simultanément plusieurs canaux semi-circulaires : le cerveau perçoit une rotation dans un plan inattendu. C'est la désorientation la plus violente ; en virage, on évite les mouvements de tête brusques."
+            },
+            {
+              "id": "u2s3q06",
+              "q": "En IMC, un pilote maintient un virage à taux constant pendant une trentaine de secondes. Que ressent-il alors ?",
+              "choices": [
+                "Un virage de plus en plus serré",
+                "L'impression de ne plus tourner",
+                "La même sensation de virage qu'au début",
+                "Une sensation de montée continue"
+              ],
+              "answer": 1,
+              "explanation": "Après 10 à 20 secondes de rotation constante, l'endolymphe tourne à la même vitesse que le canal et les capteurs reviennent au repos : le virage n'est plus ressenti. En revenant ailes à plat, le pilote peut même croire virer en sens inverse."
+            },
+            {
+              "id": "u2s3q07",
+              "q": "Un pilote VFR entre involontairement dans un nuage. Quelle est la meilleure réaction ?",
+              "choices": [
+                "Se fier à ses sensations corporelles, qui réagissent plus vite que les instruments",
+                "Réduire et piquer franchement pour retrouver au plus vite la vue du sol",
+                "Se fier aux instruments, stabiliser l'avion puis faire demi-tour en virage à faible inclinaison",
+                "Virer immédiatement à forte inclinaison pour ressortir le plus vite possible"
+              ],
+              "answer": 2,
+              "explanation": "Sans références visuelles, l'oreille interne et les sensations corporelles trompent rapidement le pilote. Il faut piloter aux instruments (assiette, ailes horizontales), puis revenir vers la zone de bonne visibilité par un demi-tour doux et coordonné."
+            },
+            {
+              "id": "u2s3q08",
+              "q": "Pourquoi les douleurs d'oreille dues à la pression apparaissent-elles surtout en descente ?",
+              "choices": [
+                "Parce que l'air de l'oreille moyenne se dilate et ne peut plus s'échapper",
+                "Parce que la température plus élevée près du sol dilate le tympan",
+                "Parce que la trompe d'Eustache se ferme en montée et ne s'ouvre qu'en descente",
+                "Parce que la trompe d'Eustache laisse mal entrer l'air dans l'oreille moyenne"
+              ],
+              "answer": 3,
+              "explanation": "En montée, l'air de l'oreille moyenne, en surpression, s'échappe facilement vers la gorge. En descente, la pression extérieure augmente et la trompe d'Eustache, qui fonctionne comme un clapet, doit être ouverte activement (déglutition, Valsalva)."
+            },
+            {
+              "id": "u2s3q09",
+              "q": "Le matin d'un vol, un pilote est enrhumé et a le nez bouché. Que doit-il faire ?",
+              "choices": [
+                "Voler en restant sous 3 000 ft pour limiter les variations de pression",
+                "Renoncer au vol : il risque un barotraumatisme de l'oreille ou des sinus",
+                "Voler en faisant des descentes rapides pour écourter la gêne",
+                "Prendre un décongestionnant sans avis médical et partir comme prévu"
+              ],
+              "answer": 1,
+              "explanation": "Le rhume bouche la trompe d'Eustache et les orifices des sinus : en descente, les pressions ne peuvent plus s'équilibrer, avec douleurs violentes, voire rupture du tympan. Les décongestionnants ont des effets secondaires et leur effet peut cesser en vol : avis médical indispensable."
+            },
+            {
+              "id": "u2s3q10",
+              "q": "En descente, un passager ressent une vive douleur à l'oreille que la déglutition ne soulage pas. Quelle est la meilleure action ?",
+              "choices": [
+                "Remonter un peu, puis redescendre plus lentement en rééquilibrant (Valsalva)",
+                "Accélérer la descente pour abréger au maximum la durée de la gêne",
+                "Couper le chauffage et ouvrir les aérations pour rafraîchir la cabine",
+                "Lui demander de retenir sa respiration jusqu'à l'atterrissage"
+              ],
+              "answer": 0,
+              "explanation": "Remonter diminue la pression extérieure et soulage l'oreille ; la descente reprend ensuite à faible taux, en rééquilibrant régulièrement (Valsalva, déglutition, bâillement). Accélérer la descente aggraverait le barotraumatisme."
+            },
+            {
+              "id": "u2s3q11",
+              "q": "Un pilote a fait ce matin une plongée sous-marine avec paliers de décompression. Quel délai minimal est recommandé avant de voler ?",
+              "choices": [
+                "2 heures",
+                "6 heures",
+                "12 heures",
+                "24 heures"
+              ],
+              "answer": 3,
+              "explanation": "L'azote dissous sous pression pendant la plongée peut former des bulles si la pression baisse trop tôt (accident de décompression). On recommande au moins 12 h après une plongée sans palier et au moins 24 h après une plongée avec paliers."
+            },
+            {
+              "id": "u2s3q12",
+              "q": "Un passager souffre du mal de l'air. Quelle mesure est la plus appropriée ?",
+              "choices": [
+                "Lui faire lire la carte pour l'occuper",
+                "Fermer les aérations pour éviter les courants d'air",
+                "Lui faire regarder l'horizon, aérer et éviter les manœuvres brusques",
+                "Enchaîner des virages serrés pour l'habituer au mouvement"
+              ],
+              "answer": 2,
+              "explanation": "Le mal de l'air naît d'un conflit entre l'oreille interne et la vue. Regarder l'horizon remet ces informations en accord ; l'air frais et un pilotage souple réduisent les symptômes, alors que lire en vol aggrave le conflit."
+            }
+          ]
+        },
+        {
+          "id": "u2s4",
+          "title": "Santé et aptitude au vol",
+          "icon": "🩺",
+          "tips": "Un certificat médical valide ne suffit pas : l'aptitude s'évalue avant chaque vol.\n\nMED.A.020 (Part-MED) : le titulaire d'une licence ne doit pas en exercer les privilèges lorsqu'il a conscience d'une diminution de son aptitude médicale, qu'il prend un médicament (prescrit ou non) susceptible de nuire à la sécurité, ou qu'il suit un traitement pouvant compromettre la sécurité du vol. Il doit en outre demander sans délai l'avis d'un médecin aéronautique, avant de voler, après une opération chirurgicale, le début d'un traitement régulier, une blessure ou une maladie importante, une hospitalisation, une grossesse, ou s'il a besoin pour la première fois de verres correcteurs.\n\nCheck-list personnelle IMSAFE :\n• I – Illness : suis-je malade ?\n• M – Medication : ai-je pris des médicaments ?\n• S – Stress : suis-je préoccupé ?\n• A – Alcohol : ai-je bu ?\n• F – Fatigue : suis-je reposé ?\n• E – Emotion (ou Eating) : suis-je serein, ai-je mangé ?\n\nAlcool : il est éliminé à vitesse à peu près constante, environ 0,10 à 0,15 g/l de sang par heure ; ni le café, ni la douche, ni l'effort ne l'accélèrent. Il provoque une hypoxie histotoxique, dont les effets s'ajoutent à ceux de l'altitude, et perturbe l'oreille interne pendant plusieurs heures. Règle minimale : au moins 8 heures entre le dernier verre et le vol, bien davantage après une forte consommation (la « gueule de bois » rend inapte). Le seuil retenu pour les membres d'équipage est de 0,2 g d'alcool par litre de sang. SERA.2020 interdit en outre d'exercer une fonction liée à la sécurité sous l'emprise d'une substance psychoactive qui altère les performances.\n\nMédicaments : pas d'automédication. Antihistaminiques, somnifères, antalgiques puissants, médicaments contre le mal des transports ou décongestionnants peuvent provoquer somnolence ou vertiges ; la maladie traitée peut elle-même rendre inapte. Un pictogramme triangulaire sur la boîte signale un risque pour la conduite. En cas de doute, consulter un médecin aéronautique.\n\nFatigue et sommeil : le sommeil s'organise en cycles d'environ 90 minutes (sommeil lent léger, lent profond, paradoxal). La dette de sommeil s'accumule sur plusieurs nuits courtes ; elle favorise les erreurs et les micro-sommeils. Le rythme circadien (horloge interne d'environ 24 h, synchronisée par la lumière) fait chuter la vigilance en fin de nuit, vers 3 h – 5 h, et dans une moindre mesure en début d'après-midi.\n\nDon de sang : le volume sanguin et le transport d'oxygène diminuent ; ne pas voler dans les 24 heures qui suivent.\n\nAutres facteurs : repas sauté (hypoglycémie), déshydratation, fièvre ou troubles digestifs réduisent nettement les performances.",
+          "vocab": [
+            {
+              "term": "MED.A.020",
+              "translation": "Règle Part-MED : ne pas voler en cas de baisse d'aptitude"
+            },
+            {
+              "term": "AME",
+              "translation": "Médecin examinateur aéronautique agréé"
+            },
+            {
+              "term": "IMSAFE",
+              "translation": "Auto-évaluation : maladie, médicaments, stress, alcool, fatigue…"
+            },
+            {
+              "term": "Alcoolémie",
+              "translation": "Taux d'alcool dans le sang, exprimé en g/l"
+            },
+            {
+              "term": "Hypoxie histotoxique",
+              "translation": "Cellules incapables d'utiliser l'oxygène (alcool, drogues)"
+            },
+            {
+              "term": "Rythme circadien",
+              "translation": "Horloge biologique d'environ 24 h, réglée par la lumière"
+            },
+            {
+              "term": "Dette de sommeil",
+              "translation": "Manque de sommeil accumulé sur plusieurs nuits"
+            },
+            {
+              "term": "Automédication",
+              "translation": "Prise de médicaments sans avis médical"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u2s4q01",
+              "q": "Le matin d'un vol local, un pilote a de la fièvre et des courbatures. Son certificat médical est valide. Que prévoit MED.A.020 ?",
+              "choices": [
+                "Il peut voler, puisque son certificat médical est en cours de validité",
+                "Il peut voler en local, à condition de ne pas emmener de passager",
+                "Il ne doit pas exercer les privilèges de sa licence tant que son aptitude est diminuée",
+                "Il doit d'abord faire renouveler son certificat médical"
+              ],
+              "answer": 2,
+              "explanation": "MED.A.020 interdit d'exercer les privilèges de la licence dès que le pilote a conscience d'une diminution de son aptitude médicale susceptible de compromettre la sécurité. Le certificat valide ne suffit pas : l'aptitude s'évalue avant chaque vol."
+            },
+            {
+              "id": "u2s4q02",
+              "q": "Dans lequel de ces cas un pilote doit-il demander l'avis d'un médecin aéronautique avant de voler à nouveau ?",
+              "choices": [
+                "Il a dormi 7 heures la nuit précédant le vol",
+                "Il a besoin pour la première fois de verres correcteurs",
+                "Il a eu un rhume, guéri depuis trois semaines",
+                "Il a voyagé la veille comme passager d'un avion de ligne"
+              ],
+              "answer": 1,
+              "explanation": "MED.A.020 impose de demander sans délai l'avis d'un médecin aéronautique notamment en cas de premier besoin de verres correcteurs, d'opération chirurgicale, de début de traitement régulier, de maladie ou blessure importante, d'hospitalisation ou de grossesse."
+            },
+            {
+              "id": "u2s4q03",
+              "q": "À minuit, un pilote a une alcoolémie de 0,95 g/l. En retenant une élimination de 0,15 g/l par heure, à quelle heure son taux redescend-il à 0,2 g/l ?",
+              "choices": [
+                "03 h 00",
+                "05 h 00",
+                "06 h 20",
+                "08 h 00"
+              ],
+              "answer": 1,
+              "explanation": "Durée = (0,95 − 0,2) ÷ 0,15 = 0,75 ÷ 0,15 = 5 h, soit 05 h 00. Ce n'est qu'une estimation : la vitesse d'élimination varie d'une personne à l'autre, d'où la nécessité de garder une large marge."
+            },
+            {
+              "id": "u2s4q04",
+              "q": "Concernant l'élimination de l'alcool par l'organisme, quelle affirmation est exacte ?",
+              "choices": [
+                "Elle se fait à vitesse à peu près constante, que rien ne permet d'accélérer",
+                "Un café fort permet de l'accélérer nettement",
+                "Elle est plus rapide en altitude, grâce à la baisse de pression",
+                "Un effort physique intense divise sa durée par deux"
+              ],
+              "answer": 0,
+              "explanation": "Le foie élimine l'alcool à vitesse à peu près constante, de l'ordre de 0,10 à 0,15 g/l par heure. Café, douche froide ou sport peuvent masquer la somnolence mais ne font pas baisser l'alcoolémie plus vite."
+            },
+            {
+              "id": "u2s4q05",
+              "q": "Après une soirée bien arrosée, un pilote a laissé passer 8 heures entre son dernier verre et le décollage. Que peut-il en conclure ?",
+              "choices": [
+                "Il est forcément apte, puisque la règle des 8 heures est respectée",
+                "Il peut voler s'il boit beaucoup d'eau avant le départ",
+                "Il peut voler s'il reste sous 3 000 ft pour limiter l'hypoxie",
+                "Rien de certain : son taux peut encore dépasser 0,2 g/l et les effets persister"
+              ],
+              "answer": 3,
+              "explanation": "Les 8 heures sont un minimum, pas une garantie : après une forte consommation, l'alcoolémie peut rester élevée bien plus longtemps, et la « gueule de bois » (fatigue, troubles de l'équilibre) rend inapte même à alcoolémie nulle."
+            },
+            {
+              "id": "u2s4q06",
+              "q": "Quel seuil d'alcoolémie la réglementation retient-elle pour les membres d'équipage d'un aéronef ?",
+              "choices": [
+                "0,5 g/l, comme pour un automobiliste",
+                "0,8 g/l",
+                "0,2 g/l",
+                "1 g/l"
+              ],
+              "answer": 2,
+              "explanation": "Pour les membres d'équipage, le seuil est fixé à 0,2 g d'alcool par litre de sang, bien plus bas que les 0,5 g/l de la route. Même en dessous, SERA.2020 interdit de voler si une substance psychoactive altère les performances."
+            },
+            {
+              "id": "u2s4q07",
+              "q": "Avant un vol, un pilote veut prendre un médicament contre le rhume vendu sans ordonnance. Quelle attitude est correcte ?",
+              "choices": [
+                "Demander l'avis d'un médecin aéronautique avant de le prendre",
+                "Le prendre sans crainte, puisqu'il est vendu sans ordonnance",
+                "Le prendre une heure avant le vol et partir s'il se sent bien au sol",
+                "Le prendre, à condition de voler en local et sans passager"
+              ],
+              "answer": 0,
+              "explanation": "MED.A.020 vise aussi les médicaments non prescrits : beaucoup provoquent somnolence ou vertiges, parfois seulement en vol. De plus, la maladie traitée peut à elle seule rendre inapte (risque de barotraumatisme avec un rhume)."
+            },
+            {
+              "id": "u2s4q08",
+              "q": "À quel moment de la journée la vigilance est-elle naturellement la plus basse ?",
+              "choices": [
+                "Vers 9 h – 11 h",
+                "Vers 17 h – 19 h",
+                "Vers 21 h – 23 h",
+                "Vers 3 h – 5 h"
+              ],
+              "answer": 3,
+              "explanation": "Le rythme circadien fait chuter la température corporelle et la vigilance en fin de nuit, vers 3 h – 5 h. Une baisse moins marquée existe aussi en début d'après-midi."
+            },
+            {
+              "id": "u2s4q09",
+              "q": "Concernant la dette de sommeil, quelle affirmation est exacte ?",
+              "choices": [
+                "Elle n'apparaît qu'après une nuit blanche complète, jamais avant",
+                "Elle s'accumule sur plusieurs nuits courtes et favorise les erreurs",
+                "Elle est entièrement compensée par la prise régulière de café",
+                "Elle affecte la force physique, mais pas le jugement du pilote"
+              ],
+              "answer": 1,
+              "explanation": "Chaque nuit trop courte alourdit la dette, qui ne se rembourse qu'avec du vrai sommeil, souvent sur plusieurs nuits. Elle dégrade l'attention, la mémoire et la décision, et peut provoquer des endormissements brefs et involontaires."
+            },
+            {
+              "id": "u2s4q10",
+              "q": "Pourquoi déconseille-t-on de voler dans les 24 heures qui suivent un don de sang ?",
+              "choices": [
+                "Le point de piqûre risque de saigner sous l'effet de la baisse de pression",
+                "Le sang restant se charge en azote, d'où un risque d'accident de décompression",
+                "Le volume sanguin et le transport d'oxygène sont réduits, d'où un risque de malaise",
+                "Le don de sang provoque une hyperventilation durable"
+              ],
+              "answer": 2,
+              "explanation": "Après un don, le volume sanguin et le nombre de globules rouges diminuent temporairement : la tolérance à l'altitude et au facteur de charge baisse et un malaise est possible. C'est une forme d'hypoxie hypémique."
+            },
+            {
+              "id": "u2s4q11",
+              "q": "Dans la check-list personnelle IMSAFE, que représente la lettre A ?",
+              "choices": [
+                "L'altitude de sécurité",
+                "L'aérodrome de dégagement",
+                "L'avitaillement en carburant",
+                "L'alcool"
+              ],
+              "answer": 3,
+              "explanation": "IMSAFE : Illness (maladie), Medication (médicaments), Stress, Alcohol (alcool), Fatigue, Emotion ou Eating (alimentation). C'est une auto-évaluation de l'aptitude du pilote, pas de la préparation du vol."
+            },
+            {
+              "id": "u2s4q12",
+              "q": "Pourquoi les effets de l'alcool sont-ils plus marqués en altitude ?",
+              "choices": [
+                "Il gêne l'utilisation de l'oxygène par des cellules déjà moins oxygénées",
+                "La baisse de pression fait augmenter le taux d'alcool dans le sang",
+                "Le froid ralentit l'élimination de l'alcool par le foie",
+                "L'alcool se dilate dans l'estomac selon la loi de Boyle-Mariotte"
+              ],
+              "answer": 0,
+              "explanation": "L'alcool provoque une hypoxie histotoxique : les cellules utilisent moins bien l'oxygène. En altitude, cette hypoxie s'ajoute au manque d'oxygène de l'air, si bien que les effets d'une même dose sont amplifiés."
+            }
+          ]
+        },
+        {
+          "id": "u2s5",
+          "title": "Psychologie et prise de décision",
+          "icon": "🧠",
+          "tips": "Traitement de l'information : les stimuli captés par les sens passent par une mémoire sensorielle très brève, sont filtrés par l'attention et interprétés grâce à l'expérience (perception), puis traités en mémoire de travail avant la décision et l'action. Le retour d'information permet de corriger.\n• Mémoire de travail (à court terme) : capacité d'environ 7 ± 2 éléments, perdus en une vingtaine de secondes sans répétition. Parades : noter les clairances, collationner, regrouper les chiffres.\n• Mémoire à long terme : connaissances (sémantique), souvenirs (épisodique) et savoir-faire automatisés (procédurale).\n• Attention : ressource limitée. On ne traite consciemment qu'une tâche à la fois ; l'attention partagée repose sur les automatismes. La focalisation (« tunnel attentionnel ») fait oublier de piloter.\n\nCharge de travail et stress : selon la loi de Yerkes-Dodson, la performance est maximale pour un niveau d'éveil moyen ; trop faible (ennui, routine) ou trop élevé (surcharge, panique), elle chute. Le stress, physique (bruit, chaleur), physiologique (faim, fatigue) ou psychologique, rétrécit le champ d'attention. Anticiper, respecter les priorités (piloter, naviguer, communiquer) et utiliser les check-lists réduisent la charge.\n\nErreurs et violations :\n• raté : bonne intention, mauvaise exécution (sélectionner le mauvais réservoir) ;\n• oubli : défaillance de mémoire (oublier les volets) ;\n• faute : plan ou décision erronés ;\n• violation : écart volontaire à une règle.\n\nLes cinq attitudes dangereuses et leurs antidotes :\n• anti-autorité (« On ne me dit pas quoi faire ») → suivre les règles, elles sont généralement justifiées ;\n• impulsivité (« Vite, il faut agir ! ») → pas si vite, réfléchir d'abord ;\n• invulnérabilité (« Ça n'arrive qu'aux autres ») → ça peut m'arriver ;\n• machisme (« Je vais leur montrer ») → prendre des risques inutiles est stupide ;\n• résignation (« À quoi bon ? ») → je ne suis pas impuissant, je peux agir.\n\nConscience de la situation : percevoir les éléments, comprendre leur signification, anticiper leur évolution.\n\nTEM (gestion des menaces et des erreurs) : les menaces sont extérieures au pilote (météo, relief, trafic, panne) ; les erreurs viennent du pilote ; mal gérées, elles mènent à un état indésirable de l'avion (trajectoire, vitesse, configuration). On anticipe les menaces au briefing, on détecte et corrige les erreurs.\n\nModèle DECIDE : Détecter le changement, Estimer le besoin de réagir, Choisir l'objectif, Identifier les actions possibles, Do (agir), Évaluer le résultat.\n\nPression d'objectif (« get-there-itis ») : vouloir arriver à tout prix (rendez-vous, passagers, avion à rendre) pousse à continuer malgré la météo ou le carburant. Parades : minima personnels fixés au sol, point de décision prévu sur la route, plan B (demi-tour, déroutement) préparé avant le vol.",
+          "vocab": [
+            {
+              "term": "Mémoire de travail",
+              "translation": "Mémoire à court terme : environ 7 éléments, quelques secondes"
+            },
+            {
+              "term": "Loi de Yerkes-Dodson",
+              "translation": "Performance maximale pour un niveau d'éveil moyen"
+            },
+            {
+              "term": "Conscience de la situation",
+              "translation": "Percevoir, comprendre et anticiper ce qui se passe"
+            },
+            {
+              "term": "TEM",
+              "translation": "Gestion des menaces et des erreurs (Threat and Error Management)"
+            },
+            {
+              "term": "Violation",
+              "translation": "Écart volontaire à une règle ou à une procédure"
+            },
+            {
+              "term": "DECIDE",
+              "translation": "Détecter, Estimer, Choisir, Identifier, agir (Do), Évaluer"
+            },
+            {
+              "term": "Get-there-itis",
+              "translation": "Pression d'objectif : vouloir arriver à destination à tout prix"
+            },
+            {
+              "term": "Tunnel attentionnel",
+              "translation": "Focalisation sur un élément au détriment de tout le reste"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u2s5q01",
+              "q": "Quelle est la capacité moyenne de la mémoire de travail (à court terme) ?",
+              "choices": [
+                "Environ 7 (± 2) éléments",
+                "Environ 2 éléments",
+                "Environ 20 éléments",
+                "Illimitée, mais pour quelques secondes seulement"
+              ],
+              "answer": 0,
+              "explanation": "La mémoire de travail retient environ 7 ± 2 éléments pendant une vingtaine de secondes sans répétition. Au-delà, l'information se perd : il faut noter et regrouper les chiffres en blocs."
+            },
+            {
+              "id": "u2s5q02",
+              "q": "Le contrôleur transmet une longue clairance (cap, altitude, code transpondeur, fréquence). Quelle est la meilleure méthode pour ne pas l'oublier ?",
+              "choices": [
+                "La répéter mentalement pendant tout le reste du vol",
+                "Ne retenir que le code transpondeur, le plus important",
+                "Demander au contrôleur de la répéter régulièrement",
+                "La noter immédiatement, puis la collationner"
+              ],
+              "answer": 3,
+              "explanation": "Une clairance complète dépasse vite la capacité de la mémoire de travail. L'écrire dès sa réception libère la mémoire, et le collationnement permet au contrôleur de détecter une erreur de compréhension."
+            },
+            {
+              "id": "u2s5q03",
+              "q": "Selon la loi de Yerkes-Dodson, quand la performance d'un pilote est-elle la meilleure ?",
+              "choices": [
+                "Lorsque son niveau d'éveil est très faible, sans aucune tension",
+                "Lorsque son niveau d'éveil est maximal, toutes ressources mobilisées",
+                "Lorsque son niveau d'éveil est moyen, entre ennui et surcharge",
+                "Quel que soit son niveau d'éveil, s'il est expérimenté"
+              ],
+              "answer": 2,
+              "explanation": "La courbe de Yerkes-Dodson a la forme d'un U inversé : la performance est faible en cas de sous-stimulation (ennui, baisse de vigilance) comme de sur-stimulation (stress, surcharge), et maximale pour un niveau d'éveil intermédiaire."
+            },
+            {
+              "id": "u2s5q04",
+              "q": "Voulant passer sur le réservoir gauche, un pilote tourne par inadvertance le sélecteur sur le réservoir droit. De quel type d'erreur s'agit-il ?",
+              "choices": [
+                "Une violation",
+                "Un raté (erreur d'exécution)",
+                "Une faute de planification",
+                "Un oubli (défaillance de mémoire)"
+              ],
+              "answer": 1,
+              "explanation": "L'intention était correcte mais l'action ne s'est pas déroulée comme prévu : c'est un raté, souvent lié à un défaut d'attention. La faute concerne un plan erroné, l'oubli une action omise, la violation un écart volontaire."
+            },
+            {
+              "id": "u2s5q05",
+              "q": "Pour gagner du temps, un pilote décide délibérément de ne pas effectuer la check-list avant décollage. De quoi s'agit-il ?",
+              "choices": [
+                "D'une violation",
+                "D'un raté",
+                "D'un oubli",
+                "D'une faute de connaissance"
+              ],
+              "answer": 0,
+              "explanation": "Une violation est un écart volontaire à une règle ou à une procédure, contrairement aux erreurs (ratés, oublis, fautes), qui sont involontaires."
+            },
+            {
+              "id": "u2s5q06",
+              "q": "« Je vais leur montrer que je suis capable de me poser malgré ce vent de travers. » Quelle attitude dangereuse ce pilote exprime-t-il ?",
+              "choices": [
+                "La résignation",
+                "L'anti-autorité",
+                "L'impulsivité",
+                "Le machisme"
+              ],
+              "answer": 3,
+              "explanation": "Vouloir prouver ses capacités aux autres en prenant des risques relève du machisme. Antidote : « Prendre des risques inutiles est stupide. »"
+            },
+            {
+              "id": "u2s5q07",
+              "q": "Quel est l'antidote de l'attitude d'invulnérabilité (« Ça n'arrive qu'aux autres ») ?",
+              "choices": [
+                "« Pas si vite, réfléchis d'abord. »",
+                "« Ça peut m'arriver à moi aussi. »",
+                "« Les règles sont généralement justifiées. »",
+                "« Je ne suis pas impuissant, je peux agir. »"
+              ],
+              "answer": 1,
+              "explanation": "Chaque attitude dangereuse a son antidote : invulnérabilité → « ça peut m'arriver » ; impulsivité → « pas si vite » ; anti-autorité → « suivre les règles » ; résignation → « je peux agir »."
+            },
+            {
+              "id": "u2s5q08",
+              "q": "Un pilote perçoit que le vent forcit (niveau 1) et comprend que la composante traversière approche de ses limites (niveau 2). En quoi consiste le niveau 3 de la conscience de la situation ?",
+              "choices": [
+                "Percevoir les informations de l'environnement",
+                "Comprendre la signification des informations perçues",
+                "Anticiper l'évolution, par exemple en préparant un déroutement",
+                "Appliquer la check-list d'urgence"
+              ],
+              "answer": 2,
+              "explanation": "La conscience de la situation comporte trois niveaux : percevoir les éléments, comprendre ce qu'ils signifient, puis projeter leur évolution pour anticiper. C'est ce troisième niveau qui permet de décider à temps."
+            },
+            {
+              "id": "u2s5q09",
+              "q": "Dans le modèle TEM, lequel de ces éléments est une menace ?",
+              "choices": [
+                "Un orage qui se développe sur la route prévue",
+                "Un mauvais calage altimétrique effectué par le pilote",
+                "L'oubli de la check-list avant atterrissage",
+                "Une vitesse trop élevée en courte finale"
+              ],
+              "answer": 0,
+              "explanation": "Une menace est un événement extérieur au pilote qui complique le vol (météo, relief, trafic, panne). Le mauvais calage et l'oubli de check-list sont des erreurs ; une vitesse excessive en finale est un état indésirable de l'avion."
+            },
+            {
+              "id": "u2s5q10",
+              "q": "Dans le modèle de décision DECIDE, quelle est la dernière étape ?",
+              "choices": [
+                "Détecter qu'un changement est survenu",
+                "Choisir l'objectif à atteindre",
+                "Identifier les actions possibles",
+                "Évaluer le résultat de l'action"
+              ],
+              "answer": 3,
+              "explanation": "DECIDE : Détecter, Estimer, Choisir, Identifier, Do (agir), Évaluer. La dernière étape boucle le processus : on vérifie que l'action produit le résultat attendu, sinon on reprend la démarche."
+            },
+            {
+              "id": "u2s5q11",
+              "q": "Un pilote doit rendre l'avion au club le soir même. La météo se dégrade sur la route, mais il continue en volant de plus en plus bas sous les nuages. Quel phénomène illustre cette situation ?",
+              "choices": [
+                "Un raté (erreur d'exécution involontaire)",
+                "La pression d'objectif (« get-there-itis »)",
+                "L'attitude de résignation (« À quoi bon ? »)",
+                "Une sous-charge de travail (manque d'éveil)"
+              ],
+              "answer": 1,
+              "explanation": "La volonté d'arriver à tout prix pousse à poursuivre malgré des signaux d'alerte. Parades : minima personnels fixés au sol, point de décision prévu sur la route et plan B (demi-tour, déroutement) préparé avant le départ."
+            },
+            {
+              "id": "u2s5q12",
+              "q": "En finale, un pilote se concentre entièrement sur un voyant d'alarme et laisse sa vitesse chuter. Quel phénomène illustre cette situation ?",
+              "choices": [
+                "L'hyperventilation",
+                "L'attitude d'anti-autorité",
+                "Le tunnel attentionnel",
+                "La myopie du champ vide"
+              ],
+              "answer": 2,
+              "explanation": "L'attention est une ressource limitée : focalisé sur un problème, le pilote cesse de surveiller trajectoire et vitesse (tunnel attentionnel). Priorité absolue : piloter, puis naviguer, puis communiquer."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
