@@ -6,19 +6,23 @@
   "checklist": [
     {
       "id": "chk-memo",
-      "label": "Télécharger le mémo VFR FFA 2025-2026"
+      "label": "Télécharger le mémo VFR FFA 2025-2026",
+      "url": "https://www.ffa-aero.fr/FR/frm_guidedupilote_securite.awp"
     },
     {
       "id": "chk-ffplum",
-      "label": "Récupérer les 53 fiches FFPLUM"
+      "label": "Récupérer les 53 fiches FFPLUM",
+      "url": "https://ffplum.fr/encadrer-general/instructeurs/fiches-pedagogiques-techniques"
     },
     {
       "id": "chk-acat",
-      "label": "Étudier les cours PDF de l'ACAT Toulouse"
+      "label": "Étudier les cours PDF de l'ACAT Toulouse",
+      "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique"
     },
     {
       "id": "chk-meteo",
-      "label": "Lire le Guide Aviation de Météo-France"
+      "label": "Lire le Guide Aviation de Météo-France",
+      "url": "https://aviation.meteo.fr/documentation/guide_aviation.pdf"
     },
     {
       "id": "chk-qcm",
@@ -31,7 +35,8 @@
     },
     {
       "id": "chk-phak",
-      "label": "Télécharger le manuel FAA de connaissances aéronautiques"
+      "label": "Télécharger le manuel FAA de connaissances aéronautiques",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak"
     },
     {
       "id": "chk-app-exam",
@@ -134,6 +139,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/nouveau_format_examens_theoriques_PPL_LAPL_BPL_SPL.pdf",
           "search": "DGAC — Format officiel de l'examen (PDF)"
         },
         {
@@ -143,6 +149,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://www.ecologie.gouv.fr/politiques-publiques/examens-theoriques-devenir-personnel-navigant",
           "search": "DGAC — Informations officielles et inscriptions"
         },
         {
@@ -152,6 +159,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://faq.ffa-aero.fr/smileexamens/docs/reglementation-examen/quel-est-le-contenu-du-theorique-lapl-ppla/",
           "search": "FFA — Contenu du théorique LAPL/PPL"
         }
       ]
@@ -265,7 +273,9 @@
           "access": "Gratuit partiel",
           "lang": "fr",
           "kind": "QCM + cours",
-          "search": "PPL Révision"
+          "url": "https://ppl-revision.fr/cours/reglementation",
+          "search": "PPL Révision",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "aerotheorie-regl",
@@ -274,6 +284,7 @@
           "access": "Gratuit partiel",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://aerotheorie.fr/offres/exam-ppl-reglementation/",
           "search": "Aérothéorie — réglementation"
         },
         {
@@ -283,6 +294,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://aerotheorie.fr/offres/preparation-ppl-meteorologie/",
           "search": "Aérothéorie — météo"
         },
         {
@@ -292,7 +304,9 @@
           "access": "Extraits gratuits, complet payant",
           "lang": "fr",
           "kind": "QCM + cours",
-          "search": "ForAllPilots"
+          "url": "https://forallpilots.com/",
+          "search": "ForAllPilots",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "aerogligli",
@@ -301,6 +315,7 @@
           "access": "Payant",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://www.aerogligli.fr/qcm/",
           "search": "Aérogligli"
         },
         {
@@ -310,6 +325,7 @@
           "access": "Démonstration puis payant",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://aero-qcm.fr/preparer/ppl-a",
           "search": "Aéro-QCM"
         },
         {
@@ -319,6 +335,7 @@
           "access": "Essai gratuit puis payant",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://www.pilot-1.com/en",
           "search": "Pilot One"
         },
         {
@@ -328,6 +345,7 @@
           "access": "Parcours limité gratuit",
           "lang": "fr",
           "kind": "Application",
+          "url": "https://myflypath.fr/",
           "search": "MyFlyPath"
         },
         {
@@ -337,6 +355,7 @@
           "access": "Gratuit limité",
           "lang": "fr",
           "kind": "PDF",
+          "url": "https://quizvds.it/fr-fr/pdf/ppl-fr/reglementation",
           "search": "Quizvds — QCM PDF"
         },
         {
@@ -346,7 +365,9 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Fiches",
-          "search": "Pilote Horizons"
+          "url": "https://pilotehorizons.fr/",
+          "search": "Pilote Horizons",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "ctrformation",
@@ -355,6 +376,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://www.ctrformation.fr/quiz/",
           "search": "CTR Formation"
         },
         {
@@ -364,7 +386,9 @@
           "access": "Gratuit, archives",
           "lang": "fr",
           "kind": "QCM",
-          "search": "FFA — Archives de QCM"
+          "url": "https://www.ffa-aero.fr/fr/frm_Lic_Quizz.awp?A1=&A3=1",
+          "search": "FFA — Archives de QCM",
+          "note": "lien vers le site (page exacte à retrouver)"
         }
       ]
     },
@@ -381,6 +405,7 @@
           "access": "Gratuit, vérification e-mail",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://stansepilotem.cz/testy/",
           "search": "Icarus Flight School — PPL/LAPL"
         },
         {
@@ -399,6 +424,7 @@
           "access": "Gratuit annoncé",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://airmand.com/en/tools/easa-ppl",
           "search": "Airmand"
         },
         {
@@ -417,6 +443,7 @@
           "access": "Essai puis payant",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://www.aviationexam.com/en/store/easa-ppl-question-bank/",
           "search": "Aviationexam"
         },
         {
@@ -426,7 +453,9 @@
           "access": "Gratuit partiel",
           "lang": "en",
           "kind": "QCM + cours",
-          "search": "ForAllPilots English"
+          "url": "https://forallpilots.com/",
+          "search": "ForAllPilots English",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "flightdesk",
@@ -444,6 +473,7 @@
           "access": "Essai et offres payantes",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://www.privatepilotexams.com/easa",
           "search": "Private Pilot Exams"
         },
         {
@@ -453,6 +483,7 @@
           "access": "5 % gratuits",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://www.eisenschmidt.aero/en/ppl-fragenkatalog-product-card/A5207003-12",
           "search": "Eisenschmidt"
         },
         {
@@ -462,6 +493,7 @@
           "access": "Essai gratuit",
           "lang": "en",
           "kind": "Logiciel",
+          "url": "https://www.aviationtheory.eu/pilotqdb",
           "search": "AviationTheory PilotQDB"
         },
         {
@@ -471,6 +503,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://pilotlogbook.co/tools/ppl-theory-practice",
           "search": "Pilot Logbook — Practice"
         },
         {
@@ -480,7 +513,9 @@
           "access": "Gratuit partiel",
           "lang": "en",
           "kind": "QCM",
-          "search": "Pass Harbor — UK PPL"
+          "url": "https://www.pass-harbor.com/uk/en/caa-atpl-theory-practice-test",
+          "search": "Pass Harbor — UK PPL",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "aircademy-ecqb",
@@ -489,6 +524,7 @@
           "access": "Démonstration gratuite",
           "lang": "en",
           "kind": "QCM",
+          "url": "https://aircademy.com/ecqb-ppl-en/",
           "search": "Aircademy — ECQB-PPL"
         }
       ]
@@ -505,7 +541,9 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
-          "search": "FFA — Mémo du pilote VFR 2025-2026 (PDF)"
+          "url": "https://www.ffa-aero.fr/FR/frm_guidedupilote_securite.awp",
+          "search": "FFA — Mémo du pilote VFR 2025-2026 (PDF)",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "ffplum-fiches",
@@ -514,6 +552,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "https://ffplum.fr/encadrer-general/instructeurs/fiches-pedagogiques-techniques",
           "search": "FFPLUM — 53 fiches PDF pédagogiques"
         },
         {
@@ -523,6 +562,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "https://www.acba-fr.com/sitev3/doc/ATO/Support%20p%C3%A9dagogique%20LAPL%20PPL.pdf",
           "search": "Aéroclub du Bassin d'Arcachon — Support LAPL/PPL (117 pages)"
         },
         {
@@ -532,6 +572,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF officiel",
+          "url": "https://aviation.meteo.fr/documentation/guide_aviation.pdf",
           "search": "Météo-France — Guide Aviation (PDF, 36 pages)"
         },
         {
@@ -541,6 +582,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Bibliothèque",
+          "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique",
           "search": "Aéroclub Airbus Toulouse — ACAT"
         },
         {
@@ -550,6 +592,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Fiches",
+          "url": "https://www.cpge-sii.com/aero/formation-pilote/",
           "search": "Ressources pilote — Denis Defauchy"
         },
         {
@@ -559,6 +602,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Bibliothèque",
+          "url": "https://www.clefi.fr/",
           "search": "La Clé FI"
         },
         {
@@ -568,6 +612,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Manuels",
+          "url": "https://www.ffa-aero.fr/FR/frm_AIRCREW.awp",
           "search": "FFA — Espace Instructeur"
         },
         {
@@ -577,7 +622,9 @@
           "access": "Gratuit partiel",
           "lang": "fr",
           "kind": "Cours",
-          "search": "PPL Révision — Les neuf matières"
+          "url": "https://ppl-revision.fr/cours/reglementation",
+          "search": "PPL Révision — Les neuf matières",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "anpi-programme",
@@ -586,6 +633,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Programme",
+          "url": "https://anpifrance.eu/wp-content/uploads/2023/03/Livret-formation-PPL-REV2-V2-13-MARS-2023.pdf",
           "search": "ANPI — Programme de formation PPL(A) (PDF)"
         }
       ]
@@ -601,6 +649,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique",
           "search": "Aérodynamique et mécanique du vol — ACAT"
         },
         {
@@ -610,6 +659,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique",
           "search": "Navigation et radionavigation — ACAT"
         },
         {
@@ -619,6 +669,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique",
           "search": "Communications radio — ACAT"
         },
         {
@@ -628,6 +679,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique",
           "search": "Météorologie — ACAT"
         },
         {
@@ -637,6 +689,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "https://www.clefi.fr/ressource/FH_sefa.pdf",
           "search": "Facteurs humains — SEFA (PDF)"
         },
         {
@@ -646,6 +699,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "https://www.cpge-sii.com/aero/formation-pilote/",
           "search": "Calculs de navigation — fiches et log de nav PDF"
         },
         {
@@ -655,6 +709,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "https://ffplum.fr/images/pdf/fiches/fp09-fact%20charge%20virage.pdf",
           "search": "Virage et facteur de charge — FFPLUM"
         },
         {
@@ -664,7 +719,9 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
-          "search": "Procédures et préparation d'un vol VFR — Mémo FFA"
+          "url": "https://www.ffa-aero.fr/FR/frm_guidedupilote_securite.awp",
+          "search": "Procédures et préparation d'un vol VFR — Mémo FFA",
+          "note": "lien vers le site (page exacte à retrouver)"
         },
         {
           "id": "acat-wb",
@@ -673,6 +730,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "PDF",
+          "url": "http://www.acat-toulouse.org/documents/formation-th%C3%A9orique-pratique",
           "search": "Masse et centrage — ACAT"
         }
       ]
@@ -689,6 +747,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "PDF",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
           "search": "Air Law — Droit aérien"
         },
         {
@@ -698,6 +757,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "PDF",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-20-HPL_EN.pdf",
           "search": "Human Performance — Performance humaine"
         },
         {
@@ -707,6 +767,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "PDF",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
           "search": "Principles of Flight — Principes du vol"
         },
         {
@@ -716,6 +777,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "PDF",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK_EN.pdf",
           "search": "Aircraft General Knowledge — Connaissance de l'aéronef"
         },
         {
@@ -725,6 +787,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "PDF",
+          "url": "https://aircademy.com/downloads/ECQB-PPL-DetailedSyllabus.pdf",
           "search": "Aircademy — Detailed PPL Syllabus (PDF, 168 pages)"
         },
         {
@@ -750,6 +813,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Manuel",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
           "search": "Pilot's Handbook of Aeronautical Knowledge"
         },
         {
@@ -759,6 +823,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Manuel",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
           "search": "Airplane Flying Handbook"
         },
         {
@@ -768,6 +833,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Manuel",
+          "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
           "search": "Aviation Weather Handbook"
         },
         {
@@ -777,6 +843,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Manuel",
+          "url": "https://www.faa.gov/sites/faa.gov/files/2023-09/Weight_Balance_Handbook.pdf",
           "search": "Weight & Balance Handbook"
         },
         {
@@ -786,6 +853,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Manuel",
+          "url": "https://www.faa.gov/sites/faa.gov/files/2022-06/risk_management_handbook_2A.pdf",
           "search": "Risk Management Handbook"
         },
         {
@@ -795,6 +863,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Manuel",
+          "url": "https://www.caa.co.uk/cap413",
           "search": "UK CAA — CAP 413 Radiotelephony"
         },
         {
@@ -804,6 +873,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Guide",
+          "url": "https://www.caa.co.uk/cap1535",
           "search": "UK CAA — The Skyway Code"
         },
         {
@@ -813,6 +883,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Catalogue",
+          "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
           "search": "FAA — Bibliothèque de manuels"
         }
       ]
@@ -829,6 +900,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/sera_complet_version17012026.pdf",
           "search": "DGAC — Règles de l’air SERA (PDF)"
         },
         {
@@ -838,6 +910,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Manuel_Phras%C3%A9ologie.pdf",
           "search": "DGAC / DSNA — Manuel de phraséologie (PDF)"
         },
         {
@@ -847,6 +920,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Officiel",
+          "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-aircrew-regulation-eu-no-11782011",
           "search": "EASA — Aircrew / Part-FCL"
         },
         {
@@ -856,6 +930,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Officiel",
+          "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-standardised-european-rules-air",
           "search": "EASA — SERA"
         },
         {
@@ -865,6 +940,7 @@
           "access": "Gratuit",
           "lang": "en",
           "kind": "Officiel",
+          "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-air-operations-regulation-eu-no-9652012",
           "search": "EASA — Air Operations, Part-NCO"
         },
         {
@@ -874,6 +950,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://www.ecologie.gouv.fr/politiques-publiques/pilotes-davion",
           "search": "DGAC — Licences de pilote d'avion"
         },
         {
@@ -883,6 +960,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://www.sia.aviation-civile.gouv.fr/",
           "search": "SIA — eAIP et cartes VAC"
         },
         {
@@ -892,6 +970,7 @@
           "access": "Gratuit (compte)",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://aviation.meteo.fr/",
           "search": "Météo-France — Aéroweb"
         },
         {
@@ -901,6 +980,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Officiel",
+          "url": "https://bea.aero/les-enquetes/evenements-notifies/",
           "search": "BEA"
         }
       ]
@@ -917,6 +997,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Annales",
+          "url": "https://sti.eduscol.education.fr/concours_examens/epreuves-bia-2025",
           "search": "Éduscol — BIA officiel"
         },
         {
@@ -935,6 +1016,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "Manuel",
+          "url": "https://pedagogie.ac-montpellier.fr/manuel-du-brevet-dinitiation-laeronautique",
           "search": "Académie de Montpellier — Manuel BIA"
         },
         {
@@ -953,6 +1035,7 @@
           "access": "Gratuit",
           "lang": "fr",
           "kind": "QCM",
+          "url": "https://www.france-bia.com/revisions-bia",
           "search": "France-BIA — Quiz gratuits"
         },
         {
