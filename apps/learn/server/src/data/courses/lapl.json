@@ -1,0 +1,27 @@
+{
+  "id": "lapl",
+  "type": "quiz",
+  "title": "LAPL(A) / PPL(A)",
+  "lang_name": "théorique avion",
+  "flag": "✈️",
+  "tts_lang": null,
+  "unlock": "unit",
+  "library": "lapl",
+  "description": "Le théorique commun LAPL(A) et PPL(A) : les 9 matières de l'examen DGAC, avec fiches de cours, QCM corrigés et examens blancs au format officiel.",
+  "disclaimer": "Questions d'entraînement originales, rédigées pour cette application. Ce ne sont pas les questions officielles de la DGAC : vérifiez toujours la réglementation dans les textes en vigueur (SERA, Part-FCL, Part-NCO).",
+  "exam": {
+    "pass_percent": 75,
+    "since": "2023-12-04",
+    "subjects": [
+      { "unit": "u1", "title": "Droit aérien", "questions": 20, "minutes": 30 },
+      { "unit": "u2", "title": "Performance humaine", "questions": 12, "minutes": 18 },
+      { "unit": "u3", "title": "Météorologie", "questions": 20, "minutes": 30 },
+      { "unit": "u4", "title": "Communications", "questions": 8, "minutes": 12 },
+      { "unit": "u5", "title": "Navigation", "questions": 20, "minutes": 50 },
+      { "unit": "u6", "title": "Principes du vol", "questions": 12, "minutes": 18 },
+      { "unit": "u7", "title": "Procédures opérationnelles", "questions": 12, "minutes": 18 },
+      { "unit": "u8", "title": "Performances et préparation du vol", "questions": 12, "minutes": 18 },
+      { "unit": "u9", "title": "Connaissance générale de l'aéronef", "questions": 12, "minutes": 18 }
+    ]
+  }
+}

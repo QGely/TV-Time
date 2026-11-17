@@ -1,0 +1,757 @@
+{
+  "id": "lapl",
+  "units": [
+    {
+      "id": "u4",
+      "title": "Communications",
+      "description": "Les communications radio du pilote VFR : bases de la radiotéléphonie, phraséologie, urgence, détresse et panne radio, services et propagation VHF (examen : 8 questions, 12 min).",
+      "color": "#ff9600",
+      "skills": [
+        {
+          "id": "u4s1",
+          "title": "Bases de la radiotéléphonie",
+          "icon": "🎙️",
+          "tips": "La radiotéléphonie suit les règles de l'OACI (annexe 10), reprises par SERA. On écoute avant d'émettre, on prépare son message, on appuie sur l'alternat avant de parler et on ne le relâche qu'à la fin : un micro bloqué paralyse la fréquence. On parle d'un ton égal, sans précipitation.\n\nAlphabet OACI : Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.\n\nChiffres en anglais : « tree » pour 3, « fife » pour 5, « niner » pour 9 ; la virgule se dit « decimal » (« décimale »).\n• Altitudes, hauteurs de nuages, visibilités : milliers et centaines ronds avec « thousand » et « hundred » (1 500 ft = « one thousand five hundred feet »).\n• Caps et calages : chiffre par chiffre (cap 090 = « zero niner zero » ; QNH 1009 = « one zero zero niner »).\n• Fréquences : chiffre par chiffre, en donnant les six chiffres, sauf si les deux derniers sont des zéros : 118,025 = « one one eight decimal zero two five » ; 119,700 = « one one niner decimal seven ».\n\nHeure : toujours en UTC. En métropole, l'heure légale vaut UTC + 1 en hiver et UTC + 2 en été. On donne normalement les minutes seules, et l'heure complète en cas de doute.\n\nÉchelle de lisibilité (réponse à « Comment me recevez-vous ? ») :\n• 1 : illisible\n• 2 : lisible par instants\n• 3 : lisible mais difficilement\n• 4 : lisible\n• 5 : parfaitement lisible\n\nIndicatifs : on nomme d'abord la station appelée, puis son propre indicatif (« Bordeaux Information, F-GJLM »). L'indicatif complet d'un avion léger est son immatriculation. L'indicatif abrégé garde le premier caractère et au moins les deux derniers (F-GJLM devient F-LM) ; on ne l'utilise qu'après que la station au sol l'a employé. Des abréviations usuelles comme QNH, QFE, VFR, ATIS ou CAVOK s'énoncent directement, sans alphabet phonétique.\n\nCollationnement (SERA.14055) : on répète, suivis de son indicatif, les éléments liés à la sécurité :\n• autorisations de route, notamment de transit ;\n• autorisations et instructions pour entrer sur une piste, y atterrir, en décoller, s'arrêter avant, la traverser, y rouler ou y remonter ;\n• piste en service, calages altimétriques, codes transpondeur, nouvelles fréquences ;\n• instructions de niveau, de cap et de vitesse.\nLe contrôleur écoute le collationnement et corrige toute erreur. « Reçu » (roger) ne remplace jamais un collationnement obligatoire ; une information de trafic ou de vent n'a pas à être collationnée.",
+          "vocab": [
+            {
+              "term": "Alphabet OACI",
+              "translation": "Mots codés d'Alfa à Zulu pour épeler sans ambiguïté"
+            },
+            {
+              "term": "Alternat",
+              "translation": "Bouton d'émission : appuyé on parle, relâché on écoute"
+            },
+            {
+              "term": "Collationnement",
+              "translation": "Répétition d'un message pour confirmer sa bonne réception"
+            },
+            {
+              "term": "Indicatif abrégé",
+              "translation": "1er caractère + au moins les 2 derniers (F-GJLM → F-LM)"
+            },
+            {
+              "term": "UTC",
+              "translation": "Temps universel coordonné, heure de référence en aviation"
+            },
+            {
+              "term": "Lisibilité",
+              "translation": "Qualité de réception notée de 1 (illisible) à 5 (parfaite)"
+            },
+            {
+              "term": "Decimal",
+              "translation": "Séparateur des fréquences (« décimale » en français)"
+            },
+            {
+              "term": "Niner",
+              "translation": "Prononciation anglaise du chiffre 9 en radiotéléphonie"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u4s1q01",
+              "q": "Parmi ces séries de mots, laquelle appartient entièrement à l'alphabet phonétique OACI ?",
+              "choices": [
+                "Queen – Romeo – Sugar – Tango",
+                "Quebec – Roger – Sierra – Tango",
+                "Quebec – Romeo – Sierra – Tango",
+                "Quebec – Romeo – Sierra – Tokyo"
+              ],
+              "answer": 2,
+              "explanation": "Les lettres Q, R, S et T se disent Quebec, Romeo, Sierra, Tango. « Queen », « Roger » et « Sugar » viennent d'un ancien alphabet abandonné : seul l'alphabet OACI est réglementaire."
+            },
+            {
+              "id": "u4s1q02",
+              "q": "Comment annoncez-vous en anglais la fréquence 118,025 MHz ?",
+              "choices": [
+                "One one eight decimal zero two five",
+                "One one eight decimal zero two",
+                "One eighteen decimal zero two five",
+                "One one eight decimal two five"
+              ],
+              "answer": 0,
+              "explanation": "Chaque chiffre est énoncé séparément et l'on donne les six chiffres de la fréquence, sauf si les deux derniers sont des zéros. Ici, le 5 final doit être annoncé."
+            },
+            {
+              "id": "u4s1q03",
+              "q": "Comment annoncez-vous en anglais une altitude de 1 500 ft ?",
+              "choices": [
+                "Fifteen hundred feet",
+                "One five zero zero feet",
+                "One point five thousand feet",
+                "One thousand five hundred feet"
+              ],
+              "answer": 3,
+              "explanation": "Pour une altitude, on énonce le chiffre des milliers suivi de « thousand », puis celui des centaines suivi de « hundred ». « Fifteen hundred » n'est pas conforme à la phraséologie OACI."
+            },
+            {
+              "id": "u4s1q04",
+              "q": "Le contrôleur vous transmet un QNH de 1009 hPa. Comment le collationnez-vous en anglais ?",
+              "choices": [
+                "QNH ten zero nine",
+                "QNH one zero zero niner",
+                "QNH one thousand niner",
+                "QNH one double zero niner"
+              ],
+              "answer": 1,
+              "explanation": "Un calage altimétrique s'énonce chiffre par chiffre, le 9 se prononçant « niner ». « Thousand » est réservé aux altitudes, hauteurs et visibilités rondes, et « double » n'existe pas en phraséologie OACI."
+            },
+            {
+              "id": "u4s1q05",
+              "q": "En juillet, vous décollez de Toulouse à 15 h 40, heure légale française. À quelle heure UTC correspond ce décollage ?",
+              "choices": [
+                "17 h 40 UTC",
+                "14 h 40 UTC",
+                "13 h 40 UTC",
+                "15 h 40 UTC"
+              ],
+              "answer": 2,
+              "explanation": "En été, l'heure légale en métropole vaut UTC + 2 : UTC = 15 h 40 − 2 h = 13 h 40. En hiver, on ne retrancherait qu'une heure."
+            },
+            {
+              "id": "u4s1q06",
+              "q": "En janvier, un NOTAM annonce l'activation d'une zone réglementée de 0930 à 1130 UTC. En heure légale française (métropole), la zone est active :",
+              "choices": [
+                "de 10 h 30 à 12 h 30",
+                "de 8 h 30 à 10 h 30",
+                "de 11 h 30 à 13 h 30",
+                "de 9 h 30 à 11 h 30"
+              ],
+              "answer": 0,
+              "explanation": "En hiver, l'heure légale vaut UTC + 1 : 0930 UTC = 10 h 30 et 1130 UTC = 12 h 30. NOTAM, plans de vol et messages radio sont toujours exprimés en UTC."
+            },
+            {
+              "id": "u4s1q07",
+              "q": "En réponse à votre essai radio, le contrôleur vous annonce une lisibilité 3. Comment vous reçoit-il ?",
+              "choices": [
+                "Parfaitement lisible",
+                "Lisible par instants seulement",
+                "Lisible, sans difficulté",
+                "Lisible mais difficilement"
+              ],
+              "answer": 3,
+              "explanation": "Échelle de lisibilité : 1 illisible, 2 lisible par instants, 3 lisible mais difficilement, 4 lisible, 5 parfaitement lisible."
+            },
+            {
+              "id": "u4s1q08",
+              "q": "Quel est l'indicatif abrégé de l'avion F-GJLM ?",
+              "choices": [
+                "F-GJ",
+                "F-LM",
+                "GJLM",
+                "F-GM"
+              ],
+              "answer": 1,
+              "explanation": "L'indicatif abrégé reprend le premier caractère de l'immatriculation et au moins les deux derniers : F-GJLM devient F-LM."
+            },
+            {
+              "id": "u4s1q09",
+              "q": "Après votre premier appel « Bordeaux Information, F-GJLM », à partir de quand pouvez-vous utiliser l'indicatif abrégé F-LM ?",
+              "choices": [
+                "Dès votre deuxième message, dans tous les cas",
+                "À votre initiative, dès que la fréquence est chargée",
+                "Seulement après que la station au sol vous a appelé ainsi",
+                "Jamais avec un organisme d'information de vol"
+              ],
+              "answer": 2,
+              "explanation": "Un aéronef n'emploie son indicatif abrégé qu'après que la station au sol l'a utilisé la première, une fois la communication établie et s'il n'y a pas de risque de confusion."
+            },
+            {
+              "id": "u4s1q10",
+              "q": "Le contrôleur vous dit : « F-LM, affichez 4521, QNH 1018 ». Quelle réponse est correcte ?",
+              "choices": [
+                "4521, QNH 1018, F-LM",
+                "Reçu, F-LM",
+                "Wilco, F-LM",
+                "Affichons, F-LM"
+              ],
+              "answer": 0,
+              "explanation": "Le code transpondeur et le calage altimétrique font partie des éléments à collationner obligatoirement. « Reçu » ou « wilco » ne suffisent pas : on répète les valeurs, suivies de son indicatif."
+            },
+            {
+              "id": "u4s1q11",
+              "q": "Parmi ces éléments transmis par le contrôle, lequel n'est pas à collationner obligatoirement ?",
+              "choices": [
+                "Un nouveau code transpondeur",
+                "Une nouvelle fréquence à contacter",
+                "Le calage altimétrique",
+                "Une information de trafic"
+              ],
+              "answer": 3,
+              "explanation": "SERA impose de collationner notamment autorisations, pistes, calages, codes transpondeur, fréquences, caps et niveaux. Une information de trafic s'acquitte simplement, en précisant si le trafic est en vue."
+            },
+            {
+              "id": "u4s1q12",
+              "q": "Quelle technique d'émission est correcte ?",
+              "choices": [
+                "Commencer à parler, puis appuyer sur l'alternat pour gagner du temps",
+                "Appuyer sur l'alternat avant de parler et ne le relâcher qu'une fois le message terminé",
+                "Relâcher l'alternat à chaque pause pour vérifier que la fréquence est libre",
+                "Parler plus vite qu'en conversation pour libérer la fréquence"
+              ],
+              "answer": 1,
+              "explanation": "L'alternat doit être enfoncé avant de parler, sinon le début du message (souvent l'indicatif) est perdu, et relâché seulement à la fin. On parle à débit régulier, sans précipitation, pour être compris du premier coup."
+            }
+          ]
+        },
+        {
+          "id": "u4s2",
+          "title": "Phraséologie VFR",
+          "icon": "🗣️",
+          "tips": "Un message radio répond toujours à quatre questions : qui j'appelle, qui je suis, où je suis, ce que je veux. Il doit être bref, préparé et conforme à la phraséologie.\n\nPremier contact : indicatif de la station, indicatif complet de l'avion, puis type d'avion, position, altitude, lettre ATIS reçue et demande. Sur une fréquence chargée, on peut se limiter d'abord à un appel court (« Toussus Tour, F-GJLM ») et attendre d'être invité à poursuivre.\n\nDépart :\n• demande de mise en route ou de roulage : position au parking, lettre ATIS, intentions (tours de piste, vol local, navigation vers…) ;\n• « roulez point d'arrêt A piste 24 » n'autorise jamais à entrer sur la piste : on s'arrête au point d'arrêt ;\n• au point d'arrêt, on se déclare « prêt au départ » (ready for departure) : le mot « décollage » est réservé à l'autorisation de décollage et à son annulation ;\n• « alignez-vous et attendez » (line up and wait) n'autorise pas à décoller.\nOn collationne mot pour mot « autorisé décollage piste 24 » et « autorisé atterrissage piste 24 ».\n\nArrivée : on rejoint les points d'entrée publiés sur la carte VAC, on s'intègre dans le circuit selon les instructions reçues (vent arrière, base, finale directe…) et on rappelle les positions demandées (« rappelez vent arrière »).\n\nCompte rendu de position (ordre OACI) : identification, position, heure, niveau ou altitude, puis prochaine position et heure estimée.\n\nTransit en espace contrôlé : en classes C et D, le vol VFR doit obtenir une clairance avant d'entrer et garder l'écoute permanente ; on collationne la route, l'altitude, le QNH et le code transpondeur. Sans clairance, on reste dehors.\n\nExpressions conventionnelles :\n• Roger (reçu) : j'ai reçu tout votre dernier message\n• Wilco : compris, je vais m'y conformer\n• Affirm (affirme) : oui\n• Negative (négatif) : non, permission refusée, ou ce n'est pas correct\n• Standby (attendez) : attendez, je vous rappelle ; ni accord ni refus\n• Say again (répétez) : répétez tout ou partie de votre message\n• Confirm (confirmez) : je demande la vérification de…\n• Correction : une erreur a été commise, la version correcte est…\n\nAuto-information : sur un aérodrome sans organisme ATS en service, chaque pilote annonce sur la fréquence publiée sa position et ses intentions aux points clés (arrivée, verticale, vent arrière, base, finale, piste dégagée ; roulage, alignement et décollage, sortie du circuit). Ces messages s'adressent à tous, n'appellent pas de réponse et ne dispensent jamais de la surveillance visuelle.",
+          "vocab": [
+            {
+              "term": "Roger",
+              "translation": "Reçu : j'ai reçu tout votre dernier message"
+            },
+            {
+              "term": "Wilco",
+              "translation": "Compris, je vais m'y conformer (will comply)"
+            },
+            {
+              "term": "Affirm",
+              "translation": "Affirme : oui"
+            },
+            {
+              "term": "Negative",
+              "translation": "Négatif : non, permission refusée ou ce n'est pas correct"
+            },
+            {
+              "term": "Standby",
+              "translation": "Attendez, je vous rappelle (ni accord ni refus)"
+            },
+            {
+              "term": "Say again",
+              "translation": "Répétez tout ou partie de votre dernier message"
+            },
+            {
+              "term": "Point d'arrêt",
+              "translation": "Point avant la piste à ne pas franchir sans autorisation"
+            },
+            {
+              "term": "Auto-information",
+              "translation": "Annonces de position et d'intentions sans organisme ATS"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u4s2q01",
+              "q": "Vous appelez pour la première fois la tour de Toussus. Par quoi commence votre message ?",
+              "choices": [
+                "Votre indicatif, puis celui de la station appelée",
+                "Votre indicatif seul, la station se reconnaissant à sa fréquence",
+                "La lettre ATIS, puis votre indicatif",
+                "L'indicatif de la station appelée, puis votre indicatif"
+              ],
+              "answer": 3,
+              "explanation": "Un appel commence par l'indicatif de la station appelée, suivi de celui de la station qui appelle : « Toussus Tour, F-GJLM ». Au premier contact, l'indicatif de l'avion est donné en entier."
+            },
+            {
+              "id": "u4s2q02",
+              "q": "La tour vous demande : « F-LM, rappelez en vue du terrain ». Vous répondez « Wilco, F-LM ». Que signifie votre réponse ?",
+              "choices": [
+                "J'ai compris votre message et je m'y conformerai",
+                "J'ai reçu votre message, sans plus",
+                "Je ne peux pas me conformer à votre instruction",
+                "Répétez votre dernier message"
+              ],
+              "answer": 0,
+              "explanation": "« Wilco » (will comply) signifie que le message est compris et sera exécuté. « Roger » indique seulement la réception, « unable » une impossibilité et « say again » une demande de répétition."
+            },
+            {
+              "id": "u4s2q03",
+              "q": "Dans laquelle de ces situations la seule réponse « Reçu » (roger) est-elle insuffisante ?",
+              "choices": [
+                "Pour accuser réception d'une information de trafic",
+                "Pour accuser réception d'une information sur des travaux en bord de piste",
+                "Pour accuser réception d'une autorisation d'atterrissage",
+                "Pour accuser réception de la direction et de la force du vent"
+              ],
+              "answer": 2,
+              "explanation": "« Roger » signifie seulement « j'ai reçu tout votre dernier message ». Il ne remplace jamais un collationnement obligatoire, comme celui d'une autorisation d'atterrissage avec la piste."
+            },
+            {
+              "id": "u4s2q04",
+              "q": "Vous communiquez en anglais. Le contrôleur demande : « F-LM, confirm you have information Charlie ». Vous n'avez écouté que l'information Bravo. Quelle réponse est correcte ?",
+              "choices": [
+                "Affirm, F-LM",
+                "Negative, information Bravo, F-LM",
+                "Roger, F-LM",
+                "Wilco, F-LM"
+              ],
+              "answer": 1,
+              "explanation": "À une question fermée, on répond « affirm » (oui) ou « negative » (non), jamais « roger ». Ici la réponse est non ; préciser la lettre détenue permet au contrôleur de vous donner les informations à jour."
+            },
+            {
+              "id": "u4s2q05",
+              "q": "Le contrôle vous dit : « F-LM, roulez point d'arrêt Alpha piste 24 ». Jusqu'où êtes-vous autorisé à rouler ?",
+              "choices": [
+                "Jusqu'au point d'arrêt Alpha, sans entrer sur la piste",
+                "Jusqu'au seuil de piste 24, où vous vous alignez",
+                "Jusqu'au point d'arrêt, puis sur la piste si elle est libre",
+                "Jusqu'à la sortie de l'aire de trafic seulement"
+              ],
+              "answer": 0,
+              "explanation": "Une autorisation de roulage vers un point d'arrêt ne permet jamais d'entrer sur la piste : il faut une autorisation explicite d'alignement ou de décollage. L'instruction, qui contient la piste, se collationne."
+            },
+            {
+              "id": "u4s2q06",
+              "q": "Vous demandez un transit dans une CTR ; le contrôleur répond : « F-LM, standby ». Que faites-vous ?",
+              "choices": [
+                "Vous entrez dans la CTR : « standby » vaut acceptation du transit",
+                "Vous répétez aussitôt votre demande, car elle n'a pas été comprise",
+                "Vous renoncez et contournez la CTR : le transit vous est refusé",
+                "Vous restez hors de la CTR en attendant que le contrôleur vous rappelle"
+              ],
+              "answer": 3,
+              "explanation": "« Standby » (attendez) signifie « attendez, je vous rappelle » : ce n'est ni un accord ni un refus. Sans clairance, on reste hors de l'espace contrôlé."
+            },
+            {
+              "id": "u4s2q07",
+              "q": "Vous n'avez pas compris la fréquence que vient de vous donner le contrôleur. Que lui dites-vous ?",
+              "choices": [
+                "Read back frequency, F-LM",
+                "Disregard frequency, F-LM",
+                "Say again frequency, F-LM",
+                "Correction frequency, F-LM"
+              ],
+              "answer": 2,
+              "explanation": "« Say again » (répétez) demande de répéter tout ou partie du dernier message. « Read back » demande au correspondant de collationner, « disregard » signifie « ignorez » et « correction » signale une erreur dans son propre message."
+            },
+            {
+              "id": "u4s2q08",
+              "q": "Au point d'arrêt, prêt à partir, vous appelez la tour en anglais. Quelle formulation est correcte ?",
+              "choices": [
+                "F-LM, ready for take-off",
+                "F-LM, ready for departure",
+                "F-LM, cleared for take-off",
+                "F-LM, request take-off now"
+              ],
+              "answer": 1,
+              "explanation": "Le mot « take-off » (décollage) est réservé à l'autorisation de décollage et à son annulation, pour éviter tout malentendu. Le pilote annonce « ready for departure » (prêt au départ)."
+            },
+            {
+              "id": "u4s2q09",
+              "q": "La tour vous transmet : « F-LM, vent 240 degrés 8 nœuds, piste 24 autorisé atterrissage ». Quel collationnement est correct ?",
+              "choices": [
+                "Piste 24, autorisé atterrissage, F-LM",
+                "Reçu, F-LM",
+                "Vent 240 degrés 8 nœuds, F-LM",
+                "Autorisé, F-LM"
+              ],
+              "answer": 0,
+              "explanation": "L'autorisation d'atterrissage et la piste font partie des éléments à collationner obligatoirement. Le vent, simple information, n'a pas à être collationné."
+            },
+            {
+              "id": "u4s2q10",
+              "q": "Selon la phraséologie OACI, dans quel ordre donne-t-on les éléments d'un compte rendu de position ?",
+              "choices": [
+                "Position, identification, heure, niveau ou altitude, puis cap et vitesse",
+                "Identification, niveau ou altitude, position, puis carburant restant et autonomie",
+                "Identification, cap, vitesse, position, puis heure estimée à destination",
+                "Identification, position, heure, niveau ou altitude, puis prochaine position et heure estimée"
+              ],
+              "answer": 3,
+              "explanation": "Un compte rendu de position comprend dans l'ordre : identification, position, heure, niveau ou altitude, puis prochaine position et heure estimée de passage."
+            },
+            {
+              "id": "u4s2q11",
+              "q": "Vous souhaitez traverser en VFR une CTR de classe D. Que devez-vous faire ?",
+              "choices": [
+                "Annoncer votre entrée en auto-information, sans attendre de réponse",
+                "Obtenir une clairance avant d'y entrer et garder l'écoute permanente de la fréquence",
+                "Afficher 7000 et entrer : en classe D, le VFR n'a pas besoin de clairance",
+                "Obtenir une clairance uniquement si la visibilité est inférieure à 5 km"
+              ],
+              "answer": 1,
+              "explanation": "En classe D, les vols VFR sont soumis à clairance et doivent maintenir des communications air-sol permanentes. On collationne la clairance de transit : route, altitude, QNH et code transpondeur."
+            },
+            {
+              "id": "u4s2q12",
+              "q": "Vous arrivez sur un aérodrome sans organisme ATS en service. Quelle est la bonne pratique radio ?",
+              "choices": [
+                "Attendre qu'un pilote présent au sol vous autorise à vous intégrer et à atterrir",
+                "Garder le silence radio pour ne pas encombrer la fréquence des autres pilotes",
+                "Annoncer vos positions et intentions sur la fréquence publiée, sans attendre de réponse",
+                "Annoncer votre arrivée sur 121,5 MHz, la fréquence veillée par tous les pilotes"
+              ],
+              "answer": 2,
+              "explanation": "En auto-information, chaque pilote annonce sa position et ses intentions aux points clés du circuit sur la fréquence publiée (carte VAC). Ces messages ne sont pas des autorisations et ne dispensent pas de la surveillance visuelle."
+            }
+          ]
+        },
+        {
+          "id": "u4s3",
+          "title": "Urgence, détresse et panne radio",
+          "icon": "🆘",
+          "tips": "Détresse : l'aéronef est menacé d'un danger grave et/ou imminent et a besoin d'une assistance immédiate (arrêt moteur imposant un atterrissage forcé, feu, perte de contrôle). Signal : MAYDAY, de préférence trois fois.\nUrgence : la sécurité de l'aéronef, ou d'une personne à bord ou en vue, est en jeu, sans besoin d'assistance immédiate (vibrations moteur, passager malade). Signal : PAN PAN, de préférence trois fois.\n\nContenu du message, si possible dans cet ordre (même structure pour l'urgence) :\n• nom de la station appelée, si le temps le permet ;\n• indicatif de l'aéronef ;\n• nature de la détresse ;\n• intentions du commandant de bord ;\n• position, niveau ou altitude, et cap.\nOn ajoute si possible tout renseignement utile : personnes à bord, autonomie restante.\n\nFréquence : on émet d'abord sur la fréquence en usage, où l'on est déjà écouté ; sans réponse, sur 121,5 MHz, fréquence internationale d'urgence. Transpondeur : 7700 (détresse ou urgence), en particulier si aucun code ne vous a été attribué. Rappel : 7500 intervention illicite, 7600 panne radio.\n\nGestion de la fréquence :\n• l'aéronef en détresse ou la station qui dirige le trafic de détresse peut imposer le silence : « STOP TRANSMITTING – MAYDAY » ; les autres stations écoutent et n'émettent que pour aider ;\n• l'aéronef qui n'est plus en détresse annule son message ;\n• la station qui dirigeait les échanges annonce « DISTRESS TRAFFIC ENDED » (fin du trafic de détresse).\nPriorité des communications : détresse, urgence, radiogoniométrie, sécurité des vols, météorologie, régularité des vols.\n\nPanne radio :\n• vérifier volume, squelch, fréquence affichée, casque et prises, disjoncteur ; essayer une autre fréquence ;\n• afficher 7600 ;\n• émettre à l'aveugle (« transmitting blind ») chaque message deux fois, car seul le récepteur est peut-être en panne. Panne de récepteur avérée : « transmitting blind due to receiver failure », message répété et heure du prochain message ;\n• en VMC : poursuivre en VMC, atterrir sur l'aérodrome approprié le plus proche et signaler son arrivée à l'organisme ATS par le moyen le plus rapide.\n\nSignaux lumineux de la tour, en vol : vert fixe, autorisé à atterrir ; éclats verts, revenez pour atterrir ; rouge fixe, cédez le passage et continuez à tourner ; éclats rouges, aérodrome dangereux, n'atterrissez pas ; éclats blancs, atterrissez et gagnez l'aire de trafic.\nAccusé de réception : de jour, balancer les ailes en vol (sauf en base et en finale), manœuvrer ailerons ou gouverne de direction au sol ; de nuit, faire clignoter deux fois les phares ou les feux de navigation.",
+          "vocab": [
+            {
+              "term": "MAYDAY",
+              "translation": "Signal de détresse : danger grave et imminent, aide immédiate"
+            },
+            {
+              "term": "PAN PAN",
+              "translation": "Signal d'urgence : sécurité en jeu, sans aide immédiate"
+            },
+            {
+              "term": "121,5 MHz",
+              "translation": "Fréquence internationale d'urgence aéronautique"
+            },
+            {
+              "term": "7700",
+              "translation": "Code transpondeur de détresse ou d'urgence"
+            },
+            {
+              "term": "7600",
+              "translation": "Code transpondeur de panne de radiocommunication"
+            },
+            {
+              "term": "Transmitting blind",
+              "translation": "Émission à l'aveugle, chaque message répété deux fois"
+            },
+            {
+              "term": "Distress traffic ended",
+              "translation": "Annonce de la fin du trafic de détresse"
+            },
+            {
+              "term": "ELT",
+              "translation": "Balise de détresse de l'avion (406 MHz et souvent 121,5 MHz)"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u4s3q01",
+              "q": "Après « MAYDAY, MAYDAY, MAYDAY », dans quel ordre donne-t-on, si possible, les éléments d'un message de détresse ?",
+              "choices": [
+                "Indicatif, position, nature de la détresse, station appelée, intentions",
+                "Station appelée, indicatif, position, niveau et cap, intentions, nature de la détresse",
+                "Station appelée, indicatif, nature de la détresse, intentions, position, niveau et cap",
+                "Nature de la détresse, indicatif, intentions, station appelée, position, niveau et cap"
+              ],
+              "answer": 2,
+              "explanation": "L'ordre OACI est : station appelée (si le temps le permet), indicatif, nature de la détresse, intentions du commandant de bord, puis position, niveau et cap. On peut y ajouter les personnes à bord et l'autonomie."
+            },
+            {
+              "id": "u4s3q02",
+              "q": "Dans laquelle de ces situations un message d'urgence (PAN PAN) est-il plus approprié qu'un message de détresse ?",
+              "choices": [
+                "Le moteur vibre anormalement mais l'avion tient son palier ; vous vous déroutez vers un aérodrome proche",
+                "Le moteur s'est arrêté et un atterrissage dans un champ est inévitable",
+                "Un feu moteur s'est déclaré en vol",
+                "La gouverne de profondeur est bloquée et vous contrôlez difficilement l'assiette"
+              ],
+              "answer": 0,
+              "explanation": "L'urgence concerne la sécurité de l'avion ou d'une personne sans exiger d'assistance immédiate. Arrêt moteur avec atterrissage forcé, feu ou perte de contrôle sont des dangers graves et imminents : c'est la détresse (MAYDAY)."
+            },
+            {
+              "id": "u4s3q03",
+              "q": "Après avoir lancé un MAYDAY pour une panne moteur, vous parvenez à redémarrer et la situation redevient normale. Que devez-vous faire ?",
+              "choices": [
+                "Rien : l'organisme comprendra en voyant que vous poursuivez votre route",
+                "Couper la radio quelques minutes pour libérer la fréquence aux secours",
+                "Afficher 7600 sur le transpondeur pour signaler la fin de la détresse",
+                "Annoncer sur la fréquence que vous n'êtes plus en détresse, pour annuler votre message"
+              ],
+              "answer": 3,
+              "explanation": "Un aéronef qui n'est plus en détresse doit transmettre un message annulant la situation de détresse, afin que les secours ne soient pas engagés inutilement."
+            },
+            {
+              "id": "u4s3q04",
+              "q": "Vous êtes en contact avec Lyon Information quand votre moteur s'arrête. Où lancez-vous votre premier MAYDAY ?",
+              "choices": [
+                "Directement sur 121,5 MHz",
+                "Sur la fréquence de Lyon Information, en cours d'utilisation",
+                "Sur 123,1 MHz, fréquence de recherche et sauvetage",
+                "Sur la fréquence de la tour de l'aérodrome le plus proche"
+              ],
+              "answer": 1,
+              "explanation": "Le premier message de détresse s'émet sur la fréquence air-sol en usage, où vous êtes déjà écouté et identifié. On passe sur 121,5 MHz si l'on n'obtient pas de réponse."
+            },
+            {
+              "id": "u4s3q05",
+              "q": "Vous n'êtes en contact avec aucun organisme et aucun code transpondeur ne vous a été attribué. Vous lancez un MAYDAY. Quel code affichez-vous ?",
+              "choices": [
+                "7700",
+                "7600",
+                "7500",
+                "7000"
+              ],
+              "answer": 0,
+              "explanation": "7700 signale une situation de détresse ou d'urgence. 7600 indique une panne radio, 7500 une intervention illicite, et 7000 est le code VFR de base."
+            },
+            {
+              "id": "u4s3q06",
+              "q": "Pendant une détresse, des stations encombrent la fréquence. Qui peut leur imposer le silence ?",
+              "choices": [
+                "Uniquement le centre de coordination de sauvetage",
+                "N'importe quel aéronef présent sur la fréquence",
+                "L'aéronef en détresse ou la station qui dirige le trafic de détresse",
+                "Seulement un aéronef militaire présent dans la zone"
+              ],
+              "answer": 2,
+              "explanation": "L'aéronef en détresse ou la station qui dirige le trafic de détresse peut imposer le silence par « STOP TRANSMITTING – MAYDAY ». Les autres stations gardent l'écoute et n'émettent que pour aider."
+            },
+            {
+              "id": "u4s3q07",
+              "q": "Comment la station qui dirigeait les échanges annonce-t-elle que la situation de détresse est terminée ?",
+              "choices": [
+                "« STOP TRANSMITTING – MAYDAY »",
+                "« PAN PAN », répété trois fois",
+                "« SILENCE FINI »",
+                "« DISTRESS TRAFFIC ENDED »"
+              ],
+              "answer": 3,
+              "explanation": "La fin du trafic de détresse est annoncée par « DISTRESS TRAFFIC ENDED ». « Stop transmitting – Mayday » impose au contraire le silence, et « silence fini » relève du vocabulaire maritime."
+            },
+            {
+              "id": "u4s3q08",
+              "q": "En difficulté, vous ne parvenez à joindre aucun organisme sur les fréquences habituelles. Quelle fréquence utilisez-vous ?",
+              "choices": [
+                "123,45 MHz",
+                "121,5 MHz",
+                "406 MHz",
+                "108,0 MHz"
+              ],
+              "answer": 1,
+              "explanation": "121,5 MHz est la fréquence internationale d'urgence aéronautique, veillée par les centres de contrôle et de nombreux organismes ATS. 406 MHz sert aux balises de détresse, 123,45 MHz aux communications air-air et 108 MHz à la radionavigation."
+            },
+            {
+              "id": "u4s3q09",
+              "q": "En VFR et en VMC, votre radio tombe définitivement en panne. Quelle est la procédure générale prévue par SERA ?",
+              "choices": [
+                "Afficher 7600, poursuivre en VMC, atterrir sur l'aérodrome approprié le plus proche et signaler votre arrivée à l'organisme ATS",
+                "Afficher 7700 et rester en attente au-dessus de votre position jusqu'à l'arrivée d'un avion d'interception",
+                "Afficher 7600, monter au-dessus de la couche nuageuse et poursuivre en IFR vers la destination prévue",
+                "Afficher 7500, revenir à l'aérodrome de départ et y atterrir sans prévenir quiconque"
+              ],
+              "answer": 0,
+              "explanation": "En VMC, l'avion en panne de radiocommunication affiche 7600, poursuit son vol en VMC, atterrit sur l'aérodrome approprié le plus proche et signale son arrivée par le moyen le plus rapide à l'organisme ATS concerné."
+            },
+            {
+              "id": "u4s3q10",
+              "q": "Vous ne recevez plus rien, mais votre émetteur semble fonctionner. Que faites-vous à la radio ?",
+              "choices": [
+                "Vous cessez toute émission pour ne pas brouiller la fréquence",
+                "Vous émettez une seule fois votre position sur 121,5 MHz, puis coupez la radio",
+                "Vous attendez d'être en vue de la tour pour appeler",
+                "Vous émettez à l'aveugle, en annonçant la panne du récepteur et en répétant chaque message"
+              ],
+              "answer": 3,
+              "explanation": "En cas de panne de récepteur, on émet à l'aveugle sur la fréquence en usage : message précédé de « transmitting blind due to receiver failure », répété intégralement, avec l'heure du prochain message prévu."
+            },
+            {
+              "id": "u4s3q11",
+              "q": "En panne radio, vous êtes en vent arrière d'un aérodrome contrôlé. La tour vous adresse une série d'éclats verts. Que signifie ce signal ?",
+              "choices": [
+                "Autorisé à atterrir",
+                "Cédez le passage et continuez à tourner",
+                "Revenez pour atterrir",
+                "Atterrissez et gagnez l'aire de trafic"
+              ],
+              "answer": 2,
+              "explanation": "En vol, des éclats verts signifient « revenez pour atterrir » ; l'autorisation d'atterrir suivra en temps utile. Le vert fixe autorise l'atterrissage, le rouge fixe demande de céder le passage et de continuer à tourner."
+            },
+            {
+              "id": "u4s3q12",
+              "q": "Vous venez d'atterrir en panne radio sur un aérodrome contrôlé. De jour, la tour vous adresse un signal lumineux. Comment en accusez-vous réception au sol ?",
+              "choices": [
+                "En faisant clignoter deux fois vos phares",
+                "En manœuvrant les ailerons ou la gouverne de direction",
+                "En balançant les ailes",
+                "En coupant puis en rallumant le moteur"
+              ],
+              "answer": 1,
+              "explanation": "Au sol, de jour, on accuse réception en manœuvrant les ailerons ou la gouverne de direction ; de nuit, en faisant clignoter deux fois les phares ou les feux de navigation. Le balancement des ailes est réservé au vol."
+            }
+          ]
+        },
+        {
+          "id": "u4s4",
+          "title": "Services, fréquences et propagation",
+          "icon": "📻",
+          "tips": "Bandes de fréquences :\n• communications VHF : 118,000 à 136,975 MHz, en modulation d'amplitude ; canaux espacés de 25 kHz ou de 8,33 kHz (trois canaux de 8,33 kHz dans 25 kHz) ;\n• 108 à 117,975 MHz : radionavigation (VOR, ILS) ;\n• HF (3 à 30 MHz) : liaisons à grande distance par réflexion sur l'ionosphère.\nLongueur d'onde : λ (m) = 300 / f (MHz). À 120 MHz, λ = 2,5 m : la VHF utilise des ondes métriques.\n\nPropagation VHF : en ligne droite, en portée optique. Le relief et la courbure de la Terre arrêtent le signal ; il n'y a ni onde de sol utile ni réflexion sur l'ionosphère. La portée croît avec la hauteur :\n• portée (NM) ≈ 1,23 × √h, h étant la hauteur de l'avion en ft ;\n• avec une antenne surélevée : portée ≈ 1,23 × (√h avion + √h antenne).\nExemple : à 2 500 ft au-dessus d'un terrain plat, 1,23 × 50 ≈ 62 NM. En montagne, une crête peut masquer une station proche.\n\nOrganismes et indicatifs :\n• contrôle : « Sol » (aire de manœuvre), « Tour » (aérodrome), « Approche » (arrivées et départs), « Contrôle » (contrôle régional, assuré en France par les CRNA). Ils délivrent des clairances ;\n• « Information » : service d'information de vol. Les SIV (secteurs d'information de vol) rendent l'information de vol et l'alerte, sans clairance ni séparation ; le contact y est en général facultatif mais vivement recommandé ;\n• AFIS : sur certains aérodromes non contrôlés, un agent rend l'information de vol et l'alerte ; il ne délivre aucune autorisation, le pilote annonce ses intentions ;\n• ATIS : message enregistré diffusé en continu (piste, vent, visibilité, nuages, températures, QNH, niveau de transition, travaux…), identifié par une lettre qui change à chaque mise à jour ; on annonce la lettre reçue au premier contact.\n\nFréquences de secours :\n• 121,5 MHz : fréquence internationale d'urgence, veillée par les centres de contrôle et de nombreux organismes ATS ;\n• 123,1 MHz : fréquence auxiliaire des opérations de recherche et de sauvetage ;\n• 406 MHz : balises de détresse (ELT), détectées par satellite ; la plupart émettent aussi sur 121,5 MHz pour le radioralliement.\n\nLangues : selon SERA, les communications air-sol se font en anglais ou dans la langue de la station au sol, et les langues disponibles sur chaque station sont publiées dans l'AIP. En France, on utilise le français ou l'anglais, mais l'anglais n'est pas disponible partout. Pour parler anglais, le pilote doit détenir une mention de compétence linguistique en anglais (FCL.055).",
+          "vocab": [
+            {
+              "term": "VHF",
+              "translation": "Bande 30-300 MHz ; radiotéléphonie aéronautique de 118 à 137 MHz"
+            },
+            {
+              "term": "Portée optique",
+              "translation": "Propagation en ligne droite, limitée par le relief et l'horizon"
+            },
+            {
+              "term": "ATIS",
+              "translation": "Diffusion automatique et continue des informations d'aérodrome"
+            },
+            {
+              "term": "SIV",
+              "translation": "Secteur d'information de vol : information et alerte, sans clairance"
+            },
+            {
+              "term": "AFIS",
+              "translation": "Information de vol d'aérodrome, sans délivrance d'autorisation"
+            },
+            {
+              "term": "8,33 kHz",
+              "translation": "Espacement réduit des canaux VHF : 3 canaux dans 25 kHz"
+            },
+            {
+              "term": "CRNA",
+              "translation": "Centre en route de la navigation aérienne (contrôle régional)"
+            },
+            {
+              "term": "FCL.055",
+              "translation": "Mention de compétence linguistique portée sur la licence"
+            }
+          ],
+          "questions": [
+            {
+              "id": "u4s4q01",
+              "q": "Dans quelle bande de fréquences se trouvent les canaux de radiotéléphonie VHF aéronautique ?",
+              "choices": [
+                "108 à 118 MHz",
+                "118 à 137 MHz",
+                "3 à 30 MHz",
+                "190 à 1 750 kHz"
+              ],
+              "answer": 1,
+              "explanation": "Les communications VHF utilisent les fréquences de 118,000 à 136,975 MHz. La bande 108-118 MHz sert à la radionavigation (VOR, ILS), la HF (3-30 MHz) aux liaisons lointaines et les kilohertz aux NDB."
+            },
+            {
+              "id": "u4s4q02",
+              "q": "Quelle est la longueur d'onde d'une émission sur 125 MHz ? (λ en m = 300 / f en MHz)",
+              "choices": [
+                "0,24 m",
+                "24 m",
+                "240 m",
+                "2,4 m"
+              ],
+              "answer": 3,
+              "explanation": "λ = 300 / 125 = 2,4 m. Les ondes VHF (30 à 300 MHz) ont une longueur d'onde de 1 à 10 m : ce sont des ondes métriques."
+            },
+            {
+              "id": "u4s4q03",
+              "q": "Un avion vole à 3 600 ft au-dessus d'une région plate ; l'antenne de la station est au niveau du sol. Quelle est la portée VHF théorique ? (portée en NM ≈ 1,23 × √h, h en ft)",
+              "choices": [
+                "Environ 7 NM",
+                "Environ 41 NM",
+                "Environ 74 NM",
+                "Environ 148 NM"
+              ],
+              "answer": 2,
+              "explanation": "√3 600 = 60 ; 1,23 × 60 = 73,8 NM, soit environ 74 NM. En VHF, la portée croît avec la racine carrée de la hauteur."
+            },
+            {
+              "id": "u4s4q04",
+              "q": "Un avion vole à 6 400 ft au-dessus d'un relief plat ; l'antenne de la station est à 400 ft au-dessus du sol. Quelle est la portée VHF théorique ? (portée en NM ≈ 1,23 × (√h avion + √h antenne), h en ft)",
+              "choices": [
+                "Environ 123 NM",
+                "Environ 98 NM",
+                "Environ 25 NM",
+                "Environ 246 NM"
+              ],
+              "answer": 0,
+              "explanation": "√6 400 = 80 et √400 = 20 ; 1,23 × (80 + 20) = 1,23 × 100 = 123 NM. Oublier l'antenne donnerait seulement 1,23 × 80 ≈ 98 NM."
+            },
+            {
+              "id": "u4s4q05",
+              "q": "Une station VHF au sol se trouve à 49 NM de vous, en terrain plat. Quelle hauteur minimale devez-vous atteindre, environ, pour pouvoir la contacter ? (portée en NM ≈ 1,23 × √h, h en ft)",
+              "choices": [
+                "400 ft",
+                "4 000 ft",
+                "2 500 ft",
+                "1 600 ft"
+              ],
+              "answer": 3,
+              "explanation": "√h ≈ 49 / 1,23 ≈ 40, donc h ≈ 40² = 1 600 ft. Vérification : 1,23 × √1 600 = 1,23 × 40 ≈ 49 NM."
+            },
+            {
+              "id": "u4s4q06",
+              "q": "Vous volez à 1 500 ft sol dans une vallée encaissée. Vous n'arrivez pas à joindre une station située à 20 NM derrière une crête, alors que la formule de portée donne environ 48 NM. Quelle est l'explication la plus probable ?",
+              "choices": [
+                "Les ondes VHF sont absorbées par l'humidité de la vallée",
+                "Le relief masque la station : la VHF se propage en ligne droite",
+                "La portée VHF diminue fortement pendant la journée",
+                "Votre transpondeur brouille vos émissions VHF"
+              ],
+              "answer": 1,
+              "explanation": "La VHF se propage en portée optique : un relief entre l'avion et la station arrête le signal, quelle que soit la portée théorique. Prendre de la hauteur rétablit souvent la liaison."
+            },
+            {
+              "id": "u4s4q07",
+              "q": "Laquelle de ces informations ne figure pas dans un message ATIS ?",
+              "choices": [
+                "L'autorisation de transit dans la CTR",
+                "La piste en service",
+                "Le QNH",
+                "Le vent et la visibilité"
+              ],
+              "answer": 0,
+              "explanation": "L'ATIS diffuse en continu les informations courantes d'un aérodrome (piste, vent, visibilité, nuages, températures, QNH…). Une clairance est toujours délivrée individuellement par le contrôleur, jamais par l'ATIS."
+            },
+            {
+              "id": "u4s4q08",
+              "q": "En VFR, vous contactez un SIV (secteur d'information de vol). Quel service en obtenez-vous ?",
+              "choices": [
+                "Des clairances et une séparation avec tous les autres vols",
+                "Un guidage radar obligatoire jusqu'à destination",
+                "Le service d'information de vol et le service d'alerte, sans clairance",
+                "Uniquement une diffusion automatique des informations météo"
+              ],
+              "answer": 2,
+              "explanation": "Un SIV rend le service d'information de vol (trafic connu, météo, activité des zones) et le service d'alerte. Il ne délivre pas de clairance et n'assure pas de séparation : le pilote reste responsable de l'anticollision."
+            },
+            {
+              "id": "u4s4q09",
+              "q": "Quel organisme désigne l'indicatif « Approche » (APPROACH) ?",
+              "choices": [
+                "Le contrôle de la circulation sur l'aire de manœuvre",
+                "Le service d'information de vol en route",
+                "Le contrôle des vols en croisière par un centre en route",
+                "Le contrôle des vols à l'arrivée et au départ d'un ou plusieurs aérodromes"
+              ],
+              "answer": 3,
+              "explanation": "« Approche » désigne le contrôle d'approche. « Sol » contrôle l'aire de manœuvre, « Information » rend l'information de vol et « Contrôle » désigne le contrôle régional (CRNA en France)."
+            },
+            {
+              "id": "u4s4q10",
+              "q": "Sur un aérodrome AFIS, l'agent vous annonce : « F-LM, piste 24, vent 230 degrés 10 nœuds, pas de trafic signalé ». Que représente ce message ?",
+              "choices": [
+                "Une information : c'est vous qui décidez d'atterrir et annoncez vos intentions",
+                "Une autorisation d'atterrissage, à collationner mot pour mot avec la piste",
+                "Une clairance d'intégration dans le circuit, à suivre sans écart",
+                "Une instruction de vous mettre en attente jusqu'à nouvel avis"
+              ],
+              "answer": 0,
+              "explanation": "L'agent AFIS rend le service d'information de vol et d'alerte, mais ne délivre aucune autorisation. Le pilote décide de sa manœuvre et annonce ses intentions."
+            },
+            {
+              "id": "u4s4q11",
+              "q": "Où un pilote trouve-t-il les langues utilisables sur la fréquence d'une station au sol française ?",
+              "choices": [
+                "Nulle part : l'anglais est utilisable sur toutes les fréquences",
+                "Dans l'AIP, qui publie les langues disponibles pour chaque station",
+                "Dans le manuel de vol de l'avion",
+                "Dans le message ATIS, qui change de langue chaque heure"
+              ],
+              "answer": 1,
+              "explanation": "Selon SERA, les communications se font en anglais ou dans la langue de la station au sol, et les langues disponibles sur chaque station sont publiées dans l'AIP. En France, l'anglais n'est pas disponible sur toutes les fréquences."
+            },
+            {
+              "id": "u4s4q12",
+              "q": "Combien de canaux espacés de 8,33 kHz tiennent dans un canal de 25 kHz ?",
+              "choices": [
+                "2",
+                "4",
+                "3",
+                "8"
+              ],
+              "answer": 2,
+              "explanation": "25 / 8,33 ≈ 3 : l'espacement de 8,33 kHz triple le nombre de canaux disponibles dans la bande VHF aéronautique."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

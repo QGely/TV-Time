@@ -1,0 +1,81 @@
+{
+  "id": "dcu",
+  "name": "DC Universe (nouvel univers)",
+  "description": "Le nouvel univers DC de James Gunn et Peter Safran, « Chapitre 1 : Gods and Monsters ». L'ordre affiché par défaut est l'ordre de l'histoire, qui diffère de l'ordre de sortie (Peacemaker a démarré avant Creature Commandos).",
+  "icon": "🌟",
+  "category": "dc",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Creature Commandos",
+      "title_fr": "Creature Commandos",
+      "year": 2024,
+      "tmdb_id": 219543,
+      "chronological_order": 1,
+      "release_order": 2,
+      "group": "Chapitre 1 : Gods and Monsters",
+      "note": "Série animée, premier projet du DCU. Se déroule avant Superman.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Superman",
+      "title_fr": "Superman",
+      "year": 2025,
+      "tmdb_id": 1061474,
+      "chronological_order": 2,
+      "release_order": 3,
+      "group": "Chapitre 1 : Gods and Monsters",
+      "note": "Film fondateur du DCU, point de départ en live-action.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Peacemaker",
+      "title_fr": "Peacemaker",
+      "year": 2022,
+      "tmdb_id": 110492,
+      "chronological_order": 3,
+      "release_order": 1,
+      "group": "Chapitre 1 : Gods and Monsters",
+      "note": "Saison 1 (2022) hors DCU ; la saison 2 (2025) se déroule après Superman.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Supergirl",
+      "title_fr": "Supergirl",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Chapitre 1 : Gods and Monsters",
+      "note": "Suite de Superman, adapté de Woman of Tomorrow. Sortie en juin 2026.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Lanterns",
+      "title_fr": "Lanterns",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Chapitre 1 : Gods and Monsters",
+      "note": "Série HBO sur Hal Jordan et John Stewart. Diffusion prévue en 2026.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Clayface",
+      "title_fr": "Clayface",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Chapitre 1 : Gods and Monsters",
+      "note": "Film d'horreur situé à Gotham. Sortie prévue en septembre 2026.",
+      "optional": true
+    }
+  ]
+}

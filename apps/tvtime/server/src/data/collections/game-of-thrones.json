@@ -1,0 +1,45 @@
+{
+  "id": "game-of-thrones",
+  "name": "Game of Thrones",
+  "description": "L'univers de Westeros dans l'ordre chronologique de l'histoire : les préquelles Targaryen avant la série principale. L'ordre affiché par défaut suit la chronologie, qui diffère de l'ordre de diffusion.",
+  "icon": "🐉",
+  "category": "fantasy",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "House of the Dragon",
+      "title_fr": "House of the Dragon",
+      "year": 2022,
+      "tmdb_id": 94997,
+      "chronological_order": 1,
+      "release_order": 2,
+      "group": "Préquelles",
+      "note": "Environ 200 ans avant Game of Thrones : la Danse des Dragons chez les Targaryen",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "A Knight of the Seven Kingdoms",
+      "title_fr": "Le Chevalier des Sept Royaumes",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 3,
+      "group": "Préquelles",
+      "note": "Environ 90 ans avant Game of Thrones : les aventures de Dunk et l'Œuf",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Game of Thrones",
+      "title_fr": "Game of Thrones",
+      "year": 2011,
+      "tmdb_id": 1399,
+      "chronological_order": 3,
+      "release_order": 1,
+      "group": "Série principale",
+      "note": "La série principale, débute en 298 après la Conquête d'Aegon",
+      "optional": false
+    }
+  ]
+}

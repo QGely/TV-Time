@@ -1,0 +1,971 @@
+{
+  "id": "lapl",
+  "title": "Bibliothèque de révision LAPL(A) / PPL(A)",
+  "subtitle": "Ressources françaises et anglaises pour préparer le théorique, autant que possible gratuitement. Recherche vérifiée le 17 novembre 2026.",
+  "intro": "Réunit des banques de QCM, examens blancs, fiches de révision, cours complets, PDF et documentation aéronautique.\nCoche ce que tu as consulté ou fait : ta progression est enregistrée sur ton compte.",
+  "checklist": [
+    {
+      "id": "chk-memo",
+      "label": "Télécharger le mémo VFR FFA 2025-2026"
+    },
+    {
+      "id": "chk-ffplum",
+      "label": "Récupérer les 53 fiches FFPLUM"
+    },
+    {
+      "id": "chk-acat",
+      "label": "Étudier les cours PDF de l'ACAT Toulouse"
+    },
+    {
+      "id": "chk-meteo",
+      "label": "Lire le Guide Aviation de Météo-France"
+    },
+    {
+      "id": "chk-qcm",
+      "label": "Faire les 9 QCM gratuits (128 questions)",
+      "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-droit-aerien"
+    },
+    {
+      "id": "chk-en",
+      "label": "Compléter avec des QCM anglais PPL/LAPL"
+    },
+    {
+      "id": "chk-phak",
+      "label": "Télécharger le manuel FAA de connaissances aéronautiques"
+    },
+    {
+      "id": "chk-app-exam",
+      "label": "Réussir un examen blanc complet dans l'application (75 % dans chaque matière)",
+      "to": "/exam"
+    }
+  ],
+  "method": "Pour chaque matière : lis d'abord un cours français, rédige une fiche d'une page (définitions, formules), puis enchaîne les QCM jusqu'à obtenir régulièrement 85 à 90 % de bonnes réponses. Travaille ensuite la même matière en anglais pour le vocabulaire.",
+  "sections": [
+    {
+      "id": "programme",
+      "title": "1. Le programme officiel à préparer",
+      "intro": "Le LAPL(A) et le PPL(A) partagent le même examen théorique en France. Depuis le 4 décembre 2023 : 9 matières, 128 questions, au minimum 75 % de bonnes réponses dans chaque matière.",
+      "table": {
+        "columns": [
+          "Matière",
+          "Questions",
+          "Durée"
+        ],
+        "rows": [
+          {
+            "cells": [
+              "Droit aérien",
+              "20",
+              "30 min"
+            ]
+          },
+          {
+            "cells": [
+              "Performance humaine",
+              "12",
+              "18 min"
+            ]
+          },
+          {
+            "cells": [
+              "Météorologie",
+              "20",
+              "30 min"
+            ]
+          },
+          {
+            "cells": [
+              "Communications",
+              "8",
+              "12 min"
+            ]
+          },
+          {
+            "cells": [
+              "Navigation",
+              "20",
+              "50 min"
+            ]
+          },
+          {
+            "cells": [
+              "Principes du vol",
+              "12",
+              "18 min"
+            ]
+          },
+          {
+            "cells": [
+              "Procédures opérationnelles",
+              "12",
+              "18 min"
+            ]
+          },
+          {
+            "cells": [
+              "Performances et préparation du vol",
+              "12",
+              "18 min"
+            ]
+          },
+          {
+            "cells": [
+              "Connaissance générale de l'aéronef",
+              "12",
+              "18 min"
+            ]
+          },
+          {
+            "cells": [
+              "Total",
+              "128",
+              "3 h 32"
+            ],
+            "total": true
+          }
+        ]
+      },
+      "warning": "Les anciens supports indiquant « 120 questions » et « deux épreuves » ne correspondent plus à l'examen actuel. Ils restent utiles pour comprendre les notions, pas pour simuler l'épreuve.",
+      "items": [
+        {
+          "id": "dgac-format",
+          "title": "DGAC — Format officiel de l'examen (PDF)",
+          "description": "Le format en 9 épreuves et 128 questions, publié par le ministère.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "DGAC — Format officiel de l'examen (PDF)"
+        },
+        {
+          "id": "dgac-infos",
+          "title": "DGAC — Informations officielles et inscriptions",
+          "description": "Examens théoriques du personnel navigant : inscription OCEANE, centres, modalités.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "DGAC — Informations officielles et inscriptions"
+        },
+        {
+          "id": "ffa-theorique",
+          "title": "FFA — Contenu du théorique LAPL/PPL",
+          "description": "La FFA est l'entité qualifiée qui organise l'examen LAPL(A)/PPL(A) en métropole.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "FFA — Contenu du théorique LAPL/PPL"
+        }
+      ]
+    },
+    {
+      "id": "qcm-ti",
+      "title": "2. QCM gratuits en français : 128 questions, matière par matière",
+      "intro": "Neuf QCM indépendants de Travail-Industrie, avec corrigés explicatifs et corrigé PDF, gratuits et sans inscription. Ce sont des questions d'entraînement originales, pas des questions officielles de la DGAC.",
+      "items": [
+        {
+          "id": "ti-droit",
+          "title": "Droit aérien — 20 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-droit-aerien",
+          "search": "Droit aérien — 20 questions"
+        },
+        {
+          "id": "ti-hpl",
+          "title": "Performance humaine — 12 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-performance-humaine",
+          "search": "Performance humaine — 12 questions"
+        },
+        {
+          "id": "ti-meteo",
+          "title": "Météorologie — 20 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-meteorologie",
+          "search": "Météorologie — 20 questions"
+        },
+        {
+          "id": "ti-comm",
+          "title": "Communications — 8 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-communications",
+          "search": "Communications — 8 questions"
+        },
+        {
+          "id": "ti-nav",
+          "title": "Navigation — 20 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-navigation",
+          "search": "Navigation — 20 questions"
+        },
+        {
+          "id": "ti-pdv",
+          "title": "Principes du vol — 12 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-principes-du-vol",
+          "search": "Principes du vol — 12 questions"
+        },
+        {
+          "id": "ti-proc",
+          "title": "Procédures opérationnelles — 12 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-procedures-operationnelles",
+          "search": "Procédures opérationnelles — 12 questions"
+        },
+        {
+          "id": "ti-perf",
+          "title": "Performances et préparation du vol — 12 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-performances-preparation-vol",
+          "search": "Performances et préparation du vol — 12 questions"
+        },
+        {
+          "id": "ti-agk",
+          "title": "Connaissance générale de l'aéronef — 12 questions",
+          "description": "QCM corrigé, Travail-Industrie.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "url": "https://travail-industrie.com/nos-formations-en-ligne/quizz/qcm-ppl-connaissance-aeronef",
+          "search": "Connaissance générale de l'aéronef — 12 questions"
+        }
+      ]
+    },
+    {
+      "id": "qcm-fr",
+      "title": "Autres banques de questions françaises",
+      "intro": "Volumes de questions annoncés par les plateformes, non audités question par question.",
+      "items": [
+        {
+          "id": "pplrevision",
+          "title": "PPL Révision",
+          "description": "12 questions corrigées et cours des neuf matières.",
+          "access": "Gratuit partiel",
+          "lang": "fr",
+          "kind": "QCM + cours",
+          "search": "PPL Révision"
+        },
+        {
+          "id": "aerotheorie-regl",
+          "title": "Aérothéorie — réglementation",
+          "description": "20 QCM de réglementation.",
+          "access": "Gratuit partiel",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "Aérothéorie — réglementation"
+        },
+        {
+          "id": "aerotheorie-meteo",
+          "title": "Aérothéorie — météo",
+          "description": "20 QCM de météorologie, correction avec inscription.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "Aérothéorie — météo"
+        },
+        {
+          "id": "forallpilots",
+          "title": "ForAllPilots",
+          "description": "Banque annoncée de 3 973 questions et cours.",
+          "access": "Extraits gratuits, complet payant",
+          "lang": "fr",
+          "kind": "QCM + cours",
+          "search": "ForAllPilots"
+        },
+        {
+          "id": "aerogligli",
+          "title": "Aérogligli",
+          "description": "Banque de 3 108 questions annoncées, préparation théorique.",
+          "access": "Payant",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "Aérogligli"
+        },
+        {
+          "id": "aeroqcm",
+          "title": "Aéro-QCM",
+          "description": "QCM par matière et entraînement chronométré.",
+          "access": "Démonstration puis payant",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "Aéro-QCM"
+        },
+        {
+          "id": "pilotone",
+          "title": "Pilot One",
+          "description": "Banque de QCM et tests.",
+          "access": "Essai gratuit puis payant",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "Pilot One"
+        },
+        {
+          "id": "myflypath",
+          "title": "MyFlyPath",
+          "description": "Fiches, cours, QCM et examens blancs sur téléphone.",
+          "access": "Parcours limité gratuit",
+          "lang": "fr",
+          "kind": "Application",
+          "search": "MyFlyPath"
+        },
+        {
+          "id": "quizvds",
+          "title": "Quizvds — QCM PDF",
+          "description": "Générateur de sujets PPL(A) imprimables avec grilles et corrigés.",
+          "access": "Gratuit limité",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Quizvds — QCM PDF"
+        },
+        {
+          "id": "pilotehorizons",
+          "title": "Pilote Horizons",
+          "description": "21 fiches de révision avec questions associées.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Fiches",
+          "search": "Pilote Horizons"
+        },
+        {
+          "id": "ctrformation",
+          "title": "CTR Formation",
+          "description": "Petits quiz sur plusieurs sujets aéronautiques.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "CTR Formation"
+        },
+        {
+          "id": "ffa-archives-qcm",
+          "title": "FFA — Archives de QCM",
+          "description": "Anciens QCM thématiques fédéraux.",
+          "access": "Gratuit, archives",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "FFA — Archives de QCM"
+        }
+      ]
+    },
+    {
+      "id": "qcm-en",
+      "title": "3. QCM et examens blancs en anglais",
+      "intro": "Utiles pour le vocabulaire aéronautique et pour approfondir les notions du LAPL. Certaines banques visent les examens d'autres pays européens.",
+      "warning": "L'ECQB-PPL d'Aircademy, la banque tchèque et les banques commerciales ne sont pas la banque française de la DGAC. Pour l'examen en France, garde une banque française comme support principal (l'examen FFA est en français).",
+      "items": [
+        {
+          "id": "icarus",
+          "title": "Icarus Flight School — PPL/LAPL",
+          "description": "Questions issues de la partie publiée de l'ECQB-PPL utilisée en Tchéquie, neuf matières, réponses expliquées.",
+          "access": "Gratuit, vérification e-mail",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Icarus Flight School — PPL/LAPL"
+        },
+        {
+          "id": "squawkppl",
+          "title": "SquawkPPL",
+          "description": "Leçons, flashcards et examens blancs EASA.",
+          "access": "Gratuit annoncé",
+          "lang": "en",
+          "kind": "QCM + cours",
+          "search": "SquawkPPL"
+        },
+        {
+          "id": "airmand",
+          "title": "Airmand",
+          "description": "QCM EASA avec sélection des matières et suivi de progression.",
+          "access": "Gratuit annoncé",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Airmand"
+        },
+        {
+          "id": "vectorefb",
+          "title": "VectorEFB",
+          "description": "Tests chronométrés, neuf matières, cours associés.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "VectorEFB"
+        },
+        {
+          "id": "aviationexam",
+          "title": "Aviationexam",
+          "description": "Banque de questions EASA PPL, tests d'essai.",
+          "access": "Essai puis payant",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Aviationexam"
+        },
+        {
+          "id": "forallpilots-en",
+          "title": "ForAllPilots English",
+          "description": "Cours, fiches et QCM en anglais.",
+          "access": "Gratuit partiel",
+          "lang": "en",
+          "kind": "QCM + cours",
+          "search": "ForAllPilots English"
+        },
+        {
+          "id": "flightdesk",
+          "title": "FlightDesk Aero",
+          "description": "Navigation et météo, corrections détaillées et calculs.",
+          "access": "16 questions gratuites, suite payante",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "FlightDesk Aero"
+        },
+        {
+          "id": "privatepilotexams",
+          "title": "Private Pilot Exams",
+          "description": "Banque EASA séparée de la banque américaine FAA.",
+          "access": "Essai et offres payantes",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Private Pilot Exams"
+        },
+        {
+          "id": "eisenschmidt",
+          "title": "Eisenschmidt",
+          "description": "Catalogue PPL/LAPL orienté Allemagne.",
+          "access": "5 % gratuits",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Eisenschmidt"
+        },
+        {
+          "id": "pilotqdb",
+          "title": "AviationTheory PilotQDB",
+          "description": "Logiciel de QCM PPL/LAPL et autres examens.",
+          "access": "Essai gratuit",
+          "lang": "en",
+          "kind": "Logiciel",
+          "search": "AviationTheory PilotQDB"
+        },
+        {
+          "id": "pilotlogbook",
+          "title": "Pilot Logbook — Practice",
+          "description": "Petites séries de QCM PPL britanniques.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Pilot Logbook — Practice"
+        },
+        {
+          "id": "passharbor",
+          "title": "Pass Harbor — UK PPL",
+          "description": "Questions d'entraînement pour le programme britannique.",
+          "access": "Gratuit partiel",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Pass Harbor — UK PPL"
+        },
+        {
+          "id": "aircademy-ecqb",
+          "title": "Aircademy — ECQB-PPL",
+          "description": "Présentation de la banque européenne privée et démonstration.",
+          "access": "Démonstration gratuite",
+          "lang": "en",
+          "kind": "QCM",
+          "search": "Aircademy — ECQB-PPL"
+        }
+      ]
+    },
+    {
+      "id": "pdf-fr",
+      "title": "4. Cours PDF et fiches de révision en français",
+      "intro": "La partie à conserver en priorité : documents d’aéroclubs, de fédérations et d’organismes publics.",
+      "items": [
+        {
+          "id": "ffa-memo-vfr",
+          "title": "FFA — Mémo du pilote VFR 2025-2026 (PDF)",
+          "description": "Préparation du vol, documents, météo, espaces aériens, sécurité et réglementation VFR. Le PDF de révision pratique le plus pertinent de la sélection.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "FFA — Mémo du pilote VFR 2025-2026 (PDF)"
+        },
+        {
+          "id": "ffplum-fiches",
+          "title": "FFPLUM — 53 fiches PDF pédagogiques",
+          "description": "Altimétrie, anémométrie, navigation, aérodynamique, météo, facteurs humains, pilotage. Rédigées pour l'ULM : vérifier les différences réglementaires avec l'avion.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "FFPLUM — 53 fiches PDF pédagogiques"
+        },
+        {
+          "id": "acba-support",
+          "title": "Aéroclub du Bassin d'Arcachon — Support LAPL/PPL (117 pages)",
+          "description": "Support pédagogique de formation au pilotage (mars 2026). Relie la théorie aux exercices pratiques, pas un manuel complet des 9 matières.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Aéroclub du Bassin d'Arcachon — Support LAPL/PPL (117 pages)"
+        },
+        {
+          "id": "meteofrance-guide",
+          "title": "Météo-France — Guide Aviation (PDF, 36 pages)",
+          "description": "Interpréter METAR, TAF, TEMSI, vents et phénomènes dangereux.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF officiel",
+          "search": "Météo-France — Guide Aviation (PDF, 36 pages)"
+        },
+        {
+          "id": "acat",
+          "title": "Aéroclub Airbus Toulouse — ACAT",
+          "description": "Grande bibliothèque de PDF classés par discipline (aérodynamique, navigation, phraséologie, météo, masse et centrage).",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Bibliothèque",
+          "search": "Aéroclub Airbus Toulouse — ACAT"
+        },
+        {
+          "id": "defauchy",
+          "title": "Ressources pilote — Denis Defauchy",
+          "description": "Fiches PDF d'instructeur, exercices de pilotage, navigation, log de nav, sécurité.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Fiches",
+          "search": "Ressources pilote — Denis Defauchy"
+        },
+        {
+          "id": "lacle-fi",
+          "title": "La Clé FI",
+          "description": "Bibliothèque de documents techniques et pédagogiques d'instructeurs.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Bibliothèque",
+          "search": "La Clé FI"
+        },
+        {
+          "id": "ffa-instructeur",
+          "title": "FFA — Espace Instructeur",
+          "description": "Manuels de formation LAPL/PPL, programmes et supports.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Manuels",
+          "search": "FFA — Espace Instructeur"
+        },
+        {
+          "id": "pplrevision-cours",
+          "title": "PPL Révision — Les neuf matières",
+          "description": "Cours thématiques, premiers chapitres gratuits.",
+          "access": "Gratuit partiel",
+          "lang": "fr",
+          "kind": "Cours",
+          "search": "PPL Révision — Les neuf matières"
+        },
+        {
+          "id": "anpi-programme",
+          "title": "ANPI — Programme de formation PPL(A) (PDF)",
+          "description": "Référentiel détaillé des connaissances : parfait comme checklist de programme pour repérer ce qu’il reste à apprendre.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Programme",
+          "search": "ANPI — Programme de formation PPL(A) (PDF)"
+        }
+      ]
+    },
+    {
+      "id": "fiches-matiere",
+      "title": "5. Fiches PDF classées par matière",
+      "items": [
+        {
+          "id": "acat-aero",
+          "title": "Aérodynamique et mécanique du vol — ACAT",
+          "description": "Cours et fiches PDF.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Aérodynamique et mécanique du vol — ACAT"
+        },
+        {
+          "id": "acat-nav",
+          "title": "Navigation et radionavigation — ACAT",
+          "description": "Navigation, NAVAIDS, GNSS.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Navigation et radionavigation — ACAT"
+        },
+        {
+          "id": "acat-radio",
+          "title": "Communications radio — ACAT",
+          "description": "Phraséologie et exercices.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Communications radio — ACAT"
+        },
+        {
+          "id": "acat-meteo",
+          "title": "Météorologie — ACAT",
+          "description": "Météo et phénomènes dangereux.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Météorologie — ACAT"
+        },
+        {
+          "id": "sefa-fh",
+          "title": "Facteurs humains — SEFA (PDF)",
+          "description": "Cours facteurs humains.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Facteurs humains — SEFA (PDF)"
+        },
+        {
+          "id": "defauchy-nav",
+          "title": "Calculs de navigation — fiches et log de nav PDF",
+          "description": "Fiches de navigation et modèle de log de nav.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Calculs de navigation — fiches et log de nav PDF"
+        },
+        {
+          "id": "ffplum-virage",
+          "title": "Virage et facteur de charge — FFPLUM",
+          "description": "Fiche illustrée (PDF).",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Virage et facteur de charge — FFPLUM"
+        },
+        {
+          "id": "ffa-memo-vfr-proc",
+          "title": "Procédures et préparation d'un vol VFR — Mémo FFA",
+          "description": "Le mémo VFR, sous l’angle de la préparation du vol.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Procédures et préparation d'un vol VFR — Mémo FFA"
+        },
+        {
+          "id": "acat-wb",
+          "title": "Masse et centrage — ACAT",
+          "description": "Supports masse et centrage.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "PDF",
+          "search": "Masse et centrage — ACAT"
+        }
+      ]
+    },
+    {
+      "id": "pdf-qcm-en",
+      "title": "6. PDF de QCM en anglais (Austro Control)",
+      "intro": "Questionnaires PDF publiés par l'autorité aéronautique autrichienne, avec réponses. Extraits anciens (version 2015.4) : excellents pour les principes techniques, pas pour la réglementation actuelle.",
+      "items": [
+        {
+          "id": "austro-airlaw",
+          "title": "Air Law — Droit aérien",
+          "description": "Questions PPL(A), Austro Control.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "PDF",
+          "search": "Air Law — Droit aérien"
+        },
+        {
+          "id": "austro-hpl",
+          "title": "Human Performance — Performance humaine",
+          "description": "Questions PPL(A), Austro Control.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "PDF",
+          "search": "Human Performance — Performance humaine"
+        },
+        {
+          "id": "austro-pof",
+          "title": "Principles of Flight — Principes du vol",
+          "description": "Questions PPL(A), Austro Control.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "PDF",
+          "search": "Principles of Flight — Principes du vol"
+        },
+        {
+          "id": "austro-agk",
+          "title": "Aircraft General Knowledge — Connaissance de l'aéronef",
+          "description": "Questions PPL(A), Austro Control.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "PDF",
+          "search": "Aircraft General Knowledge — Connaissance de l'aéronef"
+        },
+        {
+          "id": "aircademy-syllabus",
+          "title": "Aircademy — Detailed PPL Syllabus (PDF, 168 pages)",
+          "description": "Programme détaillé, chapitre par chapitre.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "PDF",
+          "search": "Aircademy — Detailed PPL Syllabus (PDF, 168 pages)"
+        },
+        {
+          "id": "aircademy-charts",
+          "title": "Aircademy — Cartes ICAO pour exercices QCM (PDF)",
+          "description": "Annexes de navigation utilisées par les questions.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "PDF",
+          "search": "Aircademy ECQB PPL annex ICAO chart PDF"
+        }
+      ]
+    },
+    {
+      "id": "manuels-en",
+      "title": "7. Grands manuels gratuits en anglais",
+      "warning": "Manuels de grande qualité pédagogique, mais la FAA applique la réglementation américaine : à utiliser pour les connaissances scientifiques et le pilotage, pas comme référence du droit aérien français.",
+      "items": [
+        {
+          "id": "faa-phak",
+          "title": "Pilot's Handbook of Aeronautical Knowledge",
+          "description": "Manuel FAA très complet : aérodynamique, systèmes, performances, météo, navigation, prise de décision.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Manuel",
+          "search": "Pilot's Handbook of Aeronautical Knowledge"
+        },
+        {
+          "id": "faa-afh",
+          "title": "Airplane Flying Handbook",
+          "description": "Techniques de pilotage illustrées : contrôle, décollages, atterrissages, décrochages.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Manuel",
+          "search": "Airplane Flying Handbook"
+        },
+        {
+          "id": "faa-weather",
+          "title": "Aviation Weather Handbook",
+          "description": "Manuel météorologique approfondi (édition actualisée).",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Manuel",
+          "search": "Aviation Weather Handbook"
+        },
+        {
+          "id": "faa-wb",
+          "title": "Weight & Balance Handbook",
+          "description": "Masse et centrage.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Manuel",
+          "search": "Weight & Balance Handbook"
+        },
+        {
+          "id": "faa-risk",
+          "title": "Risk Management Handbook",
+          "description": "Gestion du risque.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Manuel",
+          "search": "Risk Management Handbook"
+        },
+        {
+          "id": "caa-cap413",
+          "title": "UK CAA — CAP 413 Radiotelephony",
+          "description": "Phraséologie en anglais.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Manuel",
+          "search": "UK CAA — CAP 413 Radiotelephony"
+        },
+        {
+          "id": "caa-skyway",
+          "title": "UK CAA — The Skyway Code",
+          "description": "Sécurité et bonnes pratiques VFR.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Guide",
+          "search": "UK CAA — The Skyway Code"
+        },
+        {
+          "id": "faa-handbooks",
+          "title": "FAA — Bibliothèque de manuels",
+          "description": "Catalogue complet des manuels aéronautiques FAA.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Catalogue",
+          "search": "FAA — Bibliothèque de manuels"
+        }
+      ]
+    },
+    {
+      "id": "reglementation",
+      "title": "8. Documentation réglementaire officielle",
+      "intro": "Pour ne pas apprendre des règles dépassées : vérifie toujours la dernière version publiée.",
+      "items": [
+        {
+          "id": "dgac-sera",
+          "title": "DGAC — Règles de l’air SERA (PDF)",
+          "description": "Version française consolidée (janvier 2026).",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "DGAC — Règles de l’air SERA (PDF)"
+        },
+        {
+          "id": "dgac-phraseo",
+          "title": "DGAC / DSNA — Manuel de phraséologie (PDF)",
+          "description": "Phraséologie français/anglais (édition du 15 avril 2023).",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "DGAC / DSNA — Manuel de phraséologie (PDF)"
+        },
+        {
+          "id": "easa-aircrew",
+          "title": "EASA — Aircrew / Part-FCL",
+          "description": "Easy Access Rules : licences, qualifications, médical.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Officiel",
+          "search": "EASA — Aircrew / Part-FCL"
+        },
+        {
+          "id": "easa-sera",
+          "title": "EASA — SERA",
+          "description": "Règles de l’air européennes (Easy Access Rules).",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Officiel",
+          "search": "EASA — SERA"
+        },
+        {
+          "id": "easa-airops",
+          "title": "EASA — Air Operations, Part-NCO",
+          "description": "Exploitation non commerciale des aéronefs non complexes.",
+          "access": "Gratuit",
+          "lang": "en",
+          "kind": "Officiel",
+          "search": "EASA — Air Operations, Part-NCO"
+        },
+        {
+          "id": "dgac-licences",
+          "title": "DGAC — Licences de pilote d'avion",
+          "description": "Réglementation et procédures.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "DGAC — Licences de pilote d'avion"
+        },
+        {
+          "id": "sia",
+          "title": "SIA — eAIP et cartes VAC",
+          "description": "Publications aéronautiques officielles françaises.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "SIA — eAIP et cartes VAC"
+        },
+        {
+          "id": "aeroweb",
+          "title": "Météo-France — Aéroweb",
+          "description": "Informations météorologiques aéronautiques.",
+          "access": "Gratuit (compte)",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "Météo-France — Aéroweb"
+        },
+        {
+          "id": "bea",
+          "title": "BEA",
+          "description": "Rapports d’enquêtes et sécurité des vols.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Officiel",
+          "search": "BEA"
+        }
+      ]
+    },
+    {
+      "id": "bia",
+      "title": "9. Bonus : annales et QCM du BIA",
+      "intro": "Le Brevet d'initiation aéronautique est d'un niveau inférieur, mais ses exercices donnent de bonnes bases si tu pars de zéro.",
+      "items": [
+        {
+          "id": "eduscol-bia",
+          "title": "Éduscol — BIA officiel",
+          "description": "Annales de l'Éducation nationale.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Annales",
+          "search": "Éduscol — BIA officiel"
+        },
+        {
+          "id": "sujets-bia-2025",
+          "title": "Sujets BIA 2025",
+          "description": "Sujets d'examen au format PDF.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Annales",
+          "search": "sujet BIA 2025 PDF corrigé"
+        },
+        {
+          "id": "montpellier-bia",
+          "title": "Académie de Montpellier — Manuel BIA",
+          "description": "Manuel de cours illustré.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Manuel",
+          "search": "Académie de Montpellier — Manuel BIA"
+        },
+        {
+          "id": "annales-bia",
+          "title": "Annales BIA",
+          "description": "QCM et annales en ligne.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "annales BIA QCM en ligne"
+        },
+        {
+          "id": "france-bia",
+          "title": "France-BIA — Quiz gratuits",
+          "description": "Entraînement thématique.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "QCM",
+          "search": "France-BIA — Quiz gratuits"
+        },
+        {
+          "id": "cours-bia-cpge",
+          "title": "Cours BIA — CPGE-SII",
+          "description": "Supports de cours.",
+          "access": "Gratuit",
+          "lang": "fr",
+          "kind": "Cours",
+          "search": "cours BIA CPGE SII"
+        }
+      ]
+    }
+  ],
+  "footer": "Garde les documents DGAC, EASA et FFA comme références réglementaires, et les QCM privés comme outils de vérification. Une bonne performance sur une banque de questions ne garantit pas à elle seule la réussite de l'examen officiel. Les liens « Chercher » lancent une recherche quand l'adresse exacte n'a pas pu être confirmée."
+}

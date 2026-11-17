@@ -1,0 +1,105 @@
+{
+  "id": "stargate",
+  "name": "Stargate",
+  "description": "Le film de 1994 puis toutes les séries Stargate dans l'ordre de l'histoire, avec les deux téléfilms SG-1. Origins (préquelle) et Infinity (animée, hors continuité) sont en option.",
+  "icon": "🌀",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Stargate Origins",
+      "title_fr": "Stargate Origins",
+      "year": 2018,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 8,
+      "group": "Préquelle",
+      "note": "Websérie en 1939 : la jeune Catherine Langford",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Stargate",
+      "title_fr": "Stargate : La Porte des étoiles",
+      "year": 1994,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 1,
+      "group": "Film",
+      "note": "Le film de Roland Emmerich qui lance l'univers",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Stargate SG-1",
+      "title_fr": "Stargate SG-1",
+      "year": 1997,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 2,
+      "group": "Séries",
+      "note": "Dix saisons : l'équipe SG-1 explore la galaxie",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Stargate Atlantis",
+      "title_fr": "Stargate Atlantis",
+      "year": 2004,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Séries",
+      "note": "Débute pendant la saison 8 de SG-1, dans la galaxie de Pégase",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Stargate: The Ark of Truth",
+      "title_fr": "Stargate : L'Arche de vérité",
+      "year": 2008,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Téléfilms",
+      "note": "Conclusion de l'arc des Ori, après la saison 10 de SG-1",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Stargate: Continuum",
+      "title_fr": "Stargate : Continuum",
+      "year": 2008,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Téléfilms",
+      "note": "Ba'al modifie l'histoire ; deuxième téléfilm SG-1",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Stargate Universe",
+      "title_fr": "Stargate Universe",
+      "year": 2009,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Séries",
+      "note": "À bord du Destinée, à l'autre bout de l'univers",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Stargate Infinity",
+      "title_fr": "Stargate Infinity",
+      "year": 2002,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 3,
+      "group": "Hors continuité",
+      "note": "Série animée non canonique, à part",
+      "optional": true
+    }
+  ]
+}

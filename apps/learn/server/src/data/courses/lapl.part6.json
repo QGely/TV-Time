@@ -1,0 +1,823 @@
+{
+  "id": "lapl",
+  "units": [
+    {
+      "id": "u6",
+      "title": "Principes du vol",
+      "description": "Les bases de l'aérodynamique et de la mécanique du vol : écoulement et profil, portance et traînée, décrochage et vrille, virage et facteur de charge, stabilité et commandes (examen : 12 questions, 18 min).",
+      "color": "#ff4b4b",
+      "skills": [
+        {
+          "id": "u6s1",
+          "title": "Écoulement de l'air et profil",
+          "icon": "💨",
+          "tips": "Dans un écoulement subsonique lent (air considéré comme incompressible), le théorème de Bernoulli s'écrit, le long d'une ligne de courant :\n• Ps + ½ρV² = Pt = constante\nPs est la pression statique (celle de l'air au repos, qui s'exerce dans toutes les directions), ½ρV² la pression dynamique q (due à la vitesse) et Pt la pression totale. Conséquence : quand l'air accélère, sa pression statique diminue. C'est l'effet Venturi : au col d'un tube rétréci, la vitesse augmente et la pression statique baisse.\n\nLa pression dynamique est proportionnelle à la masse volumique ρ (1,225 kg/m³ au niveau de la mer en atmosphère standard) et au carré de la vitesse : doubler la vitesse multiplie q par 4. Le tube de Pitot, ouvert face au vent, mesure la pression totale ; la prise statique mesure Ps. L'anémomètre affiche une vitesse déduite de la différence Pt − Ps = q.\n\nCouche limite : fine couche d'air au contact de la surface, dans laquelle la vitesse passe de zéro (contre la paroi) à celle de l'écoulement extérieur. D'abord laminaire près du bord d'attaque, elle devient turbulente après la transition : plus épaisse, elle crée plus de frottement mais résiste mieux au décollement. Quand elle décolle de l'extrados, la portance s'effondre : c'est le décrochage.\n\nLe profil (coupe de l'aile) :\n• bord d'attaque à l'avant, bord de fuite à l'arrière ;\n• extrados (face supérieure), intrados (face inférieure) ;\n• corde : segment joignant le bord d'attaque au bord de fuite ;\n• ligne moyenne : ligne à égale distance de l'extrados et de l'intrados ;\n• cambrure : écart maximal entre ligne moyenne et corde ; un profil symétrique a une cambrure nulle et une portance nulle à incidence nulle ;\n• épaisseur relative : épaisseur maximale divisée par la corde.\nEn vol, l'air accélère sur l'extrados (dépression, qui fournit la plus grande part de la portance) et ralentit sous l'intrados (légère surpression).\n\nTrois angles à ne pas confondre :\n• incidence α : entre la corde et le vent relatif ;\n• assiette θ : entre l'axe longitudinal de l'avion et l'horizontale ;\n• pente γ : entre la trajectoire et l'horizontale.\nEn négligeant le calage de l'aile (angle fixe entre corde et axe longitudinal) : θ = α + γ. En palier, assiette et incidence sont égales ; en montée, l'assiette est forte mais l'incidence reste modérée.\n\nAllongement λ = b²/S (envergure au carré divisée par la surface alaire), soit envergure / corde pour une aile rectangulaire : environ 6 à 8 pour un avion léger, 20 et plus pour un planeur. Un grand allongement réduit la traînée induite.",
+          "vocab": [
+            { "term": "Pression statique (Ps)", "translation": "Pression de l'air au repos, exercée dans toutes les directions" },
+            { "term": "Pression dynamique (q)", "translation": "q = ½ρV², pression due à la vitesse de l'écoulement" },
+            { "term": "Pression totale (Pt)", "translation": "Ps + q, mesurée par le tube de Pitot" },
+            { "term": "Couche limite", "translation": "Fine couche d'air freinée au contact de la paroi" },
+            { "term": "Corde", "translation": "Segment joignant le bord d'attaque au bord de fuite" },
+            { "term": "Cambrure", "translation": "Écart maximal entre la ligne moyenne et la corde" },
+            { "term": "Incidence (α)", "translation": "Angle entre la corde du profil et le vent relatif" },
+            { "term": "Allongement (λ)", "translation": "Envergure au carré divisée par la surface : λ = b²/S" }
+          ],
+          "questions": [
+            {
+              "id": "u6s1q01",
+              "q": "D'après le théorème de Bernoulli, que se passe-t-il lorsque l'air accélère le long d'une ligne de courant, en écoulement subsonique ?",
+              "choices": [
+                "Sa pression statique augmente",
+                "Sa pression totale diminue",
+                "Sa pression statique diminue",
+                "Sa pression dynamique diminue"
+              ],
+              "answer": 2,
+              "explanation": "Le long d'une ligne de courant, Ps + ½ρV² = Pt reste constante. Si la vitesse augmente, la pression dynamique augmente et la pression statique diminue d'autant : c'est l'effet Venturi."
+            },
+            {
+              "id": "u6s1q02",
+              "q": "À masse volumique constante, la vitesse d'un avion passe de 100 kt à 200 kt. Sa pression dynamique est :",
+              "choices": [
+                "multipliée par 1,41",
+                "multipliée par 4",
+                "multipliée par 2",
+                "multipliée par 8"
+              ],
+              "answer": 1,
+              "explanation": "q = ½ρV² varie comme le carré de la vitesse : (200 / 100)² = 2² = 4."
+            },
+            {
+              "id": "u6s1q03",
+              "q": "Quelle est la pression dynamique d'un écoulement d'air de masse volumique 1,2 kg/m³ à la vitesse de 50 m/s ?",
+              "choices": [
+                "1 500 Pa",
+                "3 000 Pa",
+                "60 Pa",
+                "30 Pa"
+              ],
+              "answer": 0,
+              "explanation": "q = ½ρV² = 0,5 × 1,2 × 50² = 0,6 × 2 500 = 1 500 Pa. Oublier le ½ donne 3 000 Pa ; oublier le carré de la vitesse donne 30 Pa."
+            },
+            {
+              "id": "u6s1q04",
+              "q": "Que mesure la prise du tube de Pitot, ouverte face à l'écoulement ?",
+              "choices": [
+                "La pression statique",
+                "La pression dynamique seule",
+                "La différence de pression entre l'extrados et l'intrados",
+                "La pression totale"
+              ],
+              "answer": 3,
+              "explanation": "L'air s'arrête à l'entrée du tube de Pitot : on y mesure la pression totale Pt = Ps + ½ρV². L'anémomètre en retranche la pression statique pour obtenir la pression dynamique, donc la vitesse."
+            },
+            {
+              "id": "u6s1q05",
+              "q": "Qu'appelle-t-on la couche limite ?",
+              "choices": [
+                "Le sillage tourbillonnaire qui se forme derrière le bord de fuite",
+                "La fine couche d'air freinée par frottement au contact de la paroi",
+                "La couche d'air en surpression qui se forme sous l'intrados",
+                "L'altitude maximale à laquelle l'aile peut encore porter l'avion"
+              ],
+              "answer": 1,
+              "explanation": "La couche limite est la mince couche d'air au contact de la surface : la vitesse y passe de zéro (contre la paroi) à la vitesse de l'écoulement extérieur. Son décollement sur l'extrados provoque le décrochage."
+            },
+            {
+              "id": "u6s1q06",
+              "q": "Comparée à une couche limite laminaire, une couche limite turbulente :",
+              "choices": [
+                "est plus mince et crée moins de frottement",
+                "crée moins de frottement mais décolle plus facilement",
+                "n'existe qu'au voisinage immédiat du bord d'attaque",
+                "crée plus de frottement mais résiste mieux au décollement"
+              ],
+              "answer": 3,
+              "explanation": "La couche limite turbulente est plus épaisse et freine davantage (traînée de frottement plus forte), mais l'air y est plus énergique près de la paroi : elle reste collée plus longtemps. Elle apparaît en aval de la zone laminaire, après la transition."
+            },
+            {
+              "id": "u6s1q07",
+              "q": "Sur un profil d'aile, comment est définie la corde ?",
+              "choices": [
+                "Le segment de droite qui joint le bord d'attaque au bord de fuite",
+                "La ligne située à égale distance de l'extrados et de l'intrados",
+                "La distance qui sépare les deux extrémités de l'aile",
+                "L'épaisseur maximale mesurée entre l'extrados et l'intrados"
+              ],
+              "answer": 0,
+              "explanation": "La corde relie le bord d'attaque au bord de fuite. La ligne à égale distance des deux faces est la ligne moyenne ; la distance d'un saumon à l'autre est l'envergure."
+            },
+            {
+              "id": "u6s1q08",
+              "q": "Un profil symétrique se caractérise par :",
+              "choices": [
+                "un extrados plus bombé que l'intrados",
+                "une portance positive à incidence nulle",
+                "une ligne moyenne confondue avec la corde",
+                "une épaisseur constante sur toute la corde"
+              ],
+              "answer": 2,
+              "explanation": "Les deux faces d'un profil symétrique sont identiques : la ligne moyenne est confondue avec la corde, la cambrure est nulle et la portance est nulle à incidence nulle. Un extrados plus bombé caractérise un profil cambré."
+            },
+            {
+              "id": "u6s1q09",
+              "q": "En montée stabilisée, un avion a une assiette de +10° et une pente de trajectoire de +6°. En négligeant le calage de l'aile, quelle est son incidence ?",
+              "choices": [
+                "16°",
+                "10°",
+                "6°",
+                "4°"
+              ],
+              "answer": 3,
+              "explanation": "Assiette = incidence + pente (calage négligé), donc incidence = 10° − 6° = 4°. Une assiette élevée ne signifie pas une incidence élevée."
+            },
+            {
+              "id": "u6s1q10",
+              "q": "L'angle d'incidence d'une aile est l'angle formé par :",
+              "choices": [
+                "l'axe longitudinal de l'avion et l'horizontale",
+                "la corde du profil et la direction du vent relatif",
+                "la trajectoire de l'avion et l'horizontale",
+                "la corde du profil et l'axe longitudinal de l'avion"
+              ],
+              "answer": 1,
+              "explanation": "L'incidence se mesure entre la corde et le vent relatif. Les autres propositions définissent respectivement l'assiette, la pente et le calage de l'aile."
+            },
+            {
+              "id": "u6s1q11",
+              "q": "Une aile a une envergure de 10 m et une surface de 12,5 m². Quel est son allongement ?",
+              "choices": [
+                "0,8",
+                "1,25",
+                "8",
+                "125"
+              ],
+              "answer": 2,
+              "explanation": "λ = b² / S = 10² / 12,5 = 100 / 12,5 = 8, valeur typique d'un avion léger."
+            },
+            {
+              "id": "u6s1q12",
+              "q": "Pourquoi les planeurs ont-ils des ailes de très grand allongement ?",
+              "choices": [
+                "Pour réduire la traînée induite et améliorer la finesse",
+                "Pour augmenter l'incidence critique de l'aile",
+                "Pour améliorer la maniabilité en roulis",
+                "Pour réduire le frottement de la couche limite"
+              ],
+              "answer": 0,
+              "explanation": "Un grand allongement limite l'effet des tourbillons marginaux, donc la traînée induite, ce qui améliore la finesse. Une grande envergure rend au contraire l'avion moins vif en roulis."
+            }
+          ]
+        },
+        {
+          "id": "u6s2",
+          "title": "Portance et traînée",
+          "icon": "🛫",
+          "tips": "La résultante aérodynamique se décompose en deux forces :\n• la portance Fz, perpendiculaire au vent relatif ;\n• la traînée Fx, parallèle au vent relatif et opposée au déplacement.\n\nFormules à connaître :\n• Fz = ½ ρ S V² Cz\n• Fx = ½ ρ S V² Cx\nρ : masse volumique de l'air (kg/m³) ; S : surface alaire (m²) ; V : vitesse (m/s) ; Cz et Cx : coefficients sans dimension qui dépendent de la forme du profil et surtout de l'incidence.\n• À incidence constante, la portance varie comme V² : vitesse × 2 → portance × 4.\n• Quand ρ diminue (altitude, chaleur), il faut plus de vitesse vraie pour la même portance ; la vitesse indiquée nécessaire, elle, reste la même.\n• Cz croît à peu près linéairement avec l'incidence jusqu'au Cz max, atteint à l'incidence critique, puis chute : c'est le décrochage.\nEn palier, portance = poids : pour voler plus lentement, il faut augmenter l'incidence.\n\nTraînée :\n• traînée parasite (frottement, forme, interférence, éléments extérieurs) : elle croît comme V² ;\n• traînée induite : liée à la portance. En bout d'aile, l'air de l'intrados (surpression) contourne le saumon vers l'extrados (dépression) et forme des tourbillons marginaux qui dévient l'écoulement vers le bas. Elle est forte à basse vitesse et grande incidence, décroît comme 1/V² en palier et diminue avec l'allongement (et les winglets).\nLa traînée totale est minimale quand traînées induite et parasite sont égales.\n\nFinesse f = Fz / Fx = Cz / Cx. En plané sans vent, f = distance parcourue / hauteur perdue : avec f = 10, 300 m de hauteur donnent 3 km. La finesse maximale est obtenue à une incidence donnée ; sa valeur ne dépend pas de la masse, mais la vitesse de finesse maximale augmente avec la masse (comme √m).\n\nPolaire : courbe Cz en fonction de Cx. On y lit le Cz max (décrochage), le Cx minimal et la finesse maximale, au point de contact de la tangente menée depuis l'origine.\n\nDispositifs hypersustentateurs :\n• volets de bord de fuite (de courbure, à fente, Fowler) : ils augmentent la cambrure (et la surface pour le Fowler), donc le Cz max. La vitesse de décrochage baisse, mais la traînée augmente, la finesse diminue et l'incidence critique baisse légèrement. En approche, ils permettent une pente plus forte avec une assiette plus basse ;\n• becs et fentes de bord d'attaque : ils réénergisent la couche limite d'extrados, retardent le décollement et augmentent l'incidence critique.",
+          "vocab": [
+            { "term": "Portance (Fz)", "translation": "Force perpendiculaire au vent relatif : Fz = ½ρSV²Cz" },
+            { "term": "Traînée (Fx)", "translation": "Force parallèle au vent relatif, opposée au déplacement" },
+            { "term": "Cz", "translation": "Coefficient de portance, fonction surtout de l'incidence" },
+            { "term": "Traînée induite", "translation": "Traînée liée à la portance, due aux tourbillons marginaux" },
+            { "term": "Traînée parasite", "translation": "Frottement, forme et interférence ; croît comme V²" },
+            { "term": "Finesse (f)", "translation": "Fz/Fx = Cz/Cx ; distance/hauteur en plané sans vent" },
+            { "term": "Polaire", "translation": "Courbe Cz en fonction de Cx d'une aile ou d'un avion" },
+            { "term": "Hypersustentateurs", "translation": "Volets et becs qui augmentent le Cz max" }
+          ],
+          "questions": [
+            {
+              "id": "u6s2q01",
+              "q": "À incidence et masse volumique constantes, la vitesse passe de 80 kt à 120 kt. La portance est multipliée par :",
+              "choices": [
+                "1,5",
+                "2,25",
+                "3",
+                "1,22"
+              ],
+              "answer": 1,
+              "explanation": "Fz = ½ρSV²Cz varie comme le carré de la vitesse : (120 / 80)² = 1,5² = 2,25."
+            },
+            {
+              "id": "u6s2q02",
+              "q": "À même masse et même incidence de rotation, comment évolue la vitesse de décollage sur un terrain élevé par forte chaleur, par rapport au niveau de la mer en atmosphère standard ?",
+              "choices": [
+                "Vitesse indiquée inchangée, vitesse vraie plus élevée",
+                "Vitesse indiquée plus élevée, vitesse vraie inchangée",
+                "Vitesse indiquée et vitesse vraie plus faibles",
+                "Vitesse indiquée et vitesse vraie inchangées"
+              ],
+              "answer": 0,
+              "explanation": "La portance dépend de ½ρV², que mesure l'anémomètre : à masse et incidence égales, la vitesse indiquée est la même. Comme ρ est plus faible, il faut une vitesse vraie plus grande pour obtenir ce même ½ρV², d'où une distance de décollage plus longue."
+            },
+            {
+              "id": "u6s2q03",
+              "q": "Quelle est l'origine de la traînée induite ?",
+              "choices": [
+                "Le frottement de l'air sur l'ensemble du revêtement de l'avion",
+                "Les éléments extérieurs non profilés, comme le train et les antennes",
+                "Les tourbillons marginaux créés par le passage de l'air de l'intrados vers l'extrados",
+                "Le souffle hélicoïdal de l'hélice qui frappe la dérive et l'empennage"
+              ],
+              "answer": 2,
+              "explanation": "En bout d'aile, l'air en surpression sous l'intrados contourne le saumon vers l'extrados en dépression et forme des tourbillons marginaux. Ils dévient l'écoulement vers le bas, ce qui incline la portance vers l'arrière : c'est la traînée induite, inséparable de la production de portance."
+            },
+            {
+              "id": "u6s2q04",
+              "q": "En palier, à masse constante, dans quelle condition de vol la traînée induite est-elle la plus forte ?",
+              "choices": [
+                "À grande vitesse et faible incidence",
+                "À la vitesse de finesse maximale",
+                "À toutes les vitesses : elle ne dépend que de la masse",
+                "À basse vitesse et grande incidence"
+              ],
+              "answer": 3,
+              "explanation": "À basse vitesse, il faut un grand Cz, donc une grande incidence, pour porter le poids : les tourbillons marginaux sont intenses. En palier, la traînée induite diminue comme 1/V² quand la vitesse augmente."
+            },
+            {
+              "id": "u6s2q05",
+              "q": "Laquelle de ces traînées n'appartient pas à la traînée parasite ?",
+              "choices": [
+                "La traînée de frottement",
+                "La traînée de forme",
+                "La traînée d'interférence",
+                "La traînée induite"
+              ],
+              "answer": 3,
+              "explanation": "La traînée parasite regroupe le frottement, la forme et l'interférence entre éléments ; elle croît comme V². La traînée induite est due à la production de portance et décroît quand la vitesse augmente."
+            },
+            {
+              "id": "u6s2q06",
+              "q": "Un avion léger a une finesse maximale de 10. Moteur en panne à 2 000 ft sol (environ 600 m), sans vent, quelle distance peut-il parcourir au mieux ?",
+              "choices": [
+                "3 km",
+                "6 km",
+                "12 km",
+                "20 km"
+              ],
+              "answer": 1,
+              "explanation": "Sans vent, distance = finesse × hauteur = 10 × 600 m = 6 000 m, soit environ 6 km (un peu plus de 3 NM), à condition de voler à la vitesse de finesse maximale."
+            },
+            {
+              "id": "u6s2q07",
+              "q": "Un planeur embarque du lest d'eau qui augmente sa masse. Que deviennent sa finesse maximale et sa vitesse de finesse maximale ?",
+              "choices": [
+                "Finesse max plus élevée, vitesse de finesse max inchangée",
+                "Finesse max plus faible, vitesse de finesse max plus faible",
+                "Finesse max inchangée, vitesse de finesse max plus élevée",
+                "Finesse max et vitesse de finesse max inchangées"
+              ],
+              "answer": 2,
+              "explanation": "La finesse max dépend de l'aérodynamique (Cz/Cx à une incidence donnée), pas de la masse. Pour porter un poids plus grand à la même incidence, il faut voler plus vite : la vitesse de finesse max augmente, comme la racine carrée de la masse."
+            },
+            {
+              "id": "u6s2q08",
+              "q": "La finesse d'un avion est égale au rapport :",
+              "choices": [
+                "portance / traînée",
+                "traînée / portance",
+                "poids / surface alaire",
+                "envergure² / surface alaire"
+              ],
+              "answer": 0,
+              "explanation": "f = Fz / Fx = Cz / Cx. En plané sans vent, elle est aussi égale au rapport distance parcourue / hauteur perdue. Poids / surface est la charge alaire, envergure² / surface l'allongement."
+            },
+            {
+              "id": "u6s2q09",
+              "q": "Sur la polaire Cz = f(Cx) d'un avion, où lit-on la finesse maximale ?",
+              "choices": [
+                "Au sommet de la courbe, là où Cz est maximal",
+                "Au point où Cx est minimal",
+                "Au point où la polaire coupe l'axe des Cz",
+                "Au point de contact de la tangente menée depuis l'origine"
+              ],
+              "answer": 3,
+              "explanation": "Pour chaque point de la polaire, Cz/Cx est la pente de la droite qui le relie à l'origine. Cette pente est maximale pour la droite tangente à la courbe. Le sommet correspond au Cz max, donc au décrochage."
+            },
+            {
+              "id": "u6s2q10",
+              "q": "Quel est l'effet principal de la sortie des volets de bord de fuite ?",
+              "choices": [
+                "Augmenter le Cz max, ce qui abaisse la vitesse de décrochage",
+                "Augmenter l'incidence critique de l'aile pour retarder le décrochage",
+                "Diminuer la traînée pour allonger le plané en approche",
+                "Augmenter la finesse de l'avion en descente"
+              ],
+              "answer": 0,
+              "explanation": "Les volets augmentent la cambrure (et parfois la surface) de l'aile : le Cz max augmente et la vitesse de décrochage diminue. En contrepartie, la traînée augmente, la finesse baisse et l'incidence critique diminue légèrement."
+            },
+            {
+              "id": "u6s2q11",
+              "q": "Quel est le rôle des becs de bord d'attaque ?",
+              "choices": [
+                "Augmenter la vitesse maximale en croisière",
+                "Réduire la traînée induite en bout d'aile",
+                "Retarder le décollement des filets d'air et augmenter l'incidence critique",
+                "Diminuer la cambrure pour réduire la portance à l'atterrissage"
+              ],
+              "answer": 2,
+              "explanation": "Le bec ménage une fente qui envoie de l'air rapide sur l'extrados : la couche limite est réénergisée et décolle plus tard. L'aile peut voler à une incidence plus élevée, avec un Cz max plus grand."
+            },
+            {
+              "id": "u6s2q12",
+              "q": "En palier, à masse constante, vous réduisez la vitesse de 120 kt à 90 kt en maintenant l'altitude. Que devez-vous faire de l'incidence ?",
+              "choices": [
+                "La diminuer, pour s'éloigner du décrochage",
+                "L'augmenter, pour compenser la baisse de pression dynamique",
+                "La garder constante, la portance ne dépendant que de la masse",
+                "La garder constante et augmenter la puissance"
+              ],
+              "answer": 1,
+              "explanation": "En palier, la portance doit rester égale au poids. Si V diminue, ½ρV² diminue : il faut augmenter Cz, donc l'incidence (manche vers l'arrière). Ici (120 / 90)² ≈ 1,78 : le Cz doit augmenter d'environ 78 %."
+            }
+          ]
+        },
+        {
+          "id": "u6s3",
+          "title": "Décrochage et vrille",
+          "icon": "⚠️",
+          "tips": "Le décrochage survient quand l'incidence dépasse l'incidence critique (de l'ordre de 15 à 18° pour un profil classique) : les filets d'air décollent de l'extrados, le Cz chute brutalement et la traînée augmente.\n• Il dépend de l'incidence, pas de la vitesse : on peut décrocher à n'importe quelle vitesse et à n'importe quelle assiette (ressource brutale, virage serré).\n• La vitesse de décrochage Vs n'en est qu'une conséquence : c'est la vitesse à laquelle il faut l'incidence critique pour porter l'avion, pour une masse, une configuration et un facteur de charge donnés.\n\nÉvolution de Vs (d'après Fz = ½ρSV²Cz max = n × m × g) :\n• comme la racine carrée de la masse : masse × 0,81 → Vs × 0,9 ;\n• comme la racine carrée du facteur de charge : Vs(n) = Vs × √n ; sous 2 g, Vs est multipliée par 1,41 ;\n• en vitesse indiquée, Vs ne varie pratiquement pas avec l'altitude.\n\nConfiguration et état de l'aile :\n• volets sortis : Cz max plus grand, Vs plus faible. VS0 (configuration atterrissage) marque le début de l'arc blanc, VS1 (en général lisse) le début de l'arc vert ;\n• givre, neige ou même insectes sur le bord d'attaque : Cz max et incidence critique réduits, Vs nettement plus élevée ; on décolle toujours avec des surfaces propres ;\n• centrage avant : Vs légèrement plus élevée.\n\nSignes avant-coureurs : vitesse faible et décroissante, commandes molles et peu efficaces, avertisseur de décrochage, vibrations (buffeting), assiette inhabituellement cabrée, bruit aérodynamique qui diminue. Au décrochage : abattée, parfois départ en roulis.\n\nSortie de décrochage :\n• diminuer l'incidence, manche vers l'avant : action prioritaire ;\n• ajuster la puissance, remettre les ailes à plat une fois l'incidence réduite, garder la symétrie au palonnier ;\n• ressource douce, sans redécrocher.\n\nAutorotation et vrille : si une aile décroche plus que l'autre (souvent à cause d'un lacet au moment du décrochage), elle porte moins et traîne plus. L'avion part en roulis et en lacet de ce côté ; l'aile descendante voit son incidence augmenter encore : le mouvement s'entretient seul, c'est l'autorotation. La vrille est une descente hélicoïdale, avion décroché, en autorotation. À ne pas confondre avec la spirale engagée : avion non décroché, vitesse croissante.\n\nSortie générique PARE (la procédure du manuel de vol prime toujours) :\n• P : puissance réduite ;\n• A : ailerons au neutre ;\n• R : palonnier (rudder) à fond du côté opposé à la rotation ;\n• E : profondeur (elevator) vers l'avant jusqu'à l'arrêt de la rotation ; puis palonnier au neutre et ressource douce.",
+          "vocab": [
+            { "term": "Incidence critique", "translation": "Incidence du Cz max, au-delà de laquelle l'aile décroche" },
+            { "term": "Vs", "translation": "Vitesse de décrochage ; croît avec la masse et comme √n" },
+            { "term": "VS0", "translation": "Décrochage en configuration atterrissage : début de l'arc blanc" },
+            { "term": "VS1", "translation": "Décrochage en configuration donnée (lisse) : début de l'arc vert" },
+            { "term": "Buffeting", "translation": "Vibrations dues aux filets décollés, signe d'un décrochage proche" },
+            { "term": "Abattée", "translation": "Chute du nez de l'avion au moment du décrochage" },
+            { "term": "Autorotation", "translation": "Rotation auto-entretenue due au décrochage inégal des ailes" },
+            { "term": "PARE", "translation": "Vrille : réduire, ailerons neutres, pied opposé, manche avant" }
+          ],
+          "questions": [
+            {
+              "id": "u6s3q01",
+              "q": "À quelle condition une aile décroche-t-elle ?",
+              "choices": [
+                "Quand sa vitesse devient inférieure à la vitesse de décrochage du manuel",
+                "Quand son incidence dépasse l'incidence critique",
+                "Quand l'assiette de l'avion dépasse environ 15°",
+                "Quand la puissance du moteur est réduite"
+              ],
+              "answer": 1,
+              "explanation": "Le décrochage est lié à l'incidence : au-delà de l'incidence critique, les filets d'air décollent de l'extrados et le Cz chute. La vitesse de décrochage publiée n'est valable que pour une masse, une configuration et un facteur de charge donnés (en général 1 g)."
+            },
+            {
+              "id": "u6s3q02",
+              "q": "En vol à 130 kt, bien au-dessus de VS1, un pilote tire brutalement sur le manche. Un décrochage est-il possible ?",
+              "choices": [
+                "Non, le décrochage n'est possible qu'en dessous de VS1",
+                "Non, sauf si les volets sont sortis",
+                "Oui, mais seulement si l'assiette dépasse 30°",
+                "Oui, si l'incidence critique est dépassée"
+              ],
+              "answer": 3,
+              "explanation": "On peut décrocher à n'importe quelle vitesse et à n'importe quelle assiette dès que l'incidence critique est dépassée. Une ressource brutale augmente l'incidence et le facteur de charge, donc la vitesse de décrochage (Vs × √n)."
+            },
+            {
+              "id": "u6s3q03",
+              "q": "Un avion décroche à 50 kt à la masse maximale. Quelle est approximativement sa vitesse de décrochage lorsque sa masse ne représente plus que 81 % de la masse maximale ?",
+              "choices": [
+                "40,5 kt",
+                "45 kt",
+                "50 kt",
+                "55 kt"
+              ],
+              "answer": 1,
+              "explanation": "Vs varie comme la racine carrée de la masse : 50 × √0,81 = 50 × 0,9 = 45 kt. La relation n'est pas proportionnelle : 40,5 kt serait faux."
+            },
+            {
+              "id": "u6s3q04",
+              "q": "Un avion décroche à 60 kt en palier ailes horizontales. Lors d'une ressource sous un facteur de charge de 2,25, sa vitesse de décrochage vaut :",
+              "choices": [
+                "60 kt",
+                "90 kt",
+                "120 kt",
+                "135 kt"
+              ],
+              "answer": 1,
+              "explanation": "Vs(n) = Vs × √n = 60 × √2,25 = 60 × 1,5 = 90 kt. Multiplier par n au lieu de √n donnerait 135 kt."
+            },
+            {
+              "id": "u6s3q05",
+              "q": "Sur l'anémomètre, à quelle vitesse correspond le début (côté basses vitesses) de l'arc blanc ?",
+              "choices": [
+                "À VS1, vitesse de décrochage en configuration lisse",
+                "À VFE, vitesse maximale volets sortis",
+                "À VS0, vitesse de décrochage en configuration atterrissage",
+                "À VNO, vitesse maximale en air turbulent"
+              ],
+              "answer": 2,
+              "explanation": "L'arc blanc (plage d'utilisation des volets) va de VS0, décrochage en configuration atterrissage à la masse maximale, jusqu'à VFE. L'arc vert commence à VS1 et l'arc jaune à VNO."
+            },
+            {
+              "id": "u6s3q06",
+              "q": "Avant le vol, vous constatez une fine couche de givre sur le bord d'attaque et l'extrados. Quel est l'effet sur le décrochage ?",
+              "choices": [
+                "L'incidence critique diminue et la vitesse de décrochage augmente",
+                "L'incidence critique augmente et la vitesse de décrochage diminue",
+                "Aucun effet notable tant que la couche reste fine",
+                "La traînée augmente mais la vitesse de décrochage est inchangée"
+              ],
+              "answer": 0,
+              "explanation": "Même fin, le givre rend l'extrados rugueux et déforme le profil : les filets décollent plus tôt, le Cz max et l'incidence critique diminuent, et Vs augmente. L'avertisseur de décrochage peut ne plus prévenir à temps : on décolle toujours avec des surfaces propres."
+            },
+            {
+              "id": "u6s3q07",
+              "q": "Lequel de ces signes annonce l'approche du décrochage ?",
+              "choices": [
+                "Des commandes de plus en plus dures et efficaces",
+                "Une vitesse qui augmente à assiette constante",
+                "Un bruit aérodynamique de plus en plus fort",
+                "Des vibrations de la cellule et des gouvernes (buffeting)"
+              ],
+              "answer": 3,
+              "explanation": "Près du décrochage, les filets décollés de l'aile provoquent des vibrations (buffeting). S'y ajoutent une vitesse faible, des commandes molles et peu efficaces, l'avertisseur de décrochage et une assiette souvent élevée ; le bruit aérodynamique, lui, diminue."
+            },
+            {
+              "id": "u6s3q08",
+              "q": "Quelle est l'action prioritaire pour sortir d'un décrochage ?",
+              "choices": [
+                "Diminuer l'incidence en rendant la main (manche vers l'avant)",
+                "Tirer sur le manche pour relever le nez",
+                "Remettre les ailes à plat aux ailerons avant toute autre action",
+                "Sortir les volets en grand"
+              ],
+              "answer": 0,
+              "explanation": "Le décrochage étant dû à une incidence excessive, on la réduit d'abord en poussant sur le manche. On ajuste ensuite la puissance, on remet les ailes à plat une fois l'incidence réduite, puis on effectue une ressource douce."
+            },
+            {
+              "id": "u6s3q09",
+              "q": "Qu'est-ce qu'une vrille ?",
+              "choices": [
+                "Une spirale engagée, avion non décroché, à vitesse croissante",
+                "Un virage à très grande inclinaison stabilisé en palier",
+                "Une descente en autorotation, avion décroché, sur une trajectoire hélicoïdale",
+                "Une abattée symétrique, sans rotation, après un décrochage"
+              ],
+              "answer": 2,
+              "explanation": "La vrille associe décrochage et autorotation : l'avion descend en tournant autour d'un axe vertical, à vitesse faible et à grande incidence. La spirale engagée se fait avion non décroché, avec une vitesse et un facteur de charge qui augmentent."
+            },
+            {
+              "id": "u6s3q10",
+              "q": "Au cours d'une vrille à gauche, que peut-on dire de l'aile gauche (aile descendante) ?",
+              "choices": [
+                "Son incidence est plus faible et elle porte davantage",
+                "Elle n'est pas décrochée, seule l'aile droite l'est",
+                "Elle porte autant que l'aile droite, seule sa traînée diffère",
+                "Son incidence est plus grande, elle porte moins et traîne plus"
+              ],
+              "answer": 3,
+              "explanation": "L'aile qui descend voit son incidence augmenter : plus profondément décrochée, elle porte moins et traîne davantage que l'aile montante. Cette dissymétrie entretient le roulis et le lacet : c'est l'autorotation."
+            },
+            {
+              "id": "u6s3q11",
+              "q": "Dans la méthode générique de sortie de vrille PARE, que signifie le « R » ?",
+              "choices": [
+                "Palonnier à fond du côté opposé à la rotation",
+                "Palonnier à fond du côté de la rotation",
+                "Remise de la pleine puissance",
+                "Manche à fond du côté opposé à la rotation"
+              ],
+              "answer": 0,
+              "explanation": "PARE : Puissance réduite, Ailerons au neutre, palonnier (Rudder) à fond du côté opposé à la Rotation, profondeur (Elevator) vers l'avant. La procédure du manuel de vol de l'avion reste prioritaire."
+            },
+            {
+              "id": "u6s3q12",
+              "q": "Un élève réalise un décrochage moteur réduit et appuie fortement sur le palonnier droit au moment où l'avion décroche. Quel est le risque principal ?",
+              "choices": [
+                "Un départ en vrille à gauche",
+                "Une simple abattée symétrique, sans rotation",
+                "Un départ en vrille à droite",
+                "Une sortie de décrochage facilitée par le lacet"
+              ],
+              "answer": 2,
+              "explanation": "Le lacet à droite ralentit l'aile droite, qui porte moins, s'enfonce et voit son incidence augmenter encore, tandis que l'aile gauche accélère et porte plus : l'avion part en autorotation à droite. Au décrochage, on garde la bille au centre."
+            }
+          ]
+        },
+        {
+          "id": "u6s4",
+          "title": "Virage et facteur de charge",
+          "icon": "↪️",
+          "tips": "En virage, l'avion est incliné d'un angle φ. La portance, perpendiculaire aux ailes, se décompose en :\n• une composante verticale Fz × cos φ, qui équilibre le poids ;\n• une composante horizontale Fz × sin φ, force centripète qui courbe la trajectoire.\nPour tenir le palier, la portance doit donc augmenter : Fz = P / cos φ. On augmente l'incidence (manche vers l'arrière) et on ajoute de la puissance, car la traînée induite augmente.\n\nFacteur de charge : n = portance / poids, exprimé en g. En virage en palier symétrique, n = 1 / cos φ :\n• 30° → n ≈ 1,15\n• 45° → n ≈ 1,41\n• 60° → n = 2\n• 70° → n ≈ 2,9\nIl ne dépend que de l'inclinaison, ni de la vitesse ni du type d'avion. Le pilote le ressent comme une augmentation de son poids apparent.\n\nVitesse de décrochage en virage : Vs(φ) = Vs × √n.\n• 30° : Vs × 1,07 ; 45° : Vs × 1,19 ; 60° : Vs × 1,41.\nUne forte inclinaison à basse vitesse, en particulier dans le dernier virage, peut donc provoquer un décrochage.\n\nRayon et taux de virage :\n• rayon R = V² / (g × tan φ) : il varie comme le carré de la vitesse vraie et diminue quand l'inclinaison augmente ;\n• taux de virage (en °/s), proportionnel à tan φ / V : il augmente avec l'inclinaison et diminue quand la vitesse augmente.\nVirage au taux standard (taux 1) : 3°/s, soit 360° en 2 minutes ; l'inclinaison nécessaire augmente avec la vitesse (environ 15° à 100 kt).\n\nSymétrie et bille : en vol symétrique, la bille est au centre. Règle : « le pied chasse la bille », on appuie sur le palonnier du côté où se trouve la bille.\n• Glissade : bille à l'intérieur du virage (inclinaison trop forte pour le taux de virage).\n• Dérapage : bille à l'extérieur du virage (excès de pied intérieur).\nUn virage dérapé près du décrochage favorise le départ en vrille.\n\nLimites de facteur de charge : chaque avion est certifié dans une catégorie qui fixe le facteur de charge limite à ne pas dépasser (au-delà, risque de déformation permanente). Valeurs positives usuelles pour les avions légers :\n• normale : +3,8 g (virages jusqu'à 60°, pas de voltige) ;\n• utilitaire : +4,4 g (voltige limitée, vrilles si elles sont approuvées) ;\n• acrobatique : +6 g.\nLa structure est calculée pour 1,5 fois le facteur limite (facteur extrême). Un avion peut être certifié dans deux catégories, chacune avec ses limites de masse et de centrage. En air agité, on reste sous la VNO (début de l'arc jaune).",
+          "vocab": [
+            { "term": "Facteur de charge (n)", "translation": "Rapport portance / poids, exprimé en g" },
+            { "term": "n en virage", "translation": "n = 1/cos φ : 1,15 à 30°, 1,41 à 45°, 2 à 60°" },
+            { "term": "Vs en virage", "translation": "Vs × √n : × 1,19 à 45°, × 1,41 à 60°" },
+            { "term": "Force centripète", "translation": "Composante horizontale de la portance qui courbe la trajectoire" },
+            { "term": "Taux standard", "translation": "Taux 1 : 3°/s, soit un tour complet en 2 minutes" },
+            { "term": "Glissade", "translation": "Vol dissymétrique, bille à l'intérieur du virage" },
+            { "term": "Dérapage", "translation": "Vol dissymétrique, bille à l'extérieur du virage" },
+            { "term": "Facteur de charge limite", "translation": "+3,8 g en catégorie normale, +4,4 g en utilitaire" }
+          ],
+          "questions": [
+            {
+              "id": "u6s4q01",
+              "q": "Comment définit-on le facteur de charge ?",
+              "choices": [
+                "Le rapport de la portance au poids",
+                "Le rapport du poids à la portance",
+                "Le rapport de la masse à la surface alaire",
+                "Le rapport de la traînée à la portance"
+              ],
+              "answer": 0,
+              "explanation": "n = Fz / P. En palier rectiligne n = 1 ; en virage en palier il vaut 1 / cos φ. La masse rapportée à la surface alaire est la charge alaire."
+            },
+            {
+              "id": "u6s4q02",
+              "q": "Quel est le facteur de charge en virage en palier à 60° d'inclinaison ?",
+              "choices": [
+                "1,15",
+                "1,41",
+                "2",
+                "4"
+              ],
+              "answer": 2,
+              "explanation": "n = 1 / cos φ = 1 / cos 60° = 1 / 0,5 = 2. À retenir : 30° → 1,15 ; 45° → 1,41 ; 60° → 2."
+            },
+            {
+              "id": "u6s4q03",
+              "q": "Un pilote pèse 80 daN. En virage en palier à 45° d'inclinaison, quelle force exerce-t-il environ sur son siège ?",
+              "choices": [
+                "57 daN",
+                "80 daN",
+                "92 daN",
+                "113 daN"
+              ],
+              "answer": 3,
+              "explanation": "À 45°, n = 1 / cos 45° ≈ 1,41. La force exercée sur le siège vaut n × poids = 1,41 × 80 ≈ 113 daN."
+            },
+            {
+              "id": "u6s4q04",
+              "q": "Un avion décroche à 64 kt en palier ailes horizontales. Quelle est sa vitesse de décrochage en virage en palier à 45° d'inclinaison ?",
+              "choices": [
+                "76 kt",
+                "90 kt",
+                "64 kt",
+                "128 kt"
+              ],
+              "answer": 0,
+              "explanation": "Vs(φ) = Vs × √n, avec n ≈ 1,41 à 45°, donc √1,41 ≈ 1,19 : 64 × 1,19 ≈ 76 kt. Multiplier par n au lieu de √n donnerait 90 kt."
+            },
+            {
+              "id": "u6s4q05",
+              "q": "Un biplace à 90 kt et un avion de voyage à 160 kt virent tous deux en palier à 30° d'inclinaison. Lequel subit le facteur de charge le plus élevé ?",
+              "choices": [
+                "L'avion de voyage, car il est le plus rapide",
+                "Le biplace, car il est le plus lent",
+                "Les deux subissent le même, environ 1,15 g",
+                "Le plus lourd des deux, quelle que soit sa vitesse"
+              ],
+              "answer": 2,
+              "explanation": "En virage en palier symétrique, n = 1 / cos φ ne dépend que de l'inclinaison : 1 / cos 30° ≈ 1,15 pour les deux avions. La vitesse influe sur le rayon et le taux de virage, pas sur le facteur de charge."
+            },
+            {
+              "id": "u6s4q06",
+              "q": "En virage en palier à inclinaison constante, la vitesse vraie double. Le rayon de virage est :",
+              "choices": [
+                "multiplié par 2",
+                "multiplié par 4",
+                "divisé par 2",
+                "inchangé"
+              ],
+              "answer": 1,
+              "explanation": "R = V² / (g × tan φ) : à inclinaison constante, le rayon varie comme le carré de la vitesse vraie, soit 2² = 4."
+            },
+            {
+              "id": "u6s4q07",
+              "q": "Pour virer en palier avec un rayon plus petit et un taux de virage plus élevé, le pilote doit :",
+              "choices": [
+                "diminuer l'inclinaison et augmenter la vitesse",
+                "augmenter l'inclinaison et la vitesse",
+                "garder l'inclinaison et augmenter la vitesse",
+                "augmenter l'inclinaison et réduire la vitesse"
+              ],
+              "answer": 3,
+              "explanation": "Le rayon R = V² / (g × tan φ) diminue et le taux de virage (proportionnel à tan φ / V) augmente quand l'inclinaison augmente et que la vitesse diminue, en restant bien au-dessus de la vitesse de décrochage en virage."
+            },
+            {
+              "id": "u6s4q08",
+              "q": "Un virage au taux standard (taux 1) permet d'effectuer un tour complet en :",
+              "choices": [
+                "1 minute",
+                "2 minutes",
+                "3 minutes",
+                "4 minutes"
+              ],
+              "answer": 1,
+              "explanation": "Le taux 1 correspond à 3° par seconde : 360° / 3 = 120 s, soit 2 minutes. Le taux 2 (6°/s) donne un tour en 1 minute."
+            },
+            {
+              "id": "u6s4q09",
+              "q": "En virage à gauche, la bille est décalée vers la droite, à l'extérieur du virage. Le vol est :",
+              "choices": [
+                "glissé ; on le corrige au palonnier gauche",
+                "dérapé ; on le corrige au palonnier droit",
+                "glissé ; on le corrige au palonnier droit",
+                "dérapé ; on le corrige au palonnier gauche"
+              ],
+              "answer": 1,
+              "explanation": "Bille à l'extérieur du virage : l'avion dérape (excès de pied intérieur ou inclinaison insuffisante). « Le pied chasse la bille » : on appuie à droite, du côté de la bille, ce qui revient à relâcher le pied gauche."
+            },
+            {
+              "id": "u6s4q10",
+              "q": "Quel est le facteur de charge limite positif habituel d'un avion léger certifié en catégorie normale ?",
+              "choices": [
+                "+2",
+                "+6",
+                "+3,8",
+                "+4,4"
+              ],
+              "answer": 2,
+              "explanation": "Catégorie normale : +3,8 g ; utilitaire : +4,4 g ; acrobatique : +6 g. Ce sont des facteurs limites : la structure est calculée pour résister à 1,5 fois ces valeurs (facteurs extrêmes)."
+            },
+            {
+              "id": "u6s4q11",
+              "q": "Un avion est certifié à la fois en catégorie normale et en catégorie utilitaire. Qu'apporte l'utilisation en catégorie utilitaire ?",
+              "choices": [
+                "Un facteur de charge limite positif plus élevé : +4,4 au lieu de +3,8",
+                "Un facteur de charge limite plus faible, réservé au travail aérien",
+                "La voltige sans restriction, jusqu'à +6",
+                "Une vitesse à ne jamais dépasser (VNE) plus élevée"
+              ],
+              "answer": 0,
+              "explanation": "La catégorie utilitaire autorise une voltige limitée (virages à plus de 60°, vrilles si elles sont approuvées) avec un facteur limite de +4,4. Elle impose souvent une masse et un centrage plus restreints, définis par le manuel de vol."
+            },
+            {
+              "id": "u6s4q12",
+              "q": "Pourquoi faut-il augmenter la puissance pour garder la vitesse en virage en palier à grande inclinaison ?",
+              "choices": [
+                "Parce que la composante horizontale de la portance freine l'avion",
+                "Parce que le facteur de charge diminue en virage",
+                "Parce que l'hélice perd son rendement quand l'avion est incliné",
+                "Parce que la portance accrue augmente la traînée induite"
+              ],
+              "answer": 3,
+              "explanation": "En virage en palier, la portance doit valoir P / cos φ. On l'obtient en augmentant l'incidence, ce qui augmente la traînée induite : sans puissance supplémentaire, la vitesse diminue."
+            }
+          ]
+        },
+        {
+          "id": "u6s5",
+          "title": "Stabilité, commandes et effets",
+          "icon": "⚖️",
+          "tips": "Les trois axes passent par le centre de gravité (CG) :\n• tangage, autour de l'axe transversal : gouverne de profondeur, manche en avant ou en arrière ;\n• roulis, autour de l'axe longitudinal : ailerons, braqués en sens inverse, manche à gauche ou à droite ;\n• lacet, autour de l'axe vertical : gouverne de direction, palonniers.\n\nStabilité statique : tendance d'un avion écarté de son équilibre à y revenir seul (sinon il est neutre ou instable).\n\nFoyer : point où s'appliquent les variations de portance quand l'incidence change ; le moment par rapport au foyer ne varie pas avec l'incidence (vers 25 % de la corde pour un profil). À ne pas confondre avec le centre de poussée, point d'application de la résultante aérodynamique, qui se déplace avec l'incidence.\n\nStabilité longitudinale : le CG doit être en avant du foyer de l'avion. Une rafale qui augmente l'incidence crée alors un surcroît de portance en arrière du CG, qui fait piquer et ramène l'incidence.\n• Centrage avant : avion très stable mais lourd à la profondeur, Vs un peu plus élevée, risque de manquer de profondeur à l'arrondi.\n• Centrage arrière : avion moins stable, commandes légères et sensibles, sortie de vrille plus difficile. CG derrière le foyer : avion instable.\nIl faut donc respecter les limites de centrage du manuel de vol.\n\nCompensateur (trim) : petite surface (tab) au bord de fuite de la gouverne, réglée depuis le poste, qui annule l'effort au manche pour une vitesse donnée. Il se braque en sens inverse de la gouverne : tab vers le bas pour tenir la profondeur vers le haut.\n\nLacet inverse : en roulis, l'aileron baissé (aile qui monte) augmente la portance et la traînée induite de cette aile ; le nez part du côté opposé au virage. On le contre au palonnier du côté du virage ; les ailerons différentiels (l'aileron levé braque plus que l'aileron baissé) le réduisent.\n\nEffets moteur, pour une hélice tournant dans le sens horaire vue du poste (cas des moteurs Lycoming et Continental) :\n• couple de renversement : réaction au couple de l'hélice, il incline l'avion à gauche ;\n• souffle hélicoïdal : il s'enroule autour du fuselage et frappe la dérive par la gauche : lacet à gauche ;\n• facteur P : à grande incidence, la pale descendante (à droite) tire plus que la pale montante : lacet à gauche ;\n• effet gyroscopique : quand on lève la queue d'un train classique, lacet à gauche.\nCes effets, maximaux à forte puissance et basse vitesse, se contrent au pied droit.\n\nEffet de sol : à moins d'une envergure du sol environ, et surtout sous une demi-envergure, le sol gêne les tourbillons marginaux et la traînée induite diminue. Un avion trop rapide flotte à l'arrondi ; au décollage, il peut quitter le sol à une vitesse trop faible pour monter hors de l'effet de sol.",
+          "vocab": [
+            { "term": "Tangage / roulis / lacet", "translation": "Rotations autour des axes transversal, longitudinal et vertical" },
+            { "term": "Stabilité statique", "translation": "Tendance de l'avion à revenir seul à son équilibre" },
+            { "term": "Foyer", "translation": "Point d'application des variations de portance" },
+            { "term": "Centrage", "translation": "Position du CG, à garder dans les limites du manuel de vol" },
+            { "term": "Compensateur (trim)", "translation": "Surface réglable qui annule l'effort au manche" },
+            { "term": "Lacet inverse", "translation": "Lacet opposé au virage, dû à la traînée de l'aileron baissé" },
+            { "term": "Facteur P", "translation": "Traction plus forte de la pale descendante à grande incidence" },
+            { "term": "Effet de sol", "translation": "Baisse de la traînée induite près du sol (moins d'une envergure)" }
+          ],
+          "questions": [
+            {
+              "id": "u6s5q01",
+              "q": "Quelle association entre gouverne et mouvement est correcte ?",
+              "choices": [
+                "Profondeur : lacet, autour de l'axe vertical",
+                "Direction : tangage, autour de l'axe transversal",
+                "Ailerons : tangage, autour de l'axe transversal",
+                "Ailerons : roulis, autour de l'axe longitudinal"
+              ],
+              "answer": 3,
+              "explanation": "Les ailerons commandent le roulis (axe longitudinal), la profondeur le tangage (axe transversal) et la direction le lacet (axe vertical). Les trois axes passent par le centre de gravité."
+            },
+            {
+              "id": "u6s5q02",
+              "q": "Un avion est statiquement stable en tangage si, après une rafale qui augmente son incidence :",
+              "choices": [
+                "il tend de lui-même à revenir à son incidence initiale",
+                "il conserve sa nouvelle incidence sans revenir en arrière",
+                "il continue de lui-même à cabrer de plus en plus",
+                "il part en roulis du côté de l'aile la plus basse"
+              ],
+              "answer": 0,
+              "explanation": "La stabilité statique est la tendance à revenir vers l'équilibre après une perturbation, sans action du pilote. Conserver la nouvelle position correspond à une stabilité neutre ; s'en écarter davantage, à de l'instabilité."
+            },
+            {
+              "id": "u6s5q03",
+              "q": "Quelle condition assure la stabilité longitudinale statique d'un avion ?",
+              "choices": [
+                "Le centre de gravité doit être situé en arrière du foyer",
+                "Le centre de gravité doit être situé en avant du foyer",
+                "Le centre de gravité doit être confondu avec le foyer",
+                "Le foyer doit être situé au bord d'attaque de l'aile"
+              ],
+              "answer": 1,
+              "explanation": "Si le CG est en avant du foyer, une augmentation d'incidence crée un surcroît de portance appliqué en arrière du CG : l'avion pique et l'incidence revient. CG confondu avec le foyer : stabilité neutre ; CG en arrière : instabilité."
+            },
+            {
+              "id": "u6s5q04",
+              "q": "Par rapport à un centrage avant, un centrage arrière (dans les limites du manuel) rend l'avion :",
+              "choices": [
+                "plus stable et plus lourd à la profondeur",
+                "plus stable, avec une vitesse de décrochage plus élevée",
+                "moins stable, avec des efforts à la profondeur plus faibles",
+                "insensible aux actions sur la profondeur"
+              ],
+              "answer": 2,
+              "explanation": "En reculant, le CG se rapproche du foyer : la marge de stabilité diminue, l'avion devient plus sensible et les efforts au manche plus faibles. Au-delà de la limite arrière, l'avion peut devenir instable et la sortie de vrille difficile."
+            },
+            {
+              "id": "u6s5q05",
+              "q": "Votre avion est chargé avec un centrage proche de la limite avant. À quoi devez-vous vous attendre ?",
+              "choices": [
+                "Une profondeur lourde, notamment à l'arrondi, et une Vs un peu plus élevée",
+                "Un avion instable, avec des efforts au manche très faibles",
+                "Une tendance plus marquée au départ en vrille",
+                "Une vitesse de décrochage plus faible et une meilleure maniabilité"
+              ],
+              "answer": 0,
+              "explanation": "Un CG avant rend l'avion très stable : il faut plus de déportance à l'empennage, donc plus d'effort et de braquage de profondeur, qui peuvent manquer à l'arrondi. Cette déportance oblige l'aile à porter davantage : Vs augmente légèrement."
+            },
+            {
+              "id": "u6s5q06",
+              "q": "À quoi sert le compensateur de profondeur ?",
+              "choices": [
+                "À augmenter le braquage maximal de la gouverne de profondeur",
+                "À déplacer le centre de gravité de l'avion",
+                "À contrer le lacet inverse à la mise en virage",
+                "À annuler l'effort au manche pour une assiette et une vitesse données"
+              ],
+              "answer": 3,
+              "explanation": "Le compensateur (trim) permet de voler sans effort au manche dans une situation stabilisée. Il ne déplace pas le centre de gravité ; on le règle après chaque changement de vitesse, de puissance ou de configuration."
+            },
+            {
+              "id": "u6s5q07",
+              "q": "Le compensateur est réglé pour maintenir sans effort la gouverne de profondeur braquée vers le haut (à cabrer). Dans quel sens est braqué le tab situé au bord de fuite de la gouverne ?",
+              "choices": [
+                "Vers le haut, dans le même sens que la gouverne",
+                "Vers le bas, en sens inverse de la gouverne",
+                "Vers le haut, puis il revient au neutre une fois la vitesse stabilisée",
+                "Vers le bas, puis il revient au neutre une fois la vitesse stabilisée"
+              ],
+              "answer": 1,
+              "explanation": "La force aérodynamique sur le tab braqué vers le bas pousse le bord de fuite de la gouverne vers le haut et la maintient à cabrer. Le tab se braque toujours en sens inverse de la gouverne qu'il compense et reste braqué tant que le réglage n'est pas modifié."
+            },
+            {
+              "id": "u6s5q08",
+              "q": "Vous inclinez l'avion à droite aux seuls ailerons et le nez part d'abord vers la gauche. Quelle en est la cause ?",
+              "choices": [
+                "La traînée accrue de l'aile droite, dont l'aileron est levé",
+                "Le souffle hélicoïdal qui frappe la dérive par la droite",
+                "La traînée induite accrue de l'aile gauche, dont l'aileron est baissé",
+                "Le couple de renversement de l'hélice"
+              ],
+              "answer": 2,
+              "explanation": "C'est le lacet inverse : l'aileron baissé de l'aile qui monte augmente sa portance, donc sa traînée induite, et retient cette aile. On le contre au palonnier du côté du virage ; les ailerons différentiels le réduisent."
+            },
+            {
+              "id": "u6s5q09",
+              "q": "Qu'appelle-t-on le foyer d'un profil ou d'un avion ?",
+              "choices": [
+                "Le point d'application du poids de l'avion",
+                "Le point où s'appliquent les variations de portance, fixe quand l'incidence varie",
+                "Le point d'application de la résultante aérodynamique, qui se déplace avec l'incidence",
+                "Le point du profil où l'épaisseur est maximale"
+              ],
+              "answer": 1,
+              "explanation": "Au foyer s'appliquent les variations de portance : le moment par rapport à ce point ne change pas avec l'incidence. Il se situe vers 25 % de la corde pour un profil. Le centre de poussée, lui, se déplace avec l'incidence ; le poids s'applique au centre de gravité."
+            },
+            {
+              "id": "u6s5q10",
+              "q": "Au décollage, un avion dont l'hélice tourne dans le sens horaire vue du poste de pilotage tend à partir à gauche. Laquelle de ces causes contribue à ce lacet ?",
+              "choices": [
+                "Le souffle hélicoïdal, qui frappe la dérive par la gauche",
+                "Le souffle hélicoïdal, qui frappe la dérive par la droite",
+                "Le lacet inverse dû aux ailerons",
+                "L'effet de sol, qui freine l'aile gauche"
+              ],
+              "answer": 0,
+              "explanation": "Le souffle de l'hélice s'enroule autour du fuselage et frappe la dérive par la gauche : la queue est poussée vers la droite, le nez part à gauche. Le facteur P et l'effet gyroscopique (train classique) s'y ajoutent ; on contre au palonnier droit."
+            },
+            {
+              "id": "u6s5q11",
+              "q": "Dans quelle situation le facteur P (dissymétrie de traction de l'hélice) est-il le plus marqué ?",
+              "choices": [
+                "En croisière rapide, à faible incidence",
+                "En descente, moteur réduit",
+                "En montée à basse vitesse et pleine puissance",
+                "En palier à la vitesse maximale"
+              ],
+              "answer": 2,
+              "explanation": "À grande incidence, la pale descendante attaque l'air avec une incidence plus forte que la pale montante et tire davantage. L'effet est maximal à forte puissance et grande incidence : montée lente, roulage au décollage d'un train classique queue basse."
+            },
+            {
+              "id": "u6s5q12",
+              "q": "En courte finale, à une hauteur inférieure à une demi-envergure environ, quel est l'effet du sol sur l'avion ?",
+              "choices": [
+                "Il augmente la traînée induite et fait chuter brutalement l'avion",
+                "Il ne concerne que les avions à aile haute",
+                "Il n'agit qu'au décollage, jamais pendant l'atterrissage",
+                "Il réduit la traînée induite : l'avion peut flotter à l'arrondi"
+              ],
+              "answer": 3,
+              "explanation": "Près du sol, les tourbillons marginaux et la déviation de l'écoulement vers le bas sont gênés : la traînée induite diminue. Un avion trop rapide flotte à l'arrondi ; au décollage, il peut quitter le sol avant de pouvoir monter hors de l'effet de sol."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

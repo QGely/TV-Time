@@ -1,0 +1,93 @@
+{
+  "id": "how-to-train-your-dragon",
+  "name": "Dragons",
+  "description": "L'intégrale Dragons de DreamWorks : la trilogie animée, les séries dérivées et le remake live action de 2025. L'ordre affiché par défaut suit la chronologie de l'histoire, qui diffère de l'ordre de sortie (les séries se placent entre les films).",
+  "icon": "🐲",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "How to Train Your Dragon",
+      "title_fr": "Dragons",
+      "year": 2010,
+      "tmdb_id": 10191,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Films",
+      "note": "Harold rencontre Krokmou : le point de départ de la saga.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "DreamWorks Dragons",
+      "title_fr": "Dragons : Cavaliers de Beurk",
+      "year": 2012,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Séries",
+      "note": "Cavaliers de Beurk + Défenseurs de Beurk, entre les films 1 et 2.",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragons: Race to the Edge",
+      "title_fr": "Dragons : Par-delà les rives",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 4,
+      "group": "Séries",
+      "note": "Suite directe de la série, juste avant Dragons 2.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "How to Train Your Dragon 2",
+      "title_fr": "Dragons 2",
+      "year": 2014,
+      "tmdb_id": 82702,
+      "chronological_order": 4,
+      "release_order": 3,
+      "group": "Films",
+      "note": "Cinq ans après le premier film.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "How to Train Your Dragon: The Hidden World",
+      "title_fr": "Dragons 3 : Le Monde caché",
+      "year": 2019,
+      "tmdb_id": 166428,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Films",
+      "note": "Conclusion de la trilogie animée.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragons: The Nine Realms",
+      "title_fr": "Dragons : Les Neuf Royaumes",
+      "year": 2021,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Séries",
+      "note": "Se déroule 1300 ans après la trilogie, de nos jours.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "How to Train Your Dragon",
+      "title_fr": "Dragons",
+      "year": 2025,
+      "tmdb_id": 1087192,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Remake",
+      "note": "Remake live action du film de 2010, à voir en bonus.",
+      "optional": true
+    }
+  ]
+}

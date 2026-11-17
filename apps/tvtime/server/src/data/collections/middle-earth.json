@@ -1,0 +1,117 @@
+{
+  "id": "middle-earth",
+  "name": "Terre du Milieu (Tolkien)",
+  "description": "Toutes les adaptations de Tolkien au cinéma et en série, du Second Âge à la Guerre de l'Anneau. L'ordre affiché par défaut est l'ordre chronologique de l'histoire, qui diffère de l'ordre de sortie.",
+  "icon": "💍",
+  "category": "fantasy",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "The Lord of the Rings: The Rings of Power",
+      "title_fr": "Le Seigneur des Anneaux : Les Anneaux de Pouvoir",
+      "year": 2022,
+      "tmdb_id": 84773,
+      "chronological_order": 1,
+      "release_order": 8,
+      "group": "Second Âge",
+      "note": "Second Âge, des milliers d'années avant Le Hobbit : forge des Anneaux",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Lord of the Rings: The War of the Rohirrim",
+      "title_fr": "Le Seigneur des Anneaux : La Guerre des Rohirrim",
+      "year": 2024,
+      "tmdb_id": 839033,
+      "chronological_order": 2,
+      "release_order": 9,
+      "group": "Troisième Âge",
+      "note": "Film d'animation, environ 180 ans avant Le Hobbit (histoire de Helm)",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hobbit: An Unexpected Journey",
+      "title_fr": "Le Hobbit : Un voyage inattendu",
+      "year": 2012,
+      "tmdb_id": 49051,
+      "chronological_order": 3,
+      "release_order": 5,
+      "group": "Le Hobbit",
+      "note": "An 2941 du Troisième Âge, 60 ans avant la Guerre de l'Anneau",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hobbit: The Desolation of Smaug",
+      "title_fr": "Le Hobbit : La Désolation de Smaug",
+      "year": 2013,
+      "tmdb_id": 57158,
+      "chronological_order": 4,
+      "release_order": 6,
+      "group": "Le Hobbit",
+      "note": "Suite directe du voyage vers Erebor",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Hobbit: The Battle of the Five Armies",
+      "title_fr": "Le Hobbit : La Bataille des Cinq Armées",
+      "year": 2014,
+      "tmdb_id": 122917,
+      "chronological_order": 5,
+      "release_order": 7,
+      "group": "Le Hobbit",
+      "note": "Fin du voyage de Bilbon, se termine juste avant la Communauté",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Lord of the Rings: The Fellowship of the Ring",
+      "title_fr": "Le Seigneur des anneaux : La Communauté de l'anneau",
+      "year": 2001,
+      "tmdb_id": 120,
+      "chronological_order": 6,
+      "release_order": 2,
+      "group": "Le Seigneur des Anneaux",
+      "note": "An 3018 du Troisième Âge, début de la Guerre de l'Anneau",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Lord of the Rings: The Two Towers",
+      "title_fr": "Le Seigneur des anneaux : Les Deux Tours",
+      "year": 2002,
+      "tmdb_id": 121,
+      "chronological_order": 7,
+      "release_order": 3,
+      "group": "Le Seigneur des Anneaux",
+      "note": "An 3019, bataille du Gouffre de Helm",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Lord of the Rings: The Return of the King",
+      "title_fr": "Le Seigneur des anneaux : Le Retour du roi",
+      "year": 2003,
+      "tmdb_id": 122,
+      "chronological_order": 8,
+      "release_order": 4,
+      "group": "Le Seigneur des Anneaux",
+      "note": "An 3019, fin de la Guerre de l'Anneau et du Troisième Âge",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Lord of the Rings",
+      "title_fr": "Le Seigneur des anneaux",
+      "year": 1978,
+      "tmdb_id": 123,
+      "chronological_order": 9,
+      "release_order": 1,
+      "group": "Films d'animation",
+      "note": "Adaptation animée alternative (Bakshi) de la Communauté et des Deux Tours",
+      "optional": true
+    }
+  ]
+}

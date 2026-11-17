@@ -1,0 +1,93 @@
+{
+  "id": "kung-fu-panda",
+  "name": "Kung Fu Panda",
+  "description": "Les quatre films Kung Fu Panda de DreamWorks et les trois séries dérivées, présentés dans l'ordre de l'histoire (les séries prennent place entre les films). Ici, l'ordre chronologique coïncide avec l'ordre de sortie.",
+  "icon": "🐼",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Kung Fu Panda",
+      "title_fr": "Kung Fu Panda",
+      "year": 2008,
+      "tmdb_id": 9502,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Films",
+      "note": "Po devient le Guerrier Dragon face à Taï Lung.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Kung Fu Panda 2",
+      "title_fr": "Kung Fu Panda 2",
+      "year": 2011,
+      "tmdb_id": 49444,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Films",
+      "note": "Po affronte Lord Shen et découvre ses origines.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Kung Fu Panda: Legends of Awesomeness",
+      "title_fr": "Kung Fu Panda : L'Incroyable Légende",
+      "year": 2011,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Séries",
+      "note": "Série Nickelodeon, à regarder entre les films 2 et 3.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Kung Fu Panda 3",
+      "title_fr": "Kung Fu Panda 3",
+      "year": 2016,
+      "tmdb_id": 140300,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Films",
+      "note": "Po retrouve son père Li et le village secret des pandas.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Kung Fu Panda: The Paws of Destiny",
+      "title_fr": "Kung Fu Panda : Les Pattes du destin",
+      "year": 2018,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Séries",
+      "note": "Série Amazon, se déroule après le film 3.",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Kung Fu Panda: The Dragon Knight",
+      "title_fr": "Kung Fu Panda : Le Chevalier Dragon",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Séries",
+      "note": "Série Netflix, entre les films 3 et 4.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Kung Fu Panda 4",
+      "title_fr": "Kung Fu Panda 4",
+      "year": 2024,
+      "tmdb_id": 1011985,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Films",
+      "note": "Po doit trouver son successeur et affronter la Caméléone.",
+      "optional": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "rambo",
+  "name": "Rambo",
+  "description": "Les cinq films de la saga Rambo avec Sylvester Stallone, du vétéran traqué de First Blood au dernier baroud de Last Blood. L'ordre chronologique de l'histoire correspond ici à l'ordre de sortie.",
+  "icon": "🎖️",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "First Blood",
+      "title_fr": "Rambo",
+      "year": 1982,
+      "tmdb_id": 1368,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": null,
+      "note": "Le vétéran John Rambo traqué par le shérif d'une petite ville.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rambo: First Blood Part II",
+      "title_fr": "Rambo II : La Mission",
+      "year": 1985,
+      "tmdb_id": 1369,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "Retour au Vietnam pour libérer des prisonniers de guerre.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rambo III",
+      "title_fr": "Rambo III",
+      "year": 1988,
+      "tmdb_id": 1370,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": null,
+      "note": "Rambo part en Afghanistan sauver le colonel Trautman.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rambo",
+      "title_fr": "John Rambo",
+      "year": 2008,
+      "tmdb_id": 7555,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": null,
+      "note": "Vingt ans plus tard, mission de sauvetage en Birmanie.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Rambo: Last Blood",
+      "title_fr": "Rambo: Last Blood",
+      "year": 2019,
+      "tmdb_id": 522938,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": null,
+      "note": "Dernier combat contre un cartel mexicain.",
+      "optional": false
+    }
+  ]
+}

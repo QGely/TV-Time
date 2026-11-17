@@ -1,0 +1,57 @@
+{
+  "id": "the-witcher",
+  "name": "The Witcher",
+  "description": "L'univers The Witcher de Netflix dans l'ordre de l'histoire : L'Origine du sang 1200 ans avant, Le Cauchemar du loup sur la jeunesse de Vesemir, puis la série et le film Les Sirènes des abysses.",
+  "icon": "🐺",
+  "category": "fantasy",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "The Witcher: Blood Origin",
+      "title_fr": "The Witcher : L'Origine du sang",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 3,
+      "group": "Préquelles",
+      "note": "Mini-série 1200 ans avant Geralt : la Conjonction des sphères",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "The Witcher: Nightmare of the Wolf",
+      "title_fr": "The Witcher : Le Cauchemar du loup",
+      "year": 2021,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Préquelles",
+      "note": "Film d'animation sur la jeunesse de Vesemir, mentor de Geralt",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "The Witcher",
+      "title_fr": "The Witcher",
+      "year": 2019,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 1,
+      "group": "Série principale",
+      "note": "Geralt de Riv, Yennefer et Ciri",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Witcher: Sirens of the Deep",
+      "title_fr": "The Witcher : Les Sirènes des abysses",
+      "year": 2025,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Films",
+      "note": "Film d'animation situé pendant la saison 1 de la série",
+      "optional": true
+    }
+  ]
+}

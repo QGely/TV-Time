@@ -1,0 +1,81 @@
+{
+  "id": "ice-age",
+  "name": "L'Âge de glace",
+  "description": "La saga complète de Manny, Sid, Diego et Scrat, du premier film au spin-off consacré à Buck. L'ordre chronologique de l'histoire correspond ici à l'ordre de sortie en salles.",
+  "icon": "🦣",
+  "category": "animation",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Ice Age",
+      "title_fr": "L'Âge de glace",
+      "year": 2002,
+      "tmdb_id": 425,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Saga principale",
+      "note": "Le film fondateur : Manny, Sid et Diego ramènent un bébé humain à sa tribu.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ice Age: The Meltdown",
+      "title_fr": "L'Âge de glace 2",
+      "year": 2006,
+      "tmdb_id": 950,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Saga principale",
+      "note": "La fonte des glaces menace la vallée ; arrivée d'Ellie, Crash et Eddie.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ice Age: Dawn of the Dinosaurs",
+      "title_fr": "L'Âge de glace 3 : Le Temps des dinosaures",
+      "year": 2009,
+      "tmdb_id": 8355,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Saga principale",
+      "note": "Sid adopte des œufs de dinosaure ; première apparition de Buck.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ice Age: Continental Drift",
+      "title_fr": "L'Âge de glace 4 : La Dérive des continents",
+      "year": 2012,
+      "tmdb_id": 57800,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Saga principale",
+      "note": "Séparés par la dérive des continents, Manny et ses amis affrontent des pirates.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ice Age: Collision Course",
+      "title_fr": "L'Âge de glace : Les Lois de l'Univers",
+      "year": 2016,
+      "tmdb_id": 278154,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Saga principale",
+      "note": "Scrat déclenche une pluie d'astéroïdes ; retour de Buck.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "The Ice Age Adventures of Buck Wild",
+      "title_fr": "L'Âge de glace : Les Aventures de Buck Wild",
+      "year": 2022,
+      "tmdb_id": 774825,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Spin-off",
+      "note": "Spin-off Disney+ centré sur Buck, Crash et Eddie, sans le casting vocal d'origine.",
+      "optional": true
+    }
+  ]
+}

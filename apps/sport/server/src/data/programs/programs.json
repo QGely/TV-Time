@@ -1,0 +1,528 @@
+[
+  {
+    "id": "debutant-full-body-3j",
+    "name": "Full body débutant",
+    "description": "Trois séances par semaine qui travaillent tout le corps avec les mouvements de base. Idéal pour apprendre la technique et construire une première base de force.",
+    "level": "debutant",
+    "goal": "muscle",
+    "days_per_week": 3,
+    "weeks": 8,
+    "icon": "🌱",
+    "days": [
+      {
+        "name": "Jour 1 · Full body A",
+        "focus": "Squat, poussée horizontale et tirage",
+        "exercises": [
+          { "exercise_id": "squat-gobelet", "sets": 3, "reps": "10-12", "rest_seconds": 90, "notes": "Descendez sous la parallèle si la mobilité le permet, talons au sol." },
+          { "exercise_id": "pompes-sur-genoux", "sets": 3, "reps": "8-12", "rest_seconds": 75, "notes": "Passez aux pompes classiques dès que vous faites 12 répétitions propres." },
+          { "exercise_id": "rowing-haltere", "sets": 3, "reps": "10-12", "rest_seconds": 75, "notes": "Par bras, dos plat, coude le long du corps." },
+          { "exercise_id": "developpe-militaire", "sets": 3, "reps": "8-10", "rest_seconds": 90, "notes": "Charge légère, gainez les abdos pour ne pas cambrer." },
+          { "exercise_id": "planche", "sets": 3, "reps": "30 s", "rest_seconds": 45, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 2 · Full body B",
+        "focus": "Unilatéral, tirage vertical et fessiers",
+        "exercises": [
+          { "exercise_id": "fentes", "sets": 3, "reps": "10 par jambe", "rest_seconds": 75, "notes": "Grand pas, genou avant au-dessus de la cheville." },
+          { "exercise_id": "tirage-vertical", "sets": 3, "reps": "10-12", "rest_seconds": 75, "notes": "Tirez la barre vers le haut de la poitrine, épaules basses." },
+          { "exercise_id": "pompes", "sets": 3, "reps": "8-10", "rest_seconds": 75, "notes": "Sur les genoux si nécessaire." },
+          { "exercise_id": "hip-thrust", "sets": 3, "reps": "12", "rest_seconds": 75, "notes": "Poids du corps ou barre légère, serrez les fessiers en haut 1 s." },
+          { "exercise_id": "dead-bug", "sets": 3, "reps": "10 par côté", "rest_seconds": 45, "notes": "Bas du dos plaqué au sol tout du long." }
+        ]
+      },
+      {
+        "name": "Jour 3 · Full body C",
+        "focus": "Soulevé de terre, développé couché et finitions",
+        "exercises": [
+          { "exercise_id": "souleve-de-terre", "sets": 3, "reps": "8", "rest_seconds": 120, "notes": "Charge légère : l'objectif est d'apprendre le mouvement, dos neutre." },
+          { "exercise_id": "developpe-couche-barre", "sets": 3, "reps": "8-10", "rest_seconds": 90, "notes": "Barre vide ou très légère au début, pieds bien ancrés." },
+          { "exercise_id": "tirage-vertical", "sets": 3, "reps": "10-12", "rest_seconds": 75, "notes": null },
+          { "exercise_id": "elevations-laterales", "sets": 2, "reps": "12-15", "rest_seconds": 60, "notes": "Haltères légers, montez jusqu'à l'horizontale." },
+          { "exercise_id": "crunch", "sets": 3, "reps": "15", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "mollets-debout", "sets": 2, "reps": "15-20", "rest_seconds": 45, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "push-pull-legs-6j",
+    "name": "Push / Pull / Legs",
+    "description": "Le classique de la prise de muscle : chaque groupe musculaire est travaillé deux fois par semaine sur six séances. Réservé aux pratiquants confirmés qui récupèrent bien.",
+    "level": "avance",
+    "goal": "muscle",
+    "days_per_week": 6,
+    "weeks": 8,
+    "icon": "🔥",
+    "days": [
+      {
+        "name": "Jour 1 · Push A",
+        "focus": "Pectoraux, épaules et triceps — dominante force",
+        "exercises": [
+          { "exercise_id": "developpe-couche-barre", "sets": 4, "reps": "6-8", "rest_seconds": 120, "notes": "Mouvement principal : montez la charge quand vous faites 4 × 8." },
+          { "exercise_id": "developpe-militaire", "sets": 3, "reps": "8-10", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "developpe-incline-halteres", "sets": 3, "reps": "10-12", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "elevations-laterales", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "extension-triceps-poulie", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": "Coudes fixes le long du corps." },
+          { "exercise_id": "pompes-diamant", "sets": 2, "reps": "max", "rest_seconds": 60, "notes": "Jusqu'à l'échec technique." }
+        ]
+      },
+      {
+        "name": "Jour 2 · Pull A",
+        "focus": "Dos, arrière d'épaules et biceps — dominante force",
+        "exercises": [
+          { "exercise_id": "souleve-de-terre", "sets": 3, "reps": "5", "rest_seconds": 180, "notes": "Lourd mais propre : gardez 1-2 répétitions en réserve." },
+          { "exercise_id": "tractions", "sets": 4, "reps": "6-10", "rest_seconds": 120, "notes": "Lestez-vous si vous dépassez 10 répétitions." },
+          { "exercise_id": "rowing-barre", "sets": 3, "reps": "8-10", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "face-pull", "sets": 3, "reps": "15", "rest_seconds": 60, "notes": "Tirez vers le front, coudes hauts." },
+          { "exercise_id": "curl-biceps-barre", "sets": 3, "reps": "10-12", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "curl-marteau", "sets": 2, "reps": "12", "rest_seconds": 60, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 3 · Legs A",
+        "focus": "Quadriceps, ischios et mollets — dominante squat",
+        "exercises": [
+          { "exercise_id": "squat-barre", "sets": 4, "reps": "6-8", "rest_seconds": 150, "notes": "Mouvement principal de la séance." },
+          { "exercise_id": "souleve-de-terre-roumain", "sets": 3, "reps": "8-10", "rest_seconds": 120, "notes": "Barre proche des jambes, hanches en arrière." },
+          { "exercise_id": "fentes-bulgares", "sets": 3, "reps": "10 par jambe", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "leg-curl", "sets": 3, "reps": "12", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "mollets-debout", "sets": 4, "reps": "12-15", "rest_seconds": 60, "notes": "Pause 1 s en haut, descente lente." },
+          { "exercise_id": "planche", "sets": 3, "reps": "45 s", "rest_seconds": 45, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 4 · Push B",
+        "focus": "Épaules en priorité, pectoraux et triceps — volume",
+        "exercises": [
+          { "exercise_id": "developpe-militaire", "sets": 4, "reps": "6-8", "rest_seconds": 120, "notes": "Mouvement principal de la séance." },
+          { "exercise_id": "developpe-incline-halteres", "sets": 3, "reps": "8-10", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "dips-pectoraux", "sets": 3, "reps": "8-12", "rest_seconds": 90, "notes": "Buste penché en avant pour cibler les pectoraux." },
+          { "exercise_id": "ecartes-halteres", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "elevations-laterales", "sets": 4, "reps": "15", "rest_seconds": 45, "notes": "Léger, sans élan." },
+          { "exercise_id": "extension-triceps-poulie", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 5 · Pull B",
+        "focus": "Dos en largeur et épaisseur, biceps — volume",
+        "exercises": [
+          { "exercise_id": "tirage-vertical", "sets": 4, "reps": "8-12", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "rowing-haltere", "sets": 3, "reps": "10-12", "rest_seconds": 90, "notes": "Par bras." },
+          { "exercise_id": "tractions-supination", "sets": 3, "reps": "6-10", "rest_seconds": 120, "notes": null },
+          { "exercise_id": "oiseau", "sets": 3, "reps": "15", "rest_seconds": 60, "notes": "Buste penché, haltères légers." },
+          { "exercise_id": "curl-marteau", "sets": 3, "reps": "10-12", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "curl-biceps-barre", "sets": 2, "reps": "12-15", "rest_seconds": 60, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 6 · Legs B",
+        "focus": "Fessiers et ischios en priorité, quadriceps — volume",
+        "exercises": [
+          { "exercise_id": "hip-thrust", "sets": 4, "reps": "8-10", "rest_seconds": 120, "notes": "Mouvement principal de la séance." },
+          { "exercise_id": "presse-a-cuisses", "sets": 3, "reps": "10-12", "rest_seconds": 120, "notes": null },
+          { "exercise_id": "fentes", "sets": 3, "reps": "12 par jambe", "rest_seconds": 90, "notes": "Avec haltères." },
+          { "exercise_id": "leg-extension", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "mollets-debout", "sets": 4, "reps": "15-20", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "releve-de-jambes", "sets": 3, "reps": "12-15", "rest_seconds": 45, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "haut-bas-4j",
+    "name": "Haut / Bas",
+    "description": "Quatre séances alternant haut et bas du corps, avec deux jours orientés force et deux jours orientés volume. Le meilleur compromis entre progression et récupération.",
+    "level": "intermediaire",
+    "goal": "force",
+    "days_per_week": 4,
+    "weeks": 10,
+    "icon": "🏋️",
+    "days": [
+      {
+        "name": "Jour 1 · Haut (force)",
+        "focus": "Charges lourdes sur les mouvements de base",
+        "exercises": [
+          { "exercise_id": "developpe-couche-barre", "sets": 5, "reps": "5", "rest_seconds": 180, "notes": "Ajoutez 2,5 kg quand les 5 séries passent." },
+          { "exercise_id": "rowing-barre", "sets": 4, "reps": "6", "rest_seconds": 120, "notes": null },
+          { "exercise_id": "developpe-militaire", "sets": 4, "reps": "6", "rest_seconds": 120, "notes": null },
+          { "exercise_id": "tractions", "sets": 3, "reps": "6-8", "rest_seconds": 120, "notes": "Lestées si possible." },
+          { "exercise_id": "curl-biceps-barre", "sets": 3, "reps": "8", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "extension-triceps-poulie", "sets": 3, "reps": "10", "rest_seconds": 60, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 2 · Bas (force)",
+        "focus": "Squat lourd et chaîne postérieure",
+        "exercises": [
+          { "exercise_id": "squat-barre", "sets": 5, "reps": "5", "rest_seconds": 180, "notes": "Ajoutez 2,5 à 5 kg quand les 5 séries passent." },
+          { "exercise_id": "souleve-de-terre-roumain", "sets": 4, "reps": "6-8", "rest_seconds": 120, "notes": null },
+          { "exercise_id": "presse-a-cuisses", "sets": 3, "reps": "8", "rest_seconds": 120, "notes": null },
+          { "exercise_id": "leg-curl", "sets": 3, "reps": "10", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "mollets-debout", "sets": 4, "reps": "10", "rest_seconds": 60, "notes": "Chargé." },
+          { "exercise_id": "planche", "sets": 3, "reps": "45 s", "rest_seconds": 45, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 3 · Haut (volume)",
+        "focus": "Séries plus longues, travail des épaules et des bras",
+        "exercises": [
+          { "exercise_id": "developpe-incline-halteres", "sets": 4, "reps": "10-12", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "rowing-haltere", "sets": 4, "reps": "10-12", "rest_seconds": 90, "notes": "Par bras." },
+          { "exercise_id": "tirage-vertical", "sets": 3, "reps": "12", "rest_seconds": 75, "notes": null },
+          { "exercise_id": "elevations-laterales", "sets": 3, "reps": "15", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "oiseau", "sets": 3, "reps": "15", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "curl-marteau", "sets": 3, "reps": "12", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "pompes-diamant", "sets": 2, "reps": "max", "rest_seconds": 60, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 4 · Bas (volume)",
+        "focus": "Soulevé de terre, fessiers et unilatéral",
+        "exercises": [
+          { "exercise_id": "souleve-de-terre", "sets": 3, "reps": "5", "rest_seconds": 180, "notes": "Lourd, technique irréprochable." },
+          { "exercise_id": "fentes-bulgares", "sets": 3, "reps": "10 par jambe", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "hip-thrust", "sets": 4, "reps": "12", "rest_seconds": 90, "notes": null },
+          { "exercise_id": "leg-extension", "sets": 3, "reps": "15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "mollets-debout", "sets": 3, "reps": "20", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "releve-de-jambes", "sets": 3, "reps": "15", "rest_seconds": 45, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "maison-sans-materiel-3j",
+    "name": "Maison sans matériel",
+    "description": "Trois séances au poids du corps, sans aucun équipement : une chaise et un tapis suffisent. Parfait pour s'entraîner sérieusement depuis son salon.",
+    "level": "debutant",
+    "goal": "maison",
+    "days_per_week": 3,
+    "weeks": 6,
+    "icon": "🏠",
+    "days": [
+      {
+        "name": "Jour 1 · Haut du corps",
+        "focus": "Pompes, dos et gainage",
+        "exercises": [
+          { "exercise_id": "pompes", "sets": 4, "reps": "8-15", "rest_seconds": 60, "notes": "Sur les genoux si besoin ; surélevez les pieds pour corser." },
+          { "exercise_id": "pompes-diamant", "sets": 3, "reps": "6-12", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "superman", "sets": 3, "reps": "12", "rest_seconds": 45, "notes": "Tenez 2 s en haut." },
+          { "exercise_id": "rowing-inverse", "sets": 3, "reps": "8-12", "rest_seconds": 60, "notes": "Sous une table solide ; plus les pieds sont loin, plus c'est dur." },
+          { "exercise_id": "planche", "sets": 3, "reps": "30-45 s", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "planche-laterale", "sets": 2, "reps": "30 s par côté", "rest_seconds": 30, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 2 · Bas du corps",
+        "focus": "Jambes et fessiers avec une chaise",
+        "exercises": [
+          { "exercise_id": "fentes", "sets": 4, "reps": "12 par jambe", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "hip-thrust", "sets": 4, "reps": "15", "rest_seconds": 60, "notes": "Poids du corps, épaules sur le bord d'un canapé ou d'une chaise." },
+          { "exercise_id": "fentes-bulgares", "sets": 3, "reps": "10 par jambe", "rest_seconds": 60, "notes": "Pied arrière sur une chaise, sans charge." },
+          { "exercise_id": "step-up", "sets": 3, "reps": "12 par jambe", "rest_seconds": 60, "notes": "Sur une chaise stable ou une marche." },
+          { "exercise_id": "mollets-debout", "sets": 3, "reps": "20", "rest_seconds": 45, "notes": "Sur une marche pour l'amplitude." },
+          { "exercise_id": "jumping-jacks", "sets": 3, "reps": "45 s", "rest_seconds": 45, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 3 · Full body & cardio",
+        "focus": "Circuit intense pour tout le corps",
+        "exercises": [
+          { "exercise_id": "burpees", "sets": 4, "reps": "30 s", "rest_seconds": 60, "notes": "Sans la pompe si trop dur." },
+          { "exercise_id": "mountain-climbers", "sets": 4, "reps": "30 s", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "pompes", "sets": 3, "reps": "max", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "fentes", "sets": 3, "reps": "15 par jambe", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "crunch", "sets": 3, "reps": "20", "rest_seconds": 30, "notes": null },
+          { "exercise_id": "releve-de-jambes", "sets": 3, "reps": "12", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "planche", "sets": 3, "reps": "45 s", "rest_seconds": 45, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "halteres-maison-3j",
+    "name": "Haltères à la maison",
+    "description": "Trois séances pousser / tirer / jambes avec une simple paire d'haltères, sans banc ni machine. Un bon programme de prise de muscle quand on s'entraîne chez soi.",
+    "level": "intermediaire",
+    "goal": "maison",
+    "days_per_week": 3,
+    "weeks": 8,
+    "icon": "💪",
+    "days": [
+      {
+        "name": "Jour 1 · Pousser",
+        "focus": "Pectoraux, épaules et triceps aux haltères",
+        "exercises": [
+          { "exercise_id": "developpe-incline-halteres", "sets": 4, "reps": "8-12", "rest_seconds": 90, "notes": "Sans banc : développé au sol (floor press)." },
+          { "exercise_id": "developpe-militaire", "sets": 3, "reps": "8-12", "rest_seconds": 90, "notes": "Avec haltères, debout ou assis." },
+          { "exercise_id": "elevations-laterales", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "ecartes-halteres", "sets": 3, "reps": "12-15", "rest_seconds": 60, "notes": "Au sol, coudes légèrement fléchis." },
+          { "exercise_id": "pompes", "sets": 3, "reps": "max", "rest_seconds": 60, "notes": "Mains sur les haltères pour plus d'amplitude." },
+          { "exercise_id": "pompes-diamant", "sets": 2, "reps": "10-15", "rest_seconds": 60, "notes": "Finition triceps." }
+        ]
+      },
+      {
+        "name": "Jour 2 · Tirer",
+        "focus": "Dos, arrière d'épaules et biceps aux haltères",
+        "exercises": [
+          { "exercise_id": "rowing-haltere", "sets": 4, "reps": "10-12", "rest_seconds": 90, "notes": "Par bras, appui sur une chaise." },
+          { "exercise_id": "pull-over-haltere", "sets": 3, "reps": "12", "rest_seconds": 75, "notes": "Allongé au sol ou sur un tabouret." },
+          { "exercise_id": "oiseau", "sets": 3, "reps": "15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "shrugs-halteres", "sets": 3, "reps": "15", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "curl-marteau", "sets": 3, "reps": "10-12", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "superman", "sets": 3, "reps": "12", "rest_seconds": 45, "notes": "Lombaires, lent et contrôlé." }
+        ]
+      },
+      {
+        "name": "Jour 3 · Jambes & abdos",
+        "focus": "Jambes complètes et sangle abdominale",
+        "exercises": [
+          { "exercise_id": "squat-gobelet", "sets": 4, "reps": "12-15", "rest_seconds": 90, "notes": "Haltère le plus lourd disponible." },
+          { "exercise_id": "fentes-bulgares", "sets": 3, "reps": "10 par jambe", "rest_seconds": 75, "notes": "Un haltère dans chaque main." },
+          { "exercise_id": "souleve-de-terre-roumain", "sets": 3, "reps": "10-12", "rest_seconds": 90, "notes": "Avec haltères, descente lente." },
+          { "exercise_id": "step-up", "sets": 3, "reps": "12 par jambe", "rest_seconds": 60, "notes": null },
+          { "exercise_id": "mollets-debout", "sets": 3, "reps": "20", "rest_seconds": 45, "notes": "Haltères en main." },
+          { "exercise_id": "russian-twist", "sets": 3, "reps": "20", "rest_seconds": 45, "notes": "Avec un haltère léger." },
+          { "exercise_id": "planche", "sets": 3, "reps": "45 s", "rest_seconds": 45, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "perte-de-poids-hiit-4j",
+    "name": "Perte de poids : HIIT & cardio",
+    "description": "Deux séances de HIIT courtes et intenses, deux séances de cardio continu pour brûler un maximum de calories sans perdre de muscle. À combiner avec une alimentation adaptée.",
+    "level": "intermediaire",
+    "goal": "perte-de-poids",
+    "days_per_week": 4,
+    "weeks": 8,
+    "icon": "⚡",
+    "days": [
+      {
+        "name": "Jour 1 · HIIT full body",
+        "focus": "Circuit de 5 tours : enchaînez les exercices, 30 s de repos entre chaque",
+        "exercises": [
+          { "exercise_id": "burpees", "sets": 5, "reps": "30 s", "rest_seconds": 30, "notes": "Rythme maximal pendant l'effort." },
+          { "exercise_id": "mountain-climbers", "sets": 5, "reps": "30 s", "rest_seconds": 30, "notes": null },
+          { "exercise_id": "jumping-jacks", "sets": 5, "reps": "30 s", "rest_seconds": 30, "notes": null },
+          { "exercise_id": "squat-gobelet", "sets": 5, "reps": "15", "rest_seconds": 30, "notes": "Poids du corps ou haltère léger." },
+          { "exercise_id": "pompes", "sets": 5, "reps": "10-12", "rest_seconds": 30, "notes": null },
+          { "exercise_id": "planche", "sets": 3, "reps": "45 s", "rest_seconds": 30, "notes": "En fin de séance." }
+        ]
+      },
+      {
+        "name": "Jour 2 · Cardio continu",
+        "focus": "Course à allure modérée, 30 à 40 minutes",
+        "exercises": [
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "5 min", "rest_seconds": 15, "notes": "Échauffement." },
+          { "exercise_id": "course-a-pied", "sets": 1, "reps": "5 km", "rest_seconds": 15, "notes": "Allure conversation. Alternez course et marche si besoin." },
+          { "exercise_id": "etirement-quadriceps", "sets": 1, "reps": "30 s par jambe", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-ischio-jambiers", "sets": 1, "reps": "30 s par jambe", "rest_seconds": 15, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 3 · HIIT & renforcement",
+        "focus": "Intervalles courts et exercices métaboliques",
+        "exercises": [
+          { "exercise_id": "corde-a-sauter", "sets": 5, "reps": "45 s", "rest_seconds": 30, "notes": "Sans corde : sautillez sur place." },
+          { "exercise_id": "kettlebell-swing", "sets": 5, "reps": "15", "rest_seconds": 45, "notes": "Un haltère tenu à deux mains fait l'affaire." },
+          { "exercise_id": "hiit-sur-place", "sets": 4, "reps": "40 s", "rest_seconds": 20, "notes": "Genoux hauts / talons-fesses, à fond." },
+          { "exercise_id": "fentes", "sets": 4, "reps": "12 par jambe", "rest_seconds": 45, "notes": null },
+          { "exercise_id": "releve-de-jambes", "sets": 3, "reps": "15", "rest_seconds": 30, "notes": null },
+          { "exercise_id": "russian-twist", "sets": 3, "reps": "20", "rest_seconds": 30, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 4 · Cardio long & mobilité",
+        "focus": "Effort long à faible intensité puis étirements",
+        "exercises": [
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "6 km", "rest_seconds": 15, "notes": "45 à 60 min ; ou 15 km de vélo / 5 km de rameur." },
+          { "exercise_id": "chat-vache", "sets": 1, "reps": "10", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-pigeon", "sets": 1, "reps": "45 s par côté", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "posture-de-l-enfant", "sets": 1, "reps": "60 s", "rest_seconds": 15, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "abdos-gainage-10-min",
+    "name": "Abdos & gainage 10 min",
+    "description": "Dix minutes par jour, sept jours sur sept, pour une sangle abdominale solide. Chaque jour change d'angle : gainage, abdos classiques, obliques, dynamique.",
+    "level": "debutant",
+    "goal": "maison",
+    "days_per_week": 7,
+    "weeks": 4,
+    "icon": "🎯",
+    "days": [
+      {
+        "name": "Jour 1 · Gainage",
+        "focus": "Planches et stabilité",
+        "exercises": [
+          { "exercise_id": "planche", "sets": 3, "reps": "30 s", "rest_seconds": 20, "notes": "Fessiers serrés, bassin neutre." },
+          { "exercise_id": "planche-laterale", "sets": 2, "reps": "20 s par côté", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "dead-bug", "sets": 2, "reps": "10 par côté", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "hollow-hold", "sets": 2, "reps": "20 s", "rest_seconds": 20, "notes": "Genoux fléchis si trop dur." }
+        ]
+      },
+      {
+        "name": "Jour 2 · Abdos classiques",
+        "focus": "Flexions et relevés",
+        "exercises": [
+          { "exercise_id": "crunch", "sets": 3, "reps": "20", "rest_seconds": 20, "notes": "Montée courte, regard au plafond." },
+          { "exercise_id": "releve-de-jambes", "sets": 3, "reps": "12", "rest_seconds": 20, "notes": "Genoux fléchis pour débuter." },
+          { "exercise_id": "russian-twist", "sets": 3, "reps": "20", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "planche", "sets": 2, "reps": "30 s", "rest_seconds": 20, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 3 · Dynamique",
+        "focus": "Gainage en mouvement et cardio léger",
+        "exercises": [
+          { "exercise_id": "mountain-climbers", "sets": 4, "reps": "30 s", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "gainage-dynamique", "sets": 3, "reps": "10", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "crunch", "sets": 2, "reps": "20", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "planche-laterale", "sets": 2, "reps": "20 s par côté", "rest_seconds": 20, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 4 · Contrôle",
+        "focus": "Abdos profonds et respiration",
+        "exercises": [
+          { "exercise_id": "dead-bug", "sets": 3, "reps": "12 par côté", "rest_seconds": 20, "notes": "Expirez en allongeant bras et jambe." },
+          { "exercise_id": "hollow-hold", "sets": 3, "reps": "20 s", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "releve-de-jambes", "sets": 2, "reps": "12", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "planche", "sets": 2, "reps": "40 s", "rest_seconds": 20, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 5 · Obliques",
+        "focus": "Côtés de la sangle abdominale",
+        "exercises": [
+          { "exercise_id": "planche-laterale", "sets": 3, "reps": "25 s par côté", "rest_seconds": 20, "notes": null },
+          { "exercise_id": "russian-twist", "sets": 3, "reps": "24", "rest_seconds": 20, "notes": "Pieds au sol pour débuter." },
+          { "exercise_id": "mountain-climbers", "sets": 3, "reps": "30 s", "rest_seconds": 20, "notes": "Genoux vers le coude opposé." },
+          { "exercise_id": "crunch", "sets": 2, "reps": "20", "rest_seconds": 20, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 6 · Circuit",
+        "focus": "Deux tours enchaînés, 15 s de repos entre chaque exercice",
+        "exercises": [
+          { "exercise_id": "planche", "sets": 2, "reps": "40 s", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "crunch", "sets": 2, "reps": "20", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "releve-de-jambes", "sets": 2, "reps": "12", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "mountain-climbers", "sets": 2, "reps": "30 s", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "dead-bug", "sets": 2, "reps": "10 par côté", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "hollow-hold", "sets": 2, "reps": "20 s", "rest_seconds": 15, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 7 · Récupération active",
+        "focus": "Séance douce : gainage léger et mobilité du dos",
+        "exercises": [
+          { "exercise_id": "planche", "sets": 2, "reps": "30 s", "rest_seconds": 30, "notes": null },
+          { "exercise_id": "dead-bug", "sets": 2, "reps": "8 par côté", "rest_seconds": 20, "notes": "Lent, en respirant profondément." },
+          { "exercise_id": "chat-vache", "sets": 1, "reps": "10", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "posture-de-l-enfant", "sets": 1, "reps": "45 s", "rest_seconds": 15, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mobilite-etirements-15-min",
+    "name": "Mobilité & étirements 15 min",
+    "description": "Quatre routines de quinze minutes pour gagner en souplesse, soulager le dos et mieux récupérer. À faire les jours de repos ou après une séance.",
+    "level": "debutant",
+    "goal": "mobilite",
+    "days_per_week": 4,
+    "weeks": 4,
+    "icon": "🧘",
+    "days": [
+      {
+        "name": "Jour 1 · Bas du corps",
+        "focus": "Quadriceps, ischios et fessiers",
+        "exercises": [
+          { "exercise_id": "chat-vache", "sets": 1, "reps": "10", "rest_seconds": 15, "notes": "Échauffement de la colonne, lentement." },
+          { "exercise_id": "etirement-quadriceps", "sets": 2, "reps": "30 s par jambe", "rest_seconds": 15, "notes": "Bassin en rétroversion, genoux côte à côte." },
+          { "exercise_id": "etirement-ischio-jambiers", "sets": 2, "reps": "30 s par jambe", "rest_seconds": 15, "notes": "Dos droit, penchez-vous depuis les hanches." },
+          { "exercise_id": "etirement-pigeon", "sets": 2, "reps": "45 s par côté", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "posture-de-l-enfant", "sets": 1, "reps": "60 s", "rest_seconds": 15, "notes": "Respirez dans le bas du dos." }
+        ]
+      },
+      {
+        "name": "Jour 2 · Haut du corps",
+        "focus": "Pectoraux, épaules et haut du dos",
+        "exercises": [
+          { "exercise_id": "chat-vache", "sets": 1, "reps": "10", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-pectoraux", "sets": 2, "reps": "30 s par côté", "rest_seconds": 15, "notes": "Avant-bras contre un cadre de porte." },
+          { "exercise_id": "superman", "sets": 2, "reps": "10", "rest_seconds": 20, "notes": "Lent et contrôlé, tenue 2 s." },
+          { "exercise_id": "oiseau", "sets": 2, "reps": "12", "rest_seconds": 20, "notes": "Sans charge : ouverture des épaules." },
+          { "exercise_id": "posture-de-l-enfant", "sets": 1, "reps": "60 s", "rest_seconds": 15, "notes": "Bras bien tendus devant pour étirer les dorsaux." }
+        ]
+      },
+      {
+        "name": "Jour 3 · Hanches & chaîne postérieure",
+        "focus": "Ouverture des hanches et arrière des jambes",
+        "exercises": [
+          { "exercise_id": "chat-vache", "sets": 1, "reps": "12", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-pigeon", "sets": 2, "reps": "45 s par côté", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-ischio-jambiers", "sets": 2, "reps": "40 s par jambe", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "fentes", "sets": 2, "reps": "8 par jambe", "rest_seconds": 15, "notes": "Fente basse, tenue 3 s en bas : mobilité des fléchisseurs de hanche." },
+          { "exercise_id": "posture-de-l-enfant", "sets": 1, "reps": "60 s", "rest_seconds": 15, "notes": null }
+        ]
+      },
+      {
+        "name": "Jour 4 · Routine complète",
+        "focus": "Tout le corps en une séance",
+        "exercises": [
+          { "exercise_id": "chat-vache", "sets": 1, "reps": "10", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-quadriceps", "sets": 1, "reps": "40 s par jambe", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-ischio-jambiers", "sets": 1, "reps": "40 s par jambe", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-pectoraux", "sets": 1, "reps": "40 s par côté", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "etirement-pigeon", "sets": 1, "reps": "45 s par côté", "rest_seconds": 15, "notes": null },
+          { "exercise_id": "dead-bug", "sets": 2, "reps": "8 par côté", "rest_seconds": 15, "notes": "Travail de respiration et de contrôle du bassin." },
+          { "exercise_id": "posture-de-l-enfant", "sets": 1, "reps": "90 s", "rest_seconds": 15, "notes": null }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "course-5-km-8-semaines",
+    "name": "Course à pied : objectif 5 km en 8 semaines",
+    "description": "Partez de zéro et courez 5 km sans vous arrêter en huit semaines, à raison de trois sorties par semaine. Les notes de chaque exercice indiquent la progression semaine par semaine.",
+    "level": "debutant",
+    "goal": "endurance",
+    "days_per_week": 3,
+    "weeks": 8,
+    "icon": "🏃",
+    "days": [
+      {
+        "name": "Jour 1 · Fractionné course / marche",
+        "focus": "Alternance course et marche, le cœur du programme",
+        "exercises": [
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "5 min", "rest_seconds": 15, "notes": "Échauffement." },
+          { "exercise_id": "course-a-pied", "sets": 1, "reps": "8 × (1 min course / 1 min marche)", "rest_seconds": 15, "notes": "S1-2 : 8 × (1 min course / 1 min marche) · S3-4 : 6 × (2 min / 1 min) · S5-6 : 4 × (4 min / 1 min) · S7-8 : 3 × (8 min / 1 min)." },
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "5 min", "rest_seconds": 15, "notes": "Retour au calme." }
+        ]
+      },
+      {
+        "name": "Jour 2 · Sortie facile",
+        "focus": "Course continue à allure très confortable",
+        "exercises": [
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "5 min", "rest_seconds": 15, "notes": "Échauffement." },
+          { "exercise_id": "course-a-pied", "sets": 1, "reps": "10 min en continu", "rest_seconds": 15, "notes": "S1-2 : 6 × (2 min course / 2 min marche) · S3-4 : 10 min en continu · S5-6 : 15 min · S7-8 : 25 min. Vous devez pouvoir parler en courant." },
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "5 min", "rest_seconds": 15, "notes": "Retour au calme." }
+        ]
+      },
+      {
+        "name": "Jour 3 · Sortie longue",
+        "focus": "Distance qui augmente chaque semaine jusqu'aux 5 km",
+        "exercises": [
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "5 min", "rest_seconds": 15, "notes": "Échauffement." },
+          { "exercise_id": "course-a-pied", "sets": 1, "reps": "3 km", "rest_seconds": 15, "notes": "S1-2 : 2 km (course / marche libre) · S3-4 : 3 km · S5-6 : 4 km · S7 : 4,5 km · S8 : 5 km sans s'arrêter !" },
+          { "exercise_id": "marche-rapide", "sets": 1, "reps": "10 min", "rest_seconds": 15, "notes": "Retour au calme, marchez jusqu'à ce que le souffle soit redevenu normal." }
+        ]
+      }
+    ]
+  }
+]
