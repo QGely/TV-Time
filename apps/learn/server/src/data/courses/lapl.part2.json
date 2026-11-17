@@ -11,7 +11,7 @@
           "id": "u2s1",
           "title": "Atmosphère, respiration et hypoxie",
           "icon": "🫁",
-          "tips": "L'air sec contient environ 78 % d'azote, 21 % d'oxygène et 1 % d'autres gaz (argon, CO2…). Ces proportions restent les mêmes en altitude : c'est la pression qui diminue.\n• Loi de Dalton : pression partielle d'un gaz = sa proportion × pression totale, soit PO2 ≈ 0,21 × P. Au niveau de la mer (1013 hPa), PO2 ≈ 213 hPa ; vers 18 000 ft (≈ 500 hPa), elle est divisée par deux.\n• Loi de Boyle-Mariotte : à température constante, P × V = constante. Les gaz piégés (oreille moyenne, sinus, intestins, dents abîmées) se dilatent en montée.\n• Loi de Henry : la quantité de gaz dissous dans un liquide est proportionnelle à sa pression partielle. Une baisse de pression trop rapide libère des bulles d'azote (accident de décompression, surtout après une plongée).\n\nL'hypoxie est un manque d'oxygène dans les tissus. Quatre types :\n• hypoxique : PO2 trop faible (altitude) ;\n• hypémique ou anémique : le sang transporte mal l'O2 (monoxyde de carbone, anémie, don de sang) ;\n• stagnante : circulation insuffisante (facteur de charge, froid) ;\n• histotoxique : les cellules utilisent mal l'O2 (alcool, drogues).\nSymptômes : euphorie, excès de confiance, jugement altéré, maux de tête, fourmillements, cyanose (lèvres, ongles), vision réduite, somnolence. L'hypoxie est insidieuse : le pilote se croit performant. La vision de nuit se dégrade dès 5 000 ft environ.\nLe temps de conscience utile (TCU) diminue avec l'altitude : environ 20 à 30 min à 18 000 ft, 3 à 5 min à 25 000 ft, 1 à 2 min à 30 000 ft.\n\nOxygène en NCO (NCO.OP.190) : l'équipage l'utilise en continu dès que l'altitude cabine dépasse 10 000 ft pendant plus de 30 minutes, et en permanence au-dessus de 13 000 ft.\n\nHyperventilation : respiration trop rapide ou trop profonde (stress, peur) qui fait chuter le CO2 du sang. Signes : vertiges, fourmillements des doigts et autour de la bouche, crampes, voire perte de connaissance. Remède : ralentir volontairement la respiration, parler à voix haute. En altitude, si l'on hésite avec l'hypoxie, traiter d'abord l'hypoxie.\n\nMonoxyde de carbone (CO) : gaz incolore et inodore des gaz d'échappement, qui peut entrer par le réchauffage cabine (échangeur fissuré). Il se fixe sur l'hémoglobine plus de 200 fois plus facilement que l'O2. Signes : maux de tête, nausées, somnolence. Action : chauffage coupé, aérations ouvertes, oxygène si disponible, atterrissage au plus tôt. Les fumeurs ont déjà une partie de leur hémoglobine bloquée par le CO et tolèrent moins l'altitude.",
+          "tips": "L'air sec contient environ 78 % d'azote, 21 % d'oxygène et 1 % d'autres gaz (argon, CO2…). Ces proportions restent les mêmes en altitude : c'est la pression qui diminue.\n• Loi de Dalton : pression partielle d'un gaz = sa proportion × pression totale, soit PO2 ≈ 0,21 × P. Au niveau de la mer (1013 hPa), PO2 ≈ 213 hPa ; vers 18 000 ft (≈ 500 hPa), elle est divisée par deux.\n• Loi de Boyle-Mariotte : à température constante, P × V = constante. Les gaz piégés (oreille moyenne, sinus, intestins, dents abîmées) se dilatent en montée.\n• Loi de Henry : la quantité de gaz dissous dans un liquide est proportionnelle à sa pression partielle. Une baisse de pression trop rapide libère des bulles d'azote (accident de décompression, surtout après une plongée).\n\nL'hypoxie est un manque d'oxygène dans les tissus. Quatre types :\n• hypoxique : PO2 trop faible (altitude) ;\n• hypémique ou anémique : le sang transporte mal l'O2 (monoxyde de carbone, anémie, don de sang) ;\n• stagnante : circulation insuffisante (facteur de charge, froid) ;\n• histotoxique : les cellules utilisent mal l'O2 (alcool, drogues).\nSymptômes : euphorie, excès de confiance, jugement altéré, maux de tête, fourmillements, cyanose (lèvres, ongles), vision réduite, somnolence. L'hypoxie est insidieuse : le pilote se croit performant. La vision de nuit se dégrade dès 5 000 ft environ.\nLe temps de conscience utile (TCU) diminue avec l'altitude : environ 20 à 30 min à 18 000 ft, 3 à 5 min à 25 000 ft, 1 à 2 min à 30 000 ft.\n\nOxygène en NCO (NCO.OP.190) : le commandant de bord évalue le besoin d'oxygène. S'il ne peut pas déterminer l'effet du manque d'oxygène sur les occupants, les membres d'équipage l'utilisent pour toute période de plus de 30 minutes entre 10 000 et 13 000 ft d'altitude-pression cabine, et tous les occupants l'utilisent au-dessus de 13 000 ft, quelle que soit la durée.\n\nHyperventilation : respiration trop rapide ou trop profonde (stress, peur) qui fait chuter le CO2 du sang. Signes : vertiges, fourmillements des doigts et autour de la bouche, crampes, voire perte de connaissance. Remède : ralentir volontairement la respiration, parler à voix haute. En altitude, si l'on hésite avec l'hypoxie, traiter d'abord l'hypoxie.\n\nMonoxyde de carbone (CO) : gaz incolore et inodore des gaz d'échappement, qui peut entrer par le réchauffage cabine (échangeur fissuré). Il se fixe sur l'hémoglobine plus de 200 fois plus facilement que l'O2. Signes : maux de tête, nausées, somnolence. Action : chauffage coupé, aérations ouvertes, oxygène si disponible, atterrissage au plus tôt. Les fumeurs ont déjà une partie de leur hémoglobine bloquée par le CO et tolèrent moins l'altitude.",
           "vocab": [
             {
               "term": "Hypoxie",
@@ -85,27 +85,27 @@
             },
             {
               "id": "u2s1q04",
-              "q": "Un avion non pressurisé exploité en NCO va croiser à 11 500 ft pendant 45 minutes. Que prévoit la réglementation pour l'équipage ?",
+              "q": "Un avion non pressurisé exploité en NCO va voler 45 minutes en croisière au FL 115. Le commandant de bord ne peut pas évaluer l'effet du manque d'oxygène sur les occupants. Que prévoit NCO.OP.190 ?",
               "choices": [
-                "Rien : l'oxygène n'est exigé qu'au-dessus de 13 000 ft",
-                "L'usage de l'oxygène, car le vol dure plus de 30 minutes au-dessus de 10 000 ft",
-                "Rien : l'oxygène n'est exigé qu'au-dessus de 12 500 ft",
-                "L'usage de l'oxygène pour les passagers seulement, pas pour le pilote"
+                "Rien : pour l'équipage, l'oxygène n'est exigé qu'au-dessus de 13 000 ft",
+                "L'oxygène pour l'équipage, car on dépasse 30 minutes au-dessus de 10 000 ft",
+                "Rien : pour l'équipage, l'oxygène n'est exigé qu'au-dessus de 12 500 ft",
+                "L'oxygène pour tous les occupants, dès le passage de 10 000 ft"
               ],
               "answer": 1,
-              "explanation": "NCO.OP.190 : l'équipage utilise l'oxygène en continu dès que l'altitude cabine dépasse 10 000 ft pendant plus de 30 minutes, et en permanence au-dessus de 13 000 ft. 45 minutes à 11 500 ft dépassent ce seuil."
+              "explanation": "NCO.OP.190 : à défaut d'évaluation par le commandant de bord, les membres d'équipage utilisent l'oxygène pour toute période de plus de 30 minutes entre 10 000 et 13 000 ft d'altitude-pression cabine ; tous les occupants l'utilisent au-dessus de 13 000 ft. 45 minutes à 11 500 ft dépassent le seuil des 30 minutes."
             },
             {
               "id": "u2s1q05",
-              "q": "Au-dessus de quelle altitude cabine l'équipage d'un avion exploité en NCO doit-il utiliser l'oxygène en permanence, quelle que soit la durée ?",
+              "q": "En NCO, lorsque le commandant de bord ne peut pas évaluer l'effet du manque d'oxygène, qui doit utiliser l'oxygène au-dessus de 13 000 ft d'altitude-pression cabine ?",
               "choices": [
-                "10 000 ft",
-                "12 500 ft",
-                "13 000 ft",
-                "15 000 ft"
+                "Le pilote seulement, et uniquement au-delà de 30 minutes",
+                "Les passagers seulement, le pilote étant entraîné",
+                "Tous les occupants, quelle que soit la durée",
+                "Personne : l'oxygène y est seulement recommandé"
               ],
               "answer": 2,
-              "explanation": "NCO.OP.190 : au-dessus de 13 000 ft d'altitude cabine, l'oxygène est obligatoire en permanence ; entre 10 000 et 13 000 ft, il l'est au-delà de 30 minutes."
+              "explanation": "NCO.OP.190 : au-dessus de 13 000 ft d'altitude-pression cabine, tous les occupants utilisent l'oxygène, quelle que soit la durée ; entre 10 000 et 13 000 ft, seuls les membres d'équipage y sont tenus, au-delà de 30 minutes."
             },
             {
               "id": "u2s1q06",
@@ -117,7 +117,7 @@
                 "Elle altère le jugement, souvent sans que le pilote s'en aperçoive"
               ],
               "answer": 3,
-              "explanation": "L'hypoxie est insidieuse : euphorie, excès de confiance et ralentissement intellectuel apparaissent sans douleur ni essoufflement (l'envie de respirer est déclenchée par le CO2, pas par le manque d'O2). Le pilote se croit performant."
+              "explanation": "L'hypoxie est insidieuse : euphorie, excès de confiance et ralentissement intellectuel apparaissent sans douleur ni essoufflement (l'envie de respirer est surtout déclenchée par le CO2, pas par le manque d'O2). Le pilote se croit performant."
             },
             {
               "id": "u2s1q07",
@@ -251,7 +251,7 @@
               "choices": [
                 "En le fixant directement, car la fovéa est riche en bâtonnets",
                 "En éclairant fortement le tableau de bord pour stimuler les cônes",
-                "En regardant légèrement à côté, car la fovéa est peu sensible en faible lumière",
+                "En regardant légèrement à côté, pour utiliser les bâtonnets",
                 "En fermant un œil pour supprimer l'effet du point aveugle"
               ],
               "answer": 2,
@@ -429,7 +429,7 @@
                 "Les rotations à vitesse constante, quelle que soit leur durée"
               ],
               "answer": 1,
-              "explanation": "Les trois canaux semi-circulaires, perpendiculaires entre eux, détectent les accélérations angulaires grâce au mouvement de l'endolymphe. Une rotation constante n'est plus perçue au bout de quelques secondes ; les accélérations linéaires relèvent des otolithes."
+              "explanation": "Les trois canaux semi-circulaires, perpendiculaires entre eux, détectent les accélérations angulaires grâce au mouvement de l'endolymphe. Une rotation constante n'est plus perçue au bout de 10 à 20 secondes ; les accélérations linéaires relèvent des otolithes."
             },
             {
               "id": "u2s3q02",
@@ -497,7 +497,7 @@
               "choices": [
                 "Se fier à ses sensations corporelles, qui réagissent plus vite que les instruments",
                 "Réduire et piquer franchement pour retrouver au plus vite la vue du sol",
-                "Se fier aux instruments, stabiliser l'avion puis faire demi-tour en virage à faible inclinaison",
+                "Se fier aux instruments, stabiliser l'avion puis faire demi-tour en douceur",
                 "Virer immédiatement à forte inclinaison pour ressortir le plus vite possible"
               ],
               "answer": 2,
@@ -569,7 +569,7 @@
           "id": "u2s4",
           "title": "Santé et aptitude au vol",
           "icon": "🩺",
-          "tips": "Un certificat médical valide ne suffit pas : l'aptitude s'évalue avant chaque vol.\n\nMED.A.020 (Part-MED) : le titulaire d'une licence ne doit pas en exercer les privilèges lorsqu'il a conscience d'une diminution de son aptitude médicale, qu'il prend un médicament (prescrit ou non) susceptible de nuire à la sécurité, ou qu'il suit un traitement pouvant compromettre la sécurité du vol. Il doit en outre demander sans délai l'avis d'un médecin aéronautique, avant de voler, après une opération chirurgicale, le début d'un traitement régulier, une blessure ou une maladie importante, une hospitalisation, une grossesse, ou s'il a besoin pour la première fois de verres correcteurs.\n\nCheck-list personnelle IMSAFE :\n• I – Illness : suis-je malade ?\n• M – Medication : ai-je pris des médicaments ?\n• S – Stress : suis-je préoccupé ?\n• A – Alcohol : ai-je bu ?\n• F – Fatigue : suis-je reposé ?\n• E – Emotion (ou Eating) : suis-je serein, ai-je mangé ?\n\nAlcool : il est éliminé à vitesse à peu près constante, environ 0,10 à 0,15 g/l de sang par heure ; ni le café, ni la douche, ni l'effort ne l'accélèrent. Il provoque une hypoxie histotoxique, dont les effets s'ajoutent à ceux de l'altitude, et perturbe l'oreille interne pendant plusieurs heures. Règle minimale : au moins 8 heures entre le dernier verre et le vol, bien davantage après une forte consommation (la « gueule de bois » rend inapte). Le seuil retenu pour les membres d'équipage est de 0,2 g d'alcool par litre de sang. SERA.2020 interdit en outre d'exercer une fonction liée à la sécurité sous l'emprise d'une substance psychoactive qui altère les performances.\n\nMédicaments : pas d'automédication. Antihistaminiques, somnifères, antalgiques puissants, médicaments contre le mal des transports ou décongestionnants peuvent provoquer somnolence ou vertiges ; la maladie traitée peut elle-même rendre inapte. Un pictogramme triangulaire sur la boîte signale un risque pour la conduite. En cas de doute, consulter un médecin aéronautique.\n\nFatigue et sommeil : le sommeil s'organise en cycles d'environ 90 minutes (sommeil lent léger, lent profond, paradoxal). La dette de sommeil s'accumule sur plusieurs nuits courtes ; elle favorise les erreurs et les micro-sommeils. Le rythme circadien (horloge interne d'environ 24 h, synchronisée par la lumière) fait chuter la vigilance en fin de nuit, vers 3 h – 5 h, et dans une moindre mesure en début d'après-midi.\n\nDon de sang : le volume sanguin et le transport d'oxygène diminuent ; ne pas voler dans les 24 heures qui suivent.\n\nAutres facteurs : repas sauté (hypoglycémie), déshydratation, fièvre ou troubles digestifs réduisent nettement les performances.",
+          "tips": "Un certificat médical valide ne suffit pas : l'aptitude s'évalue avant chaque vol.\n\nMED.A.020 (Part-MED) : le titulaire d'une licence ne doit pas en exercer les privilèges lorsqu'il a conscience d'une diminution de son aptitude médicale, qu'il prend un médicament (prescrit ou non) susceptible de nuire à la sécurité, ou qu'il suit un traitement pouvant compromettre la sécurité du vol. Il doit en outre demander sans délai l'avis d'un médecin aéronautique, avant de voler, après une opération chirurgicale, le début de la prise régulière d'un médicament, une blessure ou une maladie importante, une hospitalisation, une grossesse, ou s'il a besoin pour la première fois de verres correcteurs.\n\nCheck-list personnelle IMSAFE :\n• I – Illness : suis-je malade ?\n• M – Medication : ai-je pris des médicaments ?\n• S – Stress : suis-je préoccupé ?\n• A – Alcohol : ai-je bu ?\n• F – Fatigue : suis-je reposé ?\n• E – Emotion (ou Eating) : suis-je serein, ai-je mangé ?\n\nAlcool : il est éliminé à vitesse à peu près constante, environ 0,10 à 0,15 g/l de sang par heure ; ni le café, ni la douche, ni l'effort ne l'accélèrent. Il provoque une hypoxie histotoxique, dont les effets s'ajoutent à ceux de l'altitude, et perturbe l'oreille interne pendant plusieurs heures. Recommandation minimale : au moins 8 heures entre le dernier verre et le vol, bien davantage après une forte consommation (la « gueule de bois » rend inapte). SERA.2020 interdit d'exercer une fonction critique pour la sécurité aérienne sous l'influence d'une substance psychoactive (alcool, drogues…) qui altère les performances. En pratique : zéro alcool avant le vol.\n\nMédicaments : pas d'automédication. Antihistaminiques, somnifères, antalgiques puissants, médicaments contre le mal des transports ou décongestionnants peuvent provoquer somnolence ou vertiges ; la maladie traitée peut elle-même rendre inapte. Un pictogramme triangulaire sur la boîte signale un risque pour la conduite. En cas de doute, consulter un médecin aéronautique.\n\nFatigue et sommeil : le sommeil s'organise en cycles d'environ 90 minutes (sommeil lent léger, lent profond, paradoxal). La dette de sommeil s'accumule sur plusieurs nuits courtes ; elle favorise les erreurs et les micro-sommeils. Le rythme circadien (horloge interne d'environ 24 h, synchronisée par la lumière) fait chuter la vigilance en fin de nuit, vers 3 h – 5 h, et dans une moindre mesure en début d'après-midi.\n\nDon de sang : le volume sanguin et le transport d'oxygène diminuent ; ne pas voler dans les 24 heures qui suivent.\n\nAutres facteurs : repas sauté (hypoglycémie), déshydratation, fièvre ou troubles digestifs réduisent nettement les performances.",
           "vocab": [
             {
               "term": "MED.A.020",
@@ -611,7 +611,7 @@
               "choices": [
                 "Il peut voler, puisque son certificat médical est en cours de validité",
                 "Il peut voler en local, à condition de ne pas emmener de passager",
-                "Il ne doit pas exercer les privilèges de sa licence tant que son aptitude est diminuée",
+                "Il ne doit pas voler tant que son aptitude est diminuée",
                 "Il doit d'abord faire renouveler son certificat médical"
               ],
               "answer": 2,
@@ -627,19 +627,19 @@
                 "Il a voyagé la veille comme passager d'un avion de ligne"
               ],
               "answer": 1,
-              "explanation": "MED.A.020 impose de demander sans délai l'avis d'un médecin aéronautique notamment en cas de premier besoin de verres correcteurs, d'opération chirurgicale, de début de traitement régulier, de maladie ou blessure importante, d'hospitalisation ou de grossesse."
+              "explanation": "MED.A.020 impose de demander sans délai l'avis d'un médecin aéronautique notamment en cas de premier besoin de verres correcteurs, d'opération chirurgicale, de début de prise régulière d'un médicament, de maladie ou blessure importante, d'hospitalisation ou de grossesse."
             },
             {
               "id": "u2s4q03",
-              "q": "À minuit, un pilote a une alcoolémie de 0,95 g/l. En retenant une élimination de 0,15 g/l par heure, à quelle heure son taux redescend-il à 0,2 g/l ?",
+              "q": "À minuit, un pilote a une alcoolémie de 0,90 g/l. En retenant une élimination de 0,15 g/l par heure, à quelle heure son alcoolémie sera-t-elle redevenue nulle ?",
               "choices": [
                 "03 h 00",
-                "05 h 00",
-                "06 h 20",
-                "08 h 00"
+                "06 h 00",
+                "08 h 00",
+                "09 h 00"
               ],
               "answer": 1,
-              "explanation": "Durée = (0,95 − 0,2) ÷ 0,15 = 0,75 ÷ 0,15 = 5 h, soit 05 h 00. Ce n'est qu'une estimation : la vitesse d'élimination varie d'une personne à l'autre, d'où la nécessité de garder une large marge."
+              "explanation": "Durée = 0,90 ÷ 0,15 = 6 h, soit 06 h 00. Avec une élimination plus lente (0,10 g/l par heure), il faudrait 9 h : la vitesse varie d'une personne à l'autre, d'où la nécessité d'une large marge."
             },
             {
               "id": "u2s4q04",
@@ -655,27 +655,27 @@
             },
             {
               "id": "u2s4q05",
-              "q": "Après une soirée bien arrosée, un pilote a laissé passer 8 heures entre son dernier verre et le décollage. Que peut-il en conclure ?",
+              "q": "Après une soirée bien arrosée, un pilote a laissé passer 8 heures entre son dernier verre et le décollage. Quelle affirmation est exacte ?",
               "choices": [
                 "Il est forcément apte, puisque la règle des 8 heures est respectée",
                 "Il peut voler s'il boit beaucoup d'eau avant le départ",
                 "Il peut voler s'il reste sous 3 000 ft pour limiter l'hypoxie",
-                "Rien de certain : son taux peut encore dépasser 0,2 g/l et les effets persister"
+                "Il n'est pas forcément apte : l'alcoolémie et les effets peuvent persister"
               ],
               "answer": 3,
-              "explanation": "Les 8 heures sont un minimum, pas une garantie : après une forte consommation, l'alcoolémie peut rester élevée bien plus longtemps, et la « gueule de bois » (fatigue, troubles de l'équilibre) rend inapte même à alcoolémie nulle."
+              "explanation": "Les 8 heures sont un minimum, pas une garantie : après une forte consommation, l'alcoolémie peut rester élevée bien plus longtemps, et la « gueule de bois » (fatigue, troubles de l'équilibre) rend inapte même une fois l'alcool éliminé."
             },
             {
               "id": "u2s4q06",
-              "q": "Quel seuil d'alcoolémie la réglementation retient-elle pour les membres d'équipage d'un aéronef ?",
+              "q": "Un pilote a sauté le petit-déjeuner puis le déjeuner avant un vol prévu en début d'après-midi. Quel risque doit-il anticiper ?",
               "choices": [
-                "0,5 g/l, comme pour un automobiliste",
-                "0,8 g/l",
-                "0,2 g/l",
-                "1 g/l"
+                "Une hypoxie histotoxique, comme après la prise d'alcool",
+                "Une hyperventilation provoquée par le manque de sucre",
+                "Une hypoglycémie : baisse de concentration, fatigue, voire malaise",
+                "Aucun risque particulier s'il a bien dormi la nuit précédente"
               ],
               "answer": 2,
-              "explanation": "Pour les membres d'équipage, le seuil est fixé à 0,2 g d'alcool par litre de sang, bien plus bas que les 0,5 g/l de la route. Même en dessous, SERA.2020 interdit de voler si une substance psychoactive altère les performances."
+              "explanation": "Sans apport alimentaire, la glycémie baisse : le cerveau, grand consommateur de glucose, fonctionne moins bien (concentration, jugement, irritabilité) et un malaise est possible. Un repas léger avant le vol et une collation à bord évitent ce risque."
             },
             {
               "id": "u2s4q07",
@@ -759,7 +759,7 @@
           "vocab": [
             {
               "term": "Mémoire de travail",
-              "translation": "Mémoire à court terme : environ 7 éléments, quelques secondes"
+              "translation": "Mémoire à court terme : environ 7 éléments, une vingtaine de secondes"
             },
             {
               "term": "Loi de Yerkes-Dodson",
@@ -877,15 +877,15 @@
             },
             {
               "id": "u2s5q08",
-              "q": "Un pilote perçoit que le vent forcit (niveau 1) et comprend que la composante traversière approche de ses limites (niveau 2). En quoi consiste le niveau 3 de la conscience de la situation ?",
+              "q": "Quels sont, dans l'ordre, les trois niveaux de la conscience de la situation ?",
               "choices": [
-                "Percevoir les informations de l'environnement",
-                "Comprendre la signification des informations perçues",
-                "Anticiper l'évolution, par exemple en préparant un déroutement",
-                "Appliquer la check-list d'urgence"
+                "Anticiper, percevoir, agir",
+                "Percevoir, décider, évaluer",
+                "Percevoir, comprendre, anticiper",
+                "Comprendre, choisir, agir"
               ],
               "answer": 2,
-              "explanation": "La conscience de la situation comporte trois niveaux : percevoir les éléments, comprendre ce qu'ils signifient, puis projeter leur évolution pour anticiper. C'est ce troisième niveau qui permet de décider à temps."
+              "explanation": "On perçoit d'abord les éléments (le vent forcit), on comprend leur signification (la composante traversière approche de la limite), puis on anticipe leur évolution (préparer un déroutement). C'est ce troisième niveau qui permet de décider à temps."
             },
             {
               "id": "u2s5q09",
