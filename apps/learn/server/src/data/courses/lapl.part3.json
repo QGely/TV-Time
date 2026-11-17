@@ -11,7 +11,7 @@
           "id": "u3s1",
           "title": "Atmosphère, température et pression",
           "icon": "🌡️",
-          "tips": "L'atmosphère se divise en couches selon l'évolution de la température.\n• Troposphère : du sol à la tropopause. La température y baisse avec l'altitude et elle contient presque toute la vapeur d'eau : c'est là que se forment les nuages et le « temps ». Épaisseur d'environ 11 km (36 000 ft) aux latitudes moyennes, davantage à l'équateur (≈ 16 km), moins aux pôles (≈ 8 km).\n• Tropopause : limite au-dessus de laquelle la température cesse de décroître.\n• Stratosphère : température constante puis croissante (absorption par l'ozone), air sec et stable.\n\nAtmosphère standard (ISA), référence pour l'étalonnage des altimètres et les performances :\n• au niveau de la mer : 15 °C, 1013,25 hPa, masse volumique 1,225 kg/m³ ;\n• température : −6,5 °C par km, soit environ −2 °C par 1 000 ft, jusqu'à la tropopause à 11 km (36 089 ft), où elle vaut −56,5 °C, puis constante au-dessus ;\n• pression : environ 1 hPa de moins tous les 28 ft près du sol ; 500 hPa vers 18 000 ft.\nÉcart ISA = température réelle − température standard à la même altitude. Ex. : 21 °C à 2 000 ft, standard 11 °C : ISA +10.\n\nCalages altimétriques :\n• QNH : l'altimètre indique l'altitude (au-dessus du niveau moyen de la mer) ; posé, il affiche l'altitude du terrain.\n• QFE : il indique la hauteur au-dessus du terrain ; posé, il affiche 0.\n• 1013 (calage standard) : il indique un niveau de vol (FL 55 = 5 500 ft au-dessus de la surface isobare 1013,25 hPa). En montée, on affiche 1013 en passant l'altitude de transition ; en descente, le QNH en passant le niveau de transition.\n\nErreurs de l'altimètre (calage non modifié) :\n• Vers une zone de pression plus basse, l'avion est plus bas qu'indiqué : environ 28 ft par hPa d'écart.\n• Dans un air plus froid que l'ISA, l'avion est aussi plus bas qu'indiqué (ordre de grandeur : 4 % de la hauteur au-dessus de la station par tranche de 10 °C d'écart).\n• Mémo : « du chaud vers le froid, des hautes vers les basses pressions : danger », l'altimètre surestime. Dans le sens inverse, l'avion est plus haut qu'indiqué.\n\nAltitude-pression : altitude lue avec le calage 1013. Altitude-pression ≈ altitude du terrain + (1013 − QNH) × 28 ft.\nAltitude-densité : altitude, en atmosphère standard, où la masse volumique est celle de l'air réel. Elle augmente avec la température, l'altitude et l'humidité. Formule approchée : altitude-densité ≈ altitude-pression + 120 ft × écart ISA. Plus elle est élevée, plus le moteur, l'hélice et l'aile perdent en efficacité : décollage plus long et taux de montée plus faible (« chaud, haut, humide »).",
+          "tips": "L'atmosphère se divise en couches selon l'évolution de la température.\n• Troposphère : du sol à la tropopause. La température y baisse avec l'altitude et elle contient presque toute la vapeur d'eau : c'est là que se forment les nuages et le « temps ». Épaisseur d'environ 11 km (36 000 ft) aux latitudes moyennes, davantage à l'équateur (≈ 16 km), moins aux pôles (≈ 8 km).\n• Tropopause : limite au-dessus de laquelle la température cesse de décroître.\n• Stratosphère : température constante puis croissante (absorption par l'ozone), air sec et stable.\n\nAtmosphère standard (ISA), référence pour l'étalonnage des altimètres et les performances :\n• au niveau de la mer : 15 °C, 1013,25 hPa, masse volumique 1,225 kg/m³ ;\n• température : −6,5 °C par km, soit environ −2 °C par 1 000 ft, jusqu'à la tropopause à 11 km (36 089 ft), où elle vaut −56,5 °C, puis constante au-dessus ;\n• pression : environ 1 hPa de moins tous les 28 ft près du sol ; 500 hPa vers 18 000 ft.\nÉcart ISA = température réelle − température standard à la même altitude. Ex. : 21 °C à 2 000 ft, standard 11 °C : ISA +10.\n\nCalages altimétriques :\n• QNH : l'altimètre indique l'altitude (au-dessus du niveau moyen de la mer) ; posé, il affiche l'altitude du terrain.\n• QFE : il indique la hauteur au-dessus du terrain ; posé, il affiche 0.\n• 1013 (calage standard) : il indique un niveau de vol (FL 55 = 5 500 ft au-dessus de la surface isobare 1013,25 hPa). En montée, on affiche 1013 en passant l'altitude de transition ; en descente, le QNH en passant le niveau de transition.\n\nErreurs de l'altimètre :\n• Vers une zone de pression plus basse, sans recalage, l'avion est plus bas qu'indiqué : environ 28 ft par hPa d'écart.\n• Dans un air plus froid que l'ISA, même avec le bon QNH, l'avion est aussi plus bas qu'indiqué (ordre de grandeur : 4 % de la hauteur au-dessus de la station par tranche de 10 °C d'écart).\n• Mémo : « du chaud vers le froid, des hautes vers les basses pressions : danger », l'altimètre surestime. Dans le sens inverse, l'avion est plus haut qu'indiqué.\n\nAltitude-pression : altitude lue avec le calage 1013. Altitude-pression ≈ altitude du terrain + (1013 − QNH) × 28 ft.\nAltitude-densité : altitude, en atmosphère standard, où la masse volumique est celle de l'air réel. Elle augmente avec la température, l'altitude et l'humidité. Formule approchée : altitude-densité ≈ altitude-pression + 120 ft × écart ISA. Plus elle est élevée, plus le moteur, l'hélice et l'aile perdent en efficacité : décollage plus long et taux de montée plus faible (« chaud, haut, humide »).",
           "vocab": [
             { "term": "ISA", "translation": "Atmosphère standard : 15 °C et 1013,25 hPa au niveau de la mer" },
             { "term": "QNH", "translation": "Calage donnant l'altitude au-dessus du niveau moyen de la mer" },
@@ -39,10 +39,10 @@
             },
             {
               "id": "u3s1q03",
-              "q": "Sur un aérodrome situé à 2 000 ft d'altitude, le thermomètre indique 21 °C. Quel est l'écart à l'atmosphère standard ?",
-              "choices": ["ISA +6", "ISA +10", "ISA +4", "ISA −10"],
+              "q": "Sur un aérodrome situé à 3 000 ft d'altitude, le thermomètre indique 17 °C. Quel est l'écart à l'atmosphère standard ?",
+              "choices": ["ISA +2", "ISA +8", "ISA +11", "ISA −8"],
               "answer": 1,
-              "explanation": "Température standard à 2 000 ft : 15 − (2 × 2) = 11 °C. Écart = 21 − 11 = +10 °C, soit ISA +10. Comparer à 15 °C (ISA +6) revient à oublier la décroissance de la température avec l'altitude."
+              "explanation": "Température standard à 3 000 ft : 15 − (3 × 2) = 9 °C. Écart = 17 − 9 = +8 °C, soit ISA +8. Comparer à 15 °C (ISA +2) revient à oublier la décroissance de la température avec l'altitude."
             },
             {
               "id": "u3s1q04",
@@ -198,7 +198,7 @@
             {
               "id": "u3s2q11",
               "q": "Des précipitations débutent et cessent brusquement, en alternance avec des éclaircies. De quels nuages proviennent-elles généralement ?",
-              "choices": ["Des nimbostratus", "Des stratus", "Des altostratus", "Des nuages convectifs (cumulus bourgeonnants, cumulonimbus)"],
+              "choices": ["Des nimbostratus et des altostratus", "Des stratus et des stratocumulus", "Des cirrus et des cirrostratus", "Des cumulus bourgeonnants et des cumulonimbus"],
               "answer": 3,
               "explanation": "Ce sont des averses (SH dans les METAR), caractéristiques des nuages cumuliformes de l'air instable. Les nuages stratiformes donnent plutôt des précipitations continues (Ns, As) ou de la bruine (St)."
             },
@@ -279,7 +279,7 @@
             {
               "id": "u3s3q08",
               "q": "En fin de nuit, par temps clair et calme, quel vent observe-t-on généralement dans une vallée de montagne ?",
-              "choices": ["Un vent qui remonte les pentes vers les sommets (brise de vallée)", "Un vent qui monte vers les sommets, car l'air refroidi s'allège", "Un vent fort et rafaleux, accéléré par le rayonnement nocturne", "Un vent qui descend les pentes vers le fond de la vallée (brise de montagne)"],
+              "choices": ["Un vent qui remonte les pentes vers les sommets (brise de vallée)", "Un calme absolu, l'air froid restant immobile sur les pentes", "Un vent fort et rafaleux, accéléré par le rayonnement nocturne", "Un vent qui descend les pentes vers le fond de la vallée (brise de montagne)"],
               "answer": 3,
               "explanation": "La nuit, l'air au contact des pentes se refroidit par rayonnement, devient plus dense et s'écoule vers le bas : c'est la brise de montagne. Le jour, les pentes ensoleillées font au contraire monter l'air (brise de vallée)."
             },
@@ -331,10 +331,10 @@
           "questions": [
             {
               "id": "u3s4q01",
-              "q": "Une masse d'air polaire maritime arrive sur la France et circule au-dessus d'un sol plus chaud qu'elle. Quel temps donne-t-elle typiquement ?",
-              "choices": ["Des stratus, de la bruine et une visibilité médiocre", "Un ciel sans nuage et de la brume sèche", "Une pluie continue sous des nimbostratus", "Des cumulus, des cumulonimbus, des averses et une bonne visibilité hors averses"],
+              "q": "En été, la carte en surface montre un marais barométrique : isobares très espacées et pression à peu près uniforme sur la France. Quel temps faut-il redouter l'après-midi ?",
+              "choices": ["Un vent fort et régulier de secteur ouest", "Une pluie continue sous des nimbostratus", "Un brouillard d'advection persistant toute la journée", "Des orages isolés, déclenchés par l'échauffement du sol"],
               "answer": 3,
-              "explanation": "Réchauffé par la base, l'air polaire maritime devient instable : convection, nuages cumuliformes, averses parfois orageuses. Hors averses, cet air froid et brassé offre une très bonne visibilité."
+              "explanation": "Dans un marais barométrique, le gradient de pression est faible, donc le vent aussi. En été, le fort échauffement du sol déclenche la convection : cumulus bourgeonnants puis orages isolés l'après-midi et en soirée."
             },
             {
               "id": "u3s4q02",
@@ -345,10 +345,10 @@
             },
             {
               "id": "u3s4q03",
-              "q": "Un air tropical maritime, doux et humide, remonte vers le nord au-dessus d'une mer plus froide. Comment évolue-t-il ?",
-              "choices": ["Il devient instable et donne des cumulonimbus", "Il s'assèche et le ciel se dégage", "Il devient stable, avec des stratus et un brouillard d'advection possibles", "Il devient instable et donne des averses de grêle"],
+              "q": "Sur votre aérodrome, la pression baisse depuis plusieurs heures sous une pluie continue. Puis elle se stabilise, la pluie cesse, la température et le point de rosée montent et le vent tourne du sud au sud-ouest. Que vient-il de se passer ?",
+              "choices": ["Le front froid est passé : vous êtes dans la traîne", "Un front chaud approche, encore à plusieurs centaines de kilomètres", "Le front chaud est passé : vous êtes dans le secteur chaud", "Un anticyclone s'installe et le temps va rester sec"],
               "answer": 2,
-              "explanation": "Refroidi par la base, l'air devient stable ; s'il atteint son point de rosée, il forme des stratus bas ou un brouillard d'advection, souvent étendus et persistants."
+              "explanation": "Baisse de pression et pluie continue précèdent le front chaud. À son passage, la pression cesse de baisser, l'air plus chaud et plus humide arrive (température et point de rosée en hausse) et le vent tourne à droite. Après un front froid, la température baisserait et la pression remonterait."
             },
             {
               "id": "u3s4q04",
@@ -374,7 +374,7 @@
             {
               "id": "u3s4q07",
               "q": "Quel temps accompagne typiquement le passage d'un front froid actif ?",
-              "choices": ["Une pluie fine et continue, avec hausse de la température", "Des averses, des orages possibles et des rafales, puis une baisse de température et une hausse de pression", "Un brouillard épais et un vent calme", "Une baisse continue de la pression et une hausse du point de rosée"],
+              "choices": ["Une pluie continue sur une large bande, puis une hausse de la température et du point de rosée", "Des averses, parfois orageuses, et des rafales, puis une baisse de la température et une hausse de la pression", "Un voile de cirrus puis d'altostratus qui s'épaissit lentement, sans précipitations", "Des averses et des rafales, puis une hausse de la température et une baisse de la pression"],
               "answer": 1,
               "explanation": "L'air froid soulève brutalement l'air chaud : Cu et Cb sur une bande étroite, averses, orages, rafales et turbulence. Après le passage, la température et le point de rosée baissent et la pression remonte."
             },
@@ -455,7 +455,7 @@
             {
               "id": "u3s5q04",
               "q": "En courte finale, vous traversez une microrafale sous un orage. Quelle séquence est typique ?",
-              "choices": ["Un vent arrière d'abord, puis un vent de face qui fait monter l'avion", "Un vent de face accru (vitesse en hausse), puis une forte descendance, puis un vent arrière (vitesse en chute)", "Une simple hausse de la vitesse indiquée, sans danger", "Une ascendance continue qui oblige à réduire la puissance"],
+              "choices": ["Un vent arrière (vitesse en chute), puis une forte ascendance, puis un vent de face (vitesse en hausse)", "Un vent de face accru (vitesse en hausse), puis une forte descendance, puis un vent arrière (vitesse en chute)", "Une forte descendance, puis un vent de face accru (vitesse en hausse) qui rétablit la trajectoire", "Un vent de travers croissant, sans effet notable sur la vitesse indiquée"],
               "answer": 1,
               "explanation": "L'air qui s'écrase au sol s'étale dans toutes les directions : on rencontre d'abord un vent de face (vitesse et trajectoire en hausse), puis la descendance, puis un vent arrière qui fait chuter la vitesse près du sol. Il faut remettre les gaz dès les premiers signes."
             },
@@ -468,8 +468,8 @@
             },
             {
               "id": "u3s5q06",
-              "q": "Quel dépôt lisse, transparent, lourd et très adhérent se forme lorsque de grosses gouttes surfondues s'étalent avant de geler ?",
-              "choices": ["Le givre blanc", "La gelée blanche", "Le givre transparent (verglas)", "Le grésil"],
+              "q": "En vol, de grosses gouttes d'eau surfondue heurtent l'avion et s'étalent avant de geler. Quel dépôt se forme ?",
+              "choices": ["Du givre blanc, opaque, rugueux et friable", "De la gelée blanche, faite de fins cristaux", "Du givre transparent (verglas), lisse, lourd et très adhérent", "Du grésil, fait de petits grains de glace qui rebondissent"],
               "answer": 2,
               "explanation": "Les grosses gouttes (pluie surfondue, cumulus) ne gèlent pas instantanément : elles s'étalent et forment une glace claire, compacte et difficile à éliminer, qui déforme le profil. Le givre blanc, opaque et friable, provient de petites gouttelettes qui gèlent instantanément."
             },
@@ -483,7 +483,7 @@
             {
               "id": "u3s5q08",
               "q": "Après une nuit claire et froide, l'avion stationné dehors est recouvert d'une fine couche de gelée blanche. Que faites-vous ?",
-              "choices": ["Vous l'enlevez entièrement avant le vol, car même mince elle dégrade fortement la portance", "Vous décollez : elle disparaîtra pendant la course au décollage", "Vous nettoyez seulement le pare-brise", "Vous décollez en augmentant de 5 kt la vitesse de rotation"],
+              "choices": ["Vous l'enlevez entièrement, sur toutes les surfaces, avant le vol", "Vous décollez : elle disparaîtra pendant la course au décollage", "Vous nettoyez seulement le pare-brise", "Vous décollez en augmentant de 5 kt la vitesse de rotation"],
               "answer": 0,
               "explanation": "Même une fine couche de gelée blanche rend l'extrados rugueux : la portance diminue, la traînée et la vitesse de décrochage augmentent. Les surfaces doivent être entièrement dégagées avant le décollage."
             },
@@ -526,7 +526,7 @@
             { "term": "METAR", "translation": "Observation régulière d'aérodrome (toutes les 30 min ou 1 h)" },
             { "term": "SPECI", "translation": "Observation spéciale émise lors d'un changement significatif" },
             { "term": "TAF", "translation": "Prévision d'aérodrome (9 h, 24 h ou 30 h)" },
-            { "term": "CAVOK", "translation": "Visi ≥ 10 km, rien sous 5 000 ft, ni CB/TCU, ni temps significatif" },
+            { "term": "CAVOK", "translation": "Visi ≥ 10 km, aucun nuage < 5 000 ft, ni CB/TCU, ni temps significatif" },
             { "term": "BKN", "translation": "Fragmenté : 5 à 7 octas de nuages" },
             { "term": "NOSIG", "translation": "Pas de changement significatif prévu dans les 2 heures" },
             { "term": "TEMSI", "translation": "Carte du temps significatif prévu (fronts, nuages, phénomènes)" },
@@ -536,7 +536,7 @@
             {
               "id": "u3s6q01",
               "q": "Dans le METAR « LFRN 171000Z 23015G27KT 4000 -RA BKN008 OVC015 10/09 Q1002 NOSIG », que signifie BKN008 ?",
-              "choices": ["1 à 2 octas de nuages à 800 ft", "5 à 7 octas de nuages à 8 000 ft", "5 à 7 octas de nuages à 800 ft au-dessus du terrain", "8 octas de nuages à 80 ft"],
+              "choices": ["1 à 2 octas à 800 ft au-dessus du terrain", "5 à 7 octas à 8 000 ft au-dessus du terrain", "5 à 7 octas à 800 ft au-dessus du terrain", "5 à 7 octas à 800 ft au-dessus du niveau de la mer"],
               "answer": 2,
               "explanation": "BKN (broken, fragmenté) correspond à 5 à 7 octas ; la hauteur de la base est donnée en centaines de pieds au-dessus du terrain : 008 = 800 ft."
             },

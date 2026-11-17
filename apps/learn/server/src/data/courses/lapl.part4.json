@@ -11,7 +11,7 @@
           "id": "u4s1",
           "title": "Bases de la radiotéléphonie",
           "icon": "🎙️",
-          "tips": "La radiotéléphonie suit les règles de l'OACI (annexe 10), reprises par SERA. On écoute avant d'émettre, on prépare son message, on appuie sur l'alternat avant de parler et on ne le relâche qu'à la fin : un micro bloqué paralyse la fréquence. On parle d'un ton égal, sans précipitation.\n\nAlphabet OACI : Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.\n\nChiffres en anglais : « tree » pour 3, « fife » pour 5, « niner » pour 9 ; la virgule se dit « decimal » (« décimale »).\n• Altitudes, hauteurs de nuages, visibilités : milliers et centaines ronds avec « thousand » et « hundred » (1 500 ft = « one thousand five hundred feet »).\n• Caps et calages : chiffre par chiffre (cap 090 = « zero niner zero » ; QNH 1009 = « one zero zero niner »).\n• Fréquences : chiffre par chiffre, en donnant les six chiffres, sauf si les deux derniers sont des zéros : 118,025 = « one one eight decimal zero two five » ; 119,700 = « one one niner decimal seven ».\n\nHeure : toujours en UTC. En métropole, l'heure légale vaut UTC + 1 en hiver et UTC + 2 en été. On donne normalement les minutes seules, et l'heure complète en cas de doute.\n\nÉchelle de lisibilité (réponse à « Comment me recevez-vous ? ») :\n• 1 : illisible\n• 2 : lisible par instants\n• 3 : lisible mais difficilement\n• 4 : lisible\n• 5 : parfaitement lisible\n\nIndicatifs : on nomme d'abord la station appelée, puis son propre indicatif (« Bordeaux Information, F-GJLM »). L'indicatif complet d'un avion léger est son immatriculation. L'indicatif abrégé garde le premier caractère et au moins les deux derniers (F-GJLM devient F-LM) ; on ne l'utilise qu'après que la station au sol l'a employé. Des abréviations usuelles comme QNH, QFE, VFR, ATIS ou CAVOK s'énoncent directement, sans alphabet phonétique.\n\nCollationnement (SERA.14055) : on répète, suivis de son indicatif, les éléments liés à la sécurité :\n• autorisations de route, notamment de transit ;\n• autorisations et instructions pour entrer sur une piste, y atterrir, en décoller, s'arrêter avant, la traverser, y rouler ou y remonter ;\n• piste en service, calages altimétriques, codes transpondeur, nouvelles fréquences ;\n• instructions de niveau, de cap et de vitesse.\nLe contrôleur écoute le collationnement et corrige toute erreur. « Reçu » (roger) ne remplace jamais un collationnement obligatoire ; une information de trafic ou de vent n'a pas à être collationnée.",
+          "tips": "La radiotéléphonie suit les règles de l'OACI (annexe 10), reprises par SERA. On écoute avant d'émettre, on prépare son message, on appuie sur l'alternat avant de parler et on ne le relâche qu'à la fin : un micro bloqué paralyse la fréquence. On parle d'un ton égal, sans précipitation.\n\nAlphabet OACI : Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.\n\nChiffres en anglais : « tree » pour 3, « fife » pour 5, « niner » pour 9 ; la virgule se dit « decimal » (« décimale »).\n• Altitudes, hauteurs de nuages, visibilités : milliers et centaines ronds avec « thousand » et « hundred » (1 500 ft = « one thousand five hundred feet »).\n• Caps et calages : chiffre par chiffre (cap 090 = « zero niner zero » ; QNH 1009 = « one zero zero niner »).\n• Fréquences : chiffre par chiffre, en donnant les six chiffres, sauf si les deux derniers sont des zéros : 118,025 = « one one eight decimal zero two five » ; 119,700 = « one one niner decimal seven ».\n\nHeure : toujours en UTC. En métropole, l'heure légale vaut UTC + 1 en hiver et UTC + 2 en été. On donne normalement les minutes seules, et l'heure complète en cas de doute.\n\nÉchelle de lisibilité (réponse à « Comment me recevez-vous ? ») :\n• 1 : illisible\n• 2 : lisible par instants\n• 3 : lisible mais difficilement\n• 4 : lisible\n• 5 : parfaitement lisible\n\nIndicatifs : on nomme d'abord la station appelée, puis son propre indicatif (« Bordeaux Information, F-GJLM »). L'indicatif complet d'un avion léger est son immatriculation. L'indicatif abrégé garde le premier caractère et au moins les deux derniers (F-GJLM devient F-LM) ; on ne l'utilise qu'après que la station au sol l'a employé. Des abréviations usuelles comme QNH, QFE, VFR, ATIS ou CAVOK s'énoncent directement, sans alphabet phonétique.\n\nCollationnement (SERA.8015) : on répète, suivis de son indicatif, les éléments liés à la sécurité :\n• autorisations de route, notamment de transit ;\n• autorisations et instructions pour entrer sur une piste, y atterrir, en décoller, s'arrêter avant, la traverser, y rouler ou y remonter ;\n• piste en service, calages altimétriques, codes transpondeur, nouvelles fréquences ;\n• instructions de niveau, de cap et de vitesse ;\n• niveau de transition, qu'il soit donné par le contrôleur ou par l'ATIS.\nLe contrôleur écoute le collationnement et corrige toute erreur. « Reçu » (roger) ne remplace jamais un collationnement obligatoire ; une information de trafic ou de vent n'a pas à être collationnée.",
           "vocab": [
             {
               "term": "Alphabet OACI",
@@ -57,7 +57,7 @@
                 "Quebec – Romeo – Sierra – Tokyo"
               ],
               "answer": 2,
-              "explanation": "Les lettres Q, R, S et T se disent Quebec, Romeo, Sierra, Tango. « Queen », « Roger » et « Sugar » viennent d'un ancien alphabet abandonné : seul l'alphabet OACI est réglementaire."
+              "explanation": "Les lettres Q, R, S et T se disent Quebec, Romeo, Sierra, Tango. « Queen », « Roger » et « Sugar » viennent d'un ancien alphabet abandonné, et « Tokyo » n'a jamais désigné le T : seul l'alphabet OACI est réglementaire."
             },
             {
               "id": "u4s1q02",
@@ -99,24 +99,24 @@
               "id": "u4s1q05",
               "q": "En juillet, vous décollez de Toulouse à 15 h 40, heure légale française. À quelle heure UTC correspond ce décollage ?",
               "choices": [
-                "17 h 40 UTC",
-                "14 h 40 UTC",
                 "13 h 40 UTC",
+                "14 h 40 UTC",
+                "17 h 40 UTC",
                 "15 h 40 UTC"
               ],
-              "answer": 2,
+              "answer": 0,
               "explanation": "En été, l'heure légale en métropole vaut UTC + 2 : UTC = 15 h 40 − 2 h = 13 h 40. En hiver, on ne retrancherait qu'une heure."
             },
             {
               "id": "u4s1q06",
               "q": "En janvier, un NOTAM annonce l'activation d'une zone réglementée de 0930 à 1130 UTC. En heure légale française (métropole), la zone est active :",
               "choices": [
-                "de 10 h 30 à 12 h 30",
                 "de 8 h 30 à 10 h 30",
-                "de 11 h 30 à 13 h 30",
-                "de 9 h 30 à 11 h 30"
+                "de 9 h 30 à 11 h 30",
+                "de 10 h 30 à 12 h 30",
+                "de 11 h 30 à 13 h 30"
               ],
-              "answer": 0,
+              "answer": 2,
               "explanation": "En hiver, l'heure légale vaut UTC + 1 : 0930 UTC = 10 h 30 et 1130 UTC = 12 h 30. NOTAM, plans de vol et messages radio sont toujours exprimés en UTC."
             },
             {
@@ -159,24 +159,24 @@
               "id": "u4s1q10",
               "q": "Le contrôleur vous dit : « F-LM, affichez 4521, QNH 1018 ». Quelle réponse est correcte ?",
               "choices": [
-                "4521, QNH 1018, F-LM",
                 "Reçu, F-LM",
                 "Wilco, F-LM",
-                "Affichons, F-LM"
+                "Affichons, F-LM",
+                "4521, QNH 1018, F-LM"
               ],
-              "answer": 0,
+              "answer": 3,
               "explanation": "Le code transpondeur et le calage altimétrique font partie des éléments à collationner obligatoirement. « Reçu » ou « wilco » ne suffisent pas : on répète les valeurs, suivies de son indicatif."
             },
             {
               "id": "u4s1q11",
               "q": "Parmi ces éléments transmis par le contrôle, lequel n'est pas à collationner obligatoirement ?",
               "choices": [
+                "Une information de trafic",
                 "Un nouveau code transpondeur",
                 "Une nouvelle fréquence à contacter",
-                "Le calage altimétrique",
-                "Une information de trafic"
+                "Le calage altimétrique"
               ],
-              "answer": 3,
+              "answer": 0,
               "explanation": "SERA impose de collationner notamment autorisations, pistes, calages, codes transpondeur, fréquences, caps et niveaux. Une information de trafic s'acquitte simplement, en précisant si le trafic est en vue."
             },
             {
@@ -259,15 +259,15 @@
             },
             {
               "id": "u4s2q03",
-              "q": "Dans laquelle de ces situations la seule réponse « Reçu » (roger) est-elle insuffisante ?",
+              "q": "Au point d'arrêt, la tour vous transmet : « F-LM, piste 24, alignez-vous et attendez ». Que faites-vous ?",
               "choices": [
-                "Pour accuser réception d'une information de trafic",
-                "Pour accuser réception d'une information sur des travaux en bord de piste",
-                "Pour accuser réception d'une autorisation d'atterrissage",
-                "Pour accuser réception de la direction et de la force du vent"
+                "Vous vous alignez et décollez dès que la piste vous semble dégagée",
+                "Vous restez au point d'arrêt jusqu'à l'autorisation de décollage",
+                "Vous vous alignez sur la piste 24 et attendez l'autorisation de décollage",
+                "Vous vous alignez et décollez si aucun avion n'est annoncé en finale"
               ],
               "answer": 2,
-              "explanation": "« Roger » signifie seulement « j'ai reçu tout votre dernier message ». Il ne remplace jamais un collationnement obligatoire, comme celui d'une autorisation d'atterrissage avec la piste."
+              "explanation": "« Alignez-vous et attendez » (line up and wait) autorise seulement à entrer sur la piste et à s'y aligner : le décollage exige une autorisation explicite. Instruction d'entrer sur une piste, elle se collationne avec la piste et l'indicatif."
             },
             {
               "id": "u4s2q04",
@@ -387,7 +387,7 @@
           "vocab": [
             {
               "term": "MAYDAY",
-              "translation": "Signal de détresse : danger grave et imminent, aide immédiate"
+              "translation": "Signal de détresse : danger grave et/ou imminent, aide immédiate"
             },
             {
               "term": "PAN PAN",
@@ -493,7 +493,7 @@
             },
             {
               "id": "u4s3q07",
-              "q": "Comment la station qui dirigeait les échanges annonce-t-elle que la situation de détresse est terminée ?",
+              "q": "En radiotéléphonie aéronautique, comment la station qui dirigeait les échanges annonce-t-elle que la situation de détresse est terminée ?",
               "choices": [
                 "« STOP TRANSMITTING – MAYDAY »",
                 "« PAN PAN », répété trois fois",

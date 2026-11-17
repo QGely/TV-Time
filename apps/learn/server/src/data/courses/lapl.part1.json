@@ -11,7 +11,7 @@
           "id": "u1s1",
           "title": "Organisations et textes",
           "icon": "📜",
-          "tips": "L'OACI (Organisation de l'aviation civile internationale), créée par la Convention de Chicago du 7 décembre 1944, siège à Montréal. Ses 19 annexes contiennent des normes et pratiques recommandées (SARPs) : chaque État s'engage à les appliquer ou notifie ses différences.\n• Annexe 1 : licences du personnel\n• Annexe 2 : règles de l'air\n• Annexe 6 : exploitation technique des aéronefs\n• Annexe 7 : marques de nationalité et d'immatriculation\n• Annexe 8 : navigabilité\n• Annexe 11 : services de la circulation aérienne\n• Annexe 12 : recherche et sauvetage\n• Annexe 13 : enquêtes sur les accidents et incidents\n• Annexe 14 : aérodromes\n• Annexe 15 : services d'information aéronautique\n\nEn Europe, l'EASA (Agence de l'Union européenne pour la sécurité aérienne, Cologne) prépare les règles adoptées par la Commission. Un règlement européen s'applique directement dans chaque État membre, sans transposition ; les textes nationaux (arrêtés) le complètent.\n• Basic Regulation : règlement (UE) 2018/1139, le texte de base\n• Aircrew : règlement (UE) n° 1178/2011, avec la Part-FCL (licences) et la Part-MED (aptitude médicale)\n• SERA : règlement d'exécution (UE) n° 923/2012, les règles de l'air\n• Air Ops : règlement (UE) n° 965/2012 ; sa Part-NCO régit l'exploitation non commerciale des aéronefs motorisés non complexes, donc le vol privé en aéroclub\n\nEn France, la DGAC (Direction générale de l'aviation civile) applique et complète ces textes. La DSAC (Direction de la sécurité de l'aviation civile) est l'autorité de surveillance : elle délivre notamment les licences. La DSNA rend les services de navigation aérienne ; son SIA publie l'information aéronautique.\n\nUn avion immatriculé en France porte la marque F, un tiret et quatre lettres (ex. F-GABC).\n\nDocuments de l'avion (NCO.GEN.135) : manuel de vol, certificat d'immatriculation et certificat de navigabilité (CDN) en original, licence de station d'aéronef (équipements radio), attestation d'assurance, carnet de route, cartes aéronautiques à jour. Le pilote porte sur lui sa licence, son certificat médical et une pièce d'identité avec photo (FCL.045). Ses heures figurent dans son carnet de vol, distinct du carnet de route de l'avion.\n\nInformation aéronautique :\n• AIP (eAIP en ligne) : parties GEN, ENR et AD (aérodromes et cartes VAC) ; amendements selon le cycle AIRAC de 28 jours\n• NOTAM : avis diffusé par télécommunication, information temporaire de courte durée ou urgente\n• SUP AIP : modification temporaire de longue durée (3 mois ou plus) ou riche en texte et en cartes\n• AIC : circulaire d'information aéronautique (explications, sujets administratifs)",
+          "tips": "L'OACI (Organisation de l'aviation civile internationale), créée par la Convention de Chicago du 7 décembre 1944, siège à Montréal. Ses 19 annexes contiennent des normes et pratiques recommandées (SARPs) : chaque État s'engage à les appliquer ou notifie ses différences.\n• Annexe 1 : licences du personnel\n• Annexe 2 : règles de l'air\n• Annexe 6 : exploitation technique des aéronefs\n• Annexe 7 : marques de nationalité et d'immatriculation\n• Annexe 8 : navigabilité\n• Annexe 11 : services de la circulation aérienne\n• Annexe 12 : recherche et sauvetage\n• Annexe 13 : enquêtes sur les accidents et incidents\n• Annexe 14 : aérodromes\n• Annexe 15 : services d'information aéronautique\n\nEn Europe, l'EASA (Agence de l'Union européenne pour la sécurité aérienne, Cologne) prépare les règles adoptées par la Commission. Un règlement européen s'applique directement dans chaque État membre, sans transposition ; les textes nationaux (arrêtés) le complètent.\n• Basic Regulation : règlement (UE) 2018/1139, le texte de base\n• Aircrew : règlement (UE) n° 1178/2011, avec la Part-FCL (licences) et la Part-MED (aptitude médicale)\n• SERA : règlement d'exécution (UE) n° 923/2012, les règles de l'air\n• Air Ops : règlement (UE) n° 965/2012 ; sa Part-NCO régit l'exploitation non commerciale des aéronefs motorisés non complexes, donc le vol privé en aéroclub\n\nEn France, la DGAC (Direction générale de l'aviation civile) applique et complète ces textes. La DSAC (Direction de la sécurité de l'aviation civile) est l'autorité de surveillance : elle délivre notamment les licences. La DSNA rend les services de navigation aérienne ; son SIA publie l'information aéronautique.\n\nUn avion immatriculé en France porte la marque F, un tiret et quatre lettres (ex. F-GABC).\n\nDocuments de l'avion (NCO.GEN.135), notamment : manuel de vol, certificat d'immatriculation et certificat de navigabilité (CDN) en original, licence de station d'aéronef (équipements radio), attestation d'assurance, carnet de route, cartes aéronautiques à jour. Le pilote porte sur lui sa licence, son certificat médical et une pièce d'identité avec photo (FCL.045). Ses heures figurent dans son carnet de vol, distinct du carnet de route de l'avion.\n\nInformation aéronautique :\n• AIP (eAIP en ligne) : parties GEN, ENR et AD (aérodromes et cartes VAC) ; amendements selon le cycle AIRAC de 28 jours\n• NOTAM : avis diffusé par télécommunication, information temporaire de courte durée ou urgente\n• SUP AIP : modification temporaire de longue durée (3 mois ou plus) ou riche en texte et en cartes\n• AIC : circulaire d'information aéronautique (explications, sujets administratifs)",
           "vocab": [
             {
               "term": "OACI",
@@ -63,10 +63,10 @@
               "id": "u1s1q02",
               "q": "Que contiennent les annexes à la Convention de Chicago ?",
               "choices": [
-                "Des normes et pratiques recommandées que les États s'engagent à appliquer, sauf différences notifiées",
+                "Des normes et pratiques recommandées, à appliquer sauf différences notifiées",
                 "Des règlements directement applicables aux pilotes, sans intervention des États",
-                "Les consignes d'exploitation propres à chaque aérodrome du monde",
-                "La liste des aéronefs immatriculés dans chaque État signataire"
+                "Les consignes d'exploitation propres à chaque aérodrome international du monde",
+                "La liste des aéronefs immatriculés dans chaque État signataire de la Convention"
               ],
               "answer": 0,
               "explanation": "Les 19 annexes rassemblent les SARPs (normes et pratiques recommandées). Elles engagent les États, qui les reprennent dans leur réglementation ou notifient leurs différences à l'OACI."
@@ -112,9 +112,9 @@
               "q": "Quelle est la portée en France d'un règlement européen comme SERA ?",
               "choices": [
                 "Il doit être transposé par une loi française avant de s'appliquer",
-                "Il ne s'applique qu'aux vols internationaux",
+                "Il ne s'applique qu'aux vols internationaux, les vols intérieurs restant régis par le droit français",
                 "Il s'applique directement, les textes nationaux ne faisant que le compléter",
-                "Il n'a qu'une valeur de recommandation pour la DGAC"
+                "Il n'a qu'une valeur de recommandation tant que la DGAC ne l'a pas repris"
               ],
               "answer": 2,
               "explanation": "Un règlement de l'Union européenne est obligatoire dans tous ses éléments et directement applicable dans chaque État membre. Les textes français précisent seulement les points laissés aux États."
@@ -159,10 +159,10 @@
               "id": "u1s1q10",
               "q": "À quoi sert le carnet de route d'un avion ?",
               "choices": [
-                "À enregistrer les heures de vol personnelles du pilote",
-                "À décrire l'itinéraire prévu, comme un plan de vol",
+                "À enregistrer les heures de vol personnelles du pilote, pour sa licence",
+                "À décrire l'itinéraire prévu et les points de report, comme un plan de vol",
                 "À consigner les vols effectués par l'avion (date, équipage, temps de vol...)",
-                "À regrouper les procédures normales et d'urgence de l'avion"
+                "À regrouper les procédures normales et d'urgence ainsi que les performances de l'avion"
               ],
               "answer": 2,
               "explanation": "Le carnet de route appartient à l'avion et retrace ses vols. Les heures du pilote figurent dans son carnet de vol personnel, les procédures dans le manuel de vol."
@@ -197,7 +197,7 @@
           "id": "u1s2",
           "title": "Licences et qualifications",
           "icon": "🪪",
-          "tips": "Deux licences permettent le vol privé sur avion :\n• LAPL(A) : commandant de bord sur avion monomoteur à pistons ou motoplaneur (TMG) de masse maximale au décollage (MTOM) ≤ 2 000 kg, avec au plus 3 passagers (jamais plus de 4 personnes à bord). Licence européenne non conforme OACI : elle s'exerce dans les États de l'EASA ; ailleurs, l'accord de l'État concerné est nécessaire. Pas de qualification de classe à proroger, mais une exigence de maintien de compétence.\n• PPL(A) : licence conforme à l'annexe 1 de l'OACI, reconnue internationalement, sans limite de masse ni de passagers propre à la licence ; les avions pilotables dépendent des qualifications de classe ou de type détenues (SEP pour les monomoteurs à pistons). Vols non commerciaux, sans rémunération.\n\nÂges minimaux :\n• premier vol solo : 16 ans, avec l'autorisation de l'instructeur et un certificat médical\n• délivrance du LAPL(A) ou du PPL(A) : 17 ans\n\nCertificats médicaux (Part-MED) : classe 2 au minimum pour le PPL ; certificat LAPL (ou classe 2) pour le LAPL. La validité dépend de l'âge à la date de l'examen :\n• classe 2 : 60 mois avant 40 ans, 24 mois de 40 à 50 ans, 12 mois après 50 ans\n• LAPL : 60 mois avant 40 ans, 24 mois ensuite\nUn certificat délivré avant 40 ans cesse d'être valable à 42 ans.\n\nQualification SEP : valable 24 mois. Prorogation par un contrôle de compétences avec un examinateur dans les 3 mois précédant l'échéance, ou par expérience dans les 12 mois précédant l'échéance : 12 h de vol dont 6 h de commandant de bord (CdB), 12 décollages, 12 atterrissages et un vol d'entraînement d'au moins 1 h avec un instructeur.\n\nMaintien de compétence LAPL(A) (FCL.140.A) : sur les 24 derniers mois, 12 h de vol comme CdB dont 12 décollages et atterrissages, et 1 h d'entraînement avec un instructeur. À défaut : contrôle de compétences, ou vols complémentaires en double ou en solo supervisé.\n\nExpérience récente (FCL.060) : pour emporter des passagers, 3 décollages, approches et atterrissages dans les 90 jours précédents sur un avion de même type ou classe.\n\nCarnet de vol (FCL.050) : le pilote y consigne tous ses vols.\n\nCompétence linguistique (FCL.055) : mention obligatoire pour utiliser la radiotéléphonie ; niveau 4 (fonctionnel) au minimum, puis 5 (avancé) et 6 (expert, sans limite de validité).\n\nExamen théorique (FCL.025) : 75 % exigés par épreuve, 4 tentatives au plus par épreuve. Toutes les épreuves doivent être réussies dans les 18 mois suivant la fin du mois calendaire de la première tentative. La réussite reste valable 24 mois pour la délivrance de la licence.",
+          "tips": "Deux licences permettent le vol privé sur avion :\n• LAPL(A) : commandant de bord sur avion monomoteur à pistons ou motoplaneur (TMG) de masse maximale au décollage (MTOM) ≤ 2 000 kg, avec au plus 3 passagers (jamais plus de 4 personnes à bord). Licence européenne non conforme OACI : elle s'exerce dans les États de l'EASA ; ailleurs, l'accord de l'État concerné est nécessaire. Pas de qualification de classe à proroger, mais une exigence de maintien de compétence.\n• PPL(A) : licence conforme à l'annexe 1 de l'OACI, reconnue internationalement, sans limite de masse ni de passagers propre à la licence ; les avions pilotables dépendent des qualifications de classe ou de type détenues (SEP pour les monomoteurs à pistons). Vols non commerciaux, sans rémunération (sauf, sous conditions, pour l'instruction et les examens).\n\nÂges minimaux :\n• premier vol solo : 16 ans, avec l'autorisation de l'instructeur et un certificat médical\n• délivrance du LAPL(A) ou du PPL(A) : 17 ans\n\nCertificats médicaux (Part-MED) : classe 2 au minimum pour le PPL ; certificat LAPL (ou classe 2) pour le LAPL. La validité dépend de l'âge à la date de l'examen :\n• classe 2 : 60 mois avant 40 ans, 24 mois de 40 à 50 ans, 12 mois après 50 ans\n• LAPL : 60 mois avant 40 ans, 24 mois ensuite\nUn certificat délivré avant 40 ans cesse d'être valable à 42 ans.\n\nQualification SEP : valable 24 mois. Prorogation par un contrôle de compétences avec un examinateur dans les 3 mois précédant l'échéance, ou par expérience dans les 12 mois précédant l'échéance : 12 h de vol dont 6 h de commandant de bord (CdB), 12 décollages, 12 atterrissages et un vol d'entraînement d'au moins 1 h avec un instructeur.\n\nMaintien de compétence LAPL(A) (FCL.140.A) : sur les 24 derniers mois, 12 h de vol comme CdB dont 12 décollages et atterrissages, et 1 h d'entraînement avec un instructeur. À défaut : contrôle de compétences, ou vols complémentaires en double ou en solo supervisé.\n\nExpérience récente (FCL.060) : pour emporter des passagers, 3 décollages, approches et atterrissages dans les 90 jours précédents sur un avion de même type ou classe.\n\nCarnet de vol (FCL.050) : le pilote y consigne tous ses vols.\n\nCompétence linguistique (FCL.055) : mention obligatoire pour utiliser la radiotéléphonie ; niveau 4 (fonctionnel) au minimum, puis 5 (avancé) et 6 (expert, sans limite de validité).\n\nExamen théorique (FCL.025) : 75 % exigés par épreuve, 4 tentatives au plus par épreuve. Toutes les épreuves doivent être réussies dans les 18 mois suivant la fin du mois calendaire de la première tentative. La réussite reste valable 24 mois pour la délivrance de la licence.",
           "vocab": [
             {
               "term": "LAPL(A)",
@@ -237,9 +237,9 @@
               "id": "u1s2q01",
               "q": "Lequel de ces vols sort des privilèges d'un titulaire du LAPL(A) expérimenté et à jour de ses obligations ?",
               "choices": [
-                "Emmener 3 passagers à bord d'un DR400 de 1 100 kg de masse maximale",
+                "Emmener 3 passagers à bord d'un DR400 de 1 100 kg de masse maximale au décollage",
                 "Piloter un monomoteur à pistons de 2 200 kg de masse maximale au décollage",
-                "Effectuer une navigation de jour vers l'Allemagne",
+                "Effectuer une navigation de jour vers un aérodrome situé en Allemagne",
                 "Faire un vol local de jour, seul à bord"
               ],
               "answer": 1,
@@ -249,9 +249,9 @@
               "id": "u1s2q02",
               "q": "Quelle différence entre le LAPL(A) et le PPL(A) concerne les vols à l'étranger ?",
               "choices": [
-                "Le LAPL(A) interdit de quitter le territoire français",
-                "Le PPL(A) n'est valable que dans les États membres de l'EASA",
-                "Aucune : les deux licences sont conformes aux normes de l'OACI",
+                "Le LAPL(A) ne permet pas de quitter le territoire français, même vers un État de l'EASA",
+                "Le PPL(A) n'est valable que dans les États de l'EASA, contrairement au LAPL(A)",
+                "Aucune : les deux licences sont conformes à l'OACI et reconnues dans le monde entier",
                 "Le PPL(A) est conforme à l'OACI, alors que le LAPL(A) est une licence européenne non OACI"
               ],
               "answer": 3,
@@ -261,7 +261,7 @@
               "id": "u1s2q03",
               "q": "Léa, 16 ans et demi, s'entraîne en aéroclub. Que lui permet la réglementation ?",
               "choices": [
-                "Voler en solo avec l'autorisation de son instructeur, mais pas obtenir sa licence avant 17 ans",
+                "Voler en solo, autorisée par son instructeur, mais pas encore obtenir sa licence",
                 "Obtenir son PPL(A) dès la réussite de son test en vol, sans attendre ses 17 ans",
                 "Uniquement voler en double commande, le premier solo n'étant permis qu'à 17 ans",
                 "Voler en solo sans autorisation particulière, puisqu'elle a plus de 16 ans"
@@ -322,9 +322,9 @@
               "q": "Un titulaire du PPL(A) a effectué 2 décollages et 2 atterrissages sur DR400 au cours des 90 derniers jours. Il veut emmener un ami aujourd'hui. Que doit-il faire ?",
               "choices": [
                 "Rien : 2 atterrissages en 90 jours suffisent pour emporter un passager",
-                "Rien : il suffit d'avoir volé au moins une fois dans les 90 jours",
-                "D'abord réaliser au moins un décollage, une approche et un atterrissage de plus sur un avion de même classe",
-                "Passer un contrôle de compétences avec un examinateur"
+                "Rien : il suffit d'avoir volé au moins une fois comme commandant de bord dans les 90 jours",
+                "Faire d'abord un décollage, une approche et un atterrissage de plus sur un avion de même classe",
+                "Passer un contrôle de compétences avec un examinateur avant tout vol avec passager"
               ],
               "answer": 2,
               "explanation": "FCL.060 exige, pour emporter des passagers, 3 décollages, approches et atterrissages dans les 90 jours précédents sur un aéronef de même type ou classe. Il lui en manque un, à réaliser seul ou avec un instructeur."
@@ -383,7 +383,7 @@
           "id": "u1s3",
           "title": "Règles de l'air",
           "icon": "↔️",
-          "tips": "Le règlement SERA reprend l'annexe 2 de l'OACI. Le commandant de bord reste responsable d'éviter les abordages : voir et éviter.\n\nDroit de passage (SERA.3210) :\n• Rapprochement de face : chacun oblique vers la droite.\n• Routes convergentes à peu près à la même altitude : celui qui voit l'autre à sa droite cède le passage. Mais les aéronefs motopropulsés cèdent le passage aux dirigeables, planeurs et ballons ; les dirigeables aux planeurs et ballons ; les planeurs aux ballons ; un motopropulsé cède aussi le passage à un aéronef qui en remorque un autre.\n• Dépassement : l'aéronef dépassé est prioritaire ; celui qui dépasse s'écarte en obliquant vers la droite.\n• Atterrissage : priorité aux aéronefs qui atterrissent ou sont en phase finale d'approche ; entre deux avions en approche, le plus haut cède le passage au plus bas, qui ne doit pas en profiter pour lui couper la route. Tout aéronef cède le passage à celui qui est contraint d'atterrir.\n\nFeux (SERA.3215) : de nuit, tout aéronef en vol allume ses feux anticollision et ses feux de navigation : rouge à gauche, vert à droite, blanc à l'arrière. Vert à votre gauche et rouge à votre droite : l'avion vient de face. Feu rouge sur votre droite à relèvement constant : il converge depuis votre droite, vous lui cédez le passage.\n\nHauteurs minimales VFR (SERA.5005(f)), hors décollage et atterrissage :\n• au-dessus des agglomérations ou rassemblements de personnes en plein air : 1 000 ft (300 m) au-dessus de l'obstacle le plus élevé dans un rayon de 600 m\n• ailleurs : 500 ft (150 m) au-dessus du sol ou de l'eau, ou de l'obstacle le plus élevé dans un rayon de 150 m\nDes valeurs supérieures peuvent être publiées localement.\n\nNiveaux de croisière VFR : au-dessus de 3 000 ft par rapport au sol ou à l'eau (ou d'une référence plus élevée fixée par l'autorité), selon la route magnétique :\n• de 000° à 179° : milliers impairs + 500 ft (FL 35, 55, 75...)\n• de 180° à 359° : milliers pairs + 500 ft (FL 45, 65, 85...)\nRoute magnétique = route vraie − déclinaison Est (ou + déclinaison Ouest).\n\nCalages altimétriques :\n• QNH : l'altimètre indique l'altitude (au sol, l'altitude du terrain)\n• QFE : l'altimètre indique la hauteur au-dessus de l'aérodrome (0 au sol)\n• 1013,25 hPa : calage standard, l'altimètre indique un niveau de vol (FL, en centaines de pieds)\nAltitude de transition (TA) : au-dessous, on vole au QNH. Niveau de transition (TL) : premier niveau de vol utilisable au-dessus. En montée, on affiche 1013 en franchissant la TA ; en descente, le QNH en franchissant le TL.\nOrdre de grandeur près du sol : 1 hPa ≈ 28 ft. Calage qui augmente, indication qui augmente.",
+          "tips": "Le règlement SERA reprend l'annexe 2 de l'OACI. Le commandant de bord reste responsable d'éviter les abordages : voir et éviter.\n\nDroit de passage (SERA.3210) :\n• Rapprochement de face : chacun oblique vers la droite.\n• Routes convergentes à peu près à la même altitude : celui qui voit l'autre à sa droite cède le passage. Mais les aérodynes motopropulsés (avions, hélicoptères) cèdent le passage aux dirigeables, planeurs et ballons ; les dirigeables aux planeurs et ballons ; les planeurs aux ballons ; un aéronef motopropulsé cède aussi le passage à un aéronef qui en remorque un autre.\n• Dépassement : l'aéronef dépassé est prioritaire ; celui qui dépasse s'écarte en obliquant vers la droite.\n• Atterrissage : priorité aux aéronefs qui atterrissent ou sont en phase finale d'approche ; entre deux avions en approche, le plus haut cède le passage au plus bas, qui ne doit pas en profiter pour lui couper la route. Tout aéronef cède le passage à celui qui est contraint d'atterrir.\n\nFeux (SERA.3215) : de nuit, tout aéronef en vol allume ses feux anticollision et ses feux de navigation : rouge à gauche, vert à droite, blanc à l'arrière. Vert à votre gauche et rouge à votre droite : l'avion vient de face. Feu rouge sur votre droite à relèvement constant : il converge depuis votre droite, vous lui cédez le passage.\n\nHauteurs minimales VFR (SERA.5005(f)), hors décollage et atterrissage :\n• au-dessus des agglomérations ou rassemblements de personnes en plein air : 1 000 ft (300 m) au-dessus de l'obstacle le plus élevé dans un rayon de 600 m\n• ailleurs : 500 ft (150 m) au-dessus du sol ou de l'eau, ou de l'obstacle le plus élevé dans un rayon de 150 m\nEn France, l'arrêté du 10 octobre 1957 impose en outre des hauteurs plus élevées au-dessus des agglomérations, selon leur largeur.\n\nNiveaux de croisière VFR : au-dessus de 3 000 ft par rapport au sol ou à l'eau (ou d'une référence plus élevée fixée par l'autorité), selon la route magnétique :\n• de 000° à 179° : milliers impairs + 500 ft (FL 35, 55, 75...)\n• de 180° à 359° : milliers pairs + 500 ft (FL 45, 65, 85...)\nRoute magnétique = route vraie − déclinaison Est (ou + déclinaison Ouest).\n\nCalages altimétriques :\n• QNH : l'altimètre indique l'altitude (au sol, l'altitude du terrain)\n• QFE : l'altimètre indique la hauteur au-dessus de l'aérodrome (0 au sol)\n• 1013,25 hPa : calage standard, l'altimètre indique un niveau de vol (FL, en centaines de pieds)\nAltitude de transition (TA) : au-dessous, on vole au QNH. Niveau de transition (TL) : premier niveau de vol utilisable au-dessus. En montée, on affiche 1013 en franchissant la TA ; en descente, le QNH en franchissant le TL.\nOrdre de grandeur près du sol : 1 hPa ≈ 28 ft. Calage qui augmente, indication qui augmente.",
           "vocab": [
             {
               "term": "SERA",
@@ -435,13 +435,13 @@
               "id": "u1s3q02",
               "q": "Vous pilotez un DR400. Un planeur converge vers vous à la même altitude en venant de votre gauche. Qui doit céder le passage ?",
               "choices": [
-                "Vous, car un aéronef motopropulsé cède le passage aux planeurs",
-                "Le planeur, car il vient de votre gauche",
-                "Le planeur, car il est plus maniable",
+                "Vous, car un avion cède le passage aux planeurs",
+                "Le planeur, car il vous voit sur sa droite",
+                "Le planeur, car il est plus maniable et moins rapide",
                 "Personne : chacun oblique vers la droite"
               ],
               "answer": 0,
-              "explanation": "La règle de la priorité à droite s'efface devant les catégories d'aéronefs : un aéronef motopropulsé cède toujours le passage aux dirigeables, planeurs et ballons."
+              "explanation": "La règle de la priorité à droite s'efface devant les catégories d'aéronefs : un aérodyne motopropulsé (avion, hélicoptère) cède le passage aux dirigeables, planeurs et ballons, d'où qu'ils viennent."
             },
             {
               "id": "u1s3q03",
@@ -450,7 +450,7 @@
                 "Vous maintenez votre cap : il voit votre feu vert et doit vous céder le passage",
                 "Vous maintenez votre cap : l'autre avion s'éloigne de vous",
                 "Vous lui cédez le passage : il converge vers vous en venant de votre droite",
-                "Vous virez à gauche pour passer devant lui"
+                "Vous virez à gauche pour passer devant lui au plus vite"
               ],
               "answer": 2,
               "explanation": "Un relèvement constant signale une route de collision. Voir son feu rouge (aile gauche) sur votre droite indique qu'il vient de votre droite : c'est à vous de céder le passage, sans passer devant lui."
@@ -471,9 +471,9 @@
               "id": "u1s3q05",
               "q": "En tour de piste sur un aérodrome non contrôlé, vous êtes en étape de base à 800 ft ; un autre avion est en finale à 500 ft. Qui a la priorité ?",
               "choices": [
-                "Vous, car vous êtes plus près du seuil",
-                "Vous, car vous arrivez sur sa droite",
-                "Celui qui s'est annoncé le premier à la radio",
+                "Vous, car vous êtes plus près du seuil de piste",
+                "Vous, car vous arrivez sur sa droite en étape de base",
+                "Celui qui s'est annoncé le premier à la radio sur la fréquence",
                 "L'avion en finale, plus bas et en phase finale d'approche"
               ],
               "answer": 3,
@@ -501,16 +501,16 @@
                 "1 150 ft"
               ],
               "answer": 2,
-              "explanation": "Sommet de l'antenne : 400 + 150 = 550 ft. Au-dessus d'une agglomération, il faut 1 000 ft au-dessus de l'obstacle le plus élevé dans un rayon de 600 m : 550 + 1 000 = 1 550 ft."
+              "explanation": "Sommet de l'antenne : 400 + 150 = 550 ft. Au-dessus d'une agglomération, il faut 1 000 ft au-dessus de l'obstacle le plus élevé dans un rayon de 600 m : 550 + 1 000 = 1 550 ft. En France, l'arrêté du 10 octobre 1957 peut imposer davantage selon la largeur de la ville."
             },
             {
               "id": "u1s3q08",
               "q": "Hors agglomération et rassemblement de personnes, quelle hauteur minimale SERA impose-t-il à un vol VFR, hors décollage et atterrissage ?",
               "choices": [
-                "300 ft au-dessus du sol, quels que soient les obstacles",
+                "300 ft au-dessus du sol ou de l'eau, quels que soient les obstacles environnants",
                 "500 ft au-dessus du sol ou de l'eau, ou de l'obstacle le plus élevé dans un rayon de 150 m",
-                "1 000 ft au-dessus de l'obstacle le plus élevé dans un rayon de 600 m",
-                "500 ft au-dessus du sol, sans tenir compte des obstacles"
+                "1 000 ft au-dessus de l'obstacle le plus élevé dans un rayon de 600 m autour de l'avion",
+                "500 ft au-dessus du sol ou de l'eau, sans tenir compte des obstacles alentour"
               ],
               "answer": 1,
               "explanation": "SERA.5005(f) : hors agglomération, le VFR vole au moins à 500 ft (150 m) au-dessus du sol ou de l'eau, ou de l'obstacle le plus élevé situé dans un rayon de 150 m. Les 1 000 ft dans un rayon de 600 m concernent les agglomérations."
@@ -569,7 +569,7 @@
           "id": "u1s4",
           "title": "Espaces aériens et conditions VMC",
           "icon": "☁️",
-          "tips": "Classes d'espace (SERA) et services rendus au VFR :\n• A : VFR interdit.\n• B : clairance ; tous les vols sont séparés entre eux.\n• C : clairance ; le VFR est séparé des IFR et reçoit l'information de trafic sur les autres VFR.\n• D : clairance ; le VFR n'est pas séparé mais reçoit l'information de trafic sur tous les autres vols.\n• E : contrôlé pour les IFR ; le VFR n'a pas besoin de clairance et reçoit l'information de trafic dans la mesure du possible.\n• G : non contrôlé ; information de vol sur demande.\nEn France, on rencontre surtout les classes A, C, D, E et G.\n\nEspaces contrôlés : la CTR (zone de contrôle) part de la surface autour d'un ou plusieurs aérodromes ; la TMA (région de contrôle terminale) et la CTA (région de contrôle) commencent à une limite inférieure au-dessus du sol.\n\nMinimums VMC (SERA.5001) :\n• à 10 000 ft AMSL (FL 100) et au-dessus : visibilité 8 km ; 1 500 m horizontalement et 1 000 ft verticalement des nuages\n• au-dessous, mais au-dessus de 3 000 ft AMSL ou de 1 000 ft au-dessus du relief (la plus haute des deux valeurs) : 5 km ; 1 500 m et 1 000 ft\n• à ou sous cette limite : en classes B à E, 5 km, 1 500 m et 1 000 ft ; en classe G, 5 km, hors des nuages et en vue de la surface (l'autorité peut admettre 1 500 m de visibilité à 140 kt IAS ou moins)\n\nAérodrome situé en CTR (SERA.5005(b)) : pour décoller, atterrir ou entrer dans le circuit, il faut un plafond d'au moins 1 500 ft et une visibilité au sol d'au moins 5 km, sinon une clairance VFR spécial.\n\nVFR spécial (SERA.5010), en CTR, sur clairance et de jour : hors des nuages et en vue de la surface, visibilité en vol d'au moins 1 500 m, vitesse de 140 kt au plus. Le contrôle exige une visibilité au sol d'au moins 1 500 m et un plafond d'au moins 600 ft.\n\nZones :\n• P (interdite) : vol interdit\n• R (réglementée) : pénétration soumise aux conditions publiées\n• D (dangereuse) : activités dangereuses possibles ; pénétration non interdite, sous la responsabilité du pilote\n• TMZ : transpondeur obligatoire ; RMZ : radio obligatoire (annonce et veille sur la fréquence, sans clairance)\nLe SIV (secteur d'information de vol) rend l'information de vol et l'alerte aux vols qui le contactent.\n\nVFR de nuit (SERA.5005(c)), principes : qualification de vol de nuit ; plan de vol si l'on quitte les abords de l'aérodrome ; contact radio maintenu quand c'est possible ; plafond d'au moins 1 500 ft ; aucune réduction de visibilité ; vue continue de la surface sous 3 000 ft AMSL ou 1 000 ft sol.",
+          "tips": "Classes d'espace (SERA) et services rendus au VFR :\n• A : VFR interdit.\n• B : clairance ; tous les vols sont séparés entre eux.\n• C : clairance ; le VFR est séparé des IFR et reçoit l'information de trafic sur les autres VFR.\n• D : clairance ; le VFR n'est pas séparé mais reçoit l'information de trafic sur tous les autres vols.\n• E : contrôlé pour les IFR ; le VFR n'a pas besoin de clairance et reçoit l'information de trafic dans la mesure du possible.\n• G : non contrôlé ; information de vol sur demande.\nEn France, on rencontre surtout les classes A, C, D, E et G.\n\nEspaces contrôlés : la CTR (zone de contrôle) part de la surface autour d'un ou plusieurs aérodromes ; la TMA (région de contrôle terminale) et la CTA (région de contrôle) commencent à une limite inférieure au-dessus du sol.\n\nMinimums VMC (SERA.5001) :\n• à 10 000 ft AMSL (FL 100) et au-dessus : visibilité 8 km ; 1 500 m horizontalement et 1 000 ft verticalement des nuages\n• au-dessous, mais au-dessus de 3 000 ft AMSL ou de 1 000 ft au-dessus du relief (la plus haute des deux valeurs) : 5 km ; 1 500 m et 1 000 ft\n• à ou sous cette limite : en classes B à E, 5 km, 1 500 m et 1 000 ft ; en classe G, 5 km, hors des nuages et en vue de la surface (l'autorité peut admettre 1 500 m de visibilité à 140 kt IAS ou moins)\n\nAérodrome situé en CTR (SERA.5005(b)) : pour décoller, atterrir ou entrer dans le circuit, il faut un plafond d'au moins 1 500 ft et une visibilité au sol d'au moins 5 km, sinon une clairance VFR spécial.\n\nVFR spécial (SERA.5010), en CTR, sur clairance et en principe de jour : hors des nuages et en vue de la surface, visibilité en vol d'au moins 1 500 m, vitesse de 140 kt au plus. Le contrôle exige une visibilité au sol d'au moins 1 500 m et un plafond d'au moins 600 ft.\n\nZones :\n• P (interdite) : vol interdit\n• R (réglementée) : pénétration soumise aux conditions publiées\n• D (dangereuse) : activités dangereuses possibles ; pénétration non interdite, sous la responsabilité du pilote\n• TMZ : transpondeur obligatoire ; RMZ : radio obligatoire (annonce et veille sur la fréquence, sans clairance)\nLe SIV (secteur d'information de vol) rend l'information de vol et l'alerte aux vols qui le contactent.\n\nVFR de nuit (SERA.5005(c)), principes : qualification de vol de nuit ; plan de vol si l'on quitte les abords de l'aérodrome ; contact radio maintenu quand c'est possible ; plafond d'au moins 1 500 ft ; aucune réduction de visibilité ; vue continue de la surface sous 3 000 ft AMSL ou 1 000 ft sol.",
           "vocab": [
             {
               "term": "CTR",
@@ -621,8 +621,8 @@
               "id": "u1s4q02",
               "q": "En espace de classe D, quel service reçoit un vol VFR ?",
               "choices": [
-                "Aucun : la classe D est réservée aux vols IFR",
-                "Il est séparé de tous les autres vols, IFR et VFR",
+                "Aucun : la classe D est réservée aux vols IFR, le VFR y est interdit",
+                "Il est séparé de tous les autres vols, IFR comme VFR, par le contrôleur",
                 "Il est soumis à clairance et reçoit l'information de trafic sur les autres vols",
                 "Il n'a pas besoin de clairance mais reçoit l'information de trafic si possible"
               ],
@@ -671,8 +671,8 @@
               "choices": [
                 "1 500 m horizontalement et 1 000 ft verticalement, car vous êtes au-dessus de 3 000 ft AMSL",
                 "Rester hors des nuages et en vue de la surface, car vous êtes à moins de 1 000 ft du relief",
-                "1 000 m horizontalement et 500 ft verticalement",
-                "Aucune distance particulière en classe G"
+                "1 000 m horizontalement et 500 ft verticalement, minimums propres à la classe G",
+                "Aucune distance particulière : en classe G, seule la visibilité compte"
               ],
               "answer": 1,
               "explanation": "La limite est la plus haute de deux valeurs : 3 000 ft AMSL ou 1 000 ft au-dessus du relief, ici 3 000 + 1 000 = 4 000 ft. À 3 500 ft, vous êtes en dessous : en classe G, il faut rester hors des nuages et en vue de la surface."
@@ -682,9 +682,9 @@
               "q": "Le METAR d'un aérodrome situé en CTR indique : visibilité 8 km, BKN 1200 ft. Pouvez-vous décoller en VFR ?",
               "choices": [
                 "Non, sauf clairance VFR spécial, car le plafond est inférieur à 1 500 ft",
-                "Oui, car la visibilité dépasse 5 km",
-                "Oui, car le plafond minimal en CTR est de 1 000 ft",
-                "Non, car une visibilité de 10 km est exigée en CTR"
+                "Oui, car la visibilité dépasse 5 km, seul critère exigé au départ",
+                "Oui, car le plafond minimal pour décoller en VFR d'un aérodrome en CTR est de 1 000 ft",
+                "Non, car une visibilité d'au moins 10 km est exigée pour décoller en CTR"
               ],
               "answer": 0,
               "explanation": "Sauf clairance VFR spécial, on ne peut décoller, atterrir ou entrer dans le circuit d'un aérodrome en CTR si le plafond est inférieur à 1 500 ft ou la visibilité au sol inférieure à 5 km. Une couche BKN à 1 200 ft forme un plafond insuffisant."
@@ -705,10 +705,10 @@
               "id": "u1s4q09",
               "q": "Une zone dangereuse (D) est active sur votre trajet. Que prévoit la réglementation ?",
               "choices": [
-                "Toute pénétration est interdite pendant son activité",
-                "Sa traversée exige une clairance de l'organisme de contrôle",
-                "Sa pénétration n'est pas interdite, mais des activités dangereuses pour le vol peuvent s'y dérouler",
-                "Elle ne concerne que les vols IFR"
+                "Toute pénétration y est interdite pendant ses horaires d'activité publiés",
+                "Sa traversée exige une clairance de l'organisme de contrôle chargé de la zone",
+                "Sa traversée n'est pas interdite, mais des activités dangereuses peuvent s'y dérouler",
+                "Elle est réservée aux aéronefs militaires pendant ses horaires d'activité publiés"
               ],
               "answer": 2,
               "explanation": "Une zone D signale des activités dangereuses (tirs, largages...) : sa traversée n'est pas interdite mais se fait sous la responsabilité du pilote, qui a intérêt à l'éviter. Une zone P est interdite, une zone R soumise à conditions."
@@ -717,10 +717,10 @@
               "id": "u1s4q10",
               "q": "Avant d'entrer dans une RMZ, que doit faire un pilote VFR ?",
               "choices": [
-                "Obtenir une clairance de l'organisme de contrôle",
+                "Obtenir une clairance de l'organisme de contrôle avant d'y pénétrer",
                 "Établir le contact radio sur la fréquence publiée et garder l'écoute",
-                "Afficher le code transpondeur demandé, sans contact radio",
-                "Déposer un plan de vol au moins une heure avant"
+                "Afficher le code transpondeur demandé, sans obligation de contact radio",
+                "Déposer un plan de vol au moins une heure avant d'y pénétrer"
               ],
               "answer": 1,
               "explanation": "Dans une RMZ (zone à radio obligatoire), le pilote annonce son entrée (indicatif, position, altitude, intentions) et garde l'écoute de la fréquence. Aucune clairance n'est requise si l'espace n'est pas contrôlé ; le transpondeur concerne la TMZ."
@@ -739,15 +739,15 @@
             },
             {
               "id": "u1s4q12",
-              "q": "Laquelle de ces conditions s'applique au vol VFR de nuit selon SERA ?",
+              "q": "De nuit, en VFR, vous volez en classe G à 2 000 ft AMSL au-dessus d'une plaine dont l'altitude est de 200 ft. Laquelle de ces exigences SERA vous impose-t-il ?",
               "choices": [
-                "Une visibilité réduite à 1 500 m est admise en classe G",
-                "Aucun contact radio n'est nécessaire",
-                "Un plafond de 600 ft suffit",
-                "Un plan de vol doit être déposé si l'on quitte les abords de l'aérodrome"
+                "Une visibilité en vol de 1 500 m suffit si vous volez à 140 kt IAS ou moins",
+                "Un plafond de 1 000 ft suffit, puisque vous volez à moins de 3 000 ft",
+                "Aucune exigence propre à la nuit : les minimums VMC de jour s'appliquent tels quels",
+                "Garder la vue continue de la surface"
               ],
               "answer": 3,
-              "explanation": "De nuit, SERA impose un plan de vol dès que l'on quitte les abords de l'aérodrome, le contact radio quand c'est possible et un plafond d'au moins 1 500 ft. Les réductions de visibilité admises de jour ne s'appliquent pas."
+              "explanation": "SERA.5005(c) : de nuit, à ou sous 3 000 ft AMSL ou 1 000 ft au-dessus du relief (la plus haute des deux valeurs), le pilote garde la vue continue de la surface. Le plafond doit être d'au moins 1 500 ft et la réduction de visibilité admise de jour ne s'applique pas."
             }
           ]
         },
@@ -755,7 +755,7 @@
           "id": "u1s5",
           "title": "Services ATS, transpondeur et interception",
           "icon": "📡",
-          "tips": "Les services de la circulation aérienne (ATS) sont au nombre de trois :\n• le contrôle (ATC) : clairances et séparation selon la classe d'espace (tour, approche, contrôle régional) ;\n• l'information de vol (FIS) : renseignements utiles à la sécurité (trafic, météo, état des installations) ;\n• l'alerte : prévenir les organismes de recherche et de sauvetage quand un aéronef a besoin d'aide, et les seconder. Phases : incertitude (INCERFA), alerte (ALERFA), détresse (DETRESFA).\n\nATIS : diffusion automatique et continue des informations d'un aérodrome (piste, vent, visibilité, nuages, QNH...), identifiée par une lettre. Au premier contact, le pilote annonce la lettre reçue.\n\nClairance : autorisation d'évoluer dans les conditions fixées par le contrôle. On collationne notamment piste, calage, code transpondeur, altitude et cap. Si elle ne permet pas de rester en VMC, le pilote le signale et demande une autre clairance : il reste responsable.\n\nPlan de vol (SERA.4001), notamment : vol bénéficiant du contrôle (un appel radio pour une clairance tient lieu de plan de vol abrégé), franchissement d'une frontière (sauf dispositions contraires), vol de nuit quittant les abords d'un aérodrome. À l'arrivée, on le clôture dès que possible ; sans organisme ATS sur l'aérodrome, auprès de l'organisme le plus proche. Sinon, le service d'alerte se déclenche.\n\nTranspondeur :\n• mode A : code à 4 chiffres\n• mode C : ajoute l'altitude-pression (référence 1013,25 hPa)\n• mode S : interrogation sélective, adresse propre à l'avion, identification\nCodes : 7000 VFR, 7500 intervention illicite, 7600 panne radio, 7700 détresse ou urgence.\n\nSignaux lumineux de la tour (en vol / au sol) :\n• vert fixe : autorisé à atterrir / autorisé à décoller\n• rouge fixe : cédez le passage et continuez à tourner / arrêtez\n• éclats verts : revenez pour atterrir / autorisé à rouler\n• éclats rouges : aérodrome dangereux, n'atterrissez pas / dégagez l'aire d'atterrissage\n• éclats blancs : atterrissez ici et gagnez l'aire de trafic / retournez au point de départ\n• artifice rouge : n'atterrissez pas pour le moment\nAccusé de réception en vol : de jour, balancer les ailes (sauf en base et en finale) ; de nuit, faire clignoter deux fois phares ou feux de navigation.\n\nInterception : suivre les instructions de l'intercepteur, appeler sur 121,5 MHz, prévenir l'ATS si possible, afficher 7700 sauf instruction contraire de l'ATS.\n• balancement des ailes puis virage lent en palier, normalement à gauche : « vous avez été intercepté, suivez-moi »\n• dégagement brusque en montée de 90° ou plus : « vous pouvez continuer »\n• train sorti, phares allumés, passage au-dessus de la piste : « atterrissez sur cet aérodrome »\nPour répondre « compris », l'intercepté balance les ailes et suit.",
+          "tips": "Les services de la circulation aérienne (ATS) rendus au pilote VFR sont de trois types :\n• le contrôle (ATC) : clairances et séparation selon la classe d'espace (tour, approche, contrôle régional) ;\n• l'information de vol (FIS) : renseignements utiles à la sécurité (trafic, météo, état des installations) ;\n• l'alerte : prévenir les organismes de recherche et de sauvetage quand un aéronef a besoin d'aide, et les seconder. Phases : incertitude (INCERFA), alerte (ALERFA), détresse (DETRESFA).\n\nATIS : diffusion automatique et continue des informations d'un aérodrome (piste, vent, visibilité, nuages, QNH...), identifiée par une lettre. Au premier contact, le pilote annonce la lettre reçue.\n\nClairance : autorisation d'évoluer dans les conditions fixées par le contrôle. On collationne notamment piste, calage, code transpondeur, altitude et cap. Si elle ne permet pas de rester en VMC, le pilote le signale et demande une autre clairance : il reste responsable.\n\nPlan de vol (SERA.4001), notamment : vol bénéficiant du contrôle (un appel radio pour une clairance tient lieu de plan de vol abrégé), franchissement d'une frontière (sauf dispositions contraires), vol de nuit quittant les abords d'un aérodrome. À l'arrivée, on le clôture dès que possible ; sans organisme ATS sur l'aérodrome, auprès de l'organisme le plus proche. Sinon, le service d'alerte se déclenche.\n\nTranspondeur :\n• mode A : code à 4 chiffres\n• mode C : ajoute l'altitude-pression (référence 1013,25 hPa)\n• mode S : interrogation sélective, adresse propre à l'avion, identification\nCodes : 7000 VFR, 7500 intervention illicite, 7600 panne radio, 7700 détresse ou urgence.\n\nSignaux lumineux de la tour (en vol / au sol) :\n• vert fixe : autorisé à atterrir / autorisé à décoller\n• rouge fixe : cédez le passage et continuez à tourner / arrêtez\n• éclats verts : revenez pour atterrir / autorisé à rouler\n• éclats rouges : aérodrome dangereux, n'atterrissez pas / dégagez l'aire d'atterrissage\n• éclats blancs : atterrissez ici et gagnez l'aire de trafic / retournez au point de départ\n• artifice rouge : n'atterrissez pas pour le moment\nAccusé de réception en vol : de jour, balancer les ailes (sauf en base et en finale) ; de nuit, faire clignoter deux fois phares ou feux de navigation.\n\nInterception : suivre les instructions de l'intercepteur, appeler sur 121,5 MHz, prévenir l'ATS si possible, afficher 7700 sauf instruction contraire de l'ATS.\n• balancement des ailes puis virage lent en palier, normalement à gauche : « vous avez été intercepté, suivez-moi »\n• dégagement brusque en montée de 90° ou plus : « vous pouvez continuer »\n• train sorti, phares allumés, passage au-dessus de la piste : « atterrissez sur cet aérodrome »\nPour répondre « compris », l'intercepté balance les ailes et suit.",
           "vocab": [
             {
               "term": "ATC",
@@ -796,8 +796,8 @@
               "q": "Quel est l'objet du service d'alerte ?",
               "choices": [
                 "Prévenir les pilotes en vol des phénomènes météorologiques dangereux sur leur route",
-                "Séparer les aéronefs entre eux dans les espaces contrôlés",
-                "Alerter les organismes de recherche et de sauvetage quand un aéronef a besoin d'aide, et les seconder",
+                "Séparer les aéronefs entre eux et leur délivrer des clairances en espace contrôlé",
+                "Alerter les organismes de recherche et de sauvetage quand un aéronef a besoin d'aide",
                 "Diffuser en continu les informations de l'aérodrome sur une fréquence dédiée"
               ],
               "answer": 2,
@@ -820,9 +820,9 @@
               "q": "En VFR, le contrôleur vous donne une clairance qui vous ferait entrer dans les nuages. Que faites-vous ?",
               "choices": [
                 "Vous l'exécutez : une clairance dégage le pilote de sa responsabilité",
-                "Vous l'exécutez en passant en IFR sans le signaler",
-                "Vous l'exécutez et rédigez un compte rendu après le vol",
-                "Vous signalez que vous ne pouvez pas rester en VMC et demandez une autre clairance"
+                "Vous l'exécutez en passant en IFR, sans le signaler au contrôleur",
+                "Vous l'exécutez, puis rédigez un compte rendu d'événement après le vol",
+                "Vous signalez ne pas pouvoir rester en VMC et demandez une autre clairance"
               ],
               "answer": 3,
               "explanation": "Le commandant de bord reste responsable du respect des règles de l'air, dont les conditions VMC. Si une clairance ne lui convient pas, il le signale et peut demander une clairance modifiée."
@@ -844,9 +844,9 @@
               "q": "Vous atterrissez, au terme d'un vol couvert par un plan de vol, sur un aérodrome dépourvu d'organisme ATS. Que devez-vous faire ?",
               "choices": [
                 "Rien : le plan de vol se clôture automatiquement à l'heure d'arrivée prévue",
-                "Clôturer le plan de vol seulement si vous arrivez en retard",
-                "Clôturer le plan de vol dès que possible, par le moyen le plus rapide, auprès de l'organisme ATS le plus proche",
-                "Prévenir le BEA de votre arrivée"
+                "Le clôturer seulement si vous atterrissez après l'heure d'arrivée prévue",
+                "Le clôturer au plus vite auprès de l'organisme ATS le plus proche",
+                "Prévenir le BEA de votre arrivée, qui transmettra l'information aux services ATS"
               ],
               "answer": 2,
               "explanation": "Un plan de vol se clôture par un compte rendu d'arrivée. Sans organisme ATS sur place, on le transmet au plus vite à l'organisme le plus proche ; à défaut, le service d'alerte déclenche des recherches."
@@ -867,10 +867,10 @@
               "id": "u1s5q07",
               "q": "Quelle information d'altitude le mode C du transpondeur transmet-il ?",
               "choices": [
-                "L'altitude QNH affichée par le pilote sur son altimètre",
+                "L'altitude lue sur l'altimètre, au calage affiché par le pilote (QNH ou QFE)",
                 "L'altitude-pression, référencée à 1013,25 hPa, quel que soit le calage affiché",
-                "La hauteur au-dessus du sol mesurée par une radiosonde",
-                "L'altitude calculée par le GPS de bord"
+                "La hauteur au-dessus du sol, mesurée par une radiosonde",
+                "L'altitude calculée par le GPS de bord, plus précise que l'altimètre"
               ],
               "answer": 1,
               "explanation": "Le mode C transmet l'altitude-pression (référence 1013,25 hPa), indépendamment du calage affiché par le pilote. Le système du contrôleur la convertit en altitude avec le QNH local si nécessaire."
@@ -915,10 +915,10 @@
               "id": "u1s5q11",
               "q": "Vous êtes intercepté par un avion militaire. Que devez-vous faire ?",
               "choices": [
-                "Afficher 7500 et poursuivre votre route",
-                "Suivre ses instructions, appeler sur 121,5 MHz et afficher 7700 sauf instruction contraire de l'ATS",
-                "Dégager par un virage serré pour éviter tout risque d'abordage",
-                "Couper le transpondeur pour ne pas gêner l'intercepteur"
+                "Afficher 7500, prévenir l'ATS et poursuivre votre route en attendant ses instructions",
+                "Suivre ses instructions, appeler sur 121,5 MHz et afficher 7700 (sauf instruction ATS)",
+                "Dégager par un virage serré pour éviter tout risque d'abordage avec l'intercepteur",
+                "Couper le transpondeur et la radio pour ne pas brouiller les liaisons de l'intercepteur"
               ],
               "answer": 1,
               "explanation": "L'aéronef intercepté suit les instructions de l'intercepteur, appelle sur 121,5 MHz en donnant son identité et la nature de son vol, prévient l'ATS si possible et affiche 7700, sauf instruction contraire de l'ATS."
@@ -929,7 +929,7 @@
               "choices": [
                 "Vous pouvez continuer",
                 "Atterrissez sur cet aérodrome",
-                "Montez immédiatement",
+                "Montez immédiatement et dégagez la zone",
                 "Vous avez été intercepté, suivez-moi"
               ],
               "answer": 3,
@@ -1041,10 +1041,10 @@
               "id": "u1s6q06",
               "q": "Dans l'aire à signaux d'un aérodrome non contrôlé, vous voyez une flèche coudée vers la droite, de couleur voyante. Comment effectuez-vous le tour de piste ?",
               "choices": [
-                "Main gauche, la flèche indiquant la direction du vent",
+                "Main gauche, la flèche indiquant seulement la direction d'où vient le vent",
                 "Main gauche, la flèche indiquant le côté de dégagement de la piste",
-                "Main droite : les virages se font à droite avant l'atterrissage et après le décollage",
-                "Main droite, mais uniquement pour les planeurs"
+                "Main droite : virages à droite avant l'atterrissage et après le décollage",
+                "Main droite, mais uniquement pour les planeurs et leurs remorqueurs"
               ],
               "answer": 2,
               "explanation": "Sauf indication contraire, le tour de piste se fait main gauche. La flèche coudée vers la droite indique que les virages se font à droite avant l'atterrissage et après le décollage."
@@ -1066,9 +1066,9 @@
               "q": "Quelle est la mission du BEA ?",
               "choices": [
                 "Sanctionner les pilotes et organismes responsables d'accidents ou d'incidents",
-                "Délivrer, suspendre et retirer les licences de pilote",
+                "Délivrer, suspendre et retirer les licences de pilote après un accident",
                 "Coordonner les opérations de recherche et de sauvetage des aéronefs en détresse",
-                "Enquêter sur les accidents et incidents graves dans le seul but de prévenir de futurs accidents"
+                "Enquêter sur les accidents et incidents graves pour en prévenir d'autres"
               ],
               "answer": 3,
               "explanation": "Le BEA mène les enquêtes de sécurité sur les accidents et incidents graves. Son but est la prévention, non la recherche des fautes ou des responsabilités, qui relève d'autres procédures."
@@ -1089,9 +1089,9 @@
               "id": "u1s6q10",
               "q": "Qu'est-ce qu'un incident grave ?",
               "choices": [
-                "Un incident dont les circonstances indiquent qu'il y a eu une forte probabilité d'accident",
+                "Un incident dont les circonstances indiquent une forte probabilité d'accident",
                 "Un incident ayant entraîné un retard ou un déroutement de plus d'une heure",
-                "Un accident n'ayant fait aucun blessé parmi les occupants",
+                "Un accident n'ayant fait aucun blessé parmi les occupants de l'aéronef",
                 "Tout incident survenu en espace contrôlé et signalé par le contrôleur"
               ],
               "answer": 0,
