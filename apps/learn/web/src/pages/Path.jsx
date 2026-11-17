@@ -16,7 +16,8 @@ function darken(hex, amount = 0.22) {
 }
 const OFFSETS = [0, 44, 70, 44, 0, -44, -70, -44];
 
-function Node({ skill, unit, index, isStart, open, onToggle, onStart }) {
+function Node({ skill, unit, index, isStart, open, onToggle, onStart, quiz }) {
+  const size = quiz ? `${skill.questions} questions` : `${skill.words} mots`;
   const pct = skill.level / skill.levels;
   const r = 50, c = 2 * Math.PI * r;
   const cls = 'path-node ' + (!skill.unlocked ? 'locked' : skill.completed ? 'gold' : 'active') + (isStart ? ' start' : '');
@@ -32,8 +33,8 @@ function Node({ skill, unit, index, isStart, open, onToggle, onStart }) {
         <div className={'node-popover' + (skill.unlocked ? '' : ' locked')} onClick={(e) => e.stopPropagation()}>
           <h4>{skill.icon} {skill.title}</h4>
           <div className="levels">{Array.from({ length: skill.levels }, (_, i) => <span key={i} className={i < skill.level ? 'on' : ''} />)}</div>
-          {!skill.unlocked ? (<><p>Termine la leçon précédente pour débloquer celle-ci.</p><button className="btn" disabled><Icon.Lock /> Verrouillé</button></>) : skill.completed ? (<><p>Leçon maîtrisée · {skill.words} mots{skill.strength < 0.6 ? ' · à réviser' : ''}</p><button className="btn" onClick={() => onStart(true)}>Réviser · +10 XP</button></>) : (<><p>Niveau {skill.level + 1} sur {skill.levels} · {skill.words} mots</p><button className="btn" onClick={() => onStart(false)}>{skill.level ? 'Continuer' : 'Commencer'} · +15 XP</button>{skill.level > 0 ? <button className="btn" onClick={() => onStart(true)}>Réviser · +10 XP</button> : null}</>)}
-          {skill.has_tips ? <Link to={`/skill/${unit.courseId}/${skill.id}`} className="btn" style={{ marginTop: 8 }}><Icon.Book /> Guide et vocabulaire</Link> : null}
+          {!skill.unlocked ? (<><p>Termine la leçon précédente pour débloquer celle-ci.</p><button className="btn" disabled><Icon.Lock /> Verrouillé</button></>) : skill.completed ? (<><p>Leçon maîtrisée · {size}{skill.strength < 0.6 ? ' · à réviser' : ''}</p><button className="btn" onClick={() => onStart(true)}>Réviser · +10 XP</button></>) : (<><p>Niveau {skill.level + 1} sur {skill.levels} · {size}</p><button className="btn" onClick={() => onStart(false)}>{skill.level ? 'Continuer' : 'Commencer'} · +15 XP</button>{skill.level > 0 ? <button className="btn" onClick={() => onStart(true)}>Réviser · +10 XP</button> : null}</>)}
+          {skill.has_tips ? <Link to={`/skill/${unit.courseId}/${skill.id}`} className="btn" style={{ marginTop: 8 }}><Icon.Book /> {quiz ? 'Fiche de cours et corrigés' : 'Guide et vocabulaire'}</Link> : null}
         </div>
       ) : null}
     </div>
@@ -76,6 +77,7 @@ export function Path() {
   };
 
   const firstActive = useMemo(() => course?.next_skill?.id, [course]);
+  const quiz = course?.type === 'quiz';
   if (error) return <div className="page"><ErrorBox error={error} /></div>;
   if (course === false) return <div className="page"><Empty icon="📚" title="Aucun cours disponible" text="Les fichiers de cours sont absents du serveur." /></div>;
   if (!course) return <div className="page"><Spinner /></div>;
@@ -84,15 +86,26 @@ export function Path() {
     <div className="page">
       <div className="path-layout">
         <div>
+          {quiz ? (
+            <div className="quiz-head">
+              <div className="quiz-head-title"><span className="quiz-flag">{course.flag}</span><div><h1>{course.title}</h1><p className="muted small">{course.units.length} matières · {course.question_count} questions · {course.percent} % du parcours</p></div></div>
+              <div className="quiz-actions">
+                {course.has_exam ? <Link to="/exam" className="quiz-action exam"><span>📝</span><b>Examen blanc</b><small>Format DGAC, corrigé détaillé</small></Link> : null}
+                {course.library ? <Link to={`/library/${course.library}`} className="quiz-action lib"><span>📚</span><b>Bibliothèque</b><small>QCM, PDF, manuels, checklist</small></Link> : null}
+                <Link to="/practice" className="quiz-action prac"><span>🔁</span><b>Réviser</b><small>Questions manquées en priorité</small></Link>
+              </div>
+              {course.disclaimer ? <p className="muted small quiz-disclaimer">ℹ️ {course.disclaimer}</p> : null}
+            </div>
+          ) : null}
           {course.units.map((u, ui) => (
             <section key={u.id}>
               <div className="unit-banner" style={{ background: u.color }}>
-                <div><div className="eyebrow">Unité {ui + 1}</div><h2>{u.title}</h2><div className="small" style={{ opacity: .9 }}>{u.description}</div></div>
+                <div><div className="eyebrow">{quiz ? 'Matière' : 'Unité'} {ui + 1}</div><h2>{u.title}</h2><div className="small" style={{ opacity: .9 }}>{u.description}</div></div>
                 <button className="btn btn-sm" onClick={() => setTips(u)}><Icon.Book /> Guide</button>
               </div>
               <div className="path">
                 {u.skills.map((s, i) => (
-                  <Node key={s.id} skill={s} unit={{ ...u, courseId: course.id }} index={i} isStart={s.id === firstActive} open={open === s.id} onToggle={(e) => { e.stopPropagation(); setOpen(open === s.id ? null : s.id); }} onStart={(p) => start(s, p)} />
+                  <Node key={s.id} skill={s} unit={{ ...u, courseId: course.id }} index={i} isStart={s.id === firstActive} open={open === s.id} onToggle={(e) => { e.stopPropagation(); setOpen(open === s.id ? null : s.id); }} onStart={(p) => start(s, p)} quiz={quiz} />
                 ))}
                 <div className="unit-end" title="Fin de l'unité">{u.skills.every((s) => s.completed) ? '🏆' : '🏁'}</div>
               </div>
@@ -103,7 +116,7 @@ export function Path() {
           <div className="side-card">
             <div className="row" style={{ justifyContent: 'space-between' }}><h3>{course.flag} {course.title}</h3><Link to="/courses" className="link-btn small">Changer</Link></div>
             <div className="progress mt-8"><div style={{ width: `${course.percent}%` }} /></div>
-            <div className="muted small mt-8">{course.percent} % du cours · {course.word_count} mots · {course.xp} XP</div>
+            <div className="muted small mt-8">{course.percent} % du cours · {quiz ? `${course.question_count} questions` : `${course.word_count} mots`} · {course.xp} XP</div>
           </div>
           <div className="side-card">
             <div className="side-stat"><span className="ico" style={{ background: '#fff0dd' }}>🔥</span><div><b>{course.streak.current} jour{course.streak.current > 1 ? 's' : ''}</b><span>{course.streak.active_today ? 'Série prolongée aujourd’hui' : 'Fais une leçon pour prolonger ta série'}</span></div></div>
@@ -117,10 +130,10 @@ export function Path() {
           ) : null}
         </aside>
       </div>
-      <Modal open={!!tips} onClose={() => setTips(null)} title={tips ? `Unité : ${tips.title}` : ''}>
+      <Modal open={!!tips} onClose={() => setTips(null)} title={tips ? `${quiz ? 'Matière' : 'Unité'} : ${tips.title}` : ''}>
         {tips ? (<>
           <p className="muted mb-12">{tips.description}</p>
-          <div className="list">{tips.skills.map((s) => <Link key={s.id} to={`/skill/${course.id}/${s.id}`} className="list-item"><span style={{ fontSize: 24 }}>{s.icon}</span><div className="grow"><div className="list-title">{s.title}</div><div className="muted small">{s.words} mots · niveau {s.level}/{s.levels}</div></div><Icon.Book /></Link>)}</div>
+          <div className="list">{tips.skills.map((s) => <Link key={s.id} to={`/skill/${course.id}/${s.id}`} className="list-item"><span style={{ fontSize: 24 }}>{s.icon}</span><div className="grow"><div className="list-title">{s.title}</div><div className="muted small">{quiz ? `${s.questions} questions` : `${s.words} mots`} · niveau {s.level}/{s.levels}</div></div><Icon.Book /></Link>)}</div>
         </>) : null}
       </Modal>
     </div>

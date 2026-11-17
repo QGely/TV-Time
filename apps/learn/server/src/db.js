@@ -89,3 +89,31 @@ export function today() {
   // Local-day semantics are kept simple: UTC date. Household NAS usage tolerates this.
   return new Date().toISOString().slice(0, 10);
 }
+
+db.exec(`
+CREATE TABLE IF NOT EXISTS exams (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  course_id TEXT NOT NULL,
+  mode TEXT NOT NULL DEFAULT 'full',
+  unit_id TEXT,
+  started_at TEXT NOT NULL DEFAULT (datetime('now')),
+  finished_at TEXT,
+  time_limit_seconds INTEGER NOT NULL,
+  questions_json TEXT NOT NULL,
+  answers_json TEXT NOT NULL DEFAULT '{}',
+  results_json TEXT,
+  correct INTEGER,
+  total INTEGER,
+  passed INTEGER
+);
+CREATE INDEX IF NOT EXISTS idx_exams_user ON exams(user_id, course_id, started_at);
+
+CREATE TABLE IF NOT EXISTS library_checks (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  library_id TEXT NOT NULL,
+  item_id TEXT NOT NULL,
+  done_at TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (user_id, library_id, item_id)
+);
+`);

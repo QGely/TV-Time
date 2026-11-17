@@ -25,6 +25,7 @@ export function buildLesson(course, skillId, level, { practice = false, weakTerm
   const found = getSkill(course, skillId);
   if (!found) return null;
   const { skill } = found;
+  if (skill.questions.length) return buildQuizLesson(course, skill, level, { practice, weakTerms });
   const { earlier, sentences } = poolFor(course, skillId);
   const vocab = skill.vocab;
   const allVocab = [...vocab, ...earlier];
@@ -81,4 +82,38 @@ export function buildLesson(course, skillId, level, { practice = false, weakTerm
   if (vocab.length >= 6) exercises.push(match(pick(vocab, 5, rng)));
 
   return { course_id: course.id, skill_id: skill.id, skill_title: skill.title, level: lv, practice, tts_lang: course.tts_lang, tips: skill.tips, exercises: exercises.filter(Boolean).slice(0, 12).map((e, i) => ({ id: i + 1, ...e })) };
+}
+
+/** Shuffles the choices of a bank question; returns an exercise with the new answer index. */
+export function qcmExercise(q, rng = Math.random) {
+  const order = shuffle(q.choices.map((_, i) => i), rng);
+  return { type: 'qcm', qid: q.id, prompt: q.q, options: order.map((i) => q.choices[i]), answer: q.choices[q.answer], explanation: q.explanation };
+}
+
+/**
+ * Quiz (QCM) lesson: the skill's question bank is split in thirds by level so each level brings new
+ * questions; level 3 and practice mix everything, starting with previously missed questions.
+ * A glossary "match" exercise opens and closes the lesson when the skill has a glossary.
+ */
+function buildQuizLesson(course, skill, level, { practice, weakTerms }) {
+  const rng = Math.random;
+  const bank = skill.questions;
+  const third = Math.ceil(bank.length / 3);
+  const lv = Math.max(1, Math.min(3, level));
+  let pool;
+  if (practice || lv >= 3) pool = shuffle(bank, rng);
+  else {
+    const fresh = bank.slice((lv - 1) * third, lv * third);
+    const earlier = bank.slice(0, (lv - 1) * third);
+    pool = [...shuffle(fresh, rng), ...shuffle(earlier, rng), ...shuffle(bank.slice(lv * third), rng)];
+  }
+  const weak = bank.filter((q) => weakTerms.includes(q.id));
+  const picked = [];
+  for (const q of [...shuffle(weak, rng), ...pool]) { if (picked.length >= 10) break; if (!picked.includes(q)) picked.push(q); }
+  const exercises = picked.map((q) => qcmExercise(q, rng));
+  if (skill.vocab.length >= 4) {
+    const glossary = skill.vocab.map((v) => ({ a: v.term, b: v.translation }));
+    exercises.splice(Math.min(3, exercises.length), 0, { type: 'match', prompt: 'Associe chaque terme à sa définition', pairs: pick(glossary, Math.min(4, glossary.length), rng) });
+  }
+  return { course_id: course.id, skill_id: skill.id, skill_title: skill.title, level: practice ? Math.max(1, level) : lv, practice, tts_lang: null, tips: skill.tips, exercises: exercises.map((e, i) => ({ id: i + 1, ...e })) };
 }

@@ -64,27 +64,31 @@ export function courseView(userId, course) {
   const progress = progressMap(userId, course.id);
   const path = skillPath(course);
   let unlocked = true;
-  const units = course.units.map((u) => ({
+  const units = course.units.map((u) => {
+    // "unit" unlocking: each unit (e.g. each exam subject) can be started independently.
+    if (course.unlock === 'unit') unlocked = true;
+    return {
     id: u.id, title: u.title, description: u.description, color: u.color,
     skills: u.skills.map((s) => {
       const p = progress.get(s.id);
       const level = p?.level || 0;
-      const state = { id: s.id, title: s.title, icon: s.icon, level, levels: LEVELS_PER_SKILL, strength: currentStrength(p), sessions: p?.sessions || 0, words: s.vocab.length, unlocked, completed: level >= LEVELS_PER_SKILL, has_tips: !!s.tips };
+      const state = { id: s.id, title: s.title, icon: s.icon, level, levels: LEVELS_PER_SKILL, strength: currentStrength(p), sessions: p?.sessions || 0, words: s.vocab.length, questions: s.questions.length, unlocked, completed: level >= LEVELS_PER_SKILL, has_tips: !!s.tips };
       if (level < 1) unlocked = false; // next skill locks until this one has level >= 1
       return state;
     }),
-  }));
+  };
+  });
   const totalLevels = path.length * LEVELS_PER_SKILL;
   const doneLevels = path.reduce((s, p) => s + Math.min(LEVELS_PER_SKILL, progress.get(p.skill.id)?.level || 0), 0);
   const next = units.flatMap((u) => u.skills).find((s) => s.unlocked && !s.completed) || null;
   const xp = db.prepare('SELECT COALESCE(SUM(xp),0) AS n FROM xp_log WHERE user_id = ? AND course_id = ?').get(userId, course.id).n;
-  return { id: course.id, title: course.title, lang_name: course.lang_name, flag: course.flag, tts_lang: course.tts_lang, description: course.description, units, skill_count: course.skill_count, word_count: course.word_count, percent: totalLevels ? Math.round((doneLevels / totalLevels) * 100) : 0, next_skill: next, xp, weak_skills: units.flatMap((u) => u.skills).filter((s) => s.level > 0 && s.strength < 0.6).map((s) => s.id) };
+  return { id: course.id, title: course.title, type: course.type, unlock: course.unlock, lang_name: course.lang_name, flag: course.flag, tts_lang: course.tts_lang, description: course.description, disclaimer: course.disclaimer, library: course.library, has_exam: !!course.exam?.subjects?.length, units, skill_count: course.skill_count, word_count: course.word_count, question_count: course.question_count, percent: totalLevels ? Math.round((doneLevels / totalLevels) * 100) : 0, next_skill: next, xp, weak_skills: units.flatMap((u) => u.skills).filter((s) => s.level > 0 && s.strength < 0.6).map((s) => s.id) };
 }
 
 r.get('/', (req, res) => {
   const list = loadCourses().map((c) => {
     const v = courseView(req.user.id, c);
-    return { id: v.id, title: v.title, lang_name: v.lang_name, flag: v.flag, description: v.description, skill_count: v.skill_count, word_count: v.word_count, percent: v.percent, xp: v.xp, started: v.xp > 0 };
+    return { id: v.id, title: v.title, type: v.type, lang_name: v.lang_name, flag: v.flag, tts_lang: v.tts_lang, description: v.description, library: v.library, has_exam: v.has_exam, skill_count: v.skill_count, word_count: v.word_count, question_count: v.question_count, percent: v.percent, xp: v.xp, started: v.xp > 0 };
   });
   res.json(list);
 });
@@ -101,7 +105,7 @@ r.get('/:id/skills/:skillId', (req, res) => {
   const found = c && getSkill(c, req.params.skillId);
   if (!found) return res.status(404).json({ error: 'Leçon introuvable' });
   const p = progressMap(req.user.id, c.id).get(found.skill.id);
-  res.json({ id: found.skill.id, title: found.skill.title, icon: found.skill.icon, tips: found.skill.tips, unit: { id: found.unit.id, title: found.unit.title, color: found.unit.color }, vocab: found.skill.vocab, sentences: found.skill.sentences, level: p?.level || 0, levels: LEVELS_PER_SKILL, strength: currentStrength(p), sessions: p?.sessions || 0 });
+  res.json({ id: found.skill.id, title: found.skill.title, icon: found.skill.icon, tips: found.skill.tips, course_type: c.type, tts_lang: c.tts_lang, unit: { id: found.unit.id, title: found.unit.title, color: found.unit.color }, vocab: found.skill.vocab, sentences: found.skill.sentences, questions: found.skill.questions, level: p?.level || 0, levels: LEVELS_PER_SKILL, strength: currentStrength(p), sessions: p?.sessions || 0 });
 });
 
 /** Start a lesson (next level of a skill) or a practice session. */

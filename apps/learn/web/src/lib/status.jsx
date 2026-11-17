@@ -13,7 +13,7 @@ export function StatusProvider({ children }) {
     try {
       const s = await api.get('/api/profile/stats');
       const course = user.current_course ? (await api.get('/api/courses').catch(() => [])).find((c) => c.id === user.current_course) : null;
-      setStatus({ streak: s.streak, xp_today: s.xp_today, daily_goal: s.daily_goal, hearts: s.hearts, flag: course?.flag, course_id: course?.id });
+      setStatus({ streak: s.streak, xp_today: s.xp_today, daily_goal: s.daily_goal, hearts: s.hearts, flag: course?.flag, course_id: course?.id, course_type: course?.type, library: course?.library || null, has_exam: !!course?.has_exam });
     } catch {}
   }, [user]);
   useEffect(() => { refresh(); }, [refresh]);

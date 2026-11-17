@@ -52,9 +52,9 @@ export function checkAnswer(given, accepted) {
 let voicesReady = false;
 export function speak(text, lang) {
   try {
-    if (!('speechSynthesis' in window) || !text) return false;
+    if (!('speechSynthesis' in window) || !text || !lang) return false;
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = lang || 'en-US';
+    u.lang = lang;
     u.rate = 0.9;
     const voices = window.speechSynthesis.getVoices();
     const v = voices.find((x) => x.lang === u.lang) || voices.find((x) => x.lang.startsWith(u.lang.slice(0, 2)));
@@ -66,3 +66,14 @@ export function speak(text, lang) {
   } catch { return false; }
 }
 export function canSpeak() { return typeof window !== 'undefined' && 'speechSynthesis' in window; }
+
+export function mmss(seconds) {
+  const s = Math.max(0, Math.round(seconds || 0));
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+  return h ? `${h}:${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}` : `${m}:${String(sec).padStart(2, '0')}`;
+}
+export function durationLabel(minutes) {
+  const h = Math.floor(minutes / 60), m = minutes % 60;
+  return h ? `${h} h${m ? ' ' + String(m).padStart(2, '0') : ''}` : `${m} min`;
+}
+export const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];

@@ -13,6 +13,8 @@ import { Practice } from './pages/Practice.jsx';
 import { Leaderboard } from './pages/Leaderboard.jsx';
 import { Profile } from './pages/Profile.jsx';
 import { Settings } from './pages/Settings.jsx';
+import { ExamHome, ExamRun } from './pages/Exam.jsx';
+import { Library } from './pages/Library.jsx';
 
 function ScrollToTop() { const { pathname } = useLocation(); useEffect(() => { window.scrollTo(0, 0); }, [pathname]); return null; }
 
@@ -29,6 +31,9 @@ function Gate() {
           <Route path="skill/:courseId/:skillId" element={<SkillDetail />} />
           <Route path="lesson/:courseId/:skillId" element={<Lesson />} />
           <Route path="practice" element={<Practice />} />
+          <Route path="exam" element={<ExamHome />} />
+          <Route path="exam/:courseId/:examId" element={<ExamRun />} />
+          <Route path="library/:id" element={<Library />} />
           <Route path="leaderboard" element={<Leaderboard />} />
           <Route path="profile" element={<Profile />} />
           <Route path="settings" element={<Settings />} />

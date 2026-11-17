@@ -8,6 +8,8 @@ import authRoutes from './routes/auth.js';
 import settingsRoutes from './routes/settings.js';
 import courseRoutes from './routes/courses.js';
 import profileRoutes from './routes/profile.js';
+import examRoutes from './routes/exams.js';
+import libraryRoutes from './routes/library.js';
 import { loadCourses } from './courses.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -24,6 +26,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/profile', profileRoutes);
+app.use('/api/exams', examRoutes);
+app.use('/api/library', libraryRoutes);
 app.use('/api', (_req, res) => res.status(404).json({ error: 'Route inconnue' }));
 
 const distDir = process.env.WEB_DIST || path.resolve(__dirname, '../../web/dist');

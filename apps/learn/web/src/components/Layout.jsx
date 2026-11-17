@@ -5,13 +5,18 @@ import { Avatar } from './Avatar.jsx';
 import { DiskGauge } from './DiskGauge.jsx';
 import { useStatus } from '../lib/status.jsx';
 
-const links = [
-  { to: '/', label: 'Apprendre', icon: Icon.Home, end: true },
-  { to: '/practice', label: 'Réviser', icon: Icon.Dumbbell },
-  { to: '/leaderboard', label: 'Classement', icon: Icon.Trophy },
-  { to: '/profile', label: 'Profil', icon: Icon.User },
-  { to: '/courses', label: 'Cours', icon: Icon.Globe, desktopOnly: true },
-];
+function navLinks(status) {
+  const quiz = status?.course_type === 'quiz';
+  return [
+    { to: '/', label: 'Apprendre', icon: Icon.Home, end: true },
+    { to: '/practice', label: 'Réviser', icon: Icon.Dumbbell },
+    ...(status?.has_exam ? [{ to: '/exam', label: 'Examen', icon: Icon.Exam }] : []),
+    ...(status?.library ? [{ to: `/library/${status.library}`, label: 'Ressources', icon: Icon.Library }] : []),
+    { to: '/leaderboard', label: 'Classement', icon: Icon.Trophy, desktopOnly: quiz },
+    { to: '/profile', label: 'Profil', icon: Icon.User },
+    { to: '/courses', label: 'Cours', icon: Icon.Globe, desktopOnly: true },
+  ];
+}
 
 export function StatusBar() {
   const { status } = useStatus();
@@ -28,8 +33,10 @@ export function StatusBar() {
 
 export function Layout() {
   const { user } = useAuth();
+  const { status } = useStatus();
   const { pathname } = useLocation();
-  const inLesson = pathname.startsWith('/lesson');
+  const links = navLinks(status);
+  const inLesson = pathname.startsWith('/lesson') || /^\/exam\/[^/]+\/\d+/.test(pathname);
   if (inLesson) return <main className="lesson-main"><Outlet /></main>;
   return (
     <div className="app">

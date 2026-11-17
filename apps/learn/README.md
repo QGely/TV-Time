@@ -7,6 +7,16 @@ Duolingo : des unités, des leçons à débloquer dans l'ordre, des niveaux, des
 
 - **Cours fournis** : anglais, espagnol, italien, allemand (6 unités × 4 leçons, ~290 mots et ~190 phrases chacun),
   pour francophones. Chaque leçon a un guide (grammaire, usage), son vocabulaire et ses phrases.
+- **Préparation au théorique LAPL(A) / PPL(A)** : les 9 matières de l'examen DGAC (droit aérien, performance humaine,
+  météorologie, communications, navigation, principes du vol, procédures opérationnelles, performances et préparation
+  du vol, connaissance de l'aéronef) dans le même arbre, chaque matière débloquable directement. Chaque chapitre a une
+  fiche de cours, un glossaire et une banque de QCM corrigés et expliqués (questions d'entraînement originales, pas
+  les questions officielles).
+- **Examen blanc** au format officiel : 128 questions tirées au hasard, chronométrées par matière (3 h 32 au total),
+  navigation entre questions, questions marquées, correction côté serveur, seuil de 75 % **dans chaque matière**,
+  corrigé détaillé, historique et meilleur score par matière. Entraînement possible matière par matière.
+- **Bibliothèque de révision** : ressources françaises et anglaises (QCM gratuits, PDF, manuels, réglementation
+  officielle, BIA) avec liens, accès gratuit/payant, filtres, et une checklist de programme prioritaire cochable.
 - **Parcours** : nœuds colorés par unité, leçon active avec bulle « Commencer », leçons verrouillées jusqu'à la
   précédente, anneau de progression, couronne quand les 3 niveaux sont validés, bannière d'unité avec guide.
 - **Leçons** de 10 à 12 exercices générés à partir du contenu : choix de traduction, association de paires, construction
@@ -24,6 +34,20 @@ Avec le `docker-compose.yml` à la racine du dépôt (`docker compose up -d --bu
 racine : `npm run install:learn`, `npm run build:learn`, `npm run start:learn`.
 
 Données : `data/learn/learn.db` (SQLite). Variables : `PORT` (3002), `DATA_DIR` (`/data` dans Docker).
+
+## Ajouter un cours de type QCM (préparation d'examen)
+
+Même principe, avec `"type": "quiz"` et des questions à la place des phrases :
+
+```json
+{ "id": "lapl", "type": "quiz", "title": "LAPL(A) / PPL(A)", "flag": "✈️", "unlock": "unit", "library": "lapl",
+  "exam": { "pass_percent": 75, "subjects": [{ "unit": "u1", "title": "Droit aérien", "questions": 20, "minutes": 30 }] } }
+```
+
+et dans un fichier `lapl.part1.json` les unités, avec pour chaque leçon `tips` (fiche), `vocab` (glossaire, définitions
+de 70 caractères maximum) et `questions` (`{ "id": "u1s1q01", "q": "…", "choices": ["…","…","…","…"], "answer": 0,
+"explanation": "…" }`). `"unlock": "unit"` permet de commencer chaque matière indépendamment. Vérifiez les fichiers avec
+`node server/scripts/validate-courses.mjs`. La bibliothèque est un fichier `server/src/data/libraries/<id>.json`.
 
 ## Ajouter un cours
 

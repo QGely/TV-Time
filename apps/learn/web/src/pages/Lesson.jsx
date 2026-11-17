@@ -6,7 +6,7 @@ import { useStatus } from '../lib/status.jsx';
 import { Icon } from '../components/Icons.jsx';
 import { Modal } from '../components/Modal.jsx';
 import { ErrorBox, Spinner } from '../components/Misc.jsx';
-import { checkAnswer, normalize, speak, canSpeak } from '../lib/format.js';
+import { checkAnswer, normalize, speak, canSpeak, LETTERS } from '../lib/format.js';
 
 function Choose({ ex, value, onChange, result, tts }) {
   useEffect(() => { if (ex.speak) speak(ex.speak, tts); }, [ex, tts]);
@@ -18,6 +18,20 @@ function Choose({ ex, value, onChange, result, tts }) {
         {ex.options.map((o, i) => {
           const cls = 'option' + (result ? (o === ex.answer ? ' correct' : o === value ? ' wrong' : '') : o === value ? ' selected' : '');
           return <button key={o} className={cls} onClick={() => !result && onChange(o)} disabled={!!result}><span className="num">{i + 1}</span>{o}</button>;
+        })}
+      </div>
+    </>
+  );
+}
+
+function Qcm({ ex, value, onChange, result }) {
+  return (
+    <>
+      <div className="qcm-question">{ex.prompt}</div>
+      <div className="options">
+        {ex.options.map((o, i) => {
+          const cls = 'option' + (result ? (o === ex.answer ? ' correct' : o === value ? ' wrong' : '') : o === value ? ' selected' : '');
+          return <button key={o} className={cls} onClick={() => !result && onChange(o)} disabled={!!result}><span className="num">{LETTERS[i]}</span>{o}</button>;
         })}
       </div>
     </>
@@ -136,7 +150,7 @@ export function Lesson() {
   const ex = queue[idx];
   const total = lesson ? lesson.exercises.length : 0;
   const answered = idx;
-  const tts = lesson?.tts_lang || 'en-US';
+  const tts = lesson?.tts_lang || null;
 
   const finish = useCallback(async (finalCorrect, finalMistakes) => {
     const sid = lesson.skill_id;
@@ -156,14 +170,14 @@ export function Lesson() {
   const submit = async () => {
     if (!ex || result) return;
     let ok, close = false, given = value;
-    if (ex.type === 'choose' || ex.type === 'fill') ok = value === ex.answer;
+    if (ex.type === 'choose' || ex.type === 'fill' || ex.type === 'qcm') ok = value === ex.answer;
     else if (ex.type === 'arrange') { given = (value || []).map((i) => ex.bank[i]).join(' '); const r = checkAnswer(given, ex.accept); ok = r.ok; close = r.close; }
     else { const r = checkAnswer(value, ex.accept); ok = r.ok; close = r.close; }
     if (ex.speakAnswer && ok) speak(ex.answer, tts);
     setResult({ ok, close });
     if (ok) setCorrect((c) => c + 1);
     else {
-      const term = ex.type === 'arrange' ? ex.answer : ex.term || ex.answer;
+      const term = ex.type === 'qcm' ? ex.qid : ex.type === 'arrange' ? ex.answer : ex.term || ex.answer;
       setMistakes((m) => [...m, term]);
       // Re-queue the exercise at the end (Duolingo style), once.
       if (!ex._retry) setQueue((q) => [...q, { ...ex, id: ex.id + 100, _retry: true }]);
@@ -172,6 +186,18 @@ export function Lesson() {
       }
     }
   };
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (!ex || quit || end || outOfHearts) return;
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      const n = Number(e.key);
+      if (!result && n >= 1 && n <= 6 && ['choose', 'qcm', 'fill'].includes(ex.type) && ex.options?.[n - 1]) { setValue(ex.options[n - 1]); return; }
+      if (e.key === 'Enter') { e.preventDefault(); if (result) next(); else if (value) submit(); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  });
 
   const onMatchComplete = () => { setResult({ ok: true }); setCorrect((c) => c + 1); };
   const onMatchMistake = (term) => { setMistakes((m) => (m.includes(term) ? m : [...m, term])); };
@@ -200,7 +226,7 @@ export function Lesson() {
   }
 
   const canCheck = ex && (ex.type === 'match' ? false : ex.type === 'arrange' ? (value || []).length > 0 : !!value);
-  const Comp = { choose: Choose, type: Type, listen: Listen, arrange: Arrange, fill: Fill }[ex?.type];
+  const Comp = { choose: Choose, qcm: Qcm, type: Type, listen: Listen, arrange: Arrange, fill: Fill }[ex?.type];
 
   return (
     <div className="lesson">
@@ -215,7 +241,7 @@ export function Lesson() {
           {result ? (
             <div className={'feedback ' + (result.ok ? 'correct' : 'wrong')}>
               <span className="mark">{result.ok ? <Icon.Check color="var(--green)" /> : <Icon.X color="var(--red)" />}</span>
-              <div><h3>{result.ok ? (result.close ? 'Presque ! On accepte.' : ['Excellent !', 'Bien joué !', 'Génial !', 'Parfait !'][idx % 4]) : 'Bonne réponse :'}</h3>{!result.ok || result.close ? <p>{ex.answer}</p> : ex.type === 'choose' && ex.hint ? <p>{ex.hint}</p> : null}</div>
+              <div><h3>{result.ok ? (result.close ? 'Presque ! On accepte.' : ['Excellent !', 'Bien joué !', 'Génial !', 'Parfait !'][idx % 4]) : 'Bonne réponse :'}</h3>{!result.ok || result.close ? <p>{ex.answer}</p> : ex.type === 'choose' && ex.hint ? <p>{ex.hint}</p> : null}{ex.explanation ? <p className="explanation">{ex.explanation}</p> : null}</div>
             </div>
           ) : <button className="btn btn-ghost" onClick={next} style={{ visibility: ex?.type === 'match' ? 'hidden' : 'visible' }}>Passer</button>}
           {result ? <button className={'btn btn-primary' + (result.ok ? '' : ' wrong')} onClick={next} autoFocus>Continuer</button> : <button className="btn btn-primary" onClick={submit} disabled={!canCheck}>Vérifier</button>}

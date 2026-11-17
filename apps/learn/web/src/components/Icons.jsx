@@ -18,6 +18,14 @@ export const Icon = {
   Logout: (p) => <svg {...base} {...p}><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>,
   Trash: (p) => <svg {...base} {...p}><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg>,
   Globe: (p) => <svg {...base} {...p}><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>,
+  Exam: (p) => <svg {...base} {...p}><path d="M9 3h6a1 1 0 0 1 1 1v1h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2V4a1 1 0 0 1 1-1z"/><path d="M9 12l2 2 4-4M8 17h8"/></svg>,
+  Library: (p) => <svg {...base} {...p}><path d="M4 4h4v16H4zM10 4h4v16h-4zM16.5 4.5l3.8-1 3.2 15.5-3.8 1z" transform="translate(-1 0)"/></svg>,
+  Flag: (p) => <svg {...base} {...p}><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>,
+  Clock: (p) => <svg {...base} {...p}><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>,
+  External: (p) => <svg {...base} {...p}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>,
+  Search: (p) => <svg {...base} {...p}><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>,
+  ChevronLeft: (p) => <svg {...base} {...p}><path d="M15 18l-6-6 6-6"/></svg>,
+  ChevronRight: (p) => <svg {...base} {...p}><path d="M9 18l6-6-6-6"/></svg>,
   Zap: (p) => <svg {...base} fill="currentColor" stroke="none" {...p}><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg>,
 };
 export function Logo({ size = 26 }) {
