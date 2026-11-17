@@ -1,0 +1,625 @@
+{
+  "id": "lapl",
+  "units": [
+    {
+      "id": "u3",
+      "title": "Météorologie",
+      "description": "Atmosphère, humidité et nuages, vent, fronts, phénomènes dangereux et messages météo (METAR, TAF, TEMSI) utiles au pilote VFR (examen : 20 questions, 30 min).",
+      "color": "#58cc02",
+      "skills": [
+        {
+          "id": "u3s1",
+          "title": "Atmosphère, température et pression",
+          "icon": "🌡️",
+          "tips": "L'atmosphère se divise en couches selon l'évolution de la température.\n• Troposphère : du sol à la tropopause. La température y baisse avec l'altitude et elle contient presque toute la vapeur d'eau : c'est là que se forment les nuages et le « temps ». Épaisseur d'environ 11 km (36 000 ft) aux latitudes moyennes, davantage à l'équateur (≈ 16 km), moins aux pôles (≈ 8 km).\n• Tropopause : limite au-dessus de laquelle la température cesse de décroître.\n• Stratosphère : température constante puis croissante (absorption par l'ozone), air sec et stable.\n\nAtmosphère standard (ISA), référence pour l'étalonnage des altimètres et les performances :\n• au niveau de la mer : 15 °C, 1013,25 hPa, masse volumique 1,225 kg/m³ ;\n• température : −6,5 °C par km, soit environ −2 °C par 1 000 ft, jusqu'à la tropopause à 11 km (36 089 ft), où elle vaut −56,5 °C, puis constante au-dessus ;\n• pression : environ 1 hPa de moins tous les 28 ft près du sol ; 500 hPa vers 18 000 ft.\nÉcart ISA = température réelle − température standard à la même altitude. Ex. : 21 °C à 2 000 ft, standard 11 °C : ISA +10.\n\nCalages altimétriques :\n• QNH : l'altimètre indique l'altitude (au-dessus du niveau moyen de la mer) ; posé, il affiche l'altitude du terrain.\n• QFE : il indique la hauteur au-dessus du terrain ; posé, il affiche 0.\n• 1013 (calage standard) : il indique un niveau de vol (FL 55 = 5 500 ft au-dessus de la surface isobare 1013,25 hPa). En montée, on affiche 1013 en passant l'altitude de transition ; en descente, le QNH en passant le niveau de transition.\n\nErreurs de l'altimètre (calage non modifié) :\n• Vers une zone de pression plus basse, l'avion est plus bas qu'indiqué : environ 28 ft par hPa d'écart.\n• Dans un air plus froid que l'ISA, l'avion est aussi plus bas qu'indiqué (ordre de grandeur : 4 % de la hauteur au-dessus de la station par tranche de 10 °C d'écart).\n• Mémo : « du chaud vers le froid, des hautes vers les basses pressions : danger », l'altimètre surestime. Dans le sens inverse, l'avion est plus haut qu'indiqué.\n\nAltitude-pression : altitude lue avec le calage 1013. Altitude-pression ≈ altitude du terrain + (1013 − QNH) × 28 ft.\nAltitude-densité : altitude, en atmosphère standard, où la masse volumique est celle de l'air réel. Elle augmente avec la température, l'altitude et l'humidité. Formule approchée : altitude-densité ≈ altitude-pression + 120 ft × écart ISA. Plus elle est élevée, plus le moteur, l'hélice et l'aile perdent en efficacité : décollage plus long et taux de montée plus faible (« chaud, haut, humide »).",
+          "vocab": [
+            { "term": "ISA", "translation": "Atmosphère standard : 15 °C et 1013,25 hPa au niveau de la mer" },
+            { "term": "QNH", "translation": "Calage donnant l'altitude au-dessus du niveau moyen de la mer" },
+            { "term": "QFE", "translation": "Calage donnant la hauteur au-dessus du terrain (0 au sol)" },
+            { "term": "Calage standard (1013)", "translation": "1013,25 hPa affiché : l'altimètre indique un niveau de vol" },
+            { "term": "Tropopause", "translation": "Limite haute de la troposphère, vers 11 km (36 000 ft) en ISA" },
+            { "term": "Écart ISA", "translation": "Température réelle moins température standard à la même altitude" },
+            { "term": "Altitude-pression", "translation": "Altitude lue avec le calage 1013,25 hPa" },
+            { "term": "Altitude-densité", "translation": "Altitude standard de même masse volumique que l'air réel" }
+          ],
+          "questions": [
+            {
+              "id": "u3s1q01",
+              "q": "Dans l'atmosphère standard (ISA), quelles sont la température et la pression au niveau moyen de la mer ?",
+              "choices": ["15 °C et 1013,25 hPa", "0 °C et 1013,25 hPa", "15 °C et 1000 hPa", "20 °C et 1013,25 hPa"],
+              "answer": 0,
+              "explanation": "L'ISA retient au niveau de la mer 15 °C, 1013,25 hPa et une masse volumique de 1,225 kg/m³. Ces valeurs servent de référence à l'étalonnage des altimètres et aux tables de performances."
+            },
+            {
+              "id": "u3s1q02",
+              "q": "Selon l'atmosphère standard, quelle est la température à 6 000 ft ?",
+              "choices": ["−3 °C", "9 °C", "3 °C", "−12 °C"],
+              "answer": 2,
+              "explanation": "La température ISA baisse d'environ 2 °C par 1 000 ft à partir de 15 °C au niveau de la mer : 15 − (6 × 2) = 3 °C."
+            },
+            {
+              "id": "u3s1q03",
+              "q": "Sur un aérodrome situé à 2 000 ft d'altitude, le thermomètre indique 21 °C. Quel est l'écart à l'atmosphère standard ?",
+              "choices": ["ISA +6", "ISA +10", "ISA +4", "ISA −10"],
+              "answer": 1,
+              "explanation": "Température standard à 2 000 ft : 15 − (2 × 2) = 11 °C. Écart = 21 − 11 = +10 °C, soit ISA +10. Comparer à 15 °C (ISA +6) revient à oublier la décroissance de la température avec l'altitude."
+            },
+            {
+              "id": "u3s1q04",
+              "q": "Un avion est posé sur un aérodrome d'altitude 480 ft. Que lit le pilote à l'altimètre, calé successivement au QFE puis au QNH ?",
+              "choices": ["480 ft au QFE, 0 ft au QNH", "0 ft dans les deux cas", "480 ft dans les deux cas", "0 ft au QFE, 480 ft au QNH"],
+              "answer": 3,
+              "explanation": "Calé au QFE, l'altimètre donne la hauteur au-dessus du terrain, donc 0 au sol. Calé au QNH, il donne l'altitude au-dessus du niveau moyen de la mer, donc l'altitude du terrain lorsque l'avion est posé."
+            },
+            {
+              "id": "u3s1q05",
+              "q": "Un pilote annonce « niveau 55 ». Quel calage a-t-il affiché et que représente cette indication ?",
+              "choices": ["Le QNH ; 5 500 ft au-dessus du niveau moyen de la mer", "1013,25 hPa ; 5 500 ft au-dessus de la surface isobare 1013,25 hPa", "Le QFE ; 5 500 ft au-dessus du terrain", "1013,25 hPa ; 550 ft au-dessus de la surface isobare 1013,25 hPa"],
+              "answer": 1,
+              "explanation": "Un niveau de vol s'exprime en centaines de pieds au-dessus de la surface isobare 1013,25 hPa, altimètre au calage standard : FL 55 = 5 500 ft lus avec 1013. Ce n'est pas une altitude vraie au-dessus de la mer."
+            },
+            {
+              "id": "u3s1q06",
+              "q": "Vous volez à 3 000 ft indiqués, altimètre calé sur 1018 hPa, vers une région où le QNH est de 1008 hPa, sans modifier le calage. En prenant 1 hPa ≈ 28 ft, quelle est votre altitude réelle à l'arrivée ?",
+              "choices": ["Environ 2 720 ft", "Environ 3 280 ft", "3 000 ft", "Environ 2 860 ft"],
+              "answer": 0,
+              "explanation": "L'altimètre mesure 3 000 ft au-dessus de la surface 1018 hPa, qui se trouve ici 10 × 28 = 280 ft sous le niveau de la mer. Altitude réelle : 3 000 − 280 = 2 720 ft. Vers les basses pressions, l'avion est plus bas qu'indiqué."
+            },
+            {
+              "id": "u3s1q07",
+              "q": "Altimètre correctement calé au QNH, vous traversez une masse d'air nettement plus froide que l'atmosphère standard. Par rapport à l'altitude indiquée, votre altitude vraie est :",
+              "choices": ["Plus haute, car l'air froid est plus dense", "Identique, puisque le QNH est correct", "Plus haute en montée et plus basse en descente", "Plus basse, ce qui réduit la marge au-dessus des obstacles"],
+              "answer": 3,
+              "explanation": "Dans l'air froid, la pression diminue plus vite avec l'altitude : l'altimètre, étalonné en ISA, surestime l'altitude. L'avion est plus bas qu'indiqué (« du chaud vers le froid : danger »)."
+            },
+            {
+              "id": "u3s1q08",
+              "q": "Sans recalage de l'altimètre, quel trajet est le plus dangereux vis-à-vis du relief ?",
+              "choices": ["D'une zone froide et de basse pression vers une zone chaude et de haute pression", "D'une zone froide vers une zone chaude, la pression restant la même", "D'une zone chaude et de haute pression vers une zone froide et de basse pression", "D'une zone de basse pression vers une zone de haute pression, la température restant la même"],
+              "answer": 2,
+              "explanation": "Vers les basses pressions comme vers l'air froid, l'altimètre surestime l'altitude : l'avion est plus bas qu'indiqué, et les deux erreurs s'additionnent ici. Les trois autres trajets placent l'avion plus haut qu'indiqué."
+            },
+            {
+              "id": "u3s1q09",
+              "q": "Un aérodrome est à 1 200 ft d'altitude et le QNH vaut 1003 hPa. En prenant 1 hPa ≈ 28 ft, quelle est l'altitude-pression du terrain ?",
+              "choices": ["920 ft", "1 480 ft", "1 200 ft", "1 300 ft"],
+              "answer": 1,
+              "explanation": "Altitude-pression = altitude + (1013 − QNH) × 28 = 1 200 + 10 × 28 = 1 480 ft. Un QNH inférieur à 1013 hPa donne une altitude-pression supérieure à l'altitude du terrain."
+            },
+            {
+              "id": "u3s1q10",
+              "q": "Sur un terrain d'altitude-pression 2 000 ft, la température est de 26 °C. Avec la règle de 120 ft par degré d'écart ISA, quelle est l'altitude-densité approximative ?",
+              "choices": ["2 000 ft", "3 320 ft", "5 120 ft", "3 800 ft"],
+              "answer": 3,
+              "explanation": "Température standard à 2 000 ft : 15 − 4 = 11 °C ; écart ISA = 26 − 11 = +15 °C. Altitude-densité ≈ 2 000 + 15 × 120 = 3 800 ft."
+            },
+            {
+              "id": "u3s1q11",
+              "q": "Par rapport à une journée standard, quel est l'effet d'une journée chaude et humide sur un terrain élevé ?",
+              "choices": ["Distance de décollage plus longue et taux de montée plus faible", "Distance de décollage plus courte, l'air chaud étant plus porteur", "Aucun effet si le QNH vaut 1013 hPa", "Puissance moteur accrue mais portance réduite"],
+              "answer": 0,
+              "explanation": "Chaleur, altitude et humidité diminuent la masse volumique de l'air : l'altitude-densité augmente. Le moteur, l'hélice et l'aile perdent en efficacité, d'où un roulage plus long et une montée plus faible."
+            },
+            {
+              "id": "u3s1q12",
+              "q": "Quelle affirmation concernant la troposphère est exacte ?",
+              "choices": ["La température y augmente avec l'altitude, à cause de l'absorption par l'ozone", "Son épaisseur est d'environ 11 km en tout point du globe", "Elle contient la quasi-totalité de la vapeur d'eau, et la tropopause est plus haute à l'équateur qu'aux pôles", "Sa limite supérieure, la tropopause, marque le début d'une forte baisse de la température"],
+              "answer": 2,
+              "explanation": "La troposphère concentre la vapeur d'eau et les nuages ; la température y décroît avec l'altitude. La tropopause, à 11 km en ISA, monte vers 16 km à l'équateur et descend vers 8 km aux pôles ; au-dessus, la température cesse de baisser."
+            }
+          ]
+        },
+        {
+          "id": "u3s2",
+          "title": "Humidité, nuages et précipitations",
+          "icon": "☁️",
+          "tips": "L'air contient de la vapeur d'eau, un gaz invisible. Plus l'air est chaud, plus il peut en contenir avant d'être saturé.\n• Saturation : l'air contient le maximum de vapeur possible ; l'excès se condense (nuage, brouillard, rosée). On l'atteint en refroidissant l'air ou en lui ajoutant de la vapeur.\n• Humidité relative (HR) : vapeur contenue / vapeur maximale possible, en %. À contenu en vapeur constant, elle augmente quand l'air se refroidit.\n• Point de rosée (Td) : température à laquelle il faut refroidir l'air, à pression constante, pour le saturer. Il ne dépend que de la quantité de vapeur. T = Td correspond à HR = 100 % ; un faible écart T − Td annonce brouillard ou nuages bas.\n• Chaleur latente : la condensation et la congélation libèrent de la chaleur ; l'évaporation et la fusion en absorbent.\n\nGradients adiabatiques : une particule qui s'élève se détend et se refroidit, sans échange de chaleur avec l'extérieur.\n• Sec (air non saturé) : 1 °C/100 m, soit environ 3 °C/1 000 ft.\n• Saturé : plus faible car la condensation libère de la chaleur, environ 1,5 °C/1 000 ft (moins dans l'air chaud, plus dans l'air froid).\n• Le point de rosée de la particule baisse d'environ 0,5 °C/1 000 ft : l'écart T − Td se réduit donc de 2,5 °C/1 000 ft.\n• Base des cumulus (hauteur au-dessus du sol) ≈ 400 ft × (T − Td) mesurés au sol. Ex. : 24 °C et 14 °C donnent environ 4 000 ft.\n\nStabilité : on compare le gradient réel de l'atmosphère aux gradients adiabatiques.\n• Stable (gradient réel inférieur au saturé, isothermie, inversion) : une particule soulevée redescend. Nuages en couches (St, Sc, As), brume, air calme, visibilité médiocre, bruine ou pluie continue.\n• Instable (gradient réel supérieur au sec) : la particule continue de monter. Nuages cumuliformes (Cu, Cb), averses, turbulence, bonne visibilité hors précipitations.\n• Instabilité conditionnelle : gradient compris entre les deux ; l'air devient instable une fois saturé.\n• Inversion : couche où la température augmente avec l'altitude, très stable ; elle bloque la convection et piège brume et fumées.\n\nLes 10 genres de nuages :\n• Étage supérieur (cristaux de glace) : cirrus (Ci), cirrocumulus (Cc), cirrostratus (Cs, halo).\n• Étage moyen : altocumulus (Ac), altostratus (As).\n• Étage inférieur : stratocumulus (Sc), stratus (St).\n• Grande extension verticale : cumulus (Cu) et cumulonimbus (Cb), à base basse ; nimbostratus (Ns), couche épaisse et sombre étendue sur plusieurs étages.\n\nPrécipitations :\n• Bruine (DZ) : stratus.\n• Pluie ou neige continues (RA, SN) : nimbostratus, altostratus épais.\n• Averses (SHRA, SHSN), grésil (GS), grêle (GR), orages : nuages convectifs (cumulus bourgeonnants, Cb). Elles débutent et cessent brusquement.",
+          "vocab": [
+            { "term": "Point de rosée (Td)", "translation": "Température à laquelle l'air refroidi devient saturé" },
+            { "term": "Humidité relative", "translation": "Vapeur contenue / vapeur maximale possible, en %" },
+            { "term": "Saturation", "translation": "État de l'air qui contient le maximum de vapeur d'eau possible" },
+            { "term": "Adiabatique sèche", "translation": "Refroidissement d'un air non saturé qui monte : ≈ 3 °C/1 000 ft" },
+            { "term": "Adiabatique saturée", "translation": "Refroidissement d'un air saturé qui monte : ≈ 1,5 °C/1 000 ft" },
+            { "term": "Inversion", "translation": "Couche où la température augmente avec l'altitude (très stable)" },
+            { "term": "Cumulonimbus (Cb)", "translation": "Nuage d'orage à grand développement vertical, souvent en enclume" },
+            { "term": "Nimbostratus (Ns)", "translation": "Couche nuageuse épaisse et sombre donnant une pluie continue" }
+          ],
+          "questions": [
+            {
+              "id": "u3s2q01",
+              "q": "Qu'est-ce que le point de rosée ?",
+              "choices": ["La température à laquelle les gouttelettes d'un nuage se congèlent", "La température de l'air lorsque l'humidité relative atteint 50 %", "La température à laquelle il faut refroidir l'air, à pression constante, pour qu'il soit saturé", "La température la plus basse atteinte en fin de nuit"],
+              "answer": 2,
+              "explanation": "Le point de rosée dépend seulement de la quantité de vapeur contenue dans l'air. Lorsque la température descend jusqu'à lui, l'humidité relative atteint 100 % et la vapeur commence à se condenser."
+            },
+            {
+              "id": "u3s2q02",
+              "q": "En fin de nuit, la température baisse alors que la quantité de vapeur d'eau dans l'air ne change pas. Que deviennent l'humidité relative et le point de rosée ?",
+              "choices": ["L'humidité relative augmente, le point de rosée reste le même", "L'humidité relative diminue, le point de rosée baisse", "L'humidité relative reste la même, le point de rosée augmente", "L'humidité relative augmente, le point de rosée baisse autant que la température"],
+              "answer": 0,
+              "explanation": "Le point de rosée ne dépend que du contenu en vapeur : il reste constant. L'air froid pouvant contenir moins de vapeur, l'humidité relative augmente, jusqu'à 100 % quand T atteint Td."
+            },
+            {
+              "id": "u3s2q03",
+              "q": "Au sol, la température est de 25 °C et le point de rosée de 16 °C. À quelle hauteur approximative se situera la base des cumulus ?",
+              "choices": ["900 ft", "1 800 ft", "6 400 ft", "3 600 ft"],
+              "answer": 3,
+              "explanation": "Base des cumulus ≈ 400 ft × (T − Td) = 400 × (25 − 16) = 400 × 9 = 3 600 ft au-dessus du sol."
+            },
+            {
+              "id": "u3s2q04",
+              "q": "Une particule d'air non saturé s'élève de 2 000 ft. De combien sa température diminue-t-elle ?",
+              "choices": ["4 °C", "6 °C", "3 °C", "2 °C"],
+              "answer": 1,
+              "explanation": "L'air non saturé se refroidit selon l'adiabatique sèche, environ 3 °C par 1 000 ft (1 °C/100 m) : 2 × 3 = 6 °C. Les 2 °C/1 000 ft sont le gradient moyen de l'ISA, pas celui d'une particule qui monte."
+            },
+            {
+              "id": "u3s2q05",
+              "q": "Pourquoi le gradient adiabatique saturé est-il plus faible que le gradient adiabatique sec ?",
+              "choices": ["Parce que l'air saturé est plus dense et se détend moins", "Parce que les gouttelettes absorbent le rayonnement solaire", "Parce que la pression diminue moins vite à l'intérieur d'un nuage", "Parce que la condensation de la vapeur libère de la chaleur latente"],
+              "answer": 3,
+              "explanation": "En s'élevant, l'air saturé continue de condenser sa vapeur. Cette condensation libère de la chaleur latente qui compense une partie du refroidissement dû à la détente : environ 1,5 °C/1 000 ft au lieu de 3 °C/1 000 ft."
+            },
+            {
+              "id": "u3s2q06",
+              "q": "Quel temps caractérise généralement une masse d'air stable ?",
+              "choices": ["Des cumulus bourgeonnants et des averses", "Une forte turbulence thermique et une excellente visibilité", "Des nuages en couches, un air calme et une visibilité souvent médiocre", "Des orages fréquents l'après-midi"],
+              "answer": 2,
+              "explanation": "Dans l'air stable, les mouvements verticaux sont freinés : nuages stratiformes (St, Sc, As), brume et fumées piégées près du sol, peu de turbulence. Cumulus, averses et orages signent au contraire l'instabilité."
+            },
+            {
+              "id": "u3s2q07",
+              "q": "Que se passe-t-il dans une couche d'inversion de température ?",
+              "choices": ["La température augmente avec l'altitude et la couche est très stable", "La température diminue de plus de 3 °C/1 000 ft et la couche est instable", "La température augmente avec l'altitude et la couche est très instable", "La température reste constante et l'air y est toujours saturé"],
+              "answer": 0,
+              "explanation": "Dans une inversion, la température croît avec l'altitude : une particule soulevée devient plus froide que l'air ambiant et redescend. C'est une couche très stable, qui bloque la convection et retient brume et fumées."
+            },
+            {
+              "id": "u3s2q08",
+              "q": "Le gradient vertical réel de température mesuré dans une couche est de 3,5 °C par 1 000 ft. Comment qualifier cette couche ?",
+              "choices": ["Absolument stable", "Absolument instable", "Conditionnellement instable", "Neutre"],
+              "answer": 1,
+              "explanation": "Le gradient réel (3,5 °C/1 000 ft) dépasse le gradient adiabatique sec (3 °C/1 000 ft) : une particule soulevée, même non saturée, reste plus chaude que l'air ambiant et continue de monter. La couche est absolument instable."
+            },
+            {
+              "id": "u3s2q09",
+              "q": "Lequel de ces nuages appartient à l'étage supérieur et est constitué de cristaux de glace ?",
+              "choices": ["L'altostratus", "Le stratocumulus", "Le cirrostratus", "Le nimbostratus"],
+              "answer": 2,
+              "explanation": "L'étage supérieur comprend les cirrus, cirrocumulus et cirrostratus, formés de cristaux de glace. Le cirrostratus donne souvent un halo autour du soleil et précède fréquemment un front chaud."
+            },
+            {
+              "id": "u3s2q10",
+              "q": "Une pluie continue et modérée tombe depuis plusieurs heures sous un plafond bas, gris et uniforme. Quel nuage en est le plus probablement à l'origine ?",
+              "choices": ["Le cumulonimbus", "Le nimbostratus", "Le cirrus", "Le cumulus de beau temps"],
+              "answer": 1,
+              "explanation": "Le nimbostratus est une couche épaisse et sombre, étendue sur plusieurs étages, qui donne des précipitations continues. Le cumulonimbus donne des averses, plus brèves et plus intenses."
+            },
+            {
+              "id": "u3s2q11",
+              "q": "Des précipitations débutent et cessent brusquement, en alternance avec des éclaircies. De quels nuages proviennent-elles généralement ?",
+              "choices": ["Des nimbostratus", "Des stratus", "Des altostratus", "Des nuages convectifs (cumulus bourgeonnants, cumulonimbus)"],
+              "answer": 3,
+              "explanation": "Ce sont des averses (SH dans les METAR), caractéristiques des nuages cumuliformes de l'air instable. Les nuages stratiformes donnent plutôt des précipitations continues (Ns, As) ou de la bruine (St)."
+            },
+            {
+              "id": "u3s2q12",
+              "q": "Comment une masse d'air non saturée peut-elle atteindre la saturation ?",
+              "choices": ["En se refroidissant ou en recevant un apport de vapeur d'eau", "Uniquement en se réchauffant", "Uniquement en descendant, par compression", "En se réchauffant tout en perdant de la vapeur d'eau"],
+              "answer": 0,
+              "explanation": "La saturation est atteinte quand la température rejoint le point de rosée : soit l'air se refroidit (soulèvement, rayonnement nocturne, contact d'une surface froide), soit il reçoit de la vapeur (évaporation au-dessus de l'eau ou sous la pluie)."
+            }
+          ]
+        },
+        {
+          "id": "u3s3",
+          "title": "Le vent",
+          "icon": "🌬️",
+          "tips": "Le vent est le déplacement horizontal de l'air. On donne la direction d'où il vient, en degrés (un vent du 270 vient de l'ouest), et sa vitesse en nœuds (1 kt ≈ 1,852 km/h). La direction est rapportée au nord vrai dans les METAR et TAF, au nord magnétique quand la tour ou l'ATIS la transmet.\n\nForces en jeu :\n• Force de pression : pousse l'air des hautes vers les basses pressions.\n• Force de Coriolis : due à la rotation de la Terre, elle dévie le mouvement vers la droite dans l'hémisphère nord. Nulle à l'équateur, maximale aux pôles, elle est proportionnelle à la vitesse du vent.\n• Vent géostrophique : équilibre de ces deux forces. Il souffle parallèlement aux isobares, au-dessus de la couche de frottement (environ 2 000 à 3 000 ft), d'autant plus fort que les isobares sont resserrées.\n• Loi de Buys-Ballot (hémisphère nord) : dos au vent, les basses pressions sont à gauche. En vol, un vent venant de la gauche (dérive droite) indique qu'on se dirige vers les basses pressions.\n\nVent au sol : le frottement ralentit l'air, la force de Coriolis diminue et le vent traverse les isobares vers les basses pressions. Sur terre, le vent de surface vaut environ la moitié du vent à 2 000 ft et il est tourné d'environ 30° vers la gauche (environ 10° sur mer). En montant, le vent tourne donc à droite et se renforce. La nuit, le vent de surface faiblit souvent alors qu'il reste fort un peu plus haut.\n\nVents locaux :\n• Brise de mer : le jour, la terre chauffe plus vite que la mer ; en surface, l'air va de la mer vers la terre, surtout l'après-midi. Brise de terre : la nuit, plus faible, de la terre vers la mer.\n• Brise de vallée : le jour, l'air monte le long des pentes ensoleillées. Brise de montagne : la nuit, l'air refroidi descend les pentes vers le fond de la vallée.\n• Rafales : hausses brèves et brutales du vent, notées G dans les METAR.\n\nRelief :\n• Effet de foehn : l'air forcé de monter se refroidit d'abord à 3 °C/1 000 ft, puis à environ 1,5 °C/1 000 ft une fois saturé (nuages et précipitations au vent). Il redescend sous le vent à 3 °C/1 000 ft : il arrive plus chaud et plus sec qu'au départ, sous un ciel dégagé.\n• Ondes orographiques : vent fort à peu près perpendiculaire à une crête, avec une couche stable au-dessus. Indices : nuages lenticulaires immobiles, nuages de rotor déchiquetés sous le vent. Sous le vent, les rotors donnent une turbulence sévère à basse altitude et les descendances peuvent dépasser les capacités de montée d'un avion léger. On aborde une crête en biais (45° environ), avec une bonne marge de hauteur.",
+          "vocab": [
+            { "term": "Isobare", "translation": "Ligne reliant les points de même pression" },
+            { "term": "Force de Coriolis", "translation": "Force due à la rotation terrestre, déviant l'air à droite (HN)" },
+            { "term": "Vent géostrophique", "translation": "Vent parallèle aux isobares, équilibre pression/Coriolis" },
+            { "term": "Buys-Ballot", "translation": "Dos au vent, les basses pressions sont à gauche (hémisphère nord)" },
+            { "term": "Brise de mer", "translation": "Vent de jour soufflant de la mer vers la terre" },
+            { "term": "Effet de foehn", "translation": "Air réchauffé et asséché en redescendant sous le vent d'un relief" },
+            { "term": "Rotor", "translation": "Tourbillon très turbulent sous le vent d'un relief, à basse altitude" },
+            { "term": "Rafale (G)", "translation": "Augmentation brève et brutale de la vitesse du vent" }
+          ],
+          "questions": [
+            {
+              "id": "u3s3q01",
+              "q": "Un METAR indique « 09015KT ». Que faut-il comprendre ?",
+              "choices": ["Le vent souffle vers l'est à 15 kt", "Le vent vient de l'est à 15 kt", "Le vent vient de l'ouest à 15 kt", "Le vent vient de l'est à 15 km/h"],
+              "answer": 1,
+              "explanation": "La direction du vent est toujours celle d'où il vient : 090° correspond à l'est. La vitesse est donnée en nœuds (KT)."
+            },
+            {
+              "id": "u3s3q02",
+              "q": "Quelle affirmation concernant la force de Coriolis est exacte ?",
+              "choices": ["Elle dévie l'air vers la gauche dans l'hémisphère nord et elle est maximale à l'équateur", "Elle pousse l'air des hautes vers les basses pressions", "Elle dévie l'air vers la droite dans l'hémisphère nord, avec une intensité indépendante de la vitesse du vent", "Elle dévie l'air vers la droite dans l'hémisphère nord et elle est nulle à l'équateur"],
+              "answer": 3,
+              "explanation": "Due à la rotation de la Terre, la force de Coriolis dévie les mouvements vers la droite dans l'hémisphère nord. Elle est nulle à l'équateur, maximale aux pôles et proportionnelle à la vitesse du vent. C'est la force de pression qui pousse l'air vers les basses pressions."
+            },
+            {
+              "id": "u3s3q03",
+              "q": "Quelle affirmation décrit le vent géostrophique ?",
+              "choices": ["Il souffle parallèlement aux isobares, d'autant plus fort qu'elles sont resserrées", "Il souffle perpendiculairement aux isobares, des hautes vers les basses pressions", "Il souffle parallèlement aux isobares, d'autant plus fort qu'elles sont espacées", "Il ne s'observe qu'au ras du sol, là où le frottement est maximal"],
+              "answer": 0,
+              "explanation": "Au-dessus de la couche de frottement, la force de pression est équilibrée par la force de Coriolis : le vent suit les isobares. Plus elles sont serrées, plus le gradient de pression, et donc le vent, est fort."
+            },
+            {
+              "id": "u3s3q04",
+              "q": "Dans l'hémisphère nord, au-dessus de la couche de frottement, vous volez au cap 360 avec un vent du 270. Vers quelles pressions vous dirigez-vous ?",
+              "choices": ["Vers des pressions plus hautes", "Vous suivez une isobare : la pression ne change pas", "Vers des pressions plus basses", "Cela dépend uniquement de la force du vent"],
+              "answer": 2,
+              "explanation": "Loi de Buys-Ballot : dos au vent (ici face à l'est), les basses pressions sont à gauche, donc au nord, devant vous. Un vent venant de la gauche (dérive droite) indique qu'on vole vers les basses pressions : l'altimètre surestime l'altitude."
+            },
+            {
+              "id": "u3s3q05",
+              "q": "Au-dessus de la terre, dans l'hémisphère nord, comment le vent évolue-t-il généralement entre le sol et 2 000 ft ?",
+              "choices": ["Il tourne à droite et se renforce", "Il tourne à gauche et se renforce", "Il tourne à droite et faiblit", "Il garde la même direction et se renforce"],
+              "answer": 0,
+              "explanation": "Près du sol, le frottement ralentit le vent et réduit la force de Coriolis : le vent est plus faible et dévié vers les basses pressions, à gauche du vent en altitude. En montant, il tourne donc à droite (sens horaire) et se renforce."
+            },
+            {
+              "id": "u3s3q06",
+              "q": "Au-dessus d'une plaine, le vent à 2 000 ft est du 270° pour 30 kt. Quel vent de surface est le plus probable ?",
+              "choices": ["300° / 15 kt", "240° / 15 kt", "240° / 40 kt", "270° / 30 kt"],
+              "answer": 1,
+              "explanation": "Sur terre, le frottement réduit le vent de surface à environ la moitié du vent en altitude et le fait tourner d'environ 30° vers la gauche : 270 − 30 = 240° et 30 / 2 = 15 kt."
+            },
+            {
+              "id": "u3s3q07",
+              "q": "Par une journée ensoleillée avec un vent général faible, quel vent s'établit l'après-midi sur un aérodrome côtier ?",
+              "choices": ["Une brise de terre, de la terre vers la mer", "Un vent parallèle à la côte, dû à la seule force de Coriolis", "Une brise de mer, de la mer vers la terre", "Un calme plat jusqu'au coucher du soleil"],
+              "answer": 2,
+              "explanation": "Le jour, la terre s'échauffe plus vite que la mer : l'air chaud s'élève au-dessus des terres et il est remplacé en surface par l'air marin. La brise de terre, plus faible, souffle la nuit en sens inverse."
+            },
+            {
+              "id": "u3s3q08",
+              "q": "En fin de nuit, par temps clair et calme, quel vent observe-t-on généralement dans une vallée de montagne ?",
+              "choices": ["Un vent qui remonte les pentes vers les sommets (brise de vallée)", "Un vent qui monte vers les sommets, car l'air refroidi s'allège", "Un vent fort et rafaleux, accéléré par le rayonnement nocturne", "Un vent qui descend les pentes vers le fond de la vallée (brise de montagne)"],
+              "answer": 3,
+              "explanation": "La nuit, l'air au contact des pentes se refroidit par rayonnement, devient plus dense et s'écoule vers le bas : c'est la brise de montagne. Le jour, les pentes ensoleillées font au contraire monter l'air (brise de vallée)."
+            },
+            {
+              "id": "u3s3q09",
+              "q": "Sur le versant au vent d'un relief, l'air est à 15 °C à 1 000 ft. Il devient saturé à 3 000 ft, franchit la crête à 7 000 ft, puis redescend sans nuage sous le vent. Avec 3 °C/1 000 ft (sec) et 1,5 °C/1 000 ft (saturé), quelle est sa température à 1 000 ft sous le vent ?",
+              "choices": ["21 °C", "15 °C", "24 °C", "12 °C"],
+              "answer": 0,
+              "explanation": "Montée sèche de 1 000 à 3 000 ft : 15 − 6 = 9 °C ; montée saturée jusqu'à 7 000 ft : 9 − 4 × 1,5 = 3 °C ; descente sèche de 6 000 ft : 3 + 18 = 21 °C. L'air arrive plus chaud et plus sec : c'est l'effet de foehn."
+            },
+            {
+              "id": "u3s3q10",
+              "q": "Des nuages lenticulaires immobiles sont visibles au-dessus et sous le vent d'une chaîne de montagnes. Qu'indiquent-ils ?",
+              "choices": ["Un air très instable, propice aux orages", "L'arrivée imminente d'un front chaud", "Un vent faible en altitude", "Des ondes orographiques, avec un risque de rotors et de forte turbulence"],
+              "answer": 3,
+              "explanation": "Les lenticulaires se forment aux crêtes des ondes qui s'établissent sous le vent d'un relief par vent fort et air stable en altitude. Sous ces ondes, près du sol, les rotors peuvent provoquer une turbulence sévère."
+            },
+            {
+              "id": "u3s3q11",
+              "q": "Par vent fort perpendiculaire à une crête, où le risque de turbulence sévère liée aux rotors est-il le plus élevé ?",
+              "choices": ["Sur le versant au vent, dans l'ascendance de pente", "Sous le vent du relief, à basse altitude, sous les crêtes des ondes", "Bien au-dessus des nuages lenticulaires", "Au-dessus de la plaine située au vent, loin du relief"],
+              "answer": 1,
+              "explanation": "Les rotors sont des tourbillons à axe horizontal qui se forment sous le vent du relief, au-dessous des crêtes des ondes, parfois matérialisés par des nuages déchiquetés. On y rencontre une turbulence sévère à extrême et de fortes descendances."
+            },
+            {
+              "id": "u3s3q12",
+              "q": "Un METAR indique « 24018G32KT ». Comment le lire ?",
+              "choices": ["Vent soufflant vers le 240°, 18 kt, rafales à 32 kt", "Vent du 240°, 18 kt, avec des rafales atteignant 50 kt", "Vent du 240°, vitesse moyenne 18 kt, rafales à 32 kt", "Vent du 240°, 18 kt, direction variable sur 32°"],
+              "answer": 2,
+              "explanation": "Le groupe donne la direction d'où vient le vent (240°), sa vitesse moyenne (18 kt) puis, après la lettre G, la vitesse maximale des rafales (32 kt). Les rafales ne s'ajoutent pas à la vitesse moyenne."
+            }
+          ]
+        },
+        {
+          "id": "u3s4",
+          "title": "Masses d'air, fronts et systèmes",
+          "icon": "🗺️",
+          "tips": "Une masse d'air est un vaste volume d'air aux propriétés (température, humidité) à peu près homogènes, acquises sur sa région d'origine.\n• Selon la latitude : arctique, polaire (froide), tropicale (chaude).\n• Selon la surface d'origine : maritime (humide) ou continentale (sèche).\n• Réchauffée par la base, une masse d'air devient instable ; refroidie par la base, elle devient stable.\n• Polaire maritime arrivant sur un sol plus chaud : instable, cumulus et cumulonimbus, averses, très bonne visibilité hors averses.\n• Tropicale maritime remontant sur une mer ou un sol plus froids : stable, stratus, bruine, brouillard d'advection, visibilité médiocre.\n• Continentale : froide et sèche en hiver, chaude, sèche et souvent brumeuse en été.\n\nCentres d'action (hémisphère nord, près du sol) :\n• Dépression (D ou L) : vent tournant dans le sens inverse des aiguilles d'une montre et convergeant vers le centre ; l'air monte : nuages et précipitations.\n• Anticyclone (A ou H) : vent tournant dans le sens des aiguilles d'une montre et divergent ; l'air descend (subsidence), se réchauffe et s'assèche : temps calme et sec, mais en hiver inversion, brume, stratus et brouillards.\n• Talweg : creux de basses pressions, temps instable ; dorsale : avancée de hautes pressions ; marais barométrique : gradient faible, vents faibles, orages possibles en été.\n\nUn front est la surface de séparation entre deux masses d'air de températures différentes. Les perturbations du front polaire se déplacent en général d'ouest en est.\n• Front chaud (demi-cercles rouges) : l'air chaud glisse lentement au-dessus de l'air froid, selon une pente faible. Nuages annonciateurs plusieurs centaines de kilomètres en avant : Ci, Cs (halo), As, puis Ns. Pluie continue sur une large bande, plafonds de plus en plus bas, visibilité réduite ; en hiver, risque de pluie surfondue en avant du front. Au passage : la pression cesse de baisser, température et point de rosée montent, le vent tourne à droite.\n• Secteur chaud : air tropical maritime doux et humide ; stratus, bruine, visibilité médiocre.\n• Front froid (triangles bleus) : l'air froid, plus dense, s'enfonce sous l'air chaud et le soulève vivement ; pente forte, bande nuageuse étroite. Cu, Cb, averses, orages, rafales, turbulence, cisaillement. Au passage : la pression remonte, température et point de rosée baissent, le vent tourne à droite (par exemple du sud-ouest au nord-ouest).\n• Traîne : air froid instable derrière le front froid ; Cu et Cb épars, averses, parfois de grésil, excellente visibilité entre les averses.\n• Occlusion (triangles et demi-cercles violets, du même côté) : le front froid, plus rapide, rattrape le front chaud et rejette l'air du secteur chaud en altitude. Le temps combine ceux des deux fronts ; des Cb peuvent être noyés dans la masse nuageuse.\n• Front stationnaire : demi-cercles rouges et triangles bleus alternés, de part et d'autre de la ligne.",
+          "vocab": [
+            { "term": "Masse d'air", "translation": "Grand volume d'air de température et d'humidité homogènes" },
+            { "term": "Dépression", "translation": "Zone de basse pression ; vent anti-horaire et convergent (HN)" },
+            { "term": "Anticyclone", "translation": "Zone de haute pression ; vent horaire et divergent (HN)" },
+            { "term": "Front chaud", "translation": "L'air chaud remplace l'air froid en glissant au-dessus de lui" },
+            { "term": "Front froid", "translation": "L'air froid remplace l'air chaud en le soulevant vivement" },
+            { "term": "Secteur chaud", "translation": "Air chaud situé entre le front chaud et le front froid" },
+            { "term": "Occlusion", "translation": "Front froid ayant rattrapé le front chaud, air chaud rejeté en haut" },
+            { "term": "Traîne", "translation": "Air froid instable à averses qui suit le passage du front froid" }
+          ],
+          "questions": [
+            {
+              "id": "u3s4q01",
+              "q": "Une masse d'air polaire maritime arrive sur la France et circule au-dessus d'un sol plus chaud qu'elle. Quel temps donne-t-elle typiquement ?",
+              "choices": ["Des stratus, de la bruine et une visibilité médiocre", "Un ciel sans nuage et de la brume sèche", "Une pluie continue sous des nimbostratus", "Des cumulus, des cumulonimbus, des averses et une bonne visibilité hors averses"],
+              "answer": 3,
+              "explanation": "Réchauffé par la base, l'air polaire maritime devient instable : convection, nuages cumuliformes, averses parfois orageuses. Hors averses, cet air froid et brassé offre une très bonne visibilité."
+            },
+            {
+              "id": "u3s4q02",
+              "q": "Quelle masse d'air est à la fois la plus chaude et la plus humide ?",
+              "choices": ["Polaire maritime", "Tropicale maritime", "Tropicale continentale", "Polaire continentale"],
+              "answer": 1,
+              "explanation": "« Tropicale » désigne une origine chaude et « maritime » un long parcours sur la mer, donc un air humide. L'air tropical continental est chaud mais sec ; l'air polaire est froid."
+            },
+            {
+              "id": "u3s4q03",
+              "q": "Un air tropical maritime, doux et humide, remonte vers le nord au-dessus d'une mer plus froide. Comment évolue-t-il ?",
+              "choices": ["Il devient instable et donne des cumulonimbus", "Il s'assèche et le ciel se dégage", "Il devient stable, avec des stratus et un brouillard d'advection possibles", "Il devient instable et donne des averses de grêle"],
+              "answer": 2,
+              "explanation": "Refroidi par la base, l'air devient stable ; s'il atteint son point de rosée, il forme des stratus bas ou un brouillard d'advection, souvent étendus et persistants."
+            },
+            {
+              "id": "u3s4q04",
+              "q": "Dans l'hémisphère nord, près du sol, comment l'air circule-t-il autour d'un anticyclone ?",
+              "choices": ["Dans le sens des aiguilles d'une montre, en s'écartant du centre", "Dans le sens inverse des aiguilles d'une montre, en convergeant vers le centre", "Dans le sens des aiguilles d'une montre, en convergeant vers le centre", "Dans le sens inverse des aiguilles d'une montre, en s'écartant du centre"],
+              "answer": 0,
+              "explanation": "Autour d'un anticyclone, le vent tourne dans le sens horaire (hémisphère nord) et, à cause du frottement, diverge du centre. L'air descend (subsidence), ce qui favorise un temps sec. C'est l'inverse autour d'une dépression."
+            },
+            {
+              "id": "u3s4q05",
+              "q": "En hiver, un anticyclone persiste sur la France. Quel temps rencontre-t-on souvent en plaine le matin ?",
+              "choices": ["Des orages et de la grêle", "Un vent fort et rafaleux", "Du brouillard ou des stratus bas sous une inversion, avec un vent faible", "Une pluie continue sous un ciel bas"],
+              "answer": 2,
+              "explanation": "Sous l'anticyclone, la subsidence crée une inversion et le vent est faible. Les longues nuits claires refroidissent le sol : brouillards de rayonnement et stratus, parfois persistants toute la journée."
+            },
+            {
+              "id": "u3s4q06",
+              "q": "À l'approche d'un front chaud, dans quel ordre un observateur au sol voit-il généralement arriver les nuages ?",
+              "choices": ["Nimbostratus, altostratus, cirrostratus, puis cirrus", "Cumulus, cumulonimbus, puis ciel clair", "Stratus, stratocumulus, puis cumulus", "Cirrus, cirrostratus, altostratus, puis nimbostratus"],
+              "answer": 3,
+              "explanation": "L'air chaud monte lentement sur une pente faible : les nuages les plus élevés (Ci, Cs) apparaissent plusieurs centaines de kilomètres en avant, puis la couche s'épaissit et s'abaisse (As, puis Ns avec pluie continue)."
+            },
+            {
+              "id": "u3s4q07",
+              "q": "Quel temps accompagne typiquement le passage d'un front froid actif ?",
+              "choices": ["Une pluie fine et continue, avec hausse de la température", "Des averses, des orages possibles et des rafales, puis une baisse de température et une hausse de pression", "Un brouillard épais et un vent calme", "Une baisse continue de la pression et une hausse du point de rosée"],
+              "answer": 1,
+              "explanation": "L'air froid soulève brutalement l'air chaud : Cu et Cb sur une bande étroite, averses, orages, rafales et turbulence. Après le passage, la température et le point de rosée baissent et la pression remonte."
+            },
+            {
+              "id": "u3s4q08",
+              "q": "Au passage d'un front froid dans l'hémisphère nord, comment le vent au sol évolue-t-il ?",
+              "choices": ["Il tourne à droite, par exemple du sud-ouest au nord-ouest", "Il tourne à gauche, par exemple du sud-ouest au sud-est", "Il garde sa direction et faiblit", "Il devient calme pendant toute la durée de la traîne"],
+              "answer": 0,
+              "explanation": "Les fronts sont situés dans des creux de pression (talwegs) : en les franchissant, le vent tourne dans le sens horaire, c'est-à-dire à droite. Avant un front froid, il souffle souvent du sud-ouest ; après, de l'ouest ou du nord-ouest."
+            },
+            {
+              "id": "u3s4q09",
+              "q": "Quel temps trouve-t-on souvent dans le secteur chaud d'une perturbation, en Europe de l'Ouest ?",
+              "choices": ["Un temps froid et sec, avec un ciel très bleu", "De nombreux cumulonimbus et une excellente visibilité", "Des chutes de neige continues", "Un temps doux, avec stratus, bruine et visibilité médiocre"],
+              "answer": 3,
+              "explanation": "Le secteur chaud est occupé par de l'air tropical maritime, doux et humide, refroidi par la base au contact de la surface : il est stable, d'où stratus bas, bruine et brume."
+            },
+            {
+              "id": "u3s4q10",
+              "q": "Quel temps caractérise la traîne qui suit un front froid ?",
+              "choices": ["Des cumulus et cumulonimbus épars, des averses et une très bonne visibilité entre elles", "Une couche uniforme de stratus et de la bruine", "Un voile de cirrostratus qui s'épaissit progressivement", "Un brouillard généralisé et persistant"],
+              "answer": 0,
+              "explanation": "Derrière le front froid, l'air froid se réchauffe par la base et devient instable : ciel changeant, averses parfois de grésil ou orageuses, et excellente visibilité entre les averses."
+            },
+            {
+              "id": "u3s4q11",
+              "q": "Comment se forme une occlusion ?",
+              "choices": ["Le front chaud, plus rapide, rattrape le front froid", "Deux anticyclones se rejoignent et bloquent la perturbation", "Le front froid, plus rapide, rattrape le front chaud et rejette l'air chaud en altitude", "Le front froid s'immobilise et devient un front stationnaire"],
+              "answer": 2,
+              "explanation": "Le front froid se déplace plus vite que le front chaud. Quand il le rattrape, l'air du secteur chaud est soulevé et ne touche plus le sol : c'est l'occlusion, dont le temps combine ceux des deux fronts."
+            },
+            {
+              "id": "u3s4q12",
+              "q": "Sur une carte météo, que représente une ligne violette portant, du même côté, des triangles et des demi-cercles alternés ?",
+              "choices": ["Un front stationnaire", "Une occlusion", "Un front chaud", "Un talweg"],
+              "answer": 1,
+              "explanation": "L'occlusion est figurée en violet, triangles et demi-cercles du même côté. Le front froid porte des triangles bleus, le front chaud des demi-cercles rouges ; le front stationnaire alterne demi-cercles rouges et triangles bleus de part et d'autre de la ligne."
+            }
+          ]
+        },
+        {
+          "id": "u3s5",
+          "title": "Phénomènes dangereux",
+          "icon": "⛈️",
+          "tips": "Orages. Ils naissent dans les cumulonimbus et exigent trois ingrédients : air instable, humidité abondante et facteur de déclenchement (échauffement du sol l'après-midi, front froid, relief, convergence).\n• Stade cumulus : ascendances dans toute la cellule, le nuage grandit.\n• Stade de maturité : les précipitations atteignent le sol, ascendances et descendances coexistent ; c'est le stade le plus dangereux.\n• Stade de dissipation : les descendances dominent, l'enclume s'étale.\nDangers : turbulence sévère, grêle (y compris sous l'enclume), foudre, givrage fort, cisaillement, rafales descendantes (microrafales) et front de rafales en avant de l'orage. On contourne un Cb largement, sans jamais passer dessous, et on ne décolle ni n'atterrit à l'approche d'un orage.\n\nGivrage. Il se produit quand l'avion, à température négative, rencontre de l'eau surfondue (restée liquide sous 0 °C), dans un nuage ou des précipitations. Il est le plus fréquent aux températures légèrement négatives (de 0 à −15 °C environ) et fort dans les Cu et Cb.\n• Givre blanc : petites gouttelettes qui gèlent instantanément ; dépôt blanc, opaque, rugueux et friable.\n• Givre transparent ou verglas : grosses gouttes qui s'étalent avant de geler ; dépôt lisse, transparent, lourd et très adhérent, le plus dangereux.\n• Pluie surfondue (FZRA) : pluie tombant d'une couche d'air positive dans une couche négative située dessous, typiquement en avant d'un front chaud en hiver ; verglas très rapide, il faut quitter la zone sans attendre.\n• Gelée blanche : cristaux formés directement à partir de la vapeur sur une surface à température négative (avion dehors par nuit claire). Elle dégrade la portance : on l'enlève entièrement avant le vol.\n\nVisibilité, brume et brouillard :\n• Brouillard (FG) : gouttelettes d'eau, visibilité inférieure à 1 000 m.\n• Brume (BR) : gouttelettes, visibilité de 1 000 à 5 000 m ; brume sèche (HZ) : particules sèches.\n• Brouillard de rayonnement : nuit claire, vent faible, air humide ; le sol se refroidit par rayonnement. Fréquent en automne et en hiver, il se dissipe en général dans la matinée.\n• Brouillard d'advection : air doux et humide déplacé sur une surface plus froide (mer, sol froid ou enneigé) ; possible de jour comme de nuit et avec du vent, étendu et durable.\n• Brouillard d'évaporation : air froid au-dessus d'une eau plus chaude, ou pluie tiède tombant dans de l'air froid (brouillard frontal).\n\nTurbulence et cisaillement :\n• Mécanique : vent fort sur le relief et les obstacles (bâtiments, hangars, rotors).\n• Thermique : convection en air instable, sous les cumulus.\n• En air clair (CAT) : en altitude, sans nuage, près des courants-jets.\n• Cisaillement de vent : variation brusque de la direction ou de la force du vent sur une courte distance (orages, fronts, inversion nocturne). Près du sol, une perte de vent de face fait chuter la vitesse indiquée : remise de gaz à pleine puissance.",
+          "vocab": [
+            { "term": "Eau surfondue", "translation": "Eau restée liquide à une température inférieure à 0 °C" },
+            { "term": "Givre blanc", "translation": "Glace opaque et friable formée par de petites gouttelettes" },
+            { "term": "Givre transparent (verglas)", "translation": "Glace lisse, lourde et adhérente formée par de grosses gouttes" },
+            { "term": "Gelée blanche", "translation": "Cristaux déposés par la vapeur sur une surface négative" },
+            { "term": "Microrafale", "translation": "Rafale descendante violente et localisée sous un orage" },
+            { "term": "Brouillard (FG)", "translation": "Gouttelettes réduisant la visibilité sous 1 000 m" },
+            { "term": "Brume (BR)", "translation": "Gouttelettes réduisant la visibilité entre 1 000 et 5 000 m" },
+            { "term": "Cisaillement de vent", "translation": "Variation brusque du vent sur une courte distance" }
+          ],
+          "questions": [
+            {
+              "id": "u3s5q01",
+              "q": "Quel événement marque le début du stade de maturité d'une cellule orageuse ?",
+              "choices": ["L'arrivée des précipitations au sol, ascendances et descendances coexistant", "L'apparition des premiers cumulus de beau temps", "La disparition de toutes les ascendances dans le nuage", "La fin des précipitations et l'étalement de l'enclume"],
+              "answer": 0,
+              "explanation": "Au stade de maturité, les précipitations entraînent l'air vers le bas : de violentes descendances côtoient les ascendances. C'est le stade le plus dangereux (grêle, foudre, rafales, turbulence sévère)."
+            },
+            {
+              "id": "u3s5q02",
+              "q": "Quelles conditions sont nécessaires à la formation d'un orage ?",
+              "choices": ["Un air stable, une humidité faible et un vent fort", "Une inversion de température au sol et un ciel clair", "Un air sec et une subsidence anticyclonique", "Un air instable, une humidité abondante et un facteur de déclenchement"],
+              "answer": 3,
+              "explanation": "Un cumulonimbus exige un air instable sur une grande épaisseur, beaucoup de vapeur d'eau (dont la condensation libère de l'énergie) et un soulèvement initial : échauffement du sol, front froid, relief ou convergence."
+            },
+            {
+              "id": "u3s5q03",
+              "q": "Un pilote envisage de passer sous un cumulonimbus isolé dont la base paraît haute. Quel danger majeur risque-t-il de rencontrer ?",
+              "choices": ["Un brouillard de rayonnement", "La turbulence en air clair des courants-jets", "Des rafales descendantes et un fort cisaillement de vent", "Un dépôt de gelée blanche sur l'avion"],
+              "answer": 2,
+              "explanation": "Sous un Cb, les descendances violentes (microrafales) peuvent plaquer un avion léger vers le sol et provoquer un cisaillement brutal. On contourne toujours un cumulonimbus largement, sans jamais passer dessous."
+            },
+            {
+              "id": "u3s5q04",
+              "q": "En courte finale, vous traversez une microrafale sous un orage. Quelle séquence est typique ?",
+              "choices": ["Un vent arrière d'abord, puis un vent de face qui fait monter l'avion", "Un vent de face accru (vitesse en hausse), puis une forte descendance, puis un vent arrière (vitesse en chute)", "Une simple hausse de la vitesse indiquée, sans danger", "Une ascendance continue qui oblige à réduire la puissance"],
+              "answer": 1,
+              "explanation": "L'air qui s'écrase au sol s'étale dans toutes les directions : on rencontre d'abord un vent de face (vitesse et trajectoire en hausse), puis la descendance, puis un vent arrière qui fait chuter la vitesse près du sol. Il faut remettre les gaz dès les premiers signes."
+            },
+            {
+              "id": "u3s5q05",
+              "q": "Dans quelles conditions le givrage de l'avion en vol est-il le plus probable ?",
+              "choices": ["En ciel clair et sec, par −30 °C", "Dans un nuage ou des précipitations contenant de l'eau surfondue, à température négative", "Dans les cristaux de glace d'un cirrus", "Sous la pluie, par +10 °C"],
+              "answer": 1,
+              "explanation": "Le givrage se produit quand des gouttes restées liquides sous 0 °C (eau surfondue) heurtent l'avion et gèlent. Sans eau liquide surfondue, en ciel clair ou dans des nuages de glace, le risque est faible."
+            },
+            {
+              "id": "u3s5q06",
+              "q": "Quel dépôt lisse, transparent, lourd et très adhérent se forme lorsque de grosses gouttes surfondues s'étalent avant de geler ?",
+              "choices": ["Le givre blanc", "La gelée blanche", "Le givre transparent (verglas)", "Le grésil"],
+              "answer": 2,
+              "explanation": "Les grosses gouttes (pluie surfondue, cumulus) ne gèlent pas instantanément : elles s'étalent et forment une glace claire, compacte et difficile à éliminer, qui déforme le profil. Le givre blanc, opaque et friable, provient de petites gouttelettes qui gèlent instantanément."
+            },
+            {
+              "id": "u3s5q07",
+              "q": "Dans quelle situation rencontre-t-on typiquement de la pluie surfondue (FZRA) en hiver ?",
+              "choices": ["Dans la traîne, sous les averses de neige", "Au centre d'un anticyclone, par ciel clair", "Au-dessus de l'isotherme 0 °C, dans les cirrus", "En avant d'un front chaud, quand la pluie traverse une couche d'air négative près du sol"],
+              "answer": 3,
+              "explanation": "La pluie se forme dans l'air chaud au-dessus de la surface frontale, puis tombe dans l'air froid sous-jacent où elle reste liquide en surfusion. Elle gèle instantanément au contact de l'avion : il faut quitter la zone au plus vite."
+            },
+            {
+              "id": "u3s5q08",
+              "q": "Après une nuit claire et froide, l'avion stationné dehors est recouvert d'une fine couche de gelée blanche. Que faites-vous ?",
+              "choices": ["Vous l'enlevez entièrement avant le vol, car même mince elle dégrade fortement la portance", "Vous décollez : elle disparaîtra pendant la course au décollage", "Vous nettoyez seulement le pare-brise", "Vous décollez en augmentant de 5 kt la vitesse de rotation"],
+              "answer": 0,
+              "explanation": "Même une fine couche de gelée blanche rend l'extrados rugueux : la portance diminue, la traînée et la vitesse de décrochage augmentent. Les surfaces doivent être entièrement dégagées avant le décollage."
+            },
+            {
+              "id": "u3s5q09",
+              "q": "Quelles conditions favorisent la formation d'un brouillard de rayonnement ?",
+              "choices": ["Un ciel couvert, un vent fort et un air sec", "Un après-midi ensoleillé et un air instable", "Une nuit claire, un vent faible et un air humide", "Un air chaud et humide circulant sur une mer froide"],
+              "answer": 2,
+              "explanation": "Par nuit claire, le sol perd sa chaleur par rayonnement et refroidit l'air à son contact ; si l'air est humide (faible écart T − Td) et le vent faible, il atteint la saturation. Un air chaud sur une mer froide donne un brouillard d'advection."
+            },
+            {
+              "id": "u3s5q10",
+              "q": "Un air doux et humide circule par vent de sud-ouest modéré sur une mer froide, puis sur la côte. Quel phénomène est à craindre, de jour comme de nuit ?",
+              "choices": ["Un brouillard d'advection", "Un brouillard de rayonnement", "Un brouillard d'évaporation", "De la brume sèche"],
+              "answer": 0,
+              "explanation": "Le brouillard d'advection naît d'un air chaud et humide refroidi par la base en se déplaçant sur une surface plus froide. Contrairement au brouillard de rayonnement, il se forme avec du vent et quelle que soit l'heure."
+            },
+            {
+              "id": "u3s5q11",
+              "q": "Qu'est-ce qui distingue le brouillard (FG) de la brume (BR) ?",
+              "choices": ["Le brouillard réduit la visibilité à moins de 5 000 m, la brume à moins de 1 000 m", "Avec le brouillard, la visibilité est inférieure à 1 000 m ; avec la brume, elle est comprise entre 1 000 et 5 000 m", "Le brouillard est fait de gouttelettes, la brume uniquement de poussières", "Le brouillard se forme la nuit, la brume uniquement le jour"],
+              "answer": 1,
+              "explanation": "Brouillard et brume sont tous deux faits de fines gouttelettes d'eau ; c'est la visibilité qui les distingue : moins de 1 000 m pour le brouillard, de 1 000 à 5 000 m pour la brume. La brume sèche (HZ) est due à des particules sèches."
+            },
+            {
+              "id": "u3s5q12",
+              "q": "Où rencontre-t-on surtout la turbulence en air clair (CAT) ?",
+              "choices": ["Près du sol, sous le vent des hangars", "Dans les cumulus de beau temps", "Dans les brouillards de rayonnement", "En altitude, au voisinage des courants-jets, en dehors des nuages"],
+              "answer": 3,
+              "explanation": "La CAT est due à un fort cisaillement de vent en altitude, près des courants-jets et de la tropopause. Invisible, elle n'est annoncée par aucun nuage. Près du sol, sous le vent des obstacles, il s'agit de turbulence mécanique."
+            }
+          ]
+        },
+        {
+          "id": "u3s6",
+          "title": "Messages et cartes météo",
+          "icon": "📄",
+          "tips": "METAR : observation régulière d'aérodrome, toutes les 30 minutes ou toutes les heures. SPECI : observation spéciale émise entre deux METAR lors d'un changement significatif. Heures en UTC (heure légale = UTC + 1 en hiver, UTC + 2 en été).\n\nExemple : METAR LFBO 171030Z 27012G25KT 240V300 6000 -SHRA FEW015 BKN030CB 14/09 Q1008 TEMPO TSRA\n• LFBO : indicatif OACI ; 171030Z : le 17 à 10 h 30 UTC.\n• 27012G25KT : vent du 270° (nord vrai), 12 kt, rafales à 25 kt ; 240V300 : direction variable entre 240 et 300°.\n• 6000 : visibilité 6 000 m ; 9999 : 10 km ou plus.\n• -SHRA : faibles averses de pluie.\n• FEW015 BKN030CB : 1 à 2 octas à 1 500 ft, 5 à 7 octas de cumulonimbus à 3 000 ft (hauteurs au-dessus du terrain, en centaines de pieds).\n• 14/09 : température 14 °C, point de rosée 9 °C (M = négatif : M02 = −2 °C).\n• Q1008 : QNH 1008 hPa.\n• TEMPO TSRA : tendance pour les 2 heures suivantes ; NOSIG : pas de changement significatif prévu.\n\nNébulosité en octas : FEW 1 à 2, SCT 3 à 4, BKN 5 à 7, OVC 8. NSC : pas de nuage significatif ; VV : visibilité verticale (ciel invisible). Le plafond est la base de la plus basse couche couvrant plus de la moitié du ciel (BKN ou OVC) au-dessous de 20 000 ft.\n\nTemps présent : - faible, sans signe modéré, + fort, VC au voisinage ; SH averse, TS orage, FZ se congelant ; RA pluie, DZ bruine, SN neige, GR grêle, GS grésil, FG brouillard, BR brume, HZ brume sèche.\n\nCAVOK remplace visibilité, temps présent et nuages si, simultanément :\n• la visibilité est de 10 km ou plus ;\n• aucun nuage au-dessous de 5 000 ft (ou de l'altitude minimale de secteur la plus élevée si elle est supérieure), ni CB ni TCU ;\n• aucun phénomène significatif n'est observé.\n\nTAF : prévision d'aérodrome (TAF court de 9 h, TAF long de 24 ou 30 h). Ex. : 1706/1806 = du 17 à 06 h au 18 à 06 h UTC.\n• BECMG 1810/1812 : évolution durable survenant entre 10 et 12 UTC le 18.\n• TEMPO 1714/1718 : fluctuations temporaires de moins d'une heure chacune, couvrant au total moins de la moitié de la période.\n• FM171430 : à partir du 17 à 14 h 30 UTC, toutes les conditions précédentes sont remplacées.\n• PROB30, PROB40 : probabilité de 30 ou 40 %, éventuellement suivie de TEMPO.\n\nCartes et avertissements :\n• TEMSI France (de la surface au FL 150) : fronts, zones nuageuses (bases, sommets), phénomènes (orages, givrage, turbulence), isotherme 0 °C, pour une heure donnée.\n• WINTEM : vents et températures prévus à plusieurs niveaux ; barbule 10 kt, demi-barbule 5 kt, fanion 50 kt.\n• SIGMET : avertissement d'un centre de veille météorologique sur des phénomènes dangereux en route (orages, turbulence ou givrage forts, cendres volcaniques…).\nSource : Aéroweb, site aéronautique de Météo-France (aviation.meteo.fr).",
+          "vocab": [
+            { "term": "METAR", "translation": "Observation régulière d'aérodrome (toutes les 30 min ou 1 h)" },
+            { "term": "SPECI", "translation": "Observation spéciale émise lors d'un changement significatif" },
+            { "term": "TAF", "translation": "Prévision d'aérodrome (9 h, 24 h ou 30 h)" },
+            { "term": "CAVOK", "translation": "Visi ≥ 10 km, rien sous 5 000 ft, ni CB/TCU, ni temps significatif" },
+            { "term": "BKN", "translation": "Fragmenté : 5 à 7 octas de nuages" },
+            { "term": "NOSIG", "translation": "Pas de changement significatif prévu dans les 2 heures" },
+            { "term": "TEMSI", "translation": "Carte du temps significatif prévu (fronts, nuages, phénomènes)" },
+            { "term": "SIGMET", "translation": "Avertissement de phénomènes météo dangereux en route" }
+          ],
+          "questions": [
+            {
+              "id": "u3s6q01",
+              "q": "Dans le METAR « LFRN 171000Z 23015G27KT 4000 -RA BKN008 OVC015 10/09 Q1002 NOSIG », que signifie BKN008 ?",
+              "choices": ["1 à 2 octas de nuages à 800 ft", "5 à 7 octas de nuages à 8 000 ft", "5 à 7 octas de nuages à 800 ft au-dessus du terrain", "8 octas de nuages à 80 ft"],
+              "answer": 2,
+              "explanation": "BKN (broken, fragmenté) correspond à 5 à 7 octas ; la hauteur de la base est donnée en centaines de pieds au-dessus du terrain : 008 = 800 ft."
+            },
+            {
+              "id": "u3s6q02",
+              "q": "Que signifie le groupe « +TSRA » dans un METAR ?",
+              "choices": ["Pluie forte, avec un orage au voisinage de l'aérodrome", "Orage avec pluie forte", "Orage faible avec pluie", "Averse de pluie modérée suivie d'un orage"],
+              "answer": 1,
+              "explanation": "« + » indique une intensité forte, TS un orage et RA de la pluie : orage avec pluie forte. Un orage au voisinage s'écrirait VCTS, et une intensité faible serait notée « - »."
+            },
+            {
+              "id": "u3s6q03",
+              "q": "Un METAR annonce CAVOK. Laquelle de ces conditions est forcément remplie ?",
+              "choices": ["La visibilité est d'au moins 10 km et il n'y a ni cumulonimbus ni cumulus bourgeonnant", "Le ciel est totalement dégagé", "La visibilité est d'au moins 5 km et le plafond d'au moins 1 500 ft", "Il n'y a aucun nuage au-dessous de 10 000 ft"],
+              "answer": 0,
+              "explanation": "CAVOK suppose une visibilité de 10 km ou plus, aucun nuage au-dessous de 5 000 ft (ou de l'altitude minimale de secteur la plus élevée si elle est supérieure), ni CB ni TCU, et aucun phénomène significatif. Des nuages peuvent donc exister plus haut."
+            },
+            {
+              "id": "u3s6q04",
+              "q": "Un METAR donne « FEW006 SCT012 BKN025 OVC080 ». Quelle est la hauteur du plafond ?",
+              "choices": ["600 ft", "1 200 ft", "8 000 ft", "2 500 ft"],
+              "answer": 3,
+              "explanation": "Le plafond est la base de la plus basse couche couvrant plus de la moitié du ciel, c'est-à-dire BKN (5 à 7 octas) ou OVC (8 octas). FEW (1 à 2) et SCT (3 à 4) n'en font pas partie : plafond à 2 500 ft."
+            },
+            {
+              "id": "u3s6q05",
+              "q": "Que signifie « NOSIG » à la fin d'un METAR ?",
+              "choices": ["Aucun SIGMET n'est en vigueur dans la région", "Aucun changement n'est intervenu depuis le METAR précédent", "Aucun changement significatif n'est prévu pendant toute la validité du TAF", "Aucun changement significatif n'est prévu dans les 2 heures suivant l'observation"],
+              "answer": 3,
+              "explanation": "NOSIG (no significant change) est une prévision de tendance couvrant les 2 heures qui suivent l'heure de l'observation. Elle ne concerne ni les SIGMET ni la période de validité du TAF."
+            },
+            {
+              "id": "u3s6q06",
+              "q": "Qu'est-ce qu'un SPECI ?",
+              "choices": ["Une observation spéciale émise entre deux METAR lors d'un changement significatif des conditions", "Une prévision spéciale établie pour les vols de nuit", "Un avertissement sur des phénomènes dangereux en route", "Un compte rendu des conditions en vol transmis par un pilote"],
+              "answer": 0,
+              "explanation": "Le SPECI a le même format qu'un METAR ; il est émis hors horaire dès qu'un élément (vent, visibilité, temps présent, nuages…) franchit un seuil significatif. Les phénomènes dangereux en route font l'objet de SIGMET."
+            },
+            {
+              "id": "u3s6q07",
+              "q": "Un TAF contient « 9999 SCT030 TEMPO 1714/1718 3000 SHRA BKN015 ». Comment interpréter le groupe TEMPO ?",
+              "choices": ["À partir de 14 h UTC le 17, la visibilité tombe durablement à 3 000 m sous les averses", "Il y a 30 % de probabilité d'averses entre 14 h et 18 h UTC", "Entre 14 h et 18 h UTC le 17, épisodes temporaires de moins d'une heure : 3 000 m sous averses, nuages fragmentés à 1 500 ft", "Entre 14 h et 18 h, heure locale, il pleuvra sans interruption avec 3 000 m de visibilité"],
+              "answer": 2,
+              "explanation": "TEMPO annonce des fluctuations temporaires, chacune de moins d'une heure et couvrant au total moins de la moitié de la période. Entre ces épisodes, les conditions principales (9999 SCT030) s'appliquent. Les heures sont en UTC."
+            },
+            {
+              "id": "u3s6q08",
+              "q": "Que signifie, dans un TAF, le groupe « BECMG 1810/1812 24015KT » ?",
+              "choices": ["Le vent sera temporairement du 240°/15 kt entre 10 h et 12 h UTC le 18, puis reviendra aux conditions précédentes", "Le vent s'établira au 240°/15 kt à un moment entre 10 h et 12 h UTC le 18, puis s'y maintiendra", "Le vent changera brusquement le 18 à 10 h UTC", "Il y a 40 % de probabilité d'un vent du 240°/15 kt le 18"],
+              "answer": 1,
+              "explanation": "BECMG (becoming) annonce une évolution durable qui se produit au cours de la période indiquée, ici entre 10 h et 12 h UTC le 18. Après 12 h UTC, les nouvelles conditions remplacent les anciennes."
+            },
+            {
+              "id": "u3s6q09",
+              "q": "Dans un TAF, que signifie « FM171430 » ?",
+              "choices": ["À partir du 17 à 14 h 30 UTC, les conditions qui suivent remplacent entièrement les précédentes", "Les conditions qui suivent dureront 14 h 30 min", "Les conditions qui suivent prendront fin le 17 à 14 h 30 UTC", "Des fluctuations temporaires sont prévues jusqu'au 17 à 14 h 30 UTC"],
+              "answer": 0,
+              "explanation": "FM (from) introduit un changement rapide à l'instant indiqué (jour, heure et minutes UTC). Toutes les conditions prévues avant ce groupe sont remplacées par celles qui le suivent."
+            },
+            {
+              "id": "u3s6q10",
+              "q": "Que signifie, dans un TAF, « PROB30 TEMPO 1715/1719 TSRA » ?",
+              "choices": ["Des orages avec pluie pendant 30 minutes entre 15 h et 19 h UTC", "Des orages sur 30 % de la zone entre 15 h et 19 h UTC", "Une probabilité de 30 % d'orages temporaires avec pluie entre 15 h et 19 h UTC le 17", "Des orages accompagnés de 30 mm de pluie entre 15 h et 19 h UTC"],
+              "answer": 2,
+              "explanation": "PROB30 indique une probabilité de 30 % (seules les valeurs 30 et 40 sont utilisées). Suivi de TEMPO, il signifie qu'il y a 30 % de risque de fluctuations temporaires, ici des orages avec pluie, pendant la période."
+            },
+            {
+              "id": "u3s6q11",
+              "q": "Vous préparez un vol VFR. Quelle carte donne le vent et la température prévus à 5 000 ft, et laquelle situe les fronts et les zones de givrage et de turbulence ?",
+              "choices": ["La TEMSI pour le vent et la température, la WINTEM pour les fronts et les phénomènes", "Le METAR pour les deux", "Le TAF pour le vent, le SIGMET pour les fronts", "La WINTEM pour le vent et la température, la TEMSI pour les fronts et les phénomènes"],
+              "answer": 3,
+              "explanation": "La WINTEM représente les vents (barbules) et les températures prévus à différents niveaux, utiles au calcul de dérive et de vitesse sol. La TEMSI est la carte du temps significatif : fronts, nuages, givrage, turbulence, orages, isotherme 0 °C."
+            },
+            {
+              "id": "u3s6q12",
+              "q": "Qu'est-ce qu'un SIGMET ?",
+              "choices": ["Une observation horaire d'aérodrome", "Un avertissement sur des phénomènes météorologiques dangereux en route, observés ou prévus", "Une carte des vents et des températures en altitude", "Une prévision d'aérodrome valable 9 à 30 heures"],
+              "answer": 1,
+              "explanation": "Le SIGMET est émis par un centre de veille météorologique pour signaler des phénomènes pouvant affecter la sécurité des vols : orages, turbulence ou givrage forts, ondes orographiques fortes, cendres volcaniques. Il se consulte avant et pendant le vol."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
