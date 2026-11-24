@@ -203,6 +203,7 @@ table.fmt { width: 100%; border-collapse: collapse; font-size: 14px; }
 table.fmt th { text-align: left; font: 700 13px var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--rule); }
 table.fmt td { padding: 10px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
 table.fmt tr:last-child td { border-bottom: 0; }
+@media (max-width: 520px) { table.fmt th, table.fmt td { padding: 8px 5px; } table.fmt td.num { white-space: nowrap; } table.fmt .btn.sm { padding: 6px 9px; } }
 .dot { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--c); color: var(--surface); font: 800 13px var(--display); flex: none; }
 .scroll-x { overflow-x: auto; }
 .subj { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
@@ -245,6 +246,41 @@ table.fmt tr:last-child td { border-bottom: 0; }
 .hit a { font-size: 12.5px; }
 .confirm { padding: 14px; border-radius: 12px; background: var(--bad-bg); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
 .toast { position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 60; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-weight: 600; font-size: 14px; box-shadow: var(--shadow); max-width: calc(100vw - 32px); }
+/* Entraînement, calcul mental, flashcards, planning, schémas */
+.hub { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.hub .card { padding: 16px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; }
+.hub .card h3 { font-size: 22px; display: flex; align-items: center; gap: 8px; }
+.hub .card h3 svg.i { color: var(--accent); width: 22px; height: 22px; }
+.hub .card p { margin: 0; color: var(--ink-2); font-size: 14px; }
+.hub .card .row { margin-top: auto; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.pickchip { border: 1.5px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 7px 13px; cursor: pointer; font-size: 14px; font-weight: 600; }
+.pickchip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.rules { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.rule { padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.rule b { font: 700 16px var(--display); text-transform: uppercase; letter-spacing: .04em; color: var(--accent); }
+.calc-in { font: 600 22px var(--mono); max-width: 260px; }
+.unit { font: 600 18px var(--mono); color: var(--muted); }
+.flash { width: 100%; min-height: 260px; border-radius: 20px; border: 2px solid var(--rule); background: var(--surface); box-shadow: 0 4px 0 var(--rule); cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; text-align: center; }
+.flash.flipped { border-color: var(--c, var(--accent)); box-shadow: 0 4px 0 var(--c, var(--accent)); }
+.flash-front { font: 800 30px/1.15 var(--display); }
+.flash-back { font-size: 18px; color: var(--ink-2); max-width: 52ch; }
+.timer.okf { color: var(--good); border-color: var(--good); } .timer.kof { color: var(--bad); border-color: var(--bad); }
+.plan { display: flex; flex-direction: column; gap: 6px; }
+.plan-row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); font-size: 14px; }
+.figs { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.fig { padding: 10px; display: flex; flex-direction: column; gap: 8px; margin: 0; }
+.fig-paper { --paper: #ffffff; display: block; width: 100%; background: var(--paper); border-radius: 10px; padding: 8px; border: 0; cursor: zoom-in; }
+.fig-paper svg, .fig-paper img { width: 100%; height: auto; display: block; }
+.fig figcaption { display: flex; flex-direction: column; gap: 3px; font-size: 13.5px; color: var(--ink-2); }
+.fig figcaption b { color: var(--ink); font-size: 14.5px; }
+.fig figcaption i { font-size: 12px; color: var(--muted); }
+.zoom-box { width: 100%; max-width: 1000px; background: var(--surface); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 10px; max-height: 94vh; overflow: auto; }
+.fig-paper.big { cursor: default; }
+.resets { display: flex; flex-direction: column; gap: 0; }
+.reset-row { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+.reset-row:last-child { border-bottom: 0; }
+.reset-row .confirm { margin: 0; width: 100%; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 </style>
 
@@ -282,6 +318,10 @@ const ICON = {
   book: '<path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5"/>',
   grid: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
   left: '<path d="M15 18l-6-6 6-6"/>', right: '<path d="M9 6l6 6-6 6"/>',
+  calc: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 11h2M12 11h2M16 11v6M8 15h2M12 15h2M8 18h6"/>',
+  cards: '<rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 012 2v12"/>',
+  timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/>',
+  reset: '<path d="M3 12a9 9 0 109-9 9.7 9.7 0 00-6.7 2.8L3 8"/><path d="M3 3v5h5"/>',
 };
 const ic = (n, cls = 'i') => `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -323,7 +363,7 @@ async function loadData() {
 
 // ───────────── Progression (compte claude.ai, sinon cet appareil) ─────────────
 const LS_KEY = 'prepa-lapl-ppl-v1';
-const blank = () => ({ v: 1, updatedAt: 0, xp: 0, streak: { count: 0, last: null }, skills: {}, q: {}, mistakes: [], exams: [], active: null, lib: {}, days: {} });
+const blank = () => ({ v: 1, updatedAt: 0, xp: 0, streak: { count: 0, last: null }, skills: {}, q: {}, mistakes: [], exams: [], active: null, lib: {}, days: {}, calc: {}, cards: {}, best: { sprint: {} }, plan: {} });
 let P = blank();
 let sync = { state: 'local', doc: null };
 function readLocal() { try { const s = localStorage.getItem(LS_KEY); return s ? Object.assign(blank(), JSON.parse(s)) : null; } catch { return null; } }
@@ -388,11 +428,11 @@ const mastered = (q) => (P.q[q.id] || [0, 0, 0])[2] === 1;
 const level = (s) => P.skills[s.id] || 0;
 
 // ───────────── Rendu général ─────────────
-const ROUTES = ['parcours', 'reviser', 'examen', 'ressources', 'progres'];
-const NAV = [['parcours', 'Parcours', 'path'], ['reviser', 'Réviser', 'review'], ['examen', 'Examen', 'exam'], ['ressources', 'Ressources', 'lib'], ['progres', 'Progrès', 'stats']];
-let view = { lesson: null, exam: null, sheet: null, resultsId: null, ficheId: null, libQ: '', libLang: '', glossQ: '', corrAll: false, confirmReset: false, confirmEnd: false, showGrid: false };
-const route = () => { const h = location.hash.slice(1); if (h.startsWith('fiche-')) return 'fiche'; if (h.startsWith('resultat-')) return 'resultat'; return ROUTES.includes(h) ? h : 'parcours'; };
-const busy = () => !!(view.lesson || view.exam);
+const ROUTES = ['parcours', 'entrainement', 'examen', 'ressources', 'progres', 'calcul', 'flashcards'];
+const NAV = [['parcours', 'Parcours', 'path'], ['entrainement', 'Entraînement', 'review'], ['examen', 'Examen', 'exam'], ['ressources', 'Ressources', 'lib'], ['progres', 'Progrès', 'stats']];
+let view = { lesson: null, exam: null, sheet: null, calc: null, cards: null, sprint: null, zoom: null, calcCats: [], cardKind: 'lexique', cardUnit: '', libQ: '', libLang: '', glossQ: '', corrAll: false, confirm: null, confirmEnd: false, showGrid: false };
+const route = () => { const h = location.hash.slice(1); if (h.startsWith('fiche-')) return 'fiche'; if (h.startsWith('resultat-')) return 'resultat'; if (h === 'reviser') return 'entrainement'; return ROUTES.includes(h) ? h : 'parcours'; };
+const busy = () => !!(view.lesson || view.exam || view.calc || view.cards || view.sprint);
 
 function renderStats() {
   const el = $('#stats'); if (!el) return;
@@ -401,7 +441,7 @@ function renderStats() {
 }
 function renderNav() {
   const r = route();
-  const cur = r === 'fiche' ? 'parcours' : r === 'resultat' ? 'examen' : r;
+  const cur = r === 'fiche' ? 'parcours' : r === 'resultat' ? 'examen' : r === 'calcul' || r === 'flashcards' ? 'entrainement' : r;
   $('#nav').innerHTML = NAV.map(([id, label, i]) => `<a href="#${id}" ${cur === id ? 'aria-current="page"' : ''}>${ic(i)}<span>${label}</span></a>`).join('');
 }
 function render() {
@@ -409,12 +449,12 @@ function render() {
   if (!D) return;
   const r = route();
   const main = $('#main');
-  const html = { parcours: viewPath, reviser: viewReview, examen: viewExamHome, ressources: viewResources, progres: viewProgress, fiche: viewFiche, resultat: viewResult }[r]();
+  const html = { parcours: viewPath, entrainement: viewTraining, examen: viewExamHome, ressources: viewResources, progres: viewProgress, fiche: viewFiche, resultat: viewResult, calcul: viewCalcHome, flashcards: viewCardsHome }[r]();
   main.innerHTML = `<div class="wrap">${html}</div>`;
   renderOverlay();
 }
 function toast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 3200); }
-window.addEventListener('hashchange', () => { view.sheet = null; view.confirmReset = false; render(); window.scrollTo(0, 0); });
+window.addEventListener('hashchange', () => { view.sheet = null; view.confirm = null; render(); window.scrollTo(0, 0); });
 
 // ───────────── Parcours ─────────────
 function nextSkill() {
@@ -478,6 +518,7 @@ function sheetHtml(s) {
       ${l > 0 && l < 3 ? `<button class="btn ghost" data-act="practice" data-skill="${s.id}">Revoir les niveaux validés</button>` : ''}
     </div>
     <p class="small muted" style="margin:0">Chaque niveau propose 10 questions. Il est validé à partir de 7 bonnes réponses.</p>
+    ${l > 0 || okN ? (view.confirm === 'skill:' + s.id ? `<div class="confirm"><div class="grow small"><b>Réinitialiser cette leçon ?</b> Niveau, questions réussies et erreurs de la leçon repartent à zéro.</div><button class="btn bad sm" data-act="do-reset" data-what="skill:${s.id}">Réinitialiser</button><button class="btn alt sm" data-act="ask-reset" data-what="">Annuler</button></div>` : `<button class="btn ghost sm" data-act="ask-reset" data-what="skill:${s.id}">${ic('reset')} Réinitialiser cette leçon</button>`) : ''}
   </div></div>`;
 }
 
@@ -505,6 +546,7 @@ function viewFiche() {
     <a class="backlink" href="#parcours">${ic('back')} Parcours</a>
     <div class="fiche-head"><div class="eyebrow" style="color:inherit;opacity:.85">Matière ${u.n} · ${esc(u.title)} · fiche ${idx + 1}/${u.skills.length}</div><h1>${esc(s.icon || '')} ${esc(s.title)}</h1></div>
     <article class="card tips">${tipsHtml(s.tips)}</article>
+    ${figuresHtml(s)}
     <h2 class="section-title">Lexique</h2>
     <dl class="card gloss">${s.vocab.map(([t, d]) => `<div><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl>
     <div class="row wrapflex" style="margin-top:20px">
@@ -582,20 +624,309 @@ function lessonNext() {
 }
 
 // ───────────── Réviser ─────────────
-function viewReview() {
+function viewTraining() {
   const byUnit = D.units.map((u) => ({ u, n: P.mistakes.filter((id) => Q.get(id)?.unit === u).length }));
-  return `<h1 class="section-title" style="margin-top:4px">Réviser</h1>
-  <div class="card pad">
-    <div class="row wrapflex"><div class="grow"><div class="eyebrow">Mes erreurs</div><div class="big num">${P.mistakes.length}</div><div class="small muted">question${P.mistakes.length > 1 ? 's' : ''} ratée${P.mistakes.length > 1 ? 's' : ''} à revoir. Une question réussie sort de la liste.</div></div>
-    <button class="btn" data-act="review-mistakes" ${P.mistakes.length ? '' : 'disabled'}>Revoir mes erreurs</button></div>
+  const cs = cardStats(deck('lexique', ''));
+  const calcN = Object.values(P.calc).reduce((t, x) => t + x[0], 0), calcOkN = Object.values(P.calc).reduce((t, x) => t + x[1], 0);
+  return `<h1 class="section-title" style="margin-top:4px">Entraînement</h1>
+  <div class="hub">
+    <div class="card"><h3>${ic('review')} Mes erreurs</h3><p><b class="num">${P.mistakes.length}</b> question${P.mistakes.length > 1 ? 's' : ''} ratée${P.mistakes.length > 1 ? 's' : ''}. Une question réussie sort de la liste.</p><div class="row"><button class="btn sm" data-act="review-mistakes" ${P.mistakes.length ? '' : 'disabled'}>Revoir mes erreurs</button></div></div>
+    <a class="card" href="#calcul"><h3>${ic('calc')} Calcul mental</h3><p>Facteur de base, dérive, vent traversier, 1/60, descente, altimétrie, carburant, virage, centrage… à l'infini, avec la méthode.</p><div class="row small muted">${calcN ? `${calcOkN}/${calcN} justes` : 'Jamais commencé'}</div></a>
+    <a class="card" href="#flashcards"><h3>${ic('cards')} Flashcards</h3><p>Le lexique des 9 matières${D.keyNumbers && Object.values(D.keyNumbers).some((a) => a.length) ? ' et les chiffres clés' : ''}, en révision espacée.</p><div class="row small muted">${cs.due} à revoir · ${cs.fresh} nouvelles</div></a>
+    <div class="card"><h3>${ic('timer')} Défi chrono</h3><p>3 minutes, un maximum de bonnes réponses. Record : <b class="num">${P.best.sprint.all || 0}</b>.</p><div class="row"><button class="btn sm" data-act="sprint-start">Lancer le défi</button></div></div>
+    <div class="card"><h3>${ic('path')} Entraînement mixte</h3><p>10 questions des 9 matières, d'abord celles que tu n'as pas encore réussies.</p><div class="row"><button class="btn alt sm" data-act="review-mixed">Lancer</button></div></div>
+    <a class="card" href="#examen"><h3>${ic('exam')} Examen blanc</h3><p>Format DGAC chronométré : une épreuve ou les 9 d'affilée, avec planning jusqu'au jour J.</p></a>
   </div>
   <h2 class="section-title">Par matière</h2>
   <div class="subj">${byUnit.map(({ u, n }) => `<div class="card ${u.cls}"><div class="row"><span class="dot">${u.n}</span><b class="grow">${esc(u.title)}</b></div>
-    <div class="small muted">${n} erreur${n > 1 ? 's' : ''} · ${u.qs.filter(mastered).length}/${u.qs.length} réussies</div>
-    <div class="row wrapflex"><button class="btn sm" data-act="review-unit" data-unit="${u.id}">10 questions</button>${n ? `<button class="btn alt sm" data-act="review-unit-mistakes" data-unit="${u.id}">Mes erreurs</button>` : ''}</div></div>`).join('')}</div>
-  <h2 class="section-title">Entraînement mixte</h2>
-  <div class="card pad row wrapflex"><div class="grow">10 questions tirées au hasard dans les 9 matières, en privilégiant celles que tu n'as pas encore réussies.</div><button class="btn alt" data-act="review-mixed">Lancer</button></div>`;
+    <div class="small muted">${n} erreur${n > 1 ? 's' : ''} · ${u.qs.filter(mastered).length}/${u.qs.length} réussies · record chrono ${P.best.sprint[u.id] || 0}</div>
+    <div class="row wrapflex"><button class="btn sm" data-act="review-unit" data-unit="${u.id}">10 questions</button>${n ? `<button class="btn alt sm" data-act="review-unit-mistakes" data-unit="${u.id}">Mes erreurs</button>` : ''}<button class="btn ghost sm" data-act="sprint-start" data-unit="${u.id}">${ic('timer')} Chrono</button></div></div>`).join('')}</div>`;
 }
+
+// ───────────── Calcul mental ─────────────
+const fr = (n, d = 1) => Number(n).toLocaleString('fr-FR', { maximumFractionDigits: d, minimumFractionDigits: 0 });
+const rint = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+const pick = (a) => a[Math.floor(Math.random() * a.length)];
+const r3 = (x) => String(((Math.round(x) % 360) + 360) % 360 || 360).padStart(3, '0');
+const SIN = { 30: 0.5, 45: 0.71, 60: 0.87, 90: 1 };
+const COS = { 0: 1, 30: 0.87, 45: 0.71, 60: 0.5, 90: 0, 120: -0.5, 135: -0.71, 150: -0.87, 180: -1 };
+const CALC_CATS = {
+  nav: 'Temps, distance, vitesse', vent: 'Vent et dérive', r160: 'Règle du 1/60', desc: 'Descente', conv: 'Conversions',
+  alti: 'Altimétrie et météo', fuel: 'Carburant', turn: 'Virage et facteur de charge', mag: 'Caps, radiales et heures', cg: 'Centrage et portée radio',
+};
+const GEN = {
+  nav: [
+    () => { const vp = pick([60, 75, 80, 90, 100, 120, 150]); const fb = 60 / vp; return { text: `Vitesse propre ${vp} kt. Quel est le facteur de base (minutes par NM) ?`, answer: fb, tol: 0.03, unit: 'min/NM', method: `Fb = 60 ÷ Vp = 60 ÷ ${vp} = ${fr(fb, 2)} min/NM : il faut ${fr(fb, 2)} minute pour parcourir 1 NM.` }; },
+    () => { const vs = pick([60, 80, 90, 100, 120, 150]); const d = rint(12, 90); const t = (d * 60) / vs; return { text: `Vitesse sol ${vs} kt, distance ${d} NM. Temps de vol en minutes ?`, answer: t, tol: 1, unit: 'min', method: `Fb = 60 ÷ ${vs} = ${fr(60 / vs, 2)}. Temps = distance × Fb = ${d} × ${fr(60 / vs, 2)} ≈ ${fr(t, 0)} min.` }; },
+    () => { const vs = pick([90, 100, 105, 120, 150]); const t = rint(6, 40); const d = (vs * t) / 60; return { text: `Vitesse sol ${vs} kt. Distance parcourue en ${t} min (NM) ?`, answer: d, tol: 1, unit: 'NM', method: `En 1 min : ${vs} ÷ 60 = ${fr(vs / 60, 2)} NM. En ${t} min : ${fr(vs / 60, 2)} × ${t} ≈ ${fr(d, 0)} NM.` }; },
+    () => { const t = pick([6, 8, 10, 12, 15, 20]); const d = rint(10, 40); const vs = (d * 60) / t; return { text: `Vous parcourez ${d} NM entre deux repères en ${t} min. Vitesse sol (kt) ?`, answer: vs, tol: 2, unit: 'kt', method: `Vs = distance × 60 ÷ temps = ${d} × 60 ÷ ${t} = ${fr(vs, 0)} kt.` }; },
+  ],
+  vent: [
+    () => { const vw = pick([10, 15, 20, 25, 30]); const vp = pick([75, 90, 100, 120, 150]); const x = (60 * vw) / vp; return { text: `Vent ${vw} kt, vitesse propre ${vp} kt. Dérive maximale (degrés) ?`, answer: x, tol: 1, unit: '°', method: `Xmax = Vw × Fb = ${vw} × ${fr(60 / vp, 2)} (soit 60 × Vw ÷ Vp) ≈ ${fr(x, 0)}°.` }; },
+    () => { const a = pick([30, 45, 60, 90]); const rv = rint(1, 36) * 10; const right = Math.random() < 0.5; const wd = right ? rv + a : rv - a; const vw = pick([15, 20, 25, 30]); const vp = pick([90, 100, 120]); const xm = (60 * vw) / vp; const x = xm * SIN[a]; return { text: `Route vraie ${r3(rv)}°, vent du ${r3(wd)}° pour ${vw} kt, Vp ${vp} kt. Quel cap vrai prendre ?`, answer: rv + (right ? x : -x), tol: Math.max(2, xm * 0.15), unit: '°', kind: 'deg', method: `Xmax = 60 × ${vw} ÷ ${vp} ≈ ${fr(xm, 0)}°. Vent à ${a}° de la route (sin ${a}° ≈ ${fr(SIN[a], 2)}) : dérive ≈ ${fr(x, 0)}°. Le vent vient de ${right ? 'droite' : 'gauche'} : on corrige vers lui, cap ≈ ${r3(rv + (right ? x : -x))}°.` }; },
+    () => { const a = pick([0, 30, 45, 60, 90, 120, 150, 180]); const rv = rint(1, 36) * 10; const wd = rv + (Math.random() < 0.5 ? a : -a); const vw = pick([10, 15, 20, 25, 30]); const vp = pick([90, 100, 110, 120]); const ve = vw * COS[a]; const vs = vp - ve; return { text: `Route ${r3(rv)}°, vent du ${r3(wd)}° pour ${vw} kt, Vp ${vp} kt. Vitesse sol approximative (kt) ?`, answer: vs, tol: Math.max(3, vw * 0.1), unit: 'kt', method: `Angle entre le vent et la route : ${a}°. Vent effectif = Vw × cos ${a}° ≈ ${vw} × ${fr(COS[a], 2)} = ${fr(ve, 0)} kt ${ve >= 0 ? 'de face' : 'arrière'}. Vs ≈ ${vp} ${ve >= 0 ? '−' : '+'} ${fr(Math.abs(ve), 0)} = ${fr(vs, 0)} kt.` }; },
+    () => { const a = pick([30, 45, 60, 90]); const q = rint(1, 36); const wd = q * 10 + (Math.random() < 0.5 ? a : -a); const vw = pick([10, 12, 15, 20, 25]); const xw = vw * SIN[a]; return { text: `Piste ${String(q).padStart(2, '0')}, vent du ${r3(wd)}° pour ${vw} kt. Composante de vent traversier (kt) ?`, answer: xw, tol: Math.max(1.5, vw * 0.1), unit: 'kt', method: `Piste ${String(q).padStart(2, '0')} = ${r3(q * 10)}°. Angle avec le vent : ${a}°. Traversier = Vw × sin ${a}° ≈ ${vw} × ${fr(SIN[a], 2)} ≈ ${fr(xw, 0)} kt (règle de l'horloge : 30° = la moitié, 60° et plus ≈ tout le vent).` }; },
+  ],
+  r160: [
+    () => { const d = rint(15, 60); const e = rint(1, 5); const ang = (60 * e) / d; return { text: `Après ${d} NM de vol, vous êtes ${e} NM à côté de la route prévue. Écart angulaire (degrés) ?`, answer: ang, tol: 1, unit: '°', method: `Règle du 1/60 : écart (°) = 60 × écart (NM) ÷ distance parcourue = 60 × ${e} ÷ ${d} ≈ ${fr(ang, 0)}°.` }; },
+    () => { const d = pick([20, 30, 40]); const rest = pick([20, 30, 40, 60]); const e = rint(1, 4); const a1 = (60 * e) / d; const a2 = (60 * e) / rest; return { text: `Après ${d} NM, vous êtes ${e} NM à droite de la route ; il reste ${rest} NM. De combien de degrés corriger le cap pour arriver à destination ?`, answer: a1 + a2, tol: 1.5, unit: '°', method: `Écart déjà pris : 60 × ${e} ÷ ${d} = ${fr(a1, 0)}°. Pour rejoindre le point d'arrivée : 60 × ${e} ÷ ${rest} = ${fr(a2, 0)}°. Correction totale vers la gauche ≈ ${fr(a1 + a2, 0)}°.` }; },
+    () => { const dist = pick([5, 10, 20, 30]); const h = pick([300, 500, 1000, 1500]); const p = (h / (dist * 6076)) * 60 * 57.3 / 60; const deg = (h / 100) * 60 / (dist * 60.76); return { text: `Pour perdre ${h} ft sur ${dist} NM, quelle pente (en degrés, approximativement) ?`, answer: deg, tol: Math.max(0.3, deg * 0.12), unit: '°', method: `1 NM ≈ 6 000 ft. Pente ≈ hauteur ÷ distance = ${h} ÷ (${dist} × 6 000) ; avec la règle du 1/60 (1° ≈ 100 ft par NM) : ${h} ÷ 100 ÷ ${dist} ≈ ${fr(deg, 1)}°.` }; },
+  ],
+  desc: [
+    () => { const vs = pick([70, 80, 90, 100, 110, 120]); const vz = 5 * vs; return { text: `Vitesse sol ${vs} kt. Taux de descente pour suivre un plan à 3° (ft/min) ?`, answer: vz, tol: vz * 0.1, unit: 'ft/min', method: `Règle : Vz (ft/min) ≈ 5 × Vs (kt) pour 3° = 5 × ${vs} = ${vz} ft/min (valeur exacte ≈ 5,3 × Vs).` }; },
+    () => { const h = pick([2000, 2500, 3000, 3500, 4000, 4500, 5000, 6000]); const vz = pick([500, 600, 700, 800, 1000]); const vs = pick([90, 100, 110, 120]); const t = h / vz; const d = (vs * t) / 60; return { text: `Vous devez descendre de ${fr(h, 0)} ft à ${vz} ft/min, vitesse sol ${vs} kt. À combien de NM du point visé commencer la descente ?`, answer: d, tol: 1, unit: 'NM', method: `Durée : ${fr(h, 0)} ÷ ${vz} = ${fr(t, 1)} min. Distance : ${fr(t, 1)} × ${vs} ÷ 60 ≈ ${fr(d, 0)} NM.` }; },
+    () => { const pct = pick([3, 4, 5, 6, 8, 10]); const vs = pick([70, 80, 90, 100]); const vz = (pct * vs * 6076) / 6000; return { text: `Pente de ${pct} % à ${vs} kt de vitesse sol. Taux de descente (ft/min) ?`, answer: vz, tol: vz * 0.1, unit: 'ft/min', method: `Vz (ft/min) ≈ pente (%) × Vs (kt) = ${pct} × ${vs} ≈ ${fr(pct * vs, 0)} ft/min (1 kt ≈ 101 ft/min, d'où la règle).` }; },
+  ],
+  conv: [
+    () => { const v = rint(10, 150); return { text: `${v} NM en kilomètres ?`, answer: v * 1.852, tol: v * 1.852 * 0.02, unit: 'km', method: `1 NM = 1,852 km : ${v} × 1,852 ≈ ${fr(v * 1.852, 0)} km (astuce : ×2 puis −7 %).` }; },
+    () => { const v = rint(20, 300); return { text: `${v} km en milles nautiques ?`, answer: v / 1.852, tol: (v / 1.852) * 0.02, unit: 'NM', method: `${v} ÷ 1,852 ≈ ${fr(v / 1.852, 0)} NM (astuce : la moitié + 8 %).` }; },
+    () => { const v = pick([500, 1000, 1500, 2000, 2500, 3500, 4500, 5500, 6500]); return { text: `${fr(v, 0)} ft en mètres ?`, answer: v * 0.3048, tol: v * 0.3048 * 0.02, unit: 'm', method: `1 ft = 0,3048 m : ${fr(v, 0)} × 0,3048 ≈ ${fr(v * 0.3048, 0)} m (astuce : ÷ 10 × 3).` }; },
+    () => { const v = pick([150, 300, 500, 800, 1000, 1500, 2000]); return { text: `${fr(v, 0)} m en pieds ?`, answer: v / 0.3048, tol: (v / 0.3048) * 0.02, unit: 'ft', method: `${fr(v, 0)} ÷ 0,3048 ≈ ${fr(v / 0.3048, 0)} ft (astuce : × 3 + 10 %).` }; },
+    () => { const v = pick([60, 80, 90, 100, 110, 120, 140]); return { text: `${v} kt en km/h ?`, answer: v * 1.852, tol: v * 1.852 * 0.02, unit: 'km/h', method: `1 kt = 1 NM/h = 1,852 km/h : ${v} × 1,852 ≈ ${fr(v * 1.852, 0)} km/h.` }; },
+    () => { const v = pick([40, 60, 80, 100, 110, 120, 150]); return { text: `${v} litres d'AVGAS 100LL en kg (densité 0,72) ?`, answer: v * 0.72, tol: v * 0.72 * 0.02, unit: 'kg', method: `Masse = volume × densité = ${v} × 0,72 = ${fr(v * 0.72, 1)} kg.` }; },
+    () => { const v = pick([10, 20, 25, 30, 40, 50]); return { text: `${v} gallons US en litres ?`, answer: v * 3.785, tol: v * 3.785 * 0.02, unit: 'L', method: `1 gal US ≈ 3,785 L : ${v} × 3,785 ≈ ${fr(v * 3.785, 0)} L.` }; },
+  ],
+  alti: [
+    () => { const z = pick([0, 150, 300, 450, 600, 900, 1200, 1500]); const q = 1013 + pick([-25, -20, -15, -10, -8, 8, 10, 15, 20]); const zp = z + (1013 - q) * 28; return { text: `Terrain à ${fr(z, 0)} ft, QNH ${q} hPa. Altitude-pression du terrain (ft) ?`, answer: zp, tol: Math.abs(1013 - q) * 3 + 25, unit: 'ft', method: `1 hPa ≈ 28 ft près du sol. Zp = altitude + (1013 − QNH) × 28 = ${fr(z, 0)} + (${1013 - q}) × 28 ≈ ${fr(zp, 0)} ft.` }; },
+    () => { const z = pick([2000, 3000, 4000, 5000, 6000, 7000]); const t = rint(-10, 25); const isa = 15 - 2 * (z / 1000); return { text: `À ${fr(z, 0)} ft, la température est de ${t} °C. Écart à l'atmosphère standard (°C) ?`, answer: t - isa, tol: 0.6, unit: '°C', kind: 'signed', method: `ISA à ${fr(z, 0)} ft : 15 − 2 × ${z / 1000} = ${fr(isa, 0)} °C. Écart = ${t} − (${fr(isa, 0)}) = ISA ${t - isa >= 0 ? '+' : ''}${fr(t - isa, 0)}.` }; },
+    () => { const zp = pick([0, 1000, 2000, 3000, 4000, 5000]); const ec = pick([-10, -5, 5, 10, 15, 20]); const zd = zp + 120 * ec; return { text: `Altitude-pression ${fr(zp, 0)} ft, température ISA ${ec > 0 ? '+' : ''}${ec}. Altitude-densité approximative (ft) ?`, answer: zd, tol: 150, unit: 'ft', method: `Règle : environ 120 ft par °C d'écart ISA. Zd ≈ ${fr(zp, 0)} + 120 × (${ec}) = ${fr(zd, 0)} ft.` }; },
+    () => { const t = rint(12, 30); const td = t - rint(2, 12); const h = (t - td) * 400; return { text: `Au sol : température ${t} °C, point de rosée ${td} °C. Hauteur approximative de la base des cumulus (ft) ?`, answer: h, tol: (t - td) * 15 + 50, unit: 'ft', method: `Base ≈ 400 ft × (T − Td) = 400 × ${t - td} ≈ ${fr(h, 0)} ft au-dessus du sol (≈ 125 m par °C).` }; },
+  ],
+  fuel: [
+    () => { const c = pick([18, 20, 24, 25, 28, 30, 35]); const t = pick([45, 60, 75, 90, 100, 120, 150]); const f = c * (t / 60 + 0.5); return { text: `Consommation ${c} L/h, vol de ${t} min de jour. Carburant minimal avec la réserve finale de 30 min (L), roulage non compris ?`, answer: f, tol: 1.5, unit: 'L', method: `Temps total = ${t} + 30 min = ${fr(t / 60 + 0.5, 2)} h. Carburant = ${c} × ${fr(t / 60 + 0.5, 2)} ≈ ${fr(f, 0)} L.` }; },
+    () => { const c = pick([20, 24, 25, 30, 32]); const f = pick([60, 80, 90, 100, 110, 120]); const e = (f / c) * 60; return { text: `${f} L utilisables, consommation ${c} L/h. Autonomie totale (minutes) ?`, answer: e, tol: 2, unit: 'min', method: `Autonomie = ${f} ÷ ${c} = ${fr(f / c, 2)} h ≈ ${fr(e, 0)} min.` }; },
+    () => { const c = pick([20, 25, 30]); const f = pick([80, 100, 110, 120]); const vs = pick([90, 100, 110]); const auto = f / c - 0.5; const d = auto * vs; return { text: `${f} L utilisables, ${c} L/h, Vs ${vs} kt, réserve de 30 min à conserver. Distance franchissable (NM) ?`, answer: d, tol: Math.max(3, d * 0.03), unit: 'NM', method: `Autonomie utilisable : ${f} ÷ ${c} − 0,5 = ${fr(auto, 2)} h. Distance : ${fr(auto, 2)} × ${vs} ≈ ${fr(d, 0)} NM.` }; },
+  ],
+  turn: [
+    () => { const a = pick([90, 180, 270, 360, 45, 135]); return { text: `En virage au taux standard (taux 1), combien de secondes pour tourner de ${a}° ?`, answer: a / 3, tol: 2, unit: 's', method: `Taux 1 = 3°/s (360° en 2 min). Temps = ${a} ÷ 3 = ${fr(a / 3, 0)} s.` }; },
+    () => { const vp = pick([80, 90, 100, 110, 120, 130]); const b = vp / 10 + 7; return { text: `Vitesse propre ${vp} kt. Inclinaison approximative pour un virage au taux standard (degrés) ?`, answer: b, tol: 2, unit: '°', method: `Règle : inclinaison ≈ Vp ÷ 10 + 7 = ${vp / 10} + 7 = ${fr(b, 0)}°.` }; },
+    () => { const p = pick([30, 45, 60]); const n = 1 / Math.cos((p * Math.PI) / 180); return { text: `Facteur de charge en virage en palier à ${p}° d'inclinaison ?`, answer: n, tol: 0.05, unit: 'g', method: `n = 1 ÷ cos ${p}° = ${fr(n, 2)} g (30° : 1,15 ; 45° : 1,41 ; 60° : 2).` }; },
+    () => { const p = pick([30, 45, 60]); const vs = pick([45, 50, 55, 60]); const n = 1 / Math.cos((p * Math.PI) / 180); const v = vs * Math.sqrt(n); return { text: `Vitesse de décrochage en ligne droite ${vs} kt. Vitesse de décrochage en virage à ${p}° (kt) ?`, answer: v, tol: 1.5, unit: 'kt', method: `n = 1 ÷ cos ${p}° = ${fr(n, 2)}. Vs virage = Vs × √n = ${vs} × ${fr(Math.sqrt(n), 2)} ≈ ${fr(v, 0)} kt.` }; },
+  ],
+  mag: [
+    () => { const rv = rint(1, 359); const d = rint(1, 6); const east = Math.random() < 0.5; const rm = rv + (east ? -d : d); return { text: `Route vraie ${r3(rv)}°, déclinaison ${d}° ${east ? 'Est' : 'Ouest'}. Route magnétique ?`, answer: rm, tol: 0.5, unit: '°', kind: 'deg', method: `Rm = Rv − déclinaison (Est positive) : ${east ? `${r3(rv)} − ${d}` : `${r3(rv)} + ${d}`} = ${r3(rm)}°. « Est, on retranche ; Ouest, on ajoute. »` }; },
+    () => { const cm = rint(1, 359); const d = rint(1, 4); const east = Math.random() < 0.5; const cc = cm + (east ? -d : d); return { text: `Cap magnétique ${r3(cm)}°, déviation du compas ${east ? '+' : '−'}${d}° (${east ? 'Est' : 'Ouest'}). Cap compas à afficher ?`, answer: cc, tol: 0.5, unit: '°', kind: 'deg', method: `Cc = Cm − déviation (Est positive) = ${r3(cm)} ${east ? '−' : '+'} ${d} = ${r3(cc)}°.` }; },
+    () => { const r = rint(1, 36) * 10; return { text: `Vous êtes sur la radiale ${r3(r)} d'un VOR. Quel QDM afficher pour rejoindre la station ?`, answer: r + 180, tol: 0.5, unit: '°', kind: 'deg', method: `QDM = radiale (QDR) ± 180° = ${r3(r)} ${r >= 180 ? '−' : '+'} 180 = ${r3(r + 180)}°.` }; },
+    () => { const summer = Math.random() < 0.5; const toUtc = Math.random() < 0.5; const h = rint(6, 20); const m = pick([0, 10, 15, 20, 30, 40, 45, 50]); const off = summer ? 2 : 1; const res = toUtc ? h - off : h + off; return { text: `Il est ${String(h).padStart(2, '0')} h ${String(m).padStart(2, '0')} ${toUtc ? 'heure légale' : 'UTC'} en France métropolitaine, en ${summer ? 'été' : 'hiver'}. Quelle heure ${toUtc ? 'UTC' : 'légale'} (hh:mm) ?`, answer: res * 60 + m, tol: 0, kind: 'time', unit: '', method: `France métropolitaine : heure légale = UTC + ${off} h en ${summer ? 'été' : 'hiver'}. ${toUtc ? `UTC = ${h} h − ${off} h` : `Légale = ${h} h + ${off} h`} = ${String(res).padStart(2, '0')}:${String(m).padStart(2, '0')}.` }; },
+  ],
+  cg: [
+    () => { const me = pick([600, 620, 650]); const be = pick([0.35, 0.38, 0.4]); const av = pick([140, 150, 160, 170]); const ar = pick([0, 70, 80, 140]); const fu = pick([60, 72, 86, 100]); const ba = pick([0, 10, 20]); const items = [[me, be], [av, 0.41], [ar, 1.19], [fu, 1.12], [ba, 1.9]]; const m = items.reduce((t, x) => t + x[0], 0); const mo = items.reduce((t, x) => t + x[0] * x[1], 0); const cg = mo / m; return { text: `Masse à vide ${me} kg (bras ${fr(be, 2)} m) ; places avant ${av} kg (0,41 m) ; places arrière ${ar} kg (1,19 m) ; carburant ${fu} kg (1,12 m) ; bagages ${ba} kg (1,90 m). Position du centre de gravité (m) ?`, answer: cg, tol: 0.012, unit: 'm', method: `Masse totale : ${fr(m, 0)} kg. Somme des moments : ${items.map((x) => `${x[0]} × ${fr(x[1], 2)}`).join(' + ')} = ${fr(mo, 1)} kg·m. Centrage = ${fr(mo, 1)} ÷ ${fr(m, 0)} ≈ ${fr(cg, 3)} m.` }; },
+    () => { const h = pick([1000, 1500, 2000, 3000, 4500, 6000, 8000]); const d = 1.23 * Math.sqrt(h); return { text: `À ${fr(h, 0)} ft au-dessus d'une station au sol, portée VHF théorique (NM) ?`, answer: d, tol: d * 0.06, unit: 'NM', method: `Portée optique ≈ 1,23 × √h (h en ft) = 1,23 × √${h} = 1,23 × ${fr(Math.sqrt(h), 1)} ≈ ${fr(d, 0)} NM.` }; },
+  ],
+};
+function makeCalc(cats) {
+  const pool = cats.length ? cats : Object.keys(GEN);
+  return Array.from({ length: 10 }, () => { const cat = pick(pool); const g = pick(GEN[cat])(); return { cat, ...g, input: '', checked: false, ok: null }; });
+}
+function parseAnswer(it) {
+  const raw = String(it.input || '').trim();
+  if (it.kind === 'time') { const m = raw.match(/^(\d{1,2})\s*[:hH.]\s*(\d{1,2})$/); return m ? Number(m[1]) * 60 + Number(m[2]) : NaN; }
+  const v = Number(raw.replace(/\s/g, '').replace(',', '.').replace(/[^0-9.+\-]/g, ''));
+  return raw && !Number.isNaN(v) ? v : NaN;
+}
+function calcOk(it) {
+  const v = parseAnswer(it); if (Number.isNaN(v)) return false;
+  if (it.kind === 'time') return ((v - it.answer) % 1440 + 1440) % 1440 === 0;
+  if (it.kind === 'deg') { const d = Math.abs((((v - it.answer) % 360) + 540) % 360 - 180); return d <= it.tol + 1e-9; }
+  return Math.abs(v - it.answer) <= it.tol + 1e-9;
+}
+const fmtAns = (it) => (it.kind === 'time' ? `${String(Math.floor((((it.answer % 1440) + 1440) % 1440) / 60)).padStart(2, '0')}:${String(((it.answer % 60) + 60) % 60).padStart(2, '0')}` : it.kind === 'deg' ? `${r3(it.answer)}${it.unit}` : `${it.kind === 'signed' && it.answer > 0 ? '+' : ''}${fr(it.answer, Math.abs(it.answer) < 10 ? 2 : 0)} ${it.unit}`);
+function viewCalcHome() {
+  const sel = view.calcCats;
+  return `<a class="backlink" href="#entrainement">${ic('back')} Entraînement</a>
+  <h1 class="section-title" style="margin-top:4px">Calcul mental</h1>
+  <p class="lead">Les calculs de l'examen, à faire de tête ou au brouillon : 10 exercices tirés au hasard à chaque série, avec la méthode à chaque réponse. Les valeurs changent à chaque fois, tu peux t'entraîner sans fin.</p>
+  <div class="card pad" style="margin-top:14px"><div class="eyebrow">Choisis les thèmes (aucun = tous)</div>
+    <div class="chips">${Object.entries(CALC_CATS).map(([k, l]) => { const st = P.calc[k] || [0, 0]; return `<button class="pickchip" data-act="calc-cat" data-cat="${k}" aria-pressed="${sel.includes(k)}">${esc(l)}${st[0] ? ` <span class="num muted">${Math.round((st[1] / st[0]) * 100)} %</span>` : ''}</button>`; }).join('')}</div>
+    <div class="row wrapflex" style="margin-top:14px"><button class="btn" data-act="calc-start">Lancer 10 calculs</button><span class="small muted">Réponds avec des nombres (virgule ou point). Les angles et les heures sont acceptés au format 045 ou 14:30.</span></div>
+  </div>
+  <h2 class="section-title">Les règles à connaître</h2>
+  <div class="rules">${[
+    ['Facteur de base', 'Fb = 60 ÷ Vp (min/NM). Temps (min) = distance × Fb.'],
+    ['Dérive maximale', 'Xmax = Vw × Fb = 60 × Vw ÷ Vp. Dérive = Xmax × sin(angle au vent).'],
+    ['Vent effectif', 'Ve = Vw × cos(angle au vent). Vs = Vp − Ve (vent de face).'],
+    ['Sinus utiles', 'sin 30° = 0,5 ; sin 45° ≈ 0,7 ; sin 60° ≈ 0,87 ; règle de l’horloge : 30° = ½, 60° et plus ≈ tout.'],
+    ['Règle du 1/60', '1 NM d’écart à 60 NM = 1°. Écart (°) = 60 × écart (NM) ÷ distance.'],
+    ['Plan à 3°', 'Vz (ft/min) ≈ 5 × Vs (kt). Pente en % : Vz ≈ pente × Vs.'],
+    ['Altimétrie', '1 hPa ≈ 28 ft près du sol. ISA : 15 °C − 2 °C / 1 000 ft. Zd ≈ Zp + 120 ft par °C d’écart ISA.'],
+    ['Nuages', 'Base des cumulus ≈ 400 ft × (T − Td).'],
+    ['Virage', 'Taux 1 = 3°/s. Inclinaison ≈ Vp ÷ 10 + 7. n = 1 ÷ cos φ. Vs virage = Vs × √n.'],
+    ['Caps', 'Rm = Rv − déclinaison Est (+ Ouest). Cc = Cm − déviation Est. QDM = QDR ± 180°.'],
+    ['Conversions', '1 NM = 1,852 km ; 1 ft = 0,3048 m ; 1 kt = 1,852 km/h ; AVGAS 0,72 kg/L ; 1 gal US = 3,785 L.'],
+    ['Radio VHF', 'Portée ≈ 1,23 × √h (ft) NM.'],
+  ].map(([t, d]) => `<div class="card rule"><b>${t}</b><span>${d}</span></div>`).join('')}</div>`;
+}
+function calcHtml() {
+  const C = view.calc;
+  if (C.done) {
+    const ok = C.items.filter((x) => x.ok).length;
+    return `<div class="full" role="dialog" aria-modal="true" aria-label="Fin de la série"><div class="full-body"><div class="endcard">
+      <div class="eyebrow">Calcul mental</div><h2>${ok >= 8 ? 'Excellent !' : ok >= 6 ? 'Bien joué' : 'Continue, ça vient'}</h2>
+      <div class="tiles"><div class="tile"><div class="v num">${ok}/${C.items.length}</div><div class="l">Justes</div></div><div class="tile"><div class="v num">+${C.xp}</div><div class="l">XP</div></div><div class="tile"><div class="v num">${mmss((Date.now() - C.startedAt) / 1000)}</div><div class="l">Temps</div></div></div>
+      <div class="row wrapflex" style="justify-content:center"><button class="btn" data-act="calc-again">Nouvelle série</button><button class="btn alt" data-act="calc-close">Terminer</button></div>
+    </div></div></div>`;
+  }
+  const it = C.items[C.i];
+  const foot = it.checked
+    ? `<div class="foot ${it.ok ? 'ok' : 'ko'}"><div class="foot-in"><div class="verdict"><b>${it.ok ? 'Juste !' : `Réponse attendue : ${esc(fmtAns(it))}`}</b><p>${esc(it.method)}</p></div><button class="btn ${it.ok ? 'good' : 'bad'}" data-act="calc-next">Continuer</button></div></div>`
+    : `<div class="foot"><div class="foot-in"><div class="verdict small muted">${it.tol ? `Tolérance : ± ${esc(it.kind === 'deg' ? fr(it.tol, 0) + '°' : fr(it.tol, it.tol < 1 ? 2 : 0) + ' ' + it.unit)}` : 'Valeur exacte attendue'} · Entrée pour valider</div><button class="btn" data-act="calc-check">Vérifier</button></div></div>`;
+  return `<div class="full" role="dialog" aria-modal="true" aria-label="Calcul mental">
+    <div class="full-top"><button class="x" data-act="calc-close" aria-label="Quitter">${ic('x')}</button><div class="prog"><i style="width:${(C.i / C.items.length) * 100}%"></i></div><span class="small muted num">${C.i + 1}/${C.items.length}</span></div>
+    <div class="full-body"><div>
+      <div class="ctx">${esc(CALC_CATS[it.cat])}</div>
+      <div class="qtext">${esc(it.text)}</div>
+      <div class="row"><input class="input calc-in" id="calc-in" inputmode="${it.kind === 'time' ? 'text' : 'decimal'}" autocomplete="off" placeholder="${it.kind === 'time' ? 'hh:mm' : 'Ta réponse'}" value="${esc(it.input)}" ${it.checked ? 'disabled' : ''} aria-label="Ta réponse"><span class="unit">${esc(it.kind === 'time' ? '' : it.unit)}</span></div>
+    </div></div>${foot}</div>`;
+}
+function calcCheck() {
+  const C = view.calc; const it = C.items[C.i]; if (it.checked) return;
+  const inp = $('#calc-in'); if (inp) it.input = inp.value;
+  if (!String(it.input).trim()) { inp?.focus(); return; }
+  it.checked = true; it.ok = calcOk(it);
+  const st = P.calc[it.cat] || [0, 0]; st[0]++; if (it.ok) st[1]++; P.calc[it.cat] = st;
+  renderOverlay();
+}
+function calcNext() {
+  const C = view.calc;
+  if (C.i < C.items.length - 1) { C.i++; renderOverlay(); $('#calc-in')?.focus(); return; }
+  const ok = C.items.filter((x) => x.ok).length; C.xp = ok + (ok >= 8 ? 5 : 0); addXp(C.xp); C.done = true; save(true); renderOverlay(); renderStats();
+}
+
+// ───────────── Flashcards (boîtes de Leitner) ─────────────
+const BOX_DAYS = [0, 1, 3, 7, 15, 30];
+const addDays = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+function deck(kind, unitId) {
+  const units = D.units.filter((u) => !unitId || u.id === unitId);
+  if (kind === 'chiffres') return units.flatMap((u) => (D.keyNumbers?.[u.id] || []).map(([v, l], i) => ({ id: `k|${u.id}|${i}`, front: l, back: v, u, where: u.title })));
+  return units.flatMap((u) => u.skills.flatMap((s) => s.vocab.map(([t, d]) => ({ id: `v|${s.id}|${t}`, front: t, back: d, u, where: `${u.title} · ${s.title}` }))));
+}
+function cardStats(cards) { const t = today(); let due = 0, fresh = 0, known = 0; for (const c of cards) { const st = P.cards[c.id]; if (!st) fresh++; else { if (st[1] <= t) due++; if (st[0] >= 4) known++; } } return { due, fresh, known, total: cards.length }; }
+function viewCardsHome() {
+  const kind = view.cardKind; const all = deck(kind, view.cardUnit); const st = cardStats(all);
+  const hasKN = D.keyNumbers && Object.values(D.keyNumbers).some((a) => a.length);
+  return `<a class="backlink" href="#entrainement">${ic('back')} Entraînement</a>
+  <h1 class="section-title" style="margin-top:4px">Flashcards</h1>
+  <p class="lead">Une carte que tu sais repasse de plus en plus tard (1, 3, 7, 15 puis 30 jours) ; une carte ratée revient tout de suite. Quelques minutes par jour suffisent pour tout retenir.</p>
+  <div class="card pad" style="margin-top:14px">
+    <div class="row wrapflex"><div class="seg"><button data-act="card-kind" data-kind="lexique" aria-pressed="${kind === 'lexique'}">Lexique</button>${hasKN ? `<button data-act="card-kind" data-kind="chiffres" aria-pressed="${kind === 'chiffres'}">Chiffres clés</button>` : ''}</div>
+    <select class="input" id="card-unit" style="max-width:280px" aria-label="Matière"><option value="">Toutes les matières</option>${D.units.map((u) => `<option value="${u.id}" ${view.cardUnit === u.id ? 'selected' : ''}>${u.n}. ${esc(u.title)}</option>`).join('')}</select></div>
+    <div class="tiles" style="max-width:none;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));margin-top:14px">
+      <div class="tile"><div class="v num">${st.due}</div><div class="l">À revoir</div></div><div class="tile"><div class="v num">${st.fresh}</div><div class="l">Nouvelles</div></div><div class="tile"><div class="v num">${st.known}</div><div class="l">Bien sues</div></div><div class="tile"><div class="v num">${st.total}</div><div class="l">Cartes</div></div></div>
+    <div class="row wrapflex" style="margin-top:14px"><button class="btn" data-act="card-start" ${st.due + st.fresh ? '' : 'disabled'}>Réviser ${Math.min(20, st.due + st.fresh)} cartes</button>${st.due + st.fresh ? '' : '<span class="small muted">Tout est à jour pour aujourd’hui.</span>'}</div>
+  </div>`;
+}
+function startCards() {
+  const all = deck(view.cardKind, view.cardUnit); const t = today();
+  const due = shuffle(all.filter((c) => P.cards[c.id] && P.cards[c.id][1] <= t));
+  const fresh = shuffle(all.filter((c) => !P.cards[c.id]));
+  const items = [...due, ...fresh].slice(0, 20);
+  if (!items.length) return;
+  view.cards = { items, i: 0, flipped: false, known: 0, done: false };
+  renderOverlay();
+}
+function cardsHtml() {
+  const K = view.cards;
+  if (K.done) return `<div class="full" role="dialog" aria-modal="true" aria-label="Fin des flashcards"><div class="full-body"><div class="endcard"><div class="eyebrow">Flashcards</div><h2>Session terminée</h2><div class="tiles"><div class="tile"><div class="v num">${K.known}/${K.items.length}</div><div class="l">Sues</div></div><div class="tile"><div class="v num">+${K.xp}</div><div class="l">XP</div></div><div class="tile"><div class="v num">${K.items.length - K.known}</div><div class="l">À revoir</div></div></div><button class="btn" data-act="cards-close">Terminer</button></div></div></div>`;
+  const c = K.items[K.i];
+  return `<div class="full ${c.u.cls}" role="dialog" aria-modal="true" aria-label="Flashcards">
+    <div class="full-top"><button class="x" data-act="cards-close" aria-label="Quitter">${ic('x')}</button><div class="prog"><i style="width:${(K.i / K.items.length) * 100}%"></i></div><span class="small muted num">${K.i + 1}/${K.items.length}</span></div>
+    <div class="full-body"><div>
+      <button class="flash ${K.flipped ? 'flipped' : ''}" data-act="card-flip" aria-label="Retourner la carte">
+        <span class="ctx">${esc(c.where)}</span>
+        <span class="flash-front">${esc(c.front)}</span>
+        ${K.flipped ? `<span class="flash-back">${esc(c.back)}</span>` : '<span class="small muted">Touche la carte (ou Espace) pour voir la réponse</span>'}
+      </button>
+    </div></div>
+    <div class="foot"><div class="foot-in trio">${K.flipped ? `<button class="btn bad" data-act="card-grade" data-ok="0">À revoir</button><button class="btn good" data-act="card-grade" data-ok="1">Je savais</button>` : `<button class="btn" data-act="card-flip">Voir la réponse</button>`}</div></div>
+  </div>`;
+}
+function gradeCard(ok) {
+  const K = view.cards; const c = K.items[K.i]; const st = P.cards[c.id] || [0, today()];
+  const box = ok ? Math.min(5, st[0] + 1) : 1;
+  P.cards[c.id] = [box, addDays(ok ? BOX_DAYS[box] : 0)];
+  if (ok) K.known++;
+  if (K.i < K.items.length - 1) { K.i++; K.flipped = false; save(); renderOverlay(); return; }
+  K.xp = Math.round(K.known / 2) + 2; addXp(K.xp); K.done = true; save(true); renderOverlay(); renderStats();
+}
+
+// ───────────── Défi chrono ─────────────
+const SPRINT_S = 180;
+function startSprint(unitId) {
+  const pool = unitId ? D.units.find((u) => u.id === unitId).qs : [...Q.values()];
+  view.sprint = { unit: unitId || '', pool: shuffle(pool).slice(0, 120).map((q) => q.id), i: 0, order: shuffle([0, 1, 2, 3]), score: 0, answered: 0, endAt: Date.now() + SPRINT_S * 1000, flash: null, done: false };
+  renderOverlay(); startSprintTick();
+}
+let sprintTick = null;
+function startSprintTick() {
+  clearInterval(sprintTick);
+  sprintTick = setInterval(() => {
+    const S = view.sprint; if (!S || S.done) { clearInterval(sprintTick); return; }
+    const r = (S.endAt - Date.now()) / 1000; const t = $('#sprint-t'); if (t) t.lastChild.textContent = mmss(r);
+    if (r <= 0) endSprint();
+  }, 250);
+}
+function endSprint() {
+  const S = view.sprint; if (!S || S.done) return; clearInterval(sprintTick);
+  S.done = true; const key = S.unit || 'all'; S.best = P.best.sprint[key] || 0; if (S.score > S.best) P.best.sprint[key] = S.score;
+  S.xp = S.score; addXp(S.xp); save(true); renderOverlay(); renderStats();
+}
+function sprintHtml() {
+  const S = view.sprint;
+  if (S.done) return `<div class="full" role="dialog" aria-modal="true" aria-label="Fin du défi"><div class="full-body"><div class="endcard"><div class="eyebrow">Défi chrono · 3 minutes</div><h2>${S.score > S.best ? 'Nouveau record !' : 'Temps écoulé'}</h2><div class="tiles"><div class="tile"><div class="v num">${S.score}</div><div class="l">Justes</div></div><div class="tile"><div class="v num">${S.answered ? Math.round((S.score / S.answered) * 100) : 0} %</div><div class="l">Précision</div></div><div class="tile"><div class="v num">${Math.max(S.score, S.best)}</div><div class="l">Record</div></div></div><div class="row wrapflex" style="justify-content:center"><button class="btn" data-act="sprint-again">Rejouer</button><button class="btn alt" data-act="sprint-close">Terminer</button></div></div></div></div>`;
+  const q = Q.get(S.pool[S.i % S.pool.length]);
+  return `<div class="full ${q.unit.cls}" role="dialog" aria-modal="true" aria-label="Défi chrono">
+    <div class="full-top"><button class="x" data-act="sprint-close" aria-label="Quitter">${ic('x')}</button><div class="grow"><div class="ctx">${esc(q.unit.title)}</div><div class="small muted">${S.score} juste${S.score > 1 ? 's' : ''} sur ${S.answered}</div></div><span class="timer ${S.flash === 'ok' ? 'okf' : S.flash === 'ko' ? 'kof' : ''}" id="sprint-t">${ic('clock')}<span>${mmss((S.endAt - Date.now()) / 1000)}</span></span></div>
+    <div class="full-body"><div><div class="qtext">${esc(q.q)}</div>
+      <div class="opts">${S.order.map((ci, pos) => `<button class="opt" data-act="sprint-pick" data-pos="${pos}"><span class="k">${LETTERS[pos]}</span><span>${esc(q.choices[ci])}</span></button>`).join('')}</div>
+      <p class="small muted" style="margin-top:14px">Réponds le plus vite possible : une réponse = question suivante. Tes erreurs rejoignent ta liste « Mes erreurs ».</p></div></div></div>`;
+}
+function sprintPick(pos) {
+  const S = view.sprint; if (!S || S.done) return; const q = Q.get(S.pool[S.i % S.pool.length]);
+  const ok = S.order[pos] === q.answer; record(q.id, ok); S.answered++; if (ok) S.score++;
+  S.flash = ok ? 'ok' : 'ko'; S.i++; S.order = shuffle([0, 1, 2, 3]); renderOverlay();
+  if (!ok) toast(`Réponse : ${q.choices[q.answer]}`);
+}
+
+// ───────────── Planning de révision ─────────────
+const PLAN_ORDER = ['u1', 'u4', 'u3', 'u5', 'u8', 'u6', 'u9', 'u7', 'u2'];
+function planHtml() {
+  const date = P.plan.examDate;
+  const remainLv = (u) => u.skills.reduce((m, s) => m + (3 - level(s)), 0);
+  const totalRemain = D.units.reduce((n, u) => n + remainLv(u), 0);
+  let body = '';
+  if (date) {
+    const days = dayDiff(today(), date);
+    if (days < 0) body = `<p>La date du ${esc(new Date(date + 'T12:00').toLocaleDateString('fr-FR'))} est passée. Choisis ta prochaine session.</p>`;
+    else {
+      const study = Math.max(0, days - 7);
+      const perDay = study ? Math.ceil(totalRemain / study) : totalRemain;
+      const weights = PLAN_ORDER.map((id) => { const u = D.units.find((x) => x.id === id); return { u, w: Math.max(1, remainLv(u)) }; });
+      const W = weights.reduce((t, x) => t + x.w, 0);
+      let cursor = 0; const blocks = [];
+      if (study > 0) for (const { u, w } of weights) { const n = Math.max(1, Math.round((w / W) * study)); blocks.push({ u, from: cursor, to: Math.min(study, cursor + n) - 1 }); cursor += n; }
+      const dlabel = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' }); };
+      body = `<div class="row wrapflex" style="margin:8px 0 12px"><div class="big num">J-${days}</div><div class="grow small">${days <= 7 ? 'Dernière ligne droite : examens blancs complets chaque jour ou presque, puis révision de tes erreurs.' : `Pour tout valider avant la dernière semaine : <b>${perDay} niveau${perDay > 1 ? 'x' : ''} de leçon par jour</b> (${totalRemain} restants), puis 7 jours d'examens blancs.`}</div></div>
+      ${blocks.length ? `<div class="plan">${blocks.filter((b) => b.to >= b.from).map((b) => `<div class="plan-row ${b.u.cls}"><span class="dot">${b.u.n}</span><span class="grow">${esc(b.u.title)}</span><span class="small muted num">${dlabel(b.from)} → ${dlabel(b.to)}</span></div>`).join('')}<div class="plan-row"><span class="dot" style="--c:var(--accent)">★</span><span class="grow">Examens blancs complets et erreurs</span><span class="small muted num">${dlabel(Math.max(0, days - 7))} → ${dlabel(days)}</span></div></div>` : ''}`;
+    }
+  }
+  return `<div class="card pad"><div class="row wrapflex"><div class="grow"><div class="eyebrow">Mon planning</div><b>Date de mon examen</b></div><input class="input" type="date" id="exam-date" value="${esc(date || '')}" style="max-width:190px" aria-label="Date de l'examen"></div>${date ? body : '<p class="small muted" style="margin:8px 0 0">Indique ta date d’examen : l’appli calcule combien de leçons faire par jour et répartit les matières jusqu’au jour J.</p>'}</div>`;
+}
+const JOUR_J = [
+  ['La veille', ['Relis seulement tes fiches « Si tu ne retiens que ça » et les chiffres clés (flashcards). N’attaque pas de nouveau chapitre.', 'Prépare ta pièce d’identité, ta convocation et le matériel qu’elle autorise (règle, rapporteur, computer, calculatrice non programmable).', 'Dors : la fatigue coûte plus de points qu’une heure de révision ne t’en rapporte.']],
+  ['Pendant l’épreuve', ['Lis l’énoncé jusqu’au bout et repère les mots qui changent tout : « sauf », « minimum », « en France », « de nuit », « au-dessus du sol ».', 'Élimine d’abord les réponses fausses : il en reste souvent deux, et l’énoncé dit laquelle est juste.', 'Calculs : écris les unités, vérifie l’ordre de grandeur avant de cocher.', 'Ne reste pas bloqué : marque la question, avance, reviens à la fin. Ne laisse aucune case vide.', 'Rythme : environ 1 min 30 par question (2 min 30 en navigation).']],
+];
+
+// ───────────── Figures ─────────────
+const cleanSvg = (s) => String(s || '').replace(/<script[\s\S]*?<\/script>/gi, '').replace(/\son\w+\s*=\s*("[^"]*"|'[^']*')/gi, '').replace(/(href|xlink:href)\s*=\s*("|')\s*(https?:|javascript:)[^"']*\2/gi, '');
+function figuresHtml(s) {
+  if (!s.figures || !s.figures.length) return '';
+  return `<h2 class="section-title">Schémas</h2><div class="figs">${s.figures.map((f, k) => `<figure class="card fig"><button class="fig-paper" data-act="zoom" data-skill="${s.id}" data-k="${k}" aria-label="Agrandir : ${esc(f.title)}">${f.svg ? cleanSvg(f.svg) : f.src && /^[\w./-]+$/.test(f.src) ? `<img src="${esc(f.src)}" alt="${esc(f.title)}" loading="lazy">` : ''}</button><figcaption><b>${esc(f.title)}</b><span>${esc(f.caption)}</span>${f.credit ? `<i>${esc(f.credit)}</i>` : ''}</figcaption></figure>`).join('')}</div>`;
+}
+function zoomHtml() {
+  const s = SK.get(view.zoom.skill); const f = s && s.figures[view.zoom.k]; if (!f) return '';
+  return `<div class="scrim zoom" data-act="zoom-close"><div class="zoom-box" role="dialog" aria-modal="true" aria-label="${esc(f.title)}" data-stop><div class="row"><b class="grow">${esc(f.title)}</b><button class="x" data-act="zoom-close" aria-label="Fermer">${ic('x')}</button></div><div class="fig-paper big">${f.svg ? cleanSvg(f.svg) : `<img src="${esc(f.src)}" alt="${esc(f.title)}">`}</div><p class="small" style="margin:0">${esc(f.caption)}</p></div></div>`;
+}
+
 
 // ───────────── Examen blanc ─────────────
 function viewExamHome() {
@@ -604,6 +935,7 @@ function viewExamHome() {
   const hist = P.exams.slice().reverse();
   return `<h1 class="section-title" style="margin-top:4px">Examen blanc</h1>
   <p class="lead">Même format que l'examen DGAC : QCM à 4 choix, chronométré, au moins ${PASS} % dans chaque épreuve.</p>
+  <div style="margin-top:14px">${planHtml()}</div>
   ${a ? `<div class="card pad row wrapflex" style="margin-top:14px;border-color:var(--accent)"><div class="grow"><b>Examen en cours</b><div class="small muted">${a.mode === 'full' ? 'Examen complet' : esc(D.units.find((u) => u.id === a.unit)?.title || '')} · ${a.answers.filter((x) => x !== null).length}/${a.items.length} réponses · reste ${mmss(remaining(a))}</div></div><button class="btn" data-act="exam-resume">Reprendre</button><button class="btn ghost sm" data-act="exam-abandon">Abandonner</button></div>` : ''}
   <div class="card" style="margin-top:14px"><div class="scroll-x"><table class="fmt"><thead><tr><th>Épreuve</th><th>Questions</th><th>Durée</th><th></th></tr></thead><tbody>
     ${D.units.map((u) => `<tr class="${u.cls}"><td><div class="row"><span class="dot">${u.n}</span>${esc(u.title)}</div></td><td class="num">${u.exam.questions}</td><td class="num">${u.exam.minutes} min</td><td style="text-align:right"><button class="btn alt sm" data-act="exam-start" data-unit="${u.id}" ${a ? 'disabled' : ''}>Passer</button></td></tr>`).join('')}
@@ -612,7 +944,9 @@ function viewExamHome() {
   <h2 class="section-title">Historique</h2>
   ${hist.length ? `<div class="list">${hist.map((e) => `<a class="card li" href="#resultat-${e.id}" style="text-decoration:none;color:inherit">
     <div class="grow"><b>${e.mode === 'full' ? 'Examen complet' : esc(D.units.find((u) => u.id === e.unit)?.title || '')}</b><div class="small muted">${fmtDate(e.finishedAt)} · ${e.result.correct}/${e.result.total} (${Math.round((e.result.correct / e.result.total) * 100)} %)</div></div>
-    <span class="pill ${e.result.passed ? 'ok' : 'ko'}">${e.result.passed ? 'Réussi' : 'Échoué'}</span>${ic('right')}</a>`).join('')}</div>` : `<div class="card empty">Aucun examen passé pour l'instant. Commence par une épreuve courte, comme Communications (8 questions).</div>`}`;
+    <span class="pill ${e.result.passed ? 'ok' : 'ko'}">${e.result.passed ? 'Réussi' : 'Échoué'}</span>${ic('right')}</a>`).join('')}</div>` : `<div class="card empty">Aucun examen passé pour l'instant. Commence par une épreuve courte, comme Communications (8 questions).</div>`}
+  <h2 class="section-title">Le jour J</h2>
+  <div class="subj">${JOUR_J.map(([t, items]) => `<div class="card"><b style="font:700 19px var(--display);text-transform:uppercase">${t}</b><ol style="margin:0;padding-left:20px;display:grid;gap:6px;font-size:14px">${items.map((x) => `<li>${esc(x)}</li>`).join('')}</ol></div>`).join('')}</div>`;
 }
 const remaining = (a) => a.limit - (Date.now() - a.startedAt) / 1000;
 function startExam(unitId) {
@@ -754,9 +1088,17 @@ function viewProgress() {
   <h2 class="section-title">Par matière</h2>
   <div class="list">${D.units.map((u) => { const ok = u.qs.filter(mastered).length; const lv = u.skills.reduce((m, s) => m + level(s), 0); const b = best(u.id); return `<div class="card pad ${u.cls}" style="padding:14px 16px"><div class="row wrapflex"><span class="dot">${u.n}</span><b class="grow">${esc(u.title)}</b><span class="small muted">${lv}/${u.skills.length * 3} niveaux</span>${b !== null ? `<span class="pill ${b >= PASS ? 'ok' : 'ko'}">Examen ${b} %</span>` : ''}</div>
     <div class="row" style="margin-top:8px"><div class="bar grow"><i style="width:${(ok / u.qs.length) * 100}%"></i></div><span class="small num muted">${ok}/${u.qs.length}</span></div></div>`; }).join('')}</div>
+  <h2 class="section-title">Réinitialiser</h2>
+  <div class="card resets">${[
+    ['mistakes', 'Vider ma liste d\u2019erreurs', `${P.mistakes.length} question(s) en liste`],
+    ['exams', 'Effacer l\u2019historique des examens blancs', `${P.exams.length} examen(s)${P.active ? ' + 1 en cours' : ''}`],
+    ['cards', 'Remettre les flashcards à zéro', `${Object.keys(P.cards).length} carte(s) suivie(s)`],
+    ['calc', 'Effacer les scores de calcul mental et du défi chrono', ''],
+    ...D.units.map((u) => [`unit:${u.id}`, `Réinitialiser « ${u.title} »`, 'niveaux, questions réussies, erreurs et flashcards de la matière']),
+    ['all', 'Tout réinitialiser', 'repartir de zéro sur cet appareil et sur ton compte'],
+  ].map(([k, label, sub]) => `<div class="reset-row"><div class="grow"><b style="font-size:14.5px">${esc(label)}</b>${sub ? `<div class="small muted">${esc(sub)}</div>` : ''}</div>${view.confirm === k ? `<div class="confirm"><div class="grow small"><b>Confirmer ?</b> Cette action est définitive.</div><button class="btn bad sm" data-act="do-reset" data-what="${k}">Confirmer</button><button class="btn alt sm" data-act="ask-reset" data-what="">Annuler</button></div>` : `<button class="btn ${k === 'all' ? 'bad' : 'alt'} sm" data-act="ask-reset" data-what="${k}">${ic('reset')} Réinitialiser</button>`}</div>`).join('')}</div>
   <h2 class="section-title">Sauvegarde</h2>
   <div class="card pad"><p style="margin-top:0">${sync.state === 'ok' ? 'Ta progression est enregistrée sur ton compte claude.ai : tu la retrouves sur ordinateur et sur téléphone.' : sync.state === 'off' ? 'Connexion au compte impossible pour le moment : ta progression est gardée sur cet appareil et sera synchronisée au retour du réseau.' : sync.state === 'wait' ? 'Connexion à ton compte…' : 'Ta progression est enregistrée dans ce navigateur, sur cet appareil.'}</p>
-    ${view.confirmReset ? `<div class="confirm"><div class="grow"><b>Tout effacer ?</b><div class="small">Niveaux, XP, erreurs et historique d'examens seront supprimés.</div></div><button class="btn bad sm" data-act="reset-yes">Effacer</button><button class="btn alt sm" data-act="reset-no">Annuler</button></div>` : `<button class="btn alt sm" data-act="reset">Réinitialiser ma progression</button>`}
   </div>`;
 }
 
@@ -765,16 +1107,42 @@ function renderOverlay() {
   const o = $('#overlay');
   if (view.lesson) o.innerHTML = lessonHtml();
   else if (view.exam && P.active) o.innerHTML = examHtml();
+  else if (view.calc) o.innerHTML = calcHtml();
+  else if (view.cards) o.innerHTML = cardsHtml();
+  else if (view.sprint) o.innerHTML = sprintHtml();
+  else if (view.zoom) o.innerHTML = zoomHtml();
   else if (view.sheet) { const s = SK.get(view.sheet); o.innerHTML = s ? sheetHtml(s) : ''; }
   else o.innerHTML = '';
-  document.body.style.overflow = view.lesson || view.exam || view.sheet ? 'hidden' : '';
+  document.body.style.overflow = view.lesson || view.exam || view.sheet || view.calc || view.cards || view.sprint || view.zoom ? 'hidden' : '';
+}
+
+// ───────────── Réinitialisations ─────────────
+function resetSkill(s) {
+  delete P.skills[s.id];
+  const ids = new Set(s.qs.map((q) => q.id));
+  for (const id of ids) delete P.q[id];
+  P.mistakes = P.mistakes.filter((id) => !ids.has(id));
+  for (const k of Object.keys(P.cards)) if (k.startsWith(`v|${s.id}|`)) delete P.cards[k];
+}
+function doReset(what) {
+  const msg = { mistakes: 'Liste d\u2019erreurs vidée', exams: 'Historique des examens effacé', cards: 'Flashcards remises à zéro', calc: 'Scores effacés', all: 'Progression réinitialisée' };
+  if (what === 'all') P = blank();
+  else if (what === 'mistakes') P.mistakes = [];
+  else if (what === 'exams') { P.exams = []; P.active = null; }
+  else if (what === 'cards') P.cards = {};
+  else if (what === 'calc') { P.calc = {}; P.best = { sprint: {} }; }
+  else if (what.startsWith('unit:')) { const u = D.units.find((x) => x.id === what.slice(5)); if (u) { u.skills.forEach(resetSkill); for (const k of Object.keys(P.cards)) if (k.startsWith(`k|${u.id}|`)) delete P.cards[k]; delete P.best.sprint[u.id]; } }
+  else if (what.startsWith('skill:')) { const s = SK.get(what.slice(6)); if (s) resetSkill(s); }
+  view.confirm = null; P.updatedAt = Date.now(); save(true);
+  toast(msg[what] || (what.startsWith('unit:') ? 'Matière réinitialisée' : 'Leçon réinitialisée'));
+  if (view.sheet) renderOverlay(); render();
 }
 
 // ───────────── Actions ─────────────
 document.addEventListener('click', (ev) => {
   const t = ev.target.closest('[data-act]'); if (!t) return;
   const act = t.dataset.act;
-  if (act === 'close-sheet' && ev.target.closest('[data-stop]') && !ev.target.closest('.x')) return;
+  if ((act === 'close-sheet' || act === 'zoom-close') && ev.target.closest('[data-stop]') && !ev.target.closest('.x')) return;
   const sk = t.dataset.skill; const unit = t.dataset.unit;
   switch (act) {
     case 'jump': ev.preventDefault(); document.getElementById('unit-' + unit)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); break;
@@ -808,22 +1176,49 @@ document.addEventListener('click', (ev) => {
     case 'corr': view.corrAll = t.dataset.all === '1'; render(); break;
     case 'lib-lang': view.libLang = t.dataset.lang; render(); break;
     case 'lib-toggle': { if (t.tagName === 'INPUT') break; const id = t.dataset.id; if (P.lib[id]) delete P.lib[id]; else P.lib[id] = today(); save(); render(); break; }
-    case 'reset': view.confirmReset = true; render(); break;
-    case 'reset-no': view.confirmReset = false; render(); break;
-    case 'reset-yes': { P = blank(); P.updatedAt = Date.now(); view.confirmReset = false; save(true); render(); toast('Progression réinitialisée'); break; }
+    case 'ask-reset': view.confirm = t.dataset.what || null; if (view.sheet) renderOverlay(); else render(); break;
+    case 'do-reset': doReset(t.dataset.what); break;
+    case 'calc-cat': { const c = t.dataset.cat; const k = view.calcCats.indexOf(c); if (k >= 0) view.calcCats.splice(k, 1); else view.calcCats.push(c); render(); break; }
+    case 'calc-start': case 'calc-again': view.calc = { items: makeCalc(view.calcCats), i: 0, startedAt: Date.now(), done: false }; renderOverlay(); $('#calc-in')?.focus(); break;
+    case 'calc-check': calcCheck(); break;
+    case 'calc-next': calcNext(); break;
+    case 'calc-close': view.calc = null; save(); render(); break;
+    case 'card-kind': view.cardKind = t.dataset.kind; render(); break;
+    case 'card-start': startCards(); break;
+    case 'card-flip': view.cards.flipped = !view.cards.flipped; renderOverlay(); break;
+    case 'card-grade': gradeCard(t.dataset.ok === '1'); break;
+    case 'cards-close': view.cards = null; save(); render(); break;
+    case 'sprint-start': startSprint(unit || ''); break;
+    case 'sprint-again': startSprint(view.sprint?.unit || ''); break;
+    case 'sprint-pick': sprintPick(Number(t.dataset.pos)); break;
+    case 'sprint-close': clearInterval(sprintTick); if (view.sprint && !view.sprint.done) save(); view.sprint = null; render(); break;
+    case 'zoom': view.zoom = { skill: sk, k: Number(t.dataset.k) }; renderOverlay(); break;
+    case 'zoom-close': view.zoom = null; renderOverlay(); break;
   }
 });
 document.addEventListener('change', (ev) => {
   const t = ev.target;
   if (t.dataset && t.dataset.act === 'lib-toggle' && t.tagName === 'INPUT') { const id = t.dataset.id; if (t.checked) P.lib[id] = today(); else delete P.lib[id]; save(); render(); }
+  if (t.id === 'exam-date') { P.plan = { ...P.plan, examDate: t.value || null }; save(); render(); }
+  if (t.id === 'card-unit') { view.cardUnit = t.value; render(); }
 });
 document.addEventListener('input', (ev) => {
   const t = ev.target;
   if (t.id === 'lib-q') { view.libQ = t.value; const pos = t.selectionStart; render(); const n = $('#lib-q'); if (n) { n.focus(); n.setSelectionRange(pos, pos); } }
+  if (t.id === 'calc-in' && view.calc) { view.calc.items[view.calc.i].input = t.value; return; }
   if (t.id === 'gloss-q') { view.glossQ = t.value; const g = t.value.trim().toLowerCase(); const hits = g.length >= 2 ? D.units.flatMap((u) => u.skills.flatMap((sk) => sk.vocab.filter(([a, b]) => a.toLowerCase().includes(g) || b.toLowerCase().includes(g)).map(([a, b]) => ({ t: a, d: b, sk, u })))).slice(0, 30) : []; $('#gloss-hits').innerHTML = glossHits(hits, g); }
 });
 document.addEventListener('keydown', (ev) => {
-  if (ev.target.tagName === 'INPUT' || ev.metaKey || ev.ctrlKey || ev.altKey) return;
+  if (view.calc && !view.calc.done && ev.key === 'Enter') { ev.preventDefault(); const it = view.calc.items[view.calc.i]; if (it.checked) calcNext(); else calcCheck(); return; }
+  if (ev.target.tagName === 'INPUT' || ev.target.tagName === 'SELECT' || ev.metaKey || ev.ctrlKey || ev.altKey) return;
+  if (view.zoom && ev.key === 'Escape') { view.zoom = null; renderOverlay(); return; }
+  if (view.cards && !view.cards.done) {
+    if (ev.key === ' ' || ev.key === 'Enter') { ev.preventDefault(); view.cards.flipped = !view.cards.flipped; renderOverlay(); }
+    else if (view.cards.flipped && (ev.key === '1' || ev.key === 'ArrowLeft')) gradeCard(false);
+    else if (view.cards.flipped && (ev.key === '2' || ev.key === 'ArrowRight')) gradeCard(true);
+    return;
+  }
+  if (view.sprint && !view.sprint.done) { const k = { 1: 0, 2: 1, 3: 2, 4: 3, a: 0, b: 1, c: 2, d: 3 }[ev.key.toLowerCase()]; if (k !== undefined) { ev.preventDefault(); sprintPick(k); } return; }
   if (view.lesson && !view.lesson.done) {
     const it = view.lesson.items[view.lesson.i];
     const pk = { 1: 0, 2: 1, 3: 2, 4: 3, a: 0, b: 1, c: 2, d: 3 }[ev.key.toLowerCase()];

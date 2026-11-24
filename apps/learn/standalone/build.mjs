@@ -27,7 +27,13 @@ const data = {
   title: meta.title, disclaimer: meta.disclaimer, exam: meta.exam,
   units: units.map((u) => ({
     id: u.id, title: u.title, description: u.description,
-    skills: u.skills.map((s) => ({ id: s.id, title: s.title, icon: s.icon, tips: s.tips, vocab: s.vocab.map((v) => [v.term, v.translation]), questions: s.questions.map((q) => [q.id, q.q, q.choices, q.answer, q.explanation]) })),
+    skills: u.skills.map((s) => ({ id: s.id, title: s.title, icon: s.icon, tips: s.tips, vocab: s.vocab.map((v) => [v.term, v.translation]), figures: (s.figures || []).map((f) => ({ title: f.title, svg: f.svg || null, src: f.src || null, caption: f.caption || '', credit: f.credit || '' })), questions: s.questions.map((q) => [q.id, q.q, q.choices, q.answer, q.explanation]) })),
+  })),
+  // Chiffres clés : repris des fiches réflexes du mémento PDF (apps/learn/revision/chapters/uN.json) quand elles existent.
+  keyNumbers: Object.fromEntries(order.map((u) => {
+    const f = path.resolve(HERE, '../revision/chapters', `${u}.json`);
+    if (!fs.existsSync(f)) return [u, []];
+    try { return [u, (JSON.parse(fs.readFileSync(f, 'utf8')).key_numbers || []).map((k) => [String(k.value).replace(/\*\*|`/g, ''), String(k.label).replace(/\*\*|`/g, '')])]; } catch { return [u, []]; }
   })),
   library: { title: library.title, subtitle: library.subtitle, intro: library.intro, method: library.method, checklist: library.checklist, sections: library.sections, footer: library.footer },
 };
