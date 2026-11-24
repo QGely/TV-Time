@@ -1,0 +1,968 @@
+{
+ "unit": "u9",
+ "title": "Connaissance générale de l'aéronef",
+ "exam": {
+  "questions": 12,
+  "minutes": 18
+ },
+ "pitch": "Comment ton avion est construit et comment fonctionnent son moteur, son hélice, ses circuits et ses instruments. Le but : comprendre chaque indication du tableau de bord et réagir juste à une anomalie.",
+ "essentials": [
+  "**Longeron** : flexion de l’aile. Train **classique** (roues devant le centre de gravité) : **cheval de bois**.",
+  "Effort permanent à pousser : **compense à piquer**. Manche à gauche : aileron **gauche levé**.",
+  "Moteur 4 temps en **2 tours** : admission, compression, combustion-détente (**seul temps moteur**), échappement.",
+  "**Deux magnétos** autonomes : le moteur tourne sans batterie. Aucune chute à l’essai : fil de masse coupé.",
+  "**Givrage carburateur** : air humide, −10 à +30 °C, moteur réduit. Réchauffage : le régime baisse, puis remonte.",
+  "En montée, le mélange **s’enrichit** : appauvris. Trop pauvre à forte puissance : **détonation**.",
+  "Essence **AVGAS 100LL bleue**, densité **0,72** ; kérosène Jet A-1 interdit. Purge avant le premier vol et après chaque plein.",
+  "Pas fixe : le **compte-tours** donne la puissance. Pas variable : manette bleue = régime, gaz = pression d’admission.",
+  "Huile : pression **basse** + température **haute** = pose-toi. Alternateur en panne : **déleste**.",
+  "Statique bouchée : **altimètre figé**, **variomètre à zéro**. Trait rouge : **VNE**, vitesse à ne jamais dépasser.",
+  "Taux 1 = **3°/s**. Conservateur de cap recalé toutes les **10 à 15 min**. Compas : **ANDS**.",
+  "Navigabilité : **CDN** (certificat de navigabilité) et **ARC** (examen de navigabilité) **annuel**."
+ ],
+ "sections": [
+  {
+   "title": "Cellule, commandes de vol et train d’atterrissage",
+   "summary": "La cellule est le squelette de l’avion : fuselage, voilure, empennages et train, plus la timonerie qui fait bouger les gouvernes.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "La structure",
+     "items": [
+      "**Fuselage** en **treillis** de tubes soudés entoilé (la toile ne porte rien) ou **semi-monocoque** : revêtement **travaillant**, raidi par des **cadres** et des **lisses**.",
+      "**Voilure** : le **longeron**, dans le sens de l’envergure, reprend la **flexion**. Les **nervures**, dans le sens de la corde, donnent la forme du profil.",
+      "Aile **haute** ou **basse** ; **cantilever** (sans hauban) ou **haubanée**.",
+      "**Empennages** : plan fixe et gouverne de **profondeur** (ou **plan monobloc**) ; **dérive** et gouverne de **direction**."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Les commandes de vol",
+     "columns": [
+      "Commande",
+      "Gouverne",
+      "Effet"
+     ],
+     "rows": [
+      [
+       "Manche à gauche ou à droite",
+       "**Ailerons**, en sens opposés",
+       "**Roulis**. Manche à gauche : aileron gauche **levé**, droit baissé"
+      ],
+      [
+       "Manche avant ou arrière",
+       "**Profondeur**",
+       "**Tangage** (assiette)"
+      ],
+      [
+       "Palonniers",
+       "**Direction**",
+       "**Lacet**"
+      ],
+      [
+       "Commande de volets",
+       "**Volets de courbure**",
+       "portance et traînée augmentent, vitesse de décrochage baisse"
+      ],
+      [
+       "Roulette de trim",
+       "**Compensateur** (tab), braqué en sens inverse de la gouverne",
+       "annule l’effort au manche : **effort à pousser → compense à piquer**"
+      ]
+     ],
+     "note": "La **timonerie** (câbles, poulies, guignols, bielles) transmet tes ordres aux gouvernes."
+    },
+    {
+     "type": "trap",
+     "text": "Le **flottement** (flutter) se combat par des **masses d’équilibrage**, pas par le compensateur. Une butée limite le débattement ; c’est un **câble mal remonté** qui inverse une commande. Vérifie le **sens de débattement** à chaque prévol."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Train tricycle",
+       "points": [
+        "Roues principales **en arrière** du centre de gravité (CG), roulette de **nez**",
+        "Stable en ligne droite au roulage, bonne visibilité"
+       ]
+      },
+      {
+       "title": "Train classique",
+       "points": [
+        "Roues principales **en avant** du CG, roulette de **queue**",
+        "Tout écart au sol **s’amplifie** : risque de **cheval de bois**. Corrige tôt aux palonniers"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "bullets",
+     "title": "Freins, pneus, amortisseurs",
+     "items": [
+      "Freins à disque **hydrauliques**, par le **haut des palonniers**. Frein droit seul : l’avion tourne **à droite** (freinage différentiel). Le frein de parc l’immobilise.",
+      "**Pneus** gonflés selon le manuel ; **repères de glissement** pneu/jante décalés : le pneu a tourné, avis mécanicien. **Amortisseurs** : enfoncement normal, pas de fuite."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Moteur à pistons : cycle, allumage, huile et refroidissement",
+   "summary": "Ton moteur ressemble à celui d’une voiture, mais il est refroidi par air, a deux allumages et tourne longtemps à forte puissance.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Le cycle à 4 temps : 2 tours de vilebrequin",
+     "columns": [
+      "Temps",
+      "Piston et soupapes",
+      "Ce qui se passe"
+     ],
+     "rows": [
+      [
+       "1. **Admission**",
+       "le piston descend, soupape d’admission ouverte",
+       "le mélange air-essence entre"
+      ],
+      [
+       "2. **Compression**",
+       "il remonte, soupapes fermées",
+       "le mélange est comprimé"
+      ],
+      [
+       "3. **Combustion-détente**",
+       "il descend, soupapes fermées",
+       "l’étincelle l’enflamme, les gaz poussent le piston : **seul temps moteur**"
+      ],
+      [
+       "4. **Échappement**",
+       "il remonte, soupape d’échappement ouverte",
+       "les gaz brûlés sont chassés"
+      ]
+     ],
+     "note": "Moteur d’avion léger typique : 4 ou 6 **cylindres opposés à plat**, refroidi par **air**."
+    },
+    {
+     "type": "memo",
+     "text": "« **Aspire, comprime, explose, expulse** ». Soupapes fermées en compression **et** en détente : en compression le piston **remonte**, en détente il **descend**."
+    },
+    {
+     "type": "bullets",
+     "title": "Allumage : deux magnétos indépendantes",
+     "items": [
+      "La **magnéto** est un générateur **autonome** entraîné par le moteur : il tourne **sans batterie ni alternateur**.",
+      "**Double allumage** : 2 magnétos, **2 bougies par cylindre**. Sécurité et meilleure combustion.",
+      "Sur **OFF**, les magnétos sont mises à la **masse**. Fil de masse coupé : magnéto « **chaude** », brasser l’hélice peut lancer le moteur."
+     ]
+    },
+    {
+     "type": "trap",
+     "title": "Essai magnétos au point fixe",
+     "text": "Sur L puis sur R, une **légère chute** de régime est normale (chute et écart maximaux au manuel). **Aucune chute**, ce n’est pas « parfait » : l’autre magnéto n’est pas coupée. Fil de masse coupé : hélice **dangereuse** même sur OFF."
+    },
+    {
+     "type": "bullets",
+     "title": "Combustions anormales, huile, refroidissement",
+     "items": [
+      "**Détonation** : combustion explosive **après** l’étincelle (mélange **trop pauvre**, moteur chaud, octane insuffisant) : enrichis, réduis. **Pré-allumage** : inflammation **avant** l’étincelle par un **point chaud** (calamine, bougie surchauffée).",
+      "L’**huile** lubrifie, **refroidit**, nettoie et assure l’étanchéité. Après la mise en route, sa pression doit monter dans le délai du manuel.",
+      "Refroidissement par **ailettes** et **déflecteurs**. Surchauffe en **montée lente** à forte puissance : prends de la vitesse. Évite les réductions brutales en descente (*choc thermique*)."
+     ]
+    },
+    {
+     "type": "key",
+     "text": "Pression d’huile **basse** et température **haute** : deux indications cohérentes, donc une vraie **panne de lubrification** (souvent une perte d’huile). Va vers un terrain, prêt à l’atterrissage forcé."
+    }
+   ]
+  },
+  {
+   "title": "Carburateur, givrage, mélange et injection",
+   "summary": "Le carburateur dose l’air et l’essence ; il peut givrer même par temps doux, et c’est toi qui règles la richesse.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Une **cuve à niveau constant** (flotteur) garde l’essence. Dans le **venturi**, l’air accélère et sa pression baisse : le **gicleur** aspire l’essence. Le **papillon**, relié aux **gaz**, dose le mélange admis. La manette rouge règle la **richesse** ; tirée à fond (**étouffoir**), elle arrête le moteur."
+    },
+    {
+     "type": "key",
+     "title": "Givrage carburateur",
+     "text": "La **détente** de l’air et la **vaporisation** de l’essence refroidissent fortement le venturi. Le givre se forme couramment de **−10 °C à +30 °C**, surtout par **air humide** et **moteur réduit** (papillon presque fermé)."
+    },
+    {
+     "type": "steps",
+     "title": "Givrage : symptômes et conduite",
+     "items": [
+      "Hélice à pas fixe : le **régime baisse** lentement, le moteur devient irrégulier.",
+      "Réchauffage **plein chaud** : le régime **baisse encore** (air chaud moins dense, eau de fonte). Garde-le.",
+      "Le régime **remonte** au-dessus de sa valeur de départ : le givre a fondu. Repasse sur froid et surveille.",
+      "Hélice à vitesse constante : le régime ne bouge pas, c’est la **pression d’admission** qui baisse."
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "Le carburateur et ses zones de givrage",
+     "svg": "<svg viewBox=\"0 0 700 272\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"272\" fill=\"#ffffff\"/><polygon points=\"60,82 230,82 285,104 325,104 380,82 650,82 650,152 380,152 325,130 285,130 230,152 60,152\" fill=\"#eaf4fb\"/><rect x=\"92\" y=\"34\" width=\"36\" height=\"50\" fill=\"#fde3d3\"/><path d=\"M60,82 L92,82 M128,82 L230,82 L285,104 L325,104 L380,82 L650,82\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"3\"/><path d=\"M92,34 L92,82 M128,34 L128,82\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"3\"/><path d=\"M60,152 L230,152 L285,130 L325,130 L380,152 L650,152\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"3\"/><line x1=\"18\" y1=\"102\" x2=\"71.0\" y2=\"102.0\" stroke=\"#2b7a9b\" stroke-width=\"3\"/><polygon points=\"80,102 71.0,107.0 71.0,97.0\" fill=\"#2b7a9b\"/><line x1=\"18\" y1=\"117\" x2=\"71.0\" y2=\"117.0\" stroke=\"#2b7a9b\" stroke-width=\"3\"/><polygon points=\"80,117 71.0,122.0 71.0,112.0\" fill=\"#2b7a9b\"/><line x1=\"18\" y1=\"132\" x2=\"71.0\" y2=\"132.0\" stroke=\"#2b7a9b\" stroke-width=\"3\"/><polygon points=\"80,132 71.0,136.9 71.0,127.0\" fill=\"#2b7a9b\"/><line x1=\"110\" y1=\"38\" x2=\"110.0\" y2=\"67.0\" stroke=\"#d35400\" stroke-width=\"3\"/><polygon points=\"110,76 105.0,67.0 115.0,67.0\" fill=\"#d35400\"/><text x=\"110\" y=\"22\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"700\">Air chaud (réchauffage)</text><text x=\"18\" y=\"178\" font-size=\"14\" fill=\"#2b7a9b\" text-anchor=\"start\" font-weight=\"700\">Air froid filtré</text><text x=\"305\" y=\"96\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Venturi</text><text x=\"520\" y=\"22\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">Dans le venturi, l’air accélère et se détend :</text><text x=\"520\" y=\"40\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">la température chute, l’humidité peut givrer.</text><rect x=\"240\" y=\"194\" width=\"130\" height=\"72\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"2.5\"/><rect x=\"241.5\" y=\"220\" width=\"127\" height=\"44.5\" fill=\"#a9c8f2\"/><rect x=\"330\" y=\"208\" width=\"28\" height=\"17\" rx=\"4\" fill=\"#f6d55c\" stroke=\"#14213d\" stroke-width=\"1.6\"/><line x1=\"344\" y1=\"208\" x2=\"344\" y2=\"199\" stroke=\"#14213d\" stroke-width=\"2\"/><line x1=\"344\" y1=\"200\" x2=\"440\" y2=\"200\" stroke=\"#2f6fd6\" stroke-width=\"6\"/><text x=\"448\" y=\"205\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\">Arrivée d’essence</text><rect x=\"302\" y=\"114\" width=\"6\" height=\"140\" fill=\"#2f6fd6\"/><circle cx=\"317\" cy=\"113\" r=\"2\" fill=\"#2f6fd6\"/><circle cx=\"325\" cy=\"118\" r=\"2\" fill=\"#2f6fd6\"/><circle cx=\"333\" cy=\"112\" r=\"2\" fill=\"#2f6fd6\"/><circle cx=\"341\" cy=\"117\" r=\"2\" fill=\"#2f6fd6\"/><circle cx=\"349\" cy=\"114\" r=\"2\" fill=\"#2f6fd6\"/><text x=\"292\" y=\"180\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"700\">Gicleur</text><line x1=\"236\" y1=\"236\" x2=\"300\" y2=\"250\" stroke=\"#c0392b\" stroke-width=\"1.4\"/><text x=\"232\" y=\"236\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"700\">Richesse (manette rouge)</text><text x=\"232\" y=\"253\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"end\">règle le débit d’essence</text><text x=\"384\" y=\"240\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"700\">Cuve à niveau constant</text><text x=\"384\" y=\"257\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\">(flotteur et pointeau)</text><polygon points=\"288.5,109.0 286.2,112.9 281.8,112.9 279.5,109.0 281.8,105.1 286.2,105.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"288.5,125.0 286.2,128.9 281.8,128.9 279.5,125.0 281.8,121.1 286.2,121.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"298.5,109.0 296.2,112.9 291.8,112.9 289.5,109.0 291.8,105.1 296.2,105.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"298.5,125.0 296.2,128.9 291.8,128.9 289.5,125.0 291.8,121.1 296.2,121.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"320.5,109.0 318.2,112.9 313.8,112.9 311.5,109.0 313.8,105.1 318.2,105.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"320.5,125.0 318.2,128.9 313.8,128.9 311.5,125.0 313.8,121.1 318.2,121.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"330.5,109.0 328.2,112.9 323.8,112.9 321.5,109.0 323.8,105.1 328.2,105.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"330.5,125.0 328.2,128.9 323.8,128.9 321.5,125.0 323.8,121.1 328.2,121.1\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><text x=\"392\" y=\"122\" font-size=\"14\" fill=\"#1d6fa5\" text-anchor=\"start\" font-weight=\"700\">Givre</text><line x1=\"458\" y1=\"90\" x2=\"482\" y2=\"144\" stroke=\"#14213d\" stroke-width=\"5\"/><polygon points=\"459.0,96.0 457.0,99.5 453.0,99.5 451.0,96.0 453.0,92.5 457.0,92.5\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><polygon points=\"490.0,138.0 488.0,141.5 484.0,141.5 482.0,138.0 484.0,134.5 488.0,134.5\" fill=\"#cfeaf8\" stroke=\"#1d6fa5\" stroke-width=\"1.4\"/><circle cx=\"470\" cy=\"117\" r=\"4\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"470\" y=\"176\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Papillon (manette des gaz)</text><line x1=\"560\" y1=\"117\" x2=\"631.0\" y2=\"117.0\" stroke=\"#2b7a9b\" stroke-width=\"3\"/><polygon points=\"640,117 631.0,122.0 631.0,112.0\" fill=\"#2b7a9b\"/><text x=\"650\" y=\"70\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"700\">Vers les cylindres</text></svg>",
+     "caption": "Le givre rétrécit le passage de l’air au **venturi** et autour du **papillon** : la puissance baisse. Le réchauffage prend de l’air chauffé autour de l’échappement."
+    },
+    {
+     "type": "trap",
+     "text": "Pas besoin de froid : **15 °C**, air **très humide** et **descente moteur réduit**, c’est le cas le plus risqué. À −25 °C, l’air est sec : risque faible. Et pas de réchauffage au décollage : l’air chaud **réduit la puissance**."
+    },
+    {
+     "type": "table",
+     "caption": "Le mélange : ce qui change et ce que tu fais",
+     "columns": [
+      "Situation",
+      "Effet",
+      "Ta réaction"
+     ],
+     "rows": [
+      [
+       "Montée sans toucher au mélange",
+       "il **s’enrichit** : l’air est moins dense",
+       "**appauvris**"
+      ],
+      [
+       "Réchauffage tiré, sans givre",
+       "il s’enrichit, la puissance **baisse**",
+       "normal : légère chute de régime"
+      ],
+      [
+       "Mélange trop riche",
+       "bougies **encrassées**, surconsommation",
+       "appauvris"
+      ],
+      [
+       "Trop pauvre à forte puissance",
+       "**surchauffe** et **détonation**",
+       "enrichis, réduis la puissance"
+      ]
+     ],
+     "note": "Dosage théorique : environ **1 g d’essence pour 15 g d’air**. Appauvrir (pas fixe) : tire lentement jusqu’à ce que le régime passe par son maximum puis baisse, et reviens un peu vers le riche."
+    },
+    {
+     "type": "text",
+     "text": "**Injection** : l’essence est injectée sous pression près des soupapes, sans venturi. **Pas de givrage carburateur**, mais le mélange se règle toujours et le redémarrage à chaud est plus délicat."
+    }
+   ]
+  },
+  {
+   "title": "Carburant et circuit carburant",
+   "summary": "Le bon carburant, propre et en quantité suffisante : c’est ce que tu vérifies à chaque avitaillement et à chaque prévol.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Les carburants",
+     "columns": [
+      "Carburant",
+      "Aspect, densité",
+      "Usage"
+     ],
+     "rows": [
+      [
+       "**AVGAS 100LL** (*Low Lead* : peu de plomb)",
+       "coloré en **bleu** ; ≈ **0,72**",
+       "moteurs à pistons : le plus courant"
+      ],
+      [
+       "Carburant auto (SP95, SP98)",
+       "celui des stations-service",
+       "seulement si avion **et** moteur sont approuvés ; plus volatil (bouchon de vapeur), peut contenir de l’éthanol"
+      ],
+      [
+       "**Jet A-1** (kérosène)",
+       "incolore à **jaune paille** ; ≈ **0,80**",
+       "turbines, diesels d’avion. **Interdit** dans un moteur à essence : détonation, panne"
+      ]
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Masse de carburant",
+     "formula": "Masse (kg) = Volume (L) × densité",
+     "example": "120 L d’AVGAS × 0,72 = **86,4 kg**. Pièges : diviser par la densité (166,7 kg) ou prendre celle du Jet A-1 (96 kg)."
+    },
+    {
+     "type": "formula",
+     "label": "Autonomie (carburant utilisable seulement)",
+     "formula": "Autonomie (h) = (capacité totale − inutilisable) ÷ consommation horaire",
+     "example": "110 L dont 6 L inutilisables, 26 L/h : 104 ÷ 26 = **4 h** jusqu’à la panne sèche (et non 4 h 14 min avec 110 L). La réserve se déduit ensuite."
+    },
+    {
+     "type": "steps",
+     "title": "La purge",
+     "items": [
+      "Avant le **premier vol du jour** et **après chaque avitaillement**, à **chaque point de purge**, dans un récipient transparent.",
+      "L’eau, plus dense, tombe **au fond** en bulles ou en couche nette. Purge jusqu’à n’obtenir que du carburant propre, **bleu** pour l’AVGAS. Incolore, odeur de pétrole : Jet A-1, ne vole pas."
+     ]
+    },
+    {
+     "type": "bullets",
+     "title": "Réservoirs et alimentation",
+     "items": [
+      "**Capacité totale = utilisable + inutilisable** : seul l’utilisable compte pour l’autonomie.",
+      "Aile haute : alimentation par **gravité** possible. Aile basse : pompe mécanique et **pompe électrique** de secours.",
+      "**Sélecteur** (G, D, G+D, OFF) : décolle sur un réservoir contrôlé au point fixe ; change en croisière, loin du sol, en surveillant la **pression d’essence**.",
+      "**Évents** dégagés, sinon la dépression coupe l’alimentation. Réservoirs **pleins** la nuit : moins de **condensation**."
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Moteur qui s’arrête quelques secondes **après un changement de réservoir** : ni givrage, ni magnéto. Reviens **aussitôt** sur le réservoir précédent (pompe électrique en marche si l’avion en a une), en tenant la vitesse de plané."
+    }
+   ]
+  },
+  {
+   "title": "Hélice, paramètres moteur et pannes",
+   "summary": "L’hélice transforme la puissance en traction ; le compte-tours et la pression d’admission te disent ce que donne le moteur.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "La pale, une aile qui tourne",
+     "items": [
+      "**Calage** : angle entre la **corde** de la pale et le **plan de rotation**. L’**incidence**, elle, se mesure par rapport au vent relatif.",
+      "**Vrillage** : le calage **diminue** vers l’extrémité, qui tourne plus vite, pour garder une incidence à peu près constante. **Petit pas** = petit calage (décollage), **grand pas** = croisière."
+     ]
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Pas fixe",
+       "points": [
+        "Un seul calage : **compromis** montée / croisière",
+        "Une seule manette, les **gaz** ; le **compte-tours** indique la puissance",
+        "En descente sans réduire, le **régime augmente**"
+       ]
+      },
+      {
+       "title": "Pas variable à vitesse constante",
+       "points": [
+        "Manette **bleue** : tu affiches un **régime**, le **régulateur** ajuste le calage",
+        "Les **gaz** règlent la **pression d’admission**",
+        "Décollage **petit pas**, régime max. En descente, le calage augmente, le régime reste constant"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Rendement de l’hélice",
+     "formula": "η = puissance utile ÷ puissance moteur\n  = (traction × vitesse) ÷ puissance moteur",
+     "example": "Moteur de 100 kW, rendement 0,8 : **80 kW** deviennent de la traction utile, 20 kW se perdent. η reste toujours **inférieur à 1**."
+    },
+    {
+     "type": "table",
+     "caption": "Les instruments moteur",
+     "columns": [
+      "Instrument",
+      "Ce qu’il mesure",
+      "À retenir"
+     ],
+     "rows": [
+      [
+       "**Compte-tours**",
+       "régime en **tr/min**",
+       "puissance en pas fixe ; trait rouge = régime maximal"
+      ],
+      [
+       "**Pression d’admission**",
+       "pression du collecteur, en **inHg** (pouce de mercure)",
+       "puissance en pas variable ; moteur arrêté : pression ambiante (≈ 30 inHg au niveau de la mer)"
+      ],
+      [
+       "Pression et température d’huile",
+       "la lubrification",
+       "pression basse + température haute = panne"
+      ],
+      [
+       "**CHT** / **EGT** (*Cylinder Head* / *Exhaust Gas Temperature*)",
+       "température des culasses / des gaz d’échappement",
+       "surchauffe ; l’EGT aide à régler le mélange"
+      ]
+     ],
+     "note": "Marques : **arc vert** = plage normale, **arc jaune** = précaution, **trait rouge** = limite."
+    },
+    {
+     "type": "key",
+     "title": "Panne moteur en vol : d’abord voler",
+     "text": "Prends la **vitesse de plané** et choisis un champ. Ensuite seulement, cherche la cause : **sélecteur** et pompe, **mélange** riche, **réchauffage** carburateur, **magnétos**. Puis suis la check-list du manuel."
+    }
+   ]
+  },
+  {
+   "title": "Circuit électrique, dépression et chauffage",
+   "summary": "L’électricité fait vivre radios, transpondeur et volets ; la dépression fait tourner les gyroscopes ; le chauffage peut t’intoxiquer.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "Le circuit électrique (courant continu, 14 V ou 28 V)",
+     "items": [
+      "**Batterie** (12 V ou 24 V) : démarrage et réserve, mise en circuit par le **contacteur général** (BAT ou MASTER).",
+      "**Alternateur** entraîné par le moteur : il alimente les équipements et recharge la batterie. Un **régulateur** tient la tension (≈ 14 V avec une batterie de 12 V).",
+      "**Barre omnibus** (bus) : distribue le courant. Le **fusible** fond et se remplace ; le **disjoncteur** s’ouvre et se réarme."
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Disjoncteur qui saute : attends un peu et **réarme-le une seule fois**. S’il ressaute, **laisse-le ouvert** : insister, c’est risquer l’échauffement, voire le feu. Ne le maintiens jamais enfoncé."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Ampèremètre de charge (zéro au centre)",
+       "points": [
+        "Mesure le **courant** de charge ou de décharge de la batterie",
+        "**Positif** : la batterie se recharge (fort après le démarrage, puis décroissant : normal)",
+        "**Négatif** persistant : la batterie **se décharge**, l’alternateur ne débite plus"
+       ]
+      },
+      {
+       "title": "Voltmètre",
+       "points": [
+        "Mesure la **tension** : ≈ 14 V sur un circuit 14 V, moteur tournant",
+        "Tension retombée à celle de la **batterie seule** : l’alternateur ne charge plus"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "title": "Panne d’alternateur (voyant ALT, ampèremètre négatif, tension en baisse)",
+     "items": [
+      "Vérifie le **disjoncteur** de l’alternateur et applique la **check-list** (réenclenchement).",
+      "Échec : **déleste**. Coupe phares, réchauffage pitot hors givrage, radios en surnombre.",
+      "Garde une radio et le transpondeur, **écourte le vol**. Le moteur tourne toujours, grâce aux **magnétos**.",
+      "Batterie vide : plus de **radio**, de **transpondeur**, de volets ni de jauges électriques. Restent les gyroscopes **à dépression** et les instruments pitot-statiques."
+     ]
+    },
+    {
+     "type": "bullets",
+     "title": "Le circuit de dépression",
+     "items": [
+      "Un **jet d’air** entraîne les gyroscopes de l’**horizon artificiel** et du **conservateur de cap**. L’**indicateur de virage**, souvent **électrique**, assure la redondance.",
+      "Source : **venturi** extérieur (inefficace au sol et à basse vitesse, peut givrer) ou **pompe à vide** entraînée par le moteur.",
+      "Panne : indicateur de dépression **hors de l’arc vert**, gyroscopes qui **dérivent lentement**. Contrôle croisé indispensable."
+     ]
+    },
+    {
+     "type": "trap",
+     "title": "Chauffage cabine et monoxyde de carbone",
+     "text": "Chauffage en marche, **maux de tête** et **somnolence** : pense **CO** (monoxyde de carbone, incolore et inodore), venu d’une fissure de l’échangeur sur l’**échappement**. Coupe le chauffage, aère, oxygène si possible, atterris vite. **Ne monte pas.**"
+    }
+   ]
+  },
+  {
+   "title": "Système pitot-statique : anémomètre, altimètre, variomètre",
+   "summary": "Trois instruments, deux prises de pression : sache qui est branché sur quoi, et tu devineras chaque panne.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Instrument",
+      "Relié à",
+      "Ce qu’il mesure → ce qu’il affiche"
+     ],
+     "rows": [
+      [
+       "**Anémomètre**",
+       "pitot + statique",
+       "pression **dynamique** (totale − statique) → vitesse indiquée **Vi**, en kt"
+      ],
+      [
+       "**Altimètre**",
+       "statique seule",
+       "pression, par une **capsule anéroïde** → altitude (calage **QNH**), hauteur (**QFE**) ou niveau de vol (**1 013 hPa**)"
+      ],
+      [
+       "**Variomètre**",
+       "statique seule",
+       "variation de pression, par une **fuite calibrée** (léger retard) → vitesse verticale, en ft/min"
+      ]
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "Qui est branché sur quoi",
+     "svg": "<svg viewBox=\"0 0 700 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"244\" fill=\"#ffffff\"/><text x=\"30\" y=\"20\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"700\">Tube pitot</text><text x=\"30\" y=\"38\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\">pression totale Pt</text><rect x=\"30\" y=\"52\" width=\"85\" height=\"12\" fill=\"#f3f5f9\" stroke=\"#14213d\" stroke-width=\"2\"/><rect x=\"103\" y=\"64\" width=\"12\" height=\"28\" fill=\"#f3f5f9\" stroke=\"#14213d\" stroke-width=\"2\"/><ellipse cx=\"30\" cy=\"58\" rx=\"3\" ry=\"6\" fill=\"#14213d\"/><circle cx=\"68\" cy=\"64\" r=\"2.6\" fill=\"#14213d\"/><text x=\"66\" y=\"83\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">purge</text><path d=\"M109,92 L109,116 L220,116\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"4\"/><rect x=\"26\" y=\"160\" width=\"10\" height=\"50\" fill=\"#d6dbe6\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"36\" cy=\"185\" r=\"4\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><text x=\"50\" y=\"152\" font-size=\"15\" fill=\"#1d6fa5\" text-anchor=\"start\" font-weight=\"700\">Prise statique</text><text x=\"50\" y=\"170\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\">pression statique Ps</text><path d=\"M40,185 L600,185 M260,185 L260,156 M430,185 L430,156 M600,185 L600,156 M120,185 L120,204\" fill=\"none\" stroke=\"#1d6fa5\" stroke-width=\"4\"/><polygon points=\"112,202 128,202 120,212\" fill=\"#1d6fa5\"/><polygon points=\"112,222 128,222 120,212\" fill=\"#1d6fa5\"/><text x=\"136\" y=\"238\" font-size=\"13\" fill=\"#1d6fa5\" text-anchor=\"start\" font-weight=\"700\">Statique de secours (cabine)</text><circle cx=\"260\" cy=\"116\" r=\"40\" fill=\"#14213d\" stroke=\"#3d4a66\" stroke-width=\"3\"/><text x=\"260\" y=\"121\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">kt</text><text x=\"260\" y=\"64\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Anémomètre</text><text x=\"260\" y=\"205\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Pt − Ps</text><text x=\"260\" y=\"222\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">→ vitesse indiquée Vi</text><circle cx=\"430\" cy=\"116\" r=\"40\" fill=\"#14213d\" stroke=\"#3d4a66\" stroke-width=\"3\"/><text x=\"430\" y=\"121\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">ft</text><text x=\"430\" y=\"64\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Altimètre</text><text x=\"430\" y=\"205\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Ps</text><text x=\"430\" y=\"222\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">→ altitude (selon calage)</text><circle cx=\"600\" cy=\"116\" r=\"40\" fill=\"#14213d\" stroke=\"#3d4a66\" stroke-width=\"3\"/><text x=\"600\" y=\"121\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">ft/min</text><text x=\"600\" y=\"64\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">Variomètre</text><text x=\"600\" y=\"205\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">variation de Ps</text><text x=\"600\" y=\"222\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">→ vitesse verticale</text><line x1=\"470\" y1=\"18\" x2=\"500\" y2=\"18\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"508\" y=\"23\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\">pression totale (pitot)</text><line x1=\"470\" y1=\"38\" x2=\"500\" y2=\"38\" stroke=\"#1d6fa5\" stroke-width=\"4\"/><text x=\"508\" y=\"43\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\">pression statique</text></svg>",
+     "caption": "Le **tube pitot**, face au vent, capte la pression **totale** (statique + dynamique). Les **prises statiques**, sur les flancs du fuselage, captent la pression ambiante."
+    },
+    {
+     "type": "formula",
+     "label": "Erreur de calage de l’altimètre",
+     "formula": "Écart (ft) ≈ 28 ft × écart de calage (hPa)",
+     "example": "Altimètre resté sur 1 013 alors que le QNH vaut 1 003 : 10 × 28 = **280 ft de trop**. Tu es plus bas que tu ne le crois. Air plus froid ou pression plus basse : l’altimètre indique **trop haut** (« des hautes vers les basses, gare en bas »)."
+    },
+    {
+     "type": "diagram",
+     "title": "Les arcs de l’anémomètre (exemple)",
+     "svg": "<svg viewBox=\"0 0 680 226\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"226\" fill=\"#ffffff\"/><circle cx=\"113\" cy=\"113\" r=\"108\" fill=\"#3d4a66\"/><circle cx=\"113\" cy=\"113\" r=\"103\" fill=\"#14213d\"/><path d=\"M166.2,46.7 A85,85 0 0 1 127.8,196.7\" fill=\"none\" stroke=\"#2e9d4f\" stroke-width=\"10\"/><path d=\"M127.8,196.7 A85,85 0 0 1 42.8,161.0\" fill=\"none\" stroke=\"#f2c200\" stroke-width=\"10\"/><path d=\"M148.8,49.4 A73,73 0 0 1 183.7,131.1\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"7\"/><line x1=\"57.7\" y1=\"150.8\" x2=\"37.1\" y2=\"164.9\" stroke=\"#e53935\" stroke-width=\"5\"/><line x1=\"144.1\" y1=\"27.5\" x2=\"147.5\" y2=\"18.1\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"131.8\" y=\"66.3\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">40</text><line x1=\"172.5\" y1=\"38.9\" x2=\"176.2\" y2=\"34.2\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"189.7\" y1=\"64.1\" x2=\"198.2\" y2=\"58.7\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"159.4\" y=\"88.4\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">60</text><line x1=\"205.3\" y1=\"90.4\" x2=\"211.1\" y2=\"89.0\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"203.7\" y1=\"120.9\" x2=\"213.6\" y2=\"121.8\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"167.8\" y=\"122.8\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">80</text><line x1=\"200.0\" y1=\"151.3\" x2=\"205.4\" y2=\"153.7\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"180.1\" y1=\"174.5\" x2=\"187.5\" y2=\"181.2\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"153.6\" y=\"155.2\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">100</text><line x1=\"158.7\" y1=\"196.3\" x2=\"161.6\" y2=\"201.5\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"128.8\" y1=\"202.6\" x2=\"130.5\" y2=\"212.5\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"122.6\" y=\"172.2\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">120</text><line x1=\"98.5\" y1=\"206.9\" x2=\"97.6\" y2=\"212.8\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"71.0\" y1=\"193.7\" x2=\"66.4\" y2=\"202.6\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"87.6\" y=\"166.8\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">140</text><line x1=\"44.4\" y1=\"178.7\" x2=\"40.0\" y2=\"182.8\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"30.5\" y1=\"151.5\" x2=\"21.5\" y2=\"155.7\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"63.2\" y=\"141.2\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">160</text><line x1=\"18.6\" y1=\"123.3\" x2=\"12.6\" y2=\"124.0\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"24.2\" y1=\"93.3\" x2=\"14.4\" y2=\"91.1\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"59.3\" y=\"106.1\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">180</text><line x1=\"31.8\" y1=\"63.7\" x2=\"26.7\" y2=\"60.6\" stroke=\"#ffffff\" stroke-width=\"1.3\"/><line x1=\"54.5\" y1=\"43.3\" x2=\"48.1\" y2=\"35.6\" stroke=\"#ffffff\" stroke-width=\"2.2\"/><text x=\"77.6\" y=\"75.9\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">200</text><text x=\"113\" y=\"149\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"700\">kt</text><polygon points=\"150.5,181.4 108.6,115.4 117.4,110.6\" fill=\"#ffffff\"/><circle cx=\"113\" cy=\"113\" r=\"7\" fill=\"#9aa2b4\"/><rect x=\"270\" y=\"24\" width=\"34\" height=\"12\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"318\" y=\"34\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"700\">Arc blanc : VS0 → VFE</text><text x=\"318\" y=\"53\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"start\">45 → 85 kt : volets utilisables</text><rect x=\"270\" y=\"76\" width=\"34\" height=\"12\" fill=\"#2e9d4f\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"318\" y=\"86\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"700\">Arc vert : VS1 → VNO</text><text x=\"318\" y=\"105\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"start\">50 → 120 kt : utilisation normale</text><rect x=\"270\" y=\"128\" width=\"34\" height=\"12\" fill=\"#f2c200\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"318\" y=\"138\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"700\">Arc jaune : VNO → VNE</text><text x=\"318\" y=\"157\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"start\">120 → 155 kt : air calme seulement</text><rect x=\"283\" y=\"174\" width=\"8\" height=\"24\" fill=\"#e53935\"/><text x=\"318\" y=\"190\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"700\">Trait rouge : VNE</text><text x=\"318\" y=\"209\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"start\">155 kt : à ne jamais dépasser</text></svg>",
+     "caption": "**VS0** : décrochage en configuration d’atterrissage. **VS1** : décrochage en lisse. **VFE** : maximum volets sortis. **VNO** : maximum en croisière normale. **VNE** : à ne jamais dépasser. En turbulence, reste dans l’arc vert. Chaque avion a ses valeurs, au manuel de vol."
+    },
+    {
+     "type": "table",
+     "caption": "Prise bouchée : ce que tu lis",
+     "columns": [
+      "Panne",
+      "Anémomètre",
+      "Altimètre",
+      "Variomètre"
+     ],
+     "rows": [
+      [
+       "Pitot **et** sa purge bouchés (givre)",
+       "comme un altimètre : **augmente en montée**, diminue en descente",
+       "normal",
+       "normal"
+      ],
+      [
+       "Pitot bouché, purge libre",
+       "tombe à **zéro**",
+       "normal",
+       "normal"
+      ],
+      [
+       "Statique bouchée",
+       "trop **faible** en montée, trop **forte** en descente",
+       "**figé**",
+       "bloqué à **zéro**"
+      ],
+      [
+       "Statique de secours (cabine)",
+       "un peu trop **haut**",
+       "un peu trop **haut**",
+       "fonctionne"
+      ]
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Pitot givré en montée : la vitesse indiquée **augmente**, tu es tenté de cabrer… jusqu’au **décrochage**. Statique bouchée en descente : l’anémomètre indique **trop**, même danger. Le **réchauffage pitot** prévient le givre ; gros consommateur, coupe-le en délestage hors givrage."
+    }
+   ]
+  },
+  {
+   "title": "Gyroscopes, indicateur de virage et compas",
+   "summary": "Les gyroscopes gardent leur orientation dans l’espace ; le compas suit le champ magnétique, mais se trompe dès que l’avion vire ou accélère.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Un **gyroscope** est une toupie lancée à grande vitesse. Deux propriétés : la **rigidité** (il garde son orientation dans l’espace) et la **précession** (poussé, il réagit à 90°, dans le sens de rotation)."
+    },
+    {
+     "type": "table",
+     "caption": "Les instruments gyroscopiques",
+     "columns": [
+      "Instrument",
+      "Source",
+      "Indique",
+      "À savoir"
+     ],
+     "rows": [
+      [
+       "**Horizon artificiel**",
+       "dépression",
+       "**assiette** (tangage) et **inclinaison** (roulis)",
+       "gyroscope à axe vertical"
+      ],
+      [
+       "**Conservateur de cap**",
+       "dépression",
+       "le **cap**",
+       "sans référence magnétique, il **dérive** : recale-le sur le compas toutes les **10 à 15 min**, en vol rectiligne stabilisé"
+      ],
+      [
+       "**Indicateur de virage**",
+       "souvent électrique",
+       "le **taux de virage**",
+       "taux 1 = **3°/s** ; ne donne **pas** l’inclinaison"
+      ],
+      [
+       "**Bille**",
+       "aucun",
+       "la **symétrie** du vol",
+       "simple inclinomètre ; bille à droite : pied droit"
+      ]
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Durée d’un virage au taux 1",
+     "formula": "Temps (s) = changement de cap (°) ÷ 3",
+     "example": "Virage de 90° : 90 ÷ 3 = **30 s**. Tour complet : 360 ÷ 3 = 120 s = **2 min**. Inclinaison nécessaire ≈ 15 % de la vitesse propre en kt : environ 15° à 100 kt."
+    },
+    {
+     "type": "bullets",
+     "title": "Le compas magnétique",
+     "items": [
+      "Une rose aimantée flotte dans un liquide ; tu lis le cap devant la **ligne de foi**. Fiable **seulement** en vol rectiligne, en palier, à vitesse stabilisée.",
+      "**Déviation** : erreur propre à l’avion, sur la **carte de déviation**. L’**inclinaison magnétique**, forte en France, crée les erreurs de virage et d’accélération :"
+     ]
+    },
+    {
+     "type": "table",
+     "columns": [
+      "Hémisphère nord",
+      "Le compas…",
+      "Ce que tu fais"
+     ],
+     "rows": [
+      [
+       "Virage **vers le nord**",
+       "est **en retard**",
+       "sors du virage **avant** le cap voulu"
+      ],
+      [
+       "Virage **vers le sud**",
+       "est **en avance**",
+       "sors du virage **après** le cap voulu"
+      ],
+      [
+       "**Accélération** au cap est ou ouest",
+       "indique un virage vers le **nord**",
+       "attends la vitesse stabilisée"
+      ],
+      [
+       "**Décélération** au cap est ou ouest",
+       "indique un virage vers le **sud**",
+       "attends la vitesse stabilisée"
+      ]
+     ]
+    },
+    {
+     "type": "memo",
+     "text": "**ANDS** : **A**ccélération **N**ord, **D**écélération **S**ud. Virages : « **au nord avant, au sud après** ». Et « **le pied chasse la bille** » : bille à droite, pied droit."
+    },
+    {
+     "type": "trap",
+     "text": "Recaler le conservateur de cap **en virage** ou en accélération, quand le compas est faux : recale-le en ligne droite, vitesse stabilisée. Autre piège : lire une inclinaison sur l’indicateur de virage, qui donne le **taux**."
+    }
+   ]
+  },
+  {
+   "title": "Navigabilité, entretien et manuel de vol",
+   "summary": "Un avion ne vole que s’il est navigable : certificats valides, entretien à jour, limitations respectées.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "La Part-ML : l’entretien des avions légers",
+     "items": [
+      "Règles européennes des avions de **2 730 kg** au plus (masse maximale au décollage), hors transporteurs aériens.",
+      "Le **propriétaire** répond du maintien de la navigabilité ; il peut le confier à un organisme agréé de gestion de la navigabilité (**CAO** ou **CAMO**).",
+      "Le **programme d’entretien** (AMP, *Aircraft Maintenance Programme*) fixe des **visites** en heures de vol et en durée calendaire : la **première échéance atteinte** s’impose. Le **pilote-propriétaire** peut faire certaines **tâches simples** listées par la Part-ML."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Les papiers de navigabilité",
+     "columns": [
+      "Document",
+      "Ce que c’est",
+      "Validité"
+     ],
+     "rows": [
+      [
+       "**CDN** (certificat de navigabilité)",
+       "l’avion est conforme à un type certifié",
+       "sans limite, si l’entretien est fait et l’ARC valide"
+      ],
+      [
+       "**ARC** (*Airworthiness Review Certificate*) : examen de navigabilité",
+       "délivré après examen de l’avion et de ses documents",
+       "**1 an**"
+      ],
+      [
+       "**CRS** (certificat de remise en service) ou APRS (approbation pour remise en service)",
+       "signé par le mécanicien après chaque intervention",
+       "avant le vol suivant"
+      ],
+      [
+       "**CN** (consignes de navigabilité)",
+       "corrections **obligatoires** imposées par l’autorité (EASA, agence européenne de la sécurité aérienne)",
+       "dans le délai fixé"
+      ]
+     ],
+     "note": "Vols, heures et travaux sont notés au **carnet de route** et dans les livrets cellule, moteur et hélice. Documents à bord : voir *Droit aérien*."
+    },
+    {
+     "type": "key",
+     "title": "La prévol, ta part de la navigabilité",
+     "text": "Fais le tour de l’avion avec la **check-list du manuel de vol**. Vérifie huile, purges, niveau vu, pneus, freins, gouvernes **dans le bon sens**, hélice, pitot et statiques, cales et housses. Dommage douteux (entaille d’hélice, crique) : **tu ne voles pas** sans avis d’un mécanicien."
+    },
+    {
+     "type": "key",
+     "title": "Le manuel de vol : 9 sections au format standard",
+     "text": "1 Généralités · 2 **Limitations** · 3 Procédures d’**urgence** · 4 Procédures **normales** · 5 **Performances** · 6 Masse et centrage · 7 Systèmes · 8 Entretien · 9 **Suppléments** (équipements optionnels). Format GAMA (constructeurs d’aviation générale) ; un manuel ancien peut différer."
+    },
+    {
+     "type": "bullets",
+     "title": "Les limitations à connaître",
+     "items": [
+      "Vitesses **VNE**, **VNO**, **VFE** et **VA** (manœuvre : braquages complets permis en dessous ; elle **baisse** avec la masse). Train rentrant : **VLO** (manœuvre du train), **VLE** (train sorti).",
+      "Moteur : régime maximal, pressions et températures, reprises par les arcs des instruments.",
+      "Masses, **centrage** et **facteurs de charge** : +3,8 / −1,52 g en catégorie normale, +4,4 / −1,76 g en utilitaire.",
+      "**Plaquettes** et marques des instruments : des limitations **obligatoires**, comme le manuel, à bord et à jour."
+     ]
+    }
+   ]
+  }
+ ],
+ "key_numbers": [
+  {
+   "value": "2 tours",
+   "label": "de vilebrequin par cycle à 4 temps"
+  },
+  {
+   "value": "2 + 2",
+   "label": "magnétos ; bougies par cylindre"
+  },
+  {
+   "value": "1 / 15",
+   "label": "dosage : 1 g d’essence pour 15 g d’air"
+  },
+  {
+   "value": "−10 à +30 °C",
+   "label": "givrage carburateur, air humide"
+  },
+  {
+   "value": "0,72",
+   "label": "densité AVGAS : 100 L = 72 kg"
+  },
+  {
+   "value": "0,80",
+   "label": "densité du Jet A-1 (interdit)"
+  },
+  {
+   "value": "≈ 0,8",
+   "label": "meilleur rendement d’hélice (< 1)"
+  },
+  {
+   "value": "VNE",
+   "label": "trait rouge : jamais dépasser"
+  },
+  {
+   "value": "14 V / 28 V",
+   "label": "circuits (batteries 12 V / 24 V)"
+  },
+  {
+   "value": "1 fois",
+   "label": "réarmement d’un disjoncteur sauté"
+  },
+  {
+   "value": "VS0 → VFE",
+   "label": "arc blanc : volets"
+  },
+  {
+   "value": "VS1 → VNO",
+   "label": "arc vert : utilisation normale"
+  },
+  {
+   "value": "VNO → VNE",
+   "label": "arc jaune : air calme seulement"
+  },
+  {
+   "value": "28 ft",
+   "label": "erreur d’altimètre par hPa de calage"
+  },
+  {
+   "value": "3°/s",
+   "label": "taux 1 : 90° en 30 s, 360° en 2 min"
+  },
+  {
+   "value": "15 % de Vp",
+   "label": "inclinaison taux 1 (vitesse propre, kt)"
+  },
+  {
+   "value": "10 à 15 min",
+   "label": "recalage du conservateur de cap"
+  },
+  {
+   "value": "ANDS",
+   "label": "compas : accélération nord, décél. sud"
+  },
+  {
+   "value": "+3,8 / −1,52 g",
+   "label": "facteurs limites, catégorie normale"
+  },
+  {
+   "value": "+4,4 / −1,76 g",
+   "label": "facteurs limites, catégorie utilitaire"
+  },
+  {
+   "value": "1 an",
+   "label": "validité de l’ARC"
+  },
+  {
+   "value": "2 730 kg",
+   "label": "masse max des avions en Part-ML"
+  },
+  {
+   "value": "9 sections",
+   "label": "manuel de vol ; 2 = limitations"
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Longeron",
+   "def": "poutre principale de l’aile, reprend la flexion"
+  },
+  {
+   "term": "Nervure",
+   "def": "donne sa forme au profil de l’aile"
+  },
+  {
+   "term": "Semi-monocoque",
+   "def": "revêtement travaillant raidi"
+  },
+  {
+   "term": "Train tricycle",
+   "def": "roulette de nez, roues derrière le CG"
+  },
+  {
+   "term": "Train classique",
+   "def": "roulette de queue, roues devant le CG"
+  },
+  {
+   "term": "Cheval de bois",
+   "def": "perte de contrôle en lacet au sol"
+  },
+  {
+   "term": "Compensateur (tab)",
+   "def": "annule l’effort au manche"
+  },
+  {
+   "term": "Volets",
+   "def": "plus de portance et de traînée, décrochage plus lent"
+  },
+  {
+   "term": "Repères de glissement",
+   "def": "traits pneu/jante peints"
+  },
+  {
+   "term": "Magnéto",
+   "def": "générateur autonome du courant d’allumage"
+  },
+  {
+   "term": "Venturi",
+   "def": "rétrécissement : l’air accélère, la pression baisse"
+  },
+  {
+   "term": "Étouffoir",
+   "def": "mélange plein pauvre : arrête le moteur"
+  },
+  {
+   "term": "Injection",
+   "def": "essence sous pression près des soupapes"
+  },
+  {
+   "term": "Détonation",
+   "def": "combustion explosive après l’étincelle"
+  },
+  {
+   "term": "Pré-allumage",
+   "def": "allumage par un point chaud"
+  },
+  {
+   "term": "AVGAS 100LL",
+   "def": "essence aviation peu plombée, bleue"
+  },
+  {
+   "term": "Jet A-1",
+   "def": "kérosène, incolore à jaune paille"
+  },
+  {
+   "term": "Purge",
+   "def": "prélèvement au point bas : eau, impuretés"
+  },
+  {
+   "term": "Vrillage",
+   "def": "calage décroissant vers le bout de pale"
+  },
+  {
+   "term": "Pression d’admission",
+   "def": "pression du collecteur, en inHg"
+  },
+  {
+   "term": "CHT / EGT",
+   "def": "température culasses / gaz d’échappement"
+  },
+  {
+   "term": "Disjoncteur",
+   "def": "coupe en surintensité, réarmable"
+  },
+  {
+   "term": "CO",
+   "def": "monoxyde de carbone, incolore et inodore"
+  },
+  {
+   "term": "VS0 / VS1",
+   "def": "décrochage volets sortis / en lisse"
+  },
+  {
+   "term": "VFE / VNO",
+   "def": "max volets sortis / max en croisière normale"
+  },
+  {
+   "term": "Déviation",
+   "def": "erreur du compas propre à l’avion"
+  },
+  {
+   "term": "CDN / ARC",
+   "def": "certificat de navigabilité / examen annuel"
+  },
+  {
+   "term": "Part-ML",
+   "def": "règles d’entretien des avions légers"
+  },
+  {
+   "term": "CN",
+   "def": "consigne de navigabilité, obligatoire"
+  },
+  {
+   "term": "TBO",
+   "def": "potentiel moteur entre révisions générales"
+  }
+ ],
+ "self_test": [
+  {
+   "q": "Effort permanent à pousser après une mise en palier : que fais-tu ?",
+   "a": "Tu compenses à piquer."
+  },
+  {
+   "q": "Essai magnétos : aucune chute de régime sur L. Que suspectes-tu ?",
+   "a": "Un fil de masse coupé : magnéto « chaude », hélice dangereuse."
+  },
+  {
+   "q": "Régime qui baisse ; réchauffage : il baisse encore puis remonte. Diagnostic ?",
+   "a": "Givrage carburateur, et le givre a fondu."
+  },
+  {
+   "q": "Combien pèsent 80 L d’AVGAS ?",
+   "a": "80 × 0,72 = 57,6 kg."
+  },
+  {
+   "q": "Hélice à vitesse constante, tu passes en descente sans toucher aux manettes : le régime ?",
+   "a": "Il reste constant : le régulateur augmente le calage."
+  },
+  {
+   "q": "Ampèremètre (zéro au centre) négatif en croisière : signification et action ?",
+   "a": "La batterie se décharge (panne d’alternateur) : délester, écourter le vol."
+  },
+  {
+   "q": "Prise statique bouchée : que font l’altimètre et le variomètre ?",
+   "a": "Altimètre figé, variomètre bloqué à zéro."
+  },
+  {
+   "q": "Que marque la fin de l’arc vert de l’anémomètre ?",
+   "a": "La VNO."
+  },
+  {
+   "q": "Au cap 270, l’avion accélère : que montre le compas ?",
+   "a": "Un virage apparent vers le nord (ANDS)."
+  },
+  {
+   "q": "Durée de validité de l’ARC ?",
+   "a": "1 an."
+  }
+ ]
+}
