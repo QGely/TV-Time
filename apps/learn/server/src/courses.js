@@ -21,12 +21,15 @@ function sanitizeSkill(s, unitIndex, skillIndex) {
   const vocab = (Array.isArray(s.vocab) ? s.vocab : []).filter((v) => v && v.term && v.translation).map((v) => ({ term: String(v.term).trim(), translation: String(v.translation).trim(), emoji: v.emoji && String(v.emoji).trim() ? String(v.emoji).trim() : null }));
   const sentences = (Array.isArray(s.sentences) ? s.sentences : []).filter((x) => x && x.source && x.target).map((x) => ({ source: String(x.source).trim(), target: String(x.target).trim() }));
   const questions = (Array.isArray(s.questions) ? s.questions : []).map((q, i) => sanitizeQuestion(q, id, i)).filter(Boolean);
-  return { id, title: s.title || `Leçon ${skillIndex + 1}`, icon: s.icon || '📘', tips: s.tips || null, vocab, sentences, questions, levels: LEVELS_PER_SKILL };
+  // Schémas de la fiche : SVG original (sans script) ou image publiée à côté de l'appli (src relatif).
+  const figures = (Array.isArray(s.figures) ? s.figures : []).filter((f) => f && f.title && ((typeof f.svg === 'string' && /^\s*<svg[\s>]/.test(f.svg) && !/<script|\son\w+\s*=/i.test(f.svg)) || (typeof f.src === 'string' && /^[\w./-]+\.(png|jpe?g|webp|svg)$/i.test(f.src) && !f.src.includes('..'))))
+    .map((f) => ({ title: String(f.title), svg: f.svg || null, src: f.src || null, caption: f.caption ? String(f.caption) : '', credit: f.credit ? String(f.credit) : '' }));
+  return { id, title: s.title || `Leçon ${skillIndex + 1}`, icon: s.icon || '📘', tips: s.tips || null, vocab, sentences, questions, figures, levels: LEVELS_PER_SKILL };
 }
 
 const META_KEYS = ['title', 'lang_name', 'flag', 'tts_lang', 'description', 'type', 'unlock', 'library', 'disclaimer', 'exam'];
 
-/** Loads courses; "<id>.part<N>.json" files are merged into one course by id (units concatenated). */
+/** Loads courses; "<id>.part<N>.json" files are merged into one course by id (units concatenated, lessons of a repeated unit appended). */
 export function loadCourses() {
   if (cache) return cache;
   const byId = new Map();
@@ -45,7 +48,16 @@ export function loadCourses() {
         if (isDefault) course[k] = c[k];
       }
       for (const u of Array.isArray(c.units) ? c.units : []) {
-        if (course.units.some((x) => x.id === u.id)) continue;
+        const existing = course.units.find((x) => x.id === u.id);
+        if (existing) {
+          // Additional files may add lessons to a unit declared elsewhere (e.g. "lapl.part1b.json").
+          const ui = course.units.indexOf(existing);
+          for (const s of u.skills || []) {
+            const sk = sanitizeSkill(s, ui, existing.skills.length);
+            if (!existing.skills.some((x) => x.id === sk.id) && (sk.vocab.length >= 4 || sk.questions.length >= 4)) existing.skills.push(sk);
+          }
+          continue;
+        }
         const unitIndex = course.units.length;
         course.units.push({ id: u.id || `u${unitIndex + 1}`, title: u.title || `Unité ${unitIndex + 1}`, description: u.description || '', color: /^#[0-9a-fA-F]{6}$/.test(u.color || '') ? u.color : ['#58cc02', '#1cb0f6', '#ce82ff', '#ff9600', '#ff4b4b', '#2b70c9'][unitIndex % 6], skills: (u.skills || []).map((s, i) => sanitizeSkill(s, unitIndex, i)).filter((s) => s.vocab.length >= 4 || s.questions.length >= 4) });
       }
@@ -55,6 +67,8 @@ export function loadCourses() {
     if (c.type !== 'quiz' && c.units.some((u) => u.skills.some((k) => k.questions.length))) c.type = 'quiz';
     if (!['unit', 'course'].includes(c.unlock)) c.unlock = 'course';
     c.units = c.units.filter((u) => u.skills.length);
+    const skillNum = (k) => { const m = String(k.id).match(/^u\d+s(\d+)$/); return m ? Number(m[1]) : Infinity; };
+    for (const u of c.units) u.skills.sort((a, b) => skillNum(a) - skillNum(b));
     // Keep units in the order declared by the exam (if any), otherwise by unit id number.
     const order = (u) => { const i = (c.exam?.subjects || []).findIndex((x) => x.unit === u.id); return i >= 0 ? i : 100 + (Number(String(u.id).replace(/\D/g, '')) || 0); };
     c.units.sort((a, b) => order(a) - order(b));

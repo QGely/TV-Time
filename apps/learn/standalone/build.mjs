@@ -11,9 +11,15 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const DATA = path.resolve(HERE, '../server/src/data');
 const meta = JSON.parse(fs.readFileSync(path.join(DATA, 'courses/lapl.json'), 'utf8'));
 const units = [];
-for (const f of fs.readdirSync(path.join(DATA, 'courses')).filter((f) => /^lapl\.part\d+\.json$/.test(f))) {
-  for (const u of JSON.parse(fs.readFileSync(path.join(DATA, 'courses', f), 'utf8')).units || []) units.push(u);
+for (const f of fs.readdirSync(path.join(DATA, 'courses')).filter((f) => /^lapl\.part[\w-]+\.json$/.test(f)).sort()) {
+  for (const u of JSON.parse(fs.readFileSync(path.join(DATA, 'courses', f), 'utf8')).units || []) {
+    const ex = units.find((x) => x.id === u.id);
+    if (!ex) { units.push({ ...u, skills: [...(u.skills || [])] }); continue; }
+    for (const s of u.skills || []) if (!ex.skills.some((k) => k.id === s.id)) ex.skills.push(s);
+  }
 }
+const skillNum = (k) => Number((String(k.id).match(/s(\d+)$/) || [])[1] || 999);
+for (const u of units) u.skills.sort((a, b) => skillNum(a) - skillNum(b));
 const order = meta.exam.subjects.map((s) => s.unit);
 units.sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
 const library = JSON.parse(fs.readFileSync(path.join(DATA, 'libraries/lapl.json'), 'utf8'));

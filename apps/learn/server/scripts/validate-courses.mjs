@@ -33,6 +33,15 @@ for (const file of files) {
       seenSkills.set(key, file);
       const vocab = Array.isArray(s.vocab) ? s.vocab : [];
       for (const v of vocab) if (!v.term || !v.translation) problems.push(`${where}: entrée de vocabulaire incomplète`);
+      for (const [k, f] of (Array.isArray(s.figures) ? s.figures : []).entries()) {
+        const fw = `${where}/figures[${k}]`;
+        if (!f.title) problems.push(`${fw}: titre manquant`);
+        if (f.svg) {
+          if (!/^\s*<svg[\s>]/.test(f.svg) || !/viewBox=/.test(f.svg)) problems.push(`${fw}: svg invalide (balise <svg> avec viewBox attendue)`);
+          if (/<script|\son\w+\s*=|<image|<foreignObject|href=\s*["']https?:/i.test(f.svg)) problems.push(`${fw}: svg interdit (script, événement, image ou lien externe)`);
+        } else if (!f.src) problems.push(`${fw}: svg ou src requis`);
+        if (!f.caption || String(f.caption).length < 20) problems.push(`${fw}: légende (caption) manquante ou trop courte`);
+      }
       if (Array.isArray(s.questions)) {
         if (!/^u\d+s\d+$/.test(s.id || '')) problems.push(`${where}: id de leçon attendu au format u<N>s<M>`);
         if (!s.tips || s.tips.length < 200) problems.push(`${where}: fiche (tips) absente ou trop courte (< 200 caractères)`);
@@ -64,6 +73,16 @@ for (const file of files) {
   if (qCount >= 20) {
     const max = Math.max(...answerDist);
     if (max / qCount > 0.4) problems.push(`répartition des bonnes réponses déséquilibrée (A/B/C/D = ${answerDist.join('/')})`);
+    // Indice de longueur : la bonne réponse ne doit pas être reconnaissable parce qu'elle est la plus longue.
+    let longest = 0; const gaps = [];
+    for (const u of units) for (const s of u.skills || []) for (const q of s.questions || []) {
+      if (!Array.isArray(q.choices) || q.choices.length !== 4 || !Number.isInteger(q.answer)) continue;
+      const L = q.choices.map((x) => String(x).length); const other = Math.max(...L.filter((_, i) => i !== q.answer));
+      if (L[q.answer] > other) longest++;
+      if (L[q.answer] - other >= 6) gaps.push(q.id);
+    }
+    if (longest / qCount > 0.32) problems.push(`la bonne réponse est le choix le plus long dans ${Math.round((longest / qCount) * 100)} % des questions (maximum 32 %)`);
+    if (gaps.length) problems.push(`bonne réponse plus longue d'au moins 6 caractères que tous les distracteurs : ${gaps.join(', ')}`);
   }
   if (problems.length) {
     errors++;
