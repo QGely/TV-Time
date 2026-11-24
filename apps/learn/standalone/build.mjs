@@ -29,6 +29,15 @@ const data = {
     id: u.id, title: u.title, description: u.description,
     skills: u.skills.map((s) => ({ id: s.id, title: s.title, icon: s.icon, tips: s.tips, vocab: s.vocab.map((v) => [v.term, v.translation]), figures: (s.figures || []).map((f) => ({ title: f.title, svg: f.svg || null, src: f.src || null, caption: f.caption || '', credit: f.credit || '' })), questions: s.questions.map((q) => [q.id, q.q, q.choices, q.answer, q.explanation]) })),
   })),
+  // Schémas du mémento PDF (blocs « diagram » des chapitres), affichés dans la galerie de chaque matière.
+  unitFigures: Object.fromEntries(order.map((u) => {
+    const f = path.resolve(HERE, '../revision/chapters', `${u}.json`);
+    if (!fs.existsSync(f)) return [u, []];
+    try {
+      const c = JSON.parse(fs.readFileSync(f, 'utf8'));
+      return [u, (c.sections || []).flatMap((sec) => (sec.blocks || []).filter((b) => b.type === 'diagram' && typeof b.svg === 'string').map((b) => ({ title: String(b.title || sec.title).replace(/\*\*|`/g, ''), svg: b.svg, caption: String(b.caption || '').replace(/\*\*|`/g, ''), section: sec.title })))];
+    } catch { return [u, []]; }
+  })),
   // Chiffres clés : repris des fiches réflexes du mémento PDF (apps/learn/revision/chapters/uN.json) quand elles existent.
   keyNumbers: Object.fromEntries(order.map((u) => {
     const f = path.resolve(HERE, '../revision/chapters', `${u}.json`);
