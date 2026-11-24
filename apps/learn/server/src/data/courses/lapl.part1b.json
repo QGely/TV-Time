@@ -1,0 +1,1122 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u1",
+   "title": "Droit aérien",
+   "description": "La réglementation du vol privé : organisations et textes, licences, règles de l'air, espaces aériens, services ATS et aérodromes (examen : 20 questions, 30 min).",
+   "skills": [
+    {
+     "id": "u1s7",
+     "title": "Aptitude médicale (Part-MED)",
+     "icon": "🩺",
+     "tips": "La Part-MED (annexe IV du règlement Aircrew (UE) n° 1178/2011) fixe les exigences d'aptitude médicale des pilotes. L'exercice des privilèges d'une licence dépend de la validité du certificat médical : sans certificat en cours de validité, la licence n'est pas retirée, mais son titulaire ne peut plus voler comme pilote. Le certificat médical est un document distinct de la licence, à porter sur soi en vol (FCL.045).\n\nLes certificats :\n• Classe 1 : pilotes professionnels. Elle inclut les privilèges et les validités des certificats de classe 2 et LAPL.\n• Classe 2 : minimum exigé pour le PPL(A) ; elle convient aussi au LAPL(A).\n• Certificat médical LAPL : il suffit pour le LAPL, et pour lui seul.\n• Un pilote ne détient qu'un seul certificat médical Part-MED à la fois.\n\nQui délivre le certificat :\n• Classe 2 et LAPL : un centre aéromédical (AeMC) ou un médecin examinateur aéromédical agréé (AME). L'examen initial de classe 1 se passe obligatoirement dans un AeMC.\n• LAPL : un médecin généraliste (GMP) peut aussi agir comme AME, pour ce seul certificat, si l'État le prévoit dans son droit national et si le généraliste a accès au dossier médical complet du candidat (MED.D.035). Ce n'est pas possible pour la classe 2.\n• En France, les AME et les AeMC sont agréés par le pôle médical de la DSAC, évaluateur médical de l'autorité. Quand l'AME ne peut pas conclure seul, il renvoie la décision à cet évaluateur. Les décisions du pôle médical peuvent être réexaminées par le Conseil médical de l'aéronautique civile (CMAC), qui se prononce aussi sur les inaptitudes définitives.\n\nDurée de validité (MED.A.045) :\nLa durée dépend de l'âge du pilote à la date de l'examen médical.\n• Classe 2 : 60 mois avant 40 ans, mais un certificat délivré avant 40 ans cesse d'être valable à 42 ans ; 24 mois de 40 à 50 ans, mais un certificat délivré avant 50 ans cesse d'être valable à 51 ans ; 12 mois après 50 ans.\n• LAPL : 60 mois avant 40 ans (fin à 42 ans au plus tard), puis 24 mois, sans réduction à 50 ans.\n• Aucun délai de grâce : une fois la date d'expiration passée, on ne vole plus comme pilote.\n\nRevalidation ou renouvellement :\n• Revalidation : l'examen a lieu dans les 45 jours qui précèdent la date d'expiration. La nouvelle durée est comptée à partir de cette date d'expiration : aucun jour n'est perdu.\n• Renouvellement : examen plus de 45 jours avant l'expiration, ou après celle-ci. La nouvelle durée court à partir de la date de l'examen.\n\nExemples résolus :\n• Plafond d'âge : un pilote né le 15 mai 1985 passe sa classe 2 le 10 mars 2025, à 39 ans. 60 mois mèneraient au 10 mars 2030, mais le certificat cesse d'être valable à 42 ans : il expire donc le 15 mai 2027.\n• Règle des 45 jours : la classe 2 d'une pilote de 45 ans expire le 30 juin 2026. Examen le 25 mai 2026, 36 jours avant : revalidation, 24 mois à compter du 30 juin 2026, donc jusqu'au 30 juin 2028. Examen le 2 mai 2026, 59 jours avant : renouvellement, valable jusqu'au 2 mai 2028.\n\nDiminution de l'aptitude (MED.A.020) :\nUn certificat valide ne garantit pas l'aptitude du jour. Le pilote n'exerce pas ses privilèges lorsqu'il :\n• a conscience d'une diminution de son aptitude qui pourrait l'empêcher de voler en sécurité ;\n• prend un médicament, prescrit ou non, susceptible de nuire à la sécurité ;\n• suit un traitement médical, chirurgical ou autre susceptible de compromettre la sécurité du vol.\nIl demande en outre, sans délai et avant de voler à nouveau, l'avis d'un AeMC ou d'un AME (pour le LAPL, l'avis du généraliste qui a signé son certificat convient aussi) lorsqu'il :\n• a subi une opération chirurgicale ou un acte invasif ;\n• commence à prendre régulièrement un médicament ;\n• a subi une blessure importante ou souffre d'une maladie importante qui l'empêche d'exercer ses fonctions ;\n• est enceinte ;\n• a été hospitalisé ou admis en clinique ;\n• a besoin pour la première fois de verres correcteurs.\n\nGrossesse : la pilote consulte sans délai un médecin aéronautique. Pour les classes 1 et 2, si l'AeMC ou l'AME l'estime apte, elle peut continuer à voler jusqu'à la fin de la 26e semaine de grossesse (MED.B.045) ; en classe 1, une limitation d'exploitation en équipage multiple (OML) s'applique.\n\nMédicaments : pas d'automédication avant un vol. En France, un pictogramme triangulaire sur la boîte signale un risque pour la conduite automobile : niveau 1 jaune (soyez prudent), niveau 2 orange (soyez très prudent, avis d'un professionnel de santé), niveau 3 rouge (danger, ne pas conduire). Pour un pilote, tout pictogramme est un signal d'alerte : on demande l'avis d'un médecin aéronautique avant de voler.\n\nLimitations portées sur le certificat :\nL'AME peut déclarer un pilote apte avec limitation, inscrite sous forme de code. Les plus courantes :\n• VDL : porter une correction pour la vision de loin et avoir une paire de lunettes de rechange ;\n• VML : porter des verres multifocaux (loin, intermédiaire, près) et avoir une paire de rechange ;\n• VNL : avoir à disposition une correction pour la vision de près ;\n• CCL : correction par lentilles de contact ;\n• TML : durée de validité limitée ;\n• OSL : vol avec un pilote de sécurité, sur un avion à double commande.\nUne limitation fait partie du certificat : la négliger, c'est voler hors des conditions de son aptitude.\n\nDémarches :\n• Prendre rendez-vous chez un AME ou dans un AeMC, avec l'ancien certificat, ses lunettes ou lentilles et les comptes rendus médicaux utiles ; déclarer tous ses antécédents dans le formulaire de demande.\n• L'autorité peut limiter, suspendre ou retirer un certificat lorsque les exigences ne sont plus remplies ; pendant une suspension, le pilote n'exerce aucun privilège de sa licence.",
+     "vocab": [
+      {
+       "term": "Part-MED",
+       "translation": "Exigences d'aptitude médicale des pilotes (annexe IV d'Aircrew)"
+      },
+      {
+       "term": "AME",
+       "translation": "Médecin examinateur aéromédical agréé"
+      },
+      {
+       "term": "AeMC",
+       "translation": "Centre aéromédical ; seul habilité pour la classe 1 initiale"
+      },
+      {
+       "term": "GMP",
+       "translation": "Médecin généraliste : LAPL seul, si le droit national le permet"
+      },
+      {
+       "term": "Certificat LAPL",
+       "translation": "Certificat médical suffisant pour le seul LAPL"
+      },
+      {
+       "term": "Revalidation",
+       "translation": "Examen dans les 45 jours avant l'expiration : aucun jour perdu"
+      },
+      {
+       "term": "Renouvellement",
+       "translation": "Examen plus tôt ou après l'expiration : durée comptée de l'examen"
+      },
+      {
+       "term": "MED.A.020",
+       "translation": "Diminution d'aptitude : ne pas voler et consulter un AME"
+      },
+      {
+       "term": "VDL",
+       "translation": "Limitation : correction de loin et lunettes de rechange"
+      },
+      {
+       "term": "VML",
+       "translation": "Limitation : verres multifocaux et paire de rechange"
+      },
+      {
+       "term": "OSL",
+       "translation": "Limitation : vol avec pilote de sécurité, double commande"
+      },
+      {
+       "term": "TML",
+       "translation": "Limitation de la durée de validité du certificat"
+      },
+      {
+       "term": "Pôle médical",
+       "translation": "Évaluateur médical de la DSAC, qui agrée AME et AeMC"
+      },
+      {
+       "term": "CMAC",
+       "translation": "Conseil médical de l'aéronautique civile : réexamen des décisions"
+      },
+      {
+       "term": "Renvoi",
+       "translation": "Décision confiée par l'AME à l'évaluateur médical de l'autorité"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Validité du certificat médical selon l'âge",
+       "svg": "<svg viewBox=\"0 0 600 362\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"600\" height=\"362\" fill=\"#ffffff\"/><defs><marker id=\"m7a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1f2937\"/></marker></defs><text x=\"50\" y=\"30\" font-size=\"18\" font-weight=\"700\" fill=\"#1f2937\">Classe 2 (PPL et LAPL)</text><rect x=\"50.0\" y=\"42\" width=\"166.7\" height=\"50\" fill=\"#1d4ed8\"/><rect x=\"216.7\" y=\"42\" width=\"166.7\" height=\"50\" fill=\"#fbbf24\"/><rect x=\"383.3\" y=\"42\" width=\"166.7\" height=\"50\" fill=\"#b91c1c\"/><text x=\"133.3\" y=\"73\" font-size=\"18\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">60 mois</text><text x=\"300.0\" y=\"73\" font-size=\"18\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">24 mois</text><text x=\"466.7\" y=\"73\" font-size=\"18\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">12 mois</text><line x1=\"216.7\" y1=\"105\" x2=\"250.0\" y2=\"105\" stroke=\"#1f2937\" stroke-width=\"2.5\" marker-end=\"url(#m7a)\"/><line x1=\"250.0\" y1=\"95\" x2=\"250.0\" y2=\"115\" stroke=\"#1f2937\" stroke-width=\"2.5\"/><text x=\"233.3\" y=\"136\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">fin à 42 ans au plus</text><line x1=\"383.3\" y1=\"105\" x2=\"400.0\" y2=\"105\" stroke=\"#1f2937\" stroke-width=\"2.5\" marker-end=\"url(#m7a)\"/><line x1=\"400.0\" y1=\"95\" x2=\"400.0\" y2=\"115\" stroke=\"#1f2937\" stroke-width=\"2.5\"/><text x=\"408.0\" y=\"136\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"start\">fin à 51 ans au plus</text><text x=\"50\" y=\"182\" font-size=\"18\" font-weight=\"700\" fill=\"#1f2937\">Certificat LAPL (LAPL seul)</text><rect x=\"50.0\" y=\"194\" width=\"166.7\" height=\"50\" fill=\"#1d4ed8\"/><rect x=\"216.7\" y=\"194\" width=\"333.4\" height=\"50\" fill=\"#fbbf24\"/><text x=\"133.3\" y=\"225\" font-size=\"18\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">60 mois</text><text x=\"383.3\" y=\"225\" font-size=\"18\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">24 mois, même après 50 ans</text><line x1=\"216.7\" y1=\"257\" x2=\"250.0\" y2=\"257\" stroke=\"#1f2937\" stroke-width=\"2.5\" marker-end=\"url(#m7a)\"/><line x1=\"250.0\" y1=\"247\" x2=\"250.0\" y2=\"267\" stroke=\"#1f2937\" stroke-width=\"2.5\"/><text x=\"258.0\" y=\"270\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"start\">fin à 42 ans au plus</text><line x1=\"50.0\" y1=\"296\" x2=\"550.0\" y2=\"296\" stroke=\"#1f2937\" stroke-width=\"2\"/><line x1=\"50.0\" y1=\"290\" x2=\"50.0\" y2=\"302\" stroke=\"#1f2937\" stroke-width=\"2\"/><text x=\"50.0\" y=\"322\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">30 ans</text><line x1=\"216.7\" y1=\"290\" x2=\"216.7\" y2=\"302\" stroke=\"#1f2937\" stroke-width=\"2\"/><text x=\"216.7\" y=\"322\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">40 ans</text><line x1=\"383.3\" y1=\"290\" x2=\"383.3\" y2=\"302\" stroke=\"#1f2937\" stroke-width=\"2\"/><text x=\"383.3\" y=\"322\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">50 ans</text><line x1=\"550.0\" y1=\"290\" x2=\"550.0\" y2=\"302\" stroke=\"#1f2937\" stroke-width=\"2\"/><text x=\"550.0\" y=\"322\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">60 ans</text><text x=\"300\" y=\"350\" font-size=\"17\" fill=\"#4b5563\" text-anchor=\"middle\">âge du pilote le jour de l'examen</text></svg>",
+       "caption": "La durée dépend de l'âge le jour de l'examen. Un certificat délivré avant 40 ans cesse d'être valable à 42 ans ; en classe 2, un certificat délivré avant 50 ans cesse d'être valable à 51 ans."
+      },
+      {
+       "title": "Revalidation ou renouvellement : la règle des 45 jours",
+       "svg": "<svg viewBox=\"0 0 600 338\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"600\" height=\"338\" fill=\"#ffffff\"/><defs><marker id=\"m7b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1f2937\"/></marker></defs><text x=\"400\" y=\"26\" font-size=\"17\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">date d'expiration</text><rect x=\"14\" y=\"44\" width=\"386\" height=\"36\" fill=\"#e5e7eb\" stroke=\"#6b7280\"/><text x=\"140\" y=\"68\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">certificat en cours</text><rect x=\"280\" y=\"44\" width=\"120\" height=\"36\" fill=\"#bbf7d0\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"340\" y=\"68\" font-size=\"17\" font-weight=\"700\" fill=\"#166534\" text-anchor=\"middle\">45 jours</text><line x1=\"400\" y1=\"34\" x2=\"400\" y2=\"178\" stroke=\"#1f2937\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><line x1=\"14\" y1=\"94\" x2=\"586\" y2=\"94\" stroke=\"#1f2937\" stroke-width=\"2\" marker-end=\"url(#m7b)\"/><text x=\"586\" y=\"116\" font-size=\"16\" fill=\"#4b5563\" text-anchor=\"end\">temps</text><rect x=\"400\" y=\"138\" width=\"166\" height=\"32\" fill=\"#1d4ed8\"/><path d=\"M566,138 L586,154 L566,170 Z\" fill=\"#1d4ed8\"/><text x=\"484\" y=\"160\" font-size=\"17\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">nouvelle durée</text><circle cx=\"340\" cy=\"154\" r=\"9\" fill=\"#15803d\"/><text x=\"324\" y=\"160\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"end\">examen</text><text x=\"14\" y=\"202\" font-size=\"17\" fill=\"#1f2937\">Dans les 45 jours : la durée part de l'expiration.</text><rect x=\"160\" y=\"232\" width=\"406\" height=\"32\" fill=\"#fbbf24\"/><path d=\"M566,232 L586,248 L566,264 Z\" fill=\"#fbbf24\"/><text x=\"370\" y=\"254\" font-size=\"17\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">nouvelle durée</text><circle cx=\"160\" cy=\"248\" r=\"9\" fill=\"#b45309\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"144\" y=\"254\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"end\">examen</text><text x=\"14\" y=\"296\" font-size=\"17\" fill=\"#1f2937\">Plus tôt : la durée part du jour de l'examen.</text><text x=\"586\" y=\"326\" font-size=\"15\" fill=\"#6b7280\" text-anchor=\"end\">durées non à l'échelle</text></svg>",
+       "caption": "Examen passé dans les 45 jours avant l'expiration : la nouvelle durée part de la date d'expiration (revalidation). Plus tôt, ou après l'expiration : elle part du jour de l'examen (renouvellement)."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u1s7q01",
+       "q": "Dans quel texte se trouvent les exigences d'aptitude médicale applicables aux pilotes privés européens ?",
+       "choices": [
+        "La Part-FCL, annexe du règlement Aircrew",
+        "La Part-NCO, annexe du règlement Air Ops",
+        "La Part-MED, annexe du règlement Aircrew",
+        "Le règlement SERA, au chapitre des règles générales"
+       ],
+       "answer": 2,
+       "explanation": "La Part-MED (annexe IV du règlement Aircrew (UE) n° 1178/2011) fixe les exigences médicales, la délivrance et la validité des certificats. La Part-FCL, autre annexe du même règlement, traite des licences ; la Part-NCO, de l'exploitation des avions."
+      },
+      {
+       "id": "u1s7q02",
+       "q": "Qui peut délivrer un certificat médical de classe 2 ?",
+       "choices": [
+        "Un AeMC ou un médecin examinateur agréé (AME)",
+        "Le responsable pédagogique de l'école de pilotage",
+        "Un médecin généraliste inscrit à l'Ordre",
+        "Le médecin du travail de l'aéroclub"
+       ],
+       "answer": 0,
+       "explanation": "La classe 2 est délivrée par un centre aéromédical (AeMC) ou par un médecin examinateur agréé (AME). Le généraliste ne peut intervenir que pour le LAPL, et seulement si le droit national le prévoit ; l'école de pilotage et le médecin du travail n'ont aucune compétence aéromédicale."
+      },
+      {
+       "id": "u1s7q03",
+       "q": "Un pilote de ligne détient un certificat médical de classe 1 en cours de validité. Peut-il exercer les privilèges de son PPL(A) sans autre certificat ?",
+       "choices": [
+        "Non : il doit aussi détenir un certificat de classe 2 distinct",
+        "Non : la classe 1 couvre les privilèges professionnels, pas le PPL",
+        "Oui, mais sur des avions de moins de 2 000 kg",
+        "Oui : la classe 1 inclut les privilèges de la classe 2 et du LAPL"
+       ],
+       "answer": 3,
+       "explanation": "Un certificat de classe 1 inclut les privilèges et les validités des certificats de classe 2 et LAPL. Il n'est d'ailleurs pas possible de détenir deux certificats médicaux Part-MED en même temps. La limite de 2 000 kg concerne la licence LAPL, pas le certificat médical."
+      },
+      {
+       "id": "u1s7q04",
+       "q": "Combien de certificats médicaux Part-MED un pilote peut-il détenir en même temps ?",
+       "choices": [
+        "Deux : un de classe 2 et un LAPL",
+        "Un seul",
+        "Un par licence détenue",
+        "Autant qu'il le souhaite"
+       ],
+       "answer": 1,
+       "explanation": "La Part-MED interdit de détenir plus d'un certificat médical à la fois. Ce n'est pas gênant : un certificat de classe supérieure inclut les privilèges des classes inférieures (classe 1 → classe 2 → LAPL)."
+      },
+      {
+       "id": "u1s7q05",
+       "q": "Dans quelles conditions un médecin généraliste peut-il délivrer un certificat médical LAPL ?",
+       "choices": [
+        "Dans les États de l'EASA, s'il a suivi une formation aéronautique",
+        "Si le droit national le permet et qu'il a accès au dossier complet",
+        "Pour les pilotes de plus de 40 ans, à la place d'un AME",
+        "Pour le LAPL comme pour la classe 2, s'il est inscrit à l'Ordre"
+       ],
+       "answer": 1,
+       "explanation": "MED.D.035 permet à un généraliste (GMP) d'agir comme AME pour le seul certificat LAPL, dans un État dont le droit national le prévoit et où il a accès au dossier médical complet du candidat. Il ne délivre jamais de classe 2 ; une formation aéronautique ne suffit pas à l'y autoriser."
+      },
+      {
+       "id": "u1s7q06",
+       "q": "En France, quelle instance réexamine les décisions du pôle médical de la DSAC et se prononce sur les inaptitudes définitives ?",
+       "choices": [
+        "Le Bureau d'enquêtes et d'analyses (BEA)",
+        "L'Agence de l'Union européenne pour la sécurité aérienne",
+        "Le service médical de la DSNA (navigation aérienne)",
+        "Le Conseil médical de l'aéronautique civile (CMAC)"
+       ],
+       "answer": 3,
+       "explanation": "Le CMAC réexamine, à la demande du pilote, les décisions du pôle médical (classe 2 et LAPL comprises) et statue sur les inaptitudes définitives. Le BEA enquête sur les accidents ; l'EASA rédige les règles mais ne tranche pas les cas individuels français."
+      },
+      {
+       "id": "u1s7q07",
+       "q": "Votre certificat médical porte la limitation VDL. Que signifie-t-elle ?",
+       "choices": [
+        "Porter une correction de loin et avoir des lunettes de rechange",
+        "Voler de jour, la vision de nuit étant jugée insuffisante",
+        "Avoir des lunettes à portée de main pour lire les cartes",
+        "Voler avec un pilote de sécurité, sur avion à double commande"
+       ],
+       "answer": 0,
+       "explanation": "VDL impose de porter une correction de la vision de loin et d'emporter une paire de lunettes de rechange. Des lunettes à avoir sous la main pour la vision de près correspondent à VNL ; le pilote de sécurité, à OSL."
+      },
+      {
+       "id": "u1s7q08",
+       "q": "Sur quoi se fonde la durée de validité d'un certificat médical Part-MED ?",
+       "choices": [
+        "Sur l'âge du pilote à la date d'expiration du certificat",
+        "Sur le nombre d'heures de vol effectuées dans l'année",
+        "Sur l'âge du pilote à la date de l'examen",
+        "Sur la licence détenue, quel que soit l'âge du pilote"
+       ],
+       "answer": 2,
+       "explanation": "MED.A.045 fixe la durée selon l'âge du pilote le jour de l'examen médical (60, 24 ou 12 mois en classe 2), avec des plafonds à 42 et 51 ans. L'expérience de vol n'intervient pas, et l'âge à l'expiration ne compte que pour ces plafonds."
+      },
+      {
+       "id": "u1s7q09",
+       "q": "Jusqu'à combien de jours avant la date d'expiration peut-on passer l'examen de revalidation sans rien perdre de la validité restante ?",
+       "choices": [
+        "30 jours",
+        "60 jours",
+        "90 jours",
+        "45 jours"
+       ],
+       "answer": 3,
+       "explanation": "Un examen passé dans les 45 jours qui précèdent l'expiration est une revalidation : la nouvelle durée part de l'ancienne date d'expiration. Les 90 jours correspondent à l'anticipation possible de l'examen de navigabilité d'un avion (Part-ML), à ne pas confondre."
+      },
+      {
+       "id": "u1s7q10",
+       "q": "Que signifie la limitation OSL portée sur un certificat médical ?",
+       "choices": [
+        "Il doit porter des verres multifocaux et avoir une paire de rechange",
+        "Il ne vole qu'avec un pilote de sécurité, sur avion à double commande",
+        "La durée de validité du certificat est réduite par le médecin",
+        "Il ne vole qu'en équipage multiple, comme copilote d'un avion"
+       ],
+       "answer": 1,
+       "explanation": "OSL impose la présence d'un pilote de sécurité qualifié, sur un avion à double commande. Les verres multifocaux correspondent à VML, la durée réduite à TML ; l'équipage multiple renvoie à la limitation OML de la classe 1."
+      },
+      {
+       "id": "u1s7q11",
+       "q": "Le mois dernier, un pilote a été opéré de l'appendicite. Il se sent bien et son certificat de classe 2 est valable encore 3 ans. Que doit-il faire avant de reprendre les vols ?",
+       "choices": [
+        "Reprendre : son certificat médical reste valable jusqu'à sa date d'expiration",
+        "Attendre 30 jours après l'opération, puis reprendre les vols",
+        "Demander l'avis d'un AME ou d'un AeMC, qui décidera de la reprise",
+        "Prévenir son instructeur, qui décidera s'il peut voler en solo"
+       ],
+       "answer": 2,
+       "explanation": "MED.A.020 impose de demander sans délai, avant de voler, l'avis d'un AeMC ou d'un AME après une opération chirurgicale. La validité administrative du certificat ne dit rien de l'aptitude du jour, et aucun délai fixe ne dispense de cet avis."
+      },
+      {
+       "id": "u1s7q12",
+       "q": "Une pilote titulaire d'une classe 2 apprend qu'elle est enceinte. Que prévoit la Part-MED ?",
+       "choices": [
+        "Elle consulte un AME ; apte, elle vole jusqu'à la fin de la 26e semaine",
+        "Elle cesse de voler dès l'annonce de la grossesse et jusqu'à l'accouchement",
+        "Elle vole librement jusqu'à la fin du 8e mois de grossesse",
+        "Elle continue de voler : la grossesse n'a pas d'effet sur le certificat"
+       ],
+       "answer": 0,
+       "explanation": "La grossesse fait partie des situations où MED.A.020 impose un avis aéromédical. Si l'AeMC ou l'AME juge la pilote apte, elle peut exercer ses privilèges jusqu'à la fin de la 26e semaine (MED.B.045). Un arrêt immédiat n'est donc pas automatique, mais voler sans avis non plus."
+      },
+      {
+       "id": "u1s7q13",
+       "q": "La boîte d'un médicament acheté sans ordonnance porte un pictogramme triangulaire jaune de niveau 1. Vous devez voler dans l'après-midi. Quelle attitude adopter ?",
+       "choices": [
+        "Demander l'avis d'un médecin aéronautique avant de le prendre et de voler",
+        "Voler normalement : le niveau 1 vise la conduite automobile, pas le pilotage",
+        "Voler en emmenant un autre pilote à bord, par simple précaution",
+        "Voler à condition de prendre le médicament au moins une heure avant le départ"
+       ],
+       "answer": 0,
+       "explanation": "Le pictogramme de niveau 1 est le plus faible de l'échelle française, mais il signale un effet possible sur la vigilance. MED.A.020 interdit de voler sous un médicament susceptible de nuire à la sécurité : en cas de doute, l'avis d'un médecin aéronautique s'impose. Un passager pilote ne change rien à l'aptitude du commandant de bord."
+      },
+      {
+       "id": "u1s7q14",
+       "q": "Un pilote commence un traitement quotidien contre l'hypertension prescrit par son cardiologue. Que doit-il faire au regard de MED.A.020 ?",
+       "choices": [
+        "Le signaler lors de sa prochaine visite périodique, sans interrompre ses vols",
+        "Cesser de voler, l'hypertension rendant le pilote inapte",
+        "Demander sans délai l'avis d'un AME ou d'un AeMC avant de voler",
+        "Demander à son cardiologue un certificat d'aptitude au pilotage"
+       ],
+       "answer": 2,
+       "explanation": "Le début de la prise régulière d'un médicament impose de demander l'avis d'un AeMC ou d'un AME avant de voler. Attendre la prochaine visite est le piège ; l'hypertension traitée n'est pas forcément incompatible avec le vol, et seul un médecin aéronautique se prononce sur l'aptitude."
+      },
+      {
+       "id": "u1s7q15",
+       "q": "Le certificat médical LAPL d'une pilote a été signé par son médecin généraliste, comme le permet son État. Elle vient d'être hospitalisée trois jours. Auprès de qui peut-elle demander l'avis exigé avant de revoler ?",
+       "choices": [
+        "Le pôle médical de l'autorité, après envoi du compte rendu d'hospitalisation",
+        "Un AME, un AeMC ou le généraliste qui a signé son certificat",
+        "N'importe quel généraliste, même s'il n'a pas signé le certificat",
+        "Son instructeur, qui consigne l'avis dans son carnet de vol"
+       ],
+       "answer": 1,
+       "explanation": "Pour un certificat LAPL, MED.A.020 admet l'avis d'un AeMC, d'un AME ou du généraliste qui a signé le certificat. Un autre généraliste ne connaît pas le dossier aéromédical et n'est pas habilité ; l'instructeur n'a aucune compétence médicale."
+      },
+      {
+       "id": "u1s7q16",
+       "q": "Votre certificat médical a expiré hier. Que pouvez-vous faire aujourd'hui ?",
+       "choices": [
+        "Voler pendant un délai de tolérance de 45 jours",
+        "Voler en solo jusqu'à votre rendez-vous médical",
+        "Voler comme commandant de bord, la licence restant valable",
+        "Aucun vol comme pilote avant d'avoir passé un nouvel examen"
+       ],
+       "answer": 3,
+       "explanation": "L'exercice des privilèges dépend de la validité du certificat médical : il n'existe aucun délai de grâce. La licence n'est pas retirée, mais elle ne peut pas être utilisée. Les 45 jours servent seulement à passer l'examen avant l'échéance sans perdre de validité."
+      },
+      {
+       "id": "u1s7q17",
+       "q": "Un pilote né le 15 mai 1985 passe sa visite de classe 2 le 10 mars 2025. Jusqu'à quelle date son certificat est-il valable ?",
+       "choices": [
+        "10 mars 2030",
+        "15 mai 2027",
+        "10 mars 2027",
+        "15 mai 2030"
+       ],
+       "answer": 1,
+       "explanation": "À 39 ans, la durée est de 60 mois, ce qui mènerait au 10 mars 2030. Mais un certificat de classe 2 délivré avant 40 ans cesse d'être valable à 42 ans : le pilote a 42 ans le 15 mai 2027, date retenue. Le 10 mars 2027 correspondrait à une durée de 24 mois."
+      },
+      {
+       "id": "u1s7q18",
+       "q": "La classe 2 d'une pilote de 45 ans expire le 30 juin 2026. Elle passe sa visite le 25 mai 2026. Jusqu'à quelle date son nouveau certificat sera-t-il valable ?",
+       "choices": [
+        "25 mai 2028",
+        "30 juin 2031",
+        "25 mai 2027",
+        "30 juin 2028"
+       ],
+       "answer": 3,
+       "explanation": "Le 25 mai est 36 jours avant l'expiration : c'est une revalidation, la durée part du 30 juin 2026. À 45 ans, elle est de 24 mois, d'où le 30 juin 2028. Compter depuis le jour de l'examen (25 mai 2028) ferait perdre des jours sans raison ; 60 mois ne valent qu'avant 40 ans."
+      },
+      {
+       "id": "u1s7q19",
+       "q": "La classe 2 d'un pilote de 45 ans expire le 30 juin 2026. Pressé, il passe sa visite dès le 2 mai 2026. Jusqu'à quelle date son nouveau certificat sera-t-il valable ?",
+       "choices": [
+        "30 juin 2028",
+        "2 mai 2027",
+        "2 mai 2028",
+        "30 juin 2027"
+       ],
+       "answer": 2,
+       "explanation": "Le 2 mai est 59 jours avant l'expiration, au-delà des 45 jours : c'est un renouvellement, et les 24 mois partent du jour de l'examen, soit jusqu'au 2 mai 2028. Le 30 juin 2028 ne serait obtenu que par un examen passé à partir du 16 mai 2026."
+      },
+      {
+       "id": "u1s7q20",
+       "q": "Un pilote né le 1er décembre 1976 passe sa visite de classe 2 le 1er septembre 2026. Jusqu'à quelle date son certificat est-il valable ?",
+       "choices": [
+        "1er décembre 2027",
+        "1er septembre 2028",
+        "1er septembre 2027",
+        "1er décembre 2026"
+       ],
+       "answer": 0,
+       "explanation": "À 49 ans et 9 mois, la durée est de 24 mois (1er septembre 2028), mais un certificat délivré avant 50 ans cesse d'être valable à 51 ans, soit le 1er décembre 2027. Le cinquantième anniversaire (1er décembre 2026) ne met pas fin au certificat : la durée de 12 mois ne vaut que pour un examen passé après 50 ans."
+      },
+      {
+       "id": "u1s7q21",
+       "q": "Une pilote née le 20 janvier 1990 obtient son certificat médical LAPL le 5 février 2026. Jusqu'à quelle date est-il valable ?",
+       "choices": [
+        "20 janvier 2032",
+        "5 février 2028",
+        "20 janvier 2031",
+        "5 février 2031"
+       ],
+       "answer": 3,
+       "explanation": "À 36 ans, le certificat LAPL vaut 60 mois, soit jusqu'au 5 février 2031. Le plafond de 42 ans (20 janvier 2032) tombe après cette date et ne joue donc pas. 24 mois ne s'appliqueraient qu'à partir de 40 ans."
+      },
+      {
+       "id": "u1s7q22",
+       "q": "Votre certificat porte la limitation VDL. Au moment de partir en navigation, vous constatez que votre paire de lunettes de rechange est restée chez vous. Que faites-vous ?",
+       "choices": [
+        "Vous renoncez au vol tant que vous n'avez pas de lunettes de rechange",
+        "Vous partez : la paire de rechange n'est exigée que pour les vols de nuit",
+        "Vous partez, à condition de rester en vue de l'aérodrome de départ",
+        "Vous partez en portant des lentilles de contact à la place des lunettes"
+       ],
+       "answer": 0,
+       "explanation": "La limitation VDL comprend deux obligations : porter la correction et avoir une paire de lunettes de rechange. Sans cette paire, la limitation n'est pas respectée, de jour comme de nuit, en local comme en navigation. Des lentilles ne remplacent pas les lunettes de rechange exigées."
+      },
+      {
+       "id": "u1s7q23",
+       "q": "Un pilote s'est fracturé le poignet droit ; son avant-bras est plâtré pour six semaines. Son certificat de classe 2 est valable. Que prévoit la réglementation ?",
+       "choices": [
+        "Il peut voler en local, une blessure n'affectant pas le certificat",
+        "Il ne vole pas et demande l'avis d'un AME avant toute reprise",
+        "Il peut voler s'il pilote de la main gauche avec un instructeur à bord",
+        "Il peut voler dès le plâtre retiré, s'il se sent bien"
+       ],
+       "answer": 1,
+       "explanation": "Une blessure importante qui empêche d'exercer ses fonctions de pilote fait partie des cas de MED.A.020 : pas de vol, et avis d'un AeMC ou d'un AME avant de reprendre. Le retrait du plâtre ne dispense pas de cet avis ; la présence d'un instructeur ne rend pas le pilote apte."
+      },
+      {
+       "id": "u1s7q24",
+       "q": "Lors d'une visite de classe 2, l'AME constate un problème de santé qui ne lui permet pas de conclure seul à l'aptitude. Que se passe-t-il ?",
+       "choices": [
+        "Il délivre le certificat et laisse le pilote juger de son aptitude",
+        "Il refuse le certificat et transmet la licence à la DSAC",
+        "Il renvoie la décision à l'évaluateur médical de l'autorité",
+        "Il transmet le dossier au BEA, qui statue sur l'aptitude"
+       ],
+       "answer": 2,
+       "explanation": "Quand l'aptitude est douteuse, l'AME renvoie la décision à l'évaluateur médical de l'autorité ; en France, le pôle médical de la DSAC. Le pilote peut ensuite demander un réexamen au CMAC. L'AME ne retire pas la licence, et le BEA n'a aucun rôle médical."
+      }
+     ]
+    },
+    {
+     "id": "u1s8",
+     "title": "Navigabilité, immatriculation et documents de bord",
+     "icon": "🛠️",
+     "tips": "Un avion ne vole que s'il est en état de navigabilité : conforme à sa définition de type certifiée et correctement entretenu. Le droit distingue la navigabilité initiale (certification, certificat de navigabilité) et le maintien de la navigabilité (entretien, examen annuel, consignes), régi pour l'aviation légère par le Part-ML.\n\nCertificat de navigabilité (CDN) :\n• Délivré en France par la DSAC, qui s'appuie sur l'OSAC, à un avion conforme à un type certifié (Part 21 du règlement (UE) n° 748/2012).\n• Durée illimitée : il reste valable tant que l'avion respecte sa définition de type et les exigences de maintien de navigabilité, et tant qu'il reste inscrit au même registre.\n• Il ne vaut qu'accompagné d'un certificat d'examen de navigabilité (ARC) en cours de validité.\n• Un avion sans CDN valable ne peut voler qu'avec un laissez-passer délivré par l'autorité.\n• Les avions de construction amateur relèvent de règles nationales et reçoivent un certificat de navigabilité restreint (CNRA).\n\nCertificat d'examen de navigabilité (ARC) :\n• Délivré après un examen de navigabilité de l'avion et de son dossier : programme d'entretien, travaux consignés, consignes de navigabilité appliquées, potentiels des équipements.\n• Valable 1 an. Sous le Part-ML, l'examen peut être anticipé jusqu'à 90 jours avant l'échéance sans perdre la date anniversaire.\n• Réalisé par un organisme agréé habilité (CAMO ou CAO) ou, dans certains cas, par un technicien indépendant titulaire d'une licence Part-66 et d'une habilitation.\n• Il devient invalide notamment si le CDN est suspendu ou retiré, ou si l'avion est radié du registre.\nExemple : l'ARC du F-GABC expire le 15 juin 2026. Un examen réalisé le 1er avril 2026, 75 jours avant, donne un nouvel ARC valable jusqu'au 15 juin 2027.\n\nLe Part-ML (annexe Vb du règlement (UE) n° 1321/2014) :\n• Il s'applique notamment aux avions non complexes dont la masse maximale au décollage ne dépasse pas 2 730 kg : DR400, Cessna 172, PA-28...\n• Le propriétaire (ou le locataire) est responsable du maintien de la navigabilité. Il peut en confier la gestion par contrat à un organisme agréé (CAMO ou CAO) : c'est le cas habituel en aéroclub.\n• L'entretien suit un programme d'entretien (AMP) ; chaque intervention est consignée et l'approbation pour remise en service est signée par un mécanicien ou un organisme habilité.\n• Un propriétaire-pilote titulaire d'une licence valable sur l'avion peut effectuer et certifier lui-même certaines tâches simples listées par le règlement, sauf sur un avion utilisé par un organisme de formation commercial.\n• Le commandant de bord reste chargé de la visite prévol et ne décolle qu'avec un avion en état de navigabilité.\n\nConsignes de navigabilité (AD) :\n• Publiées par l'EASA (ou par l'État de conception) lorsqu'un défaut dangereux est découvert sur un type d'avion, de moteur, d'hélice ou d'équipement.\n• Obligatoires : elles imposent une action (inspection, modification, remplacement, limitation d'emploi) dans un délai exprimé en heures de vol, en cycles ou en date.\n• Un avion sur lequel une AD applicable n'a pas été réalisée dans le délai n'est plus en état de navigabilité.\n• Un bulletin de service (SB) du constructeur n'est qu'une recommandation, sauf si une AD le rend obligatoire.\n\nImmatriculation et marques :\n• Un aéronef ne peut être immatriculé que dans un seul État, dont il prend la nationalité (Convention de Chicago).\n• Un avion français est inscrit au registre français d'immatriculation ; le certificat d'immatriculation, en original, voyage à bord.\n• Marques : F, un tiret et quatre lettres (F-GABC), peintes sous la voilure (lettres d'au moins 50 cm de haut) et sur le fuselage ou la dérive (au moins 30 cm), selon l'annexe 7 de l'OACI.\n• Plaque d'identité : en métal ou autre matériau ininflammable, gravée au moins des marques de nationalité et d'immatriculation, fixée de façon apparente près de l'entrée principale.\n\nDocuments à bord (NCO.GEN.135) :\nOriginaux ou copies, sauf mention contraire :\n• manuel de vol (ou document équivalent) ;\n• certificat d'immatriculation et CDN, en original ;\n• certificat acoustique, le cas échéant (en France, certificat de limitation de nuisances, CLN) ;\n• liste des approbations spécifiques, le cas échéant ;\n• licence de station d'aéronef (LSA), le cas échéant ;\n• attestation d'assurance de responsabilité civile ;\n• carnet de route ;\n• renseignements du plan de vol déposé, le cas échéant ;\n• cartes aéronautiques à jour et adaptées au vol ;\n• procédures et signaux d'interception.\nVol local : pour un vol prévu au départ et à destination du même aérodrome (ou dans une zone fixée par l'autorité), les documents allant du certificat d'immatriculation au carnet de route peuvent rester à l'aérodrome. Le manuel de vol, les cartes et les procédures d'interception restent à bord. Le commandant de bord présente ces documents à l'autorité qui les demande, dans un délai raisonnable.\n\nAutres documents :\n• LSA : délivrée par le ministre chargé de l'aviation civile, elle recense tous les émetteurs radio de l'avion, y compris les postes portatifs.\n• Assurance : le règlement (CE) n° 785/2004 impose une couverture minimale de la responsabilité envers les tiers, fonction de la MTOM, en DTS (droits de tirage spéciaux) : 0,75 million sous 500 kg, 1,5 million sous 1 000 kg, 3 millions sous 2 700 kg.\n• Carnet de route : il retrace les vols de l'avion (date, équipage, lieux et heures, temps de vol) et les anomalies constatées. Ne pas le confondre avec le carnet de vol du pilote.\n• Manuel de vol : document approuvé (limitations, procédures normales et d'urgence, performances, masse et centrage). La liste de vérifications (check-list) en découle et s'utilise à chaque phase du vol.",
+     "vocab": [
+      {
+       "term": "ARC",
+       "translation": "Certificat d'examen de navigabilité, valable 1 an"
+      },
+      {
+       "term": "Part-ML",
+       "translation": "Maintien de navigabilité des avions légers (≤ 2 730 kg)"
+      },
+      {
+       "term": "CAMO",
+       "translation": "Organisme agréé de gestion du maintien de navigabilité"
+      },
+      {
+       "term": "CAO",
+       "translation": "Organisme combiné : entretien et gestion de la navigabilité"
+      },
+      {
+       "term": "AD",
+       "translation": "Consigne de navigabilité : action obligatoire sur un type"
+      },
+      {
+       "term": "SB",
+       "translation": "Bulletin de service du constructeur : recommandation"
+      },
+      {
+       "term": "AMP",
+       "translation": "Programme d'entretien de l'avion"
+      },
+      {
+       "term": "Laissez-passer",
+       "translation": "Autorisation de vol d'un avion dont le CDN n'est pas valable"
+      },
+      {
+       "term": "CNRA",
+       "translation": "Certificat de navigabilité restreint (construction amateur)"
+      },
+      {
+       "term": "LSA",
+       "translation": "Licence de station d'aéronef : liste des émetteurs radio"
+      },
+      {
+       "term": "CLN",
+       "translation": "Certificat de limitation de nuisances (certificat acoustique)"
+      },
+      {
+       "term": "Plaque d'identité",
+       "translation": "Plaque ininflammable portant les marques, près de l'entrée"
+      },
+      {
+       "term": "Carnet de route",
+       "translation": "Journal des vols et des anomalies de l'avion"
+      },
+      {
+       "term": "DTS",
+       "translation": "Droits de tirage spéciaux : unité des minimums d'assurance"
+      },
+      {
+       "term": "Vol local",
+       "translation": "Départ et arrivée au même aérodrome : certains documents au sol"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Marques d'immatriculation et plaque d'identité",
+       "svg": "<svg viewBox=\"0 0 600 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"600\" height=\"440\" fill=\"#ffffff\"/><g transform=\"translate(-45,0)\"><text x=\"65\" y=\"26\" font-size=\"17\" font-weight=\"700\" fill=\"#1f2937\">Vue de côté</text><path d=\"M505,96 L540,44 L580,44 L572,101 Z\" fill=\"#f1f5f9\" stroke=\"#1f2937\" stroke-width=\"2\"/><rect x=\"498\" y=\"97\" width=\"104\" height=\"7\" rx=\"3\" fill=\"#e2e8f0\" stroke=\"#1f2937\" stroke-width=\"1.5\"/><line x1=\"242\" y1=\"136\" x2=\"238\" y2=\"164\" stroke=\"#1f2937\" stroke-width=\"3\"/><circle cx=\"238\" cy=\"172\" r=\"11\" fill=\"#374151\"/><line x1=\"114\" y1=\"128\" x2=\"114\" y2=\"164\" stroke=\"#1f2937\" stroke-width=\"3\"/><circle cx=\"114\" cy=\"172\" r=\"10\" fill=\"#374151\"/><path d=\"M78,98 L150,90 L215,86 L255,62 L335,62 L375,86 L560,94 L560,106 L380,128 L150,132 L78,124 Z\" fill=\"#f8fafc\" stroke=\"#1f2937\" stroke-width=\"2\"/><path d=\"M224,86 L259,66 L330,66 L364,86 Z\" fill=\"#bfdbfe\" stroke=\"#1f2937\" stroke-width=\"1.5\"/><rect x=\"262\" y=\"90\" width=\"56\" height=\"34\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"290\" y=\"112\" font-size=\"14\" fill=\"#475569\" text-anchor=\"middle\">porte</text><ellipse cx=\"255\" cy=\"133\" rx=\"96\" ry=\"8\" fill=\"#e2e8f0\" stroke=\"#1f2937\" stroke-width=\"1.5\"/><ellipse cx=\"72\" cy=\"111\" rx=\"10\" ry=\"13\" fill=\"#9ca3af\"/><rect x=\"59\" y=\"56\" width=\"7\" height=\"110\" rx=\"3\" fill=\"#374151\"/><text x=\"445\" y=\"113\" font-size=\"18\" font-weight=\"800\" fill=\"#1e3a8a\" text-anchor=\"middle\">F-GABC</text><line x1=\"445\" y1=\"121\" x2=\"445\" y2=\"160\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"445\" y=\"181\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">fuselage ou dérive :</text><text x=\"445\" y=\"202\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">lettres d'au moins 30 cm</text><rect x=\"323\" y=\"104\" width=\"15\" height=\"10\" fill=\"#f97316\" stroke=\"#7c2d12\" stroke-width=\"1\"/><line x1=\"333\" y1=\"104\" x2=\"392\" y2=\"38\" stroke=\"#c2410c\" stroke-width=\"1.5\"/><text x=\"396\" y=\"34\" font-size=\"17\" fill=\"#9a3412\">plaque d'identité</text><line x1=\"65\" y1=\"222\" x2=\"645\" y2=\"222\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"65\" y=\"250\" font-size=\"17\" font-weight=\"700\" fill=\"#1f2937\">Vue de dessous</text><path d=\"M339,268 Q360,246 381,268 L387,306 L377,426 L343,426 L333,306 Z\" fill=\"#f8fafc\" stroke=\"#1f2937\" stroke-width=\"2\"/><line x1=\"318\" y1=\"258\" x2=\"402\" y2=\"258\" stroke=\"#374151\" stroke-width=\"5\" stroke-linecap=\"round\"/><text x=\"410\" y=\"263\" font-size=\"15\" fill=\"#475569\">nez de l'avion</text><rect x=\"292\" y=\"404\" width=\"136\" height=\"18\" rx=\"4\" fill=\"#e2e8f0\" stroke=\"#1f2937\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"306\" width=\"500\" height=\"60\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#1f2937\" stroke-width=\"2\"/><text x=\"500\" y=\"349\" font-size=\"30\" font-weight=\"800\" fill=\"#1e3a8a\" text-anchor=\"middle\">F-GABC</text><line x1=\"578\" y1=\"325\" x2=\"578\" y2=\"350\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"572\" y1=\"325\" x2=\"584\" y2=\"325\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"572\" y1=\"350\" x2=\"584\" y2=\"350\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"500\" y1=\"366\" x2=\"500\" y2=\"384\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"448\" y=\"403\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"start\">sous la voilure :</text><text x=\"448\" y=\"424\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"start\">au moins 50 cm</text></g></svg>",
+       "caption": "Selon l'annexe 7 de l'OACI, les marques mesurent au moins 30 cm sur le fuselage ou la dérive et 50 cm sous la voilure. La plaque d'identité, ininflammable, porte au moins les marques et se trouve près de l'entrée principale."
+      },
+      {
+       "title": "Documents de bord (NCO.GEN.135)",
+       "svg": "<svg viewBox=\"0 0 600 432\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"600\" height=\"432\" fill=\"#ffffff\"/><rect x=\"8\" y=\"10\" width=\"288\" height=\"44\" rx=\"6\" fill=\"#1d4ed8\"/><text x=\"152\" y=\"39\" font-size=\"18\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">À bord à chaque vol</text><rect x=\"304\" y=\"10\" width=\"288\" height=\"44\" rx=\"6\" fill=\"#0f766e\"/><text x=\"448\" y=\"39\" font-size=\"18\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Au sol si vol local</text><rect x=\"8\" y=\"54\" width=\"288\" height=\"256\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"1.5\"/><rect x=\"304\" y=\"54\" width=\"288\" height=\"256\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"1.5\"/><circle cx=\"26\" cy=\"82\" r=\"5\" fill=\"#1d4ed8\"/><text x=\"38\" y=\"88\" font-size=\"17\" fill=\"#1f2937\">Manuel de vol</text><circle cx=\"26\" cy=\"115\" r=\"5\" fill=\"#1d4ed8\"/><text x=\"38\" y=\"121\" font-size=\"17\" fill=\"#1f2937\">Cartes à jour</text><circle cx=\"26\" cy=\"148\" r=\"5\" fill=\"#1d4ed8\"/><text x=\"38\" y=\"154\" font-size=\"17\" fill=\"#1f2937\">Procédures d'interception</text><circle cx=\"26\" cy=\"181\" r=\"5\" fill=\"#1d4ed8\"/><text x=\"38\" y=\"187\" font-size=\"17\" fill=\"#1f2937\">Plan de vol, s'il existe</text><circle cx=\"322\" cy=\"82\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"88\" font-size=\"17\" fill=\"#1f2937\">Certificat d'immatriculation</text><circle cx=\"322\" cy=\"115\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"121\" font-size=\"17\" fill=\"#1f2937\">Certificat de navigabilité</text><circle cx=\"322\" cy=\"148\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"154\" font-size=\"17\" fill=\"#1f2937\">Certificat acoustique (CLN)</text><circle cx=\"322\" cy=\"181\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"187\" font-size=\"17\" fill=\"#1f2937\">Approbations spécifiques</text><circle cx=\"322\" cy=\"214\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"220\" font-size=\"17\" fill=\"#1f2937\">Licence de station (LSA)</text><circle cx=\"322\" cy=\"247\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"253\" font-size=\"17\" fill=\"#1f2937\">Attestation d'assurance</text><circle cx=\"322\" cy=\"280\" r=\"5\" fill=\"#0f766e\"/><text x=\"334\" y=\"286\" font-size=\"17\" fill=\"#1f2937\">Carnet de route</text><rect x=\"8\" y=\"324\" width=\"584\" height=\"98\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"1.5\"/><text x=\"300\" y=\"352\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">Vol local : départ et arrivée au même aérodrome</text><text x=\"300\" y=\"378\" font-size=\"17\" fill=\"#1f2937\" text-anchor=\"middle\">(ou dans une zone fixée par l'autorité).</text><text x=\"300\" y=\"404\" font-size=\"17\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">Sinon, tous les documents sont à bord.</text></svg>",
+       "caption": "Pour un vol au départ et à destination du même aérodrome, les documents de la colonne de droite peuvent rester au sol. Pour toute navigation vers un autre terrain, tous sont à bord, le certificat d'immatriculation et le CDN en original."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u1s8q01",
+       "q": "Pour combien de temps un certificat de navigabilité (CDN) est-il délivré à un avion de type certifié ?",
+       "choices": [
+        "Un an, renouvelable après une visite",
+        "Trois ans, renouvelables par la DSAC",
+        "Jusqu'au changement de propriétaire",
+        "Sans limite de durée, sous conditions"
+       ],
+       "answer": 3,
+       "explanation": "Le CDN est délivré pour une durée illimitée (Part 21). Il reste valable tant que l'avion respecte sa définition de type et les exigences de maintien de navigabilité et reste au même registre. Ce qui se renouvelle chaque année, c'est l'ARC, pas le CDN."
+      },
+      {
+       "id": "u1s8q02",
+       "q": "Quelle est la durée de validité d'un certificat d'examen de navigabilité (ARC) ?",
+       "choices": [
+        "6 mois",
+        "1 an",
+        "2 ans",
+        "3 ans"
+       ],
+       "answer": 1,
+       "explanation": "L'ARC est valable un an : il est délivré après l'examen annuel de navigabilité de l'avion et de son dossier. C'est lui qui rend le CDN, de durée illimitée, effectivement utilisable."
+      },
+      {
+       "id": "u1s8q03",
+       "q": "Selon le Part-ML, qui est responsable du maintien de la navigabilité d'un avion léger ?",
+       "choices": [
+        "Le propriétaire, qui peut en confier la gestion à un organisme",
+        "Le dernier commandant de bord, jusqu'au vol suivant de l'avion",
+        "Le mécanicien qui a effectué la dernière visite de l'avion",
+        "La DSAC, qui délivre le certificat de navigabilité"
+       ],
+       "answer": 0,
+       "explanation": "Le Part-ML rend le propriétaire (ou le locataire) responsable du maintien de la navigabilité ; il peut transférer cette gestion par contrat à une CAMO ou une CAO. Le commandant de bord est responsable de sa visite prévol, le mécanicien de ses travaux, l'autorité de la surveillance."
+      },
+      {
+       "id": "u1s8q04",
+       "q": "Que doit porter la plaque d'identité fixée sur un avion ?",
+       "choices": [
+        "Le nom et l'adresse du propriétaire actuel de l'avion",
+        "La date du dernier examen de navigabilité (ARC)",
+        "Au moins les marques de nationalité et d'immatriculation",
+        "Le numéro de la licence de station d'aéronef (LSA)"
+       ],
+       "answer": 2,
+       "explanation": "L'annexe 7 de l'OACI impose une plaque en matériau ininflammable, gravée au moins des marques de nationalité et d'immatriculation et fixée près de l'entrée principale. Elle reste lisible après un incendie, ce qui permet d'identifier l'appareil ; le propriétaire peut changer, pas l'immatriculation."
+      },
+      {
+       "id": "u1s8q05",
+       "q": "Selon l'annexe 7 de l'OACI, quelle hauteur minimale doivent avoir les lettres d'immatriculation peintes sous la voilure d'un avion ?",
+       "choices": [
+        "30 cm",
+        "15 cm",
+        "50 cm",
+        "1 m"
+       ],
+       "answer": 2,
+       "explanation": "Les marques sous la voilure doivent mesurer au moins 50 cm de haut ; celles du fuselage ou de la dérive, au moins 30 cm. Confondre les deux valeurs est le piège classique."
+      },
+      {
+       "id": "u1s8q06",
+       "q": "Qu'est-ce qu'une consigne de navigabilité (AD) ?",
+       "choices": [
+        "Une action rendue obligatoire par l'autorité sur un type d'avion",
+        "Une recommandation du constructeur, au choix du propriétaire",
+        "Une liste de vérifications à suivre avant chaque vol",
+        "Une note de l'aéroclub sur l'utilisation de ses avions"
+       ],
+       "answer": 0,
+       "explanation": "Une AD est publiée par l'EASA (ou l'État de conception) quand un défaut dangereux est découvert ; elle impose une inspection, une modification ou une limitation dans un délai fixé. La recommandation du constructeur est un bulletin de service, qui n'a pas ce caractère obligatoire."
+      },
+      {
+       "id": "u1s8q07",
+       "q": "Un constructeur publie un bulletin de service (SB) pour son modèle d'avion. Quelle est sa portée ?",
+       "choices": [
+        "Il s'impose aux propriétaires dès sa publication, comme une AD",
+        "Une recommandation, rendue obligatoire si une AD la reprend",
+        "Il remplace le manuel de vol jusqu'à sa prochaine révision",
+        "Il concerne les avions de transport commercial, pas l'aéroclub"
+       ],
+       "answer": 1,
+       "explanation": "Un bulletin de service est une information ou une recommandation du constructeur. Il devient obligatoire lorsqu'une consigne de navigabilité (AD) en impose l'application. Il concerne tous les exploitants du modèle, commerciaux ou non, et ne remplace pas le manuel de vol."
+      },
+      {
+       "id": "u1s8q08",
+       "q": "À quoi sert un laissez-passer délivré par l'autorité ?",
+       "choices": [
+        "À remplacer l'ARC pendant l'immobilisation de l'avion",
+        "À dispenser le pilote d'emporter les documents de bord",
+        "À prolonger de 30 jours la validité du certificat médical",
+        "À permettre le vol d'un avion dont le CDN n'est pas valable"
+       ],
+       "answer": 3,
+       "explanation": "Le laissez-passer permet, sous conditions, de faire voler un aéronef qui ne détient pas de certificat de navigabilité ou dont le certificat n'est plus valable pour des raisons techniques. Il ne remplace ni l'ARC d'un avion en exploitation normale, ni les documents de bord."
+      },
+      {
+       "id": "u1s8q09",
+       "q": "Que recense la licence de station d'aéronef (LSA) ?",
+       "choices": [
+        "Les émetteurs radio de l'avion, y compris les postes portatifs",
+        "Les qualifications radio des pilotes autorisés sur l'avion",
+        "Les fréquences des aérodromes fréquentés par l'avion",
+        "Les instruments de radionavigation, à l'exclusion des radios VHF"
+       ],
+       "answer": 0,
+       "explanation": "La LSA, délivrée par le ministre chargé de l'aviation civile, autorise les stations radio de l'avion et en dresse la liste, postes portatifs compris. La compétence radio du pilote figure sur sa licence ; les fréquences des terrains, dans l'AIP et sur les cartes VAC."
+      },
+      {
+       "id": "u1s8q10",
+       "q": "Dans la liste NCO.GEN.135, à quoi correspond en France le « certificat acoustique » ?",
+       "choices": [
+        "À la licence de station d'aéronef (LSA)",
+        "Au certificat d'examen de navigabilité (ARC)",
+        "Au certificat de limitation de nuisances (CLN)",
+        "À l'attestation d'assurance de l'avion"
+       ],
+       "answer": 2,
+       "explanation": "Le certificat acoustique (noise certificate) de NCO.GEN.135 correspond en France au certificat de limitation de nuisances (CLN), qui atteste la conformité de l'avion aux normes de bruit de son type. La LSA concerne la radio, l'ARC la navigabilité."
+      },
+      {
+       "id": "u1s8q11",
+       "q": "Dans combien d'États un avion peut-il être immatriculé simultanément ?",
+       "choices": [
+        "Deux au plus",
+        "Autant que de pays survolés",
+        "Un par continent",
+        "Un seul"
+       ],
+       "answer": 3,
+       "explanation": "La Convention de Chicago interdit l'immatriculation d'un aéronef dans plus d'un État ; il a la nationalité de l'État d'immatriculation, d'où la marque F pour la France. Il peut changer de registre, mais jamais en cumuler deux."
+      },
+      {
+       "id": "u1s8q12",
+       "q": "Vous partez pour une heure de maniabilité et reviendrez au même aérodrome. Lequel de ces documents doit malgré tout se trouver à bord ?",
+       "choices": [
+        "Le carnet de route",
+        "Le manuel de vol",
+        "L'attestation d'assurance",
+        "Le certificat d'immatriculation"
+       ],
+       "answer": 1,
+       "explanation": "Pour un vol au départ et à destination du même aérodrome, NCO.GEN.135 permet de laisser au sol les certificats, la LSA, l'attestation d'assurance et le carnet de route. Le manuel de vol, utile à bord en toutes circonstances, ne fait pas partie de cette exception."
+      },
+      {
+       "id": "u1s8q13",
+       "q": "Un pilote part pour des tours de piste et reviendra au même aérodrome. Quel document NCO.GEN.135 lui permet-il de laisser à l'aérodrome ?",
+       "choices": [
+        "Le manuel de vol",
+        "Le certificat de navigabilité (CDN)",
+        "Les cartes aéronautiques à jour",
+        "Les procédures d'interception"
+       ],
+       "answer": 1,
+       "explanation": "L'exception du vol local couvre les documents allant du certificat d'immatriculation au carnet de route, dont le CDN. Le manuel de vol, les cartes et les procédures d'interception doivent rester à bord, même pour des tours de piste."
+      },
+      {
+       "id": "u1s8q14",
+       "q": "Jusqu'à quelle masse maximale au décollage le Part-ML s'applique-t-il aux avions non complexes ?",
+       "choices": [
+        "2 000 kg",
+        "5 700 kg",
+        "1 200 kg",
+        "2 730 kg"
+       ],
+       "answer": 3,
+       "explanation": "Le Part-ML vise notamment les avions de 2 730 kg de MTOM au plus, qui ne sont pas des aéronefs motorisés complexes. 2 000 kg est la limite des avions pilotables en LAPL(A), une notion de licence sans rapport avec l'entretien."
+      },
+      {
+       "id": "u1s8q15",
+       "q": "Sous le Part-ML, jusqu'à combien de jours avant l'échéance de l'ARC l'examen de navigabilité peut-il être anticipé sans perdre la date anniversaire ?",
+       "choices": [
+        "30 jours",
+        "45 jours",
+        "90 jours",
+        "60 jours"
+       ],
+       "answer": 2,
+       "explanation": "Le Part-ML permet d'anticiper l'examen de navigabilité jusqu'à 90 jours avant l'échéance : le nouvel ARC garde la date anniversaire. Les 45 jours concernent la revalidation du certificat médical du pilote."
+      },
+      {
+       "id": "u1s8q16",
+       "q": "Le CDN d'un avion est délivré pour une durée illimitée. Dans lequel de ces cas cesse-t-il d'être valable ?",
+       "choices": [
+        "L'avion est transféré sur le registre d'un autre État",
+        "L'avion est vendu à un autre propriétaire en France",
+        "L'avion n'a pas volé depuis plus de six mois",
+        "Le pilote habituel de l'avion change d'aéroclub"
+       ],
+       "answer": 0,
+       "explanation": "Le CDN reste valable tant que l'avion respecte les exigences de navigabilité et reste inscrit au même registre : un changement de registre le fait tomber. Une vente en France ou une immobilisation ne l'invalident pas par elles-mêmes."
+      },
+      {
+       "id": "u1s8q17",
+       "q": "Le 20 mai, vous préparez une navigation sur l'avion de l'aéroclub. Le dossier indique un ARC arrivé à échéance le 15 mai. Pouvez-vous partir ?",
+       "choices": [
+        "Oui, l'ARC bénéficiant d'une tolérance de 30 jours",
+        "Oui, si le vol reste dans l'espace aérien français",
+        "Non : sans ARC valable, le CDN ne permet plus de voler",
+        "Oui, si un instructeur prend place à bord comme passager"
+       ],
+       "answer": 2,
+       "explanation": "Le CDN ne vaut qu'avec un ARC en cours de validité. Échu le 15 mai, l'ARC ne permet plus d'exploiter l'avion tant qu'un nouvel examen de navigabilité n'a pas été réalisé. Il n'existe pas de tolérance, et la présence d'un instructeur ne change rien à l'état de l'avion."
+      },
+      {
+       "id": "u1s8q18",
+       "q": "Une consigne de navigabilité impose l'inspection d'une ferrure d'aile avant 1 450 h de vol cellule. Le dossier de l'avion indique 1 452 h et aucune trace de l'inspection. Que concluez-vous ?",
+       "choices": [
+        "L'avion n'est plus en état de navigabilité : pas de vol avant l'inspection",
+        "Le vol reste possible : une consigne de navigabilité n'est qu'une recommandation",
+        "Le vol reste possible si l'avion ne quitte pas les abords de l'aérodrome",
+        "Le vol reste possible : l'inspection peut attendre le prochain ARC"
+       ],
+       "answer": 0,
+       "explanation": "Une AD est obligatoire et son délai est impératif : dépassé de 2 h sans inspection, l'avion n'est plus en état de navigabilité. Aucun vol, même local, avant l'inspection ; l'ARC encore valide ne couvre pas une AD non réalisée."
+      },
+      {
+       "id": "u1s8q19",
+       "q": "L'ARC du F-GABC expire le 15 juin 2026. L'examen de navigabilité est réalisé le 1er avril 2026. Jusqu'à quand le nouvel ARC sera-t-il valable ?",
+       "choices": [
+        "1er avril 2027",
+        "15 juin 2028",
+        "30 juin 2027",
+        "15 juin 2027"
+       ],
+       "answer": 3,
+       "explanation": "Du 1er avril au 15 juin, il y a 75 jours, moins que les 90 jours autorisés par le Part-ML : l'examen anticipé conserve la date anniversaire, et le nouvel ARC, valable un an, court jusqu'au 15 juin 2027. Compter un an depuis le 1er avril ferait perdre deux mois et demi."
+      },
+      {
+       "id": "u1s8q20",
+       "q": "Vous décollez de votre aérodrome, vous posez sur un autre terrain pour déjeuner, puis revenez au point de départ dans l'après-midi. Où doivent se trouver le certificat d'immatriculation et le carnet de route ?",
+       "choices": [
+        "Au bureau de l'aérodrome de départ, puisque vous revenez le jour même",
+        "À bord : le premier vol se termine sur un autre aérodrome",
+        "Au bureau de l'aéroclub, si l'escale dure moins de deux heures",
+        "Chez vous, à condition de pouvoir les présenter sous 24 heures"
+       ],
+       "answer": 1,
+       "explanation": "L'exception de NCO.GEN.135 vise un vol prévu au départ et à destination du même aérodrome. Ici, le premier vol se termine ailleurs : tous les documents, dont le certificat d'immatriculation et le carnet de route, doivent être à bord. Revenir le jour même ne suffit pas."
+      },
+      {
+       "id": "u1s8q21",
+       "q": "Votre avion a une masse maximale au décollage de 980 kg. Quel montant minimal de couverture de la responsabilité envers les tiers le règlement (CE) n° 785/2004 impose-t-il ?",
+       "choices": [
+        "1,5 million de DTS",
+        "0,75 million de DTS",
+        "3 millions de DTS",
+        "250 000 DTS"
+       ],
+       "answer": 0,
+       "explanation": "Le règlement fixe le minimum selon la MTOM : 0,75 million de DTS sous 500 kg, 1,5 million sous 1 000 kg, 3 millions sous 2 700 kg. À 980 kg, l'avion est dans la tranche de moins de 1 000 kg : 1,5 million de DTS."
+      },
+      {
+       "id": "u1s8q22",
+       "q": "Vous ajoutez à bord une radio VHF portative de secours, qui n'appartient pas à l'équipement de l'avion. Que prévoit la réglementation française sur la LSA ?",
+       "choices": [
+        "Pas de démarche : la LSA porte sur les équipements fixés à l'avion",
+        "Cet émetteur doit figurer sur la LSA de l'avion",
+        "Il suffit que le pilote détienne une qualification radio",
+        "Il faut une seconde LSA, au nom du propriétaire du poste"
+       ],
+       "answer": 1,
+       "explanation": "La licence de station d'aéronef doit recenser tous les émetteurs radio utilisés à bord, y compris les postes portatifs. Une compétence radio du pilote ne remplace pas cette autorisation propre à la station, et une seconde LSA n'est pas la règle."
+      },
+      {
+       "id": "u1s8q23",
+       "q": "Sous le Part-ML, un propriétaire-pilote peut-il effectuer lui-même de l'entretien sur son avion ?",
+       "choices": [
+        "Non : l'entretien relève d'un mécanicien titulaire d'une licence Part-66",
+        "Oui, y compris l'examen de navigabilité et la délivrance de l'ARC",
+        "Oui, des tâches simples listées, s'il détient une licence valable sur l'avion",
+        "Oui, y compris les visites périodiques, si l'avion vole moins de 100 h par an"
+       ],
+       "answer": 2,
+       "explanation": "Le Part-ML autorise le propriétaire-pilote, titulaire d'une licence valable pour l'avion, à effectuer et certifier certaines tâches simples listées par le règlement (hors avion utilisé par un organisme de formation commercial). L'examen de navigabilité et l'ARC restent du ressort d'un organisme ou d'un personnel habilité."
+      },
+      {
+       "id": "u1s8q24",
+       "q": "En préparant une navigation, vous trouvez dans la pochette de bord une photocopie du certificat de navigabilité, l'original étant resté au bureau. Que concluez-vous ?",
+       "choices": [
+        "Le vol est conforme : une copie suffit pour chacun des documents",
+        "Le vol est conforme si l'ARC original se trouve à bord",
+        "Le vol est conforme si la copie est certifiée par l'aéroclub",
+        "Le vol n'est pas conforme : le CDN doit être à bord en original"
+       ],
+       "answer": 3,
+       "explanation": "NCO.GEN.135 admet des copies pour la plupart des documents, mais exige l'original du certificat d'immatriculation et du CDN. Pour une navigation, l'exception du vol local ne s'applique pas : il faut aller chercher l'original."
+      }
+     ]
+    },
+    {
+     "id": "u1s9",
+     "title": "Information aéronautique : AIP, NOTAM et cartes",
+     "icon": "🗺️",
+     "tips": "Le service d'information aéronautique (annexe 15 de l'OACI) rassemble et diffuse ce dont le pilote a besoin pour préparer son vol. En France, c'est le SIA, service de la DSNA : il publie l'AIP France, consultable en ligne sous forme d'eAIP, ses amendements et suppléments, les AIC et les cartes VAC, et il diffuse les NOTAM. Son service en ligne SOFIA-Briefing fournit les NOTAM d'un aérodrome, d'une route ou d'une zone.\n\nL'AIP France, l'information permanente :\n• GEN (généralités) : autorités, réglementation nationale et différences avec les normes de l'OACI, abréviations et unités, services (information aéronautique, météorologie, recherche et sauvetage), redevances.\n• ENR (en route) : règles et procédures, dont celles du VFR ; espaces aériens (FIR, CTA, TMA...) ; routes ; moyens de radionavigation ; zones interdites, réglementées et dangereuses (ENR 5) ; obstacles.\n• AD (aérodromes) : fiche de chaque aérodrome (AD 2) et cartes associées, dont les cartes VAC pour le vol à vue.\n\nLe cycle AIRAC :\nLes changements importants (espaces aériens, procédures, fréquences) entrent en vigueur à des dates communes à tous les États, espacées de 28 jours. Chacun met ainsi sa documentation à jour au même moment. Exemple : après la date AIRAC du jeudi 30 octobre 2025 vient celle du jeudi 27 novembre 2025 (30 octobre + 28 jours).\n\nPublications temporaires et circulaires :\n• SUP AIP : modification temporaire de longue durée (3 mois ou plus) ou riche en textes et en cartes.\n• AIC : circulaire d'explications ou d'informations administratives, qui ne relève ni de l'AIP ni des NOTAM.\n• NOTAM : avis diffusé par télécommunication, pour une information temporaire de courte durée ou urgente : activation de zone, zone réglementée temporaire (ZRT), piste fermée, panne d'un moyen radio, obstacle nouveau, travaux.\n\nLire un NOTAM :\nExemple :\nA1234/26 NOTAMN\nQ) LFRR/QRTCA/IV/BO/W/000/045/4712N00133W005\nA) LFRR B) 2606151000 C) 2606151600\nE) ZRT ACTIVE (MANIFESTATION AERIENNE)\nF) SFC G) 4500FT AMSL\n• En-tête : série, numéro et année (A1234/26) ; NOTAMN = nouveau, NOTAMR = remplace un NOTAM précédent, NOTAMC = annule un NOTAM.\n• Q) ligne de qualification : FIR (LFRR, Brest) / code NOTAM de 5 lettres commençant par Q, dont les 2e et 3e lettres donnent le sujet (RT zone réglementée temporaire, MR piste) et les 4e et 5e son état (CA activée, LC fermée) / trafic concerné (I IFR, V VFR, IV les deux) / objet / portée (A aérodrome, E en route, W avertissement à la navigation) / limites inférieure et supérieure en niveaux de vol (000/045) / centre et rayon en NM (ici 5 NM autour de 47°12'N 001°33'W).\n• A) lieu : indicatif OACI de l'aérodrome ou de la FIR.\n• B) début et C) fin de validité, au format AAMMJJhhmm, en UTC : 2606151000 = 15 juin 2026 à 10 h 00 UTC. C) peut porter EST (fin seulement estimée : le NOTAM reste en vigueur jusqu'à la parution d'un NOTAMR ou d'un NOTAMC) ou PERM (changement permanent, qui sera repris dans l'AIP).\n• D) horaires d'activité, quand l'activité est discontinue.\n• E) texte du NOTAM, en langage clair abrégé.\n• F) et G) limites inférieure et supérieure (SFC = surface).\nPiège : les heures sont en UTC. L'été, heure légale = UTC + 2 : la ZRT ci-dessus est active de 12 h 00 à 18 h 00, heure légale.\n\nLes cartes :\n• Carte VAC (une par aérodrome, partie AD) : altitude du terrain, pistes et distances déclarées, tour de piste et son altitude, points d'entrée et de sortie, fréquences, consignes particulières. Utilisez la version en vigueur, dont la date figure sur la carte.\n• Carte OACI au 1/500 000 : relief, obstacles, aérodromes, espaces aériens et zones P, R et D avec leurs limites verticales. Elle n'est rééditée que périodiquement : vérifiez son édition et complétez-la par l'AIP, les SUP AIP et les NOTAM (une ZRT créée par NOTAM n'y figure pas).\n• NCO.GEN.135 exige à bord des cartes aéronautiques à jour et adaptées au vol.\n\nPréparation réglementaire (SERA.2010) :\nAvant tout vol, le commandant de bord prend connaissance de toutes les informations disponibles utiles au vol prévu. Pour un vol qui quitte les abords de l'aérodrome, il étudie en outre les bulletins et prévisions météorologiques à jour, en tenant compte du carburant nécessaire et d'une solution de rechange.\nMéthode :\n• météo : METAR, TAF, TEMSI, WINTEM, SIGMET ;\n• NOTAM des aérodromes de départ, de destination et de dégagement, et NOTAM de route (FIR, zones), réunis dans un bulletin d'information prévol (PIB) ;\n• SUP AIP en vigueur sur le trajet ;\n• carte VAC à jour de chaque aérodrome prévu, carte au 1/500 000 de l'édition en vigueur ;\n• contrôle des horaires des NOTAM, convertis de l'UTC en heure légale, et des limites verticales des zones par rapport à l'altitude prévue.",
+     "vocab": [
+      {
+       "term": "AIP",
+       "translation": "Publication d'information aéronautique : GEN, ENR et AD"
+      },
+      {
+       "term": "eAIP",
+       "translation": "Version électronique de l'AIP, publiée en ligne par le SIA"
+      },
+      {
+       "term": "AIRAC",
+       "translation": "Dates communes d'entrée en vigueur, tous les 28 jours"
+      },
+      {
+       "term": "AIC",
+       "translation": "Circulaire d'information aéronautique : explications, administratif"
+      },
+      {
+       "term": "NOTAMR",
+       "translation": "NOTAM qui en remplace un autre"
+      },
+      {
+       "term": "NOTAMC",
+       "translation": "NOTAM qui en annule un autre"
+      },
+      {
+       "term": "Ligne Q",
+       "translation": "Ligne de qualification codée d'un NOTAM (FIR, sujet, portée...)"
+      },
+      {
+       "term": "EST",
+       "translation": "Dans le champ C : fin de validité seulement estimée"
+      },
+      {
+       "term": "PERM",
+       "translation": "Dans le champ C : changement permanent, repris dans l'AIP"
+      },
+      {
+       "term": "PIB",
+       "translation": "Bulletin d'information prévol regroupant les NOTAM utiles"
+      },
+      {
+       "term": "SOFIA-Briefing",
+       "translation": "Service en ligne du SIA pour obtenir NOTAM et bulletins"
+      },
+      {
+       "term": "FIR",
+       "translation": "Région d'information de vol (ex. LFRR, Brest)"
+      },
+      {
+       "term": "ZRT",
+       "translation": "Zone réglementée temporaire, publiée par NOTAM ou SUP AIP"
+      },
+      {
+       "term": "SFC",
+       "translation": "Surface : limite inférieure au niveau du sol"
+      },
+      {
+       "term": "UTC",
+       "translation": "Temps universel coordonné, référence des heures des NOTAM"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Anatomie d'un NOTAM",
+       "svg": "<svg viewBox=\"0 0 720 434\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"434\" fill=\"#ffffff\"/><rect x=\"8\" y=\"8\" width=\"704\" height=\"186\" rx=\"8\" fill=\"#0f172a\"/><text x=\"22\" y=\"44\" font-size=\"17\" fill=\"#e2e8f0\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">A1234/26 NOTAMN</text><text x=\"698\" y=\"44\" font-size=\"17\" fill=\"#fbbf24\" text-anchor=\"end\">N = nouveau NOTAM</text><text x=\"22\" y=\"78\" font-size=\"17\" fill=\"#e2e8f0\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">Q) LFRR/QRTCA/IV/BO/W/000/045/4712N00133W005</text><text x=\"698\" y=\"78\" font-size=\"17\" fill=\"#fbbf24\" text-anchor=\"end\">qualification</text><text x=\"22\" y=\"112\" font-size=\"17\" fill=\"#e2e8f0\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">A) LFRR  B) 2606151000  C) 2606151600</text><text x=\"698\" y=\"112\" font-size=\"17\" fill=\"#fbbf24\" text-anchor=\"end\">lieu, début, fin</text><text x=\"22\" y=\"146\" font-size=\"17\" fill=\"#e2e8f0\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">E) ZRT ACTIVE (MANIFESTATION AERIENNE)</text><text x=\"698\" y=\"146\" font-size=\"17\" fill=\"#fbbf24\" text-anchor=\"end\">texte</text><text x=\"22\" y=\"180\" font-size=\"17\" fill=\"#e2e8f0\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">F) SFC  G) 4500FT AMSL</text><text x=\"698\" y=\"180\" font-size=\"17\" fill=\"#fbbf24\" text-anchor=\"end\">plancher, plafond</text><text x=\"22\" y=\"226\" font-size=\"17\" font-weight=\"700\" fill=\"#1f2937\">La ligne Q) décomposée :</text><rect x=\"22\" y=\"238\" width=\"70\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"57.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">LFRR</text><text x=\"57.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">FIR</text><rect x=\"100\" y=\"238\" width=\"82\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"141.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">QRTCA</text><text x=\"141.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">sujet + état</text><rect x=\"190\" y=\"238\" width=\"50\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"215.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">IV</text><text x=\"215.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">trafic</text><rect x=\"248\" y=\"238\" width=\"50\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"273.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">BO</text><text x=\"273.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">objet</text><rect x=\"306\" y=\"238\" width=\"46\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"329.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">W</text><text x=\"329.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">portée</text><rect x=\"360\" y=\"238\" width=\"58\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"389.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">000</text><text x=\"389.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">plancher</text><rect x=\"426\" y=\"238\" width=\"58\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"455.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">045</text><text x=\"455.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">plafond</text><rect x=\"492\" y=\"238\" width=\"172\" height=\"36\" rx=\"4\" fill=\"#e0e7ff\" stroke=\"#3730a3\" stroke-width=\"1.5\"/><text x=\"578.0\" y=\"262\" font-size=\"16\" fill=\"#1e1b4b\" text-anchor=\"middle\" font-family=\"'JetBrains Mono', 'Courier New', monospace\">4712N00133W005</text><text x=\"578.0\" y=\"296\" font-size=\"15\" fill=\"#1f2937\" text-anchor=\"middle\">centre + rayon</text><text x=\"22\" y=\"332\" font-size=\"17\" fill=\"#1f2937\">QRTCA : RT = zone réglementée temporaire, CA = activée</text><text x=\"22\" y=\"362\" font-size=\"17\" fill=\"#1f2937\">IV : IFR et VFR · W : avertissement à la navigation</text><text x=\"22\" y=\"392\" font-size=\"17\" fill=\"#1f2937\">000/045 : de la surface au FL 045 · 005 : rayon de 5 NM</text><text x=\"22\" y=\"422\" font-size=\"17\" fill=\"#1f2937\">B) 2606151000 : 15 juin 2026, 10 h 00 UTC (12 h 00 en été)</text></svg>",
+       "caption": "Exemple fictif d'une zone réglementée temporaire. La ligne Q résume le NOTAM en codes ; les champs B et C sont en UTC, au format AAMMJJhhmm, et F et G donnent les limites verticales."
+      },
+      {
+       "title": "AIP France et publications associées",
+       "svg": "<svg viewBox=\"0 0 600 430\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"600\" height=\"430\" fill=\"#ffffff\"/><defs><marker id=\"m9b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1f2937\"/></marker></defs><text x=\"300\" y=\"26\" font-size=\"18\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">AIP France : l'information permanente</text><rect x=\"6\" y=\"40\" width=\"190\" height=\"168\" rx=\"6\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><rect x=\"6\" y=\"40\" width=\"190\" height=\"40\" rx=\"6\" fill=\"#1d4ed8\"/><text x=\"101\" y=\"67\" font-size=\"17\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">GEN · généralités</text><text x=\"18\" y=\"108\" font-size=\"16\" fill=\"#1f2937\">autorités, textes</text><text x=\"18\" y=\"136\" font-size=\"16\" fill=\"#1f2937\">écarts avec l'OACI</text><text x=\"18\" y=\"164\" font-size=\"16\" fill=\"#1f2937\">abréviations</text><text x=\"18\" y=\"192\" font-size=\"16\" fill=\"#1f2937\">services, redevances</text><rect x=\"205\" y=\"40\" width=\"190\" height=\"168\" rx=\"6\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"2\"/><rect x=\"205\" y=\"40\" width=\"190\" height=\"40\" rx=\"6\" fill=\"#0f766e\"/><text x=\"300\" y=\"67\" font-size=\"17\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">ENR · en route</text><text x=\"217\" y=\"108\" font-size=\"16\" fill=\"#1f2937\">règles, procédures</text><text x=\"217\" y=\"136\" font-size=\"16\" fill=\"#1f2937\">espaces aériens</text><text x=\"217\" y=\"164\" font-size=\"16\" fill=\"#1f2937\">zones P, R et D</text><text x=\"217\" y=\"192\" font-size=\"16\" fill=\"#1f2937\">radionavigation</text><rect x=\"404\" y=\"40\" width=\"190\" height=\"168\" rx=\"6\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><rect x=\"404\" y=\"40\" width=\"190\" height=\"40\" rx=\"6\" fill=\"#7c3aed\"/><text x=\"499\" y=\"67\" font-size=\"17\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">AD · aérodromes</text><text x=\"416\" y=\"108\" font-size=\"16\" fill=\"#1f2937\">fiches d'aérodromes</text><text x=\"416\" y=\"136\" font-size=\"16\" fill=\"#1f2937\">cartes VAC</text><text x=\"416\" y=\"164\" font-size=\"16\" fill=\"#1f2937\">pistes, horaires</text><text x=\"416\" y=\"192\" font-size=\"16\" fill=\"#1f2937\">services au sol</text><text x=\"300\" y=\"250\" font-size=\"18\" font-weight=\"700\" fill=\"#1f2937\" text-anchor=\"middle\">Quelle publication selon la durée ?</text><line x1=\"24\" y1=\"304\" x2=\"584\" y2=\"304\" stroke=\"#1f2937\" stroke-width=\"2.5\" marker-end=\"url(#m9b)\"/><circle cx=\"100\" cy=\"304\" r=\"10\" fill=\"#dc2626\"/><text x=\"100\" y=\"288\" font-size=\"17\" font-weight=\"700\" fill=\"#dc2626\" text-anchor=\"middle\">NOTAM</text><text x=\"100\" y=\"334\" font-size=\"16\" fill=\"#1f2937\" text-anchor=\"middle\">court ou urgent</text><text x=\"100\" y=\"355\" font-size=\"16\" fill=\"#1f2937\" text-anchor=\"middle\">par télécommunication</text><circle cx=\"300\" cy=\"304\" r=\"10\" fill=\"#d97706\"/><text x=\"300\" y=\"288\" font-size=\"17\" font-weight=\"700\" fill=\"#d97706\" text-anchor=\"middle\">SUP AIP</text><text x=\"300\" y=\"334\" font-size=\"16\" fill=\"#1f2937\" text-anchor=\"middle\">3 mois ou plus</text><text x=\"300\" y=\"355\" font-size=\"16\" fill=\"#1f2937\" text-anchor=\"middle\">ou très illustré</text><circle cx=\"494\" cy=\"304\" r=\"10\" fill=\"#1d4ed8\"/><text x=\"494\" y=\"288\" font-size=\"17\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">Amendement AIP</text><text x=\"494\" y=\"334\" font-size=\"16\" fill=\"#1f2937\" text-anchor=\"middle\">permanent</text><text x=\"494\" y=\"355\" font-size=\"16\" fill=\"#1f2937\" text-anchor=\"middle\">à une date AIRAC</text><text x=\"300\" y=\"396\" font-size=\"16\" fill=\"#374151\" text-anchor=\"middle\">AIC : circulaire d'explications ou d'informations</text><text x=\"300\" y=\"417\" font-size=\"16\" fill=\"#374151\" text-anchor=\"middle\">administratives, hors AIP et NOTAM</text></svg>",
+       "caption": "L'AIP contient l'information permanente, en trois parties. Selon la durée du changement, on publie un NOTAM, un SUP AIP ou un amendement de l'AIP à une date AIRAC."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u1s9q01",
+       "q": "Que permet le cycle AIRAC ?",
+       "choices": [
+        "De faire entrer en vigueur les changements importants à des dates communes",
+        "De diffuser en urgence les informations temporaires par télécommunication",
+        "De publier chaque mois une nouvelle édition de la carte au 1/500 000",
+        "De fixer à 28 jours la durée de validité maximale d'un NOTAM"
+       ],
+       "answer": 0,
+       "explanation": "Le système AIRAC fixe des dates communes, tous les 28 jours, auxquelles entrent en vigueur les changements importants (espaces, procédures, fréquences) : tous les utilisateurs mettent à jour leur documentation en même temps. La diffusion urgente par télécommunication est le rôle du NOTAM."
+      },
+      {
+       "id": "u1s9q02",
+       "q": "Dans quelle partie de l'AIP France trouve-t-on la description des zones interdites, réglementées et dangereuses ?",
+       "choices": [
+        "GEN",
+        "AD",
+        "ENR",
+        "AIC"
+       ],
+       "answer": 2,
+       "explanation": "Les zones P, R et D figurent dans la partie ENR (en route), avec les espaces aériens et les routes. GEN regroupe les généralités, AD les aérodromes ; l'AIC n'est pas une partie de l'AIP mais une circulaire distincte."
+      },
+      {
+       "id": "u1s9q03",
+       "q": "Dans quelle partie de l'AIP trouve-t-on les abréviations utilisées et les différences de la France avec les normes de l'OACI ?",
+       "choices": [
+        "ENR",
+        "GEN",
+        "AD",
+        "SUP AIP"
+       ],
+       "answer": 1,
+       "explanation": "La partie GEN (généralités) rassemble les autorités, la réglementation nationale, les différences notifiées à l'OACI, les abréviations, les unités et les services. Le SUP AIP n'est pas une partie de l'AIP : il publie des modifications temporaires."
+      },
+      {
+       "id": "u1s9q04",
+       "q": "Qu'indique l'en-tête NOTAMC ?",
+       "choices": [
+        "Le NOTAM concerne un aérodrome contrôlé",
+        "Le NOTAM remplace un NOTAM publié auparavant",
+        "Le NOTAM est une information nouvelle",
+        "Le NOTAM annule un NOTAM publié auparavant"
+       ],
+       "answer": 3,
+       "explanation": "NOTAMC signifie annulation (cancel) d'un NOTAM antérieur. NOTAMR remplace un NOTAM, NOTAMN publie une information nouvelle ; la lettre ne dit rien du statut contrôlé ou non de l'aérodrome."
+      },
+      {
+       "id": "u1s9q05",
+       "q": "Dans un NOTAM, que contient le champ A) ?",
+       "choices": [
+        "Le début de validité, en heure UTC",
+        "Le texte en clair abrégé",
+        "La limite supérieure de la zone",
+        "Le lieu concerné : aérodrome ou FIR"
+       ],
+       "answer": 3,
+       "explanation": "Le champ A) donne l'indicatif OACI du lieu concerné : un aérodrome (LFxx) ou une FIR pour une information en route. Les dates sont en B) et C), le texte en E), les limites verticales en F) et G)."
+      },
+      {
+       "id": "u1s9q06",
+       "q": "Dans un NOTAM, en quelle heure sont exprimés les champs B) et C) ?",
+       "choices": [
+        "En heure légale française",
+        "En UTC",
+        "En heure locale de l'aérodrome",
+        "En UTC l'hiver, en heure légale l'été"
+       ],
+       "answer": 1,
+       "explanation": "Les NOTAM, comme les messages météo et les plans de vol, sont rédigés en UTC toute l'année. Le pilote convertit lui-même : heure légale = UTC + 1 en hiver, UTC + 2 en été en France métropolitaine."
+      },
+      {
+       "id": "u1s9q07",
+       "q": "Le champ C) d'un NOTAM se termine par EST. Qu'est-ce que cela signifie ?",
+       "choices": [
+        "Le NOTAM concerne la partie est de la FIR",
+        "L'heure est exprimée en heure d'été (EST)",
+        "La date de fin de validité est estimée",
+        "Le NOTAM s'applique à l'espace en route"
+       ],
+       "answer": 2,
+       "explanation": "EST indique une fin de validité estimée : le NOTAM devra être remplacé (NOTAMR) ou annulé (NOTAMC). Ce n'est ni une direction géographique ni un fuseau horaire : les heures restent en UTC."
+      },
+      {
+       "id": "u1s9q08",
+       "q": "Que signifie PERM dans le champ C) d'un NOTAM ?",
+       "choices": [
+        "Le changement est permanent et sera repris dans l'AIP",
+        "La zone est activée en permanence, de jour comme de nuit",
+        "Le NOTAM a été publié par un organisme permanent",
+        "Le pilote doit obtenir une permission avant d'entrer"
+       ],
+       "answer": 0,
+       "explanation": "PERM signale un changement permanent, diffusé d'abord par NOTAM parce qu'il est urgent, puis intégré à l'AIP par amendement. Il ne décrit pas les horaires d'activité, qui figureraient en D)."
+      },
+      {
+       "id": "u1s9q09",
+       "q": "Dans un NOTAM, que signifie le groupe B) 2610031430 ?",
+       "choices": [
+        "Début de validité le 10 mars 2026 à 14 h 30 UTC",
+        "Début de validité le 3 octobre 2026 à 14 h 30 UTC",
+        "Fin de validité le 3 octobre 2026 à 14 h 30 UTC",
+        "Début de validité le 26 octobre à 03 h 14 UTC"
+       ],
+       "answer": 1,
+       "explanation": "Le format est AAMMJJhhmm : 26 (2026), 10 (octobre), 03 (le 3), 14 h 30, en UTC. B) est le début de validité, C) la fin. Lire le jour avant le mois donne à tort le 10 mars."
+      },
+      {
+       "id": "u1s9q10",
+       "q": "Dans la ligne Q) d'un NOTAM, que signifie l'indication de trafic « V » ?",
+       "choices": [
+        "Le NOTAM concerne un VOR",
+        "Le NOTAM est valable pour la journée",
+        "Le NOTAM est un avertissement de navigation",
+        "Le NOTAM concerne les vols VFR"
+       ],
+       "answer": 3,
+       "explanation": "Dans la ligne Q), le trafic concerné est codé I (IFR), V (VFR) ou IV (les deux). Le VOR apparaîtrait dans le code NOTAM (sujet NV), et l'avertissement de navigation dans la portée (W)."
+      },
+      {
+       "id": "u1s9q11",
+       "q": "Que donnent les champs F) et G) d'un NOTAM ?",
+       "choices": [
+        "Les limites verticales de la zone active",
+        "Les fréquences radio à contacter",
+        "Les heures de début et de fin",
+        "Les coordonnées du centre de la zone"
+       ],
+       "answer": 0,
+       "explanation": "F) est la limite inférieure (par exemple SFC, la surface) et G) la limite supérieure (par exemple 4500FT AMSL). Les heures sont en B) et C) ; le centre et le rayon de la zone figurent à la fin de la ligne Q)."
+      },
+      {
+       "id": "u1s9q12",
+       "q": "Dans un code NOTAM tel que QMRLC, que désignent les 2e et 3e lettres ?",
+       "choices": [
+        "L'état du sujet (ici MR, mise en route)",
+        "La FIR émettrice (ici MR, Marseille)",
+        "Le sujet (ici MR, la piste)",
+        "La portée (ici MR, message régional)"
+       ],
+       "answer": 2,
+       "explanation": "Après le Q initial, les 2e et 3e lettres donnent le sujet (MR = piste) et les 4e et 5e son état (LC = fermée) : QMRLC signifie « piste fermée ». La FIR est indiquée au début de la ligne Q), la portée vers la fin."
+      },
+      {
+       "id": "u1s9q13",
+       "q": "Quel type d'information publie une AIC ?",
+       "choices": [
+        "Les modifications permanentes de l'AIP, aux dates AIRAC",
+        "Les activations de zones du jour, par télécommunication",
+        "Des explications et des sujets administratifs ou techniques",
+        "Les cartes d'approche à vue de chaque aérodrome"
+       ],
+       "answer": 2,
+       "explanation": "La circulaire d'information aéronautique (AIC) diffuse des explications ou des informations administratives qui ne relèvent ni de l'AIP ni d'un NOTAM. Les changements permanents passent par un amendement AIRAC, les activations du jour par NOTAM, les VAC par la partie AD."
+      },
+      {
+       "id": "u1s9q14",
+       "q": "Quel service en ligne du SIA permet d'obtenir les NOTAM d'un aérodrome, d'une route ou d'une zone ?",
+       "choices": [
+        "SOFIA-Briefing",
+        "Aéroweb",
+        "Géoportail",
+        "Le site de l'EASA"
+       ],
+       "answer": 0,
+       "explanation": "SOFIA-Briefing, service du SIA, fournit les NOTAM et les bulletins d'information prévol. Aéroweb est le site aéronautique de Météo-France (météo), Géoportail un service cartographique de l'IGN, et l'EASA ne diffuse pas les NOTAM français."
+      },
+      {
+       "id": "u1s9q15",
+       "q": "Que regroupe un bulletin d'information prévol (PIB) ?",
+       "choices": [
+        "Les METAR et TAF des aérodromes de départ et d'arrivée",
+        "Les amendements de l'AIP parus au dernier cycle AIRAC",
+        "La liste des documents à emporter à bord pour le vol",
+        "Les NOTAM utiles au vol, par aérodrome, route ou zone"
+       ],
+       "answer": 3,
+       "explanation": "Le PIB rassemble les NOTAM en vigueur qui concernent le vol : aérodromes de départ, de destination et de dégagement, route et zones. Les METAR et TAF relèvent de la préparation météo, faite séparément."
+      },
+      {
+       "id": "u1s9q16",
+       "q": "Votre carte au 1/500 000 est de l'édition précédente. Une nouvelle TMA est entrée en vigueur depuis. Que retenez-vous ?",
+       "choices": [
+        "Elle reste utilisable : une édition vaut deux ans",
+        "Elle n'est plus à jour : prenez l'édition actuelle",
+        "Elle reste utilisable si vous y tracez la TMA à la main",
+        "Elle reste utilisable pour un vol en classe G"
+       ],
+       "answer": 1,
+       "explanation": "NCO.GEN.135 exige des cartes aéronautiques à jour. Une ancienne édition ne montre pas les espaces modifiés depuis ; on utilise l'édition en vigueur, complétée par l'AIP, les SUP AIP et les NOTAM. Un tracé à la main ne remplace pas une carte à jour."
+      },
+      {
+       "id": "u1s9q17",
+       "q": "Un NOTAM indique B) 2607141300 C) 2607141530. En France métropolitaine, quelle est la période d'activité en heure légale ?",
+       "choices": [
+        "Le 14 juillet, de 13 h 00 à 15 h 30",
+        "Le 14 juillet, de 14 h 00 à 16 h 30",
+        "Le 7 juillet, de 15 h 00 à 17 h 30",
+        "Le 14 juillet, de 15 h 00 à 17 h 30"
+       ],
+       "answer": 3,
+       "explanation": "B) et C) sont en UTC : le 14 juillet 2026 de 13 h 00 à 15 h 30 UTC. En juillet, l'heure légale vaut UTC + 2, soit de 15 h 00 à 17 h 30. Ajouter une heure seulement est la règle de l'hiver."
+      },
+      {
+       "id": "u1s9q18",
+       "q": "Un NOTAM publie : Q) LFRR/QRTCA/IV/BO/W/000/045/4712N00133W005 … B) 2606151000 C) 2606151600 … F) SFC G) 4500FT AMSL. Le 15 juin à 11 h 00 UTC, votre route traverse le cercle à 3 500 ft QNH. Que faites-vous ?",
+       "choices": [
+        "Vous passez : l'indication IV montre qu'elle concerne les vols IFR",
+        "Vous évitez la zone : elle est active à votre altitude à cette heure",
+        "Vous passez : la zone ne s'active qu'à 16 h 00 UTC",
+        "Vous passez : la zone commence au FL 045, au-dessus de vous"
+       ],
+       "answer": 1,
+       "explanation": "QRTCA annonce une ZRT activée, de 10 h 00 à 16 h 00 UTC le 15 juin, de la surface (SFC) à 4 500 ft AMSL. À 11 h 00 UTC et 3 500 ft, vous êtes dedans : vous la contournez ou passez au-dessus. IV signifie IFR et VFR ; 000/045 donne plancher et plafond, pas un plancher au FL 045."
+      },
+      {
+       "id": "u1s9q19",
+       "q": "Un NOTAM porte C) 2611201700 EST. Le 20 novembre à 17 h 10 UTC, aucun NOTAM d'annulation ou de remplacement n'a été publié. Que retenez-vous ?",
+       "choices": [
+        "Il reste en vigueur tant qu'un NOTAMC ou un NOTAMR n'est pas paru",
+        "Le NOTAM a expiré à 17 h 00 UTC, puisque l'heure de fin indiquée est dépassée",
+        "Le NOTAM est prolongé de 24 heures, délai prévu pour EST",
+        "Le NOTAM devient permanent et sera intégré dans l'AIP"
+       ],
+       "answer": 0,
+       "explanation": "Avec EST, la fin n'est qu'estimée : le NOTAM reste à prendre en compte jusqu'à ce qu'un NOTAMR le remplace ou qu'un NOTAMC l'annule. Le croire expiré à l'heure indiquée est le piège ; aucune prolongation automatique de durée fixe n'existe."
+      },
+      {
+       "id": "u1s9q20",
+       "q": "Vous prévoyez des tours de piste sur votre aérodrome. Que vous impose SERA.2010 avant le vol ?",
+       "choices": [
+        "Une préparation allégée, NOTAM exclus, puisque le vol reste local",
+        "Déposer un plan de vol et étudier les TAF des terrains de dégagement",
+        "Consulter les informations utiles disponibles, dont les NOTAM du terrain",
+        "Étudier les cartes TEMSI et WINTEM de la France entière"
+       ],
+       "answer": 2,
+       "explanation": "SERA.2010 impose à tout commandant de bord de prendre connaissance de toutes les informations disponibles utiles au vol prévu : une piste fermée ou une zone active concerne aussi les tours de piste. L'étude détaillée des prévisions est exigée en plus pour les vols quittant les abords de l'aérodrome."
+      },
+      {
+       "id": "u1s9q21",
+       "q": "Une date AIRAC tombe le jeudi 30 octobre 2025. Quelle est la date AIRAC suivante ?",
+       "choices": [
+        "Le dimanche 30 novembre 2025",
+        "Le jeudi 27 novembre 2025",
+        "Le jeudi 13 novembre 2025",
+        "Le jeudi 25 décembre 2025"
+       ],
+       "answer": 1,
+       "explanation": "Les dates AIRAC sont espacées de 28 jours : 30 octobre + 28 jours = 27 novembre 2025, encore un jeudi. Le 13 novembre correspondrait à 14 jours ; le 25 décembre est la date AIRAC d'après ; le même quantième du mois suivant ne convient pas."
+      },
+      {
+       "id": "u1s9q22",
+       "q": "Pour connaître les conditions permanentes de pénétration d'une zone réglementée, puis ses éventuelles activations temporaires du jour, que consultez-vous ?",
+       "choices": [
+        "Les NOTAM, puis la partie AD de l'AIP",
+        "La carte VAC, puis les AIC",
+        "La partie ENR de l'AIP, puis les NOTAM",
+        "La partie GEN de l'AIP, puis les SUP AIP"
+       ],
+       "answer": 2,
+       "explanation": "Les caractéristiques permanentes des zones P, R et D (limites, horaires, conditions) sont dans la partie ENR de l'AIP ; une activation temporaire, de courte durée, se publie par NOTAM. GEN ne décrit pas les zones et les AIC ne servent pas aux activations."
+      },
+      {
+       "id": "u1s9q23",
+       "q": "Un NOTAM concernant l'aérodrome LFXX (fictif) indique : Q) LFMM/QMRLC/IV/NBO/A/000/999/… B) 2608010600 C) 2608011800 E) RWY 13/31 CLSD. Vous prévoyez d'y atterrir le 1er août à 14 h 30, heure légale. Que faites-vous ?",
+       "choices": [
+        "Vous maintenez : la fermeture commence à 18 h 00 UTC",
+        "Vous maintenez : l'indication IV réserve ce NOTAM aux vols IFR",
+        "Vous maintenez en annonçant votre arrivée sur la fréquence A/A",
+        "Vous changez de destination : la piste sera fermée à votre arrivée"
+       ],
+       "answer": 3,
+       "explanation": "QMRLC et CLSD : la piste 13/31 est fermée le 1er août de 06 h 00 à 18 h 00 UTC. 14 h 30 heure légale d'été correspondent à 12 h 30 UTC, en pleine fermeture. 18 h 00 UTC est la fin, pas le début ; IV concerne IFR et VFR."
+      },
+      {
+       "id": "u1s9q24",
+       "q": "Dans la ligne Q) LFRR/QRTCA/IV/BO/W/000/045/4712N00133W005, quelle est l'étendue horizontale de l'information ?",
+       "choices": [
+        "Un cercle de 5 NM de rayon centré sur 47°12'N 001°33'W",
+        "Un cercle de 5 km de rayon centré sur 47°12'N 001°33'W",
+        "Un cercle de 45 NM de rayon centré sur 47°12'N 001°33'W",
+        "Un cercle de 5 NM de diamètre centré sur 47°12'N 001°33'W"
+       ],
+       "answer": 0,
+       "explanation": "Le dernier groupe de la ligne Q) donne le centre (4712N00133W = 47°12'N 001°33'W) puis le rayon en milles nautiques sur trois chiffres (005 = 5 NM). Le 045 qui précède est le plafond, en niveau de vol, pas un rayon."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -4,52 +4,1099 @@
   {
    "id": "u5",
    "title": "Navigation",
+   "description": "Navigation à l'estime et radionavigation : la Terre, les cartes, le magnétisme, le triangle des vitesses, les calculs de navigation et de carburant, le VOR, l'ADF et le GNSS (examen : 20 questions, 50 min).",
    "skills": [
     {
      "id": "u5s7",
-     "title": "u5s7",
-     "figures": [
+     "title": "Vitesses et altitudes",
+     "icon": "📏",
+     "tips": "Les quatre vitesses du pilote :\n• Vitesse indiquée (Vi, IAS) : lue sur l'anémomètre, qui mesure la pression dynamique (pression totale du tube pitot moins pression statique). L'instrument est étalonné, par convention, en atmosphère standard au niveau de la mer.\n• Vitesse conventionnelle (Vc, CAS), dite aussi corrigée : Vi corrigée des erreurs de l'instrument et de l'installation (emplacement des prises, incidence). La table d'étalonnage du manuel de vol donne la correspondance ; l'écart, souvent de quelques nœuds, est en général plus marqué aux basses vitesses.\n• Vitesse propre ou vraie (Vp, TAS) : vitesse de l'avion par rapport à la masse d'air. À Vc égale, elle est d'autant plus grande que l'air est peu dense : en altitude et par temps chaud.\n• Vitesse sol (Vs, GS) : vitesse par rapport au sol, c'est-à-dire la Vp combinée au vent (triangle des vitesses). C'est elle qui donne les temps de vol.\nLa vitesse équivalente (Ve) est la Vc corrigée de la compressibilité de l'air : la correction est négligeable aux vitesses d'un avion léger, où l'on confond Ve et Vc. Le nombre de Mach, utile aux avions rapides, n'intervient pas dans ce programme.\n\nPourquoi le pilotage se fait en Vi :\n• Portance, traînée et efforts sur la cellule dépendent de la pression dynamique, donc de la Vi (ou de la Vc), et non de la Vp.\n• À masse et configuration égales, l'avion décroche à la même vitesse indiquée en altitude qu'au niveau de la mer, alors que sa Vp y est plus élevée.\n• Les arcs de l'anémomètre (VS0, VS1, VFE, VNO, VNE) se lisent donc directement sur l'instrument ; la Vp sert à la navigation.\n\nDe la Vc à la Vp :\n• Relation exacte : Vp = Vc / √σ, où σ est le rapport entre la masse volumique de l'air et celle de l'atmosphère standard au niveau de la mer (1,225 kg/m³).\n• Règle approchée d'altitude : Vp ≈ Vc + 1 % par tranche de 600 ft d'altitude-pression, soit environ 1,7 % par 1 000 ft. La règle de 2 % par 1 000 ft, très répandue, donne un résultat un peu fort aux altitudes des avions légers.\n• Correction de température : + 1 % par 5 °C au-dessus de la température standard, − 1 % par 5 °C au-dessous.\n• Valeurs exactes en atmosphère standard : + 4,5 % à 3 000 ft, + 7,7 % à 5 000 ft, + 16 % à 10 000 ft.\n\nExemple résolu : Vc 110 kt, altitude-pression 6 000 ft, température extérieure + 9 °C.\n• Température standard à 6 000 ft : 15 − 2 × 6 = 3 °C ; écart ISA + 6 °C.\n• Altitude : 6 000 / 600 = 10 tranches, soit + 10 % ; température : 6 / 5 ≈ + 1 %. Total ≈ + 11 %.\n• Vp ≈ 110 × 1,11 ≈ 122 kt (le calcul exact donne 121,6 kt).\n• En sens inverse, on divise : pour une Vp de 120 kt à 6 000 ft en ISA, Vc ≈ 120 / 1,10 ≈ 109 kt.\nAu computer (règle circulaire de type CR ou E6B) : dans la fenêtre de vitesse, placez l'altitude-pression en face de la température extérieure à l'altitude de vol, puis lisez la Vp sur l'échelle extérieure en face de la Vc portée sur l'échelle intérieure. Cette même position donne souvent l'altitude-densité dans une petite fenêtre.\n\nLes altitudes :\n• Altitude indiquée : lecture de l'altimètre avec le calage affiché.\n• Altitude (ou altitude vraie) : distance verticale au-dessus du niveau moyen de la mer. Calé au QNH, l'altimètre ne l'indique exactement qu'en atmosphère standard.\n• Hauteur : distance verticale au-dessus d'un point de la surface (sol survolé, aérodrome). Calé au QFE, l'altimètre indique la hauteur au-dessus de l'aérodrome.\n• Altitude-pression (Zp) : indication de l'altimètre calé sur 1013,25 hPa. Zp ≈ altitude + (1013 − QNH) × 28 ft.\n• Niveau de vol : altitude-pression exprimée en centaines de pieds (FL 65 = 6 500 ft au calage 1013).\n• Altitude-densité (Zd) : altitude de l'atmosphère standard où la masse volumique est celle de l'air réel ; Zd ≈ Zp + 120 ft × écart ISA. Elle sert aux performances, pas au respect des altitudes.\n\nExemple : terrain à 1 100 ft, QNH 1008 hPa, 25 °C.\n• Zp ≈ 1 100 + (1013 − 1008) × 28 = 1 240 ft.\n• Température standard à 1 240 ft ≈ 15 − 2,5 = 12,5 °C, soit ISA + 12,5 °C.\n• Zd ≈ 1 240 + 120 × 12,5 ≈ 2 740 ft : l'avion se comporte comme sur un terrain à 2 700 ft.\n\nNiveau de vol et pression :\n• Par basse pression, un niveau de vol est plus bas en altitude : FL 65 avec QNH 1003 → altitude ≈ 6 500 − 10 × 28 = 6 220 ft.\n• Par haute pression, il est plus haut : FL 65 avec QNH 1023 → altitude ≈ 6 780 ft.\n\nErreurs altimétriques :\n• Basse pression : en volant vers une zone de pression plus basse sans recaler le QNH, l'avion descend sans que l'altimètre le montre, d'environ 28 ft par hPa. Ex. : calé sur 1020 alors que le QNH local est 1010, l'avion est environ 280 ft plus bas qu'indiqué.\n• Air froid : même au bon QNH, l'avion est plus bas qu'indiqué dans un air plus froid que l'ISA. Ordre de grandeur : 4 % de la hauteur au-dessus de la station qui fournit le QNH, par tranche de 10 °C d'écart. Ex. : 4 000 ft au-dessus de la station, ISA − 15 °C → erreur ≈ 4 000 × 0,06 = 240 ft.\n• Air chaud : l'erreur s'inverse, l'avion est plus haut qu'indiqué.\n• Mémo : « du chaud vers le froid, des hautes vers les basses pressions : attention, plus bas qu'indiqué ».\n• Au computer, la fenêtre d'altitude (altitude-pression en face de la température) donne l'altitude vraie, sur l'échelle extérieure, en face de l'altitude indiquée.\n\nPièges classiques :\n• Calculer la Vp avec la température au sol au lieu de la température à l'altitude de vol.\n• Confondre altitude-pression (niveaux, calcul de la Vp) et altitude-densité (performances).\n• Comparer la Vs mesurée à la Vc au lieu de la Vp pour estimer le vent.\n• Corriger l'erreur d'air froid dans le mauvais sens : air froid, avion plus bas.",
+     "vocab": [
       {
-       "title": "fig_vitesses",
-       "svg": "<svg viewBox=\"0 0 680 540\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"540\" fill=\"#ffffff\"/><text x=\"415.0\" y=\"22.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\" font-style=\"italic\">Exemple</text><rect x=\"20\" y=\"30\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#e8f0fe\" stroke=\"#3366cc\" stroke-width=\"2\"/><text x=\"36.0\" y=\"58.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vi : vitesse indiquée</text><text x=\"36.0\" y=\"82.0\" font-size=\"14\" fill=\"#46516a\">IAS, lue sur l'anémomètre</text><rect x=\"350\" y=\"43\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#3366cc\" stroke-width=\"2\"/><text x=\"415.0\" y=\"69.0\" font-size=\"17\" fill=\"#3366cc\" text-anchor=\"middle\" font-weight=\"bold\">102 kt</text><rect x=\"20\" y=\"160\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#e6f4ea\" stroke=\"#2e7d32\" stroke-width=\"2\"/><text x=\"36.0\" y=\"188.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vc : vitesse conventionnelle</text><text x=\"36.0\" y=\"212.0\" font-size=\"14\" fill=\"#46516a\">CAS, Vi corrigée de l'avion</text><rect x=\"350\" y=\"173\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#2e7d32\" stroke-width=\"2\"/><text x=\"415.0\" y=\"199.0\" font-size=\"17\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">100 kt</text><rect x=\"20\" y=\"290\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#fff4e5\" stroke=\"#d35400\" stroke-width=\"2\"/><text x=\"36.0\" y=\"318.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vp : vitesse propre (vraie)</text><text x=\"36.0\" y=\"342.0\" font-size=\"14\" fill=\"#46516a\">TAS, par rapport à l'air</text><rect x=\"350\" y=\"303\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#d35400\" stroke-width=\"2\"/><text x=\"415.0\" y=\"329.0\" font-size=\"17\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">≈ 110 kt</text><rect x=\"20\" y=\"420\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#fdecec\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"36.0\" y=\"448.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vs : vitesse sol</text><text x=\"36.0\" y=\"472.0\" font-size=\"14\" fill=\"#46516a\">GS, par rapport au sol</text><rect x=\"350\" y=\"433\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"415.0\" y=\"459.0\" font-size=\"17\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">≈ 95 kt</text><line x1=\"180.0\" y1=\"100.0\" x2=\"180.0\" y2=\"145.6\" stroke=\"#46516a\" stroke-width=\"3\"/><polygon points=\"180.0,156.0 185.8,143.0 174.2,143.0\" fill=\"#46516a\"/><text x=\"200.0\" y=\"123.0\" font-size=\"15\" fill=\"#14213d\">Erreurs d'instrument et d'installation :</text><text x=\"200.0\" y=\"143.0\" font-size=\"15\" fill=\"#46516a\">table d'étalonnage du manuel de vol</text><line x1=\"180.0\" y1=\"230.0\" x2=\"180.0\" y2=\"275.6\" stroke=\"#46516a\" stroke-width=\"3\"/><polygon points=\"180.0,286.0 185.8,273.0 174.2,273.0\" fill=\"#46516a\"/><text x=\"200.0\" y=\"243.0\" font-size=\"15\" fill=\"#14213d\">Densité de l'air (altitude-pression, température) :</text><text x=\"200.0\" y=\"263.0\" font-size=\"15\" fill=\"#46516a\">≈ + 1 % par 600 ft et + 1 % par 5 °C au-dessus</text><text x=\"200.0\" y=\"283.0\" font-size=\"15\" fill=\"#46516a\">de l'ISA ; ex. : 6 000 ft en ISA, soit + 10 %</text><line x1=\"180.0\" y1=\"360.0\" x2=\"180.0\" y2=\"405.6\" stroke=\"#46516a\" stroke-width=\"3\"/><polygon points=\"180.0,416.0 185.8,403.0 174.2,403.0\" fill=\"#46516a\"/><text x=\"200.0\" y=\"383.0\" font-size=\"15\" fill=\"#14213d\">Vent : triangle des vitesses (dérive, vent effectif) ;</text><text x=\"200.0\" y=\"403.0\" font-size=\"15\" fill=\"#46516a\">ex. : vent de face de 15 kt</text><text x=\"20.0\" y=\"520.0\" font-size=\"15\" fill=\"#14213d\">Les vitesses limites (VS0, VFE, VNO, VNE) se lisent en Vi, sur l'anémomètre.</text></svg>",
-       "caption": "légende de test assez longue"
+       "term": "Vitesse indiquée (Vi)",
+       "translation": "Vitesse lue sur l'anémomètre (IAS), liée à la pression dynamique"
       },
       {
-       "title": "fig_altitudes",
-       "svg": "<svg viewBox=\"0 0 720 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"440\" fill=\"#f4f8fd\"/><rect x=\"0\" y=\"360\" width=\"300\" height=\"80\" fill=\"#cfe3f7\"/><polygon points=\"300,440 300,360 330,356 370,322 410,286 430,270 720,270 720,440\" fill=\"#e3d3b0\" stroke=\"#8d6e4a\" stroke-width=\"2\"/><rect x=\"612\" y=\"263\" width=\"90\" height=\"7\" fill=\"#555555\"/><text x=\"708.0\" y=\"300.0\" font-size=\"14\" fill=\"#5b4630\" text-anchor=\"end\">Aérodrome, altitude 900 ft</text><line x1=\"0.0\" y1=\"360.0\" x2=\"720.0\" y2=\"360.0\" stroke=\"#1f5fa8\" stroke-width=\"2\" stroke-dasharray=\"8 5\"/><text x=\"70.0\" y=\"378.0\" font-size=\"14\" fill=\"#1f5fa8\">Niveau moyen de la mer</text><line x1=\"0.0\" y1=\"388.0\" x2=\"720.0\" y2=\"388.0\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><text x=\"70.0\" y=\"408.0\" font-size=\"14\" fill=\"#c0392b\">Surface isobare 1013 hPa</text><text x=\"70.0\" y=\"426.0\" font-size=\"14\" fill=\"#c0392b\">(fictive, 280 ft sous la mer)</text><line x1=\"30.0\" y1=\"110.0\" x2=\"526.0\" y2=\"110.0\" stroke=\"#8a94a6\" stroke-width=\"1.5\" stroke-dasharray=\"3 4\"/><path d=\"M532,110 C540,103 580,103 596,108 L600,110 L596,112 C580,117 540,117 532,110 Z\" fill=\"#14213d\"/><path d=\"M560,108 L548,92 L556,92 L574,108 Z\" fill=\"#14213d\"/><path d=\"M560,112 L548,128 L556,128 L574,112 Z\" fill=\"#14213d\"/><path d=\"M536,109 L530,98 L536,98 L544,108 Z\" fill=\"#14213d\"/><line x1=\"560.0\" y1=\"140.8\" x2=\"560.0\" y2=\"260.2\" stroke=\"#2e7d32\" stroke-width=\"2.5\"/><polygon points=\"560.0,269.0 565.0,258.0 555.0,258.0\" fill=\"#2e7d32\"/><polygon points=\"560.0,132.0 555.0,143.0 565.0,143.0\" fill=\"#2e7d32\"/><text x=\"574.0\" y=\"192.0\" font-size=\"16\" fill=\"#2e7d32\" font-weight=\"bold\">Hauteur</text><text x=\"574.0\" y=\"212.0\" font-size=\"15\" fill=\"#14213d\">1 600 ft</text><text x=\"574.0\" y=\"230.0\" font-size=\"14\" fill=\"#46516a\">(calage QFE)</text><line x1=\"250.0\" y1=\"119.8\" x2=\"250.0\" y2=\"350.2\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><polygon points=\"250.0,359.0 254.9,348.0 245.1,348.0\" fill=\"#1f5fa8\"/><polygon points=\"250.0,111.0 245.1,122.0 254.9,122.0\" fill=\"#1f5fa8\"/><text x=\"262.0\" y=\"214.0\" font-size=\"16\" fill=\"#1f5fa8\" font-weight=\"bold\">Altitude</text><text x=\"262.0\" y=\"234.0\" font-size=\"15\" fill=\"#14213d\">2 500 ft</text><text x=\"262.0\" y=\"252.0\" font-size=\"14\" fill=\"#46516a\">(calage QNH)</text><line x1=\"40.0\" y1=\"119.8\" x2=\"40.0\" y2=\"378.2\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><polygon points=\"40.0,387.0 45.0,376.0 35.0,376.0\" fill=\"#c0392b\"/><polygon points=\"40.0,111.0 35.0,122.0 45.0,122.0\" fill=\"#c0392b\"/><text x=\"52.0\" y=\"160.0\" font-size=\"16\" fill=\"#c0392b\" font-weight=\"bold\">Altitude-pression</text><text x=\"52.0\" y=\"180.0\" font-size=\"15\" fill=\"#14213d\">2 780 ft</text><text x=\"52.0\" y=\"198.0\" font-size=\"14\" fill=\"#46516a\">(calage 1013)</text><text x=\"20.0\" y=\"30.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">QNH 1003 hPa : 10 hPa × 28 ft ≈ 280 ft</text><text x=\"20.0\" y=\"52.0\" font-size=\"15\" fill=\"#14213d\">Altitude-pression ≈ 2 500 + 280 = 2 780 ft</text></svg>",
-       "caption": "légende de test assez longue"
+       "term": "Vitesse conventionnelle (Vc)",
+       "translation": "Vi corrigée des erreurs d'instrument et d'installation (CAS)"
+      },
+      {
+       "term": "Vitesse équivalente (Ve)",
+       "translation": "Vc corrigée de la compressibilité ; égale à la Vc en avion léger"
+      },
+      {
+       "term": "Vitesse propre (Vp)",
+       "translation": "Vitesse vraie par rapport à l'air (TAS) : Vc / √σ"
+      },
+      {
+       "term": "Vitesse sol (Vs)",
+       "translation": "Vitesse par rapport au sol (GS) : la Vp combinée au vent"
+      },
+      {
+       "term": "Table d'étalonnage",
+       "translation": "Tableau du manuel de vol donnant la Vc pour chaque Vi"
+      },
+      {
+       "term": "Altitude",
+       "translation": "Distance verticale au-dessus du niveau moyen de la mer"
+      },
+      {
+       "term": "Hauteur",
+       "translation": "Distance verticale au-dessus d'un point de la surface"
+      },
+      {
+       "term": "Altitude-pression (Zp)",
+       "translation": "Indication de l'altimètre calé sur 1013,25 hPa"
+      },
+      {
+       "term": "Niveau de vol (FL)",
+       "translation": "Altitude-pression en centaines de pieds (FL 65 = 6 500 ft)"
+      },
+      {
+       "term": "Altitude-densité (Zd)",
+       "translation": "Altitude ISA de même masse volumique : Zp + 120 ft × écart ISA"
+      },
+      {
+       "term": "Écart ISA",
+       "translation": "Température réelle moins température standard à la même altitude"
+      },
+      {
+       "term": "Erreur d'air froid",
+       "translation": "Avion plus bas qu'indiqué : ≈ 4 % de la hauteur par 10 °C sous l'ISA"
+      },
+      {
+       "term": "Computer",
+       "translation": "Règle circulaire de navigation (CR, E6B) : Vp, temps, vent"
+      }
+     ],
+     "figures": [
+      {
+       "title": "De la vitesse indiquée à la vitesse sol",
+       "svg": "<svg viewBox=\"0 0 600 540\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"600\" height=\"540\" fill=\"#ffffff\"/><text x=\"415.0\" y=\"22.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\" font-style=\"italic\">Exemple</text><rect x=\"20\" y=\"30\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#e8f0fe\" stroke=\"#3366cc\" stroke-width=\"2\"/><text x=\"36.0\" y=\"58.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vi : vitesse indiquée</text><text x=\"36.0\" y=\"82.0\" font-size=\"14\" fill=\"#46516a\">IAS, lue sur l'anémomètre</text><rect x=\"350\" y=\"43\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#3366cc\" stroke-width=\"2\"/><text x=\"415.0\" y=\"69.0\" font-size=\"17\" fill=\"#3366cc\" text-anchor=\"middle\" font-weight=\"bold\">102 kt</text><rect x=\"20\" y=\"160\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#e6f4ea\" stroke=\"#2e7d32\" stroke-width=\"2\"/><text x=\"36.0\" y=\"188.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vc : vitesse conventionnelle</text><text x=\"36.0\" y=\"212.0\" font-size=\"14\" fill=\"#46516a\">CAS, Vi corrigée de l'avion</text><rect x=\"350\" y=\"173\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#2e7d32\" stroke-width=\"2\"/><text x=\"415.0\" y=\"199.0\" font-size=\"17\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">100 kt</text><rect x=\"20\" y=\"290\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#fff4e5\" stroke=\"#d35400\" stroke-width=\"2\"/><text x=\"36.0\" y=\"318.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vp : vitesse propre (vraie)</text><text x=\"36.0\" y=\"342.0\" font-size=\"14\" fill=\"#46516a\">TAS, par rapport à l'air</text><rect x=\"350\" y=\"303\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#d35400\" stroke-width=\"2\"/><text x=\"415.0\" y=\"329.0\" font-size=\"17\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">≈ 110 kt</text><rect x=\"20\" y=\"420\" width=\"320\" height=\"66\" rx=\"10\" fill=\"#fdecec\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"36.0\" y=\"448.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Vs : vitesse sol</text><text x=\"36.0\" y=\"472.0\" font-size=\"14\" fill=\"#46516a\">GS, par rapport au sol</text><rect x=\"350\" y=\"433\" width=\"130\" height=\"40\" rx=\"20\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"415.0\" y=\"459.0\" font-size=\"17\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">≈ 95 kt</text><line x1=\"180.0\" y1=\"100.0\" x2=\"180.0\" y2=\"145.6\" stroke=\"#46516a\" stroke-width=\"3\"/><polygon points=\"180.0,156.0 185.8,143.0 174.2,143.0\" fill=\"#46516a\"/><text x=\"200.0\" y=\"123.0\" font-size=\"15\" fill=\"#14213d\">Erreurs d'instrument et d'installation :</text><text x=\"200.0\" y=\"143.0\" font-size=\"15\" fill=\"#46516a\">table d'étalonnage du manuel de vol</text><line x1=\"180.0\" y1=\"230.0\" x2=\"180.0\" y2=\"275.6\" stroke=\"#46516a\" stroke-width=\"3\"/><polygon points=\"180.0,286.0 185.8,273.0 174.2,273.0\" fill=\"#46516a\"/><text x=\"200.0\" y=\"243.0\" font-size=\"15\" fill=\"#14213d\">Densité de l'air (altitude-pression, température) :</text><text x=\"200.0\" y=\"263.0\" font-size=\"15\" fill=\"#46516a\">≈ + 1 % par 600 ft et + 1 % par 5 °C au-dessus</text><text x=\"200.0\" y=\"283.0\" font-size=\"15\" fill=\"#46516a\">de l'ISA ; ex. : 6 000 ft en ISA, soit + 10 %</text><line x1=\"180.0\" y1=\"360.0\" x2=\"180.0\" y2=\"405.6\" stroke=\"#46516a\" stroke-width=\"3\"/><polygon points=\"180.0,416.0 185.8,403.0 174.2,403.0\" fill=\"#46516a\"/><text x=\"200.0\" y=\"383.0\" font-size=\"15\" fill=\"#14213d\">Vent : triangle des vitesses (dérive, vent effectif) ;</text><text x=\"200.0\" y=\"403.0\" font-size=\"15\" fill=\"#46516a\">ex. : vent de face de 15 kt</text><text x=\"20.0\" y=\"520.0\" font-size=\"15\" fill=\"#14213d\">Les vitesses limites (VS0, VFE, VNO, VNE) se lisent en Vi, sur l'anémomètre.</text></svg>",
+       "caption": "Chaque étape corrige une cause d'écart : l'avion (Vi vers Vc), la densité de l'air (Vc vers Vp), puis le vent (Vp vers Vs). Les valeurs de l'exemple suivent un avion à 6 000 ft en atmosphère standard."
+      },
+      {
+       "title": "Hauteur, altitude et altitude-pression",
+       "svg": "<svg viewBox=\"0 0 720 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"440\" fill=\"#f4f8fd\"/><rect x=\"0\" y=\"360\" width=\"300\" height=\"80\" fill=\"#cfe3f7\"/><polygon points=\"300,440 300,360 330,356 370,322 410,286 430,270 720,270 720,440\" fill=\"#e3d3b0\" stroke=\"#8d6e4a\" stroke-width=\"2\"/><rect x=\"612\" y=\"263\" width=\"90\" height=\"7\" fill=\"#555555\"/><text x=\"708.0\" y=\"300.0\" font-size=\"14\" fill=\"#5b4630\" text-anchor=\"end\">Aérodrome, altitude 900 ft</text><line x1=\"0.0\" y1=\"360.0\" x2=\"720.0\" y2=\"360.0\" stroke=\"#1f5fa8\" stroke-width=\"2\" stroke-dasharray=\"8 5\"/><text x=\"70.0\" y=\"378.0\" font-size=\"14\" fill=\"#1f5fa8\">Niveau moyen de la mer</text><line x1=\"0.0\" y1=\"388.0\" x2=\"720.0\" y2=\"388.0\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"4 4\"/><text x=\"70.0\" y=\"408.0\" font-size=\"14\" fill=\"#c0392b\">Surface isobare 1013 hPa</text><text x=\"70.0\" y=\"426.0\" font-size=\"14\" fill=\"#c0392b\">(fictive, 280 ft sous la mer)</text><line x1=\"30.0\" y1=\"110.0\" x2=\"526.0\" y2=\"110.0\" stroke=\"#8a94a6\" stroke-width=\"1.5\" stroke-dasharray=\"3 4\"/><path d=\"M524,104 L530,90 L538,90 L546,104 Z\" fill=\"#14213d\"/><path d=\"M522,104 L590,103 C596,104 600,107 601,110 C600,113 596,116 590,117 L530,116 Z\" fill=\"#14213d\"/><rect x=\"548\" y=\"98\" width=\"38\" height=\"5\" rx=\"2\" fill=\"#14213d\"/><rect x=\"602\" y=\"99\" width=\"3\" height=\"22\" rx=\"1.5\" fill=\"#14213d\"/><line x1=\"560.0\" y1=\"140.8\" x2=\"560.0\" y2=\"260.2\" stroke=\"#2e7d32\" stroke-width=\"2.5\"/><polygon points=\"560.0,269.0 565.0,258.0 555.0,258.0\" fill=\"#2e7d32\"/><polygon points=\"560.0,132.0 555.0,143.0 565.0,143.0\" fill=\"#2e7d32\"/><text x=\"574.0\" y=\"192.0\" font-size=\"16\" fill=\"#2e7d32\" font-weight=\"bold\">Hauteur</text><text x=\"574.0\" y=\"212.0\" font-size=\"15\" fill=\"#14213d\">1 600 ft</text><text x=\"574.0\" y=\"230.0\" font-size=\"14\" fill=\"#46516a\">(calage QFE)</text><line x1=\"250.0\" y1=\"119.8\" x2=\"250.0\" y2=\"350.2\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><polygon points=\"250.0,359.0 254.9,348.0 245.1,348.0\" fill=\"#1f5fa8\"/><polygon points=\"250.0,111.0 245.1,122.0 254.9,122.0\" fill=\"#1f5fa8\"/><text x=\"262.0\" y=\"214.0\" font-size=\"16\" fill=\"#1f5fa8\" font-weight=\"bold\">Altitude</text><text x=\"262.0\" y=\"234.0\" font-size=\"15\" fill=\"#14213d\">2 500 ft</text><text x=\"262.0\" y=\"252.0\" font-size=\"14\" fill=\"#46516a\">(calage QNH)</text><line x1=\"40.0\" y1=\"119.8\" x2=\"40.0\" y2=\"378.2\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><polygon points=\"40.0,387.0 45.0,376.0 35.0,376.0\" fill=\"#c0392b\"/><polygon points=\"40.0,111.0 35.0,122.0 45.0,122.0\" fill=\"#c0392b\"/><text x=\"52.0\" y=\"160.0\" font-size=\"16\" fill=\"#c0392b\" font-weight=\"bold\">Altitude-pression</text><text x=\"52.0\" y=\"180.0\" font-size=\"15\" fill=\"#14213d\">2 780 ft</text><text x=\"52.0\" y=\"198.0\" font-size=\"14\" fill=\"#46516a\">(calage 1013)</text><text x=\"20.0\" y=\"30.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">QNH 1003 hPa : 10 hPa × 28 ft ≈ 280 ft</text><text x=\"20.0\" y=\"52.0\" font-size=\"15\" fill=\"#14213d\">Altitude-pression ≈ 2 500 + 280 = 2 780 ft</text></svg>",
+       "caption": "Avion à 2 500 ft au QNH 1003 hPa, au-dessus d'un plateau à 900 ft : le calage affiché fixe la référence de la mesure. Par basse pression, la surface 1013 hPa passe sous le niveau de la mer et l'altitude-pression dépasse l'altitude (échelle verticale respectée)."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u5s7q01",
+       "q": "Que représente la vitesse indiquée (Vi) ?",
+       "choices": [
+        "La vitesse lue sur l'anémomètre, qui traduit la pression dynamique",
+        "La vitesse de l'avion par rapport à l'air, corrigée de la densité",
+        "La vitesse de l'avion par rapport au sol, compte tenu du vent",
+        "La vitesse corrigée des erreurs d'instrument et d'installation"
+       ],
+       "answer": 0,
+       "explanation": "La Vi est la lecture brute de l'anémomètre, qui mesure la pression dynamique (totale moins statique). La vitesse par rapport à l'air est la Vp, celle par rapport au sol la Vs, et la Vi corrigée des erreurs d'instrument et d'installation est la Vc."
+      },
+      {
+       "id": "u5s7q02",
+       "q": "Pour passer de la vitesse indiquée à la vitesse conventionnelle (Vc), que corrige-t-on ?",
+       "choices": [
+        "L'effet de l'altitude-pression et de la température de l'air",
+        "Les erreurs de l'instrument et de son installation sur l'avion",
+        "L'effet du vent effectif et de la dérive sur la route suivie",
+        "L'écart entre le calage QNH affiché et le calage standard"
+       ],
+       "answer": 1,
+       "explanation": "La Vc est la Vi corrigée des erreurs propres à l'anémomètre et à son installation (emplacement des prises, incidence). La densité de l'air n'intervient qu'ensuite, pour obtenir la Vp, et le vent pour obtenir la Vs ; le calage altimétrique ne concerne pas l'anémomètre."
+      },
+      {
+       "id": "u5s7q03",
+       "q": "Où le pilote trouve-t-il la correspondance entre Vi et Vc pour son avion ?",
+       "choices": [
+        "Sur la carte de déviation placée près du compas",
+        "Dans la table d'étalonnage anémométrique du manuel de vol",
+        "Dans la fenêtre de vitesse du computer de navigation",
+        "Sur la carte WINTEM des vents et températures prévus"
+       ],
+       "answer": 1,
+       "explanation": "Les erreurs d'instrument et d'installation sont propres à chaque type d'avion : le manuel de vol les donne sous forme de table ou de graphique d'étalonnage. Le computer convertit une Vc en Vp sans connaître les erreurs de l'avion, et la carte de déviation concerne le compas."
+      },
+      {
+       "id": "u5s7q04",
+       "q": "Quelle vitesse faut-il utiliser pour calculer le temps de vol entre deux points de report ?",
+       "choices": [
+        "La vitesse propre (Vp)",
+        "La vitesse indiquée (Vi)",
+        "La vitesse sol (Vs)",
+        "La vitesse conventionnelle (Vc)"
+       ],
+       "answer": 2,
+       "explanation": "Le temps dépend de la vitesse par rapport au sol : T = D / Vs. La Vp ne la donne directement que par vent nul ; Vi et Vc servent au pilotage, pas au calcul des temps."
+      },
+      {
+       "id": "u5s7q05",
+       "q": "Par vent nul, à quelle autre vitesse la vitesse propre (Vp) est-elle égale ?",
+       "choices": [
+        "À la vitesse indiquée (Vi)",
+        "À la vitesse conventionnelle (Vc)",
+        "À la vitesse équivalente (Ve)",
+        "À la vitesse sol (Vs)"
+       ],
+       "answer": 3,
+       "explanation": "Vp + vent = Vs : sans vent, l'avion avance par rapport au sol exactement comme par rapport à l'air. Vi, Vc et Ve ne rejoignent la Vp qu'en atmosphère standard au niveau de la mer."
+      },
+      {
+       "id": "u5s7q06",
+       "q": "À vitesse conventionnelle constante, comment évolue la vitesse propre lorsque l'avion monte ?",
+       "choices": [
+        "Elle augmente, car la masse volumique de l'air diminue",
+        "Elle diminue, car la masse volumique de l'air diminue",
+        "Elle reste égale à la Vc, l'altitude ne modifiant que la Vs",
+        "Elle augmente, car la température de l'air augmente"
+       ],
+       "answer": 0,
+       "explanation": "Pour une même pression dynamique (même Vc), l'avion doit aller plus vite dans un air moins dense : Vp = Vc / √σ. En atmosphère standard, la température baisse avec l'altitude : ce n'est pas elle qui fait croître la Vp."
+      },
+      {
+       "id": "u5s7q07",
+       "q": "Qu'appelle-t-on altitude-pression ?",
+       "choices": [
+        "L'indication de l'altimètre calé sur le QNH local",
+        "L'altitude standard de même masse volumique que l'air réel",
+        "La hauteur de l'avion au-dessus de l'aérodrome de départ",
+        "L'indication de l'altimètre calé sur 1013,25 hPa"
+       ],
+       "answer": 3,
+       "explanation": "L'altitude-pression est la hauteur au-dessus de la surface isobare 1013,25 hPa, lue au calage standard ; exprimée en centaines de pieds, c'est le niveau de vol. L'altitude standard de même masse volumique que l'air réel est l'altitude-densité."
+      },
+      {
+       "id": "u5s7q08",
+       "q": "Quelle définition correspond à la hauteur ?",
+       "choices": [
+        "La distance verticale au-dessus du niveau moyen de la mer",
+        "La distance verticale au-dessus de la surface 1013,25 hPa",
+        "La distance verticale au-dessus d'un point de la surface",
+        "La distance verticale corrigée de l'écart à l'ISA"
+       ],
+       "answer": 2,
+       "explanation": "La hauteur se mesure par rapport à la surface (sol survolé, aérodrome) : calé au QFE, l'altimètre indique la hauteur au-dessus de l'aérodrome. Au-dessus du niveau moyen de la mer, on parle d'altitude ; au-dessus de la surface 1013,25 hPa, d'altitude-pression."
+      },
+      {
+       "id": "u5s7q09",
+       "q": "À quoi sert principalement l'altitude-densité ?",
+       "choices": [
+        "À choisir le niveau de croisière selon la route magnétique",
+        "À respecter le plancher et le plafond des espaces aériens",
+        "À évaluer les performances de l'avion au décollage et en montée",
+        "À régler l'altimètre au passage de l'altitude de transition"
+       ],
+       "answer": 2,
+       "explanation": "L'altitude-densité traduit la masse volumique réelle de l'air, dont dépendent la puissance du moteur, la traction de l'hélice et la portance : on l'utilise avec les abaques de performances. Niveaux de croisière et limites d'espaces se réfèrent à l'altimètre calé (QNH ou 1013)."
+      },
+      {
+       "id": "u5s7q10",
+       "q": "Un avion décroche à 50 kt indiqués au niveau de la mer. À 8 000 ft, à la même masse et dans la même configuration, à quelle vitesse décrochera-t-il environ ?",
+       "choices": [
+        "50 kt indiqués, soit une vitesse propre plus élevée",
+        "56 kt indiqués, la Vi de décrochage croissant avec l'altitude",
+        "44 kt indiqués, l'air moins dense réduisant la portance",
+        "50 kt de vitesse propre, soit environ 44 kt indiqués"
+       ],
+       "answer": 0,
+       "explanation": "Le décrochage dépend de la pression dynamique, donc de la vitesse indiquée : il survient vers 50 kt indiqués aux altitudes d'un avion léger. À 8 000 ft, cela correspond à une Vp d'environ 56 kt (+ 13 %). On garde donc les mêmes vitesses indiquées ; c'est la Vp qui change."
+      },
+      {
+       "id": "u5s7q11",
+       "q": "À même altitude-pression et même Vc, comment la vitesse propre d'une journée à ISA + 15 °C se compare-t-elle à celle d'une journée standard ?",
+       "choices": [
+        "Elle est plus faible d'environ 3 %",
+        "Elle est plus élevée d'environ 15 %",
+        "Elle est plus élevée d'environ 3 %",
+        "Elle est identique, car la Vc est la même"
+       ],
+       "answer": 2,
+       "explanation": "Un air plus chaud est moins dense : à Vc égale, la Vp augmente d'environ 1 % par 5 °C au-dessus de l'ISA, soit 15 / 5 = 3 %. Compter 1 % par degré (15 %) surestime largement l'effet, et une même Vc ne signifie pas une même Vp."
+      },
+      {
+       "id": "u5s7q12",
+       "q": "Un avion est posé sur un terrain d'altitude 640 ft ; le QNH est de 1020 hPa. Que lit-on à l'altimètre calé sur 1013 hPa (1 hPa ≈ 28 ft) ?",
+       "choices": [
+        "≈ 840 ft",
+        "640 ft",
+        "0 ft",
+        "≈ 440 ft"
+       ],
+       "answer": 3,
+       "explanation": "Altitude-pression ≈ altitude + (1013 − QNH) × 28 = 640 − 7 × 28 = 640 − 196 ≈ 440 ft. Par haute pression, la surface 1013 hPa est au-dessus du niveau de la mer, d'où une indication plus faible ; 840 ft résulte d'une erreur de signe et 0 ft serait l'indication au QFE."
+      },
+      {
+       "id": "u5s7q13",
+       "q": "Vc 100 kt à 6 000 ft d'altitude-pression, en atmosphère standard. Avec la règle de 1 % par 600 ft, quelle vitesse propre estimez-vous ?",
+       "choices": [
+        "≈ 110 kt",
+        "≈ 106 kt",
+        "≈ 91 kt",
+        "≈ 160 kt"
+       ],
+       "answer": 0,
+       "explanation": "6 000 / 600 = 10 tranches de 1 %, soit + 10 % : Vp ≈ 100 × 1,10 = 110 kt (109,4 kt par le calcul exact). 106 kt applique 1 % par 1 000 ft, 91 kt divise au lieu de multiplier et 160 kt compte 1 % par 100 ft."
+      },
+      {
+       "id": "u5s7q14",
+       "q": "Aux altitudes de croisière d'un avion léger, que donne la règle « Vp = Vc + 2 % par 1 000 ft » par rapport au calcul exact en atmosphère standard ?",
+       "choices": [
+        "Une Vp un peu trop forte, l'exact étant proche de 1,6 % par 1 000 ft",
+        "Une Vp un peu trop faible, l'exact étant proche de 2,5 % par 1 000 ft",
+        "Une Vp exacte en atmosphère standard, fausse par temps chaud",
+        "Une Vp trop faible de moitié, l'exact étant de 4 % par 1 000 ft"
+       ],
+       "answer": 0,
+       "explanation": "En ISA, la Vp dépasse la Vc d'environ 7,7 % à 5 000 ft et de 16 % à 10 000 ft, soit 1,5 à 1,7 % par 1 000 ft. La règle de 2 % reste une bonne approximation mentale mais majore un peu le résultat ; celle de 1 % par 600 ft (≈ 1,7 % par 1 000 ft) est plus proche."
+      },
+      {
+       "id": "u5s7q15",
+       "q": "Au computer de navigation, pour obtenir la Vp, que placez-vous en face de la température extérieure dans la fenêtre de vitesse ?",
+       "choices": [
+        "L'altitude QNH du terrain de départ",
+        "L'altitude-pression de vol",
+        "La vitesse conventionnelle",
+        "Le facteur de base de l'avion"
+       ],
+       "answer": 1,
+       "explanation": "On affiche l'altitude-pression de vol en face de la température extérieure à ce niveau ; la Vp se lit ensuite sur l'échelle extérieure, en face de la Vc portée sur l'échelle intérieure. La Vc n'est pas placée dans la fenêtre : elle se lit sur l'échelle."
+      },
+      {
+       "id": "u5s7q16",
+       "q": "Pour calculer la vitesse propre en croisière, quelle température utilisez-vous ?",
+       "choices": [
+        "La température au sol de l'aérodrome de départ",
+        "La température extérieure à l'altitude de vol",
+        "La température standard de 15 °C au niveau de la mer",
+        "La température du point de rosée au niveau de vol"
+       ],
+       "answer": 1,
+       "explanation": "La densité qui compte est celle de l'air traversé : on lit la température extérieure en vol ou on la prend sur la WINTEM au niveau de croisière. La température au sol, en général plus élevée, fausserait le calcul."
+      },
+      {
+       "id": "u5s7q17",
+       "q": "Altitude-pression 6 000 ft, température extérieure + 23 °C, Vc 100 kt. Avec les règles approchées (120 ft par °C d'écart ISA, puis 1 % par 600 ft d'altitude-densité), quelle Vp estimez-vous ?",
+       "choices": [
+        "≈ 110 kt",
+        "≈ 120 kt",
+        "≈ 88 kt",
+        "≈ 114 kt"
+       ],
+       "answer": 3,
+       "explanation": "Température standard à 6 000 ft : 3 °C, donc ISA + 20 °C. Altitude-densité ≈ 6 000 + 120 × 20 = 8 400 ft, soit 14 tranches de 600 ft : Vp ≈ 100 × 1,14 = 114 kt (113 kt par le calcul exact). 110 kt oublie la température, 120 kt compte 1 % par degré et 88 kt divise au lieu de multiplier."
+      },
+      {
+       "id": "u5s7q18",
+       "q": "En croisière à 9 000 ft d'altitude-pression, en atmosphère standard, le manuel annonce une Vp de 120 kt. Avec la règle de 1 % par 600 ft, quelle Vc correspond à cette croisière ?",
+       "choices": [
+        "≈ 138 kt",
+        "≈ 104 kt",
+        "120 kt",
+        "≈ 110 kt"
+       ],
+       "answer": 1,
+       "explanation": "9 000 / 600 = 15 tranches, donc Vp ≈ Vc × 1,15. On divise : Vc ≈ 120 / 1,15 ≈ 104 kt (105 kt par le calcul exact). 138 kt multiplie au lieu de diviser et 110 kt applique 1 % par 1 000 ft."
+      },
+      {
+       "id": "u5s7q19",
+       "q": "Calé sur 1022 hPa, vous croisez à 2 500 ft indiqués vers une région où le QNH est de 1010 hPa, sans recaler. Une colline culmine à 1 900 ft sur votre route. Quelle est votre marge réelle au-dessus du sommet (1 hPa ≈ 28 ft) ?",
+       "choices": [
+        "600 ft",
+        "≈ 940 ft",
+        "≈ 260 ft",
+        "≈ 430 ft"
+       ],
+       "answer": 2,
+       "explanation": "Écart de calage : 12 hPa × 28 ≈ 340 ft. Vers la basse pression, l'avion est plus bas qu'indiqué : altitude réelle ≈ 2 500 − 340 = 2 160 ft, soit environ 260 ft au-dessus du sommet au lieu des 600 ft affichés. 940 ft vient d'une correction dans le mauvais sens."
+      },
+      {
+       "id": "u5s7q20",
+       "q": "Altimètre calé au QNH fourni par un aérodrome d'altitude 1 500 ft, vous lisez 5 500 ft. L'air est plus froid que l'ISA de 20 °C. Avec la règle de 4 % par 10 °C, quelle est votre altitude vraie approximative ?",
+       "choices": [
+        "≈ 5 820 ft",
+        "≈ 5 060 ft",
+        "≈ 5 180 ft",
+        "5 500 ft"
+       ],
+       "answer": 2,
+       "explanation": "La correction porte sur la hauteur au-dessus de la station : 5 500 − 1 500 = 4 000 ft. Erreur ≈ 8 % × 4 000 = 320 ft ; en air froid, l'avion est plus bas : ≈ 5 180 ft. Appliquer 8 % à toute l'altitude donne 5 060 ft, et corriger vers le haut donne 5 820 ft."
+      },
+      {
+       "id": "u5s7q21",
+       "q": "Par une journée très froide, vous prévoyez de franchir une crête de 3 800 ft en affichant 4 300 ft au QNH. Quel est le risque principal ?",
+       "choices": [
+        "Être plus haut qu'indiqué et pénétrer un espace aérien supérieur",
+        "Une marge accrue, l'air froid étant plus dense que l'air standard",
+        "Voir l'anémomètre sous-estimer la vitesse propre de l'avion",
+        "Être plus bas qu'indiqué, avec une marge réelle inférieure à 500 ft"
+       ],
+       "answer": 3,
+       "explanation": "Dans un air plus froid que l'ISA, les surfaces isobares sont resserrées : même au bon QNH, l'altimètre surestime l'altitude. Les 500 ft de marge affichés sont donc réduits ; on prévoit une marge plus grande. Un air plus dense ne donne pas de marge supplémentaire au-dessus du relief."
+      },
+      {
+       "id": "u5s7q22",
+       "q": "Vi 105 kt, et la table d'étalonnage donne Vc 103 kt. Altitude-pression 4 800 ft, atmosphère standard, vent de face de 15 kt. Avec la règle de 1 % par 600 ft, quelle vitesse sol estimez-vous ?",
+       "choices": [
+        "≈ 96 kt",
+        "≈ 90 kt",
+        "≈ 126 kt",
+        "≈ 111 kt"
+       ],
+       "answer": 0,
+       "explanation": "4 800 / 600 = 8 %, d'où Vp ≈ 103 × 1,08 ≈ 111 kt. Vent de face : Vs ≈ 111 − 15 = 96 kt. 90 kt retranche le vent à la Vi, 126 kt ajoute le vent au lieu de le retrancher et 111 kt oublie le vent."
+      },
+      {
+       "id": "u5s7q23",
+       "q": "Deux vols au FL 65 : l'un avec un QNH de 1028 hPa, l'autre de 998 hPa. Le relief culmine à 5 500 ft. Dans quel cas la marge réelle est-elle la plus faible (1 hPa ≈ 28 ft) ?",
+       "choices": [
+        "QNH 1028 : le FL 65 est vers 6 080 ft, ≈ 580 ft de marge",
+        "QNH 998 : le FL 65 est vers 6 080 ft, ≈ 580 ft de marge",
+        "QNH 998 : le FL 65 est vers 6 920 ft, ≈ 1 420 ft de marge",
+        "Les deux : au FL 65, la marge vaut 1 000 ft dans chaque cas"
+       ],
+       "answer": 1,
+       "explanation": "Altitude ≈ niveau − (1013 − QNH) × 28. QNH 998 : 6 500 − 15 × 28 = 6 080 ft, soit 580 ft de marge ; QNH 1028 : 6 500 + 420 = 6 920 ft. Par basse pression, un niveau de vol se rapproche du relief."
+      },
+      {
+       "id": "u5s7q24",
+       "q": "En croisière à 6 000 ft (altitude-pression, ISA), Vc 100 kt, vous chronométrez 12 min entre deux repères distants de 20 NM. Quel vent effectif en déduisez-vous ?",
+       "choices": [
+        "Un vent nul, puisque la Vs égale la Vc",
+        "Un vent arrière d'environ 10 kt",
+        "Un vent de face d'environ 20 kt",
+        "Un vent de face d'environ 10 kt"
+       ],
+       "answer": 3,
+       "explanation": "Vs = 20 × 60 / 12 = 100 kt. La Vp vaut environ 110 kt (+ 10 % à 6 000 ft) : il manque 10 kt, d'où un vent de face d'environ 10 kt. Comparer la Vs à la Vc fait conclure à tort à un vent nul."
       }
      ]
     },
     {
      "id": "u5s8",
-     "title": "u5s8",
-     "figures": [
+     "title": "Calcul mental de navigation",
+     "icon": "🧮",
+     "tips": "Le calcul mental permet de tenir une navigation sans calculatrice, à quelques degrés et quelques minutes près. Toutes les règles ci-dessous sont des approximations adaptées aux vitesses et aux angles d'un vol VFR.\n\nFacteur de base et temps :\n• Fb = 60 / Vp : nombre de minutes pour parcourir 1 NM sans vent. Vp 80 kt → 0,75 ; 90 kt → 0,67 ; 100 kt → 0,6 ; 110 kt → 0,55 ; 120 kt → 0,5 ; 150 kt → 0,4.\n• Temps sans vent (TSV) = distance × Fb. Ex. : 35 NM à Vp 100 kt → 35 × 0,6 = 21 min.\n• Avec le vent, on raisonne avec la vitesse sol : temps = distance × 60 / Vs. Ex. : 35 NM à Vs 84 kt → 35 × 60 / 84 = 25 min.\n• En NM par minute (Vs / 60) : 90 kt = 1,5 NM/min ; 105 kt = 1,75 NM/min ; 120 kt = 2 NM/min. Ex. : 18 NM à 90 kt → 12 min ; 14 min à 105 kt → 24,5 NM.\n\nDérive maximale :\n• Xmax (en degrés) ≈ Vw × Fb = 60 × Vw / Vp. Ex. : vent 25 kt, Vp 100 kt → Xmax ≈ 15°.\n• Cette formule découle de la règle du 1/60 : un vent de travers égal au 1/60 de la Vp dévie l'avion d'environ 1°. Elle reste une bonne approximation aux dérives d'un vol VFR.\n\nAngle au vent et coefficients :\n• α est l'angle entre la route et la direction d'où vient le vent, compté de 0 à 90° vers l'avant ou vers l'arrière.\n• Dérive : X = Xmax × sin α ; vent traversier = Vw × sin α.\n• Vent effectif : Ve = Vw × cos α, de face si le vent vient de l'avant, arrière s'il vient de l'arrière.\n• Coefficients approchés : 30° → sin 0,5 et cos 0,9 ; 45° → 0,7 et 0,7 ; 60° → 0,9 et 0,5. Au-delà de 70°, sin ≈ 1 ; en deçà de 20°, cos ≈ 1.\n• Vs ≈ Vp − Ve (vent de face) ou Vp + Ve (vent arrière). Par fort vent de travers, la Vs est un peu inférieure à la Vp : Vp 100 kt et vent de travers de 20 kt donnent Vs ≈ 98 kt.\n\nExemple résolu : Rv 150°, vent 210°/24 kt, Vp 120 kt.\n• Fb = 0,5 ; Xmax = 24 × 0,5 = 12°.\n• α = 210 − 150 = 60°, vent de l'avant droit : X ≈ 12 × 0,9 ≈ 11°, dérive gauche ; on corrige vers le vent : Cv ≈ 161°.\n• Ve = 24 × 0,5 = 12 kt de face : Vs ≈ 108 kt, soit 1,8 NM/min ; une branche de 45 NM prend 25 min.\n\nRègle du 1/60 :\n• À 60 NM, 1° d'écart angulaire correspond à 1 NM d'écart latéral : écart (NM) = angle (°) × distance (NM) / 60. Ex. : un cap faux de 4° pendant 45 NM donne 3 NM d'écart.\n• Erreur de route (°) = écart × 60 / distance parcourue ; angle de convergence (°) = écart × 60 / distance restante.\n• Rejoindre directement la destination : corriger le cap de l'erreur de route plus l'angle de convergence, du côté opposé à l'écart.\n• Rejoindre la route en parcourant la même distance que celle déjà faite : corriger de deux fois l'erreur de route ; une fois sur la route, reprendre le cap initial corrigé d'une fois l'erreur.\n• Ex. : 2 NM à droite après 20 NM, 60 NM restants. Erreur 6°, convergence 2° : vers la destination, cap − 8°. Pour revenir sur la route : cap − 12° pendant 20 NM, puis cap initial − 6°.\n\nEstimée et vitesse sol en vol :\n• Vs = distance entre deux repères × 60 / temps (min).\n• Nouvelle estimée = heure de passage + distance restante / Vs. Ex. : passage à 10:32, 30 NM restants à 1,5 NM/min → 20 min → 10:52.\n• Un retard pris sur une partie de la branche grandit proportionnellement sur le reste : 2 min de retard sur les 10 premières minutes annoncent environ 20 % de retard sur la suite.\n\nCarburant :\n• Consommation = débit × temps exprimé en heures : 6 min = 0,1 h ; 40 min = 2/3 h. Ex. : 27 l/h pendant 40 min → 18 l.\n• Autonomie = carburant utilisable / débit. Ex. : 52 l à 26 l/h → 2 h, dont 30 min de réserve finale de jour (AMC1 NCO.OP.125) : 1 h 30 disponibles pour le trajet.\n• 1 USG ≈ 3,8 l ; masse d'AVGAS ≈ volume × 0,72.\n\nDescente :\n• Une pente de p % vaut environ 60 × p ft par NM (1 NM ≈ 6 076 ft) : 5 % ≈ 300 ft/NM ; 3° ≈ 5,2 % ≈ 320 ft/NM, que l'on arrondit à 300.\n• Taux de descente (ft/min) ≈ pente (%) × Vs (kt). Plan à 3° : taux ≈ 5 × Vs, soit 450 ft/min à 90 kt. Pente de 4 % à Vs 100 kt : 400 ft/min.\n• Distance de descente = hauteur à perdre / (ft par NM) ; durée = hauteur / taux. Ex. : 3 600 ft à 300 ft/NM → 12 NM ; à 450 ft/min → 8 min.\n\nConversions rapides :\n• kt → km/h : × 2 puis − 10 % (100 kt ≈ 180 km/h ; exact 185). km/h → kt : ÷ 2 puis + 10 % (200 km/h ≈ 110 kt ; exact 108).\n• ft → m : × 0,3 (3 000 ft ≈ 900 m) ; m → ft : × 3,3 (1 200 m ≈ 3 960 ft).\n• m/s → ft/min : × 200 (2,5 m/s ≈ 500 ft/min) ; kt → m/s : ÷ 2 (20 kt ≈ 10 m/s).\n• Heures décimales : 0,1 h = 6 min ; 0,25 h = 15 min ; 1,4 h = 1 h 24 min.\n\nPièges classiques :\n• Diviser par Fb au lieu de multiplier.\n• Corriger la dérive du mauvais côté : le cap se décale toujours vers le vent.\n• Oublier de convertir les minutes en heures pour le carburant (1 h 12 min = 1,2 h).\n• Calculer les temps avec la Vp alors que le vent est fort.",
+     "vocab": [
       {
-       "title": "fig_1sur60",
-       "svg": "<svg viewBox=\"0 0 720 390\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"390\" fill=\"#ffffff\"/><text x=\"20.0\" y=\"28.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Après 20 NM : 2 NM à droite, il reste 60 NM</text><text x=\"700.0\" y=\"28.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\" font-style=\"italic\">écarts latéraux exagérés</text><line x1=\"60.0\" y1=\"200.0\" x2=\"660.0\" y2=\"200.0\" stroke=\"#3366cc\" stroke-width=\"3.5\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"210.0\" y2=\"260.0\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"210.0\" y1=\"260.0\" x2=\"252.0\" y2=\"276.8\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"3 4\"/><line x1=\"210.0\" y1=\"260.0\" x2=\"646.5\" y2=\"201.8\" stroke=\"#2e7d32\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><polygon points=\"656.0,200.5 643.4,196.7 644.8,207.4\" fill=\"#2e7d32\"/><line x1=\"210.0\" y1=\"260.0\" x2=\"348.1\" y2=\"204.8\" stroke=\"#d35400\" stroke-width=\"2.5\" stroke-dasharray=\"2 5\"/><polygon points=\"357.0,201.2 343.9,200.6 347.9,210.7\" fill=\"#d35400\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"210.0\" y2=\"260.0\" stroke=\"#46516a\" stroke-width=\"1.5\" stroke-dasharray=\"2 3\"/><text x=\"218.0\" y=\"236.0\" font-size=\"14\" fill=\"#46516a\">2 NM</text><circle cx=\"60\" cy=\"200\" r=\"5\" fill=\"#14213d\"/><text x=\"50.0\" y=\"206.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">A</text><circle cx=\"660\" cy=\"200\" r=\"5\" fill=\"#14213d\"/><text x=\"670.0\" y=\"206.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">B</text><circle cx=\"210\" cy=\"260\" r=\"5\" fill=\"#14213d\"/><text x=\"204.0\" y=\"282.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">P</text><circle cx=\"360\" cy=\"200\" r=\"5\" fill=\"#14213d\"/><text x=\"360.0\" y=\"186.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Q</text><text x=\"360.0\" y=\"166.0\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"middle\">Q : retour sur la route après 40 NM,</text><text x=\"360.0\" y=\"148.0\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"middle\">puis cap initial corrigé de 6° à gauche</text><path d=\"M112,200 A52,52 0 0,1 108.3,219.3\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"120.0\" y=\"218.0\" font-size=\"15\" fill=\"#c0392b\" font-weight=\"bold\">6°</text><path d=\"M580,200 A80,80 0 0,0 580.7,210.6\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2\"/><text x=\"574.0\" y=\"230.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"end\" font-weight=\"bold\">2°</text><text x=\"40.0\" y=\"306.0\" font-size=\"15\" fill=\"#c0392b\">Erreur de route : 2 × 60 / 20 = 6°</text><text x=\"400.0\" y=\"306.0\" font-size=\"15\" fill=\"#2e7d32\">Convergence : 2 × 60 / 60 = 2°</text><line x1=\"40.0\" y1=\"340.0\" x2=\"80.0\" y2=\"340.0\" stroke=\"#3366cc\" stroke-width=\"3.5\"/><text x=\"90.0\" y=\"345.0\" font-size=\"14\" fill=\"#14213d\">Route prévue A → B (80 NM)</text><line x1=\"400.0\" y1=\"340.0\" x2=\"440.0\" y2=\"340.0\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"450.0\" y=\"345.0\" font-size=\"14\" fill=\"#14213d\">Route suivie (cap faux)</text><line x1=\"40.0\" y1=\"368.0\" x2=\"80.0\" y2=\"368.0\" stroke=\"#2e7d32\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><text x=\"90.0\" y=\"373.0\" font-size=\"14\" fill=\"#14213d\">Vers B : 6° + 2° = 8° à gauche</text><line x1=\"400.0\" y1=\"368.0\" x2=\"440.0\" y2=\"368.0\" stroke=\"#d35400\" stroke-width=\"2.5\" stroke-dasharray=\"2 5\"/><text x=\"450.0\" y=\"373.0\" font-size=\"14\" fill=\"#14213d\">Vers la route : 2 × 6° = 12° à gauche</text></svg>",
-       "caption": "légende de test assez longue"
+       "term": "Facteur de base (Fb)",
+       "translation": "60 / Vp : temps en minutes pour 1 NM, vent nul"
       },
       {
-       "title": "fig_vent",
-       "svg": "<svg viewBox=\"0 0 700 450\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"450\" fill=\"#ffffff\"/><line x1=\"120.0\" y1=\"252.0\" x2=\"120.0\" y2=\"51.2\" stroke=\"#3366cc\" stroke-width=\"3.5\"/><polygon points=\"120.0,40.0 113.7,54.0 126.3,54.0\" fill=\"#3366cc\"/><text x=\"132.0\" y=\"52.0\" font-size=\"16\" fill=\"#3366cc\" font-weight=\"bold\">Route</text><line x1=\"258.6\" y1=\"120.0\" x2=\"258.6\" y2=\"190.2\" stroke=\"#2e7d32\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><polygon points=\"258.6,199.0 263.5,188.0 253.6,188.0\" fill=\"#2e7d32\"/><line x1=\"258.6\" y1=\"200.0\" x2=\"131.8\" y2=\"200.0\" stroke=\"#d35400\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><polygon points=\"123.0,200.0 134.0,204.9 134.0,195.1\" fill=\"#d35400\"/><line x1=\"258.6\" y1=\"120.0\" x2=\"131.7\" y2=\"193.4\" stroke=\"#c0392b\" stroke-width=\"3.5\"/><polygon points=\"122.0,199.0 137.3,197.4 131.0,186.5\" fill=\"#c0392b\"/><text x=\"206.0\" y=\"128.0\" font-size=\"15\" fill=\"#c0392b\" font-weight=\"bold\">Vent 20 kt</text><path d=\"M258.6,156.0 A36,36 0 0,1 227.4,138.0\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"228.6\" y=\"172.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">60°</text><text x=\"270.6\" y=\"156.0\" font-size=\"15\" fill=\"#2e7d32\" font-weight=\"bold\">Vent effectif</text><text x=\"270.6\" y=\"176.0\" font-size=\"15\" fill=\"#2e7d32\">20 × 0,5 = 10 kt</text><text x=\"134.0\" y=\"226.0\" font-size=\"15\" fill=\"#d35400\" font-weight=\"bold\">Vent traversier : 20 × 0,9 ≈ 18 kt</text><text x=\"430.0\" y=\"56.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Vent de 20 kt à 60° de la route</text><text x=\"430.0\" y=\"80.0\" font-size=\"15\" fill=\"#14213d\">• dérive : X = Xmax × sin α</text><text x=\"430.0\" y=\"104.0\" font-size=\"15\" fill=\"#14213d\">• vent effectif = Vw × cos α</text><text x=\"430.0\" y=\"140.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Vp 100 kt : Fb 0,6 ; Xmax 12°</text><text x=\"430.0\" y=\"164.0\" font-size=\"15\" fill=\"#14213d\">X ≈ 12 × 0,9 ≈ 11°</text><text x=\"430.0\" y=\"188.0\" font-size=\"15\" fill=\"#14213d\">Vs ≈ 100 − 10 = 90 kt</text><rect x=\"20\" y=\"272\" width=\"670\" height=\"114\" fill=\"#f6f8fb\" stroke=\"#46516a\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"272\" width=\"670\" height=\"38\" fill=\"#e8edf5\"/><line x1=\"20.0\" y1=\"310.0\" x2=\"690.0\" y2=\"310.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"20.0\" y1=\"348.0\" x2=\"690.0\" y2=\"348.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"250.0\" y1=\"272.0\" x2=\"250.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"338.0\" y1=\"272.0\" x2=\"338.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"426.0\" y1=\"272.0\" x2=\"426.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"514.0\" y1=\"272.0\" x2=\"514.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"602.0\" y1=\"272.0\" x2=\"602.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><rect x=\"20\" y=\"272\" width=\"670\" height=\"114\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"32.0\" y=\"297.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Angle au vent α</text><text x=\"294.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">0°</text><text x=\"382.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">30°</text><text x=\"470.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">45°</text><text x=\"558.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">60°</text><text x=\"646.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">90°</text><text x=\"32.0\" y=\"335.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">sin α (dérive)</text><text x=\"294.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0</text><text x=\"382.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0,5</text><text x=\"470.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0,7</text><text x=\"558.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0,9</text><text x=\"646.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"32.0\" y=\"373.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">cos α (vent effectif)</text><text x=\"294.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"382.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0,9</text><text x=\"470.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0,7</text><text x=\"558.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0,5</text><text x=\"646.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0</text><text x=\"20.0\" y=\"420.0\" font-size=\"15\" fill=\"#46516a\">Au-delà de 70°, on prend sin ≈ 1 ; en deçà de 20°, cos ≈ 1.</text><text x=\"20.0\" y=\"442.0\" font-size=\"14\" fill=\"#46516a\">Le vent pousse l'avion du côté opposé à celui d'où il vient : on corrige vers le vent.</text></svg>",
-       "caption": "légende de test assez longue"
+       "term": "Temps sans vent (TSV)",
+       "translation": "Distance × Fb : durée d'une branche si le vent était nul"
+      },
+      {
+       "term": "NM par minute",
+       "translation": "Vs / 60 : 90 kt = 1,5 NM/min ; 120 kt = 2 NM/min"
+      },
+      {
+       "term": "Xmax",
+       "translation": "Dérive maximale ≈ 60 × Vw / Vp, atteinte par vent de travers"
+      },
+      {
+       "term": "Angle au vent (α)",
+       "translation": "Angle entre la route et la direction d'où vient le vent"
+      },
+      {
+       "term": "Sinus et cosinus approchés",
+       "translation": "30° : 0,5 et 0,9 ; 45° : 0,7 et 0,7 ; 60° : 0,9 et 0,5"
+      },
+      {
+       "term": "Vent effectif",
+       "translation": "Vw × cos α : composante de face ou arrière du vent"
+      },
+      {
+       "term": "Règle du 1/60",
+       "translation": "À 60 NM, 1° d'écart angulaire vaut 1 NM d'écart latéral"
+      },
+      {
+       "term": "Erreur de route",
+       "translation": "Angle entre la route prévue et la route suivie : écart × 60 / D"
+      },
+      {
+       "term": "Angle de convergence",
+       "translation": "Écart × 60 / distance restante, pour viser la destination"
+      },
+      {
+       "term": "Estimée (HE)",
+       "translation": "Heure prévue de passage, recalculée avec la Vs réelle"
+      },
+      {
+       "term": "Pente de 3°",
+       "translation": "≈ 5 % ≈ 300 ft/NM ; taux ≈ 5 × Vs en ft/min"
+      },
+      {
+       "term": "Taux de descente",
+       "translation": "En ft/min, ≈ pente (%) × vitesse sol (kt)"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Règle du 1/60 : rejoindre la destination ou la route",
+       "svg": "<svg viewBox=\"0 0 720 390\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"390\" fill=\"#ffffff\"/><text x=\"20.0\" y=\"28.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Après 20 NM : 2 NM à droite, il reste 60 NM</text><text x=\"700.0\" y=\"28.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\" font-style=\"italic\">écarts latéraux exagérés</text><line x1=\"60.0\" y1=\"200.0\" x2=\"660.0\" y2=\"200.0\" stroke=\"#3366cc\" stroke-width=\"3.5\"/><line x1=\"60.0\" y1=\"200.0\" x2=\"210.0\" y2=\"260.0\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"210.0\" y1=\"260.0\" x2=\"252.0\" y2=\"276.8\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"3 4\"/><line x1=\"210.0\" y1=\"260.0\" x2=\"646.5\" y2=\"201.8\" stroke=\"#2e7d32\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><polygon points=\"656.0,200.5 643.4,196.7 644.8,207.4\" fill=\"#2e7d32\"/><line x1=\"210.0\" y1=\"260.0\" x2=\"348.1\" y2=\"204.8\" stroke=\"#d35400\" stroke-width=\"2.5\" stroke-dasharray=\"2 5\"/><polygon points=\"357.0,201.2 343.9,200.6 347.9,210.7\" fill=\"#d35400\"/><line x1=\"210.0\" y1=\"200.0\" x2=\"210.0\" y2=\"260.0\" stroke=\"#46516a\" stroke-width=\"1.5\" stroke-dasharray=\"2 3\"/><text x=\"218.0\" y=\"236.0\" font-size=\"14\" fill=\"#46516a\">2 NM</text><circle cx=\"60\" cy=\"200\" r=\"5\" fill=\"#14213d\"/><text x=\"50.0\" y=\"206.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">A</text><circle cx=\"660\" cy=\"200\" r=\"5\" fill=\"#14213d\"/><text x=\"670.0\" y=\"206.0\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">B</text><circle cx=\"210\" cy=\"260\" r=\"5\" fill=\"#14213d\"/><text x=\"204.0\" y=\"282.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">P</text><circle cx=\"360\" cy=\"200\" r=\"5\" fill=\"#14213d\"/><text x=\"360.0\" y=\"186.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Q</text><text x=\"360.0\" y=\"148.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">Q : retour sur la route après 40 NM,</text><text x=\"360.0\" y=\"168.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">puis cap initial corrigé de 6° à gauche</text><path d=\"M112,200 A52,52 0 0,1 108.3,219.3\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"120.0\" y=\"218.0\" font-size=\"15\" fill=\"#c0392b\" font-weight=\"bold\">6°</text><path d=\"M580,200 A80,80 0 0,0 580.7,210.6\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2\"/><text x=\"574.0\" y=\"230.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"end\" font-weight=\"bold\">2°</text><text x=\"40.0\" y=\"306.0\" font-size=\"15\" fill=\"#c0392b\">Erreur de route : 2 × 60 / 20 = 6°</text><text x=\"400.0\" y=\"306.0\" font-size=\"15\" fill=\"#2e7d32\">Convergence : 2 × 60 / 60 = 2°</text><line x1=\"40.0\" y1=\"340.0\" x2=\"80.0\" y2=\"340.0\" stroke=\"#3366cc\" stroke-width=\"3.5\"/><text x=\"90.0\" y=\"345.0\" font-size=\"14\" fill=\"#14213d\">Route prévue A → B (80 NM)</text><line x1=\"400.0\" y1=\"340.0\" x2=\"440.0\" y2=\"340.0\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"450.0\" y=\"345.0\" font-size=\"14\" fill=\"#14213d\">Route suivie (cap faux)</text><line x1=\"40.0\" y1=\"368.0\" x2=\"80.0\" y2=\"368.0\" stroke=\"#2e7d32\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><text x=\"90.0\" y=\"373.0\" font-size=\"14\" fill=\"#14213d\">Vers B : 6° + 2° = 8° à gauche</text><line x1=\"400.0\" y1=\"368.0\" x2=\"440.0\" y2=\"368.0\" stroke=\"#d35400\" stroke-width=\"2.5\" stroke-dasharray=\"2 5\"/><text x=\"450.0\" y=\"373.0\" font-size=\"14\" fill=\"#14213d\">Vers la route : 2 × 6° = 12° à gauche</text></svg>",
+       "caption": "Après 20 NM, l'avion est 2 NM à droite : erreur de route 6°, convergence 2°. Corriger de 8° mène droit à B ; corriger de 12° ramène sur la route en Q, 20 NM plus loin, où l'on garde 6° de correction."
+      },
+      {
+       "title": "Décomposer le vent selon l'angle au vent",
+       "svg": "<svg viewBox=\"0 0 700 450\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"450\" fill=\"#ffffff\"/><line x1=\"120.0\" y1=\"252.0\" x2=\"120.0\" y2=\"51.2\" stroke=\"#3366cc\" stroke-width=\"3.5\"/><polygon points=\"120.0,40.0 113.7,54.0 126.3,54.0\" fill=\"#3366cc\"/><text x=\"132.0\" y=\"52.0\" font-size=\"16\" fill=\"#3366cc\" font-weight=\"bold\">Route</text><line x1=\"258.6\" y1=\"120.0\" x2=\"258.6\" y2=\"190.2\" stroke=\"#2e7d32\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><polygon points=\"258.6,199.0 263.5,188.0 253.6,188.0\" fill=\"#2e7d32\"/><line x1=\"258.6\" y1=\"200.0\" x2=\"131.8\" y2=\"200.0\" stroke=\"#d35400\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><polygon points=\"123.0,200.0 134.0,204.9 134.0,195.1\" fill=\"#d35400\"/><line x1=\"258.6\" y1=\"120.0\" x2=\"131.7\" y2=\"193.4\" stroke=\"#c0392b\" stroke-width=\"3.5\"/><polygon points=\"122.0,199.0 137.3,197.4 131.0,186.5\" fill=\"#c0392b\"/><text x=\"268.6\" y=\"112.0\" font-size=\"15\" fill=\"#c0392b\" font-weight=\"bold\">Vent 20 kt</text><path d=\"M258.6,156.0 A36,36 0 0,1 227.4,138.0\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"228.6\" y=\"172.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">60°</text><text x=\"270.6\" y=\"156.0\" font-size=\"15\" fill=\"#2e7d32\" font-weight=\"bold\">Vent effectif</text><text x=\"270.6\" y=\"176.0\" font-size=\"15\" fill=\"#2e7d32\">20 × 0,5 = 10 kt</text><text x=\"134.0\" y=\"226.0\" font-size=\"15\" fill=\"#d35400\" font-weight=\"bold\">Vent traversier : 20 × 0,9 ≈ 18 kt</text><text x=\"430.0\" y=\"56.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Vent de 20 kt à 60° de la route</text><text x=\"430.0\" y=\"80.0\" font-size=\"15\" fill=\"#14213d\">• dérive : X = Xmax × sin α</text><text x=\"430.0\" y=\"104.0\" font-size=\"15\" fill=\"#14213d\">• vent effectif = Vw × cos α</text><text x=\"430.0\" y=\"140.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Vp 100 kt : Fb 0,6 ; Xmax 12°</text><text x=\"430.0\" y=\"164.0\" font-size=\"15\" fill=\"#14213d\">X ≈ 12 × 0,9 ≈ 11°</text><text x=\"430.0\" y=\"188.0\" font-size=\"15\" fill=\"#14213d\">Vs ≈ 100 − 10 = 90 kt</text><rect x=\"20\" y=\"272\" width=\"670\" height=\"114\" fill=\"#f6f8fb\" stroke=\"#46516a\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"272\" width=\"670\" height=\"38\" fill=\"#e8edf5\"/><line x1=\"20.0\" y1=\"310.0\" x2=\"690.0\" y2=\"310.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"20.0\" y1=\"348.0\" x2=\"690.0\" y2=\"348.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"250.0\" y1=\"272.0\" x2=\"250.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"338.0\" y1=\"272.0\" x2=\"338.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"426.0\" y1=\"272.0\" x2=\"426.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"514.0\" y1=\"272.0\" x2=\"514.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"602.0\" y1=\"272.0\" x2=\"602.0\" y2=\"386.0\" stroke=\"#46516a\" stroke-width=\"1\"/><rect x=\"20\" y=\"272\" width=\"670\" height=\"114\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"32.0\" y=\"297.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Angle au vent α</text><text x=\"294.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">0°</text><text x=\"382.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">30°</text><text x=\"470.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">45°</text><text x=\"558.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">60°</text><text x=\"646.0\" y=\"297.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">90°</text><text x=\"32.0\" y=\"335.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">sin α (dérive)</text><text x=\"294.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0</text><text x=\"382.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0,5</text><text x=\"470.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0,7</text><text x=\"558.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">0,9</text><text x=\"646.0\" y=\"335.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"32.0\" y=\"373.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">cos α (vent effectif)</text><text x=\"294.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"382.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0,9</text><text x=\"470.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0,7</text><text x=\"558.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0,5</text><text x=\"646.0\" y=\"373.0\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">0</text><text x=\"20.0\" y=\"420.0\" font-size=\"15\" fill=\"#46516a\">Au-delà de 70°, on prend sin ≈ 1 ; en deçà de 20°, cos ≈ 1.</text><text x=\"20.0\" y=\"442.0\" font-size=\"14\" fill=\"#46516a\">Le vent pousse l'avion du côté opposé à celui d'où il vient : on corrige vers le vent.</text></svg>",
+       "caption": "Le vent se partage entre une part traversière, qui crée la dérive (sinus), et une part effective de face ou arrière, qui modifie la vitesse sol (cosinus). Le tableau donne les coefficients à retenir."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u5s8q01",
+       "q": "Comment calcule-t-on le temps sans vent (TSV) d'une branche à l'aide du facteur de base ?",
+       "choices": [
+        "Distance (NM) ÷ Fb, résultat en minutes",
+        "Distance (NM) × Fb, résultat en minutes",
+        "Distance (NM) × Fb, résultat en heures",
+        "Fb ÷ distance (NM), résultat en minutes"
+       ],
+       "answer": 1,
+       "explanation": "Fb est le nombre de minutes par NM sans vent : TSV = D × Fb. Ex. : 30 NM à Vp 100 kt (Fb 0,6) → 18 min. Diviser par Fb revient à multiplier par la vitesse en NM/min : le résultat n'est plus un temps."
+      },
+      {
+       "id": "u5s8q02",
+       "q": "Vp 120 kt, vent nul. Combien de temps faut-il pour parcourir une branche de 27 NM ?",
+       "choices": [
+        "16 min 12 s",
+        "13 min 30 s",
+        "22 min 30 s",
+        "54 min"
+       ],
+       "answer": 1,
+       "explanation": "Fb = 60 / 120 = 0,5 : 27 × 0,5 = 13,5 min, soit 13 min 30 s. 16 min 12 s utilise le Fb de 0,6 d'un avion à 100 kt, et 54 min divise par Fb au lieu de multiplier."
+      },
+      {
+       "id": "u5s8q03",
+       "q": "Combien de NM par minute parcourt un avion dont la vitesse sol est de 105 kt ?",
+       "choices": [
+        "1,75 NM/min",
+        "1,05 NM/min",
+        "0,57 NM/min",
+        "1,5 NM/min"
+       ],
+       "answer": 0,
+       "explanation": "NM par minute = Vs / 60 = 105 / 60 = 1,75. 0,57 est l'inverse (60 / 105), c'est-à-dire le nombre de minutes par NM ; 1,5 NM/min correspond à 90 kt."
+      },
+      {
+       "id": "u5s8q04",
+       "q": "Sur quelle approximation repose la formule de dérive maximale Xmax ≈ Vw × Fb ?",
+       "choices": [
+        "Sur le sinus de 30°, égal à 0,5, appliqué au vent",
+        "Sur la règle du 1/60, appliquée au rapport Vw / Vp",
+        "Sur la valeur du mille nautique, égal à 1 852 m",
+        "Sur la règle de 2 % de Vp par 1 000 ft d'altitude"
+       ],
+       "answer": 1,
+       "explanation": "Par vent de travers, sin X = Vw / Vp ; pour de petits angles, X en degrés ≈ 60 × Vw / Vp = Vw × Fb : c'est la règle du 1/60 (1 radian ≈ 57°, arrondi à 60). Les autres règles concernent la répartition du vent, les distances ou la vitesse propre."
+      },
+      {
+       "id": "u5s8q05",
+       "q": "Pour un angle au vent de 45°, quels coefficients approchés appliquez-vous à la dérive maximale et au vent ?",
+       "choices": [
+        "0,5 pour la dérive et 0,9 pour le vent effectif",
+        "0,9 pour la dérive et 0,5 pour le vent effectif",
+        "1 pour la dérive et 0 pour le vent effectif",
+        "0,7 pour la dérive et 0,7 pour le vent effectif"
+       ],
+       "answer": 3,
+       "explanation": "sin 45° = cos 45° ≈ 0,7 : à 45°, le vent se partage également entre composante traversière et composante effective. 0,5 et 0,9 correspondent à 30°, 0,9 et 0,5 à 60°, 1 et 0 au vent de travers."
+      },
+      {
+       "id": "u5s8q06",
+       "q": "Le vent fait un angle de 30° avec la route. Quelle part de la dérive maximale l'avion subit-il ?",
+       "choices": [
+        "La moitié",
+        "Environ 70 %",
+        "Environ 90 %",
+        "Le quart"
+       ],
+       "answer": 0,
+       "explanation": "X = Xmax × sin 30° = Xmax × 0,5. C'est le vent effectif qui vaut environ 90 % de la force du vent à 30° ; la dérive maximale n'est atteinte que par vent de travers, et un quart de celle-ci correspondrait à un angle d'environ 15°."
+      },
+      {
+       "id": "u5s8q07",
+       "q": "Un variomètre gradué en m/s indique une descente de 2,5 m/s. Quel est le taux en ft/min ?",
+       "choices": [
+        "≈ 500 ft/min",
+        "≈ 150 ft/min",
+        "≈ 250 ft/min",
+        "≈ 1 000 ft/min"
+       ],
+       "answer": 0,
+       "explanation": "1 m/s ≈ 197 ft/min, que l'on arrondit à 200 : 2,5 × 200 ≈ 500 ft/min. 150 résulte de 2,5 × 60, qui donne des mètres par minute et non des pieds."
+      },
+      {
+       "id": "u5s8q08",
+       "q": "Combien de minutes représentent 0,35 h ?",
+       "choices": [
+        "35 min",
+        "21 min",
+        "3 min 30 s",
+        "25 min"
+       ],
+       "answer": 1,
+       "explanation": "0,1 h = 6 min, donc 0,35 h = 3,5 × 6 = 21 min. Lire 0,35 h comme 35 min est l'erreur classique des heures décimales."
+      },
+      {
+       "id": "u5s8q09",
+       "q": "Vp 90 kt, vent de 18 kt faisant un angle de 60° avec la route. Quelle dérive estimez-vous ?",
+       "choices": [
+        "≈ 11°",
+        "≈ 6°",
+        "≈ 8°",
+        "12°"
+       ],
+       "answer": 0,
+       "explanation": "Fb = 0,67 et Xmax = 18 × 0,67 = 12°. À 60°, X ≈ 12 × 0,9 ≈ 11° (10° par le calcul exact). 12° est la dérive maximale, atteinte par vent de travers ; 8° correspond à 45° et 6° à 30°."
+      },
+      {
+       "id": "u5s8q10",
+       "q": "Rv 240°, vent 270°/30 kt, Vp 110 kt. Quelle vitesse sol estimez-vous ?",
+       "choices": [
+        "≈ 95 kt",
+        "≈ 88 kt",
+        "≈ 83 kt",
+        "≈ 137 kt"
+       ],
+       "answer": 2,
+       "explanation": "Angle au vent : 270 − 240 = 30°, vent de l'avant. Vent effectif ≈ 30 × 0,9 = 27 kt de face : Vs ≈ 110 − 27 = 83 kt. 95 kt prend le sinus (15 kt) au lieu du cosinus, 88 kt le coefficient de 45° et 137 kt ajoute le vent."
+      },
+      {
+       "id": "u5s8q11",
+       "q": "Rv 330°, vent 360°/20 kt, Vp 80 kt. Quel cap vrai prenez-vous ?",
+       "choices": [
+        "≈ 322°",
+        "345°",
+        "330°",
+        "≈ 338°"
+       ],
+       "answer": 3,
+       "explanation": "Fb = 0,75 ; Xmax = 20 × 0,75 = 15°. α = 30°, vent de l'avant droit : X ≈ 15 × 0,5 ≈ 7 à 8°, dérive gauche. On corrige vers le vent : Cv ≈ 330 + 8 = 338°. 322° corrige du mauvais côté et 345° applique la dérive maximale."
+      },
+      {
+       "id": "u5s8q12",
+       "q": "Branche de 39 NM, Vp 100 kt, vent effectif de face de 22 kt. Quel est le temps de vol ?",
+       "choices": [
+        "≈ 23 min",
+        "≈ 19 min",
+        "≈ 36 min",
+        "30 min"
+       ],
+       "answer": 3,
+       "explanation": "Vs = 100 − 22 = 78 kt, soit 1,3 NM/min : 39 / 1,3 = 30 min. 23 min est le temps sans vent (39 × 0,6) et 19 min ajoute le vent au lieu de le retrancher."
+      },
+      {
+       "id": "u5s8q13",
+       "q": "Vous passez un point de report à 14:47. La destination est à 33 NM et votre vitesse sol est de 110 kt. Quelle est l'heure estimée d'arrivée ?",
+       "choices": [
+        "15:20",
+        "15:12",
+        "15:05",
+        "15:02"
+       ],
+       "answer": 2,
+       "explanation": "33 × 60 / 110 = 18 min : 14:47 + 18 min = 15:05. 15:20 ajoute 33 min, en confondant NM et minutes."
+      },
+      {
+       "id": "u5s8q14",
+       "q": "Après 45 NM de vol, vous découvrez que le conservateur de cap était décalé de 4° depuis le départ. Quel écart latéral en résulte environ ?",
+       "choices": [
+        "3 NM",
+        "4 NM",
+        "≈ 11 NM",
+        "≈ 1,3 NM"
+       ],
+       "answer": 0,
+       "explanation": "Règle du 1/60 : écart = angle × distance / 60 = 4 × 45 / 60 = 3 NM. 4 NM vaudrait pour 60 NM parcourus, et 11 NM divise 45 par 4."
+      },
+      {
+       "id": "u5s8q15",
+       "q": "Vous voulez descendre sur une pente de 4 % à une vitesse sol de 120 kt. Quel taux de descente affichez-vous environ ?",
+       "choices": [
+        "≈ 600 ft/min",
+        "≈ 240 ft/min",
+        "≈ 480 ft/min",
+        "≈ 300 ft/min"
+       ],
+       "answer": 2,
+       "explanation": "Taux (ft/min) ≈ pente (%) × Vs (kt) = 4 × 120 = 480 ft/min. Vérification : 4 % ≈ 240 ft/NM et 120 kt = 2 NM/min. 600 ft/min correspond à une pente de 5 % et 240 ft/min est la perte par NM, pas par minute."
+      },
+      {
+       "id": "u5s8q16",
+       "q": "Débit de 7 USG/h pour un vol de 1 h 20 min. Quel volume de carburant, en litres, sera consommé environ ?",
+       "choices": [
+        "≈ 35 l",
+        "≈ 9 l",
+        "≈ 32 l",
+        "≈ 27 l"
+       ],
+       "answer": 0,
+       "explanation": "1 h 20 min = 1,33 h : 7 × 1,33 ≈ 9,3 USG, et 9,3 × 3,8 ≈ 35 l. 9 l oublie la conversion des gallons, 32 l prend 1 h 20 pour 1,2 h et 27 l ne compte qu'une heure de vol."
+      },
+      {
+       "id": "u5s8q17",
+       "q": "Top au point A à 09:14, avec une Vs prévue de 120 kt. Vous passez un repère situé 21 NM plus loin à 09:28. Il reste 36 NM jusqu'à la destination. Quelle nouvelle estimée retenez-vous ?",
+       "choices": [
+        "09:46",
+        "10:04",
+        "09:52",
+        "09:48"
+       ],
+       "answer": 2,
+       "explanation": "Temps réel : 14 min pour 21 NM, soit 1,5 NM/min (Vs 90 kt). Restent 36 / 1,5 = 24 min : 09:28 + 24 = 09:52. 09:46 conserve la Vs prévue de 120 kt (18 min) et 10:04 confond NM et minutes."
+      },
+      {
+       "id": "u5s8q18",
+       "q": "Après 15 NM, vous êtes 2 NM à gauche de la route. Vous voulez la rejoindre au bout de 15 NM supplémentaires, puis la suivre. Que faites-vous ?",
+       "choices": [
+        "Virer de 8° à droite, puis, sur la route, reprendre le cap initial",
+        "Virer de 16° à gauche, puis prendre le cap initial − 8°",
+        "Virer de 16° à droite, puis, sur la route, prendre le cap initial + 8°",
+        "Virer de 16° à droite, puis, sur la route, reprendre le cap initial"
+       ],
+       "answer": 2,
+       "explanation": "Erreur de route : 2 × 60 / 15 = 8°. En corrigeant du double (16° à droite), on converge vers la route sous 8° et on la retrouve après la même distance, 15 NM. Il faut ensuite garder 8° de correction, sinon l'écart recommence ; corriger de 8° seulement donnerait une trajectoire parallèle à la route."
+      },
+      {
+       "id": "u5s8q19",
+       "q": "Cap tenu 075°. Après 24 NM, vous vous situez 2 NM à droite de la route ; il reste 40 NM. Quel cap prenez-vous pour rejoindre directement la destination ?",
+       "choices": [
+        "083°",
+        "067°",
+        "070°",
+        "063°"
+       ],
+       "answer": 1,
+       "explanation": "Erreur de route : 2 × 60 / 24 = 5° ; convergence : 2 × 60 / 40 = 3°. Correction totale de 8° vers la gauche, puisque l'avion est à droite : 075 − 8 = 067°. 070° ne corrige que l'erreur de route et 083° corrige du mauvais côté."
+      },
+      {
+       "id": "u5s8q20",
+       "q": "Vous descendez de 6 500 ft à 2 000 ft à 500 ft/min, à une vitesse sol de 120 kt. À quelle distance du point visé devez-vous commencer la descente ?",
+       "choices": [
+        "15 NM",
+        "9 NM",
+        "22 NM",
+        "18 NM"
+       ],
+       "answer": 3,
+       "explanation": "Hauteur à perdre : 4 500 ft, soit 9 min à 500 ft/min. À 2 NM/min, l'avion parcourt 18 NM pendant la descente. 15 NM supposerait 300 ft/NM, c'est-à-dire 600 ft/min à cette vitesse ; 9 NM confond minutes et NM."
+      },
+      {
+       "id": "u5s8q21",
+       "q": "Il est 11:20 et il vous reste 46 l utilisables ; débit 28 l/h. Arrivée estimée à 12:05, vol VFR de jour. Quelle quantité restera-t-il à l'arrivée ?",
+       "choices": [
+        "≈ 33 l, au-dessus de la réserve finale de 14 l",
+        "≈ 25 l, en dessous de la réserve finale de 28 l",
+        "≈ 25 l, 11 l au-dessus de la réserve finale de 14 l",
+        "≈ 21 l, au-dessus de la réserve finale de 14 l"
+       ],
+       "answer": 2,
+       "explanation": "De 11:20 à 12:05 : 45 min = 0,75 h, soit 28 × 0,75 = 21 l consommés ; il restera 46 − 21 = 25 l. La réserve finale de jour (30 min) vaut 14 l : elle est préservée avec 11 l de marge. 33 l résulte de 45 min pris pour 0,45 h, et 21 l est la consommation, non le restant."
+      },
+      {
+       "id": "u5s8q22",
+       "q": "Rv 090°, vent 135°/20 kt, Vp 100 kt. Quels cap vrai et vitesse sol retenez-vous ?",
+       "choices": [
+        "Cv 082°, Vs ≈ 86 kt",
+        "Cv 098°, Vs ≈ 114 kt",
+        "Cv 102°, Vs ≈ 80 kt",
+        "Cv 098°, Vs ≈ 86 kt"
+       ],
+       "answer": 3,
+       "explanation": "Fb 0,6, Xmax 12°. Le vent vient de 45° à droite de l'avant : X ≈ 12 × 0,7 ≈ 8°, dérive gauche, donc Cv = 090 + 8 = 098°. Vent effectif ≈ 20 × 0,7 = 14 kt de face : Vs ≈ 86 kt. 082° corrige du mauvais côté et 114 kt prend le vent pour un vent arrière."
+      },
+      {
+       "id": "u5s8q23",
+       "q": "Rv 200°, vent 050°/20 kt, Vp 100 kt. Combien de temps faut-il pour une branche de 59 NM ?",
+       "choices": [
+        "≈ 43 min",
+        "≈ 35 min",
+        "≈ 25 min",
+        "≈ 30 min"
+       ],
+       "answer": 3,
+       "explanation": "Le vent vient de 150° de la route, soit 30° de l'arrière : vent effectif arrière ≈ 20 × 0,9 = 18 kt, Vs ≈ 118 kt ≈ 2 NM/min, d'où 59 / 2 ≈ 30 min. 43 min traite le vent comme un vent de face et 35 min est le temps sans vent (59 × 0,6)."
+      },
+      {
+       "id": "u5s8q24",
+       "q": "Vous croisez à 4 000 ft QNH, à 16 NM d'un aérodrome où vous devez arriver à 1 300 ft QNH. Vs 96 kt, descente sur 300 ft/NM. Quand commencez-vous la descente et à quel taux ?",
+       "choices": [
+        "Dans environ 9 NM, à environ 480 ft/min",
+        "Dans environ 7 NM, à environ 480 ft/min",
+        "Dès maintenant, à environ 270 ft/min",
+        "Dans environ 7 NM, à environ 300 ft/min"
+       ],
+       "answer": 1,
+       "explanation": "Hauteur à perdre : 2 700 ft, soit 9 NM à 300 ft/NM : la descente commence à 9 NM du terrain, donc dans 16 − 9 = 7 NM. Taux ≈ 5 × Vs = 5 × 96 ≈ 480 ft/min. 9 NM est la longueur de la descente, pas la distance à parcourir avant de l'entamer ; descendre dès maintenant à 270 ft/min ne suivrait pas la pente de 300 ft/NM demandée, et 300 ft/min confond ft par NM et ft par minute."
       }
      ]
     },
     {
      "id": "u5s9",
-     "title": "u5s9",
-     "figures": [
+     "title": "Préparer et suivre une navigation (log)",
+     "icon": "📋",
+     "tips": "Une navigation se prépare au sol, se consigne sur le log, puis se conduit en vol en comparant sans cesse le prévu au réel.\n\nChoisir la route :\n• Partez de la météo (TEMSI, WINTEM, METAR, TAF), des NOTAM et SUP AIP, puis de la carte au 1/500 000 : évitez les zones P et R actives, les espaces que vous ne souhaitez pas traverser, le relief élevé et les régions sans terrain de dégagement.\n• Points tournants et points de report : repères uniques, visibles de loin, espacés d'environ 10 à 15 min de vol.\n• Préparez dès le sol au moins un déroutement : un aérodrome accessible, avec sa route, sa distance et son temps depuis un point de la navigation.\n\nTracer et mesurer :\n• Tracez chaque branche au crayon ; mesurez la route vraie (Rv) au rapporteur sur le méridien situé au milieu de la branche, puis la distance à la règle ou sur l'échelle des latitudes.\n• Lisez la déclinaison sur les isogones voisines : Rm = Rv − Dm (Est positive).\n• Graduez le trait tous les 10 NM ou toutes les 5 min pour situer l'avion et contrôler les heures.\n\nAltitudes :\n• Relevez le point le plus haut (relief ou obstacle) dans une bande de quelques NM de part et d'autre du trait, par exemple 5 NM, et ajoutez une marge (au moins 500 ft, davantage en relief accidenté ou par air froid) : vous obtenez l'altitude de sécurité de la branche.\n• Choisissez ensuite l'altitude de croisière : au-dessus de cette altitude de sécurité et des hauteurs minimales SERA, sous le plancher des espaces à éviter, compatible avec la base des nuages (VMC) et, au-dessus de 3 000 ft par rapport au sol, avec la règle semi-circulaire (route magnétique).\n\nVent et calculs :\n• La WINTEM donne le vent (direction vraie d'où il vient, force en kt) et la température prévus à plusieurs niveaux, par exemple FL 020 et FL 050. Vérifiez sa validité et interpolez pour votre altitude : 270°/15 kt au FL 020 et 290°/25 kt au FL 050 donnent environ 280°/20 kt vers 3 500 ft.\n• La température prévue sert à calculer la Vp.\n• Pour chaque branche : Fb, Xmax, angle au vent, dérive X, Cv = Rv − X (X positive pour une dérive droite), Cm = Cv − Dm, puis cap compas avec la carte de déviation ; vent effectif, Vs, temps.\n\nLes colonnes du log :\n• branche (de… à…), altitude prévue, Rv, Dm, Rm, distance ;\n• vent prévu, dérive, cap vrai, cap magnétique (et cap compas) ;\n• Vs, temps de branche, heure estimée (HE) et heure réelle (HR) de passage ;\n• carburant prévu et restant, fréquences, repères et observations.\n\nExemple (Vp 100 kt, Fb 0,6 ; vent 360°/20 kt, Xmax 12° ; Dm 2°E ; 24 l/h ; top départ 10:05) :\n• A → B : Rv 045°, 43 NM. Vent de l'avant gauche, à 45° : X ≈ 12 × 0,7 ≈ 8°, dérive droite → Cv 037°, Cm 035°. Vent effectif ≈ 14 kt de face → Vs 86 kt → 30 min, HE 10:35.\n• B → C : Rv 120°, 33 NM. Vent de l'arrière gauche, à 60° de l'arrière : X ≈ 12 × 0,9 ≈ 11°, dérive droite → Cv 109°, Cm 107°. Vent effectif 10 kt arrière → Vs 110 kt → 18 min, HE 10:53.\n\nBilan carburant :\n• Étape : 48 min à 24 l/h = 19,2 l, arrondis à 20 l ; roulage 3 l ; déroutement prévu de 20 min : 8 l.\n• Réserve finale VFR de jour (AMC1 NCO.OP.125) : 30 min, soit 12 l.\n• Minimum au départ : 20 + 3 + 8 + 12 = 43 l de carburant utilisable, plus une marge personnelle ; le carburant inutilisable s'y ajoute dans les réservoirs.\n\nEn vol :\n• Top de départ : heure de passage au point où commence la navigation (verticale du terrain ou point de sortie), notée sur le log. Toutes les HE en découlent : si le top est décalé, décalez-les d'autant.\n• À chaque repère, notez l'HR et comparez-la à l'HE. Un écart révèle une Vs différente de la prévision : recalculez-la et corrigez les HE suivantes.\n• Ex. : sur A → B, le repère des 20 NM était prévu à 10:19 (20 × 60 / 86 ≈ 14 min) ; vous le passez à 10:21. Vs réelle = 20 × 60 / 16 = 75 kt. Restent 23 NM : 23 × 60 / 75 ≈ 18 min → nouvelle HE en B : 10:39 au lieu de 10:35.\n• Recalage : si la position observée s'écarte du trait, confirmez-la par au moins deux repères, puis corrigez le cap (règle du 1/60) et les heures.\n• Carburant : à chaque point tournant, comparez le restant (jauges et calcul : départ − débit × temps écoulé) au besoin pour finir le vol avec la réserve finale. Retenez la valeur la plus défavorable ; un écart inexpliqué fait suspecter une fuite ou une consommation anormale.\n• Déroutement : décidez tôt, sur un repère identifié ; mesurez ou estimez la route vers le terrain choisi, calculez cap, temps et carburant, et prévenez l'organisme avec lequel vous êtes en contact.\n\nPièges classiques :\n• Prendre le vent de l'ATIS (magnétique) avec une route vraie.\n• Garder les HE prévues malgré un retard constaté : l'erreur s'accumule.\n• Oublier de reprendre le log quand l'altitude de croisière change (vent, Vp, marge au relief).",
+     "vocab": [
       {
-       "title": "fig_log",
-       "svg": "<svg viewBox=\"0 0 720 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"340\" fill=\"#ffffff\"/><text x=\"20.0\" y=\"26.0\" font-size=\"14\" fill=\"#14213d\" font-weight=\"bold\">Vp 100 kt (Fb 0,6) · vent 360°/20 kt (Xmax 12°) · Dm 2°E · top départ 10:05</text><rect x=\"20\" y=\"42\" width=\"664\" height=\"50\" fill=\"#e8edf5\"/><rect x=\"620\" y=\"92\" width=\"64\" height=\"80\" fill=\"#eef4ff\"/><line x1=\"20.0\" y1=\"92.0\" x2=\"684.0\" y2=\"92.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"20.0\" y1=\"132.0\" x2=\"684.0\" y2=\"132.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"120.0\" y1=\"42.0\" x2=\"120.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"180.0\" y1=\"42.0\" x2=\"180.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"244.0\" y1=\"42.0\" x2=\"244.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"308.0\" y1=\"42.0\" x2=\"308.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"368.0\" y1=\"42.0\" x2=\"368.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"428.0\" y1=\"42.0\" x2=\"428.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"490.0\" y1=\"42.0\" x2=\"490.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"556.0\" y1=\"42.0\" x2=\"556.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"620.0\" y1=\"42.0\" x2=\"620.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><rect x=\"20\" y=\"42\" width=\"664\" height=\"130\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"70.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Branche</text><text x=\"150.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Rv</text><text x=\"150.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"212.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Dist.</text><text x=\"212.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(NM)</text><text x=\"276.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">X</text><text x=\"276.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"338.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cv</text><text x=\"338.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"398.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cm</text><text x=\"398.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"459.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Vs</text><text x=\"459.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(kt)</text><text x=\"523.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Temps</text><text x=\"523.0\" y=\"84.0\" font-size=\"13\" fill=\"#46516a\" text-anchor=\"middle\">(min)</text><text x=\"588.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">HE</text><text x=\"652.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">HR</text><text x=\"70.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">A → B</text><text x=\"150.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">045</text><text x=\"212.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">43</text><text x=\"276.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">8° D</text><text x=\"338.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">037</text><text x=\"398.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">035</text><text x=\"459.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">86</text><text x=\"523.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">30</text><text x=\"588.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">10:35</text><text x=\"652.0\" y=\"118.0\" font-size=\"16\" fill=\"#1a56db\" text-anchor=\"middle\" font-weight=\"bold\" font-style=\"italic\">10:39</text><text x=\"70.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">B → C</text><text x=\"150.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">120</text><text x=\"212.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">33</text><text x=\"276.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">11° D</text><text x=\"338.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">109</text><text x=\"398.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">107</text><text x=\"459.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">110</text><text x=\"523.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">18</text><text x=\"588.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">10:53</text><text x=\"652.0\" y=\"158.0\" font-size=\"16\" fill=\"#1a56db\" text-anchor=\"middle\" font-weight=\"bold\" font-style=\"italic\">…</text><text x=\"20.0\" y=\"198.0\" font-size=\"14\" fill=\"#46516a\">D : dérive droite ; Cv = Rv − X, puis Cm = Cv − Dm (déclinaison Est).</text><text x=\"20.0\" y=\"224.0\" font-size=\"15\" fill=\"#1a56db\" font-weight=\"bold\">En vol : passage réel en B à 10:39, soit 4 min de retard.</text><text x=\"20.0\" y=\"246.0\" font-size=\"15\" fill=\"#1a56db\" font-weight=\"bold\">Nouvelle HE en C : 10:39 + 18 min = 10:57.</text><rect x=\"20\" y=\"262\" width=\"680\" height=\"66\" rx=\"8\" fill=\"#fff8e6\" stroke=\"#d35400\" stroke-width=\"1.5\"/><text x=\"34.0\" y=\"287.0\" font-size=\"15\" fill=\"#14213d\">Carburant à 24 l/h : étape 48 min ≈ 20 l + roulage 3 l + déroutement 8 l</text><text x=\"34.0\" y=\"312.0\" font-size=\"15\" fill=\"#14213d\">+ réserve finale VFR de jour 30 min = 12 l, soit 43 l au minimum (+ marge)</text></svg>",
-       "caption": "légende de test assez longue"
+       "term": "Log de navigation",
+       "translation": "Tableau des branches : routes, caps, temps, heures, carburant"
       },
       {
-       "title": "fig_carte",
-       "svg": "<svg viewBox=\"0 0 720 460\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"460\" fill=\"#f7f5ee\"/><line x1=\"205.0\" y1=\"460.0\" x2=\"205.0\" y2=\"0.0\" stroke=\"#9aa5b8\" stroke-width=\"1.2\"/><line x1=\"425.0\" y1=\"460.0\" x2=\"419.0\" y2=\"0.0\" stroke=\"#9aa5b8\" stroke-width=\"1.2\"/><line x1=\"645.0\" y1=\"460.0\" x2=\"633.0\" y2=\"0.0\" stroke=\"#9aa5b8\" stroke-width=\"1.2\"/><line x1=\"205.0\" y1=\"46.0\" x2=\"205.0\" y2=\"16.0\" stroke=\"#5a6478\" stroke-width=\"2\"/><polygon points=\"205.0,8.0 200.5,18.0 209.5,18.0\" fill=\"#5a6478\"/><text x=\"215.0\" y=\"24.0\" font-size=\"14\" fill=\"#5a6478\">Nord vrai</text><polyline points=\"80.0,400.0 329.9,150.1 564.9,285.7\" fill=\"none\" stroke=\"#f6d77a\" stroke-opacity=\"0.55\" stroke-width=\"82.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"80.0,400.0 329.9,150.1 564.9,285.7\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"132.5\" y1=\"336.2\" x2=\"143.8\" y2=\"347.5\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"122.6\" y=\"331.3\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">10</text><line x1=\"190.6\" y1=\"278.1\" x2=\"201.9\" y2=\"289.4\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"180.7\" y=\"273.2\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">20</text><line x1=\"248.7\" y1=\"220.0\" x2=\"260.0\" y2=\"231.3\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"238.8\" y=\"215.1\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">30</text><line x1=\"306.8\" y1=\"161.8\" x2=\"318.2\" y2=\"173.2\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"296.9\" y=\"156.9\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">40</text><line x1=\"405.1\" y1=\"184.2\" x2=\"397.1\" y2=\"198.1\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"412.1\" y=\"177.1\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">10</text><line x1=\"476.3\" y1=\"225.3\" x2=\"468.3\" y2=\"239.2\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"483.3\" y=\"218.2\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">20</text><line x1=\"547.5\" y1=\"266.4\" x2=\"539.5\" y2=\"280.3\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"554.5\" y=\"259.3\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">30</text><path d=\"M205.0,231.0 A44,44 0 0,1 236.1,243.9\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><rect x=\"120\" y=\"221.0\" width=\"78\" height=\"22\" fill=\"#f7f5ee\"/><text x=\"196.0\" y=\"237.0\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"end\" font-weight=\"bold\">Rv 045°</text><polygon points=\"283.4,221.4 274.4,238.4 292.4,238.4\" fill=\"#5b4630\"/><text x=\"297.4\" y=\"237.4\" font-size=\"15\" fill=\"#5b4630\" font-weight=\"bold\">1 850 ft</text><line x1=\"329.9\" y1=\"150.1\" x2=\"558.9\" y2=\"88.7\" stroke=\"#1f5fa8\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><polygon points=\"568.1,86.2 555.1,84.1 557.9,94.6\" fill=\"#1f5fa8\"/><circle cx=\"568.1\" cy=\"86.2\" r=\"6\" fill=\"#1f5fa8\"/><text x=\"580.1\" y=\"78.2\" font-size=\"15\" fill=\"#1f5fa8\" font-weight=\"bold\">D (dégagement)</text><text x=\"372.0\" y=\"70.0\" font-size=\"14\" fill=\"#1f5fa8\">Déroutement préparé depuis B</text><text x=\"372.0\" y=\"90.0\" font-size=\"14\" fill=\"#1f5fa8\" font-weight=\"bold\">Rv 075°, 30 NM</text><circle cx=\"80.0\" cy=\"400.0\" r=\"6\" fill=\"#14213d\"/><circle cx=\"329.9\" cy=\"150.1\" r=\"6\" fill=\"#14213d\"/><circle cx=\"564.9\" cy=\"285.7\" r=\"6\" fill=\"#14213d\"/><text x=\"94.0\" y=\"426.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">A (départ)</text><rect x=\"169.9\" y=\"120.1\" width=\"146\" height=\"22\" fill=\"#f7f5ee\" fill-opacity=\"0.9\"/><text x=\"315.9\" y=\"136.1\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">B (point tournant)</text><text x=\"578.9\" y=\"291.7\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">C (arrivée)</text><rect x=\"420\" y=\"372\" width=\"290\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#9aa5b8\"/><rect x=\"432\" y=\"384\" width=\"30\" height=\"14\" fill=\"#f6d77a\" fill-opacity=\"0.8\"/><text x=\"472.0\" y=\"396.0\" font-size=\"14\" fill=\"#14213d\">bande de 5 NM de chaque côté</text><polygon points=\"447,408 438,424 456,424\" fill=\"#5b4630\"/><text x=\"472.0\" y=\"421.0\" font-size=\"14\" fill=\"#14213d\">point le plus haut de la bande</text><line x1=\"432.0\" y1=\"441.0\" x2=\"462.0\" y2=\"441.0\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><line x1=\"447.0\" y1=\"434.0\" x2=\"447.0\" y2=\"448.0\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"472.0\" y=\"446.0\" font-size=\"14\" fill=\"#14213d\">graduation tous les 10 NM</text></svg>",
-       "caption": "légende de test assez longue"
+       "term": "Branche",
+       "translation": "Segment de route entre deux points tournants"
+      },
+      {
+       "term": "Point tournant",
+       "translation": "Point où la route change de direction"
+      },
+      {
+       "term": "Top de départ",
+       "translation": "Heure de passage au début de la navigation, origine des HE"
+      },
+      {
+       "term": "Heure estimée (HE)",
+       "translation": "Heure prévue de passage à un point, mise à jour en vol"
+      },
+      {
+       "term": "Heure réelle (HR)",
+       "translation": "Heure de passage effectivement constatée en vol"
+      },
+      {
+       "term": "WINTEM",
+       "translation": "Carte des vents (nord vrai) et températures prévus en altitude"
+      },
+      {
+       "term": "Altitude de sécurité",
+       "translation": "Point le plus haut près du trait, augmenté d'une marge choisie"
+      },
+      {
+       "term": "Cap magnétique (Cm)",
+       "translation": "Cap vrai corrigé de la déclinaison : Cm = Cv − Dm"
+      },
+      {
+       "term": "Bilan carburant",
+       "translation": "Étape + roulage + déroutement + réserve finale + marge"
+      },
+      {
+       "term": "Réserve finale",
+       "translation": "Carburant gardé à l'arrivée : 30 min de jour, 45 min de nuit"
+      },
+      {
+       "term": "Carburant inutilisable",
+       "translation": "Carburant présent dans les réservoirs mais non consommable"
+      },
+      {
+       "term": "Recalage",
+       "translation": "Correction de la position estimée d'après des repères identifiés"
+      },
+      {
+       "term": "Déroutement",
+       "translation": "Changement de destination vers un terrain préparé ou choisi en vol"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Extrait de log de navigation",
+       "svg": "<svg viewBox=\"0 0 720 340\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"340\" fill=\"#ffffff\"/><text x=\"20.0\" y=\"26.0\" font-size=\"14\" fill=\"#14213d\" font-weight=\"bold\">Vp 100 kt (Fb 0,6) · vent 360°/20 kt (Xmax 12°) · Dm 2°E · top départ 10:05</text><rect x=\"20\" y=\"42\" width=\"664\" height=\"50\" fill=\"#e8edf5\"/><rect x=\"620\" y=\"92\" width=\"64\" height=\"80\" fill=\"#eef4ff\"/><line x1=\"20.0\" y1=\"92.0\" x2=\"684.0\" y2=\"92.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"20.0\" y1=\"132.0\" x2=\"684.0\" y2=\"132.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"120.0\" y1=\"42.0\" x2=\"120.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"180.0\" y1=\"42.0\" x2=\"180.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"244.0\" y1=\"42.0\" x2=\"244.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"308.0\" y1=\"42.0\" x2=\"308.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"368.0\" y1=\"42.0\" x2=\"368.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"428.0\" y1=\"42.0\" x2=\"428.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"490.0\" y1=\"42.0\" x2=\"490.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"556.0\" y1=\"42.0\" x2=\"556.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><line x1=\"620.0\" y1=\"42.0\" x2=\"620.0\" y2=\"172.0\" stroke=\"#46516a\" stroke-width=\"1\"/><rect x=\"20\" y=\"42\" width=\"664\" height=\"130\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"70.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Branche</text><text x=\"150.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Rv</text><text x=\"150.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"212.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Dist.</text><text x=\"212.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(NM)</text><text x=\"276.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">X</text><text x=\"276.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"338.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cv</text><text x=\"338.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"398.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cm</text><text x=\"398.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(°)</text><text x=\"459.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Vs</text><text x=\"459.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(kt)</text><text x=\"523.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Temps</text><text x=\"523.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">(min)</text><text x=\"588.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">HE</text><text x=\"652.0\" y=\"64.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">HR</text><text x=\"70.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">A → B</text><text x=\"150.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">045</text><text x=\"212.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">43</text><text x=\"276.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">8° D</text><text x=\"338.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">037</text><text x=\"398.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">035</text><text x=\"459.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">86</text><text x=\"523.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">30</text><text x=\"588.0\" y=\"118.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">10:35</text><text x=\"652.0\" y=\"118.0\" font-size=\"16\" fill=\"#1a56db\" text-anchor=\"middle\" font-weight=\"bold\" font-style=\"italic\">10:39</text><text x=\"70.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">B → C</text><text x=\"150.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">120</text><text x=\"212.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">33</text><text x=\"276.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">11° D</text><text x=\"338.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">109</text><text x=\"398.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">107</text><text x=\"459.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">110</text><text x=\"523.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">18</text><text x=\"588.0\" y=\"158.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\">10:53</text><text x=\"652.0\" y=\"158.0\" font-size=\"16\" fill=\"#1a56db\" text-anchor=\"middle\" font-weight=\"bold\" font-style=\"italic\">…</text><text x=\"20.0\" y=\"198.0\" font-size=\"14\" fill=\"#46516a\">D : dérive droite ; Cv = Rv − X, puis Cm = Cv − Dm (déclinaison Est).</text><text x=\"20.0\" y=\"224.0\" font-size=\"15\" fill=\"#1a56db\" font-weight=\"bold\">En vol : passage réel en B à 10:39, soit 4 min de retard.</text><text x=\"20.0\" y=\"246.0\" font-size=\"15\" fill=\"#1a56db\" font-weight=\"bold\">Nouvelle HE en C : 10:39 + 18 min = 10:57.</text><rect x=\"20\" y=\"262\" width=\"680\" height=\"66\" rx=\"8\" fill=\"#fff8e6\" stroke=\"#d35400\" stroke-width=\"1.5\"/><text x=\"34.0\" y=\"287.0\" font-size=\"15\" fill=\"#14213d\">Carburant à 24 l/h : étape 48 min ≈ 20 l + roulage 3 l + déroutement 8 l</text><text x=\"34.0\" y=\"312.0\" font-size=\"15\" fill=\"#14213d\">+ réserve finale VFR de jour 30 min = 12 l, soit 43 l au minimum (+ marge)</text></svg>",
+       "caption": "Deux branches calculées au sol, puis mises à jour en vol (en bleu) : le retard constaté en B se reporte sur l'heure estimée en C. Le bilan carburant reprend l'étape, le roulage, le déroutement et la réserve finale."
+      },
+      {
+       "title": "Préparation du trait sur la carte",
+       "svg": "<svg viewBox=\"0 0 720 460\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"460\" fill=\"#f7f5ee\"/><line x1=\"205.0\" y1=\"460.0\" x2=\"205.0\" y2=\"0.0\" stroke=\"#9aa5b8\" stroke-width=\"1.2\"/><line x1=\"425.0\" y1=\"460.0\" x2=\"419.0\" y2=\"0.0\" stroke=\"#9aa5b8\" stroke-width=\"1.2\"/><line x1=\"645.0\" y1=\"460.0\" x2=\"633.0\" y2=\"0.0\" stroke=\"#9aa5b8\" stroke-width=\"1.2\"/><line x1=\"205.0\" y1=\"46.0\" x2=\"205.0\" y2=\"16.0\" stroke=\"#5a6478\" stroke-width=\"2\"/><polygon points=\"205.0,8.0 200.5,18.0 209.5,18.0\" fill=\"#5a6478\"/><text x=\"215.0\" y=\"24.0\" font-size=\"14\" fill=\"#5a6478\">Nord vrai</text><polyline points=\"80.0,400.0 329.9,150.1 564.9,285.7\" fill=\"none\" stroke=\"#f6d77a\" stroke-opacity=\"0.55\" stroke-width=\"82.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polyline points=\"80.0,400.0 329.9,150.1 564.9,285.7\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"132.5\" y1=\"336.2\" x2=\"143.8\" y2=\"347.5\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"122.6\" y=\"331.3\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">10</text><line x1=\"190.6\" y1=\"278.1\" x2=\"201.9\" y2=\"289.4\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"180.7\" y=\"273.2\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">20</text><line x1=\"248.7\" y1=\"220.0\" x2=\"260.0\" y2=\"231.3\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"238.8\" y=\"215.1\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">30</text><line x1=\"306.8\" y1=\"161.8\" x2=\"318.2\" y2=\"173.2\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"296.9\" y=\"156.9\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">40</text><line x1=\"405.1\" y1=\"184.2\" x2=\"397.1\" y2=\"198.1\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"412.1\" y=\"177.1\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">10</text><line x1=\"476.3\" y1=\"225.3\" x2=\"468.3\" y2=\"239.2\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"483.3\" y=\"218.2\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">20</text><line x1=\"547.5\" y1=\"266.4\" x2=\"539.5\" y2=\"280.3\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"554.5\" y=\"259.3\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">30</text><path d=\"M205.0,231.0 A44,44 0 0,1 236.1,243.9\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><rect x=\"120\" y=\"221.0\" width=\"78\" height=\"22\" fill=\"#f7f5ee\"/><text x=\"196.0\" y=\"237.0\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"end\" font-weight=\"bold\">Rv 045°</text><polygon points=\"283.4,221.4 274.4,238.4 292.4,238.4\" fill=\"#5b4630\"/><text x=\"297.4\" y=\"237.4\" font-size=\"15\" fill=\"#5b4630\" font-weight=\"bold\">1 850 ft</text><line x1=\"329.9\" y1=\"150.1\" x2=\"558.9\" y2=\"88.7\" stroke=\"#1f5fa8\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><polygon points=\"568.1,86.2 555.1,84.1 557.9,94.6\" fill=\"#1f5fa8\"/><circle cx=\"568.1\" cy=\"86.2\" r=\"6\" fill=\"#1f5fa8\"/><rect x=\"576.1\" y=\"60.2\" width=\"124\" height=\"24\" fill=\"#f7f5ee\" fill-opacity=\"0.92\"/><text x=\"580.1\" y=\"78.2\" font-size=\"15\" fill=\"#1f5fa8\" font-weight=\"bold\">D (dégagement)</text><rect x=\"366\" y=\"54\" width=\"196\" height=\"42\" fill=\"#f7f5ee\" fill-opacity=\"0.92\"/><text x=\"372.0\" y=\"70.0\" font-size=\"14\" fill=\"#1f5fa8\">Déroutement préparé depuis B</text><text x=\"372.0\" y=\"90.0\" font-size=\"15\" fill=\"#1f5fa8\" font-weight=\"bold\">Rv 075°, 30 NM</text><circle cx=\"80.0\" cy=\"400.0\" r=\"6\" fill=\"#14213d\"/><circle cx=\"329.9\" cy=\"150.1\" r=\"6\" fill=\"#14213d\"/><circle cx=\"564.9\" cy=\"285.7\" r=\"6\" fill=\"#14213d\"/><text x=\"94.0\" y=\"426.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">A (départ)</text><rect x=\"169.9\" y=\"120.1\" width=\"146\" height=\"22\" fill=\"#f7f5ee\" fill-opacity=\"0.9\"/><text x=\"315.9\" y=\"136.1\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">B (point tournant)</text><text x=\"578.9\" y=\"291.7\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">C (arrivée)</text><rect x=\"420\" y=\"372\" width=\"290\" height=\"80\" rx=\"6\" fill=\"#ffffff\" stroke=\"#9aa5b8\"/><rect x=\"432\" y=\"384\" width=\"30\" height=\"14\" fill=\"#f6d77a\" fill-opacity=\"0.8\"/><text x=\"472.0\" y=\"396.0\" font-size=\"14\" fill=\"#14213d\">bande de 5 NM de chaque côté</text><polygon points=\"447,408 438,424 456,424\" fill=\"#5b4630\"/><text x=\"472.0\" y=\"421.0\" font-size=\"14\" fill=\"#14213d\">point le plus haut de la bande</text><line x1=\"432.0\" y1=\"441.0\" x2=\"462.0\" y2=\"441.0\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><line x1=\"447.0\" y1=\"434.0\" x2=\"447.0\" y2=\"448.0\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"472.0\" y=\"446.0\" font-size=\"14\" fill=\"#14213d\">graduation tous les 10 NM</text></svg>",
+       "caption": "Route A → B → C graduée tous les 10 NM, route vraie mesurée sur le méridien qui coupe la branche en son milieu, bande de 5 NM de part et d'autre pour l'altitude de sécurité et déroutement préparé depuis B. Les méridiens convergent vers le nord, comme sur une carte en projection de Lambert."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u5s9q01",
+       "q": "Sur un log, que désigne le « top de départ » ?",
+       "choices": [
+        "L'heure de mise en route du moteur, notée pour le carnet de route",
+        "L'heure de décollage prévue, telle que déposée dans le plan de vol",
+        "L'heure à laquelle l'avion atteint l'altitude de croisière prévue",
+        "L'heure de passage au point où commence la navigation, origine des HE"
+       ],
+       "answer": 3,
+       "explanation": "Le top est pris au passage du point où commence la navigation (verticale du terrain ou point de sortie) : toutes les heures estimées du log en découlent. L'heure de mise en route ou celle déposée dans le plan de vol ne donnent pas l'heure réelle de début de la navigation."
+      },
+      {
+       "id": "u5s9q02",
+       "q": "Quelle suite de corrections permet de passer de la route vraie au cap magnétique ?",
+       "choices": [
+        "Rv − déclinaison → Rm, puis − déviation → Cm",
+        "Rv − déviation → Cv, puis − dérive → Cm",
+        "Rv − dérive → Cm, puis − déclinaison → Cv",
+        "Rv − dérive → Cv, puis − déclinaison → Cm"
+       ],
+       "answer": 3,
+       "explanation": "On corrige la dérive (Cv = Rv − X, X positive pour une dérive droite), puis la déclinaison (Cm = Cv − Dm, Est positive). La déviation, propre au compas, ne sert qu'ensuite, pour passer du cap magnétique au cap compas."
+      },
+      {
+       "id": "u5s9q03",
+       "q": "Que note-t-on dans la colonne HR du log ?",
+       "choices": [
+        "L'heure estimée, calculée lors de la préparation",
+        "L'heure réelle de passage au point, constatée en vol",
+        "La hauteur de sécurité de la branche, en pieds",
+        "Le régime moteur relevé au passage du point"
+       ],
+       "answer": 1,
+       "explanation": "HR = heure réelle, relevée au passage du repère. Comparée à l'HE (heure estimée), elle révèle l'écart entre Vs prévue et Vs réelle et permet de corriger les estimées suivantes."
+      },
+      {
+       "id": "u5s9q04",
+       "q": "Sur le log, comment est obtenu le temps d'une branche ?",
+       "choices": [
+        "Avec la vitesse propre, sans tenir compte du vent",
+        "Avec la vitesse indiquée lue en croisière",
+        "Avec la vitesse sol prévue, vent compris",
+        "Avec la vitesse conventionnelle de la table"
+       ],
+       "answer": 2,
+       "explanation": "Temps de branche = distance × 60 / Vs, la Vs prévue tenant compte du vent effectif. Le temps sans vent, calculé avec la Vp, n'est qu'une étape du calcul ; Vi et Vc ne donnent pas la vitesse par rapport au sol."
+      },
+      {
+       "id": "u5s9q05",
+       "q": "Pourquoi préparer un déroutement dès la préparation au sol ?",
+       "choices": [
+        "Parce qu'un déroutement préparé dispense de suivre la météo en vol",
+        "Pour pouvoir réduire la réserve finale de carburant à 10 min",
+        "Pour disposer d'une solution calculée si le vol ne peut se poursuivre",
+        "Parce que le déroutement remplace la réserve finale de carburant"
+       ],
+       "answer": 2,
+       "explanation": "Un déroutement préparé (route, distance, temps, carburant) permet de décider vite si la météo, le carburant ou un incident l'imposent, au lieu de tout calculer en vol. Il ne remplace pas la réserve finale, et la réserve de 10 min ne concerne que le vol local en vue de l'aérodrome."
+      },
+      {
+       "id": "u5s9q06",
+       "q": "Lors de la préparation, comment déterminez-vous l'altitude de sécurité d'une branche ?",
+       "choices": [
+        "Point le plus haut près du trait, plus une marge choisie",
+        "Altitude du terrain de départ, plus 1 000 ft de marge",
+        "Altitude de transition publiée, moins 500 ft de marge",
+        "Plancher de l'espace aérien survolé, moins 500 ft"
+       ],
+       "answer": 0,
+       "explanation": "On relève le relief ou l'obstacle le plus élevé dans une bande de part et d'autre du trait (par exemple 5 NM) et l'on ajoute une marge d'au moins 500 ft, davantage en relief. L'altitude du terrain de départ ne dit rien du relief en route, et un plancher d'espace ne protège pas du relief."
+      },
+      {
+       "id": "u5s9q07",
+       "q": "Avant de reporter le vent d'une carte WINTEM sur votre log, que vérifiez-vous ?",
+       "choices": [
+        "Sa période de validité et le niveau proche de votre altitude",
+        "Qu'elle donne le vent en degrés magnétiques, comme le log",
+        "Qu'elle indique le QNH régional de chaque zone traversée",
+        "Qu'elle date de la veille, pour un vol prévu le matin"
+       ],
+       "answer": 0,
+       "explanation": "Une WINTEM vaut pour une heure donnée et des niveaux précis : on choisit celle qui couvre l'heure du vol et le niveau le plus proche de l'altitude prévue, en interpolant au besoin. Ses vents sont rapportés au nord vrai, et elle ne donne pas de QNH."
+      },
+      {
+       "id": "u5s9q08",
+       "q": "En vol, à quoi sert la colonne carburant du log ?",
+       "choices": [
+        "À calculer la masse au décollage pour le centrage de l'avion",
+        "À choisir le réservoir à utiliser pour garder l'avion centré",
+        "À justifier la consommation auprès de l'aéroclub après le vol",
+        "À comparer le restant au besoin pour finir avec la réserve finale"
+       ],
+       "answer": 3,
+       "explanation": "En vol, on compare régulièrement le carburant restant (jauges et calcul) à celui nécessaire pour terminer le vol en conservant la réserve finale : c'est ce suivi qui déclenche à temps un déroutement. Le centrage se calcule avant le vol."
+      },
+      {
+       "id": "u5s9q09",
+       "q": "La WINTEM prévoit 270°/15 kt au FL 020 et 290°/25 kt au FL 050. Quel vent retenez-vous pour une croisière vers 3 500 ft ?",
+       "choices": [
+        "290°/25 kt",
+        "≈ 280°/20 kt",
+        "270°/15 kt",
+        "≈ 280°/40 kt"
+       ],
+       "answer": 1,
+       "explanation": "3 500 ft est à mi-chemin entre 2 000 et 5 000 ft : on interpole direction et force, soit environ 280° et 20 kt. Additionner les deux forces (40 kt) n'a pas de sens, et prendre un seul niveau néglige l'évolution du vent avec l'altitude."
+      },
+      {
+       "id": "u5s9q10",
+       "q": "Vous passez un repère 3 min après l'heure estimée. Quelle conclusion tirez-vous en premier ?",
+       "choices": [
+        "Le cap est faux de 3° : il faut le corriger de 3° vers la route",
+        "La Vs est plus faible que prévu : il faut corriger les HE suivantes",
+        "La dérive est plus forte que prévu : il faut corriger vers le vent",
+        "Le top de départ était faux : il faut décaler les HE de 3 min"
+       ],
+       "answer": 1,
+       "explanation": "Un retard à un repère bien identifié signifie que la Vs réelle est inférieure à la Vs prévue (vent de face plus fort, par exemple) : on recalcule la Vs et les HE suivantes. Une erreur de cap ou de dérive se voit sur la position latérale, pas sur l'heure de passage."
+      },
+      {
+       "id": "u5s9q11",
+       "q": "La branche A → B est prévue à une vitesse sol de 84 kt. Quel espacement en NM donnez-vous aux graduations pour marquer chaque tranche de 5 min ?",
+       "choices": [
+        "7 NM",
+        "5 NM",
+        "8,4 NM",
+        "4,2 NM"
+       ],
+       "answer": 0,
+       "explanation": "84 kt = 1,4 NM/min ; en 5 min, l'avion parcourt 7 NM. 8,4 NM correspondrait à 6 min et 4,2 NM à 3 min ; 5 NM ne vaudrait que pour 60 kt."
+      },
+      {
+       "id": "u5s9q12",
+       "q": "Branche : Rv 200°, vent 245°/20 kt, Vp 100 kt, déclinaison 2°E. Quel cap magnétique portez-vous au log ?",
+       "choices": [
+        "210°",
+        "190°",
+        "194°",
+        "206°"
+       ],
+       "answer": 3,
+       "explanation": "Xmax = 20 × 0,6 = 12°. Le vent vient de 45° à droite de l'avant : X ≈ 12 × 0,7 ≈ 8°, dérive gauche, donc Cv = 200 + 8 = 208°. Avec 2°E : Cm = 208 − 2 = 206°. 210° ajoute la déclinaison au lieu de la retrancher ; 190° et 194° corrigent la dérive du mauvais côté."
+      },
+      {
+       "id": "u5s9q13",
+       "q": "Votre log a été calculé avec un top de départ à 10:05 (HE en B 10:35, HE en C 10:53). Vous passez finalement le point de départ à 10:12. Quelles HE retenez-vous ?",
+       "choices": [
+        "B 10:35, C 10:53",
+        "B 10:42, C 10:53",
+        "B 10:42, C 11:00",
+        "B 10:28, C 10:46"
+       ],
+       "answer": 2,
+       "explanation": "Les temps de branche ne changent pas : toutes les HE se décalent du retard pris au top, soit 7 min. B : 10:35 + 7 = 10:42 ; C : 10:53 + 7 = 11:00."
+      },
+      {
+       "id": "u5s9q14",
+       "q": "Sur votre log, une branche indique Vs 132 kt pour une Vp de 100 kt et un vent prévu de 20 kt. Qu'en concluez-vous ?",
+       "choices": [
+        "Une valeur plausible si le vent souffle de trois quarts arrière",
+        "Une valeur normale si la branche est volée en altitude",
+        "Une valeur juste si le vent est perpendiculaire à la route",
+        "Une erreur : avec ce vent, la Vs ne peut dépasser 120 kt"
+       ],
+       "answer": 3,
+       "explanation": "La Vs vaut au plus Vp + Vw = 120 kt, par vent arrière pur. 132 kt trahit une erreur de calcul (vent compté deux fois, mauvais angle) : un contrôle de vraisemblance de chaque ligne évite de voler sur des estimées fausses. Vent de travers, la Vs est même un peu inférieure à la Vp."
+      },
+      {
+       "id": "u5s9q15",
+       "q": "Altitude de sécurité 2 800 ft, plancher d'une TMA à 4 500 ft, base des nuages vers 5 000 ft, route magnétique 043°. Quelle altitude de croisière choisissez-vous ?",
+       "choices": [
+        "2 500 ft QNH",
+        "3 500 ft QNH",
+        "4 500 ft QNH",
+        "5 500 ft QNH"
+       ],
+       "answer": 1,
+       "explanation": "3 500 ft est au-dessus de l'altitude de sécurité, sous le plancher de la TMA avec une marge et à 1 500 ft sous les nuages ; elle respecte aussi la règle semi-circulaire pour une route magnétique de 000° à 179°. 2 500 ft est sous l'altitude de sécurité, 4 500 ft au plancher même de la TMA et à 500 ft des nuages, 5 500 ft dans la TMA et les nuages."
+      },
+      {
+       "id": "u5s9q16",
+       "q": "Branche de 42 NM prévue à Vs 105 kt (24 min), top à 13:40. Vous passez le repère situé à 14 NM à 13:50. Quelle nouvelle HE retenez-vous en fin de branche ?",
+       "choices": [
+        "14:04",
+        "14:06",
+        "14:14",
+        "14:10"
+       ],
+       "answer": 3,
+       "explanation": "Vs réelle : 14 NM en 10 min, soit 1,4 NM/min (84 kt), au lieu des 8 min prévues. Restent 28 NM : 28 / 1,4 = 20 min, d'où 13:50 + 20 = 14:10. 14:04 est l'HE initiale ; 14:06 n'ajoute que les 2 min de retard déjà constatées, alors que le retard continue de croître si le vent ne change pas."
+      },
+      {
+       "id": "u5s9q17",
+       "q": "En vol à Vp 100 kt, vous décidez de vous dérouter vers un terrain situé à 24 NM : Rv 300°, vent 255°/20 kt, déclinaison 2°E. Quels cap magnétique et temps de vol prévoyez-vous ?",
+       "choices": [
+        "Cm 306°, ≈ 17 min",
+        "Cm 290°, ≈ 14 min",
+        "Cm 290°, ≈ 17 min",
+        "Cm 294°, ≈ 12 min"
+       ],
+       "answer": 2,
+       "explanation": "Le vent vient de 45° à gauche de l'avant : X ≈ 12 × 0,7 ≈ 8°, dérive droite, Cv = 300 − 8 = 292°, Cm = 292 − 2 = 290°. Vent effectif ≈ 14 kt de face : Vs ≈ 86 kt, soit 24 × 60 / 86 ≈ 17 min. 14 min est le temps sans vent ; 306° corrige la dérive du mauvais côté."
+      },
+      {
+       "id": "u5s9q18",
+       "q": "Étape de 50 min à 30 l/h, roulage 3 l, déroutement prévu de 24 min, réserve finale VFR de jour, carburant inutilisable 5 l. Quelle quantité minimale faut-il dans les réservoirs au départ ?",
+       "choices": [
+        "55 l",
+        "60 l",
+        "48 l",
+        "≈ 68 l"
+       ],
+       "answer": 1,
+       "explanation": "Étape : 30 × 50 / 60 = 25 l ; déroutement : 30 × 24 / 60 = 12 l ; réserve finale de 30 min : 15 l. Utilisable nécessaire : 25 + 3 + 12 + 15 = 55 l, auxquels s'ajoutent les 5 l inutilisables : 60 l dans les réservoirs. 55 l oublie l'inutilisable, 48 l le déroutement, et 68 l applique la réserve de nuit (45 min)."
+      },
+      {
+       "id": "u5s9q19",
+       "q": "Top à 09:20 avec 70 l utilisables, débit 30 l/h. Vous passez B à 10:05 au lieu de 09:57 prévu ; il reste 20 min jusqu'à C. Quelle quantité restera-t-il à l'arrivée en C ?",
+       "choices": [
+        "41,5 l",
+        "37,5 l",
+        "32,5 l",
+        "47,5 l"
+       ],
+       "answer": 1,
+       "explanation": "Arrivée en C vers 10:25, soit 65 min après le top : 30 × 65 / 60 = 32,5 l consommés, il restera 37,5 l. 41,5 l est la valeur du log non mis à jour (arrivée prévue à 10:17) ; 32,5 l est la quantité consommée, non le restant."
+      },
+      {
+       "id": "u5s9q20",
+       "q": "Le calcul donne 50 l restants, mais les jauges n'en indiquent qu'environ 40. Quelle attitude adoptez-vous ?",
+       "choices": [
+        "Retenir le calcul, les jauges d'avion léger étant imprécises",
+        "Retenir la moyenne des deux valeurs, soit 45 l",
+        "Retenir la valeur la plus faible et chercher la cause de l'écart",
+        "Changer de réservoir pour faire remonter l'indication"
+       ],
+       "answer": 2,
+       "explanation": "En cas de désaccord, on retient la valeur la plus défavorable et l'on cherche la cause (fuite, bouchon mal fermé, consommation anormale, jauge défaillante) ; le bilan se refait avec 40 l, et un déroutement s'impose si la réserve finale est menacée. Changer de réservoir ne crée pas de carburant."
+      },
+      {
+       "id": "u5s9q21",
+       "q": "Branche Rv 165°, 40 NM ; vent prévu 120°/24 kt ; Vp 120 kt ; déclinaison 1°W. Quels cap magnétique et temps de vol portez-vous au log ?",
+       "choices": [
+        "Cm 158°, ≈ 23 min",
+        "Cm 156°, ≈ 23 min",
+        "Cm 174°, ≈ 23 min",
+        "Cm 158°, ≈ 18 min"
+       ],
+       "answer": 0,
+       "explanation": "Fb 0,5, Xmax 12°. Le vent vient de 45° à gauche de l'avant : X ≈ 12 × 0,7 ≈ 8°, dérive droite, Cv = 165 − 8 = 157°. Déclinaison Ouest (− 1°) : Cm = 157 + 1 = 158°. Vent effectif ≈ 17 kt de face : Vs ≈ 103 kt, 40 × 60 / 103 ≈ 23 min. 156° applique la déclinaison dans le mauvais sens et 18 min compte le vent comme arrière."
+      },
+      {
+       "id": "u5s9q22",
+       "q": "Au milieu d'une branche, vous établissez sans ambiguïté, par deux repères, que vous êtes 3 NM à gauche du trait et 2 min en retard. Que faites-vous ?",
+       "choices": [
+        "Corriger le cap vers la droite (règle du 1/60) et recalculer les HE",
+        "Corriger le cap de 3° vers la droite et garder les HE du log",
+        "Revenir au dernier point tournant pour reprendre la navigation",
+        "Garder le cap et attendre le prochain point tournant pour corriger"
+       ],
+       "answer": 0,
+       "explanation": "Une position recoupée par deux repères est un recalage : on corrige le cap pour rejoindre la route ou la destination (erreur de route plus convergence, règle du 1/60) et l'on recalcule les HE avec la Vs réelle. Corriger de 3° confond un écart en NM avec un angle, et attendre laisse l'écart grandir."
+      },
+      {
+       "id": "u5s9q23",
+       "q": "Le log est préparé pour 3 500 ft, mais la base des nuages vous impose 2 500 ft. Que devez-vous revoir en priorité ?",
+       "choices": [
+        "La déclinaison, qui change avec l'altitude de vol",
+        "La route vraie, qui dépend de l'altitude de vol",
+        "La marge au relief, puis le vent et la Vp à ce niveau",
+        "La déviation du compas, qui dépend de l'altitude"
+       ],
+       "answer": 2,
+       "explanation": "Plus bas, la marge au-dessus du relief diminue (l'altitude de sécurité est-elle encore respectée ?), le vent prévu n'est plus le même et la Vp est un peu plus faible : caps, temps et carburant sont à reprendre. Déclinaison, route vraie et déviation ne dépendent pas de l'altitude."
+      },
+      {
+       "id": "u5s9q24",
+       "q": "Dans la bande de 5 NM autour du trait, la carte montre un sommet coté 1 640 ft et un pylône noté 1 380 (420). Avec une marge choisie de 1 000 ft, quelle altitude de sécurité retenez-vous ?",
+       "choices": [
+        "2 640 ft",
+        "2 380 ft",
+        "1 800 ft",
+        "3 020 ft"
+       ],
+       "answer": 0,
+       "explanation": "Le point le plus haut de la bande est le sommet à 1 640 ft ; le pylône culmine à 1 380 ft d'altitude (420 ft au-dessus du sol). 1 640 + 1 000 = 2 640 ft. 2 380 ft part du pylône, 1 800 ft additionne les deux nombres du pylône et 3 020 ft additionne les deux sommets."
       }
      ]
     }

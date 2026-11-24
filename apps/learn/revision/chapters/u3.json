@@ -5,7 +5,7 @@
   "questions": 20,
   "minutes": 30
  },
- "pitch": "La météo décide de presque tous tes vols VFR. Ce chapitre couvre l'atmosphère, l'altimétrie, les nuages, le vent, les fronts, les dangers (orages, givrage, brouillard) et les messages et cartes que tu consultes avant de partir.",
+ "pitch": "La météo décide de presque tous tes vols VFR. Ce chapitre couvre l'atmosphère, l'altimétrie, les nuages, le vent et les fronts. Il détaille aussi les dangers (orages, givrage, brouillard) et les messages et cartes à consulter avant de partir.",
  "essentials": [
   "**ISA** (atmosphère standard) : 15 °C et 1 013,25 hPa au niveau de la mer, −2 °C par 1 000 ft jusqu'à 11 km (−56,5 °C).",
   "**QNH** = altitude (celle du terrain, posé) ; **QFE** = hauteur (0 au sol) ; **1013** = niveau de vol.",
@@ -121,7 +121,7 @@
      "type": "formula",
      "label": "Erreurs d'altimètre : pression et température",
      "formula": "Pression : écart ≈ (QNH affiché − QNH réel) × 28 ft\nAir froid : écart ≈ 4 % × hauteur au-dessus de la station × (écart ISA ÷ 10)",
-     "example": "Calé sur 1 018 hPa, à 3 000 ft indiqués, vers une zone à 1 008 hPa : 10 × 28 = 280 ft, tu es à **2 720 ft**. À 2 500 ft du sol par ISA −20 : 0,04 × 2 500 × 2 = **200 ft** plus bas."
+     "example": "Calé sur 1 018 hPa, à 3 000 ft indiqués, vers une zone à 1 008 hPa : 10 × 28 = 280 ft. Tu es à **2 720 ft**. À 2 500 ft du sol par ISA −20 : 0,04 × 2 500 × 2 = **200 ft** plus bas."
     },
     {
      "type": "memo",
@@ -363,7 +363,7 @@
   },
   {
    "title": "Le vent et le relief",
-   "summary": "Le vent naît des différences de pression, tourne à cause de la rotation de la Terre, puis se déforme au contact du sol et du relief.",
+   "summary": "Le vent naît des écarts de pression, tourne avec la rotation de la Terre et se déforme près du sol et du relief.",
    "blocks": [
     {
      "type": "table",
@@ -436,7 +436,7 @@
      "type": "diagram",
      "title": "Foehn, ondes de ressaut et rotor",
      "svg": "<svg viewBox=\"0 8 720 288\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"300\" fill=\"#ffffff\"/>\n<defs><marker id=\"u3mb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2b7a9b\"/></marker>\n<marker id=\"u3mc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker></defs>\n<text x=\"130\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">AU VENT</text>\n<text x=\"130\" y=\"44\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">air soulevé : nuages, pluie</text>\n<text x=\"590\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">SOUS LE VENT</text>\n<text x=\"590\" y=\"44\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">air descendant : plus chaud, plus sec</text>\n<path d=\"M20,262 C120,262 190,250 236,222 C280,190 300,80 345,80 C395,80 420,200 455,238 C480,262 505,190 540,148 C568,118 600,150 630,190 C650,215 690,180 714,160\" fill=\"none\" stroke=\"#2b7a9b\" stroke-width=\"3\" marker-end=\"url(#u3mb)\"/>\n<polygon points=\"190,290 270,195 320,110 340,98 362,112 420,200 490,290\" fill=\"#d9c9a8\" stroke=\"#7a5c2e\" stroke-width=\"1.5\"/>\n<path d=\"M200,226 L244,226 L270,195 L320,110 L340,98 L362,112 L374,128 Q394,116 388,98 Q384,74 358,76 Q344,62 318,68 Q294,62 286,82 Q260,86 260,108 Q234,118 240,142 Q212,156 222,180 Q198,196 200,226 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<g stroke=\"#2b7a9b\" stroke-width=\"2\"><line x1=\"206\" y1=\"232\" x2=\"201\" y2=\"256\"/><line x1=\"216\" y1=\"232\" x2=\"212\" y2=\"250\"/><line x1=\"226\" y1=\"232\" x2=\"223\" y2=\"243\"/></g>\n<line x1=\"40\" y1=\"226\" x2=\"200\" y2=\"226\" stroke=\"#2b7a9b\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n<text x=\"40\" y=\"200\" font-size=\"13\" fill=\"#2b7a9b\">saturation</text>\n<text x=\"40\" y=\"219\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">3 000 ft : 9 °C</text>\n<text x=\"24\" y=\"250\" font-size=\"14\" font-weight=\"700\" fill=\"#2b7a9b\">vent fort</text>\n<text x=\"24\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">1 000 ft : 15 °C</text>\n<text x=\"341\" y=\"54\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">7 000 ft : 3 °C</text>\n<ellipse cx=\"552\" cy=\"108\" rx=\"44\" ry=\"10\" fill=\"#ffffff\" stroke=\"#8a96ad\" stroke-width=\"2\"/>\n<ellipse cx=\"556\" cy=\"82\" rx=\"32\" ry=\"8\" fill=\"#ffffff\" stroke=\"#8a96ad\" stroke-width=\"2\"/>\n<text x=\"608\" y=\"86\" font-size=\"13\" fill=\"#14213d\">nuages</text>\n<text x=\"608\" y=\"102\" font-size=\"13\" fill=\"#14213d\">lenticulaires</text>\n<path d=\"M564,248 A16,16 0 1,1 548,232\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\" marker-end=\"url(#u3mc)\"/>\n<text x=\"574\" y=\"246\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\">rotor :</text>\n<text x=\"574\" y=\"263\" font-size=\"13\" fill=\"#c0392b\">turbulence sévère</text>\n<line x1=\"0\" y1=\"290\" x2=\"720\" y2=\"290\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"712\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">1 000 ft : 21 °C, air sec</text>\n</svg>",
-     "caption": "L'air laisse son humidité en pluie au vent ; il redescend sous le vent à 3 °C/1 000 ft et arrive plus chaud et plus sec, sous un ciel dégagé."
+     "caption": "L'air laisse son humidité en pluie au vent. Il redescend sous le vent à 3 °C/1 000 ft : il arrive plus chaud et plus sec, sous un ciel dégagé."
     },
     {
      "type": "bullets",
@@ -727,9 +727,15 @@
      "decode": "`LFBO` indicatif à 4 lettres de l'aérodrome (Toulouse-Blagnac) · `171030Z` le 17 à 10 h 30 UTC\n`27012G25KT` vent du 270° vrai, 12 kt, rafales à 25 kt (G si 10 kt ou plus au-dessus de la moyenne)\n`240V300` direction variable entre 240 et 300° (écart de 60° ou plus ; vent de moins de 3 kt qui varie : `VRB`)\n`6000` visibilité 6 000 m (`9999` = 10 km ou plus) · `-SHRA` faibles averses de pluie\n`FEW015` 1 à 2 octas à 1 500 ft · `BKN030CB` 5 à 7 octas de cumulonimbus à 3 000 ft\n`14/09` température 14 °C, point de rosée 9 °C (`M02` = −2 °C) · `Q1008` QNH 1 008 hPa\n`TEMPO TSRA` tendance sur 2 h : orages temporaires. **NOSIG** = aucun changement significatif prévu dans les 2 h (ni « pas de SIGMET », ni « pour la journée »)"
     },
     {
+     "type": "code",
+     "label": "METAR d'un matin d'hiver anticyclonique",
+     "text": "METAR LFRS 050630Z 00000KT 0300 R21/0550 FG VV002\n      04/04 Q1027 BECMG 2000 BR",
+     "decode": "`00000KT` calme · `0300` visibilité 300 m · `R21/0550` portée visuelle de piste (RVR, donnée sous 1 500 m) : 550 m, piste 21 · `FG` brouillard · `VV002` ciel invisible, 200 ft\n`04/04` T = Td : air saturé · `Q1027` QNH élevé (anticyclone) · `BECMG 2000 BR` amélioration prévue dans les 2 h : 2 000 m dans la brume"
+    },
+    {
      "type": "key",
      "title": "Plafond et CAVOK",
-     "text": "**Plafond** : base de la plus basse couche **BKN ou OVC** sous 20 000 ft. `FEW006 SCT012 BKN025 OVC080` : plafond à **2 500 ft**.\n**CAVOK** (« ciel et visibilité OK ») remplace visibilité, temps présent et nuages si : visibilité **10 km ou plus** ; aucun nuage sous **5 000 ft** (ou sous l'altitude minimale de secteur la plus élevée, si elle est supérieure), **ni CB ni TCU** ; **aucun phénomène significatif**."
+     "text": "**Plafond** : base de la plus basse couche **BKN ou OVC** sous 20 000 ft. `FEW006 SCT012 BKN025 OVC080` : plafond à **2 500 ft**.\n**CAVOK** (« ciel et visibilité OK ») remplace visibilité, temps présent et nuages. Conditions : visibilité **10 km ou plus** ; **aucun phénomène significatif** ; ni CB ni TCU. Et aucun nuage sous **5 000 ft**, ou sous l'altitude minimale de secteur la plus élevée si elle est supérieure."
     },
     {
      "type": "table",
@@ -782,60 +788,41 @@
        "Se congelant (surfondu)",
        "`HZ` `FU`",
        "Brume sèche, fumée"
-      ],
-      [
-       "`RE`",
-       "Temps récent (`RERA`)",
-       "`WS`",
-       "Cisaillement signalé sur une piste"
       ]
      ],
-     "note": "Bases en centaines de pieds **au-dessus du terrain** : `BKN008` = 5 à 7 octas à 800 ft. `+TSRA` = orage avec forte pluie ; `VCTS` = orage au voisinage. `R21/0550` = portée visuelle de piste (RVR) de 550 m sur la piste 21, donnée sous 1 500 m. `00000KT` = calme."
+     "note": "Bases en centaines de pieds **au-dessus du terrain** : `BKN008` = 5 à 7 octas à 800 ft. `+TSRA` = orage avec forte pluie ; `VCTS` = orage au voisinage ; `RERA` = pluie récente ; `WS` = cisaillement signalé sur une piste."
     },
     {
-     "type": "code",
-     "label": "METAR d'un matin d'hiver anticyclonique",
-     "text": "METAR LFRS 050630Z 00000KT 0300 R21/0550 FG VV002\n      04/04 Q1027 BECMG 2000 BR",
-     "decode": "`00000KT` calme · `0300` visibilité 300 m · `R21/0550` RVR de 550 m sur la piste 21 · `FG` brouillard · `VV002` ciel invisible, 200 ft\n`04/04` T = Td : air saturé · `Q1027` QNH élevé (anticyclone) · `BECMG 2000 BR` amélioration prévue dans les 2 h : 2 000 m dans la brume"
+     "type": "table",
+     "caption": "Les groupes d'évolution du TAF",
+     "columns": [
+      "Groupe",
+      "Sens"
+     ],
+     "rows": [
+      [
+       "`BECMG` (becoming)",
+       "Changement **durable**, qui survient pendant la période indiquée puis s'installe"
+      ],
+      [
+       "`TEMPO`",
+       "Fluctuations **temporaires** de moins d'1 h ; entre elles, les conditions de base restent valables"
+      ],
+      [
+       "`FM` (from)",
+       "Changement rapide à l'heure dite : **tout** ce qui précède est remplacé"
+      ],
+      [
+       "`PROB30` `PROB40`",
+       "Probabilité de **30 ou 40 %**, seule ou suivie de TEMPO"
+      ]
+     ]
     },
     {
      "type": "code",
      "label": "TAF (prévision d'aérodrome) : TAF court 9 h, TAF long 24 ou 30 h",
      "text": "TAF LFBO 170500Z 1706/1812 24010KT 9999 SCT030\n    TEMPO 1714/1718 3000 SHRA BKN015\n    PROB30 TEMPO 1715/1719 TSRA BKN025CB\n    BECMG 1720/1722 30015G25KT\n    FM180600 32008KT CAVOK",
      "decode": "`1706/1812` valable du 17 à 06 h au 18 à 12 h UTC (30 h) · `24010KT 9999 SCT030` conditions de base\n`TEMPO 1714/1718` fluctuations **temporaires** : épisodes de moins d'1 h, au total moins de la moitié de la période\n`PROB30` probabilité de 30 % (seules valeurs : 30 et 40), ici d'orages temporaires de 15 à 19 h\n`BECMG 1720/1722` changement **durable** survenant entre 20 et 22 h : vent 300°/15 kt, rafales 25 kt\n`FM180600` dès le 18 à 06 h UTC, **tout** ce qui précède est remplacé : 320°/8 kt, CAVOK"
-    },
-    {
-     "type": "compare",
-     "items": [
-      {
-       "title": "BECMG (becoming)",
-       "points": [
-        "Changement **durable**",
-        "Survient pendant la période indiquée, puis remplace les anciennes conditions"
-       ]
-      },
-      {
-       "title": "TEMPO",
-       "points": [
-        "Fluctuations **temporaires**, de moins d'1 h chacune",
-        "Entre elles, les conditions de base restent valables"
-       ]
-      },
-      {
-       "title": "FM (from)",
-       "points": [
-        "Changement rapide à l'heure dite (jour, heure, minutes UTC)",
-        "**Tout** ce qui précède est remplacé"
-       ]
-      },
-      {
-       "title": "PROB30 / PROB40",
-       "points": [
-        "Probabilité de **30 ou 40 %**",
-        "Seule ou suivie de TEMPO"
-       ]
-      }
-     ]
     },
     {
      "type": "trap",
@@ -867,7 +854,7 @@
        "Dérive, vitesse sol, carburant"
       ]
      ],
-     "note": "TEMSI : zones entourées de **festons**, bases et sommets en niveaux de vol ; Cb `ISOL` isolés (moins de 50 % de la zone), `OCNL` occasionnels (50 à 75 %), `FRQ` fréquents (plus de 75 %)."
+     "note": "TEMSI : zones entourées de **festons**, bases et sommets en niveaux de vol. Cb `ISOL` isolés (moins de 50 % de la zone), `OCNL` occasionnels (50 à 75 %), `FRQ` fréquents (plus de 75 %)."
     },
     {
      "type": "bullets",
