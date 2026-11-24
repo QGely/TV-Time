@@ -1,0 +1,756 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u1",
+   "title": "Droit aérien",
+   "description": "La réglementation du vol privé : organisations et textes, licences, règles de l'air, espaces aériens, services ATS et aérodromes (examen : 20 questions, 30 min).",
+   "skills": [
+    {
+     "id": "u1s10",
+     "title": "Aérodromes : marques, balisage et signaux",
+     "icon": "🚦",
+     "tips": "Les marques, panneaux et feux d'aérodrome suivent l'annexe 14 de l'OACI ; les signaux adressés aux pilotes (aire à signaux, signaux lumineux et pyrotechniques) figurent à l'appendice 1 du règlement SERA. Code couleur de base : marques de piste blanches, marques de voies de circulation et de points d'attente jaunes.\n\nMarques de piste :\n• Seuil : bandes longitudinales blanches (« touches de piano »), d'autant plus nombreuses que la piste est large : 4 pour 18 m, 6 pour 23 m, 8 pour 30 m, 12 pour 45 m, 16 pour 60 m.\n• Numéro : orientation magnétique arrondie à la dizaine, lisible depuis l'approche ; L, C ou R départagent des pistes parallèles. Axe : ligne de traits blancs.\n• Point de visée : deux larges rectangles blancs de part et d'autre de l'axe, à 300 m du seuil sur une piste de 1 200 à 2 400 m (150 m sur une piste de moins de 800 m).\n• Zone de toucher : paires de rectangles espacées de 150 m, qui renseignent sur la distance parcourue depuis le seuil.\n• Seuil décalé : barre transversale blanche, précédée de flèches blanches sur l'axe. La partie fléchée sert au roulage, au décollage et au roulement à l'atterrissage dans l'autre sens, mais on n'y pose pas les roues en atterrissant vers le seuil décalé.\n• Chevrons jaunes avant un seuil : surface revêtue impropre à l'utilisation normale (prolongement, aire de souffle) : ni roulage, ni décollage, ni atterrissage.\n• Croix : blanche aux extrémités d'une piste fermée, jaune sur une voie de circulation fermée.\n\nVoies de circulation et points d'attente :\n• Axe jaune continu, que l'on suit roue avant dessus.\n• Point d'attente avant piste : deux lignes continues côté voie, deux discontinues côté piste ; on s'arrête avant les lignes continues. Plus loin de la piste, un marquage en échelle protège les zones sensibles des pistes équipées pour les approches de catégorie II ou III.\n• Point d'attente intermédiaire : une seule ligne jaune discontinue en travers de la voie, souvent avant une intersection de voies ; on s'y arrête sur instruction.\n• Panneaux d'instruction obligatoire : blanc sur rouge (« 09-27 » au point d'attente, « NO ENTRY ») ; on ne les dépasse pas sans autorisation.\n• Panneaux d'indication : emplacement en jaune sur noir (« vous êtes sur la voie B ») ; direction et destination en noir sur jaune, avec une flèche.\n• Barre d'arrêt : rangée de feux rouges encastrés en travers de la voie au point d'attente. On s'arrête devant une barre allumée, même avec une clairance, et on le signale. Feux de protection de piste : feux jaunes clignotant en alternance.\n\nBalisage lumineux :\n• Bords de piste blancs ; sur certaines pistes aux instruments, jaunes sur les 600 derniers mètres (ou le dernier tiers s'il est plus court).\n• Seuil : feux verts vus de l'approche. Fin de piste : feux rouges vus de la piste. Avant un seuil décalé, les feux de bord apparaissent rouges au pilote en approche.\n• Axe de piste (s'il est balisé) : blanc, puis alterné rouge et blanc de 900 m à 300 m de l'extrémité, rouge sur les 300 derniers mètres.\n• Voies de circulation : bords bleus, axe vert.\n\nIndicateur de pente d'approche (PAPI) :\n• Barre de 4 unités, normalement à gauche de la piste vue de l'approche ; plan souvent de 3°. L'APAPI n'a que 2 unités.\n• Une unité paraît blanche si vous êtes au-dessus de son calage, rouge au-dessous ; en descendant, le rouge gagne depuis le côté piste.\n• 4 blancs : nettement trop haut ; 3 blancs et 1 rouge : un peu haut ; 2 et 2 : sur le plan ; 1 blanc et 3 rouges : un peu bas ; 4 rouges : nettement trop bas.\n• Calcul sur un plan de 3° : hauteur ≈ 300 ft par NM du toucher (2 NM → 600 ft) ; taux de descente ≈ 5 × vitesse sol en kt (80 kt → 400 ft/min).\n\nAire à signaux (compléments à la leçon Aérodromes) :\n• haltère blanche : atterrissage, décollage et roulage sur pistes et voies seulement ; barrée de noir sur chaque disque : atterrissage et décollage sur piste seulement, les autres manœuvres pouvant se faire ailleurs ;\n• T d'atterrissage blanc ou orange : atterrir et décoller parallèlement au fût, vers la barre transversale ; de nuit, il est éclairé ou souligné de feux blancs ;\n• deux chiffres disposés verticalement sur la tour ou près d'elle : direction de décollage, en dizaines de degrés magnétiques ; lettre C noire sur fond jaune : bureau de piste.\n\nManche à air : elle s'étire dans le sens où va le vent, qui vient donc du côté du mât. Plus elle est tendue, plus le vent est fort ; si elle bat ou change sans cesse de direction, le vent est irrégulier.\n\nSens du circuit (SERA.3225) : sauf indication contraire (VAC, aire à signaux, ATC), virages à gauche à l'approche et après le décollage ; décollage et atterrissage face au vent, sauf raison de sécurité, de configuration de piste ou de trafic. Le circuit est du côté du sens des virages, vu dans le sens de l'atterrissage : piste 27 main gauche, circuit au sud et vent arrière au cap 090° ; main droite, circuit au nord.\n\nSignaux de la tour :\n• en vol : vert fixe, atterrissez ; rouge fixe, cédez le passage et continuez à tourner ; éclats verts, revenez pour atterrir ; éclats rouges, aérodrome dangereux ; éclats blancs, atterrissez ici et gagnez l'aire de trafic ; artifice rouge, n'atterrissez pas pour le moment, malgré toute instruction antérieure ;\n• au sol : vert fixe, décollez ; rouge fixe, arrêtez ; éclats verts, roulez ; éclats rouges, dégagez l'aire d'atterrissage ; éclats blancs, retournez au point de départ.\nProjectiles tirés du sol toutes les 10 secondes, éclatant en feux rouges et verts : vous êtes dans une zone réglementée, interdite ou dangereuse, ou allez y entrer.\n\nPièges : confondre panneau d'emplacement (jaune sur noir) et de direction (noir sur jaune) ; franchir une barre d'arrêt allumée parce qu'on est autorisé ; lire le PAPI à l'envers (plus il y a de rouge, plus on est bas).",
+     "vocab": [
+      {
+       "term": "Seuil décalé",
+       "translation": "Seuil placé après le début de piste, précédé de flèches blanches"
+      },
+      {
+       "term": "Point de visée",
+       "translation": "Deux larges rectangles blancs que l'on vise en finale"
+      },
+      {
+       "term": "Zone de toucher",
+       "translation": "Paires de rectangles blancs espacées de 150 m après le seuil"
+      },
+      {
+       "term": "PAPI",
+       "translation": "Barre de 4 feux situant l'avion par rapport au plan d'approche"
+      },
+      {
+       "term": "APAPI",
+       "translation": "PAPI simplifié, à 2 unités"
+      },
+      {
+       "term": "Point d'attente",
+       "translation": "Limite où l'on s'arrête avant d'entrer sur une piste"
+      },
+      {
+       "term": "Point d'attente intermédiaire",
+       "translation": "Ligne jaune discontinue où l'on s'arrête sur instruction"
+      },
+      {
+       "term": "Barre d'arrêt",
+       "translation": "Feux rouges en travers de la voie, à ne pas franchir allumés"
+      },
+      {
+       "term": "Panneau d'obligation",
+       "translation": "Blanc sur rouge : ne pas aller au-delà sans autorisation"
+      },
+      {
+       "term": "Panneau d'emplacement",
+       "translation": "Jaune sur noir : indique la voie où l'on se trouve"
+      },
+      {
+       "term": "Chevrons",
+       "translation": "Marques jaunes d'une surface impropre à l'utilisation normale"
+      },
+      {
+       "term": "T d'atterrissage",
+       "translation": "Signal au sol : atterrir parallèlement au fût, vers la barre"
+      },
+      {
+       "term": "Haltère",
+       "translation": "Signal au sol : mouvements limités aux pistes (et voies)"
+      },
+      {
+       "term": "Feux de protection de piste",
+       "translation": "Feux jaunes clignotants annonçant l'entrée sur une piste"
+      },
+      {
+       "term": "Main droite",
+       "translation": "Tour de piste dont les virages se font à droite"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Piste vue de dessus : marques et feux",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"470\" rx=\"10\" fill=\"#e9f0de\"/><rect x=\"30\" y=\"180\" width=\"660\" height=\"100\" fill=\"#50555c\"/><rect x=\"520\" y=\"278\" width=\"44\" height=\"192\" fill=\"#50555c\"/><line x1=\"40\" y1=\"230\" x2=\"70\" y2=\"230\" stroke=\"#ffffff\" stroke-width=\"4\"/><polygon points=\"70,221 84,230 70,239\" fill=\"#ffffff\"/><line x1=\"88\" y1=\"230\" x2=\"118\" y2=\"230\" stroke=\"#ffffff\" stroke-width=\"4\"/><polygon points=\"118,221 132,230 118,239\" fill=\"#ffffff\"/><rect x=\"140\" y=\"182\" width=\"6\" height=\"96\" fill=\"#ffffff\"/><rect x=\"152\" y=\"184\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"195\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"206\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"217\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"236\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"247\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"258\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><rect x=\"152\" y=\"269\" width=\"46\" height=\"7\" fill=\"#ffffff\"/><text x=\"226\" y=\"230\" transform=\"rotate(90 226 230)\" font-size=\"30\" font-weight=\"bold\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#ffffff\">09</text><rect x=\"258\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"350\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"396\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"442\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"488\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"534\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"580\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"626\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"672\" y=\"228\" width=\"28\" height=\"4\" fill=\"#ffffff\"/><rect x=\"270\" y=\"197\" width=\"26\" height=\"6\" fill=\"#ffffff\"/><rect x=\"270\" y=\"257\" width=\"26\" height=\"6\" fill=\"#ffffff\"/><rect x=\"410\" y=\"197\" width=\"26\" height=\"6\" fill=\"#ffffff\"/><rect x=\"410\" y=\"257\" width=\"26\" height=\"6\" fill=\"#ffffff\"/><rect x=\"462\" y=\"197\" width=\"26\" height=\"6\" fill=\"#ffffff\"/><rect x=\"462\" y=\"257\" width=\"26\" height=\"6\" fill=\"#ffffff\"/><rect x=\"322\" y=\"193\" width=\"60\" height=\"13\" fill=\"#ffffff\"/><rect x=\"322\" y=\"254\" width=\"60\" height=\"13\" fill=\"#ffffff\"/><path d=\"M542 470 L542 300 Q542 232 472 231\" stroke=\"#f2c200\" stroke-width=\"3\" fill=\"none\"/><line x1=\"520\" y1=\"340\" x2=\"564\" y2=\"340\" stroke=\"#f2c200\" stroke-width=\"2.6\"/><line x1=\"520\" y1=\"346\" x2=\"564\" y2=\"346\" stroke=\"#f2c200\" stroke-width=\"2.6\"/><line x1=\"521\" y1=\"326\" x2=\"564\" y2=\"326\" stroke=\"#f2c200\" stroke-width=\"2.6\" stroke-dasharray=\"6 4\"/><line x1=\"521\" y1=\"332\" x2=\"564\" y2=\"332\" stroke=\"#f2c200\" stroke-width=\"2.6\" stroke-dasharray=\"6 4\"/><rect x=\"458\" y=\"325\" width=\"56\" height=\"22\" rx=\"2\" fill=\"#d62828\"/><text x=\"486\" y=\"341\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#ffffff\">09-27</text><circle cx=\"50\" cy=\"180\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"50\" cy=\"280\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"90\" cy=\"180\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"90\" cy=\"280\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"130\" cy=\"180\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"130\" cy=\"280\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"200\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"200\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"240\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"240\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"280\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"280\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"320\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"320\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"360\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"360\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"400\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"400\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"440\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"440\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"480\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"480\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"520\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"560\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"600\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"600\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"640\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"640\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"680\" cy=\"180\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"680\" cy=\"280\" r=\"3.6\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"188\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"188\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"200\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"200\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"212\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"212\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"224\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"224\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"236\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"236\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"248\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"248\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"260\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"260\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"134\" cy=\"272\" r=\"3.6\" fill=\"#2f9e44\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"686\" cy=\"272\" r=\"3.6\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"516\" cy=\"300\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"568\" cy=\"300\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"516\" cy=\"372\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"568\" cy=\"372\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"516\" cy=\"412\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"568\" cy=\"412\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"516\" cy=\"452\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><circle cx=\"568\" cy=\"452\" r=\"3.6\" fill=\"#1c7ed6\" stroke=\"#343a40\" stroke-width=\"1\"/><rect x=\"328\" y=\"164\" width=\"18\" height=\"10\" rx=\"2\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1.2\"/><rect x=\"328\" y=\"150\" width=\"18\" height=\"10\" rx=\"2\" fill=\"#e03131\" stroke=\"#343a40\" stroke-width=\"1.2\"/><rect x=\"328\" y=\"136\" width=\"18\" height=\"10\" rx=\"2\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1.2\"/><rect x=\"328\" y=\"122\" width=\"18\" height=\"10\" rx=\"2\" fill=\"#ffffff\" stroke=\"#343a40\" stroke-width=\"1.2\"/><text x=\"95\" y=\"36\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Avant le seuil décalé :</text><text x=\"95\" y=\"54\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">flèches blanches,</text><text x=\"95\" y=\"72\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">feux de bord rouges</text><line x1=\"85\" y1=\"82\" x2=\"70\" y2=\"222\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"270\" y=\"36\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Seuil : barre, bandes,</text><text x=\"270\" y=\"54\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">numéro et feux verts</text><line x1=\"246\" y1=\"62\" x2=\"178\" y2=\"182\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"356\" y=\"122\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\" fill=\"#14213d\">PAPI à gauche :</text><text x=\"356\" y=\"140\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">2 rouges + 2 blancs</text><text x=\"356\" y=\"158\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">= sur le plan</text><text x=\"585\" y=\"40\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Feux de bord : blancs</text><line x1=\"590\" y1=\"48\" x2=\"600\" y2=\"175\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"655\" y=\"100\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Fin de piste :</text><text x=\"655\" y=\"118\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">feux rouges</text><line x1=\"678\" y1=\"124\" x2=\"686\" y2=\"184\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"352\" y=\"320\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Point de visée (≈ 300 m)</text><line x1=\"352\" y1=\"306\" x2=\"352\" y2=\"270\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"130\" y=\"318\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Zones de toucher :</text><text x=\"130\" y=\"336\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">paires tous les 150 m</text><line x1=\"206\" y1=\"312\" x2=\"282\" y2=\"266\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"450\" y=\"374\" font-size=\"14\" text-anchor=\"end\" font-weight=\"normal\" fill=\"#14213d\">Panneau rouge : ne pas</text><text x=\"450\" y=\"392\" font-size=\"14\" text-anchor=\"end\" font-weight=\"normal\" fill=\"#14213d\">franchir sans clairance</text><line x1=\"452\" y1=\"366\" x2=\"468\" y2=\"349\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"578\" y=\"318\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">Point d'attente :</text><text x=\"578\" y=\"336\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">arrêt avant les</text><text x=\"578\" y=\"354\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">lignes continues</text><line x1=\"576\" y1=\"334\" x2=\"566\" y2=\"341\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"578\" y=\"400\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">Voie : axe jaune,</text><text x=\"578\" y=\"418\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">bords bleus</text><line x1=\"576\" y1=\"405\" x2=\"571\" y2=\"410\" stroke=\"#14213d\" stroke-width=\"1.3\"/><text x=\"30\" y=\"444\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\" fill=\"#14213d\">Sens d'atterrissage (piste 09)</text><line x1=\"246\" y1=\"439\" x2=\"286\" y2=\"439\" stroke=\"#14213d\" stroke-width=\"3\"/><polygon points=\"286,432 300,439 286,446\" fill=\"#14213d\"/></svg>",
+       "caption": "Extrémité d'une piste 09 de 30 m de large (8 bandes de seuil) avec seuil décalé, PAPI sur le plan et voie de circulation menant à un point d'attente. Schéma sans échelle : en réalité, le point de visée est à environ 300 m du seuil."
+      },
+      {
+       "title": "Aire à signaux : les signaux au sol de SERA",
+       "svg": "<svg viewBox=\"0 0 720 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"440\" rx=\"10\" fill=\"#f4f6f1\"/><rect x=\"6\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"15\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"54\" y=\"40\" width=\"72\" height=\"72\" fill=\"#e03131\" stroke=\"#ffffff\" stroke-width=\"1\"/><line x1=\"57\" y1=\"43\" x2=\"123\" y2=\"109\" stroke=\"#ffd43b\" stroke-width=\"9\"/><line x1=\"123\" y1=\"43\" x2=\"57\" y2=\"109\" stroke=\"#ffd43b\" stroke-width=\"9\"/><text x=\"90\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Atterrissage</text><text x=\"90\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">interdit</text><rect x=\"184\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"193\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"232\" y=\"40\" width=\"72\" height=\"72\" fill=\"#e03131\" stroke=\"#ffffff\" stroke-width=\"1\"/><line x1=\"235\" y1=\"43\" x2=\"301\" y2=\"109\" stroke=\"#ffd43b\" stroke-width=\"9\"/><text x=\"268\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Précautions spéciales</text><text x=\"268\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">à l'approche et à</text><text x=\"268\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">l'atterrissage</text><rect x=\"362\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"371\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"412\" y=\"70\" width=\"68\" height=\"12\" fill=\"#ffffff\"/><circle cx=\"404\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><circle cx=\"488\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><text x=\"446\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Haltère blanche :</text><text x=\"446\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">pistes et voies</text><text x=\"446\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">seulement</text><rect x=\"540\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"549\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"590\" y=\"70\" width=\"68\" height=\"12\" fill=\"#ffffff\"/><circle cx=\"582\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><rect x=\"579\" y=\"58\" width=\"6\" height=\"36\" fill=\"#111111\"/><circle cx=\"666\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><rect x=\"663\" y=\"58\" width=\"6\" height=\"36\" fill=\"#111111\"/><text x=\"624\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Haltère barrée :</text><text x=\"624\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">atterrir et décoller</text><text x=\"624\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">sur piste seulement</text><rect x=\"6\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"15\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"116\" y=\"254\" width=\"13\" height=\"72\" fill=\"#ffffff\"/><rect x=\"40\" y=\"284\" width=\"78\" height=\"12\" fill=\"#ffffff\"/><line x1=\"38\" y1=\"334\" x2=\"112\" y2=\"334\" stroke=\"#ffd43b\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><polygon points=\"112,327 126,334 112,341\" fill=\"#ffd43b\"/><text x=\"90\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">T d'atterrissage :</text><text x=\"90\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">atterrir vers la barre</text><text x=\"90\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">(flèche pointillée)</text><rect x=\"184\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"193\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><path d=\"M238 330 L238 280 L286 280\" stroke=\"#ff922b\" stroke-width=\"13\" fill=\"none\" stroke-linejoin=\"miter\"/><polygon points=\"284,260 314,280 284,300\" fill=\"#ff922b\"/><text x=\"268\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Flèche coudée :</text><text x=\"268\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">tour de piste</text><text x=\"268\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">à droite</text><rect x=\"362\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"371\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"443\" y=\"320\" width=\"6\" height=\"22\" fill=\"#adb5bd\"/><rect x=\"422\" y=\"242\" width=\"48\" height=\"80\" rx=\"3\" fill=\"#ffd43b\" stroke=\"#111111\" stroke-width=\"1\"/><text x=\"446\" y=\"275\" font-size=\"32\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#111111\">2</text><text x=\"446\" y=\"312\" font-size=\"32\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#111111\">7</text><text x=\"446\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Chiffres verticaux :</text><text x=\"446\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">décollage vers</text><text x=\"446\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">270° environ</text><rect x=\"540\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"549\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"621\" y=\"310\" width=\"6\" height=\"32\" fill=\"#adb5bd\"/><rect x=\"592\" y=\"248\" width=\"64\" height=\"64\" rx=\"3\" fill=\"#ffd43b\" stroke=\"#111111\" stroke-width=\"1\"/><text x=\"624\" y=\"296\" font-size=\"46\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#111111\" dominant-baseline=\"central\">C</text><text x=\"624\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Lettre C :</text><text x=\"624\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">bureau de piste</text><text x=\"624\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">(compte rendu ATS)</text></svg>",
+       "caption": "Signaux horizontaux exposés dans l'aire à signaux et panneaux verticaux placés sur ou près de la tour (chiffres, lettre C). La flèche pointillée du T n'existe pas au sol : elle indique le sens d'atterrissage."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u1s10q01",
+       "q": "Sur un aérodrome conforme à l'annexe 14 de l'OACI, de quelle couleur sont les feux de bord d'une voie de circulation ?",
+       "choices": [
+        "Bleus",
+        "Verts",
+        "Blancs",
+        "Jaunes"
+       ],
+       "answer": 0,
+       "explanation": "Les bords de voie de circulation sont balisés en bleu et leur axe, quand il est équipé, en vert. Le blanc est réservé aux bords de piste ; le jaune signale par exemple les feux de protection de piste ou la fin de certaines pistes aux instruments."
+      },
+      {
+       "id": "u1s10q02",
+       "q": "Au bord d'une voie de circulation, un panneau porte une inscription blanche sur fond rouge. Que vous indique-t-il ?",
+       "choices": [
+        "Votre position actuelle sur l'aire de manœuvre de cet aérodrome",
+        "La direction à suivre pour rejoindre une piste ou un parking",
+        "Une instruction obligatoire : ne pas aller au-delà sans autorisation",
+        "Une zone de travaux où le roulage reste possible avec prudence"
+       ],
+       "answer": 2,
+       "explanation": "Les panneaux d'instruction obligatoire (blanc sur rouge) marquent une limite à ne pas franchir sans clairance, par exemple « 09-27 » au point d'attente ou « NO ENTRY ». La position est donnée par un panneau jaune sur noir, la direction par un panneau noir sur jaune."
+      },
+      {
+       "id": "u1s10q03",
+       "q": "En finale, le PAPI vous présente deux feux rouges et deux feux blancs. Où vous situez-vous ?",
+       "choices": [
+        "Légèrement au-dessus du plan de descente",
+        "Sur le plan de descente, à la bonne hauteur",
+        "Légèrement au-dessous du plan de descente",
+        "Nettement au-dessous du plan de descente"
+       ],
+       "answer": 1,
+       "explanation": "Deux rouges (côté piste) et deux blancs : vous êtes sur le plan, souvent de 3°. Trois blancs et un rouge : un peu haut ; un blanc et trois rouges : un peu bas ; quatre rouges : nettement trop bas."
+      },
+      {
+       "id": "u1s10q04",
+       "q": "En approche de nuit, de quelle couleur vous apparaissent les feux qui matérialisent le seuil de piste ?",
+       "choices": [
+        "Rouges",
+        "Blancs",
+        "Bleus",
+        "Verts"
+       ],
+       "answer": 3,
+       "explanation": "Les feux de seuil sont verts vus de l'approche. Les feux de fin de piste sont rouges vus de la piste, ceux de bord de piste blancs et ceux de bord de voie de circulation bleus."
+      },
+      {
+       "id": "u1s10q05",
+       "q": "Dans l'aire à signaux, vous voyez un T d'atterrissage blanc. Comment l'utilisez-vous ?",
+       "choices": [
+        "Atterrir parallèlement au fût du T, en vous éloignant de sa barre transversale",
+        "Atterrir perpendiculairement au fût du T, du côté de sa barre transversale",
+        "Atterrir parallèlement au fût du T, en allant vers sa barre transversale",
+        "Atterrir sur la piste la plus proche du T, en ignorant son orientation"
+       ],
+       "answer": 2,
+       "explanation": "SERA : le T d'atterrissage, blanc ou orange, donne la direction d'atterrissage et de décollage, parallèlement au fût et vers la barre transversale. Image utile : un avion vu de dessus, la barre figurant les ailes, qui vole vers l'avant. De nuit, le T est éclairé ou souligné de feux blancs."
+      },
+      {
+       "id": "u1s10q06",
+       "q": "Selon SERA, dans quelle direction un avion doit-il en principe décoller et atterrir ?",
+       "choices": [
+        "Face au vent, sauf raison de sécurité, de piste ou de trafic",
+        "Vent arrière, pour réduire le roulage jusqu'au parking",
+        "Dans le sens de la piste la plus longue, en ignorant le vent",
+        "Dans le sens choisi par le premier avion présent dans le circuit"
+       ],
+       "answer": 0,
+       "explanation": "SERA.3225 : on décolle et on atterrit face au vent, sauf si la sécurité, la configuration de la piste ou la circulation aérienne imposent une autre direction. Le vent de face réduit la vitesse sol, donc les distances de décollage et d'atterrissage."
+      },
+      {
+       "id": "u1s10q07",
+       "q": "Une grande croix blanche est peinte à chaque extrémité d'une piste. Que signifie-t-elle ?",
+       "choices": [
+        "La piste est réservée aux planeurs",
+        "La piste est utilisable de jour, pas de nuit",
+        "Le seuil est décalé temporairement",
+        "La piste est fermée"
+       ],
+       "answer": 3,
+       "explanation": "Une croix blanche aux extrémités (et, si besoin, à intervalles réguliers) d'une piste signale qu'elle est fermée ; sur une voie de circulation, la croix est jaune. La double croix blanche de l'aire à signaux, elle, annonce des vols de planeurs."
+      },
+      {
+       "id": "u1s10q08",
+       "q": "De quel côté de la piste le PAPI est-il normalement installé ?",
+       "choices": [
+        "À droite, vu du pilote en approche finale",
+        "À gauche, vu du pilote d'un avion en approche",
+        "Dans l'axe, juste avant le seuil",
+        "Des deux côtés, de façon symétrique"
+       ],
+       "answer": 1,
+       "explanation": "La barre de quatre unités du PAPI est normalement placée à gauche de la piste, vue de l'approche ; elle n'est installée à droite que si le terrain l'impose. La carte VAC précise le dispositif de chaque piste."
+      },
+      {
+       "id": "u1s10q09",
+       "q": "Un seuil décalé est signalé par une barre transversale blanche, précédée de flèches blanches sur l'axe. Comment pouvez-vous utiliser la partie de piste fléchée ?",
+       "choices": [
+        "Pour atterrir si la piste est courte, en freinant fort dès le toucher",
+        "Pour rouler et décoller, mais pas pour y toucher à l'atterrissage",
+        "Pour attendre en cas d'encombrement, mais pas pour y rouler",
+        "Pour le stationnement des avions en attente de décollage"
+       ],
+       "answer": 1,
+       "explanation": "La partie fléchée avant un seuil décalé fait partie de la piste : on peut y rouler, l'utiliser pour décoller et, dans l'autre sens, y finir un roulement à l'atterrissage. On ne doit pas y toucher en atterrissant vers le seuil décalé. Une surface impropre à toute utilisation porterait des chevrons jaunes."
+      },
+      {
+       "id": "u1s10q10",
+       "q": "Avant le seuil d'une piste, une surface revêtue est couverte de chevrons jaunes. Que vous indiquent-ils ?",
+       "choices": [
+        "Cette surface peut servir de seuil décalé pour les atterrissages",
+        "Cette surface est réservée au demi-tour avant le décollage",
+        "Cette surface est une voie de circulation à sens unique",
+        "Cette surface ne convient pas à l'utilisation normale par les avions"
+       ],
+       "answer": 3,
+       "explanation": "Les chevrons signalent un prolongement ou une aire de souffle revêtus qui ne conviennent pas à l'utilisation normale : on n'y roule pas, on n'y décolle pas, on n'y atterrit pas. Ne les confondez pas avec les flèches blanches d'un seuil décalé, utilisables pour rouler et décoller."
+      },
+      {
+       "id": "u1s10q11",
+       "q": "En roulage, à l'approche d'une intersection entre deux voies de circulation, vous voyez une seule ligne jaune discontinue en travers de la voie. De quoi s'agit-il ?",
+       "choices": [
+        "D'un point d'attente intermédiaire, où s'arrêter sur instruction",
+        "D'un point d'attente avant piste, à ne franchir qu'avec une clairance",
+        "De la limite d'une zone de travaux où le roulage est interdit",
+        "Du marquage indiquant la fin de la voie de circulation"
+       ],
+       "answer": 0,
+       "explanation": "Le point d'attente intermédiaire (une ligne jaune discontinue) sert à retenir un avion avant une intersection de voies, sur instruction du contrôle. Le point d'attente avant piste se reconnaît à ses deux lignes continues et ses deux lignes discontinues."
+      },
+      {
+       "id": "u1s10q12",
+       "q": "Un panneau porte la lettre « B » en jaune sur fond noir. Que vous apprend-il ?",
+       "choices": [
+        "La voie B se trouve dans la direction indiquée",
+        "L'entrée sur la voie B vous est interdite",
+        "Vous êtes sur la voie de circulation B",
+        "La voie B est fermée à la circulation"
+       ],
+       "answer": 2,
+       "explanation": "Jaune sur noir : panneau d'emplacement, qui donne la voie où vous vous trouvez. Un panneau de direction est en noir sur jaune et porte une flèche ; une interdiction serait en blanc sur rouge."
+      },
+      {
+       "id": "u1s10q13",
+       "q": "Au point d'attente, la tour vous autorise à vous aligner, mais une rangée de feux rouges encastrés en travers de la voie brille devant vous. Que faites-vous ?",
+       "choices": [
+        "Vous franchissez les feux : la clairance du contrôleur prime sur le balisage",
+        "Vous franchissez les feux lentement en surveillant la finale",
+        "Vous faites demi-tour vers le parking et rappelez la tour",
+        "Vous restez arrêté et signalez au contrôleur que la barre est allumée"
+       ],
+       "answer": 3,
+       "explanation": "Cette rangée est une barre d'arrêt. Un avion s'arrête devant une barre d'arrêt allumée et ne repart qu'une fois les feux éteints. La clairance ne suffit pas : signalez la contradiction au contrôleur."
+      },
+      {
+       "id": "u1s10q14",
+       "q": "En courte finale, le PAPI vous montre trois feux rouges et un feu blanc. Que faites-vous ?",
+       "choices": [
+        "Vous êtes un peu haut : vous augmentez la descente jusqu'à revoir deux blancs",
+        "Vous êtes un peu bas : vous réduisez la descente jusqu'à revoir deux rouges",
+        "Vous êtes sur le plan : trois rouges laissent une marge sur les obstacles",
+        "Vous êtes nettement trop haut : vous remettez les gaz sans attendre"
+       ],
+       "answer": 1,
+       "explanation": "Trois rouges et un blanc : légèrement au-dessous du plan. On réduit le taux de descente (un peu de puissance) jusqu'à retrouver deux rouges et deux blancs. Quatre rouges signaleraient une trajectoire nettement trop basse, proche des obstacles."
+      },
+      {
+       "id": "u1s10q15",
+       "q": "Dans l'aire à signaux, une haltère blanche porte une barre noire en travers de chacun de ses disques. Que signifie ce signal ?",
+       "choices": [
+        "Atterrir, décoller et rouler sur pistes et voies de circulation seulement",
+        "Pistes revêtues fermées : atterrir et décoller sur les bandes en herbe",
+        "Atterrir et décoller sur piste seulement, les autres manœuvres étant libres",
+        "Atterrissage interdit pour une durée susceptible de se prolonger"
+       ],
+       "answer": 2,
+       "explanation": "L'haltère blanche impose d'atterrir, de décoller et de rouler sur les pistes et voies seulement. Barrée de noir sur chaque disque, elle n'impose plus que l'atterrissage et le décollage sur piste : le roulage peut se faire ailleurs, sur l'herbe par exemple."
+      },
+      {
+       "id": "u1s10q16",
+       "q": "Au seuil d'une piste, vous comptez huit bandes longitudinales blanches. Quelle est probablement sa largeur ?",
+       "choices": [
+        "30 m",
+        "18 m",
+        "23 m",
+        "45 m"
+       ],
+       "answer": 0,
+       "explanation": "Le nombre de bandes de seuil dépend de la largeur de la piste : 4 pour 18 m, 6 pour 23 m, 8 pour 30 m, 12 pour 45 m et 16 pour 60 m."
+      },
+      {
+       "id": "u1s10q17",
+       "q": "Sur un aérodrome non contrôlé, la piste 27 est en service avec un tour de piste main gauche. Où se trouve la branche vent arrière ?",
+       "choices": [
+        "Au sud de la piste, au cap 090° environ",
+        "Au nord de la piste, au cap 090° environ",
+        "Au sud de la piste, au cap 270° environ",
+        "Au nord de la piste, au cap 270° environ"
+       ],
+       "answer": 0,
+       "explanation": "On atterrit au cap 270°, vers l'ouest. En main gauche, tous les virages se font à gauche : le circuit est à gauche de l'axe vu dans le sens de l'atterrissage, donc au sud. La branche vent arrière se vole en sens inverse de l'atterrissage, au cap 090°."
+      },
+      {
+       "id": "u1s10q18",
+       "q": "Piste 18 en service, l'aire à signaux présente une flèche coudée vers la droite. Où volez-vous la branche vent arrière ?",
+       "choices": [
+        "À l'est de la piste, au cap 360° environ",
+        "À l'ouest de la piste, au cap 180° environ",
+        "À l'est de la piste, au cap 180° environ",
+        "À l'ouest de la piste, au cap 360° environ"
+       ],
+       "answer": 3,
+       "explanation": "La flèche coudée vers la droite impose des virages à droite : le circuit est à droite de l'axe vu dans le sens de l'atterrissage. Au cap 180° (vers le sud), la droite est à l'ouest ; la branche vent arrière se vole au cap 360°."
+      },
+      {
+       "id": "u1s10q19",
+       "q": "Vous suivez le plan de 3° d'un PAPI. À 2 NM du point de toucher, quelle hauteur approximative devriez-vous avoir, et que montre le PAPI ?",
+       "choices": [
+        "Environ 600 ft, avec quatre feux blancs",
+        "Environ 300 ft, avec deux rouges et deux blancs",
+        "Environ 600 ft, avec deux feux rouges et deux blancs",
+        "Environ 1 000 ft, avec deux rouges et deux blancs"
+       ],
+       "answer": 2,
+       "explanation": "Sur un plan de 3°, on descend d'environ 300 ft par NM (318 ft plus précisément) : 2 × 300 ≈ 600 ft au-dessus du point de toucher. Sur le plan, le PAPI montre deux rouges et deux blancs ; quatre blancs signaleraient une trajectoire nettement trop haute."
+      },
+      {
+       "id": "u1s10q20",
+       "q": "Vous suivez le plan de 3° d'un PAPI à une vitesse sol de 70 kt. Quel taux de descente approximatif devez-vous tenir ?",
+       "choices": [
+        "Environ 210 ft/min",
+        "Environ 350 ft/min",
+        "Environ 700 ft/min",
+        "Environ 550 ft/min"
+       ],
+       "answer": 1,
+       "explanation": "Taux de descente ≈ 5 × vitesse sol en kt : 5 × 70 = 350 ft/min. Vérification : 70 kt = 1,17 NM/min, × 318 ft/NM ≈ 370 ft/min. Avec plus de vent de face, la vitesse sol baisse et le taux nécessaire aussi ; 700 ft/min correspondrait à un plan d'environ 6°."
+      },
+      {
+       "id": "u1s10q21",
+       "q": "Vous roulez vers le point d'attente, en panne radio. La tour vous adresse une série d'éclats blancs. Que faites-vous ?",
+       "choices": [
+        "Vous dégagez l'aire d'atterrissage en service",
+        "Vous poursuivez le roulage jusqu'au point d'attente",
+        "Vous retournez à votre point de départ sur l'aérodrome",
+        "Vous vous arrêtez sur place jusqu'à un nouveau signal"
+       ],
+       "answer": 2,
+       "explanation": "Au sol, les éclats blancs signifient « retournez à votre point de départ sur l'aérodrome ». Les éclats rouges demandent de dégager l'aire d'atterrissage, les éclats verts autorisent le roulage et le rouge fixe impose l'arrêt."
+      },
+      {
+       "id": "u1s10q22",
+       "q": "En finale, après avoir reçu un feu vert fixe de la tour, vous voyez partir de celle-ci un artifice rouge. Que faites-vous ?",
+       "choices": [
+        "Vous remettez les gaz : vous ne devez pas atterrir pour le moment",
+        "Vous atterrissez : le feu vert fixe reçu avant l'artifice reste valable",
+        "Vous atterrissez, puis dégagez la piste au plus vite par la droite",
+        "Vous déroutez vers un autre terrain : l'aérodrome est dangereux"
+       ],
+       "answer": 0,
+       "explanation": "L'artifice rouge signifie : « nonobstant toutes instructions antérieures, n'atterrissez pas pour le moment ». Il annule donc le feu vert reçu. Il n'impose pas de dérouter : ce sont les éclats rouges qui signalent un aérodrome dangereux."
+      },
+      {
+       "id": "u1s10q23",
+       "q": "En croisière, vous voyez des projectiles tirés du sol toutes les 10 secondes, qui éclatent en feux rouges et verts. Que signifie ce signal ?",
+       "choices": [
+        "Un aéronef en détresse s'est posé au sol près de vous et attend des secours",
+        "Vous êtes dans une zone réglementée, interdite ou dangereuse, ou y entrez",
+        "Vous êtes intercepté : suivez l'aéronef militaire qui vous précède",
+        "Un aérodrome proche vous autorise à atterrir en priorité sur sa piste"
+       ],
+       "answer": 1,
+       "explanation": "SERA (appendice 1) : des projectiles tirés du sol toutes les 10 secondes, éclatant en feux ou étoiles rouges et verts, avertissent un aéronef non autorisé qu'il vole dans une zone réglementée, interdite ou dangereuse, ou va y pénétrer. Il doit prendre les mesures nécessaires pour en sortir."
+      },
+      {
+       "id": "u1s10q24",
+       "q": "De nuit, en finale, vous voyez une rangée de feux verts en travers de la piste, nettement après le début du revêtement ; les feux de bord situés avant cette rangée vous apparaissent rouges. Où pouvez-vous toucher ?",
+       "choices": [
+        "Dès le début du revêtement, pour disposer de la longueur maximale",
+        "Avant la rangée de feux verts, sur la zone aux feux rouges",
+        "Après le premier feu rouge, au début de la partie revêtue",
+        "Après la rangée de feux verts, qui marque le seuil décalé"
+       ],
+       "answer": 3,
+       "explanation": "Les feux verts marquent le seuil, ici décalé : on touche après eux. Les feux de bord situés avant un seuil décalé apparaissent rouges au pilote en approche, pour lui interdire d'y poser les roues ; cette partie reste utilisable pour rouler et décoller."
+      }
+     ]
+    },
+    {
+     "id": "u1s11",
+     "title": "Recherche et sauvetage, enquêtes et sûreté",
+     "icon": "🛟",
+     "tips": "Service d'alerte :\nRendu par les organismes ATS aux vols contrôlés et, si possible, aux vols ayant déposé un plan de vol ou connus des ATS, il prévient le centre de coordination de sauvetage et l'assiste. Trois phases, pas forcément successives :\n• INCERFA (incertitude) : aucune communication 30 min après l'heure où elle aurait dû être reçue (ou après la première tentative de contact vaine) ; ou aéronef non arrivé 30 min après la dernière heure d'arrivée notifiée ou estimée par les ATS, la plus tardive des deux.\n• ALERFA (alerte) : recherches de la phase d'incertitude vaines ; aéronef autorisé à atterrir qui ne s'est pas posé dans les 5 min suivant l'heure prévue, sans contact rétabli ; capacités diminuées sans qu'un atterrissage forcé soit probable ; intervention illicite (7500).\n• DETRESFA (détresse) : recherches toujours vaines ; carburant jugé épuisé ou insuffisant pour rejoindre un lieu sûr ; atterrissage forcé probable, imminent ou effectué.\nExemple : ETA déposée 15 h 40, estimée 16 h 00 annoncée en vol : sans nouvelles, INCERFA possible à 16 h 30.\n\nRôle du plan de vol :\n• Déposé au moins 60 min avant le départ (SERA.4001), il fait connaître votre vol : sans plan de vol ni contact radio, personne ne vous attend, et l'alerte dépend de votre balise ou de vos proches.\n• Sa case 19, conservée pour le SAR, donne l'autonomie, le nombre de personnes à bord, les équipements de secours et de survie (radio, balise, gilets, canots), la couleur et les marques de l'avion, le nom du commandant de bord.\n• Retardé au sol, faites modifier l'heure de départ ; arrivé, clôturez, sinon des recherches partent pour rien.\n\nOrganisation en France :\n• ARCC de Lyon Mont-Verdun (armée de l'Air et de l'Espace) : coordination du sauvetage aéronautique en métropole depuis le 1er septembre 2015, avec le centre de Cinq-Mars-la-Pile en secours.\n• 191 : numéro gratuit et H24 des urgences aéronautiques, qui aboutit à l'ARCC.\n• Recherches terrestres : plan ORSEC SATER, arrêté par le préfet de département, avec gendarmerie, pompiers et radioamateurs de l'ADRASEC qui localisent les balises. En mer : SAMAR, sous l'autorité du préfet maritime.\n• Balise 406 MHz : enregistrement obligatoire (arrêté du 21 décembre 2018).\n\nSignaux visuels :\n• Code sol-air des survivants : V besoin d'assistance, X besoin d'assistance médicale, N non, Y oui, flèche : nous partons dans cette direction. Symboles d'au moins 2,5 m, bien contrastés.\n• Réponse de l'avion : signal compris, il balance les ailes de jour, ou allume et éteint deux fois ses phares (ou feux de navigation) de nuit ; sans cette réponse, le signal n'est pas compris.\n• Détresse (SERA, appendice 1) : SOS, MAYDAY, code 7700, fusées ou bombes à feux rouges tirées une à une à de courts intervalles, feu rouge à parachute.\n• Urgence (atterrissage nécessaire, sans besoin d'assistance immédiate) : allumer et éteindre de façon répétée les phares d'atterrissage, ou les feux de navigation autrement que leur clignotement normal.\n\nEnquêtes de sécurité (règlement (UE) 996/2010, annexe 13) :\n• Le BEA enquête sur les accidents et incidents graves dans le seul but de prévenir. Une enquête judiciaire distincte, ouverte par le parquet et souvent confiée à la gendarmerie des transports aériens, recherche d'éventuelles responsabilités pénales.\n• Accident : personne tuée ou grièvement blessée du fait de sa présence à bord ou d'un contact direct avec l'aéronef ; dommage altérant la résistance, les performances ou les caractéristiques de vol et exigeant normalement une réparation importante ; aéronef disparu ou inaccessible. Un dommage limité à un seul moteur, à l'hélice, à un saumon d'aile, aux pneus, freins ou roues n'en fait pas un accident.\n• Blessure grave, notamment : hospitalisation de plus de 48 h commencée dans les 7 jours ; fracture, sauf fracture simple des doigts, des orteils ou du nez.\n• Accident ou incident grave : notification sans délai au BEA (permanence H24).\n• Préservation des preuves : ne pas modifier le site, déplacer l'épave ni y prélever quoi que ce soit, sauf pour la sécurité, pour secourir les blessés ou avec l'autorisation expresse des autorités qui contrôlent le site.\n• Rapport final publié si possible dans les 12 mois ; sinon, déclaration intermédiaire au moins à chaque anniversaire.\n\nComptes rendus d'événements (règlement (UE) 376/2014) :\n• But unique : la prévention, sans recherche de faute. Le commandant de bord notifie dans les 72 h les événements à notification obligatoire (liste du règlement d'exécution (UE) 2015/1018) ; les autres peuvent être notifiés volontairement.\n• En France, le pilote d'aéroclub notifie via sa structure, qui transmet à la DSAC ; le propriétaire ou le pilote indépendant notifie directement à l'autorité.\n• Culture juste : pas de sanction pour des actions, omissions ou décisions proportionnées à l'expérience et à la formation ; pas de tolérance pour la négligence grave, les manquements délibérés et les actes destructeurs.\n\nSûreté et facilitation :\n• Sûreté : protection contre les actes d'intervention illicite (annexe 17, règlement (CE) 300/2008) ; la sécurité, elle, prévient les accidents. Avion fermé à clé, comportement suspect signalé.\n• ZSAR : zones de sûreté à accès réglementé des aéroports, accessibles avec un titre de circulation ou accompagné ; l'aviation générale est le plus souvent hors ZSAR.\n• Facilitation (annexe 9) : formalités de police, de douane et sanitaires. Schengen : 29 États (25 de l'UE, plus Islande, Liechtenstein, Norvège et Suisse), sans contrôle systématique des personnes aux frontières intérieures ; l'Irlande, Chypre et le Royaume-Uni n'en font pas partie. Schengen n'est pas l'union douanière : vers la Suisse, les formalités douanières demeurent.\n• Vol vers ou depuis un pays hors Schengen (Royaume-Uni) : aérodrome ouvert au trafic international, ou terrain où les contrôles sont organisés sur préavis ; plan de vol pour le franchissement de frontière. Consultez l'AIP (GEN 1.2 et fiches AD 2).",
+     "vocab": [
+      {
+       "term": "Service d'alerte",
+       "translation": "Service ATS qui prévient le SAR quand un aéronef a besoin d'aide"
+      },
+      {
+       "term": "INCERFA",
+       "translation": "Phase d'incertitude : doute sur la sécurité d'un aéronef"
+      },
+      {
+       "term": "ALERFA",
+       "translation": "Phase d'alerte : inquiétude sur la sécurité d'un aéronef"
+      },
+      {
+       "term": "DETRESFA",
+       "translation": "Phase de détresse : danger grave et imminent"
+      },
+      {
+       "term": "ARCC",
+       "translation": "Centre de coordination du sauvetage aéronautique (Lyon Mont-Verdun)"
+      },
+      {
+       "term": "191",
+       "translation": "Numéro gratuit et H24 des urgences aéronautiques en France"
+      },
+      {
+       "term": "SATER",
+       "translation": "Plan préfectoral de recherches terrestres d'un aéronef"
+      },
+      {
+       "term": "SAMAR",
+       "translation": "Sauvetage en mer, sous l'autorité du préfet maritime"
+      },
+      {
+       "term": "Case 19",
+       "translation": "Partie du plan de vol utile au SAR : autonomie, POB, survie, couleur"
+      },
+      {
+       "term": "Blessure grave",
+       "translation": "Ex. : hospitalisation de plus de 48 h, ou fracture hors cas bénins"
+      },
+      {
+       "term": "Enquête de sécurité",
+       "translation": "Enquête du BEA visant la prévention, sans recherche de faute"
+      },
+      {
+       "term": "Culture juste",
+       "translation": "Pas de sanction des erreurs de bonne foi, hors négligence grave"
+      },
+      {
+       "term": "Sûreté",
+       "translation": "Protection de l'aviation contre les actes d'intervention illicite"
+      },
+      {
+       "term": "ZSAR",
+       "translation": "Zone de sûreté à accès réglementé, côté piste d'un aéroport"
+      },
+      {
+       "term": "Schengen",
+       "translation": "Espace sans contrôle systématique des personnes aux frontières"
+      },
+      {
+       "term": "Facilitation",
+       "translation": "Simplification des formalités de police, douane et santé"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Les trois phases du service d'alerte",
+       "svg": "<svg viewBox=\"0 0 720 430\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"430\" rx=\"10\" fill=\"#ffffff\"/><rect x=\"10\" y=\"20\" width=\"220\" height=\"300\" rx=\"8\" fill=\"#f8f9fa\" stroke=\"#fcc419\" stroke-width=\"3\"/><rect x=\"10\" y=\"20\" width=\"220\" height=\"48\" rx=\"8\" fill=\"#fcc419\"/><rect x=\"10\" y=\"52\" width=\"220\" height=\"16\" fill=\"#fcc419\"/><text x=\"120\" y=\"51\" font-size=\"20\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">INCERFA</text><text x=\"22\" y=\"94\" font-size=\"15\" text-anchor=\"start\" font-weight=\"bold\" fill=\"#14213d\">Incertitude : doute</text><text x=\"22\" y=\"124\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• pas de contact 30 min</text><text x=\"34\" y=\"148\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">après l'heure prévue</text><text x=\"22\" y=\"172\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• non arrivé 30 min après</text><text x=\"34\" y=\"196\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">la dernière ETA connue</text><text x=\"22\" y=\"244\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">Ex. : ETA 16 h 00 →</text><text x=\"22\" y=\"268\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">INCERFA possible à 16 h 30</text><rect x=\"250\" y=\"20\" width=\"220\" height=\"300\" rx=\"8\" fill=\"#f8f9fa\" stroke=\"#ff922b\" stroke-width=\"3\"/><rect x=\"250\" y=\"20\" width=\"220\" height=\"48\" rx=\"8\" fill=\"#ff922b\"/><rect x=\"250\" y=\"52\" width=\"220\" height=\"16\" fill=\"#ff922b\"/><text x=\"360\" y=\"51\" font-size=\"20\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">ALERFA</text><text x=\"262\" y=\"94\" font-size=\"15\" text-anchor=\"start\" font-weight=\"bold\" fill=\"#14213d\">Alerte : inquiétude</text><text x=\"262\" y=\"124\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• recherches INCERFA vaines</text><text x=\"262\" y=\"148\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• autorisé à atterrir, pas</text><text x=\"274\" y=\"172\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">posé 5 min après l'heure</text><text x=\"274\" y=\"196\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">prévue, contact perdu</text><text x=\"262\" y=\"220\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• capacités diminuées</text><text x=\"262\" y=\"244\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• intervention illicite</text><text x=\"274\" y=\"268\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">(code 7500)</text><rect x=\"490\" y=\"20\" width=\"220\" height=\"300\" rx=\"8\" fill=\"#f8f9fa\" stroke=\"#e03131\" stroke-width=\"3\"/><rect x=\"490\" y=\"20\" width=\"220\" height=\"48\" rx=\"8\" fill=\"#e03131\"/><rect x=\"490\" y=\"52\" width=\"220\" height=\"16\" fill=\"#e03131\"/><text x=\"600\" y=\"51\" font-size=\"20\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#ffffff\">DETRESFA</text><text x=\"502\" y=\"94\" font-size=\"15\" text-anchor=\"start\" font-weight=\"bold\" fill=\"#14213d\">Détresse : danger grave</text><text x=\"502\" y=\"124\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• recherches encore vaines</text><text x=\"502\" y=\"148\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• carburant épuisé ou</text><text x=\"514\" y=\"172\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">insuffisant</text><text x=\"502\" y=\"196\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• atterrissage forcé</text><text x=\"514\" y=\"220\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">probable, imminent</text><text x=\"514\" y=\"244\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">ou effectué</text><polygon points=\"232,34 248,44 232,54\" fill=\"#14213d\"/><polygon points=\"472,34 488,44 472,54\" fill=\"#14213d\"/><text x=\"360\" y=\"350\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Les phases ne sont pas forcément successives : l'annonce d'un atterrissage</text><text x=\"360\" y=\"368\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">forcé imminent mène directement à la détresse (DETRESFA).</text><text x=\"360\" y=\"400\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#46516a\">Le service d'alerte (organismes ATS) prévient le centre de coordination</text><text x=\"360\" y=\"418\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#46516a\">du sauvetage : en France métropolitaine, l'ARCC de Lyon Mont-Verdun.</text></svg>",
+       "caption": "Critères principaux de chaque phase (OACI, repris par la réglementation européenne). Le délai de 30 minutes court à partir de la dernière heure d'arrivée notifiée ou estimée, la plus tardive des deux."
+      },
+      {
+       "title": "Code visuel sol-air des survivants",
+       "svg": "<svg viewBox=\"0 0 720 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"420\" rx=\"10\" fill=\"#ffffff\"/><rect x=\"8\" y=\"12\" width=\"132\" height=\"200\" rx=\"8\" fill=\"#efe6d2\" stroke=\"#ced4da\"/><path d=\"M44 42 L74 122 L104 42\" stroke=\"#d9480f\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><text x=\"74\" y=\"158\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">V</text><text x=\"74\" y=\"180\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Besoin</text><text x=\"74\" y=\"198\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">d'assistance</text><rect x=\"150\" y=\"12\" width=\"132\" height=\"200\" rx=\"8\" fill=\"#efe6d2\" stroke=\"#ced4da\"/><path d=\"M186 42 L246 122 M246 42 L186 122\" stroke=\"#d9480f\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><text x=\"216\" y=\"158\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">X</text><text x=\"216\" y=\"180\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Besoin d'assist.</text><text x=\"216\" y=\"198\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">médicale</text><rect x=\"292\" y=\"12\" width=\"132\" height=\"200\" rx=\"8\" fill=\"#efe6d2\" stroke=\"#ced4da\"/><path d=\"M330 122 L330 42 L386 122 L386 42\" stroke=\"#d9480f\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><text x=\"358\" y=\"158\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">N</text><text x=\"358\" y=\"180\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Non</text><rect x=\"434\" y=\"12\" width=\"132\" height=\"200\" rx=\"8\" fill=\"#efe6d2\" stroke=\"#ced4da\"/><path d=\"M470 42 L500 82 L530 42 M500 82 L500 122\" stroke=\"#d9480f\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><text x=\"500\" y=\"158\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Y</text><text x=\"500\" y=\"180\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Oui</text><rect x=\"576\" y=\"12\" width=\"132\" height=\"200\" rx=\"8\" fill=\"#efe6d2\" stroke=\"#ced4da\"/><path d=\"M642 124 L642 46 M616 70 L642 42 L668 70\" stroke=\"#d9480f\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\"/><text x=\"642\" y=\"158\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Flèche</text><text x=\"642\" y=\"180\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">Nous partons</text><text x=\"642\" y=\"198\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">dans ce sens</text><rect x=\"8\" y=\"228\" width=\"704\" height=\"182\" rx=\"8\" fill=\"#f1f5fb\" stroke=\"#ced4da\"/><g transform=\"rotate(-12 120 318)\"><line x1=\"40\" y1=\"318\" x2=\"200\" y2=\"318\" stroke=\"#14213d\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"120\" cy=\"318\" r=\"13\" fill=\"#14213d\"/><line x1=\"120\" y1=\"305\" x2=\"120\" y2=\"286\" stroke=\"#14213d\" stroke-width=\"5\"/><line x1=\"102\" y1=\"296\" x2=\"138\" y2=\"296\" stroke=\"#14213d\" stroke-width=\"4\"/></g><path d=\"M40 280 Q30 300 40 322\" stroke=\"#1c7ed6\" stroke-width=\"3\" fill=\"none\"/><polygon points=\"34,318 42,330 46,316\" fill=\"#1c7ed6\"/><path d=\"M202 316 Q212 336 202 356\" stroke=\"#1c7ed6\" stroke-width=\"3\" fill=\"none\"/><polygon points=\"196,352 204,364 208,350\" fill=\"#1c7ed6\"/><text x=\"120\" y=\"392\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Balancement des ailes</text><text x=\"240\" y=\"262\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\" fill=\"#14213d\">Réponse de l'avion de recherche :</text><text x=\"240\" y=\"284\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• signal compris : de jour, il balance les ailes ;</text><text x=\"254\" y=\"306\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">de nuit, il allume et éteint deux fois ses phares</text><text x=\"254\" y=\"328\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">(ou ses feux de navigation) ;</text><text x=\"240\" y=\"350\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">• aucune de ces réponses : signal non compris.</text><text x=\"240\" y=\"372\" font-size=\"14\" text-anchor=\"start\" font-weight=\"normal\" fill=\"#14213d\">Symboles : au moins 2,5 m, très contrastés.</text></svg>",
+       "caption": "Symboles à tracer au sol après un atterrissage forcé, et réponse de l'avion de recherche. Une flèche indique la direction dans laquelle les survivants se déplacent."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u1s11q01",
+       "q": "Dans l'ordre de gravité croissante, comment se succèdent les phases du service d'alerte ?",
+       "choices": [
+        "ALERFA, INCERFA, DETRESFA",
+        "INCERFA, DETRESFA, ALERFA",
+        "DETRESFA, ALERFA, INCERFA",
+        "INCERFA, ALERFA, DETRESFA"
+       ],
+       "answer": 3,
+       "explanation": "Incertitude (INCERFA : doute sur la sécurité), alerte (ALERFA : inquiétude), détresse (DETRESFA : danger grave et imminent). Les phases ne sont pas forcément successives : une situation peut être déclarée directement en alerte ou en détresse."
+      },
+      {
+       "id": "u1s11q02",
+       "q": "En France, quel numéro gratuit, ouvert jour et nuit et réservé aux urgences aéronautiques, permet de signaler un aéronef en retard inquiétant ?",
+       "choices": [
+        "112",
+        "191",
+        "17",
+        "18"
+       ],
+       "answer": 1,
+       "explanation": "Le 191, en service depuis 2017, aboutit à l'ARCC de Lyon Mont-Verdun, qui peut lancer les recherches. Le 112 est le numéro d'urgence européen généraliste, le 17 celui de la police et le 18 celui des pompiers."
+      },
+      {
+       "id": "u1s11q03",
+       "q": "Quel organisme coordonne, en France métropolitaine, la recherche et le sauvetage des aéronefs en détresse ?",
+       "choices": [
+        "L'ARCC de Lyon Mont-Verdun (armée de l'Air et de l'Espace)",
+        "Le BEA, depuis sa permanence opérationnelle du Bourget",
+        "La direction de la sécurité de l'aviation civile (DSAC)",
+        "Le centre en route de la navigation aérienne (CRNA)"
+       ],
+       "answer": 0,
+       "explanation": "Depuis 2015, l'ARCC de Lyon Mont-Verdun coordonne le sauvetage aéronautique en métropole, avec Cinq-Mars-la-Pile en secours. Les organismes ATS (CRNA, SIV, tours) rendent le service d'alerte et le préviennent ; le BEA enquête après l'accident."
+      },
+      {
+       "id": "u1s11q04",
+       "q": "Après un atterrissage forcé, vous avez tracé des signaux au sol. Un avion de recherche les survole puis balance les ailes. Que signifie cette manœuvre ?",
+       "choices": [
+        "Vos signaux n'ont pas été compris",
+        "Il va se poser près de vous",
+        "Vos signaux ont été vus et compris",
+        "Vous devez partir dans le sens de son vol"
+       ],
+       "answer": 2,
+       "explanation": "Un avion indique qu'il a compris un signal au sol en balançant les ailes de jour, ou en allumant et éteignant deux fois ses phares ou feux de navigation de nuit. L'absence de ce signal veut dire que le message n'a pas été compris."
+      },
+      {
+       "id": "u1s11q05",
+       "q": "Après un accident, le BEA et la gendarmerie mènent chacun une enquête. Qu'est-ce qui les distingue ?",
+       "choices": [
+        "Le BEA fixe les indemnités, la gendarmerie les sanctions administratives",
+        "Le BEA vise la prévention, l'enquête judiciaire la responsabilité pénale",
+        "Le BEA désigne le fautif, la gendarmerie expertise l'épave pour lui",
+        "Les deux ont le même but, mais l'enquête du BEA est plus rapide"
+       ],
+       "answer": 1,
+       "explanation": "L'enquête de sécurité du BEA (règlement (UE) 996/2010) a pour seul objet la prévention, sans recherche de faute. L'enquête judiciaire, ouverte par le parquet et souvent confiée à la gendarmerie des transports aériens, recherche d'éventuelles responsabilités pénales. Elles sont menées en parallèle, indépendamment."
+      },
+      {
+       "id": "u1s11q06",
+       "q": "En aviation, que désigne la sûreté, par opposition à la sécurité ?",
+       "choices": [
+        "La prévention des accidents dus aux pannes et aux erreurs",
+        "Le contrôle des licences et de l'aptitude médicale des pilotes",
+        "L'organisation des secours après un accident d'aéronef",
+        "La protection contre les actes d'intervention illicite"
+       ],
+       "answer": 3,
+       "explanation": "La sûreté (security) protège l'aviation contre les actes malveillants : détournement, sabotage, attentat (annexe 17 de l'OACI, règlement (CE) 300/2008). La sécurité (safety) vise à prévenir les accidents, notamment ceux dus aux pannes et aux erreurs humaines."
+      },
+      {
+       "id": "u1s11q07",
+       "q": "Dans quel délai le BEA vise-t-il à rendre public son rapport final ?",
+       "choices": [
+        "Dans les 72 heures, comme un compte rendu d'événement obligatoire",
+        "Dans les 30 jours, avant que la justice ne se prononce",
+        "Si possible sous 12 mois, sinon déclaration intermédiaire annuelle",
+        "Après le jugement définitif, pour ne pas influencer les juges"
+       ],
+       "answer": 2,
+       "explanation": "Le règlement (UE) 996/2010 prévoit la publication du rapport final dans les meilleurs délais, si possible dans les 12 mois ; sinon, l'autorité d'enquête publie une déclaration intermédiaire au moins à chaque anniversaire. Le délai de 72 heures concerne la notification des événements (règlement 376/2014)."
+      },
+      {
+       "id": "u1s11q08",
+       "q": "Entre deux États de l'espace Schengen, qu'est-ce qui est supprimé ?",
+       "choices": [
+        "Le contrôle systématique des personnes aux frontières intérieures",
+        "Les formalités douanières, y compris vers la Suisse",
+        "L'obligation de détenir une pièce d'identité à bord",
+        "Les différences entre règles nationales de navigation aérienne"
+       ],
+       "answer": 0,
+       "explanation": "Schengen supprime le contrôle systématique des personnes aux frontières intérieures, mais chacun doit pouvoir justifier de son identité. Ce n'est pas une union douanière : la Suisse, membre de Schengen, reste hors de l'union douanière de l'UE, et les formalités douanières y demeurent."
+      },
+      {
+       "id": "u1s11q09",
+       "q": "Un avion autorisé à atterrir ne s'est pas posé 5 minutes après l'heure prévue d'atterrissage, et le contact radio n'est pas rétabli. Quelle phase est déclarée ?",
+       "choices": [
+        "La phase d'incertitude (INCERFA)",
+        "La phase de détresse (DETRESFA)",
+        "La phase d'alerte (ALERFA)",
+        "Une simple attente, sans phase déclarée"
+       ],
+       "answer": 2,
+       "explanation": "Un aéronef autorisé à atterrir qui ne s'est pas posé dans les 5 minutes suivant l'heure prévue, sans que le contact soit rétabli, passe directement en phase d'alerte. Le délai de 30 minutes concerne la phase d'incertitude (retard à l'arrivée ou absence de communication)."
+      },
+      {
+       "id": "u1s11q10",
+       "q": "Un aéronef est connu ou supposé être l'objet d'une intervention illicite. Dans quelle phase le service d'alerte le place-t-il ?",
+       "choices": [
+        "ALERFA",
+        "INCERFA",
+        "DETRESFA",
+        "Hors phase : affaire de police et non de SAR"
+       ],
+       "answer": 0,
+       "explanation": "L'intervention illicite (code 7500) fait partie des critères de la phase d'alerte (ALERFA) : il y a inquiétude sur la sécurité de l'aéronef et de ses occupants, et le centre de coordination de sauvetage est prévenu."
+      },
+      {
+       "id": "u1s11q11",
+       "q": "Laquelle de ces situations fait passer un aéronef en phase de détresse (DETRESFA) ?",
+       "choices": [
+        "Il n'est pas arrivé 30 min après sa dernière heure d'arrivée prévue",
+        "Il est l'objet d'une intervention illicite, sans autre information",
+        "Ses capacités sont diminuées, sans atterrissage forcé probable",
+        "Son carburant est jugé épuisé ou insuffisant pour rejoindre un lieu sûr"
+       ],
+       "answer": 3,
+       "explanation": "Le carburant épuisé ou insuffisant pour rejoindre un lieu sûr est un critère de détresse, tout comme l'atterrissage forcé probable, imminent ou effectué. Le retard de 30 minutes relève de l'incertitude ; l'intervention illicite et les capacités diminuées sans atterrissage forcé probable relèvent de l'alerte."
+      },
+      {
+       "id": "u1s11q12",
+       "q": "Quelles informations de la case 19 du plan de vol, conservées pour les recherches, aident directement les sauveteurs ?",
+       "choices": [
+        "Route prévue, niveaux de croisière et points de report successifs",
+        "Autonomie, personnes à bord, équipements de survie, couleur de l'avion",
+        "Type d'avion, catégorie de sillage et équipements de bord",
+        "Aérodromes de départ, de destination et de dégagement"
+       ],
+       "answer": 1,
+       "explanation": "La case 19 (renseignements complémentaires) donne l'autonomie, le nombre de personnes à bord, les équipements de secours et de survie (radio, balise, gilets, canots), la couleur et les marques de l'avion et le nom du commandant de bord. Elle est conservée pour la recherche et le sauvetage."
+      },
+      {
+       "id": "u1s11q13",
+       "q": "Un avion a disparu au-dessus d'une région boisée. Qui déclenche le plan ORSEC SATER, qui organise les recherches terrestres ?",
+       "choices": [
+        "Le préfet de département",
+        "Le directeur du BEA",
+        "Le chef de la tour de départ",
+        "Le maire de la commune survolée"
+       ],
+       "answer": 0,
+       "explanation": "Le plan ORSEC SATER est un plan départemental arrêté et mis en œuvre par le préfet (phases BRAVO LIMITÉE, BRAVO, CHARLIE), en coordination avec les recherches aériennes que dirige l'ARCC. Il mobilise gendarmerie, pompiers et radioamateurs de l'ADRASEC."
+      },
+      {
+       "id": "u1s11q14",
+       "q": "Lors d'un atterrissage dur, sans blessé, seule l'hélice touche la piste et doit être remplacée ; le reste de l'avion est intact. Au sens du règlement (UE) 996/2010, s'agit-il d'un accident ?",
+       "choices": [
+        "Oui : remplacer une pièce importante en fait un accident",
+        "Oui : un contact de l'hélice avec le sol est un accident",
+        "Non : un dommage limité à l'hélice n'en fait pas un accident",
+        "Non : sans blessé, ce n'est pas un accident"
+       ],
+       "answer": 2,
+       "explanation": "Pour faire un accident, le dommage doit altérer la résistance, les performances ou les caractéristiques de vol et exiger normalement une réparation importante ; les dommages limités à un seul moteur, à l'hélice, aux saumons d'aile, aux pneus, freins ou roues en sont exclus. Un accident peut exister sans blessé. L'événement peut toutefois devoir être notifié (règlement 376/2014)."
+      },
+      {
+       "id": "u1s11q15",
+       "q": "Blessé lors d'un accident, un passager est hospitalisé du lundi 20 h au jeudi 8 h. Au sens de la réglementation, a-t-il subi une blessure grave ?",
+       "choices": [
+        "Non : il faudrait une hospitalisation de plus de 72 heures",
+        "Oui : 60 h d'hospitalisation, commencée dans les 7 jours",
+        "Non : une blessure grave suppose une fracture ou une brûlure",
+        "Oui, car il a été hospitalisé dès le jour de l'accident"
+       ],
+       "answer": 1,
+       "explanation": "Du lundi 20 h au jeudi 8 h : 60 heures. Une hospitalisation de plus de 48 heures, commencée dans les 7 jours suivant la blessure, suffit à caractériser une blessure grave ; une fracture (sauf fracture simple des doigts, des orteils ou du nez) en est un autre critère, pas une condition."
+      },
+      {
+       "id": "u1s11q16",
+       "q": "Un pilote notifie de bonne foi une erreur de calage altimétrique qui l'a fait entrer brièvement dans un espace contrôlé. Que prévoit la culture juste du règlement (UE) 376/2014 ?",
+       "choices": [
+        "Une sanction allégée, puisqu'il a lui-même signalé son erreur",
+        "La transmission de sa notification au procureur pour suite à donner",
+        "La suspension de sa licence le temps de l'enquête de la DSAC",
+        "Pas de sanction pour une erreur proportionnée à son expérience"
+       ],
+       "answer": 3,
+       "explanation": "La culture juste (article 2 du règlement 376/2014) : pas de sanction pour des actions, omissions ou décisions proportionnées à l'expérience et à la formation, mais pas de tolérance pour la négligence grave, les manquements délibérés et les actes destructeurs. Le compte rendu sert la prévention, pas la recherche de responsabilités."
+      },
+      {
+       "id": "u1s11q17",
+       "q": "Votre plan de vol prévoit une arrivée à 15 h 40. En vol, vous annoncez au SIV une nouvelle estimée à 16 h 00, puis vous oubliez de clôturer après l'atterrissage. À partir de quelle heure la phase d'incertitude peut-elle être déclarée ?",
+       "choices": [
+        "16 h 10",
+        "16 h 30",
+        "16 h 00",
+        "17 h 00"
+       ],
+       "answer": 1,
+       "explanation": "La phase d'incertitude est déclarée si l'aéronef n'est pas arrivé dans les 30 minutes suivant la dernière heure d'arrivée notifiée aux services ATS ou estimée par eux, la plus tardive des deux : 16 h 00 + 30 min = 16 h 30. Partir de l'estimée initiale (15 h 40 + 30 min = 16 h 10) serait une erreur. Clôturer le plan de vol évite ces recherches inutiles."
+      },
+      {
+       "id": "u1s11q18",
+       "q": "Vous partez seul pour un vol local en classe G, sans plan de vol ni contact radio, en annonçant à votre famille un retour vers 17 h. À 16 h, vous vous posez en campagne isolée, sans réseau téléphonique. Qui peut déclencher les recherches ?",
+       "choices": [
+        "Le SIV, qui suit au radar les vols VFR transitant dans son secteur",
+        "Le service d'alerte, prévenu par votre transpondeur à 17 h 30",
+        "La DGAC, avertie dès que votre vol dépasse sa durée prévue",
+        "Votre balise si elle s'est déclenchée, ou vos proches via le 191"
+       ],
+       "answer": 3,
+       "explanation": "Sans plan de vol ni contact radio, aucun organisme ATS ne vous attend : le service d'alerte ignore votre vol. L'alerte viendra de votre balise 406 MHz (déclenchée au choc ou à la main) ou de vos proches, qui appelleront le 191 en ne vous voyant pas rentrer. D'où l'intérêt d'un plan de vol, ou au moins d'un contact avec le SIV."
+      },
+      {
+       "id": "u1s11q19",
+       "q": "De nuit, après un atterrissage forcé, vous voulez signaler votre détresse à un avion qui passe. Lequel de ces moyens est un signal de détresse prévu par SERA ?",
+       "choices": [
+        "Des fusées à feux rouges tirées une à une à de courts intervalles",
+        "Des projectiles à feux rouges et verts tirés à 10 secondes d'intervalle",
+        "Des éclats blancs envoyés vers l'avion avec une lampe",
+        "Un feu vert allumé en continu au milieu d'un champ"
+       ],
+       "answer": 0,
+       "explanation": "SERA (appendice 1) : les fusées ou bombes à feux rouges tirées une à une à de courts intervalles, le feu rouge à parachute, le signal SOS, le mot MAYDAY et le code 7700 signalent la détresse. Les projectiles rouges et verts toutes les 10 secondes sont un avertissement lancé du sol à un avion qui entre dans une zone réglementée."
+      },
+      {
+       "id": "u1s11q20",
+       "q": "En panne radio, un ennui moteur vous oblige à vous poser sur un aérodrome contrôlé, sans besoin d'assistance immédiate. Comment le signaler visuellement à la tour ?",
+       "choices": [
+        "En balançant les ailes en vent arrière, puis à nouveau en finale",
+        "En effectuant plusieurs virages serrés à la verticale de la tour",
+        "En allumant et éteignant à plusieurs reprises vos phares",
+        "En affichant 7500 au transpondeur et en balançant les ailes"
+       ],
+       "answer": 2,
+       "explanation": "SERA (appendice 1) : un aéronef contraint d'atterrir sans besoin d'assistance immédiate le signale en allumant et éteignant de façon répétée ses phares d'atterrissage, ou ses feux de navigation d'une manière distincte de leur clignotement normal. Le balancement des ailes sert à accuser réception ; 7500 signale une intervention illicite."
+      },
+      {
+       "id": "u1s11q21",
+       "q": "Après un accident sans incendie, un passager blessé est coincé dans l'épave. Les enquêteurs ne sont pas encore arrivés. Que pouvez-vous faire ?",
+       "choices": [
+        "Attendre les enquêteurs du BEA avant de toucher à l'épave",
+        "Remorquer l'épave hors du champ pour faciliter l'évacuation du blessé",
+        "Démonter le GPS de bord pour mettre la trace du vol à l'abri",
+        "Déplacer ce qui est nécessaire pour dégager et secourir le blessé"
+       ],
+       "answer": 3,
+       "explanation": "Le règlement (UE) 996/2010 interdit de modifier le site, de déplacer l'épave ou d'y prélever quoi que ce soit, sauf pour des raisons de sécurité, pour porter secours aux blessés ou avec l'autorisation expresse des autorités qui contrôlent le site. Secourir le blessé prime ; le reste attend les enquêteurs."
+      },
+      {
+       "id": "u1s11q22",
+       "q": "Pilote d'aéroclub, vous vivez un événement soumis à notification obligatoire selon le règlement (UE) 376/2014. Comment procédez-vous ?",
+       "choices": [
+        "Au BEA, dans le mois qui suit la date de l'événement",
+        "Au procureur de la République, dans les 72 h suivant l'événement",
+        "Dans les 72 h, via votre aéroclub, qui le transmet à la DSAC",
+        "À l'assureur de votre aéroclub, qui informe la DGAC sous huitaine"
+       ],
+       "answer": 2,
+       "explanation": "Le règlement 376/2014 impose la notification dans les 72 heures. En France, le pilote d'aéroclub notifie via sa structure, qui transmet à la DSAC ; le propriétaire ou le pilote indépendant notifie directement à l'autorité. Un accident ou un incident grave est en outre notifié sans délai au BEA."
+      },
+      {
+       "id": "u1s11q23",
+       "q": "Vous préparez un vol privé de Lille vers un aérodrome du sud de l'Angleterre. Quelle affirmation est exacte ?",
+       "choices": [
+        "Pas de contrôle de police : le Royaume-Uni applique les règles Schengen",
+        "Il faut un plan de vol et un terrain où police et douane contrôlent",
+        "Un plan de vol suffit, depuis votre aérodrome habituel de départ",
+        "La douane intervient, mais la police aux frontières a disparu"
+       ],
+       "answer": 1,
+       "explanation": "Le Royaume-Uni n'appartient ni à l'UE ni à l'espace Schengen : contrôles de police et de douane à la sortie et à l'entrée. On part donc d'un aérodrome ouvert au trafic international ou d'un terrain où ces contrôles sont organisés sur préavis (AIP GEN 1.2, fiche AD 2). Le franchissement de frontière impose aussi un plan de vol (SERA.4001)."
+      },
+      {
+       "id": "u1s11q24",
+       "q": "Vous partez d'Annemasse vers un aérodrome suisse. La Suisse appartient à l'espace Schengen. Que devez-vous néanmoins vérifier ?",
+       "choices": [
+        "Les formalités douanières, la Suisse étant hors union douanière",
+        "Votre visa de court séjour, exigé des pilotes de l'UE en Suisse",
+        "L'immatriculation de votre avion au registre suisse avant le vol",
+        "La validité de votre passeport, contrôlé à chaque frontière Schengen"
+       ],
+       "answer": 0,
+       "explanation": "Schengen supprime les contrôles systématiques de personnes, pas les formalités douanières : la Suisse n'est pas dans l'union douanière de l'UE. Vérifiez dans l'AIP des deux pays les aérodromes et préavis prévus pour la douane ; un plan de vol reste nécessaire pour franchir la frontière, sauf disposition contraire publiée."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
