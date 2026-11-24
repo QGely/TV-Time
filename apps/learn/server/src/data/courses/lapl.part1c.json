@@ -45,7 +45,7 @@
        "translation": "Feux rouges en travers de la voie, à ne pas franchir allumés"
       },
       {
-       "term": "Panneau d'obligation",
+       "term": "Panneau d'instruction obligatoire",
        "translation": "Blanc sur rouge : ne pas aller au-delà sans autorisation"
       },
       {
@@ -82,7 +82,7 @@
       {
        "title": "Aire à signaux : les signaux au sol de SERA",
        "svg": "<svg viewBox=\"0 0 720 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"440\" rx=\"10\" fill=\"#f4f6f1\"/><rect x=\"6\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"15\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"54\" y=\"40\" width=\"72\" height=\"72\" fill=\"#e03131\" stroke=\"#ffffff\" stroke-width=\"1\"/><line x1=\"57\" y1=\"43\" x2=\"123\" y2=\"109\" stroke=\"#ffd43b\" stroke-width=\"9\"/><line x1=\"123\" y1=\"43\" x2=\"57\" y2=\"109\" stroke=\"#ffd43b\" stroke-width=\"9\"/><text x=\"90\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Deux diagonales :</text><text x=\"90\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">atterrissage</text><text x=\"90\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">interdit</text><rect x=\"184\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"193\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"232\" y=\"40\" width=\"72\" height=\"72\" fill=\"#e03131\" stroke=\"#ffffff\" stroke-width=\"1\"/><line x1=\"235\" y1=\"43\" x2=\"301\" y2=\"109\" stroke=\"#ffd43b\" stroke-width=\"9\"/><text x=\"268\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Une diagonale :</text><text x=\"268\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">précautions spéciales</text><text x=\"268\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">à l'atterrissage</text><rect x=\"362\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"371\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"412\" y=\"70\" width=\"68\" height=\"12\" fill=\"#ffffff\"/><circle cx=\"404\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><circle cx=\"488\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><text x=\"446\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Haltère blanche :</text><text x=\"446\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">pistes et voies</text><text x=\"446\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">seulement</text><rect x=\"540\" y=\"10\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"549\" y=\"19\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"590\" y=\"70\" width=\"68\" height=\"12\" fill=\"#ffffff\"/><circle cx=\"582\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><rect x=\"579\" y=\"58\" width=\"6\" height=\"36\" fill=\"#111111\"/><circle cx=\"666\" cy=\"76\" r=\"18\" fill=\"#ffffff\"/><rect x=\"663\" y=\"58\" width=\"6\" height=\"36\" fill=\"#111111\"/><text x=\"624\" y=\"156\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Haltère barrée :</text><text x=\"624\" y=\"174\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">atterrir et décoller</text><text x=\"624\" y=\"192\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">sur piste seulement</text><rect x=\"6\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"15\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"116\" y=\"254\" width=\"13\" height=\"72\" fill=\"#ffffff\"/><rect x=\"40\" y=\"284\" width=\"78\" height=\"12\" fill=\"#ffffff\"/><line x1=\"38\" y1=\"334\" x2=\"112\" y2=\"334\" stroke=\"#ffd43b\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><polygon points=\"112,327 126,334 112,341\" fill=\"#ffd43b\"/><text x=\"90\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">T d'atterrissage :</text><text x=\"90\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">atterrir vers la barre</text><text x=\"90\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">(flèche pointillée)</text><rect x=\"184\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"193\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><path d=\"M238 330 L238 280 L286 280\" stroke=\"#ff922b\" stroke-width=\"13\" fill=\"none\" stroke-linejoin=\"miter\"/><polygon points=\"284,260 314,280 284,300\" fill=\"#ff922b\"/><text x=\"268\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Flèche coudée :</text><text x=\"268\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">tour de piste</text><text x=\"268\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">à droite</text><rect x=\"362\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"371\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"443\" y=\"320\" width=\"6\" height=\"22\" fill=\"#adb5bd\"/><rect x=\"422\" y=\"242\" width=\"48\" height=\"80\" rx=\"3\" fill=\"#ffd43b\" stroke=\"#111111\" stroke-width=\"1\"/><text x=\"446\" y=\"275\" font-size=\"32\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#111111\">2</text><text x=\"446\" y=\"312\" font-size=\"32\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#111111\">7</text><text x=\"446\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Chiffres verticaux :</text><text x=\"446\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">décollage vers</text><text x=\"446\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">270° environ</text><rect x=\"540\" y=\"224\" width=\"168\" height=\"204\" rx=\"8\" fill=\"#ffffff\" stroke=\"#ced4da\"/><rect x=\"549\" y=\"233\" width=\"150\" height=\"114\" rx=\"6\" fill=\"#46663a\"/><rect x=\"621\" y=\"310\" width=\"6\" height=\"32\" fill=\"#adb5bd\"/><rect x=\"592\" y=\"248\" width=\"64\" height=\"64\" rx=\"3\" fill=\"#ffd43b\" stroke=\"#111111\" stroke-width=\"1\"/><text x=\"624\" y=\"296\" font-size=\"46\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#111111\" dominant-baseline=\"central\">C</text><text x=\"624\" y=\"370\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#14213d\">Lettre C :</text><text x=\"624\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">bureau de piste</text><text x=\"624\" y=\"406\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\" fill=\"#14213d\">(compte rendu ATS)</text></svg>",
-       "caption": "Signaux horizontaux exposés dans l'aire à signaux et panneaux verticaux placés sur ou près de la tour (chiffres, lettre C). La flèche pointillée du T n'existe pas au sol : elle indique le sens d'atterrissage."
+       "caption": "Signaux horizontaux exposés dans l'aire à signaux, puis panneaux verticaux : chiffres de la direction de décollage sur la tour ou près d'elle, lettre C à l'emplacement du bureau de piste. La flèche pointillée du T n'existe pas au sol : elle indique le sens d'atterrissage."
       }
      ],
      "questions": [
@@ -244,15 +244,15 @@
       },
       {
        "id": "u1s10q14",
-       "q": "En courte finale, le PAPI vous montre trois feux rouges et un feu blanc. Que faites-vous ?",
+       "q": "En courte finale, le PAPI vous montre trois feux blancs et un feu rouge. Que faites-vous ?",
        "choices": [
-        "Vous êtes un peu haut : vous augmentez la descente jusqu'à revoir deux blancs",
-        "Vous êtes un peu bas : vous réduisez la descente jusqu'à revoir deux rouges",
-        "Vous êtes sur le plan : trois rouges laissent une marge sur les obstacles",
+        "Vous êtes un peu bas : vous réduisez la descente jusqu'à revoir deux blancs",
+        "Vous êtes un peu haut : vous augmentez la descente jusqu'à revoir deux rouges",
+        "Vous êtes sur le plan : le feu rouge restant garantit la marge d'obstacles",
         "Vous êtes nettement trop haut : vous remettez les gaz sans attendre"
        ],
        "answer": 1,
-       "explanation": "Trois rouges et un blanc : légèrement au-dessous du plan. On réduit le taux de descente (un peu de puissance) jusqu'à retrouver deux rouges et deux blancs. Quatre rouges signaleraient une trajectoire nettement trop basse, proche des obstacles."
+       "explanation": "Trois blancs et un rouge : légèrement au-dessus du plan. On augmente un peu le taux de descente (un peu moins de puissance) jusqu'à retrouver deux rouges et deux blancs. Quatre blancs signaleraient une trajectoire nettement trop haute ; trois rouges et un blanc, une trajectoire un peu basse. Le plan n'est tenu qu'avec deux rouges et deux blancs."
       },
       {
        "id": "u1s10q15",
@@ -280,15 +280,15 @@
       },
       {
        "id": "u1s10q17",
-       "q": "Sur un aérodrome non contrôlé, la piste 27 est en service avec un tour de piste main gauche. Où se trouve la branche vent arrière ?",
+       "q": "Sur un aérodrome non contrôlé, la piste 13 est en service avec un tour de piste main gauche. Où se trouve la branche vent arrière ?",
        "choices": [
-        "Au sud de la piste, au cap 090° environ",
-        "Au nord de la piste, au cap 090° environ",
-        "Au sud de la piste, au cap 270° environ",
-        "Au nord de la piste, au cap 270° environ"
+        "Au nord-est de la piste, au cap 310° environ",
+        "Au sud-ouest de la piste, au cap 310° environ",
+        "Au nord-est de la piste, au cap 130° environ",
+        "Au sud-ouest de la piste, au cap 130° environ"
        ],
        "answer": 0,
-       "explanation": "On atterrit au cap 270°, vers l'ouest. En main gauche, tous les virages se font à gauche : le circuit est à gauche de l'axe vu dans le sens de l'atterrissage, donc au sud. La branche vent arrière se vole en sens inverse de l'atterrissage, au cap 090°."
+       "explanation": "On atterrit au cap 130° environ, vers le sud-est. En main gauche, le circuit est à gauche de l'axe vu dans le sens de l'atterrissage : à gauche du cap 130°, c'est la direction du 040°, donc le nord-est. La branche vent arrière se vole en sens inverse de l'atterrissage : 130° + 180° = 310°."
       },
       {
        "id": "u1s10q18",
@@ -304,15 +304,15 @@
       },
       {
        "id": "u1s10q19",
-       "q": "Vous suivez le plan de 3° d'un PAPI. À 2 NM du point de toucher, quelle hauteur approximative devriez-vous avoir, et que montre le PAPI ?",
+       "q": "En approche vers une piste dotée d'un PAPI calé sur un plan de 3°, vous êtes à 3 NM du point de toucher et à 600 ft au-dessus de lui. Que vous montre le PAPI ?",
        "choices": [
-        "Environ 600 ft, avec quatre feux blancs",
-        "Environ 300 ft, avec deux rouges et deux blancs",
-        "Environ 600 ft, avec deux feux rouges et deux blancs",
-        "Environ 1 000 ft, avec deux rouges et deux blancs"
+        "Deux rouges et deux blancs : vous êtes sur le plan",
+        "Trois rouges et un blanc : vous êtes un peu bas",
+        "Quatre rouges : vous êtes nettement trop bas",
+        "Trois blancs et un rouge : vous êtes un peu haut"
        ],
        "answer": 2,
-       "explanation": "Sur un plan de 3°, on descend d'environ 300 ft par NM (318 ft plus précisément) : 2 × 300 ≈ 600 ft au-dessus du point de toucher. Sur le plan, le PAPI montre deux rouges et deux blancs ; quatre blancs signaleraient une trajectoire nettement trop haute."
+       "explanation": "Sur un plan de 3°, on devrait être à environ 3 × 300 = 900 ft (950 ft plus précisément). À 600 ft pour 3 NM, soit 200 ft par NM (les deux tiers de 300), votre angle vu du toucher n'est que d'environ 2°, sous le calage de l'unité la plus basse (2°30' pour un plan de 3°). Les quatre unités paraissent rouges : arrêtez la descente jusqu'à retrouver deux rouges et deux blancs."
       },
       {
        "id": "u1s10q20",
@@ -614,7 +614,7 @@
         "Le maire de la commune survolée"
        ],
        "answer": 0,
-       "explanation": "Le plan ORSEC SATER est un plan départemental arrêté et mis en œuvre par le préfet (phases BRAVO LIMITÉE, BRAVO, CHARLIE), en coordination avec les recherches aériennes que dirige l'ARCC. Il mobilise gendarmerie, pompiers et radioamateurs de l'ADRASEC."
+       "explanation": "Le plan ORSEC SATER est un plan départemental déclenché et dirigé par le préfet, en coordination avec les recherches aériennes que dirige l'ARCC. Il mobilise gendarmerie, pompiers et radioamateurs de l'ADRASEC, qui localisent les balises. Le BEA n'intervient pas dans les recherches : il enquête ensuite sur l'accident."
       },
       {
        "id": "u1s11q14",

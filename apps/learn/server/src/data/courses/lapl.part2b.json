@@ -1,0 +1,760 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u2",
+   "title": "Performance humaine",
+   "description": "Physiologie et psychologie du pilote : hypoxie, vision, illusions sensorielles, santé, stress, fatigue et prise de décision (examen : 12 questions, 18 min).",
+   "skills": [
+    {
+     "id": "u2s6",
+     "title": "Stress, fatigue et charge de travail",
+     "icon": "🔋",
+     "tips": "Le stress :\nC'est la réponse de l'organisme à une demande, le « facteur de stress ». Selon le modèle de Lazarus, il naît quand la demande perçue semble dépasser les ressources que l'on pense avoir : face à la même panne, un pilote entraîné et un pilote qui la découvre ne vivent pas le même stress. Un stress modéré mobilise (Selye parle d'eustress) ; un stress excessif désorganise.\n• Stress aigu : réaction brève à un événement soudain (alarme, panne, quasi-collision).\n• Stress chronique : tension qui dure des semaines ou des mois (travail, argent, famille, santé) ; il réduit en permanence la marge disponible en vol.\n\nLes facteurs de stress :\n• environnementaux : bruit, vibrations, chaleur, froid, turbulence ;\n• physiologiques : faim, soif, fatigue, maladie, douleur, hypoxie ;\n• cognitifs : charge de travail, manque de temps, incertitude, situation nouvelle ;\n• personnels : deuil, séparation, déménagement, soucis d'argent ou de travail. L'échelle de Holmes et Rahe compte aussi des événements heureux, comme un mariage : tout grand changement demande une adaptation.\nLes stress s'additionnent : un pilote déjà préoccupé tolère moins bien une petite difficulté.\n\nRéactions de l'organisme :\nEn quelques secondes, le système nerveux sympathique déclenche la réaction « combat ou fuite » : adrénaline, cœur et respiration qui accélèrent, muscles tendus, sueurs, sang dirigé vers les muscles, digestion mise en veille. Le cortisol prend le relais en quelques minutes. Une respiration trop rapide mène à l'hyperventilation.\nEffets sur le pilotage : attention rétrécie (tunnel), mémoire de travail réduite, décisions hâtives ou blocage, persévération sur une seule solution, retour aux automatismes les plus anciens (gestes d'un avion piloté autrefois), communication appauvrie.\n\nStress et performance :\nLa courbe de Yerkes-Dodson est en U inversé, et son sommet dépend de la tâche : une tâche simple et bien entraînée supporte un niveau d'éveil élevé, une tâche complexe ou nouvelle se dégrade plus tôt. L'entraînement et les check-lists transforment une situation difficile en tâche simple.\n\nGérer le stress :\n• agir sur la cause : préparation, marges de temps et de carburant, plan B (train, nuit sur place) qui supprime l'échéance impérative ;\n• s'entraîner : pannes simulées, procédures répétées jusqu'à l'automatisme ;\n• en vol : piloter d'abord, respirer lentement, verbaliser, prendre le temps de la check-list, demander de l'aide (contrôle, SIV) ;\n• hygiène de vie : sommeil, activité physique, repas ; pas de vol en pleine crise personnelle.\n\nLa fatigue :\nL'OACI la définit comme un état de baisse des capacités mentales ou physiques dû au manque de sommeil, à une veille prolongée, à la phase circadienne ou à la charge de travail.\n• Fatigue aiguë : après une journée chargée ; une bonne nuit l'efface.\n• Fatigue chronique : accumulée sur des jours ou des semaines ; une nuit ne suffit plus, il faut un repos prolongé.\nSignes : réactions lentes, attention instable, oublis, irritabilité, précision acceptée moindre (« ça ira »), micro-sommeils de quelques secondes. Piège : le pilote fatigué sous-estime son état ; l'heure du lever et les nuits précédentes comptent plus que le ressenti.\nRègle : les limitations de temps de vol (ORO.FTL) visent le transport commercial. En vol privé, NCO.GEN.105 interdit au commandant de bord d'entreprendre un vol s'il est inapte, notamment par fatigue.\n\nSommeil et horloge interne :\nLa pression de sommeil monte avec la durée d'éveil (l'adénosine s'accumule) ; l'horloge circadienne, réglée par la lumière, fait sécréter la mélatonine dans l'obscurité. Un adulte a besoin en général d'au moins 7 heures par nuit. Creux de vigilance en fin de nuit (la réglementation commerciale définit la WOCL : 02 h 00 – 05 h 59 dans le fuseau auquel on est acclimaté) et, moins marqué, en début d'après-midi.\nCaféine : elle bloque l'adénosine, mais son plein effet demande environ 45 minutes à 1 heure et sa demi-vie moyenne est de 5 heures. Exemple : 100 mg à 16 h, 50 mg à 21 h, 25 mg à 2 h. Elle masque la fatigue sans rembourser la dette.\nDécalage horaire : l'horloge reste sur l'ancien fuseau. Exemple : rentré de Montréal (– 6 h), un pilote a sa WOCL entre 8 h et 12 h, heure de Paris. Adopter vite les horaires locaux et s'exposer à la lumière du jour.\n\nHypovigilance :\nDans les expériences de Mackworth, la détection chute nettement dès la première demi-heure de surveillance monotone. Facteurs : croisière calme, chaleur, digestion, nuit. Parades : circuit visuel actif, points de contrôle chronométrés, tâches planifiées, aération.\n\nCharge de travail :\nC'est la demande de la tâche comparée aux capacités du moment. Elle culmine au décollage, en approche et à l'atterrissage, et en situation anormale.\n• Surcharge : tâches abandonnées (parfois les mauvaises), tunnel, oublis.\n• Sous-charge : ennui, hypovigilance, complaisance ; le passage brutal de l'une à l'autre est délicat.\nLa fatigue abaisse la capacité : une tâche facile le matin peut saturer le soir. Préparer au sol (log, fréquences, VAC), avancer en croisière ce qui peut l'être (ATIS, arrivée), délester le secondaire, ralentir, répondre « attendez » (stand by) pour finir une action.\n\nLes priorités :\nAviate, navigate, communicate : piloter, naviguer, communiquer. En 1972, l'équipage du vol Eastern 401, absorbé par une ampoule de train grillée, n'a pas vu son avion descendre jusqu'au sol.\n\nIMSAFE avant chaque vol :\nIllness, Medication, Stress, Alcohol, Fatigue, Emotion : c'est le volet Pilote de PAVE. Un doute sur une seule ligne suffit à reporter le vol ou à le simplifier.",
+     "vocab": [
+      {
+       "term": "Facteur de stress",
+       "translation": "Situation ou contrainte qui déclenche une réaction de stress"
+      },
+      {
+       "term": "Stress aigu",
+       "translation": "Réaction brève et immédiate à un événement soudain"
+      },
+      {
+       "term": "Stress chronique",
+       "translation": "Tension prolongée sur des semaines ou des mois"
+      },
+      {
+       "term": "Adrénaline",
+       "translation": "Hormone de la réaction « combat ou fuite », libérée en secondes"
+      },
+      {
+       "term": "Cortisol",
+       "translation": "Hormone du stress, plus lente, qui entretient la mobilisation"
+      },
+      {
+       "term": "Eustress",
+       "translation": "Stress modéré et stimulant, qui améliore la performance"
+      },
+      {
+       "term": "Fatigue aiguë",
+       "translation": "Fatigue récente, effacée par une bonne nuit de sommeil"
+      },
+      {
+       "term": "Fatigue chronique",
+       "translation": "Fatigue accumulée sans récupération, qui exige un long repos"
+      },
+      {
+       "term": "Micro-sommeil",
+       "translation": "Endormissement involontaire de quelques secondes"
+      },
+      {
+       "term": "WOCL",
+       "translation": "Fenêtre de faible vigilance circadienne : 02 h 00 – 05 h 59"
+      },
+      {
+       "term": "Mélatonine",
+       "translation": "Hormone sécrétée dans l'obscurité, qui prépare au sommeil"
+      },
+      {
+       "term": "Hypovigilance",
+       "translation": "Baisse de vigilance pendant une tâche longue et monotone"
+      },
+      {
+       "term": "Charge de travail",
+       "translation": "Demande de la tâche comparée aux capacités du moment"
+      },
+      {
+       "term": "Sous-charge",
+       "translation": "Charge trop faible : ennui, baisse de vigilance, complaisance"
+      },
+      {
+       "term": "Délestage des tâches",
+       "translation": "Abandon volontaire des tâches secondaires en surcharge"
+      },
+      {
+       "term": "Aviate, navigate, communicate",
+       "translation": "Ordre des priorités : piloter, naviguer, communiquer"
+      }
+     ],
+     "figures": [
+      {
+       "title": "La vigilance au fil des 24 heures",
+       "svg": "<svg viewBox=\"0 0 680 352\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"352\" fill=\"#ffffff\"/><rect x=\"222.5\" y=\"56\" width=\"71.2\" height=\"206\" fill=\"#fde9cc\"/><rect x=\"531.2\" y=\"56\" width=\"95.0\" height=\"206\" fill=\"#fbd5d5\"/><text x=\"258.1\" y=\"44.0\" font-size=\"15\" fill=\"#9a5b00\" text-anchor=\"middle\" font-weight=\"bold\">Creux d'après-midi</text><text x=\"570.8\" y=\"26.0\" font-size=\"15\" fill=\"#a5281b\" text-anchor=\"middle\" font-weight=\"bold\">Creux circadien</text><text x=\"570.8\" y=\"45.0\" font-size=\"15\" fill=\"#a5281b\" text-anchor=\"middle\">WOCL 02 h – 05 h 59</text><line x1=\"80\" y1=\"262\" x2=\"650\" y2=\"262\" stroke=\"#555\" stroke-width=\"2\"/><line x1=\"80\" y1=\"262\" x2=\"80\" y2=\"52\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"80.0\" y=\"26.0\" font-size=\"16\" fill=\"#1f2a44\" text-anchor=\"start\" font-weight=\"bold\">Vigilance</text><text x=\"72.0\" y=\"80.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">élevée</text><text x=\"72.0\" y=\"252.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">faible</text><path d=\"M80.0,178.0 C84.0,172.0 95.8,152.7 103.8,142.0 C111.7,131.3 119.6,122.0 127.5,114.0 C135.4,106.0 143.3,99.0 151.2,94.0 C159.2,89.0 167.1,84.7 175.0,84.0 C182.9,83.3 190.8,86.0 198.8,90.0 C206.7,94.0 214.6,102.7 222.5,108.0 C230.4,113.3 238.3,120.3 246.2,122.0 C254.2,123.7 262.1,121.0 270.0,118.0 C277.9,115.0 285.8,108.7 293.8,104.0 C301.7,99.3 309.6,93.3 317.5,90.0 C325.4,86.7 333.3,84.3 341.2,84.0 C349.2,83.7 357.1,85.3 365.0,88.0 C372.9,90.7 380.8,95.0 388.8,100.0 C396.7,105.0 404.6,111.3 412.5,118.0 C420.4,124.7 428.3,132.7 436.2,140.0 C444.2,147.3 452.1,154.7 460.0,162.0 C467.9,169.3 475.8,176.7 483.8,184.0 C491.7,191.3 499.6,199.0 507.5,206.0 C515.4,213.0 523.3,220.3 531.2,226.0 C539.2,231.7 547.1,236.3 555.0,240.0 C562.9,243.7 570.8,247.3 578.8,248.0 C586.7,248.7 594.6,247.3 602.5,244.0 C610.4,240.7 618.3,235.0 626.2,228.0 C634.2,221.0 646.0,206.3 650.0,202.0\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"4\"/><line x1=\"80.0\" y1=\"262\" x2=\"80.0\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"80.0\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">7 h</text><line x1=\"151.2\" y1=\"262\" x2=\"151.2\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"151.2\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">10 h</text><line x1=\"222.5\" y1=\"262\" x2=\"222.5\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"222.5\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">13 h</text><line x1=\"293.8\" y1=\"262\" x2=\"293.8\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"293.8\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">16 h</text><line x1=\"365.0\" y1=\"262\" x2=\"365.0\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"365.0\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">19 h</text><line x1=\"436.2\" y1=\"262\" x2=\"436.2\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"436.2\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">22 h</text><line x1=\"507.5\" y1=\"262\" x2=\"507.5\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"507.5\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">1 h</text><line x1=\"578.8\" y1=\"262\" x2=\"578.8\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"578.8\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">4 h</text><line x1=\"650.0\" y1=\"262\" x2=\"650.0\" y2=\"270\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"650.0\" y=\"288.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">7 h</text><rect x=\"460.0\" y=\"302\" width=\"190.0\" height=\"12\" rx=\"4\" fill=\"#94a3b8\"/><text x=\"555.0\" y=\"335.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\">sommeil habituel (23 h – 7 h)</text><text x=\"250.0\" y=\"335.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\" font-weight=\"bold\">Heure locale (pilote acclimaté)</text></svg>",
+       "caption": "Vigilance d'un pilote acclimaté qui resterait éveillé : elle est haute en fin de matinée et en début de soirée, fléchit en début d'après-midi et s'effondre en fin de nuit, dans la fenêtre de faible vigilance circadienne (WOCL, 02 h – 05 h 59)."
+      },
+      {
+       "title": "Charge de travail et capacité du pilote",
+       "svg": "<svg viewBox=\"0 0 700 368\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"368\" fill=\"#ffffff\"/><rect x=\"90\" y=\"14\" width=\"18\" height=\"18\" fill=\"#3b82f6\"/><text x=\"116.0\" y=\"29.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"start\">charge de travail</text><rect x=\"290\" y=\"14\" width=\"18\" height=\"18\" fill=\"#dc2626\"/><text x=\"316.0\" y=\"29.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"start\">part qui dépasse la capacité du pilote fatigué</text><line x1=\"90\" y1=\"300\" x2=\"680\" y2=\"300\" stroke=\"#555\" stroke-width=\"2\"/><line x1=\"90\" y1=\"300\" x2=\"90\" y2=\"50\" stroke=\"#555\" stroke-width=\"2\"/><text x=\"82.0\" y=\"70.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">élevée</text><text x=\"82.0\" y=\"292.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">faible</text><rect x=\"109.2\" y=\"208.0\" width=\"60\" height=\"92.0\" fill=\"#3b82f6\"/><text x=\"139.2\" y=\"322.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Roulage</text><rect x=\"207.5\" y=\"139.0\" width=\"60\" height=\"161.0\" fill=\"#3b82f6\"/><rect x=\"207.5\" y=\"97.6\" width=\"60\" height=\"41.4\" fill=\"#dc2626\"/><text x=\"237.5\" y=\"322.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Décollage,</text><text x=\"237.5\" y=\"341.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">montée initiale</text><rect x=\"305.8\" y=\"185.0\" width=\"60\" height=\"115.0\" fill=\"#3b82f6\"/><text x=\"335.8\" y=\"322.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Montée</text><rect x=\"404.2\" y=\"235.6\" width=\"60\" height=\"64.4\" fill=\"#3b82f6\"/><text x=\"434.2\" y=\"322.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Croisière</text><rect x=\"502.5\" y=\"157.4\" width=\"60\" height=\"142.6\" fill=\"#3b82f6\"/><text x=\"532.5\" y=\"322.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Descente,</text><text x=\"532.5\" y=\"341.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">arrivée</text><rect x=\"600.8\" y=\"139.0\" width=\"60\" height=\"161.0\" fill=\"#3b82f6\"/><rect x=\"600.8\" y=\"88.4\" width=\"60\" height=\"50.6\" fill=\"#dc2626\"/><text x=\"630.8\" y=\"322.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Approche,</text><text x=\"630.8\" y=\"341.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">atterrissage</text><line x1=\"90\" y1=\"70.0\" x2=\"680\" y2=\"70.0\" stroke=\"#15803d\" stroke-width=\"3\" stroke-dasharray=\"10 6\"/><text x=\"398.0\" y=\"62.0\" font-size=\"15\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Capacité du pilote reposé</text><line x1=\"90\" y1=\"139.0\" x2=\"680\" y2=\"139.0\" stroke=\"#b91c1c\" stroke-width=\"3\" stroke-dasharray=\"10 6\"/><text x=\"398.0\" y=\"131.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Capacité du pilote fatigué</text></svg>",
+       "caption": "Profil indicatif d'un vol : la charge culmine au décollage et à l'atterrissage. La fatigue abaisse la capacité du pilote : les phases chargées dépassent alors ses ressources (en rouge), d'où l'intérêt de tout préparer au sol et d'avancer le travail en croisière."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u2s6q01",
+       "q": "Le bruit, les vibrations et la chaleur de la cabine sont des facteurs de stress. De quel type ?",
+       "choices": [
+        "Physiologiques",
+        "Cognitifs, liés à la tâche",
+        "Environnementaux (physiques)",
+        "Personnels, familiaux et sociaux"
+       ],
+       "answer": 2,
+       "explanation": "Les facteurs environnementaux viennent du milieu physique : bruit, vibrations, chaleur, froid, turbulence. Les facteurs physiologiques viennent de l'état du corps (faim, fatigue, maladie) ; la confusion est fréquente, car la chaleur finit aussi par déshydrater."
+      },
+      {
+       "id": "u2s6q02",
+       "q": "Depuis plusieurs mois, un pilote vit de graves soucis financiers et dort mal. Quelle forme de stress cela représente-t-il ?",
+       "choices": [
+        "Un stress chronique",
+        "Un stress aigu",
+        "Un eustress stimulant",
+        "Un stress lié à la tâche"
+       ],
+       "answer": 0,
+       "explanation": "Le stress chronique est une tension prolongée (argent, travail, famille). Il ne se voit pas forcément au sol mais réduit en permanence la marge disponible pour faire face à un imprévu en vol. Le stress aigu, lui, est la réaction brève à un événement immédiat."
+      },
+      {
+       "id": "u2s6q03",
+       "q": "Quelle hormone, libérée en quelques secondes face à une menace, déclenche la réaction « combat ou fuite » ?",
+       "choices": [
+        "Le cortisol",
+        "La mélatonine",
+        "L'insuline",
+        "L'adrénaline"
+       ],
+       "answer": 3,
+       "explanation": "Le système nerveux sympathique fait libérer l'adrénaline en quelques secondes : cœur et respiration accélèrent, muscles se tendent. Le cortisol intervient aussi, mais plus lentement, en quelques minutes, pour entretenir la mobilisation."
+      },
+      {
+       "id": "u2s6q04",
+       "q": "Lors d'un stress aigu, quelle réaction physiologique observe-t-on ?",
+       "choices": [
+        "La digestion s'active pour fournir de l'énergie",
+        "Le cœur et la respiration accélèrent",
+        "Les muscles se relâchent pour économiser l'oxygène",
+        "Le rythme cardiaque ralentit pour protéger le cœur"
+       ],
+       "answer": 1,
+       "explanation": "La réaction « combat ou fuite » prépare à l'action : fréquences cardiaque et respiratoire en hausse, tension musculaire, sueurs, sang dirigé vers les muscles, digestion mise en veille. Une respiration trop rapide peut conduire à l'hyperventilation."
+      },
+      {
+       "id": "u2s6q05",
+       "q": "Qu'est-ce qui distingue la fatigue aiguë de la fatigue chronique ?",
+       "choices": [
+        "La fatigue aiguë dure des semaines, la chronique quelques heures",
+        "La fatigue aiguë disparaît après une bonne nuit de sommeil",
+        "La fatigue chronique disparaît après une sieste de 20 minutes",
+        "La fatigue aiguë est due à l'alcool, la chronique à l'âge"
+       ],
+       "answer": 1,
+       "explanation": "La fatigue aiguë suit une journée chargée ou un long vol : une nuit normale l'efface. La fatigue chronique s'installe quand la récupération manque pendant des jours ou des semaines ; il faut alors un repos prolongé, et ni une nuit ni une sieste ne suffisent."
+      },
+      {
+       "id": "u2s6q06",
+       "q": "Face à une difficulté en vol, dans quel ordre le pilote doit-il traiter ses tâches ?",
+       "choices": [
+        "Communiquer, piloter, naviguer",
+        "Naviguer, communiquer, piloter",
+        "Piloter, naviguer, communiquer",
+        "Piloter, communiquer, naviguer"
+       ],
+       "answer": 2,
+       "explanation": "Aviate, navigate, communicate : d'abord tenir l'avion (assiette, puissance, trajectoire), ensuite savoir où l'on va (relief, espaces), enfin communiquer. Annoncer un problème à la radio ne sert à rien si plus personne ne pilote."
+      },
+      {
+       "id": "u2s6q07",
+       "q": "La check-list personnelle IMSAFE correspond à quelle rubrique de la méthode PAVE ?",
+       "choices": [
+        "Le Pilote (P)",
+        "L'Avion (A)",
+        "L'enVironnement (V)",
+        "Les pressions Extérieures (E)"
+       ],
+       "answer": 0,
+       "explanation": "PAVE passe en revue Pilote, Avion, enVironnement et pressions Extérieures. IMSAFE détaille le volet Pilote : maladie, médicaments, stress, alcool, fatigue, émotion ou alimentation. Des passagers pressés relèvent des pressions extérieures, pas d'IMSAFE."
+      },
+      {
+       "id": "u2s6q08",
+       "q": "Selon l'Académie américaine de médecine du sommeil, combien d'heures un adulte doit-il dormir régulièrement par nuit ?",
+       "choices": [
+        "Au moins 5 heures",
+        "Environ 4 heures, si le sommeil est profond",
+        "Environ 6 heures, la nuit précédant le vol",
+        "Au moins 7 heures"
+       ],
+       "answer": 3,
+       "explanation": "La recommandation est d'au moins 7 heures par nuit, de façon régulière, pour un adulte ; les besoins varient d'une personne à l'autre. En dessous, la dette de sommeil s'accumule, même si l'on ne se sent pas fatigué."
+      },
+      {
+       "id": "u2s6q09",
+       "q": "Face à la même panne simulée, un pilote entraîné reste calme alors qu'un pilote qui ne l'a jamais vue est très stressé. Comment l'expliquer ?",
+       "choices": [
+        "Le stress dépend de la gravité réelle de la panne, pas du pilote",
+        "Le pilote entraîné ne libère plus d'adrénaline face à une panne",
+        "Le stress baisse avec l'âge du pilote, et non avec l'entraînement",
+        "Le stress dépend de l'écart perçu entre la demande et ses ressources"
+       ],
+       "answer": 3,
+       "explanation": "Selon le modèle de Lazarus, le stress naît quand la demande perçue semble dépasser les ressources que l'on pense avoir. L'entraînement augmente ces ressources : la même panne paraît maîtrisable. C'est pourquoi on répète les procédures d'urgence en double commande."
+      },
+      {
+       "id": "u2s6q10",
+       "q": "Selon la loi de Yerkes-Dodson, comment le niveau d'éveil optimal varie-t-il avec la difficulté de la tâche ?",
+       "choices": [
+        "Il est plus bas pour une tâche complexe que pour une tâche simple",
+        "Il est plus élevé pour une tâche complexe que pour une simple",
+        "Il reste le même, quelle que soit la difficulté de la tâche",
+        "Il dépend de l'âge du pilote, pas de la difficulté de la tâche"
+       ],
+       "answer": 0,
+       "explanation": "Une tâche simple et bien entraînée supporte un niveau d'éveil élevé ; une tâche complexe ou nouvelle se dégrade plus tôt quand l'éveil monte. Le piège : croire qu'être « à fond » aide à résoudre une panne inédite, alors que c'est là que le stress désorganise le plus."
+      },
+      {
+       "id": "u2s6q11",
+       "q": "En vol privé, selon la Part-NCO, quelle règle s'applique à la fatigue du commandant de bord ?",
+       "choices": [
+        "Respecter des limitations chiffrées du temps de vol, comme en ligne",
+        "Observer un repos minimal de 12 heures fixé par la DGAC avant le vol",
+        "Ne pas entreprendre le vol si l'on est inapte, par fatigue notamment",
+        "Remplir une déclaration de fatigue sur le carnet de route de l'avion"
+       ],
+       "answer": 2,
+       "explanation": "Les limitations de temps de vol et de repos (ORO.FTL) visent le transport commercial. En vol privé, NCO.GEN.105 interdit au commandant de bord d'entreprendre un vol s'il est inapte, notamment par blessure, maladie, fatigue ou substance psychoactive : c'est à lui de s'évaluer honnêtement."
+      },
+      {
+       "id": "u2s6q12",
+       "q": "En croisière longue et calme, quelle mesure combat le mieux l'hypovigilance ?",
+       "choices": [
+        "Monter le chauffage de la cabine pour rester confortablement installé",
+        "Planifier des tâches régulières : points de contrôle, carburant, radio",
+        "Fixer l'horizon droit devant soi, sans bouger la tête ni les yeux",
+        "Confier l'avion au pilote automatique et se reposer quelques minutes"
+       ],
+       "answer": 1,
+       "explanation": "La vigilance baisse vite lors d'une surveillance monotone : dans les expériences de Mackworth, la détection chute nettement dès la première demi-heure. Des tâches planifiées, un circuit visuel actif, l'aération et l'hydratation entretiennent l'éveil ; la chaleur et l'immobilité l'endorment."
+      },
+      {
+       "id": "u2s6q13",
+       "q": "Quel comportement signale qu'un pilote est en surcharge de travail ?",
+       "choices": [
+        "Il délaisse des tâches, parfois essentielles, et se focalise",
+        "Il s'ennuie et sa vigilance baisse peu à peu au fil du vol",
+        "Il fait trop confiance au GPS et cesse de surveiller la route",
+        "Il anticipe les phases du vol avec une large avance"
+       ],
+       "answer": 0,
+       "explanation": "En surcharge, la demande dépasse la capacité : le pilote abandonne des tâches sans choisir forcément les bonnes (il cesse de surveiller la vitesse), se focalise et commet des oublis. L'ennui et la complaisance sont au contraire des signes de sous-charge."
+      },
+      {
+       "id": "u2s6q14",
+       "q": "En arrivée sur un terrain inconnu, vous êtes en plein virage vers le point d'entrée et cherchez un repère quand le contrôleur vous appelle. Que faites-vous ?",
+       "choices": [
+        "Lui répondre en détail immédiatement, quitte à élargir le virage",
+        "Ne pas répondre et attendre tranquillement qu'il vous rappelle plus tard",
+        "Lui demander de vous transférer sur une autre fréquence de suite",
+        "Répondre « attendez » (stand by), finir le virage, puis le rappeler"
+       ],
+       "answer": 3,
+       "explanation": "« Attendez » (stand by) indique au contrôleur que l'appel est reçu et que l'on rappellera : on finit l'action prioritaire sans lâcher le pilotage. Ne pas répondre du tout l'inquiète et le pousse à rappeler au mauvais moment ; répondre en détail fait passer la radio avant le pilotage."
+      },
+      {
+       "id": "u2s6q15",
+       "q": "Un pilote doit se rendre en avion à un rendez-vous professionnel impératif le lendemain. Quelle mesure réduit le mieux le risque de pression d'objectif ?",
+       "choices": [
+        "Décoller plus tôt pour avoir le temps de contourner la météo",
+        "Prévoir dès maintenant une solution de rechange, comme le train",
+        "Emmener un passager pilote pour partager la décision en vol",
+        "Fixer ses minima personnels une fois en vol, selon la météo"
+       ],
+       "answer": 1,
+       "explanation": "Une échéance sans alternative transforme le stress en pression d'objectif. Un plan B organisé au sol (train, report du rendez-vous, nuit sur place) rend le renoncement acceptable. Des minima fixés en vol, sous pression, ne protègent de rien : ils se fixent au sol."
+      },
+      {
+       "id": "u2s6q16",
+       "q": "Après dix ans sur un avion dont la commande de réchauffage carburateur était à gauche, un pilote vole sur un modèle où elle est à droite. Lors d'une baisse de puissance brutale, il la cherche à gauche. Quel effet du stress cela illustre-t-il ?",
+       "choices": [
+        "Une illusion sensorielle d'origine vestibulaire",
+        "Une violation de routine, commise exprès",
+        "Le retour aux automatismes les plus anciens",
+        "Un biais de confirmation dans la décision"
+       ],
+       "answer": 2,
+       "explanation": "Sous stress, l'attention se rétrécit et le pilote retombe sur ses habitudes les mieux ancrées, parfois celles d'un ancien avion. Parade : un lâcher sur type sérieux, des gestes répétés au sol et la lecture de la check-list. Ce n'est pas une violation : le geste est involontaire."
+      },
+      {
+       "id": "u2s6q17",
+       "q": "Un pilote boit à 16 h un café contenant 100 mg de caféine. En retenant une demi-vie de 5 heures, quelle quantité de caféine reste-t-il environ dans son organisme à 2 h du matin ?",
+       "choices": [
+        "Environ 50 mg",
+        "Environ 12 mg",
+        "Environ 25 mg",
+        "Environ 75 mg"
+       ],
+       "answer": 2,
+       "explanation": "De 16 h à 2 h, il s'écoule 10 heures, soit deux demi-vies : 100 → 50 mg à 21 h, puis 25 mg à 2 h. Un café de fin d'après-midi agit donc encore la nuit et abîme le sommeil avant un vol matinal. 50 mg correspondrait à une seule demi-vie ; la valeur réelle varie beaucoup d'une personne à l'autre."
+      },
+      {
+       "id": "u2s6q18",
+       "q": "Rentré la veille de Montréal, où il est 6 heures de moins qu'à Paris, un pilote a encore son horloge interne réglée sur Montréal. Entre quelles heures de Paris sa vigilance risque-t-elle d'être la plus basse ?",
+       "choices": [
+        "Entre 2 h et 6 h environ",
+        "Entre 8 h et 12 h environ",
+        "Entre 20 h et minuit environ",
+        "Entre 14 h et 18 h environ"
+       ],
+       "answer": 1,
+       "explanation": "Le creux circadien se situe vers 02 h 00 – 05 h 59 dans le fuseau auquel l'organisme est acclimaté (définition de la WOCL). Quand il est 2 h à Montréal, il est 8 h à Paris (+ 6 h), et 6 h à Montréal correspond à midi : un vol en fin de matinée tombe en pleine « nuit biologique ». Soustraire les 6 heures donnerait à tort 20 h – minuit."
+      },
+      {
+       "id": "u2s6q19",
+       "q": "Depuis trois semaines, un pilote ne dort que 5 à 6 heures par nuit. Il a dormi 8 heures avant son vol du samedi et se sent en forme. Que retenir ?",
+       "choices": [
+        "Une seule nuit ne suffit pas à effacer une fatigue chronique",
+        "Il est reposé, puisqu'il a dormi plus de 7 heures",
+        "Il souffrait d'une fatigue aiguë, effacée par cette nuit",
+        "Il peut compenser sa dette avec un café avant le vol"
+       ],
+       "answer": 0,
+       "explanation": "Trois semaines de nuits courtes créent une dette et une fatigue chronique : une bonne nuit améliore la vigilance mais ne rembourse pas tout. Le ressenti est trompeur, car le pilote fatigué sous-estime son état. Il reste à risque : vol simple, marges larges, ou report."
+      },
+      {
+       "id": "u2s6q20",
+       "q": "Le même tour de piste, par la même météo, paraît bien plus difficile à un pilote le soir, après une longue journée de travail. Comment l'expliquer ?",
+       "choices": [
+        "Le tour de piste demande plus de travail le soir qu'en journée",
+        "Il est en sous-charge, le même circuit étant devenu routinier",
+        "Son niveau d'éveil est trop élevé à cause de la longue journée",
+        "Sa capacité a baissé : la même charge le rapproche de la surcharge"
+       ],
+       "answer": 3,
+       "explanation": "La charge de travail compare la demande de la tâche aux capacités du moment. La fatigue, comme le stress ou le manque d'entraînement, abaisse la capacité : une tâche facile le matin peut saturer le pilote le soir. D'où l'intérêt de simplifier le vol quand on est fatigué."
+      },
+      {
+       "id": "u2s6q21",
+       "q": "En fin de navigation, après une longue journée, vous vous êtes repris deux fois sur le cap et vous avez oublié de collationner un QNH. Quelle décision est la plus sûre ?",
+       "choices": [
+        "Accélérer pour arriver plus vite et mettre fin à la fatigue",
+        "Ouvrir l'aérateur et poursuivre le vol comme prévu",
+        "Prolonger le vol en local pour se remettre en éveil",
+        "Admettre la fatigue et simplifier la fin du vol"
+       ],
+       "answer": 3,
+       "explanation": "Écarts de cap et oublis répétés sont des signes de fatigue. On le reconnaît, on simplifie (arrivée directe, terrain plus proche si besoin) et on s'appuie strictement sur les check-lists. Aérer aide un peu mais ne change rien au fond ; accélérer ou prolonger le vol augmente le risque."
+      },
+      {
+       "id": "u2s6q22",
+       "q": "En navigation, vous réalisez que vous n'êtes plus sûr de votre position. Votre cœur s'accélère et votre souffle devient court. Que faites-vous en premier ?",
+       "choices": [
+        "Plonger dans la carte pour retrouver la position sans perdre de temps",
+        "Virer vers le premier village venu pour lire son nom au plus vite",
+        "Stabiliser l'avion, ralentir sa respiration, puis traiter le problème",
+        "Appeler le contrôle et lui décrire en détail le parcours déjà effectué"
+       ],
+       "answer": 2,
+       "explanation": "Le stress aigu rétrécit l'attention et pousse à des actions précipitées. Piloter d'abord (cap, altitude, puissance), respirer lentement pour éviter l'hyperventilation, puis appliquer la méthode d'égarement et demander l'aide du SIV. Se jeter sur la carte fait oublier de tenir l'avion."
+      },
+      {
+       "id": "u2s6q23",
+       "q": "Pourquoi l'instructeur fait-il répéter régulièrement les pannes simulées en double commande ?",
+       "choices": [
+        "Pour supprimer la réaction d'adrénaline en cas de panne réelle",
+        "Pour qu'une procédure répétée devienne simple et résiste au stress",
+        "Pour vérifier le moteur, qui doit être coupé régulièrement en vol",
+        "Pour habituer le pilote à se passer de la check-list d'urgence"
+       ],
+       "answer": 1,
+       "explanation": "Selon Yerkes-Dodson, une tâche simple et bien apprise supporte un niveau d'éveil élevé. Répéter la procédure l'automatise : le jour de la vraie panne, elle reste exécutable malgré le stress. Le stress ne disparaît pas pour autant, et la check-list sert encore à vérifier."
+      },
+      {
+       "id": "u2s6q24",
+       "q": "Après une heure de croisière monotone, vous devez soudain gérer l'arrivée dans une CTR très fréquentée. Quel risque particulier faut-il anticiper ?",
+       "choices": [
+        "Le passage brutal d'une sous-charge à une surcharge de travail",
+        "Une hypoxie due à la descente rapide vers le plancher de la CTR",
+        "Une illusion somatogravique due au changement brutal de vitesse",
+        "Une violation de routine des consignes d'entrée dans la CTR"
+       ],
+       "answer": 0,
+       "explanation": "Un pilote peu éveillé après une longue croisière met du temps à remonter en régime, alors que la charge explose : il risque d'être en retard sur l'avion. Parade : préparer l'arrivée pendant la croisière (ATIS, carte VAC, fréquences, point d'entrée) avant d'entrer dans la zone chargée."
+      }
+     ]
+    },
+    {
+     "id": "u2s7",
+     "title": "Erreur humaine, TEM et gestion des ressources",
+     "icon": "🧀",
+     "tips": "Erreur et violation :\nSelon James Reason, une erreur est une action ou une décision planifiée qui n'atteint pas le but visé, sans que le hasard en soit la cause. Elle est involontaire ; la violation est un écart délibéré à une règle. Les erreurs sont inévitables, même chez les pilotes expérimentés : on les prévient, on les détecte et on les récupère avant qu'elles aient des conséquences.\n\nLes quatre familles (Reason) :\n• raté : bonne intention, mauvaise exécution, par défaut d'attention (actionner les volets au lieu du compensateur). Cas particulier, l'erreur de capture : une habitude forte prend le dessus (prendre le cap habituel du terrain d'attache au lieu de celui du déroutement) ;\n• lapsus : défaillance de la mémoire, invisible de l'extérieur (oubli d'une étape, d'un report, d'une intention) ; les interruptions en sont la grande source ;\n• faute : l'action se déroule comme prévu, mais le plan est mauvais. Fondée sur les règles (règle habituelle appliquée au mauvais cas) ou sur les connaissances (raisonnement erroné face à l'inconnu) ;\n• violation : de routine (raccourci devenu habituel et toléré), optimisante (gagner du temps, se faire plaisir), situationnelle (la règle paraît inapplicable sur le moment) ou exceptionnelle (écart isolé, en situation inhabituelle).\nOn parle aussi d'erreur d'omission (ne pas faire) et de commission (faire ce qu'il ne fallait pas).\n\nLe fromage suisse (Reason) :\nChaque barrière (conception, réglementation, organisation, formation, procédures, pilote) est une tranche percée de trous qui s'ouvrent et se déplacent. Les trous amont sont des conditions latentes, parfois créées des années avant ; ceux de la dernière tranche, des défaillances actives. L'accident survient quand les trous s'alignent. Leçon : chercher pourquoi l'erreur a été possible plutôt que qui l'a commise, et ajouter des barrières.\n\nLe modèle SHELL (OACI) :\nLe pilote (L, Liveware) est au centre, en interface avec le logiciel (S : procédures, check-lists, cartes), le matériel (H : commandes, instruments), l'environnement (E : météo, bruit, chaleur) et les autres personnes (L : contrôleur, instructeur, passagers). Deux manettes semblables côte à côte (L-H) ou une check-list ambiguë (L-S) fabriquent des erreurs.\n\nGestion des menaces et des erreurs (TEM) :\n• menaces : extérieures au pilote, elles réduisent les marges ; attendues (orage prévu, piste courte), inattendues (panne soudaine) ou latentes, cachées dans la conception, l'organisation ou les documents ;\n• erreurs : de manipulation de l'avion (commandes, GPS), de procédure (check-list, calage), de communication (message mal compris ou mal collationné) ;\n• état indésirable de l'avion : écart de trajectoire ou de vitesse, configuration incorrecte, mauvaise piste ou mauvais taxiway.\nContre-mesures : briefing des menaces avant chaque phase, surveillance et recoupements, check-lists, collationnement, minima personnels, plan B. Face à un état indésirable, on rétablit l'avion (remise de gaz, retour au palier) avant d'analyser l'erreur.\n\nAttitudes dangereuses :\nLes cinq attitudes de la FAA (anti-autorité, impulsivité, invulnérabilité, machisme, résignation) se repèrent à des phrases intérieures ; on les combat par leur antidote.\n\nLes biais de décision :\n• confirmation : retenir les indices qui confortent son plan ;\n• continuation : poursuivre le plan initial malgré une situation qui change ; il se renforce à l'approche du but (fin de navigation, finale) ;\n• ancrage : rester accroché à la première information ;\n• coût irrécupérable : « j'ai déjà fait une heure de vol » ; le passé ne doit pas peser sur la décision ;\n• normalisation de la déviance (Diane Vaughan, après Challenger) : un écart répété sans conséquence finit par paraître normal ;\n• pression du groupe : partir parce que les autres partent, ne pas oser renoncer devant des passagers.\n\nConscience de la situation :\nElle se perd sans bruit. Signaux d'alerte : deux informations qui ne concordent pas, sentiment que « quelque chose cloche », fixation, point ou heure estimée manqués, écart au plan sans décision. Réaction : stabiliser l'avion, faire le point, recouper, demander de l'aide.\n\nCommunication :\nLe message traverse un canal (bruit, accent, coupures) et doit être décodé ; le collationnement et son écoute par le contrôleur (hear-back) ferment la boucle. En 1989 à Kuala Lumpur, « descend two four zero zero » a été compris « to four zero zero » et collationné sans correction. À Tenerife en 1977, « we are now at takeoff » a été compris par la tour comme « en position », alors que l'avion décollait : le mot « décollage » est depuis réservé à l'autorisation de décollage et à son annulation. En cas de doute, faire répéter.\n\nCRM et SRM :\nLe CRM (gestion des ressources de l'équipage) est né à la fin des années 1970, notamment après l'accident du vol United 173 (Portland, 1978), à court de carburant pendant que l'équipage traitait un problème de train. Pour le pilote seul, la FAA parle de SRM : gérer toutes les ressources, à bord et à l'extérieur (contrôle, SIV, météo, GPS, pilote automatique, passagers briefés), en revoyant les 5 P : plan, plane (avion), pilote, passagers, programming (avionique). Aux phases critiques, on demande le silence à bord, comme le « cockpit stérile » des lignes.\n\nCheck-lists :\nPièges : réciter sans regarder, sauter un item « pour plus tard », reprendre au mauvais endroit ; après une interruption, on reprend la section depuis son début.\n\nCulture juste et REX :\nSelon Heinrich (1931), un accident grave s'accompagne d'environ 29 accidents légers et 300 événements sans blessure : chaque incident signalé est une leçon gratuite. Pour Reason, une culture de sécurité informée repose sur le compte rendu, lui-même fondé sur une culture juste : pas de sanction pour l'erreur de bonne foi, pas de tolérance pour la négligence grave ou la violation délibérée. En France, outre la notification réglementaire (règlement européen 376/2014), les fédérations comme la FFA animent un REX.",
+     "vocab": [
+      {
+       "term": "Raté",
+       "translation": "Bonne intention, mauvaise exécution, par défaut d'attention"
+      },
+      {
+       "term": "Lapsus",
+       "translation": "Défaillance de mémoire : oubli d'une action ou d'une étape"
+      },
+      {
+       "term": "Faute",
+       "translation": "Action conforme au plan, mais plan inadapté"
+      },
+      {
+       "term": "Violation de routine",
+       "translation": "Raccourci volontaire devenu habituel et toléré"
+      },
+      {
+       "term": "Erreur de capture",
+       "translation": "Habitude forte qui prend le dessus sur l'action voulue"
+      },
+      {
+       "term": "Modèle SHELL",
+       "translation": "Pilote au centre : logiciel, matériel, environnement, autres"
+      },
+      {
+       "term": "Menace latente",
+       "translation": "Menace cachée dans la conception, l'organisation, les documents"
+      },
+      {
+       "term": "État indésirable de l'avion",
+       "translation": "Écart de trajectoire, vitesse ou configuration qui réduit les marges"
+      },
+      {
+       "term": "Biais de continuation",
+       "translation": "Poursuivre le plan initial malgré une situation qui a changé"
+      },
+      {
+       "term": "Ancrage",
+       "translation": "Rester accroché à la première information ou estimation"
+      },
+      {
+       "term": "Coût irrécupérable",
+       "translation": "Investissement passé qui pèse à tort sur la décision"
+      },
+      {
+       "term": "Normalisation de la déviance",
+       "translation": "Écart répété sans conséquence qui finit par paraître normal"
+      },
+      {
+       "term": "Hear-back",
+       "translation": "Écoute du collationnement par le contrôleur pour le vérifier"
+      },
+      {
+       "term": "SRM",
+       "translation": "Gestion de toutes les ressources disponibles par un pilote seul"
+      },
+      {
+       "term": "Cockpit stérile",
+       "translation": "Silence à bord, hors pilotage, pendant les phases critiques"
+      },
+      {
+       "term": "REX",
+       "translation": "Retour d'expérience : partager les événements pour en tirer leçon"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Le modèle de Reason (fromage suisse)",
+       "svg": "<svg viewBox=\"0 0 700 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"420\" fill=\"#ffffff\"/><defs><marker id=\"u2s7f1r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#c0392b\"/></marker></defs><polygon points=\"150,74 194,98 194,322 150,298\" fill=\"#f6cf4a\" stroke=\"#a87b05\" stroke-width=\"2\"/><ellipse cx=\"170.0\" cy=\"290.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"164.0\" cy=\"175.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"172.0\" cy=\"223.5\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"172.0\" cy=\"133.7\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><polygon points=\"280,74 324,98 324,322 280,298\" fill=\"#f6cf4a\" stroke=\"#a87b05\" stroke-width=\"2\"/><ellipse cx=\"298.0\" cy=\"130.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"306.0\" cy=\"276.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"302.0\" cy=\"211.3\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><polygon points=\"410,74 454,98 454,322 410,298\" fill=\"#f6cf4a\" stroke=\"#a87b05\" stroke-width=\"2\"/><ellipse cx=\"428.0\" cy=\"120.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"436.0\" cy=\"272.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"432.0\" cy=\"199.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><polygon points=\"540,74 584,98 584,322 540,298\" fill=\"#f6cf4a\" stroke=\"#a87b05\" stroke-width=\"2\"/><ellipse cx=\"556.0\" cy=\"128.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"566.0\" cy=\"268.0\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><ellipse cx=\"562.0\" cy=\"186.8\" rx=\"13\" ry=\"19\" fill=\"#ffffff\" stroke=\"#a87b05\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"126\" x2=\"278\" y2=\"139.9\" stroke=\"#6b7280\" stroke-width=\"4\"/><line x1=\"278\" y1=\"124.0\" x2=\"278\" y2=\"156.0\" stroke=\"#6b7280\" stroke-width=\"5\"/><text x=\"40.0\" y=\"112.0\" font-size=\"15\" fill=\"#4b5563\" text-anchor=\"start\" font-weight=\"bold\">Danger arrêté</text><line x1=\"40\" y1=\"236\" x2=\"676\" y2=\"176.0\" stroke=\"#c0392b\" stroke-width=\"4.5\" marker-end=\"url(#u2s7f1r)\"/><text x=\"40.0\" y=\"262.0\" font-size=\"16\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">Danger</text><text x=\"690.0\" y=\"160.0\" font-size=\"16\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">Accident</text><path d=\"M150,60 L150,50 L454,50 L454,60\" fill=\"none\" stroke=\"#1f2a44\" stroke-width=\"2\"/><text x=\"302.0\" y=\"40.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\" font-weight=\"bold\">Conditions latentes (en amont)</text><path d=\"M540,60 L540,50 L584,50 L584,60\" fill=\"none\" stroke=\"#1f2a44\" stroke-width=\"2\"/><text x=\"570.0\" y=\"40.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\" font-weight=\"bold\">Défaillances actives</text><text x=\"172.0\" y=\"348.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Conception,</text><text x=\"172.0\" y=\"367.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">réglementation</text><text x=\"302.0\" y=\"348.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Organisation,</text><text x=\"302.0\" y=\"367.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">formation</text><text x=\"432.0\" y=\"348.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Conditions</text><text x=\"432.0\" y=\"367.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">du jour (fatigue,</text><text x=\"432.0\" y=\"386.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">météo, pression)</text><text x=\"562.0\" y=\"348.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">Actes</text><text x=\"562.0\" y=\"367.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">du pilote</text></svg>",
+       "caption": "Chaque barrière a des trous qui s'ouvrent et se déplacent. Le plus souvent, une barrière arrête le danger (flèche grise) ; l'accident survient quand des conditions latentes et une défaillance active s'alignent (flèche rouge)."
+      },
+      {
+       "title": "La gestion des menaces et des erreurs (TEM)",
+       "svg": "<svg viewBox=\"0 0 700 460\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"460\" fill=\"#ffffff\"/><defs><marker id=\"u2s7f2d\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1f2a44\"/></marker><marker id=\"u2s7f2g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#15803d\"/></marker></defs><rect x=\"20\" y=\"20\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#fff1e0\" stroke=\"#d97706\" stroke-width=\"2.5\"/><text x=\"180.0\" y=\"46.0\" font-size=\"18\" fill=\"#7c3f00\" text-anchor=\"middle\" font-weight=\"bold\">Menaces</text><text x=\"180.0\" y=\"70.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">météo, relief, trafic, panne</text><text x=\"180.0\" y=\"90.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">attendues, inattendues, latentes</text><rect x=\"404\" y=\"24\" width=\"276\" height=\"76\" rx=\"10\" fill=\"#e8f6ec\" stroke=\"#15803d\" stroke-width=\"2.5\"/><text x=\"542.0\" y=\"48.0\" font-size=\"17\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\">Anticiper</text><text x=\"542.0\" y=\"70.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">briefing des menaces,</text><text x=\"542.0\" y=\"90.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">minima, plan B</text><line x1=\"402\" y1=\"62\" x2=\"346\" y2=\"62\" stroke=\"#15803d\" stroke-width=\"3\" marker-end=\"url(#u2s7f2g)\"/><rect x=\"20\" y=\"140\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#fdecea\" stroke=\"#c0392b\" stroke-width=\"2.5\"/><text x=\"180.0\" y=\"166.0\" font-size=\"18\" fill=\"#8e1d12\" text-anchor=\"middle\" font-weight=\"bold\">Erreurs du pilote</text><text x=\"180.0\" y=\"190.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">manipulation, procédure,</text><text x=\"180.0\" y=\"210.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">communication</text><rect x=\"404\" y=\"144\" width=\"276\" height=\"76\" rx=\"10\" fill=\"#e8f6ec\" stroke=\"#15803d\" stroke-width=\"2.5\"/><text x=\"542.0\" y=\"168.0\" font-size=\"17\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\">Détecter, corriger</text><text x=\"542.0\" y=\"190.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">check-lists, recoupements,</text><text x=\"542.0\" y=\"210.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">collationnement</text><line x1=\"402\" y1=\"182\" x2=\"346\" y2=\"182\" stroke=\"#15803d\" stroke-width=\"3\" marker-end=\"url(#u2s7f2g)\"/><rect x=\"20\" y=\"260\" width=\"320\" height=\"84\" rx=\"10\" fill=\"#f9d6d2\" stroke=\"#922b21\" stroke-width=\"2.5\"/><text x=\"180.0\" y=\"286.0\" font-size=\"18\" fill=\"#6e1a12\" text-anchor=\"middle\" font-weight=\"bold\">État indésirable de l'avion</text><text x=\"180.0\" y=\"310.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">trajectoire, vitesse,</text><text x=\"180.0\" y=\"330.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">configuration, mauvaise piste</text><rect x=\"404\" y=\"264\" width=\"276\" height=\"76\" rx=\"10\" fill=\"#e8f6ec\" stroke=\"#15803d\" stroke-width=\"2.5\"/><text x=\"542.0\" y=\"288.0\" font-size=\"17\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\">Récupérer d'abord</text><text x=\"542.0\" y=\"310.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">rétablir l'avion : remise</text><text x=\"542.0\" y=\"330.0\" font-size=\"15\" fill=\"#1f2a44\" text-anchor=\"middle\">de gaz, retour au palier</text><line x1=\"402\" y1=\"302\" x2=\"346\" y2=\"302\" stroke=\"#15803d\" stroke-width=\"3\" marker-end=\"url(#u2s7f2g)\"/><line x1=\"180\" y1=\"104\" x2=\"180\" y2=\"136\" stroke=\"#1f2a44\" stroke-width=\"3\" marker-end=\"url(#u2s7f2d)\"/><text x=\"192.0\" y=\"127.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"start\">mal gérées</text><line x1=\"180\" y1=\"224\" x2=\"180\" y2=\"256\" stroke=\"#1f2a44\" stroke-width=\"3\" marker-end=\"url(#u2s7f2d)\"/><text x=\"192.0\" y=\"247.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"start\">non détectées</text><line x1=\"180\" y1=\"344\" x2=\"180\" y2=\"376\" stroke=\"#1f2a44\" stroke-width=\"3\" marker-end=\"url(#u2s7f2d)\"/><text x=\"192.0\" y=\"367.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"start\">non récupéré</text><rect x=\"20\" y=\"380\" width=\"320\" height=\"60\" rx=\"10\" fill=\"#3f3f46\"/><text x=\"180.0\" y=\"416.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">Incident ou accident</text><text x=\"542.0\" y=\"406.0\" font-size=\"17\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\">Contre-mesures</text><text x=\"542.0\" y=\"428.0\" font-size=\"15\" fill=\"#15803d\" text-anchor=\"middle\">à chaque étape</text></svg>",
+       "caption": "Une menace mal gérée favorise l'erreur, une erreur non détectée mène à un état indésirable de l'avion, puis à l'incident. À chaque étape, une contre-mesure (en vert) peut rompre la chaîne ; face à un état indésirable, on rétablit l'avion avant d'analyser."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u2s7q01",
+       "q": "En gestion des erreurs, quel est l'objectif réaliste ?",
+       "choices": [
+        "Supprimer les erreurs en sanctionnant les pilotes fautifs",
+        "Prévenir, détecter et récupérer les erreurs",
+        "Réserver la vigilance aux pilotes débutants, plus fautifs",
+        "Remplacer l'entraînement du pilote par l'automatisation"
+       ],
+       "answer": 1,
+       "explanation": "Les erreurs sont inévitables, même chez les pilotes expérimentés. On cherche à les prévenir (préparation, briefing), à les détecter (check-lists, recoupements, collationnement) et à les récupérer avant qu'elles ne mènent à un état dangereux. La sanction systématique pousse surtout à les cacher."
+      },
+      {
+       "id": "u2s7q02",
+       "q": "Dans le modèle SHELL de l'OACI, que représente la lettre H (Hardware) ?",
+       "choices": [
+        "Les procédures, check-lists et cartes",
+        "L'environnement : météo, bruit, chaleur",
+        "Les autres personnes : contrôleur, passagers",
+        "Le matériel : commandes, instruments, sièges"
+       ],
+       "answer": 3,
+       "explanation": "SHELL : Software (procédures, check-lists, cartes), Hardware (matériel), Environment (environnement), Liveware (le pilote au centre, et les autres personnes). Les erreurs naissent souvent d'une mauvaise adaptation entre le pilote et l'un de ces éléments."
+      },
+      {
+       "id": "u2s7q03",
+       "q": "Le contrôleur annonce le QNH 1013 et vous collationnez « 1031 ». Dans le modèle TEM, comment classer ce mauvais collationnement ?",
+       "choices": [
+        "Une erreur de communication",
+        "Une erreur de manipulation de l'avion",
+        "Une menace inattendue",
+        "Un état indésirable de l'avion"
+       ],
+       "answer": 0,
+       "explanation": "Le TEM classe les erreurs du pilote en trois familles : manipulation de l'avion (commandes, automatismes), procédures (check-list, calage) et communication (message mal compris ou mal collationné). Si 1031 est ensuite affiché au lieu de 1013, l'altimètre indique environ 500 ft de trop : l'avion, plus bas qu'on ne le croit, passe dans un état indésirable. Une erreur commise par le contrôleur serait, elle, une menace pour le pilote."
+      },
+      {
+       "id": "u2s7q04",
+       "q": "Dans le modèle de Reason (« fromage suisse »), que représentent les tranches de fromage ?",
+       "choices": [
+        "Les phases successives d'un vol",
+        "Les trois niveaux de la conscience de la situation",
+        "Les barrières de défense successives du système",
+        "Les étapes de la réaction au stress"
+       ],
+       "answer": 2,
+       "explanation": "Chaque tranche est une défense (conception, réglementation, organisation, formation, procédures, pilote), et chaque défense a des trous. Les trous bougent sans cesse ; l'accident survient quand ils s'alignent, laissant passer le danger à travers toutes les barrières."
+      },
+      {
+       "id": "u2s7q05",
+       "q": "Que désigne le SRM (Single-pilot Resource Management) ?",
+       "choices": [
+        "La gestion de ses ressources par un pilote seul",
+        "Un radar qui surveille les avions monomoteurs",
+        "Une règle de séparation propre aux vols en solo",
+        "Un examen médical propre aux pilotes seuls"
+       ],
+       "answer": 0,
+       "explanation": "La FAA définit le SRM comme l'art de gérer toutes les ressources, à bord et extérieures, dont dispose un pilote seul : contrôle et SIV, météo, documentation, GPS et pilote automatique, passagers briefés. Il transpose au monopilote les principes du CRM des équipages."
+      },
+      {
+       "id": "u2s7q06",
+       "q": "Pendant la check-list avant décollage, la tour vous appelle pour une information de trafic. Une fois l'échange terminé, que faites-vous ?",
+       "choices": [
+        "La reprendre à l'item où vous pensez vous être arrêté",
+        "Reprendre cette section de la check-list depuis son début",
+        "Considérer la check-list comme faite, l'essentiel étant vu",
+        "Terminer de mémoire les items restants pour gagner du temps"
+       ],
+       "answer": 1,
+       "explanation": "Les interruptions sont la grande source d'oublis (lapsus) : en reprenant « là où l'on croit s'être arrêté », on saute souvent un item. Reprendre la section depuis le début coûte quelques secondes et ferme la porte à l'omission."
+      },
+      {
+       "id": "u2s7q07",
+       "q": "« Ces NOTAM, c'est de la paperasse, je n'ai pas besoin de les lire pour un vol local. » Quelle attitude dangereuse ce pilote exprime-t-il ?",
+       "choices": [
+        "L'impulsivité",
+        "La résignation",
+        "Le machisme",
+        "L'anti-autorité"
+       ],
+       "answer": 3,
+       "explanation": "Rejeter une règle parce qu'elle est imposée relève de l'anti-autorité. Antidote : « Suivez les règles, elles sont généralement justifiées. » Un NOTAM peut signaler une zone active, une piste fermée ou un obstacle, même pour un vol local."
+      },
+      {
+       "id": "u2s7q08",
+       "q": "Que montre la pyramide de Heinrich ?",
+       "choices": [
+        "Les accidents graves arrivent sans signes avant-coureurs visibles",
+        "Les incidents mineurs n'ont pas d'intérêt pour la prévention",
+        "Un accident grave s'accompagne de nombreux événements sans gravité",
+        "La plupart des accidents viennent d'une panne de matériel imprévue"
+       ],
+       "answer": 2,
+       "explanation": "Heinrich (1931) comptait environ 29 accidents légers et 300 événements sans blessure pour un accident grave. Ces chiffres sont discutés, mais l'idée demeure : incidents et presque-accidents partagent les causes des accidents graves. Les signaler, c'est apprendre sans payer le prix fort."
+      },
+      {
+       "id": "u2s7q09",
+       "q": "Dans un aéroclub, beaucoup de pilotes font la visite prévol en deux minutes en sautant des points du manuel ; personne ne s'en étonne plus. Selon Reason, de quel type d'écart s'agit-il ?",
+       "choices": [
+        "Une violation exceptionnelle",
+        "Un raté d'exécution",
+        "Une violation de routine",
+        "Un lapsus de mémoire"
+       ],
+       "answer": 2,
+       "explanation": "Un raccourci volontaire devenu habituel et toléré par l'entourage est une violation de routine. Les violations situationnelle et exceptionnelle répondent à une circonstance particulière ; ratés et lapsus sont des erreurs involontaires. Les violations de routine prospèrent là où personne ne les relève."
+      },
+      {
+       "id": "u2s7q10",
+       "q": "Après une remise de gaz, un pilote a prévu de rentrer les volets dans la montée. Occupé par un appel radio, il poursuit la montée volets sortis. Selon Reason, de quelle erreur s'agit-il ?",
+       "choices": [
+        "Un lapsus (défaillance de mémoire)",
+        "Un raté (erreur d'exécution)",
+        "Une faute fondée sur les règles",
+        "Une violation optimisante"
+       ],
+       "answer": 0,
+       "explanation": "Le lapsus est l'oubli d'une action prévue ou d'une étape, souvent après une interruption ; il ne se voit pas de l'extérieur. Le raté, lui, est une action exécutée de travers (actionner la mauvaise commande). Parades : check-list après remise de gaz et reprise méthodique après une interruption."
+      },
+      {
+       "id": "u2s7q11",
+       "q": "Habitué à son terrain où le tour de piste se fait à 1 000 ft, un pilote, persuadé que c'est la norme partout, vole à cette hauteur sur un terrain dont la carte VAC impose 700 ft. Il exécute parfaitement son plan. Quel type d'erreur commet-il ?",
+       "choices": [
+        "Un raté d'exécution, par inattention",
+        "Une faute fondée sur les règles",
+        "Un lapsus, par défaillance de mémoire",
+        "Une violation optimisante, faite exprès"
+       ],
+       "answer": 1,
+       "explanation": "L'action s'est déroulée comme prévu, mais le plan était mauvais : c'est une faute. Elle est fondée sur les règles, car le pilote a appliqué une règle valable chez lui à un cas où elle ne l'est pas. Une violation supposerait un écart volontaire ; ici il croyait bien faire. Parade : préparer chaque terrain avec sa carte VAC."
+      },
+      {
+       "id": "u2s7q12",
+       "q": "Sur un avion ancien, les manettes de volets et de train, de même forme, sont voisines ; un pilote actionne le train alors qu'il voulait rentrer les volets. Quelle interface du modèle SHELL est en cause ?",
+       "choices": [
+        "Pilote – procédures (L-S)",
+        "Pilote – environnement (L-E)",
+        "Pilote – autres personnes (L-L)",
+        "Pilote – matériel (L-H)"
+       ],
+       "answer": 3,
+       "explanation": "La confusion vient du dessin des commandes : c'est l'interface entre le pilote et le matériel (Liveware-Hardware). Les normes de conception donnent aux commandes des formes distinctes (roue pour le train, profil d'aile pour les volets) pour limiter ces ratés."
+      },
+      {
+       "id": "u2s7q13",
+       "q": "Une check-list de club mal conçue, à laquelle il manque depuis des années un item important, est une menace :",
+       "choices": [
+        "Attendue, comme un orage prévu",
+        "Inattendue, comme une panne soudaine",
+        "Directe, créée par le pilote en vol",
+        "Latente, cachée dans le système"
+       ],
+       "answer": 3,
+       "explanation": "Le TEM distingue les menaces attendues (orage prévu, piste courte), inattendues (panne soudaine, turbulence imprévue) et latentes, moins visibles, logées dans la conception, l'organisation ou les documents. Elles se révèlent souvent à l'occasion d'un incident ou d'une analyse de sécurité."
+      },
+      {
+       "id": "u2s7q14",
+       "q": "En courte finale, vous constatez que vous avez oublié les volets : l'avion est trop rapide et va se poser long. Selon le TEM, quelle est la priorité ?",
+       "choices": [
+        "Sortir les volets d'un coup et forcer l'atterrissage",
+        "Chercher d'abord à comprendre la cause de l'oubli",
+        "Remettre les gaz pour reprendre une approche stabilisée",
+        "Poursuivre l'approche et freiner fort après le toucher"
+       ],
+       "answer": 2,
+       "explanation": "L'oubli des volets est une erreur ; l'approche trop rapide et trop longue est un état indésirable de l'avion. Il faut alors gérer l'état, pas l'erreur : rétablir des marges (remise de gaz) avant tout. L'analyse de l'oubli viendra au sol, puis dans le retour d'expérience."
+      },
+      {
+       "id": "u2s7q15",
+       "q": "Au briefing, un pilote retient un plafond de 3 000 ft à destination (METAR de 8 h). À 11 h, l'ATIS annonce 1 200 ft, mais il continue de raisonner sur 3 000 ft. Quel biais est en cause ?",
+       "choices": [
+        "Le biais d'ancrage",
+        "Le biais du coût irrécupérable",
+        "La normalisation de la déviance",
+        "La pression du groupe"
+       ],
+       "answer": 0,
+       "explanation": "L'ancrage fait rester accroché à la première valeur retenue, même quand une information plus récente la contredit. Parade : mettre à jour son image de la situation à chaque nouvelle donnée (ATIS, METAR, observation) et se demander ce qui a changé depuis le briefing."
+      },
+      {
+       "id": "u2s7q16",
+       "q": "« J'ai déjà fait une heure et demie de route, ce serait dommage de faire demi-tour maintenant. » Quel biais ce pilote exprime-t-il ?",
+       "choices": [
+        "Le biais d'ancrage",
+        "Le biais du coût irrécupérable",
+        "Le biais d'attente",
+        "L'attitude dite d'invulnérabilité"
+       ],
+       "answer": 1,
+       "explanation": "Le temps, l'argent ou les efforts déjà investis ne se récupèrent pas : ils ne devraient pas peser sur la décision, qui dépend de la situation à venir (météo, carburant, relief). Ce biais nourrit la pression d'objectif et le biais de continuation."
+      },
+      {
+       "id": "u2s7q17",
+       "q": "Un pilote rattrape souvent en courte finale des approches trop rapides ; comme tout s'est toujours bien terminé, il ne les voit plus comme un écart. Quel phénomène est en cause ?",
+       "choices": [
+        "Le biais d'attente",
+        "La normalisation de la déviance",
+        "L'attitude de résignation face au risque",
+        "Un lapsus répété d'une approche à l'autre"
+       ],
+       "answer": 1,
+       "explanation": "Un écart répété sans conséquence finit par paraître normal : c'est la normalisation de la déviance, décrite par Diane Vaughan après l'accident de Challenger. L'absence d'accident ne prouve pas la sécurité ; la marge se réduit à chaque fois. Parade : des critères d'approche stabilisée fixés et respectés."
+      },
+      {
+       "id": "u2s7q18",
+       "q": "Pourquoi le biais de continuation est-il particulièrement dangereux à quelques minutes de la destination ?",
+       "choices": [
+        "Il s'efface quand la piste est en vue",
+        "Il concerne surtout les pilotes débutants",
+        "Il agit surtout pendant la préparation au sol",
+        "Il se renforce à mesure que le but approche"
+       ],
+       "answer": 3,
+       "explanation": "Le biais de continuation pousse à poursuivre le plan initial malgré des conditions qui changent, et il paraît d'autant plus fort que l'on approche du but (fin de navigation, approche finale). D'où l'intérêt de points de décision fixés au sol et d'une remise de gaz décidée sans hésiter."
+      },
+      {
+       "id": "u2s7q19",
+       "q": "Le contrôleur annonce « descend two four zero zero » (2 400 ft). Le pilote comprend « descend to four zero zero », répète « four zero zero », et personne ne réagit. Quel maillon de la communication a aussi failli ?",
+       "choices": [
+        "La qualité de la réception radio à bord",
+        "Le calage altimétrique affiché par le pilote",
+        "L'écoute du collationnement par le contrôleur",
+        "L'identification radar de l'avion par le contrôleur"
+       ],
+       "answer": 2,
+       "explanation": "Le collationnement ne protège que si le contrôleur l'écoute vraiment : ici, la valeur erronée « four zero zero » n'a pas été corrigée (défaut de hear-back). C'est un scénario réel (Kuala Lumpur, 1989). Annoncée « two thousand four hundred feet », comme le veut la phraséologie OACI, la valeur n'aurait pas pu être confondue avec 400 ft."
+      },
+      {
+       "id": "u2s7q20",
+       "q": "À Tenerife en 1977, un équipage a annoncé « we are now at takeoff » alors qu'il commençait, sans autorisation, sa course au décollage. Quel enseignement facteurs humains en tire-t-on ?",
+       "choices": [
+        "Une phrase non standard peut être comprise de deux façons",
+        "Un message court est mieux compris qu'un message long",
+        "Le contrôleur doit répéter ses messages deux fois",
+        "Les pilotes expérimentés comprennent mieux l'implicite"
+       ],
+       "answer": 0,
+       "explanation": "La tour a compris « nous sommes en position de décollage », alors que l'avion accélérait déjà sur la piste. Seule la phraséologie standard lève l'ambiguïté : depuis, le mot « décollage » est réservé à l'autorisation de décollage et à son annulation ; au point d'arrêt, on se dit « prêt au départ »."
+      },
+      {
+       "id": "u2s7q21",
+       "q": "Vous emmenez un ami non pilote en navigation. Comment en faire une ressource sans créer de risque ?",
+       "choices": [
+        "Lui demander de signaler le trafic et de se taire aux phases critiques",
+        "Lui confier la radio pour vous décharger des communications",
+        "Lui faire lire la check-list et valider les items à votre place",
+        "Éviter de lui détailler le déroulement du vol pour ne pas l'inquiéter"
+       ],
+       "answer": 0,
+       "explanation": "Un passager briefé est une ressource : il signale le trafic, tient la carte, observe. Il ne remplace ni la radio ni la vérification des items par le pilote, qui reste seul responsable. Demander le silence au roulage, au décollage, en approche et à l'atterrissage reprend l'idée du « cockpit stérile » des lignes."
+      },
+      {
+       "id": "u2s7q22",
+       "q": "Vous pensez survoler le village prévu, mais le GPS vous place 3 NM à gauche de la route. Que traduit ce désaccord ?",
+       "choices": [
+        "Une imprécision normale du GPS, qu'on peut ignorer en vol à vue",
+        "Un signal de perte de conscience de la situation, à résoudre",
+        "Une panne du GPS, qu'il faut éteindre sans attendre",
+        "Une dérive due au vent, sans effet sur la position"
+       ],
+       "answer": 1,
+       "explanation": "Deux sources qui ne concordent pas sont un signal d'alerte classique : l'une est fausse, et il faut savoir laquelle avant de poursuivre. On recoupe avec d'autres repères (voie ferrée, rivière, relief, heure estimée). Ignorer l'écart ou choisir la source qui arrange, c'est laisser filer la conscience de la situation."
+      },
+      {
+       "id": "u2s7q23",
+       "q": "Pour gagner du temps, un pilote décolle en sachant que son carburant est insuffisant pour le vol prévu. Que prévoit la culture juste ?",
+       "choices": [
+        "Elle le protège, dès lors qu'il notifie l'événement",
+        "Elle le protège s'il n'y a eu ni blessé ni dégât",
+        "Elle prévoit une sanction automatique de l'erreur",
+        "Elle ne le protège pas : c'est une violation délibérée"
+       ],
+       "answer": 3,
+       "explanation": "La culture juste ne sanctionne pas les erreurs proportionnées à l'expérience et à la formation, mais ne tolère ni la négligence grave, ni la violation délibérée, ni l'acte destructeur. Partir sciemment avec un carburant insuffisant est une violation délibérée : la notification n'efface pas la faute."
+      },
+      {
+       "id": "u2s7q24",
+       "q": "Après une sortie de piste, l'enquête relève : piste courte, consigne du club floue sur les vents forts, pilote fatigué, approche trop rapide non interrompue. Comment le modèle de Reason analyse-t-il cet accident ?",
+       "choices": [
+        "L'approche trop rapide suffit à expliquer l'accident",
+        "La piste trop courte est la cause, le reste est secondaire",
+        "Des failles latentes et actives se sont alignées",
+        "C'est une fatalité, due à la malchance"
+       ],
+       "answer": 2,
+       "explanation": "La consigne floue relève de l'organisation ; la piste courte et la fatigue du pilote préparent le terrain : ce sont des conditions latentes, présentes avant le vol. L'approche trop rapide non interrompue est la défaillance active. L'accident survient quand ces trous s'alignent. La prévention agit sur chaque tranche : consigne claire, minima personnels, critères d'approche stabilisée."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

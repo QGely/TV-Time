@@ -1,0 +1,1130 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u3",
+   "title": "Météorologie",
+   "description": "Atmosphère, humidité et nuages, vent, fronts, phénomènes dangereux et messages météo (METAR, TAF, TEMSI) utiles au pilote VFR (examen : 20 questions, 30 min).",
+   "skills": [
+    {
+     "id": "u3s7",
+     "title": "Stabilité de l'atmosphère",
+     "icon": "⚖️",
+     "tips": "La stabilité dit ce que devient une particule d'air que l'on écarte de son niveau. Si elle y revient, l'air est stable ; si elle s'en éloigne de plus en plus, il est instable ; si elle reste où on l'a amenée, il est neutre. Elle commande les nuages, la turbulence et la visibilité.\n\nTrois gradients à ne pas confondre :\n• Gradient réel (de l'air ambiant) : baisse de température mesurée avec l'altitude, en un lieu et à un moment donnés (radiosondage, avions). Il change d'un jour et d'une couche à l'autre ; les 2 °C/1 000 ft de l'atmosphère standard ne sont qu'une moyenne.\n• Gradient adiabatique sec : refroidissement d'une particule non saturée qui s'élève, environ 3 °C/1 000 ft (1 °C/100 m). Il ne dépend que de la détente de l'air.\n• Gradient adiabatique saturé : refroidissement d'une particule saturée, plus faible car la condensation libère de la chaleur latente. On retient 1,5 °C/1 000 ft près du sol ; il est plus faible dans l'air très chaud et humide et se rapproche du gradient sec dans l'air très froid, en altitude.\n• Une particule qui descend se réchauffe par compression, à 3 °C/1 000 ft si elle ne contient pas de gouttelettes à évaporer.\n\nMéthode de la particule :\nOn soulève par la pensée une particule et l'on compare, à chaque niveau, sa température à celle de l'air ambiant.\n• Plus chaude, donc moins dense : elle continue de monter (instabilité).\n• Plus froide, donc plus dense : elle redescend (stabilité).\n• Même température : elle reste en place (équilibre neutre).\n\nClassement selon le gradient réel :\n• Plus de 3 °C/1 000 ft : absolument instable. Rare en altitude, fréquent dans les premières centaines de pieds au-dessus d'un sol surchauffé l'après-midi (gradient suradiabatique).\n• 3 °C/1 000 ft : neutre pour l'air non saturé.\n• De 1,5 à 3 °C/1 000 ft : instabilité conditionnelle. L'air est stable tant qu'il n'est pas saturé, instable dès que la condensation commence. C'est le cas le plus courant, et le gradient standard en fait partie : un soulèvement (relief, front, convection) suffit alors à faire bourgeonner les nuages.\n• Moins de 1,5 °C/1 000 ft : absolument stable. L'isothermie (gradient nul) et l'inversion (température qui augmente) sont très stables.\n\nExemple résolu : gradient réel 2,5 °C/1 000 ft, 20 °C au sol, particule soulevée de 2 000 ft.\n• Air ambiant à 2 000 ft : 20 − 2 × 2,5 = 15 °C.\n• Particule non saturée : 20 − 2 × 3 = 14 °C, plus froide de 1 °C : elle redescend.\n• Particule saturée : 20 − 2 × 1,5 = 17 °C, plus chaude de 2 °C : elle monte. La couche est conditionnellement instable.\n\nCe qui modifie la stabilité :\n• Déstabilisent : l'échauffement par la base (soleil sur le sol, air froid arrivant sur une mer plus chaude) et l'arrivée d'air froid en altitude.\n• Stabilisent : le refroidissement par la base (nuit claire, air doux sur un sol ou une mer froids), le réchauffement en altitude et la subsidence anticyclonique (l'air qui descend se réchauffe et s'assèche).\n• Cycle diurne : air stable au lever du jour (inversion nocturne), instable l'après-midi (thermiques, cumulus), de nouveau stable le soir.\n\nLes inversions :\n• De rayonnement : nuit claire et vent faible ; le sol refroidit l'air à son contact. Inversion au sol, épaisse de quelques centaines de pieds en fin de nuit, détruite dans la matinée par l'échauffement. Brouillard, brume et fumées restent piégés dessous.\n• De subsidence : sous un anticyclone, l'air qui s'affaisse se réchauffe par compression et crée une inversion en altitude. Elle plafonne les cumulus et piège une nappe de stratus ou de stratocumulus (temps gris tenace en hiver) ou une brume sèche épaisse en été.\n• Frontale : l'air chaud passe au-dessus de l'air froid le long de la surface frontale, surtout au front chaud ; en hiver, pluie se congelant possible sous l'inversion.\n• De turbulence : au sommet de la couche brassée par un vent fort près du sol.\n\nBase des cumulus de convection :\n• La particule perd 3 °C/1 000 ft et son point de rosée 0,5 °C/1 000 ft : l'écart se réduit de 2,5 °C/1 000 ft.\n• Hauteur de la base au-dessus du sol ≈ 400 ft × (T − Td) mesurés au sol. Pour une altitude, ajoutez l'altitude du terrain.\n• Exemple : terrain à 600 ft, 26 °C et 16 °C. Écart 10 °C : base ≈ 4 000 ft sol, soit 4 600 ft d'altitude. Température à la base : 26 − 12 = 14 °C, égale au point de rosée de la particule (16 − 2 = 14 °C).\n• Au fil d'une journée ensoleillée, l'écart T − Td se creuse et la base monte.\n• Température de déclenchement : pour qu'un thermique atteigne un niveau, l'air du sol, refroidi de 3 °C/1 000 ft, doit y arriver au moins aussi chaud que l'air ambiant. Ex. : 10 °C mesurés à 3 000 ft au-dessus du sol : il faut au moins 10 + 9 = 19 °C au sol.\n\nNuages et temps associés :\n• Air stable : nuages en couches (St, Sc, As, Ns), bruine ou pluie continue, brume, visibilité médiocre, air calme au-dessus de l'inversion.\n• Air instable : cumulus, cumulus bourgeonnants (TCU) et cumulonimbus si l'instabilité s'étend en altitude ; averses, orages, rafales ; très bonne visibilité hors des averses.\n• Instabilité plafonnée par une inversion : cumulus aplatis, aux sommets alignés.\n\nEffets sur le vol :\n• Air instable : turbulence thermique sous les cumulus, surtout l'après-midi ; vent de surface plus fort et rafaleux, car le brassage ramène au sol l'air plus rapide des couches supérieures.\n• Air stable : vol calme au-dessus de l'inversion, mais visibilité réduite au-dessous, surtout en oblique et face au soleil ; ondes de relief possibles par vent fort.\n• Inversion nocturne : vent calme au sol, vent soutenu quelques centaines de pieds plus haut. En montée initiale ou en approche, la vitesse indiquée peut varier brusquement : gardez une marge de vitesse.\n\nPièges :\n• Confondre le gradient réel (mesuré) et les gradients adiabatiques (propres à la particule).\n• Croire qu'un air stable est sans danger : brouillard, stratus et cisaillement d'inversion.\n• Oublier d'ajouter l'altitude du terrain à la hauteur de la base.",
+     "vocab": [
+      {
+       "term": "Stabilité",
+       "translation": "Tendance d'une particule déplacée à revenir à son niveau de départ"
+      },
+      {
+       "term": "Gradient réel",
+       "translation": "Baisse de température mesurée avec l'altitude dans l'air ambiant"
+      },
+      {
+       "term": "Adiabatique sèche",
+       "translation": "Refroidissement d'un air non saturé qui monte : ≈ 3 °C/1 000 ft"
+      },
+      {
+       "term": "Adiabatique saturée",
+       "translation": "Refroidissement d'un air saturé qui monte : ≈ 1,5 °C/1 000 ft"
+      },
+      {
+       "term": "Instabilité conditionnelle",
+       "translation": "Air stable tant qu'il n'est pas saturé, instable une fois saturé"
+      },
+      {
+       "term": "Équilibre neutre",
+       "translation": "Gradient réel égal à l'adiabatique : la particule reste en place"
+      },
+      {
+       "term": "Gradient suradiabatique",
+       "translation": "Gradient réel supérieur à 3 °C/1 000 ft, près d'un sol surchauffé"
+      },
+      {
+       "term": "Isothermie",
+       "translation": "Couche où la température reste constante avec l'altitude"
+      },
+      {
+       "term": "Inversion de rayonnement",
+       "translation": "Inversion au sol due au refroidissement nocturne du sol"
+      },
+      {
+       "term": "Inversion de subsidence",
+       "translation": "Inversion en altitude créée par l'air qui descend d'un anticyclone"
+      },
+      {
+       "term": "Inversion frontale",
+       "translation": "Air chaud au-dessus d'air froid, le long d'une surface frontale"
+      },
+      {
+       "term": "Subsidence",
+       "translation": "Lent affaissement de l'air, qui se réchauffe et s'assèche"
+      },
+      {
+       "term": "Convection",
+       "translation": "Mouvements verticaux d'un air chauffé par la base (thermiques)"
+      },
+      {
+       "term": "Température de déclenchement",
+       "translation": "Température au sol nécessaire pour que les thermiques montent"
+      },
+      {
+       "term": "TCU",
+       "translation": "Cumulus bourgeonnant (congestus), signe d'une instabilité marquée"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Gradient réel et stabilité de l'air",
+       "svg": "<svg viewBox=\"0 0 680 480\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"480\" fill=\"#ffffff\"/><polygon points=\"533.3,420.0 113.3,120.0 90.0,120.0 90.0,420.0\" fill=\"#fdecec\"/><polygon points=\"533.3,420.0 113.3,120.0 323.3,120.0\" fill=\"#fff1df\"/><polygon points=\"533.3,420.0 323.3,120.0 650.0,120.0 650.0,420.0\" fill=\"#e6f4ea\"/><line x1=\"90.0\" y1=\"420.0\" x2=\"650.0\" y2=\"420.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"425.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">0</text><line x1=\"90.0\" y1=\"370.0\" x2=\"650.0\" y2=\"370.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"375.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">1 000</text><line x1=\"90.0\" y1=\"320.0\" x2=\"650.0\" y2=\"320.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"325.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">2 000</text><line x1=\"90.0\" y1=\"270.0\" x2=\"650.0\" y2=\"270.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"275.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">3 000</text><line x1=\"90.0\" y1=\"220.0\" x2=\"650.0\" y2=\"220.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"225.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">4 000</text><line x1=\"90.0\" y1=\"170.0\" x2=\"650.0\" y2=\"170.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"175.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">5 000</text><line x1=\"90.0\" y1=\"120.0\" x2=\"650.0\" y2=\"120.0\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"82.0\" y=\"125.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">6 000</text><line x1=\"183.3\" y1=\"420.0\" x2=\"183.3\" y2=\"426.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"183.3\" y=\"444.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">0</text><line x1=\"300.0\" y1=\"420.0\" x2=\"300.0\" y2=\"426.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"444.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">5</text><line x1=\"416.7\" y1=\"420.0\" x2=\"416.7\" y2=\"426.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"416.7\" y=\"444.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">10</text><line x1=\"533.3\" y1=\"420.0\" x2=\"533.3\" y2=\"426.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"533.3\" y=\"444.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">15</text><line x1=\"650.0\" y1=\"420.0\" x2=\"650.0\" y2=\"426.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"650.0\" y=\"444.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">20</text><rect x=\"90.0\" y=\"120.0\" width=\"560.0\" height=\"300.0\" rx=\"0\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"370.0\" y=\"468.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Température (°C)</text><text x=\"26\" y=\"270.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\" text-anchor=\"middle\" transform=\"rotate(-90 26 270.0)\">Hauteur (ft)</text><line x1=\"533.3\" y1=\"420.0\" x2=\"113.3\" y2=\"120.0\" stroke=\"#c0392b\" stroke-width=\"3.5\"/><line x1=\"533.3\" y1=\"420.0\" x2=\"323.3\" y2=\"120.0\" stroke=\"#d35400\" stroke-width=\"3.5\"/><line x1=\"533.3\" y1=\"420.0\" x2=\"533.3\" y2=\"120.0\" stroke=\"#2e7d32\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><line x1=\"533.3\" y1=\"420.0\" x2=\"625.1\" y2=\"298.3\" stroke=\"#2e7d32\" stroke-width=\"3\"/><polygon points=\"631.3,290.0 628.7,304.3 618.3,296.5\" fill=\"#2e7d32\"/><circle cx=\"533.3\" cy=\"420.0\" r=\"6.0\" fill=\"#14213d\"/><text x=\"117.3\" y=\"90.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">Adiabatique sèche</text><text x=\"117.3\" y=\"109.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">3 °C/1 000 ft</text><text x=\"323.3\" y=\"90.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">Adiabatique saturée</text><text x=\"323.3\" y=\"109.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">≈ 1,5 °C/1 000 ft</text><text x=\"533.3\" y=\"90.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Isothermie</text><text x=\"533.3\" y=\"109.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\">0 °C/1 000 ft</text><text x=\"598.7\" y=\"274.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Inversion</text><text x=\"90.0\" y=\"28.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"start\" font-style=\"italic\">Pentes tracées depuis un même point : 15 °C au sol</text><text x=\"102.0\" y=\"362.5\" font-size=\"16\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">Absolument instable</text><text x=\"102.0\" y=\"382.5\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">gradient réel &gt; 3 °C/1 000 ft</text><text x=\"257.7\" y=\"157.5\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">Instabilité</text><text x=\"277.1\" y=\"176.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">conditionnelle</text><text x=\"299.7\" y=\"197.5\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">1,5 à 3 °C/1 000 ft</text><text x=\"440.0\" y=\"147.5\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Absolument stable</text><text x=\"440.0\" y=\"167.5\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">gradient réel</text><text x=\"440.0\" y=\"185.5\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">&lt; 1,5 °C/1 000 ft</text></svg>",
+       "caption": "On compare la pente du gradient réel aux adiabatiques tracées depuis le même point : plus incliné que la sèche, l'air est absolument instable ; moins que la saturée (isothermie et inversion comprises), absolument stable ; entre les deux, conditionnellement instable, comme l'atmosphère standard (2 °C/1 000 ft)."
+      },
+      {
+       "title": "Calcul de la base d'un cumulus",
+       "svg": "<svg viewBox=\"0 0 700 480\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"480\" fill=\"#ffffff\"/><rect x=\"84.0\" y=\"134.0\" width=\"606.0\" height=\"16.0\" rx=\"0\" fill=\"#efe3f6\"/><line x1=\"84.0\" y1=\"150.0\" x2=\"690.0\" y2=\"150.0\" stroke=\"#7b1fa2\" stroke-width=\"2\" stroke-dasharray=\"7 5\"/><line x1=\"84.0\" y1=\"134.0\" x2=\"690.0\" y2=\"134.0\" stroke=\"#7b1fa2\" stroke-width=\"1.2\" stroke-dasharray=\"3 4\"/><line x1=\"84.0\" y1=\"430.0\" x2=\"84.0\" y2=\"110.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><line x1=\"78.0\" y1=\"430.0\" x2=\"84.0\" y2=\"430.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"435.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">0</text><line x1=\"78.0\" y1=\"350.0\" x2=\"84.0\" y2=\"350.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">2 000</text><line x1=\"78.0\" y1=\"270.0\" x2=\"84.0\" y2=\"270.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"275.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">4 000</text><line x1=\"78.0\" y1=\"190.0\" x2=\"84.0\" y2=\"190.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"195.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">6 000</text><line x1=\"78.0\" y1=\"110.0\" x2=\"84.0\" y2=\"110.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"75.0\" y=\"115.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">8 000</text><text x=\"18\" y=\"270.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\" text-anchor=\"middle\" transform=\"rotate(-90 18 270.0)\">Hauteur au-dessus du sol (ft)</text><line x1=\"84.0\" y1=\"350.0\" x2=\"370.0\" y2=\"350.0\" stroke=\"#c9d1de\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><line x1=\"84.0\" y1=\"190.0\" x2=\"370.0\" y2=\"190.0\" stroke=\"#c9d1de\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><rect x=\"84.0\" y=\"430.0\" width=\"606.0\" height=\"16.0\" rx=\"0\" fill=\"#b9a37b\"/><line x1=\"84.0\" y1=\"430.0\" x2=\"690.0\" y2=\"430.0\" stroke=\"#5d8a3a\" stroke-width=\"3\"/><rect x=\"170.0\" y=\"274.0\" width=\"64.0\" height=\"154.0\" rx=\"0\" fill=\"#fde3d3\"/><line x1=\"182.0\" y1=\"422.0\" x2=\"182.0\" y2=\"292.8\" stroke=\"#c0392b\" stroke-width=\"2.6\"/><polygon points=\"182.0,284.0 187.5,295.0 176.5,295.0\" fill=\"#c0392b\"/><line x1=\"202.0\" y1=\"422.0\" x2=\"202.0\" y2=\"292.8\" stroke=\"#c0392b\" stroke-width=\"2.6\"/><polygon points=\"202.0,284.0 207.5,295.0 196.5,295.0\" fill=\"#c0392b\"/><line x1=\"222.0\" y1=\"422.0\" x2=\"222.0\" y2=\"292.8\" stroke=\"#c0392b\" stroke-width=\"2.6\"/><polygon points=\"222.0,284.0 227.5,295.0 216.5,295.0\" fill=\"#c0392b\"/><path d=\"M128,270 C110,262 112,236 134,232 C124,206 146,186 168,192 C170,166 192,153 210,159 C220,150 244,150 252,163 C274,160 290,180 282,200 C304,206 306,240 288,248 C302,258 296,270 286,270 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"84.0\" y1=\"270.0\" x2=\"370.0\" y2=\"270.0\" stroke=\"#d35400\" stroke-width=\"2\" stroke-dasharray=\"7 5\"/><text x=\"206.0\" y=\"222.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cumulus</text><text x=\"244.0\" y=\"298.0\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">− 3 °C/1 000 ft</text><text x=\"244.0\" y=\"316.0\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"start\">(non saturé)</text><text x=\"244.0\" y=\"378.0\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">Td :</text><text x=\"244.0\" y=\"396.0\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">− 0,5 °C/1 000 ft</text><rect x=\"376.0\" y=\"383.0\" width=\"312.0\" height=\"46.0\" rx=\"8\" fill=\"#f6f8fb\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"388.0\" y=\"402.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">Au sol : T 26 °C, Td 16 °C</text><text x=\"388.0\" y=\"421.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">écart 10 °C</text><rect x=\"376.0\" y=\"327.0\" width=\"312.0\" height=\"46.0\" rx=\"8\" fill=\"#f6f8fb\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"388.0\" y=\"346.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">2 000 ft : T 20 °C, Td 15 °C</text><text x=\"388.0\" y=\"365.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">écart 5 °C</text><rect x=\"376.0\" y=\"247.0\" width=\"312.0\" height=\"46.0\" rx=\"8\" fill=\"#f6f8fb\" stroke=\"#d35400\" stroke-width=\"1.5\"/><text x=\"388.0\" y=\"266.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">4 000 ft : T 14 °C = Td 14 °C</text><text x=\"388.0\" y=\"285.0\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"start\">saturation : base du nuage</text><rect x=\"376.0\" y=\"167.0\" width=\"312.0\" height=\"46.0\" rx=\"8\" fill=\"#f6f8fb\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"388.0\" y=\"186.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">6 000 ft : T 11 °C dans le nuage</text><text x=\"388.0\" y=\"205.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">air saturé : − 1,5 °C/1 000 ft</text><rect x=\"376.0\" y=\"16.0\" width=\"312.0\" height=\"84.0\" rx=\"8\" fill=\"#fff4e5\" stroke=\"#d35400\" stroke-width=\"1.5\"/><text x=\"388.0\" y=\"40.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">Base ≈ 400 ft × (T − Td)</text><text x=\"388.0\" y=\"62.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\">= 400 × (26 − 16) = 4 000 ft sol</text><text x=\"388.0\" y=\"84.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"start\">Altitude : ajoutez celle du terrain</text><text x=\"688.0\" y=\"126.0\" font-size=\"14\" fill=\"#7b1fa2\" text-anchor=\"end\" font-weight=\"bold\">Inversion : le nuage s'arrête</text></svg>",
+       "caption": "La particule perd 3 °C/1 000 ft et son point de rosée 0,5 °C/1 000 ft : l'écart se réduit de 2,5 °C/1 000 ft et la saturation survient vers 400 ft par degré d'écart au sol. Au-dessus, saturée, elle se refroidit moins vite ; une inversion arrête le nuage."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u3s7q01",
+       "q": "Quand dit-on que l'air est stable ?",
+       "choices": [
+        "Quand une particule soulevée a tendance à revenir à son niveau de départ",
+        "Quand une particule soulevée continue de s'élever d'elle-même, sans s'arrêter",
+        "Quand la pression et la température restent les mêmes au fil de la journée",
+        "Quand le vent au sol reste faible et régulier, sans rafales notables"
+       ],
+       "answer": 0,
+       "explanation": "La stabilité décrit le comportement d'une particule écartée de son niveau : si elle y revient, l'air est stable ; si elle s'en éloigne de plus en plus, il est instable. Un vent faible ou une pression constante ne disent rien de la stabilité."
+      },
+      {
+       "id": "u3s7q02",
+       "q": "Que représente le gradient réel de température (gradient de l'air ambiant) ?",
+       "choices": [
+        "Le refroidissement d'une particule non saturée qui s'élève, fixé à 3 °C/1 000 ft",
+        "Le refroidissement d'une particule saturée qui s'élève, voisin de 1,5 °C/1 000 ft",
+        "La baisse de température mesurée avec l'altitude, en un lieu et à un moment donnés",
+        "La baisse de température de l'atmosphère standard, fixée à 2 °C/1 000 ft"
+       ],
+       "answer": 2,
+       "explanation": "Le gradient réel se mesure (radiosondage, avions) et change d'un jour et d'une couche à l'autre. Les gradients adiabatiques décrivent au contraire la particule qui monte, et les 2 °C/1 000 ft de l'ISA ne sont qu'une moyenne conventionnelle."
+      },
+      {
+       "id": "u3s7q03",
+       "q": "Parmi ces gradients réels, lequel correspond à une couche conditionnellement instable ?",
+       "choices": [
+        "3,6 °C/1 000 ft",
+        "2,2 °C/1 000 ft",
+        "0,8 °C/1 000 ft",
+        "0 °C/1 000 ft (isothermie)"
+       ],
+       "answer": 1,
+       "explanation": "L'instabilité conditionnelle correspond à un gradient compris entre l'adiabatique saturée (≈ 1,5 °C/1 000 ft) et l'adiabatique sèche (3 °C/1 000 ft). Au-delà de 3 °C, l'air est absolument instable ; en dessous de 1,5 °C, isothermie comprise, il est absolument stable."
+      },
+      {
+       "id": "u3s7q04",
+       "q": "Pourquoi dit-on que l'atmosphère standard, avec 2 °C/1 000 ft, est conditionnellement instable ?",
+       "choices": [
+        "Son gradient dépasse le gradient adiabatique sec, ce qui favorise les orages",
+        "Son gradient est inférieur au gradient adiabatique saturé, ce qui bloque la convection",
+        "Son gradient s'inverse au-dessus de la tropopause, ce qui la rend instable en altitude",
+        "Son gradient est compris entre les gradients adiabatiques saturé et sec"
+       ],
+       "answer": 3,
+       "explanation": "2 °C/1 000 ft se situe entre ≈ 1,5 °C (saturé) et 3 °C (sec) : une particule non saturée soulevée y devient plus froide que l'air ambiant et redescend, mais une particule saturée y reste plus chaude et continue de monter. Tout dépend donc de la saturation."
+      },
+      {
+       "id": "u3s7q05",
+       "q": "Une particule d'air que l'on soulève se retrouve plus chaude que l'air qui l'entoure. Que fait-elle ?",
+       "choices": [
+        "Elle redescend vers son niveau de départ, car elle est plus dense que l'air ambiant",
+        "Elle continue de monter, car elle est moins dense que l'air ambiant",
+        "Elle se stabilise aussitôt au niveau atteint, en équilibre avec l'air ambiant",
+        "Elle continue de monter, car elle est plus dense que l'air ambiant"
+       ],
+       "answer": 1,
+       "explanation": "À pression égale, l'air plus chaud est moins dense : la particule subit une poussée vers le haut et poursuit son ascension. C'est la définition de l'instabilité. Une particule plus froide, donc plus dense, redescendrait."
+      },
+      {
+       "id": "u3s7q06",
+       "q": "Quelle inversion se forme au ras du sol par une nuit claire avec un vent faible ?",
+       "choices": [
+        "Une inversion de rayonnement",
+        "Une inversion de subsidence",
+        "Une inversion frontale",
+        "Une inversion de turbulence"
+       ],
+       "answer": 0,
+       "explanation": "Par nuit claire, le sol perd sa chaleur par rayonnement et refroidit l'air à son contact, qui devient plus froid que l'air situé au-dessus. L'inversion de subsidence se forme en altitude sous un anticyclone, l'inversion frontale le long d'une surface frontale."
+      },
+      {
+       "id": "u3s7q07",
+       "q": "Sous un anticyclone, l'air qui s'affaisse lentement crée une inversion en altitude. Quel mécanisme la produit ?",
+       "choices": [
+        "L'air se réchauffe par compression en descendant",
+        "Le sol se refroidit par rayonnement sous le ciel clair",
+        "L'air chaud glisse au-dessus de l'air froid le long d'un front",
+        "L'air se refroidit par détente en descendant"
+       ],
+       "answer": 0,
+       "explanation": "C'est l'inversion de subsidence : l'air qui descend est comprimé et se réchauffe à 3 °C/1 000 ft, en s'asséchant. Il arrive plus chaud que l'air de la couche inférieure, d'où une inversion qui plafonne les nuages et piège brume et stratus."
+      },
+      {
+       "id": "u3s7q08",
+       "q": "Par une belle journée, les sommets des cumulus de beau temps s'alignent tous à la même hauteur. Qu'est-ce que cela indique ?",
+       "choices": [
+        "Un air absolument instable jusqu'à la tropopause",
+        "Un vent fort en altitude qui arase le sommet des nuages",
+        "Une couche d'air très humide qui empêche la condensation au-dessus",
+        "Une inversion qui arrête l'ascension des thermiques à ce niveau"
+       ],
+       "answer": 3,
+       "explanation": "Les thermiques montent tant qu'ils restent plus chauds que l'air ambiant. Dans une inversion, ils deviennent plus froids que l'air environnant : la convection s'arrête et les sommets s'aplatissent au même niveau. Un air instable jusqu'à la tropopause donnerait au contraire des cumulonimbus."
+      },
+      {
+       "id": "u3s7q09",
+       "q": "Dans une couche d'air non saturé dont le gradient réel vaut 3 °C/1 000 ft, comment se comporte une particule non saturée que l'on déplace verticalement ?",
+       "choices": [
+        "Elle revient à son niveau de départ : l'air est stable",
+        "Elle reste au niveau où on l'amène : l'équilibre est neutre",
+        "Elle s'éloigne de plus en plus de son niveau : l'air est instable",
+        "Elle se sature dès le premier millier de pieds et forme un nuage"
+       ],
+       "answer": 1,
+       "explanation": "La particule se refroidit à 3 °C/1 000 ft, exactement comme l'air ambiant : à chaque niveau, elle a la même température que lui et ne subit ni poussée ni rappel. L'équilibre est indifférent (neutre) pour l'air non saturé."
+      },
+      {
+       "id": "u3s7q10",
+       "q": "Au-dessus d'une plaine, par une belle journée d'été sans perturbation, comment la stabilité des basses couches évolue-t-elle ?",
+       "choices": [
+        "Stable le matin sous l'inversion nocturne, instable l'après-midi, à nouveau stable le soir",
+        "Instable le matin, puis stable l'après-midi quand le sol atteint sa température maximale",
+        "Identique du matin au soir, car elle dépend de la masse d'air et non de l'heure",
+        "Stable du matin au soir, car le soleil chauffe surtout l'air situé en altitude"
+       ],
+       "answer": 0,
+       "explanation": "La nuit, le sol refroidit l'air par la base : inversion et air stable au lever du jour. Le soleil chauffe ensuite le sol, le gradient augmente et l'air devient instable (thermiques, cumulus, turbulence), surtout l'après-midi. Le soir, le refroidissement restabilise les basses couches."
+      },
+      {
+       "id": "u3s7q11",
+       "q": "Lequel de ces processus rend une masse d'air plus stable ?",
+       "choices": [
+        "Son échauffement par la base, au contact d'un sol bien ensoleillé",
+        "L'arrivée d'air nettement plus froid en altitude, au-dessus d'elle",
+        "Son refroidissement par la base, au contact d'une surface plus froide",
+        "Son passage au-dessus d'une mer nettement plus chaude qu'elle"
+       ],
+       "answer": 2,
+       "explanation": "Refroidir le bas d'une couche (ou réchauffer son sommet) diminue le gradient réel : l'air se stabilise. Chauffer la base ou refroidir l'altitude l'augmente et déstabilise l'air, comme l'air froid qui arrive sur une mer plus chaude."
+      },
+      {
+       "id": "u3s7q12",
+       "q": "Un après-midi d'été, au-dessus d'un parking surchauffé proche de la piste, le gradient réel atteint 5 °C/1 000 ft dans les premières centaines de pieds. Qu'en attendre en courte finale ?",
+       "choices": [
+        "Des ascendances et des secousses : la couche est absolument instable",
+        "Un air calme et lisse, car cette couche est très stable près du sol",
+        "Un brouillard mince, car l'air humide se refroidit au contact du sol",
+        "Un cisaillement d'inversion, car le vent tombe au calme près du sol"
+       ],
+       "answer": 0,
+       "explanation": "Un gradient de 5 °C/1 000 ft dépasse le gradient adiabatique sec : c'est un gradient suradiabatique, absolument instable. Les bulles d'air chaud se détachent du sol et donnent des ascendances et de la turbulence thermique à basse hauteur, typiques des après-midi d'été."
+      },
+      {
+       "id": "u3s7q13",
+       "q": "Un aérodrome est à 900 ft d'altitude. Son METAR de fin de matinée donne 23/13 et la journée s'annonce convective. À quelle altitude estimez-vous la base des cumulus ?",
+       "choices": [
+        "Environ 4 000 ft",
+        "Environ 4 900 ft",
+        "Environ 3 100 ft",
+        "Environ 9 200 ft"
+       ],
+       "answer": 1,
+       "explanation": "Hauteur de la base ≈ 400 ft × (23 − 13) = 4 000 ft au-dessus du terrain. Pour obtenir une altitude, on ajoute l'altitude de l'aérodrome : 4 000 + 900 = 4 900 ft. Oublier cette addition donne 4 000 ft ; multiplier la seule température par 400 donne 9 200 ft."
+      },
+      {
+       "id": "u3s7q14",
+       "q": "Par une journée de convection, le METAR de votre terrain donne 24/14. Quelle température le thermique aura-t-il approximativement en atteignant la base des cumulus ?",
+       "choices": [
+        "14 °C",
+        "16 °C",
+        "18 °C",
+        "12 °C"
+       ],
+       "answer": 3,
+       "explanation": "Base ≈ 400 × (24 − 14) = 4 000 ft. En montant sans être saturée, la particule perd 3 °C/1 000 ft : 24 − 12 = 12 °C. Son point de rosée baisse de 0,5 °C/1 000 ft : 14 − 2 = 12 °C, ce qui confirme la saturation. Utiliser 2 °C/1 000 ft (ISA) donnerait 16 °C."
+      },
+      {
+       "id": "u3s7q15",
+       "q": "Le gradient réel est de 2 °C/1 000 ft et l'air est à 18 °C au sol. On soulève de 3 000 ft une particule déjà saturée. Comment se compare-t-elle à l'air ambiant ?",
+       "choices": [
+        "Plus froide de 1,5 °C : elle redescend",
+        "Plus froide de 3 °C : elle redescend",
+        "Plus chaude de 1,5 °C : elle continue de monter",
+        "À la même température : elle reste en équilibre"
+       ],
+       "answer": 2,
+       "explanation": "Air ambiant à 3 000 ft : 18 − 3 × 2 = 12 °C. Particule saturée : 18 − 3 × 1,5 = 13,5 °C, soit 1,5 °C de plus : elle monte. Une particule non saturée serait à 18 − 9 = 9 °C, plus froide de 3 °C, et redescendrait : c'est l'instabilité conditionnelle."
+      },
+      {
+       "id": "u3s7q16",
+       "q": "Le matin, un radiosondage indique 9 °C à 3 000 ft au-dessus du sol. Quelle température faut-il au moins atteindre au sol pour que les thermiques non saturés montent jusqu'à ce niveau ?",
+       "choices": [
+        "15 °C",
+        "13,5 °C",
+        "12 °C",
+        "18 °C"
+       ],
+       "answer": 3,
+       "explanation": "Un thermique non saturé se refroidit de 3 °C/1 000 ft : parti de T au sol, il arrive à 3 000 ft à T − 9 °C. Pour y être au moins aussi chaud que l'air ambiant (9 °C), il faut T ≥ 18 °C. Avec le gradient standard (2 °C/1 000 ft), on trouverait à tort 15 °C."
+      },
+      {
+       "id": "u3s7q17",
+       "q": "Au lever du jour, par ciel clair, le vent est calme au sol, mais la prévision annonce 25 kt à 1 500 ft. Que devez-vous anticiper pendant la montée initiale ?",
+       "choices": [
+        "Une forte turbulence thermique dès le décollage, due à un air devenu instable",
+        "Un vent qui forcit très progressivement, sans effet sensible sur la vitesse",
+        "Un cisaillement au sommet de l'inversion : variation brusque de la vitesse indiquée",
+        "Un givrage en ciel clair en traversant l'inversion, à cause de l'air plus chaud"
+       ],
+       "answer": 2,
+       "explanation": "L'inversion nocturne isole l'air de surface, calme, du vent plus fort qui souffle au-dessus. En la traversant, l'avion passe brusquement dans ce vent : la vitesse indiquée peut varier de plusieurs nœuds. Gardez une marge au-dessus de la vitesse de montée. À cette heure, l'air est stable, pas instable."
+      },
+      {
+       "id": "u3s7q18",
+       "q": "En été, un anticyclone stationne depuis plusieurs jours. Sous une inversion de subsidence vers 5 000 ft, la visibilité n'est que de 5 km dans la brume sèche. Que trouverez-vous probablement au-dessus de l'inversion ?",
+       "choices": [
+        "Une visibilité encore plus faible, la brume s'épaississant avec l'altitude",
+        "Des cumulonimbus, l'inversion annonçant un air très instable au-dessus",
+        "Un brouillard d'altitude, l'air se refroidissant fortement au-dessus de l'inversion",
+        "Un air plus sec et une bien meilleure visibilité, au-dessus d'une brume au sommet net"
+       ],
+       "answer": 3,
+       "explanation": "L'inversion bloque les mouvements verticaux : poussières et humidité restent piégées dessous. Au-dessus, l'air descendu de haut est sec et limpide, et le sommet de la couche de brume apparaît comme une ligne nette. Une inversion signale un air stable, pas instable."
+      },
+      {
+       "id": "u3s7q19",
+       "q": "À situation générale identique, pourquoi le vent de surface est-il souvent plus fort et plus rafaleux par une journée instable que par une journée stable ?",
+       "choices": [
+        "L'air instable, plus dense, appuie plus fort sur le sol et accélère le vent",
+        "Le brassage vertical ramène au sol l'air plus rapide des couches supérieures",
+        "L'inversion accélère le vent sous elle en comprimant la couche de surface",
+        "La pression baisse fortement à chaque cumulus qui se forme au-dessus du terrain"
+       ],
+       "answer": 1,
+       "explanation": "En air instable, ascendances et descendances mélangent la couche de frottement : de l'air venu d'en haut, plus rapide, atteint le sol par bouffées, d'où des rafales. En air stable, la couche de surface est découplée du vent supérieur : vent faible au sol, plus fort au-dessus."
+      },
+      {
+       "id": "u3s7q20",
+       "q": "Deux jours d'été en plaine : le jour 1, le gradient réel est de 1 °C/1 000 ft jusqu'à 4 000 ft ; le jour 2, il est de 2,8 °C/1 000 ft, avec un air humide. Quel pronostic est le plus vraisemblable ?",
+       "choices": [
+        "Jour 1 : brume et air calme ; jour 2 : cumulus, turbulence et averses possibles",
+        "Jour 1 : cumulus et turbulence ; jour 2 : brume, air calme et ciel sans nuages",
+        "Jour 1 : orages l'après-midi ; jour 2 : ciel clair et air calme jusqu'au soir",
+        "Jour 1 et jour 2 : temps semblable, car la masse d'air reste la même en plaine"
+       ],
+       "answer": 0,
+       "explanation": "1 °C/1 000 ft est inférieur au gradient saturé : air absolument stable, brume piégée, peu de turbulence. 2,8 °C/1 000 ft est proche du gradient sec : l'air humide, une fois saturé, devient très instable, d'où cumulus bourgeonnants, turbulence et averses."
+      },
+      {
+       "id": "u3s7q21",
+       "q": "Un radiosondage donne 15 °C à 1 000 ft et 7 °C à 5 000 ft. Comment qualifier la couche entre ces deux niveaux ?",
+       "choices": [
+        "Absolument stable : 2 °C/1 000 ft",
+        "Absolument instable : 8 °C de baisse",
+        "Conditionnellement instable : 2 °C/1 000 ft",
+        "Neutre : gradient égal à l'adiabatique sèche"
+       ],
+       "answer": 2,
+       "explanation": "Gradient réel = (15 − 7) / 4 = 2 °C/1 000 ft, entre l'adiabatique saturée (≈ 1,5) et l'adiabatique sèche (3) : la couche est stable pour l'air non saturé, instable pour l'air saturé. Les 8 °C de baisse se répartissent sur 4 000 ft : ce n'est pas un gradient."
+      },
+      {
+       "id": "u3s7q22",
+       "q": "À la base d'un cumulus, à 4 000 ft, la particule saturée et l'air ambiant sont à 10 °C. L'air ambiant se refroidit ensuite de 2,5 °C/1 000 ft jusqu'à 8 000 ft. Quel écart sépare la particule de l'air ambiant à 8 000 ft ?",
+       "choices": [
+        "La particule est plus chaude de 6 °C",
+        "La particule est plus froide de 2 °C",
+        "La particule est plus chaude de 4 °C",
+        "Les deux sont à la même température"
+       ],
+       "answer": 2,
+       "explanation": "De 4 000 à 8 000 ft, la particule saturée perd 4 × 1,5 = 6 °C et arrive à 4 °C ; l'air ambiant perd 4 × 2,5 = 10 °C et arrive à 0 °C. La particule est donc plus chaude de 4 °C : le nuage continue de grandir. Avec le gradient sec, on trouverait à tort une particule plus froide de 2 °C."
+      },
+      {
+       "id": "u3s7q23",
+       "q": "Sur un terrain de plaine, le METAR donne 18/12 à 10 h, puis 25/13 à 15 h. Comment la hauteur de la base des cumulus évolue-t-elle entre ces deux heures ?",
+       "choices": [
+        "Elle descend d'environ 4 800 ft à 2 400 ft sol",
+        "Elle reste vers 2 400 ft sol, le point de rosée ayant peu varié",
+        "Elle monte d'environ 1 500 ft à 3 000 ft sol",
+        "Elle monte d'environ 2 400 ft à 4 800 ft sol"
+       ],
+       "answer": 3,
+       "explanation": "À 10 h : 400 × (18 − 12) = 2 400 ft. À 15 h : 400 × (25 − 13) = 4 800 ft. L'écart T − Td s'est creusé avec l'échauffement : la base des cumulus monte au fil de la journée. Le chiffre de 250 ft par degré donnerait à tort 1 500 et 3 000 ft."
+      },
+      {
+       "id": "u3s7q24",
+       "q": "En hiver, sous un anticyclone, vous décollez dans la brume par vent calme. À 1 200 ft, la température passe brusquement de 1 °C à 7 °C et vous débouchez dans un ciel limpide. Que devez-vous garder à l'esprit pour le retour ?",
+       "choices": [
+        "La convection dissipera la brume avant votre retour, l'air étant instable",
+        "La brume reste sous l'inversion : visibilité oblique médiocre en approche",
+        "L'inversion annonce un front froid proche, avec des averses à l'arrivée",
+        "L'air chaud au-dessus de l'inversion donnera du givrage en ciel clair"
+       ],
+       "answer": 1,
+       "explanation": "La hausse de température marque une inversion : l'air est stable et la brume reste confinée dessous, souvent toute la journée en hiver. Vue d'en haut, la piste peut sembler visible, mais en descendant dans la couche, la visibilité oblique est bien plus faible. Prévoyez un dégagement."
+      }
+     ]
+    },
+    {
+     "id": "u3s8",
+     "title": "Visibilité, brouillards et brumes",
+     "icon": "🌫️",
+     "tips": "Définitions :\n• Visibilité (au sens aéronautique) : la plus grande de deux distances, celle à laquelle on voit et reconnaît un objet noir de dimensions convenables, près du sol, sur un fond lumineux, et celle à laquelle on voit et identifie des feux d'environ 1 000 candelas sur un fond non éclairé.\n• Visibilité dominante (METAR) : valeur atteinte ou dépassée sur au moins la moitié de l'horizon ou de la surface de l'aérodrome. Une visibilité minimale plus faible dans un secteur peut s'y ajouter (ex. 4000 1500SW).\n• Visibilité en vol : celle vue du poste de pilotage, vers l'avant. Visibilité au sol : celle de l'aérodrome, transmise par un observateur ou un capteur. Les minimums VMC portent sur la visibilité en vol ; ceux du décollage et de l'atterrissage en CTR sur la visibilité au sol.\n• Portée visuelle de piste (RVR) : distance jusqu'à laquelle un pilote placé sur l'axe voit les marques ou les feux de piste. Mesurée par des capteurs, elle est donnée quand la visibilité ou la RVR descend sous 1 500 m.\n• Visibilité verticale (VV) : donnée à la place des nuages quand le ciel est invisible (VV002 = 200 ft).\n\nBrume et brouillard dans le METAR :\n• Brouillard (FG) : gouttelettes en suspension, visibilité inférieure à 1 000 m. FZFG : brouillard par température négative, aux gouttelettes surfondues qui déposent du givre. MIFG : brouillard mince au ras du sol (moins de 2 m environ), visibilité mesurée parfois bonne ; BCFG : bancs ; PRFG : brouillard sur une partie de l'aérodrome.\n• Brume (BR) : fines gouttelettes, air humide, visibilité de 1 000 à 5 000 m.\n• Brume sèche (HZ) : particules sèches (pollution, aérosols), air plutôt sec, souvent piégées sous une inversion. Fumée (FU), poussière (DU), sable (SA) : feux, poussières sahariennes. Ces particules sèches ne sont signalées que pour une visibilité de 5 000 m ou moins.\n\nLe brouillard est un nuage au contact du sol : l'air se sature, soit parce qu'il se refroidit jusqu'à son point de rosée, soit parce qu'il reçoit de la vapeur.\n\nBrouillard de rayonnement :\n• Formation : nuit longue et claire (le sol rayonne sa chaleur), air humide (faible écart T − Td le soir), vent faible de quelques nœuds, sol humide, fonds de vallée où l'air froid s'accumule. Par calme plat, seule une mince couche se refroidit : rosée, gelée blanche ou brouillard très mince ; avec un vent plus fort, le brassage donne plutôt des stratus bas.\n• Saison : surtout l'automne et l'hiver, sous un anticyclone.\n• Épaisseur : quelques dizaines à quelques centaines de pieds ; le plus dense vers le lever du soleil, moment le plus froid.\n• Dissipation : le soleil chauffe le sol, le brouillard se soulève en stratus puis se disperse ; un vent qui forcit ou de l'air plus sec l'accélèrent. En hiver, sous l'inversion d'un anticyclone, il peut tenir toute la journée.\n• Il ne se forme pas en pleine mer, dont la température varie peu entre le jour et la nuit.\n\nBrouillard d'advection :\n• Air doux et humide déplacé sur une surface plus froide : mer froide au printemps et en début d'été (Manche, Atlantique), sol froid ou enneigé en hiver.\n• Il se forme avec du vent (jusqu'à une quinzaine de nœuds ; au-delà, il se soulève en stratus), de jour comme de nuit, même sous ciel couvert. Étendu, épais et durable, il peut envahir une côte en quelques minutes.\n• Il ne disparaît qu'avec un changement de masse d'air ou de vent, ou un vent assez fort pour le soulever.\n\nBrouillard d'évaporation : air froid au-dessus d'une eau nettement plus chaude (lac, rivière, mer en début d'hiver) : la vapeur se condense aussitôt en nappes (« fumée de mer »). Variante frontale : en avant d'un front chaud, la pluie plus chaude s'évapore dans l'air froid du dessous et le sature ; plafonds très bas.\n\nBrouillard de pente : air humide poussé par le vent le long d'une pente, refroidi par détente en montant ; il couvre les reliefs et dure tant que le vent souffle.\n\nBrouillard de mélange : deux masses d'air humides de températures différentes se mélangent ; le mélange peut être saturé alors qu'aucune ne l'était (principe de la buée de l'haleine par temps froid). Souvent temporaire.\n\nStratus bas : sous une inversion, un vent modéré brasse la couche humide : une couche de stratus se forme quelques centaines de pieds au-dessus du sol. Ils naissent aussi d'un brouillard qui se soulève. Plafond souvent sous 500 ft, collines dans les nuages.\n\nPrévoir le brouillard :\n• Suivez l'écart T − Td d'heure en heure dans les METAR : 14/10, 11/9 puis 9/8, la saturation approche.\n• Si la température minimale prévue descend au point de rosée du soir, par ciel clair et vent faible, le brouillard est probable.\n• Signal d'alerte : ciel qui se dégage et vent qui tombe en soirée, après une journée pluvieuse.\n• Des nuages qui arrivent la nuit freinent le refroidissement et peuvent l'empêcher.\n• Consultez les TAF (BR, FG, VV, PROB30/PROB40 TEMPO) et la TEMSI.\n\nEn vol :\n• La visibilité oblique, vers la piste en approche, peut être bien plus faible que la visibilité verticale : au-dessus d'un brouillard mince, on voit le sol, mais on le perd en y entrant.\n• Brume et brume sèche : visibilité plus faible face au soleil ; sur l'eau, l'horizon peut disparaître.\n\nDécision VFR :\n• Rappels SERA : 5 km de visibilité en vol sous 10 000 ft AMSL (8 km au-dessus) ; en classe G, à ou sous 3 000 ft AMSL ou 1 000 ft sol (le plus haut), 1 500 m admis en France, de jour, à 140 kt IAS ou moins ; en CTR, décollage et atterrissage VFR avec 5 km au sol et un plafond de 1 500 ft, sinon VFR spécial (1 500 m et 600 ft).\n• Part-NCO : on ne commence ou ne poursuit un vol VFR que si les dernières informations météo annoncent, sur la route et à destination à l'heure prévue, des conditions au moins égales aux minimums VFR.\n• Ne comptez pas sur une dissipation à destination : prévoyez un dégagement hors de la zone de brouillard et le carburant correspondant.\n• En fin d'après-midi d'automne, avec un faible écart T − Td, rentrez tôt : le brouillard peut se former dès le coucher du soleil.",
+     "vocab": [
+      {
+       "term": "Visibilité dominante",
+       "translation": "Visibilité atteinte sur au moins la moitié de l'horizon (METAR)"
+      },
+      {
+       "term": "Visibilité en vol",
+       "translation": "Visibilité vers l'avant, vue du poste de pilotage"
+      },
+      {
+       "term": "RVR",
+       "translation": "Portée visuelle de piste : marques ou feux vus depuis l'axe"
+      },
+      {
+       "term": "Visibilité verticale (VV)",
+       "translation": "Donnée quand le ciel est invisible (VV002 = 200 ft)"
+      },
+      {
+       "term": "Visibilité oblique",
+       "translation": "Visibilité le long de la trajectoire d'approche, vers la piste"
+      },
+      {
+       "term": "FZFG",
+       "translation": "Brouillard givrant : gouttelettes surfondues, température négative"
+      },
+      {
+       "term": "MIFG, BCFG, PRFG",
+       "translation": "Brouillard mince, en bancs, sur une partie de l'aérodrome"
+      },
+      {
+       "term": "Brume sèche (HZ)",
+       "translation": "Particules sèches réduisant la visibilité, air plutôt sec"
+      },
+      {
+       "term": "Lithométéore",
+       "translation": "Particules solides en suspension : fumée, poussière, sable"
+      },
+      {
+       "term": "Brouillard de rayonnement",
+       "translation": "Sol refroidi par une nuit claire, vent faible, air humide"
+      },
+      {
+       "term": "Brouillard d'advection",
+       "translation": "Air doux et humide refroidi en passant sur une surface froide"
+      },
+      {
+       "term": "Brouillard d'évaporation",
+       "translation": "Air froid sur une eau plus chaude, ou pluie tiède dans l'air froid"
+      },
+      {
+       "term": "Brouillard de pente",
+       "translation": "Air humide refroidi par détente en remontant un relief"
+      },
+      {
+       "term": "Brouillard de mélange",
+       "translation": "Mélange saturé de deux airs humides de températures différentes"
+      },
+      {
+       "term": "Stratus bas",
+       "translation": "Couche nuageuse grise à quelques centaines de pieds du sol"
+      },
+      {
+       "term": "Écart T − Td",
+       "translation": "Température moins point de rosée : faible, saturation proche"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Une nuit à brouillard de rayonnement",
+       "svg": "<svg viewBox=\"0 0 700 410\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"410\" fill=\"#ffffff\"/><rect x=\"386.7\" y=\"72.0\" width=\"200.0\" height=\"260.0\" rx=\"0\" fill=\"#dfe3ea\"/><line x1=\"70.0\" y1=\"332.0\" x2=\"670.0\" y2=\"332.0\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"337.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">2</text><line x1=\"70.0\" y1=\"294.9\" x2=\"670.0\" y2=\"294.9\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"299.9\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">4</text><line x1=\"70.0\" y1=\"257.7\" x2=\"670.0\" y2=\"257.7\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"262.7\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">6</text><line x1=\"70.0\" y1=\"220.6\" x2=\"670.0\" y2=\"220.6\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"225.6\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">8</text><line x1=\"70.0\" y1=\"183.4\" x2=\"670.0\" y2=\"183.4\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"188.4\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">10</text><line x1=\"70.0\" y1=\"146.3\" x2=\"670.0\" y2=\"146.3\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"151.3\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">12</text><line x1=\"70.0\" y1=\"109.1\" x2=\"670.0\" y2=\"109.1\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"114.1\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">14</text><line x1=\"70.0\" y1=\"72.0\" x2=\"670.0\" y2=\"72.0\" stroke=\"#e1e6ee\" stroke-width=\"1\"/><text x=\"62.0\" y=\"77.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">16</text><line x1=\"70.0\" y1=\"332.0\" x2=\"70.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"70.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">18 h</text><line x1=\"170.0\" y1=\"332.0\" x2=\"170.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"170.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">21 h</text><line x1=\"270.0\" y1=\"332.0\" x2=\"270.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"270.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">0 h</text><line x1=\"370.0\" y1=\"332.0\" x2=\"370.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"370.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">3 h</text><line x1=\"470.0\" y1=\"332.0\" x2=\"470.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"470.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">6 h</text><line x1=\"570.0\" y1=\"332.0\" x2=\"570.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"570.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">9 h</text><line x1=\"670.0\" y1=\"332.0\" x2=\"670.0\" y2=\"338.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"670.0\" y=\"355.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">12 h</text><line x1=\"70.0\" y1=\"332.0\" x2=\"670.0\" y2=\"332.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><line x1=\"70.0\" y1=\"332.0\" x2=\"70.0\" y2=\"72.0\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"370.0\" y=\"378.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Heure locale (nuit d'automne, exemple)</text><text x=\"22\" y=\"202.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\" text-anchor=\"middle\" transform=\"rotate(-90 22 202.0)\">Température (°C)</text><line x1=\"520.0\" y1=\"72.0\" x2=\"520.0\" y2=\"332.0\" stroke=\"#d35400\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><path d=\"M70.0,202.0 C81.1,203.2 114.4,207.0 136.7,209.4 C158.9,211.9 181.1,214.7 203.3,216.9 C225.6,219.0 247.8,220.6 270.0,222.4 C292.2,224.3 317.2,226.0 336.7,228.0 C356.1,230.0 370.0,232.2 386.7,234.5 C403.3,236.8 420.0,239.6 436.7,241.9 C453.3,244.3 472.8,247.0 486.7,248.4 C500.6,249.8 508.9,250.8 520.0,250.3 C531.1,249.8 542.2,248.1 553.3,245.6 C564.4,243.2 575.6,238.4 586.7,235.4 C597.8,232.5 606.1,230.5 620.0,228.0 C633.9,225.5 661.7,221.8 670.0,220.6\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-dasharray=\"9 5\"/><path d=\"M70.0,109.1 C81.1,116.0 114.4,137.9 136.7,150.0 C158.9,162.1 181.1,172.3 203.3,181.6 C225.6,190.9 247.8,198.6 270.0,205.7 C292.2,212.8 317.2,219.5 336.7,224.3 C356.1,229.1 370.0,231.6 386.7,234.5 C403.3,237.4 420.0,239.6 436.7,241.9 C453.3,244.3 472.8,247.0 486.7,248.4 C500.6,249.8 508.9,250.9 520.0,250.3 C531.1,249.7 542.2,248.7 553.3,244.7 C564.4,240.7 575.6,235.4 586.7,226.1 C597.8,216.9 606.1,204.2 620.0,189.0 C633.9,173.8 661.7,144.1 670.0,135.1\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"170.0\" y1=\"169.7\" x2=\"170.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.8\"/><polygon points=\"170.0,209.2 165.5,200.2 174.5,200.2\" fill=\"#14213d\"/><line x1=\"170.0\" y1=\"209.2\" x2=\"170.0\" y2=\"176.9\" stroke=\"#14213d\" stroke-width=\"1.8\"/><polygon points=\"170.0,169.7 174.5,178.7 165.5,178.7\" fill=\"#14213d\"/><text x=\"162.0\" y=\"194.9\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">T − Td</text><text x=\"80.0\" y=\"98.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">Température (T)</text><text x=\"80.0\" y=\"246.6\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">Point de rosée (Td)</text><text x=\"236.7\" y=\"265.1\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">L'écart se réduit</text><text x=\"236.7\" y=\"283.1\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">au fil de la nuit</text><text x=\"228.3\" y=\"38.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Ciel clair, vent faible :</text><text x=\"228.3\" y=\"58.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">le sol refroidit l'air</text><text x=\"486.7\" y=\"38.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Brouillard</text><text x=\"486.7\" y=\"58.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">T = Td</text><text x=\"628.3\" y=\"38.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Dissipation</text><text x=\"628.3\" y=\"58.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\">le sol chauffe</text><text x=\"514.0\" y=\"296.7\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">Lever</text><text x=\"514.0\" y=\"313.7\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">du soleil</text><text x=\"528.0\" y=\"135.1\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">Le brouillard</text><text x=\"528.0\" y=\"152.1\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">se lève</text><text x=\"528.0\" y=\"169.1\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">en stratus</text></svg>",
+       "caption": "Par ciel clair et vent faible, la température baisse toute la nuit et rejoint le point de rosée : le brouillard se forme et reste dense jusque vers le lever du soleil, puis se soulève en stratus et se dissipe quand le sol chauffe. Valeurs données à titre d'exemple."
+      },
+      {
+       "title": "Visibilité : codes METAR et seuils VFR",
+       "svg": "<svg viewBox=\"0 0 720 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"420\" fill=\"#ffffff\"/><text x=\"20.0\" y=\"26.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">Visibilité dominante dans le METAR</text><rect x=\"60.0\" y=\"40.0\" width=\"60.0\" height=\"56.0\" rx=\"0\" fill=\"#5b6474\"/><rect x=\"120.0\" y=\"40.0\" width=\"240.0\" height=\"56.0\" rx=\"0\" fill=\"#a7b0bf\"/><rect x=\"360.0\" y=\"40.0\" width=\"300.0\" height=\"56.0\" rx=\"0\" fill=\"#eef1f6\" stroke=\"#c9d1de\" stroke-width=\"1\"/><text x=\"90.0\" y=\"74.0\" font-size=\"17\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">FG</text><text x=\"240.0\" y=\"65.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">BR : brume</text><text x=\"240.0\" y=\"85.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">gouttelettes, air humide</text><text x=\"510.0\" y=\"65.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\" font-weight=\"bold\">Plus de 5 km :</text><text x=\"510.0\" y=\"85.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">ni BR ni HZ signalés</text><text x=\"60.0\" y=\"116.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">FG : brouillard, moins de 1 000 m (FZFG si température négative)</text><rect x=\"60.0\" y=\"128.0\" width=\"300.0\" height=\"40.0\" rx=\"0\" fill=\"#f3c98b\"/><text x=\"210.0\" y=\"154.0\" font-size=\"15\" fill=\"#5a3a0a\" text-anchor=\"middle\" font-weight=\"bold\">HZ, FU, DU, SA : particules sèches</text><rect x=\"360.0\" y=\"128.0\" width=\"300.0\" height=\"40.0\" rx=\"0\" fill=\"#eef1f6\" stroke=\"#c9d1de\" stroke-width=\"1\"/><line x1=\"60.0\" y1=\"196.0\" x2=\"690.0\" y2=\"196.0\" stroke=\"#14213d\" stroke-width=\"2\"/><polygon points=\"694.0,196.0 684.0,201.0 684.0,191.0\" fill=\"#14213d\"/><line x1=\"60.0\" y1=\"190.0\" x2=\"60.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"60.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">0</text><line x1=\"120.0\" y1=\"190.0\" x2=\"120.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"120.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">1 km</text><line x1=\"180.0\" y1=\"190.0\" x2=\"180.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">2 km</text><line x1=\"240.0\" y1=\"190.0\" x2=\"240.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><line x1=\"300.0\" y1=\"190.0\" x2=\"300.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">4 km</text><line x1=\"360.0\" y1=\"190.0\" x2=\"360.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"360.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">5 km</text><line x1=\"420.0\" y1=\"190.0\" x2=\"420.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"420.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">6 km</text><line x1=\"480.0\" y1=\"190.0\" x2=\"480.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><line x1=\"540.0\" y1=\"190.0\" x2=\"540.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"540.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">8 km</text><line x1=\"600.0\" y1=\"190.0\" x2=\"600.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><line x1=\"660.0\" y1=\"190.0\" x2=\"660.0\" y2=\"202.0\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"660.0\" y=\"220.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">10 km</text><line x1=\"150.0\" y1=\"226.0\" x2=\"150.0\" y2=\"258.0\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"20.0\" y=\"278.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">1 500 m</text><text x=\"20.0\" y=\"298.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">VFR spécial en CTR</text><text x=\"20.0\" y=\"316.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">classe G en France (≤ 140 kt)</text><text x=\"20.0\" y=\"334.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">RVR donnée en dessous</text><line x1=\"360.0\" y1=\"226.0\" x2=\"360.0\" y2=\"258.0\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"360.0\" y=\"278.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">5 km</text><text x=\"360.0\" y=\"298.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">VMC sous 10 000 ft AMSL</text><text x=\"360.0\" y=\"316.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">décollage VFR en CTR</text><line x1=\"540.0\" y1=\"226.0\" x2=\"540.0\" y2=\"258.0\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"540.0\" y=\"278.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">8 km</text><text x=\"540.0\" y=\"298.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">VMC à 10 000 ft</text><text x=\"540.0\" y=\"316.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">AMSL et au-dessus</text><line x1=\"660.0\" y1=\"226.0\" x2=\"660.0\" y2=\"340.0\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"708.0\" y=\"360.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">10 km et plus</text><text x=\"708.0\" y=\"380.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\">codé 9999</text><text x=\"708.0\" y=\"398.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\">(CAVOK possible)</text></svg>",
+       "caption": "FG pour des gouttelettes sous 1 000 m, BR de 1 000 à 5 000 m ; HZ, FU, DU et SA pour des particules sèches, à 5 000 m ou moins. Les seuils rappelés sont ceux de SERA (visibilité en vol, ou au sol pour le décollage en CTR) et la tolérance française en classe G."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u3s8q01",
+       "q": "Qu'appelle-t-on portée visuelle de piste (RVR) ?",
+       "choices": [
+        "La visibilité atteinte sur au moins la moitié de l'horizon de l'aérodrome",
+        "La distance à laquelle un pilote sur l'axe voit les marques ou feux de piste",
+        "La hauteur à laquelle un pilote en approche aperçoit les premiers feux",
+        "La longueur de piste utilisable à l'atterrissage, publiée dans l'AIP"
+       ],
+       "answer": 1,
+       "explanation": "La RVR est mesurée par des capteurs le long de la piste et traduit ce que voit le pilote aligné sur l'axe. Elle est communiquée par faible visibilité, quand la visibilité ou la RVR descend sous 1 500 m. La visibilité sur la moitié de l'horizon est la visibilité dominante."
+      },
+      {
+       "id": "u3s8q02",
+       "q": "Dans un METAR, que représente la visibilité dominante ?",
+       "choices": [
+        "La plus faible visibilité observée, quelle que soit la direction considérée",
+        "La visibilité atteinte sur au moins la moitié de l'horizon ou de l'aérodrome",
+        "La visibilité vers l'avant, mesurée depuis le poste d'un avion en approche",
+        "La moyenne des visibilités mesurées par les capteurs le long de la piste"
+       ],
+       "answer": 1,
+       "explanation": "La visibilité dominante est la valeur atteinte ou dépassée sur au moins la moitié de l'horizon ou de la surface de l'aérodrome. Une visibilité minimale plus faible dans un secteur peut être ajoutée (ex. 4000 1500SW). La mesure le long de la piste relève de la RVR."
+      },
+      {
+       "id": "u3s8q03",
+       "q": "Qu'est-ce qui distingue la brume (BR) de la brume sèche (HZ) ?",
+       "choices": [
+        "La brume réduit la visibilité sous 1 000 m, la brume sèche entre 1 000 et 5 000 m",
+        "La brume se forme le jour, la brume sèche se forme surtout la nuit",
+        "La brume est faite de gouttelettes d'eau, la brume sèche de particules sèches",
+        "La brume est faite de cristaux de glace, la brume sèche de gouttelettes d'eau"
+       ],
+       "answer": 2,
+       "explanation": "La brume (BR) est due à de fines gouttelettes dans un air humide ; la brume sèche (HZ) à des particules solides (pollution, aérosols) dans un air plutôt sec, souvent piégées sous une inversion. Toutes deux sont signalées pour une visibilité de 5 000 m au plus ; sous 1 000 m avec des gouttelettes, c'est du brouillard."
+      },
+      {
+       "id": "u3s8q04",
+       "q": "Que signifie le groupe FZFG dans un METAR ?",
+       "choices": [
+        "Un brouillard qui se dissipe, la visibilité remontant au-dessus de 1 000 m",
+        "Une bruine qui se congèle, avec une visibilité inférieure à 1 000 m",
+        "Un brouillard de cristaux de glace qui retombent en fine neige",
+        "Un brouillard par température négative, formé de gouttelettes surfondues"
+       ],
+       "answer": 3,
+       "explanation": "FZ (freezing) associé à FG signale un brouillard par température négative : ses gouttelettes surfondues gèlent au contact des surfaces et y déposent du givre (avion stationné, pare-brise, piste). La bruine se congelant s'écrit FZDZ."
+      },
+      {
+       "id": "u3s8q05",
+       "q": "Un METAR donne « 0150 FG VV001 ». Que signifie VV001 ?",
+       "choices": [
+        "La visibilité horizontale minimale est de 100 m dans une direction",
+        "Le ciel est invisible ; la visibilité verticale est de 100 ft",
+        "Une couche nuageuse couvre le ciel à 1 000 ft au-dessus du terrain",
+        "Le vent est variable, à 1 kt, au-dessus du brouillard"
+       ],
+       "answer": 1,
+       "explanation": "Quand le brouillard masque le ciel, on ne peut pas décrire de couches nuageuses : le METAR donne la visibilité verticale, en centaines de pieds. VV001 = 100 ft, avec ici 150 m de visibilité horizontale : conditions incompatibles avec un vol VFR."
+      },
+      {
+       "id": "u3s8q06",
+       "q": "Un METAR donne « 9000 MIFG ». Comment le comprendre ?",
+       "choices": [
+        "Des bancs de brouillard sur une partie de l'aérodrome, visibilité 900 m",
+        "Un brouillard modéré, la visibilité étant réduite à 9 000 ft",
+        "Un brouillard en formation, prévu dans les 2 heures suivantes",
+        "Un brouillard mince au ras du sol, la visibilité restant de 9 km"
+       ],
+       "answer": 3,
+       "explanation": "MI (mince) désigne un brouillard très peu épais, au ras du sol (moins de 2 m environ) : la visibilité, mesurée au-dessus, peut rester bonne. Les bancs s'écrivent BCFG et le brouillard couvrant une partie de l'aérodrome PRFG. Les visibilités du METAR sont en mètres."
+      },
+      {
+       "id": "u3s8q07",
+       "q": "Pourquoi le brouillard de rayonnement ne se forme-t-il pas en pleine mer ?",
+       "choices": [
+        "La température de la mer varie très peu entre le jour et la nuit",
+        "L'air marin est trop sec pour atteindre la saturation",
+        "Le vent au-dessus de la mer est trop fort pour permettre la condensation",
+        "La pression est plus élevée au-dessus de la mer que sur les terres"
+       ],
+       "answer": 0,
+       "explanation": "Le brouillard de rayonnement exige un refroidissement nocturne de la surface. La mer, qui garde sa chaleur, ne se refroidit presque pas en une nuit. En mer, les brouillards sont d'advection (air doux sur eau froide) ou d'évaporation (air froid sur eau plus chaude)."
+      },
+      {
+       "id": "u3s8q08",
+       "q": "Pourquoi un vent faible de quelques nœuds est-il plus favorable au brouillard de rayonnement qu'un calme plat ?",
+       "choices": [
+        "Il apporte de l'air sec qui facilite le rayonnement du sol",
+        "Il réchauffe le sol par frottement et retarde la condensation",
+        "Il étale le refroidissement sur une couche d'air plus épaisse",
+        "Il fait baisser la pression, ce qui refroidit l'air par détente"
+       ],
+       "answer": 2,
+       "explanation": "Par calme plat, seule une couche très mince se refroidit au contact du sol : on obtient de la rosée, de la gelée blanche ou un brouillard très mince. Un vent faible brasse doucement l'air et propage le refroidissement sur plusieurs dizaines de pieds : le brouillard s'épaissit. Un vent plus fort donnerait plutôt des stratus."
+      },
+      {
+       "id": "u3s8q09",
+       "q": "Par un matin froid de fin d'automne, des nappes de brouillard montent d'un lac nettement plus chaud que l'air. De quel brouillard s'agit-il ?",
+       "choices": [
+        "Un brouillard de rayonnement",
+        "Un brouillard d'advection",
+        "Un brouillard d'évaporation",
+        "Un brouillard de pente"
+       ],
+       "answer": 2,
+       "explanation": "L'eau, plus chaude que l'air, s'évapore ; cette vapeur arrive dans un air froid qui ne peut pas la contenir et se condense aussitôt, en nappes qui « fument » au-dessus de l'eau. Le brouillard d'advection, lui, naît d'un air doux refroidi par une surface froide."
+      },
+      {
+       "id": "u3s8q10",
+       "q": "Un vent d'ouest humide remonte une longue pente jusqu'à un plateau. Le plateau se couvre de brouillard alors que la plaine reste dégagée. Quel est le mécanisme ?",
+       "choices": [
+        "L'air se refroidit par détente en s'élevant avec le relief",
+        "Le sol du plateau se refroidit par rayonnement sous un ciel clair",
+        "L'air froid du plateau s'écoule vers la plaine et s'y réchauffe",
+        "La pluie tiède s'évapore dans l'air froid qui recouvre le plateau"
+       ],
+       "answer": 0,
+       "explanation": "C'est un brouillard de pente : l'air humide poussé vers le haut se détend et se refroidit, à 3 °C/1 000 ft, jusqu'à saturation. Il persiste tant que le vent souffle dans le même sens et couvre surtout les hauteurs."
+      },
+      {
+       "id": "u3s8q11",
+       "q": "En hiver, en avant d'un front chaud, une pluie continue tombe dans de l'air froid et les plafonds s'abaissent jusqu'au brouillard. Quel mécanisme est en cause ?",
+       "choices": [
+        "L'évaporation de la pluie, plus chaude, sature l'air froid situé dessous",
+        "La pluie refroidit le sol, qui refroidit ensuite l'air par rayonnement",
+        "L'air froid remonte une pente et se refroidit par détente",
+        "L'air froid descend et se réchauffe par compression"
+       ],
+       "answer": 0,
+       "explanation": "La pluie se forme dans l'air chaud au-dessus de la surface frontale. En tombant dans l'air froid, elle s'évapore et lui apporte de la vapeur jusqu'à le saturer : c'est le brouillard frontal, un brouillard d'évaporation. Sous un ciel couvert, le sol ne se refroidit guère par rayonnement."
+      },
+      {
+       "id": "u3s8q12",
+       "q": "Qu'est-ce qu'un brouillard de mélange ?",
+       "choices": [
+        "Le mélange d'un brouillard et de fumées industrielles, que l'on appelle aussi smog",
+        "Le mélange de deux masses d'air humides de températures différentes, devenu saturé",
+        "Un brouillard formé à la fois de gouttelettes d'eau et de cristaux de glace",
+        "Un brouillard de rayonnement brassé par le vent jusqu'à 2 000 ft au-dessus du sol"
+       ],
+       "answer": 1,
+       "explanation": "Deux masses d'air proches de la saturation mais de températures différentes peuvent, en se mélangeant, donner un air saturé, alors qu'aucune ne l'était seule : c'est le principe de la buée de l'haleine par temps froid. Ce brouillard est souvent temporaire."
+      },
+      {
+       "id": "u3s8q13",
+       "q": "Lors d'un épisode de poussières sahariennes, la visibilité tombe à 4 km. Quel code le METAR emploie-t-il le plus probablement ?",
+       "choices": [
+        "BR",
+        "FU",
+        "DU",
+        "FG"
+       ],
+       "answer": 2,
+       "explanation": "DU désigne la poussière en suspension, l'un des lithométéores (particules solides), signalés quand la visibilité est de 5 000 m au plus. BR et FG concernent des gouttelettes d'eau ; FU désigne la fumée (incendies)."
+      },
+      {
+       "id": "u3s8q14",
+       "q": "Sous une inversion, l'air près du sol est humide et un vent de 15 kt souffle toute la nuit. Que se forme-t-il plutôt qu'un brouillard ?",
+       "choices": [
+        "Des cumulus bourgeonnants, déclenchés par la turbulence du vent",
+        "Un voile de cirrostratus, l'humidité étant entraînée en altitude",
+        "Une brume sèche, le vent asséchant peu à peu l'air près du sol",
+        "Une couche de stratus bas, à quelques centaines de pieds du sol"
+       ],
+       "answer": 3,
+       "explanation": "Le vent brasse la couche humide sous l'inversion : le refroidissement se répartit sur toute son épaisseur et la condensation se produit vers son sommet, sous forme de stratus. Un vent faible aurait permis un brouillard au sol ; l'inversion empêche la convection."
+      },
+      {
+       "id": "u3s8q15",
+       "q": "Un brouillard d'advection couvre la côte par vent de sud-ouest de 10 kt. Qu'est-ce qui a le plus de chances de le faire disparaître ?",
+       "choices": [
+        "Le lever du soleil, qui le dissipe en général dans l'heure qui suit",
+        "Un changement de masse d'air, le vent tournant au nord-est, plus sec",
+        "La tombée de la nuit, qui refroidit le sol et fait déposer la rosée",
+        "Un vent qui faiblit à 5 kt et laisse le brouillard se déposer au sol"
+       ],
+       "answer": 1,
+       "explanation": "Le brouillard d'advection est entretenu par l'arrivée continue d'air doux et humide sur une surface froide. Il ne disparaît qu'avec un changement de masse d'air ou de vent, ou un vent assez fort pour le soulever en stratus. Le soleil, efficace sur un brouillard de rayonnement, l'est peu ici."
+      },
+      {
+       "id": "u3s8q16",
+       "q": "En décembre, un anticyclone stationne depuis une semaine. La veille, le brouillard du matin ne s'est pas levé de la journée. Comment l'expliquer ?",
+       "choices": [
+        "Le soleil d'hiver, trop faible, ne détruit pas l'inversion",
+        "Le vent fort entretient le brouillard en brassant l'air humide",
+        "L'air de l'anticyclone monte et se refroidit par détente",
+        "Des averses d'après-midi ont réhumidifié le sol"
+       ],
+       "answer": 0,
+       "explanation": "Sous l'anticyclone, la subsidence renforce l'inversion et le vent est faible. En décembre, les journées sont courtes et le soleil bas : l'échauffement ne suffit pas à percer l'inversion, et brouillard ou stratus peuvent persister plusieurs jours. Dans un anticyclone, l'air descend : il ne monte pas."
+      },
+      {
+       "id": "u3s8q17",
+       "q": "Les METAR de la soirée donnent successivement 14/10, 11/9 puis 9/8, ciel clair et vent calme. Que prévoyez-vous pour la nuit ?",
+       "choices": [
+        "Des orages nocturnes, déclenchés par le refroidissement de l'air par la base",
+        "Un risque élevé de brouillard, l'écart T − Td tendant vers zéro",
+        "Une nette amélioration, l'air s'asséchant à mesure qu'il se refroidit",
+        "Un vent fort, la pression montant avec le refroidissement"
+       ],
+       "answer": 1,
+       "explanation": "L'écart T − Td passe de 4 à 2 puis 1 °C : la saturation approche. Avec un ciel clair et un vent faible, le refroidissement nocturne va se poursuivre : brouillard de rayonnement probable. Un air refroidi par la base se stabilise, ce qui écarte les orages."
+      },
+      {
+       "id": "u3s8q18",
+       "q": "Le soir, le point de rosée est de 7 °C. Pour la nuit, on prévoit un ciel clair, un vent faible et une température minimale de 5 °C. Qu'en déduisez-vous ?",
+       "choices": [
+        "L'air restera sec, l'écart T − Td demeurant d'au moins 2 °C",
+        "Des cumulus se formeront en fin de nuit, par convection",
+        "Le brouillard est peu probable, la température restant positive",
+        "Saturation probable : risque de brouillard en fin de nuit"
+       ],
+       "answer": 3,
+       "explanation": "Si la température minimale prévue descend jusqu'au point de rosée du soir, l'air atteindra la saturation : par ciel clair et vent faible, un brouillard de rayonnement est probable. Le brouillard n'exige pas une température négative ; elle sert seulement à qualifier un brouillard givrant."
+      },
+      {
+       "id": "u3s8q19",
+       "q": "En octobre, vous devez rentrer à 18 h locales sur votre terrain de vallée. À 15 h, le METAR donne 13/11, vent 3 kt, et le ciel se dégage après la pluie. Quelle est la meilleure décision ?",
+       "choices": [
+        "Avancer le retour et prévoir un dégagement : brouillard possible dès le soir",
+        "Rentrer à l'heure prévue, puisque le brouillard de vallée se forme en fin de nuit",
+        "Retarder le retour après 20 h, le temps que l'air humide après la pluie s'assèche",
+        "Rentrer à l'heure prévue, puisqu'un vent de 3 kt suffit à empêcher le brouillard"
+       ],
+       "answer": 0,
+       "explanation": "Écart T − Td de 2 °C, vent faible, ciel qui se dégage après la pluie, sol humide, fond de vallée et nuit longue d'automne : tous les ingrédients d'un brouillard de rayonnement, qui peut apparaître dès le coucher du soleil. Un vent de 3 kt favorise même sa formation."
+      },
+      {
+       "id": "u3s8q20",
+       "q": "Vous arrivez au-dessus de votre terrain, couvert d'un brouillard mince. Depuis 1 500 ft, vous voyez nettement la piste à la verticale. Que risquez-vous en approche ?",
+       "choices": [
+        "Une approche sans difficulté, la piste vue d'en haut restant visible en finale",
+        "Un givrage fort du pare-brise dès l'entrée dans la couche, même par température positive",
+        "Une forte turbulence thermique sous la couche de brouillard",
+        "Perdre la piste de vue dans la couche, la visibilité oblique étant bien plus faible"
+       ],
+       "answer": 3,
+       "explanation": "Au-dessus d'un brouillard peu épais, on voit le sol presque à la verticale, à travers une faible épaisseur. En approche, le regard traverse la couche en oblique, sur une longue distance : la piste disparaît en entrant dans le brouillard, au moment le plus critique."
+      },
+      {
+       "id": "u3s8q21",
+       "q": "Au printemps, un aérodrome breton annonce CAVOK à 14 h, avec 19/13 et un vent d'ouest de 12 kt venant d'une mer à 11 °C. Pourquoi faut-il se méfier ?",
+       "choices": [
+        "Refroidi par la mer sous son point de rosée, l'air peut amener un brouillard d'advection",
+        "La mer, plus froide que l'air, va déclencher des orages de convection sur la côte",
+        "L'air marin, réchauffé par la mer, formera des cumulonimbus dès l'arrivée sur la côte",
+        "La mer froide fait baisser la pression et renforce le vent jusqu'à la tempête"
+       ],
+       "answer": 0,
+       "explanation": "Au contact d'une mer à 11 °C, l'air dont le point de rosée est de 13 °C se refroidit sous celui-ci et se sature : un brouillard d'advection se forme au large et le vent d'ouest peut le pousser sur la côte en quelques minutes. Une mer froide stabilise l'air : elle ne déclenche pas d'orages."
+      },
+      {
+       "id": "u3s8q22",
+       "q": "Un TAF contient « PROB40 TEMPO 2404/2408 0300 FG VV002 ». Vous devez arriver à 05 h UTC le 24. Comment l'interprétez-vous ?",
+       "choices": [
+        "Brouillard durable de 04 h à 08 h : visibilité 3 000 m et plafond à 2 000 ft",
+        "Brouillard prévu dès 04 h pendant 40 minutes, puis dissipation progressive",
+        "Risque de 40 % de brouillard temporaire : 300 m, ciel invisible à 200 ft",
+        "Brouillard sur 40 % de l'aérodrome, la piste en service restant dégagée"
+       ],
+       "answer": 2,
+       "explanation": "PROB40 TEMPO : 40 % de probabilité de fluctuations temporaires entre 04 h et 08 h UTC le 24, ici une visibilité de 300 m dans le brouillard et un ciel invisible (visibilité verticale 200 ft). Votre arrivée tombe dans la période : prévoyez un terrain de dégagement et le carburant nécessaire."
+      },
+      {
+       "id": "u3s8q23",
+       "q": "À 23 h, après plusieurs jours de gel, un vent de sud-ouest de 12 kt amène de l'air doux et humide sous un ciel couvert. Un brouillard épais envahit l'aérodrome. De quel type est-il et comment évoluera-t-il ?",
+       "choices": [
+        "De rayonnement : il se dissipera dans la matinée, dès que le soleil chauffera le sol",
+        "D'évaporation : il disparaîtra quand l'eau des flaques aura fini de s'évaporer",
+        "D'advection : il peut durer, même de jour, tant que cet air passe sur le sol gelé",
+        "De pente : il se dissipera dès que le vent de sud-ouest faiblira sous 10 kt"
+       ],
+       "answer": 2,
+       "explanation": "Air doux et humide arrivant avec du vent sur un sol gelé, sous ciel couvert : c'est un brouillard d'advection. Il n'a pas besoin d'une nuit claire et ne dépend pas du soleil : il persiste tant que la situation dure, parfois toute la journée."
+      },
+      {
+       "id": "u3s8q24",
+       "q": "Votre terrain de départ est en CTR. METAR : « 00000KT 2500 BR SCT003 BKN012 08/07 Q1024 ». De jour, pouvez-vous décoller en VFR ?",
+       "choices": [
+        "Oui, en VFR normal, puisque la visibilité au sol dépasse 1 500 m",
+        "Ni en VFR ni en VFR spécial, à cause de la couche SCT à 300 ft",
+        "Oui, en VFR normal, puisque le plafond BKN dépasse 1 000 ft",
+        "Seulement en VFR spécial : visibilité 2 500 m, plafond 1 200 ft"
+       ],
+       "answer": 3,
+       "explanation": "En CTR, le décollage VFR exige 5 km de visibilité au sol et un plafond de 1 500 ft (SERA.5005). Avec 2 500 m et un plafond BKN à 1 200 ft, seul un VFR spécial est possible, le contrôle demandant 1 500 m et 600 ft. La couche SCT à 300 ft ne forme pas plafond, mais il faudra rester hors des nuages."
+      }
+     ]
+    },
+    {
+     "id": "u3s9",
+     "title": "Orages et cumulonimbus",
+     "icon": "🌩️",
+     "tips": "Un orage naît d'un cumulonimbus (Cb), nuage à très grand développement vertical dont le sommet peut atteindre la tropopause, vers 36 000 ft ou plus sous nos latitudes.\n\nTrois ingrédients :\n• Humidité abondante dans les basses couches : la condensation libère la chaleur latente qui nourrit l'ascendance.\n• Instabilité sur une grande épaisseur (instabilité conditionnelle, air froid en altitude).\n• Déclenchement : échauffement du sol, soulèvement par un front, relief, convergence des vents (brises de mer, par exemple).\n\nStades de vie d'une cellule :\n• Développement (cumulus) : ascendances dans tout le nuage, qui grossit vite (TCU). Pas encore de précipitations au sol, mais déjà turbulence et givrage.\n• Maturité : commence quand les précipitations atteignent le sol. Ascendances et descendances coexistent ; pluie et grêle entraînent l'air froid vers le bas. Foudre, grêle, rafales, turbulence sévère : c'est le stade le plus dangereux. Le sommet s'étale en enclume.\n• Dissipation : les descendances l'emportent et coupent l'arrivée d'air chaud et humide ; la pluie faiblit, l'enclume de glace persiste et dérive.\n• Une cellule isolée vit de l'ordre d'une demi-heure à une heure. Dans un orage multicellulaire, le cas le plus fréquent, le front de rafales fait naître de nouvelles cellules et l'ensemble dure des heures ; une supercellule, très puissante et en rotation, peut durer plusieurs heures (grosse grêle, rafales destructrices).\n\nTypes d'orages :\n• De masse d'air (de chaleur) : en été, par échauffement du sol dans un air instable et humide, souvent en marais barométrique. Isolés, maximum en fin d'après-midi et en soirée, ils faiblissent souvent la nuit.\n• Frontaux : surtout le long d'un front froid actif, alignés sur des dizaines ou des centaines de kilomètres, de jour comme de nuit. Dans un front chaud ou une occlusion, les Cb peuvent être noyés dans la masse nuageuse (EMBD) : invisibles de l'extérieur.\n• Orographiques : le relief soulève l'air et les pentes ensoleillées le chauffent ; fréquents l'après-midi en montagne, ils ferment vallées et cols.\n• Ligne de grains : bande d'orages actifs alignés, souvent en avant d'un front froid. Elle forme un mur difficile ou impossible à contourner, avec des rafales brutales à son passage.\n\nDangers :\n• Turbulence sévère à extrême, dans le nuage et autour, y compris en air clair. Réduisez à la vitesse prévue par le manuel de vol en air agité (au plus VA), ailes horizontales, sans chercher à tenir l'altitude.\n• Front de rafales : l'air froid des descendances s'étale au sol et précède l'orage de plusieurs kilomètres ; saute de vent, rafales, cisaillement, chute de température, poussière, parfois nuage en rouleau (arcus).\n• Microrafale : descendance intense et localisée, étalée sur moins de 4 km environ, jusqu'à 6 000 ft/min ; ses vents se renforcent pendant les premières minutes et elle dure rarement plus de 15 min. Près du sol : vent de face, descendance, puis vent arrière. Sous un Cb à base haute, elle peut être sèche : seuls des virgas (précipitations qui s'évaporent avant le sol) et un anneau de poussière la trahissent.\n• Grêle : dans le nuage, mais aussi en air clair sous l'enclume, parfois jusqu'à une vingtaine de nautiques d'un gros Cb ; elle brise pare-brise et bords d'attaque.\n• Foudre : éblouissement (de nuit, éclairage du poste au maximum), erreurs du compas magnétique, électronique perturbée, l'ADF pointe vers les éclairs. Le son parcourt environ 1 km en 3 s : 15 s entre éclair et tonnerre, l'orage est à 5 km.\n• Givrage fort au-dessus de l'isotherme 0 °C, l'eau surfondue y étant abondante.\n• Précipitations intenses : visibilité presque nulle, piste détrempée.\n• Pression : elle chute à l'approche de l'orage, remonte brusquement avec les premières rafales, puis revient à la normale ; sans QNH actualisé, l'altimètre peut se tromper de plus de 100 ft.\n\nÉviter :\n• Repères de distance : la FAA recommande de rester à au moins 20 NM d'un orage sévère, surtout sous l'enclume d'un gros Cb. Sans radar, vous ne pouvez pas juger la sévérité d'une cellule : gardez une marge large, jamais réduite aux 1 500 m de distance aux nuages exigés en VMC.\n• Contournez de préférence du côté au vent : l'enclume, la grêle et la turbulence sont entraînées sous le vent.\n• Jamais sous la base ni sous l'enclume, jamais entre deux cellules proches ni au travers d'une ligne de grains.\n• Ne décollez pas et n'atterrissez pas à l'approche d'un orage : attendez son passage au sol ou déroutez-vous tôt.\n• Orages de masse d'air prévus : volez le matin et repérez des terrains de déroutement.\n\nReconnaître :\n• TCU : tours bourgeonnantes aux contours nets. Quand le sommet devient fibreux et s'étale, il est glacé : c'est un Cb.\n• Enclume étirée dans le sens du vent en altitude ; dôme qui la dépasse (sommet protubérant) : ascendance très puissante.\n• Mammatus : poches pendant sous l'enclume, signe de forte turbulence.\n• Arcus à l'avant (front de rafales), virgas sous une base haute (microrafale sèche).\n\nMessages :\n• METAR et TAF : TS (orage), VCTS (au voisinage), +TSRA, TSGR, CB et TCU dans les groupes nuageux, TEMPO TSRA, PROB30 TSRA.\n• TEMSI : zones de CB avec ISOL (isolés, moins de 50 % de la zone), OCNL (occasionnels, 50 à 75 %), FRQ (fréquents, plus de 75 %) ou EMBD (noyés dans la masse nuageuse), avec base et sommet.\n• SIGMET : OBSC TS (masqués par la brume ou l'obscurité), EMBD TS, FRQ TS, SQL TS (ligne de grains), suivis de GR en cas de grêle (TSGR). Validité de 4 h au plus ; à consulter avant et pendant le vol.",
+     "vocab": [
+      {
+       "term": "Cumulonimbus (Cb)",
+       "translation": "Nuage d'orage à très grand développement vertical, souvent en enclume"
+      },
+      {
+       "term": "TCU",
+       "translation": "Cumulus bourgeonnant aux contours nets, stade qui précède le Cb"
+      },
+      {
+       "term": "Enclume",
+       "translation": "Sommet glacé du Cb, étalé et étiré par le vent en altitude"
+      },
+      {
+       "term": "Stade de maturité",
+       "translation": "Précipitations au sol, ascendances et descendances : le plus dangereux"
+      },
+      {
+       "term": "Orage multicellulaire",
+       "translation": "Orage où de nouvelles cellules naissent sans cesse"
+      },
+      {
+       "term": "Supercellule",
+       "translation": "Cellule unique très puissante et en rotation, durable"
+      },
+      {
+       "term": "Ligne de grains",
+       "translation": "Bande d'orages alignés, souvent en avant d'un front froid"
+      },
+      {
+       "term": "Front de rafales",
+       "translation": "Air froid des descendances qui s'étale au sol en avant de l'orage"
+      },
+      {
+       "term": "Arcus",
+       "translation": "Nuage bas en rouleau ou en plateau, sur le front de rafales"
+      },
+      {
+       "term": "Microrafale",
+       "translation": "Descendance violente et localisée, moins de 4 km au sol"
+      },
+      {
+       "term": "Virga",
+       "translation": "Précipitations qui s'évaporent avant d'atteindre le sol"
+      },
+      {
+       "term": "Mammatus",
+       "translation": "Poches pendant sous l'enclume, signe de forte turbulence"
+      },
+      {
+       "term": "EMBD",
+       "translation": "Cb noyés dans une masse nuageuse, invisibles de l'extérieur"
+      },
+      {
+       "term": "ISOL, OCNL, FRQ",
+       "translation": "CB isolés (< 50 %), occasionnels (50-75 %), fréquents (> 75 %)"
+      },
+      {
+       "term": "SQL TS",
+       "translation": "Ligne de grains orageuse annoncée par SIGMET"
+      },
+      {
+       "term": "VCTS",
+       "translation": "Orage au voisinage de l'aérodrome (METAR)"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Les trois stades d'une cellule orageuse",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"470\" fill=\"#ffffff\"/><line x1=\"10.0\" y1=\"62.0\" x2=\"710.0\" y2=\"62.0\" stroke=\"#7b1fa2\" stroke-width=\"1.8\" stroke-dasharray=\"8 5\"/><text x=\"712.0\" y=\"54.0\" font-size=\"14\" fill=\"#7b1fa2\" text-anchor=\"end\" font-weight=\"bold\">Tropopause</text><line x1=\"10.0\" y1=\"218.0\" x2=\"710.0\" y2=\"218.0\" stroke=\"#1f5fa8\" stroke-width=\"1.5\" stroke-dasharray=\"3 4\"/><text x=\"12.0\" y=\"211.0\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">0 °C</text><rect x=\"10.0\" y=\"380.0\" width=\"700.0\" height=\"9.0\" rx=\"0\" fill=\"#8d6e4f\"/><line x1=\"240.0\" y1=\"76.0\" x2=\"240.0\" y2=\"376.0\" stroke=\"#c9d1de\" stroke-width=\"1.5\"/><line x1=\"480.0\" y1=\"76.0\" x2=\"480.0\" y2=\"376.0\" stroke=\"#c9d1de\" stroke-width=\"1.5\"/><line x1=\"26.0\" y1=\"112.0\" x2=\"26.0\" y2=\"94.8\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"26.0,86.0 31.5,97.0 20.5,97.0\" fill=\"#c0392b\"/><text x=\"40.0\" y=\"106.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">Ascendance</text><line x1=\"26.0\" y1=\"124.0\" x2=\"26.0\" y2=\"141.2\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"26.0,150.0 20.5,139.0 31.5,139.0\" fill=\"#1f5fa8\"/><text x=\"40.0\" y=\"144.0\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">Descendance</text><path d=\"M60,300 C42,292 44,262 68,258 C58,232 80,212 102,220 C100,196 124,180 146,190 C160,180 184,192 180,214 C204,218 206,250 188,258 C206,266 200,300 186,300 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"92.0\" y1=\"294.0\" x2=\"92.0\" y2=\"243.6\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"92.0,234.0 98.0,246.0 86.0,246.0\" fill=\"#c0392b\"/><line x1=\"122.0\" y1=\"294.0\" x2=\"122.0\" y2=\"211.6\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"122.0,202.0 128.0,214.0 116.0,214.0\" fill=\"#c0392b\"/><line x1=\"152.0\" y1=\"294.0\" x2=\"152.0\" y2=\"215.6\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"152.0,206.0 158.0,218.0 146.0,218.0\" fill=\"#c0392b\"/><path d=\"M268,300 C252,282 258,250 280,246 C270,214 288,188 304,186 C300,150 312,120 322,104 C330,86 340,78 352,74 L470,68 C480,72 480,84 468,86 L430,92 C440,110 446,140 440,168 C458,186 456,220 440,232 C458,252 454,290 432,300 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"402.0\" y1=\"292.0\" x2=\"402.0\" y2=\"121.6\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"402.0,112.0 408.0,124.0 396.0,124.0\" fill=\"#c0392b\"/><line x1=\"378.0\" y1=\"292.0\" x2=\"378.0\" y2=\"141.6\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"378.0,132.0 384.0,144.0 372.0,144.0\" fill=\"#c0392b\"/><line x1=\"318.0\" y1=\"130.0\" x2=\"318.0\" y2=\"282.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"318.0,292.0 312.0,280.0 324.0,280.0\" fill=\"#1f5fa8\"/><line x1=\"344.0\" y1=\"150.0\" x2=\"344.0\" y2=\"282.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"344.0,292.0 338.0,280.0 350.0,280.0\" fill=\"#1f5fa8\"/><line x1=\"300.0\" y1=\"304.0\" x2=\"294.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"310.0\" y1=\"304.0\" x2=\"304.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"320.0\" y1=\"304.0\" x2=\"314.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"330.0\" y1=\"304.0\" x2=\"324.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"340.0\" y1=\"304.0\" x2=\"334.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"350.0\" y1=\"304.0\" x2=\"344.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"360.0\" y1=\"304.0\" x2=\"354.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"370.0\" y1=\"304.0\" x2=\"364.0\" y2=\"378.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><circle cx=\"308.0\" cy=\"330.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><circle cx=\"330.0\" cy=\"352.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><circle cx=\"352.0\" cy=\"326.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><circle cx=\"322.0\" cy=\"366.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><polygon points=\"420.0,168.0 430.5,168.0 424.5,187.5 433.5,187.5 417.0,216.0 421.5,193.5 412.5,193.5\" fill=\"#f2b705\" stroke=\"#b07d00\" stroke-width=\"1.2\"/><line x1=\"312.0\" y1=\"372.0\" x2=\"266.0\" y2=\"372.0\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><polygon points=\"258.0,372.0 268.0,367.0 268.0,377.0\" fill=\"#1f5fa8\"/><line x1=\"362.0\" y1=\"372.0\" x2=\"444.0\" y2=\"372.0\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><polygon points=\"452.0,372.0 442.0,377.0 442.0,367.0\" fill=\"#1f5fa8\"/><path d=\"M520,72 L706,66 C716,70 716,82 704,84 L640,92 C646,120 642,150 632,180 C640,210 632,250 610,270 C590,284 560,284 540,270 C524,250 526,214 536,190 C528,160 530,120 540,92 L520,90 C508,86 508,74 520,72 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"560.0\" y1=\"112.0\" x2=\"560.0\" y2=\"252.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"560.0,262.0 554.0,250.0 566.0,250.0\" fill=\"#1f5fa8\"/><line x1=\"588.0\" y1=\"112.0\" x2=\"588.0\" y2=\"252.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"588.0,262.0 582.0,250.0 594.0,250.0\" fill=\"#1f5fa8\"/><line x1=\"616.0\" y1=\"112.0\" x2=\"616.0\" y2=\"252.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"616.0,262.0 610.0,250.0 622.0,250.0\" fill=\"#1f5fa8\"/><line x1=\"552.0\" y1=\"288.0\" x2=\"546.0\" y2=\"378.0\" stroke=\"#8fb6e6\" stroke-width=\"1.8\" stroke-dasharray=\"4 5\"/><line x1=\"565.0\" y1=\"288.0\" x2=\"559.0\" y2=\"378.0\" stroke=\"#8fb6e6\" stroke-width=\"1.8\" stroke-dasharray=\"4 5\"/><line x1=\"578.0\" y1=\"288.0\" x2=\"572.0\" y2=\"378.0\" stroke=\"#8fb6e6\" stroke-width=\"1.8\" stroke-dasharray=\"4 5\"/><line x1=\"591.0\" y1=\"288.0\" x2=\"585.0\" y2=\"378.0\" stroke=\"#8fb6e6\" stroke-width=\"1.8\" stroke-dasharray=\"4 5\"/><line x1=\"604.0\" y1=\"288.0\" x2=\"598.0\" y2=\"378.0\" stroke=\"#8fb6e6\" stroke-width=\"1.8\" stroke-dasharray=\"4 5\"/><line x1=\"617.0\" y1=\"288.0\" x2=\"611.0\" y2=\"378.0\" stroke=\"#8fb6e6\" stroke-width=\"1.8\" stroke-dasharray=\"4 5\"/><text x=\"120.0\" y=\"414.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">1. Développement</text><text x=\"120.0\" y=\"435.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">ascendances seules,</text><text x=\"120.0\" y=\"453.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">pas de pluie au sol</text><text x=\"360.0\" y=\"414.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">2. Maturité</text><text x=\"360.0\" y=\"435.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">ascendances et descendances,</text><text x=\"360.0\" y=\"453.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">pluie, grêle, foudre, rafales</text><text x=\"600.0\" y=\"414.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">3. Dissipation</text><text x=\"600.0\" y=\"435.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">descendances dominantes,</text><text x=\"600.0\" y=\"453.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">l'enclume de glace reste</text></svg>",
+       "caption": "En développement, tout monte ; la maturité commence quand les précipitations atteignent le sol et que les descendances s'étalent en rafales ; en dissipation, les descendances l'emportent et l'enclume de glace persiste. Une cellule isolée vit de l'ordre d'une demi-heure à une heure."
+      },
+      {
+       "title": "Autour d'un orage mûr : les zones dangereuses",
+       "svg": "<svg viewBox=\"0 0 720 500\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"500\" fill=\"#ffffff\"/><text x=\"560.0\" y=\"26.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\" font-weight=\"bold\">Vent en altitude</text><line x1=\"480.0\" y1=\"40.0\" x2=\"631.2\" y2=\"40.0\" stroke=\"#46516a\" stroke-width=\"2.5\"/><polygon points=\"640.0,40.0 629.0,45.5 629.0,34.5\" fill=\"#46516a\"/><line x1=\"10.0\" y1=\"215.0\" x2=\"710.0\" y2=\"215.0\" stroke=\"#1f5fa8\" stroke-width=\"1.5\" stroke-dasharray=\"3 4\"/><text x=\"708.0\" y=\"209.0\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"end\" font-weight=\"bold\">0 °C</text><rect x=\"0.0\" y=\"430.0\" width=\"720.0\" height=\"12.0\" rx=\"0\" fill=\"#8d6e4f\"/><path d=\"M150,300 C130,282 138,248 165,242 C150,206 172,176 200,180 C194,142 214,112 236,114 C236,92 252,78 272,76 L652,66 C668,70 670,86 652,90 L420,104 C402,108 394,122 400,142 C420,152 422,186 402,196 C426,212 420,250 396,256 C414,272 406,300 390,300 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M437,102.3 A11,11 0 0,0 459,101.0\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M463,100.7 A11,11 0 0,0 485,99.4\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M489,99.2 A11,11 0 0,0 511,97.9\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M515,97.6 A11,11 0 0,0 537,96.3\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M541,96.0 A11,11 0 0,0 563,94.7\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M567,94.5 A11,11 0 0,0 589,93.2\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M593,92.9 A11,11 0 0,0 615,91.6\" fill=\"#e6eaf1\" stroke=\"#8a96ab\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"712.0\" y=\"136.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">Mammatus : turbulence</text><circle cx=\"468.0\" cy=\"150.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><circle cx=\"492.0\" cy=\"176.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><circle cx=\"474.0\" cy=\"204.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><circle cx=\"510.0\" cy=\"140.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><circle cx=\"520.0\" cy=\"222.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><circle cx=\"496.0\" cy=\"248.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><circle cx=\"538.0\" cy=\"186.0\" r=\"4.0\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.6\"/><text x=\"560.0\" y=\"162.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">Grêle possible</text><text x=\"560.0\" y=\"180.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">en air clair</text><text x=\"560.0\" y=\"198.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">sous l'enclume</text><line x1=\"352.0\" y1=\"292.0\" x2=\"352.0\" y2=\"125.6\" stroke=\"#c0392b\" stroke-width=\"3.2\"/><polygon points=\"352.0,116.0 358.0,128.0 346.0,128.0\" fill=\"#c0392b\"/><line x1=\"324.0\" y1=\"292.0\" x2=\"324.0\" y2=\"145.6\" stroke=\"#c0392b\" stroke-width=\"3.2\"/><polygon points=\"324.0,136.0 330.0,148.0 318.0,148.0\" fill=\"#c0392b\"/><text x=\"338.0\" y=\"98.0\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">Ascendances</text><line x1=\"540.0\" y1=\"320.0\" x2=\"409.4\" y2=\"290.1\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"400.0,288.0 413.0,284.8 410.4,296.5\" fill=\"#c0392b\"/><text x=\"452.0\" y=\"344.0\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"start\" font-weight=\"bold\">Air chaud et humide</text><line x1=\"206.0\" y1=\"168.0\" x2=\"206.0\" y2=\"282.4\" stroke=\"#1f5fa8\" stroke-width=\"3.2\"/><polygon points=\"206.0,292.0 200.0,280.0 212.0,280.0\" fill=\"#1f5fa8\"/><line x1=\"236.0\" y1=\"156.0\" x2=\"236.0\" y2=\"282.4\" stroke=\"#1f5fa8\" stroke-width=\"3.2\"/><polygon points=\"236.0,292.0 230.0,280.0 242.0,280.0\" fill=\"#1f5fa8\"/><line x1=\"168.0\" y1=\"304.0\" x2=\"162.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"179.0\" y1=\"304.0\" x2=\"173.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"190.0\" y1=\"304.0\" x2=\"184.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"201.0\" y1=\"304.0\" x2=\"195.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"212.0\" y1=\"304.0\" x2=\"206.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"223.0\" y1=\"304.0\" x2=\"217.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"234.0\" y1=\"304.0\" x2=\"228.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"245.0\" y1=\"304.0\" x2=\"239.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"256.0\" y1=\"304.0\" x2=\"250.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"267.0\" y1=\"304.0\" x2=\"261.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><line x1=\"278.0\" y1=\"304.0\" x2=\"272.0\" y2=\"400.0\" stroke=\"#5d9be0\" stroke-width=\"2\"/><circle cx=\"190.0\" cy=\"330.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><circle cx=\"222.0\" cy=\"352.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><circle cx=\"250.0\" cy=\"326.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><circle cx=\"206.0\" cy=\"372.0\" r=\"3.5\" fill=\"#ffffff\" stroke=\"#5d7fa8\" stroke-width=\"1.5\"/><polygon points=\"272.0,176.0 283.2,176.0 276.8,196.8 286.4,196.8 268.8,227.2 273.6,203.2 264.0,203.2\" fill=\"#f2b705\" stroke=\"#b07d00\" stroke-width=\"1.2\"/><path d=\"M214,398 C214,414 196,420 150,420\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"140.0,420.0 152.0,414.0 152.0,426.0\" fill=\"#1f5fa8\"/><path d=\"M234,398 C234,414 252,420 300,420\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"300.0\" y1=\"420.0\" x2=\"460.4\" y2=\"420.0\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"470.0,420.0 458.0,426.0 458.0,414.0\" fill=\"#1f5fa8\"/><path d=\"M452,386 C462,368 500,362 530,366 C556,368 570,376 566,388 C540,394 480,396 452,386 Z\" fill=\"#c3cad6\" stroke=\"#6f7b90\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text x=\"576.0\" y=\"394.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"start\" font-style=\"italic\">arcus</text><text x=\"520.0\" y=\"467.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Front de rafales en avant</text><text x=\"215.0\" y=\"467.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Microrafale sous la pluie</text><text x=\"12.0\" y=\"112.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">Turbulence</text><text x=\"12.0\" y=\"130.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">sévère dans</text><text x=\"12.0\" y=\"148.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">et autour</text><text x=\"12.0\" y=\"180.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"start\" font-weight=\"bold\">Givrage fort</text><text x=\"12.0\" y=\"198.0\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"start\">au-dessus du 0 °C</text><text x=\"12.0\" y=\"276.0\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">Descendances</text><text x=\"12.0\" y=\"294.0\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"start\">et pluie forte</text><text x=\"12.0\" y=\"492.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"start\" font-style=\"italic\">Schéma sans échelle</text><text x=\"560.0\" y=\"492.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\" font-weight=\"bold\">Déplacement</text><line x1=\"570.0\" y1=\"487.0\" x2=\"691.2\" y2=\"487.0\" stroke=\"#46516a\" stroke-width=\"2.5\"/><polygon points=\"700.0,487.0 689.0,492.5 689.0,481.5\" fill=\"#46516a\"/></svg>",
+       "caption": "Les dangers débordent le nuage : grêle et mammatus sous l'enclume étirée par le vent en altitude, front de rafales en avant de l'orage, microrafale sous la pluie. On contourne largement, de préférence du côté au vent, sans passer sous la base ni sous l'enclume."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u3s9q01",
+       "q": "Quel signe visuel indique qu'un cumulus bourgeonnant est devenu un cumulonimbus ?",
+       "choices": [
+        "Ses contours deviennent nets et durs, en forme de chou-fleur",
+        "Sa base s'abaisse et devient plus sombre au-dessus du relief",
+        "Son sommet devient fibreux et s'étale : il s'est glacé",
+        "Une faible pluie commence à tomber sous sa base plate"
+       ],
+       "answer": 2,
+       "explanation": "Le cumulus bourgeonnant (TCU) a des contours nets en chou-fleur. Quand son sommet se glace, il prend un aspect fibreux, puis s'étale en enclume : c'est un cumulonimbus. Une base sombre ou une faible pluie peuvent aussi exister sous un cumulus plus modeste."
+      },
+      {
+       "id": "u3s9q02",
+       "q": "Au stade de développement d'une cellule orageuse, quels courants verticaux y trouve-t-on ?",
+       "choices": [
+        "Des descendances dominantes, sous une pluie abondante",
+        "Autant d'ascendances que de descendances, côte à côte",
+        "Des courants faibles, de moins de 100 ft/min",
+        "Des ascendances dans l'ensemble du nuage"
+       ],
+       "answer": 3,
+       "explanation": "Au stade de développement (cumulus), l'air chaud et humide monte dans toute la cellule, qui grandit rapidement ; il n'y a pas encore de précipitations au sol. Les descendances apparaissent avec la pluie, au stade de maturité, et dominent au stade de dissipation."
+      },
+      {
+       "id": "u3s9q03",
+       "q": "Qu'est-ce qui caractérise le stade de dissipation d'une cellule orageuse ?",
+       "choices": [
+        "Les ascendances se renforcent et le sommet perce largement la tropopause",
+        "La grêle et la foudre atteignent leur maximum d'intensité et de fréquence",
+        "Le nuage s'étale en nimbostratus et donne une pluie continue et durable",
+        "Les descendances l'emportent ; la pluie faiblit et l'enclume de glace persiste"
+       ],
+       "answer": 3,
+       "explanation": "L'air froid des descendances finit par couper l'alimentation en air chaud et humide : la cellule s'affaiblit, les précipitations diminuent. L'enclume, faite de glace, persiste et dérive avec le vent en altitude. Grêle, foudre et rafales culminent au stade de maturité."
+      },
+      {
+       "id": "u3s9q04",
+       "q": "Quelle est la durée de vie typique d'une cellule orageuse isolée ?",
+       "choices": [
+        "Quelques minutes, le temps d'une averse",
+        "De six à douze heures, comme une perturbation",
+        "Plusieurs jours, tant que dure l'anticyclone",
+        "De l'ordre d'une demi-heure à une heure"
+       ],
+       "answer": 3,
+       "explanation": "Une cellule simple vit en général de 30 minutes à une heure. Un orage multicellulaire dure plus longtemps, car le front de rafales fait naître de nouvelles cellules ; une supercellule peut durer plusieurs heures."
+      },
+      {
+       "id": "u3s9q05",
+       "q": "Que désigne l'abréviation EMBD associée à des CB, sur une TEMSI ou dans un SIGMET ?",
+       "choices": [
+        "Des cumulonimbus isolés, couvrant moins de la moitié de la zone",
+        "Des cumulonimbus noyés dans une couche nuageuse étendue",
+        "Des cumulonimbus alignés, formant une ligne de grains",
+        "Des cumulonimbus masqués par la brume ou par l'obscurité"
+       ],
+       "answer": 1,
+       "explanation": "EMBD (embedded) signale des Cb inclus dans une couche nuageuse, typiquement dans un front chaud ou une occlusion : on ne peut pas les voir pour les éviter. Les Cb masqués par la brume ou la nuit sont dits OBSC, les isolés ISOL, et une ligne de grains SQL."
+      },
+      {
+       "id": "u3s9q06",
+       "q": "Sur une TEMSI, que signifie l'indication « OCNL CB » ?",
+       "choices": [
+        "Des cumulonimbus isolés, couvrant moins de 50 % de la zone",
+        "Des cumulonimbus fréquents, couvrant plus de 75 % de la zone",
+        "Des cumulonimbus prévus de nuit, en fin de période de validité",
+        "Des cumulonimbus occasionnels, couvrant 50 à 75 % de la zone"
+       ],
+       "answer": 3,
+       "explanation": "La TEMSI qualifie l'étendue des CB : ISOL (isolés, moins de 50 % de la zone), OCNL (occasionnels, 50 à 75 %), FRQ (fréquents, plus de 75 %), EMBD (noyés dans la masse nuageuse). Avec OCNL ou FRQ, les cellules laissent peu de passages pour un contournement à vue."
+      },
+      {
+       "id": "u3s9q07",
+       "q": "Quelle formation, visible sous l'enclume d'un cumulonimbus, signale une forte turbulence ?",
+       "choices": [
+        "Des cirrus en filaments au-dessus de l'enclume",
+        "Des mammatus, en forme de poches pendantes",
+        "Des nuages lenticulaires immobiles",
+        "Un halo autour du soleil dans un voile de cirrostratus"
+       ],
+       "answer": 1,
+       "explanation": "Les mammatus sont des protubérances arrondies qui pendent sous l'enclume, dans un air fortement cisaillé : on évite les Cb qui en portent. Les lenticulaires signalent des ondes de relief, le halo un voile de cirrostratus souvent annonciateur d'un front chaud."
+      },
+      {
+       "id": "u3s9q08",
+       "q": "Vous voyez un éclair, puis entendez le tonnerre 15 secondes plus tard. À quelle distance environ l'orage se trouve-t-il ?",
+       "choices": [
+        "Environ 15 km",
+        "Environ 5 km",
+        "Environ 1,5 km",
+        "Environ 45 km"
+       ],
+       "answer": 1,
+       "explanation": "La lumière arrive presque instantanément ; le son parcourt environ 340 m par seconde, soit 1 km en 3 s environ : 15 / 3 = 5 km. Entendre le tonnerre, c'est déjà être assez près de l'orage pour être exposé à ses dangers."
+      },
+      {
+       "id": "u3s9q09",
+       "q": "Qu'est-ce qui distingue un orage de front froid d'un orage de masse d'air ?",
+       "choices": [
+        "Il s'organise en ligne et peut éclater de jour comme de nuit",
+        "Il se forme surtout en fin d'après-midi, par échauffement du sol",
+        "Il reste isolé et se contourne aisément, à quelques nautiques",
+        "Il donne moins de rafales, l'air froid amortissant la convection"
+       ],
+       "answer": 0,
+       "explanation": "L'orage de front froid naît du soulèvement de l'air chaud par l'air froid : les cellules s'alignent sur des dizaines ou des centaines de kilomètres et ne dépendent pas de l'heure. L'orage de masse d'air est isolé et lié à l'échauffement diurne, avec un maximum en fin d'après-midi."
+      },
+      {
+       "id": "u3s9q10",
+       "q": "Pourquoi les cumulonimbus noyés dans un front chaud ou une occlusion sont-ils particulièrement dangereux pour un pilote VFR ?",
+       "choices": [
+        "Ils donnent une pluie surfondue sur des centaines de kilomètres",
+        "Cachés dans la couche nuageuse, ils ne peuvent pas être évités à vue",
+        "Ils se forment au ras du sol, sous forme de brouillard orageux",
+        "Leur sommet perce la tropopause et rend la stratosphère turbulente"
+       ],
+       "answer": 1,
+       "explanation": "Dans une masse nuageuse stratiforme, un Cb ne se distingue pas : le pilote peut y entrer sans l'avoir vu, ou se retrouver sous la couche, en pluie forte, sans issue visible. La TEMSI et les SIGMET les signalent par EMBD."
+      },
+      {
+       "id": "u3s9q11",
+       "q": "En montagne, l'été, à quel moment et où les orages orographiques se forment-ils le plus souvent ?",
+       "choices": [
+        "En fin de nuit, au fond des vallées, là où l'air froid s'accumule sous l'inversion",
+        "Le matin, au-dessus des lacs d'altitude, plus froids que l'air qui les surmonte",
+        "L'après-midi, sur les reliefs chauffés par le soleil, qui soulèvent l'air",
+        "La nuit, en plaine, sous le vent des reliefs, quand la brise de montagne souffle"
+       ],
+       "answer": 2,
+       "explanation": "Le relief soulève l'air et les pentes exposées au soleil le chauffent : les cumulus naissent sur les crêtes en fin de matinée et deviennent souvent des Cb l'après-midi. Ils peuvent fermer les vallées et masquer les cols : en montagne l'été, on vole de préférence le matin."
+      },
+      {
+       "id": "u3s9q12",
+       "q": "Qu'appelle-t-on une ligne de grains ?",
+       "choices": [
+        "Une large bande de bruine continue, en arrière d'un front chaud",
+        "Une bande d'orages actifs alignés, souvent en avant d'un front froid",
+        "Une ligne de nuages lenticulaires, alignés sous le vent d'une crête",
+        "Une rangée de cumulus de beau temps, alignés par un vent régulier"
+       ],
+       "answer": 1,
+       "explanation": "La ligne de grains est un système orageux multicellulaire organisé en ligne, souvent en avant d'un front froid. Elle forme un mur de Cb difficile ou impossible à contourner, avec rafales violentes, grêle et cisaillement à son passage. Le SIGMET la désigne par SQL TS."
+      },
+      {
+       "id": "u3s9q13",
+       "q": "Quelques kilomètres en avant d'un orage, le vent au sol tourne brusquement et forcit en rafales, la température chute et un nuage en rouleau passe au-dessus du terrain. Que se passe-t-il ?",
+       "choices": [
+        "Le front de rafales, formé par l'air froid des descendances qui s'étale au sol",
+        "Le passage d'un front chaud, qui précède de peu la zone orageuse en approche",
+        "Une brise de mer, déclenchée par l'échauffement du sol en début d'après-midi",
+        "Une onde orographique, dont les rotors donnent des rafales près du relief"
+       ],
+       "answer": 0,
+       "explanation": "Sous l'orage, l'air refroidi par les précipitations descend et s'étale au sol en avant de la cellule : saute de vent, rafales, chute de température et parfois nuage en rouleau (arcus). Il peut précéder la pluie de plusieurs kilomètres : on ne décolle pas et on n'atterrit pas à son approche."
+      },
+      {
+       "id": "u3s9q14",
+       "q": "Quel ordre de grandeur caractérise une microrafale ?",
+       "choices": [
+        "Plusieurs dizaines de kilomètres de large et une durée de plusieurs heures",
+        "Quelques mètres de large et une durée de quelques secondes à peine",
+        "Moins de 4 km de diamètre au sol et une durée rarement supérieure à 15 min",
+        "Une vingtaine de kilomètres de large et une durée d'environ une heure"
+       ],
+       "answer": 2,
+       "explanation": "Une microrafale est une descendance intense et localisée : l'écoulement s'étale sur moins de 4 km environ, avec des descendances pouvant atteindre 6 000 ft/min. Elle dure rarement plus de 15 minutes, mais ses vents se renforcent pendant les premières minutes : brève, locale et violente."
+      },
+      {
+       "id": "u3s9q15",
+       "q": "Sous un cumulonimbus à base élevée, vous voyez des traînées de précipitations qui n'atteignent pas le sol et un anneau de poussière soulevé sur un champ. Quel danger cela signale-t-il ?",
+       "choices": [
+        "Un tourbillon de poussière sans effet notable sur un avion",
+        "Une ascendance thermique, utile pour gagner de la hauteur",
+        "Une turbulence de sillage laissée par un avion qui précède",
+        "Une microrafale sèche, avec un fort cisaillement près du sol"
+       ],
+       "answer": 3,
+       "explanation": "Les virgas sont des précipitations qui s'évaporent avant le sol ; cette évaporation refroidit l'air, qui plonge violemment. Sans pluie au sol, l'anneau de poussière est parfois le seul indice d'une microrafale sèche : cisaillement et descendance brutale à basse hauteur."
+      },
+      {
+       "id": "u3s9q16",
+       "q": "Où peut-on rencontrer de la grêle en dehors du cœur d'un cumulonimbus ?",
+       "choices": [
+        "Au-dessus de l'enclume, dans la stratosphère",
+        "Du côté au vent du nuage, à l'opposé de l'enclume",
+        "En air clair sous l'enclume, parfois loin du nuage",
+        "Dans la traîne, sous les cumulus de beau temps"
+       ],
+       "answer": 2,
+       "explanation": "Entraînée par les ascendances puis par le vent en altitude, la grêle peut tomber sous l'enclume, hors du nuage principal et sous un ciel apparemment dégagé ; on l'a rencontrée jusqu'à une vingtaine de nautiques d'un gros Cb. On ne passe donc pas sous une enclume."
+      },
+      {
+       "id": "u3s9q17",
+       "q": "Un cumulonimbus isolé barre votre route. Le vent en altitude vient du 270° et l'enclume s'étire vers l'est. De quel côté le contourner de préférence ?",
+       "choices": [
+        "Par l'est, sous l'enclume, où l'air est le plus calme",
+        "Par l'ouest, côté au vent, loin de l'enclume et de sa grêle",
+        "Par l'est, côté sous le vent, pour profiter d'un vent arrière",
+        "Par-dessous, en restant à mi-distance entre la base et le relief"
+       ],
+       "answer": 1,
+       "explanation": "L'enclume, la grêle, la turbulence et les mammatus sont entraînés sous le vent du Cb. Le côté au vent offre en général l'air le plus calme ; on contourne largement (la FAA recommande 20 NM pour un orage sévère), sans passer sous la base ni sous l'enclume."
+      },
+      {
+       "id": "u3s9q18",
+       "q": "Pourquoi la distance horizontale aux nuages exigée en VMC (1 500 m) ne suffit-elle pas près d'un cumulonimbus ?",
+       "choices": [
+        "Une règle de SERA impose 20 NM entre un vol VFR et un cumulonimbus",
+        "La visibilité exigée en VMC passe à 8 km dès qu'un Cb est signalé",
+        "Turbulence, grêle et rafales débordent très largement du Cb visible",
+        "Par temps orageux, la distance VMC aux nuages est doublée, à 3 000 m"
+       ],
+       "answer": 2,
+       "explanation": "Les dangers d'un Cb dépassent de loin le nuage : turbulence en air clair, grêle sous l'enclume, front de rafales et microrafales. La FAA recommande ainsi de rester à au moins 20 NM d'un orage sévère. Ce n'est pas une règle de SERA : les minimums VMC ne changent pas par temps orageux, c'est au pilote de prendre une marge bien supérieure."
+      },
+      {
+       "id": "u3s9q19",
+       "q": "Vous êtes au point d'attente. Un orage se trouve à 8 km, la manche à air s'agite et la direction du vent change rapidement. Que faites-vous ?",
+       "choices": [
+        "Vous attendez au sol son passage : le front de rafales peut précéder la pluie",
+        "Vous décollez au plus vite, pour quitter la zone avant l'arrivée de la pluie",
+        "Vous décollez face à l'orage, pour profiter d'un fort vent de face",
+        "Vous décollez, car un orage situé à plus de 5 km reste sans effet sur le terrain"
+       ],
+       "answer": 0,
+       "explanation": "Les signes décrits annoncent le front de rafales : saute de vent, rafales et cisaillement près du sol, au moment où l'avion est lent et bas. On ne décolle pas et on n'atterrit pas à l'approche d'un orage ; une cellule passe en général en moins d'une heure."
+      },
+      {
+       "id": "u3s9q20",
+       "q": "Vous vous posez juste après le passage d'un orage sur le terrain. Pourquoi faut-il demander un QNH récent ?",
+       "choices": [
+        "La pression varie brusquement : l'erreur peut dépasser 100 ft",
+        "La foudre dérègle la capsule de l'altimètre, qu'il faut ensuite recaler",
+        "La grêle fausse la température extérieure utilisée par l'altimètre",
+        "Le QNH change avec la quantité de pluie tombée sur le terrain"
+       ],
+       "answer": 0,
+       "explanation": "La pression chute à l'approche d'un orage, remonte brusquement avec les premières rafales et la pluie, puis revient à la normale. Sans QNH actualisé, l'altimètre peut se tromper de plus de 100 ft, ce qui compte en approche."
+      },
+      {
+       "id": "u3s9q21",
+       "q": "Malgré vos précautions, vous rencontrez une forte turbulence près d'un cumulonimbus. Quelle conduite adoptez-vous ?",
+       "choices": [
+        "Réduire à la vitesse d'air agité, ailes à plat, sans chercher à tenir l'altitude",
+        "Accélérer jusqu'à la VNE pour traverser au plus vite la zone agitée",
+        "Tenir l'altitude avec précision, quitte à tirer fort sur le manche en ressource",
+        "Sortir les volets en grand pour réduire la vitesse et augmenter la portance"
+       ],
+       "answer": 0,
+       "explanation": "En turbulence forte, la priorité est de ne pas dépasser les limites de la structure : vitesse réduite à celle que le manuel de vol prévoit en air agité (au plus VA), assiette et inclinaison tenues, sans corriger brutalement les variations d'altitude. Les volets diminuent le facteur de charge admissible."
+      },
+      {
+       "id": "u3s9q22",
+       "q": "Un SIGMET annonce « SQL TS » sur votre route, se déplaçant vers l'est à 25 kt. Quelle décision prendre ?",
+       "choices": [
+        "Traverser la ligne entre deux cellules, là où le ciel paraît le plus clair",
+        "Passer sous la base des orages, plus faibles quand ils sont alignés",
+        "Poursuivre sans changement : un SIGMET vise les vols au-dessus du FL 150",
+        "Différer le vol ou changer d'itinéraire : la ligne ne se traverse pas"
+       ],
+       "answer": 3,
+       "explanation": "SQL TS signale une ligne de grains : des orages alignés sur une grande longueur, sans passage sûr entre les cellules ni sous leur base. On attend qu'elle soit passée ou l'on choisit un itinéraire qui l'évite largement. Les SIGMET concernent tous les vols, VFR compris."
+      },
+      {
+       "id": "u3s9q23",
+       "q": "Un orage se dirige vers votre terrain à 20 kt et se trouve à 15 NM. On estime que son front de rafales le précède de 3 NM. Dans combien de temps environ ce front atteindra-t-il le terrain ?",
+       "choices": [
+        "Environ 36 min",
+        "Environ 45 min",
+        "Environ 54 min",
+        "Environ 24 min"
+       ],
+       "answer": 0,
+       "explanation": "Le front de rafales n'est qu'à 15 − 3 = 12 NM du terrain. À 20 kt, il parcourt 1 NM en 3 min : 12 × 3 = 36 min. Prendre la distance de l'orage lui-même (15 NM) donne 45 min : on oublierait que les rafales arrivent avant lui."
+      },
+      {
+       "id": "u3s9q24",
+       "q": "La TEMSI prévoit « ISOL CB » l'après-midi sur votre route, dans un air instable et humide en marais barométrique. Comment organisez-vous votre vol ?",
+       "choices": [
+        "Partir en milieu d'après-midi, une fois les CB isolés dissipés par le soleil",
+        "Partir comme prévu en passant sous les CB, leur base étant haute en été",
+        "Partir tôt, avant le développement des CB, avec des déroutements repérés",
+        "Partir l'après-midi, ISOL signifiant moins d'un CB par région française"
+       ],
+       "answer": 2,
+       "explanation": "Les orages de masse d'air naissent de l'échauffement diurne et culminent en fin d'après-midi : on vole le matin. ISOL signifie que les CB couvrent moins de la moitié de la zone, ce qui n'empêche pas d'en trouver un sur sa route : on prévoit des contournements larges et des terrains de déroutement."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

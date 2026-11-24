@@ -1,0 +1,1150 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u3",
+   "title": "Météorologie",
+   "description": "Atmosphère, humidité et nuages, vent, fronts, phénomènes dangereux et messages météo (METAR, TAF, TEMSI) utiles au pilote VFR (examen : 20 questions, 30 min).",
+   "skills": [
+    {
+     "id": "u3s10",
+     "title": "Givrage et turbulence",
+     "icon": "🧊",
+     "tips": "Givrage et turbulence sont, avec les orages, les grands dangers météo en route. Un avion léger non protégé n'a pas d'autre défense que de les éviter ou d'en sortir vite : tout se joue à la préparation (TEMSI, SIGMET, TAF) et dans la décision.\n\nConditions du givrage cellule :\n• Il faut à la fois une cellule à température négative et de l'eau liquide surfondue : gouttelettes de nuage, bruine ou pluie restées liquides sous 0 °C.\n• Plage la plus fréquente : de 0 à −15 °C environ. Le risque devient faible sous −20 °C ; vers −40 °C, l'eau est presque entièrement gelée (sauf dans les Cb) et les cristaux de glace adhèrent mal.\n• Nuages cumuliformes (Cu bourgeonnants, Cb) : beaucoup d'eau et de grosses gouttes, givrage fort sur une courte distance. Nuages stratiformes (St, Sc, Ns) : givrage souvent plus faible, mais étendu.\n• Les petits rayons (antennes, haubans, bord d'attaque de l'empennage) captent mieux les gouttelettes et givrent avant l'aile.\n\nTypes de dépôt :\n• Givre blanc : petites gouttelettes qui gèlent instantanément en emprisonnant de l'air ; blanc, opaque, rugueux, friable. Plutôt dans les nuages stratiformes et aux températures plus basses.\n• Givre transparent (verglas) : grosses gouttes qui s'étalent avant de geler, le plus souvent entre 0 et −10 °C. Lisse, dense, très adhérent, il forme des cornes sur le bord d'attaque : le plus dangereux.\n• Givre mixte : mélange des deux.\n• Gelée blanche : vapeur déposée directement en glace sur une surface négative. Au sol après une nuit claire ; en vol, quand un avion refroidi descend vers un air plus chaud et humide : pare-brise opacifié en quelques secondes.\n\nPrécipitations givrantes :\n• Pluie verglaçante (FZRA) : sous un front chaud d'hiver, la neige fond dans la couche positive d'altitude puis retombe, surfondue, dans l'air négatif près du sol. Verglas très rapide, même hors nuage.\n• Bruine verglaçante (FZDZ) : fines gouttes surfondues tombant d'une couche basse de stratus ou de stratocumulus à température négative, le plus souvent sans couche chaude au-dessus.\n• Granules de glace (PL) : la couche froide est épaisse et les gouttes regèlent avant le sol. Ils signalent une couche positive au-dessus : pluie verglaçante possible à proximité.\n• Isotherme 0 °C (TEMSI) : au-dessus, nuages et précipitations peuvent être givrants.\n\nEffets du givre :\n• Profil déformé : portance maximale réduite, traînée accrue, décrochage à une incidence plus faible et à une vitesse plus élevée. L'avertisseur, réglé pour une aile propre, peut rester muet.\n• Masse accrue, hélice moins efficace, Pitot obstrué (anémomètre faux), pare-brise opaque, antennes et gouvernes chargées.\n\nConduite à tenir :\n• Part-NCO (NCO.OP.170) : on n'entreprend pas un vol et l'on n'entre pas volontairement en conditions givrantes prévues ou réelles sans un avion certifié et équipé pour ; si l'on en rencontre, on en sort sans délai.\n• En vol : dès les premiers dépôts, demi-tour vers l'air sans givrage, ou descente vers un air positif si le relief le permet. Givre résiduel : vitesse d'approche majorée, manœuvres douces, piste longue, volets selon le manuel de vol.\n• Givrage carburateur (technique : matière « Connaissance générale de l'aéronef ») : affaire d'humidité plus que de froid. Air très humide (écart T − Td faible), de −10 à +30 °C environ, surtout à puissance réduite : possible par beau temps.\n\nLes turbulences :\n• Convective : air instable chauffé par le sol, surtout l'après-midi, sous les cumulus ; plus forte au-dessus des sols secs et sombres, plus faible au-dessus de l'eau et des forêts. Au-dessus des thermiques, l'air redevient souvent calme.\n• Mécanique : vent fort sur les obstacles et le relief, d'autant plus épaisse que le vent est fort et le sol rugueux ; prudence en courte finale sous le vent des hangars.\n• D'onde : vent fort à peu près perpendiculaire à une crête, couche stable en altitude ; fortes descendances et rotors sous le vent, lenticulaires au-dessus.\n• En air clair (CAT) : en altitude, près des courants-jets, sans nuage pour l'annoncer.\n• De sillage : tourbillons d'un avion, les plus forts derrière un avion lourd, lisse et lent (voir « Procédures opérationnelles »).\n• Cisaillement : par inertie, une perte de 15 kt de vent de face coûte d'abord environ 15 kt de vitesse indiquée.\n\nIntensités :\n• Légère : légers mouvements irréguliers d'assiette et d'altitude.\n• Modérée : variations nettes d'assiette, d'altitude et de vitesse indiquée ; l'avion reste contrôlable en permanence.\n• Forte : variations brusques et importantes, perte de contrôle momentanée possible.\n• Extrême : avion violemment secoué, contrôle pratiquement impossible.\n\nVitesse de manœuvre et air agité :\n• VA : à cette vitesse ou au-dessous, un braquage complet d'une gouverne, sur un seul axe et une seule fois, ne doit pas endommager la structure ; en tangage, l'avion décroche avant d'atteindre le facteur de charge limite. Elle ne couvre pas les braquages alternés ou combinés.\n• VA diminue avec la masse : VA = VA(masse max) × √(masse / masse max). Ex. : 108 kt à 1 100 kg ; à 891 kg, √0,81 = 0,9, soit environ 97 kt.\n• En turbulence : vitesse « air agité » du manuel, au plus VA, sous la VNO ; tenir l'assiette plutôt que l'altitude, ceintures serrées.",
+     "vocab": [
+      {
+       "term": "Givre mixte",
+       "translation": "Mélange de givre blanc et de givre transparent"
+      },
+      {
+       "term": "Cornes de givre",
+       "translation": "Bourrelets de verglas sur le bord d'attaque, très pénalisants"
+      },
+      {
+       "term": "FZDZ",
+       "translation": "Bruine verglaçante : gouttelettes surfondues qui gèlent à l'impact"
+      },
+      {
+       "term": "Granules de glace (PL)",
+       "translation": "Gouttes regelées en traversant une couche froide épaisse"
+      },
+      {
+       "term": "Isotherme 0 °C",
+       "translation": "Niveau où la température de l'air passe à 0 °C"
+      },
+      {
+       "term": "Givrage cellule",
+       "translation": "Dépôt de glace sur l'extérieur de l'avion en vol ou au sol"
+      },
+      {
+       "term": "Turbulence convective",
+       "translation": "Agitation due aux ascendances thermiques en air instable"
+      },
+      {
+       "term": "Turbulence mécanique",
+       "translation": "Agitation due au vent sur les obstacles et le relief"
+      },
+      {
+       "term": "Onde orographique",
+       "translation": "Ondulation de l'air sous le vent d'un relief, par air stable"
+      },
+      {
+       "term": "Turbulence de sillage",
+       "translation": "Tourbillons marginaux laissés derrière un avion"
+      },
+      {
+       "term": "Turbulence modérée",
+       "translation": "Variations nettes d'assiette et de vitesse, avion contrôlable"
+      },
+      {
+       "term": "Turbulence forte",
+       "translation": "Variations brusques, perte de contrôle momentanée possible"
+      },
+      {
+       "term": "VA",
+       "translation": "Vitesse de manœuvre ; elle diminue quand la masse diminue"
+      },
+      {
+       "term": "Vitesse air agité",
+       "translation": "Vitesse du manuel de vol pour traverser la turbulence"
+      },
+      {
+       "term": "NCO.OP.170",
+       "translation": "Règle Part-NCO sur le vol en conditions givrantes"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Pluie verglaçante en avant d'un front chaud",
+       "svg": "<svg viewBox=\"0 0 700 450\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"450\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"700\" height=\"380\" fill=\"#f1f5f9\"/><polygon points=\"80,166 700,118 700,380 620,380\" fill=\"#fee2e2\"/><polygon points=\"0,134 620,380 0,380\" fill=\"#dbeafe\"/><rect x=\"24\" y=\"26\" width=\"652\" height=\"64\" rx=\"30\" fill=\"#cbd5e1\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"350.0\" y=\"64.0\" font-size=\"17\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Nimbostratus</text><rect x=\"0\" y=\"380\" width=\"700\" height=\"70\" fill=\"#e7e5e4\"/><line x1=\"0\" y1=\"380\" x2=\"700\" y2=\"380\" stroke=\"#57534e\" stroke-width=\"2\"/><line x1=\"80\" y1=\"166\" x2=\"700\" y2=\"118\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"9 6\"/><line x1=\"0\" y1=\"134\" x2=\"620\" y2=\"380\" stroke=\"#dc2626\" stroke-width=\"3.5\"/><path d=\"M549,380 A11,11 0 0,1 571,380 z\" fill=\"#dc2626\"/><path d=\"M585,380 A11,11 0 0,1 607,380 z\" fill=\"#dc2626\"/><line x1=\"44.0\" y1=\"106.0\" x2=\"54.0\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"46.5\" y1=\"101.7\" x2=\"51.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"51.5\" y1=\"101.7\" x2=\"46.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"56.0\" y1=\"130.0\" x2=\"66.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"58.5\" y1=\"125.7\" x2=\"63.5\" y2=\"134.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"63.5\" y1=\"125.7\" x2=\"58.5\" y2=\"134.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"44.0\" y1=\"154.0\" x2=\"54.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"46.5\" y1=\"149.7\" x2=\"51.5\" y2=\"158.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"51.5\" y1=\"149.7\" x2=\"46.5\" y2=\"158.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"56.0\" y1=\"178.0\" x2=\"66.0\" y2=\"178.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"58.5\" y1=\"173.7\" x2=\"63.5\" y2=\"182.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"63.5\" y1=\"173.7\" x2=\"58.5\" y2=\"182.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"44.0\" y1=\"202.0\" x2=\"54.0\" y2=\"202.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"46.5\" y1=\"197.7\" x2=\"51.5\" y2=\"206.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"51.5\" y1=\"197.7\" x2=\"46.5\" y2=\"206.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"56.0\" y1=\"226.0\" x2=\"66.0\" y2=\"226.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"58.5\" y1=\"221.7\" x2=\"63.5\" y2=\"230.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"63.5\" y1=\"221.7\" x2=\"58.5\" y2=\"230.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"44.0\" y1=\"250.0\" x2=\"54.0\" y2=\"250.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"46.5\" y1=\"245.7\" x2=\"51.5\" y2=\"254.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"51.5\" y1=\"245.7\" x2=\"46.5\" y2=\"254.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"56.0\" y1=\"274.0\" x2=\"66.0\" y2=\"274.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"58.5\" y1=\"269.7\" x2=\"63.5\" y2=\"278.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"63.5\" y1=\"269.7\" x2=\"58.5\" y2=\"278.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"44.0\" y1=\"298.0\" x2=\"54.0\" y2=\"298.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"46.5\" y1=\"293.7\" x2=\"51.5\" y2=\"302.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"51.5\" y1=\"293.7\" x2=\"46.5\" y2=\"302.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"56.0\" y1=\"322.0\" x2=\"66.0\" y2=\"322.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"58.5\" y1=\"317.7\" x2=\"63.5\" y2=\"326.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"63.5\" y1=\"317.7\" x2=\"58.5\" y2=\"326.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"44.0\" y1=\"346.0\" x2=\"54.0\" y2=\"346.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"46.5\" y1=\"341.7\" x2=\"51.5\" y2=\"350.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"51.5\" y1=\"341.7\" x2=\"46.5\" y2=\"350.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"56.0\" y1=\"370.0\" x2=\"66.0\" y2=\"370.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"58.5\" y1=\"365.7\" x2=\"63.5\" y2=\"374.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"63.5\" y1=\"365.7\" x2=\"58.5\" y2=\"374.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"204.0\" y1=\"106.0\" x2=\"214.0\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"206.5\" y1=\"101.7\" x2=\"211.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"211.5\" y1=\"101.7\" x2=\"206.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"216.0\" y1=\"130.0\" x2=\"226.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"218.5\" y1=\"125.7\" x2=\"223.5\" y2=\"134.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"223.5\" y1=\"125.7\" x2=\"218.5\" y2=\"134.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"204.0\" y1=\"154.0\" x2=\"214.0\" y2=\"154.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"206.5\" y1=\"149.7\" x2=\"211.5\" y2=\"158.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"211.5\" y1=\"149.7\" x2=\"206.5\" y2=\"158.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"221.0\" y1=\"172.0\" x2=\"221.0\" y2=\"184.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"209.0\" y1=\"196.0\" x2=\"209.0\" y2=\"208.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"221.0\" cy=\"226.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"209.0\" cy=\"250.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"221.0\" cy=\"274.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"209.0\" cy=\"298.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"221.0\" cy=\"322.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"209.0\" cy=\"346.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"221.0\" cy=\"370.0\" r=\"4.5\" fill=\"#e0f2fe\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><line x1=\"404.0\" y1=\"106.0\" x2=\"414.0\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"406.5\" y1=\"101.7\" x2=\"411.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"411.5\" y1=\"101.7\" x2=\"406.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"416.0\" y1=\"130.0\" x2=\"426.0\" y2=\"130.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"418.5\" y1=\"125.7\" x2=\"423.5\" y2=\"134.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"423.5\" y1=\"125.7\" x2=\"418.5\" y2=\"134.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"409.0\" y1=\"148.0\" x2=\"409.0\" y2=\"160.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"421.0\" y1=\"172.0\" x2=\"421.0\" y2=\"184.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"409.0\" y1=\"196.0\" x2=\"409.0\" y2=\"208.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"421.0\" y1=\"220.0\" x2=\"421.0\" y2=\"232.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"409.0\" y1=\"244.0\" x2=\"409.0\" y2=\"256.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"421.0\" y1=\"268.0\" x2=\"421.0\" y2=\"280.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"409.0\" y1=\"292.0\" x2=\"409.0\" y2=\"304.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"421.0\" y1=\"316.0\" x2=\"421.0\" y2=\"328.0\" stroke=\"#1e3a8a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"409.0\" y1=\"340.0\" x2=\"409.0\" y2=\"352.0\" stroke=\"#1e3a8a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"421.0\" y1=\"364.0\" x2=\"421.0\" y2=\"376.0\" stroke=\"#1e3a8a\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"654.0\" y1=\"106.0\" x2=\"664.0\" y2=\"106.0\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"656.5\" y1=\"101.7\" x2=\"661.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"661.5\" y1=\"101.7\" x2=\"656.5\" y2=\"110.3\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"671.0\" y1=\"124.0\" x2=\"671.0\" y2=\"136.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"659.0\" y1=\"148.0\" x2=\"659.0\" y2=\"160.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"671.0\" y1=\"172.0\" x2=\"671.0\" y2=\"184.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"659.0\" y1=\"196.0\" x2=\"659.0\" y2=\"208.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"671.0\" y1=\"220.0\" x2=\"671.0\" y2=\"232.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"659.0\" y1=\"244.0\" x2=\"659.0\" y2=\"256.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"671.0\" y1=\"268.0\" x2=\"671.0\" y2=\"280.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"659.0\" y1=\"292.0\" x2=\"659.0\" y2=\"304.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"671.0\" y1=\"316.0\" x2=\"671.0\" y2=\"328.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"659.0\" y1=\"340.0\" x2=\"659.0\" y2=\"352.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"671.0\" y1=\"364.0\" x2=\"671.0\" y2=\"376.0\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M446,356 L490,356 L496,353 L490,350 L456,350 L446,342 L442,342 L444,352 z\" fill=\"#334155\"/><path d=\"M466,350 L478,350 L468,364 L460,364 z\" fill=\"#475569\"/><line x1=\"448\" y1=\"349\" x2=\"490\" y2=\"349\" stroke=\"#38bdf8\" stroke-width=\"2\"/><text x=\"120.0\" y=\"128.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Air &lt; 0 °C : neige</text><text x=\"560.0\" y=\"222.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Air chaud &gt; 0 °C</text><text x=\"560.0\" y=\"243.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">la neige fond en pluie</text><text x=\"315.0\" y=\"334.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Air froid &lt; 0 °C</text><text x=\"315.0\" y=\"355.0\" font-size=\"15\" fill=\"#1d4ed8\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">gouttes surfondues</text><text x=\"590.0\" y=\"110.0\" font-size=\"15\" fill=\"#c2410c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Isotherme 0 °C</text><text x=\"0\" y=\"0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"translate(140,183) rotate(21.6)\">Surface frontale</text><text x=\"55.0\" y=\"404.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Neige</text><text x=\"55.0\" y=\"424.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\">(SN)</text><text x=\"215.0\" y=\"404.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Granules</text><text x=\"215.0\" y=\"424.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\">de glace (PL)</text><text x=\"415.0\" y=\"404.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Pluie verglaçante</text><text x=\"415.0\" y=\"424.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\">(FZRA)</text><text x=\"676.0\" y=\"404.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Pluie</text><text x=\"676.0\" y=\"424.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\">(RA)</text><text x=\"578.0\" y=\"404.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\">Front chaud</text><text x=\"578.0\" y=\"424.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\">au sol</text></svg>",
+       "caption": "Coupe schématique, échelle verticale très exagérée : la neige fond dans l'air chaud qui glisse sur la surface frontale, puis retombe dans l'air froid du dessous. Couche froide épaisse : granules de glace ; couche mince : pluie verglaçante, qui couvre de verglas l'avion volant sous 0 °C."
+      },
+      {
+       "title": "Ondes et rotors sous le vent d'un relief",
+       "svg": "<svg viewBox=\"0 0 700 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u3s10f2w\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4ed8\"/></marker><marker id=\"u3s10f2g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#15803d\"/></marker><marker id=\"u3s10f2r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"420\" fill=\"#ffffff\"/><path d=\"M0,175 C120,175 180,160 235,165 C285,170 300,290 345,290 C385,290 395,195 430,195 C465,195 480,265 515,265 C550,265 565,205 600,205 C635,205 650,248 700,248\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M0,62 C150,62 200,56 240,58 C290,60 305,108 345,108 C385,108 395,54 430,54 C465,54 480,94 515,94 C550,94 565,62 600,62 C635,62 650,84 700,84\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><ellipse cx=\"430\" cy=\"124\" rx=\"54\" ry=\"14\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"2\"/><ellipse cx=\"600\" cy=\"134\" rx=\"44\" ry=\"12\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"470\" y1=\"38\" x2=\"440\" y2=\"108\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"540\" y1=\"38\" x2=\"592\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"505.0\" y=\"30.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Nuages lenticulaires (immobiles)</text><path d=\"M0,370 L140,370 C180,370 200,215 235,200 C270,215 290,370 340,370 L700,370 L700,420 L0,420 Z\" fill=\"#a8a29e\" stroke=\"#57534e\" stroke-width=\"2\"/><path d=\"M402,300 C410,284 452,282 462,296 C470,288 478,300 470,306 L398,308 C392,304 396,298 402,300 Z\" fill=\"#cbd5e1\" stroke=\"#64748b\" stroke-width=\"1.5\"/><ellipse cx=\"434\" cy=\"330\" rx=\"40\" ry=\"22\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"none\"/><path d=\"M424,308 L446,308\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u3s10f2r)\"/><path d=\"M446,352 L424,352\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u3s10f2r)\"/><text x=\"485.0\" y=\"318.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Rotor :</text><text x=\"485.0\" y=\"339.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"start\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">turbulence sévère</text><text x=\"485.0\" y=\"360.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"start\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">à basse altitude</text><line x1=\"20\" y1=\"140\" x2=\"112\" y2=\"140\" stroke=\"#1d4ed8\" stroke-width=\"5\" marker-end=\"url(#u3s10f2w)\"/><text x=\"20.0\" y=\"128.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Vent fort</text><text x=\"20.0\" y=\"40.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Couche stable en altitude</text><line x1=\"150\" y1=\"332\" x2=\"183\" y2=\"272\" stroke=\"#15803d\" stroke-width=\"4\" marker-end=\"url(#u3s10f2g)\"/><text x=\"20.0\" y=\"262.0\" font-size=\"16\" fill=\"#15803d\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Ascendance</text><text x=\"20.0\" y=\"282.0\" font-size=\"16\" fill=\"#15803d\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">au vent</text><line x1=\"268\" y1=\"214\" x2=\"292\" y2=\"262\" stroke=\"#dc2626\" stroke-width=\"4\" marker-end=\"url(#u3s10f2r)\"/><text x=\"300.0\" y=\"176.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Forte</text><text x=\"300.0\" y=\"196.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">descendance</text><text x=\"235.0\" y=\"192.0\" font-size=\"15\" fill=\"#44403c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Crête</text></svg>",
+       "caption": "Par vent fort et air stable en altitude, l'air plonge sous le vent de la crête puis ondule. Les lenticulaires marquent les crêtes d'onde ; sous la première, le rotor donne une turbulence sévère à basse altitude (échelles exagérées)."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u3s10q01",
+       "q": "Pourquoi le risque de givrage devient-il faible dans un nuage dont la température avoisine −40 °C ?",
+       "choices": [
+        "Parce que l'eau y est gelée en cristaux, qui n'adhèrent guère à la cellule",
+        "Parce que l'air y est trop sec pour contenir la moindre vapeur d'eau",
+        "Parce que l'avion se réchauffe par frottement à ces basses températures",
+        "Parce que les gouttelettes y sont trop grosses pour rester en suspension"
+       ],
+       "answer": 0,
+       "explanation": "Vers −40 °C, l'eau surfondue gèle spontanément : le nuage est fait de cristaux de glace, qui rebondissent sur la cellule au lieu d'y adhérer. Le givrage exige de l'eau liquide surfondue ; il est le plus fréquent entre 0 et −15 °C environ. L'échauffement cinétique d'un avion léger est négligeable.",
+       "_longest": true
+      },
+      {
+       "id": "u3s10q02",
+       "q": "Comparé à une couche de stratocumulus, un cumulus bourgeonnant présente généralement un givrage :",
+       "choices": [
+        "plus faible, car ses fortes ascendances empêchent le dépôt",
+        "identique, car la température du nuage est le facteur déterminant",
+        "plus intense, souvent transparent, mais sur une distance plus courte",
+        "plus étendu, mais formé d'un givre blanc léger, friable et peu adhérent"
+       ],
+       "answer": 2,
+       "explanation": "Le cumulus bourgeonnant contient beaucoup d'eau et de grosses gouttes : givrage fort, souvent transparent, concentré sur la traversée du nuage. Les nuages stratiformes donnent un givrage généralement plus faible mais qui peut durer sur de longues distances. La teneur en eau et la taille des gouttes comptent autant que la température."
+      },
+      {
+       "id": "u3s10q03",
+       "q": "Dans quelles conditions le givre blanc se forme-t-il de préférence ?",
+       "choices": [
+        "Avec de grosses gouttes qui s'étalent avant de geler, surtout dans les cumulonimbus",
+        "Avec de petites gouttelettes qui gèlent dès l'impact, plutôt en nuage stratiforme",
+        "Par dépôt direct de la vapeur sur l'avion stationné dehors, par nuit claire",
+        "Avec de la neige sèche qui colle au bord d'attaque par température positive"
+       ],
+       "answer": 1,
+       "explanation": "Les petites gouttelettes gèlent au point d'impact en emprisonnant de l'air : le dépôt est opaque, rugueux et friable. Les grosses gouttes qui s'étalent avant de geler donnent du givre transparent ; le dépôt direct de vapeur sur une surface froide est la gelée blanche."
+      },
+      {
+       "id": "u3s10q04",
+       "q": "Après un long palier à −8 °C, vous descendez rapidement, hors nuage, dans une couche plus chaude et humide. Le pare-brise se couvre soudain d'un dépôt blanc. De quoi s'agit-il ?",
+       "choices": [
+        "De givre transparent : une pluie surfondue gèle au contact du pare-brise",
+        "De givre blanc : des gouttelettes de nuage surfondues gèlent à l'impact",
+        "De buée : la vapeur de la cabine se condense sur la face intérieure du pare-brise",
+        "De gelée blanche : la vapeur se dépose en glace sur la cellule encore froide"
+       ],
+       "answer": 3,
+       "explanation": "La cellule, refroidie sous 0 °C, entre dans un air plus chaud et humide : la vapeur passe directement à l'état de glace et forme une gelée blanche, qui disparaît quand l'avion se réchauffe. Hors nuage et sans précipitation, il n'y a ni gouttelettes ni pluie surfondues pour former du givre blanc ou transparent ; la buée, elle, naît de l'humidité de la cabine, sur la face intérieure."
+      },
+      {
+       "id": "u3s10q05",
+       "q": "La TEMSI place l'isotherme 0 °C vers 4 000 ft sur votre route. Que retenez-vous pour le givrage ?",
+       "choices": [
+        "Au-dessous de cette altitude, l'air est trop froid pour garder de l'eau liquide",
+        "Le givrage se limite à une mince couche située juste autour de 4 000 ft",
+        "Au-dessus de cette altitude, nuages et précipitations peuvent être givrants",
+        "Au-dessus de cette altitude, l'eau des nuages se présente en cristaux de glace"
+       ],
+       "answer": 2,
+       "explanation": "L'isotherme 0 °C marque le niveau où l'air devient négatif. Au-dessus, gouttelettes et gouttes de pluie restées liquides sont surfondues : risque de givrage, surtout jusqu'à −15 °C environ, soit quelques milliers de pieds plus haut. Les cristaux de glace ne dominent que vers −40 °C ; au-dessous de l'isotherme, l'air est positif."
+      },
+      {
+       "id": "u3s10q06",
+       "q": "En vol, vous subissez des variations nettes d'assiette et d'altitude, la vitesse indiquée fluctue et les objets non arrimés bougent, mais vous gardez le contrôle en permanence. Quelle est l'intensité de la turbulence ?",
+       "choices": [
+        "Légère",
+        "Forte",
+        "Extrême",
+        "Modérée"
+       ],
+       "answer": 3,
+       "explanation": "La turbulence modérée provoque des variations sensibles d'assiette, d'altitude et de vitesse, sans perte de contrôle. En turbulence forte, les variations sont brusques et importantes et le contrôle peut être perdu momentanément ; la turbulence légère ne donne que de légers mouvements irréguliers."
+      },
+      {
+       "id": "u3s10q07",
+       "q": "Par une journée ensoleillée, au-dessus de quelles surfaces les ascendances thermiques sont-elles généralement les plus fortes ?",
+       "choices": [
+        "Les lacs et les étangs, qui gardent la chaleur de la nuit",
+        "Les sols secs et sombres : labours, rochers, zones bâties",
+        "Les grandes forêts, dont le feuillage absorbe le rayonnement",
+        "Les prairies humides, qui réchauffent l'air en s'évaporant"
+       ],
+       "answer": 1,
+       "explanation": "Les sols secs et sombres s'échauffent vite et chauffent l'air à leur contact, qui s'élève en thermiques. L'eau et les forêts humides s'échauffent peu le jour : on y trouve plutôt des descendances, d'où les « trous » ressentis en passant d'un champ à un lac. L'évaporation refroidit l'air au lieu de le réchauffer."
+      },
+      {
+       "id": "u3s10q08",
+       "q": "Derrière quel avion la turbulence de sillage est-elle la plus forte ?",
+       "choices": [
+        "Un avion léger, volets sortis et à grande vitesse",
+        "Un avion lourd, volets sortis et à grande vitesse",
+        "Un avion léger, en configuration lisse et à faible vitesse",
+        "Un avion lourd, en configuration lisse et à faible vitesse"
+       ],
+       "answer": 3,
+       "explanation": "L'intensité des tourbillons marginaux dépend du poids, de la vitesse et de la configuration : elle est maximale derrière un avion lourd, lisse et lent. Les volets sortis hâtent la dissipation du sillage. Les distances et précautions sont traitées dans la matière « Procédures opérationnelles »."
+      },
+      {
+       "id": "u3s10q09",
+       "q": "Sous un front chaud d'hiver, l'air négatif proche du sol forme une couche épaisse, sous une couche positive en altitude. Quelle précipitation observe-t-on le plus probablement au sol ?",
+       "choices": [
+        "De la pluie verglaçante (FZRA), les gouttes restant liquides jusqu'au sol",
+        "Des granules de glace (PL), les gouttes ayant regelé avant le sol",
+        "De la bruine (DZ), formée dans la couche froide elle-même",
+        "De la grêle (GR), formée par les ascendances du front"
+       ],
+       "answer": 1,
+       "explanation": "La neige fond dans la couche positive puis retombe dans l'air négatif. Si cette couche froide est épaisse, les gouttes ont le temps de regeler : granules de glace. Si elle est mince, elles arrivent liquides et surfondues : pluie verglaçante. Des granules signalent donc une couche positive au-dessus, et la pluie verglaçante n'est pas loin."
+      },
+      {
+       "id": "u3s10q10",
+       "q": "Avec du givre sur le bord d'attaque, pourquoi l'avertisseur de décrochage peut-il ne pas retentir avant le décrochage ?",
+       "choices": [
+        "Le givre alourdit l'avion, ce qui retarde le décrochage à basse vitesse",
+        "L'aile givrée décroche à une incidence plus faible que celle de son réglage",
+        "L'avertisseur est désactivé par le réchauffage Pitot en vol givrant",
+        "L'aile givrée décroche à une vitesse plus faible que l'aile propre"
+       ],
+       "answer": 1,
+       "explanation": "L'avertisseur est réglé pour une aile propre. Le givre déforme le profil : l'écoulement décolle à une incidence plus faible, donc à une vitesse plus élevée que d'habitude, parfois avant l'alarme. Le décrochage survient plus tôt, pas plus tard ; une vibration inhabituelle se traite comme un décrochage imminent.",
+       "_longest": true
+      },
+      {
+       "id": "u3s10q11",
+       "q": "Pourquoi les antennes, les haubans et l'empennage se chargent-ils souvent de givre avant l'aile ?",
+       "choices": [
+        "Ils sont plus froids que l'aile, faute de carburant à proximité",
+        "Leur faible rayon de courbure capte plus efficacement les gouttelettes",
+        "Ils baignent dans le souffle de l'hélice, plus humide que l'air ambiant",
+        "Leur surface plus rugueuse retient mieux la vapeur d'eau de l'air"
+       ],
+       "answer": 1,
+       "explanation": "Les gouttelettes, entraînées par l'air, contournent mal un obstacle mince : les profils de petit rayon en interceptent une plus grande proportion et givrent plus vite. Du givre visible sur l'aile laisse donc supposer un dépôt plus épais sur l'empennage. Ni le souffle de l'hélice ni la rugosité n'expliquent ce phénomène."
+      },
+      {
+       "id": "u3s10q12",
+       "q": "Que garantit, en principe, le fait de voler à la vitesse de manœuvre VA ou au-dessous ?",
+       "choices": [
+        "Que des braquages complets et alternés de la profondeur restent supportables par la cellule de l'avion",
+        "Que l'avion ne peut plus décrocher, même en virage serré à forte inclinaison",
+        "Que la structure résiste aux rafales de la turbulence extrême",
+        "Qu'un braquage complet d'une gouverne, sur un seul axe, n'endommage pas la structure"
+       ],
+       "answer": 3,
+       "explanation": "Sous VA, un braquage complet et soudain d'une gouverne, sur un seul axe, ne doit pas endommager la structure : en tangage, l'avion décroche avant d'atteindre le facteur de charge limite. Cette protection ne couvre ni les braquages alternés ou combinés, ni la turbulence extrême ; elle n'empêche pas le décrochage, qui est justement ce qui plafonne la charge.",
+       "_longest": true
+      },
+      {
+       "id": "u3s10q13",
+       "q": "Votre avion est nettement plus léger que sa masse maximale. Comment évolue sa vitesse de manœuvre VA ?",
+       "choices": [
+        "Elle diminue : une même portance crée alors un facteur de charge plus grand",
+        "Elle augmente, car un avion plus léger supporte mieux les rafales verticales",
+        "Elle reste identique, car elle ne dépend que de la résistance de la structure",
+        "Elle diminue exactement dans la même proportion que la masse de l'avion"
+       ],
+       "answer": 0,
+       "explanation": "Le facteur de charge vaut portance / poids : avion allégé, une même rafale ou un même braquage produit un facteur de charge plus grand. VA varie comme la racine carrée de la masse : 10 % de masse en moins la réduisent d'environ 5 %, pas de 10 %."
+      },
+      {
+       "id": "u3s10q14",
+       "q": "Un vent de 25 kt souffle en travers de la piste et de grands hangars sont situés au vent, près du seuil. Où vous attendez-vous à rencontrer de la turbulence mécanique ?",
+       "choices": [
+        "En vent arrière, vers 1 000 ft au-dessus du terrain",
+        "Au-dessus du sommet des cumulus présents sur le secteur",
+        "En courte finale et à l'arrondi, sous le vent des hangars",
+        "Au roulage, entre les hangars, la turbulence ne dépassant pas leur toit"
+       ],
+       "answer": 2,
+       "explanation": "Le vent fort qui franchit des obstacles crée des tourbillons qui s'étendent sous leur vent : en courte finale et à l'arrondi, la vitesse et l'assiette varient brusquement près du sol. On garde une marge de vitesse et l'on se tient prêt à remettre les gaz. Plus haut, l'écoulement redevient régulier."
+      },
+      {
+       "id": "u3s10q15",
+       "q": "En fin de matinée, vous montez à travers une couche de cumulus de beau temps pour vous établir au-dessus de leur sommet, en air clair. Comment évolue généralement la turbulence ?",
+       "choices": [
+        "Elle diminue nettement : au-dessus des thermiques, l'air est souvent calme",
+        "Elle augmente, les thermiques étant plus forts au-dessus des nuages",
+        "Elle reste identique jusqu'à la tropopause, l'air étant instable partout",
+        "Elle devient forte, la turbulence en air clair prenant le relais des thermiques"
+       ],
+       "answer": 0,
+       "explanation": "Les thermiques s'arrêtent vers le sommet de la couche convective, souvent marqué par le sommet des cumulus et une couche plus stable : au-dessus, le vol redevient en général calme. La turbulence en air clair concerne surtout les hautes altitudes, près des courants-jets."
+      },
+      {
+       "id": "u3s10q16",
+       "q": "Vous volez en VFR sous une couche de stratocumulus, hors nuage, par une température extérieure de −3 °C. Quel risque de givrage de la cellule demeure ?",
+       "choices": [
+        "Celui de la gelée blanche, formée dans l'air sec sous la couche",
+        "Celui du givre blanc, déposé par les cristaux de la couche",
+        "Celui d'une bruine ou d'une pluie verglaçante tombant de la couche",
+        "Celui de la grêle, fréquente sous les stratocumulus d'hiver"
+       ],
+       "answer": 2,
+       "explanation": "Hors nuage, le givrage reste possible si des gouttes surfondues tombent de la couche : bruine (FZDZ) ou pluie (FZRA) verglaçantes, qui gèlent à l'impact sur une cellule négative. Les cristaux de glace n'adhèrent pas, et la grêle naît des cumulonimbus, pas des stratocumulus.",
+       "_longest": true
+      },
+      {
+       "id": "u3s10q17",
+       "q": "La VA de votre avion est de 108 kt à la masse maximale de 1 100 kg. Vous volez à 891 kg. Quelle vitesse de manœuvre retenez-vous ?",
+       "choices": [
+        "Environ 87 kt",
+        "108 kt",
+        "Environ 120 kt",
+        "Environ 97 kt"
+       ],
+       "answer": 3,
+       "explanation": "VA varie comme la racine carrée de la masse : 891 / 1 100 = 0,81 et √0,81 = 0,9, d'où VA ≈ 108 × 0,9 ≈ 97 kt. 87 kt applique le rapport des masses sans la racine ; garder 108 kt surestime la protection de l'avion allégé."
+      },
+      {
+       "id": "u3s10q18",
+       "q": "En courte finale à 70 kt de vitesse indiquée, avec 20 kt de vent de face, le vent de face tombe brusquement à 5 kt. Juste après, sans action du pilote, quelle vitesse indiquée lisez-vous ?",
+       "choices": [
+        "Environ 85 kt",
+        "Environ 70 kt",
+        "Environ 50 kt",
+        "Environ 55 kt"
+       ],
+       "answer": 3,
+       "explanation": "Par inertie, l'avion garde d'abord sa vitesse sol : 70 − 20 = 50 kt. Avec 5 kt de vent de face, la vitesse air devient 50 + 5 = 55 kt : la perte de 15 kt égale la perte de vent de face. 50 kt oublie le vent restant ; 85 kt correspondrait à une hausse du vent de face. Réaction : pleine puissance, remise de gaz si besoin."
+      },
+      {
+       "id": "u3s10q19",
+       "q": "En air calme, votre avion monte à 600 ft/min à pleine puissance. Sous le vent d'une crête, il entre dans une masse d'air qui descend à 1 000 ft/min. Que lisez-vous au variomètre ?",
+       "choices": [
+        "Une montée d'environ 400 ft/min",
+        "Une descente d'environ 1 600 ft/min",
+        "Une montée d'environ 1 600 ft/min",
+        "Une descente d'environ 400 ft/min"
+       ],
+       "answer": 3,
+       "explanation": "Le variomètre mesure le déplacement vertical de l'avion : sa montée propre (+600 ft/min) s'ajoute au mouvement de l'air (−1 000 ft/min), soit −400 ft/min malgré la pleine puissance. Sous le vent du relief, ces descendances peuvent plaquer l'avion vers les pentes : on aborde les crêtes avec une large marge de hauteur."
+      },
+      {
+       "id": "u3s10q20",
+       "q": "En approchant une crête par son côté sous le vent, face à un vent fort, vous entrez dans une descendance qui dépasse le taux de montée de votre avion. Que faites-vous ?",
+       "choices": [
+        "Vous virez pour vous éloigner du relief, vers un terrain plus bas",
+        "Vous cabrez pour tenir l'altitude jusqu'au passage de la crête",
+        "Vous accélérez à la VNE pour traverser la zone au plus vite",
+        "Vous gardez le cap, en comptant sur l'ascendance qui suivra"
+       ],
+       "answer": 0,
+       "explanation": "Sous le vent d'un relief, la descendance peut dépasser les performances de montée d'un avion léger. Insister vers la crête en cabrant mène au décrochage ou à la collision avec le relief ; on vire vers l'air libre et le terrain bas, puis on revient plus haut, en abordant la crête à 45° environ. La VNE n'est pas une vitesse de turbulence.",
+       "_longest": true
+      },
+      {
+       "id": "u3s10q21",
+       "q": "En hiver, en VFR sous les nuages, une pluie se met à geler sur le pare-brise et les bords d'attaque. La température extérieure est de −2 °C. Quelle décision est la plus appropriée ?",
+       "choices": [
+        "Poursuivre en augmentant la puissance, la glace s'évacuant avec la vitesse",
+        "Faire demi-tour au plus vite vers la zone quittée, et se poser si besoin",
+        "Monter dans les nuages pour chercher l'air plus chaud situé au-dessus",
+        "Poursuivre en tirant le réchauffage carburateur, qui protège aussi les ailes"
+       ],
+       "answer": 1,
+       "explanation": "La pluie verglaçante dépose du verglas en quelques minutes sur toute la cellule : un avion non certifié doit en sortir aussitôt, par le chemin connu, et se poser au besoin. La pluie verglaçante signale bien de l'air positif plus haut, mais l'atteindre imposerait de voler en IMC à travers la couche froide et des nuages surfondus, en continuant à givrer. Le réchauffage carburateur ne protège que le moteur."
+      },
+      {
+       "id": "u3s10q22",
+       "q": "Pourquoi une même rafale verticale soumet-elle la structure à un facteur de charge plus élevé quand l'avion vole vite ?",
+       "choices": [
+        "Parce que l'incidence de l'aile augmente avec la vitesse en palier",
+        "Parce que la variation de portance qu'elle provoque croît avec la vitesse",
+        "Parce que la masse apparente de l'avion augmente avec la vitesse",
+        "Parce que la rafale verticale elle-même est plus forte à grande vitesse"
+       ],
+       "answer": 1,
+       "explanation": "Une rafale verticale modifie brusquement l'incidence, d'environ rafale / vitesse. La portance supplémentaire, proportionnelle à cette variation d'incidence et au carré de la vitesse, croît donc à peu près comme la vitesse : d'où la réduction de vitesse en air agité. En palier, l'incidence diminue au contraire quand la vitesse augmente.",
+       "_longest": true
+      },
+      {
+       "id": "u3s10q23",
+       "q": "Par une matinée d'été sans nuage, il fait 18 °C avec un point de rosée de 16 °C. Un pilote estime que le givrage carburateur est impossible sans nuage. Qu'en pensez-vous ?",
+       "choices": [
+        "Il a raison : au-dessus de 15 °C, l'air extérieur empêche la glace de se former",
+        "Il a raison : ce givrage exige de l'eau liquide visible, nuage ou pluie",
+        "Il se trompe, mais le risque n'existe qu'à pleine puissance, au décollage",
+        "Il se trompe : l'air très humide suffit, surtout à puissance réduite"
+       ],
+       "answer": 3,
+       "explanation": "La détente de l'air et la vaporisation de l'essence refroidissent fortement l'air dans le carburateur : par air très humide (écart T − Td de 2 °C), la vapeur peut y geler bien au-dessus de 0 °C extérieur, de −10 à +30 °C environ. Le risque est maximal à puissance réduite, en descente. Les techniques de réchauffage sont traitées dans « Connaissance générale de l'aéronef »."
+      },
+      {
+       "id": "u3s10q24",
+       "q": "Après la traversée accidentelle d'une bruine verglaçante, il reste du givre sur les bords d'attaque. Pour l'approche et l'atterrissage, quelle conduite adoptez-vous ?",
+       "choices": [
+        "Vitesse majorée, manœuvres douces, piste longue et volets selon le manuel",
+        "Vitesse réduite et pleins volets tôt, pour atterrir le plus court possible",
+        "Approche à forte pente et arrondi appuyé, pour casser la glace à l'impact",
+        "Approche habituelle, le givre résiduel ne changeant pas la vitesse de décrochage"
+       ],
+       "answer": 0,
+       "explanation": "Le givre résiduel élève la vitesse de décrochage et peut rendre l'empennage plus sensible : on garde une marge de vitesse, on évite les manœuvres brusques et les fortes inclinaisons, et l'on prévoit une distance d'atterrissage plus longue. Réduire la vitesse et sortir tôt tous les volets ronge les marges ; on suit les consignes du manuel de vol."
+      }
+     ]
+    },
+    {
+     "id": "u3s11",
+     "title": "Climatologie et vents locaux en France",
+     "icon": "🍃",
+     "tips": "Le temps en France dépend de la position des grands centres d'action : anticyclone des Açores, dépressions atlantiques, anticyclone continental en hiver, Méditerranée. Le relief (Alpes, Pyrénées, Massif central, Jura, Vosges) canalise et transforme les vents.\n\nSituations types :\n• Flux d'ouest perturbé : anticyclone des Açores resté au sud-ouest, dépressions de l'Atlantique vers les îles Britanniques. Les perturbations se succèdent (front chaud, secteur chaud, front froid, traîne), surtout sur la moitié nord, avec un vent d'ouest soutenu. En VFR : fenêtres courtes, souvent dans la traîne.\n• Anticyclone des Açores étendu sur la France (dorsale), surtout l'été : temps sec et stable, cumulus de beau temps, brume sèche gênante à contre-jour, chaleur et altitude-densité élevée.\n• Anticyclone continental d'hiver : air froid et sec, vent faible, inversions. Brouillards et stratus tenaces dans les plaines et vallées (val de Saône, plaine d'Alsace, Bassin parisien), parfois toute la journée ; au-dessus, ciel clair et mer de nuages vue des reliefs.\n• Retour d'est : dépression vers l'Espagne ou les Baléares ; le vent d'est à sud-est (le marin) pousse l'air marin humide sur le Languedoc, le Roussillon et les Cévennes : nuages bas, pluie, reliefs accrochés. De septembre à mi-décembre, la mer encore chaude nourrit les épisodes méditerranéens : pluies diluviennes et orages.\n• Situation orageuse d'été : marais barométrique, ou air chaud et humide remontant du sud-ouest devant un talweg ou une goutte froide (poche d'air froid en altitude). Orages l'après-midi et le soir, d'abord sur les reliefs.\n• Situation de nord-est : anticyclone sur le nord de l'Europe, dépression en Méditerranée : bise froide et sèche.\n\nSaisons :\n• Hiver : brouillards, stratus, givrage, neige, jours courts.\n• Printemps : traînes actives, giboulées (averses de grésil ou de grêle), vent.\n• Été : convection, orages, brume sèche, performances réduites par la chaleur.\n• Automne : brouillards de rayonnement, retour des perturbations, épisodes méditerranéens.\n\nVents régionaux :\n• Mistral : vent de nord dans la vallée du Rhône, de nord-ouest vers Marseille, d'ouest sur la côte varoise. Anticyclone à l'ouest (golfe de Gascogne), dépression sur le golfe de Gênes ; l'air est canalisé entre Alpes et Massif central (effet Venturi). Froid, sec, ciel clair ; rafales de 80 à 100 km/h fréquentes, souvent plusieurs jours.\n• Tramontane : vent de nord-ouest du Languedoc-Roussillon, entre Pyrénées et Massif central (cers dans le Lauragais). Même situation que le mistral ; rafales pouvant atteindre 140 km/h, davantage vers le cap Béar.\n• Autan : vent de sud-est turbulent du Toulousain, du Lauragais et du Tarn. Autan blanc : sec et ensoleillé (anticyclone sur l'Europe centrale). Autan noir : doux, il précède souvent pluie ou orage (dépression vers l'Espagne ou le golfe de Gascogne).\n• Bise : vent de nord à nord-est, froid et sec, de la Bourgogne et du Lyonnais au Léman. Canalisée entre Jura et Alpes, elle forcit vers Genève ; en hiver, elle renforce l'inversion et les stratus.\n• Marin : vent de sud-est chaud et humide, de la mer vers le Languedoc et le Roussillon : ciel gris et bas, pluie.\n• Foehn : air réchauffé et asséché en descendant sous le vent d'un relief. Par vent de sud à sud-ouest sur les Pyrénées, Pau et Biarritz peuvent battre des records de chaleur, tandis que le « mur de foehn » coiffe les crêtes côté espagnol. Sous le vent : turbulence, ondes, rotors.\n\nBrises et relief :\n• Brise de mer : aux latitudes de la France, elle pénètre rarement au-delà de 40 à 50 km. Son front, souvent souligné par une ligne de cumulus parallèle à la côte, avance vers l'intérieur dans l'après-midi.\n• Entrées maritimes : la brise peut pousser brume, brouillard ou stratus marins sur la côte en quelques minutes, alors que l'intérieur reste dégagé (Manche, Atlantique, Méditerranée).\n• Brises de vallée et de montagne : le jour, l'air remonte les pentes et la vallée (ascendances côté soleil, descendances côté ombre) ; la nuit, il redescend. Sur un terrain de montagne, le vent dans l'axe s'inverse au fil de la journée.\n• Lac d'air froid : la nuit, l'air froid s'accumule au fond des vallées et des cuvettes : inversion, gelée, brouillard de vallée, particulièrement tenace en hiver.\n• Effets de relief : accélération dans les couloirs et les cols, nuages accrochés et plafonds plus bas au vent, descendances et rotors sous le vent.\n\nConséquences pour le vol VFR :\n• Mistral, tramontane, autan : ciel souvent clair, mais rafales, vent de travers parfois hors des limites démontrées, turbulence à basse hauteur, vitesse sol réduite face au vent. Calculez composantes et durées.\n• Hiver anticyclonique : départ ou destination dans le brouillard alors que le plateau voisin est au soleil ; surveillez l'écart T − Td.\n• Été orageux : décollez tôt, posez-vous avant les orages de l'après-midi.\n• Côte : prévoyez un dégagement à l'intérieur en cas d'entrée maritime.",
+     "vocab": [
+      {
+       "term": "Mistral",
+       "translation": "Vent de nord froid et sec de la vallée du Rhône et de Provence"
+      },
+      {
+       "term": "Tramontane",
+       "translation": "Vent de nord-ouest froid et sec du Languedoc-Roussillon"
+      },
+      {
+       "term": "Cers",
+       "translation": "Nom de la tramontane dans le Lauragais (ouest à nord-ouest)"
+      },
+      {
+       "term": "Autan",
+       "translation": "Vent de sud-est turbulent du Toulousain et du Lauragais"
+      },
+      {
+       "term": "Bise",
+       "translation": "Vent de nord à nord-est froid et sec, du Lyonnais au Léman"
+      },
+      {
+       "term": "Marin",
+       "translation": "Vent de sud-est chaud et humide, de la mer vers le Languedoc"
+      },
+      {
+       "term": "Foehn",
+       "translation": "Vent chaud et sec qui descend sous le vent d'un relief"
+      },
+      {
+       "term": "Mur de foehn",
+       "translation": "Nuages accrochés aux crêtes, côté au vent, par effet de foehn"
+      },
+      {
+       "term": "Effet Venturi",
+       "translation": "Accélération du vent canalisé entre deux reliefs"
+      },
+      {
+       "term": "Front de brise",
+       "translation": "Limite de l'air marin qui avance dans les terres"
+      },
+      {
+       "term": "Entrée maritime",
+       "translation": "Arrivée rapide de brume ou de stratus marins sur la côte"
+      },
+      {
+       "term": "Lac d'air froid",
+       "translation": "Air froid accumulé la nuit au fond d'une vallée ou cuvette"
+      },
+      {
+       "term": "Goutte froide",
+       "translation": "Poche d'air froid isolée en altitude, source d'instabilité"
+      },
+      {
+       "term": "Retour d'est",
+       "translation": "Flux d'est à sud-est humide, de la Méditerranée vers la côte"
+      },
+      {
+       "term": "Épisode méditerranéen",
+       "translation": "Pluies diluviennes d'automne sur le sud-est, mer chaude"
+      },
+      {
+       "term": "Dorsale",
+       "translation": "Avancée de hautes pressions, temps stable"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Les vents régionaux de France",
+       "svg": "<svg viewBox=\"0 0 700 500\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u3s11f1mistral\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"3.2\" markerHeight=\"3.2\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4ed8\"/></marker><marker id=\"u3s11f1tram\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"3.2\" markerHeight=\"3.2\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#0e7490\"/></marker><marker id=\"u3s11f1autan\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"3.2\" markerHeight=\"3.2\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#ea580c\"/></marker><marker id=\"u3s11f1bise\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"3.2\" markerHeight=\"3.2\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#7c3aed\"/></marker><marker id=\"u3s11f1marin\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"3.2\" markerHeight=\"3.2\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#059669\"/></marker><marker id=\"u3s11f1foehn\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"3.2\" markerHeight=\"3.2\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"500\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"700\" height=\"500\" fill=\"#f1f5f9\"/><polygon points=\"259.1,25.1 236.9,31.5 228.4,35.2 229.0,42.1 229.0,66.0 212.5,78.4 190.0,86.2 181.5,98.7 185.6,101.9 170.4,107.9 145.1,103.3 138.4,90.4 127.0,91.3 116.9,88.1 121.3,104.2 127.7,128.6 130.8,137.8 114.4,137.3 104.9,135.9 91.2,142.8 81.7,131.3 69.1,129.5 52.3,133.6 27.3,152.0 32.7,155.7 28.5,165.4 39.9,176.4 71.6,179.6 79.5,191.1 89.7,187.9 98.5,199.9 108.7,200.8 111.8,208.6 108.7,215.5 122.0,236.2 141.9,251.8 145.1,277.6 144.8,279.0 138.7,321.3 137.2,342.0 132.4,367.3 128.9,375.1 122.0,380.2 134.0,385.7 154.6,399.5 178.3,411.0 200.5,404.1 224.2,415.6 233.1,420.2 244.8,424.8 262.9,427.1 278.7,423.4 274.9,417.9 274.6,411.0 274.9,401.8 278.1,390.3 288.5,384.3 295.5,378.8 302.8,372.8 309.1,372.8 318.6,376.5 331.9,378.8 347.7,383.4 355.6,389.4 366.1,392.6 372.4,395.8 388.9,384.8 392.1,377.9 400.0,371.9 408.5,365.0 416.8,361.3 421.2,344.3 396.8,332.8 400.0,312.1 388.3,299.7 403.8,293.7 393.6,267.5 400.0,256.9 393.6,240.8 387.0,240.8 372.7,250.0 371.5,240.8 382.6,222.4 398.4,201.7 400.0,192.5 418.3,186.5 417.4,169.5 419.0,153.4 425.3,139.6 438.9,122.6 419.0,116.6 392.1,114.3 380.0,100.0 362.6,95.9 351.5,98.2 332.5,84.4 331.9,68.3 311.3,75.2 309.7,61.4 293.9,54.5 281.2,40.7 260.6,37.0\" fill=\"#fefce8\" stroke=\"#78716c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"474.4,397.2 477.5,411.0 480.7,438.6 471.2,470.8 457.0,463.9 450.6,443.2 450.6,424.8 463.3,408.7\" fill=\"#fefce8\" stroke=\"#78716c\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"400.0,250.0 412.6,277.6 403.1,323.6 419.0,346.6 393.6,355.8 374.6,337.4 362.0,305.2 371.5,268.4 384.1,245.4\" fill=\"#d6b98c\" fill-opacity=\"0.75\" stroke=\"#a16207\" stroke-width=\"1\"/><polygon points=\"251.1,263.8 286.0,254.6 317.6,277.6 311.3,323.6 292.3,355.8 260.6,342.0 241.7,309.8 248.0,277.6\" fill=\"#d6b98c\" fill-opacity=\"0.75\" stroke=\"#a16207\" stroke-width=\"1\"/><polygon points=\"127.7,385.7 162.5,394.9 197.3,399.5 235.3,408.7 267.0,420.2 270.1,427.1 248.0,429.4 210.0,422.5 178.3,420.2 146.7,408.7 124.5,394.9\" fill=\"#d6b98c\" fill-opacity=\"0.75\" stroke=\"#a16207\" stroke-width=\"1\"/><polygon points=\"365.1,240.8 384.1,217.8 403.1,194.8 393.6,187.9 374.6,208.6 355.6,231.6\" fill=\"#d6b98c\" fill-opacity=\"0.75\" stroke=\"#a16207\" stroke-width=\"1\"/><polygon points=\"393.6,139.6 406.3,158.0 403.1,176.4 393.6,176.4 387.3,153.4\" fill=\"#d6b98c\" fill-opacity=\"0.75\" stroke=\"#a16207\" stroke-width=\"1\"/><text x=\"45.3\" y=\"250.0\" font-size=\"15\" fill=\"#0369a1\" text-anchor=\"middle\" font-style=\"italic\">Atlantique</text><text x=\"127.7\" y=\"59.1\" font-size=\"15\" fill=\"#0369a1\" text-anchor=\"middle\" font-style=\"italic\">Manche</text><text x=\"360.4\" y=\"454.7\" font-size=\"15\" fill=\"#0369a1\" text-anchor=\"middle\" font-style=\"italic\">Méditerranée</text><text x=\"392.1\" y=\"298.3\" font-size=\"15\" fill=\"#713f12\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Alpes</text><text x=\"278.1\" y=\"289.1\" font-size=\"15\" fill=\"#713f12\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Massif</text><text x=\"278.1\" y=\"306.1\" font-size=\"15\" fill=\"#713f12\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">central</text><text x=\"129.2\" y=\"444.7\" font-size=\"15\" fill=\"#713f12\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Pyrénées</text><text x=\"410.3\" y=\"192.5\" font-size=\"15\" fill=\"#713f12\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Jura</text><circle cx=\"64.3\" cy=\"296\" r=\"17\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2.5\"/><text x=\"64.3\" y=\"302.3\" font-size=\"18\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\">A</text><circle cx=\"480\" cy=\"366\" r=\"17\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"480\" y=\"372.3\" font-size=\"18\" fill=\"#dc2626\" text-anchor=\"middle\" font-weight=\"bold\">D</text><line x1=\"331.9\" y1=\"285.9\" x2=\"328.7\" y2=\"361.3\" stroke=\"#1d4ed8\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1mistral)\"/><line x1=\"259.1\" y1=\"394.9\" x2=\"281.2\" y2=\"414.7\" stroke=\"#0e7490\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1tram)\"/><line x1=\"274.9\" y1=\"383.4\" x2=\"229.0\" y2=\"364.1\" stroke=\"#ea580c\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1autan)\"/><line x1=\"355.6\" y1=\"192.5\" x2=\"336.6\" y2=\"246.8\" stroke=\"#7c3aed\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1bise)\"/><line x1=\"398.4\" y1=\"222.4\" x2=\"377.8\" y2=\"244.0\" stroke=\"#7c3aed\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1bise)\"/><line x1=\"319.2\" y1=\"406.4\" x2=\"304.3\" y2=\"377.9\" stroke=\"#059669\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1marin)\"/><line x1=\"165.7\" y1=\"429.4\" x2=\"165.7\" y2=\"391.7\" stroke=\"#dc2626\" stroke-width=\"6\" stroke-linecap=\"round\" marker-end=\"url(#u3s11f1foehn)\"/><circle cx=\"331.6\" cy=\"270.2\" r=\"4\" fill=\"#0f172a\"/><text x=\"324.6\" y=\"275.2\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"end\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Lyon</text><circle cx=\"348.4\" cy=\"383.4\" r=\"4\" fill=\"#0f172a\"/><text x=\"355.4\" y=\"388.4\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Marseille</text><circle cx=\"223.9\" cy=\"369.6\" r=\"4\" fill=\"#0f172a\"/><text x=\"216.9\" y=\"362.6\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"end\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Toulouse</text><circle cx=\"372.7\" cy=\"250.0\" r=\"4\" fill=\"#0f172a\"/><text x=\"376.7\" y=\"268.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Genève</text><circle cx=\"166.6\" cy=\"383.4\" r=\"4\" fill=\"#0f172a\"/><text x=\"174.6\" y=\"385.4\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Pau</text><text x=\"336.0\" y=\"316.7\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Mistral</text><text x=\"268.6\" y=\"431.7\" font-size=\"16\" fill=\"#0e7490\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Tramontane</text><text x=\"248.0\" y=\"353.5\" font-size=\"16\" fill=\"#ea580c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Autan</text><text x=\"341.4\" y=\"215.5\" font-size=\"16\" fill=\"#7c3aed\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Bise</text><text x=\"324.6\" y=\"410.1\" font-size=\"16\" fill=\"#059669\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Marin</text><text x=\"159.3\" y=\"404.1\" font-size=\"16\" fill=\"#dc2626\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Foehn</text><rect x=\"500\" y=\"22\" width=\"190\" height=\"456\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"514\" y1=\"47\" x2=\"544\" y2=\"47\" stroke=\"#1d4ed8\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"554.0\" y=\"52.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\">Mistral</text><text x=\"514.0\" y=\"73.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">N à NW, froid et sec,</text><text x=\"514.0\" y=\"92.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">rafales, ciel clair</text><line x1=\"514\" y1=\"117\" x2=\"544\" y2=\"117\" stroke=\"#0e7490\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"554.0\" y=\"122.0\" font-size=\"16\" fill=\"#0e7490\" text-anchor=\"start\" font-weight=\"bold\">Tramontane</text><text x=\"514.0\" y=\"143.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">NW, froide et sèche</text><line x1=\"514\" y1=\"168\" x2=\"544\" y2=\"168\" stroke=\"#ea580c\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"554.0\" y=\"173.0\" font-size=\"16\" fill=\"#ea580c\" text-anchor=\"start\" font-weight=\"bold\">Autan</text><text x=\"514.0\" y=\"194.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">SE, turbulent ;</text><text x=\"514.0\" y=\"213.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">noir : pluie à venir</text><line x1=\"514\" y1=\"238\" x2=\"544\" y2=\"238\" stroke=\"#7c3aed\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"554.0\" y=\"243.0\" font-size=\"16\" fill=\"#7c3aed\" text-anchor=\"start\" font-weight=\"bold\">Bise</text><text x=\"514.0\" y=\"264.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">N à NE, froide et sèche</text><line x1=\"514\" y1=\"289\" x2=\"544\" y2=\"289\" stroke=\"#059669\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"554.0\" y=\"294.0\" font-size=\"16\" fill=\"#059669\" text-anchor=\"start\" font-weight=\"bold\">Marin</text><text x=\"514.0\" y=\"315.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">SE, chaud et humide :</text><text x=\"514.0\" y=\"334.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">nuages bas, pluie</text><line x1=\"514\" y1=\"359\" x2=\"544\" y2=\"359\" stroke=\"#dc2626\" stroke-width=\"7\" stroke-linecap=\"round\"/><text x=\"554.0\" y=\"364.0\" font-size=\"16\" fill=\"#dc2626\" text-anchor=\"start\" font-weight=\"bold\">Foehn</text><text x=\"514.0\" y=\"385.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">chaud et sec sous</text><text x=\"514.0\" y=\"404.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\">le vent du relief</text><text x=\"514.0\" y=\"438.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\">A / D : situation de</text><text x=\"514.0\" y=\"458.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\">mistral et tramontane</text></svg>",
+       "caption": "Carte simplifiée : le relief canalise le mistral (entre Alpes et Massif central), la tramontane et l'autan (entre Pyrénées et Massif central) et la bise (entre Jura et Alpes). A et D : anticyclone à l'ouest et dépression sur le golfe de Gênes, situation du mistral et de la tramontane."
+      },
+      {
+       "title": "Brises de vallée, brises de montagne et lac d'air froid",
+       "svg": "<svg viewBox=\"0 0 700 360\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u3s11f2o\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#ea580c\"/></marker><marker id=\"u3s11f2b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4ed8\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"360\" fill=\"#ffffff\"/><rect x=\"6\" y=\"6\" width=\"340\" height=\"348\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#fcd34d\" stroke-width=\"1.5\"/><rect x=\"354\" y=\"6\" width=\"340\" height=\"348\" rx=\"10\" fill=\"#eef2ff\" stroke=\"#a5b4fc\" stroke-width=\"1.5\"/><text x=\"176.0\" y=\"34.0\" font-size=\"18\" fill=\"#92400e\" text-anchor=\"middle\" font-weight=\"bold\">Le jour</text><text x=\"524.0\" y=\"34.0\" font-size=\"18\" fill=\"#3730a3\" text-anchor=\"middle\" font-weight=\"bold\">La nuit</text><circle cx=\"62\" cy=\"50\" r=\"16\" fill=\"#facc15\" stroke=\"#ca8a04\" stroke-width=\"2\"/><path d=\"M654,48 A16,16 0 1,0 670,74 A12,12 0 1,1 654,48 z\" fill=\"#64748b\"/><rect x=\"364\" y=\"232\" width=\"328\" height=\"108\" fill=\"#bfdbfe\"/><rect x=\"364\" y=\"270\" width=\"328\" height=\"70\" fill=\"#e2e8f0\"/><path d=\"M10,140 L122,300 L232,300 L344,140 L344,340 L10,340 Z\" fill=\"#a8a29e\" stroke=\"#57534e\" stroke-width=\"2\"/><path d=\"M358,140 L470,300 L580,300 L692,140 L692,340 L358,340 Z\" fill=\"#a8a29e\" stroke=\"#57534e\" stroke-width=\"2\"/><line x1=\"422\" y1=\"232\" x2=\"628\" y2=\"232\" stroke=\"#1d4ed8\" stroke-width=\"2\" stroke-dasharray=\"7 5\"/><line x1=\"110\" y1=\"256\" x2=\"68\" y2=\"196\" stroke=\"#ea580c\" stroke-width=\"5\" marker-end=\"url(#u3s11f2o)\"/><line x1=\"244\" y1=\"256\" x2=\"286\" y2=\"196\" stroke=\"#ea580c\" stroke-width=\"5\" marker-end=\"url(#u3s11f2o)\"/><path d=\"M10,112 C6,96 24,88 34,94 C40,78 64,80 64,96 C78,96 78,112 68,112 Z\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M270,112 C266,96 284,88 294,94 C300,78 324,80 324,96 C338,96 338,112 328,112 Z\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.8\"/><text x=\"176.0\" y=\"150.0\" font-size=\"16\" fill=\"#c2410c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Brise montante :</text><text x=\"176.0\" y=\"170.0\" font-size=\"16\" fill=\"#c2410c\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">l'air remonte pentes</text><text x=\"176.0\" y=\"189.0\" font-size=\"16\" fill=\"#c2410c\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">et vallée</text><text x=\"176.0\" y=\"62.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Cumulus sur les crêtes</text><line x1=\"410\" y1=\"190\" x2=\"446\" y2=\"240\" stroke=\"#1d4ed8\" stroke-width=\"5\" marker-end=\"url(#u3s11f2b)\"/><line x1=\"638\" y1=\"190\" x2=\"602\" y2=\"240\" stroke=\"#1d4ed8\" stroke-width=\"5\" marker-end=\"url(#u3s11f2b)\"/><text x=\"524.0\" y=\"120.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Brise descendante :</text><text x=\"524.0\" y=\"140.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">l'air froid glisse</text><text x=\"524.0\" y=\"159.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">vers le fond</text><text x=\"524.0\" y=\"224.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Inversion</text><text x=\"524.0\" y=\"263.0\" font-size=\"16\" fill=\"#1e3a8a\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Lac d'air froid</text><text x=\"525.0\" y=\"292.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Brouillard</text></svg>",
+       "caption": "Coupe d'une vallée : le jour, l'air chauffé remonte pentes et vallée et des cumulus se forment sur les crêtes ; la nuit, l'air refroidi descend et s'accumule au fond, sous une inversion, où se forment gelée et brouillard de vallée."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u3s11q01",
+       "q": "Quel vent régional descend la vallée du Rhône vers la Méditerranée ?",
+       "choices": [
+        "La tramontane",
+        "L'autan",
+        "Le marin",
+        "Le mistral"
+       ],
+       "answer": 3,
+       "explanation": "Le mistral souffle du nord dans la vallée du Rhône, puis du nord-ouest vers Marseille et d'ouest sur la côte varoise. La tramontane est son équivalent en Languedoc-Roussillon ; l'autan et le marin viennent du sud-est."
+      },
+      {
+       "id": "u3s11q02",
+       "q": "Où et de quelle direction souffle principalement la tramontane ?",
+       "choices": [
+        "Du sud-est, sur le Toulousain et le Lauragais, depuis la Méditerranée",
+        "Du nord-ouest, en Languedoc-Roussillon, entre Pyrénées et Massif central",
+        "Du nord-est, du bassin lémanique au Lyonnais, entre Jura et Alpes",
+        "Du sud, sur le Béarn et la Bigorre, en descendant le versant nord des Pyrénées"
+       ],
+       "answer": 1,
+       "explanation": "La tramontane est un vent de nord-ouest froid et sec, accéléré entre les Pyrénées et le Massif central ; dans le Lauragais, on l'appelle cers. Le vent de sud-est toulousain est l'autan, le vent de nord-est lémanique la bise, et le vent du sud qui descend des Pyrénées produit l'effet de foehn."
+      },
+      {
+       "id": "u3s11q03",
+       "q": "Quel vent régional, turbulent et de secteur sud-est, souffle sur le Toulousain ?",
+       "choices": [
+        "Le mistral",
+        "La bise",
+        "Le cers",
+        "L'autan"
+       ],
+       "answer": 3,
+       "explanation": "L'autan souffle du sud-est sur Toulouse, le Lauragais et le Tarn, souvent en rafales. Le cers, nom local de la tramontane dans le Lauragais, vient au contraire de l'ouest à nord-ouest, par le même couloir entre Pyrénées et Massif central."
+      },
+      {
+       "id": "u3s11q04",
+       "q": "Quelles sont les caractéristiques de la bise ?",
+       "choices": [
+        "Un vent de sud-est chaud et humide, soufflant de la mer vers le Languedoc",
+        "Un vent de nord-ouest violent, des Corbières au golfe du Lion",
+        "Un vent de nord à nord-est, froid et sec, de la Bourgogne au Léman",
+        "Un vent du sud chaud et sec, sous le vent des Pyrénées"
+       ],
+       "answer": 2,
+       "explanation": "La bise vient du nord à nord-est quand un anticyclone se trouve sur le nord de l'Europe et une dépression en Méditerranée ; canalisée entre Jura et Alpes, elle forcit vers Genève. Le vent marin de sud-est est le marin ; celui de nord-ouest vers le golfe du Lion, la tramontane."
+      },
+      {
+       "id": "u3s11q05",
+       "q": "Quel temps le marin apporte-t-il généralement au Languedoc et au Roussillon ?",
+       "choices": [
+        "Un ciel dégagé et une excellente visibilité, l'air étant froid et sec",
+        "Des brouillards de rayonnement, le vent tombant chaque nuit",
+        "Un ciel gris et bas, souvent pluvieux, l'air venant de la mer étant humide",
+        "Un temps sec et chaud, l'air s'asséchant en descendant des Cévennes vers la mer"
+       ],
+       "answer": 2,
+       "explanation": "Le marin est un vent de sud-est, chaud et humide, qui pousse l'air méditerranéen sur la côte et le relief : nuages bas, pluie, reliefs accrochés, parfois fortes pluies cévenoles. Ciel dégagé et air sec caractérisent au contraire la tramontane et le mistral."
+      },
+      {
+       "id": "u3s11q06",
+       "q": "Sous un anticyclone d'hiver, quelles régions françaises sont réputées pour leurs brouillards et stratus les plus tenaces ?",
+       "choices": [
+        "Le val de Saône, la plaine d'Alsace et le Bassin parisien",
+        "La Côte d'Azur, la Provence et la Corse",
+        "Les crêtes du Jura, des Vosges et du Massif central",
+        "Le Roussillon et le Languedoc, balayés par la tramontane"
+       ],
+       "answer": 0,
+       "explanation": "Sous l'inversion anticyclonique, l'air froid et humide stagne dans les plaines et les vallées, entretenu par les cours d'eau : val de Saône, plaine d'Alsace et Bassin parisien gardent souvent nuages bas et brouillards, parfois toute la journée. Les crêtes émergent au soleil au-dessus de l'inversion ; le vent assèche et dégage le Roussillon.",
+       "_longest": true
+      },
+      {
+       "id": "u3s11q07",
+       "q": "À quelle saison les épisodes méditerranéens, avec pluies diluviennes sur les Cévennes, sont-ils les plus fréquents ?",
+       "choices": [
+        "Au printemps, quand la neige fond sur le relief",
+        "En hiver, quand l'air polaire envahit le sud",
+        "En été, quand le mistral souffle le plus fort",
+        "En automne, quand la mer est encore chaude"
+       ],
+       "answer": 3,
+       "explanation": "De septembre à mi-décembre, la Méditerranée encore chaude fournit beaucoup de vapeur d'eau ; un flux de sud-est la pousse sur les Cévennes et les Pyrénées-Orientales, où elle est soulevée : orages et pluies diluviennes, plafonds très bas."
+      },
+      {
+       "id": "u3s11q08",
+       "q": "Aux latitudes de la France, jusqu'où la brise de mer pénètre-t-elle généralement dans les terres ?",
+       "choices": [
+        "Pas plus de 2 à 3 km du rivage",
+        "Couramment jusqu'à 150 à 200 km",
+        "Rarement au-delà de 40 à 50 km",
+        "Jusqu'au centre du pays, par vent faible"
+       ],
+       "answer": 2,
+       "explanation": "Aux latitudes tempérées, la brise de mer dépasse rarement 40 à 50 km à l'intérieur ; elle va bien plus loin sous les tropiques. Son front, souvent marqué par une ligne de cumulus, progresse vers l'intérieur au cours de l'après-midi."
+      },
+      {
+       "id": "u3s11q09",
+       "q": "Quelle configuration de pression déclenche typiquement le mistral et la tramontane ?",
+       "choices": [
+        "Un anticyclone à l'ouest (golfe de Gascogne) et une dépression sur le golfe de Gênes",
+        "Une dépression sur le golfe de Gascogne et un anticyclone centré sur l'Europe centrale",
+        "Un anticyclone sur le nord de l'Europe et une dépression creusée au large de l'Atlantique",
+        "Un marais barométrique étendu sur la France, avec un gradient de pression faible"
+       ],
+       "answer": 0,
+       "explanation": "Avec l'anticyclone à l'ouest et la dépression à l'est, le flux de nord à nord-ouest s'engouffre dans les couloirs du Rhône et du Lauragais. Dos au vent (vent de nord), les basses pressions sont bien à gauche, vers Gênes. Une dépression vers le golfe de Gascogne et un anticyclone à l'est donnent plutôt l'autan."
+      },
+      {
+       "id": "u3s11q10",
+       "q": "Pourquoi le mistral est-il particulièrement fort dans la basse vallée du Rhône ?",
+       "choices": [
+        "Parce que l'air se réchauffe en descendant la vallée et devient plus dense",
+        "Parce que la brise de mer s'ajoute à lui chaque après-midi",
+        "Parce que l'air est canalisé et accéléré entre les Alpes et le Massif central",
+        "Parce que la force de Coriolis y est plus forte qu'ailleurs en France"
+       ],
+       "answer": 2,
+       "explanation": "Le couloir rhodanien se resserre entre deux reliefs : l'air y est accéléré (effet Venturi), comme la bise entre Jura et Alpes. La force de Coriolis ne varie guère à l'échelle de la France, la brise de mer souffle du sud, en sens inverse du mistral, et un air qui se réchauffe devient moins dense.",
+       "_longest": true
+      },
+      {
+       "id": "u3s11q11",
+       "q": "Par mistral établi, quel temps rencontrez-vous généralement en Provence ?",
+       "choices": [
+        "Un ciel dégagé et une très bonne visibilité, mais un vent fort et turbulent",
+        "Des stratus bas, de la bruine et une visibilité médiocre, par vent de sud-est",
+        "Des orages fréquents l'après-midi sur le relief, avec un vent faible et variable",
+        "Un brouillard persistant le matin, puis un calme plat jusqu'en fin de journée"
+       ],
+       "answer": 0,
+       "explanation": "Le mistral amène un air froid et sec venu du nord : ciel clair, visibilité excellente. Mais les rafales de 80 à 100 km/h sont fréquentes, avec une forte turbulence mécanique près du relief et un vent de travers marqué sur les pistes."
+      },
+      {
+       "id": "u3s11q12",
+       "q": "Que signale souvent l'autan noir dans le Toulousain ?",
+       "choices": [
+        "Une dégradation pluvieuse ou orageuse, une dépression approchant",
+        "Un temps sec et ensoleillé durable, sous un anticyclone d'Europe centrale",
+        "Une vague de froid sec, l'air polaire arrivant par le nord-est",
+        "Une période de brouillards tenaces, le vent tombant chaque nuit"
+       ],
+       "answer": 0,
+       "explanation": "L'autan noir, doux et humide, souffle quand une dépression approche par l'Espagne ou le golfe de Gascogne : il précède souvent la pluie ou l'orage. L'autan blanc, sec et ensoleillé, accompagne au contraire un anticyclone sur l'Europe centrale. Les deux sont turbulents."
+      },
+      {
+       "id": "u3s11q13",
+       "q": "Pourquoi la bise forcit-elle souvent en arrivant sur le bassin lémanique, vers Genève ?",
+       "choices": [
+        "Parce que le lac Léman réchauffe l'air et accélère sa descente",
+        "Parce qu'elle est canalisée entre le Jura et les Alpes, qui se rapprochent",
+        "Parce que la force de Coriolis la dévie vers la gauche au-dessus du lac",
+        "Parce qu'elle descend des Alpes en foehn, plus chaude et plus rapide"
+       ],
+       "answer": 1,
+       "explanation": "Le couloir entre Jura et Préalpes se rétrécit du nord-est vers le sud-ouest : l'air de nord-est y est comprimé et accéléré, et la bise atteint souvent son maximum sur la rive ouest du Léman. C'est un vent froid et sec de plaine, pas un vent de foehn ; dans l'hémisphère nord, Coriolis dévie vers la droite.",
+       "_longest": true
+      },
+      {
+       "id": "u3s11q14",
+       "q": "Un fort vent de sud souffle sur les Pyrénées. Quel temps observe-t-on le plus probablement à Pau ?",
+       "choices": [
+        "Une pluie continue et des plafonds bas accrochés au relief, côté français",
+        "Un brouillard givrant persistant, piégé sous une forte inversion de subsidence",
+        "Un air doux et sec, un ciel dégagé et de la turbulence près du relief",
+        "Des averses de neige et de grésil dans un air froid et instable de traîne"
+       ],
+       "answer": 2,
+       "explanation": "Par vent de sud, l'air se décharge de son humidité sur le versant espagnol (mur de foehn sur les crêtes) puis redescend en se réchauffant et en s'asséchant sur le Béarn : douceur remarquable, parfois des records de chaleur à Pau ou Biarritz. Sous le vent du relief, ondes et rotors rendent le vol turbulent ; la pluie reste côté espagnol."
+      },
+      {
+       "id": "u3s11q15",
+       "q": "En début d'après-midi, près de la côte, une ligne de cumulus parallèle au rivage progresse lentement vers l'intérieur des terres. De quoi s'agit-il le plus probablement ?",
+       "choices": [
+        "D'un front froid actif venu de la mer, suivi d'air froid",
+        "D'une ligne de grains liée à un orage déjà mûr au large",
+        "D'une onde orographique due aux collines du littoral",
+        "Du front de brise de mer, limite de l'air marin qui avance"
+       ],
+       "answer": 3,
+       "explanation": "L'air marin, plus frais et plus dense, s'avance sous l'air chauffé des terres et le soulève : une ligne de cumulus marque ce front de brise, avec convergence, ascendances et turbulence. Il progresse vers l'intérieur, rarement au-delà de 40 à 50 km. Un front froid ou une ligne de grains s'accompagneraient d'une dégradation bien plus marquée.",
+       "_longest": true
+      },
+      {
+       "id": "u3s11q16",
+       "q": "L'anticyclone des Açores reste centré sur l'archipel, au large du Portugal, et les dépressions circulent de l'Atlantique vers les îles Britanniques. Quel temps prévaut sur la moitié nord de la France ?",
+       "choices": [
+        "Un temps sec et calme durable, avec des brouillards matinaux tenaces en plaine",
+        "Un vent de nord-est froid et sec, sous un ciel dégagé et une bonne visibilité",
+        "Des perturbations successives, un vent d'ouest soutenu et des averses",
+        "Des orages isolés l'après-midi, dans un air chaud, lourd et presque calme"
+       ],
+       "answer": 2,
+       "explanation": "C'est le flux d'ouest perturbé : fronts chauds, secteurs chauds, fronts froids et traînes se succèdent, avec un vent soutenu. Les créneaux VFR sont courts, souvent dans la traîne, où la visibilité est excellente entre les averses. Les brouillards tenaces et la bise accompagnent des situations anticycloniques."
+      },
+      {
+       "id": "u3s11q17",
+       "q": "Le matin, la côte de la Manche est dégagée, mais le TAF de votre destination côtière annonce « BECMG 2413/2415 3000 BR BKN004 ». Comment organisez-vous le vol ?",
+       "choices": [
+        "Arriver vers 15 h UTC, la brume se dissipant avec le soleil",
+        "Arriver vers 14 h UTC, puis longer la côte en restant sous la couche",
+        "Arriver avant 13 h UTC et choisir un dégagement à l'intérieur des terres",
+        "Arriver en fin d'après-midi, une fois la brise de mer bien installée"
+       ],
+       "answer": 2,
+       "explanation": "BECMG 2413/2415 annonce une dégradation durable entre 13 et 15 h UTC : 3 km dans la brume et plafond à 400 ft, typique d'une entrée maritime portée par la brise de mer. Elle peut gagner la côte en quelques minutes ; on arrive avant 13 h avec un dégagement à l'intérieur, où l'air reste sec. Voler sous une couche à 400 ft est exclu.",
+       "_longest": true
+      },
+      {
+       "id": "u3s11q18",
+       "q": "Sur un aérodrome de Provence, piste 31, le METAR donne « 34025G40KT ». En négligeant la faible déclinaison, quelle est la composante de vent de travers dans les rafales ?",
+       "choices": [
+        "Environ 35 kt",
+        "Environ 20 kt",
+        "Environ 13 kt",
+        "Environ 40 kt"
+       ],
+       "answer": 1,
+       "explanation": "Angle entre le vent (340°) et la piste (310°) : 30° ; sin 30° = 0,5. Travers moyen : 25 × 0,5 ≈ 13 kt ; en rafales : 40 × 0,5 = 20 kt. 35 kt est la composante de face (40 × cos 30° ≈ 35). Par mistral, une telle valeur peut dépasser la limite démontrée d'un avion léger."
+      },
+      {
+       "id": "u3s11q19",
+       "q": "Vous allez de Perpignan à Toulouse : route 310°, 84 NM, vitesse propre 100 kt, par tramontane du 310° pour 30 kt. Quelle durée de vol prévoyez-vous ?",
+       "choices": [
+        "50 min",
+        "39 min",
+        "72 min",
+        "60 min"
+       ],
+       "answer": 2,
+       "explanation": "Le vent est exactement de face : vitesse sol = 100 − 30 = 70 kt. Durée = 84 / 70 = 1,2 h = 72 min. 50 min néglige le vent ; 39 min le compte comme un vent arrière (84 / 130). Prévoyez le carburant et la turbulence en conséquence."
+      },
+      {
+       "id": "u3s11q20",
+       "q": "Vous devez vous poser vers 15 h, par beau temps calme, sur un terrain situé au fond d'une vallée alpine. Quel vent et quel phénomène attendez-vous ?",
+       "choices": [
+        "Une brise descendant la vallée, avec un air calme et stable près du sol",
+        "Un calme plat, l'air froid de la nuit restant piégé au fond de la vallée",
+        "Une brise montante dans l'axe de la vallée, et des thermiques sur les pentes",
+        "Un vent de foehn descendant des crêtes, avec un ciel couvert sur la vallée"
+       ],
+       "answer": 2,
+       "explanation": "Le jour, l'air chauffé au contact des pentes s'élève et la brise remonte la vallée, surtout l'après-midi ; les pentes au soleil donnent des ascendances et de la turbulence, celles à l'ombre des descendances. La brise descendante est un phénomène de nuit et de début de matinée : le sens du vent sur la piste s'inverse dans la journée.",
+       "_longest": true
+      },
+      {
+       "id": "u3s11q21",
+       "q": "Un fort vent de sud souffle sur les Alpes (foehn). Vous prévoyez de franchir un col du nord vers le sud. Que redoutez-vous ?",
+       "choices": [
+        "Un ciel dégagé au nord comme au sud, le foehn asséchant l'air des deux versants",
+        "Des cols bouchés au sud par le mur de foehn, et des descendances au nord",
+        "Des brouillards de rayonnement dans les vallées du versant nord",
+        "Une brise de vallée renforcée, avec un air calme au passage du col"
+       ],
+       "answer": 1,
+       "explanation": "Le vent de sud monte le versant italien, s'y refroidit et condense : nuages et précipitations coiffent les crêtes et bouchent les cols. Il redescend sur le versant nord en se réchauffant et en s'asséchant : ciel clair trompeur, fortes descendances, turbulence et rotors en approchant des crêtes. On ne s'engage pas."
+      },
+      {
+       "id": "u3s11q22",
+       "q": "En juillet, l'air reste chaud et humide près du sol sur le Massif central, et une goutte froide approche. Quel effet a-t-elle sur la masse d'air ?",
+       "choices": [
+        "Elle installe une inversion en altitude, qui limite le développement des nuages",
+        "Elle renforce la subsidence et assèche l'air, ce qui limite la convection",
+        "Elle refroidit d'abord le sol, ce qui stabilise les basses couches",
+        "Elle accentue la baisse de température avec l'altitude : l'air devient instable"
+       ],
+       "answer": 3,
+       "explanation": "La goutte froide est une poche d'air froid en altitude. Sous elle, l'écart entre le sol chaud et l'air d'altitude se creuse : la température décroît plus vite avec l'altitude et l'air devient instable. Avec l'humidité et l'échauffement du relief, les cumulus bourgeonnent dès la fin de matinée et des orages éclatent l'après-midi et le soir. Une inversion ou une subsidence auraient l'effet inverse."
+      },
+      {
+       "id": "u3s11q23",
+       "q": "En juillet, une dorsale de l'anticyclone des Açores couvre la France et il fait 34 °C l'après-midi. Quels points de vigilance retenez-vous pour un vol VFR à cette heure ?",
+       "choices": [
+        "Le givrage de la cellule et les plafonds bas sous une inversion nocturne",
+        "Les rafales de mistral et les rotors qui se forment sous le vent des reliefs",
+        "La brume sèche, gênante à contre-jour, et une altitude-densité élevée",
+        "La pluie continue et les plafonds bas liés à un front chaud stationnaire"
+       ],
+       "answer": 2,
+       "explanation": "Sous la dorsale, la subsidence crée un air stable et sec : poussières et polluants s'accumulent (brume sèche, HZ), la visibilité oblique chute face au soleil. La chaleur augmente l'altitude-densité : roulage plus long et montée plus faible. Givrage et front chaud ne concernent pas cette situation."
+      },
+      {
+       "id": "u3s11q24",
+       "q": "Une dépression se creuse vers les Baléares et un flux de sud-est s'établit sur le golfe du Lion. Que redoutez-vous pour un vol VFR de Montpellier vers Mende, en Lozère ?",
+       "choices": [
+        "Des nuages bas, de la pluie et des reliefs cévenols bouchés",
+        "Une tramontane violente, avec un ciel clair et une forte turbulence",
+        "Une brume sèche épaisse, sous un anticyclone chaud et stable",
+        "Une bise glaciale, avec des stratus piégés sous une inversion"
+       ],
+       "answer": 0,
+       "explanation": "C'est un retour d'est : le marin pousse l'air méditerranéen humide sur le Languedoc, où il est soulevé par les Cévennes. Plafonds bas, pluie, reliefs dans les nuages : le vol vers Mende, terrain de plateau, est très compromis, surtout en automne lors des épisodes méditerranéens. La tramontane et la bise accompagnent des flux de nord."
+      }
+     ]
+    },
+    {
+     "id": "u3s12",
+     "title": "Décoder METAR, TAF et TEMSI (entraînement)",
+     "icon": "🧾",
+     "tips": "Méthode : lire le message groupe par groupe, dans l'ordre, puis le traduire en décision (plafond, visibilité, vent de travers, évolution prévue). Toutes les heures sont en UTC.\n\nMETAR et SPECI, groupe par groupe :\n• En-tête : type, indicatif OACI, jour et heure (241030Z) ; AUTO si le message est établi par une station automatique, sans observateur.\n• Vent (direction vraie, moyenne sur 10 min) : 23015KT. 00000KT : calme. VRB : direction variable, par vent faible (moins de 3 kt) ou si elle varie de 180° ou plus. 200V270 : direction variant de 60° ou plus, vent moyen d'au moins 3 kt. G27 : rafales, signalées si elles dépassent la moyenne de 10 kt ou plus.\n• Visibilité dominante en mètres (9999 : 10 km ou plus). Une visibilité minimale avec sa direction (1200NE) s'ajoute si elle est inférieure à 1 500 m, ou à la fois inférieure à 50 % de la dominante et à 5 000 m.\n• RVR, donnée quand la visibilité ou la RVR est inférieure à 1 500 m : R03/1100U = piste 03, 1 100 m, en hausse (D : en baisse, N : sans changement) ; P2000 : plus de 2 000 m ; M0050 : moins de 50 m.\n• Temps présent, dans l'ordre : intensité (− faible, sans signe modéré, + fort) ou VC (au voisinage, pas sur l'aérodrome), descripteur, phénomène. Descripteurs : MI mince, BC bancs, PR partiel, DR chasse-basse, BL chasse-haute, SH averse, TS orage, FZ se congelant. Phénomènes : DZ, RA, SN, SG neige en grains, PL granules de glace, GR grêle, GS grésil, BR, FG, HZ, FU fumée, SQ grain.\n• Nuages : FEW, SCT, BKN, OVC et base au-dessus de l'aérodrome en centaines de pieds ; seuls CB et TCU (cumulus bourgeonnant) sont précisés. VV : ciel invisible, visibilité verticale. NSC : pas de nuage significatif ; NCD : aucun nuage détecté par la station automatique ; /// : non mesuré.\n• CAVOK, température/point de rosée (M = négatif), QNH (Q0997).\n• Suppléments : RE = temps récent, observé depuis le message précédent mais plus maintenant (RETSRA) ; WS = cisaillement.\n• Tendance (2 h) : NOSIG, BECMG ou TEMPO, précisés par FM (à partir de), TL (jusqu'à), AT (à) ; NSW = fin du temps significatif.\n\nExemple : METAR LFRS 241030Z 23015G27KT 200V270 3000 1200NE R03/1100U -SHRA BR SCT006 BKN012CB 09/08 Q0997 TEMPO 1500 TSRA\nPlafond 1 200 ft (BKN de cumulonimbus) et visibilité de 3 km, sous les 1 500 ft et 5 km exigés en CTR, un secteur à 1,2 km, rafales à 27 kt et orage annoncé : on ne part pas.\n\nTAF :\n• TAF LFBO 241100Z 2412/2512 : émis le 24 à 11 h, valable du 24 à 12 h au 25 à 12 h. TAF courts de 9 h (toutes les 3 h), TAF longs de 24 ou 30 h (toutes les 6 h). AMD : TAF amendé. En France, TX/TN donnent les températures maximale et minimale prévues, avec leur heure (TX18/2414Z).\n• À une heure donnée : conditions de base, modifiées par les BECMG achevés et par le dernier FM, qui remplace tout ; pendant un BECMG, les deux états sont possibles ; TEMPO et PROB30/40 s'y superposent.\n• Pour décider, retenez à l'heure prévue les conditions les plus défavorables annoncées (TEMPO, PROB), avec une marge avant et après.\n\nTEMSI France (surface au FL 150, pour une heure de validité donnée) :\n• Fronts, avec flèche et vitesse de déplacement en nœuds.\n• Zones délimitées par des lignes festonnées, parfois numérotées et décrites dans un cartouche : nébulosité et type de nuages, base/sommet en centaines de pieds (025/080), temps prévu, visibilité, givrage et turbulence (MOD modéré, SEV fort) avec leurs limites.\n• CB : ISOL, OCNL, FRQ ou EMBD (noyés). Un CB implique givrage et turbulence modérés à forts et grêle possible. XXX : limite au-delà de la carte (sommet au-dessus du FL 150).\n• Isotherme 0 °C : au-dessus, nuages et précipitations sont potentiellement givrants.\n\nWINTEM :\n• Vent et température prévus en des points, aux niveaux FL 020, 050, 100 et au-dessus. La hampe pointe vers la direction d'où vient le vent ; barbule 10 kt, demi-barbule 5 kt, fanion 50 kt. Hampe vers l'ouest, deux barbules et une demie : vent du 270° pour 25 kt.\n• On interpole entre deux niveaux pour l'altitude de croisière.\n\nDécision VFR :\n• Plafond et visibilité face aux minimums : en CTR, 1 500 ft et 5 km pour décoller ou atterrir en VFR, sinon VFR spécial ; de nuit, plafond d'au moins 1 500 ft ; en route, minimums VMC de l'espace traversé.\n• Vent : composante de travers en rafales, comparée à la limite démontrée.\n• Évolution : un TEMPO orageux ou un FM défavorable à l'heure d'arrivée impose de reporter, d'avancer ou de changer de destination.",
+     "vocab": [
+      {
+       "term": "AUTO",
+       "translation": "METAR établi par une station automatique, sans observateur"
+      },
+      {
+       "term": "VRB",
+       "translation": "Direction du vent variable (vent faible ou variation ≥ 180°)"
+      },
+      {
+       "term": "RVR",
+       "translation": "Portée visuelle de piste, en mètres, avec tendance U, D ou N"
+      },
+      {
+       "term": "TCU",
+       "translation": "Cumulus bourgeonnant (towering cumulus)"
+      },
+      {
+       "term": "NCD",
+       "translation": "Aucun nuage détecté par une station automatique"
+      },
+      {
+       "term": "NSC",
+       "translation": "Pas de nuage significatif"
+      },
+      {
+       "term": "RE",
+       "translation": "Temps récent : observé avant, mais plus au moment du message"
+      },
+      {
+       "term": "VC",
+       "translation": "Phénomène au voisinage, pas sur l'aérodrome"
+      },
+      {
+       "term": "GS",
+       "translation": "Grésil, petits grains de glace ou de neige roulée"
+      },
+      {
+       "term": "NSW",
+       "translation": "Fin du temps significatif prévu (TAF ou tendance)"
+      },
+      {
+       "term": "TX / TN",
+       "translation": "Températures maximale et minimale prévues dans un TAF"
+      },
+      {
+       "term": "AMD",
+       "translation": "TAF amendé"
+      },
+      {
+       "term": "FM / TL / AT",
+       "translation": "Tendance : à partir de, jusqu'à, à (heure UTC)"
+      },
+      {
+       "term": "XXX",
+       "translation": "TEMSI : limite au-delà de la carte (ex. sommet au-dessus du FL 150)"
+      },
+      {
+       "term": "Barbule",
+       "translation": "Trait de 10 kt sur une barbe de vent (demi : 5 kt, fanion : 50 kt)"
+      },
+      {
+       "term": "Festons",
+       "translation": "Lignes festonnées délimitant une zone nuageuse sur la TEMSI"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Un METAR décodé groupe par groupe",
+       "svg": "<svg viewBox=\"0 0 700 482\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"482\" fill=\"#ffffff\"/><rect x=\"10\" y=\"10\" width=\"680\" height=\"66\" rx=\"8\" fill=\"#0f172a\"/><text x=\"24.0\" y=\"37.0\" font-size=\"16\" fill=\"#e2e8f0\" text-anchor=\"start\" font-family=\"Courier New, monospace\">METAR LFRS 241030Z 23015G27KT 200V270 3000 1200NE</text><text x=\"24.0\" y=\"61.0\" font-size=\"16\" fill=\"#e2e8f0\" text-anchor=\"start\" font-family=\"Courier New, monospace\">R03/1100U -SHRA BR SCT006 BKN012CB 09/08 Q0997 TEMPO 1500 TSRA</text><rect x=\"10\" y=\"92\" width=\"680\" height=\"34\" fill=\"#f8fafc\"/><rect x=\"10\" y=\"92\" width=\"6\" height=\"34\" fill=\"#1d4ed8\"/><text x=\"26.0\" y=\"115.0\" font-size=\"17\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">METAR LFRS 241030Z</text><text x=\"236.0\" y=\"115.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">Nantes, le 24 à 10 h 30 UTC</text><rect x=\"10\" y=\"126\" width=\"680\" height=\"34\" fill=\"#ffffff\"/><rect x=\"10\" y=\"126\" width=\"6\" height=\"34\" fill=\"#0e7490\"/><text x=\"26.0\" y=\"149.0\" font-size=\"17\" fill=\"#0e7490\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">23015G27KT</text><text x=\"236.0\" y=\"149.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">Vent du 230° vrai, 15 kt, rafales 27 kt</text><rect x=\"10\" y=\"160\" width=\"680\" height=\"34\" fill=\"#f8fafc\"/><rect x=\"10\" y=\"160\" width=\"6\" height=\"34\" fill=\"#0e7490\"/><text x=\"26.0\" y=\"183.0\" font-size=\"17\" fill=\"#0e7490\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">200V270</text><text x=\"236.0\" y=\"183.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">Direction variant entre 200° et 270°</text><rect x=\"10\" y=\"194\" width=\"680\" height=\"34\" fill=\"#ffffff\"/><rect x=\"10\" y=\"194\" width=\"6\" height=\"34\" fill=\"#7c3aed\"/><text x=\"26.0\" y=\"217.0\" font-size=\"17\" fill=\"#7c3aed\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">3000 1200NE</text><text x=\"236.0\" y=\"217.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">Visibilité 3 000 m ; minimale 1 200 m au NE</text><rect x=\"10\" y=\"228\" width=\"680\" height=\"34\" fill=\"#f8fafc\"/><rect x=\"10\" y=\"228\" width=\"6\" height=\"34\" fill=\"#7c3aed\"/><text x=\"26.0\" y=\"251.0\" font-size=\"17\" fill=\"#7c3aed\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">R03/1100U</text><text x=\"236.0\" y=\"251.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">RVR piste 03 : 1 100 m, en hausse</text><rect x=\"10\" y=\"262\" width=\"680\" height=\"34\" fill=\"#ffffff\"/><rect x=\"10\" y=\"262\" width=\"6\" height=\"34\" fill=\"#059669\"/><text x=\"26.0\" y=\"285.0\" font-size=\"17\" fill=\"#059669\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">-SHRA BR</text><text x=\"236.0\" y=\"285.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">Faibles averses de pluie, brume</text><rect x=\"10\" y=\"296\" width=\"680\" height=\"34\" fill=\"#f8fafc\"/><rect x=\"10\" y=\"296\" width=\"6\" height=\"34\" fill=\"#b45309\"/><text x=\"26.0\" y=\"319.0\" font-size=\"17\" fill=\"#b45309\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">SCT006</text><text x=\"236.0\" y=\"319.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">3 à 4 octas, base 600 ft</text><rect x=\"10\" y=\"330\" width=\"680\" height=\"34\" fill=\"#ffffff\"/><rect x=\"10\" y=\"330\" width=\"6\" height=\"34\" fill=\"#b45309\"/><text x=\"26.0\" y=\"353.0\" font-size=\"17\" fill=\"#b45309\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">BKN012CB</text><text x=\"236.0\" y=\"353.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">5 à 7 octas de CB à 1 200 ft : plafond</text><rect x=\"10\" y=\"364\" width=\"680\" height=\"34\" fill=\"#f8fafc\"/><rect x=\"10\" y=\"364\" width=\"6\" height=\"34\" fill=\"#be123c\"/><text x=\"26.0\" y=\"387.0\" font-size=\"17\" fill=\"#be123c\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">09/08</text><text x=\"236.0\" y=\"387.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">Température 9 °C, point de rosée 8 °C</text><rect x=\"10\" y=\"398\" width=\"680\" height=\"34\" fill=\"#ffffff\"/><rect x=\"10\" y=\"398\" width=\"6\" height=\"34\" fill=\"#be123c\"/><text x=\"26.0\" y=\"421.0\" font-size=\"17\" fill=\"#be123c\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">Q0997</text><text x=\"236.0\" y=\"421.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">QNH 997 hPa</text><rect x=\"10\" y=\"432\" width=\"680\" height=\"34\" fill=\"#f8fafc\"/><rect x=\"10\" y=\"432\" width=\"6\" height=\"34\" fill=\"#c2410c\"/><text x=\"26.0\" y=\"455.0\" font-size=\"17\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"bold\" font-family=\"Courier New, monospace\">TEMPO 1500 TSRA</text><text x=\"236.0\" y=\"455.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\">2 h : par moments 1 500 m, orage et pluie</text><line x1=\"226\" y1=\"92\" x2=\"226\" y2=\"466\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"92\" width=\"680\" height=\"374\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/></svg>",
+       "caption": "Chaque groupe se lit dans un ordre fixe. Ici, le plafond (BKN de cumulonimbus à 1 200 ft) et la visibilité (3 000 m) sont sous les 1 500 ft et 5 km exigés en CTR ; avec les rafales et l'orage annoncé en tendance, on renonce au vol VFR."
+      },
+      {
+       "title": "Lire un TAF sur une frise horaire",
+       "svg": "<svg viewBox=\"0 0 700 360\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><pattern id=\"u3s12f2h\" width=\"10\" height=\"10\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"10\" height=\"10\" fill=\"#fef9c3\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"10\" stroke=\"#ca8a04\" stroke-width=\"4\"/></pattern></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"360\" fill=\"#ffffff\"/><rect x=\"10\" y=\"8\" width=\"680\" height=\"76\" rx=\"8\" fill=\"#0f172a\"/><text x=\"22.0\" y=\"31.0\" font-size=\"16\" fill=\"#e2e8f0\" text-anchor=\"start\" font-family=\"Courier New, monospace\">TAF LFBO 241100Z 2412/2512 24010KT 9999 SCT040</text><text x=\"22.0\" y=\"53.0\" font-size=\"16\" fill=\"#e2e8f0\" text-anchor=\"start\" font-family=\"Courier New, monospace\">BECMG 2415/2417 30015G25KT TEMPO 2417/2423 4000 SHRA BKN012</text><text x=\"22.0\" y=\"75.0\" font-size=\"16\" fill=\"#e2e8f0\" text-anchor=\"start\" font-family=\"Courier New, monospace\">PROB30 TEMPO 2419/2422 TSRA FM250600 33008KT CAVOK</text><line x1=\"266.7\" y1=\"100\" x2=\"266.7\" y2=\"306\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\"/><text x=\"272.7\" y=\"110.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Arrivée prévue 20 h</text><text x=\"8.0\" y=\"149.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\">Base</text><rect x=\"60.0\" y=\"118\" width=\"77.5\" height=\"52\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"98.8\" y=\"140.0\" font-size=\"15\" fill=\"#14532d\" text-anchor=\"middle\" font-weight=\"bold\">24010KT</text><text x=\"98.8\" y=\"159.0\" font-size=\"15\" fill=\"#14532d\" text-anchor=\"middle\">SCT040</text><rect x=\"137.5\" y=\"118\" width=\"51.7\" height=\"52\" fill=\"url(#u3s12f2h)\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"163.3\" y=\"110.0\" font-size=\"15\" fill=\"#a16207\" text-anchor=\"middle\" font-weight=\"bold\">BECMG</text><rect x=\"189.2\" y=\"118\" width=\"335.8\" height=\"52\" fill=\"#fef9c3\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/><text x=\"417.1\" y=\"140.0\" font-size=\"16\" fill=\"#713f12\" text-anchor=\"middle\" font-weight=\"bold\">30015G25KT</text><text x=\"417.1\" y=\"159.0\" font-size=\"16\" fill=\"#713f12\" text-anchor=\"middle\">9999 SCT040</text><rect x=\"525.0\" y=\"118\" width=\"155.0\" height=\"52\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"1.5\"/><text x=\"602.5\" y=\"140.0\" font-size=\"16\" fill=\"#14532d\" text-anchor=\"middle\" font-weight=\"bold\">FM : 33008KT</text><text x=\"602.5\" y=\"159.0\" font-size=\"16\" fill=\"#14532d\" text-anchor=\"middle\">CAVOK</text><text x=\"8.0\" y=\"210.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\">TEMPO</text><rect x=\"189.2\" y=\"182\" width=\"155.0\" height=\"46\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"1.5\"/><text x=\"266.7\" y=\"202.0\" font-size=\"15\" fill=\"#9a3412\" text-anchor=\"middle\" font-weight=\"bold\">4000 SHRA</text><text x=\"266.7\" y=\"220.0\" font-size=\"15\" fill=\"#9a3412\" text-anchor=\"middle\">BKN012</text><text x=\"8.0\" y=\"260.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\">PROB</text><text x=\"8.0\" y=\"278.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\">30</text><rect x=\"240.8\" y=\"240\" width=\"77.5\" height=\"46\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"279.6\" y=\"260.0\" font-size=\"15\" fill=\"#991b1b\" text-anchor=\"middle\" font-weight=\"bold\">TEMPO</text><text x=\"279.6\" y=\"278.0\" font-size=\"15\" fill=\"#991b1b\" text-anchor=\"middle\" font-weight=\"bold\">TSRA</text><line x1=\"60\" y1=\"306\" x2=\"680\" y2=\"306\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"60.0\" y1=\"300\" x2=\"60.0\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"60.0\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">12</text><line x1=\"137.5\" y1=\"300\" x2=\"137.5\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"137.5\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">15</text><line x1=\"215.0\" y1=\"300\" x2=\"215.0\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"215.0\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">18</text><line x1=\"292.5\" y1=\"300\" x2=\"292.5\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"292.5\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">21</text><line x1=\"370.0\" y1=\"300\" x2=\"370.0\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"370.0\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">00</text><line x1=\"447.5\" y1=\"300\" x2=\"447.5\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"447.5\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">03</text><line x1=\"525.0\" y1=\"300\" x2=\"525.0\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"525.0\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">06</text><line x1=\"602.5\" y1=\"300\" x2=\"602.5\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"602.5\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">09</text><line x1=\"680.0\" y1=\"300\" x2=\"680.0\" y2=\"312\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"680.0\" y=\"330.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"middle\">12</text><text x=\"60.0\" y=\"350.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">le 24</text><text x=\"370.0\" y=\"350.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">le 25</text><text x=\"680.0\" y=\"350.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"end\">h UTC</text></svg>",
+       "caption": "Le vent passe au 300°/15 kt, rafales 25 kt, entre 15 et 17 h UTC (BECMG) ; de 17 à 23 h s'ajoutent des épisodes d'averses (TEMPO) et un risque de 30 % d'orage de 19 à 22 h. À une arrivée vers 20 h, on retient le pire. À partir du 25 à 06 h UTC, FM remplace tout : 33008KT CAVOK."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u3s12q01",
+       "q": "Que signifie le groupe « VRB02KT » dans le METAR « LFRS 240700Z VRB02KT 0300 R03/0450N FG VV001 03/03 Q1021 » ?",
+       "choices": [
+        "Vent du 020° pour 2 kt, direction variable",
+        "Vent variable de 0 à 2 kt, venant du nord",
+        "Vent calme, avec des rafales à 2 kt",
+        "Vent faible de 2 kt, de direction variable"
+       ],
+       "answer": 3,
+       "explanation": "VRB indique une direction variable : on l'emploie par vent faible (moins de 3 kt) ou quand la direction varie de 180° ou plus. 02KT est la vitesse moyenne. Un vent calme s'écrirait 00000KT et un vent du 020° pour 2 kt, 02002KT."
+      },
+      {
+       "id": "u3s12q02",
+       "q": "Le METAR « LFOT 240600Z AUTO 00000KT 9999 NCD 04/03 Q1024 » porte la mention AUTO. Que signifie-t-elle ?",
+       "choices": [
+        "Le message a été établi par une station automatique, sans observateur",
+        "Le message a été corrigé par le système après une erreur de saisie",
+        "Les conditions observées sont compatibles avec le vol VFR",
+        "Le message est émis à intervalle fixe, sans SPECI possible"
+       ],
+       "answer": 0,
+       "explanation": "AUTO signale un METAR entièrement automatique, fréquent la nuit ou sur les terrains sans observateur. Certains éléments y sont moins complets : la station peut ne pas identifier les CB ou les TCU, ni voir des nuages hors de portée de ses capteurs. Une correction s'indique par COR.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q03",
+       "q": "Dans le METAR « LFRS 240700Z VRB02KT 0300 R03/0450N FG VV001 03/03 Q1021 », que signifie « R03/0450N » ?",
+       "choices": [
+        "Piste 03 : visibilité de 450 ft, en baisse rapide",
+        "Piste 03 en service, longueur disponible 450 m",
+        "Portée visuelle de piste 03 : 450 m, en hausse depuis 10 min",
+        "Portée visuelle de piste 03 : 450 m, sans tendance nette"
+       ],
+       "answer": 3,
+       "explanation": "Le groupe R donne la RVR : numéro de piste, valeur en mètres, puis tendance (U en hausse, D en baisse, N sans changement notable). Elle est fournie quand la visibilité ou la RVR est inférieure à 1 500 m, comme ici avec 300 m dans le brouillard."
+      },
+      {
+       "id": "u3s12q04",
+       "q": "Que signifie le groupe « -SHGS » dans un METAR ?",
+       "choices": [
+        "De faibles averses de grésil",
+        "De fortes averses de grêle",
+        "De la neige en grains, faible et continue",
+        "Des averses de neige faibles au voisinage"
+       ],
+       "answer": 0,
+       "explanation": "Le signe − indique une intensité faible, SH une averse et GS le grésil (petits grains de glace ou de neige roulée). La grêle se code GR, la neige en grains SG, et un phénomène au voisinage VC. Le grésil accompagne les averses des nuages convectifs, en traîne par exemple."
+      },
+      {
+       "id": "u3s12q05",
+       "q": "Dans le METAR « LFOT 240600Z AUTO 00000KT 9999 NCD 04/03 Q1024 », que signifie NCD ?",
+       "choices": [
+        "Les capteurs de la station n'ont détecté aucun nuage",
+        "Le ciel est dégagé et les conditions CAVOK sont remplies",
+        "Il n'y a pas de nuage significatif au-dessous de 5 000 ft",
+        "La couverture nuageuse n'a pas pu être transmise"
+       ],
+       "answer": 0,
+       "explanation": "NCD (no cloud detected) est propre aux stations automatiques : les capteurs ne voient aucun nuage, ce qui ne garantit ni l'absence de nuages hors de leur portée ni celle de CB. NSC, émis par un observateur, signifie « pas de nuage significatif » ; une donnée manquante s'écrit ///."
+      },
+      {
+       "id": "u3s12q06",
+       "q": "Dans le METAR « … 9999 FEW030 M01/M04 Q0998 », que valent la température, le point de rosée et le QNH ?",
+       "choices": [
+        "1 °C, 4 °C et 998 hPa",
+        "−1 °C, −4 °C et 998 hPa",
+        "−4 °C, −1 °C et 998 hPa",
+        "−1 °C, −4 °C et un QFE de 998 hPa"
+       ],
+       "answer": 1,
+       "explanation": "M signifie « moins » : M01 = −1 °C et M04 = −4 °C. La température est donnée avant le point de rosée, qui ne peut pas lui être supérieur. Q0998 est le QNH en hectopascals, pas le QFE."
+      },
+      {
+       "id": "u3s12q07",
+       "q": "Que signifie « SCT025TCU » dans un METAR ?",
+       "choices": [
+        "3 à 4 octas de cumulonimbus, base à 2 500 ft",
+        "5 à 7 octas de cumulus bourgeonnants, base à 2 500 ft",
+        "3 à 4 octas de cumulus de beau temps, base à 250 ft",
+        "3 à 4 octas de cumulus bourgeonnants, base à 2 500 ft"
+       ],
+       "answer": 3,
+       "explanation": "SCT (épars) vaut 3 à 4 octas et 025 donne la base à 2 500 ft au-dessus du terrain. TCU désigne les cumulus bourgeonnants, signe d'instabilité et précurseurs possibles de CB. Seuls CB et TCU sont précisés dans un METAR ; les cumulus de beau temps ne le sont pas."
+      },
+      {
+       "id": "u3s12q08",
+       "q": "Le TAF « TAF LFRS 240500Z 2406/2512 … » est valable :",
+       "choices": [
+        "du 24 à 06 h UTC au 25 à 12 h UTC, soit 30 heures",
+        "du 24 à 05 h UTC au 25 à 12 h UTC, soit 31 heures",
+        "du 24 à 06 h UTC au 25 à 12 h UTC, soit 24 heures",
+        "du 24 à 06 h au 25 à 12 h, heure légale"
+       ],
+       "answer": 0,
+       "explanation": "2406/2512 = du jour 24 à 06 h au jour 25 à 12 h UTC, soit 30 heures (TAF long). 240500Z est l'heure d'émission, une heure avant le début de validité. Les heures des messages météo aéronautiques sont en UTC."
+      },
+      {
+       "id": "u3s12q09",
+       "q": "Le METAR indique « 27015G28KT 230V310 ». Pourquoi le groupe 230V310 y figure-t-il ?",
+       "choices": [
+        "La direction a varié d'au moins 60°, par vent moyen de 3 kt ou plus",
+        "Les rafales ont dépassé la vitesse moyenne de 10 kt ou plus en 10 min",
+        "La piste en service a changé de sens pendant l'observation",
+        "La direction a varié de 180° ou plus, par vent faible"
+       ],
+       "answer": 0,
+       "explanation": "Le groupe dddVddd donne les directions extrêmes, dans le sens horaire, quand la direction a varié de 60° ou plus (ici 80°) et que le vent moyen atteint au moins 3 kt. Les rafales sont signalées par G28. Une variation de 180° ou plus serait codée VRB."
+      },
+      {
+       "id": "u3s12q10",
+       "q": "Pendant les 10 minutes précédant l'observation, le vent moyen est de 12 kt avec des pointes à 18 kt. Pourquoi le METAR ne comporte-t-il pas de groupe G ?",
+       "choices": [
+        "Les rafales n'y figurent que si la vitesse maximale dépasse 25 kt au total",
+        "Les rafales sont réservées aux SPECI émis entre deux METAR réguliers",
+        "Les rafales n'y figurent que si elles dépassent la moyenne de 10 kt ou plus",
+        "Les pointes sont déjà intégrées dans la vitesse moyenne affichée de 12 kt"
+       ],
+       "answer": 2,
+       "explanation": "Le groupe G apparaît quand la vitesse maximale dépasse la moyenne sur 10 min d'au moins 10 kt. Ici, 18 − 12 = 6 kt : pas de rafale codée, même si le vent reste irrégulier. Les rafales figurent dans les METAR comme dans les SPECI.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q11",
+       "q": "Que signifie le groupe « 2500 0900NE » dans un METAR ?",
+       "choices": [
+        "Visibilité de 2 500 m au sol et de 900 m en vol vers le nord-est",
+        "Visibilité dominante 2 500 m, minimale 900 m vers le nord-est",
+        "Visibilité variable entre 900 et 2 500 m, selon les moments",
+        "Visibilité de 2 500 m, RVR de 900 m sur la piste orientée au nord-est"
+       ],
+       "answer": 1,
+       "explanation": "La visibilité minimale s'ajoute, avec sa direction, quand elle est inférieure à 1 500 m, ou à 50 % de la dominante et à 5 000 m. Ici, 900 m vers le nord-est : un banc de brouillard ou une averse de ce côté. La RVR se code dans un groupe R, par exemple R03/0900N."
+      },
+      {
+       "id": "u3s12q12",
+       "q": "Un METAR mentionne « VCSH ». Comment l'interprétez-vous ?",
+       "choices": [
+        "Des averses faibles sur l'aérodrome, d'intensité variable",
+        "Des averses de neige mêlée de pluie sur l'aérodrome",
+        "Des averses au voisinage, pas sur l'aérodrome même",
+        "Des averses qui viennent de cesser sur l'aérodrome"
+       ],
+       "answer": 2,
+       "explanation": "VC (vicinity) signale un phénomène observé au voisinage de l'aérodrome, sans l'atteindre au moment de l'observation : ici des averses, à surveiller car elles se déplacent. Une averse faible s'écrirait -SHRA ; une averse terminée apparaîtrait en temps récent (RESHRA)."
+      },
+      {
+       "id": "u3s12q13",
+       "q": "Un METAR se termine par « … 12/11 Q1009 RETSRA NOSIG ». Que signifie RETSRA ?",
+       "choices": [
+        "Un orage avec pluie est en cours sur l'aérodrome au moment de l'observation",
+        "Un orage avec pluie a eu lieu depuis le message précédent, mais a cessé",
+        "Un orage avec pluie est prévu sur l'aérodrome dans les deux prochaines heures",
+        "Un orage avec pluie est signalé sur la route par un SIGMET en vigueur"
+       ],
+       "answer": 1,
+       "explanation": "RE (recent) introduit le temps récent : phénomène observé sur l'aérodrome depuis le message précédent, au plus dans l'heure écoulée, mais plus au moment de l'observation. Il renseigne sur l'activité orageuse de la zone, même si NOSIG ne prévoit pas de changement significatif dans les 2 heures."
+      },
+      {
+       "id": "u3s12q14",
+       "q": "Que signifie la tendance « TEMPO FM1015 TL1100 3000 SHRA » à la fin d'un METAR de 0930Z ?",
+       "choices": [
+        "Entre 10 h 15 et 11 h UTC, épisodes temporaires à 3 000 m sous averses",
+        "Dès 10 h 15 UTC, visibilité réduite durablement à 3 000 m",
+        "Averses de 10 h 15 à 11 h, heure légale, avec 3 000 m de visibilité",
+        "Averses temporaires pendant 1 h 15, à partir de 11 h UTC"
+       ],
+       "answer": 0,
+       "explanation": "Dans la tendance (2 heures), FM indique le début et TL la fin de la période : de 10 h 15 à 11 h UTC, la visibilité baisse par moments à 3 000 m sous averses, puis revient aux conditions observées. Une évolution durable s'annoncerait par BECMG.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q15",
+       "q": "Un TAF contient « TEMPO 2414/2418 4000 RA BKN012 BECMG 2418/2420 NSW ». Que signifie NSW ?",
+       "choices": [
+        "La fin de la couche nuageuse BKN à 1 200 ft",
+        "La fin du temps significatif prévu : la pluie cesse",
+        "Une absence de vent significatif sur l'aérodrome",
+        "Un retour à CAVOK, visibilité de 10 km ou plus"
+       ],
+       "answer": 1,
+       "explanation": "NSW (nil significant weather) annonce la fin des phénomènes de temps significatif, ici la pluie. Il ne dit rien des nuages ni de la visibilité, qui gardent les valeurs prévues par ailleurs : ce n'est pas CAVOK.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q16",
+       "q": "Un TAF français contient « TX19/2414Z TN07/2505Z ». Que signifient ces groupes ?",
+       "choices": [
+        "Maximale 19 °C le 24 à 14 h UTC, minimale 7 °C le 25 à 05 h UTC",
+        "Température de 19 °C de 14 h à 05 h UTC, puis de 7 °C le 25",
+        "Point de rosée maximal 19 °C et minimal 7 °C sur la validité",
+        "Isotherme 0 °C à 1 900 ft le 24, puis à 700 ft le 25"
+       ],
+       "answer": 0,
+       "explanation": "TX donne la température maximale prévue et TN la minimale, chacune avec son jour et son heure UTC. Une minimale de 7 °C en fin de nuit, comparée au point de rosée, aide à juger du risque de brouillard au matin.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q17",
+       "q": "Avec le TAF « TAF LFBO 241100Z 2412/2512 24010KT 9999 SCT040 BECMG 2415/2417 30015G25KT TEMPO 2417/2423 4000 SHRA BKN012 PROB30 TEMPO 2419/2422 TSRA FM250600 33008KT CAVOK », quel vent est prévu à 18 h UTC le 24 ?",
+       "choices": [
+        "240° pour 10 kt",
+        "300° pour 15 kt, rafales à 25 kt",
+        "330° pour 8 kt",
+        "Entre 240°/10 kt et 300°/15 kt, rafales à 25 kt"
+       ],
+       "answer": 1,
+       "explanation": "BECMG 2415/2417 fait évoluer durablement le vent entre 15 et 17 h UTC : à 18 h, l'évolution est achevée et le vent prévu est 300°/15 kt, rafales 25 kt. Les deux valeurs ne coexistent que pendant la période BECMG elle-même ; 33008KT ne s'applique qu'à partir du 25 à 06 h UTC (FM250600)."
+      },
+      {
+       "id": "u3s12q18",
+       "q": "Avec le TAF « TAF LFBO 241100Z 2412/2512 24010KT 9999 SCT040 BECMG 2415/2417 30015G25KT TEMPO 2417/2423 4000 SHRA BKN012 PROB30 TEMPO 2419/2422 TSRA FM250600 33008KT CAVOK », vous prévoyez d'arriver à Toulouse vers 20 h UTC le 24. Quelles conditions les plus défavorables devez-vous envisager ?",
+       "choices": [
+        "10 km ou plus et SCT040, les TEMPO étant ignorés pour l'arrivée",
+        "4 000 m sous averses, plafond à 1 200 ft, et un risque de 30 % d'orage",
+        "CAVOK, avec un vent du 330° pour 8 kt",
+        "4 000 m sous averses et plafond à 1 200 ft, l'orage étant exclu avant 22 h"
+       ],
+       "answer": 1,
+       "explanation": "À 20 h UTC, les conditions de base sont 30015G25KT 9999 SCT040, mais TEMPO 2417/2423 annonce des épisodes à 4 000 m sous averses avec BKN à 1 200 ft, et PROB30 TEMPO 2419/2422 un risque de 30 % d'orage. Pour décider, on retient le plus défavorable ; CAVOK ne vaut qu'à partir du 25 à 06 h UTC."
+      },
+      {
+       "id": "u3s12q19",
+       "q": "Avec le TAF « TAF LFBO 241100Z 2412/2512 24010KT 9999 SCT040 BECMG 2415/2417 30015G25KT TEMPO 2417/2423 4000 SHRA BKN012 PROB30 TEMPO 2419/2422 TSRA FM250600 33008KT CAVOK », quel vent prévoyez-vous à 16 h UTC le 24 ?",
+       "choices": [
+        "300°/15 kt, rafales à 25 kt, déjà établi depuis 15 h UTC",
+        "240°/10 kt, l'évolution ne commençant qu'à 17 h UTC",
+        "240°/10 kt ou 300°/15 kt rafales 25 kt, l'évolution étant en cours",
+        "330°/8 kt, car le groupe FM remplace les conditions précédentes"
+       ],
+       "answer": 2,
+       "explanation": "Pendant la période BECMG 2415/2417, le changement peut survenir à n'importe quel moment : à 16 h UTC, les deux vents sont possibles, et l'on prépare le vol avec le plus pénalisant (300°/15 kt, rafales 25 kt). L'évolution n'est acquise qu'à 17 h UTC ; FM250600 ne joue que le 25 à 06 h UTC.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q20",
+       "q": "De nuit, vous prévoyez des tours de piste. Le METAR donne « LFRS 241900Z 24008KT 9999 BKN014 10/06 Q1015 NOSIG ». Le vol VFR de nuit est-il possible ?",
+       "choices": [
+        "Oui : la visibilité de 10 km dépasse largement les 5 km requis de nuit",
+        "Non : la couche BKN à 1 400 ft forme un plafond inférieur aux 1 500 ft requis",
+        "Oui : une couche BKN ne constitue un plafond qu'au-dessous de 1 000 ft",
+        "Non : de nuit, le plafond doit atteindre au moins 3 000 ft au-dessus du sol"
+       ],
+       "answer": 1,
+       "explanation": "Le plafond est la base de la plus basse couche BKN ou OVC : ici 1 400 ft. Pour le VFR de nuit, SERA exige un plafond d'au moins 1 500 ft ; la bonne visibilité n'y change rien. Les 3 000 ft AMSL (ou 1 000 ft au-dessus du relief) bornent, de nuit, la zone où il faut garder la vue de la surface : ce n'est pas un plafond minimal.",
+       "_longest": true
+      },
+      {
+       "id": "u3s12q21",
+       "q": "Vous devez atterrir en piste 20 vers 15 h 20 UTC. TAF : « TAF LFOT 241100Z 2412/2421 20010KT 9999 SCT035 FM241500 29025G38KT 6000 SHRA BKN020 ». Le vent de travers démontré de votre avion est de 15 kt. Que concluez-vous ?",
+       "choices": [
+        "Le changement FM ne sera achevé qu'en fin d'après-midi : vent encore du 200°",
+        "FM annonce une fluctuation de moins d'une heure, que l'on peut attendre en vol",
+        "Le vent du 290° est presque dans l'axe de la piste 20 : travers faible",
+        "Vent prévu de travers à 25 kt, rafales 38 : arriver avant 15 h ou se dérouter"
+       ],
+       "answer": 3,
+       "explanation": "FM241500 remplace toutes les conditions précédentes dès 15 h UTC : à 15 h 20, le vent prévu est du 290°, perpendiculaire à la piste 20 (290 − 200 = 90°). Toute la vitesse est en travers : 25 kt, 38 kt en rafales, bien au-delà de 15 kt. On arrive avant 15 h, on choisit un terrain mieux orienté ou l'on reporte. FM n'est ni progressif ni temporaire."
+      },
+      {
+       "id": "u3s12q22",
+       "q": "Sur la WINTEM du FL 050, au point de votre route, la hampe part vers l'ouest et porte deux barbules et une demi-barbule. Vous suivez une route au 270° à 110 kt de vitesse propre. Quelle vitesse sol prévoyez-vous ?",
+       "choices": [
+        "135 kt",
+        "90 kt",
+        "110 kt",
+        "85 kt"
+       ],
+       "answer": 3,
+       "explanation": "La hampe pointe vers la direction d'où vient le vent : vent du 270°. Deux barbules (2 × 10 kt) et une demi-barbule (5 kt) font 25 kt. Ce vent est de face sur une route au 270° : 110 − 25 = 85 kt. 135 kt inverse le sens du vent ; 90 kt oublie la demi-barbule."
+      },
+      {
+       "id": "u3s12q23",
+       "q": "Sur une TEMSI France, le cartouche d'une zone porte « ISOL CB 030/XXX ». Que vous apprend ce groupe ?",
+       "choices": [
+        "Des CB isolés, base vers 3 000 ft, sommets au-dessus du FL 150",
+        "Des CB isolés de 3 000 ft d'épaisseur, aux sommets non prévus",
+        "Des CB fréquents, sommets vers 3 000 ft, base au niveau du sol",
+        "Des CB isolés, base vers 300 ft, sommets vers 30 000 ft"
+       ],
+       "answer": 0,
+       "explanation": "030/XXX se lit base/sommet en centaines de pieds : base vers 3 000 ft, et XXX signifie que le sommet dépasse la limite supérieure de la carte (FL 150 pour la TEMSI France). ISOL désigne des CB isolés. Un CB implique givrage et turbulence modérés à forts et grêle possible : on le contourne largement."
+      },
+      {
+       "id": "u3s12q24",
+       "q": "Vous devez arriver à Limoges vers 13 h UTC. TAF : « TAF LFBL 240800Z 2409/2418 22012KT 9999 BKN030 TEMPO 2411/2415 3000 RA BKN008 PROB40 TEMPO 2413/2416 25020G35KT TSRA ». Quelle décision est la plus raisonnable ?",
+       "choices": [
+        "Partir : les conditions dominantes 9999 BKN030 sont VMC, TEMPO ne compte pas",
+        "Partir et attendre la fin de l'orage en vol, au-dessus du terrain",
+        "Reporter ou modifier : plafond temporaire de 800 ft et 40 % de risque d'orage",
+        "Partir : un PROB40, sous 50 %, signifie que l'orage n'aura pas lieu"
+       ],
+       "answer": 2,
+       "explanation": "À 13 h UTC, le TAF prévoit des épisodes de pluie avec 3 000 m et un plafond à 800 ft, et 40 % de risque d'orage avec rafales à 35 kt de 13 à 16 h UTC. Pour un vol VFR, on retient ces conditions défavorables : arrivée après 16 h UTC, autre destination ou report. Attendre un orage en vol près du terrain expose à la turbulence, à la grêle et au cisaillement.",
+       "_longest": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
