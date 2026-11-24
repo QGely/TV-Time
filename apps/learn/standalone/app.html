@@ -1,0 +1,853 @@
+<title>Prépa LAPL / PPL</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Tableau de bord de vol : encre marine, magenta des cartes VAC, une couleur par matière. Rail à gauche sur ordinateur, barre d'onglets en bas sur téléphone. */
+:root {
+  --bg: #f3f5f9; --surface: #ffffff; --surface-2: #eaeef5; --ink: #14213d; --ink-2: #46516a; --muted: #6c7790; --rule: #d9dfea;
+  --accent: #b0177a; --accent-ink: #ffffff; --accent-soft: #f8e3f0; --sky: #1f6f91;
+  --good: #23824f; --good-bg: #e2f3e9; --bad: #c2410c; --bad-bg: #fde9df; --flag: #b7791f;
+  --s1: #1d4e89; --s2: #a23b72; --s3: #2b7a9b; --s4: #6a4c93; --s5: #c0392b; --s6: #2e7d4f; --s7: #c25a0a; --s8: #7a5c2e; --s9: #455a64;
+  --shadow: 0 1px 2px rgba(20,33,61,.06), 0 4px 14px rgba(20,33,61,.06);
+  --display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif; --body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; --mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0c1322; --surface: #131c30; --surface-2: #1b2640; --ink: #e9eef8; --ink-2: #b7c1d6; --muted: #8995ad; --rule: #273452;
+  --accent: #e45aa5; --accent-ink: #1a0b14; --accent-soft: #3a1830; --sky: #6cb8d9;
+  --good: #52c98f; --good-bg: #13301f; --bad: #f2925f; --bad-bg: #3a1c10; --flag: #e2b250;
+  --s1: #6c9fe0; --s2: #e07bb0; --s3: #5fb6d8; --s4: #a98ae0; --s5: #ee7d6f; --s6: #6cc595; --s7: #f0954a; --s8: #c9a46c; --s9: #9db1bd;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0c1322; --surface: #131c30; --surface-2: #1b2640; --ink: #e9eef8; --ink-2: #b7c1d6; --muted: #8995ad; --rule: #273452;
+  --accent: #e45aa5; --accent-ink: #1a0b14; --accent-soft: #3a1830; --sky: #6cb8d9;
+  --good: #52c98f; --good-bg: #13301f; --bad: #f2925f; --bad-bg: #3a1c10; --flag: #e2b250;
+  --s1: #6c9fe0; --s2: #e07bb0; --s3: #5fb6d8; --s4: #a98ae0; --s5: #ee7d6f; --s6: #6cc595; --s7: #f0954a; --s8: #c9a46c; --s9: #9db1bd;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.5 var(--body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface); }
+button { font: inherit; color: inherit; }
+a { color: var(--sky); }
+:focus-visible { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.05; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+.s1{--c:var(--s1)} .s2{--c:var(--s2)} .s3{--c:var(--s3)} .s4{--c:var(--s4)} .s5{--c:var(--s5)} .s6{--c:var(--s6)} .s7{--c:var(--s7)} .s8{--c:var(--s8)} .s9{--c:var(--s9)}
+svg.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Structure */
+.app { display: grid; grid-template-columns: minmax(0, 1fr); min-height: 100%; }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--rule); }
+.top-in { min-width: 0; display: flex; align-items: center; gap: 12px; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.brand { display: flex; align-items: center; gap: 8px; font: 800 21px var(--display); letter-spacing: .01em; text-transform: uppercase; white-space: nowrap; }
+.brand svg { width: 28px; height: 28px; color: var(--accent); }
+.brand b { color: var(--accent); }
+.stats { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.chip { display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 999px; background: var(--surface-2); font-size: 13px; font-weight: 600; white-space: nowrap; border: 0; }
+.chip svg.i { width: 16px; height: 16px; }
+.chip.streak { color: var(--s7); } .chip.xp { color: var(--flag); }
+.chip.sync[data-s="ok"] { color: var(--good); } .chip.sync[data-s="local"], .chip.sync[data-s="off"] { color: var(--muted); }
+.chip .lbl { color: var(--ink-2); font-weight: 500; }
+@media (max-width: 520px) { .chip .lbl { display: none; } .brand { font-size: 19px; } .brand svg { width: 24px; height: 24px; } .stats { gap: 4px; } .chip { padding: 4px 7px; } }
+.main { padding-block: 18px 96px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); min-width: 0; }
+.wrap { max-width: 860px; margin: 0 auto; }
+.nav { position: fixed; z-index: 20; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--rule); display: grid; grid-template-columns: repeat(5, 1fr); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+.nav a { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 2px 7px; color: var(--muted); text-decoration: none; font: 700 12px var(--display); letter-spacing: .06em; text-transform: uppercase; }
+.nav a[aria-current="page"] { color: var(--accent); }
+.nav a svg.i { width: 22px; height: 22px; }
+@media (min-width: 900px) {
+  .app { grid-template-columns: 220px minmax(0, 1fr); grid-template-rows: auto 1fr; }
+  .top { grid-column: 1 / -1; }
+  .nav { position: sticky; top: 61px; align-self: start; height: calc(100vh - 61px); grid-template-columns: 1fr; grid-auto-rows: min-content; gap: 4px; padding: 18px 12px; border-top: 0; border-right: 1px solid var(--rule); background: transparent; }
+  .nav a { flex-direction: row; gap: 12px; padding: 11px 14px; border-radius: 10px; font-size: 16px; }
+  .nav a[aria-current="page"] { background: var(--accent-soft); }
+  .main { padding-bottom: 40px; }
+}
+
+/* Composants */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 12px; padding: 11px 18px; font: 700 16px var(--display); letter-spacing: .05em; text-transform: uppercase; cursor: pointer; background: var(--accent); color: var(--accent-ink); box-shadow: 0 3px 0 color-mix(in srgb, var(--accent) 60%, #000); text-decoration: none; }
+.btn:active { transform: translateY(2px); box-shadow: 0 1px 0 color-mix(in srgb, var(--accent) 60%, #000); }
+.btn.alt { background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1.5px var(--rule), 0 3px 0 var(--rule); }
+.btn.ghost { background: transparent; color: var(--ink-2); box-shadow: none; padding-inline: 10px; }
+.btn.good { background: var(--good); color: #fff; box-shadow: 0 3px 0 color-mix(in srgb, var(--good) 60%, #000); }
+.btn.bad { background: var(--bad); color: #fff; box-shadow: 0 3px 0 color-mix(in srgb, var(--bad) 60%, #000); }
+.btn.sm { padding: 7px 12px; font-size: 14px; border-radius: 10px; }
+.btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px; box-shadow: var(--shadow); }
+.pad { padding: 18px; }
+.row { display: flex; gap: 12px; align-items: center; }
+.wrapflex { flex-wrap: wrap; }
+.grow { flex: 1; min-width: 0; }
+.bar { height: 10px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.bar > i { display: block; height: 100%; border-radius: 99px; background: var(--c, var(--accent)); transition: width .4s; }
+.section-title { font: 800 26px var(--display); margin: 26px 0 12px; text-transform: uppercase; letter-spacing: .01em; }
+.lead { color: var(--ink-2); margin: 4px 0 0; }
+.eyebrow { font: 700 13px var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.empty { text-align: center; padding: 30px 16px; color: var(--ink-2); }
+
+/* Parcours */
+.hero { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .hero { grid-template-columns: 1.4fr 1fr; } }
+.next { padding: 18px; display: flex; flex-direction: column; gap: 10px; background: var(--ink); color: var(--bg); border: 0; }
+.next .eyebrow { color: color-mix(in srgb, var(--bg) 70%, transparent); }
+.next h2 { font-size: 28px; color: var(--bg); }
+.next p { margin: 0; color: color-mix(in srgb, var(--bg) 80%, transparent); font-size: 14px; }
+.ready { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.big { font: 800 40px/1 var(--display); }
+.jump { display: flex; gap: 6px; overflow-x: auto; padding: 14px 0 4px; scrollbar-width: thin; position: sticky; top: calc(61px + env(safe-area-inset-top, 0px)); z-index: 5; background: var(--bg); }
+.jump a { flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px 6px 7px; border-radius: 999px; background: var(--surface); border: 1px solid var(--rule); color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 600; }
+.jump a b { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: var(--surface); font: 800 13px var(--display); }
+.unit { margin-top: 26px; scroll-margin-top: 120px; }
+.unit-head { background: var(--c); color: #fff; border-radius: 16px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; box-shadow: 0 4px 0 color-mix(in srgb, var(--c) 65%, #000); }
+:root[data-theme="dark"] .unit-head { color: #0c1322; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .unit-head { color: #0c1322; } }
+.unit-head .n { font: 800 44px/0.85 var(--display); opacity: .9; }
+.unit-head h2 { font-size: 26px; }
+.unit-head p { margin: 4px 0 0; font-size: 13.5px; opacity: .92; }
+.unit-head .meta { font: 700 13px var(--display); letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.path { display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 24px 0 8px; }
+.node { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; padding: 0; max-width: 160px; }
+.ring { width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(var(--c) calc(var(--p) * 1%), var(--surface-2) 0); }
+.disc { width: 66px; height: 66px; border-radius: 50%; display: grid; place-items: center; font-size: 30px; background: var(--surface); box-shadow: inset 0 -5px 0 rgba(0,0,0,.08); border: 2px solid var(--rule); transition: transform .15s; }
+.node.done .disc { background: var(--c); border-color: transparent; }
+.node:hover .disc { transform: translateY(-2px); }
+.node .t { font-weight: 600; font-size: 13.5px; text-align: center; line-height: 1.25; }
+.node .lv { display: flex; gap: 3px; }
+.node .lv i { width: 9px; height: 9px; border-radius: 50%; background: var(--surface-2); border: 1.5px solid var(--rule); }
+.node .lv i.on { background: var(--c); border-color: var(--c); }
+.node.is-next .disc { box-shadow: 0 0 0 5px color-mix(in srgb, var(--c) 30%, transparent); }
+.node .start { position: absolute; top: -26px; background: var(--surface); border: 1.5px solid var(--rule); color: var(--c); font: 800 12px var(--display); letter-spacing: .08em; padding: 2px 8px; border-radius: 8px; text-transform: uppercase; white-space: nowrap; }
+
+/* Feuille (bottom sheet) */
+.scrim { position: fixed; inset: 0; z-index: 40; background: rgba(8,12,24,.5); display: flex; align-items: flex-end; justify-content: center; padding: 0 max(0px, env(safe-area-inset-right, 0px)) 0 max(0px, env(safe-area-inset-left, 0px)); }
+@media (min-width: 640px) { .scrim { align-items: center; padding: 24px; } }
+.sheet { width: 100%; max-width: 520px; background: var(--surface); border-radius: 20px 20px 0 0; padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 14px; max-height: 92vh; overflow: auto; }
+@media (min-width: 640px) { .sheet { border-radius: 20px; } }
+.sheet h3 { font-size: 26px; }
+.sheet .actions { display: grid; gap: 10px; }
+
+/* Fiche */
+.fiche-head { border-radius: 16px; padding: 18px; background: var(--c); color: #fff; }
+:root[data-theme="dark"] .fiche-head { color: #0c1322; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fiche-head { color: #0c1322; } }
+.fiche-head h1 { font-size: 32px; margin-top: 4px; }
+.tips { padding: 20px 22px; margin-top: 16px; }
+.tips p { margin: 0 0 10px; max-width: 68ch; }
+.tips p.sub { font-weight: 700; margin-top: 16px; color: var(--ink); }
+.tips ul { margin: 0 0 12px; padding-left: 20px; max-width: 68ch; }
+.tips li { margin-bottom: 5px; }
+.tips li::marker { color: var(--c); }
+.gloss { display: grid; gap: 0; margin-top: 16px; }
+.gloss div { display: grid; grid-template-columns: minmax(90px, 32%) 1fr; gap: 12px; padding: 10px 18px; border-bottom: 1px solid var(--rule); }
+.gloss div:last-child { border-bottom: 0; }
+.gloss dt { font-weight: 700; color: var(--c); }
+.gloss dd { margin: 0; color: var(--ink-2); }
+.backlink { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 12px; color: var(--ink-2); text-decoration: none; font: 700 14px var(--display); letter-spacing: .08em; text-transform: uppercase; background: none; border: 0; cursor: pointer; padding: 4px 0; }
+
+/* Leçon et examen (plein écran) */
+.full { position: fixed; inset: 0; z-index: 50; background: var(--bg); display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); }
+.full-top { display: flex; align-items: center; gap: 12px; padding-block: 12px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 900px; width: 100%; margin: 0 auto; }
+.x { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: transparent; border: 0; color: var(--muted); cursor: pointer; }
+.full-body { flex: 1; overflow: auto; padding-block: 8px 24px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.full-body > div { max-width: 720px; margin: 0 auto; }
+.qtext { font: 600 21px/1.35 var(--body); margin: 8px 0 18px; text-wrap: pretty; }
+.ctx { font: 700 13px var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--c, var(--muted)); }
+.opts { display: grid; gap: 10px; }
+.opt { display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left; padding: 14px 16px; border-radius: 14px; background: var(--surface); border: 2px solid var(--rule); box-shadow: 0 3px 0 var(--rule); cursor: pointer; font-size: 16px; line-height: 1.4; }
+.opt .k { flex: none; width: 26px; height: 26px; border-radius: 7px; border: 1.5px solid var(--rule); display: grid; place-items: center; font: 700 13px var(--mono); color: var(--muted); }
+.opt[aria-pressed="true"] { border-color: var(--sky); background: color-mix(in srgb, var(--sky) 10%, var(--surface)); box-shadow: 0 3px 0 var(--sky); }
+.opt[aria-pressed="true"] .k { border-color: var(--sky); color: var(--sky); }
+.opt.right { border-color: var(--good); background: var(--good-bg); box-shadow: 0 3px 0 var(--good); }
+.opt.right .k { border-color: var(--good); color: var(--good); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); box-shadow: 0 3px 0 var(--bad); }
+.opt.wrong .k { border-color: var(--bad); color: var(--bad); }
+.opt:disabled { cursor: default; }
+.foot { border-top: 1px solid var(--rule); background: var(--surface); padding-block: 14px calc(14px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.foot.ok { background: var(--good-bg); border-color: transparent; }
+.foot.ko { background: var(--bad-bg); border-color: transparent; }
+.foot-in { max-width: 720px; margin: 0 auto; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.verdict { flex: 1 1 280px; min-width: 0; }
+.verdict b { font: 800 22px var(--display); display: block; }
+.foot.ok .verdict b { color: var(--good); } .foot.ko .verdict b { color: var(--bad); }
+.verdict p { margin: 4px 0 0; font-size: 14px; color: var(--ink-2); }
+.foot .btn { flex: 0 0 auto; min-width: 150px; margin-left: auto; }
+.foot-in.trio { flex-wrap: nowrap; gap: 8px; }
+.foot-in.trio .btn { min-width: 0; margin: 0; flex: 1 1 0; padding-inline: 8px; }
+.prog { flex: 1; height: 14px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--good); border-radius: 99px; transition: width .3s; }
+.endcard { text-align: center; padding: 30px 10px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.endcard h2 { font-size: 36px; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; max-width: 460px; }
+.tile { border-radius: 14px; border: 2px solid var(--rule); padding: 10px; background: var(--surface); }
+.tile .v { font: 800 26px var(--display); }
+.tile .l { font: 700 12px var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* Examen */
+.timer { display: inline-flex; align-items: center; gap: 6px; font: 700 16px var(--mono); padding: 6px 10px; border-radius: 10px; background: var(--surface); border: 1.5px solid var(--rule); }
+.timer.low { color: var(--bad); border-color: var(--bad); }
+.tabs { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 10px; scrollbar-width: thin; }
+.tab { flex: none; border: 1.5px solid var(--rule); background: var(--surface); border-radius: 10px; padding: 6px 10px; cursor: pointer; text-align: left; font-size: 12.5px; }
+.tab b { display: block; font-size: 13px; }
+.tab[aria-current="true"] { border-color: var(--c); box-shadow: inset 0 -3px 0 var(--c); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)); gap: 6px; margin: 10px 0 16px; }
+.grid button { height: 36px; border-radius: 8px; border: 1.5px solid var(--rule); background: var(--surface); cursor: pointer; font: 600 13px var(--mono); position: relative; }
+.grid button.ans { background: color-mix(in srgb, var(--sky) 14%, var(--surface)); border-color: var(--sky); }
+.grid button.cur { outline: 2.5px solid var(--accent); outline-offset: 1px; }
+.grid button.flg::after { content: ""; position: absolute; top: 3px; right: 3px; width: 7px; height: 7px; border-radius: 50%; background: var(--flag); }
+.flagbtn[aria-pressed="true"] { color: var(--flag); }
+table.fmt { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.fmt th { text-align: left; font: 700 13px var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--rule); }
+table.fmt td { padding: 10px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+table.fmt tr:last-child td { border-bottom: 0; }
+.dot { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--c); color: var(--surface); font: 800 13px var(--display); flex: none; }
+.scroll-x { overflow-x: auto; }
+.subj { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.subj .card { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.pass-bar { position: relative; }
+.pass-bar::after { content: ""; position: absolute; left: 75%; top: -3px; bottom: -3px; width: 2px; background: var(--ink); opacity: .55; border-radius: 2px; }
+.pill { display: inline-flex; padding: 2px 9px; border-radius: 999px; font: 700 12.5px var(--display); letter-spacing: .06em; text-transform: uppercase; }
+.pill.ok { background: var(--good-bg); color: var(--good); } .pill.ko { background: var(--bad-bg); color: var(--bad); }
+.verdict-card { padding: 22px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.verdict-card.ok { background: var(--good-bg); border-color: transparent; } .verdict-card.ko { background: var(--bad-bg); border-color: transparent; }
+.corr { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.corr .o { padding: 8px 12px; border-radius: 10px; background: var(--surface-2); font-size: 14.5px; }
+.corr .o.right { background: var(--good-bg); color: var(--good); font-weight: 600; }
+.corr .o.wrong { background: var(--bad-bg); color: var(--bad); }
+.corr .expl { font-size: 14px; color: var(--ink-2); border-left: 3px solid var(--c, var(--accent)); padding-left: 10px; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.li { display: flex; gap: 12px; align-items: center; padding: 12px 14px; }
+.seg { display: inline-flex; background: var(--surface-2); border-radius: 10px; padding: 3px; gap: 2px; }
+.seg button { border: 0; background: transparent; padding: 6px 12px; border-radius: 8px; cursor: pointer; font-size: 13.5px; font-weight: 600; color: var(--ink-2); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+
+/* Ressources */
+.input { width: 100%; padding: 11px 14px; border-radius: 12px; border: 1.5px solid var(--rule); background: var(--surface); color: var(--ink); font: inherit; }
+.check { display: flex; gap: 12px; align-items: flex-start; padding: 11px 14px; border-bottom: 1px solid var(--rule); }
+.check:last-child { border-bottom: 0; }
+.check input { width: 20px; height: 20px; accent-color: var(--good); margin-top: 2px; flex: none; }
+.check.done span.grow { text-decoration: line-through; color: var(--muted); }
+.res { padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
+.res.done { opacity: .65; }
+.res h4 { margin: 0; font-size: 15px; }
+.res p { margin: 3px 0 6px; font-size: 13.5px; color: var(--ink-2); }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 6px; background: var(--surface-2); color: var(--ink-2); }
+.tag.free { color: var(--good); background: var(--good-bg); }
+.warn { padding: 12px 14px; border-radius: 12px; background: var(--accent-soft); color: var(--ink); font-size: 14px; margin: 8px 0 12px; }
+.tick { width: 26px; height: 26px; border-radius: 8px; border: 2px solid var(--rule); background: var(--surface); display: grid; place-items: center; cursor: pointer; flex: none; color: #fff; }
+.tick[aria-pressed="true"] { background: var(--good); border-color: var(--good); }
+.hit { padding: 10px 14px; border-bottom: 1px solid var(--rule); display: grid; gap: 2px; }
+.hit:last-child { border-bottom: 0; }
+.hit a { font-size: 12.5px; }
+.confirm { padding: 14px; border-radius: 12px; background: var(--bad-bg); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.toast { position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 60; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-weight: 600; font-size: 14px; box-shadow: var(--shadow); max-width: calc(100vw - 32px); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="app" id="app">
+  <header class="top"><div class="top-in">
+    <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 5l3 11-3-2.4-3 2.4z" fill="currentColor"/><path d="M16 27v-3M5 16h3M27 16h-3" stroke="currentColor" stroke-width="2"/></svg><span>Prépa <b>LAPL·PPL</b></span></div>
+    <div class="stats" id="stats"></div>
+  </div></header>
+  <nav class="nav" id="nav" aria-label="Navigation"></nav>
+  <main class="main" id="main"><div class="wrap"><p class="muted">Chargement des 540 questions…</p></div></main>
+</div>
+<div id="overlay"></div>
+
+<script>
+(() => {
+'use strict';
+// ───────────── Icônes ─────────────
+const ICON = {
+  path: '<path d="M12 21s-6-5.3-6-10a6 6 0 1112 0c0 4.7-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/>',
+  review: '<path d="M3 12a9 9 0 1015.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M12 7v5l3 2"/>',
+  exam: '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>',
+  lib: '<path d="M4 4h4v16H4zM10 4h4v16h-4z"/><path d="M16.5 4.6l3.8-1 3.2 15.5-3.8 1z" transform="translate(-2 1)"/>',
+  stats: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  flame: '<path d="M12 22c4 0 7-2.7 7-6.6 0-3.4-2.3-5.6-4-7.4-.4 2-1.4 3-2.6 3.4C13 8 12 5 9 2c.3 3.4-4 6.4-4 11.4C5 19.3 8 22 12 22z"/>',
+  bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+  cloud: '<path d="M7 18h10a4 4 0 00.5-8A6 6 0 006 9.5 4.3 4.3 0 007 18z"/>',
+  device: '<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/>',
+  x: '<path d="M6 6l12 12M18 6L6 18"/>',
+  back: '<path d="M15 18l-6-6 6-6"/>',
+  flag: '<path d="M5 21V4h11l-2 4 2 4H5"/>',
+  check: '<path d="M5 12l5 5L20 7"/>',
+  ext: '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  book: '<path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5"/>',
+  grid: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+  left: '<path d="M15 18l-6-6 6-6"/>', right: '<path d="M9 6l6 6-6 6"/>',
+};
+const ic = (n, cls = 'i') => `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const $ = (sel, root = document) => root.querySelector(sel);
+const shuffle = (arr) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const dayDiff = (a, b) => Math.round((new Date(b + 'T12:00') - new Date(a + 'T12:00')) / 864e5);
+const mmss = (s) => { s = Math.max(0, Math.round(s)); const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), x = s % 60; return h ? `${h}:${String(m).padStart(2, '0')}:${String(x).padStart(2, '0')}` : `${m}:${String(x).padStart(2, '0')}`; };
+const dur = (min) => (min >= 60 ? `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, '0')}` : `${min} min`);
+const fmtDate = (iso) => { try { return new Date(iso).toLocaleString('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); } catch { return ''; } };
+const LETTERS = ['A', 'B', 'C', 'D'];
+const PASS = 75;
+
+// ───────────── Données ─────────────
+let D = null; // { units, exam, library }
+const Q = new Map(); // qid -> {id, q, choices, answer, expl, unit, skill}
+const SK = new Map(); // skillId -> skill (+unit)
+function indexData(raw) {
+  D = raw;
+  raw.units.forEach((u, ui) => {
+    u.n = ui + 1;
+    u.cls = 's' + u.n;
+    u.exam = raw.exam.subjects.find((s) => s.unit === u.id) || { questions: 12, minutes: 18 };
+    u.skills.forEach((s) => {
+      s.unit = u;
+      s.qs = s.questions.map(([id, q, choices, answer, expl]) => { const o = { id, q, choices, answer, expl, unit: u, skill: s }; Q.set(id, o); return o; });
+      SK.set(s.id, s);
+    });
+    u.qs = u.skills.flatMap((s) => s.qs);
+  });
+}
+async function loadData() {
+  const inline = document.getElementById('lapl-data');
+  if (inline) return JSON.parse(inline.textContent);
+  const r = await fetch('lapl-data.json');
+  if (!r.ok) throw new Error('données introuvables');
+  return r.json();
+}
+
+// ───────────── Progression (compte claude.ai, sinon cet appareil) ─────────────
+const LS_KEY = 'prepa-lapl-ppl-v1';
+const blank = () => ({ v: 1, updatedAt: 0, xp: 0, streak: { count: 0, last: null }, skills: {}, q: {}, mistakes: [], exams: [], active: null, lib: {}, days: {} });
+let P = blank();
+let sync = { state: 'local', doc: null };
+function readLocal() { try { const s = localStorage.getItem(LS_KEY); return s ? Object.assign(blank(), JSON.parse(s)) : null; } catch { return null; } }
+function writeLocal() { try { localStorage.setItem(LS_KEY, JSON.stringify(P)); } catch { /* stockage indisponible */ } }
+let saveTimer = null, writing = Promise.resolve();
+function save(now = false) {
+  P.updatedAt = Date.now();
+  writeLocal();
+  if (!sync.doc) return;
+  clearTimeout(saveTimer);
+  const go = () => { const body = JSON.parse(JSON.stringify(P)); writing = writing.then(() => sync.doc.set(body)).then(() => setSync('ok')).catch((e) => { if (e && e.code === 'quota_exceeded') toast('Espace de sauvegarde plein : supprime des examens de l’historique.'); setSync('off'); }); };
+  if (now) go(); else saveTimer = setTimeout(go, 1500);
+}
+function setSync(s) { sync.state = s; renderStats(); }
+const use = (n) => (window.claude && typeof window.claude.use === 'function' ? window.claude.use(n) : Promise.resolve(null));
+const withTimeout = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej({ code: 'timeout' }), ms))]);
+async function connect() {
+  try {
+    const [user, db] = await Promise.all([use('user'), use('db')]);
+    const uid = user ? await user.id() : null;
+    if (!db || !uid) { setSync('local'); return; }
+    sync.doc = db.doc(`data/users/${uid}/progress`);
+    setSync('wait');
+    await pull(true);
+  } catch { setSync('local'); }
+}
+async function pull(first) {
+  if (!sync.doc) return;
+  try {
+    const snap = await withTimeout(sync.doc.get(), 10000);
+    const remote = snap.exists ? snap.data() : null;
+    if (remote && (remote.updatedAt || 0) > (P.updatedAt || 0)) {
+      if (busy()) { setSync('ok'); return; }
+      P = Object.assign(blank(), JSON.parse(JSON.stringify(remote)));
+      writeLocal(); setSync('ok'); render();
+    } else if (!remote || (P.updatedAt || 0) > (remote.updatedAt || 0)) {
+      if (first && !remote && !P.updatedAt) { setSync('ok'); return; }
+      save(true);
+    } else setSync('ok');
+  } catch (e) { setSync(e && e.code === 'timeout' ? 'off' : 'off'); }
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && !busy()) pull(false); });
+
+// Statistiques par question : [vues, réussies, dernier résultat 1/0]
+function record(qid, ok) {
+  const s = P.q[qid] || [0, 0, 0];
+  s[0]++; if (ok) s[1]++; s[2] = ok ? 1 : 0; P.q[qid] = s;
+  const i = P.mistakes.indexOf(qid);
+  if (ok && i >= 0) P.mistakes.splice(i, 1);
+  if (!ok && i < 0) P.mistakes.unshift(qid);
+  if (!ok && i > 0) { P.mistakes.splice(i, 1); P.mistakes.unshift(qid); }
+}
+function addXp(n) {
+  P.xp += n;
+  const t = today();
+  P.days[t] = (P.days[t] || 0) + n;
+  const keys = Object.keys(P.days).sort(); while (keys.length > 60) delete P.days[keys.shift()];
+  if (P.streak.last !== t) { P.streak.count = P.streak.last && dayDiff(P.streak.last, t) === 1 ? P.streak.count + 1 : 1; P.streak.last = t; }
+}
+const streakNow = () => (P.streak.last && dayDiff(P.streak.last, today()) <= 1 ? P.streak.count : 0);
+const mastered = (q) => (P.q[q.id] || [0, 0, 0])[2] === 1;
+const level = (s) => P.skills[s.id] || 0;
+
+// ───────────── Rendu général ─────────────
+const ROUTES = ['parcours', 'reviser', 'examen', 'ressources', 'progres'];
+const NAV = [['parcours', 'Parcours', 'path'], ['reviser', 'Réviser', 'review'], ['examen', 'Examen', 'exam'], ['ressources', 'Ressources', 'lib'], ['progres', 'Progrès', 'stats']];
+let view = { lesson: null, exam: null, sheet: null, resultsId: null, ficheId: null, libQ: '', libLang: '', glossQ: '', corrAll: false, confirmReset: false, confirmEnd: false, showGrid: false };
+const route = () => { const h = location.hash.slice(1); if (h.startsWith('fiche-')) return 'fiche'; if (h.startsWith('resultat-')) return 'resultat'; return ROUTES.includes(h) ? h : 'parcours'; };
+const busy = () => !!(view.lesson || view.exam);
+
+function renderStats() {
+  const el = $('#stats'); if (!el) return;
+  const sy = { ok: ['cloud', 'Synchronisé', 'Progression enregistrée sur ton compte claude.ai'], wait: ['cloud', 'Connexion…', 'Connexion à ton compte'], off: ['cloud', 'Hors ligne', 'Hors ligne : progression gardée sur cet appareil, synchronisée au retour du réseau'], local: ['device', 'Cet appareil', 'Progression enregistrée dans ce navigateur'] }[sync.state];
+  el.innerHTML = `<span class="chip streak" title="Jours d'affilée">${ic('flame')}<span class="num">${streakNow()}</span></span><span class="chip xp" title="Points d'expérience">${ic('bolt')}<span class="num">${P.xp}</span></span><span class="chip sync" data-s="${sync.state}" title="${esc(sy[2])}">${ic(sy[0])}<span class="lbl">${sy[1]}</span></span>`;
+}
+function renderNav() {
+  const r = route();
+  const cur = r === 'fiche' ? 'parcours' : r === 'resultat' ? 'examen' : r;
+  $('#nav').innerHTML = NAV.map(([id, label, i]) => `<a href="#${id}" ${cur === id ? 'aria-current="page"' : ''}>${ic(i)}<span>${label}</span></a>`).join('');
+}
+function render() {
+  renderStats(); renderNav();
+  if (!D) return;
+  const r = route();
+  const main = $('#main');
+  const html = { parcours: viewPath, reviser: viewReview, examen: viewExamHome, ressources: viewResources, progres: viewProgress, fiche: viewFiche, resultat: viewResult }[r]();
+  main.innerHTML = `<div class="wrap">${html}</div>`;
+  renderOverlay();
+}
+function toast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 3200); }
+window.addEventListener('hashchange', () => { view.sheet = null; view.confirmReset = false; render(); window.scrollTo(0, 0); });
+
+// ───────────── Parcours ─────────────
+function nextSkill() {
+  for (const u of D.units) for (const s of u.skills) if (level(s) < 3) return s;
+  return null;
+}
+function viewPath() {
+  const nx = nextSkill();
+  const total = D.units.reduce((n, u) => n + u.skills.length * 3, 0);
+  const done = D.units.reduce((n, u) => n + u.skills.reduce((m, s) => m + level(s), 0), 0);
+  const allQ = Q.size, ok = [...Q.values()].filter(mastered).length;
+  const offsets = [0, 52, 78, 52, 0, -52, -78, -52];
+  return `
+  <div class="hero">
+    <div class="card next">
+      <div class="eyebrow">${nx ? `Prochaine étape · matière ${nx.unit.n}` : 'Parcours terminé'}</div>
+      <h2>${nx ? esc(nx.title) : 'Bravo, toutes les leçons sont validées'}</h2>
+      <p>${nx ? `${esc(nx.unit.title)} · niveau ${level(nx) + 1} sur 3 · 10 questions` : 'Passe un examen blanc complet pour vérifier que tout tient.'}</p>
+      <div class="row wrapflex">${nx ? `<button class="btn" data-act="lesson" data-skill="${nx.id}">Continuer</button><a class="btn alt sm" href="#fiche-${nx.id}">Lire la fiche</a>` : `<a class="btn" href="#examen">Examen blanc</a>`}</div>
+    </div>
+    <div class="card ready">
+      <div class="eyebrow">Ma préparation</div>
+      <div class="big num">${Math.round((done / total) * 100)}<span style="font-size:22px"> %</span></div>
+      <div class="bar"><i style="width:${(done / total) * 100}%"></i></div>
+      <div class="small muted">${done} niveaux validés sur ${total} · ${ok} questions réussies sur ${allQ}</div>
+    </div>
+  </div>
+  <p class="small muted" style="margin:14px 2px 0">${esc(D.disclaimer || '')}</p>
+  <nav class="jump" aria-label="Matières">${D.units.map((u) => `<a href="#parcours" class="${u.cls}" data-act="jump" data-unit="${u.id}"><b>${u.n}</b>${esc(u.title)}</a>`).join('')}</nav>
+  ${D.units.map((u) => {
+    const lv = u.skills.reduce((m, s) => m + level(s), 0);
+    return `<section class="unit ${u.cls}" id="unit-${u.id}">
+      <div class="unit-head"><div class="n">${u.n}</div><div class="grow">
+        <div class="meta">Épreuve : ${u.exam.questions} questions · ${u.exam.minutes} min · ${lv}/${u.skills.length * 3} niveaux</div>
+        <h2>${esc(u.title)}</h2>
+        <p>${esc((u.description || '').replace(/\s*\(examen[^)]*\)\.?$/i, '.'))}</p>
+      </div></div>
+      <div class="path">${u.skills.map((s, i) => {
+        const l = level(s); const isNext = nx && nx.id === s.id;
+        return `<button class="node ${l >= 3 ? 'done' : ''} ${isNext ? 'is-next' : ''}" style="transform:translateX(${offsets[i % offsets.length]}px)" data-act="sheet" data-skill="${s.id}" aria-label="${esc(s.title)}, niveau ${l} sur 3">
+          ${isNext ? '<span class="start">Commencer</span>' : ''}
+          <span class="ring" style="--p:${(l / 3) * 100}"><span class="disc">${esc(s.icon || '✈️')}</span></span>
+          <span class="lv">${[1, 2, 3].map((k) => `<i class="${l >= k ? 'on' : ''}"></i>`).join('')}</span>
+          <span class="t">${esc(s.title)}</span>
+        </button>`;
+      }).join('')}</div>
+    </section>`;
+  }).join('')}`;
+}
+
+function sheetHtml(s) {
+  const l = level(s); const okN = s.qs.filter(mastered).length;
+  return `<div class="scrim" data-act="close-sheet"><div class="sheet ${s.unit.cls}" role="dialog" aria-modal="true" aria-label="${esc(s.title)}" data-stop>
+    <div class="row"><span class="dot">${s.unit.n}</span><span class="eyebrow grow">${esc(s.unit.title)}</span><button class="x" data-act="close-sheet" aria-label="Fermer">${ic('x')}</button></div>
+    <h3>${esc(s.icon || '')} ${esc(s.title)}</h3>
+    <div class="row small muted"><span>Niveau ${l} sur 3</span><span>·</span><span>${okN}/${s.qs.length} questions réussies</span></div>
+    <div class="bar"><i style="width:${(l / 3) * 100}%"></i></div>
+    <div class="actions">
+      ${l < 3 ? `<button class="btn" data-act="lesson" data-skill="${s.id}">Leçon niveau ${l + 1}</button>` : `<button class="btn" data-act="practice" data-skill="${s.id}">S'entraîner (toutes les questions)</button>`}
+      <a class="btn alt" href="#fiche-${s.id}">${ic('book')} Lire la fiche</a>
+      ${l > 0 && l < 3 ? `<button class="btn ghost" data-act="practice" data-skill="${s.id}">Revoir les niveaux validés</button>` : ''}
+    </div>
+    <p class="small muted" style="margin:0">Chaque niveau propose 10 questions. Il est validé à partir de 7 bonnes réponses.</p>
+  </div></div>`;
+}
+
+// ───────────── Fiche ─────────────
+function tipsHtml(text) {
+  const out = []; let list = [];
+  const flush = () => { if (list.length) { out.push(`<ul>${list.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>`); list = []; } };
+  for (const raw of String(text || '').split('\n')) {
+    const line = raw.trim();
+    if (!line) { flush(); continue; }
+    const m = line.match(/^[•\-–]\s*(.*)$/);
+    if (m) { list.push(m[1]); continue; }
+    flush();
+    out.push(`<p class="${/:$/.test(line) && line.length < 90 ? 'sub' : ''}">${esc(line)}</p>`);
+  }
+  flush();
+  return out.join('');
+}
+function viewFiche() {
+  const s = SK.get(location.hash.slice(7));
+  if (!s) return `<div class="empty">Fiche introuvable. <a href="#parcours">Retour au parcours</a></div>`;
+  const u = s.unit; const idx = u.skills.indexOf(s);
+  const prev = u.skills[idx - 1], next = u.skills[idx + 1];
+  return `<div class="${u.cls}">
+    <a class="backlink" href="#parcours">${ic('back')} Parcours</a>
+    <div class="fiche-head"><div class="eyebrow" style="color:inherit;opacity:.85">Matière ${u.n} · ${esc(u.title)} · fiche ${idx + 1}/${u.skills.length}</div><h1>${esc(s.icon || '')} ${esc(s.title)}</h1></div>
+    <article class="card tips">${tipsHtml(s.tips)}</article>
+    <h2 class="section-title">Lexique</h2>
+    <dl class="card gloss">${s.vocab.map(([t, d]) => `<div><dt>${esc(t)}</dt><dd>${esc(d)}</dd></div>`).join('')}</dl>
+    <div class="row wrapflex" style="margin-top:20px">
+      <button class="btn" data-act="${level(s) < 3 ? 'lesson' : 'practice'}" data-skill="${s.id}">${level(s) < 3 ? `Leçon niveau ${level(s) + 1}` : 'S’entraîner'}</button>
+      ${prev ? `<a class="btn alt sm" href="#fiche-${prev.id}">${ic('left')} ${esc(prev.title)}</a>` : ''}
+      ${next ? `<a class="btn alt sm" href="#fiche-${next.id}">${esc(next.title)} ${ic('right')}</a>` : ''}
+    </div>
+  </div>`;
+}
+
+// ───────────── Leçon ─────────────
+function startLesson(skillId, practice) {
+  const s = SK.get(skillId); if (!s) return;
+  const cur = level(s);
+  const lv = practice ? 3 : Math.min(3, cur + 1);
+  const bank = s.qs; const third = Math.ceil(bank.length / 3);
+  let pool;
+  if (practice || lv >= 3) pool = shuffle(bank);
+  else pool = [...shuffle(bank.slice((lv - 1) * third, lv * third)), ...shuffle(bank.slice(0, (lv - 1) * third)), ...shuffle(bank.slice(lv * third))];
+  const weak = shuffle(bank.filter((q) => P.mistakes.includes(q.id)));
+  const picked = []; for (const q of [...weak, ...pool]) { if (picked.length >= 10) break; if (!picked.includes(q)) picked.push(q); }
+  openLesson({ title: s.title, cls: s.unit.cls, skillId, level: lv, practice: !!practice, items: picked.map(qItem) });
+}
+function startPractice(qs, title, cls = '') { if (!qs.length) return; openLesson({ title, cls, practice: true, review: true, items: qs.slice(0, 10).map(qItem) }); }
+function qItem(q) { const order = shuffle([0, 1, 2, 3]); return { id: q.id, order, sel: null, checked: false, ok: null }; }
+function openLesson(l) { view.sheet = null; view.lesson = Object.assign(l, { i: 0, done: false, startedAt: Date.now() }); render(); }
+function lessonHtml() {
+  const L = view.lesson;
+  if (L.done) return lessonEndHtml();
+  const it = L.items[L.i]; const q = Q.get(it.id);
+  const correctPos = it.order.indexOf(q.answer);
+  const foot = it.checked
+    ? `<div class="foot ${it.ok ? 'ok' : 'ko'}"><div class="foot-in"><div class="verdict"><b>${it.ok ? 'Bien joué !' : `Bonne réponse : ${LETTERS[correctPos]}`}</b><p>${esc(q.expl)}</p></div><button class="btn ${it.ok ? 'good' : 'bad'}" data-act="next">Continuer</button></div></div>`
+    : `<div class="foot"><div class="foot-in"><div class="verdict small muted">Touches A à D (ou 1 à 4) pour choisir, Entrée pour valider.</div><button class="btn" data-act="check" ${it.sel === null ? 'disabled' : ''}>Vérifier</button></div></div>`;
+  return `<div class="full ${L.cls}" role="dialog" aria-modal="true" aria-label="Leçon">
+    <div class="full-top"><button class="x" data-act="quit-lesson" aria-label="Quitter la leçon">${ic('x')}</button><div class="prog" aria-hidden="true"><i style="width:${(L.i / L.items.length) * 100}%"></i></div><span class="small muted num">${L.i + 1}/${L.items.length}</span></div>
+    <div class="full-body"><div>
+      <div class="ctx">${esc(q.unit.title)} · ${esc(q.skill.title)}</div>
+      <div class="qtext">${esc(q.q)}</div>
+      <div class="opts">${it.order.map((ci, pos) => {
+        let cls = '';
+        if (it.checked) { if (ci === q.answer) cls = 'right'; else if (pos === it.sel) cls = 'wrong'; }
+        return `<button class="opt ${cls}" data-act="pick" data-pos="${pos}" aria-pressed="${it.sel === pos}" ${it.checked ? 'disabled' : ''}><span class="k">${LETTERS[pos]}</span><span>${esc(q.choices[ci])}</span></button>`;
+      }).join('')}</div>
+    </div></div>
+    ${foot}
+  </div>`;
+}
+function lessonEndHtml() {
+  const L = view.lesson; const ok = L.items.filter((x) => x.ok).length; const n = L.items.length;
+  return `<div class="full ${L.cls}" role="dialog" aria-modal="true" aria-label="Fin de leçon"><div class="full-body"><div class="endcard">
+    <div class="eyebrow">${esc(L.title)}</div>
+    <h2>${L.result.leveled ? `Niveau ${L.level} validé !` : L.practice ? 'Session terminée' : ok / n >= 0.7 ? 'Leçon réussie' : 'Encore un effort'}</h2>
+    <p class="lead">${L.result.leveled ? 'Le niveau suivant t’attend.' : !L.practice && ok / n < 0.7 ? 'Il faut 7 bonnes réponses sur 10 pour valider ce niveau. Relis la fiche puis réessaie.' : 'Tes erreurs sont gardées dans « Réviser ».'}</p>
+    <div class="tiles"><div class="tile"><div class="v num">${ok}/${n}</div><div class="l">Bonnes</div></div><div class="tile"><div class="v num">+${L.result.xp}</div><div class="l">XP</div></div><div class="tile"><div class="v num">${mmss((Date.now() - L.startedAt) / 1000)}</div><div class="l">Temps</div></div></div>
+    <div class="row wrapflex" style="justify-content:center;margin-top:8px">
+      <button class="btn" data-act="end-lesson">Continuer</button>
+      ${L.skillId ? `<button class="btn alt" data-act="fiche-after" data-skill="${L.skillId}">Lire la fiche</button>` : ''}
+    </div>
+  </div></div></div>`;
+}
+function lessonCheck() {
+  const L = view.lesson; const it = L.items[L.i]; if (it.sel === null || it.checked) return;
+  const q = Q.get(it.id); it.checked = true; it.ok = it.order[it.sel] === q.answer;
+  record(it.id, it.ok); renderOverlay();
+}
+function lessonNext() {
+  const L = view.lesson;
+  if (L.i < L.items.length - 1) { L.i++; renderOverlay(); return; }
+  const ok = L.items.filter((x) => x.ok).length; const passed = ok / L.items.length >= 0.7;
+  let leveled = false;
+  if (L.skillId && !L.practice && passed) { const s = SK.get(L.skillId); if (L.level === level(s) + 1) { P.skills[s.id] = L.level; leveled = true; } }
+  const xp = ok + (passed ? 5 : 0);
+  addXp(xp); L.result = { xp, leveled }; L.done = true; save(true); renderOverlay(); renderStats();
+}
+
+// ───────────── Réviser ─────────────
+function viewReview() {
+  const byUnit = D.units.map((u) => ({ u, n: P.mistakes.filter((id) => Q.get(id)?.unit === u).length }));
+  return `<h1 class="section-title" style="margin-top:4px">Réviser</h1>
+  <div class="card pad">
+    <div class="row wrapflex"><div class="grow"><div class="eyebrow">Mes erreurs</div><div class="big num">${P.mistakes.length}</div><div class="small muted">question${P.mistakes.length > 1 ? 's' : ''} ratée${P.mistakes.length > 1 ? 's' : ''} à revoir. Une question réussie sort de la liste.</div></div>
+    <button class="btn" data-act="review-mistakes" ${P.mistakes.length ? '' : 'disabled'}>Revoir mes erreurs</button></div>
+  </div>
+  <h2 class="section-title">Par matière</h2>
+  <div class="subj">${byUnit.map(({ u, n }) => `<div class="card ${u.cls}"><div class="row"><span class="dot">${u.n}</span><b class="grow">${esc(u.title)}</b></div>
+    <div class="small muted">${n} erreur${n > 1 ? 's' : ''} · ${u.qs.filter(mastered).length}/${u.qs.length} réussies</div>
+    <div class="row wrapflex"><button class="btn sm" data-act="review-unit" data-unit="${u.id}">10 questions</button>${n ? `<button class="btn alt sm" data-act="review-unit-mistakes" data-unit="${u.id}">Mes erreurs</button>` : ''}</div></div>`).join('')}</div>
+  <h2 class="section-title">Entraînement mixte</h2>
+  <div class="card pad row wrapflex"><div class="grow">10 questions tirées au hasard dans les 9 matières, en privilégiant celles que tu n'as pas encore réussies.</div><button class="btn alt" data-act="review-mixed">Lancer</button></div>`;
+}
+
+// ───────────── Examen blanc ─────────────
+function viewExamHome() {
+  const subs = D.exam.subjects; const totalQ = subs.reduce((n, s) => n + s.questions, 0); const totalM = subs.reduce((n, s) => n + s.minutes, 0);
+  const a = P.active;
+  const hist = P.exams.slice().reverse();
+  return `<h1 class="section-title" style="margin-top:4px">Examen blanc</h1>
+  <p class="lead">Même format que l'examen DGAC : QCM à 4 choix, chronométré, au moins ${PASS} % dans chaque épreuve.</p>
+  ${a ? `<div class="card pad row wrapflex" style="margin-top:14px;border-color:var(--accent)"><div class="grow"><b>Examen en cours</b><div class="small muted">${a.mode === 'full' ? 'Examen complet' : esc(D.units.find((u) => u.id === a.unit)?.title || '')} · ${a.answers.filter((x) => x !== null).length}/${a.items.length} réponses · reste ${mmss(remaining(a))}</div></div><button class="btn" data-act="exam-resume">Reprendre</button><button class="btn ghost sm" data-act="exam-abandon">Abandonner</button></div>` : ''}
+  <div class="card" style="margin-top:14px"><div class="scroll-x"><table class="fmt"><thead><tr><th>Épreuve</th><th>Questions</th><th>Durée</th><th></th></tr></thead><tbody>
+    ${D.units.map((u) => `<tr class="${u.cls}"><td><div class="row"><span class="dot">${u.n}</span>${esc(u.title)}</div></td><td class="num">${u.exam.questions}</td><td class="num">${u.exam.minutes} min</td><td style="text-align:right"><button class="btn alt sm" data-act="exam-start" data-unit="${u.id}" ${a ? 'disabled' : ''}>Passer</button></td></tr>`).join('')}
+  </tbody></table></div>
+  <div class="pad row wrapflex" style="border-top:1px solid var(--rule)"><div class="grow"><b>Examen complet</b><div class="small muted">${totalQ} questions · ${dur(totalM)} · les 9 épreuves d'affilée</div></div><button class="btn" data-act="exam-start" ${a ? 'disabled' : ''}>Commencer</button></div></div>
+  <h2 class="section-title">Historique</h2>
+  ${hist.length ? `<div class="list">${hist.map((e) => `<a class="card li" href="#resultat-${e.id}" style="text-decoration:none;color:inherit">
+    <div class="grow"><b>${e.mode === 'full' ? 'Examen complet' : esc(D.units.find((u) => u.id === e.unit)?.title || '')}</b><div class="small muted">${fmtDate(e.finishedAt)} · ${e.result.correct}/${e.result.total} (${Math.round((e.result.correct / e.result.total) * 100)} %)</div></div>
+    <span class="pill ${e.result.passed ? 'ok' : 'ko'}">${e.result.passed ? 'Réussi' : 'Échoué'}</span>${ic('right')}</a>`).join('')}</div>` : `<div class="card empty">Aucun examen passé pour l'instant. Commence par une épreuve courte, comme Communications (8 questions).</div>`}`;
+}
+const remaining = (a) => a.limit - (Date.now() - a.startedAt) / 1000;
+function startExam(unitId) {
+  const subs = unitId ? D.exam.subjects.filter((s) => s.unit === unitId) : D.exam.subjects;
+  const items = []; const sections = [];
+  for (const s of subs) {
+    const u = D.units.find((x) => x.id === s.unit);
+    const pool = shuffle(u.qs).slice(0, s.questions);
+    sections.push({ unit: u.id, from: items.length, n: pool.length });
+    pool.forEach((q) => items.push({ id: q.id, order: shuffle([0, 1, 2, 3]) }));
+  }
+  P.active = { id: 'e' + Date.now().toString(36), mode: unitId ? 'unit' : 'full', unit: unitId || null, startedAt: Date.now(), limit: subs.reduce((t, s) => t + s.minutes, 0) * 60, items, sections, answers: items.map(() => null), flags: [] };
+  save(true);
+  openExam();
+}
+function openExam() { view.exam = { i: 0 }; view.showGrid = false; view.confirmEnd = false; render(); startTick(); }
+let tick = null;
+function startTick() {
+  clearInterval(tick);
+  tick = setInterval(() => {
+    if (!view.exam || !P.active) { clearInterval(tick); return; }
+    const r = remaining(P.active);
+    const t = $('#timer'); if (t) { t.lastChild.textContent = mmss(r); t.classList.toggle('low', r < 300); }
+    if (r <= 0) { clearInterval(tick); finishExam(); }
+  }, 1000);
+}
+function sectionOf(a, i) { return a.sections.find((s) => i >= s.from && i < s.from + s.n); }
+function examHtml() {
+  const a = P.active; const i = view.exam.i; const it = a.items[i]; const q = Q.get(it.id); const sec = sectionOf(a, i); const u = D.units.find((x) => x.id === sec.unit);
+  const r = remaining(a); const answered = a.answers.filter((x) => x !== null).length; const flagged = a.flags.includes(i);
+  return `<div class="full ${u.cls}" role="dialog" aria-modal="true" aria-label="Examen blanc">
+    <div class="full-top"><button class="x" data-act="exam-pause" aria-label="Mettre en pause et quitter">${ic('x')}</button><div class="grow"><div class="ctx">${esc(u.title)}</div><div class="small muted">Question ${i + 1} sur ${a.items.length} · ${answered} répondue${answered > 1 ? 's' : ''}</div></div><span class="timer ${r < 300 ? 'low' : ''}" id="timer">${ic('clock')}<span>${mmss(r)}</span></span></div>
+    <div class="full-body"><div>
+      ${a.sections.length > 1 ? `<div class="tabs">${a.sections.map((s) => { const su = D.units.find((x) => x.id === s.unit); const n = a.answers.slice(s.from, s.from + s.n).filter((x) => x !== null).length; return `<button class="tab ${su.cls}" data-act="exam-go" data-i="${s.from}" aria-current="${s === sec}"><b>${esc(su.title)}</b><span class="num">${n}/${s.n}</span></button>`; }).join('')}</div>` : ''}
+      <div class="qtext">${esc(q.q)}</div>
+      <div class="opts">${it.order.map((ci, pos) => `<button class="opt" data-act="exam-pick" data-pos="${pos}" aria-pressed="${a.answers[i] === pos}"><span class="k">${LETTERS[pos]}</span><span>${esc(q.choices[ci])}</span></button>`).join('')}</div>
+      <div class="row wrapflex" style="margin-top:14px"><button class="btn ghost sm flagbtn" data-act="exam-flag" aria-pressed="${flagged}">${ic('flag')} ${flagged ? 'Marquée' : 'Marquer'}</button><button class="btn ghost sm" data-act="exam-grid">${ic('grid')} ${view.showGrid ? 'Masquer' : 'Voir'} toutes les questions</button></div>
+      ${view.showGrid ? `<div class="grid">${a.items.map((_, k) => `<button class="${a.answers[k] !== null ? 'ans' : ''} ${k === i ? 'cur' : ''} ${a.flags.includes(k) ? 'flg' : ''}" data-act="exam-go" data-i="${k}" aria-label="Question ${k + 1}">${k + 1}</button>`).join('')}</div>` : ''}
+      ${view.confirmEnd ? `<div class="confirm"><div class="grow"><b>Terminer et corriger ?</b><div class="small">${a.items.length - answered ? `${a.items.length - answered} question(s) sans réponse seront comptées fausses.` : 'Toutes les questions ont une réponse.'}</div></div><button class="btn sm" data-act="exam-finish">Corriger</button><button class="btn alt sm" data-act="exam-cancel-end">Continuer l'examen</button></div>` : ''}
+    </div></div>
+    <div class="foot"><div class="foot-in trio"><button class="btn alt sm" data-act="exam-prev" ${i === 0 ? 'disabled' : ''}>${ic('left')} Précédente</button><button class="btn ghost sm" data-act="exam-end">Terminer</button><button class="btn sm" data-act="exam-next" ${i === a.items.length - 1 ? 'disabled' : ''}>Suivante ${ic('right')}</button></div></div>
+  </div>`;
+}
+function finishExam() {
+  const a = P.active; if (!a) return;
+  const subjects = a.sections.map((s) => {
+    let c = 0;
+    for (let k = s.from; k < s.from + s.n; k++) { const it = a.items[k]; const q = Q.get(it.id); const ok = a.answers[k] !== null && it.order[a.answers[k]] === q.answer; if (ok) c++; record(it.id, ok); }
+    const pct = Math.round((c / s.n) * 100);
+    return { unit: s.unit, correct: c, total: s.n, pct, passed: c / s.n >= PASS / 100 };
+  });
+  const correct = subjects.reduce((t, s) => t + s.correct, 0);
+  const result = { correct, total: a.items.length, passed: subjects.every((s) => s.passed), subjects, duration: Math.min(a.limit, Math.round((Date.now() - a.startedAt) / 1000)) };
+  const fin = Object.assign({}, a, { finishedAt: new Date().toISOString(), result });
+  delete fin.flags;
+  P.exams.push(fin); while (P.exams.length > 15) P.exams.shift();
+  P.active = null;
+  addXp(Math.min(60, Math.round(correct / 2)) + (result.passed ? 10 : 0));
+  save(true);
+  clearInterval(tick); view.exam = null; view.confirmEnd = false; view.corrAll = false;
+  location.hash = 'resultat-' + fin.id;
+  render();
+}
+function viewResult() {
+  const e = P.exams.find((x) => x.id === location.hash.slice(10));
+  if (!e) return `<div class="empty">Résultat introuvable. <a href="#examen">Retour aux examens</a></div>`;
+  const R = e.result; const pct = Math.round((R.correct / R.total) * 100);
+  const rows = e.items.map((it, k) => ({ it, k, q: Q.get(it.id), ans: e.answers[k] })).filter((x) => x.q);
+  const shown = view.corrAll ? rows : rows.filter((x) => x.ans === null || x.it.order[x.ans] !== x.q.answer);
+  return `<a class="backlink" href="#examen">${ic('back')} Examens</a>
+  <div class="card verdict-card ${R.passed ? 'ok' : 'ko'}"><div class="big num">${pct}<span style="font-size:22px"> %</span></div><div class="grow"><h2 style="font-size:28px">${R.passed ? 'Réussi !' : 'Pas encore…'}</h2><div class="small">${R.correct}/${R.total} bonnes réponses en ${mmss(R.duration)} · ${fmtDate(e.finishedAt)}. ${R.passed ? 'Toutes les épreuves dépassent 75 %.' : 'Il faut au moins 75 % dans chaque épreuve.'}</div></div></div>
+  <div class="subj" style="margin-top:14px">${R.subjects.map((s) => { const u = D.units.find((x) => x.id === s.unit); return `<div class="card ${u.cls}"><div class="row"><b class="grow">${esc(u.title)}</b><span class="pill ${s.passed ? 'ok' : 'ko'}">${s.pct} %</span></div><div class="bar pass-bar"><i style="width:${s.pct}%;background:${s.passed ? 'var(--good)' : 'var(--bad)'}"></i></div><div class="small muted num">${s.correct}/${s.total}</div></div>`; }).join('')}</div>
+  <div class="row wrapflex" style="margin:26px 0 12px"><h2 class="section-title grow" style="margin:0">Corrigé</h2><div class="seg"><button data-act="corr" data-all="0" aria-pressed="${!view.corrAll}">Erreurs (${rows.length - rows.filter((x) => x.ans !== null && x.it.order[x.ans] === x.q.answer).length})</button><button data-act="corr" data-all="1" aria-pressed="${view.corrAll}">Tout (${rows.length})</button></div></div>
+  ${shown.length ? `<div class="list">${shown.map(({ it, k, q, ans }) => `<div class="card corr ${q.unit.cls}"><div class="ctx">${esc(q.unit.title)} · question ${k + 1}</div><b>${esc(q.q)}</b>
+    ${it.order.map((ci, pos) => `<div class="o ${ci === q.answer ? 'right' : pos === ans ? 'wrong' : ''}">${LETTERS[pos]}. ${esc(q.choices[ci])}${pos === ans ? ' · <i>ta réponse</i>' : ''}</div>`).join('')}
+    ${ans === null ? '<div class="small" style="color:var(--bad)">Pas de réponse</div>' : ''}
+    <div class="expl">${esc(q.expl)}</div></div>`).join('')}</div>` : `<div class="card empty">Aucune erreur : sans faute !</div>`}
+  <div class="row wrapflex" style="margin-top:16px"><button class="btn" data-act="review-mistakes" ${P.mistakes.length ? '' : 'disabled'}>Revoir mes erreurs</button><a class="btn alt" href="#examen">Autre examen</a></div>`;
+}
+
+// ───────────── Ressources ─────────────
+function viewResources() {
+  const L = D.library; const chk = L.checklist || []; const nDone = chk.filter((c) => P.lib[c.id]).length;
+  const s = view.libQ.trim().toLowerCase(); const g = view.glossQ.trim().toLowerCase();
+  const hits = g.length >= 2 ? D.units.flatMap((u) => u.skills.flatMap((sk) => sk.vocab.filter(([t, d]) => t.toLowerCase().includes(g) || d.toLowerCase().includes(g)).map(([t, d]) => ({ t, d, sk, u })))).slice(0, 30) : [];
+  const safeUrl = (u) => (/^https:\/\//.test(u || '') ? u : null);
+  return `<h1 class="section-title" style="margin-top:4px">Ressources</h1>
+  <div class="card pad">
+    <label class="eyebrow" for="gloss-q">Lexique : chercher un terme dans les 9 matières</label>
+    <div class="row" style="margin-top:8px">${ic('search')}<input class="input" id="gloss-q" placeholder="QNH, VMC, magnéto, TEMSI…" value="${esc(view.glossQ)}" autocomplete="off"></div>
+    <div id="gloss-hits">${glossHits(hits, g)}</div>
+  </div>
+  <h2 class="section-title">Mon programme prioritaire</h2>
+  <div class="card"><div class="pad" style="padding-bottom:6px"><div class="row"><div class="grow small muted">${nDone}/${chk.length} étapes réalisées</div></div><div class="bar" style="margin-top:8px"><i style="width:${chk.length ? (nDone / chk.length) * 100 : 0}%;background:var(--good)"></i></div></div>
+    ${chk.map((c) => `<label class="check ${P.lib[c.id] ? 'done' : ''}"><input type="checkbox" id="chk-${esc(c.id)}" data-act="lib-toggle" data-id="${esc(c.id)}" ${P.lib[c.id] ? 'checked' : ''}><span class="grow">${esc(c.label)}</span>${safeUrl(c.url) ? `<a href="${esc(c.url)}" target="_blank" rel="noopener" class="small">Ouvrir</a>` : ''}</label>`).join('')}
+  </div>
+  ${L.method ? `<p class="small muted" style="margin:10px 2px">${esc(L.method)}</p>` : ''}
+  <h2 class="section-title">Bibliothèque</h2>
+  <div class="row wrapflex"><div class="row grow" style="min-width:220px">${ic('search')}<input class="input" id="lib-q" placeholder="Rechercher une ressource…" value="${esc(view.libQ)}" autocomplete="off"></div>
+    <div class="seg">${[['', 'Toutes'], ['fr', 'Français'], ['en', 'Anglais']].map(([v, l]) => `<button data-act="lib-lang" data-lang="${v}" aria-pressed="${view.libLang === v}">${l}</button>`).join('')}</div></div>
+  ${L.sections.map((sec) => {
+    const items = (sec.items || []).filter((it) => (!view.libLang || it.lang === view.libLang) && (!s || `${it.title} ${it.description || ''} ${it.kind || ''}`.toLowerCase().includes(s)));
+    if (!items.length && (s || view.libLang)) return '';
+    return `<section style="margin-top:22px"><h3 style="font-size:21px;margin-bottom:6px">${esc(sec.title)}</h3>
+      ${sec.intro ? `<p class="small muted" style="margin:0 0 8px">${esc(sec.intro)}</p>` : ''}
+      ${sec.table ? `<div class="card scroll-x" style="margin-bottom:10px"><table class="fmt"><thead><tr>${sec.table.columns.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((r) => `<tr>${r.cells.map((c) => `<td ${r.total ? 'style="font-weight:700"' : ''}>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : ''}
+      ${sec.warning ? `<div class="warn">${esc(sec.warning)}</div>` : ''}
+      <div class="list">${items.map((it) => { const url = safeUrl(it.url); return `<div class="card res ${P.lib[it.id] ? 'done' : ''}"><button class="tick" data-act="lib-toggle" data-id="${esc(it.id)}" aria-pressed="${!!P.lib[it.id]}" aria-label="${P.lib[it.id] ? 'Marquer comme non consultée' : 'Marquer comme consultée'}">${P.lib[it.id] ? ic('check') : ''}</button>
+        <div class="grow"><h4>${esc(it.title)}</h4>${it.description ? `<p>${esc(it.description)}</p>` : ''}<div class="tags">${it.lang ? `<span class="tag">${it.lang === 'fr' ? 'FR' : 'EN'}</span>` : ''}${it.access ? `<span class="tag ${/^gratuit$/i.test(it.access) ? 'free' : ''}">${esc(it.access)}</span>` : ''}${it.kind ? `<span class="tag">${esc(it.kind)}</span>` : ''}${it.note ? `<span class="tag">${esc(it.note)}</span>` : ''}</div></div>
+        ${url ? `<a class="btn alt sm" href="${esc(url)}" target="_blank" rel="noopener">Ouvrir ${ic('ext')}</a>` : `<a class="btn ghost sm" href="https://duckduckgo.com/?q=${encodeURIComponent(it.search || it.title)}" target="_blank" rel="noopener">${ic('search')} Chercher</a>`}</div>`; }).join('')}</div></section>`;
+  }).join('')}
+  ${L.footer ? `<p class="small muted" style="margin-top:18px">${esc(L.footer)}</p>` : ''}`;
+}
+function glossHits(hits, g) {
+  if (g.length < 2) return '';
+  if (!hits.length) return `<p class="small muted" style="margin:10px 0 0">Aucun terme trouvé.</p>`;
+  return `<div class="card" style="margin-top:10px">${hits.map((h) => `<div class="hit ${h.u.cls}"><b style="color:var(--c)">${esc(h.t)}</b><span>${esc(h.d)}</span><a href="#fiche-${h.sk.id}">${esc(h.u.title)} · ${esc(h.sk.title)}</a></div>`).join('')}</div>`;
+}
+
+// ───────────── Progrès ─────────────
+function viewProgress() {
+  const allOk = [...Q.values()].filter(mastered).length;
+  const passedExams = P.exams.filter((e) => e.result.passed).length;
+  const best = (uid) => { let b = null; for (const e of P.exams) for (const s of e.result.subjects) if (s.unit === uid && (b === null || s.pct > b)) b = s.pct; return b; };
+  const days = []; for (let k = 13; k >= 0; k--) { const d = new Date(); d.setDate(d.getDate() - k); const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; days.push([key, P.days[key] || 0, d]); }
+  const maxD = Math.max(20, ...days.map((x) => x[1]));
+  return `<h1 class="section-title" style="margin-top:4px">Mes progrès</h1>
+  <div class="tiles" style="max-width:none;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">
+    <div class="tile"><div class="v num">${P.xp}</div><div class="l">XP au total</div></div>
+    <div class="tile"><div class="v num">${streakNow()}</div><div class="l">Jours d'affilée</div></div>
+    <div class="tile"><div class="v num">${allOk}<span class="small muted">/${Q.size}</span></div><div class="l">Questions réussies</div></div>
+    <div class="tile"><div class="v num">${passedExams}<span class="small muted">/${P.exams.length}</span></div><div class="l">Examens réussis</div></div>
+  </div>
+  <div class="card pad" style="margin-top:14px"><div class="eyebrow">XP des 14 derniers jours</div>
+    <svg viewBox="0 0 280 90" style="width:100%;height:auto;margin-top:8px" role="img" aria-label="XP gagnés par jour sur 14 jours">
+      <line x1="0" y1="72" x2="280" y2="72" stroke="var(--rule)" stroke-width="1"/>
+      ${days.map(([key, v, d], k) => { const h = (v / maxD) * 60; return `<rect x="${k * 20 + 4}" y="${72 - h}" width="12" height="${Math.max(h, v ? 2 : 0)}" rx="2" fill="${key === today() ? 'var(--accent)' : 'var(--sky)'}"><title>${d.toLocaleDateString('fr-FR')} : ${v} XP</title></rect><text x="${k * 20 + 10}" y="86" text-anchor="middle" font-size="8" fill="var(--muted)">${d.getDate()}</text>`; }).join('')}
+    </svg></div>
+  <h2 class="section-title">Par matière</h2>
+  <div class="list">${D.units.map((u) => { const ok = u.qs.filter(mastered).length; const lv = u.skills.reduce((m, s) => m + level(s), 0); const b = best(u.id); return `<div class="card pad ${u.cls}" style="padding:14px 16px"><div class="row wrapflex"><span class="dot">${u.n}</span><b class="grow">${esc(u.title)}</b><span class="small muted">${lv}/${u.skills.length * 3} niveaux</span>${b !== null ? `<span class="pill ${b >= PASS ? 'ok' : 'ko'}">Examen ${b} %</span>` : ''}</div>
+    <div class="row" style="margin-top:8px"><div class="bar grow"><i style="width:${(ok / u.qs.length) * 100}%"></i></div><span class="small num muted">${ok}/${u.qs.length}</span></div></div>`; }).join('')}</div>
+  <h2 class="section-title">Sauvegarde</h2>
+  <div class="card pad"><p style="margin-top:0">${sync.state === 'ok' ? 'Ta progression est enregistrée sur ton compte claude.ai : tu la retrouves sur ordinateur et sur téléphone.' : sync.state === 'off' ? 'Connexion au compte impossible pour le moment : ta progression est gardée sur cet appareil et sera synchronisée au retour du réseau.' : sync.state === 'wait' ? 'Connexion à ton compte…' : 'Ta progression est enregistrée dans ce navigateur, sur cet appareil.'}</p>
+    ${view.confirmReset ? `<div class="confirm"><div class="grow"><b>Tout effacer ?</b><div class="small">Niveaux, XP, erreurs et historique d'examens seront supprimés.</div></div><button class="btn bad sm" data-act="reset-yes">Effacer</button><button class="btn alt sm" data-act="reset-no">Annuler</button></div>` : `<button class="btn alt sm" data-act="reset">Réinitialiser ma progression</button>`}
+  </div>`;
+}
+
+// ───────────── Overlays ─────────────
+function renderOverlay() {
+  const o = $('#overlay');
+  if (view.lesson) o.innerHTML = lessonHtml();
+  else if (view.exam && P.active) o.innerHTML = examHtml();
+  else if (view.sheet) { const s = SK.get(view.sheet); o.innerHTML = s ? sheetHtml(s) : ''; }
+  else o.innerHTML = '';
+  document.body.style.overflow = view.lesson || view.exam || view.sheet ? 'hidden' : '';
+}
+
+// ───────────── Actions ─────────────
+document.addEventListener('click', (ev) => {
+  const t = ev.target.closest('[data-act]'); if (!t) return;
+  const act = t.dataset.act;
+  if (act === 'close-sheet' && ev.target.closest('[data-stop]') && !ev.target.closest('.x')) return;
+  const sk = t.dataset.skill; const unit = t.dataset.unit;
+  switch (act) {
+    case 'jump': ev.preventDefault(); document.getElementById('unit-' + unit)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); break;
+    case 'sheet': view.sheet = sk; renderOverlay(); break;
+    case 'close-sheet': view.sheet = null; renderOverlay(); break;
+    case 'lesson': startLesson(sk, false); break;
+    case 'practice': startLesson(sk, true); break;
+    case 'pick': { const it = view.lesson.items[view.lesson.i]; if (it.checked) break; it.sel = Number(t.dataset.pos); renderOverlay(); break; }
+    case 'check': lessonCheck(); break;
+    case 'next': lessonNext(); break;
+    case 'quit-lesson': view.lesson = null; save(); render(); break;
+    case 'end-lesson': view.lesson = null; render(); break;
+    case 'fiche-after': view.lesson = null; location.hash = 'fiche-' + sk; render(); break;
+    case 'review-mistakes': startPractice(P.mistakes.map((id) => Q.get(id)).filter(Boolean), 'Mes erreurs'); break;
+    case 'review-unit': { const u = D.units.find((x) => x.id === unit); const fresh = shuffle(u.qs.filter((q) => !mastered(q))); startPractice([...fresh, ...shuffle(u.qs.filter(mastered))], u.title, u.cls); break; }
+    case 'review-unit-mistakes': { const u = D.units.find((x) => x.id === unit); startPractice(P.mistakes.map((id) => Q.get(id)).filter((q) => q && q.unit === u), `${u.title} · mes erreurs`, u.cls); break; }
+    case 'review-mixed': { const all = [...Q.values()]; startPractice([...shuffle(all.filter((q) => !mastered(q))), ...shuffle(all)], 'Entraînement mixte'); break; }
+    case 'exam-start': if (!P.active) startExam(unit || null); break;
+    case 'exam-resume': if (P.active) { if (remaining(P.active) <= 0) finishExam(); else openExam(); } break;
+    case 'exam-abandon': P.active = null; save(true); render(); toast('Examen abandonné'); break;
+    case 'exam-pause': clearInterval(tick); view.exam = null; save(true); render(); toast('Examen en pause : le chrono continue, reprends-le depuis « Examen ».'); break;
+    case 'exam-pick': { const pos = Number(t.dataset.pos); P.active.answers[view.exam.i] = P.active.answers[view.exam.i] === pos ? null : pos; save(); renderOverlay(); break; }
+    case 'exam-flag': { const i = view.exam.i; const f = P.active.flags; const k = f.indexOf(i); if (k >= 0) f.splice(k, 1); else f.push(i); save(); renderOverlay(); break; }
+    case 'exam-grid': view.showGrid = !view.showGrid; renderOverlay(); break;
+    case 'exam-go': view.exam.i = Number(t.dataset.i); renderOverlay(); $('.full-body')?.scrollTo(0, 0); break;
+    case 'exam-prev': if (view.exam.i > 0) { view.exam.i--; renderOverlay(); } break;
+    case 'exam-next': if (view.exam.i < P.active.items.length - 1) { view.exam.i++; renderOverlay(); $('.full-body')?.scrollTo(0, 0); } break;
+    case 'exam-end': view.confirmEnd = true; renderOverlay(); break;
+    case 'exam-cancel-end': view.confirmEnd = false; renderOverlay(); break;
+    case 'exam-finish': finishExam(); break;
+    case 'corr': view.corrAll = t.dataset.all === '1'; render(); break;
+    case 'lib-lang': view.libLang = t.dataset.lang; render(); break;
+    case 'lib-toggle': { if (t.tagName === 'INPUT') break; const id = t.dataset.id; if (P.lib[id]) delete P.lib[id]; else P.lib[id] = today(); save(); render(); break; }
+    case 'reset': view.confirmReset = true; render(); break;
+    case 'reset-no': view.confirmReset = false; render(); break;
+    case 'reset-yes': { P = blank(); P.updatedAt = Date.now(); view.confirmReset = false; save(true); render(); toast('Progression réinitialisée'); break; }
+  }
+});
+document.addEventListener('change', (ev) => {
+  const t = ev.target;
+  if (t.dataset && t.dataset.act === 'lib-toggle' && t.tagName === 'INPUT') { const id = t.dataset.id; if (t.checked) P.lib[id] = today(); else delete P.lib[id]; save(); render(); }
+});
+document.addEventListener('input', (ev) => {
+  const t = ev.target;
+  if (t.id === 'lib-q') { view.libQ = t.value; const pos = t.selectionStart; render(); const n = $('#lib-q'); if (n) { n.focus(); n.setSelectionRange(pos, pos); } }
+  if (t.id === 'gloss-q') { view.glossQ = t.value; const g = t.value.trim().toLowerCase(); const hits = g.length >= 2 ? D.units.flatMap((u) => u.skills.flatMap((sk) => sk.vocab.filter(([a, b]) => a.toLowerCase().includes(g) || b.toLowerCase().includes(g)).map(([a, b]) => ({ t: a, d: b, sk, u })))).slice(0, 30) : []; $('#gloss-hits').innerHTML = glossHits(hits, g); }
+});
+document.addEventListener('keydown', (ev) => {
+  if (ev.target.tagName === 'INPUT' || ev.metaKey || ev.ctrlKey || ev.altKey) return;
+  if (view.lesson && !view.lesson.done) {
+    const it = view.lesson.items[view.lesson.i];
+    const pk = { 1: 0, 2: 1, 3: 2, 4: 3, a: 0, b: 1, c: 2, d: 3 }[ev.key.toLowerCase()];
+    if (pk !== undefined && !it.checked) { it.sel = pk; renderOverlay(); ev.preventDefault(); }
+    else if (ev.key === 'Enter') { ev.preventDefault(); if (it.checked) lessonNext(); else lessonCheck(); }
+    else if (ev.key === 'Escape') { view.lesson = null; save(); render(); }
+  } else if (view.exam && P.active) {
+    const k = ev.key.toLowerCase(); const map = { 1: 0, 2: 1, 3: 2, 4: 3, a: 0, b: 1, c: 2, d: 3 };
+    if (k in map) { P.active.answers[view.exam.i] = map[k]; save(); renderOverlay(); ev.preventDefault(); }
+    else if (ev.key === 'ArrowRight' && view.exam.i < P.active.items.length - 1) { view.exam.i++; renderOverlay(); }
+    else if (ev.key === 'ArrowLeft' && view.exam.i > 0) { view.exam.i--; renderOverlay(); }
+    else if (k === 'f') { const f = P.active.flags; const j = f.indexOf(view.exam.i); if (j >= 0) f.splice(j, 1); else f.push(view.exam.i); save(); renderOverlay(); }
+  } else if (view.sheet && ev.key === 'Escape') { view.sheet = null; renderOverlay(); }
+});
+
+// ───────────── Démarrage ─────────────
+function start(hot) {
+  const local = readLocal(); if (local) P = local;
+  if (hot && hot.view) { view = Object.assign(view, hot.view); }
+  render();
+  loadData().then((raw) => { indexData(raw); render(); if (view.exam && P.active) startTick(); connect(); })
+    .catch(() => { $('#main').innerHTML = '<div class="wrap"><div class="card empty">Impossible de charger les questions. Recharge la page.</div></div>'; });
+}
+window.claude?.hot?.snapshot?.(() => ({ view: { lesson: view.lesson, exam: view.exam, sheet: view.sheet } }));
+if (window.claude?.hot?.ready) window.claude.hot.ready(start); else start(window.claude?.hot?.data ?? {});
+})();
+</script>
