@@ -590,7 +590,7 @@
         "Il dégage du monoxyde de carbone au contact des flammes"
        ],
        "answer": 1,
-       "explanation": "La poudre éteint bien de nombreux feux, mais elle forme un nuage qui peut priver le pilote de visibilité et se dépose partout, jusque dans les instruments. La FAA (AC 20-42D) déconseille en général la poudre et le CO₂ à bord ; on préfère les agents gazeux comme le halon ou ses substituts."
+       "explanation": "La poudre éteint bien de nombreux feux, mais elle forme un nuage qui peut priver le pilote de visibilité et se dépose partout, jusque dans les instruments. La FAA (AC 20-42D) déconseille en général la poudre et le CO₂ à bord ; on préfère les agents gazeux, aujourd'hui les substituts du halon."
       },
       {
        "id": "u7s6q13",
@@ -1100,7 +1100,7 @@
       },
       {
        "id": "u7s7q24",
-       "q": "En croisière, un gros porteur vient de croiser votre route devant vous, environ 1 000 ft plus haut que vous. Que faites-vous pour éviter son sillage ?",
+       "q": "En croisière, un gros porteur vient de croiser votre route devant vous, environ 1 000 ft plus haut que vous. Quelle conduite adoptez-vous face à son sillage ?",
        "choices": [
         "Vous traversez sa trajectoire juste derrière lui, à votre niveau",
         "Vous évitez de passer sous et derrière lui, quitte à dévier",
@@ -1108,7 +1108,7 @@
         "Vous accélérez pour traverser ses tourbillons au plus vite"
        ],
        "answer": 1,
-       "explanation": "Les tourbillons d'un gros porteur descendent de quelques centaines de ft/min, puis se stabilisent environ 500 à 900 ft sous sa trajectoire (FAA) : 1 000 ft plus bas, vous êtes tout près de cette zone. On évite donc de passer sous et derrière lui, en modifiant la route ou le niveau, de préférence en s'écartant du côté au vent. Monter de 500 ft vous placerait en plein dans la zone des tourbillons, et accélérer pour les traverser augmente les efforts subis."
+       "explanation": "Les tourbillons d'un gros porteur descendent de quelques centaines de ft/min, puis se stabilisent environ 500 à 900 ft sous sa trajectoire (FAA) : 1 000 ft plus bas, vous êtes tout près de cette zone. On évite donc de passer sous et derrière lui, en s'écartant latéralement, de préférence du côté au vent (FAA). Monter de 500 ft vous placerait en plein dans la zone des tourbillons, et accélérer pour les traverser augmente les efforts subis."
       }
      ]
     }

@@ -739,7 +739,7 @@
         "Parce que sa pompe à vide est entraînée par un moteur électrique"
        ],
        "answer": 1,
-       "explanation": "Le FADEC est un calculateur qui commande l'injection : privé d'alimentation, il ne peut plus faire tourner le moteur. Sur le bimoteur DA42 (moteurs TAE 125), l'EASA a ainsi imposé en 2007 des batteries de secours des calculateurs, pour qu'une chute de tension ne puisse pas arrêter les moteurs en vol. Un diesel n'a pas de magnétos : l'allumage se fait par compression."
+       "explanation": "Le FADEC est un calculateur qui commande l'injection : privé d'alimentation, il ne peut plus faire tourner le moteur. Sur le bimoteur DA42 (moteurs TAE 125), l'EASA a ainsi imposé en 2007 des batteries de secours des calculateurs, pour éviter qu'une chute de tension n'arrête les moteurs en vol. Un diesel n'a pas de magnétos : l'allumage se fait par compression."
       },
       {
        "id": "u9s2q24",
@@ -1053,7 +1053,7 @@
         "Sur l'un ou l'autre, la pompe électrique étant en marche"
        ],
        "answer": 0,
-       "explanation": "Un réservoir qui a alimenté le moteur pendant le roulage et le point fixe a fait ses preuves : sélecteur bien placé, carburant présent, évent dégagé. Changer juste avant l'alignement, même pour le plus plein, c'est découvrir un éventuel défaut d'alimentation au décollage, au pire moment. La pompe électrique ne remplace ni un réservoir vide ni un sélecteur mal positionné. Les changements de réservoir se font en croisière, loin du sol, en surveillant la pression d'essence."
+       "explanation": "Un réservoir qui a alimenté le moteur pendant le roulage et le point fixe a fait ses preuves : sélecteur bien placé, carburant présent, alimentation normale. Changer juste avant l'alignement, même pour le plus plein, c'est découvrir un éventuel défaut d'alimentation au décollage, au pire moment. La pompe électrique ne remplace ni un réservoir vide ni un sélecteur mal positionné. Les changements de réservoir se font en croisière, loin du sol, en surveillant la pression d'essence."
       },
       {
        "id": "u9s3q19",

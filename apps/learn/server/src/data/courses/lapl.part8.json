@@ -635,15 +635,15 @@
       },
       {
        "id": "u8s2q15",
-       "q": "Le manuel indique « vent de travers maximal démontré : 15 kt ». Comment interprétez-vous cette indication ?",
+       "q": "Piste 04, vent 100°/16 kt. Le manuel indique un vent de travers maximal démontré de 15 kt ; vos minima personnels limitent le vent de travers à 12 kt. Vous posez-vous sur cette piste ?",
        "choices": [
-        "Une limite structurale du train, comme la VNE pour la cellule",
-        "Le maximum autorisé par la réglementation européenne",
-        "Une valeur atteinte en essais, pas une limite d'emploi",
-        "La force maximale du vent, quelle que soit sa direction"
+        "Oui : 8 kt de travers restent sous vos minima de 12 kt",
+        "Oui : 14 kt de travers restent sous les 15 kt démontrés",
+        "Non : 14 kt de travers dépassent vos minima de 12 kt",
+        "Non : les 16 kt de vent dépassent les 15 kt démontrés"
        ],
        "answer": 2,
-       "explanation": "Le vent de travers démontré est la plus forte composante rencontrée lors des essais de certification, avec un contrôle jugé suffisant ; le manuel précise souvent qu'il ne constitue pas une limite. Il ne garantit rien au-delà, et vos minima personnels peuvent être plus bas. Seul un manuel qui le range parmi ses limitations en fait une limite ; ce n'est ni une limite structurale ni une règle européenne."
+       "explanation": "Angle entre le vent et l'axe : 100° − 040° = 60°. Travers = 16 × sin 60° ≈ 16 × 0,87 ≈ 14 kt ; face = 16 × cos 60° = 8 kt. Ces 14 kt restent sous la valeur démontrée, qui n'est d'ailleurs pas une limite d'emploi, mais ils dépassent vos minima : autre piste, autre terrain ou attente. 8 kt est la composante de face (sinus et cosinus inversés) ; comparer les 16 kt du vent total à la valeur démontrée oublie de décomposer le vent."
       },
       {
        "id": "u8s2q16",
@@ -683,7 +683,7 @@
       },
       {
        "id": "u8s2q19",
-       "q": "Les majorations indicatives retiennent +20 % de distance de décollage pour 10 % de masse en plus. Quel allongement retient-on pour la distance d'atterrissage, avec la même hausse de masse ?",
+       "q": "Selon les majorations indicatives, quel allongement de la distance d'atterrissage retient-on pour une masse supérieure de 10 % ?",
        "choices": [
         "Environ 5 %",
         "Environ 10 %",
@@ -691,7 +691,7 @@
         "Environ 40 %"
        ],
        "answer": 1,
-       "explanation": "Pour 10 % de masse en plus, on retient environ +10 % à l'atterrissage. L'avion lourd approche plus vite et doit dissiper plus d'énergie (comme m × V², soit à peu près comme m²), mais la force de freinage croît aussi avec le poids : la distance augmente à peu près comme la masse. Les 20 % valent au décollage, où l'accélération baisse en plus ; 5 % est la majoration d'atterrissage par 10 °C ou par 1 000 ft d'altitude."
+       "explanation": "Pour 10 % de masse en plus, on retient environ +10 % à l'atterrissage : l'avion lourd approche plus vite et doit dissiper plus d'énergie (comme m × V², soit à peu près comme m²), mais la force de freinage croît aussi avec le poids, si bien que la distance augmente à peu près comme la masse. 20 % est la majoration du décollage, où l'accélération baisse en plus ; 5 % est celle de l'atterrissage par 10 °C ou par 1 000 ft d'altitude ; 40 % doublerait encore la valeur du décollage."
       },
       {
        "id": "u8s2q20",
@@ -1283,7 +1283,7 @@
         "L'atterrissage à destination, à la masse du départ, sans tenir compte du vent"
        ],
        "answer": 1,
-       "explanation": "La préparation vérifie les performances au départ et à l'arrivée : à destination, on calcule la distance d'atterrissage à la masse prévue à l'arrivée, avec l'altitude-pression, la température, le vent et l'état de piste attendus, puis on la compare à la LDA, coefficient de 1,43 compris. Un terrain élevé, chaud et court peut être hors de portée alors que le départ ne pose aucun problème. Juger la piste en vol, c'est découvrir le problème trop tard ; et ignorer le vent n'est pas prudent quand un vent arrière est annoncé."
+       "explanation": "La préparation vérifie les performances au départ et à l'arrivée : à destination, on calcule la distance d'atterrissage à la masse prévue à l'arrivée, avec l'altitude-pression, la température, le vent et l'état de piste attendus, puis on la compare à la LDA, coefficient de 1,43 compris. Un terrain élevé, chaud et court peut être hors de portée alors que le départ ne pose aucun problème. Juger la piste en vol, c'est découvrir le problème trop tard ; recalculer le seul décollage, même à la MTOM, laisse l'arrivée sans vérification ; et l'atterrissage seul, sans le vent, oublie le départ et un éventuel vent arrière."
       },
       {
        "id": "u8s4q07",
@@ -1292,10 +1292,10 @@
         "Un plafond limite, que vous fixerez en vol au vu du ciel",
         "Un appel radio à la destination, une fois à mi-parcours",
         "Une heure limite de décision, au-delà de laquelle vous vous déroutez",
-        "Une réserve finale réduite, pour garder du carburant pour l'attente"
+        "Un plein complet, qui dispense de choisir un terrain de dégagement"
        ],
        "answer": 2,
-       "explanation": "Les portes de sortie se préparent à froid, au sol : un terrain de dégagement, une heure limite de décision, la possibilité d'un demi-tour. Passé l'heure fixée, vous vous déroutez sans renégocier, ce qui protège de la pression d'objectif. Un plafond décidé en vol, au vu du ciel, est justement ce que les minima personnels évitent ; un appel à mi-parcours ne remplace pas une décision préparée, et la réserve finale ne se réduit pas."
+       "explanation": "Les portes de sortie se préparent à froid, au sol : un terrain de dégagement, une heure limite de décision, la possibilité d'un demi-tour. Passé l'heure fixée, vous vous déroutez sans renégocier, ce qui protège de la pression d'objectif. Un plafond décidé en vol, au vu du ciel, est justement ce que les minima personnels évitent ; un appel à mi-parcours ne remplace pas une décision préparée, et un plein complet donne du temps sans dispenser de choisir un dégagement."
       },
       {
        "id": "u8s4q08",
