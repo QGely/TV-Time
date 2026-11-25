@@ -1,0 +1,1130 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u9",
+   "title": "Connaissance générale de l'aéronef",
+   "description": "Cellule, moteur à pistons, hélice, carburant, circuits électriques et instruments de bord de l'avion léger (examen : 12 questions, 18 min).",
+   "skills": [
+    {
+     "id": "u9s6",
+     "title": "Système Pitot-statique et ses pannes",
+     "icon": "💨",
+     "tips": "Trois instruments de base fonctionnent avec la pression de l'air : l'anémomètre, l'altimètre et le variomètre. Avec leurs prises et leurs canalisations, ils forment le système Pitot-statique, indépendant du circuit de dépression ; seul le réchauffage Pitot est électrique.\n\nLes prises :\n• Tube Pitot : orifice ouvert face à l'écoulement, souvent sous l'aile. L'air s'y arrête : le tube capte la pression totale, somme de la pression statique et de la pression dynamique ½ρV². Un petit orifice de purge, au point bas, laisse s'écouler l'eau de pluie ou de condensation.\n• Prises statiques : orifices affleurant le revêtement, perpendiculaires à l'écoulement, qui captent la pression statique ambiante. Elles sont souvent placées de chaque côté du fuselage et reliées entre elles : en vol dissymétrique, la surpression d'un côté et la dépression de l'autre se compensent en partie.\n• Source statique de secours : robinet, souvent sous le tableau de bord, qui relie les instruments à l'air de la cabine quand les prises extérieures sont bouchées.\n\nAnémomètre :\n• Une capsule reçoit la pression totale du Pitot, le boîtier étanche la pression statique. La capsule se déforme sous l'effet de la différence, la pression dynamique, et l'aiguille affiche la vitesse indiquée (Vi).\n• La pression dynamique varie comme le carré de la vitesse : à vitesse doublée, elle est multipliée par 4.\n• Repères : arc blanc de VS0 à VFE (volets sortis), arc vert de VS1 à VNO (utilisation normale), arc jaune de VNO à VNE (air calme seulement), trait rouge à VNE. VS0 et VS1 sont établies à la masse maximale : moins chargé, l'avion décroche un peu sous le début des arcs.\n\nAltimètre :\n• Le boîtier, relié à la prise statique, contient une ou plusieurs capsules anéroïdes, vidées d'air et scellées. Quand l'avion monte, la pression statique baisse, les capsules se dilatent et un mécanisme fait tourner les aiguilles.\n• La fenêtre de calage affiche la pression de référence : QNH pour l'altitude, QFE pour la hauteur au-dessus du terrain, 1013 hPa pour le niveau de vol. Augmenter le calage augmente l'indication d'environ 28 ft par hPa ; le diminuer la réduit d'autant. Exemple : de 1013 à 1008 hPa, l'indication perd environ 5 × 28 = 140 ft.\n• Sur un altimètre à trois aiguilles, la grande compte les centaines de pieds, la moyenne les milliers, la petite les dizaines de milliers : une confusion coûte 1 000 ft ou plus.\n• Erreurs : instrument (frottements, hystérésis, léger retard), position (emplacement de la prise, incidence, volets), calage faux ou périmé, température (air froid : avion plus bas qu'indiqué).\n• Au sol, calé au QNH, l'altimètre doit indiquer l'altitude du terrain : un écart important rend l'instrument suspect.\n\nVariomètre :\n• La capsule est reliée directement à la prise statique, le boîtier seulement à travers une fuite calibrée. En montée, la pression baisse aussitôt dans la capsule mais plus lentement dans le boîtier : la différence fait dévier l'aiguille vers le haut. En palier, les deux pressions s'égalisent et l'aiguille revient à zéro.\n• L'aiguille part tout de suite dans le bon sens, mais la valeur stabilisée n'apparaît qu'après quelques secondes : c'est le retard du variomètre. En air agité, elle oscille : on tient le palier à l'altimètre et à l'assiette, sans courir après l'aiguille.\n\nObstructions et pannes :\nCauses : givre, insectes ou nid dans le tube, housse oubliée, eau, ruban adhésif laissé après un lavage ou une peinture.\n• Pitot bouché, purge libre : la pression piégée s'évacue par la purge jusqu'à la pression statique ; l'anémomètre tombe à zéro. Altimètre et variomètre restent justes.\n• Pitot et purge bouchés : la pression totale est piégée. En palier, la Vi reste figée quelle que soit la vitesse réelle ; en montée elle augmente, en descente elle diminue : l'anémomètre se comporte comme un altimètre. Piège : une Vi qui grimpe en montée pousse à cabrer, jusqu'au décrochage.\n• Prise statique bouchée : la pression de l'altitude où s'est produite l'obstruction reste piégée. Altimètre figé, variomètre à zéro. Tant que l'avion reste à l'altitude de l'obstruction, rien ne paraît anormal. En montée, l'anémomètre indique trop peu (risque de survitesse en rendant la main) ; en descente, il indique trop (risque de voler trop lentement).\n• Pitot et prises statiques bouchés ensemble : les trois instruments sont figés, le variomètre à zéro.\nIndices : instruments discordants, Vi incohérente avec l'assiette et la puissance, altimètre immobile alors que l'avion monte ou descend.\n\nSource statique de secours :\n• En cas de prise statique bouchée, on ouvre la source de secours selon la check-list. L'air de la cabine est en général en légère dépression par rapport à l'extérieur, à cause de l'écoulement autour du fuselage.\n• Conséquences : l'altimètre indique un peu trop haut et l'anémomètre un peu trop vite ; à l'ouverture, la pression baisse d'un coup et le variomètre montre brièvement une montée, puis redevient juste.\n• L'avion vole donc un peu plus bas et un peu plus lentement qu'indiqué : prenez des marges. Le manuel de vol précise la position des aérateurs, du chauffage et des fenêtres (ils modifient la pression cabine) et donne parfois une table de correction.\n\nRéchauffage Pitot :\n• Une résistance électrique chauffe le tube : on l'enclenche avant d'entrer dans l'humidité visible (nuage, pluie, bruine) par température voisine de 0 °C ou négative. Il ne protège que le tube et ne rend pas l'avion apte au vol en conditions givrantes.\n• Au sol, essai bref (ampèremètre ou voyant) : le tube devient très chaud. En délestage électrique, hors risque de givrage, on le coupe.\n\nVisite pré-vol et pièges :\n• Retirer la housse du Pitot, vérifier que l'orifice et la purge sont dégagés, que les prises statiques sont propres, sans ruban ni produit. Ne soufflez jamais dans le tube ni dans une prise : les capsules des instruments peuvent être endommagées.\n• Un Pitot bouché ne fige pas toujours l'anémomètre : tout dépend de la purge.",
+     "vocab": [
+      {
+       "term": "Tube Pitot",
+       "translation": "Prise face à l'écoulement qui capte la pression totale"
+      },
+      {
+       "term": "Orifice de purge",
+       "translation": "Trou au point bas du tube Pitot qui évacue l'eau"
+      },
+      {
+       "term": "Prise statique",
+       "translation": "Orifice affleurant qui capte la pression statique ambiante"
+      },
+      {
+       "term": "Source statique de secours",
+       "translation": "Robinet qui relie les instruments à la pression de la cabine"
+      },
+      {
+       "term": "Pression dynamique",
+       "translation": "½ρV², soit pression totale moins pression statique"
+      },
+      {
+       "term": "Capsule anéroïde",
+       "translation": "Capsule vidée d'air et scellée, cœur de l'altimètre"
+      },
+      {
+       "term": "Fenêtre de calage",
+       "translation": "Affichage de la pression de référence de l'altimètre"
+      },
+      {
+       "term": "Fuite calibrée",
+       "translation": "Capillaire du variomètre qui retarde l'équilibre des pressions"
+      },
+      {
+       "term": "Retard du variomètre",
+       "translation": "Délai de quelques secondes avant la valeur stabilisée"
+      },
+      {
+       "term": "Erreur de position",
+       "translation": "Erreur due à l'emplacement des prises et à l'incidence"
+      },
+      {
+       "term": "Hystérésis",
+       "translation": "Retard de la capsule à suivre une variation de pression"
+      },
+      {
+       "term": "Réchauffage Pitot",
+       "translation": "Résistance électrique qui empêche le givrage du tube"
+      },
+      {
+       "term": "Arc vert",
+       "translation": "Plage d'utilisation normale, de VS1 à VNO"
+      },
+      {
+       "term": "Arc blanc",
+       "translation": "Plage volets sortis, de VS0 à VFE"
+      },
+      {
+       "term": "VNE",
+       "translation": "Vitesse à ne jamais dépasser, trait rouge"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Le circuit Pitot-statique",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"470\" fill=\"#ffffff\"/><line x1=\"20.0\" y1=\"22.0\" x2=\"52.0\" y2=\"22.0\" stroke=\"#c0392b\" stroke-width=\"4\"/><text x=\"60.0\" y=\"27.0\" font-size=\"15\" fill=\"#14213d\">Pression totale</text><line x1=\"200.0\" y1=\"22.0\" x2=\"232.0\" y2=\"22.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><text x=\"240.0\" y=\"27.0\" font-size=\"15\" fill=\"#14213d\">Pression statique</text><line x1=\"14.0\" y1=\"96.0\" x2=\"44.0\" y2=\"96.0\" stroke=\"#46516a\" stroke-width=\"2\"/><polygon points=\"54.0,96.0 46.0,91.0 46.0,101.0\" fill=\"#46516a\"/><line x1=\"14.0\" y1=\"108.0\" x2=\"44.0\" y2=\"108.0\" stroke=\"#46516a\" stroke-width=\"2\"/><polygon points=\"54.0,108.0 46.0,103.0 46.0,113.0\" fill=\"#46516a\"/><line x1=\"14.0\" y1=\"120.0\" x2=\"44.0\" y2=\"120.0\" stroke=\"#46516a\" stroke-width=\"2\"/><polygon points=\"54.0,120.0 46.0,115.0 46.0,125.0\" fill=\"#46516a\"/><text x=\"12.0\" y=\"148.0\" font-size=\"14\" fill=\"#46516a\">Écoulement</text><rect x=\"66\" y=\"100\" width=\"134\" height=\"16\" rx=\"5\" fill=\"#d9dee6\" stroke=\"#46516a\" stroke-width=\"2\"/><ellipse cx=\"67\" cy=\"108\" rx=\"3\" ry=\"7\" fill=\"#14213d\"/><text x=\"70.0\" y=\"88.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Tube Pitot</text><circle cx=\"140.0\" cy=\"117.0\" r=\"3\" fill=\"#14213d\"/><line x1=\"140.0\" y1=\"121.0\" x2=\"140.0\" y2=\"129.0\" stroke=\"#1f5fa8\" stroke-width=\"1.5\" stroke-dasharray=\"2 2\"/><text x=\"140.0\" y=\"148.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">Purge</text><polyline points=\"200,108 262,108 262,76 396,76\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"4\"/><rect x=\"34\" y=\"180\" width=\"18\" height=\"120\" fill=\"#cfd6df\" stroke=\"#46516a\" stroke-width=\"2\"/><circle cx=\"43\" cy=\"245\" r=\"5\" fill=\"#14213d\"/><text x=\"64.0\" y=\"212.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Prise statique</text><text x=\"64.0\" y=\"232.0\" font-size=\"14\" fill=\"#46516a\">flanc du fuselage</text><line x1=\"48.0\" y1=\"245.0\" x2=\"360.0\" y2=\"245.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><line x1=\"322.0\" y1=\"133.0\" x2=\"322.0\" y2=\"402.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><line x1=\"320.0\" y1=\"135.0\" x2=\"360.0\" y2=\"135.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><line x1=\"322.0\" y1=\"365.0\" x2=\"398.0\" y2=\"365.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><circle cx=\"322.0\" cy=\"245.0\" r=\"6\" fill=\"#1f5fa8\"/><circle cx=\"322.0\" cy=\"365.0\" r=\"6\" fill=\"#1f5fa8\"/><text x=\"26.0\" y=\"372.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Source statique de secours</text><line x1=\"128.0\" y1=\"402.0\" x2=\"188.0\" y2=\"402.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><circle cx=\"200\" cy=\"402\" r=\"12\" fill=\"#ffffff\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><line x1=\"192.0\" y1=\"410.0\" x2=\"208.0\" y2=\"394.0\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><line x1=\"212.0\" y1=\"402.0\" x2=\"324.0\" y2=\"402.0\" stroke=\"#1f5fa8\" stroke-width=\"4\"/><text x=\"200.0\" y=\"434.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">robinet (cabine)</text><text x=\"26.0\" y=\"434.0\" font-size=\"14\" fill=\"#46516a\">air cabine</text><polygon points=\"126.0,402.0 118.0,397.0 118.0,407.0\" fill=\"#46516a\"/><line x1=\"100.0\" y1=\"402.0\" x2=\"118.0\" y2=\"402.0\" stroke=\"#46516a\" stroke-width=\"2\"/><rect x=\"360\" y=\"40\" width=\"346\" height=\"122\" rx=\"10\" fill=\"#f4f7fb\" stroke=\"#46516a\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"76\" rx=\"30\" ry=\"8\" fill=\"#f6d5d1\" stroke=\"#c0392b\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"88\" rx=\"30\" ry=\"8\" fill=\"#f6d5d1\" stroke=\"#c0392b\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"100\" rx=\"30\" ry=\"8\" fill=\"#f6d5d1\" stroke=\"#c0392b\" stroke-width=\"2\"/><line x1=\"396.0\" y1=\"76.0\" x2=\"402.0\" y2=\"76.0\" stroke=\"#c0392b\" stroke-width=\"4\"/><polygon points=\"372.0,135.0 362.4,129.0 362.4,141.0\" fill=\"#1f5fa8\"/><text x=\"476.0\" y=\"68.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Anémomètre</text><text x=\"476.0\" y=\"92.0\" font-size=\"15\" fill=\"#c0392b\">capsule : pression totale</text><text x=\"476.0\" y=\"114.0\" font-size=\"15\" fill=\"#1f5fa8\">boîtier : pression statique</text><text x=\"476.0\" y=\"138.0\" font-size=\"15\" fill=\"#14213d\">→ vitesse indiquée</text><rect x=\"360\" y=\"180\" width=\"346\" height=\"124\" rx=\"10\" fill=\"#f4f7fb\" stroke=\"#46516a\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"238\" rx=\"30\" ry=\"8\" fill=\"#e3e6ea\" stroke=\"#46516a\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"250\" rx=\"30\" ry=\"8\" fill=\"#e3e6ea\" stroke=\"#46516a\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"262\" rx=\"30\" ry=\"8\" fill=\"#e3e6ea\" stroke=\"#46516a\" stroke-width=\"2\"/><polygon points=\"372.0,245.0 362.4,239.0 362.4,251.0\" fill=\"#1f5fa8\"/><text x=\"476.0\" y=\"208.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Altimètre</text><text x=\"476.0\" y=\"232.0\" font-size=\"15\" fill=\"#46516a\">capsules anéroïdes scellées</text><text x=\"476.0\" y=\"254.0\" font-size=\"15\" fill=\"#1f5fa8\">boîtier : pression statique</text><text x=\"476.0\" y=\"278.0\" font-size=\"15\" fill=\"#14213d\">→ altitude selon le calage</text><rect x=\"360\" y=\"322\" width=\"346\" height=\"130\" rx=\"10\" fill=\"#f4f7fb\" stroke=\"#46516a\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"356\" rx=\"30\" ry=\"8\" fill=\"#d8e7f7\" stroke=\"#1f5fa8\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"368\" rx=\"30\" ry=\"8\" fill=\"#d8e7f7\" stroke=\"#1f5fa8\" stroke-width=\"2\"/><ellipse cx=\"430\" cy=\"380\" rx=\"30\" ry=\"8\" fill=\"#d8e7f7\" stroke=\"#1f5fa8\" stroke-width=\"2\"/><line x1=\"380.0\" y1=\"365.0\" x2=\"380.0\" y2=\"392.0\" stroke=\"#1f5fa8\" stroke-width=\"2.5\"/><polyline points=\"380,392 374,397 386,402 374,407 386,412 380,417\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2\"/><text x=\"392.0\" y=\"440.0\" font-size=\"14\" fill=\"#1f5fa8\">fuite calibrée</text><text x=\"476.0\" y=\"350.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Variomètre</text><text x=\"476.0\" y=\"374.0\" font-size=\"15\" fill=\"#1f5fa8\">capsule : statique directe</text><text x=\"476.0\" y=\"396.0\" font-size=\"15\" fill=\"#1f5fa8\">boîtier : par la fuite</text><text x=\"476.0\" y=\"420.0\" font-size=\"15\" fill=\"#14213d\">→ vitesse verticale</text></svg>",
+       "caption": "Le tube Pitot n'alimente que l'anémomètre ; la pression statique alimente les trois instruments, et la source de secours la remplace par celle de la cabine. Dans le variomètre, le boîtier ne reçoit la pression qu'à travers la fuite calibrée, d'où son léger retard."
+      },
+      {
+       "title": "Obstructions : effets sur les instruments",
+       "svg": "<svg viewBox=\"0 0 720 436\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"436\" fill=\"#ffffff\"/><rect x=\"10\" y=\"10\" width=\"700\" height=\"48\" fill=\"#1f3b63\"/><text x=\"115.0\" y=\"40.0\" font-size=\"16\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">Situation</text><text x=\"320.0\" y=\"40.0\" font-size=\"16\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">Anémomètre</text><text x=\"492.5\" y=\"40.0\" font-size=\"16\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">Altimètre</text><text x=\"637.5\" y=\"40.0\" font-size=\"16\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">Variomètre</text><rect x=\"10\" y=\"58\" width=\"210\" height=\"84\" fill=\"#f1f4f8\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"24.0\" y=\"96.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Pitot bouché,</text><text x=\"24.0\" y=\"117.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">purge libre</text><rect x=\"220\" y=\"58\" width=\"200\" height=\"84\" fill=\"#fdecec\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"320.0\" y=\"105.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">Tombe à zéro</text><rect x=\"420\" y=\"58\" width=\"145\" height=\"84\" fill=\"#e6f4ea\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"492.5\" y=\"105.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Juste</text><rect x=\"565\" y=\"58\" width=\"145\" height=\"84\" fill=\"#e6f4ea\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"637.5\" y=\"105.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Juste</text><rect x=\"10\" y=\"142\" width=\"210\" height=\"84\" fill=\"#f1f4f8\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"24.0\" y=\"180.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Pitot et purge</text><text x=\"24.0\" y=\"201.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">bouchés</text><rect x=\"220\" y=\"142\" width=\"200\" height=\"84\" fill=\"#fdecec\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"320.0\" y=\"169.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">Figé en palier</text><text x=\"320.0\" y=\"189.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">Montée : augmente</text><text x=\"320.0\" y=\"209.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">Descente : diminue</text><rect x=\"420\" y=\"142\" width=\"145\" height=\"84\" fill=\"#e6f4ea\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"492.5\" y=\"189.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Juste</text><rect x=\"565\" y=\"142\" width=\"145\" height=\"84\" fill=\"#e6f4ea\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"637.5\" y=\"189.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Juste</text><rect x=\"10\" y=\"226\" width=\"210\" height=\"84\" fill=\"#f1f4f8\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"24.0\" y=\"264.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Prise statique</text><text x=\"24.0\" y=\"285.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">bouchée</text><rect x=\"220\" y=\"226\" width=\"200\" height=\"84\" fill=\"#fdecec\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"320.0\" y=\"263.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">Montée : trop faible</text><text x=\"320.0\" y=\"283.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">Descente : trop forte</text><rect x=\"420\" y=\"226\" width=\"145\" height=\"84\" fill=\"#fdecec\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"492.5\" y=\"273.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">Figé</text><rect x=\"565\" y=\"226\" width=\"145\" height=\"84\" fill=\"#fdecec\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"637.5\" y=\"273.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">Zéro</text><rect x=\"10\" y=\"310\" width=\"210\" height=\"84\" fill=\"#f1f4f8\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"24.0\" y=\"348.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Source statique</text><text x=\"24.0\" y=\"369.0\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">de secours ouverte</text><rect x=\"220\" y=\"310\" width=\"200\" height=\"84\" fill=\"#fff4e5\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"320.0\" y=\"357.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">Un peu trop fort</text><rect x=\"420\" y=\"310\" width=\"145\" height=\"84\" fill=\"#fff4e5\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"492.5\" y=\"357.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">Un peu trop haut</text><rect x=\"565\" y=\"310\" width=\"145\" height=\"84\" fill=\"#fff4e5\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"637.5\" y=\"347.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">Pic de montée,</text><text x=\"637.5\" y=\"367.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\">puis juste</text><text x=\"360.0\" y=\"420.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\" font-style=\"italic\">Pitot et prise statique bouchés ensemble : tout est figé, variomètre à zéro.</text></svg>",
+       "caption": "Sens des erreurs à vitesse réelle constante. Une prise statique bouchée ne se voit pas en palier : l'erreur n'apparaît qu'en changeant d'altitude, d'où l'intérêt du contrôle croisé des instruments."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u9s6q01",
+       "q": "À quoi sert le petit orifice percé au point bas d'un tube Pitot ?",
+       "choices": [
+        "À mesurer la température de l'air extérieur",
+        "À évacuer l'eau de pluie ou de condensation",
+        "À capter la pression statique en cas de panne",
+        "À ventiler la résistance du réchauffage"
+       ],
+       "answer": 1,
+       "explanation": "C'est l'orifice de purge : il laisse s'écouler l'eau qui pénètre dans le tube et pourrait fausser ou bloquer la mesure. Il ne capte pas la pression statique, prise par les orifices du fuselage ou par la source de secours, et ne mesure aucune température."
+      },
+      {
+       "id": "u9s6q02",
+       "q": "Pourquoi les prises statiques sont-elles souvent placées de chaque côté du fuselage et reliées entre elles ?",
+       "choices": [
+        "Pour compenser en partie l'erreur due à un vol dissymétrique",
+        "Pour alimenter séparément l'altimètre et l'anémomètre",
+        "Pour doubler la pression captée et rendre l'altimètre plus sensible",
+        "Pour qu'une prise serve de purge à l'autre sous la pluie"
+       ],
+       "answer": 0,
+       "explanation": "En glissade ou en dérapage, un côté du fuselage est en légère surpression et l'autre en légère dépression : en reliant les deux prises, on obtient une moyenne plus proche de la vraie pression statique. Relier deux prises ne double pas la pression, et les trois instruments partagent le même circuit statique."
+      },
+      {
+       "id": "u9s6q03",
+       "q": "Dans un anémomètre, comment les pressions sont-elles distribuées ?",
+       "choices": [
+        "La capsule reçoit la pression statique, le boîtier est vidé d'air",
+        "La capsule reçoit la pression totale, le boîtier la pression statique",
+        "La capsule, scellée et vide d'air, est dans un boîtier relié au Pitot",
+        "La capsule et le boîtier reçoivent la pression totale"
+       ],
+       "answer": 1,
+       "explanation": "La capsule, reliée au tube Pitot, est entourée de la pression statique du boîtier : elle se déforme sous l'effet de la différence, la pression dynamique. La capsule scellée et vide d'air est celle de l'altimètre, et la fuite calibrée appartient au variomètre."
+      },
+      {
+       "id": "u9s6q04",
+       "q": "Dans un altimètre, que font les capsules anéroïdes quand l'avion monte ?",
+       "choices": [
+        "Elles se dilatent, car la pression totale du Pitot augmente",
+        "Elles se dilatent, car la pression statique du boîtier diminue",
+        "Elles se contractent, car la pression dynamique augmente",
+        "Elles restent fixes : c'est le calage qui fait tourner les aiguilles"
+       ],
+       "answer": 1,
+       "explanation": "Les capsules, vidées d'air et scellées, sont entourées de la pression statique. En montée, cette pression baisse et les capsules se dilatent ; un mécanisme transforme ce mouvement en rotation des aiguilles. L'altimètre n'est pas relié au Pitot et ne mesure aucune pression dynamique."
+      },
+      {
+       "id": "u9s6q05",
+       "q": "Pourquoi le variomètre revient-il à zéro en palier stabilisé ?",
+       "choices": [
+        "Le gyroscope interne a cessé de précesser",
+        "Le tube Pitot ne transmet plus de pression dynamique",
+        "Les capsules anéroïdes sont arrivées en butée",
+        "Capsule et boîtier sont revenus à la même pression"
+       ],
+       "answer": 3,
+       "explanation": "La capsule suit la pression statique sans retard, le boîtier la rejoint à travers la fuite calibrée. En palier, la pression ne varie plus : les deux s'égalisent et l'aiguille revient à zéro. Le variomètre n'est relié qu'à la statique et ne contient pas de gyroscope."
+      },
+      {
+       "id": "u9s6q06",
+       "q": "Au sol, vous tournez le bouton de calage de l'altimètre de 1013 à 1020 hPa. Comment évolue l'indication ?",
+       "choices": [
+        "Elle augmente d'environ 200 ft",
+        "Elle reste la même, l'air n'ayant pas changé",
+        "Elle diminue d'environ 200 ft",
+        "Elle augmente d'environ 70 ft"
+       ],
+       "answer": 0,
+       "explanation": "Augmenter le calage augmente l'indication d'environ 28 ft par hPa : 7 × 28 ≈ 196 ft, soit environ 200 ft. Le sens est le piège classique ; 70 ft correspondrait à 10 ft par hPa. Le calage déplace la référence de mesure, même si l'air extérieur ne change pas."
+      },
+      {
+       "id": "u9s6q07",
+       "q": "Quand faut-il enclencher le réchauffage Pitot ?",
+       "choices": [
+        "Avant l'humidité visible, par température voisine de 0 °C",
+        "Après avoir constaté une indication anormale de l'anémomètre",
+        "Dès la mise en route, pour toute la durée du vol, par principe",
+        "Au sol avant le décollage, pour sécher le tube, puis le couper"
+       ],
+       "answer": 0,
+       "explanation": "Le réchauffage prévient le givrage du tube : on l'enclenche avant d'entrer dans un nuage, la pluie ou la bruine par température voisine de 0 °C ou négative. Attendre l'indication anormale, c'est laisser le givre se former ; le laisser en marche sans raison consomme beaucoup d'énergie électrique, et au sol on ne l'essaie que brièvement."
+      },
+      {
+       "id": "u9s6q08",
+       "q": "Pendant la visite pré-vol, comment contrôlez-vous le tube Pitot ?",
+       "choices": [
+        "Vous bouchez la prise statique et observez l'altimètre",
+        "Housse retirée, vous vérifiez à l'œil que l'orifice et la purge sont dégagés",
+        "Vous soufflez dans le tube et regardez si l'anémomètre réagit",
+        "Vous laissez le réchauffage en marche plusieurs minutes pour le déboucher"
+       ],
+       "answer": 1,
+       "explanation": "Le contrôle est visuel : housse retirée, orifice et purge sans insectes, nid ni eau. Souffler dans le tube peut endommager la capsule de l'anémomètre ; le réchauffage ne s'essaie que brièvement au sol et ne débouche pas un nid d'insectes."
+      },
+      {
+       "id": "u9s6q09",
+       "q": "Vous passez du palier à la montée. Comment réagit le variomètre ?",
+       "choices": [
+        "Il part aussitôt vers le haut ; la valeur se stabilise en quelques secondes",
+        "Il indique d'abord une descente, puis une montée de plus en plus forte",
+        "Il affiche dès la mise en montée le taux exact, sans le moindre retard",
+        "Il reste à zéro quelques secondes, puis passe d'un coup à la valeur exacte"
+       ],
+       "answer": 0,
+       "explanation": "La pression de la capsule baisse aussitôt : l'aiguille part immédiatement vers le haut. Mais la différence avec le boîtier ne se stabilise qu'après quelques secondes, à cause de la fuite calibrée : c'est le retard du variomètre, qui donne d'emblée la tendance mais pas tout de suite la valeur."
+      },
+      {
+       "id": "u9s6q10",
+       "q": "En croisière, un insecte bouche l'entrée du tube Pitot ; l'orifice de purge reste libre. Que fait l'anémomètre ?",
+       "choices": [
+        "Il indique une vitesse un peu trop forte",
+        "Il augmente en montée comme un altimètre",
+        "Il reste figé sur la dernière vitesse",
+        "Il chute jusqu'à zéro"
+       ],
+       "answer": 3,
+       "explanation": "La pression piégée dans la canalisation s'évacue par la purge jusqu'à égaler la pression statique : la différence mesurée s'annule et l'aiguille tombe à zéro. Une indication figée, ou qui varie avec l'altitude, correspond à un Pitot dont la purge est aussi bouchée."
+      },
+      {
+       "id": "u9s6q11",
+       "q": "En palier, le tube Pitot et sa purge se bouchent par le givre. Vous réduisez la puissance et la vitesse réelle diminue de 20 kt. Que montre l'anémomètre ?",
+       "choices": [
+        "Une vitesse à zéro, faute de pression",
+        "La même vitesse qu'avant la réduction",
+        "Une vitesse plus faible de 20 kt",
+        "Une vitesse plus forte de 20 kt"
+       ],
+       "answer": 1,
+       "explanation": "La pression totale est piégée et, en palier, la pression statique ne change pas : la différence mesurée reste la même et l'aiguille ne bouge plus, quelle que soit la vitesse réelle. L'anémomètre ne réagirait qu'à un changement d'altitude ; la chute à zéro supposerait une purge restée libre."
+      },
+      {
+       "id": "u9s6q12",
+       "q": "La prise statique se bouche pendant un palier stabilisé. Tant que vous restez à cette altitude, quelles indications sont faussées ?",
+       "choices": [
+        "L'anémomètre, qui chute rapidement vers zéro",
+        "L'altimètre, qui revient à l'altitude du terrain",
+        "Le variomètre, qui indique une montée continue",
+        "Aucune : la pression piégée reste la bonne"
+       ],
+       "answer": 3,
+       "explanation": "La pression piégée est celle de l'altitude de l'obstruction, égale à la pression réelle tant que l'avion reste en palier : les trois instruments restent justes. Dès que l'altitude change, l'altimètre se fige, le variomètre reste à zéro et l'anémomètre devient faux."
+      },
+      {
+       "id": "u9s6q13",
+       "q": "Pourquoi l'altimètre indique-t-il un peu trop haut quand la source statique de secours est ouverte ?",
+       "choices": [
+        "Parce que la cabine est mise en légère surpression par le chauffage",
+        "Parce que l'air de la cabine, plus chaud, est plus dense que l'air extérieur",
+        "Parce que la canalisation de secours est plus longue que l'autre",
+        "Parce que l'air de la cabine est en légère dépression par rapport à l'extérieur"
+       ],
+       "answer": 3,
+       "explanation": "L'écoulement autour du fuselage met en général la cabine en légère dépression : une pression plus faible correspond à une altitude plus élevée, d'où une indication trop haute, et un anémomètre qui indique un peu trop vite. Une surpression donnerait l'effet inverse ; la longueur de canalisation ne crée qu'un retard."
+      },
+      {
+       "id": "u9s6q14",
+       "q": "En palier, vous ouvrez la source statique de secours. Que montre brièvement le variomètre ?",
+       "choices": [
+        "Une descente continue tant que la source reste ouverte",
+        "Une oscillation sans direction privilégiée",
+        "Une descente, avant de revenir vers zéro",
+        "Une montée, avant de revenir vers zéro"
+       ],
+       "answer": 3,
+       "explanation": "À l'ouverture, la pression statique passe brusquement à celle de la cabine, un peu plus faible : pour le variomètre, c'est comme une montée soudaine. L'aiguille dévie vers le haut, puis revient à zéro quand capsule et boîtier se sont égalisés."
+      },
+      {
+       "id": "u9s6q15",
+       "q": "Le tube Pitot, purge comprise, et la prise statique sont bouchés en même temps. Que fait l'anémomètre en montée ?",
+       "choices": [
+        "Il reste figé sur sa dernière indication",
+        "Il diminue jusqu'à zéro",
+        "Il indique trop peu, sans se figer",
+        "Il augmente avec l'altitude, comme un altimètre"
+       ],
+       "answer": 0,
+       "explanation": "Les deux pressions sont piégées : leur différence ne varie plus, quels que soient l'altitude et la vitesse réelle. L'anémomètre ne se comporte comme un altimètre que si la statique reste libre ; avec la seule prise statique bouchée, il indiquerait trop peu en montée."
+      },
+      {
+       "id": "u9s6q16",
+       "q": "Pourquoi un avion peu chargé peut-il décrocher à une vitesse indiquée inférieure au début de l'arc vert ?",
+       "choices": [
+        "Parce que l'anémomètre surestime la vitesse aux faibles masses",
+        "Parce que l'arc vert commence à VS0, vitesse de décrochage volets sortis",
+        "Parce que l'arc vert est tracé en vitesse propre et non en Vi",
+        "Parce que VS1, qui borne l'arc vert, est établie à la masse maximale"
+       ],
+       "answer": 3,
+       "explanation": "Les vitesses de décrochage qui bornent les arcs (VS0 pour le blanc, VS1 pour le vert) sont établies à la masse maximale. Plus léger, l'avion décroche plus bas. L'arc vert commence à VS1, en configuration lisse ; VS0 marque le début de l'arc blanc."
+      },
+      {
+       "id": "u9s6q17",
+       "q": "En montée sous la bruine, la température extérieure passe de + 2 °C à − 1 °C ; le réchauffage Pitot a été oublié. Assiette et puissance n'ont pas changé, mais la vitesse indiquée augmente régulièrement. Quelle hypothèse et quelle réaction retenez-vous ?",
+       "choices": [
+        "Une ascendance : augmenter l'assiette pour revenir à la vitesse de montée",
+        "Un vent arrière qui forcit : réduire la puissance pour garder la vitesse",
+        "Tube et purge givrés : garder assiette et puissance, puis réchauffage",
+        "Une prise statique givrée : enclencher le réchauffage et cabrer"
+       ],
+       "answer": 2,
+       "explanation": "Une Vi qui croît en montée à assiette et puissance constantes est la signature d'un Pitot dont l'entrée et la purge sont bouchées : l'anémomètre se comporte comme un altimètre. Cabrer pour la réduire mène au décrochage : on garde assiette et puissance, on enclenche le réchauffage et l'on sort de la bruine au plus tôt. Un vent établi ne fait pas croître la Vi, et une prise statique bouchée ferait au contraire indiquer trop peu en montée."
+      },
+      {
+       "id": "u9s6q18",
+       "q": "Après un lavage, un ruban adhésif est resté sur les prises statiques. Le décollage se passe normalement. Quelles indications obtenez-vous pendant la montée ?",
+       "choices": [
+        "Altimètre figé, variomètre à zéro, vitesse indiquée trop forte",
+        "Altimètre et variomètre justes, anémomètre tombé à zéro",
+        "Altimètre en avance, variomètre en montée, vitesse juste",
+        "Altimètre figé, variomètre à zéro, vitesse indiquée trop faible"
+       ],
+       "answer": 3,
+       "explanation": "La pression piégée est celle du terrain : l'altimètre ne bouge pas et le variomètre reste à zéro. En montée, la vraie pression statique devient plus faible que la pression piégée : la différence mesurée par l'anémomètre est trop petite et il indique trop peu. Au sol, la pression piégée était la bonne, d'où un décollage sans anomalie apparente."
+      },
+      {
+       "id": "u9s6q19",
+       "q": "Source statique de secours ouverte, vous lisez 2 000 ft et 90 kt. Où se trouve vraisemblablement l'avion ?",
+       "choices": [
+        "À 2 000 ft et 90 kt, la cabine étant à la pression extérieure",
+        "Un peu plus haut que 2 000 ft et un peu plus rapide que 90 kt",
+        "Un peu plus bas que 2 000 ft et un peu plus lent que 90 kt",
+        "Un peu plus bas que 2 000 ft, mais un peu plus rapide que 90 kt"
+       ],
+       "answer": 2,
+       "explanation": "La cabine étant en légère dépression, l'altimètre et l'anémomètre indiquent un peu trop : l'avion est en réalité un peu plus bas et un peu plus lent qu'affiché. Les deux erreurs vont dans le même sens, ce qui impose des marges de hauteur et de vitesse."
+      },
+      {
+       "id": "u9s6q20",
+       "q": "Le Pitot et sa purge se bouchent à 5 000 ft alors que l'anémomètre indique 100 kt. Vous descendez à 3 000 ft à vitesse réelle constante. Que lisez-vous et quel est le risque ?",
+       "choices": [
+        "Plus de 100 kt : risque de cabrer jusqu'au décrochage",
+        "Moins de 100 kt : risque de piquer jusqu'à la survitesse",
+        "100 kt : l'indication reste figée, la purge étant bouchée",
+        "Zéro, la pression totale s'étant évacuée par la purge"
+       ],
+       "answer": 1,
+       "explanation": "La pression totale piégée est celle de 5 000 ft ; en descente, la pression statique augmente, donc la différence mesurée diminue : l'anémomètre indique moins que la vitesse réelle. Le pilote qui veut retrouver 100 kt pique et accélère réellement, jusqu'à la survitesse. L'effet inverse, plus de 100 kt, se produirait en montée ; l'indication ne reste figée qu'en palier."
+      },
+      {
+       "id": "u9s6q21",
+       "q": "Au roulement au décollage, l'anémomètre reste à zéro alors que l'avion accélère normalement. Que faites-vous ?",
+       "choices": [
+        "Vous poursuivez et enclenchez le réchauffage Pitot pour le libérer",
+        "Vous poursuivez le décollage et ouvrez la source statique de secours",
+        "Vous interrompez le décollage : le Pitot est probablement obstrué",
+        "Vous poursuivez en vous fiant au variomètre et au compte-tours"
+       ],
+       "answer": 2,
+       "explanation": "Une housse oubliée, un insecte ou un nid empêche la mesure : sans anémomètre, rotation, montée et approche se feraient sans référence de vitesse. Tant que la piste le permet, on interrompt le décollage. La source statique de secours ne remédie pas à un Pitot bouché, et le réchauffage ne débouche pas un nid."
+      },
+      {
+       "id": "u9s6q22",
+       "q": "La source statique de secours est ouverte et, selon le manuel, l'anémomètre lit alors 4 kt de trop dans votre configuration. Votre vitesse d'approche finale est de 65 kt : quelle vitesse indiquée tenez-vous ?",
+       "choices": [
+        "73 kt",
+        "61 kt",
+        "69 kt",
+        "65 kt"
+       ],
+       "answer": 2,
+       "explanation": "L'anémomètre indique 4 kt de plus qu'avec la prise statique normale : pour voler à la vitesse prévue de 65 kt, il faut lire 65 + 4 = 69 kt. Tenir 61 kt indiqués reviendrait à voler à 57 kt, trop près du décrochage ; tenir 65 kt ignore la correction."
+      },
+      {
+       "id": "u9s6q23",
+       "q": "Source statique de secours ouverte, le manuel indique que l'altimètre lit 50 ft de trop. Vous voulez survoler une colline de 1 500 ft avec au moins 500 ft de marge réelle. Quelle indication minimale tenez-vous ?",
+       "choices": [
+        "2 000 ft",
+        "1 950 ft",
+        "2 050 ft",
+        "2 100 ft"
+       ],
+       "answer": 2,
+       "explanation": "Il faut être réellement à 1 500 + 500 = 2 000 ft ; l'altimètre indiquant 50 ft de trop, il doit afficher 2 050 ft. À 1 950 ft affichés, l'avion ne serait qu'à 1 900 ft, soit 400 ft de marge."
+      },
+      {
+       "id": "u9s6q24",
+       "q": "En descente vers le terrain, l'altimètre reste bloqué sur 3 200 ft, le variomètre indique zéro et la vitesse indiquée augmente alors que l'assiette et la puissance n'ont pas changé. Quelle panne et quelle conduite retenez-vous ?",
+       "choices": [
+        "Pitot et purge bouchés : réchauffage Pitot, puis réduire la puissance",
+        "Survitesse réelle : réduire la puissance et augmenter l'assiette",
+        "Prise statique bouchée : source de secours, assiette et puissance connues",
+        "Panne de dépression : horizon à recouper avec le compas et la bille"
+       ],
+       "answer": 2,
+       "explanation": "Altimètre figé et variomètre à zéro désignent la statique ; en descente, une prise statique bouchée fait indiquer trop à l'anémomètre. On ouvre la source de secours et l'on tient l'assiette et la puissance connues : cabrer ou réduire pour corriger une vitesse qui n'a pas réellement augmenté ferait voler l'avion trop lentement, jusqu'au décrochage. Un Pitot bouché ne figerait pas l'altimètre et ferait au contraire baisser la Vi en descente."
+      }
+     ]
+    },
+    {
+     "id": "u9s7",
+     "title": "Gyroscopes et compas magnétique",
+     "icon": "🧭",
+     "tips": "Trois instruments du tableau utilisent un gyroscope : l'horizon artificiel, le conservateur de cap et l'indicateur (ou coordinateur) de virage. Le compas magnétique n'en contient pas : c'est la référence de cap magnétique de base de l'avion.\n\nLe gyroscope :\n• Un rotor lourd, qui tourne à plusieurs milliers de tours par minute, monté sur un ou deux cardans qui lui laissent la liberté de s'orienter.\n• Fixité dans l'espace (rigidité) : l'axe garde sa direction tant qu'aucune force ne le perturbe. Elle est d'autant plus grande que le rotor est lourd, que sa masse est éloignée de l'axe et qu'il tourne vite.\n• Précession : une force qui tend à basculer le rotor produit son effet décalé de 90° dans le sens de rotation. La vitesse de précession est proportionnelle à la force et inversement proportionnelle à la vitesse du rotor : un gyroscope qui ralentit dérive davantage.\n• Dérive mécanique : les frottements des cardans créent une précession parasite.\n• Dérive apparente : la Terre tourne de 15° par heure ; à la latitude φ, un axe fixe dans l'espace semble tourner par rapport au méridien local d'environ 15° × sin φ par heure. Exemple : à 43° N, 15 × sin 43° = 15 × 0,68 ≈ 10° par heure.\n\nEntraînement :\n• Pneumatique : une pompe à vide entraînée par le moteur (ou un venturi) aspire l'air à travers l'instrument ; le jet d'air fait tourner le rotor. L'indicateur de dépression doit rester dans son arc vert.\n• Électrique : un moteur électrique entraîne le rotor ; un drapeau signale souvent la perte d'alimentation.\n• Configuration courante : horizon et conservateur pneumatiques, indicateur de virage électrique ; une seule panne ne prive pas de tout.\n• Après la mise en route, le rotor met quelques minutes à prendre sa vitesse : on vérifie au roulage que l'horizon s'est stabilisé et que le conservateur suit les virages.\n\nHorizon artificiel :\n• Gyroscope à axe vertical, maintenu vertical par un dispositif d'érection. La barre d'horizon est liée au gyroscope, la maquette au boîtier, donc à l'avion : on lit l'assiette et l'inclinaison.\n• De légères erreurs apparaissent en accélération et en virage prolongé ; elles se résorbent en vol stabilisé.\n• Panne de dépression : le rotor ralentit, l'horizon s'incline ou bascule lentement sans que l'avion bouge. On la détecte par l'indicateur de dépression et le contrôle croisé (compas, coordinateur, altimètre).\n\nConservateur de cap :\n• Gyroscope à axe horizontal entraînant une rose lisible comme une carte : cap stable, sans erreur de virage ni d'accélération.\n• Sans référence magnétique, il dérive : on le cale sur le compas avant le départ, puis toutes les 10 à 15 min, en vol rectiligne, ailes horizontales, à vitesse constante, compas stabilisé.\n• Calcul de dérive : recalé à 10 h 00, il indique 094 à 10 h 20 alors que le compas lit 090 : 4° en 20 min, soit 12° par heure.\n\nIndicateur de virage et coordinateur :\n• Indicateur à aiguille : gyroscope à axe transversal (parallèle aux ailes), monté sur un seul cardan d'axe longitudinal et retenu par un ressort. Quand l'avion tourne en lacet, le gyroscope précesse contre le ressort : l'aiguille indique le taux de virage, pas l'inclinaison.\n• Coordinateur de virage : cardan incliné vers le haut, sensible au roulis et au lacet : il réagit dès la mise en inclinaison. Sa maquette n'indique ni l'assiette ni l'inclinaison réelle (mention fréquente : « NO PITCH INFORMATION »).\n• Taux standard (taux 1) : 3°/s, soit 360° en 2 min et 90° en 30 s. Inclinaison nécessaire : tan φ = ω × V / g. À 100 kt (51,4 m/s) et 3°/s (0,052 rad/s) : tan φ ≈ 0,27, d'où φ ≈ 15°. Règle pratique : 15 % de la Vp en kt (80 kt : 12° ; 120 kt : 18°) ; la règle Vp/10 + 7 donne un peu plus (17° à 100 kt).\n• Le taux de virage croît avec l'inclinaison : à 120 kt, 30° d'inclinaison donnent ω = g × tan φ / V ≈ 9,81 × 0,58 / 61,7 ≈ 0,09 rad/s, soit environ 5°/s.\n• Bille : inclinomètre, bille dans un tube courbe rempli de liquide. Bille centrée : vol symétrique ; « le pied chasse la bille ». Glissade : bille à l'intérieur du virage (trop d'inclinaison pour le taux). Dérapage : bille à l'extérieur (trop de pied du côté du virage). Ailes horizontales, un excès de pied fait tourner l'avion à plat et chasse la bille du côté opposé.\n\nCompas magnétique :\n• Aimants solidaires d'une rose qui flotte dans un liquide amortisseur ; on lit le cap devant la ligne de foi. Des aimants compensateurs réduisent la déviation ; la déviation résiduelle figure sur la carte de déviation (« pour Cm 180, afficher 178 »), établie moteur tournant et équipements électriques en marche.\n• La rose est vue par l'arrière : au cap 360, la graduation 3 (030) apparaît à gauche de la ligne de foi et 33 à droite, à l'inverse du conservateur ; en virage, les graduations défilent en sens inverse. Pour savoir de quel côté virer, raisonnez avec le conservateur ou la carte.\n• Erreurs de virage (hémisphère Nord) : maximales vers les caps nord et sud, nulles vers l'est et l'ouest. Vers le nord, le compas est en retard : on sort avant le cap voulu ; au départ du cap nord, il peut même indiquer brièvement un virage du côté opposé. Vers le sud, il est en avance : on sort après (« au nord avant, au sud après »).\n• Erreurs d'accélération : maximales aux caps est et ouest, nulles aux caps nord et sud. Accélération : virage apparent vers le nord ; décélération : vers le sud (ANDS). Au cap 270, une décélération fait lire par exemple 260 ; au cap 090, une accélération 080.\n• Virage chronométré : sans conservateur, on vire au taux 1 pendant le temps voulu (écart de cap ÷ 3, en secondes), puis on lit le compas en vol stabilisé et on corrige. Exemple : de 240 à 300, 60°, soit 20 s.\n\nPrécautions :\n• Lire le compas en vol rectiligne, ailes horizontales, à vitesse constante, après stabilisation de la rose ; en turbulence, prendre la moyenne des oscillations.\n• Éloigner téléphones, casques, tablettes et objets métalliques. Au sol : liquide sans bulle, rose libre, cap cohérent avec l'orientation de la piste à l'alignement.",
+     "vocab": [
+      {
+       "term": "Fixité gyroscopique",
+       "translation": "Le rotor garde la direction de son axe dans l'espace"
+      },
+      {
+       "term": "Précession",
+       "translation": "Effet d'une force décalé de 90° dans le sens de rotation du rotor"
+      },
+      {
+       "term": "Dérive apparente",
+       "translation": "Rotation apparente due à la Terre : ≈ 15° × sin(latitude) par heure"
+      },
+      {
+       "term": "Dérive mécanique",
+       "translation": "Précession parasite due aux frottements des cardans"
+      },
+      {
+       "term": "Cardan",
+       "translation": "Articulation qui laisse le rotor libre autour d'un axe"
+      },
+      {
+       "term": "Indicateur de dépression",
+       "translation": "Contrôle l'aspiration qui entraîne les gyroscopes pneumatiques"
+      },
+      {
+       "term": "Horizon artificiel",
+       "translation": "Gyroscope à axe vertical : assiette et inclinaison"
+      },
+      {
+       "term": "Conservateur de cap",
+       "translation": "Gyroscope à axe horizontal, à recaler sur le compas"
+      },
+      {
+       "term": "Indicateur de virage",
+       "translation": "Gyroscope qui mesure le taux de virage en lacet"
+      },
+      {
+       "term": "Coordinateur de virage",
+       "translation": "Sensible au roulis et au lacet, sans information d'assiette"
+      },
+      {
+       "term": "Taux standard (taux 1)",
+       "translation": "3°/s, soit 360° en 2 minutes"
+      },
+      {
+       "term": "Bille",
+       "translation": "Inclinomètre qui indique la symétrie du vol"
+      },
+      {
+       "term": "Glissade",
+       "translation": "Vol dissymétrique, bille à l'intérieur du virage"
+      },
+      {
+       "term": "Dérapage",
+       "translation": "Vol dissymétrique, bille à l'extérieur du virage"
+      },
+      {
+       "term": "Ligne de foi",
+       "translation": "Repère fixe du compas devant lequel on lit le cap"
+      },
+      {
+       "term": "Carte de déviation",
+       "translation": "Tableau près du compas : cap à afficher pour chaque cap magnétique"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Coordinateur de virage et bille",
+       "svg": "<svg viewBox=\"0 0 720 384\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"384\" fill=\"#ffffff\"/><text x=\"360.0\" y=\"28.0\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Virage à gauche au taux 1 (3°/s)</text><circle cx=\"120\" cy=\"152\" r=\"96\" fill=\"#8a94a6\"/><circle cx=\"120\" cy=\"152\" r=\"88\" fill=\"#24303f\"/><line x1=\"190.0\" y1=\"152.0\" x2=\"206.0\" y2=\"152.0\" stroke=\"#ffffff\" stroke-width=\"4\"/><line x1=\"50.0\" y1=\"152.0\" x2=\"34.0\" y2=\"152.0\" stroke=\"#ffffff\" stroke-width=\"4\"/><line x1=\"185.8\" y1=\"175.9\" x2=\"200.8\" y2=\"181.4\" stroke=\"#ffffff\" stroke-width=\"5\"/><line x1=\"54.2\" y1=\"175.9\" x2=\"39.2\" y2=\"181.4\" stroke=\"#ffffff\" stroke-width=\"5\"/><text x=\"54.0\" y=\"202.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">L</text><text x=\"186.0\" y=\"202.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">R</text><text x=\"120.0\" y=\"108.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\">2 MIN</text><g transform=\"translate(120,152) rotate(-20)\"><line x1=\"-64\" y1=\"0\" x2=\"64\" y2=\"0\" stroke=\"#ffffff\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"0\" cy=\"0\" r=\"8\" fill=\"#ffffff\"/><line x1=\"0\" y1=\"-8\" x2=\"0\" y2=\"-20\" stroke=\"#ffffff\" stroke-width=\"4\"/></g><rect x=\"72\" y=\"206\" width=\"96\" height=\"20\" rx=\"10\" fill=\"#e9eef5\" stroke=\"#8a94a6\" stroke-width=\"1.5\"/><line x1=\"109.0\" y1=\"206.0\" x2=\"109.0\" y2=\"226.0\" stroke=\"#14213d\" stroke-width=\"2\"/><line x1=\"131.0\" y1=\"206.0\" x2=\"131.0\" y2=\"226.0\" stroke=\"#14213d\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"216\" r=\"8\" fill=\"#14213d\"/><text x=\"120.0\" y=\"278.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Vol symétrique</text><text x=\"120.0\" y=\"300.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">bille centrée</text><text x=\"120.0\" y=\"322.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">aucune correction</text><circle cx=\"360\" cy=\"152\" r=\"96\" fill=\"#8a94a6\"/><circle cx=\"360\" cy=\"152\" r=\"88\" fill=\"#24303f\"/><line x1=\"430.0\" y1=\"152.0\" x2=\"446.0\" y2=\"152.0\" stroke=\"#ffffff\" stroke-width=\"4\"/><line x1=\"290.0\" y1=\"152.0\" x2=\"274.0\" y2=\"152.0\" stroke=\"#ffffff\" stroke-width=\"4\"/><line x1=\"425.8\" y1=\"175.9\" x2=\"440.8\" y2=\"181.4\" stroke=\"#ffffff\" stroke-width=\"5\"/><line x1=\"294.2\" y1=\"175.9\" x2=\"279.2\" y2=\"181.4\" stroke=\"#ffffff\" stroke-width=\"5\"/><text x=\"294.0\" y=\"202.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">L</text><text x=\"426.0\" y=\"202.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">R</text><text x=\"360.0\" y=\"108.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\">2 MIN</text><g transform=\"translate(360,152) rotate(-20)\"><line x1=\"-64\" y1=\"0\" x2=\"64\" y2=\"0\" stroke=\"#ffffff\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"0\" cy=\"0\" r=\"8\" fill=\"#ffffff\"/><line x1=\"0\" y1=\"-8\" x2=\"0\" y2=\"-20\" stroke=\"#ffffff\" stroke-width=\"4\"/></g><rect x=\"312\" y=\"206\" width=\"96\" height=\"20\" rx=\"10\" fill=\"#e9eef5\" stroke=\"#8a94a6\" stroke-width=\"1.5\"/><line x1=\"349.0\" y1=\"206.0\" x2=\"349.0\" y2=\"226.0\" stroke=\"#14213d\" stroke-width=\"2\"/><line x1=\"371.0\" y1=\"206.0\" x2=\"371.0\" y2=\"226.0\" stroke=\"#14213d\" stroke-width=\"2\"/><circle cx=\"331\" cy=\"216\" r=\"8\" fill=\"#14213d\"/><text x=\"360.0\" y=\"278.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Glissade</text><text x=\"360.0\" y=\"300.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">bille à l'intérieur</text><text x=\"360.0\" y=\"322.0\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">→ pied gauche</text><circle cx=\"600\" cy=\"152\" r=\"96\" fill=\"#8a94a6\"/><circle cx=\"600\" cy=\"152\" r=\"88\" fill=\"#24303f\"/><line x1=\"670.0\" y1=\"152.0\" x2=\"686.0\" y2=\"152.0\" stroke=\"#ffffff\" stroke-width=\"4\"/><line x1=\"530.0\" y1=\"152.0\" x2=\"514.0\" y2=\"152.0\" stroke=\"#ffffff\" stroke-width=\"4\"/><line x1=\"665.8\" y1=\"175.9\" x2=\"680.8\" y2=\"181.4\" stroke=\"#ffffff\" stroke-width=\"5\"/><line x1=\"534.2\" y1=\"175.9\" x2=\"519.2\" y2=\"181.4\" stroke=\"#ffffff\" stroke-width=\"5\"/><text x=\"534.0\" y=\"202.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">L</text><text x=\"666.0\" y=\"202.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">R</text><text x=\"600.0\" y=\"108.0\" font-size=\"14\" fill=\"#ffffff\" text-anchor=\"middle\">2 MIN</text><g transform=\"translate(600,152) rotate(-20)\"><line x1=\"-64\" y1=\"0\" x2=\"64\" y2=\"0\" stroke=\"#ffffff\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"0\" cy=\"0\" r=\"8\" fill=\"#ffffff\"/><line x1=\"0\" y1=\"-8\" x2=\"0\" y2=\"-20\" stroke=\"#ffffff\" stroke-width=\"4\"/></g><rect x=\"552\" y=\"206\" width=\"96\" height=\"20\" rx=\"10\" fill=\"#e9eef5\" stroke=\"#8a94a6\" stroke-width=\"1.5\"/><line x1=\"589.0\" y1=\"206.0\" x2=\"589.0\" y2=\"226.0\" stroke=\"#14213d\" stroke-width=\"2\"/><line x1=\"611.0\" y1=\"206.0\" x2=\"611.0\" y2=\"226.0\" stroke=\"#14213d\" stroke-width=\"2\"/><circle cx=\"629\" cy=\"216\" r=\"8\" fill=\"#14213d\"/><text x=\"600.0\" y=\"278.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Dérapage</text><text x=\"600.0\" y=\"300.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">bille à l'extérieur</text><text x=\"600.0\" y=\"322.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">→ pied droit</text><text x=\"360.0\" y=\"364.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\" font-style=\"italic\">« Le pied chasse la bille » : appuyez du côté où se trouve la bille.</text></svg>",
+       "caption": "Même taux de virage à gauche (maquette sur le repère L), trois situations de symétrie. En glissade la bille tombe vers l'intérieur du virage, en dérapage elle part vers l'extérieur ; on la recentre au palonnier du côté où elle se trouve."
+      },
+      {
+       "title": "Erreurs du compas dans l'hémisphère Nord",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"470\" fill=\"#ffffff\"/><circle cx=\"360\" cy=\"236\" r=\"104\" fill=\"#f4f7fb\" stroke=\"#46516a\" stroke-width=\"3\"/><line x1=\"360.0\" y1=\"146.0\" x2=\"360.0\" y2=\"132.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"376.8\" y1=\"140.5\" x2=\"378.1\" y2=\"133.6\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"393.2\" y1=\"144.8\" x2=\"395.6\" y2=\"138.3\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"405.0\" y1=\"158.1\" x2=\"412.0\" y2=\"145.9\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"422.4\" y1=\"161.7\" x2=\"426.8\" y2=\"156.3\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"434.3\" y1=\"173.6\" x2=\"439.7\" y2=\"169.2\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"437.9\" y1=\"191.0\" x2=\"450.1\" y2=\"184.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"451.2\" y1=\"202.8\" x2=\"457.7\" y2=\"200.4\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"455.5\" y1=\"219.2\" x2=\"462.4\" y2=\"217.9\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"450.0\" y1=\"236.0\" x2=\"464.0\" y2=\"236.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"455.5\" y1=\"252.8\" x2=\"462.4\" y2=\"254.1\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"451.2\" y1=\"269.2\" x2=\"457.7\" y2=\"271.6\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"437.9\" y1=\"281.0\" x2=\"450.1\" y2=\"288.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"434.3\" y1=\"298.4\" x2=\"439.7\" y2=\"302.8\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"422.4\" y1=\"310.3\" x2=\"426.8\" y2=\"315.7\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"405.0\" y1=\"313.9\" x2=\"412.0\" y2=\"326.1\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"393.2\" y1=\"327.2\" x2=\"395.6\" y2=\"333.7\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"376.8\" y1=\"331.5\" x2=\"378.1\" y2=\"338.4\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"360.0\" y1=\"326.0\" x2=\"360.0\" y2=\"340.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"343.2\" y1=\"331.5\" x2=\"341.9\" y2=\"338.4\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"326.8\" y1=\"327.2\" x2=\"324.4\" y2=\"333.7\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"315.0\" y1=\"313.9\" x2=\"308.0\" y2=\"326.1\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"297.6\" y1=\"310.3\" x2=\"293.2\" y2=\"315.7\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"285.7\" y1=\"298.4\" x2=\"280.3\" y2=\"302.8\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"282.1\" y1=\"281.0\" x2=\"269.9\" y2=\"288.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"268.8\" y1=\"269.2\" x2=\"262.3\" y2=\"271.6\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"264.5\" y1=\"252.8\" x2=\"257.6\" y2=\"254.1\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"270.0\" y1=\"236.0\" x2=\"256.0\" y2=\"236.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"264.5\" y1=\"219.2\" x2=\"257.6\" y2=\"217.9\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"268.8\" y1=\"202.8\" x2=\"262.3\" y2=\"200.4\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"282.1\" y1=\"191.0\" x2=\"269.9\" y2=\"184.0\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"285.7\" y1=\"173.6\" x2=\"280.3\" y2=\"169.2\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"297.6\" y1=\"161.7\" x2=\"293.2\" y2=\"156.3\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"315.0\" y1=\"158.1\" x2=\"308.0\" y2=\"145.9\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"326.8\" y1=\"144.8\" x2=\"324.4\" y2=\"138.3\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"343.2\" y1=\"140.5\" x2=\"341.9\" y2=\"133.6\" stroke=\"#46516a\" stroke-width=\"2\"/><text x=\"360.0\" y=\"170.0\" font-size=\"18\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">N</text><text x=\"396.0\" y=\"179.6\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">3</text><text x=\"422.4\" y=\"206.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">6</text><text x=\"432.0\" y=\"242.0\" font-size=\"18\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">E</text><text x=\"422.4\" y=\"278.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">12</text><text x=\"396.0\" y=\"304.4\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">15</text><text x=\"360.0\" y=\"314.0\" font-size=\"18\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">S</text><text x=\"324.0\" y=\"304.4\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">21</text><text x=\"297.6\" y=\"278.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">24</text><text x=\"288.0\" y=\"242.0\" font-size=\"18\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">W</text><text x=\"297.6\" y=\"206.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">30</text><text x=\"324.0\" y=\"179.6\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">33</text><text x=\"360.0\" y=\"232.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">Hémisphère</text><text x=\"360.0\" y=\"250.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">Nord</text><rect x=\"196\" y=\"14\" width=\"328\" height=\"82\" rx=\"10\" fill=\"#ffffff\" stroke=\"#1f5fa8\" stroke-width=\"2\"/><text x=\"360.0\" y=\"42.0\" font-size=\"16\" fill=\"#1f5fa8\" text-anchor=\"middle\" font-weight=\"bold\">Vers le nord : le compas retarde</text><text x=\"360.0\" y=\"65.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">sortir du virage avant le cap voulu</text><rect x=\"196\" y=\"376\" width=\"328\" height=\"82\" rx=\"10\" fill=\"#ffffff\" stroke=\"#d35400\" stroke-width=\"2\"/><text x=\"360.0\" y=\"404.0\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">Vers le sud : le compas avance</text><text x=\"360.0\" y=\"427.0\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"middle\">sortir du virage après le cap voulu</text><rect x=\"8\" y=\"168\" width=\"226\" height=\"136\" rx=\"10\" fill=\"#ffffff\" stroke=\"#46516a\" stroke-width=\"2\"/><text x=\"121.0\" y=\"196.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cap 270 (ouest)</text><text x=\"121.0\" y=\"219.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\">accélération : ≈ 280</text><text x=\"121.0\" y=\"242.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">virage apparent nord</text><text x=\"121.0\" y=\"265.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">décélération : ≈ 260</text><text x=\"121.0\" y=\"288.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">virage apparent sud</text><rect x=\"486\" y=\"168\" width=\"226\" height=\"136\" rx=\"10\" fill=\"#ffffff\" stroke=\"#46516a\" stroke-width=\"2\"/><text x=\"599.0\" y=\"196.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Cap 090 (est)</text><text x=\"599.0\" y=\"219.0\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"middle\">accélération : ≈ 080</text><text x=\"599.0\" y=\"242.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">virage apparent nord</text><text x=\"599.0\" y=\"265.0\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"middle\">décélération : ≈ 100</text><text x=\"599.0\" y=\"288.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">virage apparent sud</text></svg>",
+       "caption": "Erreurs de virage maximales vers le nord et le sud, nulles vers l'est et l'ouest ; erreurs d'accélération maximales aux caps est et ouest, nulles aux caps nord et sud (ANDS). Les valeurs d'accélération sont des exemples."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u9s7q01",
+       "q": "De quoi dépend la fixité dans l'espace d'un gyroscope ?",
+       "choices": [
+        "De la latitude du lieu et de la rotation de la Terre",
+        "De la masse, de la répartition et de la vitesse du rotor",
+        "De l'intensité du champ magnétique terrestre au lieu de vol",
+        "De la raideur du ressort qui retient le cardan de l'instrument"
+       ],
+       "answer": 1,
+       "explanation": "La fixité (rigidité) croît avec l'inertie du rotor, donc avec sa masse et sa répartition loin de l'axe, et avec sa vitesse de rotation. Le ressort ne concerne que l'indicateur de virage ; la latitude intervient dans la dérive apparente, pas dans la rigidité."
+      },
+      {
+       "id": "u9s7q02",
+       "q": "Une même force agit sur deux gyroscopes identiques, dont l'un tourne moins vite. Lequel précesse le plus vite ?",
+       "choices": [
+        "Les deux, de la même façon",
+        "Celui dont le rotor tourne le moins vite",
+        "Ni l'un ni l'autre, sans précession",
+        "Celui dont le rotor tourne le plus vite"
+       ],
+       "answer": 1,
+       "explanation": "La vitesse de précession est proportionnelle à la force et inversement proportionnelle à la vitesse de rotation du rotor. Un gyroscope qui ralentit, après une panne de dépression par exemple, devient plus sensible aux frottements et dérive davantage."
+      },
+      {
+       "id": "u9s7q03",
+       "q": "Que contrôle l'indicateur de dépression du tableau de bord ?",
+       "choices": [
+        "La pression statique captée par les prises",
+        "L'aspiration des gyroscopes pneumatiques",
+        "La dépression créée sur l'extrados de l'aile",
+        "La pression d'admission du moteur à pistons"
+       ],
+       "answer": 1,
+       "explanation": "Il indique la dépression produite par la pompe à vide ou le venturi, qui fait tourner les rotors de l'horizon et du conservateur de cap. Hors de l'arc vert, ces instruments deviennent suspects. La pression d'admission se lit sur le manomètre d'admission, et la pression statique n'alimente que les instruments anémobarométriques."
+      },
+      {
+       "id": "u9s7q04",
+       "q": "Sur l'horizon artificiel, quel élément reste lié au gyroscope, donc parallèle à l'horizon réel ?",
+       "choices": [
+        "La maquette de l'avion",
+        "Le bouton de la maquette",
+        "La barre d'horizon",
+        "Le boîtier de l'horizon"
+       ],
+       "answer": 2,
+       "explanation": "Le gyroscope, à axe vertical, garde sa position dans l'espace : la barre d'horizon qui lui est liée reste parallèle à l'horizon réel. La maquette est fixée au boîtier, donc à l'avion : c'est son déplacement par rapport à la barre qui donne l'assiette et l'inclinaison."
+      },
+      {
+       "id": "u9s7q05",
+       "q": "Quel est l'avantage du conservateur de cap sur le compas magnétique ?",
+       "choices": [
+        "Une indication stable, sans erreur de virage ni d'accélération",
+        "Un fonctionnement autonome, sans dépression ni électricité",
+        "Un cap juste d'un bout à l'autre du vol, sans recalage",
+        "Un cap vrai, sans correction de déclinaison ni de déviation"
+       ],
+       "answer": 0,
+       "explanation": "Le gyroscope n'est sensible ni à l'inclinaison du champ magnétique ni aux accélérations : son cap est stable et lisible en virage. Mais il n'a pas de référence magnétique : il dérive, se recale sur le compas et a besoin d'une source d'énergie, dépression ou électricité."
+      },
+      {
+       "id": "u9s7q06",
+       "q": "Que mesure l'aiguille d'un indicateur de virage ?",
+       "choices": [
+        "Le taux de virage, en degrés par seconde",
+        "L'inclinaison de l'avion en virage",
+        "Le facteur de charge en virage",
+        "La symétrie du vol (glissade, dérapage)"
+       ],
+       "answer": 0,
+       "explanation": "Le gyroscope de l'indicateur précesse contre un ressort quand l'avion tourne en lacet : l'aiguille donne le taux de virage, le repère de taux 1 correspondant à 3°/s. L'inclinaison se lit sur l'horizon et la symétrie sur la bille."
+      },
+      {
+       "id": "u9s7q07",
+       "q": "En quoi le coordinateur de virage diffère-t-il de l'indicateur de virage à aiguille ?",
+       "choices": [
+        "Il remplace la bille, qui devient alors inutile en virage",
+        "Il réagit aussi au roulis, donc dès la mise en inclinaison",
+        "Il affiche l'inclinaison réelle de l'avion, comme l'horizon",
+        "Il indique en plus l'assiette en tangage de l'avion"
+       ],
+       "answer": 1,
+       "explanation": "Son cardan incliné rend le coordinateur sensible au roulis comme au lacet : la maquette bouge dès la mise en inclinaison, avant que le cap ne change. Il ne donne pas l'assiette (mention fréquente « NO PITCH INFORMATION »), sa maquette n'indique pas l'inclinaison réelle, et la bille reste indispensable."
+      },
+      {
+       "id": "u9s7q08",
+       "q": "Pourquoi la rose du compas magnétique baigne-t-elle dans un liquide ?",
+       "choices": [
+        "Pour amortir ses oscillations",
+        "Pour la protéger du gel en altitude",
+        "Pour supprimer les erreurs de virage",
+        "Pour compenser la déviation"
+       ],
+       "answer": 0,
+       "explanation": "Le liquide freine les mouvements de la rose et amortit ses oscillations, en turbulence notamment. Il ne corrige rien : la déviation est réduite par les aimants compensateurs, et les erreurs de virage et d'accélération, dues à l'inclinaison du champ magnétique, subsistent."
+      },
+      {
+       "id": "u9s7q09",
+       "q": "À 50° N, quelle est environ la dérive apparente d'un conservateur de cap due à la seule rotation de la Terre ?",
+       "choices": [
+        "≈ 11,5° par heure",
+        "≈ 15° par heure",
+        "≈ 7,5° par heure",
+        "≈ 9,6° par heure"
+       ],
+       "answer": 0,
+       "explanation": "Dérive apparente ≈ 15° × sin φ par heure : 15 × sin 50° = 15 × 0,77 ≈ 11,5° par heure. 9,6° vient du cosinus pris à la place du sinus, 15° serait la valeur au pôle et 7,5° celle de 30° de latitude. S'y ajoute la dérive mécanique due aux frottements."
+      },
+      {
+       "id": "u9s7q10",
+       "q": "Recalé à 14 h 00, le conservateur de cap indique 276 à 14 h 20 alors que le compas, lu en vol stabilisé, indique 270. Quelle est sa dérive horaire ?",
+       "choices": [
+        "6° par heure",
+        "30° par heure",
+        "18° par heure",
+        "12° par heure"
+       ],
+       "answer": 2,
+       "explanation": "Écart de 6° en 20 min, soit 6 × 3 = 18° par heure. 6° par heure confond l'écart et le taux. On recale ensuite le conservateur sur 270, en vol rectiligne à vitesse constante."
+      },
+      {
+       "id": "u9s7q11",
+       "q": "En virage symétrique au taux 1, comment l'inclinaison nécessaire varie-t-elle avec la vitesse propre ?",
+       "choices": [
+        "Elle reste voisine de 15°, à 80 kt comme à 120 kt",
+        "Elle diminue : environ 18° à 80 kt, 12° à 120 kt",
+        "Elle augmente : environ 12° à 80 kt, 18° à 120 kt",
+        "Elle augmente : environ 15° à 80 kt, 30° à 120 kt"
+       ],
+       "answer": 2,
+       "explanation": "Au taux 1, tan φ = ω × V / g : à taux constant, l'inclinaison croît avec la vitesse propre. La règle des 15 % de la Vp donne 0,15 × 80 = 12° et 0,15 × 120 = 18°. Une inclinaison de 15° ne convient que vers 100 kt ; 30° à 120 kt donneraient environ 5°/s, bien plus que le taux 1."
+      },
+      {
+       "id": "u9s7q12",
+       "q": "Pourquoi l'indicateur de virage est-il souvent électrique, alors que l'horizon et le conservateur de cap sont pneumatiques ?",
+       "choices": [
+        "Parce que la pompe à vide serait trop faible pour un troisième rotor",
+        "Pour qu'une panne de dépression laisse une référence gyroscopique",
+        "Parce qu'un gyroscope électrique ne dérive pas avec le temps",
+        "Parce que le ressort de rappel exige un rotor entraîné électriquement"
+       ],
+       "answer": 1,
+       "explanation": "Horizon et conservateur dépendent tous deux de la dépression : si elle disparaît, ils ralentissent et dérivent ensemble. Un indicateur de virage électrique reste alors disponible, avec le compas et la bille, pour tenir les ailes à plat et le cap. Un gyroscope électrique dérive lui aussi, et le ressort de rappel ne dépend pas du mode d'entraînement."
+      },
+      {
+       "id": "u9s7q13",
+       "q": "Sur un compas magnétique classique, au cap 360, de quel côté de la ligne de foi voyez-vous la graduation 3 (030) ?",
+       "choices": [
+        "À droite : la déviation décale la rose vers l'est",
+        "À droite : la rose se lit dans le même sens que le conservateur",
+        "À gauche : la rose se lit par l'arrière, à l'inverse du conservateur",
+        "À gauche : la déclinaison décale la rose de quelques degrés vers l'ouest"
+       ],
+       "answer": 2,
+       "explanation": "Les graduations se lisent sur la face arrière de la rose : au cap nord, 030 apparaît à gauche de la ligne de foi et 330 à droite, et en virage elles défilent en sens inverse de celles du conservateur. Ni la déclinaison ni la déviation n'y sont pour rien : elles ne décalent le cap que de quelques degrés. Pour choisir le sens du virage, on raisonne avec le conservateur ou la carte."
+      },
+      {
+       "id": "u9s7q14",
+       "q": "Dans l'hémisphère Nord, au cap 360, vous commencez un virage à droite. Que fait d'abord le compas ?",
+       "choices": [
+        "Il indique un virage à droite plus serré que le réel",
+        "Il suit fidèlement le virage, sans erreur notable",
+        "Il retarde, voire indique un bref virage à gauche",
+        "Il devance le virage et indique un taux plus rapide"
+       ],
+       "answer": 2,
+       "explanation": "Au voisinage du cap nord, l'inclinaison du champ magnétique fait retarder le compas en virage ; au départ du cap 360, il peut même indiquer un instant un virage du côté opposé. C'est au voisinage du cap sud qu'il est en avance, d'où la règle : au nord avant, au sud après."
+      },
+      {
+       "id": "u9s7q15",
+       "q": "Dans un indicateur de virage à aiguille, comment le gyroscope est-il monté ?",
+       "choices": [
+        "Axe de rotation vertical, deux cardans, dispositif d'érection",
+        "Axe de rotation transversal, un cardan d'axe longitudinal, ressort",
+        "Axe de rotation horizontal, deux cardans, rose de cap entraînée",
+        "Axe de rotation longitudinal, un cardan d'axe vertical, sans ressort"
+       ],
+       "answer": 1,
+       "explanation": "Le rotor tourne autour d'un axe parallèle aux ailes. Quand l'avion tourne en lacet, la précession fait basculer le cardan autour de l'axe longitudinal, contre le ressort : la déviation de l'aiguille mesure le taux de virage. L'axe vertical et le dispositif d'érection sont ceux de l'horizon ; l'axe horizontal entraînant une rose est celui du conservateur de cap."
+      },
+      {
+       "id": "u9s7q16",
+       "q": "En turbulence modérée, ailes horizontales et vitesse constante, la rose du compas oscille entre 080 et 100. Comment l'exploitez-vous ?",
+       "choices": [
+        "Vous retenez la moyenne, vers 090, et tenez le cap au conservateur",
+        "Vous retenez la valeur lue quand la rose s'immobilise un instant",
+        "Vous corrigez le cap à chaque oscillation pour ramener la rose",
+        "Vous attendez un virage, où l'inclinaison stabilise la rose"
+       ],
+       "answer": 0,
+       "explanation": "En turbulence, la rose oscille autour du cap réel : on retient la moyenne des oscillations, ici 090, et l'on tient le cap au conservateur. La rose ne s'immobilise qu'au bout de chaque oscillation, donc sur une valeur extrême ; corriger à chaque oscillation fait zigzaguer l'avion, et le virage ajoute ses propres erreurs."
+      },
+      {
+       "id": "u9s7q17",
+       "q": "En croisière, l'indicateur de dépression est passé sous l'arc vert. Quelques minutes plus tard, l'horizon montre les ailes à plat, alors que le coordinateur indique un virage à gauche et que le compas tourne. Que faites-vous ?",
+       "choices": [
+        "Vous coupez le contact général pour relancer les gyroscopes",
+        "Vous vous fiez au coordinateur, au compas et aux repères extérieurs",
+        "Vous recalez le conservateur sur le compas, sans sortir du virage",
+        "Vous croyez l'horizon et attendez que le coordinateur se recale"
+       ],
+       "answer": 1,
+       "explanation": "Faute de dépression, l'horizon et le conservateur ralentissent et dérivent sans que l'avion bouge : leurs indications sont fausses. Le coordinateur, souvent électrique, le compas qui tourne et les repères extérieurs concordent : l'avion vire à gauche. On remet les ailes à plat sur ces références et l'on masque si possible les instruments en panne."
+      },
+      {
+       "id": "u9s7q18",
+       "q": "Ailes horizontales à l'horizon artificiel, l'aiguille de virage indique un virage à droite et la bille est décalée à gauche. Que se passe-t-il et que faites-vous ?",
+       "choices": [
+        "Un excès de pied droit fait tourner l'avion à plat : relâchez le pied droit",
+        "Une panne de l'indicateur de virage : ne tenez pas compte de l'aiguille",
+        "Un virage à droite trop incliné : réduisez l'inclinaison aux ailerons",
+        "Une glissade vers la gauche : appuyez davantage sur le palonnier droit"
+       ],
+       "answer": 0,
+       "explanation": "Un taux de virage à droite sans inclinaison signifie que l'avion tourne à plat, en lacet, sous l'effet du palonnier droit ; la force centrifuge chasse la bille vers la gauche. Le pied chasse la bille : bille à gauche, on agit côté gauche, ce qui revient à relâcher l'excès de pied droit. Appuyer à droite aggraverait le dérapage."
+      },
+      {
+       "id": "u9s7q19",
+       "q": "En virage à droite au taux 1, la bille est décalée vers la droite, à l'intérieur du virage. De quel vol s'agit-il et comment le corriger ?",
+       "choices": [
+        "Une glissade : un peu de pied à droite",
+        "Une glissade : un peu de pied à gauche",
+        "Un dérapage : un peu de pied à droite",
+        "Un dérapage : un peu de pied à gauche"
+       ],
+       "answer": 0,
+       "explanation": "Bille à l'intérieur du virage : l'inclinaison est trop forte pour le taux et l'avion glisse vers le centre du virage. Le pied chasse la bille : bille à droite, pied à droite, ou un peu moins d'inclinaison. Le dérapage correspond à une bille à l'extérieur du virage."
+      },
+      {
+       "id": "u9s7q20",
+       "q": "Par temps froid, juste après la mise en route, l'horizon artificiel est incliné de 20° et oscille. Que faites-vous ?",
+       "choices": [
+        "Vous alignez la maquette sur la barre d'horizon et décollez",
+        "Vous tapotez la glace pour libérer le cardan, puis décollez",
+        "Vous décollez : le vent relatif le redressera en vol",
+        "Vous attendez qu'il se stabilise, dépression surveillée"
+       ],
+       "answer": 3,
+       "explanation": "Le rotor met quelques minutes à atteindre sa vitesse : l'horizon n'est utilisable qu'une fois redressé et stable. S'il ne l'est toujours pas au point d'attente, ou si la dépression reste hors de l'arc vert, on renonce et l'on signale l'anomalie. Le réglage de la maquette ne corrige qu'une référence d'assiette, pas un gyroscope incliné."
+      },
+      {
+       "id": "u9s7q21",
+       "q": "À 100 kt de vitesse propre, en virage symétrique à 30° d'inclinaison, que doit indiquer le coordinateur de virage ?",
+       "choices": [
+        "La moitié du taux 1, soit 1,5°/s",
+        "Environ le triple du taux 1 : 9°/s",
+        "Le taux 1, soit 3°/s",
+        "Environ le double du taux 1, soit 6°/s"
+       ],
+       "answer": 3,
+       "explanation": "Taux de virage ω = g × tan φ / V = 9,81 × 0,58 / 51,4 ≈ 0,11 rad/s, soit ≈ 6,3°/s : environ le double du taux 1. Au taux 1, il suffirait d'environ 15° à 100 kt ; le taux croît à peu près comme la tangente de l'inclinaison."
+      },
+      {
+       "id": "u9s7q22",
+       "q": "Recalé au départ, votre conservateur dérive de 12° par heure, en augmentant son indication. Après 40 min sans recalage, vous tenez au conservateur un cap de 150. Quel cap magnétique suivez-vous réellement ?",
+       "choices": [
+        "146",
+        "158",
+        "150",
+        "142"
+       ],
+       "answer": 3,
+       "explanation": "Dérive en 40 min : 12 × 40 / 60 = 8°. L'indication a augmenté de 8° : quand le conservateur lit 150, le cap réel est 150 − 8 = 142. Ajouter la dérive (158) inverse le sens ; 146 ne compte que 20 min. D'où l'intérêt d'un recalage toutes les 10 à 15 min."
+      },
+      {
+       "id": "u9s7q23",
+       "q": "Votre conservateur est en panne. Dans l'hémisphère Nord, vous devez passer du cap 300 au cap 165 par la gauche avec le compas. Quelle méthode retenez-vous ?",
+       "choices": [
+        "Virer jusqu'à lire 175 au compas : vers le sud, on sort avant",
+        "Virer 90 s au taux 1, puis lire le compas pendant le virage",
+        "Virer 45 s au taux 1, puis lire le compas stabilisé et corriger",
+        "Virer jusqu'à lire 165 au compas, sans tenir compte des erreurs"
+       ],
+       "answer": 2,
+       "explanation": "L'écart est de 300 − 165 = 135° : au taux 1, 135 / 3 = 45 s (90 s correspondrait à un demi-taux). Le virage chronométré évite les erreurs de virage du compas, qui est en avance vers le sud : il faudrait au contraire sortir après 165. On lit ensuite le compas ailes horizontales, à vitesse constante, et on corrige ; en virage, sa lecture est fausse."
+      },
+      {
+       "id": "u9s7q24",
+       "q": "Au cap 090, dans l'hémisphère Nord, vous passez de la croisière à la montée : la vitesse diminue de 100 à 70 kt et le compas lit brièvement 100. Que faites-vous ?",
+       "choices": [
+        "Vous gardez le cap : l'erreur cessera en vol stabilisé",
+        "Vous corrigez au palonnier jusqu'à relire 090 au compas",
+        "Vous recalez aussitôt le conservateur de cap sur la valeur 100",
+        "Vous virez de 10° à gauche pour ramener le compas sur 090"
+       ],
+       "answer": 0,
+       "explanation": "Au cap est, une décélération fait indiquer un virage apparent vers le sud, donc un cap plus fort (ANDS) : 100 au lieu de 090. Le cap réel n'a pas changé : on le tient au conservateur et aux repères extérieurs, et l'on ne lit le compas qu'une fois la vitesse stabilisée. Virer de 10° à gauche ferait réellement quitter le cap, et recaler le conservateur pendant la décélération y introduirait l'erreur."
+      }
+     ]
+    },
+    {
+     "id": "u9s8",
+     "title": "Entretien et visite pré-vol",
+     "icon": "🔧",
+     "tips": "Un avion n'est prêt à voler que s'il est entretenu selon son programme et si la visite pré-vol, dont le commandant de bord est chargé, n'a rien révélé d'anormal.\n\nProgramme d'entretien et visites périodiques :\n• Sous le Part-ML, le propriétaire répond du maintien de la navigabilité, dont il confie souvent la gestion à un organisme agréé (CAMO ou CAO), comme en aéroclub.\n• Le programme d'entretien (AMP) fixe les visites et les travaux : visites périodiques en heures de vol et en durée calendaire, remplacement des pièces à durée limitée, contrôles des équipements. En règle générale, une visite est due à la première des deux échéances atteinte.\n• Chaque intervention est consignée ; l'approbation pour remise en service est signée par un mécanicien ou un organisme habilité.\n• Un propriétaire-pilote titulaire d'une licence valable sur l'avion peut effectuer et certifier certaines tâches simples listées par le règlement ; hors de ce cadre, le pilote ne répare pas : il signale.\nExemple : visite toutes les 50 h, dernière à 1 238 h, donc prochaine à 1 288 h. Compteur à 1 279 h : il reste 9 h, assez pour 3 h aller et 3 h retour, pas pour un voyage de 12 h.\n\nPotentiel :\n• Le potentiel est la durée d'utilisation fixée entre deux révisions générales d'un moteur, d'une hélice ou d'un équipement. Il s'exprime en heures de fonctionnement et peut comporter une limite calendaire : c'est la première échéance atteinte qui compte.\n• Potentiel restant = potentiel − heures effectuées depuis la dernière révision générale.\nExemple : potentiel de 2 000 h ; révision faite quand la cellule totalisait 2 460 h ; cellule à 4 105 h. Depuis la révision : 4 105 − 2 460 = 1 645 h ; potentiel restant : 2 000 − 1 645 = 355 h.\n\nConsignes de navigabilité :\n• Publiées par l'EASA (ou par l'État de conception) quand un défaut dangereux est découvert, elles sont obligatoires, avec un délai en heures, en cycles ou en date. Un avion dont une consigne applicable n'a pas été faite dans le délai n'est plus navigable. Un bulletin de service (SB) n'est qu'une recommandation.\n• Une consigne peut être ponctuelle ou répétitive : inspection à refaire à intervalle fixe.\n\nCarnet de route et compte rendu de défauts :\n• Le carnet de route appartient à l'avion : date, équipage, lieux et heures, temps de vol, anomalies constatées.\n• Avant le vol, consultez-le : défauts signalés et suite donnée par le mécanicien, heures restantes avant la prochaine visite. Après le vol, reportez-y les heures et toute anomalie, même mineure ou intermittente : c'est ainsi qu'elle parvient au mécanicien.\n• Une remarque non traitée ne devient pas acceptable parce qu'un autre pilote a volé avec : elle reste ouverte jusqu'à sa réparation (approbation pour remise en service) ou à un report conforme au Part-ML, inscrit au dossier. Un défaut qui met sérieusement en danger la sécurité se répare avant le vol ; en aéroclub, on s'en remet au mécanicien.\n\nVisite pré-vol :\nElle suit la check-list du manuel de vol, dans le même ordre à chaque fois ; tout ce qui sort de l'ordinaire se vérifie.\n• Documents : certificats d'immatriculation et de navigabilité en original, ARC valide, assurance, carnet de route, manuel de vol.\n• Cabine : magnétos sur OFF, contact général pour lire les jauges et essayer les feux et l'avertisseur de décrochage, puis coupé ; blocage des commandes retiré, commandes libres.\n• Carburant : quantité contrôlée visuellement ou à la réglette graduée, sans se fier aux seules jauges ; bouchons fermés, évents dégagés (un évent bouché peut arrêter le moteur). Couleur conforme au carburant prévu (AVGAS 100LL : bleue). Purge à chaque point de purge, dans un récipient transparent, avant le premier vol du jour et après chaque avitaillement : on purge jusqu'à n'obtenir que du carburant propre, puis on vérifie que la purge se referme sans goutter.\n• Huile : niveau à la jauge entre minimum et maximum, huile du type prescrit, bouchon serré, trappe fermée, pas de coulure fraîche.\n• Train : pneus sans coupure ni usure jusqu'à la toile, gonflage correct, repères de glissement pneu-jante alignés ; disques, plaquettes, pas de fuite de liquide ; amortisseurs.\n• Cellule et gouvernes : revêtement (chocs, criques, rivets), gouvernes libres et débattant dans le bon sens, charnières, goupilles et fils à freiner en place, compensateur.\n• Pitot et prises statiques : housse retirée, orifices dégagés. Feux de navigation, anticollision et phare ; antennes.\n• Moteur et hélice : pales sans entaille ni crique, cône fixé, entrées d'air dégagées (nids), capots verrouillés. L'hélice est toujours considérée comme dangereuse : une magnéto peut rester « chaude ».\n• Autour : cales, attaches et housses retirées et rangées.\nSi la visite est interrompue (appel, passager), reprenez-la au point interrompu, en refaisant ce point.\n\nTemps froid :\n• Givre, gelée blanche ou neige sur les ailes, les empennages et les gouvernes s'enlèvent entièrement avant le vol : même une fine couche rugueuse diminue l'incidence de décrochage et augmente la vitesse de décrochage.\n• Vérifiez que neige et glace ne bloquent ni les gouvernes et leurs charnières, ni les évents, ni le Pitot et les prises statiques, ni les entrées d'air.\n• L'eau peut geler dans un puisard : une purge qui ne coule pas, ou sans eau visible, ne prouve pas l'absence d'eau.\n• Par grand froid, huile épaisse et batterie faible gênent le démarrage : suivez le manuel de vol.\n\nAnomalie avant le vol :\n• Un doute sur la navigabilité se tranche au sol : pas de vol sans l'avis d'un mécanicien en cas de dommage douteux (entaille d'hélice, crique, pneu entaillé, fuite).\n• Inscrivez l'anomalie au carnet de route, prévenez le responsable technique ou le mécanicien, et signalez clairement l'avion comme indisponible pour le pilote suivant.\n• Un équipement exigé pour le vol prévu (radio, transpondeur, feux de nuit...) qui tombe en panne rend ce vol impossible tel quel.\n• Pas de bricolage : effacer une remarque du carnet de route ne remet pas l'avion en service.",
+     "vocab": [
+      {
+       "term": "Programme d'entretien (AMP)",
+       "translation": "Document qui fixe les visites et travaux d'entretien de l'avion"
+      },
+      {
+       "term": "Visite périodique",
+       "translation": "Inspection due à une échéance en heures de vol ou en date"
+      },
+      {
+       "term": "Potentiel",
+       "translation": "Durée d'utilisation fixée entre deux révisions générales"
+      },
+      {
+       "term": "Potentiel restant",
+       "translation": "Potentiel moins les heures faites depuis la dernière révision"
+      },
+      {
+       "term": "Révision générale",
+       "translation": "Remise en état complète d'un moteur ou d'un équipement"
+      },
+      {
+       "term": "Consigne de navigabilité (AD)",
+       "translation": "Action rendue obligatoire par l'autorité sur un type d'avion"
+      },
+      {
+       "term": "Consigne répétitive",
+       "translation": "Consigne dont l'action est à refaire à intervalle fixe"
+      },
+      {
+       "term": "Bulletin de service (SB)",
+       "translation": "Recommandation du constructeur, obligatoire si une AD l'impose"
+      },
+      {
+       "term": "Approbation pour remise en service",
+       "translation": "Signature du mécanicien habilité après une intervention"
+      },
+      {
+       "term": "Carnet de route",
+       "translation": "Document de l'avion : vols, heures et anomalies constatées"
+      },
+      {
+       "term": "Visite pré-vol",
+       "translation": "Inspection de l'avion par le pilote, check-list en main"
+      },
+      {
+       "term": "Puisard",
+       "translation": "Point bas d'un réservoir où se rassemblent eau et dépôts"
+      },
+      {
+       "term": "Repères de glissement",
+       "translation": "Traits peints sur pneu et jante qui révèlent un pneu qui a tourné"
+      },
+      {
+       "term": "Fil à freiner",
+       "translation": "Fil métallique qui empêche une vis ou un écrou de se desserrer"
+      },
+      {
+       "term": "Gelée blanche",
+       "translation": "Dépôt de glace sur l'avion stationné après une nuit claire"
+      },
+      {
+       "term": "Propriétaire-pilote",
+       "translation": "Pilote propriétaire autorisé à certaines tâches simples d'entretien"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Le tour de l'avion",
+       "svg": "<svg viewBox=\"0 0 720 500\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"500\" fill=\"#ffffff\"/><rect x=\"20\" y=\"180\" width=\"360\" height=\"56\" rx=\"8\" fill=\"#dfe6ee\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"30.0\" y1=\"236.0\" x2=\"118.0\" y2=\"236.0\" stroke=\"#46516a\" stroke-width=\"5\"/><line x1=\"282.0\" y1=\"236.0\" x2=\"370.0\" y2=\"236.0\" stroke=\"#46516a\" stroke-width=\"5\"/><circle cx=\"112\" cy=\"200\" r=\"6\" fill=\"#ffffff\" stroke=\"#46516a\" stroke-width=\"2\"/><circle cx=\"288\" cy=\"200\" r=\"6\" fill=\"#ffffff\" stroke=\"#46516a\" stroke-width=\"2\"/><line x1=\"66.0\" y1=\"214.0\" x2=\"86.0\" y2=\"214.0\" stroke=\"#14213d\" stroke-width=\"3\"/><rect x=\"118\" y=\"240\" width=\"12\" height=\"24\" rx=\"3\" fill=\"#222222\"/><rect x=\"270\" y=\"240\" width=\"12\" height=\"24\" rx=\"3\" fill=\"#222222\"/><polygon points=\"176,130 224,130 226,300 212,420 188,420 174,300\" fill=\"#dfe6ee\" stroke=\"#46516a\" stroke-width=\"2\"/><polygon points=\"188,64 212,64 224,130 176,130\" fill=\"#cfd6df\" stroke=\"#46516a\" stroke-width=\"2\"/><rect x=\"182\" y=\"146\" width=\"36\" height=\"84\" rx=\"10\" fill=\"#b9d4ef\" stroke=\"#46516a\" stroke-width=\"1.5\"/><rect x=\"130\" y=\"394\" width=\"140\" height=\"30\" rx=\"5\" fill=\"#dfe6ee\" stroke=\"#46516a\" stroke-width=\"2\"/><rect x=\"196\" y=\"380\" width=\"8\" height=\"58\" rx=\"2\" fill=\"#46516a\"/><rect x=\"194\" y=\"112\" width=\"12\" height=\"22\" rx=\"3\" fill=\"#222222\"/><rect x=\"148\" y=\"52\" width=\"104\" height=\"8\" rx=\"4\" fill=\"#333333\"/><ellipse cx=\"200\" cy=\"58\" rx=\"10\" ry=\"8\" fill=\"#555555\"/><circle cx=\"150\" cy=\"300\" r=\"14\" fill=\"#d35400\"/><text x=\"150.0\" y=\"305.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">1</text><circle cx=\"300\" cy=\"410\" r=\"14\" fill=\"#d35400\"/><text x=\"300.0\" y=\"415.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">2</text><circle cx=\"330\" cy=\"158\" r=\"14\" fill=\"#d35400\"/><text x=\"330.0\" y=\"163.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">3</text><circle cx=\"306\" cy=\"262\" r=\"14\" fill=\"#d35400\"/><text x=\"306.0\" y=\"267.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">4</text><circle cx=\"256\" cy=\"96\" r=\"14\" fill=\"#d35400\"/><text x=\"256.0\" y=\"101.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">5</text><circle cx=\"150\" cy=\"108\" r=\"14\" fill=\"#d35400\"/><text x=\"150.0\" y=\"113.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">6</text><circle cx=\"94\" cy=\"262\" r=\"14\" fill=\"#d35400\"/><text x=\"94.0\" y=\"267.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">7</text><circle cx=\"70\" cy=\"158\" r=\"14\" fill=\"#d35400\"/><text x=\"70.0\" y=\"163.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">8</text><text x=\"430.0\" y=\"32.0\" font-size=\"15\" fill=\"#46516a\" font-style=\"italic\">Ordre indicatif : suivez</text><text x=\"430.0\" y=\"52.0\" font-size=\"15\" fill=\"#46516a\" font-style=\"italic\">la check-list de votre avion</text><circle cx=\"442\" cy=\"83\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"88.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"462.0\" y=\"88.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Cabine</text><text x=\"462.0\" y=\"108.0\" font-size=\"14\" fill=\"#46516a\">documents, magnétos OFF, jauges</text><circle cx=\"442\" cy=\"133\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"138.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">2</text><text x=\"462.0\" y=\"138.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Fuselage et empennage</text><text x=\"462.0\" y=\"158.0\" font-size=\"14\" fill=\"#46516a\">prises statiques, gouvernes</text><circle cx=\"442\" cy=\"183\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"188.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">3</text><text x=\"462.0\" y=\"188.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Aile droite</text><text x=\"462.0\" y=\"208.0\" font-size=\"14\" fill=\"#46516a\">bouchon, purge, volet, aileron</text><circle cx=\"442\" cy=\"233\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"238.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">4</text><text x=\"462.0\" y=\"238.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Train droit</text><text x=\"462.0\" y=\"258.0\" font-size=\"14\" fill=\"#46516a\">pneu, repères, frein, fuite</text><circle cx=\"442\" cy=\"283\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"288.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">5</text><text x=\"462.0\" y=\"288.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Moteur et hélice</text><text x=\"462.0\" y=\"308.0\" font-size=\"14\" fill=\"#46516a\">huile, pales, entrées d'air</text><circle cx=\"442\" cy=\"333\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"338.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">6</text><text x=\"462.0\" y=\"338.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Train avant</text><text x=\"462.0\" y=\"358.0\" font-size=\"14\" fill=\"#46516a\">pneu, amortisseur, fixations</text><circle cx=\"442\" cy=\"383\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"388.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"462.0\" y=\"388.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Train gauche</text><text x=\"462.0\" y=\"408.0\" font-size=\"14\" fill=\"#46516a\">pneu, repères, frein, fuite</text><circle cx=\"442\" cy=\"433\" r=\"11\" fill=\"#d35400\"/><text x=\"442.0\" y=\"438.0\" font-size=\"13\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">8</text><text x=\"462.0\" y=\"438.0\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Aile gauche</text><text x=\"462.0\" y=\"458.0\" font-size=\"14\" fill=\"#46516a\">Pitot, avertisseur, purge, feu</text></svg>",
+       "caption": "Exemple de visite pré-vol sur un avion à aile basse, en tournant toujours dans le même sens. L'ordre et le contenu exacts sont ceux de la check-list du manuel de vol de l'avion."
+      },
+      {
+       "title": "Lire un échantillon de purge",
+       "svg": "<svg viewBox=\"0 0 720 362\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"362\" fill=\"#ffffff\"/><polygon points=\"40.6,92 135.4,92 130.0,200 46.0,200\" fill=\"#7fb3e6\"/><polyline points=\"38,40 46,200 130,200 138,40\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"88.0\" y=\"234.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Bleu limpide</text><text x=\"88.0\" y=\"258.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">AVGAS 100LL propre</text><text x=\"88.0\" y=\"282.0\" font-size=\"14\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">→ conforme</text><polygon points=\"218.6,92 313.4,92 310.0,160 222.0,160\" fill=\"#7fb3e6\"/><polygon points=\"222.0,160 310.0,160 308.0,200 224.0,200\" fill=\"#eef8fc\"/><line x1=\"222.0\" y1=\"160.0\" x2=\"310.0\" y2=\"160.0\" stroke=\"#3d8fb3\" stroke-width=\"2\"/><circle cx=\"246\" cy=\"178\" r=\"5\" fill=\"#ffffff\" stroke=\"#3d8fb3\" stroke-width=\"1.5\"/><circle cx=\"274\" cy=\"186\" r=\"4\" fill=\"#ffffff\" stroke=\"#3d8fb3\" stroke-width=\"1.5\"/><circle cx=\"288\" cy=\"172\" r=\"3\" fill=\"#ffffff\" stroke=\"#3d8fb3\" stroke-width=\"1.5\"/><circle cx=\"260\" cy=\"168\" r=\"3\" fill=\"#ffffff\" stroke=\"#3d8fb3\" stroke-width=\"1.5\"/><text x=\"322.0\" y=\"186.0\" font-size=\"14\" fill=\"#3d8fb3\">eau</text><polyline points=\"216,40 224,200 308,200 316,40\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"266.0\" y=\"234.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Eau au fond</text><text x=\"266.0\" y=\"258.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">bulles ou couche</text><text x=\"266.0\" y=\"282.0\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">→ purger encore</text><polygon points=\"396.6,92 491.4,92 486.0,200 402.0,200\" fill=\"#7fb3e6\"/><circle cx=\"420\" cy=\"192\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"434\" cy=\"195\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"448\" cy=\"190\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"462\" cy=\"194\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"428\" cy=\"184\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"454\" cy=\"182\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"472\" cy=\"188\" r=\"2.6\" fill=\"#4a3b2a\"/><circle cx=\"442\" cy=\"176\" r=\"2.6\" fill=\"#4a3b2a\"/><polyline points=\"394,40 402,200 486,200 494,40\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"444.0\" y=\"234.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Dépôts</text><text x=\"444.0\" y=\"258.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">particules, impuretés</text><text x=\"444.0\" y=\"282.0\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">→ purger, signaler</text><polygon points=\"574.6,92 669.4,92 664.0,200 580.0,200\" fill=\"#f3ecc8\"/><polyline points=\"572,40 580,200 664,200 672,40\" fill=\"none\" stroke=\"#46516a\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"622.0\" y=\"234.0\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Incolore ou paille</text><text x=\"622.0\" y=\"258.0\" font-size=\"15\" fill=\"#46516a\" text-anchor=\"middle\">odeur de pétrole</text><text x=\"622.0\" y=\"282.0\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"bold\">→ Jet A1 ? Pas de vol</text><text x=\"360.0\" y=\"326.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\" font-style=\"italic\">Avion prévu pour l'AVGAS 100LL. Purgez chaque point avant le premier vol du jour</text><text x=\"360.0\" y=\"346.0\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\" font-style=\"italic\">et après chaque avitaillement, dans un récipient transparent.</text></svg>",
+       "caption": "L'eau, plus dense, se dépose au fond en bulles ou en couche ; on purge jusqu'à n'obtenir que du carburant propre. Un carburant incolore à l'odeur de pétrole, dans un avion prévu pour la 100LL, fait suspecter du Jet A1 : pas de vol."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u9s8q01",
+       "q": "Qu'appelle-t-on le potentiel d'un moteur ?",
+       "choices": [
+        "L'autonomie maximale qu'il permet, réservoirs pleins",
+        "Le nombre d'heures avant le prochain examen de navigabilité",
+        "La puissance maximale qu'il peut fournir au niveau de la mer",
+        "La durée d'utilisation fixée entre deux révisions générales"
+       ],
+       "answer": 3,
+       "explanation": "Le potentiel est la durée d'utilisation, en heures et parfois aussi en années, fixée entre deux révisions générales du moteur. L'examen de navigabilité (ARC) est annuel et porte sur l'avion entier ; puissance et autonomie sont des notions de performances."
+      },
+      {
+       "id": "u9s8q02",
+       "q": "Sous le Part-ML, sur quoi repose l'entretien d'un avion léger ?",
+       "choices": [
+        "Sur l'examen annuel de navigabilité, qui remplace les visites d'entretien",
+        "Sur les visites pré-vol effectuées par les pilotes",
+        "Sur un programme d'entretien qui fixe visites et travaux",
+        "Sur des réparations décidées au cas par cas, après panne"
+       ],
+       "answer": 2,
+       "explanation": "Le programme d'entretien (AMP) de l'avion fixe les visites périodiques, les remplacements et les contrôles. La visite pré-vol ne remplace pas l'entretien, et l'examen de navigabilité vérifie justement que ce programme a été suivi."
+      },
+      {
+       "id": "u9s8q03",
+       "q": "Une visite périodique est prévue « toutes les 100 h ou tous les 12 mois ». En règle générale, quand est-elle due ?",
+       "choices": [
+        "À la première des deux échéances atteinte",
+        "À la dernière des deux échéances atteinte",
+        "À la date prévue, quelles que soient les heures",
+        "À l'échéance en heures, la date étant indicative"
+       ],
+       "answer": 0,
+       "explanation": "Une double échéance se lit « à la première atteinte » : un avion qui vole peu atteint la date avant les heures, un avion très utilisé les heures avant la date. Attendre la seconde échéance laisserait l'avion hors programme."
+      },
+      {
+       "id": "u9s8q04",
+       "q": "Qu'est-ce qu'une consigne de navigabilité répétitive ?",
+       "choices": [
+        "Une recommandation reprise à chaque visite périodique",
+        "Une action obligatoire à refaire à intervalle fixe",
+        "Une consigne faite une fois, puis rappelée au pilote",
+        "Un bulletin du constructeur renouvelé chaque année"
+       ],
+       "answer": 1,
+       "explanation": "Certaines consignes imposent une inspection à renouveler, par exemple toutes les 100 h, jusqu'à une éventuelle action définitive. Elle reste obligatoire comme toute consigne ; le bulletin de service, lui, n'est qu'une recommandation."
+      },
+      {
+       "id": "u9s8q05",
+       "q": "Où trouvez-vous les anomalies signalées par les pilotes précédents sur l'avion ?",
+       "choices": [
+        "Dans votre carnet de vol personnel",
+        "Dans le manuel de vol, aux limitations",
+        "Dans le carnet de route de l'avion",
+        "Dans la fiche de pesée de l'avion"
+       ],
+       "answer": 2,
+       "explanation": "Le carnet de route appartient à l'avion : il retrace ses vols et les anomalies constatées, avec la suite donnée par le mécanicien. Le carnet de vol est celui du pilote ; le manuel de vol et la fiche de pesée ne changent pas d'un vol à l'autre."
+      },
+      {
+       "id": "u9s8q06",
+       "q": "Quelle méthode donne la quantité de carburant la plus sûre avant le vol ?",
+       "choices": [
+        "Le contrôle visuel ou à la réglette, dans les réservoirs",
+        "La quantité notée au carnet de route à la fin du dernier vol",
+        "Le calcul tiré de la durée du dernier vol de l'avion",
+        "La lecture des jauges électriques, contact général sur ON"
+       ],
+       "answer": 0,
+       "explanation": "Les jauges peuvent être fausses, surtout réservoirs bas : on contrôle visuellement ou à la réglette graduée, puis on recoupe avec les jauges. Le carnet de route et les calculs supposent que personne n'a volé, avitaillé ni purgé depuis."
+      },
+      {
+       "id": "u9s8q07",
+       "q": "Que révèle un décalage des repères de glissement peints sur un pneu et sa jante ?",
+       "choices": [
+        "Une usure normale de la bande de roulement",
+        "Un pneu trop gonflé pour la masse de l'avion",
+        "Une rotation du pneu par rapport à sa roue",
+        "Un mauvais alignement des jambes de train"
+       ],
+       "answer": 2,
+       "explanation": "Ces repères, alignés au montage, se décalent quand le pneu tourne par rapport à la roue, au toucher notamment, ce qui peut arracher la valve d'une chambre à air. Un décalage se signale au mécanicien ; usure et gonflage se contrôlent autrement."
+      },
+      {
+       "id": "u9s8q08",
+       "q": "Pendant la visite pré-vol, pourquoi vérifiez-vous que les évents des réservoirs sont dégagés ?",
+       "choices": [
+        "Pour que l'eau de condensation s'évacue hors du réservoir",
+        "Pour refroidir le carburant et limiter la formation de bulles de vapeur",
+        "Pour que l'air remplace le carburant consommé, sans dépression",
+        "Pour permettre la lecture correcte des jauges électriques"
+       ],
+       "answer": 2,
+       "explanation": "L'évent laisse entrer l'air à mesure que le carburant est consommé. Bouché par un nid, des insectes ou de la glace, il laisse une dépression se former dans le réservoir : le débit baisse, jusqu'à l'arrêt du moteur alors qu'il reste du carburant. L'eau s'évacue par la purge, au point bas, et les jauges ne dépendent pas de l'évent."
+      },
+      {
+       "id": "u9s8q09",
+       "q": "Potentiel moteur : 2 000 h. Le moteur a été révisé quand la cellule totalisait 3 150 h ; la cellule totalise aujourd'hui 4 870 h. Quel est le potentiel restant ?",
+       "choices": [
+        "280 h",
+        "2 870 h",
+        "720 h",
+        "1 720 h"
+       ],
+       "answer": 0,
+       "explanation": "Heures depuis la révision : 4 870 − 3 150 = 1 720 h. Potentiel restant : 2 000 − 1 720 = 280 h. 1 720 h est le temps déjà consommé, et 2 870 h l'écart entre la cellule et le potentiel, sans signification."
+      },
+      {
+       "id": "u9s8q10",
+       "q": "Le programme prévoit une visite toutes les 50 h ; la dernière a été faite à 2 412 h et le compteur indique 2 455 h. Vous prévoyez une navigation de 2 h aller et 2 h retour. Est-ce compatible ?",
+       "choices": [
+        "Oui : il reste 43 h avant l'échéance",
+        "Non : il ne reste que 3 h avant l'échéance",
+        "Non : la visite est déjà dépassée de 7 h",
+        "Oui : il reste 7 h, échéance à 2 462 h"
+       ],
+       "answer": 3,
+       "explanation": "Échéance : 2 412 + 50 = 2 462 h ; il reste 2 462 − 2 455 = 7 h, et le vol en demande environ 4. 43 h sont les heures déjà faites depuis la visite, pas celles qui restent ; 3 h est ce qui restera après le vol."
+      },
+      {
+       "id": "u9s8q11",
+       "q": "Une consigne de navigabilité impose une inspection toutes les 100 h ; elle a été faite pour la dernière fois à 1 875 h. L'avion totalise 1 968 h et vous prévoyez un voyage de 9 h. Que concluez-vous ?",
+       "choices": [
+        "Départ possible : une consigne répétitive tolère un dépassement",
+        "Départ possible : il reste 93 h avant la prochaine inspection",
+        "L'avion n'est déjà plus navigable depuis 1 968 h de vol",
+        "L'échéance de 1 975 h serait dépassée : inspection à faire avant"
+       ],
+       "answer": 3,
+       "explanation": "Échéance : 1 875 + 100 = 1 975 h. Il reste 7 h et le voyage en demande 9 : l'échéance tomberait en route et l'avion cesserait d'être navigable. L'inspection doit être faite avant le départ, ou le voyage raccourci. 93 h correspond aux heures déjà faites."
+      },
+      {
+       "id": "u9s8q12",
+       "q": "Pendant la visite pré-vol, vous constatez une fuite de liquide sous le frein gauche. Que faites-vous ?",
+       "choices": [
+        "Vous essuyez, puis partez si la fuite ne reprend pas au point fixe",
+        "Vous renoncez, notez l'anomalie au carnet de route et prévenez le mécanicien",
+        "Vous partez en ménageant le frein gauche au roulage et à l'atterrissage",
+        "Vous complétez vous-même le liquide de frein avant de partir"
+       ],
+       "answer": 1,
+       "explanation": "Une fuite de liquide de frein peut conduire à la perte du freinage d'un côté, donc du contrôle au sol. C'est une anomalie de navigabilité : pas de vol sans l'avis du mécanicien, et inscription au carnet de route pour le pilote suivant. Compléter le liquide masque le défaut sans le traiter."
+      },
+      {
+       "id": "u9s8q13",
+       "q": "Dans un avion prévu pour l'AVGAS 100LL, la purge donne un carburant incolore à l'odeur de pétrole. Que suspectez-vous ?",
+       "choices": [
+        "De l'eau pure : purger encore deux fois et partir",
+        "Un avitaillement erroné en Jet A1 : pas de vol",
+        "Une AVGAS décolorée par le soleil : vol possible",
+        "Un ajout d'essence auto, toléré en petite dose"
+       ],
+       "answer": 1,
+       "explanation": "L'AVGAS 100LL est bleue ; le Jet A1, incolore à jaune paille, sent le pétrole. Dans un moteur à essence, il provoque détonation et panne : on ne vole pas et l'on fait vidanger et contrôler le circuit. L'eau, plus dense, se dépose au fond en bulles ou en couche distincte, sous le carburant."
+      },
+      {
+       "id": "u9s8q14",
+       "q": "Vous contrôliez le niveau d'huile quand un passager vous a interrompu. Comment reprenez-vous la visite pré-vol ?",
+       "choices": [
+        "Au point suivant, l'huile ayant déjà été vue",
+        "Par la cabine, sans revenir vers le moteur",
+        "Là où vous en étiez, en refaisant ce contrôle",
+        "En vol, en surveillant les indications moteur"
+       ],
+       "answer": 2,
+       "explanation": "Une interruption est une cause classique d'oubli : bouchon d'huile non serré, trappe restée ouverte. On reprend au point interrompu et l'on refait ce point en entier. Les indications moteur en vol ne remplacent pas le contrôle au sol."
+      },
+      {
+       "id": "u9s8q15",
+       "q": "Par − 8 °C, la purge d'un réservoir ne laisse rien couler. Qu'en concluez-vous ?",
+       "choices": [
+        "Par grand froid, l'air est sec : la purge devient alors inutile",
+        "L'eau gelée peut obstruer la purge et rester dans le réservoir",
+        "Le puisard est sec : le réservoir ne contient pas d'eau à purger",
+        "Le réservoir est vide : il faut avitailler avant de purger"
+       ],
+       "answer": 1,
+       "explanation": "Par température négative, l'eau déposée au point bas peut geler et obstruer la purge. Une purge qui ne coule pas ne prouve donc pas l'absence d'eau : on contrôle la quantité de carburant et l'on demande conseil au mécanicien, par exemple pour rentrer l'avion au chaud avant de purger à nouveau."
+      },
+      {
+       "id": "u9s8q16",
+       "q": "À la jauge, le niveau d'huile est sous le minimum indiqué par le manuel de vol. Que faites-vous ?",
+       "choices": [
+        "Vous complétez avec l'huile automobile du hangar",
+        "Vous partez en limitant la puissance pendant le vol",
+        "Vous partez : le niveau remontera une fois le moteur chaud",
+        "Vous complétez d'abord avec l'huile prescrite"
+       ],
+       "answer": 3,
+       "explanation": "Sous le minimum, la lubrification et le refroidissement ne sont plus garantis. On complète, ou l'on fait compléter, avec une huile du type prescrit par le manuel de vol, puis on vérifie bouchon et trappe. Une huile non prévue peut être inadaptée au moteur."
+      },
+      {
+       "id": "u9s8q17",
+       "q": "Le carnet de route porte la remarque « radio : grésillements sur 123,5 », restée sans suite. Le pilote précédent a volé avec. Vous prévoyez une navigation avec transit en espace contrôlé. Que faites-vous ?",
+       "choices": [
+        "Vous la soumettez au mécanicien et l'essayez avant de décider",
+        "Vous barrez la remarque si la radio fonctionne au point fixe",
+        "Vous partez : le pilote précédent a volé avec, sans encombre",
+        "Vous partez, l'anomalie étant déjà inscrite au carnet de route"
+       ],
+       "answer": 0,
+       "explanation": "Une remarque non traitée reste ouverte, même si un autre pilote a volé avec. La radio est indispensable au transit prévu : vous la faites examiner et l'essayez avant de décider. Un équipement exigé pour le vol ne se reporte pas de votre propre chef : c'est un mécanicien habilité qui traite la remarque, et la barrer vous-même ferait disparaître l'information."
+      },
+      {
+       "id": "u9s8q18",
+       "q": "Après une nuit froide, l'avion parqué dehors est couvert d'une neige légère. Quelles vérifications particulières s'imposent avant le vol ?",
+       "choices": [
+        "Pare-brise dégagé : ailes et empennages se nettoieront en vol",
+        "Ailes dégagées : réchauffage Pitot et chauffage dégèleront le reste",
+        "Extrados balayé : la neige restante partira au roulement",
+        "Tout dégager : surfaces, charnières, évents, Pitot et prises statiques"
+       ],
+       "answer": 3,
+       "explanation": "Neige et glace s'enlèvent de toutes les surfaces, gouvernes comprises, et ne doivent bloquer ni les charnières, ni les évents de réservoir, ni le Pitot et les prises statiques. Compter sur le roulement ou le vol pour s'en débarrasser, c'est décoller avec une aile dégradée et des commandes ou des instruments peut-être bloqués."
+      },
+      {
+       "id": "u9s8q19",
+       "q": "Le programme fixe le potentiel du moteur à 2 000 h ou 12 ans, à la première échéance. Le moteur a été révisé en mars 2014 et a tourné 1 150 h depuis. Nous sommes en novembre 2026. Que concluez-vous ?",
+       "choices": [
+        "Le potentiel est échu en mars dernier, malgré 850 h restantes",
+        "Le potentiel ne sera échu qu'en mars 2027, dans quatre mois",
+        "Le potentiel sera échu à 2 000 h, la date étant indicative",
+        "Il reste 850 h : le moteur est encore dans son potentiel"
+       ],
+       "answer": 0,
+       "explanation": "Douze ans après mars 2014 mènent à mars 2026 : la limite calendaire est atteinte la première, même s'il reste 2 000 − 1 150 = 850 h. Le moteur est hors potentiel. Mars 2027 résulte d'une erreur de calcul, et une limite fixée par le programme n'est pas indicative."
+      },
+      {
+       "id": "u9s8q20",
+       "q": "Les jauges indiquent environ trois quarts, mais la réglette ne montre que 40 L dans des réservoirs de 100 L au total. Que faites-vous ?",
+       "choices": [
+        "Vous retenez la moyenne des deux mesures, soit environ 58 L",
+        "Vous partez et vérifiez la consommation sur les jauges en vol",
+        "Vous vous fiez aux jauges du tableau, plus précises que la réglette",
+        "Vous vous fiez à la réglette et signalez les jauges au carnet de route"
+       ],
+       "answer": 3,
+       "explanation": "La mesure directe dans les réservoirs prime : 40 L est la valeur à retenir pour le calcul d'autonomie, carburant inutilisable déduit. Des jauges qui annoncent environ 75 L sont fausses : c'est une anomalie à inscrire au carnet de route. Faire une moyenne n'a pas de sens."
+      },
+      {
+       "id": "u9s8q21",
+       "q": "Après un avitaillement, la première purge de l'aile gauche montre une couche d'eau, et la deuxième encore un peu. Que faites-vous ?",
+       "choices": [
+        "Vous décollez sur le réservoir droit, dont la purge était propre",
+        "Vous purgez jusqu'à du carburant propre ; si l'eau persiste, pas de vol",
+        "Vous attendez dix minutes, puis partez sans purger à nouveau",
+        "Vous partez : le moteur tolère sans dommage quelques gouttes d'eau"
+       ],
+       "answer": 1,
+       "explanation": "L'eau, plus dense, se rassemble au point bas : on purge jusqu'à n'obtenir que du carburant propre, à chaque point de purge. Si l'eau continue d'arriver, la contamination est importante : pas de vol, et l'on prévient le mécanicien. Un réservoir contaminé ne se contourne pas : il faudra peut-être l'utiliser en vol."
+      },
+      {
+       "id": "u9s8q22",
+       "q": "À la visite pré-vol, un pneu principal montre une zone usée où la toile apparaît. Que décidez-vous ?",
+       "choices": [
+        "Vol possible si la pression de gonflage du pneu est correcte",
+        "Vol possible pour un vol local, en surveillant le pneu",
+        "Pas de vol : le pneu est à faire remplacer par un mécanicien",
+        "Vol possible en freinant le moins possible à l'atterrissage"
+       ],
+       "answer": 2,
+       "explanation": "Une usure jusqu'à la toile affaiblit le pneu : il peut éclater au toucher ou au freinage. L'avion ne vole pas tant que le pneu n'a pas été remplacé, et l'anomalie est inscrite au carnet de route. Un gonflage correct ou un freinage doux ne compensent pas une carcasse apparente."
+      },
+      {
+       "id": "u9s8q23",
+       "q": "Le carnet de route porte « avertisseur de décrochage inopérant », suivi de la mention du mécanicien « réparé, approuvé pour remise en service », signée. À l'essai, l'avertisseur fonctionne. Que concluez-vous ?",
+       "choices": [
+        "Pas de vol avant le prochain examen de navigabilité de l'avion",
+        "Vol possible, à condition de barrer vous-même la remarque",
+        "Pas de vol : la remise en service exige d'abord un essai en vol",
+        "Vol possible : défaut traité et remise en service approuvée"
+       ],
+       "answer": 3,
+       "explanation": "La remarque a reçu une suite : réparation et approbation pour remise en service signée par le mécanicien habilité, et votre essai confirme le bon fonctionnement. Ni essai en vol ni examen de navigabilité ne sont nécessaires pour cela ; c'est la mention du mécanicien, non le pilote, qui lève la remarque."
+      },
+      {
+       "id": "u9s8q24",
+       "q": "Au point fixe, le voyant ALT reste allumé et l'ampèremètre indique une décharge, malgré l'application de la check-list. Que faites-vous ?",
+       "choices": [
+        "Décollage : la batterie suffit largement pour un court vol local",
+        "Décollage en coupant la radio pour ménager la batterie",
+        "Décollage : l'alternateur se remettra à charger en vol",
+        "Retour au parking, anomalie au carnet de route, avis du mécanicien"
+       ],
+       "answer": 3,
+       "explanation": "La panne d'alternateur est connue avant le départ : la batterie seule ne tiendrait qu'un temps limité et le vol commencerait déjà en situation dégradée. On rentre au parking, on inscrit l'anomalie et l'on attend l'avis du mécanicien. Le moteur tournerait grâce aux magnétos, mais radio, transpondeur et volets électriques finiraient par être perdus."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

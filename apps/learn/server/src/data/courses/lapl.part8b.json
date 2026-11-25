@@ -1,0 +1,1126 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u8",
+   "title": "Performances et préparation du vol",
+   "description": "Masse et centrage, performances au décollage, en montée, en croisière et à l'atterrissage, préparation d'un vol VFR (examen : 12 questions, 18 min).",
+   "skills": [
+    {
+     "id": "u8s5",
+     "title": "Lire les abaques et tableaux du manuel de vol",
+     "icon": "📊",
+     "tips": "Le manuel de vol (AFM/POH) présente les performances sous forme de tableaux ou d'abaques. Ces données supposent un avion en bon état, piloté selon la technique décrite (volets, régime, vitesses) et, sauf mention contraire, une piste en dur, sèche et horizontale. Avant de lire une valeur, on vérifie les conditions écrites en tête ou en note : configuration, technique, revêtement, unités (m ou ft, kt, °C, L ou USG) et masse de référence.\n\nPréparer les entrées :\n• Altitude-pression du terrain : Zp ≈ altitude du terrain + (1013 − QNH) × 28 ft. Ex. : terrain à 600 ft, QNH 1003 hPa → Zp ≈ 600 + 10 × 28 = 880 ft.\n• Température extérieure réelle (METAR, thermomètre), et non la température standard. Si le tableau est construit en écart ISA : température ISA = 15 °C − 2 °C par 1 000 ft.\n• Masse réelle, tirée du devis de masse et centrage.\n• Composante de vent dans l'axe : vent × cos (angle vent/piste) ; cos 30° ≈ 0,87 ; cos 45° ≈ 0,7 ; cos 60° = 0,5. Ex. : piste 27, vent 300°/20 kt → angle 30° → environ 17 kt de face.\n• Nature, état et pente de la piste (carte VAC, NOTAM).\n\nLire un abaque :\n• Suivre les panneaux dans l'ordre imposé, en général de gauche à droite : température, courbe d'altitude-pression, masse, vent, obstacle.\n• Dans les panneaux masse, vent et obstacle, on part de la ligne de référence (masse maximale, vent nul, roulement) et l'on se déplace parallèlement aux lignes guides jusqu'à la valeur réelle ; entre deux lignes, on garde la même proportion d'écart.\n• On lit la distance de roulement en entrant dans le panneau obstacle, et la distance de passage des 15 m (50 ft) à sa sortie.\n• Tracer au crayon et à la règle : une lecture décalée d'une graduation se répercute sur tous les panneaux suivants.\n\nInterpoler dans un tableau :\n• Valeur = v1 + (v2 − v1) × (x − x1) / (x2 − x1).\n• Ex. : à Zp 2 000 ft, 420 m à 10 °C et 460 m à 20 °C. Pour 14 °C : 420 + 40 × 4/10 = 436 m.\n• Double interpolation : d'abord en température, à chacune des deux altitudes qui encadrent la vôtre, puis en altitude entre les deux résultats. Ex. : Zp 0 ft : 380 m à 10 °C et 410 m à 20 °C ; Zp 2 000 ft : 420 m et 460 m. Pour Zp 1 500 ft et 14 °C : 392 m et 436 m, puis 392 + 44 × 1 500/2 000 = 425 m.\n• Hors des bornes du tableau (température plus élevée que la dernière colonne, masse supérieure à la plus forte), on n'extrapole pas : le manuel ne garantit plus rien. On change les conditions : heure plus fraîche, masse réduite, autre piste.\n• Sans calcul, retenir la ligne ou la colonne la plus défavorable va dans le sens de la sécurité.\n\nRoulement ou passage des 15 m :\n• Décollage : la distance de roulement se compare à la TORA ; la distance jusqu'au passage des 15 m, toujours la plus grande, à la TODA.\n• Atterrissage : on compare à la LDA la distance depuis le passage des 15 m jusqu'à l'arrêt ; le roulement seul ne suffit pas.\n\nCorrections :\n• Si le manuel donne ses propres corrections (souvent en note : pourcentage par tranche de vent, majoration pour l'herbe), ce sont elles qui s'appliquent.\n• À défaut, majorations indicatives : herbe sèche, décollage +20 % et atterrissage +15 % ; herbe mouillée, +30 % et +35 % (jusqu'à +60 % à l'atterrissage sur herbe courte mouillée) ; pente de 2 %, +10 % (montante au décollage, descendante à l'atterrissage) ; vent arrière égal à 10 % de la vitesse de décollage, +20 % ; au décollage, +10 % par 10 °C ou par 1 000 ft (+5 % à l'atterrissage) si l'abaque ne les intègre pas déjà ; sol mou ou neige, +25 % ou plus.\n• Les corrections se multiplient : 1,20 × 1,10 = 1,32, et non 1,30.\n• Pas de double compte : si l'abaque possède une entrée vent ou température, on n'ajoute pas la majoration forfaitaire correspondante.\n\nCoefficients de sécurité :\n• Décollage × 1,33 ; atterrissage × 1,43, ce qui revient à n'utiliser que 70 % de la LDA.\n• Ordre : valeur du manuel, puis corrections, puis coefficient, puis comparaison à la distance disponible.\n• Exemple résolu : abaque 380 m (passage des 15 m) ; herbe sèche → 456 m ; pente montante de 2 % → 502 m ; × 1,33 → 667 m. TODA 700 m : décollage possible, avec peu de marge.\n• Sens inverse : distance disponible ÷ coefficient = valeur maximale admissible au manuel. LDA 560 m → 560 / 1,43 ≈ 392 m.\n\nTableau de croisière :\n• Entrées : altitude-pression, température (souvent ISA − 20 °C, ISA et ISA + 20 °C), régime (tr/min) ou pression d'admission.\n• Sorties : pourcentage de la puissance maximale, vitesse vraie, consommation horaire.\n• Moteur atmosphérique : à régime égal, le pourcentage de puissance diminue quand l'altitude augmente.\n• Distance par litre = vitesse ÷ consommation. Ex. : 75 % : 115 kt et 32 L/h, soit 3,6 NM/L ; 55 % : 98 kt et 23 L/h, soit 4,3 NM/L. Avec du vent, on prend la vitesse sol.\n• Le tableau suppose un mélange réglé comme l'indique le manuel ; on planifie avec une marge, ou avec la consommation réellement constatée sur l'avion.\n\nPièges classiques :\n• Entrer l'altitude du terrain au lieu de l'altitude-pression, ou la température standard au lieu de la réelle.\n• Confondre roulement et passage des 15 m, mètres et pieds.\n• Additionner les pourcentages au lieu de les multiplier.\n• Compter deux fois le vent ou la température.\n• Multiplier la distance disponible par 1,43 au lieu de la diviser.",
+     "vocab": [
+      {
+       "term": "Abaque",
+       "translation": "Graphique du manuel donnant une performance selon plusieurs entrées"
+      },
+      {
+       "term": "Ligne de référence",
+       "translation": "Départ d'un panneau : masse maximale, vent nul ou roulement"
+      },
+      {
+       "term": "Lignes guides",
+       "translation": "Courbes à suivre parallèlement pour appliquer une correction"
+      },
+      {
+       "term": "Interpolation linéaire",
+       "translation": "Valeur intermédiaire calculée au prorata entre deux lignes"
+      },
+      {
+       "term": "Double interpolation",
+       "translation": "Interpolation sur deux entrées : température puis altitude"
+      },
+      {
+       "term": "Extrapolation",
+       "translation": "Prolongement hors du tableau : rien n'est plus garanti"
+      },
+      {
+       "term": "Altitude-pression (Zp)",
+       "translation": "Zp ≈ altitude + (1013 − QNH) × 28 ft"
+      },
+      {
+       "term": "Écart ISA",
+       "translation": "Température réelle moins température standard à ce niveau"
+      },
+      {
+       "term": "Distance de roulement",
+       "translation": "Du lâcher des freins à l'envol, ou du toucher à l'arrêt"
+      },
+      {
+       "term": "Passage des 15 m",
+       "translation": "Distance jusqu'à 15 m (50 ft) de hauteur : la plus longue"
+      },
+      {
+       "term": "Composante de face",
+       "translation": "Vent × cosinus de l'angle entre le vent et la piste"
+      },
+      {
+       "term": "Majoration",
+       "translation": "Correction multiplicative : herbe, pente, vent arrière…"
+      },
+      {
+       "term": "Coefficient de sécurité",
+       "translation": "× 1,33 au décollage, × 1,43 à l'atterrissage"
+      },
+      {
+       "term": "Tableau de croisière",
+       "translation": "Régime, % de puissance, vitesse vraie et consommation"
+      },
+      {
+       "term": "Distance par litre",
+       "translation": "Vitesse ÷ consommation horaire, en NM par litre"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Lire un abaque de décollage",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u8s5f1r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"720\" height=\"470\" fill=\"#ffffff\"/><text x=\"20\" y=\"30\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Abaque de décollage fictif : lecture pas à pas</text><rect x=\"60\" y=\"70\" width=\"200\" height=\"320\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"350\" x2=\"260\" y2=\"350\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"310\" x2=\"260\" y2=\"310\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"270\" x2=\"260\" y2=\"270\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"230\" x2=\"260\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"190\" x2=\"260\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"70\" x2=\"260\" y2=\"70\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"274\" y=\"70\" width=\"120\" height=\"320\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"274\" y1=\"350\" x2=\"394\" y2=\"350\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"310\" x2=\"394\" y2=\"310\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"270\" x2=\"394\" y2=\"270\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"230\" x2=\"394\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"190\" x2=\"394\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"150\" x2=\"394\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"110\" x2=\"394\" y2=\"110\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"274\" y1=\"70\" x2=\"394\" y2=\"70\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"408\" y=\"70\" width=\"100\" height=\"320\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"408\" y1=\"350\" x2=\"508\" y2=\"350\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"310\" x2=\"508\" y2=\"310\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"270\" x2=\"508\" y2=\"270\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"230\" x2=\"508\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"190\" x2=\"508\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"150\" x2=\"508\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"110\" x2=\"508\" y2=\"110\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"408\" y1=\"70\" x2=\"508\" y2=\"70\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><rect x=\"522\" y=\"70\" width=\"90\" height=\"320\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"522\" y1=\"350\" x2=\"612\" y2=\"350\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"310\" x2=\"612\" y2=\"310\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"270\" x2=\"612\" y2=\"270\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"230\" x2=\"612\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"190\" x2=\"612\" y2=\"190\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"150\" x2=\"612\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"110\" x2=\"612\" y2=\"110\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"522\" y1=\"70\" x2=\"612\" y2=\"70\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"110\" y1=\"70\" x2=\"110\" y2=\"390\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"390\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"210\" y1=\"70\" x2=\"210\" y2=\"390\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"334\" y1=\"70\" x2=\"334\" y2=\"390\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"458\" y1=\"70\" x2=\"458\" y2=\"390\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"60\" y1=\"318\" x2=\"260\" y2=\"266.8\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><text x=\"103.3\" y=\"299.7\" font-size=\"14\" fill=\"#1e3a8a\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(-14.4 103.3 299.7)\">Zp 0 ft</text><line x1=\"60\" y1=\"292.4\" x2=\"260\" y2=\"238.6\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><text x=\"103.2\" y=\"273.5\" font-size=\"14\" fill=\"#1e3a8a\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(-15 103.2 273.5)\">Zp 2 000 ft</text><line x1=\"60\" y1=\"266.8\" x2=\"260\" y2=\"210.5\" stroke=\"#1d4ed8\" stroke-width=\"2.2\"/><text x=\"103.1\" y=\"247.4\" font-size=\"14\" fill=\"#1e3a8a\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(-15.7 103.1 247.4)\">Zp 4 000 ft</text><line x1=\"274\" y1=\"350\" x2=\"394\" y2=\"378.8\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"274\" y1=\"310\" x2=\"394\" y2=\"353.2\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"274\" y1=\"270\" x2=\"394\" y2=\"327.6\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"274\" y1=\"230\" x2=\"394\" y2=\"302\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"274\" y1=\"190\" x2=\"394\" y2=\"276.4\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"408\" y1=\"350\" x2=\"508\" y2=\"370\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"408\" y1=\"310\" x2=\"508\" y2=\"340\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"408\" y1=\"270\" x2=\"508\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"408\" y1=\"230\" x2=\"508\" y2=\"280\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"408\" y1=\"190\" x2=\"508\" y2=\"250\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"522\" y1=\"350\" x2=\"612\" y2=\"290\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"522\" y1=\"310\" x2=\"612\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"522\" y1=\"270\" x2=\"612\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"522\" y1=\"230\" x2=\"612\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"274\" y1=\"70\" x2=\"274\" y2=\"390\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"408\" y1=\"70\" x2=\"408\" y2=\"390\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"522\" y1=\"70\" x2=\"522\" y2=\"390\" stroke=\"#475569\" stroke-width=\"2.2\"/><line x1=\"622\" y1=\"70\" x2=\"622\" y2=\"390\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"622\" y1=\"390\" x2=\"628\" y2=\"390\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"632\" y=\"395\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">100</text><line x1=\"622\" y1=\"350\" x2=\"628\" y2=\"350\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"622\" y1=\"310\" x2=\"628\" y2=\"310\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"632\" y=\"315\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">300</text><line x1=\"622\" y1=\"270\" x2=\"628\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"622\" y1=\"230\" x2=\"628\" y2=\"230\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"632\" y=\"235\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">500</text><line x1=\"622\" y1=\"190\" x2=\"628\" y2=\"190\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"622\" y1=\"150\" x2=\"628\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"632\" y=\"155\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">700</text><line x1=\"622\" y1=\"110\" x2=\"628\" y2=\"110\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"622\" y1=\"70\" x2=\"628\" y2=\"70\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"632\" y=\"75\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">900</text><text x=\"626\" y=\"60\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Distance (m)</text><text x=\"60\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">0</text><text x=\"110\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">10</text><text x=\"160\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">20</text><text x=\"210\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">30</text><text x=\"260\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">40</text><text x=\"274\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">1 000</text><text x=\"334\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">900</text><text x=\"394\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">800</text><text x=\"408\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">0</text><text x=\"458\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">10</text><text x=\"508\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">20</text><text x=\"522\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"start\">0</text><text x=\"612\" y=\"409\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">15</text><text x=\"160\" y=\"432\" font-size=\"14\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Température extérieure (°C)</text><text x=\"334\" y=\"432\" font-size=\"14\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Masse (kg)</text><text x=\"458\" y=\"432\" font-size=\"14\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Vent de face (kt)</text><text x=\"567\" y=\"432\" font-size=\"14\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Hauteur (m)</text><text x=\"360\" y=\"456\" font-size=\"14\" fill=\"#475569\" text-anchor=\"middle\">Trait épais : ligne de référence (masse maximale, vent nul, roulement)</text><line x1=\"334\" y1=\"390\" x2=\"334\" y2=\"289.6\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"458\" y1=\"390\" x2=\"458\" y2=\"307.2\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"185\" y1=\"390\" x2=\"185\" y2=\"258.8\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u8s5f1r)\"/><line x1=\"185\" y1=\"258.8\" x2=\"274\" y2=\"258.8\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u8s5f1r)\"/><line x1=\"274\" y1=\"258.8\" x2=\"334\" y2=\"289.6\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"334\" y1=\"289.6\" x2=\"408\" y2=\"289.6\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u8s5f1r)\"/><line x1=\"408\" y1=\"289.6\" x2=\"458\" y2=\"307.2\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"458\" y1=\"307.2\" x2=\"522\" y2=\"307.2\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u8s5f1r)\"/><line x1=\"522\" y1=\"307.2\" x2=\"612\" y2=\"215\" stroke=\"#dc2626\" stroke-width=\"3\" marker-end=\"url(#u8s5f1r)\"/><line x1=\"612\" y1=\"215\" x2=\"622\" y2=\"215\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"622\" cy=\"215\" r=\"5\" fill=\"#dc2626\"/><text x=\"632\" y=\"220\" font-size=\"14\" fill=\"#dc2626\" text-anchor=\"start\" font-weight=\"bold\">540</text><circle cx=\"522\" cy=\"307.2\" r=\"4.5\" fill=\"#dc2626\"/><rect x=\"70\" y=\"84\" width=\"420\" height=\"62\" rx=\"8\" fill=\"#ffffff\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/><text x=\"82\" y=\"108\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Exemple : 25 °C, Zp 2 000 ft, 900 kg, 10 kt de face</text><text x=\"82\" y=\"132\" font-size=\"15\" fill=\"#dc2626\" text-anchor=\"start\" font-weight=\"bold\">→ roulement ≈ 310 m ; passage des 15 m ≈ 540 m</text></svg>",
+       "caption": "Abaque fictif : on monte depuis la température jusqu'à la courbe d'altitude-pression, puis on suit les lignes guides à partir de chaque ligne de référence (masse, vent, obstacle). On lit le roulement en entrant dans le dernier panneau et le passage des 15 m à sa sortie."
+      },
+      {
+       "title": "Interpoler dans un tableau à deux entrées",
+       "svg": "<svg viewBox=\"0 0 700 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"400\" fill=\"#ffffff\"/><text x=\"20\" y=\"30\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Double interpolation : Zp 1 500 ft et 14 °C</text><rect x=\"330\" y=\"50\" width=\"130\" height=\"168\" fill=\"#eff6ff\"/><rect x=\"200\" y=\"134\" width=\"390\" height=\"42\" fill=\"#fef2f2\"/><rect x=\"330\" y=\"134\" width=\"130\" height=\"42\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><line x1=\"40\" y1=\"50\" x2=\"40\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"330\" y1=\"50\" x2=\"330\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"460\" y1=\"50\" x2=\"460\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"590\" y1=\"50\" x2=\"590\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"50\" x2=\"590\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"92\" x2=\"590\" y2=\"92\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"134\" x2=\"590\" y2=\"134\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"176\" x2=\"590\" y2=\"176\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"218\" x2=\"590\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"92\" x2=\"590\" y2=\"92\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"77\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Zp \\ température</text><text x=\"265\" y=\"77\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">10 °C</text><text x=\"395\" y=\"77\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\">14 °C</text><text x=\"525\" y=\"77\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">20 °C</text><text x=\"120\" y=\"119\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">0 ft</text><text x=\"120\" y=\"161\" font-size=\"16\" fill=\"#dc2626\" text-anchor=\"middle\" font-weight=\"bold\">1 500 ft</text><text x=\"120\" y=\"203\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">2 000 ft</text><text x=\"265\" y=\"119\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">380 m</text><text x=\"395\" y=\"119\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\">392 m</text><text x=\"525\" y=\"119\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">410 m</text><text x=\"395\" y=\"161\" font-size=\"16\" fill=\"#dc2626\" text-anchor=\"middle\" font-weight=\"bold\">425 m</text><text x=\"265\" y=\"203\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">420 m</text><text x=\"395\" y=\"203\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\">436 m</text><text x=\"525\" y=\"203\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">460 m</text><text x=\"265\" y=\"161\" font-size=\"16\" fill=\"#94a3b8\" text-anchor=\"middle\">—</text><text x=\"525\" y=\"161\" font-size=\"16\" fill=\"#94a3b8\" text-anchor=\"middle\">—</text><circle cx=\"58\" cy=\"257\" r=\"13\" fill=\"#1d4ed8\"/><text x=\"58\" y=\"262\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"82\" y=\"262\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\">À Zp 0 ft : 380 + (410 − 380) × 4/10 = 392 m</text><circle cx=\"58\" cy=\"297\" r=\"13\" fill=\"#1d4ed8\"/><text x=\"58\" y=\"302\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">2</text><text x=\"82\" y=\"302\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\">À Zp 2 000 ft : 420 + (460 − 420) × 4/10 = 436 m</text><circle cx=\"58\" cy=\"337\" r=\"13\" fill=\"#dc2626\"/><text x=\"58\" y=\"342\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">3</text><text x=\"82\" y=\"342\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\">À Zp 1 500 ft : 392 + (436 − 392) × 1 500/2 000 = 425 m</text><text x=\"40\" y=\"382\" font-size=\"14\" fill=\"#475569\" text-anchor=\"start\">D'abord en température sur chaque ligne connue, puis en altitude entre les deux résultats.</text></svg>",
+       "caption": "On interpole d'abord en température sur les deux lignes d'altitude connues (392 m et 436 m), puis en altitude entre ces deux résultats : 425 m à Zp 1 500 ft et 14 °C."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u8s5q01",
+       "q": "Un abaque de décollage demande en entrée une température et une altitude. Quelle altitude y portez-vous ?",
+       "choices": [
+        "L'altitude-pression du terrain, calculée à partir du QNH du jour",
+        "L'altitude-densité du terrain, déjà corrigée de la température",
+        "L'altitude du terrain publiée sur la carte VAC, sans correction",
+        "La hauteur du tour de piste publiée sur la carte VAC du terrain"
+       ],
+       "answer": 0,
+       "explanation": "L'abaque combine lui-même altitude-pression et température pour tenir compte de la densité de l'air : Zp ≈ altitude du terrain + (1013 − QNH) × 28 ft. Y entrer l'altitude-densité compterait la température deux fois ; l'altitude publiée ignore la pression du jour."
+      },
+      {
+       "id": "u8s5q02",
+       "q": "Dans un manuel de vol, que mesure la distance d'atterrissage donnée « depuis 15 m » ?",
+       "choices": [
+        "La distance du toucher des roues jusqu'à l'arrêt complet de l'avion",
+        "La distance du passage à 15 m de hauteur jusqu'au toucher des roues",
+        "La distance de roulement, augmentée d'une marge forfaitaire de 15 m",
+        "La distance du passage à 15 m de hauteur jusqu'à l'arrêt complet"
+       ],
+       "answer": 3,
+       "explanation": "Elle part du passage d'une hauteur de 15 m (50 ft) et va jusqu'à l'arrêt complet : elle comprend la fin d'approche, l'arrondi et le roulement, et se compare à la LDA. Du toucher à l'arrêt, ce n'est que la distance de roulement."
+      },
+      {
+       "id": "u8s5q03",
+       "q": "Pour un décollage, vous obtenez 290 m de roulement et 520 m jusqu'au passage des 15 m, corrections et coefficient appliqués. Quelle valeur comparez-vous à la TODA ?",
+       "choices": [
+        "230 m",
+        "290 m",
+        "520 m",
+        "520 × 1,33 ≈ 692 m"
+       ],
+       "answer": 2,
+       "explanation": "La TODA (TORA + prolongement dégagé) se compare à la distance de passage des 15 m, ici 520 m ; le roulement de 290 m se compare à la TORA. L'écart entre les deux (230 m) ne se compare à aucune distance déclarée, et le coefficient de 1,33 est déjà appliqué : le reprendre (692 m) le compterait deux fois."
+      },
+      {
+       "id": "u8s5q04",
+       "q": "Avant de lire un abaque de décollage, pourquoi lisez-vous les notes et conditions associées, en tête ou en bas de page ?",
+       "choices": [
+        "Pour connaître la date de la dernière pesée et la masse à vide de l'avion",
+        "Pour connaître la composante de vent de travers maximale démontrée",
+        "Pour connaître le coefficient de sécurité que le manuel impose au pilote",
+        "Pour connaître la configuration, la technique, le revêtement et les unités"
+       ],
+       "answer": 3,
+       "explanation": "Les valeurs ne valent que dans les conditions d'établissement : position des volets, régime, vitesse de rotation, piste en dur sèche, unités (m ou ft, kt, °C). Le vent de travers démontré et la pesée figurent ailleurs ; les coefficients de sécurité sont des recommandations, pas des données de l'abaque."
+      },
+      {
+       "id": "u8s5q05",
+       "q": "Dans le panneau « masse » d'un abaque de décollage, comment progressez-vous ?",
+       "choices": [
+        "Depuis la masse réelle, verticalement, jusqu'à la courbe d'altitude-pression du jour",
+        "Depuis la ligne de référence, horizontalement, jusqu'à l'axe des distances à droite",
+        "Depuis l'axe des distances, en suivant la ligne guide la plus proche de la masse",
+        "Depuis la ligne de référence, parallèlement aux lignes guides, jusqu'à la masse réelle"
+       ],
+       "answer": 3,
+       "explanation": "On arrive au panneau par une horizontale jusqu'à la ligne de référence (masse maximale), puis on suit la pente des lignes guides jusqu'à la verticale de la masse réelle, en gardant la proportion entre deux lignes. Filer à l'horizontale jusqu'à l'axe ignorerait la correction de masse."
+      },
+      {
+       "id": "u8s5q06",
+       "q": "À une même altitude-pression, un tableau donne 400 m à 10 °C et 450 m à 20 °C. Quelle distance obtenez-vous par interpolation pour 16 °C ?",
+       "choices": [
+        "420 m",
+        "425 m",
+        "430 m",
+        "440 m"
+       ],
+       "answer": 2,
+       "explanation": "400 + (450 − 400) × (16 − 10) / (20 − 10) = 400 + 50 × 0,6 = 430 m. 425 m correspondrait à 15 °C. Sans calcul, retenir la colonne 20 °C (450 m) irait dans le sens de la sécurité, mais ce ne serait plus une interpolation."
+      },
+      {
+       "id": "u8s5q07",
+       "q": "Deux majorations s'appliquent à une même distance : +20 % pour l'herbe sèche et +10 % pour une pente montante de 2 %. Par quel coefficient global multipliez-vous la distance ?",
+       "choices": [
+        "1,02",
+        "1,20",
+        "1,30",
+        "1,32"
+       ],
+       "answer": 3,
+       "explanation": "Les corrections se multiplient : 1,20 × 1,10 = 1,32. Additionner les pourcentages (1,30) sous-estime la distance, d'autant plus que les corrections sont nombreuses ; ne garder que la plus forte (1,20) en oublie une."
+      },
+      {
+       "id": "u8s5q08",
+       "q": "Quelles données de sortie un tableau de croisière fournit-il habituellement ?",
+       "choices": [
+        "Le régime, l'altitude-pression et la température extérieure du jour",
+        "La vitesse indiquée, le taux de montée et la masse maximale admise",
+        "La distance franchissable, le vent effectif et la réserve finale",
+        "Le pourcentage de puissance, la vitesse vraie et la consommation horaire"
+       ],
+       "answer": 3,
+       "explanation": "On entre avec l'altitude-pression, la température et le régime (ou la pression d'admission) ; le tableau donne le pourcentage de puissance, la vitesse vraie et la consommation. La distance franchissable se calcule ensuite, avec le vent prévu et la réserve à conserver."
+      },
+      {
+       "id": "u8s5q09",
+       "q": "Piste 32, vent annoncé 020°/24 kt. Quelle composante de vent de face entrez-vous dans l'abaque ?",
+       "choices": [
+        "12 kt",
+        "Environ 17 kt",
+        "Environ 21 kt",
+        "24 kt"
+       ],
+       "answer": 0,
+       "explanation": "L'angle entre le vent et l'axe vaut 380 − 320 = 60° (020° équivaut à 380°). Composante de face = 24 × cos 60° = 24 × 0,5 = 12 kt. Les 21 kt environ correspondent à la composante traversière (24 × sin 60°), qui ne réduit pas la distance."
+      },
+      {
+       "id": "u8s5q10",
+       "q": "Terrain à 900 ft, QNH 1006 hPa. Quelle altitude-pression utilisez-vous pour lire les performances ?",
+       "choices": [
+        "Environ 700 ft",
+        "900 ft",
+        "Environ 1 100 ft",
+        "Environ 1 250 ft"
+       ],
+       "answer": 2,
+       "explanation": "Zp ≈ 900 + (1013 − 1006) × 28 = 900 + 196 ≈ 1 100 ft. Par pression inférieure à 1013 hPa, l'altitude-pression dépasse l'altitude du terrain ; retrancher les 196 ft (700 ft) est l'erreur de signe classique."
+      },
+      {
+       "id": "u8s5q11",
+       "q": "Un tableau donne, à 20 °C, 330 m à Zp 0 ft et 390 m à Zp 2 000 ft. Quelle distance obtenez-vous par interpolation à Zp 1 000 ft et 20 °C ?",
+       "choices": [
+        "345 m",
+        "360 m",
+        "375 m",
+        "390 m"
+       ],
+       "answer": 1,
+       "explanation": "1 000 ft est à mi-chemin entre 0 et 2 000 ft : 330 + (390 − 330) × 1 000 / 2 000 = 360 m. La ligne 2 000 ft (390 m) n'est pas une interpolation, même si, sans calcul, elle irait dans le sens de la sécurité."
+      },
+      {
+       "id": "u8s5q12",
+       "q": "Dans quel ordre traitez-vous une distance de décollage tirée du manuel ?",
+       "choices": [
+        "Valeur du manuel, comparaison à la TODA, puis corrections s'il reste de la marge",
+        "Comparaison à la TODA, puis corrections et coefficient appliqués à la TODA",
+        "Valeur du manuel, coefficient de sécurité, puis comparaison à la TORA",
+        "Valeur du manuel, corrections, coefficient de sécurité, comparaison à la TODA"
+       ],
+       "answer": 3,
+       "explanation": "On part de la valeur du manuel, on la corrige des conditions réelles (les corrections se multiplient), on applique le coefficient de 1,33, et seulement ensuite on compare à la TODA. Comparer avant d'avoir tout appliqué conduit à accepter une piste trop courte."
+      },
+      {
+       "id": "u8s5q13",
+       "q": "Votre abaque comporte un panneau vent gradué en vent de face et en vent arrière ; vous y avez entré 5 kt de vent arrière. Ajoutez-vous la majoration forfaitaire de +20 % pour vent arrière ?",
+       "choices": [
+        "Oui : la majoration forfaitaire s'ajoute à la lecture de l'abaque",
+        "Oui : un abaque ne traite que le vent de face, même s'il est gradué",
+        "Non : l'abaque a déjà pris ce vent arrière en compte",
+        "Non : un vent arrière de 5 kt reste négligeable au décollage"
+       ],
+       "answer": 2,
+       "explanation": "Ajouter la majoration forfaitaire compterait le vent deux fois : les majorations indicatives ne servent que pour un paramètre que le manuel ne traite pas. Un vent arrière de 5 kt n'a rien de négligeable : il allonge nettement la distance."
+      },
+      {
+       "id": "u8s5q14",
+       "q": "À l'atterrissage, le manuel donne 230 m de roulement et 430 m depuis le passage des 15 m. La piste descend de 2 % dans le sens d'atterrissage (majoration de 10 %) ; vous appliquez le coefficient de 1,43. Quelle distance comparez-vous à la LDA ?",
+       "choices": [
+        "Environ 362 m",
+        "Environ 553 m",
+        "Environ 615 m",
+        "Environ 676 m"
+       ],
+       "answer": 3,
+       "explanation": "On part de la distance depuis 15 m, et une pente descendante allonge l'atterrissage : 430 × 1,10 = 473 m, puis × 1,43 ≈ 676 m ; une LDA de 650 m serait donc insuffisante. Le roulement seul (362 m) ignore la fin d'approche et l'arrondi ; oublier la pente donne 615 m, et la compter comme un gain (553 m) inverse son effet."
+      },
+      {
+       "id": "u8s5q15",
+       "q": "Tableau de croisière à 4 500 ft : 2 500 tr/min → 72 %, 112 kt, 30 L/h ; 2 300 tr/min → 58 %, 100 kt, 24 L/h. Par vent nul, quel réglage parcourt le plus de milles par litre ?",
+       "choices": [
+        "2 500 tr/min : environ 4,5 NM par litre",
+        "2 500 tr/min : son vol plus court consomme moins",
+        "2 300 tr/min : environ 4,2 NM par litre",
+        "2 300 tr/min : environ 3,7 NM par litre"
+       ],
+       "answer": 2,
+       "explanation": "Distance par litre = vitesse ÷ consommation : 112 / 30 ≈ 3,7 NM/L à 2 500 tr/min et 100 / 24 ≈ 4,2 NM/L à 2 300 tr/min. Le vol est plus court au régime élevé, mais la consommation horaire augmente plus vite que la vitesse : on brûle davantage par mille parcouru."
+      },
+      {
+       "id": "u8s5q16",
+       "q": "Il fait 38 °C et le tableau de décollage s'arrête à la colonne 30 °C. Quelle attitude adoptez-vous ?",
+       "choices": [
+        "Vous changez de plan (heure, masse ou piste) : le manuel ne couvre pas ces conditions",
+        "Vous retenez la colonne 30 °C, la plus proche, puis appliquez le coefficient 1,33",
+        "Vous prolongez la tendance des dernières colonnes, puis appliquez 1,33",
+        "Vous lisez la colonne ISA, la température n'ayant d'effet qu'en altitude"
+       ],
+       "answer": 0,
+       "explanation": "Au-delà du tableau, plus rien n'est garanti et la dégradation peut s'accentuer. Retenir la colonne 30 °C sous-estime la distance. On attend une heure plus fraîche, on allège l'avion ou l'on choisit une piste plus longue, de façon à rester dans le domaine couvert par le manuel."
+      },
+      {
+       "id": "u8s5q17",
+       "q": "L'abaque donne 420 m au passage des 15 m sur piste en dur. Piste en herbe sèche (+20 %), pente montante de 2 % (+10 %), coefficient de sécurité de 1,33 ; TODA 650 m. Que concluez-vous ?",
+       "choices": [
+        "Non : il faut environ 737 m",
+        "Oui : il faut environ 559 m",
+        "Oui : il faut environ 554 m",
+        "Non : il faut environ 685 m"
+       ],
+       "answer": 0,
+       "explanation": "420 × 1,20 × 1,10 ≈ 554 m, puis × 1,33 ≈ 737 m : plus que les 650 m disponibles. 554 m est la distance corrigée sans coefficient, 559 m la distance de l'abaque avec le seul coefficient, et 685 m le résultat des pourcentages additionnés (420 × 1,63)."
+      },
+      {
+       "id": "u8s5q18",
+       "q": "Tableau (passage des 15 m) : Zp 0 ft → 300 m à 10 °C et 330 m à 20 °C ; Zp 2 000 ft → 340 m à 10 °C et 380 m à 20 °C. Quelle distance obtenez-vous à Zp 1 500 ft et 15 °C ?",
+       "choices": [
+        "Environ 315 m",
+        "Environ 338 m",
+        "Environ 349 m",
+        "Environ 360 m"
+       ],
+       "answer": 2,
+       "explanation": "En température d'abord, à 15 °C : 315 m à Zp 0 et 360 m à Zp 2 000 ft. Puis en altitude : 315 + (360 − 315) × 1 500 / 2 000 = 315 + 33,75 ≈ 349 m. 338 m correspondrait à Zp 1 000 ft et 360 m à la ligne 2 000 ft."
+      },
+      {
+       "id": "u8s5q19",
+       "q": "La LDA d'un terrain est de 580 m. Avec le coefficient recommandé de 1,43, quelle distance d'atterrissage (depuis 15 m), corrections comprises, ne devez-vous pas dépasser ?",
+       "choices": [
+        "Environ 406 m",
+        "Environ 436 m",
+        "580 m",
+        "Environ 829 m"
+       ],
+       "answer": 0,
+       "explanation": "580 / 1,43 ≈ 406 m, soit 70 % de la LDA. 436 m résulte du coefficient de décollage (1,33) ; 829 m (580 × 1,43) est l'erreur de sens classique : on multiplie la distance du manuel, on divise la distance disponible."
+      },
+      {
+       "id": "u8s5q20",
+       "q": "Une note du manuel précise : « réduire les distances de 10 % par tranche de 9 kt de vent de face ; les augmenter de 10 % par tranche de 2 kt de vent arrière ». À vent nul, la distance vaut 480 m. Quelle distance retenez-vous avec 4 kt de vent arrière ?",
+       "choices": [
+        "432 m",
+        "528 m",
+        "576 m",
+        "672 m"
+       ],
+       "answer": 2,
+       "explanation": "4 kt de vent arrière font deux tranches de 2 kt, soit +20 % : 480 × 1,20 = 576 m. Une seule tranche donnerait 528 m ; 432 m traiterait le vent comme un vent de face, et 672 m appliquerait 10 % par nœud. Le vent arrière est pénalisé bien plus fortement que le vent de face n'est crédité."
+      },
+      {
+       "id": "u8s5q21",
+       "q": "Le manuel donne 380 m d'atterrissage (depuis 15 m) sur piste en dur. Vous vous posez sur une herbe courte et mouillée (majoration indicative de +60 %), avec le coefficient de 1,43 ; la LDA est de 750 m. Que concluez-vous ?",
+       "choices": [
+        "Oui : environ 608 m sont nécessaires",
+        "Oui : environ 734 m sont nécessaires",
+        "Oui : environ 543 m sont nécessaires",
+        "Non : environ 870 m sont nécessaires"
+       ],
+       "answer": 3,
+       "explanation": "380 × 1,60 = 608 m, puis × 1,43 ≈ 869 m, au-delà des 750 m. Avec la majoration de l'herbe mouillée ordinaire (+35 %), on trouverait 734 m, mais une herbe courte et mouillée freine encore plus mal. 543 m oublie la majoration, 608 m le coefficient."
+      },
+      {
+       "id": "u8s5q22",
+       "q": "Étape de 270 NM avec 15 kt de vent de face. Tableau : 75 % → 115 kt et 33 L/h ; 60 % → 104 kt et 26 L/h. Combien de carburant le réglage à 60 % économise-t-il environ sur l'étape ?",
+       "choices": [
+        "Environ 7 L",
+        "Environ 10 L",
+        "Environ 14 L",
+        "Environ 19 L"
+       ],
+       "answer": 1,
+       "explanation": "À 75 % : Vs 100 kt, 270 / 100 = 2,7 h, soit 89,1 L. À 60 % : Vs 89 kt, 270 / 89 ≈ 3,03 h, soit environ 78,9 L. L'économie est d'environ 10 L, pour 20 minutes de vol en plus. L'écart de débit (7 L/h) n'est pas une économie sur l'étape, et le multiplier par 2,7 h (19 L) oublie que le vol à 60 % dure plus longtemps."
+      },
+      {
+       "id": "u8s5q23",
+       "q": "Votre tableau de croisière à 6 000 ft propose les colonnes ISA − 20 °C, ISA et ISA + 20 °C. La température extérieure à ce niveau est de +13 °C. À quel écart ISA correspond-elle ?",
+       "choices": [
+        "ISA − 2 °C",
+        "ISA + 10 °C",
+        "ISA + 13 °C",
+        "ISA + 16 °C"
+       ],
+       "answer": 1,
+       "explanation": "Température ISA à 6 000 ft : 15 − 2 × 6 = 3 °C. 13 − 3 = +10 °C : on interpole à mi-chemin entre les colonnes ISA et ISA + 20 °C. Comparer à 15 °C (ISA − 2 °C) oublie la décroissance de la température avec l'altitude."
+      },
+      {
+       "id": "u8s5q24",
+       "q": "L'abaque (piste en dur) donne 450 m au passage des 15 m. Ce matin, l'herbe de la piste est mouillée (+30 %) ; vous appliquez le coefficient de 1,33. TODA 720 m. Que faites-vous ?",
+       "choices": [
+        "Vous attendez que l'herbe sèche ou allégez l'avion : il faudrait environ 778 m",
+        "Vous partez : 450 × 1,30 = 585 m restent sous la TODA de 720 m disponibles",
+        "Vous partez : avec la majoration de l'herbe sèche, il faudrait environ 718 m",
+        "Vous attendez que l'herbe sèche : il faudrait environ 958 m"
+       ],
+       "answer": 0,
+       "explanation": "450 × 1,30 = 585 m, puis × 1,33 ≈ 778 m : plus que la TODA. Le calcul avec l'herbe sèche (718 m) ne vaut pas tant qu'elle est mouillée, et il ne laisserait presque aucune marge. 958 m appliquerait la majoration de +60 %, qui concerne l'atterrissage sur herbe courte mouillée."
+      }
+     ]
+    },
+    {
+     "id": "u8s6",
+     "title": "Exercices de masse et centrage",
+     "icon": "🧮",
+     "tips": "Avant chaque vol, le pilote s'assure que la masse et le centrage restent dans les limites : il remplit un devis de masse et centrage, ou reprend un devis déjà établi pour un chargement identique (occupants, bagages, carburant). Il vérifie deux choses, au décollage puis à l'atterrissage : la masse ne dépasse aucun maximum (MTOM, MLM, limite de chaque soute) et le centre de gravité reste dans l'enveloppe du manuel de vol. Les données viennent de la fiche de pesée (masse à vide équipée et son bras, ou son moment) et du manuel (bras des sièges, de la soute et des réservoirs, limites).\n\nMéthode en cinq étapes :\n• 1. Lister chaque élément : masse à vide équipée (carburant inutilisable et huile compris), pilote, passagers, bagages, carburant utilisable.\n• 2. Convertir le carburant : masse (kg) = volume (L) × 0,72.\n• 3. Calculer chaque moment : M = m × bras, en kg·m.\n• 4. Additionner masses et moments, puis CG = ΣM / Σm.\n• 5. Vérifier la masse et placer le point dans l'enveloppe, puis refaire le total en retirant le carburant consommé : sa masse et son moment, calculé au bras des réservoirs.\n\nExemple résolu A (avion fictif, référence à la cloison pare-feu, MTOM 1 050 kg) :\n• Masse à vide 650 kg à 0,95 m : 617,5 kg·m.\n• Pilote et passager avant 170 kg à 1,00 m : 170 kg·m.\n• Passager arrière 75 kg à 1,85 m : 138,75 kg·m.\n• Bagages 20 kg à 2,40 m : 48 kg·m.\n• Carburant 100 L = 72 kg à 0,80 m : 57,6 kg·m.\n• Total : 987 kg et 1 031,85 kg·m ; CG = 1 031,85 / 987 ≈ 1,045 m.\n• Atterrissage après 70 L consommés (50,4 kg ; 50,4 × 0,80 = 40,32 kg·m) : 936,6 kg et 991,53 kg·m, CG ≈ 1,059 m. Le réservoir étant en avant du CG, le CG recule au fil du vol.\nChargement B, même avion : pilote seul à l'avant (75 kg), deux passagers à l'arrière (160 kg), 10 kg de bagages, 90 L de carburant. Au décollage : 959,8 kg, CG ≈ 1,109 m, dans l'enveloppe. Après 75 L consommés : 905,8 kg, CG ≈ 1,127 m, en arrière de la limite de 1,12 m. Le vol n'est pas possible ainsi.\n\nAjouter, retirer, déplacer :\n• Ajouter ou retirer une masse : on ajoute ou on retranche sa masse et son moment, puis on redivise. Ex. : 1 000 kg, CG 1,08 m ; un passager arrière de 80 kg (1,85 m) descend : (1 080 − 148) / 920 ≈ 1,013 m.\n• Déplacer une masse sans changer la masse totale : ΔCG = m × Δd / M. Pour recentrer de ΔCG, la masse à déplacer vaut m = M × ΔCG / Δd. Ex. : 1 000 kg, CG 1,135 m, limite arrière 1,12 m ; un sac passe de la soute (2,40 m) au siège avant (1,00 m), Δd = 1,40 m : m = 1 000 × 0,015 / 1,40 ≈ 11 kg au minimum.\n• Carburant consommable avant d'atteindre une limite : on résout (ΣM − m × bras des réservoirs) / (Σm − m) = limite, soit m = Σm × (limite − CG) / (limite − bras des réservoirs), en kilogrammes (÷ 0,72 pour des litres).\n• Échanger deux occupants : le moment varie de (différence de masse) × (différence de bras). 95 kg et 60 kg sur des sièges distants de 0,85 m : 35 × 0,85 ≈ 30 kg·m, soit 3 cm de CG à 1 000 kg.\n• Lest : la masse nécessaire vaut m = M × (CG visé − CG actuel) / (bras du lest − CG visé). Ex. : 1 000 kg, CG 0,94 m, limite avant 0,95 m, lest en soute à 2,40 m : m = 1 000 × 0,01 / 1,45 ≈ 7 kg, arrimés, en vérifiant la MTOM et la limite de soute.\n\nLire l'enveloppe :\n• Graphique masse/CG : masse en ordonnée, CG en abscisse ; le point doit rester à l'intérieur au décollage et à l'atterrissage.\n• La limite avant peut être inclinée, comme sur l'enveloppe fictive de cette leçon : elle recule quand la masse augmente. On l'interpole à la masse réelle. Ex. : 0,90 m jusqu'à 850 kg, puis 0,98 m à 1 050 kg → à 1 000 kg : 0,90 + 0,08 × 150/200 = 0,96 m.\n• Graphique masse/moment : même principe, en comparant le moment total aux moments admis à cette masse ; CG = moment / masse.\n• Bras négatif : si la référence est au bord d'attaque, un élément situé en avant (moteur, batterie) a un bras et un moment négatifs.\n\nConséquences d'un chargement hors limites :\n• Masse excessive : distances de décollage et d'atterrissage plus longues, montée dégradée, vitesse de décrochage plus élevée. À facteur de charge égal, les efforts sur la structure augmentent avec la masse : au-delà de la MTOM, la marge prévue n'est plus assurée.\n• Centrage avant : profondeur insuffisante pour la rotation ou l'arrondi, vitesse de décrochage un peu plus élevée.\n• Centrage arrière : stabilité en tangage réduite, tendance à cabrer, efforts au manche très légers ; sortie de décrochage ou de vrille compromise. C'est le cas le plus dangereux.\n• Limite de soute : limite structurale du compartiment (plancher, fixations), indépendante du centrage ; elle s'applique même si la masse totale et le CG sont corrects.\n\nPièges classiques :\n• Inscrire des litres comme des kilogrammes (100 L = 72 kg).\n• Oublier le centrage à l'atterrissage, surtout avec des passagers à l'arrière et un réservoir en avant du CG.\n• Retirer le carburant consommé au bras du CG au lieu du bras des réservoirs.\n• Croire qu'échanger pilote et passager avant change le centrage : même bras, même moment.\n• Réduire le carburant pour « alléger » sans voir que, réservoir en avant du CG, cela recule le CG.",
+     "vocab": [
+      {
+       "term": "Devis de masse et centrage",
+       "translation": "Tableau des masses, bras et moments, rempli avant le vol"
+      },
+      {
+       "term": "Fiche de pesée",
+       "translation": "Document donnant la masse à vide et son bras ou son moment"
+      },
+      {
+       "term": "Masse à vide équipée",
+       "translation": "Avion équipé, carburant inutilisable et huile compris"
+      },
+      {
+       "term": "Référence (datum)",
+       "translation": "Origine des bras de levier, choisie par le constructeur"
+      },
+      {
+       "term": "Bras de levier",
+       "translation": "Distance d'une masse à la référence, en mètres"
+      },
+      {
+       "term": "Bras négatif",
+       "translation": "Masse située en avant de la référence : moment négatif"
+      },
+      {
+       "term": "Moment",
+       "translation": "Masse × bras, en kg·m"
+      },
+      {
+       "term": "Centre de gravité",
+       "translation": "CG = somme des moments / masse totale"
+      },
+      {
+       "term": "Enveloppe de centrage",
+       "translation": "Zone masse/CG ou masse/moment admise par le manuel"
+      },
+      {
+       "term": "Limite avant",
+       "translation": "CG le plus avancé admis : rotation et arrondi encore assurés"
+      },
+      {
+       "term": "Limite arrière",
+       "translation": "CG le plus reculé admis : stabilité en tangage suffisante"
+      },
+      {
+       "term": "Limite de soute",
+       "translation": "Masse maximale admise dans le compartiment à bagages"
+      },
+      {
+       "term": "ΔCG",
+       "translation": "m × Δd / M : déplacement du CG quand une masse change de place"
+      },
+      {
+       "term": "Lest",
+       "translation": "Masse ajoutée et arrimée pour ramener le CG dans l'enveloppe"
+      },
+      {
+       "term": "Centrage à l'atterrissage",
+       "translation": "CG recalculé après retrait du carburant consommé"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Bras de levier d'un avion léger",
+       "svg": "<svg viewBox=\"0 0 720 380\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u8s6f1k\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#334155\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"720\" height=\"380\" fill=\"#ffffff\"/><text x=\"20\" y=\"28\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Bras de levier mesurés depuis la référence (avion fictif)</text><line x1=\"90\" y1=\"206\" x2=\"705\" y2=\"206\" stroke=\"#a8a29e\" stroke-width=\"2\"/><line x1=\"104\" y1=\"70\" x2=\"104\" y2=\"166\" stroke=\"#334155\" stroke-width=\"4\"/><ellipse cx=\"110\" cy=\"118\" rx=\"9\" ry=\"12\" fill=\"#64748b\"/><polygon points=\"116,100 200,92 200,152 116,138\" fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"1.5\"/><polygon points=\"200,92 245,62 430,62 470,92 470,158 200,158\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.5\"/><polygon points=\"250,68 300,68 300,90 232,90\" fill=\"#bfdbfe\" stroke=\"#475569\" stroke-width=\"1\"/><polygon points=\"310,68 425,68 452,90 310,90\" fill=\"#bfdbfe\" stroke=\"#475569\" stroke-width=\"1\"/><polygon points=\"470,92 682,104 682,122 470,158\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.5\"/><polygon points=\"632,104 660,42 694,42 690,106\" fill=\"#cbd5e1\" stroke=\"#475569\" stroke-width=\"1.5\"/><ellipse cx=\"660\" cy=\"114\" rx=\"42\" ry=\"5\" fill=\"#94a3b8\"/><rect x=\"250.4\" y=\"156\" width=\"180.0\" height=\"11\" rx=\"5\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1\"/><line x1=\"140\" y1=\"152\" x2=\"140\" y2=\"186\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"194\" r=\"10\" fill=\"#334155\"/><line x1=\"350\" y1=\"167\" x2=\"350\" y2=\"186\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"350.0\" cy=\"194\" r=\"10\" fill=\"#334155\"/><rect x=\"284.0\" y=\"128\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#fde68a\" stroke=\"#b45309\" stroke-width=\"1.5\"/><path d=\"M312.0,150 L330.0,150 L338.0,106 L332.0,104 L324.0,140 L312.0,140 Z\" fill=\"#64748b\"/><path d=\"M414.0,150 L432.0,150 L440.0,106 L434.0,104 L426.0,140 L414.0,140 Z\" fill=\"#64748b\"/><rect x=\"470.0\" y=\"118\" width=\"36\" height=\"34\" rx=\"3\" fill=\"#d6d3d1\" stroke=\"#57534e\" stroke-width=\"1.5\"/><line x1=\"200\" y1=\"46\" x2=\"200\" y2=\"324\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"7 5\"/><text x=\"208\" y=\"54\" font-size=\"14\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Référence : cloison pare-feu (bras = 0)</text><line x1=\"296\" y1=\"152\" x2=\"296\" y2=\"232\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"200\" y1=\"232\" x2=\"296\" y2=\"232\" stroke=\"#334155\" stroke-width=\"1.8\" marker-end=\"url(#u8s6f1k)\"/><text x=\"190\" y=\"237\" font-size=\"14\" fill=\"#b45309\" text-anchor=\"end\" font-weight=\"bold\">Carburant 0,80 m</text><line x1=\"320\" y1=\"152\" x2=\"320\" y2=\"258\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"200\" y1=\"258\" x2=\"320\" y2=\"258\" stroke=\"#334155\" stroke-width=\"1.8\" marker-end=\"url(#u8s6f1k)\"/><text x=\"190\" y=\"263\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\" font-weight=\"bold\">Sièges avant 1,00 m</text><line x1=\"422\" y1=\"152\" x2=\"422\" y2=\"284\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"200\" y1=\"284\" x2=\"422\" y2=\"284\" stroke=\"#334155\" stroke-width=\"1.8\" marker-end=\"url(#u8s6f1k)\"/><text x=\"190\" y=\"289\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\" font-weight=\"bold\">Sièges arrière 1,85 m</text><line x1=\"488\" y1=\"152\" x2=\"488\" y2=\"310\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><line x1=\"200\" y1=\"310\" x2=\"488\" y2=\"310\" stroke=\"#334155\" stroke-width=\"1.8\" marker-end=\"url(#u8s6f1k)\"/><text x=\"190\" y=\"315\" font-size=\"14\" fill=\"#57534e\" text-anchor=\"end\" font-weight=\"bold\">Soute 2,40 m</text><text x=\"360\" y=\"352\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Moment = masse × bras ; CG = somme des moments ÷ masse totale</text><text x=\"360\" y=\"372\" font-size=\"14\" fill=\"#475569\" text-anchor=\"middle\">Réservoir en avant du CG : le CG recule à mesure que le carburant est consommé</text></svg>",
+       "caption": "Chaque masse est repérée par sa distance à la référence choisie par le constructeur, ici la cloison pare-feu. Valeurs fictives utilisées dans les exemples de la leçon."
+      },
+      {
+       "title": "Enveloppe de centrage : décollage et atterrissage",
+       "svg": "<svg viewBox=\"0 0 720 450\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u8s6f2g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#15803d\"/></marker><marker id=\"u8s6f2r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"720\" height=\"450\" fill=\"#ffffff\"/><text x=\"20\" y=\"30\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Enveloppe de centrage fictive et deux chargements</text><line x1=\"100\" y1=\"80\" x2=\"100\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"100\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">0,85</text><line x1=\"177.1\" y1=\"80\" x2=\"177.1\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"177.1\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">0,90</text><line x1=\"254.3\" y1=\"80\" x2=\"254.3\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"254.3\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">0,95</text><line x1=\"331.4\" y1=\"80\" x2=\"331.4\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"331.4\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1,00</text><line x1=\"408.6\" y1=\"80\" x2=\"408.6\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"408.6\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1,05</text><line x1=\"485.7\" y1=\"80\" x2=\"485.7\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"485.7\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1,10</text><line x1=\"562.9\" y1=\"80\" x2=\"562.9\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"562.9\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1,15</text><line x1=\"640\" y1=\"80\" x2=\"640\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"640\" y=\"400\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1,20</text><line x1=\"100\" y1=\"380\" x2=\"640\" y2=\"380\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"385\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">800</text><line x1=\"100\" y1=\"330\" x2=\"640\" y2=\"330\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"335\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">850</text><line x1=\"100\" y1=\"280\" x2=\"640\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"285\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">900</text><line x1=\"100\" y1=\"230\" x2=\"640\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"235\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">950</text><line x1=\"100\" y1=\"180\" x2=\"640\" y2=\"180\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"185\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">1 000</text><line x1=\"100\" y1=\"130\" x2=\"640\" y2=\"130\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"135\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">1 050</text><line x1=\"100\" y1=\"80\" x2=\"640\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"92\" y=\"85\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">1 100</text><line x1=\"100\" y1=\"80\" x2=\"100\" y2=\"380\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"100\" y1=\"380\" x2=\"640\" y2=\"380\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"370\" y=\"428\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Centre de gravité (m)</text><text x=\"26\" y=\"230\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\" transform=\"rotate(-90 26 230)\">Masse (kg)</text><polygon points=\"177.1,380 177.1,330 300.6,130 516.6,130 516.6,380\" fill=\"#dcfce7\" stroke=\"none\"/><path d=\"M177.1,380 L177.1,330 L300.6,130 L516.6,130 L516.6,380\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2.5\"/><text x=\"408\" y=\"122\" font-size=\"14\" fill=\"#166534\" text-anchor=\"middle\" font-weight=\"bold\">MTOM 1 050 kg</text><text x=\"224.9\" y=\"234\" font-size=\"14\" fill=\"#166534\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(-58.3 224.9 234)\">Limite avant</text><text x=\"532.6\" y=\"150\" font-size=\"14\" fill=\"#166534\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(90 532.6 150)\">Limite arrière</text><line x1=\"404.5\" y1=\"200.4\" x2=\"418.6\" y2=\"235.1\" stroke=\"#15803d\" stroke-width=\"2.5\" marker-end=\"url(#u8s6f2g)\"/><line x1=\"503.2\" y1=\"227.3\" x2=\"523.6\" y2=\"266.2\" stroke=\"#dc2626\" stroke-width=\"2.5\" marker-end=\"url(#u8s6f2r)\"/><circle cx=\"401.5\" cy=\"193\" r=\"6\" fill=\"#15803d\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"422\" cy=\"243.4\" r=\"6\" fill=\"#15803d\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"499.4\" cy=\"220.2\" r=\"6\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"527.8\" cy=\"274.2\" r=\"6\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><text x=\"389.5\" y=\"198\" font-size=\"14\" fill=\"#14532d\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A décollage</text><text x=\"410\" y=\"257.4\" font-size=\"14\" fill=\"#14532d\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">A atterrissage</text><text x=\"523.4\" y=\"216.2\" font-size=\"14\" fill=\"#991b1b\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B décollage</text><text x=\"539.8\" y=\"294.2\" font-size=\"14\" fill=\"#991b1b\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">B atterrissage :</text><text x=\"539.8\" y=\"312.2\" font-size=\"14\" fill=\"#991b1b\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">hors limites</text></svg>",
+       "caption": "Le réservoir étant en avant du CG, le CG recule à mesure que le carburant est consommé. Le chargement A reste dans l'enveloppe ; le chargement B, avec deux passagers à l'arrière, en sort par la limite arrière à l'atterrissage."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u8s6q01",
+       "q": "Sur la fiche de pesée, la masse à vide équipée de l'avion comprend déjà :",
+       "choices": [
+        "le carburant utilisable, réservoirs pleins, et l'huile",
+        "le pilote, compté avec une masse forfaitaire",
+        "le carburant de roulage, consommé avant le décollage",
+        "le carburant inutilisable et l'huile prévue"
+       ],
+       "answer": 3,
+       "explanation": "La masse à vide de la fiche de pesée inclut l'équipement installé, le carburant inutilisable et les fluides prévus, notamment l'huile. Le carburant utilisable, le pilote, les passagers et les bagages s'ajoutent dans le devis."
+      },
+      {
+       "id": "u8s6q02",
+       "q": "La référence de centrage est le bord d'attaque de l'aile. Une batterie de 12 kg se trouve 0,50 m en avant de cette référence. Quel moment inscrivez-vous au devis ?",
+       "choices": [
+        "−6 kg·m",
+        "+6 kg·m",
+        "+12,5 kg·m",
+        "+24 kg·m"
+       ],
+       "answer": 0,
+       "explanation": "Un élément situé en avant de la référence a un bras négatif, ici −0,50 m. Moment = 12 × (−0,50) = −6 kg·m. Oublier le signe donne +6 kg·m ; 24 vient d'une division au lieu d'une multiplication (12 / 0,50) et 12,5 d'une addition."
+      },
+      {
+       "id": "u8s6q03",
+       "q": "Votre devis donne une masse totale de 960 kg et une somme des moments de 1 008 kg·m. Où se trouve le centre de gravité ?",
+       "choices": [
+        "0,95 m",
+        "1,00 m",
+        "1,05 m",
+        "1,10 m"
+       ],
+       "answer": 2,
+       "explanation": "CG = ΣM / Σm = 1 008 / 960 = 1,05 m. Diviser la masse par le moment donne 0,95, qui n'est pas une distance."
+      },
+      {
+       "id": "u8s6q04",
+       "q": "La fiche de pesée indique une masse à vide de 700 kg et un moment de 665 kg·m. Quel est le bras de la masse à vide ?",
+       "choices": [
+        "0,90 m",
+        "0,95 m",
+        "1,00 m",
+        "1,05 m"
+       ],
+       "answer": 1,
+       "explanation": "Bras = moment / masse = 665 / 700 = 0,95 m. L'inverse (700 / 665 ≈ 1,05) est l'erreur classique ; dans le devis, on peut aussi reporter directement le moment de 665 kg·m."
+      },
+      {
+       "id": "u8s6q05",
+       "q": "Pour calculer le centrage à l'atterrissage, que retranchez-vous des totaux du décollage ?",
+       "choices": [
+        "La masse du carburant consommé et son moment, au bras du CG du décollage",
+        "La masse du carburant consommé, en gardant le moment total du décollage",
+        "La masse du carburant consommé et son moment, au bras des réservoirs",
+        "La masse du carburant restant à l'arrivée et son moment, au bras des sièges"
+       ],
+       "answer": 2,
+       "explanation": "Le carburant brûlé quitte les réservoirs : on retire sa masse et son moment (masse × bras des réservoirs), puis on redivise. Le retirer au bras du CG laisserait le CG immobile, ce qui est faux dès que les réservoirs ne sont pas au CG."
+      },
+      {
+       "id": "u8s6q06",
+       "q": "La soute est limitée à 40 kg. Vous avez 45 kg de bagages ; la masse totale reste sous la MTOM et le CG dans l'enveloppe. Que faites-vous ?",
+       "choices": [
+        "Vous partez : la MTOM et l'enveloppe sont respectées, c'est l'essentiel",
+        "Vous partez en réduisant le carburant de 5 kg pour compenser l'excès",
+        "Vous limitez la soute à 40 kg et logez 5 kg ailleurs, centrage vérifié",
+        "Vous laissez les 45 kg en soute et avancez le passager arrière"
+       ],
+       "answer": 2,
+       "explanation": "La limite de soute protège la structure du compartiment (plancher, fixations) : elle s'applique même si la masse totale et le centrage sont bons. Réduire le carburant ou avancer un passager ne soulage pas la soute, qui resterait surchargée de 5 kg."
+      },
+      {
+       "id": "u8s6q07",
+       "q": "Passagers à l'arrière, réservoir situé en avant du CG : à quel moment du vol le centrage est-il le plus proche de la limite arrière ?",
+       "choices": [
+        "En fin de vol, quand les réservoirs se sont vidés",
+        "Au décollage, quand les réservoirs sont pleins",
+        "À mi-vol, quand la moitié du carburant est consommée",
+        "Au roulage, avant que le niveau ne baisse"
+       ],
+       "answer": 0,
+       "explanation": "Brûler du carburant situé en avant du CG retire un moment « avant » : le CG recule au fil du vol. Avec des passagers à l'arrière, c'est donc à l'atterrissage, réservoirs presque vides, que le risque de dépasser la limite arrière est le plus grand."
+      },
+      {
+       "id": "u8s6q08",
+       "q": "Avion chargé : 1 020 kg, CG à 1,10 m. Un passager arrière de 85 kg (bras 1,85 m) descend. Où se trouve le nouveau CG ?",
+       "choices": [
+        "Environ 0,95 m",
+        "Environ 1,03 m",
+        "1,10 m",
+        "Environ 1,16 m"
+       ],
+       "answer": 1,
+       "explanation": "Moment : 1 020 × 1,10 = 1 122 kg·m ; on retire 85 × 1,85 ≈ 157 kg·m et 85 kg. CG = 965 / 935 ≈ 1,03 m : retirer une masse située en arrière du CG le fait avancer. 0,95 m vient d'une division par l'ancienne masse ; 1,16 m ajouterait le passager au lieu de le retirer."
+      },
+      {
+       "id": "u8s6q09",
+       "q": "MTOM 1 000 kg ; masse à vide 620 kg ; occupants 240 kg ; bagages 25 kg. Les réservoirs ont une capacité de 110 L utilisables. Pouvez-vous faire le plein ?",
+       "choices": [
+        "Oui, il reste environ 36 kg de marge sous la MTOM",
+        "Oui, mais il ne reste qu'environ 5 kg de marge",
+        "Non, la MTOM serait dépassée d'environ 38 kg",
+        "Non, il faudrait d'abord débarquer les bagages"
+       ],
+       "answer": 0,
+       "explanation": "110 L × 0,72 = 79,2 kg. Masse : 620 + 240 + 25 + 79,2 = 964,2 kg, soit 35,8 kg sous la MTOM. Compter 110 kg au lieu de 79,2 ne laisserait que 5 kg ; diviser par 0,72 (153 kg) ferait croire à un dépassement. Le centrage reste à vérifier."
+      },
+      {
+       "id": "u8s6q10",
+       "q": "Masse à vide 650 kg (bras 0,95 m) ; avant 170 kg (1,00 m) ; arrière 90 kg (1,85 m) ; bagages 20 kg (2,40 m) ; carburant 90 L (bras 0,80 m). Où se trouve le CG au décollage ?",
+       "choices": [
+        "Environ 1,02 m",
+        "Environ 1,06 m",
+        "Environ 1,08 m",
+        "Environ 1,13 m"
+       ],
+       "answer": 1,
+       "explanation": "Carburant : 90 × 0,72 = 64,8 kg, moment 51,84 kg·m. Moments : 617,5 + 170 + 166,5 + 48 + 51,84 = 1 053,84 kg·m ; masse : 994,8 kg. CG ≈ 1,059 m, soit environ 1,06 m. Oublier le carburant donnerait 1,08 m."
+      },
+      {
+       "id": "u8s6q11",
+       "q": "À 1 000 kg, l'enveloppe admet un CG entre 0,96 m et 1,12 m. Votre devis donne 1,135 m. Que faites-vous ?",
+       "choices": [
+        "Vous partez : 1,5 cm d'écart restent dans la précision du calcul",
+        "Vous reculez une partie du chargement, puis vous refaites le calcul",
+        "Vous avancez une partie du chargement, puis vous refaites le calcul",
+        "Vous partez : le carburant consommé ramènera le CG vers l'avant"
+       ],
+       "answer": 2,
+       "explanation": "Un CG hors enveloppe interdit le vol, même de peu : les limites ne comportent pas de tolérance laissée au pilote. Le CG étant trop en arrière, on avance des bagages ou un passager (ou l'on allège l'arrière), puis on refait le devis ; reculer du chargement aggraverait l'écart. L'évolution en vol ne justifie pas un décollage hors limites."
+      },
+      {
+       "id": "u8s6q12",
+       "q": "Avion de 960 kg, CG à 1,14 m, limite arrière 1,12 m. Quelle masse minimale devez-vous déplacer de la soute (bras 2,40 m) vers le siège avant libre (bras 1,00 m) ?",
+       "choices": [
+        "Environ 8 kg",
+        "Environ 14 kg",
+        "Environ 19 kg",
+        "Environ 27 kg"
+       ],
+       "answer": 1,
+       "explanation": "Il faut avancer le CG de 0,02 m, la masse totale restant la même : m = M × ΔCG / Δd = 960 × 0,02 / 1,40 ≈ 13,7 kg, soit environ 14 kg. Diviser par le bras de la soute (2,40 m) au lieu de la distance parcourue (1,40 m) donne 8 kg, insuffisant ; diviser par le bras du siège (1,00 m) donne 19 kg, plus que nécessaire."
+      },
+      {
+       "id": "u8s6q13",
+       "q": "Au décollage : 1 000 kg et 1 090 kg·m. Vous consommerez 75 L ; le réservoir est au bras 0,80 m. Où se trouvera le CG à l'atterrissage ?",
+       "choices": [
+        "Environ 1,073 m",
+        "1,090 m",
+        "Environ 1,107 m",
+        "Environ 1,114 m"
+       ],
+       "answer": 2,
+       "explanation": "Carburant consommé : 75 × 0,72 = 54 kg, moment 54 × 0,80 = 43,2 kg·m. À l'atterrissage : 946 kg et 1 046,8 kg·m, CG ≈ 1,107 m. Le réservoir étant en avant du CG, le CG recule ; compter 75 kg au lieu de 54 donnerait 1,114 m."
+      },
+      {
+       "id": "u8s6q14",
+       "q": "Avion de 980 kg, CG à 1,13 m ; limite arrière 1,12 m. Un passager de 90 kg est assis à l'arrière (1,85 m), un de 60 kg à l'avant (1,00 m). Vous les échangez. Où se trouve le nouveau CG ?",
+       "choices": [
+        "Environ 1,104 m, dans les limites",
+        "Environ 1,156 m, hors limites",
+        "1,130 m : la masse n'a pas changé",
+        "Environ 1,078 m, dans les limites"
+       ],
+       "answer": 0,
+       "explanation": "La masse totale ne change pas, mais le moment, si : 30 kg passent de 1,85 m à 1,00 m, soit 30 × (−0,85) = −25,5 kg·m. ΔCG = −25,5 / 980 ≈ −0,026 m : CG ≈ 1,104 m, revenu dans l'enveloppe. Une masse constante n'implique pas un CG constant."
+      },
+      {
+       "id": "u8s6q15",
+       "q": "Le manuel présente l'enveloppe en masse/moment : à 950 kg, moments admis de 912 à 1 064 kg·m. Votre chargement donne 950 kg et 1 045 kg·m. Qu'en concluez-vous ?",
+       "choices": [
+        "Hors enveloppe : le moment dépasse la masse, CG trop arrière",
+        "Dans l'enveloppe : CG à 0,91 m, juste derrière la limite avant",
+        "Hors enveloppe : CG à 1,10 m, au-delà de la limite de 1,064 m",
+        "Dans l'enveloppe : CG à 1,10 m, entre 0,96 et 1,12 m"
+       ],
+       "answer": 3,
+       "explanation": "1 045 kg·m est compris entre 912 et 1 064 kg·m : le point est dans l'enveloppe. En CG : 1 045 / 950 = 1,10 m, entre 912 / 950 = 0,96 m et 1 064 / 950 = 1,12 m. Comparer un CG en mètres à un moment en kg·m n'a pas de sens."
+      },
+      {
+       "id": "u8s6q16",
+       "q": "Deux occupants lourds à l'avant, soute vide : 990 kg, CG à 0,935 m. La limite avant vaut 0,95 m jusqu'à 1 050 kg. Quelle masse minimale de lest placez-vous en soute (bras 2,40 m) ?",
+       "choices": [
+        "Environ 6 kg",
+        "Environ 10 kg",
+        "Environ 15 kg",
+        "Environ 21 kg"
+       ],
+       "answer": 1,
+       "explanation": "On cherche m tel que (925,65 + 2,40 × m) / (990 + m) = 0,95, soit m = 990 × 0,015 / (2,40 − 0,95) ≈ 10,2 kg : environ 10 kg, arrimés, en vérifiant la MTOM et la limite de soute. Diviser par 2,40 m au lieu de la distance entre la soute et le CG visé (1,45 m) donne 6 kg, insuffisant."
+      },
+      {
+       "id": "u8s6q17",
+       "q": "Au décollage : 1 040 kg, CG à 1,115 m ; limite arrière 1,12 m. Vous consommerez 80 L ; le réservoir est au bras 0,80 m. Que concluez-vous ?",
+       "choices": [
+        "Le CG avancera à environ 1,097 m : centrage acceptable de bout en bout",
+        "Le CG restera à 1,115 m : il ne varie pas quand la masse diminue",
+        "Le CG atteindra environ 1,119 m : juste sous la limite arrière, vol possible",
+        "Le CG atteindra environ 1,133 m à l'atterrissage : hors limite arrière"
+       ],
+       "answer": 3,
+       "explanation": "Carburant : 57,6 kg et 46,08 kg·m. À l'atterrissage : 982,4 kg et 1 113,52 kg·m, CG ≈ 1,133 m, au-delà de 1,12 m. Le réservoir étant en avant du CG, le CG recule en vol : un chargement juste dans les limites au décollage peut en sortir à l'arrivée. On modifie le chargement avant de partir."
+      },
+      {
+       "id": "u8s6q18",
+       "q": "Votre devis place le CG dans l'enveloppe au décollage, mais 1,3 cm en arrière de la limite à l'atterrissage (réservoir en avant du CG, 982 kg à l'arrivée). Laquelle de ces mesures règle le problème ?",
+       "choices": [
+        "Emporter moins de carburant, afin d'alléger l'avion dès le décollage",
+        "Échanger le pilote et le passager avant, dont les masses diffèrent",
+        "Ajouter 10 kg de bagages au fond de la soute pour équilibrer l'avion",
+        "Avancer 20 kg de bagages de la soute (2,40 m) au siège avant (1,00 m)"
+       ],
+       "answer": 3,
+       "explanation": "Avancer 20 kg de 1,40 m déplace le CG de 20 × 1,40 / 982 ≈ 2,9 cm vers l'avant, plus que les 1,3 cm nécessaires. Moins de carburant, situé en avant du CG, reculerait encore le centrage ; les deux sièges avant ont le même bras, l'échange ne change rien."
+      },
+      {
+       "id": "u8s6q19",
+       "q": "Avion chargé sans bagages : 960 kg, CG à 1,05 m ; limite arrière 1,12 m ; MTOM 1 050 kg ; soute au bras 2,40 m, limitée à 50 kg. Au décollage, quelle masse maximale de bagages pouvez-vous embarquer ?",
+       "choices": [
+        "28 kg, limite de centrage",
+        "50 kg, limite du compartiment",
+        "52,5 kg, limite de centrage",
+        "90 kg, limite de la MTOM"
+       ],
+       "answer": 1,
+       "explanation": "Centrage : (1 008 + 2,40 × m) / (960 + m) ≤ 1,12 donne m ≤ 52,5 kg ; MTOM : 90 kg ; soute : 50 kg. La contrainte la plus restrictive l'emporte : 50 kg. Le centrage à l'atterrissage reste à vérifier."
+      },
+      {
+       "id": "u8s6q20",
+       "q": "MTOM 1 050 kg. Avion et trois occupants : 940 kg ; bagages : 35 kg. Votre bilan carburant exige 90 L utilisables. Le chargement est-il possible du point de vue de la masse ?",
+       "choices": [
+        "Non : 90 L pèsent 90 kg, la MTOM serait dépassée",
+        "Non : la masse disponible ne laisse que 75 L environ",
+        "Oui, à condition de débarquer les 35 kg de bagages",
+        "Oui : vous pourriez même emporter jusqu'à 104 L environ"
+       ],
+       "answer": 3,
+       "explanation": "Marge : 1 050 − 975 = 75 kg, soit 75 / 0,72 ≈ 104 L. Les 90 L exigés pèsent 64,8 kg : la masse au décollage vaut 1 039,8 kg. Confondre 75 kg et 75 L, ou compter 90 L pour 90 kg, conduit à refuser à tort ce chargement. Le centrage reste à vérifier."
+      },
+      {
+       "id": "u8s6q21",
+       "q": "Au décollage : 1 000 kg, CG à 1,10 m ; la limite arrière vaut 1,12 m à ces masses. Le réservoir, au bras 0,80 m, contient 100 L utilisables. Quelle quantité de carburant pouvez-vous consommer au plus avant que le CG n'atteigne la limite arrière ?",
+       "choices": [
+        "Environ 87 L",
+        "Environ 93 L",
+        "Environ 62 L",
+        "Environ 45 L"
+       ],
+       "answer": 0,
+       "explanation": "On cherche m tel que (1 100 − 0,80 × m) / (1 000 − m) = 1,12, soit m = 1 000 × 0,02 / (1,12 − 0,80) = 62,5 kg, c'est-à-dire 62,5 / 0,72 ≈ 87 L : il faut se poser avec au moins 13 L, sinon le CG passe en arrière de la limite. 62 L confond kilogrammes et litres, 45 L multiplie par 0,72 au lieu de diviser, et 93 L néglige la baisse de la masse totale (1 000 × 0,02 / 0,30 kg)."
+      },
+      {
+       "id": "u8s6q22",
+       "q": "Juste après le décollage, l'avion tend à cabrer, les efforts au manche sont très légers et il faut beaucoup de compensation à piquer. Que soupçonnez-vous ?",
+       "choices": [
+        "Un centrage avant, qui rend la profondeur trop efficace",
+        "Une masse excessive, qui augmente la vitesse de décrochage",
+        "Un centrage arrière, peut-être au-delà de la limite arrière",
+        "Un compensateur déréglé, sans lien avec le chargement"
+       ],
+       "answer": 2,
+       "explanation": "CG reculé : l'avion est moins stable en tangage, tend à cabrer, les efforts sont légers et il faut compenser à piquer. On évite les grands angles d'incidence et l'on revient se poser pour revoir le chargement. Un centrage avant produirait l'inverse : avion lourd à cabrer."
+      },
+      {
+       "id": "u8s6q23",
+       "q": "Enveloppe : limite avant de 0,90 m jusqu'à 850 kg, variant ensuite linéairement jusqu'à 0,98 m à 1 050 kg ; limite arrière 1,12 m. Votre point : 950 kg et CG à 0,935 m. Que concluez-vous ?",
+       "choices": [
+        "Dans les limites : la limite avant vaut 0,90 m",
+        "Dans les limites : 0,935 m est compris entre 0,90 et 1,12 m",
+        "Hors limites : à 950 kg, la limite avant vaut 0,98 m",
+        "Hors limites : à 950 kg, la limite avant vaut 0,94 m"
+       ],
+       "answer": 3,
+       "explanation": "La limite avant s'interpole à la masse réelle : 0,90 + (0,98 − 0,90) × (950 − 850) / (1 050 − 850) = 0,94 m. Avec 0,935 m, le CG est 5 mm trop en avant. La valeur de 0,90 m ne vaut que jusqu'à 850 kg, celle de 0,98 m qu'à la MTOM."
+      },
+      {
+       "id": "u8s6q24",
+       "q": "Deux occupants lourds à l'avant. Au décollage : 1 000 kg, CG à 0,97 m ; la limite avant reste à 0,96 m entre 900 et 1 000 kg. Le réservoir est au bras 1,40 m et vous consommerez 50 kg de carburant. Que concluez-vous ?",
+       "choices": [
+        "CG ≈ 0,993 m à l'arrivée : le CG recule et s'éloigne de la limite avant",
+        "CG ≈ 0,947 m à l'arrivée : la vrille deviendrait irrécupérable en finale",
+        "CG ≈ 0,970 m à l'arrivée : le CG ne bouge pas quand la masse diminue",
+        "CG ≈ 0,947 m à l'arrivée : la profondeur risque de manquer lors de l'arrondi"
+       ],
+       "answer": 3,
+       "explanation": "On retire 50 kg et 50 × 1,40 = 70 kg·m : (970 − 70) / 950 ≈ 0,947 m, en avant de la limite de 0,96 m. Le réservoir étant en arrière du CG, le CG avance en vol. Trop avant, la profondeur peut manquer pour l'arrondi ; la vrille irrécupérable est le risque d'un centrage trop arrière. On revoit le chargement avant de partir."
+      }
+     ]
+    },
+    {
+     "id": "u8s7",
+     "title": "Bilan carburant, autonomie et déroutement",
+     "icon": "⛽",
+     "tips": "Le bilan carburant répond à une question simple : avec la quantité embarquée, arriverai-je à destination, ou à mon terrain de déroutement, en conservant intacte la réserve finale ? Il se prépare au sol et se tient à jour en vol.\n\nLes composantes du bilan :\n• Roulage : mise en route, roulage et point fixe, quelques litres selon l'avion et le terrain.\n• Étape (délestage) : temps de vol prévu × consommation horaire. Le temps se calcule avec la vitesse sol, vent compris, et la montée, faite à forte puissance, consomme davantage.\n• Déroutement : carburant pour rejoindre, depuis la destination ou un point de décision, le terrain de dégagement choisi à la préparation.\n• Réserve finale (Part-NCO, AMC1 NCO.OP.125(b), depuis le règlement (UE) 2021/1296, applicable au 30 octobre 2022) : pour un avion en VFR, 30 min de vol de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination ; 10 min pour un vol local de jour (décollage et atterrissage au même aérodrome, toujours en vue de celui-ci), à la puissance maximale continue de croisière à 1 500 ft. Elle ne doit pas être consommée en exploitation normale.\n• Marge personnelle : vent plus fort que prévu, attente, remise de gaz, déroutement plus long. C'est le pilote qui la fixe.\n• Carburant inutilisable : il reste dans les réservoirs et les canalisations, ne compte jamais dans l'autonomie, et fait partie de la masse à vide.\nLa réserve se calcule avec la consommation en attente si le manuel la donne ; la calculer avec la consommation de croisière, plus forte, va dans le sens de la sécurité.\n\nExemple résolu (VFR de jour, 26 L/h, roulage 3 L) :\n• Étape 1 h 15 = 1,25 h → 32,5 L.\n• Déroutement prévu 25 min → 10,8 L.\n• Réserve finale 30 min → 13 L.\n• Marge personnelle 15 min → 6,5 L.\n• Total utilisable : 3 + 32,5 + 10,8 + 13 + 6,5 ≈ 66 L ; avec 5 L inutilisables, il faut 71 L dans les réservoirs.\n\nConsommation, autonomie et conversions :\n• Autonomie (h) = carburant utilisable ÷ consommation horaire. Temps disponible pour le trajet = autonomie − réserve finale − marge.\n• 1 USG ≈ 3,785 L ; 1 L d'AVGAS ≈ 0,72 kg, donc 1 USG ≈ 2,72 kg. Ex. : 8 USG/h ≈ 30,3 L/h ≈ 21,8 kg/h.\n• Pour un avitaillement en gallons : 68 L ÷ 3,785 ≈ 18 USG.\n• Heures décimales : 1 h 36 min = 1,6 h ; 0,45 h = 27 min ; 2,7 h = 2 h 42.\n• En kg/h, la consommation sert au devis de masse : 30 L/h ≈ 21,6 kg/h.\n\nRayon d'action et point de non-retour :\n• Rayon d'action (aller puis retour au départ) : temps aller t = E × Vs retour / (Vs aller + Vs retour), avec E l'autonomie hors réserve ; rayon = t × Vs aller.\n• Point de non-retour (PNR) sur une route aller simple : point au-delà duquel le carburant ne permet plus de revenir au départ en gardant la réserve. Il se calcule avec la même formule ; on y décide de poursuivre ou de faire demi-tour.\n• Ex. : E = 3 h hors réserve, Vp 120 kt, 20 kt de vent de face à l'aller : Vs aller 100 kt, Vs retour 140 kt. t = 3 × 140 / 240 = 1,75 h : PNR à 175 NM, atteint après 1 h 45 ; retour 175 / 140 = 1,25 h. Sans vent, on irait jusqu'à 180 NM : le vent réduit le rayon d'action.\n• Avec du vent arrière à l'aller, le PNR arrive avant la moitié de l'autonomie : le retour se fera vent de face.\n\nDéroutement :\n• À la préparation : choisir au moins un terrain de dégagement accessible (horaires, piste compatible, carburant disponible si besoin), relever route, distance, temps et carburant depuis la destination ou depuis un point de la route.\n• En vol, décider tôt : météo qui se dégrade, retard important, consommation anormale, nuit qui approche. Le bon moment est celui où le carburant laisse encore le choix.\n• Recalculer distance, vitesse sol, temps et carburant, et vérifier qu'il restera la réserve finale à l'arrivée ; prévenir l'organisme avec lequel on est en contact et, si un plan de vol a été déposé, le clôturer à l'arrivée.\n• Attente à destination : temps d'attente possible = (restant − déroutement − réserve finale) ÷ consommation. Ex. : 30 L, 8 L de déroutement, 12 L de réserve, 24 L/h → 10 L, soit 25 min.\n\nGestion en vol :\n• Noter sur le log l'heure de décollage, la quantité et chaque changement de réservoir. À chaque point tournant, comparer le restant calculé (départ − débit × temps) aux jauges et retenir la valeur la plus défavorable.\n• Une consommation plus forte que prévu (jauges qui baissent trop vite, écart qui grandit) fait suspecter une fuite, un bouchon mal fermé ou un mélange mal réglé : on se pose ou l'on se déroute sans attendre.\n• Réservoirs : suivre le manuel de vol. Sur un avion à deux réservoirs d'aile sélectionnés séparément, alterner à intervalles réguliers (par exemple toutes les 30 min) limite le déséquilibre latéral ; changer en croisière, loin du sol, en surveillant la pression d'essence ; si le moteur s'arrête juste après, revenir sur le réservoir précédent.\n• Arrêt moteur lié au carburant : l'épuisement signifie qu'il ne reste plus de carburant utilisable ; l'interruption d'alimentation, qu'il en reste, mais qu'il n'arrive pas au moteur (réservoir vide sélectionné, évent bouché). Moteur arrêté : vitesse de plané d'abord, puis réservoir plein et check-list de remise en route.\n• Si l'arrivée avec la réserve finale n'est plus assurée, on se pose au plus tôt sur le terrain adapté le plus proche, en déclarant l'urgence si nécessaire.\n• Annonces radio (NCO.OP.185, exigées en vol contrôlé et possibles avec le SIV) : « MINIMUM FUEL » quand, engagé vers un terrain précis, tout changement de la clairance risquerait de faire atterrir sous la réserve finale prévue (ce n'est pas une urgence et cela ne donne pas de priorité) ; « MAYDAY MAYDAY MAYDAY FUEL » quand le carburant prévu à l'atterrissage, sur le terrain le plus proche où se poser en sécurité, passe sous la réserve finale prévue.\n\nPièges classiques :\n• Calculer le temps avec la vitesse propre au lieu de la vitesse sol.\n• Compter le carburant inutilisable dans l'autonomie.\n• Oublier le roulage ou le déroutement.\n• Confondre litres, gallons US et kilogrammes, ou 1,24 h et 1 h 24.\n• Considérer la réserve finale comme du carburant d'étape.",
+     "vocab": [
+      {
+       "term": "Bilan carburant",
+       "translation": "Roulage + étape + déroutement + réserve finale + marge"
+      },
+      {
+       "term": "Carburant d'étape",
+       "translation": "Temps de vol prévu (vitesse sol) × consommation horaire"
+      },
+      {
+       "term": "Carburant de déroutement",
+       "translation": "Carburant pour rejoindre le terrain de dégagement"
+      },
+      {
+       "term": "Réserve finale",
+       "translation": "VFR : 30 min de jour, 45 min de nuit (AMC1 NCO.OP.125(b))"
+      },
+      {
+       "term": "Vitesse d'attente",
+       "translation": "Vitesse de référence des réserves de 30 et 45 min, à 1 500 ft"
+      },
+      {
+       "term": "Carburant inutilisable",
+       "translation": "Carburant que le circuit ne peut pas amener au moteur"
+      },
+      {
+       "term": "Consommation horaire",
+       "translation": "Débit de carburant en L/h, USG/h ou kg/h"
+      },
+      {
+       "term": "Autonomie",
+       "translation": "Carburant utilisable ÷ consommation horaire"
+      },
+      {
+       "term": "Rayon d'action",
+       "translation": "Distance max. pour aller puis revenir, réserve conservée"
+      },
+      {
+       "term": "Point de non-retour (PNR)",
+       "translation": "Au-delà, le carburant ne permet plus de revenir au départ"
+      },
+      {
+       "term": "Gallon US (USG)",
+       "translation": "3,785 L ; un gallon d'AVGAS pèse environ 2,72 kg"
+      },
+      {
+       "term": "Terrain de dégagement",
+       "translation": "Aérodrome prévu si la destination devient inaccessible"
+      },
+      {
+       "term": "Marge personnelle",
+       "translation": "Carburant ajouté par le pilote pour les imprévus"
+      },
+      {
+       "term": "Épuisement du carburant",
+       "translation": "Il ne reste plus de carburant utilisable à bord"
+      },
+      {
+       "term": "Interruption d'alimentation",
+       "translation": "Carburant à bord qui n'arrive pas au moteur"
+      },
+      {
+       "term": "MINIMUM FUEL",
+       "translation": "Annonce : un retard de plus risquerait d'entamer la réserve finale"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Composantes du bilan carburant",
+       "svg": "<svg viewBox=\"0 0 700 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"420\" fill=\"#ffffff\"/><text x=\"20\" y=\"28\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Bilan carburant de l'exemple (26 L/h, vol de jour)</text><text x=\"20\" y=\"52\" font-size=\"14\" fill=\"#475569\" text-anchor=\"start\">Le haut de la colonne est consommé en premier ; la réserve finale doit rester à l'arrivée.</text><rect x=\"240\" y=\"364\" width=\"100\" height=\"20\" fill=\"#9ca3af\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"312\" width=\"100\" height=\"52\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"286\" width=\"100\" height=\"26\" fill=\"#f59e0b\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"242.7\" width=\"100\" height=\"43.3\" fill=\"#8b5cf6\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"112.7\" width=\"100\" height=\"130\" fill=\"#3b82f6\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100.7\" width=\"100\" height=\"12\" fill=\"#14b8a6\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><rect x=\"240\" y=\"100.7\" width=\"100\" height=\"283.3\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"342\" y1=\"374\" x2=\"368\" y2=\"374\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"374\" y=\"379\" font-size=\"15\" fill=\"#374151\" text-anchor=\"start\" font-weight=\"bold\">Inutilisable : 5 L (non compté)</text><line x1=\"342\" y1=\"338\" x2=\"368\" y2=\"338\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"374\" y=\"343\" font-size=\"15\" fill=\"#991b1b\" text-anchor=\"start\" font-weight=\"bold\">Réserve finale : 30 min → 13 L</text><line x1=\"342\" y1=\"299\" x2=\"368\" y2=\"299\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"374\" y=\"304\" font-size=\"15\" fill=\"#92400e\" text-anchor=\"start\" font-weight=\"bold\">Marge personnelle : 15 min → 6,5 L</text><line x1=\"342\" y1=\"264.3\" x2=\"368\" y2=\"264.3\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"374\" y=\"269.3\" font-size=\"15\" fill=\"#5b21b6\" text-anchor=\"start\" font-weight=\"bold\">Déroutement : 25 min → 10,8 L</text><line x1=\"342\" y1=\"177.7\" x2=\"368\" y2=\"177.7\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"374\" y=\"182.7\" font-size=\"15\" fill=\"#1e40af\" text-anchor=\"start\" font-weight=\"bold\">Étape : 1 h 15 → 32,5 L</text><line x1=\"342\" y1=\"106.7\" x2=\"368\" y2=\"106.7\" stroke=\"#64748b\" stroke-width=\"1.3\"/><text x=\"374\" y=\"111.7\" font-size=\"15\" fill=\"#115e59\" text-anchor=\"start\" font-weight=\"bold\">Roulage : 3 L</text><path d=\"M226,100.7 L218,100.7 L218,364 L226,364\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"208\" y=\"226.3\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"end\" font-weight=\"bold\">Utilisable</text><text x=\"208\" y=\"246.3\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"end\" font-weight=\"bold\">≈ 66 L</text><path d=\"M108,100.7 L100,100.7 L100,384 L108,384\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"90\" y=\"236.3\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"end\" font-weight=\"bold\">À bord</text><text x=\"90\" y=\"256.3\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"end\" font-weight=\"bold\">71 L</text><text x=\"290\" y=\"406\" font-size=\"14\" fill=\"#475569\" text-anchor=\"middle\">Hauteurs proportionnelles aux volumes</text></svg>",
+       "caption": "Exemple de la fiche : roulage, étape, déroutement, marge et réserve finale de jour forment le carburant utilisable (66 L). Le carburant inutilisable s'y ajoute dans les réservoirs sans jamais compter dans l'autonomie."
+      },
+      {
+       "title": "Point de non-retour avec du vent",
+       "svg": "<svg viewBox=\"0 0 700 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u8s7f2b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4ed8\"/></marker><marker id=\"u8s7f2g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#15803d\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"420\" fill=\"#ffffff\"/><text x=\"20\" y=\"28\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Point de non-retour : 3 h d'autonomie hors réserve, Vp 120 kt</text><rect x=\"570\" y=\"80.0\" width=\"80.0\" height=\"280.0\" fill=\"#fee2e2\"/><text x=\"610\" y=\"200\" font-size=\"14\" fill=\"#991b1b\" text-anchor=\"middle\" font-weight=\"bold\">Réserve</text><text x=\"610\" y=\"218\" font-size=\"14\" fill=\"#991b1b\" text-anchor=\"middle\" font-weight=\"bold\">finale</text><text x=\"610\" y=\"236\" font-size=\"14\" fill=\"#991b1b\" text-anchor=\"middle\" font-weight=\"bold\">30 min</text><line x1=\"90\" y1=\"360\" x2=\"90\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"90\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">0</text><line x1=\"170\" y1=\"360\" x2=\"170\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"170\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">0,5</text><line x1=\"250\" y1=\"360\" x2=\"250\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"250\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1</text><line x1=\"330\" y1=\"360\" x2=\"330\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"330\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">1,5</text><line x1=\"410\" y1=\"360\" x2=\"410\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"410\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">2</text><line x1=\"490\" y1=\"360\" x2=\"490\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"490\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">2,5</text><line x1=\"570\" y1=\"360\" x2=\"570\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"570\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">3</text><line x1=\"650\" y1=\"360\" x2=\"650\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"650\" y=\"380\" font-size=\"14\" fill=\"#334155\" text-anchor=\"middle\">3,5</text><line x1=\"90\" y1=\"360\" x2=\"650\" y2=\"360\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"82\" y=\"365\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">0</text><line x1=\"90\" y1=\"290\" x2=\"650\" y2=\"290\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"82\" y=\"295\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">50</text><line x1=\"90\" y1=\"220\" x2=\"650\" y2=\"220\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"82\" y=\"225\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">100</text><line x1=\"90\" y1=\"150\" x2=\"650\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"82\" y=\"155\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">150</text><line x1=\"90\" y1=\"80\" x2=\"650\" y2=\"80\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"82\" y=\"85\" font-size=\"14\" fill=\"#334155\" text-anchor=\"end\">200</text><line x1=\"90\" y1=\"360\" x2=\"650\" y2=\"360\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"90\" y1=\"360\" x2=\"90\" y2=\"80\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"370\" y=\"404\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">Temps de vol depuis A (h)</text><text x=\"26\" y=\"220\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\" transform=\"rotate(-90 26 220)\">Distance de A (NM)</text><line x1=\"90\" y1=\"360\" x2=\"370\" y2=\"115\" stroke=\"#1d4ed8\" stroke-width=\"3\" marker-end=\"url(#u8s7f2b)\"/><line x1=\"370\" y1=\"115\" x2=\"570\" y2=\"360\" stroke=\"#15803d\" stroke-width=\"3\" marker-end=\"url(#u8s7f2g)\"/><line x1=\"370\" y1=\"115\" x2=\"370\" y2=\"360\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><line x1=\"90\" y1=\"115\" x2=\"370\" y2=\"115\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><circle cx=\"370.0\" cy=\"115.00000000000003\" r=\"7\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"370\" y=\"99\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">PNR : 175 NM, atteint après 1 h 45</text><text x=\"222.1\" y=\"228.5\" font-size=\"15\" fill=\"#1e40af\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(-41.2 222.1 228.5)\">Aller : Vs 100 kt (20 kt de face)</text><text x=\"479.3\" y=\"229.9\" font-size=\"15\" fill=\"#166534\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\" transform=\"rotate(50.8 479.3 229.9)\">Retour : Vs 140 kt (1 h 15)</text></svg>",
+       "caption": "Avec 20 kt de vent de face à l'aller, l'avion atteint le point de non-retour à 175 NM après 1 h 45 ; le retour, vent arrière, prend 1 h 15. La réserve finale de 30 min reste intacte."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u8s7q01",
+       "q": "Pour un vol local de jour (décollage et atterrissage au même aérodrome, en restant en vue de celui-ci), quelle réserve finale minimale l'AMC1 NCO.OP.125(b) prévoit-elle pour un avion ?",
+       "choices": [
+        "30 min en vitesse d'attente, à 1 500 ft au-dessus du terrain",
+        "20 min en vitesse d'attente, à 1 500 ft au-dessus du terrain",
+        "10 min à la puissance maximale continue de croisière, à 1 500 ft",
+        "5 min à la puissance maximale continue de croisière, à 1 500 ft"
+       ],
+       "answer": 2,
+       "explanation": "Pour un vol local de jour, la réserve finale est ramenée à 10 minutes, à la puissance maximale continue de croisière à 1 500 ft. Les 30 minutes en vitesse d'attente à 1 500 ft au-dessus de la destination concernent un vol de jour vers un autre aérodrome (45 minutes de nuit)."
+      },
+      {
+       "id": "u8s7q02",
+       "q": "Pourquoi le carburant inutilisable n'entre-t-il jamais dans le calcul de l'autonomie ?",
+       "choices": [
+        "Parce qu'il sert au roulage et au point fixe",
+        "Parce qu'il forme la réserve finale du Part-NCO",
+        "Parce que le circuit ne peut pas l'amener au moteur",
+        "Parce qu'il contient l'eau évacuée à la purge"
+       ],
+       "answer": 2,
+       "explanation": "Le carburant inutilisable reste au fond des réservoirs et des canalisations : le circuit ne peut pas l'amener au moteur de façon sûre. Il fait partie de la masse à vide et ne constitue pas une réserve : la réserve finale doit être du carburant utilisable."
+      },
+      {
+       "id": "u8s7q03",
+       "q": "Quelle liste réunit les composantes du bilan carburant d'une navigation VFR ?",
+       "choices": [
+        "Roulage, étape, réserve finale et carburant inutilisable servant de marge",
+        "Étape et réserve finale, le roulage étant couvert par la réserve",
+        "Étape, déroutement et marge, la réserve finale étant facultative de jour",
+        "Roulage, étape, déroutement, réserve finale et marge personnelle"
+       ],
+       "answer": 3,
+       "explanation": "Le bilan additionne le roulage, l'étape (vent compris), le déroutement vers le dégagement choisi, la réserve finale réglementaire et une marge décidée par le pilote. Le carburant inutilisable ne sert jamais de marge, et la réserve finale n'est pas faite pour couvrir le roulage."
+      },
+      {
+       "id": "u8s7q04",
+       "q": "Le manuel donne une consommation de 9 USG/h. Quelle masse d'AVGAS cela représente-t-il par heure ?",
+       "choices": [
+        "Environ 6,5 kg",
+        "Environ 24,5 kg",
+        "Environ 34,1 kg",
+        "Environ 47,3 kg"
+       ],
+       "answer": 1,
+       "explanation": "9 USG × 3,785 ≈ 34,1 L, puis 34,1 × 0,72 ≈ 24,5 kg. Appliquer 0,72 directement aux gallons (6,5 kg) oublie la conversion en litres ; 34,1 est le débit en litres, pas en kilogrammes."
+      },
+      {
+       "id": "u8s7q05",
+       "q": "En croisière, le vent de face est plus fort que prévu. Pouvez-vous compter sur la réserve finale pour terminer le vol vers la destination ?",
+       "choices": [
+        "Non : elle doit rester intacte, et vous vous déroutez avant",
+        "Oui : couvrir un vent imprévu est précisément son rôle",
+        "Oui, à condition d'en informer le SIV de la zone survolée",
+        "Non : elle est réservée au trajet vers le dégagement"
+       ],
+       "answer": 0,
+       "explanation": "La réserve finale ne doit pas être consommée en exploitation normale : elle doit encore se trouver dans les réservoirs à l'atterrissage. Les écarts de vent se couvrent par la marge personnelle ; si elle ne suffit plus, on se déroute ou l'on se pose avant d'entamer la réserve. Le trajet vers le dégagement est couvert par le carburant de déroutement, pas par la réserve."
+      },
+      {
+       "id": "u8s7q06",
+       "q": "Vol VFR de nuit : 60 L utilisables, consommation 24 L/h. De combien de temps de vol disposez-vous pour le trajet, réserve finale exclue ?",
+       "choices": [
+        "1 h 15 min",
+        "1 h 45 min",
+        "2 h 00 min",
+        "2 h 30 min"
+       ],
+       "answer": 1,
+       "explanation": "Autonomie : 60 / 24 = 2,5 h, soit 2 h 30. De nuit, la réserve finale est de 45 min : il reste 1 h 45 pour le trajet. 2 h 00 correspondrait à la réserve de jour (30 min)."
+      },
+      {
+       "id": "u8s7q07",
+       "q": "En croisière, le moteur s'arrête. Le réservoir sélectionné est vide, l'autre est encore plein. Comment qualifie-t-on cette panne ?",
+       "choices": [
+        "Un épuisement du carburant : l'avion n'a plus de carburant",
+        "Un givrage du carburateur, favorisé par le réservoir vide",
+        "Un bouchon de vapeur, dû à l'essence du réservoir plein",
+        "Une interruption d'alimentation : du carburant reste à bord"
+       ],
+       "answer": 3,
+       "explanation": "Il reste du carburant utilisable à bord, mais il n'arrive pas au moteur : c'est une interruption d'alimentation, due ici à la gestion des réservoirs. L'épuisement désigne l'absence de carburant utilisable. Dans les deux cas, la prévention passe par le bilan, la sélection et la surveillance."
+      },
+      {
+       "id": "u8s7q08",
+       "q": "À la préparation, comment déterminez-vous le carburant de déroutement ?",
+       "choices": [
+        "Avec le temps de vol de la destination au dégagement, vent compris",
+        "Avec une valeur forfaitaire de 30 minutes, fixée par le Part-NCO",
+        "Avec la réserve finale, qui sert aussi de carburant de déroutement",
+        "Avec le temps de vol du départ au dégagement, sans tenir compte du vent"
+       ],
+       "answer": 0,
+       "explanation": "Le carburant de déroutement couvre le trajet entre la destination (ou le point de décision) et le terrain de dégagement : distance, vitesse sol et consommation. Il s'ajoute à la réserve finale, qui doit rester intacte à l'arrivée au dégagement."
+      },
+      {
+       "id": "u8s7q09",
+       "q": "VFR de jour : roulage 3 L ; étape 1 h 30 ; déroutement prévu 20 min ; marge personnelle 15 min ; consommation 28 L/h, retenue aussi pour la réserve. Quelle quantité de carburant utilisable prévoyez-vous au départ ?",
+       "choices": [
+        "Environ 66 L",
+        "Environ 68 L",
+        "Environ 75 L",
+        "Environ 82 L"
+       ],
+       "answer": 2,
+       "explanation": "Étape : 1,5 × 28 = 42 L ; déroutement : 28 × 20/60 ≈ 9,3 L ; réserve finale de jour : 0,5 × 28 = 14 L ; marge : 0,25 × 28 = 7 L ; roulage : 3 L. Total ≈ 75,3 L. 82 L correspondrait à la réserve de nuit (21 L), 68 L à l'oubli de la marge et 66 L à celui du déroutement."
+      },
+      {
+       "id": "u8s7q10",
+       "q": "En croisière, vous décidez de vous dérouter vers un terrain situé à 45 NM. Vp 105 kt, 15 kt de vent de face sur ce trajet, débit 26 L/h ; il reste 34 L utilisables. Vol de jour. Que restera-t-il à l'arrivée ?",
+       "choices": [
+        "Environ 23 L, la réserve finale de 13 L restant intacte",
+        "Environ 21 L, la réserve finale de 13 L restant intacte",
+        "Environ 8 L, moins que la réserve finale de 13 L",
+        "Environ 24 L, la réserve finale de 13 L restant intacte"
+       ],
+       "answer": 1,
+       "explanation": "Vitesse sol : 105 − 15 = 90 kt, soit 45 / 90 = 0,5 h de trajet et 0,5 × 26 = 13 L. Il restera 34 − 13 = 21 L, qui contiennent la réserve finale de jour (30 min, comptées par prudence à 26 L/h : 13 L) et 8 L de marge. 23 L calcule le trajet avec la Vp, 24 L compte le vent comme arrière, et 8 L est la marge au-dessus de la réserve, pas le carburant restant. On prévient l'organisme en contact et, si un plan de vol a été déposé, on le clôture à l'arrivée."
+      },
+      {
+       "id": "u8s7q11",
+       "q": "Vous devez embarquer 95 L d'AVGAS et la pompe de l'aérodrome est graduée en gallons US. Combien de gallons demandez-vous ?",
+       "choices": [
+        "Environ 18 USG",
+        "Environ 25 USG",
+        "Environ 35 USG",
+        "Environ 68 USG"
+       ],
+       "answer": 1,
+       "explanation": "95 / 3,785 ≈ 25 USG. Le résultat de 35 vient d'une division par 2,72 (masse d'un gallon en kg), celui de 68 de la conversion des litres en kilogrammes (95 × 0,72), et 18 applique en plus la densité aux gallons (25 × 0,72)."
+      },
+      {
+       "id": "u8s7q12",
+       "q": "Le manuel donne 30 L/h en croisière et 20 L/h en vitesse d'attente à 1 500 ft. Quelle est la réserve finale minimale pour un vol VFR de nuit ?",
+       "choices": [
+        "5 L",
+        "10 L",
+        "15 L",
+        "22,5 L"
+       ],
+       "answer": 2,
+       "explanation": "De nuit, 45 min en vitesse d'attente à 1 500 ft : 0,75 × 20 = 15 L au minimum. La calculer à la consommation de croisière (22,5 L) va dans le sens de la sécurité, mais dépasse le minimum demandé ; 10 L serait la réserve de jour, et 5 L correspondrait à 10 min à 30 L/h, la réserve d'un vol local de jour."
+      },
+      {
+       "id": "u8s7q13",
+       "q": "Consommation 7 USG/h ; 22 USG utilisables à bord ; vol VFR de jour vers un autre aérodrome. De combien de temps disposez-vous pour le trajet, réserve finale exclue ?",
+       "choices": [
+        "Environ 2 h 24 min",
+        "Environ 2 h 39 min",
+        "Environ 2 h 44 min",
+        "Environ 3 h 09 min"
+       ],
+       "answer": 1,
+       "explanation": "22 / 7 ≈ 3,143 h, soit environ 3 h 09 (0,143 h × 60 ≈ 8,6 min). Moins 30 min de réserve de jour : environ 2 h 39. Lire 3,14 h comme 3 h 14 donne 2 h 44, l'erreur classique des heures décimales ; 2 h 24 retrancherait la réserve de nuit (45 min)."
+      },
+      {
+       "id": "u8s7q14",
+       "q": "Deux réservoirs d'aile de 50 L utilisables chacun, sélectionnés séparément. Vous décollez sur le gauche à 9:00 et changez de réservoir toutes les 30 min ; débit 24 L/h, roulage négligé. Que contient chaque réservoir à 10:30 ?",
+       "choices": [
+        "Gauche 26 L, droit 38 L",
+        "Gauche 38 L, droit 26 L",
+        "Gauche 32 L, droit 32 L",
+        "Gauche 14 L, droit 50 L"
+       ],
+       "answer": 0,
+       "explanation": "9:00-9:30 sur le gauche (12 L), 9:30-10:00 sur le droit (12 L), 10:00-10:30 sur le gauche (12 L). Gauche : 50 − 24 = 26 L ; droit : 50 − 12 = 38 L. Le prochain passage sur le droit réduira l'écart ; noter les heures de changement sur le log évite ce genre d'erreur."
+      },
+      {
+       "id": "u8s7q15",
+       "q": "Autonomie disponible, réserve finale exclue : 2 h. Vitesse sol à l'aller 90 kt, au retour 110 kt. À quelle distance du départ se situe le point de non-retour ?",
+       "choices": [
+        "90 NM",
+        "99 NM",
+        "100 NM",
+        "110 NM"
+       ],
+       "answer": 1,
+       "explanation": "Temps jusqu'au PNR : t = E × Vs retour / (Vs aller + Vs retour) = 2 × 110 / 200 = 1,1 h, soit 1,1 × 90 = 99 NM. Retour : 99 / 110 = 0,9 h ; total 2 h. Couper l'autonomie en deux (90 NM) ignore que le retour est plus rapide."
+      },
+      {
+       "id": "u8s7q16",
+       "q": "La météo se dégrade à destination et vous avez préparé un terrain de dégagement. Quand décidez-vous de vous dérouter ?",
+       "choices": [
+        "Dès que l'arrivée devient incertaine, tant que le carburant laisse le choix",
+        "À la verticale de la destination, pour constater la météo par vous-même",
+        "Lorsque les jauges atteignent la quantité prévue pour la réserve finale",
+        "Après deux remises de gaz infructueuses à l'aérodrome de destination"
+       ],
+       "answer": 0,
+       "explanation": "Un déroutement se décide tôt, sur un repère identifié, quand il reste du carburant, du temps et des options. Attendre la verticale ou les remises de gaz consomme la marge ; atteindre la réserve finale signifie que le bilan est déjà rompu."
+      },
+      {
+       "id": "u8s7q17",
+       "q": "Étape de 105 NM : Vp 110 kt, vent de face 15 kt. Déroutement prévu : 30 NM à 110 kt de vitesse sol. Consommation 28 L/h, retenue aussi pour la réserve ; roulage 3 L ; vol de jour. Quantité minimale de carburant utilisable ?",
+       "choices": [
+        "Environ 48 L",
+        "Environ 51 L",
+        "Environ 56 L",
+        "Environ 63 L"
+       ],
+       "answer": 2,
+       "explanation": "Vs : 110 − 15 = 95 kt ; étape 105 / 95 ≈ 1,105 h → ≈ 30,9 L. Déroutement : 30 / 110 ≈ 0,27 h → ≈ 7,6 L. Réserve de jour : 14 L ; roulage : 3 L. Total ≈ 55,6 L, environ 56 L. Calculer l'étape avec la Vp donnerait 51 L : le vent de face coûte ici plus de 4 L."
+      },
+      {
+       "id": "u8s7q18",
+       "q": "Navigation vers une destination lointaine : 100 L utilisables, consommation 25 L/h, réserve finale de jour à conserver. Vp 100 kt, 20 kt de vent arrière à l'aller. À quelle distance du départ se trouve le point de non-retour ?",
+       "choices": [
+        "168 NM",
+        "175 NM",
+        "192 NM",
+        "210 NM"
+       ],
+       "answer": 0,
+       "explanation": "Autonomie hors réserve : 100 / 25 − 0,5 = 3,5 h. Vs aller 120 kt, Vs retour 80 kt. t = 3,5 × 80 / 200 = 1,4 h, soit 168 NM ; retour 168 / 80 = 2,1 h ; total 3,5 h. À mi-temps (210 NM), le retour contre le vent serait impossible : avec du vent arrière à l'aller, le PNR arrive bien avant."
+      },
+      {
+       "id": "u8s7q19",
+       "q": "Décollage à 14:00 avec 90 L utilisables, débit prévu 25 L/h. À 15:00, les jauges indiquent 50 L alors que le calcul en annonce 65. La destination est à 1 h 10 de vol, un aérodrome adapté à 10 min. Vol de jour. Que faites-vous ?",
+       "choices": [
+        "Vous vous posez sur le terrain proche : une fuite est possible",
+        "Vous poursuivez : le calcul laisse 36 L à l'arrivée, réserve couverte",
+        "Vous faites demi-tour vers le terrain de départ, à 1 h de vol",
+        "Vous poursuivez : à 25 L/h, les 50 L couvrent le vol et la réserve"
+       ],
+       "answer": 0,
+       "explanation": "Les jauges montrent 40 L consommés en 1 h au lieu de 25 : on retient la valeur la plus défavorable et l'on soupçonne une fuite ou un bouchon mal fermé. À 40 L/h, 1 h 10 de vol demanderait près de 47 L : la réserve serait entamée. On se pose au plus tôt sur l'aérodrome situé à 10 min, et non sur le terrain de départ, à 1 h de vol."
+      },
+      {
+       "id": "u8s7q20",
+       "q": "Vol photo au départ de A avec retour à A, de jour : 70 L utilisables, consommation 28 L/h, réserve finale à conserver. Vp 90 kt, 15 kt de vent de face à l'aller. Quel est le rayon d'action ?",
+       "choices": [
+        "75 NM",
+        "87,5 NM",
+        "90 NM",
+        "109 NM"
+       ],
+       "answer": 1,
+       "explanation": "Autonomie hors réserve : 70 / 28 − 0,5 = 2 h. Vs aller 75 kt, Vs retour 105 kt. t aller = 2 × 105 / 180 ≈ 1,17 h, soit 87,5 NM ; retour 87,5 / 105 ≈ 0,83 h. 90 NM serait le rayon sans vent : le vent le réduit. 109 NM oublierait la réserve."
+      },
+      {
+       "id": "u8s7q21",
+       "q": "VFR de nuit, roulage négligé : étape 50 min, déroutement prévu 20 min, consommation 30 L/h (retenue aussi pour la réserve). Vous embarquez juste le minimum. Le carburant inutilisable (4 L) étant compris dans la masse à vide, quelle masse de carburant inscrivez-vous au devis ?",
+       "choices": [
+        "Environ 36,0 kg",
+        "Environ 41,4 kg",
+        "Environ 44,3 kg",
+        "Environ 57,5 kg"
+       ],
+       "answer": 1,
+       "explanation": "Carburant utilisable : 25 L (étape) + 10 L (déroutement) + 22,5 L (45 min de réserve de nuit) = 57,5 L, soit 57,5 × 0,72 = 41,4 kg. Le carburant inutilisable figure déjà dans la masse à vide : l'ajouter (44,3 kg) le compterait deux fois. 36 kg correspondrait à la réserve de jour, 57,5 à des litres pris pour des kilogrammes."
+      },
+      {
+       "id": "u8s7q22",
+       "q": "Votre bilan exige 95 L utilisables. Le devis de masse ne laisse que 62 kg pour le carburant, la MTOM étant atteinte. Que décidez-vous ?",
+       "choices": [
+        "Il manque environ 9 L : vous allégez l'avion ou vous prévoyez une escale",
+        "Vous partez : 62 kg font 86 L, et la réserve finale couvrira l'écart",
+        "Il manque environ 33 L : vous prévoyez une escale de ravitaillement",
+        "Vous partez : 95 L ne pèsent qu'environ 62 kg, le compte est bon"
+       ],
+       "answer": 0,
+       "explanation": "95 L × 0,72 = 68,4 kg, soit 6,4 kg de trop ; 62 kg ne font que 86 L, environ 9 L de moins que le besoin. On réduit la charge (bagages, passager) ou l'on fractionne le vol avec une escale. La réserve finale ne se consomme pas, et soustraire 62 de 95 (33) mélange litres et kilogrammes."
+      },
+      {
+       "id": "u8s7q23",
+       "q": "En croisière à 3 000 ft sol, le moteur s'arrête : vous aviez oublié de changer de réservoir et celui qui est sélectionné est vide. Que faites-vous en premier ?",
+       "choices": [
+        "Sélectionner le réservoir plein et redémarrer avant de gérer la vitesse",
+        "Lancer un MAYDAY, puis chercher la cause de la panne dans le manuel",
+        "Couper le contact général pour éviter un incendie, puis planer",
+        "Afficher la vitesse de plané, puis sélectionner le réservoir plein"
+       ],
+       "answer": 3,
+       "explanation": "D'abord piloter : la vitesse de plané préserve le contrôle et la hauteur. Ensuite, réservoir plein sélectionné, puis check-list de remise en route (pompe électrique, mélange, magnétos selon le manuel). Couper le contact général n'a pas lieu d'être tant qu'un redémarrage est possible."
+      },
+      {
+       "id": "u8s7q24",
+       "q": "À la verticale de la destination à 11:00, la piste est momentanément bloquée. Il vous reste 36 L utilisables ; débit 24 L/h ; votre dégagement est à 25 min de vol ; vol de jour. Jusqu'à quelle heure pouvez-vous attendre avant de partir vers le dégagement ?",
+       "choices": [
+        "11:20",
+        "11:35",
+        "12:00",
+        "12:05"
+       ],
+       "answer": 1,
+       "explanation": "Il faut garder 10 L pour les 25 min de déroutement et 12 L de réserve finale (30 min, comptées par prudence à 24 L/h) : 36 − 22 = 14 L, soit 35 min d'attente. Départ au plus tard vers 11:35. Oublier le déroutement mènerait à 12:00, avec un dégagement atteint sur la réserve ; 11:20 appliquerait la réserve de nuit (45 min)."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

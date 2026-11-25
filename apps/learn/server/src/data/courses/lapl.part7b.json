@@ -1,0 +1,1118 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u7",
+   "title": "Procédures opérationnelles",
+   "description": "Procédures normales et d'urgence, phénomènes dangereux, carburant, sécurité, survie et sauvetage (examen : 12 questions, 18 min).",
+   "skills": [
+    {
+     "id": "u7s5",
+     "title": "Pannes moteur et atterrissage forcé",
+     "icon": "🌾",
+     "tips": "Une panne moteur sur monomoteur se termine bien si l'avion reste piloté : un atterrissage forcé fait sous contrôle, ailes à plat, à la plus faible vitesse possible, laisse de bonnes chances. Le danger vient de la perte de contrôle. Ordre : piloter, choisir où se poser, communiquer. La check-list du manuel de vol (AFM/POH) fait foi.\n\nBriefing avant décollage :\n• Annoncer au point d'attente ce que l'on fera : panne au roulement (réduire, freiner, rester sur la piste), panne sous la hauteur de sécurité, panne au-dessus.\n• La hauteur de sécurité n'est pas réglementaire : elle se fixe au briefing, avec l'instructeur, selon l'avion, le vent, le relief et les champs disponibles. En dessous, on ne fait pas demi-tour.\n\nPanne après le décollage, sous la hauteur de sécurité :\n• Rendre la main aussitôt : en montée, sans traction, la vitesse chute en quelques secondes. Afficher la vitesse de plané.\n• Se poser à peu près droit devant, dans un secteur d'environ 30° de part et d'autre de l'axe, en virages faibles.\n• Pas de demi-tour : le virage augmente la vitesse de décrochage et le taux de chute ; après 180°, l'avion est décalé de deux rayons de virage par rapport à l'axe, il faut bien plus de 180° pour se réaligner et l'on arrive vent arrière. Décollage face à 15 kt de vent, toucher à 60 kt : 75 kt sol au lieu de 45 kt, soit près de trois fois plus d'énergie.\n• Étude du BEA (2021) sur 31 diminutions de puissance au décollage d'avions légers et d'ULM : les 12 accidents mortels résultent tous d'une perte de contrôle, au moins onze pertes de contrôle étant liées à un virage important ou à un demi-tour.\n• S'il reste du temps : essence, magnétos et contact général coupés, portes déverrouillées, MAYDAY.\n\nAu-dessus de la hauteur de sécurité :\n• Le choix s'élargit (champ sur le côté, retour vers le terrain) ; un retour ne s'envisage que si la hauteur, le vent et l'entraînement le permettent, à inclinaison modérée.\n\nPanne en croisière :\n• Vitesse de finesse max, avion compensé. Le manuel la donne à la masse maximale : plus léger, elle est un peu plus faible, la finesse restant la même. Par fort vent de face, voler un peu plus vite allonge la distance sol.\n• Distance de plané = hauteur sol × finesse (1 NM = 6 076 ft) : retrancher l'altitude du relief de l'altitude lue (3 800 ft QNH au-dessus d'une plaine à 800 ft : 3 000 ft de hauteur). Avec du vent, on raisonne en temps : 3 500 ft à 700 ft/min = 5 min de plané ; à 65 kt avec 20 kt de face, vitesse sol 45 kt, soit 45 × 5/60 ≈ 3,75 NM au lieu de 5,4 NM en air calme.\n• Choisir le champ, puis rechercher la cause si la hauteur le permet (réchauffage carburateur, réservoir, pompe, mélange, magnétos).\n• MAYDAY sur la fréquence en cours, sinon 121,5 MHz, tant que la hauteur assure la portée radio. Transpondeur 7700 ; si l'ATC vous a déjà attribué un code, on le garde, sauf raison précise de préférer 7700 (SERA.13005).\n• Arriver haut : un excès de hauteur se perd (glissade, volets), un manque ne se rattrape pas.\n\nAtterrissage de précaution ou forcé :\n• Forcé : imposé par la panne, un seul essai, sans remise de gaz.\n• De précaution (en campagne, moteur disponible) : décidé volontairement avant que la situation ne s'aggrave (météo qui se ferme, nuit, carburant, ennui naissant, malaise). Le moteur laisse le temps de reconnaître le champ par des passages successifs (surface, longueur, obstacles, pente, vent) avant de s'y poser. À l'entraînement comme à l'examen, la simulation s'interrompt à une hauteur minimale fixée à l'avance par l'instructeur ou l'examinateur.\n\nChoisir le champ :\n• Vent : face au vent (fumées, drapeaux, champs de blé, risées sur l'eau, dérive).\n• Longueur et surface : prairie rase ou chaume ; éviter cultures hautes, vignes, vergers, zones humides. Champ labouré : le long des sillons.\n• Pente : en montée, elle raccourcit l'arrêt ; une pente descendante l'allonge.\n• Obstacles : lignes électriques (seuls les pylônes se voient), arbres, haies, fossés, routes. Éviter les zones habitées.\n• Un champ choisi ne se change pas à basse hauteur.\n\nAvant l'impact :\n• Ceintures et harnais serrés, objets arrimés, passagers en position de sécurité, portes déverrouillées.\n• Mélange étouffoir, robinet fermé, magnétos coupées ; contact général coupé après le message et la sortie des volets électriques.\n• Toucher à la plus faible vitesse sous contrôle : l'énergie varie comme le carré de la vitesse. Vitesse sol doublée : énergie et distance d'arrêt × 4 (FAA). De 70 à 50 kt : (50/70)² ≈ 0,5.\n\nAmerrissage (principes) :\n• MAYDAY et 7700 en altitude, gilets enfilés (gonflés une fois sorti), portes déverrouillées, train rentré.\n• Houle forte : se poser parallèlement à la houle principale, sur la crête ou le dos de la vague, en choisissant parmi ces caps celui qui a le plus de vent de face ; ne pas toucher face à une vague.\n\nPerte de puissance partielle :\n• Selon l'ATSB (Australie), environ trois fois plus fréquente que la panne totale, et plus meurtrière : de 2000 à 2010, neuf accidents mortels après le décollage, contre aucun pour les pannes totales. Le moteur « tire encore » et pousse aux décisions risquées.\n• Piloter d'abord, à une vitesse sûre ; garder la puissance restante comme un sursis, sans s'y fier.\n• Rejoindre le terrain le plus proche en restant toujours à portée de plané d'un champ, appliquer la check-list sans négliger le pilotage, préparer l'atterrissage forcé, PAN PAN ou MAYDAY selon la situation.",
+     "vocab": [
+      {
+       "term": "Hauteur de sécurité",
+       "translation": "Hauteur briefée sous laquelle, en panne, on se pose sans demi-tour"
+      },
+      {
+       "term": "Secteur droit devant",
+       "translation": "Zone d'environ 30° de part et d'autre de l'axe après le décollage"
+      },
+      {
+       "term": "Vitesse de finesse max",
+       "translation": "Vitesse du plus long plané en air calme, donnée à la masse maximale"
+      },
+      {
+       "term": "Taux de chute",
+       "translation": "Vitesse verticale de descente en plané, en ft/min"
+      },
+      {
+       "term": "Distance de plané",
+       "translation": "Hauteur × finesse en air calme ; le vent la modifie"
+      },
+      {
+       "term": "Atterrissage forcé",
+       "translation": "Atterrissage imposé par une panne, sans possibilité de remise de gaz"
+      },
+      {
+       "term": "Atterrissage de précaution",
+       "translation": "Atterrissage volontaire hors aérodrome, moteur encore disponible"
+      },
+      {
+       "term": "Perte de puissance partielle",
+       "translation": "Moteur qui tourne encore mais ne fournit plus la puissance normale"
+      },
+      {
+       "term": "Chaume",
+       "translation": "Champ moissonné, ras et ferme : bon terrain d'atterrissage forcé"
+      },
+      {
+       "term": "Position de sécurité",
+       "translation": "Posture des passagers avant l'impact, corps penché et protégé"
+      },
+      {
+       "term": "Glissade",
+       "translation": "Vol en commandes croisées, aile basse, pour descendre sans accélérer"
+      },
+      {
+       "term": "Houle",
+       "translation": "Ondulation régulière de la mer, qui guide le cap d'amerrissage"
+      },
+      {
+       "term": "SERA.13005",
+       "translation": "Règle SERA du code transpondeur, dont le 7700 en urgence"
+      },
+      {
+       "term": "ATSB",
+       "translation": "Bureau australien d'enquête sur la sécurité des transports"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Panne au décollage : droit devant plutôt que demi-tour",
+       "svg": "<svg viewBox=\"0 0 700 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u7s5f1r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker><marker id=\"u7s5f1b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4ed8\"/></marker><marker id=\"u7s5f1k\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#334155\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"420\" fill=\"#ffffff\"/><polygon points=\"400,250 655,102.8 655,397.2\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/><line x1=\"400\" y1=\"250\" x2=\"655\" y2=\"250\" stroke=\"#16a34a\" stroke-width=\"1.5\" stroke-dasharray=\"6 5\"/><text x=\"552.0\" y=\"236.0\" font-size=\"16\" fill=\"#166534\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Secteur d'atterrissage</text><text x=\"552.0\" y=\"278.0\" font-size=\"15\" fill=\"#166534\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">droit devant, ±30° environ</text><rect x=\"40\" y=\"235\" width=\"290\" height=\"30\" fill=\"#9ca3af\" stroke=\"#4b5563\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"250\" x2=\"78\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"94\" y1=\"250\" x2=\"112\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"128\" y1=\"250\" x2=\"146\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"162\" y1=\"250\" x2=\"180\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"196\" y1=\"250\" x2=\"214\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"230\" y1=\"250\" x2=\"248\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"264\" y1=\"250\" x2=\"282\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><line x1=\"298\" y1=\"250\" x2=\"316\" y2=\"250\" stroke=\"#ffffff\" stroke-width=\"2.5\"/><text x=\"185.0\" y=\"290.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\">Piste (décollage vers la droite)</text><line x1=\"330\" y1=\"250\" x2=\"392\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"/><circle cx=\"400\" cy=\"250\" r=\"8\" fill=\"#dc2626\" stroke=\"#ffffff\" stroke-width=\"2\"/><text x=\"394.0\" y=\"290.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Panne</text><path d=\"M400,250 A60,60 0 0 0 400,130\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"9 6\"/><line x1=\"400\" y1=\"130\" x2=\"215\" y2=\"130\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"9 6\" marker-end=\"url(#u7s5f1r)\"/><text x=\"300.0\" y=\"116.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Après 180° : parallèle à la piste, décalé</text><line x1=\"365\" y1=\"134\" x2=\"365\" y2=\"246\" stroke=\"#334155\" stroke-width=\"1.8\" marker-end=\"url(#u7s5f1k)\"/><line x1=\"365\" y1=\"246\" x2=\"365\" y2=\"134\" stroke=\"#334155\" stroke-width=\"1.8\" marker-end=\"url(#u7s5f1k)\"/><text x=\"355.0\" y=\"186.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"end\" font-weight=\"bold\">2 rayons</text><text x=\"355.0\" y=\"205.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"end\">de virage</text><line x1=\"670\" y1=\"40\" x2=\"590\" y2=\"40\" stroke=\"#1d4ed8\" stroke-width=\"4\" marker-end=\"url(#u7s5f1b)\"/><text x=\"670.0\" y=\"68.0\" font-size=\"15\" fill=\"#1d4ed8\" text-anchor=\"end\" font-weight=\"bold\">Vent</text><rect x=\"20\" y=\"16\" width=\"440\" height=\"78\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/><text x=\"34.0\" y=\"40.0\" font-size=\"16\" fill=\"#991b1b\" text-anchor=\"start\" font-weight=\"bold\">Demi-tour à basse hauteur : à proscrire</text><text x=\"34.0\" y=\"62.0\" font-size=\"15\" fill=\"#7f1d1d\" text-anchor=\"start\">Le virage accroît vitesse de décrochage et taux de chute ;</text><text x=\"34.0\" y=\"82.0\" font-size=\"15\" fill=\"#7f1d1d\" text-anchor=\"start\">il faut bien plus de 180° et l'on se pose vent arrière.</text></svg>",
+       "caption": "Vue de dessus. Sous la hauteur de sécurité, on se pose dans un secteur d'environ 30° de part et d'autre de l'axe. Un demi-tour de 180° laisse l'avion parallèle à la piste, décalé de deux rayons de virage : il faudrait encore virer, bas et lent, pour s'aligner, et l'on se poserait vent arrière."
+      },
+      {
+       "title": "Distance de plané et vent",
+       "svg": "<svg viewBox=\"0 0 700 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u7s5f2k\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#334155\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"400\" fill=\"#ffffff\"/><rect x=\"0\" y=\"320\" width=\"700\" height=\"80\" fill=\"#e7e5e4\"/><line x1=\"0\" y1=\"320\" x2=\"700\" y2=\"320\" stroke=\"#57534e\" stroke-width=\"2\"/><line x1=\"70\" y1=\"110\" x2=\"70\" y2=\"320\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5 5\"/><text x=\"62.0\" y=\"215.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"end\" font-weight=\"bold\">3 500 ft</text><circle cx=\"70\" cy=\"110\" r=\"7\" fill=\"#334155\"/><text x=\"20.0\" y=\"34.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Panne à 3 500 ft sol : plané à 65 kt et 700 ft/min, soit 5 min</text><line x1=\"70\" y1=\"110\" x2=\"362.5\" y2=\"320\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"362.5\" y1=\"320\" x2=\"362.5\" y2=\"330\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"362.5\" y=\"350.0\" font-size=\"16\" fill=\"#dc2626\" text-anchor=\"middle\" font-weight=\"bold\">3,75 NM</text><line x1=\"70\" y1=\"110\" x2=\"492.5\" y2=\"320\" stroke=\"#0f766e\" stroke-width=\"3\"/><line x1=\"492.5\" y1=\"320\" x2=\"492.5\" y2=\"330\" stroke=\"#0f766e\" stroke-width=\"3\"/><text x=\"492.5\" y=\"350.0\" font-size=\"16\" fill=\"#0f766e\" text-anchor=\"middle\" font-weight=\"bold\">5,4 NM</text><line x1=\"70\" y1=\"110\" x2=\"622.5\" y2=\"320\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><line x1=\"622.5\" y1=\"320\" x2=\"622.5\" y2=\"330\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><text x=\"622.5\" y=\"350.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\">7,1 NM</text><rect x=\"400\" y=\"64\" width=\"284\" height=\"104\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"414\" y1=\"85\" x2=\"448\" y2=\"85\" stroke=\"#dc2626\" stroke-width=\"4\"/><text x=\"458.0\" y=\"90.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Vent de face 20 kt : 45 kt sol</text><line x1=\"414\" y1=\"115\" x2=\"448\" y2=\"115\" stroke=\"#0f766e\" stroke-width=\"4\"/><text x=\"458.0\" y=\"120.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Air calme : 65 kt sol</text><line x1=\"414\" y1=\"145\" x2=\"448\" y2=\"145\" stroke=\"#1d4ed8\" stroke-width=\"4\"/><text x=\"458.0\" y=\"150.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Vent arrière 20 kt : 85 kt sol</text><text x=\"350.0\" y=\"384.0\" font-size=\"14\" fill=\"#475569\" text-anchor=\"middle\">Même durée de plané : seule la distance sol change (échelles différentes)</text></svg>",
+       "caption": "Panne à 3 500 ft sol, plané à 65 kt et 700 ft/min : 5 min en l'air quel que soit le vent. La distance sol vaut vitesse sol × temps : 3,75 NM avec 20 kt de face, 5,4 NM en air calme, 7,1 NM avec 20 kt arrière."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s5q01",
+       "q": "Qu'est-ce qui distingue un atterrissage de précaution d'un atterrissage forcé ?",
+       "choices": [
+        "Il est imposé par une panne totale, qui ne permet pas de remise de gaz",
+        "Il se pratique sur un aérodrome fermé, avec l'accord préalable de l'ATC",
+        "Il est décidé moteur disponible, avec le temps de reconnaître le champ",
+        "Il se fait moteur coupé volontairement, pour économiser le carburant"
+       ],
+       "answer": 2,
+       "explanation": "L'atterrissage de précaution est un choix : le pilote interrompt le vol (météo, nuit, carburant, ennui naissant) alors que le moteur fonctionne encore, ce qui lui laisse du temps et des alternatives pour reconnaître le terrain. L'atterrissage forcé est imposé par la panne : un seul essai, sans remise de gaz."
+      },
+      {
+       "id": "u7s5q02",
+       "q": "Au briefing avant décollage, à quoi sert la « hauteur de sécurité » que vous annoncez ?",
+       "choices": [
+        "À fixer la hauteur sous laquelle, en panne, on se pose sans faire demi-tour",
+        "À fixer la hauteur minimale de survol des agglomérations imposée par SERA",
+        "À fixer la hauteur à laquelle on rentre les volets après le décollage",
+        "À fixer la hauteur du tour de piste publiée sur la carte VAC du terrain"
+       ],
+       "answer": 0,
+       "explanation": "Ce n'est pas une valeur réglementaire : elle se décide au briefing, avec l'instructeur, selon l'avion, le vent et l'environnement. En dessous, une panne impose de se poser à peu près droit devant ; au-dessus, d'autres options deviennent possibles. La hauteur du tour de piste, elle, figure sur la carte VAC."
+      },
+      {
+       "id": "u7s5q03",
+       "q": "Pendant le roulement au décollage, avant la rotation, le moteur perd nettement de la puissance. Que faites-vous ?",
+       "choices": [
+        "Vous poursuivez le décollage pour gagner de la hauteur",
+        "Vous tirez le réchauffage carburateur et poursuivez",
+        "Vous réduisez les gaz, freinez et restez sur la piste",
+        "Vous cabrez pour décoller court avant la fin de piste"
+       ],
+       "answer": 2,
+       "explanation": "Au sol, l'arrêt sur la piste restante est presque toujours la solution la plus sûre : interrompre le décollage, réduire, freiner, puis couper si nécessaire. Poursuivre avec un moteur défaillant, ou cabrer pour quitter le sol trop tôt, expose à une panne en montée initiale, à basse hauteur et à faible vitesse."
+      },
+      {
+       "id": "u7s5q04",
+       "q": "Le moteur s'arrête en croisière. Pourquoi affiche-t-on la vitesse de finesse maximale ?",
+       "choices": [
+        "Parce qu'elle donne la plus grande distance de plané en air calme",
+        "Parce qu'elle donne le plus faible taux de chute, donc le plus long temps en l'air",
+        "Parce qu'elle est la plus faible vitesse utilisable avant le décrochage",
+        "Parce qu'elle fait tourner l'hélice en moulinet, ce qui aide au redémarrage"
+       ],
+       "answer": 0,
+       "explanation": "À la finesse maximale, le rapport portance/traînée est le plus grand : l'avion parcourt la plus grande distance pour une hauteur perdue, ce qui élargit le choix des champs. Le plus faible taux de chute, donc le plus long temps en l'air, s'obtient à une vitesse un peu plus faible : il ne sert pas à aller loin."
+      },
+      {
+       "id": "u7s5q05",
+       "q": "En approche moteur coupé vers le champ choisi, pourquoi évite-t-on d'en changer à basse hauteur ?",
+       "choices": [
+        "Parce qu'il faut prévenir l'ATC avant de modifier la trajectoire prévue",
+        "Parce que, sous 500 ft de hauteur, SERA limite l'inclinaison à 15°",
+        "Parce que virer et reprendre une finale consomme une hauteur qui manque",
+        "Parce que le premier champ repéré est en principe le plus proche"
+       ],
+       "answer": 2,
+       "explanation": "Chaque virage et chaque nouvelle mise en finale coûtent de la hauteur, et l'inclinaison augmente la vitesse de décrochage et le taux de chute près du sol. Un champ correct, bien approché, vaut mieux qu'un champ meilleur atteint trop bas ou en virage serré. SERA ne fixe pas d'inclinaison maximale de ce genre, et aucun message à l'ATC n'est exigé avant de changer de trajectoire."
+      },
+      {
+       "id": "u7s5q06",
+       "q": "Pendant la recherche d'un champ, lequel de ces indices renseigne le mieux sur la direction du vent au sol ?",
+       "choices": [
+        "La fumée d'une cheminée ou d'un feu de jardin",
+        "L'orientation des sillons d'un champ labouré",
+        "La direction des routes et des voies ferrées",
+        "Le sens des ombres portées par les arbres"
+       ],
+       "answer": 0,
+       "explanation": "Fumées, drapeaux, ondulations d'un champ de blé ou risées sur un plan d'eau montrent le vent réel au sol ; la dérive constatée en vol aide aussi. Les sillons, les routes ou les ombres n'ont pas de rapport avec le vent : se fier à eux peut mener à un atterrissage vent arrière."
+      },
+      {
+       "id": "u7s5q07",
+       "q": "En approche d'un champ, pourquoi faut-il repérer les pylônes et les poteaux ?",
+       "choices": [
+        "Parce qu'ils marquent la limite des propriétés, donc la longueur du champ",
+        "Parce qu'ils servent de repères pour estimer la force du vent au sol",
+        "Parce qu'ils signalent les zones interdites au survol à basse hauteur",
+        "Parce qu'ils trahissent des fils souvent invisibles jusqu'au dernier moment"
+       ],
+       "answer": 3,
+       "explanation": "Les câbles électriques et téléphoniques se voient très mal, surtout à contre-jour ; les pylônes et poteaux sont les meilleurs indices de leur présence. Une ligne en finale ou en bout de champ suffit à écarter un terrain, ou impose de la franchir avec une large marge."
+      },
+      {
+       "id": "u7s5q08",
+       "q": "Juste avant un atterrissage forcé, pourquoi déverrouille-t-on les portes ?",
+       "choices": [
+        "Pour réduire la vitesse grâce à la traînée des portes ouvertes",
+        "Pour laisser entrer de l'air frais qui chasse les vapeurs d'essence",
+        "Pour équilibrer la pression entre la cabine et l'extérieur au toucher",
+        "Parce que la cellule déformée par le choc pourrait les coincer"
+       ],
+       "answer": 3,
+       "explanation": "À l'impact, la cellule peut se déformer et bloquer des portes verrouillées, alors que l'évacuation doit être rapide (risque d'incendie). On les déverrouille, ou on les entrouvre si le manuel de vol le prévoit, juste avant le toucher ; la traînée ainsi créée est négligeable."
+      },
+      {
+       "id": "u7s5q09",
+       "q": "Le moteur s'arrête à 250 ft après le décollage ; au-delà de la piste s'étendent des champs dégagés. Où vous posez-vous ?",
+       "choices": [
+        "Sur la piste, après un demi-tour serré à 45° d'inclinaison pour la rejoindre",
+        "Sur le plus grand des champs du secteur, même s'il impose un virage de 120° à gauche",
+        "Droit devant, en ne vous écartant que d'environ 30° de part et d'autre de l'axe",
+        "Sur le champ le plus proche situé à 90° à gauche de l'axe, en virage serré"
+       ],
+       "answer": 2,
+       "explanation": "À cette hauteur, chaque virage coûte une hauteur qu'on n'a pas et augmente la vitesse de décrochage : on choisit le meilleur champ dans un secteur d'environ 30° de part et d'autre de l'axe, en virages faibles. Le demi-tour serré, piège classique, mène à la perte de contrôle et à un atterrissage vent arrière."
+      },
+      {
+       "id": "u7s5q10",
+       "q": "Le moteur s'arrête à 1 500 ft après le décollage, bien au-dessus de la hauteur de sécurité briefée. Quelle affirmation est juste ?",
+       "choices": [
+        "Il faut se poser dans le secteur de 30° devant, comme sous cette hauteur",
+        "Le retour vers la piste se fait par un virage serré à 60° d'inclinaison, pour gagner du temps",
+        "Il faut d'abord rechercher la cause de la panne, le choix du terrain venant ensuite",
+        "Le choix s'élargit : champ latéral, voire retour au terrain si hauteur et vent le permettent"
+       ],
+       "answer": 3,
+       "explanation": "Au-dessus de la hauteur briefée, on dispose de temps et de distance : un champ latéral ou un retour vers le terrain deviennent possibles, à inclinaison modérée et en tenant compte du vent. Un virage serré fait chuter la vitesse et la hauteur ; la recherche de la cause vient après le choix du terrain."
+      },
+      {
+       "id": "u7s5q11",
+       "q": "Lors d'une approche moteur réduit vers un champ, pourquoi vaut-il mieux arriver un peu trop haut que trop bas ?",
+       "choices": [
+        "Une approche trop basse se corrige en cabrant, ce qui allonge alors nettement le plané",
+        "Une approche trop haute raccourcit la distance d'arrêt grâce à la pente",
+        "Un excès de hauteur se perd (glissade, volets) ; un manque ne se rattrape pas",
+        "Une approche trop basse se corrige en sortant les volets pour mieux porter"
+       ],
+       "answer": 2,
+       "explanation": "Sans moteur, l'énergie ne fait que diminuer : un excès de hauteur se dissipe (glissade, volets, trajectoire allongée), un manque ne se compense pas. Cabrer pour « tendre » le plané fait passer sous la vitesse de finesse max et raccourcit en fait la distance, jusqu'au décrochage ; les volets ajoutent surtout de la traînée."
+      },
+      {
+       "id": "u7s5q12",
+       "q": "Le seul champ atteignable est labouré. Comment vous y posez-vous ?",
+       "choices": [
+        "En travers des sillons, pour que la terre freine davantage les roues",
+        "En diagonale des sillons, pour répartir le choc entre les deux roues",
+        "Le long des sillons, face au vent si possible, à la plus faible vitesse",
+        "Le long des sillons, vent arrière, pour garder une vitesse de contrôle"
+       ],
+       "answer": 2,
+       "explanation": "Pris en travers, les sillons arrachent le train ou font capoter l'avion. Le long des sillons, l'avion roule comme sur des rails ; on reste face au vent si possible pour réduire la vitesse sol et l'on touche à la plus faible vitesse sous contrôle."
+      },
+      {
+       "id": "u7s5q13",
+       "q": "Un champ assez long présente une pente nette ; le vent est calme. Dans quel sens vous posez-vous ?",
+       "choices": [
+        "En descente : la pente prolonge le plané jusqu'au toucher",
+        "En travers de la pente, pour en limiter l'effet au roulage",
+        "En montée : la pente aide à freiner et raccourcit l'arrêt",
+        "En descente : la vitesse reste plus stable jusqu'à l'arrêt"
+       ],
+       "answer": 2,
+       "explanation": "Une pente montante ralentit l'avion après le toucher et raccourcit nettement la distance d'arrêt ; une pente descendante l'allonge, parfois au-delà de la longueur du champ. En travers, l'avion devient difficile à tenir et peut se renverser."
+      },
+      {
+       "id": "u7s5q14",
+       "q": "Selon le bureau australien de la sécurité des transports (ATSB), comment la perte partielle de puissance se compare-t-elle à la panne totale sur les monomoteurs légers ?",
+       "choices": [
+        "Elle est environ trois fois plus fréquente que la panne totale",
+        "Elle est environ trois fois moins fréquente que la panne totale",
+        "Elle est aussi fréquente, mais bien moins souvent mortelle",
+        "Elle est devenue rare depuis la généralisation de l'injection"
+       ],
+       "answer": 0,
+       "explanation": "L'ATSB relève qu'elle est environ trois fois plus fréquente que la panne totale et qu'elle a causé, de 2000 à 2010, neuf accidents mortels après le décollage contre aucun pour les pannes totales : le moteur qui « tire encore » pousse à des décisions risquées, comme le demi-tour ou la poursuite du vol."
+      },
+      {
+       "id": "u7s5q15",
+       "q": "L'atterrissage forcé est imminent ; les volets de votre avion sont à commande électrique. Quand coupez-vous le contact général ?",
+       "choices": [
+        "Dès la panne, avant même de choisir le champ et de sortir les volets",
+        "Après l'arrêt complet de l'avion, au moment d'évacuer",
+        "Avant le message, pour protéger la radio du choc à venir",
+        "Après le message de détresse et la sortie des volets voulus"
+       ],
+       "answer": 3,
+       "explanation": "Couper le contact général avant l'impact réduit le risque d'incendie, mais il alimente radio, transpondeur et volets électriques : on passe d'abord le MAYDAY et l'on sort les volets voulus, puis on coupe, selon le manuel de vol. Le couper dès la panne priverait de radio et de volets."
+      },
+      {
+       "id": "u7s5q16",
+       "q": "Vous décidez un atterrissage de précaution dans un champ, moteur encore disponible. Pourquoi effectuer d'abord un ou plusieurs passages au-dessus du champ ?",
+       "choices": [
+        "Pour signaler votre intention aux riverains et leur faire dégager la zone",
+        "Pour refroidir le moteur à puissance réduite avant de le couper au sol",
+        "Pour respecter l'obligation SERA de survoler deux fois un terrain non publié",
+        "Pour vérifier surface, longueur, obstacles, pente et vent avant de s'engager"
+       ],
+       "answer": 3,
+       "explanation": "Moteur disponible, on a le temps de reconnaître le terrain : nature et état de la surface, longueur utilisable, obstacles en approche et en bout (lignes électriques, arbres, fossés), pente et direction du vent. Ces passages se font à une hauteur sûre, sans négliger le pilotage. Aucune règle n'impose deux survols, et leur but n'est ni d'alerter les riverains ni de refroidir le moteur."
+      },
+      {
+       "id": "u7s5q17",
+       "q": "Vous décollez face à un vent de 15 kt et le moteur s'arrête en montée initiale. Si vous touchez à 60 kt indiqués, comment un atterrissage après demi-tour se compare-t-il à un atterrissage droit devant ?",
+       "choices": [
+        "60 kt sol dans les deux cas : le vent ne compte pas au moment du toucher",
+        "75 kt sol contre 45 kt, soit environ 1,7 fois plus d'énergie à dissiper",
+        "45 kt sol contre 75 kt : le vent arrière ralentit l'avion après le virage",
+        "75 kt sol contre 45 kt, soit près de 3 fois plus d'énergie à dissiper"
+       ],
+       "answer": 3,
+       "explanation": "Droit devant, face au vent : 60 − 15 = 45 kt de vitesse sol. Après un demi-tour, vent arrière : 60 + 15 = 75 kt. L'énergie varie comme le carré de la vitesse sol : (75/45)² ≈ 2,8, soit près de trois fois plus d'énergie et une distance d'arrêt presque triplée. 1,7 n'est que le rapport des vitesses ; c'est le vent de face, et non le vent arrière, qui réduit la vitesse sol."
+      },
+      {
+       "id": "u7s5q18",
+       "q": "Panne à 3 500 ft sol. Votre avion plane à 65 kt avec un taux de chute de 700 ft/min ; le vent de face vaut 20 kt. Quelle distance pouvez-vous parcourir par rapport au sol ?",
+       "choices": [
+        "Environ 5,4 NM",
+        "Environ 3,8 NM",
+        "Environ 7,1 NM",
+        "Environ 2,9 NM"
+       ],
+       "answer": 1,
+       "explanation": "Durée du plané : 3 500 ÷ 700 = 5 min, quel que soit le vent. Vitesse sol : 65 − 20 = 45 kt, soit 45 × 5/60 = 3,75 NM, environ 3,8 NM. Les 5,4 NM correspondent à l'air calme (65 kt) et les 7,1 NM au même vent reçu dans le dos (85 kt)."
+      },
+      {
+       "id": "u7s5q19",
+       "q": "Le moteur s'arrête à 3 800 ft QNH au-dessus d'une plaine dont l'altitude est de 800 ft. Finesse 10, air calme. Quelle distance de plané pouvez-vous espérer au mieux ?",
+       "choices": [
+        "Environ 6,3 NM",
+        "Environ 9,1 NM",
+        "Environ 4,9 NM",
+        "Environ 5,7 NM"
+       ],
+       "answer": 2,
+       "explanation": "La finesse s'applique à la hauteur au-dessus du sol, pas à l'altitude : 3 800 − 800 = 3 000 ft. Distance = 3 000 × 10 = 30 000 ft, soit 30 000 ÷ 6 076 ≈ 4,9 NM (environ 9,1 km : ne confondez pas kilomètres et milles). 6,3 NM vient de l'altitude QNH prise pour une hauteur ; 5,7 correspond à des miles terrestres de 5 280 ft."
+      },
+      {
+       "id": "u7s5q20",
+       "q": "Par rapport à un toucher à 70 kt de vitesse sol, un toucher à 50 kt ramène l'énergie à dissiper à environ :",
+       "choices": [
+        "50 % de sa valeur",
+        "71 % de sa valeur",
+        "29 % de sa valeur",
+        "85 % de sa valeur"
+       ],
+       "answer": 0,
+       "explanation": "L'énergie cinétique varie comme le carré de la vitesse : (50/70)² = 2 500/4 900 ≈ 0,51. L'énergie, comme la distance nécessaire pour s'arrêter, est donc presque divisée par deux ; 71 % serait le simple rapport des vitesses. D'où le toucher face au vent, à la plus faible vitesse sous contrôle."
+      },
+      {
+       "id": "u7s5q21",
+       "q": "À 400 ft après le décollage, le moteur perd de la puissance : l'avion tient tout juste son palier. Devant vous, des champs dégagés. Quelle conduite adoptez-vous ?",
+       "choices": [
+        "Virer de 180° vers la piste tant que le moteur fournit de la puissance",
+        "Garder la puissance restante et une vitesse sûre, et viser un champ dans l'axe",
+        "Cabrer pour gagner de la hauteur, quitte à passer sous la vitesse de montée",
+        "Couper le moteur pour se ramener à une panne totale, cas mieux entraîné"
+       ],
+       "answer": 1,
+       "explanation": "La puissance restante allonge le plané et donne du temps, mais elle peut disparaître à tout moment. On tient une vitesse sûre, sans virage serré, et l'on vise un champ dans le secteur avant. L'étude du BEA (2021) relève de nombreuses pertes de contrôle lors de virages importants ou de demi-tours dans ces situations."
+      },
+      {
+       "id": "u7s5q22",
+       "q": "En croisière à 2 500 ft sol, le moteur devient irrégulier et l'avion descend lentement à pleine puissance. Un aérodrome est à 6 NM. Quelle stratégie retenez-vous ?",
+       "choices": [
+        "Monter au maximum avant de diagnostiquer, quitte à laisser la vitesse chuter",
+        "Rejoindre l'aérodrome en restant à portée de plané de champs, prêt à s'y poser",
+        "Rejoindre l'aérodrome au plus court, en survolant au besoin une grande forêt",
+        "Réduire au ralenti pour ménager le moteur, puis le relancer près du terrain"
+       ],
+       "answer": 1,
+       "explanation": "Une perte partielle se traite comme une panne totale qui n'a pas encore eu lieu : route vers le terrain le plus proche, en gardant un champ atteignable en plané, check-list de recherche de la cause, message (PAN PAN ou MAYDAY). Réduire au ralenti risque de faire perdre la puissance restante ; survoler une forêt supprime toute option."
+      },
+      {
+       "id": "u7s5q23",
+       "q": "Dans laquelle de ces situations un atterrissage de précaution est-il la décision la plus sage ?",
+       "choices": [
+        "Le plafond s'abaisse, la nuit approche et aucun aérodrome n'est atteignable à temps",
+        "Le terrain de destination annonce un vent de face de 15 kt, dans l'axe de piste",
+        "Un passager signale que la radio grésille un peu sur la fréquence du SIV",
+        "La consommation suit le devis et la réserve finale reste disponible à l'arrivée"
+       ],
+       "answer": 0,
+       "explanation": "L'atterrissage de précaution sert à interrompre le vol avant que la situation ne devienne critique : météo qui se ferme, nuit, carburant insuffisant, ennui mécanique ou malaise. Un vent dans l'axe, une radio qui grésille ou une consommation conforme ne justifient pas de se poser dans un champ."
+      },
+      {
+       "id": "u7s5q24",
+       "q": "Amerrissage forcé par mer formée : la houle principale est bien marquée et le vent souffle de travers par rapport à elle. Quel cap choisissez-vous ?",
+       "choices": [
+        "Face au vent, en touchant la face de la vague qui arrive vers l'avion",
+        "Perpendiculaire à la houle, pour toucher entre deux crêtes successives",
+        "Parallèle à la houle, sur la crête ou le dos de la vague",
+        "Vent arrière, pour écourter le temps passé au-dessus de l'eau froide"
+       ],
+       "answer": 2,
+       "explanation": "Une vague prise de face agit comme un mur. Par forte houle, on se pose parallèlement à celle-ci, de préférence sur la crête ou le dos de la vague, en acceptant du vent de travers ; parmi les caps parallèles à la houle, on retient celui qui offre le plus de vent de face. Gilets enfilés, portes déverrouillées, toucher lent et cabré."
+      }
+     ]
+    },
+    {
+     "id": "u7s6",
+     "title": "Incendie, fumée et marchandises dangereuses",
+     "icon": "🧯",
+     "tips": "Le feu est l'urgence la plus pressante : en vol, il laisse peu de minutes. Deux réflexes : priver le feu de ce qui l'alimente, et se poser au plus tôt. Les procédures ci-dessous sont des procédures types ; la check-list du manuel de vol fait foi.\n\nLe triangle du feu :\n• Un feu exige un combustible (essence, huile, isolants, sièges), un comburant (l'oxygène de l'air) et une énergie d'activation (étincelle, échappement brûlant, court-circuit).\n• Supprimer un côté l'éteint : fermer l'essence (combustible), fermer aérations et chauffage pendant l'extinction (oxygène), couper l'électricité (échauffement d'un court-circuit) ; l'extincteur interrompt la combustion.\n\nFeu à la mise en route :\n• Cause typique : trop d'injections (primer). L'essence en excès s'accumule dans l'admission ou coule sous le moteur, et un retour de flamme l'enflamme.\n• Procédure type (Cessna 172) : continuer à lancer le démarreur, pour aspirer flammes et essence dans le moteur. S'il démarre, le laisser tourner un moment, puis l'arrêter et faire inspecter. Sinon : plein gaz, mélange étouffoir, toujours en lançant, puis tout couper (magnétos, contact général, robinet), faire venir un extincteur et éteindre.\n• Prévention : injections conformes au manuel ; après un démarrage laborieux, avancer d'au moins une longueur d'avion pour quitter l'essence répandue.\n\nFeu moteur en vol :\n• Signes : flammes, fumée sortant du capot, odeur de brûlé, indications moteur anormales.\n• Robinet d'essence fermé, pompe électrique arrêtée (et mélange étouffoir selon le manuel). Certaines procédures demandent plein gaz : le moteur consomme vite l'essence restée dans le carburateur et les tuyauteries.\n• Magnétos coupées une fois le moteur arrêté faute d'essence ; chauffage et air chaud fermés.\n• MAYDAY et 7700, puis contact général coupé selon le manuel.\n• Plané vers un champ et atterrissage forcé. Si les flammes persistent, certains manuels (Cessna) font augmenter la vitesse pour trouver un mélange qui ne brûle plus. Ne jamais redémarrer.\n\nFeu électrique, fumée en cabine :\n• Signes : odeur d'isolant brûlé, fumée âcre derrière le tableau, disjoncteur qui saute, équipements qui s'éteignent.\n• Contact général coupé, aérations et chauffage fermés pour ne pas attiser le feu, extincteur sur les flammes.\n• Feu éteint : aérer pour évacuer fumées et agent extincteur, se poser sur le terrain le plus proche. Un disjoncteur sauté ne se réarme pas ; l'électricité ne se rétablit que selon la check-list.\n• Le moteur tourne toujours (magnétos), mais radio, transpondeur et volets électriques sont perdus : MAYDAY avant de couper, si le temps le permet.\n\nFeu de cabine et batteries lithium :\n• Siège, bagage, cigarette : viser la base des flammes, aérer ensuite, se poser.\n• Téléphone, tablette ou batterie qui chauffe, fume ou brûle : risque d'emballement thermique, de cellule en cellule. FAA (SAFO 09013) : éteindre les flammes, puis refroidir l'appareil avec de l'eau ou une boisson non alcoolisée ; ne pas le déplacer.\n\nExtincteurs :\n• Part-NCO (NCO.IDE.A.160) : au moins un extincteur à main dans le poste de pilotage, sauf avions ELA1 (1 200 kg au plus, non complexes) ; agent adapté aux feux probables, limitant le risque de gaz toxiques. En emporter un reste prudent.\n• Halon 1211 : efficace, non conducteur, peu de résidus ; le règlement (UE) 2024/590 a fixé au 31 décembre 2025 la fin de l'usage des extincteurs portatifs au halon en cabine et au poste de pilotage : on les remplace par des agents de substitution.\n• La FAA (AC 20-42D) déconseille en général à bord la poudre (nuage qui masque la vue et salit les équipements) et le CO₂ (non conducteur, mais il prive d'oxygène un espace clos).\n• Avant le vol : extincteur présent, fixé, plombé, manomètre dans le vert. Pas d'eau sur un feu d'essence ni sur un circuit électrique sous tension (la batterie lithium d'un appareil portable, vue plus haut, fait exception).\n\nToxicité :\n• Fumées : monoxyde de carbone et gaz toxiques des plastiques brûlés ; dans une petite cabine, l'intoxication peut précéder les flammes.\n• L'agent lui-même, décomposé par la chaleur, peut donner des gaz irritants : aérer dès le feu éteint.\n\nAvitaillement :\n• Avion relié à la terre avant d'ouvrir le réservoir : l'électricité statique peut enflammer les vapeurs. Moteur arrêté, ni flamme ni cigarette, extincteur à portée.\n• Part-NCO (NCO.OP.145) : pas d'avitaillement en AVGAS quand des passagers embarquent, sont à bord ou débarquent.\n\nMarchandises dangereuses :\n• Articles ou matières pouvant menacer la santé, la sécurité, les biens ou l'environnement. Neuf classes ONU : 1 explosifs, 2 gaz, 3 liquides inflammables, 4 solides inflammables, 5 comburants, 6 toxiques et infectieux, 7 radioactifs, 8 corrosifs, 9 divers (batteries lithium, neige carbonique).\n• Annexe 18 de l'OACI et Instructions techniques. Part-NCO (NCO.GEN.140) : sans approbation SPA.DG, seules sont admises celles qui échappent aux Instructions (équipements exigés à bord, par exemple) ou que transportent passagers et équipage selon leur partie 8. Le commandant de bord prend des mesures raisonnables contre leur embarquement par inadvertance, informe les passagers et notifie tout accident ou incident les concernant.\n• Exemples interdits aux passagers : jerrican d'essence, cartouche de gaz de camping, feux d'artifice, essence à briquet, solvants inflammables.\n• Batteries lithium-ion de rechange : en cabine, protégées ; jusqu'à 100 Wh sans formalité, de 100 à 160 Wh avec l'accord de l'exploitant, interdites au-delà. Alcool : libre à 24 % ou moins ; de 24 à 70 %, 5 L par personne en emballage de détail ; interdit au-delà.\n• Dans la plupart des avions légers, la soute communique avec la cabine : un produit qui fuit ou chauffe menace les occupants.",
+     "vocab": [
+      {
+       "term": "Triangle du feu",
+       "translation": "Combustible, comburant et énergie d'activation, tous nécessaires"
+      },
+      {
+       "term": "Comburant",
+       "translation": "Corps qui entretient la combustion : l'oxygène de l'air"
+      },
+      {
+       "term": "Retour de flamme",
+       "translation": "Combustion qui remonte dans l'admission, souvent après un gavage"
+      },
+      {
+       "term": "Primer",
+       "translation": "Pompe d'injection d'essence pour la mise en route à froid"
+      },
+      {
+       "term": "Robinet d'essence",
+       "translation": "Commande qui ferme l'arrivée de carburant au moteur"
+      },
+      {
+       "term": "Emballement thermique",
+       "translation": "Échauffement incontrôlé d'une batterie lithium, de cellule en cellule"
+      },
+      {
+       "term": "Halon 1211",
+       "translation": "Agent gazeux non conducteur, plus admis en cabine depuis fin 2025 (UE)"
+      },
+      {
+       "term": "ELA1",
+       "translation": "Avion de 1 200 kg au plus, non complexe (pas d'extincteur exigé)"
+      },
+      {
+       "term": "NCO.IDE.A.160",
+       "translation": "Règle Part-NCO sur les extincteurs à main des avions"
+      },
+      {
+       "term": "NCO.OP.145",
+       "translation": "Règle Part-NCO sur l'avitaillement avec passagers à bord"
+      },
+      {
+       "term": "Mise à la terre",
+       "translation": "Liaison électrique qui écoule l'électricité statique à l'avitaillement"
+      },
+      {
+       "term": "Marchandises dangereuses",
+       "translation": "Articles ou matières pouvant menacer la sécurité d'un vol"
+      },
+      {
+       "term": "Instructions techniques",
+       "translation": "Texte OACI détaillant le transport des marchandises dangereuses"
+      },
+      {
+       "term": "NCO.GEN.140",
+       "translation": "Règle Part-NCO sur le transport des marchandises dangereuses"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Le triangle du feu et les gestes qui l'éteignent",
+       "svg": "<svg viewBox=\"0 0 700 430\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"430\" fill=\"#ffffff\"/><polygon points=\"350,70 170,330 530,330\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"5\" stroke-linejoin=\"round\"/><path d=\"M350,188 C380,220 388,245 380,268 C372,288 328,288 320,268 C312,245 338,230 350,188 Z\" fill=\"#f97316\"/><path d=\"M350,228 C364,244 366,258 362,268 C356,280 344,280 338,268 C334,256 344,244 350,228 Z\" fill=\"#fde047\"/><text x=\"350.0\" y=\"36.0\" font-size=\"17\" fill=\"#9a3412\" text-anchor=\"middle\" font-weight=\"bold\">Énergie d'activation</text><text x=\"350.0\" y=\"56.0\" font-size=\"14\" fill=\"#7c2d12\" text-anchor=\"middle\">étincelle, échappement, court-circuit</text><text x=\"170.0\" y=\"360.0\" font-size=\"17\" fill=\"#9a3412\" text-anchor=\"middle\" font-weight=\"bold\">Combustible</text><text x=\"170.0\" y=\"380.0\" font-size=\"14\" fill=\"#7c2d12\" text-anchor=\"middle\">essence, huile, isolants</text><text x=\"530.0\" y=\"360.0\" font-size=\"17\" fill=\"#9a3412\" text-anchor=\"middle\" font-weight=\"bold\">Comburant</text><text x=\"530.0\" y=\"380.0\" font-size=\"14\" fill=\"#7c2d12\" text-anchor=\"middle\">oxygène de l'air</text><rect x=\"14\" y=\"110\" width=\"200\" height=\"56\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"26.0\" y=\"136.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\" font-weight=\"bold\">Couper l'électricité</text><text x=\"26.0\" y=\"157.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\">contact général coupé</text><rect x=\"14\" y=\"200\" width=\"200\" height=\"56\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"26.0\" y=\"226.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\" font-weight=\"bold\">Couper l'essence</text><text x=\"26.0\" y=\"247.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\">robinet fermé</text><rect x=\"486\" y=\"110\" width=\"200\" height=\"56\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"498.0\" y=\"136.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\" font-weight=\"bold\">Extincteur</text><text x=\"498.0\" y=\"157.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\">à la base des flammes</text><rect x=\"486\" y=\"200\" width=\"200\" height=\"56\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"498.0\" y=\"226.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\" font-weight=\"bold\">Priver d'air</text><text x=\"498.0\" y=\"247.0\" font-size=\"15\" fill=\"#1e3a8a\" text-anchor=\"start\">aérations fermées</text><text x=\"350.0\" y=\"420.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Supprimer un seul des trois éléments suffit à éteindre le feu</text></svg>",
+       "caption": "Un feu exige un combustible, un comburant et une énergie d'activation. Chaque action de la procédure en supprime un : robinet d'essence fermé, aérations fermées pendant l'extinction, contact général coupé ; l'extincteur interrompt la combustion."
+      },
+      {
+       "title": "Feu moteur ou feu électrique : deux procédures types",
+       "svg": "<svg viewBox=\"0 0 700 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u7s6f2a\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#64748b\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"470\" fill=\"#ffffff\"/><text x=\"180.0\" y=\"38.0\" font-size=\"18\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\">Feu moteur en vol</text><rect x=\"20\" y=\"64\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.8\"/><circle cx=\"42\" cy=\"94.0\" r=\"13\" fill=\"#b91c1c\"/><text x=\"42.0\" y=\"99.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"64.0\" y=\"89.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Robinet d'essence fermé,</text><text x=\"64.0\" y=\"110.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">pompe électrique arrêtée</text><line x1=\"180.0\" y1=\"126\" x2=\"180.0\" y2=\"145\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"20\" y=\"148\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.8\"/><circle cx=\"42\" cy=\"178.0\" r=\"13\" fill=\"#b91c1c\"/><text x=\"42.0\" y=\"183.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">2</text><text x=\"64.0\" y=\"173.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Plein gaz si le manuel le prévoit :</text><text x=\"64.0\" y=\"194.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">le moteur s'arrête faute d'essence</text><line x1=\"180.0\" y1=\"210\" x2=\"180.0\" y2=\"229\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"20\" y=\"232\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.8\"/><circle cx=\"42\" cy=\"262.0\" r=\"13\" fill=\"#b91c1c\"/><text x=\"42.0\" y=\"267.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">3</text><text x=\"64.0\" y=\"257.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Moteur arrêté : magnétos coupées,</text><text x=\"64.0\" y=\"278.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">chauffage et air chaud fermés</text><line x1=\"180.0\" y1=\"294\" x2=\"180.0\" y2=\"313\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"20\" y=\"316\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.8\"/><circle cx=\"42\" cy=\"346.0\" r=\"13\" fill=\"#b91c1c\"/><text x=\"42.0\" y=\"351.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">4</text><text x=\"64.0\" y=\"341.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">MAYDAY et 7700, puis contact</text><text x=\"64.0\" y=\"362.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">général coupé selon le manuel</text><line x1=\"180.0\" y1=\"378\" x2=\"180.0\" y2=\"397\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"20\" y=\"400\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.8\"/><circle cx=\"42\" cy=\"430.0\" r=\"13\" fill=\"#b91c1c\"/><text x=\"42.0\" y=\"435.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">5</text><text x=\"64.0\" y=\"425.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Plané vers un champ, atterrissage</text><text x=\"64.0\" y=\"446.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">forcé, sans jamais redémarrer</text><text x=\"520.0\" y=\"38.0\" font-size=\"18\" fill=\"#1e40af\" text-anchor=\"middle\" font-weight=\"bold\">Feu électrique, fumée</text><rect x=\"360\" y=\"64\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><circle cx=\"382\" cy=\"94.0\" r=\"13\" fill=\"#1e40af\"/><text x=\"382.0\" y=\"99.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"404.0\" y=\"89.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Contact général coupé</text><text x=\"404.0\" y=\"110.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">(avionique comprise)</text><line x1=\"520.0\" y1=\"126\" x2=\"520.0\" y2=\"145\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"360\" y=\"148\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><circle cx=\"382\" cy=\"178.0\" r=\"13\" fill=\"#1e40af\"/><text x=\"382.0\" y=\"183.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">2</text><text x=\"404.0\" y=\"173.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Aérations et chauffage fermés</text><text x=\"404.0\" y=\"194.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">pour ne pas attiser le feu</text><line x1=\"520.0\" y1=\"210\" x2=\"520.0\" y2=\"229\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"360\" y=\"232\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><circle cx=\"382\" cy=\"262.0\" r=\"13\" fill=\"#1e40af\"/><text x=\"382.0\" y=\"267.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">3</text><text x=\"404.0\" y=\"257.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Extincteur à la base des flammes</text><text x=\"404.0\" y=\"278.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">si le feu est visible</text><line x1=\"520.0\" y1=\"294\" x2=\"520.0\" y2=\"313\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"360\" y=\"316\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><circle cx=\"382\" cy=\"346.0\" r=\"13\" fill=\"#1e40af\"/><text x=\"382.0\" y=\"351.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">4</text><text x=\"404.0\" y=\"341.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Feu éteint : aérer pour évacuer</text><text x=\"404.0\" y=\"362.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">fumées et agent extincteur</text><line x1=\"520.0\" y1=\"378\" x2=\"520.0\" y2=\"397\" stroke=\"#64748b\" stroke-width=\"2.5\" marker-end=\"url(#u7s6f2a)\"/><rect x=\"360\" y=\"400\" width=\"320\" height=\"60\" rx=\"9\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><circle cx=\"382\" cy=\"430.0\" r=\"13\" fill=\"#1e40af\"/><text x=\"382.0\" y=\"435.0\" font-size=\"15\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">5</text><text x=\"404.0\" y=\"425.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">Se poser au plus tôt ; ne pas</text><text x=\"404.0\" y=\"446.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\">réarmer un disjoncteur sauté</text></svg>",
+       "caption": "Séquences types à adapter au manuel de vol de l'avion, qui fait foi. Dans les deux cas, on ne réalimente pas ce qui a brûlé (moteur, circuit) et l'on se pose au plus tôt."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s6q01",
+       "q": "À la mise en route, des flammes sortent de l'admission après plusieurs injections au primer. Quelle en est la cause la plus probable ?",
+       "choices": [
+        "Une surcharge de la batterie pendant le lancement du démarreur",
+        "Un mélange trop pauvre, laissé sur étouffoir pendant la mise en route",
+        "De l'huile trop froide, enflammée par les étincelles du démarreur",
+        "L'essence injectée en excès, enflammée par un retour de flamme"
+       ],
+       "answer": 3,
+       "explanation": "Trop d'injections remplissent l'admission d'essence, qui peut aussi couler sous le moteur ; un retour de flamme l'enflamme. C'est la cause classique du feu à la mise en route : on respecte le nombre d'injections du manuel. Batterie, mélange pauvre ou huile froide n'expliquent pas ces flammes."
+      },
+      {
+       "id": "u7s6q02",
+       "q": "Quels sont les trois éléments nécessaires à un feu ?",
+       "choices": [
+        "Un combustible, de l'humidité et une énergie d'activation",
+        "Un comburant, de l'azote et une énergie d'activation",
+        "Un combustible, un comburant et de la vapeur d'eau",
+        "Un combustible, un comburant et une énergie d'activation"
+       ],
+       "answer": 3,
+       "explanation": "C'est le triangle du feu : un combustible (essence, huile, isolants), un comburant (l'oxygène de l'air) et une énergie d'activation (étincelle, surface brûlante, court-circuit). Les procédures d'urgence cherchent à supprimer l'un de ces trois éléments ; l'eau et l'humidité refroidissent au contraire."
+      },
+      {
+       "id": "u7s6q03",
+       "q": "Feu moteur en vol : en fermant le robinet d'essence, sur quel élément du triangle du feu agissez-vous ?",
+       "choices": [
+        "Sur le comburant",
+        "Sur le combustible",
+        "Sur l'énergie d'activation",
+        "Sur l'agent extincteur"
+       ],
+       "answer": 1,
+       "explanation": "Le robinet fermé prive le feu de son combustible : l'essence. Fermer aérations et chauffage agit sur le comburant et sur l'entrée des fumées ; couper le contact général supprime l'échauffement d'un court-circuit ; l'agent extincteur n'est pas un élément du triangle."
+      },
+      {
+       "id": "u7s6q04",
+       "q": "Avant d'ouvrir le réservoir pour l'avitaillement, pourquoi relie-t-on l'avion à la terre ?",
+       "choices": [
+        "Pour mesurer la quantité d'essence déjà présente dans le réservoir",
+        "Pour éviter que l'essence ne se charge en eau pendant le remplissage",
+        "Pour décharger la batterie de bord, qui pourrait provoquer un arc",
+        "Pour écouler l'électricité statique, qui pourrait enflammer les vapeurs"
+       ],
+       "answer": 3,
+       "explanation": "L'écoulement de l'essence et le frottement de l'air chargent l'avion et le pistolet d'électricité statique : une étincelle au bec du réservoir suffit à enflammer les vapeurs. Le câble de mise à la terre égalise les potentiels ; on avitaille moteur arrêté, sans flamme ni cigarette, extincteur à portée."
+      },
+      {
+       "id": "u7s6q05",
+       "q": "À quelle classe ONU de marchandises dangereuses appartiennent les batteries au lithium ?",
+       "choices": [
+        "Classe 1 : matières et objets explosibles",
+        "Classe 9 : matières et objets divers",
+        "Classe 3 : liquides inflammables",
+        "Classe 8 : matières corrosives"
+       ],
+       "answer": 1,
+       "explanation": "Les neuf classes ONU vont de 1 (explosifs) à 9 (divers). Les batteries au lithium, comme la neige carbonique, sont en classe 9 ; l'essence est un liquide inflammable de classe 3. Leur danger tient à l'emballement thermique, qui peut provoquer un incendie."
+      },
+      {
+       "id": "u7s6q06",
+       "q": "Un passager veut emporter dans les bagages un jerrican d'essence pour sa tondeuse. Que lui répondez-vous ?",
+       "choices": [
+        "Oui, s'il est rangé dans la soute avec le bouchon bien serré",
+        "Oui, à condition que le jerrican contienne moins de 5 litres",
+        "Non : c'est une marchandise dangereuse interdite aux passagers",
+        "Oui, puisque le moteur de l'avion utilise déjà de l'essence"
+       ],
+       "answer": 2,
+       "explanation": "L'essence est un liquide inflammable (classe 3) : en bagage, elle n'entre dans aucune des tolérances accordées aux passagers par les Instructions techniques. Dans un avion léger, une fuite de vapeurs dans la soute ou la cabine serait un risque d'incendie et d'intoxication. Le carburant dans les réservoirs n'est pas un bagage."
+      },
+      {
+       "id": "u7s6q07",
+       "q": "Feu de cabine en vol : selon les procédures types, pourquoi ferme-t-on aérations et chauffage avant d'utiliser l'extincteur ?",
+       "choices": [
+        "Pour éviter que l'agent extincteur ne refroidisse trop la cabine",
+        "Pour ne pas attiser les flammes et garder l'agent sur place",
+        "Pour garder la chaleur nécessaire au bon effet de l'extincteur",
+        "Pour empêcher la pression de la cabine de chuter à la décharge"
+       ],
+       "answer": 1,
+       "explanation": "Un courant d'air apporte de l'oxygène au feu et disperse l'agent extincteur. On ferme donc aérations et chauffage, on éteint, puis on aère franchement une fois le feu éteint, pour évacuer fumées et produits toxiques. Une cabine d'avion léger n'est pas pressurisée."
+      },
+      {
+       "id": "u7s6q08",
+       "q": "Quel indice oriente vers un feu électrique plutôt que vers un feu moteur ?",
+       "choices": [
+        "Une fumée noire qui sort du capot, avec une température d'huile en hausse",
+        "Des flammes visibles près du pot d'échappement, sous le capot moteur",
+        "Une odeur d'isolant brûlé derrière le tableau, et un disjoncteur qui saute",
+        "Une baisse de régime suivie de ratés, l'avion perdant de la hauteur"
+       ],
+       "answer": 2,
+       "explanation": "L'odeur âcre d'isolant, la fumée qui sort du tableau de bord, un disjoncteur qui saute ou des équipements qui s'éteignent signent un court-circuit : on coupe le contact général. Fumée ou flammes au capot et indications moteur anormales orientent vers un feu moteur ; des ratés évoquent plutôt une panne d'alimentation ou un givrage."
+      },
+      {
+       "id": "u7s6q09",
+       "q": "Feu moteur en vol, procédure type : dans quel ordre agissez-vous sur l'essence et les magnétos ?",
+       "choices": [
+        "Robinet d'essence fermé d'abord, puis magnétos coupées une fois le moteur arrêté",
+        "Magnétos coupées d'abord pour arrêter le moteur, puis robinet d'essence fermé",
+        "Magnétos et robinet d'essence ensemble, dès les premières flammes visibles au capot",
+        "Robinet d'essence fermé, les magnétos restant sur les deux jusqu'au sol"
+       ],
+       "answer": 0,
+       "explanation": "Couper l'essence d'abord laisse le moteur consommer le carburant restant dans le carburateur et les tuyauteries : il s'arrête faute d'essence, ce qui réduit ce qui peut encore brûler. On coupe ensuite les magnétos. Couper d'abord les magnétos arrêterait le moteur en laissant les tuyauteries pleines d'essence, prête à alimenter le feu."
+      },
+      {
+       "id": "u7s6q10",
+       "q": "Certaines procédures de feu moteur en vol demandent de mettre plein gaz juste après la fermeture du robinet d'essence. Dans quel but ?",
+       "choices": [
+        "Augmenter la vitesse pour souffler les flammes loin de la cabine",
+        "Garder l'alternateur en charge pour alimenter radio et transpondeur jusqu'au sol",
+        "Faire consommer vite l'essence restée dans le carburateur et les tuyauteries",
+        "Refroidir le moteur grâce au surplus d'air et d'essence admis dans les cylindres"
+       ],
+       "answer": 2,
+       "explanation": "Robinet fermé, plein gaz : le moteur aspire et brûle en quelques secondes l'essence restante, puis s'arrête faute de carburant, ce qui prive le feu de son combustible. On coupe alors les magnétos. Ce n'est pas un moyen de prendre de la vitesse : l'hélice ne tire bientôt plus."
+      },
+      {
+       "id": "u7s6q11",
+       "q": "Selon le Part-NCO (NCO.IDE.A.160), un avion ELA1, comme beaucoup d'avions d'aéroclub, doit-il emporter un extincteur à main ?",
+       "choices": [
+        "Non, les ELA1 en sont exemptés ; en avoir un à bord reste prudent",
+        "Oui, au moins un extincteur à main à emporter dans le poste de pilotage",
+        "Oui, dès qu'un passager est à bord, à portée de la cabine",
+        "Non, sauf pour les ELA1 effectuant des vols de nuit ou au-dessus de l'eau"
+       ],
+       "answer": 0,
+       "explanation": "NCO.IDE.A.160 impose au moins un extincteur à main dans le poste de pilotage des avions, sauf les avions ELA1 (1 200 kg au plus, non complexes). L'agent doit convenir aux feux probables et limiter le risque de gaz toxiques. Beaucoup d'avions légers en emportent néanmoins : c'est une sage précaution."
+      },
+      {
+       "id": "u7s6q12",
+       "q": "Pourquoi un extincteur à poudre est-il peu adapté dans un poste de pilotage ?",
+       "choices": [
+        "Sa poudre conduit l'électricité et aggrave les feux électriques",
+        "Son nuage masque la vue et salit instruments et équipements",
+        "Il est inefficace sur les feux de liquides comme l'essence",
+        "Il dégage du monoxyde de carbone au contact des flammes"
+       ],
+       "answer": 1,
+       "explanation": "La poudre éteint bien de nombreux feux, mais elle forme un nuage qui peut priver le pilote de visibilité et se dépose partout, jusque dans les instruments. La FAA (AC 20-42D) déconseille en général la poudre et le CO₂ à bord ; on préfère les agents gazeux, aujourd'hui les substituts du halon."
+      },
+      {
+       "id": "u7s6q13",
+       "q": "Pourquoi un extincteur au CO₂ est-il déconseillé dans la petite cabine fermée d'un avion léger ?",
+       "choices": [
+        "Il conduit l'électricité et aggrave les courts-circuits",
+        "Il chasse l'oxygène : les occupants risquent l'asphyxie",
+        "Il dépose une poudre qui masque la vue du pilote",
+        "Il est inefficace sur les feux d'essence et d'huile"
+       ],
+       "answer": 1,
+       "explanation": "Le CO₂ éteint en remplaçant l'oxygène : dans un petit volume clos, il peut aussi en priver les occupants, avec un risque d'hypoxie. Il n'est pas conducteur et ne laisse pas de poudre. La FAA déconseille en général le CO₂ et la poudre à bord des aéronefs."
+      },
+      {
+       "id": "u7s6q14",
+       "q": "Selon le Part-NCO (NCO.OP.145), peut-on avitailler en AVGAS pendant que vos passagers restent assis à bord ?",
+       "choices": [
+        "Oui, si le commandant de bord reste à côté, prêt à diriger l'évacuation",
+        "Oui, si les portes restent ouvertes et les ceintures des passagers détachées",
+        "Oui, pour un simple appoint d'AVGAS de quelques litres, moteur arrêté",
+        "Non, pas d'AVGAS quand des passagers embarquent, sont à bord ou débarquent"
+       ],
+       "answer": 3,
+       "explanation": "NCO.OP.145 interdit l'avitaillement en AVGAS (ou en carburant à large coupe) lorsque des passagers embarquent, sont à bord ou débarquent. La présence d'une personne qualifiée prête à diriger l'évacuation, portes et ceintures ouvertes, ne concerne que les autres carburants."
+      },
+      {
+       "id": "u7s6q15",
+       "q": "Selon le Part-NCO (NCO.GEN.140), quelle obligation pèse sur le commandant de bord en matière de marchandises dangereuses ?",
+       "choices": [
+        "Éviter leur embarquement par inadvertance et en informer les passagers",
+        "Obtenir une approbation SPA.DG avant de transporter des bagages de passagers",
+        "Faire contrôler chaque bagage par un agent de sûreté avant un vol privé",
+        "Déclarer les bagages à l'ATC dans la case 18 du plan de vol avant le départ"
+       ],
+       "answer": 0,
+       "explanation": "NCO.GEN.140 demande au commandant de bord de prendre toutes les mesures raisonnables pour éviter qu'elles soient embarquées par inadvertance, d'informer les passagers et de notifier tout accident ou incident les concernant. Les bagages des passagers relèvent de la partie 8 des Instructions techniques, sans approbation SPA.DG."
+      },
+      {
+       "id": "u7s6q16",
+       "q": "Lequel de ces articles peut se trouver à bord sans constituer un transport de marchandises dangereuses soumis aux Instructions techniques ?",
+       "choices": [
+        "Une cartouche de gaz de camping, rangée au fond d'un sac de voyage",
+        "L'extincteur de bord, équipement exigé pour l'exploitation de l'avion",
+        "Un bidon de solvant inflammable gardé à bord pour nettoyer le pare-brise",
+        "Des feux d'artifice emportés par un passager pour une fête en famille"
+       ],
+       "answer": 1,
+       "explanation": "Les articles exigés à bord par la réglementation de navigabilité ou d'exploitation, comme l'extincteur d'un avion qui doit en emporter, échappent aux Instructions techniques (partie 1). Gaz de camping, solvants inflammables ou feux d'artifice sont des marchandises dangereuses que les passagers ne peuvent pas emporter."
+      },
+      {
+       "id": "u7s6q17",
+       "q": "Lors d'une mise en route, un feu se déclare à l'admission et le moteur ne démarre pas. Que prévoit la procédure type du Cessna 172 ?",
+       "choices": [
+        "Cesser de lancer, ouvrir le capot et souffler les flammes avec un chiffon",
+        "Gaz réduits, mélange plein riche, puis relancer après trente secondes d'attente",
+        "Injecter de l'essence au primer pour que le moteur démarre et souffle le feu",
+        "Plein gaz, mélange étouffoir, continuer à lancer, puis tout couper et éteindre"
+       ],
+       "answer": 3,
+       "explanation": "En continuant à lancer, le moteur aspire flammes et essence ; plein gaz et mélange étouffoir vident l'admission sans y ajouter d'essence. Si le feu persiste, on coupe tout (magnétos, contact général, robinet), on fait venir un extincteur et l'on éteint. Injecter encore de l'essence nourrirait le feu."
+      },
+      {
+       "id": "u7s6q18",
+       "q": "Le moteur n'a démarré qu'après de nombreuses injections au primer. Quelle précaution prenez-vous aussitôt ?",
+       "choices": [
+        "Avancer d'au moins une longueur d'avion pour quitter l'essence répandue",
+        "Rester immobile plusieurs minutes pour laisser chauffer le moteur sur place",
+        "Afficher un régime élevé pour brûler l'essence restée dans les cylindres",
+        "Couper le moteur puis le relancer, pour vérifier qu'il redémarre bien"
+       ],
+       "answer": 0,
+       "explanation": "Après un démarrage gavé, de l'essence a pu couler sous le moteur ; un retour de flamme ou l'échappement brûlant peut l'enflammer. Avancer d'au moins une longueur d'avion éloigne celui-ci de la flaque. Un régime élevé moteur froid l'abîme sans rien régler."
+      },
+      {
+       "id": "u7s6q19",
+       "q": "Feu moteur en vol : robinet fermé, moteur arrêté, mais les flammes persistent. Que prévoit par exemple le manuel du Cessna 172 ?",
+       "choices": [
+        "Rouvrir le robinet quelques secondes pour relancer le moteur et souffler",
+        "Augmenter la vitesse de plané pour trouver un mélange qui ne brûle plus",
+        "Ralentir au plus près du décrochage pour réduire l'air qui nourrit le feu",
+        "Ouvrir le chauffage cabine pour évacuer la chaleur du compartiment moteur"
+       ],
+       "answer": 1,
+       "explanation": "Le manuel du Cessna 172 demande, si le feu n'est pas éteint, d'augmenter la vitesse de plané pour trouver une vitesse donnant un mélange incombustible, en poursuivant vers l'atterrissage forcé. Ralentir près du décrochage serait dangereux ; rouvrir l'essence ou le chauffage nourrirait le feu ou l'amènerait en cabine."
+      },
+      {
+       "id": "u7s6q20",
+       "q": "Une fumée âcre envahit la cabine : vous allez couper le contact général. Pourquoi passer si possible le MAYDAY et afficher 7700 juste avant ?",
+       "choices": [
+        "Parce que la radio et le transpondeur seront ensuite privés d'alimentation",
+        "Parce que le moteur s'arrêtera dès la coupure du contact général",
+        "Parce que le contrôleur doit autoriser cette coupure en vol",
+        "Parce que radio et transpondeur mettent plusieurs minutes à redémarrer"
+       ],
+       "answer": 0,
+       "explanation": "Le contact général alimente radio, transpondeur et équipements : une fois coupé, on ne peut plus ni appeler ni être identifié en 7700. Si le temps le permet, quelques secondes suffisent pour l'annonce. Le moteur, allumé par les magnétos, continue de tourner."
+      },
+      {
+       "id": "u7s6q21",
+       "q": "En vol, le téléphone d'un passager se met à chauffer et à fumer. Que recommande la FAA ?",
+       "choices": [
+        "Éteindre les flammes, puis refroidir l'appareil avec de l'eau, sans le déplacer",
+        "Couper le contact général, car l'incendie vient alors du circuit électrique de l'avion",
+        "Le saisir et le ranger au plus vite dans la soute à bagages, loin des passagers",
+        "L'envelopper dans une couverture épaisse et le glisser sous un siège arrière"
+       ],
+       "answer": 0,
+       "explanation": "Une batterie lithium en emballement thermique peut se propager de cellule en cellule. La FAA (SAFO 09013) recommande d'éteindre les flammes (halon, substitut ou eau), puis de refroidir l'appareil avec de l'eau ou une boisson non alcoolisée, et de ne pas déplacer un appareil qui brûle ou fume. Le circuit de l'avion n'est pas en cause."
+      },
+      {
+       "id": "u7s6q22",
+       "q": "Un passager emporte une batterie de rechange lithium-ion de 120 Wh pour sa caméra. Que prévoient les règles applicables aux passagers ?",
+       "choices": [
+        "Refusée à bord, la limite des batteries étant fixée à 100 Wh",
+        "Admise librement en cabine, la limite étant fixée à 200 Wh",
+        "Admise en cabine, protégée, avec l'accord de l'exploitant",
+        "Admise en soute, isolée de la cabine et protégée des chocs"
+       ],
+       "answer": 2,
+       "explanation": "Les batteries de rechange voyagent en cabine, protégées contre les courts-circuits : jusqu'à 100 Wh sans formalité, de 100 à 160 Wh avec l'accord de l'exploitant, interdites au-delà. En soute, un départ de feu ne serait ni vu ni combattu ; 120 Wh dépasse la première limite mais reste sous 160 Wh."
+      },
+      {
+       "id": "u7s6q23",
+       "q": "Un passager rapporte 3 L d'un alcool à 40 % en bouteilles du commerce. Est-ce admis à bord ?",
+       "choices": [
+        "Non : au-delà de 24 %, les boissons alcoolisées sont interdites",
+        "Oui : de 24 à 70 %, jusqu'à 5 L par personne en emballage de détail",
+        "Oui, en quantité libre : les boissons alcoolisées ne sont pas réglementées",
+        "Non : la limite est fixée à 1 L par personne au-delà de 24 %"
+       ],
+       "answer": 1,
+       "explanation": "Les boissons de 24 % d'alcool ou moins ne sont pas réglementées ; de 24 à 70 %, elles sont admises dans la limite de 5 L par personne, en emballage de détail ; au-delà de 70 %, elles sont interdites. Certains exploitants appliquent des limites plus strictes."
+      },
+      {
+       "id": "u7s6q24",
+       "q": "En vol, une odeur de solvant s'échappe d'un sac de passager et celui-ci se plaint de vertiges. Quelle conduite adoptez-vous ?",
+       "choices": [
+        "Poursuivre jusqu'à destination en fermant les aérations pour garder la chaleur",
+        "Ouvrir le sac en vol pour identifier le produit, puis poursuivre comme prévu",
+        "Poursuivre le vol jusqu'à destination en faisant respirer le passager à l'abri",
+        "Aérer, se poser au plus tôt, puis notifier l'incident de marchandises dangereuses"
+       ],
+       "answer": 3,
+       "explanation": "Des vapeurs de solvant sont inflammables et toxiques : on ventile au maximum, sans flamme, et l'on se pose au plus tôt. Fermer les aérations concentrerait les vapeurs ; ouvrir le sac en vol ajouterait du risque. Le Part-NCO demande ensuite de notifier tout incident de marchandises dangereuses."
+      }
+     ]
+    },
+    {
+     "id": "u7s7",
+     "title": "Turbulence de sillage, cisaillement et pistes contaminées",
+     "icon": "🌀",
+     "tips": "Trois menaces liées à l'air et à la piste, surtout redoutables près du sol, là où la marge de hauteur et de vitesse est la plus faible.\n\nTurbulence de sillage, formation :\n• Tant que l'aile porte, l'air de l'intrados (surpression) contourne le saumon vers l'extrados (dépression) : un tourbillon marginal naît à chaque bout d'aile. Vu de derrière, le tourbillon gauche tourne dans le sens horaire, le droit en sens inverse ; entre eux l'air descend, à l'extérieur il monte.\n• Ils sont les plus forts derrière un avion lourd, lent, en configuration lisse, et existent de la rotation au toucher.\n• Hélicoptère : en vol d'avancement, il laisse aussi une paire de tourbillons puissants ; en stationnaire, rester à plus de trois diamètres rotor (FAA).\n\nComportement des tourbillons :\n• Ils descendent d'environ 300 à 500 ft/min, puis se stabilisent de 500 à 900 ft sous la trajectoire (FAA, gros porteurs).\n• Près du sol (sous 100 à 200 ft), ils s'écartent de l'axe à 2 ou 3 kt. Un vent traversier de 1 à 5 kt freine le tourbillon au vent, qui peut stagner sur la zone de toucher, et pousse l'autre vers une piste voisine.\n• Un vent arrière les ramène vers la zone de toucher : vent arrière faible de trois quarts, vigilance maximale.\n• Ils dérivent avec le vent et s'affaiblissent avec le temps, plus lentement par vent faible ; ils cessent d'être dangereux au contact du sol.\n• Danger : roulis induit pouvant dépasser l'efficacité des ailerons, surtout pour un avion d'envergure faible face à l'avion générateur.\n\nEspacements OACI :\n• Catégories L, M, H et J : voir « Procédures normales ».\n• Départ : 2 min (L ou M derrière H, L derrière M), 3 min depuis une intersection ; derrière un A380 : 3 min (L ou M), 4 min depuis une intersection.\n• Arrivée : 3 min pour un L derrière un M ou un H, 2 min pour un M derrière un H ; derrière un A380 : 4 min pour un L, 3 min pour un M.\n• L'avertissement « CAUTION WAKE TURBULENCE » ne dispense pas le pilote de gérer son propre espacement.\n\nPrécautions :\n• Décoller derrière un avion lourd : quitter le sol avant son point de rotation, monter au-dessus de sa trajectoire, puis s'en écarter.\n• Atterrir derrière un avion qui atterrit : rester au-dessus de son plan, se poser au-delà de son point de toucher. Derrière un avion qui décolle : se poser bien avant son point de rotation.\n• Après une remise de gaz, un toucher ou un passage bas d'un avion plus lourd : attendre au moins 2 min (FAA).\n• En route : ne pas passer sous et derrière un gros avion ; s'écarter latéralement, de préférence au vent.\n\nCisaillement de vent :\n• Causes : orages (microrafales, front de rafales), fronts, inversion avec vent fort au-dessus, brise de mer, relief, obstacles près de la piste, gradient de vent près du sol.\n• Par inertie, l'avion garde sa vitesse sol : la vitesse indiquée varie d'abord autant que la composante de vent de face. Exemple : finale à 70 kt avec 25 kt de face ; le vent tombe à 5 kt : environ 50 kt indiqués.\n• Défavorable (perte de vent de face, vent arrière qui forcit, descendance) : vitesse en baisse, avion sous le plan. Favorable : vitesse en hausse, avion au-dessus du plan ; ne pas réduire par réflexe, la phase défavorable peut suivre.\n• Gradient de vent : le frottement réduit le vent près du sol, d'où une baisse de vitesse en courte finale.\n• Indices : METAR « WS R27 » ou « WS ALL RWY », annonce ATC, rafales, Cb, virga. Vent en rafales : majorer la vitesse d'approche de la moitié de l'écart rafale/vent moyen, sauf consigne du manuel (FAA) ; 10G20KT : + 5 kt.\n• Pris dans un cisaillement : pleine puissance, assiette de montée, remise de gaz dès les premiers signes, sans passer sous la vitesse sûre.\n\nPistes contaminées :\n• Mouillée : humidité visible ou eau jusqu'à 3 mm. Contaminée : plus de 25 % de la surface utilisée couverte d'eau stagnante (plus de 3 mm), de neige fondante, de neige ou de glace.\n• Depuis novembre 2021, le format mondial (GRF) donne pour chaque tiers de piste un code d'état (RWYCC) de 6 à 0, publié dans le compte rendu d'état de piste (RCR) et le SNOWTAM, par exemple 5/5/2 ; par prudence, le plus faible sert de référence.\n• 6 sec. 5 mouillée, givre, neige ou neige fondante de 3 mm au plus : freinage bon. 4 neige compactée par −15 °C ou moins : bon à moyen. 3 mouillée glissante, neige de plus de 3 mm, neige compactée au-dessus de −15 °C : moyen. 2 eau stagnante ou neige fondante de plus de 3 mm : moyen à médiocre. 1 glace : médiocre. 0 glace mouillée, eau sur neige compactée, neige sur glace : inférieur à médiocre.\n• Les coefficients de frottement mesurés ne sont plus diffusés : ils ne prédisaient pas de façon fiable le freinage des avions.\n\nAquaplanage :\n• Dynamique : eau plus profonde que les rainures du pneu ; au-delà d'une certaine vitesse, le pneu monte sur un coin d'eau. V ≈ 9 √P (kt, P en psi) pour un pneu qui tourne, ≈ 7,7 √P pour un pneu qui ne tourne pas (toucher, roue bloquée). Ex. : 25 psi → 45 kt et environ 39 kt.\n• Visqueux : mince film d'eau sur une surface lisse (dépôts de gomme), à vitesse plus faible.\n• Gomme réversée : roue bloquée, l'échauffement produit de la vapeur qui soulève le pneu ; traces blanches sur la piste.\n• Freinage et contrôle directionnel deviennent quasi nuls : le vent de travers devient critique.\n\nDistances :\n• L'eau et la neige fondante freinent l'accélération au décollage ; à l'atterrissage, le freinage est dégradé.\n• Indications de la CAA britannique : piste en dur mouillée, atterrissage × 1,15 ; neige, au moins × 1,25 au décollage comme à l'atterrissage ; sol mou, au moins × 1,25 au décollage. Ces facteurs s'ajoutent aux autres corrections et au coefficient de sécurité. Le manuel de vol prime ; sans données pour ces conditions, mieux vaut renoncer.",
+     "vocab": [
+      {
+       "term": "Tourbillon marginal",
+       "translation": "Air qui s'enroule autour du saumon, de l'intrados vers l'extrados"
+      },
+      {
+       "term": "Roulis induit",
+       "translation": "Roulis imposé par un tourbillon, parfois plus fort que les ailerons"
+      },
+      {
+       "term": "Point de rotation",
+       "translation": "Endroit où l'avion lève le nez et commence à créer des tourbillons"
+      },
+      {
+       "term": "Catégorie de sillage",
+       "translation": "Classe OACI d'un avion selon sa masse maximale : L, M, H ou J"
+      },
+      {
+       "term": "Cisaillement de vent",
+       "translation": "Variation brusque du vent en force ou direction sur peu de distance"
+      },
+      {
+       "term": "Cisaillement défavorable",
+       "translation": "Perte de vent de face ou descendance : vitesse et plan en baisse"
+      },
+      {
+       "term": "Gradient de vent",
+       "translation": "Diminution du vent près du sol, due au frottement"
+      },
+      {
+       "term": "Facteur de rafale",
+       "translation": "Écart entre la rafale et le vent moyen annoncés"
+      },
+      {
+       "term": "Piste contaminée",
+       "translation": "Plus de 25 % de la surface sous eau stagnante, neige ou glace"
+      },
+      {
+       "term": "Eau stagnante",
+       "translation": "Eau de plus de 3 mm d'épaisseur sur la piste"
+      },
+      {
+       "term": "Neige fondante",
+       "translation": "Neige gorgée d'eau, qui gicle sous les roues"
+      },
+      {
+       "term": "RWYCC",
+       "translation": "Code d'état de piste, de 6 (sec) à 0, donné par tiers de piste"
+      },
+      {
+       "term": "GRF",
+       "translation": "Format mondial de compte rendu de l'état des pistes, depuis 2021"
+      },
+      {
+       "term": "Aquaplanage dynamique",
+       "translation": "Pneu soulevé par un coin d'eau, au-delà d'environ 9 √P"
+      },
+      {
+       "term": "Aquaplanage visqueux",
+       "translation": "Glissade sur un film d'eau mince, sur une surface lisse"
+      },
+      {
+       "term": "Gomme réversée",
+       "translation": "Aquaplanage d'une roue bloquée, soulevée par la vapeur"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Tourbillons marginaux vus de l'arrière",
+       "svg": "<svg viewBox=\"0 0 700 430\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u7s7f1r\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#dc2626\"/></marker><marker id=\"u7s7f1b\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4ed8\"/></marker><marker id=\"u7s7f1g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#15803d\"/></marker><marker id=\"u7s7f1k\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#475569\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"430\" fill=\"#ffffff\"/><line x1=\"210\" y1=\"100\" x2=\"490\" y2=\"100\" stroke=\"#334155\" stroke-width=\"7\" stroke-linecap=\"round\"/><circle cx=\"350\" cy=\"100\" r=\"20\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"350\" y1=\"80\" x2=\"350\" y2=\"44\" stroke=\"#334155\" stroke-width=\"5\" stroke-linecap=\"round\"/><line x1=\"305\" y1=\"70\" x2=\"395\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/><text x=\"350.0\" y=\"24.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Avion vu de derrière</text><path d=\"M181.8,110.3 A30,30 0 1 1 204.8,129.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.5\" marker-end=\"url(#u7s7f1r)\"/><path d=\"M518.2,110.3 A30,30 0 1 0 495.2,129.5\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3.5\" marker-end=\"url(#u7s7f1r)\"/><text x=\"170.0\" y=\"58.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Sens horaire</text><text x=\"530.0\" y=\"58.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Sens antihoraire</text><line x1=\"295\" y1=\"130\" x2=\"295\" y2=\"178\" stroke=\"#1d4ed8\" stroke-width=\"3\" marker-end=\"url(#u7s7f1b)\"/><line x1=\"350\" y1=\"130\" x2=\"350\" y2=\"178\" stroke=\"#1d4ed8\" stroke-width=\"3\" marker-end=\"url(#u7s7f1b)\"/><line x1=\"405\" y1=\"130\" x2=\"405\" y2=\"178\" stroke=\"#1d4ed8\" stroke-width=\"3\" marker-end=\"url(#u7s7f1b)\"/><text x=\"350.0\" y=\"202.0\" font-size=\"15\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Air descendant</text><line x1=\"85\" y1=\"140\" x2=\"85\" y2=\"92\" stroke=\"#15803d\" stroke-width=\"3\" marker-end=\"url(#u7s7f1g)\"/><text x=\"85.0\" y=\"162.0\" font-size=\"15\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Air montant</text><line x1=\"615\" y1=\"140\" x2=\"615\" y2=\"92\" stroke=\"#15803d\" stroke-width=\"3\" marker-end=\"url(#u7s7f1g)\"/><text x=\"615.0\" y=\"162.0\" font-size=\"15\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Air montant</text><line x1=\"210\" y1=\"140\" x2=\"210\" y2=\"232\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"5 5\" marker-end=\"url(#u7s7f1k)\"/><line x1=\"490\" y1=\"140\" x2=\"490\" y2=\"232\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"5 5\" marker-end=\"url(#u7s7f1k)\"/><path d=\"M189.3,269.5 A22,22 0 1 1 206.2,283.7\" fill=\"none\" stroke=\"#f87171\" stroke-width=\"3.5\" stroke-dasharray=\"7 5\" marker-end=\"url(#u7s7f1r)\"/><path d=\"M510.7,269.5 A22,22 0 1 0 493.8,283.7\" fill=\"none\" stroke=\"#f87171\" stroke-width=\"3.5\" stroke-dasharray=\"7 5\" marker-end=\"url(#u7s7f1r)\"/><text x=\"350.0\" y=\"256.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Descente : 300 à 500 ft/min,</text><text x=\"350.0\" y=\"277.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">palier 500 à 900 ft plus bas</text><rect x=\"0\" y=\"375\" width=\"700\" height=\"55\" fill=\"#e7e5e4\"/><rect x=\"230\" y=\"375\" width=\"240\" height=\"14\" fill=\"#9ca3af\"/><text x=\"350.0\" y=\"417.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Piste</text><path d=\"M185.0,355.5 A16,16 0 1 1 197.2,365.8\" fill=\"none\" stroke=\"#f87171\" stroke-width=\"3.5\" stroke-dasharray=\"7 5\" marker-end=\"url(#u7s7f1r)\"/><line x1=\"176\" y1=\"350\" x2=\"110\" y2=\"350\" stroke=\"#475569\" stroke-width=\"2.5\" marker-end=\"url(#u7s7f1k)\"/><path d=\"M515.0,355.5 A16,16 0 1 0 502.8,365.8\" fill=\"none\" stroke=\"#f87171\" stroke-width=\"3.5\" stroke-dasharray=\"7 5\" marker-end=\"url(#u7s7f1r)\"/><line x1=\"524\" y1=\"350\" x2=\"590\" y2=\"350\" stroke=\"#475569\" stroke-width=\"2.5\" marker-end=\"url(#u7s7f1k)\"/><text x=\"350.0\" y=\"334.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Près du sol : écartement</text><text x=\"350.0\" y=\"355.0\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">latéral à 2 ou 3 kt</text></svg>",
+       "caption": "L'air contourne chaque saumon de l'intrados vers l'extrados : tourbillon gauche horaire, droit antihoraire, air descendant entre eux. Les tourbillons descendent de quelques centaines de ft/min, puis s'écartent latéralement près du sol (valeurs FAA pour un gros porteur, échelles non respectées)."
+      },
+      {
+       "title": "Éviter le sillage au décollage et à l'atterrissage",
+       "svg": "<svg viewBox=\"0 0 700 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u7s7f2g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#15803d\"/></marker><marker id=\"u7s7f2k\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#475569\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"440\" fill=\"#ffffff\"/><text x=\"20.0\" y=\"26.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Décollage derrière un avion lourd</text><rect x=\"10\" y=\"180\" width=\"680\" height=\"10\" fill=\"#9ca3af\"/><polygon points=\"420,180 690,76 690,150 480,180\" fill=\"#fecaca\" opacity=\"0.8\"/><line x1=\"420\" y1=\"180\" x2=\"690\" y2=\"76\" stroke=\"#475569\" stroke-width=\"4\"/><line x1=\"300\" y1=\"180\" x2=\"685\" y2=\"38\" stroke=\"#15803d\" stroke-width=\"3.5\" marker-end=\"url(#u7s7f2g)\"/><line x1=\"300\" y1=\"172\" x2=\"300\" y2=\"198\" stroke=\"#15803d\" stroke-width=\"2.5\"/><text x=\"300.0\" y=\"216.0\" font-size=\"15\" fill=\"#15803d\" text-anchor=\"middle\" font-weight=\"bold\">Votre rotation</text><line x1=\"420\" y1=\"172\" x2=\"420\" y2=\"198\" stroke=\"#475569\" stroke-width=\"2.5\"/><text x=\"420.0\" y=\"216.0\" font-size=\"15\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"bold\">Sa rotation</text><text x=\"560.0\" y=\"172.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Sillage</text><text x=\"300.0\" y=\"66.0\" font-size=\"15\" fill=\"#166534\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Quitter le sol avant son point de rotation</text><text x=\"300.0\" y=\"86.0\" font-size=\"15\" fill=\"#166534\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">et monter au-dessus de sa trajectoire</text><text x=\"20.0\" y=\"240.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">Atterrissage derrière un avion lourd</text><rect x=\"10\" y=\"400\" width=\"680\" height=\"10\" fill=\"#9ca3af\"/><polygon points=\"10,282 330,400 260,400 10,340\" fill=\"#fecaca\" opacity=\"0.8\"/><line x1=\"10\" y1=\"282\" x2=\"330\" y2=\"400\" stroke=\"#475569\" stroke-width=\"4\"/><line x1=\"10\" y1=\"250\" x2=\"466\" y2=\"398\" stroke=\"#15803d\" stroke-width=\"3.5\" marker-end=\"url(#u7s7f2g)\"/><line x1=\"330\" y1=\"392\" x2=\"330\" y2=\"418\" stroke=\"#475569\" stroke-width=\"2.5\"/><line x1=\"470\" y1=\"392\" x2=\"470\" y2=\"418\" stroke=\"#15803d\" stroke-width=\"2.5\"/><text x=\"324.0\" y=\"434.0\" font-size=\"15\" fill=\"#475569\" text-anchor=\"end\" font-weight=\"bold\">Son toucher</text><text x=\"476.0\" y=\"434.0\" font-size=\"15\" fill=\"#15803d\" text-anchor=\"start\" font-weight=\"bold\">Votre toucher, au-delà</text><text x=\"150.0\" y=\"370.0\" font-size=\"15\" fill=\"#b91c1c\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Sillage</text><text x=\"500.0\" y=\"290.0\" font-size=\"15\" fill=\"#166534\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Rester au-dessus de son plan</text><text x=\"500.0\" y=\"310.0\" font-size=\"15\" fill=\"#166534\" text-anchor=\"middle\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">et se poser après son point de toucher</text></svg>",
+       "caption": "Les tourbillons existent de la rotation au toucher de l'avion lourd et descendent sous sa trajectoire. On décolle avant son point de rotation en montant au-dessus de sa pente ; à l'atterrissage, on reste au-dessus de son plan et l'on se pose au-delà de son toucher."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s7q01",
+       "q": "Vu de derrière l'avion qui le produit, dans quel sens tourne le tourbillon marginal de l'aile gauche ?",
+       "choices": [
+        "Dans le sens antihoraire : l'air descend au-delà du saumon et remonte vers le fuselage",
+        "Dans le même sens que le tourbillon de l'aile droite, les deux formant une spirale commune",
+        "Il ne tourne pas : il s'agit d'un simple courant descendant laissé derrière l'aile",
+        "Dans le sens horaire : l'air monte au-delà du saumon et redescend vers le fuselage"
+       ],
+       "answer": 3,
+       "explanation": "L'air de l'intrados, en surpression, s'échappe vers l'extérieur, contourne le saumon par le bas puis monte et revient vers l'intérieur sur l'extrados : à gauche, vu de derrière, cela donne une rotation horaire. Le tourbillon droit tourne en sens inverse ; entre les deux, l'air descend."
+      },
+      {
+       "id": "u7s7q02",
+       "q": "Un avion léger passe exactement entre les deux tourbillons d'un gros porteur, juste sous sa trajectoire. Que subit-il principalement ?",
+       "choices": [
+        "Un fort courant ascendant",
+        "Un fort courant descendant",
+        "Un violent vent arrière",
+        "Un fort vent de face"
+       ],
+       "answer": 1,
+       "explanation": "Entre les deux tourbillons, leurs rotations s'additionnent pour pousser l'air vers le bas : l'avion qui passe là subit une descendance qui peut dépasser ses capacités de montée. À l'extérieur des tourbillons, l'air monte ; au centre d'un tourbillon, c'est le roulis qui domine."
+      },
+      {
+       "id": "u7s7q03",
+       "q": "En altitude, loin du sol, comment évoluent les tourbillons d'un gros porteur ?",
+       "choices": [
+        "Ils montent lentement et se stabilisent 500 à 900 ft au-dessus de sa trajectoire",
+        "Ils descendent puis se stabilisent environ 500 à 900 ft sous sa trajectoire",
+        "Ils restent à son niveau et se dissipent en moins de 10 s derrière lui",
+        "Ils descendent jusqu'au sol en continu, à plus de 3 000 ft/min"
+       ],
+       "answer": 1,
+       "explanation": "Selon la FAA, les tourbillons d'un gros porteur descendent d'environ 300 à 500 ft/min, puis ralentissent et se stabilisent environ 500 à 900 ft sous sa trajectoire, en s'affaiblissant avec le temps. D'où la règle : ne pas voler sous et derrière un gros avion, mais à son niveau ou au-dessus, ou bien à l'écart."
+      },
+      {
+       "id": "u7s7q04",
+       "q": "Près du sol, par vent calme, comment se déplacent les tourbillons d'un avion lourd qui vient de se poser ?",
+       "choices": [
+        "Ils remontent jusqu'à la hauteur du tour de piste",
+        "Ils s'écartent latéralement de l'axe, à environ 2 ou 3 kt",
+        "Ils restent immobiles sur l'axe pendant au moins 10 min",
+        "Ils se dirigent vers le seuil, à environ 20 ou 30 kt"
+       ],
+       "answer": 1,
+       "explanation": "Arrivés à moins de 100 à 200 ft du sol, les tourbillons s'écartent l'un de l'autre, de part et d'autre de la trajectoire, à 2 ou 3 kt environ (FAA). Un faible vent traversier peut toutefois immobiliser le tourbillon au vent sur la piste, et un vent arrière les ramener vers la zone de toucher."
+      },
+      {
+       "id": "u7s7q05",
+       "q": "Que retenir de la turbulence de sillage d'un hélicoptère ?",
+       "choices": [
+        "Il n'en produit pas, faute d'aile fixe pour créer des tourbillons",
+        "Son sillage ne compte qu'à l'arrêt complet, rotor tournant au sol",
+        "En vol d'avancement, il laisse une paire de tourbillons puissants",
+        "Ses tourbillons montent au lieu de descendre derrière l'appareil"
+       ],
+       "answer": 2,
+       "explanation": "En vol d'avancement, le rotor porte comme une aile et laisse une paire de tourbillons puissants ; en vol stationnaire ou en translation lente, son souffle est dangereux à faible distance : la FAA recommande de rester à plus de trois diamètres rotor. Méfiance donc derrière un hélicoptère qui se pose ou décolle."
+      },
+      {
+       "id": "u7s7q06",
+       "q": "Quand une piste est-elle dite mouillée plutôt que couverte d'eau stagnante ?",
+       "choices": [
+        "Quand l'eau visible n'excède pas 13 mm d'épaisseur",
+        "Quand la pluie a cessé depuis plus d'une heure",
+        "Quand l'eau visible n'excède pas 3 mm d'épaisseur",
+        "Quand l'eau ne couvre pas plus de la moitié de la piste"
+       ],
+       "answer": 2,
+       "explanation": "Une piste est mouillée lorsqu'elle présente une humidité visible ou de l'eau jusqu'à 3 mm d'épaisseur ; au-delà, on parle d'eau stagnante, contaminant qui dégrade fortement freinage et accélération et favorise l'aquaplanage. La notion de surface couverte (plus de 25 %) sert, elle, à qualifier une piste de contaminée."
+      },
+      {
+       "id": "u7s7q07",
+       "q": "Que signale le groupe « WS R27 » en fin de METAR ?",
+       "choices": [
+        "Un cisaillement de vent dans les basses couches, sur la trajectoire de la piste 27",
+        "Une neige mouillée (wet snow) relevée sur la piste 27 lors de la dernière mesure",
+        "Une rafale de vent supérieure à 27 kt, mesurée dans l'heure qui précède",
+        "Un vent du secteur ouest-sud-ouest, de direction variable autour du 270°"
+       ],
+       "answer": 0,
+       "explanation": "WS (wind shear) suivi de la piste signale un cisaillement de vent observé sur les trajectoires de décollage ou d'approche, dans les basses couches ; « WS ALL RWY » le signale pour toutes les pistes. C'est un motif de retarder le départ ou l'arrivée, ou de majorer ses marges. La neige se code SN et les rafales G."
+      },
+      {
+       "id": "u7s7q08",
+       "q": "En finale derrière un avion plus lourd, la tour vous dit « caution wake turbulence ». Que vous indique ce message ?",
+       "choices": [
+        "Un risque de sillage : c'est à vous d'adapter trajectoire et espacement",
+        "Le contrôleur assure l'espacement de sillage minimal prévu par l'OACI",
+        "Vous devez remettre les gaz et vous reporter de nouveau en vent arrière",
+        "L'avion précédent a signalé une turbulence de sillage sur la piste"
+       ],
+       "answer": 0,
+       "explanation": "C'est un avertissement : il signale un risque possible de turbulence de sillage, sans garantir d'espacement. Le pilote reste responsable de sa trajectoire : rester au-dessus du plan de l'avion lourd et toucher au-delà de son point de toucher, ou allonger l'intervalle, au besoin en le demandant. Ce n'est ni un ordre de remise de gaz ni le compte rendu d'un autre pilote."
+      },
+      {
+       "id": "u7s7q09",
+       "q": "Un avion léger (catégorie L) atterrit derrière un avion de catégorie M sur la même piste. Quel espacement minimal en temps l'OACI prévoit-elle ?",
+       "choices": [
+        "2 minutes",
+        "1 minute",
+        "5 minutes",
+        "3 minutes"
+       ],
+       "answer": 3,
+       "explanation": "À l'arrivée, l'OACI prévoit 3 min pour un L derrière un M ou un H, et 2 min pour un M derrière un H ; derrière un A380, 4 min pour un L. Au départ, c'est 2 min pour un L derrière un M. Ces minimums n'empêchent pas le pilote d'ajouter sa propre marge."
+      },
+      {
+       "id": "u7s7q10",
+       "q": "Vous décollez d'une intersection de la piste, derrière un avion de catégorie H qui vient de décoller du seuil. Quel espacement minimal l'OACI prévoit-elle ?",
+       "choices": [
+        "2 minutes",
+        "4 minutes",
+        "3 minutes",
+        "1 minute"
+       ],
+       "answer": 2,
+       "explanation": "Au départ, un L ou un M derrière un H bénéficie de 2 min s'il part du même point de la piste, et de 3 min s'il part d'une intersection : il quitte le sol plus loin, là où l'avion lourd a peut-être déjà effectué sa rotation. Les 4 min concernent le départ d'une intersection derrière un A380."
+      },
+      {
+       "id": "u7s7q11",
+       "q": "Vous décollez sur la même piste juste derrière un avion lourd. Où devez-vous quitter le sol ?",
+       "choices": [
+        "Juste après son point de rotation, pour profiter de l'air qu'il a stabilisé",
+        "Avant son point de rotation, puis monter au-dessus de sa trajectoire",
+        "Au même point que lui, en montant ensuite sous sa trajectoire de montée",
+        "Le plus loin possible sur la piste, pour laisser les tourbillons s'éloigner"
+       ],
+       "answer": 1,
+       "explanation": "Les tourbillons naissent à la rotation de l'avion lourd et descendent sous sa trajectoire. En décollant avant ce point et en montant au-dessus de sa pente, on reste hors du sillage ; on s'en écarte ensuite latéralement. Décoller plus loin, c'est traverser les tourbillons à basse hauteur."
+      },
+      {
+       "id": "u7s7q12",
+       "q": "Vous allez atterrir alors qu'un avion lourd décolle de la même piste devant vous. Où vous posez-vous ?",
+       "choices": [
+        "Au-delà de son point de rotation",
+        "Bien avant son point de rotation",
+        "Juste à son point de rotation",
+        "À mi-chemin de sa montée initiale"
+       ],
+       "answer": 1,
+       "explanation": "Avant sa rotation, l'avion lourd roule sans porter : il ne laisse pas de tourbillons. Ceux-ci apparaissent dès qu'il lève le nez et occupent la piste au-delà. En se posant bien avant ce point, on reste hors du sillage, à condition que la longueur de piste le permette."
+      },
+      {
+       "id": "u7s7q13",
+       "q": "Un avion plus lourd que le vôtre vient d'effectuer un toucher-décoller sur la piste. Combien de temps la FAA recommande-t-elle d'attendre avant de décoller ou d'atterrir ?",
+       "choices": [
+        "Au moins 30 secondes",
+        "Au moins 10 minutes",
+        "Le temps de dégager la piste",
+        "Au moins 2 minutes"
+       ],
+       "answer": 3,
+       "explanation": "Après une remise de gaz, un passage bas ou un toucher-décoller d'un avion plus lourd, ses tourbillons peuvent stagner sur la piste et dans votre trajectoire, surtout par vent faible de trois quarts. La FAA recommande d'attendre au moins 2 min avant de décoller ou d'atterrir."
+      },
+      {
+       "id": "u7s7q14",
+       "q": "Pourquoi un avion léger d'envergure réduite est-il particulièrement vulnérable dans un tourbillon de gros porteur ?",
+       "choices": [
+        "Ses ailerons, pris dans le tourbillon, peuvent ne pas contrer le roulis induit",
+        "Son moteur, peu puissant, cale dès qu'il pénètre dans l'air du tourbillon",
+        "Sa structure légère cède dès qu'il entre dans le tourbillon, même lentement",
+        "Son anémomètre se bloque dans le tourbillon et fausse les indications"
+       ],
+       "answer": 0,
+       "explanation": "Quand l'envergure et les ailerons de l'avion qui suit dépassent la zone en rotation, ils contrent facilement le roulis. Un avion léger, d'envergure petite face au tourbillon, peut y être entièrement plongé : le roulis induit dépasse alors l'efficacité des ailerons. Près du sol, la hauteur manque pour récupérer."
+      },
+      {
+       "id": "u7s7q15",
+       "q": "Dans un compte rendu d'état de piste au format GRF, que signifie le code RWYCC 2 sur un tiers de piste ?",
+       "choices": [
+        "Piste mouillée avec 3 mm d'eau au plus : freinage bon, peu dégradé",
+        "Neige compactée par −15 °C ou moins : freinage bon à moyen, bien maîtrisé",
+        "Eau stagnante ou neige fondante de plus de 3 mm : freinage moyen à médiocre",
+        "Glace mouillée ou eau sur neige compactée : freinage inférieur à médiocre"
+       ],
+       "answer": 2,
+       "explanation": "Le RWYCC va de 6 (sec) à 0 : 5 pour une piste mouillée (3 mm au plus) ou du givre, 4 pour la neige compactée par grand froid, 3 notamment pour la neige de plus de 3 mm, 2 pour l'eau stagnante ou la neige fondante de plus de 3 mm, 1 pour la glace, 0 pour la glace mouillée."
+      },
+      {
+       "id": "u7s7q16",
+       "q": "Le compte rendu d'état de la piste 09 donne « 5/5/2 ». Que retenez-vous pour préparer l'atterrissage ?",
+       "choices": [
+        "La moyenne des trois codes, soit 4, sert de référence au calcul",
+        "Le code du premier tiers de piste, soit 5, suffit pour l'atterrissage",
+        "Un tiers de piste est très dégradé : le code 2 sert de référence",
+        "Le code 2 désigne le tiers le plus sec, les deux autres étant mouillés"
+       ],
+       "answer": 2,
+       "explanation": "Le code est donné pour chaque tiers, dans le sens de la piste. Par prudence, on retient le plus faible, ici 2 (eau stagnante ou neige fondante de plus de 3 mm, freinage moyen à médiocre) : on ne fait pas de moyenne, et le tiers dégradé peut être celui où l'on freine. Le code 2 ne désigne pas un tiers « plus sec » : plus le code est bas, plus le freinage est dégradé, et 5 correspond déjà à une piste mouillée ou à un contaminant mince."
+      },
+      {
+       "id": "u7s7q17",
+       "q": "En préparant un vol d'hiver, un pilote cherche dans le SNOWTAM le coefficient de frottement mesuré de la piste. Qu'en est-il ?",
+       "choices": [
+        "Il n'est plus diffusé : le code RWYCC le remplace",
+        "Il est diffusé par tiers de piste, à la place du code RWYCC",
+        "Il est diffusé pour les pistes en herbe, en plus du code RWYCC",
+        "Il est diffusé une fois par jour, à l'ouverture du terrain"
+       ],
+       "answer": 0,
+       "explanation": "Depuis la mise en œuvre du format mondial (GRF) en novembre 2021, les comptes rendus ne donnent plus de coefficient de frottement mesuré : ces mesures ne permettaient pas de prévoir de façon fiable le freinage réel des avions. On utilise le RWYCC de chaque tiers, la nature, l'épaisseur et l'étendue du contaminant."
+      },
+      {
+       "id": "u7s7q18",
+       "q": "Après un atterrissage sur piste mouillée, freins bloqués, on découvre un pneu marqué d'une plage brûlée et des traces blanches sur la piste. Quel phénomène s'est produit ?",
+       "choices": [
+        "Un aquaplanage par gomme réversée",
+        "Un aquaplanage dynamique",
+        "Un aquaplanage visqueux",
+        "Un éclatement du pneu par surpression"
+       ],
+       "answer": 0,
+       "explanation": "Roue bloquée sur piste mouillée, le frottement échauffe le pneu : la gomme se ramollit et l'eau se vaporise, la vapeur soulevant le pneu. Elle « nettoie » la piste, d'où des traces blanches. L'aquaplanage dynamique ne laisse pas de marque et le visqueux survient sur un film mince, sur surface lisse."
+      },
+      {
+       "id": "u7s7q19",
+       "q": "Un gros porteur vient de se poser. Le vent souffle de la gauche, perpendiculaire à la piste, pour 3 kt. Quel tourbillon menace surtout la zone de toucher ?",
+       "choices": [
+        "Le tourbillon droit, sous le vent, que le vent de gauche ramène vers la piste",
+        "Ni l'un ni l'autre : un vent de 3 kt les dissipe en quelques secondes",
+        "Les deux, qui remontent ensemble au-dessus du seuil de la piste",
+        "Le tourbillon gauche, au vent, freiné par le vent et qui peut y stagner"
+       ],
+       "answer": 3,
+       "explanation": "Près du sol, chaque tourbillon s'écarte de l'axe à 2 ou 3 kt. Un vent traversier de 3 kt annule presque le déplacement du tourbillon au vent, côté gauche, qui reste sur la zone de toucher, et accélère l'autre vers la droite. C'est le cas le plus traître : un vent faible n'efface pas le danger."
+      },
+      {
+       "id": "u7s7q20",
+       "q": "Pourquoi un vent arrière faible, de trois quarts, est-il la situation la plus traîtresse pour la turbulence de sillage à l'atterrissage ?",
+       "choices": [
+        "Il peut ramener les tourbillons de l'avion précédent sur la zone de toucher",
+        "Il accélère la dissipation des tourbillons, qui deviennent imprévisibles",
+        "Il fait monter les tourbillons jusqu'à la trajectoire d'approche normale",
+        "Il double l'intensité des tourbillons produits par l'avion qui précède"
+       ],
+       "answer": 0,
+       "explanation": "La FAA signale qu'un vent arrière peut pousser les tourbillons de l'avion précédent vers l'avant, dans la zone de toucher, et qu'un vent arrière faible de trois quarts demande une vigilance maximale : la composante traversière peut en plus immobiliser l'un d'eux sur la piste."
+      },
+      {
+       "id": "u7s7q21",
+       "q": "En finale à 70 kt indiqués, avec 25 kt de vent de face, vous traversez vers 200 ft une couche où le vent de face tombe à 5 kt. Que lisez-vous d'abord et que faites-vous ?",
+       "choices": [
+        "Environ 90 kt : vous réduisez la puissance pour retrouver votre plan",
+        "Environ 50 kt : vous remettez franchement de la puissance, voire les gaz",
+        "Environ 70 kt : le vent ne modifie pas la vitesse indiquée en finale",
+        "Environ 65 kt : vous sortez un cran de volets pour garder la portance"
+       ],
+       "answer": 1,
+       "explanation": "Par inertie, l'avion garde d'abord sa vitesse sol (70 − 25 = 45 kt) ; avec 5 kt de face, sa vitesse air tombe vers 45 + 5 = 50 kt : une perte d'environ 20 kt, égale à la variation du vent. L'avion passe sous le plan, près du décrochage : puissance, voire remise de gaz. Réduire aggraverait la situation."
+      },
+      {
+       "id": "u7s7q22",
+       "q": "METAR : 24015G27KT, piste 24. Votre vitesse d'approche normale est de 65 kt. En appliquant la règle de la FAA, sauf consigne du manuel, quelle vitesse d'approche affichez-vous ?",
+       "choices": [
+        "77 kt",
+        "65 kt",
+        "80 kt",
+        "71 kt"
+       ],
+       "answer": 3,
+       "explanation": "Écart rafale/vent moyen : 27 − 15 = 12 kt ; on ajoute la moitié, soit 6 kt : 65 + 6 = 71 kt. Ajouter toute la rafale (77 kt) ou le vent moyen (80 kt) allongerait inutilement l'atterrissage ; ne rien ajouter laisserait l'avion sans marge dans les variations de vent."
+      },
+      {
+       "id": "u7s7q23",
+       "q": "Vos pneus sont gonflés à 25 psi. Au toucher sur une piste inondée, les roues ne tournent pas encore. À partir de quelle vitesse environ l'aquaplanage dynamique est-il possible ?",
+       "choices": [
+        "Environ 45 kt",
+        "Environ 25 kt",
+        "Environ 58 kt",
+        "Environ 39 kt"
+       ],
+       "answer": 3,
+       "explanation": "Pour un pneu qui ne tourne pas (toucher, roue bloquée), V ≈ 7,7 √P = 7,7 × 5 = 38,5, soit environ 39 kt ; pour un pneu qui tourne, V ≈ 9 √P = 45 kt. Au toucher, la valeur la plus basse s'applique : un avion qui se pose à 55 kt sur une piste inondée peut donc aquaplaner dès le contact."
+      },
+      {
+       "id": "u7s7q24",
+       "q": "En croisière, un gros porteur vient de croiser votre route devant vous, environ 1 000 ft plus haut que vous. Quelle conduite adoptez-vous face à son sillage ?",
+       "choices": [
+        "Vous traversez sa trajectoire juste derrière lui, à votre niveau",
+        "Vous évitez de passer sous et derrière lui, quitte à dévier",
+        "Vous montez de 500 ft pour vous rapprocher de son niveau",
+        "Vous accélérez pour traverser ses tourbillons au plus vite"
+       ],
+       "answer": 1,
+       "explanation": "Les tourbillons d'un gros porteur descendent de quelques centaines de ft/min, puis se stabilisent environ 500 à 900 ft sous sa trajectoire (FAA) : 1 000 ft plus bas, vous êtes tout près de cette zone. On évite donc de passer sous et derrière lui, en s'écartant latéralement, de préférence du côté au vent (FAA). Monter de 500 ft vous placerait en plein dans la zone des tourbillons, et accélérer pour les traverser augmente les efforts subis."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

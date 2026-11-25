@@ -1,0 +1,394 @@
+{
+  "id": "de",
+  "title": "Allemand",
+  "lang_name": "allemand",
+  "flag": "🇩🇪",
+  "tts_lang": "de-DE",
+  "description": "Apprends l'allemand pas à pas : salutations, nombres, famille, nourriture, courses et vêtements.",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Les bases 1",
+      "description": "Se présenter, saluer, dire oui ou non et rester poli.",
+      "color": "#58cc02",
+      "skills": [
+        {
+          "id": "u1s1",
+          "title": "Salutations",
+          "icon": "👋",
+          "tips": "« Hallo » convient à tout moment et avec tout le monde. « Guten Morgen » se dit le matin, « guten Tag » dans la journée et « guten Abend » le soir ; « gute Nacht » sert uniquement pour souhaiter une bonne nuit. « Tschüss » est familier, « auf Wiedersehen » est plus formel. En allemand, tous les noms prennent une majuscule : der Tag, der Morgen, der Abend.",
+          "vocab": [
+            { "term": "hallo", "translation": "bonjour / salut", "emoji": "👋" },
+            { "term": "guten Morgen", "translation": "bonjour (le matin)", "emoji": "🌅" },
+            { "term": "guten Tag", "translation": "bonjour (dans la journée)", "emoji": "☀️" },
+            { "term": "guten Abend", "translation": "bonsoir", "emoji": "🌆" },
+            { "term": "gute Nacht", "translation": "bonne nuit", "emoji": "🌙" },
+            { "term": "tschüss", "translation": "salut (au revoir, familier)", "emoji": "👋" },
+            { "term": "auf Wiedersehen", "translation": "au revoir", "emoji": "🚪" },
+            { "term": "ja", "translation": "oui", "emoji": "✅" },
+            { "term": "nein", "translation": "non", "emoji": "❌" },
+            { "term": "wie geht's?", "translation": "comment ça va ?", "emoji": "❓" },
+            { "term": "sehr gut", "translation": "très bien", "emoji": "😊" },
+            { "term": "und dir?", "translation": "et toi ?", "emoji": "🔁" }
+          ],
+          "sentences": [
+            { "source": "Hallo, wie geht's?", "target": "Salut, comment ça va ?" },
+            { "source": "Sehr gut, und dir?", "target": "Très bien, et toi ?" },
+            { "source": "Guten Morgen, wie geht's?", "target": "Bonjour, comment ça va ?" },
+            { "source": "Ja, sehr gut.", "target": "Oui, très bien." },
+            { "source": "Guten Abend und gute Nacht.", "target": "Bonsoir et bonne nuit." },
+            { "source": "Auf Wiedersehen, gute Nacht.", "target": "Au revoir, bonne nuit." },
+            { "source": "Guten Tag! Wie geht's?", "target": "Bonjour ! Comment ça va ?" },
+            { "source": "Tschüss, auf Wiedersehen!", "target": "Salut, au revoir !" }
+          ]
+        },
+        {
+          "id": "u1s2",
+          "title": "Se présenter",
+          "icon": "🙋",
+          "tips": "Pour se présenter, on dit « Ich heiße… » (je m'appelle) ou « Ich bin… » (je suis). « Ich komme aus Frankreich » signifie « je viens de France » : les noms de pays s'emploient le plus souvent sans article. Attention au ß de « heiße », qui se prononce comme un « s » dur. « Ich » prend une minuscule en milieu de phrase, contrairement au « Sie » de politesse.",
+          "vocab": [
+            { "term": "ich", "translation": "je", "emoji": "🙋" },
+            { "term": "ich bin", "translation": "je suis", "emoji": "🙂" },
+            { "term": "ich heiße", "translation": "je m'appelle", "emoji": "🏷️" },
+            { "term": "wie heißt du?", "translation": "comment t'appelles-tu ?", "emoji": "❓" },
+            { "term": "ich komme aus", "translation": "je viens de", "emoji": "🌍" },
+            { "term": "Frankreich", "translation": "la France", "emoji": "🇫🇷" },
+            { "term": "Deutschland", "translation": "l'Allemagne", "emoji": "🇩🇪" },
+            { "term": "ich wohne in", "translation": "j'habite à", "emoji": "🏠" },
+            { "term": "freut mich", "translation": "enchanté(e)", "emoji": "🤝" },
+            { "term": "ich spreche", "translation": "je parle", "emoji": "🗣️" },
+            { "term": "Französisch", "translation": "le français (la langue)", "emoji": "💬" },
+            { "term": "und", "translation": "et", "emoji": "➕" }
+          ],
+          "sentences": [
+            { "source": "Hallo, ich heiße Anna.", "target": "Bonjour, je m'appelle Anna." },
+            { "source": "Wie heißt du?", "target": "Comment t'appelles-tu ?" },
+            { "source": "Ich komme aus Frankreich.", "target": "Je viens de France." },
+            { "source": "Ich wohne in Berlin.", "target": "J'habite à Berlin." },
+            { "source": "Ich spreche Französisch.", "target": "Je parle français." },
+            { "source": "Freut mich, ich bin Paul.", "target": "Enchanté, je suis Paul." },
+            { "source": "Ich komme aus Deutschland.", "target": "Je viens d'Allemagne." },
+            { "source": "Ich heiße Lukas und ich wohne in Berlin.", "target": "Je m'appelle Lukas et j'habite à Berlin." }
+          ]
+        },
+        {
+          "id": "u1s3",
+          "title": "Les nombres 0-20",
+          "icon": "🔢",
+          "tips": "Les nombres de 13 à 19 se forment avec l'unité suivie de « zehn » : dreizehn (13), vierzehn (14), fünfzehn (15), sechzehn (16), siebzehn (17), achtzehn (18), neunzehn (19). Onze et douze sont irréguliers : elf et zwölf. Pour donner son âge, on dit « Ich bin zwanzig » (j'ai vingt ans), avec le verbe sein (être) et non haben (avoir).",
+          "vocab": [
+            { "term": "null", "translation": "zéro", "emoji": "0️⃣" },
+            { "term": "eins", "translation": "un", "emoji": "1️⃣" },
+            { "term": "zwei", "translation": "deux", "emoji": "2️⃣" },
+            { "term": "drei", "translation": "trois", "emoji": "3️⃣" },
+            { "term": "vier", "translation": "quatre", "emoji": "4️⃣" },
+            { "term": "fünf", "translation": "cinq", "emoji": "5️⃣" },
+            { "term": "sechs", "translation": "six", "emoji": "6️⃣" },
+            { "term": "sieben", "translation": "sept", "emoji": "7️⃣" },
+            { "term": "acht", "translation": "huit", "emoji": "8️⃣" },
+            { "term": "neun", "translation": "neuf", "emoji": "9️⃣" },
+            { "term": "zehn", "translation": "dix", "emoji": "🔟" },
+            { "term": "zwanzig", "translation": "vingt", "emoji": "2️⃣0️⃣" }
+          ],
+          "sentences": [
+            { "source": "Eins, zwei, drei, vier.", "target": "Un, deux, trois, quatre." },
+            { "source": "Fünf, sechs, sieben, acht.", "target": "Cinq, six, sept, huit." },
+            { "source": "Neun, zehn und zwanzig.", "target": "Neuf, dix et vingt." },
+            { "source": "Ich bin zwanzig.", "target": "J'ai vingt ans." },
+            { "source": "Null, eins, zwei.", "target": "Zéro, un, deux." },
+            { "source": "Ja, zehn und zwei.", "target": "Oui, dix et deux." },
+            { "source": "Nein, acht und neun.", "target": "Non, huit et neuf." },
+            { "source": "Ich heiße Anna und ich bin zwanzig.", "target": "Je m'appelle Anna et j'ai vingt ans." }
+          ]
+        },
+        {
+          "id": "u1s4",
+          "title": "Politesse",
+          "icon": "🙏",
+          "tips": "« Bitte » a plusieurs sens : « s'il vous plaît », « je vous en prie » et même « de rien ». « Danke » se renforce en « danke schön » ou « vielen Dank ». Pour vouvoyer, on emploie « Sie », toujours avec une majuscule : « Wie geht es Ihnen? » est la version polie de « Wie geht's? ». Devant un nom de famille, on dit « Herr » (Monsieur) ou « Frau » (Madame).",
+          "vocab": [
+            { "term": "bitte", "translation": "s'il vous plaît / je vous en prie", "emoji": "🙏" },
+            { "term": "danke", "translation": "merci", "emoji": "🙏" },
+            { "term": "danke schön", "translation": "merci beaucoup", "emoji": "💐" },
+            { "term": "Entschuldigung", "translation": "excusez-moi / pardon", "emoji": "🙇" },
+            { "term": "es tut mir leid", "translation": "je suis désolé(e)", "emoji": "😔" },
+            { "term": "kein Problem", "translation": "pas de problème", "emoji": "👌" },
+            { "term": "gern geschehen", "translation": "de rien", "emoji": "😊" },
+            { "term": "Herr", "translation": "Monsieur", "emoji": "👨" },
+            { "term": "Frau", "translation": "Madame", "emoji": "👩" },
+            { "term": "Sie", "translation": "vous (de politesse)", "emoji": "🎩" },
+            { "term": "wie geht es Ihnen?", "translation": "comment allez-vous ?", "emoji": "❓" },
+            { "term": "bis bald", "translation": "à bientôt", "emoji": "👋" }
+          ],
+          "sentences": [
+            { "source": "Danke schön, Herr Müller.", "target": "Merci beaucoup, Monsieur Müller." },
+            { "source": "Bitte, kein Problem.", "target": "Je vous en prie, pas de problème." },
+            { "source": "Entschuldigung, wie geht es Ihnen?", "target": "Excusez-moi, comment allez-vous ?" },
+            { "source": "Guten Tag, Frau Schmidt.", "target": "Bonjour, Madame Schmidt." },
+            { "source": "Es tut mir leid.", "target": "Je suis désolé." },
+            { "source": "Danke, bis bald!", "target": "Merci, à bientôt !" },
+            { "source": "Gern geschehen, auf Wiedersehen.", "target": "De rien, au revoir." },
+            { "source": "Nein danke, bis bald.", "target": "Non merci, à bientôt." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Les bases 2",
+      "description": "Parler de sa famille, des couleurs, des jours et poser des questions simples.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u2s1",
+          "title": "La famille",
+          "icon": "👨‍👩‍👧",
+          "tips": "Chaque nom allemand a un genre indiqué par son article : der (masculin), die (féminin), das (neutre). « Mein » s'emploie devant un nom masculin ou neutre (mein Vater, mein Kind) et « meine » devant un nom féminin ou pluriel (meine Mutter, meine Kinder). Le pluriel de « das Kind » est « die Kinder ».",
+          "vocab": [
+            { "term": "die Familie", "translation": "la famille", "emoji": "👨‍👩‍👧" },
+            { "term": "die Mutter", "translation": "la mère", "emoji": "👩" },
+            { "term": "der Vater", "translation": "le père", "emoji": "👨" },
+            { "term": "die Schwester", "translation": "la sœur", "emoji": "👧" },
+            { "term": "der Bruder", "translation": "le frère", "emoji": "👦" },
+            { "term": "die Tochter", "translation": "la fille (enfant)", "emoji": "👧" },
+            { "term": "der Sohn", "translation": "le fils", "emoji": "👦" },
+            { "term": "das Kind", "translation": "l'enfant", "emoji": "🧒" },
+            { "term": "mein", "translation": "mon", "emoji": "👉" },
+            { "term": "meine", "translation": "ma", "emoji": "👉" },
+            { "term": "ich habe", "translation": "j'ai", "emoji": "✋" },
+            { "term": "das ist", "translation": "c'est", "emoji": "👉" }
+          ],
+          "sentences": [
+            { "source": "Das ist meine Mutter.", "target": "C'est ma mère." },
+            { "source": "Das ist mein Vater.", "target": "C'est mon père." },
+            { "source": "Meine Schwester heißt Anna.", "target": "Ma sœur s'appelle Anna." },
+            { "source": "Mein Bruder ist zehn.", "target": "Mon frère a dix ans." },
+            { "source": "Das ist mein Kind.", "target": "C'est mon enfant." },
+            { "source": "Das ist meine Familie.", "target": "C'est ma famille." },
+            { "source": "Mein Sohn und meine Tochter.", "target": "Mon fils et ma fille." },
+            { "source": "Ich habe zwei Kinder.", "target": "J'ai deux enfants." }
+          ]
+        },
+        {
+          "id": "u2s2",
+          "title": "Les couleurs",
+          "icon": "🎨",
+          "tips": "Les adjectifs de couleur placés après le verbe « sein » (être) sont invariables : « Das Auto ist rot », « Die Blume ist rot ». Devant un nom, ils prennent une terminaison, par exemple « das rote Auto ». « Orange » et « lila » (violet) s'emploient aussi tels quels.",
+          "vocab": [
+            { "term": "die Farbe", "translation": "la couleur", "emoji": "🎨" },
+            { "term": "rot", "translation": "rouge", "emoji": "🔴" },
+            { "term": "blau", "translation": "bleu", "emoji": "🔵" },
+            { "term": "grün", "translation": "vert", "emoji": "🟢" },
+            { "term": "gelb", "translation": "jaune", "emoji": "🟡" },
+            { "term": "schwarz", "translation": "noir", "emoji": "⚫" },
+            { "term": "weiß", "translation": "blanc", "emoji": "⚪" },
+            { "term": "grau", "translation": "gris", "emoji": "🩶" },
+            { "term": "rosa", "translation": "rose", "emoji": "🩷" },
+            { "term": "braun", "translation": "marron", "emoji": "🟤" },
+            { "term": "das Auto", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "die Blume", "translation": "la fleur", "emoji": "🌸" }
+          ],
+          "sentences": [
+            { "source": "Das Auto ist rot.", "target": "La voiture est rouge." },
+            { "source": "Die Blume ist gelb.", "target": "La fleur est jaune." },
+            { "source": "Mein Auto ist schwarz.", "target": "Ma voiture est noire." },
+            { "source": "Die Farbe ist blau.", "target": "La couleur est bleue." },
+            { "source": "Das ist grün und weiß.", "target": "C'est vert et blanc." },
+            { "source": "Meine Blume ist rosa.", "target": "Ma fleur est rose." },
+            { "source": "Das Auto ist grau.", "target": "La voiture est grise." },
+            { "source": "Ist das Auto braun?", "target": "La voiture est-elle marron ?" }
+          ]
+        },
+        {
+          "id": "u2s3",
+          "title": "Les jours et le temps",
+          "icon": "📅",
+          "tips": "Les jours de la semaine sont tous masculins (der Montag, der Dienstag…) et prennent une majuscule. Pour dire « le lundi », on utilise « am » : « am Montag ». « Morgen » signifie « demain », mais « der Morgen » (avec article) désigne le matin : « Guten Morgen! ». « Heute ist Montag » se traduit par « Aujourd'hui, c'est lundi ».",
+          "vocab": [
+            { "term": "Montag", "translation": "lundi", "emoji": "📅" },
+            { "term": "Dienstag", "translation": "mardi", "emoji": "📅" },
+            { "term": "Mittwoch", "translation": "mercredi", "emoji": "📅" },
+            { "term": "Donnerstag", "translation": "jeudi", "emoji": "📅" },
+            { "term": "Freitag", "translation": "vendredi", "emoji": "📅" },
+            { "term": "Samstag", "translation": "samedi", "emoji": "🎉" },
+            { "term": "Sonntag", "translation": "dimanche", "emoji": "☀️" },
+            { "term": "heute", "translation": "aujourd'hui", "emoji": "📍" },
+            { "term": "morgen", "translation": "demain", "emoji": "⏭️" },
+            { "term": "gestern", "translation": "hier", "emoji": "⏮️" },
+            { "term": "die Woche", "translation": "la semaine", "emoji": "🗓️" },
+            { "term": "das Wochenende", "translation": "le week-end", "emoji": "🏖️" }
+          ],
+          "sentences": [
+            { "source": "Heute ist Montag.", "target": "Aujourd'hui, c'est lundi." },
+            { "source": "Morgen ist Dienstag.", "target": "Demain, c'est mardi." },
+            { "source": "Heute ist Freitag, morgen ist Samstag.", "target": "Aujourd'hui c'est vendredi, demain c'est samedi." },
+            { "source": "Das Wochenende ist Samstag und Sonntag.", "target": "Le week-end, c'est samedi et dimanche." },
+            { "source": "Ist heute Mittwoch?", "target": "C'est mercredi aujourd'hui ?" },
+            { "source": "Nein, heute ist Donnerstag.", "target": "Non, aujourd'hui c'est jeudi." },
+            { "source": "Meine Woche ist sehr gut.", "target": "Ma semaine est très bonne." },
+            { "source": "Gestern, heute und morgen.", "target": "Hier, aujourd'hui et demain." }
+          ]
+        },
+        {
+          "id": "u2s4",
+          "title": "Questions simples",
+          "icon": "❓",
+          "tips": "Les mots interrogatifs allemands commencent presque tous par « w » : wer (qui), was (quoi), wo (où), wann (quand), wie (comment), warum (pourquoi). Dans une question, le verbe se place juste après le mot interrogatif : « Wo ist mein Auto? ». « Woher » demande l'origine : « Woher kommst du? » (d'où viens-tu ?). La négation « nicht » se place en général après le verbe : « Ich weiß nicht ».",
+          "vocab": [
+            { "term": "wer?", "translation": "qui ?", "emoji": "🧑" },
+            { "term": "was?", "translation": "quoi ? / que ?", "emoji": "❓" },
+            { "term": "wo?", "translation": "où ?", "emoji": "📍" },
+            { "term": "wann?", "translation": "quand ?", "emoji": "⏰" },
+            { "term": "wie?", "translation": "comment ?", "emoji": "🤔" },
+            { "term": "warum?", "translation": "pourquoi ?", "emoji": "🤷" },
+            { "term": "woher?", "translation": "d'où ?", "emoji": "🌍" },
+            { "term": "wie viel?", "translation": "combien ?", "emoji": "🔢" },
+            { "term": "nicht", "translation": "ne … pas", "emoji": "🚫" },
+            { "term": "ich weiß nicht", "translation": "je ne sais pas", "emoji": "🤷" },
+            { "term": "vielleicht", "translation": "peut-être", "emoji": "🤞" },
+            { "term": "die Frage", "translation": "la question", "emoji": "❔" }
+          ],
+          "sentences": [
+            { "source": "Wer ist das?", "target": "Qui est-ce ?" },
+            { "source": "Was ist das?", "target": "Qu'est-ce que c'est ?" },
+            { "source": "Wo ist mein Auto?", "target": "Où est ma voiture ?" },
+            { "source": "Woher kommst du?", "target": "D'où viens-tu ?" },
+            { "source": "Wie viel ist zwei und drei?", "target": "Combien font deux et trois ?" },
+            { "source": "Ich weiß nicht, vielleicht morgen.", "target": "Je ne sais pas, peut-être demain." },
+            { "source": "Warum ist das Auto rot?", "target": "Pourquoi la voiture est-elle rouge ?" },
+            { "source": "Das ist nicht meine Frage.", "target": "Ce n'est pas ma question." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Au quotidien",
+      "description": "Manger, commander au restaurant, faire les courses et parler de ses vêtements.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u3s1",
+          "title": "La nourriture",
+          "icon": "🍎",
+          "tips": "Pour parler de ce qu'on mange ou boit, on emploie le nom sans article, là où le français utilise « du / de la » : « Ich esse Brot » (je mange du pain), « Ich trinke Wasser » (je bois de l'eau). Si la phrase commence par autre chose que le sujet, le verbe reste en deuxième position et le sujet passe après : « Heute trinke ich Tee ». « Lecker » signifie « délicieux ».",
+          "vocab": [
+            { "term": "das Brot", "translation": "le pain", "emoji": "🍞" },
+            { "term": "das Wasser", "translation": "l'eau", "emoji": "💧" },
+            { "term": "der Apfel", "translation": "la pomme", "emoji": "🍎" },
+            { "term": "der Käse", "translation": "le fromage", "emoji": "🧀" },
+            { "term": "die Milch", "translation": "le lait", "emoji": "🥛" },
+            { "term": "der Kaffee", "translation": "le café", "emoji": "☕" },
+            { "term": "der Tee", "translation": "le thé", "emoji": "🍵" },
+            { "term": "das Fleisch", "translation": "la viande", "emoji": "🥩" },
+            { "term": "der Fisch", "translation": "le poisson", "emoji": "🐟" },
+            { "term": "ich esse", "translation": "je mange", "emoji": "🍽️" },
+            { "term": "ich trinke", "translation": "je bois", "emoji": "🥤" },
+            { "term": "lecker", "translation": "délicieux", "emoji": "😋" }
+          ],
+          "sentences": [
+            { "source": "Ich esse Brot und Käse.", "target": "Je mange du pain et du fromage." },
+            { "source": "Ich trinke Wasser.", "target": "Je bois de l'eau." },
+            { "source": "Der Apfel ist rot.", "target": "La pomme est rouge." },
+            { "source": "Ich trinke Kaffee, nicht Tee.", "target": "Je bois du café, pas du thé." },
+            { "source": "Das Brot ist lecker.", "target": "Le pain est délicieux." },
+            { "source": "Ich esse Fisch, nicht Fleisch.", "target": "Je mange du poisson, pas de viande." },
+            { "source": "Ist der Käse lecker?", "target": "Le fromage est-il délicieux ?" },
+            { "source": "Heute trinke ich Milch.", "target": "Aujourd'hui, je bois du lait." }
+          ]
+        },
+        {
+          "id": "u3s2",
+          "title": "Au restaurant",
+          "icon": "🍽️",
+          "tips": "« Ich möchte » (je voudrais) est la formule polie pour commander, souvent accompagnée de « bitte ». L'article indéfini est « ein » devant un nom masculin ou neutre (ein Salat, ein Bier) et « eine » devant un nom féminin (eine Suppe). Pour demander l'addition, on dit « Die Rechnung, bitte » ou simplement « Zahlen, bitte ».",
+          "vocab": [
+            { "term": "das Restaurant", "translation": "le restaurant", "emoji": "🍽️" },
+            { "term": "die Speisekarte", "translation": "la carte / le menu", "emoji": "📋" },
+            { "term": "ich möchte", "translation": "je voudrais", "emoji": "🙋" },
+            { "term": "die Rechnung", "translation": "l'addition", "emoji": "🧾" },
+            { "term": "die Suppe", "translation": "la soupe", "emoji": "🍲" },
+            { "term": "der Salat", "translation": "la salade", "emoji": "🥗" },
+            { "term": "das Bier", "translation": "la bière", "emoji": "🍺" },
+            { "term": "der Wein", "translation": "le vin", "emoji": "🍷" },
+            { "term": "Guten Appetit!", "translation": "Bon appétit !", "emoji": "😋" },
+            { "term": "zahlen, bitte", "translation": "l'addition, s'il vous plaît", "emoji": "💳" },
+            { "term": "ein", "translation": "un (masculin / neutre)", "emoji": "1️⃣" },
+            { "term": "eine", "translation": "une", "emoji": "1️⃣" }
+          ],
+          "sentences": [
+            { "source": "Ich möchte die Speisekarte, bitte.", "target": "Je voudrais la carte, s'il vous plaît." },
+            { "source": "Ein Bier, bitte.", "target": "Une bière, s'il vous plaît." },
+            { "source": "Ich möchte eine Suppe.", "target": "Je voudrais une soupe." },
+            { "source": "Ein Salat und ein Wasser, bitte.", "target": "Une salade et une eau, s'il vous plaît." },
+            { "source": "Ich möchte die Rechnung, bitte.", "target": "Je voudrais l'addition, s'il vous plaît." },
+            { "source": "Danke, guten Appetit!", "target": "Merci, bon appétit !" },
+            { "source": "Zahlen, bitte!", "target": "L'addition, s'il vous plaît !" },
+            { "source": "Das Restaurant ist sehr gut.", "target": "Le restaurant est très bon." }
+          ]
+        },
+        {
+          "id": "u3s3",
+          "title": "Les courses",
+          "icon": "🛒",
+          "tips": "Pour demander un prix, on dit « Wie viel kostet das? ». La réponse utilise le verbe « kosten » : « Das kostet zehn Euro ». Le mot « Euro » reste au singulier après un nombre : zwei Euro, zwanzig Euro. « Teuer » signifie « cher » et « billig » « bon marché ». « Das Obst » et « das Gemüse » sont des noms collectifs au singulier, comme « les fruits » et « les légumes » en français.",
+          "vocab": [
+            { "term": "der Supermarkt", "translation": "le supermarché", "emoji": "🏪" },
+            { "term": "der Markt", "translation": "le marché", "emoji": "🧺" },
+            { "term": "ich kaufe", "translation": "j'achète", "emoji": "🛒" },
+            { "term": "das Geld", "translation": "l'argent", "emoji": "💰" },
+            { "term": "der Euro", "translation": "l'euro", "emoji": "💶" },
+            { "term": "wie viel kostet das?", "translation": "combien ça coûte ?", "emoji": "🏷️" },
+            { "term": "teuer", "translation": "cher", "emoji": "💸" },
+            { "term": "billig", "translation": "bon marché / pas cher", "emoji": "🪙" },
+            { "term": "die Tasche", "translation": "le sac", "emoji": "👜" },
+            { "term": "das Obst", "translation": "les fruits", "emoji": "🍇" },
+            { "term": "das Gemüse", "translation": "les légumes", "emoji": "🥕" },
+            { "term": "die Tomate", "translation": "la tomate", "emoji": "🍅" }
+          ],
+          "sentences": [
+            { "source": "Wie viel kostet das?", "target": "Combien ça coûte ?" },
+            { "source": "Das kostet zehn Euro.", "target": "Ça coûte dix euros." },
+            { "source": "Ich kaufe Obst und Gemüse.", "target": "J'achète des fruits et des légumes." },
+            { "source": "Das ist sehr teuer.", "target": "C'est très cher." },
+            { "source": "Der Apfel ist billig.", "target": "La pomme n'est pas chère." },
+            { "source": "Ich habe zwanzig Euro.", "target": "J'ai vingt euros." },
+            { "source": "Wo ist der Supermarkt?", "target": "Où est le supermarché ?" },
+            { "source": "Heute kaufe ich eine Tomate.", "target": "Aujourd'hui, j'achète une tomate." }
+          ]
+        },
+        {
+          "id": "u3s4",
+          "title": "Les vêtements",
+          "icon": "👕",
+          "tips": "Après « ich trage » (je porte) ou « ich kaufe » (j'achète), le complément est à l'accusatif : l'article indéfini « ein » devient « einen » pour les noms masculins (ich trage einen Hut), mais reste « ein » au neutre (ein T-Shirt) et « eine » au féminin (eine Hose). « Die Schuhe » est un pluriel (der Schuh, une chaussure). « Die Kleidung » désigne les vêtements en général.",
+          "vocab": [
+            { "term": "das T-Shirt", "translation": "le t-shirt", "emoji": "👕" },
+            { "term": "die Hose", "translation": "le pantalon", "emoji": "👖" },
+            { "term": "das Kleid", "translation": "la robe", "emoji": "👗" },
+            { "term": "die Jacke", "translation": "la veste", "emoji": "🧥" },
+            { "term": "der Mantel", "translation": "le manteau", "emoji": "🧥" },
+            { "term": "die Schuhe", "translation": "les chaussures", "emoji": "👟" },
+            { "term": "der Pullover", "translation": "le pull", "emoji": "🧶" },
+            { "term": "der Hut", "translation": "le chapeau", "emoji": "🎩" },
+            { "term": "ich trage", "translation": "je porte", "emoji": "🧍" },
+            { "term": "schön", "translation": "beau / joli", "emoji": "✨" },
+            { "term": "groß", "translation": "grand", "emoji": "📏" },
+            { "term": "klein", "translation": "petit", "emoji": "🤏" }
+          ],
+          "sentences": [
+            { "source": "Ich trage ein T-Shirt.", "target": "Je porte un t-shirt." },
+            { "source": "Ich möchte eine Hose, bitte.", "target": "Je voudrais un pantalon, s'il vous plaît." },
+            { "source": "Das Kleid ist sehr schön.", "target": "La robe est très belle." },
+            { "source": "Meine Jacke ist schwarz.", "target": "Ma veste est noire." },
+            { "source": "Der Mantel ist groß.", "target": "Le manteau est grand." },
+            { "source": "Ich kaufe Schuhe.", "target": "J'achète des chaussures." },
+            { "source": "Der Pullover kostet zwanzig Euro.", "target": "Le pull coûte vingt euros." },
+            { "source": "Der Hut ist klein.", "target": "Le chapeau est petit." }
+          ]
+        }
+      ]
+    }
+  ]
+}

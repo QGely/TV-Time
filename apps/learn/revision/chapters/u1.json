@@ -1,0 +1,1303 @@
+{
+ "unit": "u1",
+ "title": "Droit aérien",
+ "exam": {
+  "questions": 20,
+  "minutes": 30
+ },
+ "pitch": "Qui a le droit de voler, sur quel avion, où et comment : c’est le droit aérien. C’est la matière la plus « par cœur » de l’examen. Apprends ses chiffres et ses règles, et les points sont à toi.",
+ "essentials": [
+  "SERA (règles de l’air), Part-FCL (licences), Part-NCO (vol privé) : règlements européens, applicables **directement**.",
+  "**LAPL(A)** : monomoteur à pistons ≤ **2 000 kg** ; **3 passagers** au plus, après **10 h** de commandant de bord (CdB).",
+  "**PPL(A)** : licence OACI, sans limite de masse ni de passagers ; aucune rémunération (sauf instruction), mais **frais partagés** permis.",
+  "**SEP** : **24 mois**. Prorogation : **12 h** en 12 mois, dont 6 h CdB, 12 décollages et atterrissages, **1 h** avec instructeur.",
+  "Passagers : **3 décollages et atterrissages** en **90 jours** (dont 1 de nuit pour un vol de nuit).",
+  "Médical **classe 2** : **60 mois** avant 40 ans, **24 mois** de 40 à 50 ans, **12 mois** après ; aucun délai de grâce.",
+  "Théorique : **75 %** par épreuve, **4 tentatives**, **18 mois** pour tout réussir, puis **24 mois** de validité.",
+  "À bord : **CDN** et **immatriculation** en original, manuel de vol, LSA, assurance, carnet de route. **ARC** : 1 an.",
+  "Hauteurs : **500 ft** en campagne ; en ville, **1 000 ft** au-dessus de l’obstacle le plus haut dans **600 m** (plus en France).",
+  "Priorités : l’avion cède au dirigeable, au planeur et au ballon ; sinon, priorité à droite ; face à face, à droite.",
+  "**VMC** (vol à vue) : **5 km**, **1 500 m** et **1 000 ft** des nuages ; **8 km** dès le FL 100 ; en classe G basse, hors nuages et vue du sol.",
+  "Aérodrome en CTR : **plafond 1 500 ft** et **visibilité 5 km**, sinon VFR spécial (1 500 m, 600 ft, 140 kt).",
+  "Accident ou incident grave : **BEA sans délai** ; autre événement à notification obligatoire : **72 h**."
+ ],
+ "sections": [
+  {
+   "title": "Organisations et textes",
+   "summary": "Trois étages : l’OACI fixe les normes mondiales, l’Union européenne en fait des règlements, la France les applique et les complète.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "La **Convention de Chicago**, signée le 7 décembre 1944, crée l’**OACI** (Organisation de l’aviation civile internationale), à **Montréal**. Elle entre en vigueur le **4 avril 1947**. Son article 1 : chaque État est **souverain** sur son espace aérien. Au-dessus d’un pays, tu suis donc ses règles."
+    },
+    {
+     "type": "table",
+     "caption": "Les annexes OACI à connaître (19 au total)",
+     "columns": [
+      "N°",
+      "Sujet",
+      "N°",
+      "Sujet"
+     ],
+     "rows": [
+      [
+       "1",
+       "Licences du personnel",
+       "11",
+       "Services de la circulation aérienne"
+      ],
+      [
+       "2",
+       "Règles de l’air (reprises par SERA)",
+       "12",
+       "Recherche et sauvetage"
+      ],
+      [
+       "6",
+       "Exploitation technique des aéronefs",
+       "13",
+       "Enquêtes sur les accidents et incidents"
+      ],
+      [
+       "7",
+       "Marques de nationalité et d’immatriculation",
+       "14",
+       "Aérodromes"
+      ],
+      [
+       "8",
+       "Navigabilité",
+       "15",
+       "Services d’information aéronautique"
+      ],
+      [
+       "9",
+       "Facilitation (police, douane, santé)",
+       "17",
+       "Sûreté (actes illicites)"
+      ]
+     ],
+     "note": "Chaque État applique ces **SARPs** (normes et pratiques recommandées) ou notifie ses **différences** (AIP GEN 1.7). Une règle peut aussi être plus exigeante : 45 h d’instruction en vol pour le PPL(A) en Part-FCL, 40 h de vol (35 h en formation agréée) dans l’annexe 1."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "UE et EASA (Europe)",
+       "points": [
+        "**EASA** (Agence de l’UE pour la sécurité aérienne), à **Cologne** : prépare les règles",
+        "La **Commission** les adopte ; l’OACI, elle, ne s’adresse qu’aux États",
+        "UE + Islande, Liechtenstein, Norvège, Suisse"
+       ]
+      },
+      {
+       "title": "France",
+       "points": [
+        "**DGAC** (Direction générale de l’aviation civile) : applique et complète",
+        "**DSAC** (Direction de la sécurité de l’aviation civile) : licences, avions, écoles",
+        "**DSNA** (Direction des services de la navigation aérienne) : contrôle ; son **SIA** publie l’AIP"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Les règlements européens",
+     "columns": [
+      "Nom",
+      "Référence",
+      "Contenu"
+     ],
+     "rows": [
+      [
+       "Règlement de base",
+       "(UE) 2018/1139",
+       "cadre commun et rôle de l’EASA (Parlement et Conseil)"
+      ],
+      [
+       "Aircrew",
+       "(UE) n° 1178/2011",
+       "**Part-FCL** (licences) et **Part-MED** (aptitude médicale)"
+      ],
+      [
+       "SERA",
+       "(UE) n° 923/2012",
+       "règles de l’air européennes"
+      ],
+      [
+       "Air Ops",
+       "(UE) n° 965/2012",
+       "**Part-NCO** : vol non commercial sur avion non complexe, donc ton vol en aéroclub"
+      ]
+     ],
+     "note": "Ils s’appliquent **directement**, sans transposition. L’EASA y ajoute des **AMC** (moyens acceptables de conformité) et des **GM** (explications), non obligatoires."
+    },
+    {
+     "type": "trap",
+     "text": "**1944** : signature à Chicago ; **1947** : entrée en vigueur. La **DSAC** délivre les licences, pas la DSNA ni le BEA. Ta balade entre amis relève de la **Part-NCO**, pas de la Part-CAT (transport commercial)."
+    }
+   ]
+  },
+  {
+   "title": "L’avion : navigabilité, immatriculation et documents",
+   "summary": "Un avion ne vole que s’il est navigable, immatriculé et accompagné de ses papiers ; toi, tu portes les tiens.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "La Part-NCO (NCO.GEN.135) liste les documents de l’avion. **Vol local** (départ et arrivée prévus au même aérodrome) : certains peuvent rester au sol. Une escale ailleurs, même pour rentrer le soir, et tout repart à bord."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Toujours à bord",
+       "points": [
+        "**Manuel de vol** approuvé : limitations, procédures, performances",
+        "**Cartes à jour** et procédures d’interception",
+        "Plan de vol déposé, s’il existe",
+        "Sur toi (FCL.045) : **licence**, **certificat médical** et **pièce d’identité avec photo**"
+       ]
+      },
+      {
+       "title": "Au sol permis en vol local",
+       "points": [
+        "Certificat d’**immatriculation** et **CDN** (certificat de navigabilité), en **original**",
+        "Certificat acoustique (en France, le CLN)",
+        "**LSA** (licence de station d’aéronef) : tous les émetteurs, portatifs compris",
+        "**Assurance** responsabilité civile et **carnet de route** (vols et anomalies de l’avion)"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "trap",
+     "title": "Navigabilité",
+     "text": "Le **CDN** a une durée illimitée, mais il ne vaut qu’avec un **ARC** (certificat d’examen de navigabilité) de **1 an**. ARC échu = pas de vol. Une **AD** (consigne de navigabilité) est **obligatoire** ; un **SB** (bulletin du constructeur) n’est qu’une recommandation."
+    },
+    {
+     "type": "key",
+     "title": "Marques d’immatriculation (annexe 7)",
+     "text": "En France : **F**, un tiret et **quatre lettres** (F-GABC), jamais de chiffres. Lettres d’au moins **50 cm** sous l’aile et **30 cm** sur le fuselage ou la dérive. Un avion n’est immatriculé que dans **un seul État**."
+    }
+   ]
+  },
+  {
+   "title": "Licences, qualifications et examen",
+   "summary": "Une licence, une qualification valide, une expérience récente pour emmener du monde, et un examen théorique à réussir dans les délais.",
+   "blocks": [
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "LAPL(A) · pilote d’aéronef léger",
+       "points": [
+        "Monomoteur à pistons terrestre ou TMG (motoplaneur), **MTOM ≤ 2 000 kg** (masse maximale au décollage)",
+        "**3 passagers** au plus (4 à bord), après **10 h de CdB** depuis la licence",
+        "Européenne, **non OACI** : hors EASA, il faut l’accord de l’État",
+        "Formation : **30 h**, dont 15 h en double et 6 h de solo supervisé ; navigation solo de **150 km** (80 NM)"
+       ]
+      },
+      {
+       "title": "PPL(A) · pilote privé avion",
+       "points": [
+        "Conforme à l’**annexe 1 OACI** : reconnue dans le monde entier",
+        "Ni limite de masse ni de passagers : tes **qualifications** (SEP…) fixent les avions",
+        "Formation : **45 h**, dont 25 h en double et 10 h de solo supervisé",
+        "Navigation solo de **270 km** (150 NM), avec atterrissages sur **2** autres terrains"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "memo",
+     "title": "2-3-4",
+     "text": "LAPL comme **L**éger : **2** tonnes, **3** passagers, **4** à bord. Trois amis en DR400 vers l’Allemagne : oui ; un avion de 2 200 kg : non."
+    },
+    {
+     "type": "bullets",
+     "title": "Communs aux deux licences",
+     "items": [
+      "**16 ans** pour le premier solo (autorisé par l’instructeur, avec un certificat médical) ; **17 ans** pour la licence.",
+      "Vols **non commerciaux** et **sans rémunération** ; seuls l’instruction et les examens peuvent être payés, sous conditions.",
+      "**Frais partagés** permis : coûts directs répartis entre tous les occupants, **pilote compris**, **6 personnes** au plus.",
+      "Radio : mention de **compétence linguistique** (FCL.055), **niveau 4** au moins. Validité : 4 ans au niveau 4, 6 ans au niveau 5, illimitée au niveau 6."
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Un photographe t’offre 200 € pour un survol ? Refuse : c’est un vol rémunéré. En LAPL(A), les **10 h de CdB** se comptent **après** la licence, pas pendant la formation."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "SEP (24 mois) : prorogation par l’expérience",
+       "points": [
+        "Dans les **12 mois** avant l’échéance",
+        "**12 h** sur la classe, dont **6 h** de CdB",
+        "**12 décollages** et **12 atterrissages**",
+        "**1 h** de vol d’entraînement avec un instructeur"
+       ]
+      },
+      {
+       "title": "SEP : prorogation par un contrôle",
+       "points": [
+        "**Contrôle de compétences** avec un examinateur",
+        "Dans les **3 mois** avant l’échéance",
+        "Échéance passée : plus de prorogation, il faut **renouveler** (remise à niveau si nécessaire, puis contrôle)"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Garder ses privilèges",
+     "columns": [
+      "Exigence",
+      "Pour qui",
+      "Contenu"
+     ],
+     "rows": [
+      [
+       "Expérience récente (FCL.060)",
+       "tout pilote qui emmène des passagers",
+       "**3 décollages, approches et atterrissages** en **90 jours**, sur même type ou classe"
+      ],
+      [
+       "Passagers de nuit (FCL.060)",
+       "pilote sans qualification de vol aux instruments (IR)",
+       "dont au moins **1** de **nuit** dans ces 90 jours"
+      ],
+      [
+       "Maintien de compétence (FCL.140.A)",
+       "titulaire du LAPL(A)",
+       "sur **24 mois** : **12 h** de CdB, 12 décollages et atterrissages, **1 h** avec un instructeur ; sinon, contrôle ou vols complémentaires"
+      ]
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "SEP : 12 h sur **12 mois** ; LAPL : 12 h sur **24 mois**. L’heure avec un instructeur est **obligatoire** et doit tomber dans la période. 2 atterrissages en 90 jours ? Fais le 3e avant d’emmener ton ami."
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "**Qualification de vol de nuit** (FCL.810) : théorie, puis 5 h de nuit, dont 3 h en double (avec 1 h de navigation). En solo : 5 décollages et 5 atterrissages complets."
+     ]
+    },
+    {
+     "type": "bullets",
+     "title": "Examen théorique (FCL.025)",
+     "items": [
+      "Tu te présentes sur **recommandation** de ton organisme de formation (ATO ou DTO).",
+      "**75 %** au moins dans **chaque** épreuve ; **4 tentatives** au plus par épreuve, sinon tu repasses **tout**.",
+      "Tout doit être réussi en **18 mois**. Le théorique précède le test en vol et reste valable **24 mois** pour obtenir la licence."
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Délai pour réussir tout le théorique",
+     "formula": "Date limite = fin du mois de la 1re tentative + 18 mois",
+     "example": "1re épreuve le 10 février 2026 → fin février 2026 + 18 mois = **31 août 2027**."
+    }
+   ]
+  },
+  {
+   "title": "Aptitude médicale (Part-MED)",
+   "summary": "Il te faut un certificat valide et une forme réelle le jour du vol : l’un ne remplace pas l’autre.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Durée du certificat selon ton âge le jour de l’examen",
+     "columns": [
+      "Certificat",
+      "Avant 40 ans",
+      "De 40 à 50 ans",
+      "Après 50 ans"
+     ],
+     "rows": [
+      [
+       "Classe 2 (PPL et LAPL)",
+       "**60 mois** (fin à 42 ans au plus tard)",
+       "**24 mois** (fin à 51 ans au plus tard)",
+       "**12 mois**"
+      ],
+      [
+       "LAPL (LAPL seulement)",
+       "**60 mois** (fin à 42 ans au plus tard)",
+       "**24 mois**",
+       "**24 mois**"
+      ]
+     ],
+     "note": "Classe 1 : professionnels ; elle couvre aussi classe 2 et LAPL. Classe 3 : contrôleurs. Un seul certificat à la fois, délivré par un AME (médecin agréé) ou un AeMC (centre aéromédical)."
+    },
+    {
+     "type": "formula",
+     "label": "Date de fin d’un certificat médical",
+     "formula": "Fin = date de l’examen + durée selon ton âge ce jour-là\npuis vérifie le plafond d’âge (42 ou 51 ans)",
+     "example": "Né le 15 mai 1985, classe 2 le 10 mars 2025, à 39 ans : 60 mois mènent au 10 mars 2030. Mais tu as 42 ans le 15 mai 2027 : fin le **15 mai 2027**."
+    },
+    {
+     "type": "key",
+     "title": "Revalidation ou renouvellement ?",
+     "text": "Visite dans les **45 jours** avant l’expiration : la nouvelle durée part de l’**expiration**, aucun jour perdu. Plus tôt ou après : elle part du **jour de la visite**. Après l’expiration, aucun délai de grâce.\nExemple à 45 ans, expiration le 30 juin 2026 : visite le 25 mai → 30 juin 2028 ; visite le 2 mai → 2 mai 2028."
+    },
+    {
+     "type": "trap",
+     "title": "Apte sur le papier, apte ce jour-là (MED.A.020)",
+     "text": "Malade, ou sous un médicament ou un traitement qui peut nuire à la sécurité : tu **ne voles pas**. Après une opération, une hospitalisation, une blessure importante, le début d’un traitement régulier, une grossesse : avis d’un **AME** avant de revoler. Limitation **VDL** : lunettes **et** paire de rechange à bord."
+    }
+   ]
+  },
+  {
+   "title": "Règles de l’air : priorités, feux, hauteurs et niveaux",
+   "summary": "SERA reprend l’annexe 2 : en VFR (vol à vue), tu vois et tu évites, tu cèdes le passage, tu voles assez haut et au bon niveau.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "Le commandant de bord (CdB)",
+     "items": [
+      "Il répond du respect des règles de l’air, même sous clairance ; **voir et éviter** reste son travail.",
+      "Avant le vol (SERA.2010), il étudie toute l’information utile : météo, NOTAM, carburant, solution de repli.",
+      "**Zéro alcool** : aucune fonction de sécurité sous l’effet d’une substance psychoactive (SERA.2020)."
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "Droits de passage en vol (SERA.3210)",
+     "svg": "<svg viewBox=\"0 0 688 246\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><defs><marker id=\"u1mb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"11\" markerHeight=\"11\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1d4e89\"/></marker><marker id=\"u1mr\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"11\" markerHeight=\"11\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#c0392b\"/></marker><marker id=\"u1mk\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"11\" markerHeight=\"11\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#14213d\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"688\" height=\"246\" fill=\"#ffffff\"/><rect x=\"4\" y=\"4\" width=\"164\" height=\"168\" rx=\"8\" fill=\"#f7f9fc\" stroke=\"#d6dbe6\"/><rect x=\"176\" y=\"4\" width=\"164\" height=\"168\" rx=\"8\" fill=\"#f7f9fc\" stroke=\"#d6dbe6\"/><rect x=\"348\" y=\"4\" width=\"164\" height=\"168\" rx=\"8\" fill=\"#f7f9fc\" stroke=\"#d6dbe6\"/><rect x=\"520\" y=\"4\" width=\"164\" height=\"168\" rx=\"8\" fill=\"#f7f9fc\" stroke=\"#d6dbe6\"/><text x=\"16\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Face à face</text><text x=\"16\" y=\"44\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">chacun oblique</text><text x=\"16\" y=\"60\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">vers sa droite</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(34,108) rotate(90) scale(0.9)\" fill=\"#1d4e89\"/><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(138,108) rotate(270) scale(0.9)\" fill=\"#c0392b\"/><path d=\"M52,108 Q78,108 88,132\" fill=\"none\" stroke=\"#1d4e89\" stroke-width=\"2.5\" marker-end=\"url(#u1mb)\"/><path d=\"M120,108 Q94,108 84,84\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2.5\" marker-end=\"url(#u1mr)\"/><text x=\"86\" y=\"160\" font-size=\"12.5\" font-weight=\"600\" fill=\"#3d4a66\" text-anchor=\"middle\">les deux virent à droite</text><text x=\"188\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Convergence</text><text x=\"188\" y=\"44\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">celui qui voit l’autre</text><text x=\"188\" y=\"60\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">à sa droite cède</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(314,92) rotate(270) scale(0.9)\" fill=\"#c0392b\"/><path d=\"M296,92 L246,92\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\" stroke-dasharray=\"6 5\" marker-end=\"url(#u1mr)\"/><text x=\"298\" y=\"120\" font-size=\"12.5\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">prioritaire</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(216,140) rotate(0) scale(0.9)\" fill=\"#1d4e89\"/><path d=\"M216,122 Q217,106 242,110\" fill=\"none\" stroke=\"#1d4e89\" stroke-width=\"2.5\" marker-end=\"url(#u1mb)\"/><text x=\"238\" y=\"152\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"start\">cède : passe</text><text x=\"238\" y=\"166\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"start\">derrière</text><text x=\"360\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Dépassement</text><text x=\"360\" y=\"44\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">priorité au dépassé ;</text><text x=\"360\" y=\"60\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">on double par la droite</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(460,100) rotate(90) scale(0.9)\" fill=\"#c0392b\"/><text x=\"460\" y=\"82\" font-size=\"12.5\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">prioritaire</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(374,100) rotate(90) scale(0.9)\" fill=\"#1d4e89\"/><path d=\"M392,101 C418,102 420,130 446,130 L504,130\" fill=\"none\" stroke=\"#1d4e89\" stroke-width=\"2.5\" marker-end=\"url(#u1mb)\"/><text x=\"388\" y=\"156\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">dépasse</text><text x=\"532\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">En approche</text><text x=\"532\" y=\"44\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">le plus bas passe ;</text><text x=\"532\" y=\"60\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">le plus haut cède</text><rect x=\"632\" y=\"146\" width=\"46\" height=\"8\" fill=\"#6b7489\"/><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(608,136) rotate(105) scale(0.85)\" fill=\"#c0392b\"/><text x=\"590\" y=\"162\" font-size=\"12.5\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">plus bas</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(554,100) rotate(112) scale(0.85)\" fill=\"#1d4e89\"/><text x=\"582\" y=\"96\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"start\">plus haut</text><rect x=\"4\" y=\"180\" width=\"680\" height=\"62\" rx=\"8\" fill=\"#ffffff\" stroke=\"#d6dbe6\"/><text x=\"16\" y=\"200\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Catégories : chacun cède le passage à ceux qui le suivent dans la chaîne</text><rect x=\"16\" y=\"209\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#e8f0fb\" stroke=\"#1d4e89\" stroke-width=\"1.5\"/><text x=\"104.0\" y=\"227\" font-size=\"14\" font-weight=\"600\" fill=\"#14213d\" text-anchor=\"middle\">Avion, hélicoptère</text><path d=\"M196,222 L216,222\" stroke=\"#14213d\" stroke-width=\"2\" marker-end=\"url(#u1mk)\"/><rect x=\"222\" y=\"209\" width=\"130\" height=\"26\" rx=\"5\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"287.0\" y=\"227\" font-size=\"14\" font-weight=\"600\" fill=\"#14213d\" text-anchor=\"middle\">Dirigeable</text><path d=\"M356,222 L376,222\" stroke=\"#14213d\" stroke-width=\"2\" marker-end=\"url(#u1mk)\"/><rect x=\"382\" y=\"209\" width=\"130\" height=\"26\" rx=\"5\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.5\"/><text x=\"447.0\" y=\"227\" font-size=\"14\" font-weight=\"600\" fill=\"#14213d\" text-anchor=\"middle\">Planeur</text><path d=\"M516,222 L536,222\" stroke=\"#14213d\" stroke-width=\"2\" marker-end=\"url(#u1mk)\"/><rect x=\"542\" y=\"209\" width=\"130\" height=\"26\" rx=\"5\" fill=\"#fdeee6\" stroke=\"#d35400\" stroke-width=\"1.5\"/><text x=\"607.0\" y=\"227\" font-size=\"14\" font-weight=\"600\" fill=\"#14213d\" text-anchor=\"middle\">Ballon</text></svg>",
+     "caption": "Bleu : l’avion qui cède ; il ne passe **ni dessus, ni dessous, ni devant**. Rouge : le prioritaire, qui **garde son cap et sa vitesse**. Tous cèdent à un avion contraint d’**atterrir** ; un avion cède aussi à celui qui en **remorque** un autre."
+    },
+    {
+     "type": "trap",
+     "text": "La priorité à droite ne joue qu’**entre aéronefs de même catégorie** : un planeur venant de ta gauche reste prioritaire. En tour de piste, celui qui est en **finale plus bas** passe avant toi, même si tu t’es annoncé le premier."
+    },
+    {
+     "type": "diagram",
+     "title": "Feux de navigation (SERA.3215)",
+     "svg": "<svg viewBox=\"0 0 688 208\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><defs></defs><rect x=\"0\" y=\"0\" width=\"688\" height=\"208\" fill=\"#ffffff\"/><text x=\"12\" y=\"18\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Secteurs des feux (vue de dessus)</text><path d=\"M160,112 L160.0,28.0 A84,84 0 0,1 238.9,140.7 Z\" fill=\"#dcf1e3\" stroke=\"#2e7d4f\" stroke-width=\"1.5\"/><path d=\"M160,112 L81.1,140.7 A84,84 0 0,1 160.0,28.0 Z\" fill=\"#f9dcd7\" stroke=\"#c0392b\" stroke-width=\"1.5\"/><path d=\"M160,112 L238.9,140.7 A84,84 0 0,1 81.1,140.7 Z\" fill=\"#eef0f4\" stroke=\"#6b7489\" stroke-width=\"1.5\"/><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(160,112) rotate(0) scale(1.7)\" fill=\"#14213d\"/><circle cx=\"131\" cy=\"115\" r=\"5.5\" fill=\"#c0392b\"/><circle cx=\"189\" cy=\"115\" r=\"5.5\" fill=\"#1fa34a\"/><circle cx=\"160\" cy=\"140\" r=\"5.5\" fill=\"#ffffff\" stroke=\"#6b7489\" stroke-width=\"2\"/><text x=\"118.1\" y=\"84.8\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">ROUGE</text><text x=\"118.1\" y=\"100.8\" font-size=\"13\" font-weight=\"600\" fill=\"#c0392b\" text-anchor=\"middle\">110°</text><text x=\"201.9\" y=\"84.8\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">VERT</text><text x=\"201.9\" y=\"100.8\" font-size=\"13\" font-weight=\"600\" fill=\"#2e7d4f\" text-anchor=\"middle\">110°</text><text x=\"160.0\" y=\"178.0\" font-size=\"13\" font-weight=\"700\" fill=\"#3d4a66\" text-anchor=\"middle\">BLANC 140°</text><line x1=\"312\" y1=\"8\" x2=\"312\" y2=\"200\" stroke=\"#d6dbe6\" stroke-width=\"1.5\"/><text x=\"328\" y=\"18\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Ce que tu vois de nuit</text><circle cx=\"344\" cy=\"48\" r=\"8\" fill=\"#1fa34a\"/><circle cx=\"372\" cy=\"48\" r=\"8\" fill=\"#c0392b\"/><text x=\"394\" y=\"44\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Vert à gauche, rouge à droite :</text><text x=\"394\" y=\"61\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">il vient de face → vire à droite</text><line x1=\"328\" y1=\"71\" x2=\"680\" y2=\"71\" stroke=\"#d6dbe6\" stroke-width=\"1\"/><circle cx=\"358\" cy=\"94\" r=\"8\" fill=\"#c0392b\"/><text x=\"394\" y=\"90\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Son rouge, sur ta droite :</text><text x=\"394\" y=\"107\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">relèvement constant → tu cèdes</text><line x1=\"328\" y1=\"117\" x2=\"680\" y2=\"117\" stroke=\"#d6dbe6\" stroke-width=\"1\"/><circle cx=\"358\" cy=\"140\" r=\"8\" fill=\"#1fa34a\"/><text x=\"394\" y=\"136\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Son vert, sur ta gauche :</text><text x=\"394\" y=\"153\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">relèvement constant → il te cède</text><line x1=\"328\" y1=\"163\" x2=\"680\" y2=\"163\" stroke=\"#d6dbe6\" stroke-width=\"1\"/><circle cx=\"358\" cy=\"186\" r=\"8\" fill=\"#ffffff\" stroke=\"#6b7489\" stroke-width=\"2\"/><text x=\"394\" y=\"182\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Son feu blanc seul :</text><text x=\"394\" y=\"199\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">tu le rattrapes → double à droite</text></svg>",
+     "caption": "De nuit, tout aéronef en vol allume ses **feux anticollision** et ses **feux de navigation**. **Relèvement constant** (il reste au même endroit de ton pare-brise) = risque de collision."
+    },
+    {
+     "type": "table",
+     "caption": "Hauteurs minimales VFR (SERA.5005, hors décollage et atterrissage)",
+     "columns": [
+      "Où",
+      "Règle"
+     ],
+     "rows": [
+      [
+       "Ville, rassemblement en plein air",
+       "**1 000 ft** au-dessus de l’obstacle le plus élevé dans un rayon de **600 m**"
+      ],
+      [
+       "Ailleurs",
+       "**500 ft** au-dessus du sol, de l’eau ou de l’obstacle le plus élevé dans **150 m**"
+      ],
+      [
+       "De nuit (sans altitude publiée)",
+       "**1 000 ft** au-dessus de l’obstacle le plus élevé dans **8 km** ; **2 000 ft** en montagne"
+      ],
+      [
+       "Cœur d’un parc national (France)",
+       "survol motorisé interdit à moins de **1 000 m** du sol, sauf dérogation"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "En France, en plus : survol des villes (arrêté du 10 octobre 1957, avions)",
+     "columns": [
+      "Largeur moyenne de la ville",
+      "Monomoteur à pistons",
+      "Autres avions"
+     ],
+     "rows": [
+      [
+       "jusqu’à 1 200 m (et rassemblements de personnes ou d’animaux)",
+       "**500 m**",
+       "**1 000 m**"
+      ],
+      [
+       "de 1 200 à 3 600 m (et plus de 10 000 personnes environ)",
+       "**1 000 m**",
+       "**1 000 m**"
+      ],
+      [
+       "plus de 3 600 m",
+       "**1 500 m**",
+       "**1 500 m**"
+      ]
+     ],
+     "note": "Largeur lue sur la carte au 1/500 000 ; Paris a ses propres règles. La valeur la plus haute (SERA ou arrêté) l’emporte."
+    },
+    {
+     "type": "formula",
+     "label": "Altitude minimale au-dessus d’une ville (SERA)",
+     "formula": "Alt. mini = sommet de l’obstacle le plus haut (rayon 600 m) + 1 000 ft",
+     "example": "Sol à 400 ft et antenne de 150 ft : sommet à 550 ft, donc 550 + 1 000 = **1 550 ft**. En France, vérifie aussi l’arrêté de 1957."
+    },
+    {
+     "type": "formula",
+     "label": "Niveau de croisière VFR (au-dessus de 3 000 ft sol)",
+     "formula": "Rm = Rv − déclinaison Est (ou + déclinaison Ouest)\nRm de 000° à 179° → milliers impairs + 500 ft\nRm de 180° à 359° → milliers pairs + 500 ft",
+     "example": "Route vraie (Rv) 182°, déclinaison 4° Est : route magnétique (Rm) = 178°, donc FL 35, **FL 55**, FL 75… Avec la route vraie, tu aurais pris à tort le FL 65."
+    },
+    {
+     "type": "memo",
+     "title": "Est impair, Ouest pair",
+     "text": "Vers l’**E**st : **i**mpair. Vers l’**O**uest : **p**air. Le VFR ajoute toujours **500 ft** ; les niveaux ronds sont ceux des IFR (vol aux instruments). La règle part de 3 000 ft **sol**, pas AMSL."
+    }
+   ]
+  },
+  {
+   "title": "Espaces aériens et minimums VMC",
+   "summary": "La classe d’espace dit si tu as besoin d’une clairance et quel service tu reçois ; les minimums VMC disent si tu peux voler à vue.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Classes d’espace et vol VFR (SERA)",
+     "columns": [
+      "Classe",
+      "Clairance",
+      "Radio",
+      "Service rendu au VFR"
+     ],
+     "rows": [
+      [
+       "A",
+       "–",
+       "–",
+       "**VFR interdit**"
+      ],
+      [
+       "B",
+       "oui",
+       "oui",
+       "séparé de **tous** les vols"
+      ],
+      [
+       "C",
+       "oui",
+       "oui",
+       "séparé des **IFR** ; information de trafic sur les VFR"
+      ],
+      [
+       "D",
+       "oui",
+       "oui",
+       "**pas séparé** ; information de trafic sur tous les vols"
+      ],
+      [
+       "E",
+       "**non**",
+       "non",
+       "information de trafic si possible (contrôlé pour les IFR)"
+      ],
+      [
+       "F",
+       "non",
+       "non",
+       "information de vol (service consultatif pour les IFR)"
+      ],
+      [
+       "G",
+       "non",
+       "non",
+       "information de vol sur demande"
+      ]
+     ],
+     "note": "A à E : contrôlés ; F et G : non contrôlés. En France, surtout A, C, D, E et G. VFR en classes C à G : 250 kt au plus sous le FL 100."
+    },
+    {
+     "type": "bullets",
+     "title": "Les volumes à connaître",
+     "items": [
+      "**CTR** (zone de contrôle) : espace contrôlé qui part de la **surface** autour d’un aérodrome.",
+      "**TMA** (région de contrôle terminale) et **CTA** (région de contrôle) : base **au-dessus du sol**.",
+      "**Zone P** (interdite) : vol interdit. **Zone R** (réglementée) : selon les conditions publiées.",
+      "**Zone D** (dangereuse) : tirs, largages possibles ; traversée permise, sous ta responsabilité.",
+      "**RMZ** : radio obligatoire (annonce et écoute, sans clairance). **TMZ** : transpondeur obligatoire.",
+      "**SIV** (secteur d’information de vol) : information de vol et alerte, ni clairance, ni séparation.",
+      "Limites en **AMSL** (au-dessus de la mer), **ASFC** (au-dessus du sol) ou FL : convertis. Plancher 1 500 ft ASFC sur un sol à 1 200 ft = 2 700 ft AMSL."
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "Minimums VMC (SERA.5001)",
+     "svg": "<svg viewBox=\"0 0 688 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><defs><marker id=\"u1mv\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"11\" markerHeight=\"11\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#14213d\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"688\" height=\"250\" fill=\"#ffffff\"/><rect x=\"166\" y=\"10\" width=\"512\" height=\"56\" fill=\"#e8f0fb\"/><text x=\"183\" y=\"33\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Visibilité 8 km</text><text x=\"183\" y=\"55\" font-size=\"14\" font-weight=\"400\" fill=\"#14213d\" text-anchor=\"start\">Nuages : 1 500 m horizontalement, 1 000 ft verticalement</text><text x=\"668\" y=\"28\" font-size=\"13\" font-weight=\"600\" fill=\"#c0392b\" text-anchor=\"end\">VFR interdit au-dessus du FL 195</text><rect x=\"166\" y=\"66\" width=\"512\" height=\"80\" fill=\"#f3f5f9\"/><text x=\"183\" y=\"92\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Visibilité 5 km</text><text x=\"183\" y=\"113\" font-size=\"14\" font-weight=\"400\" fill=\"#14213d\" text-anchor=\"start\">1 500 m et 1 000 ft des nuages</text><text x=\"183\" y=\"133\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">dans toutes les classes</text><path d=\"M0,-18 L3,-12 L3,-5 L18,0 L18,4 L3,2 L2,11 L7,14 L7,17 L0,16 L-7,17 L-7,14 L-2,11 L-3,2 L-18,4 L-18,0 L-3,-5 L-3,-12 Z\" transform=\"translate(460,96) rotate(90) scale(0.8)\" fill=\"#1d4e89\"/><path d=\"M480,96 L558,96\" stroke=\"#14213d\" stroke-width=\"1.8\" marker-start=\"url(#u1mv)\" marker-end=\"url(#u1mv)\"/><text x=\"519\" y=\"88\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">1 500 m</text><ellipse cx=\"593\" cy=\"98\" rx=\"30\" ry=\"14\" fill=\"#ffffff\" stroke=\"#6b7489\" stroke-width=\"1.5\"/><ellipse cx=\"622\" cy=\"89\" rx=\"27\" ry=\"15\" fill=\"#ffffff\" stroke=\"#6b7489\" stroke-width=\"1.5\"/><ellipse cx=\"644\" cy=\"100\" rx=\"24\" ry=\"12\" fill=\"#ffffff\" stroke=\"#6b7489\" stroke-width=\"1.5\"/><ellipse cx=\"618\" cy=\"98\" rx=\"40\" ry=\"11\" fill=\"#ffffff\"/><path d=\"M608,115 L608,142\" stroke=\"#14213d\" stroke-width=\"1.8\" marker-start=\"url(#u1mv)\" marker-end=\"url(#u1mv)\"/><text x=\"618\" y=\"134\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">1 000 ft</text><rect x=\"166\" y=\"146\" width=\"252\" height=\"80\" fill=\"#e8f0fb\"/><text x=\"180\" y=\"170\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Classes B, C, D, E</text><text x=\"180\" y=\"191\" font-size=\"14\" font-weight=\"400\" fill=\"#14213d\" text-anchor=\"start\">5 km ; 1 500 m et 1 000 ft</text><text x=\"180\" y=\"211\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"start\">des nuages, comme au-dessus</text><rect x=\"422\" y=\"146\" width=\"256\" height=\"80\" fill=\"#eaf6ee\"/><text x=\"436\" y=\"167\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">Classe G</text><text x=\"436\" y=\"185\" font-size=\"14\" font-weight=\"400\" fill=\"#14213d\" text-anchor=\"start\">5 km, hors des nuages</text><text x=\"436\" y=\"203\" font-size=\"14\" font-weight=\"400\" fill=\"#14213d\" text-anchor=\"start\">et en vue de la surface</text><text x=\"436\" y=\"220\" font-size=\"13\" font-weight=\"700\" fill=\"#d35400\" text-anchor=\"start\">France, jour, ≤ 140 kt : 1 500 m</text><line x1=\"10\" y1=\"66\" x2=\"678\" y2=\"66\" stroke=\"#1d4e89\" stroke-width=\"3\"/><line x1=\"10\" y1=\"146\" x2=\"678\" y2=\"146\" stroke=\"#2e7d4f\" stroke-width=\"3\"/><text x=\"156\" y=\"60\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"end\">FL 100</text><text x=\"156\" y=\"84\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"end\">(10 000 ft AMSL)</text><text x=\"156\" y=\"140\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"end\">3 000 ft AMSL</text><text x=\"156\" y=\"164\" font-size=\"13\" font-weight=\"600\" fill=\"#2e7d4f\" text-anchor=\"end\">ou relief + 1 000 ft</text><text x=\"156\" y=\"181\" font-size=\"13\" font-weight=\"400\" fill=\"#3d4a66\" text-anchor=\"end\">(la plus haute)</text><rect x=\"10\" y=\"226\" width=\"668\" height=\"22\" fill=\"#c9b48a\"/><text x=\"26\" y=\"242\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"start\">Sol</text></svg>",
+     "caption": "VMC : conditions météorologiques de vol à vue. L’allègement français à 1 500 m ne vaut ni de nuit, ni au-dessus de la limite basse."
+    },
+    {
+     "type": "formula",
+     "label": "Limite basse des VMC « hors des nuages »",
+     "formula": "Limite = la plus haute de : 3 000 ft AMSL ou relief + 1 000 ft",
+     "example": "Plateau à 3 000 ft : limite à 4 000 ft. À 3 500 ft QNH en classe G, tu es dessous : hors des nuages et en vue de la surface suffisent."
+    },
+    {
+     "type": "key",
+     "title": "Aérodrome en CTR",
+     "text": "Pour décoller, atterrir ou entrer dans le circuit en VFR : **plafond ≥ 1 500 ft** et **visibilité au sol ≥ 5 km**. Sinon, clairance **VFR spécial**. Le plafond est la base de la plus basse couche **BKN** ou **OVC** (FEW et SCT ne comptent pas).\nExemple : visibilité 8 km, BKN 1 200 ft → pas de départ VFR normal."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "VFR spécial (SERA.5010)",
+       "points": [
+        "En CTR, sur **clairance**, en principe de jour",
+        "Au sol : visibilité **≥ 1 500 m**, plafond **≥ 600 ft**",
+        "En vol : hors des nuages, vue de la surface, visibilité **≥ 1 500 m**, **≤ 140 kt**"
+       ]
+      },
+      {
+       "title": "VFR de nuit (SERA.5005)",
+       "points": [
+        "**Qualification de vol de nuit** ; **plan de vol** si tu quittes les abords",
+        "**Plafond ≥ 1 500 ft**, aucun allègement de visibilité",
+        "Sous 3 000 ft AMSL ou 1 000 ft sol : **vue continue de la surface**",
+        "En France, nuit : de **30 min** après le coucher à 30 min avant le lever du soleil"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Services ATS, plan de vol, transpondeur et signaux",
+   "summary": "Trois services, un plan de vol quand il est exigé, un transpondeur toujours allumé et des signaux à connaître par cœur.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "Les services de la circulation aérienne (ATS)",
+     "items": [
+      "**Contrôle (ATC)** : clairances et séparation selon la classe ; tour (TWR), approche, contrôle régional.",
+      "**Information de vol (FIS)** : trafic, météo, zones actives ; rendue par les SIV et les AFIS.",
+      "**Alerte** : prévient les secours et les seconde (phases INCERFA, ALERFA, DETRESFA, voir 1.9).",
+      "**ATIS** : message automatique de l’aérodrome, identifié par une lettre. Annonce cette lettre au premier contact.",
+      "**Clairance** : tu la **collationnes** (tu la répètes) : piste, calage, code, fréquence, niveau, cap, vitesse. Une information de trafic s’accuse simplement.",
+      "Une clairance te ferait sortir des VMC ? Dis-le et demande autre chose : tu restes responsable."
+     ]
+    },
+    {
+     "type": "steps",
+     "title": "Le plan de vol (SERA.4001 et 4020)",
+     "items": [
+      "Obligatoire notamment pour un vol **contrôlé** (un appel radio vaut plan de vol abrégé), un passage de **frontière**, un vol **de nuit** quittant les abords.",
+      "Dépose-le au moins **60 min** avant le départ (en France, **30 min** pour un vol VFR intérieur). Déposé en vol : il doit arriver **10 min** avant l’entrée en région de contrôle.",
+      "À l’arrivée, **clôture-le** au plus vite, auprès de l’organisme ATS le plus proche s’il n’y en a pas sur le terrain.",
+      "Si la tour t’a vu atterrir, rien à faire. Sinon, personne ne le clôture à ta place : sans nouvelles, l’alerte démarre."
+     ]
+    },
+    {
+     "type": "key",
+     "title": "Transpondeur",
+     "text": "Codes : **7000** VFR, **7500** intervention illicite, **7600** panne radio, **7700** détresse ou urgence.\nModes : **A** = code ; **C** = + altitude-pression (référence 1 013,25 hPa, quel que soit ton calage) ; **S** = + adresse propre à l’avion.\nEn état de marche, il reste **allumé tout le vol** ; IDENT seulement sur demande (SERA.13001)."
+    },
+    {
+     "type": "memo",
+     "title": "75, 76, 77",
+     "text": "**75** : détourné. **76** : muet (radio en panne). **77** : en détresse. En anglais : « seven-five, taken alive ; seven-six, radio fix ; seven-seven, going to heaven »."
+    },
+    {
+     "type": "table",
+     "caption": "Signaux lumineux et pyrotechniques (SERA, appendice 1)",
+     "columns": [
+      "Signal",
+      "En vol",
+      "Au sol"
+     ],
+     "rows": [
+      [
+       "Vert fixe",
+       "autorisé à atterrir",
+       "autorisé à décoller"
+      ],
+      [
+       "Rouge fixe",
+       "cédez le passage, continuez à tourner",
+       "arrêtez"
+      ],
+      [
+       "Éclats verts",
+       "revenez pour atterrir",
+       "autorisé à rouler"
+      ],
+      [
+       "Éclats rouges",
+       "aérodrome dangereux, n’atterrissez pas",
+       "dégagez l’aire d’atterrissage"
+      ],
+      [
+       "Éclats blancs",
+       "atterrissez ici, gagnez l’aire de trafic",
+       "retournez au point de départ"
+      ],
+      [
+       "Artifice rouge",
+       "n’atterrissez pas pour le moment, même autorisé",
+       "–"
+      ],
+      [
+       "Projectiles rouges et verts",
+       "tu entres dans une zone P, R ou D : sors-en",
+       "–"
+      ]
+     ],
+     "note": "Accuser réception en vol : de jour, balance les ailes (sauf en base et en finale) ; de nuit, 2 éclats des phares. Au sol, de jour : bouge ailerons ou direction."
+    },
+    {
+     "type": "table",
+     "caption": "Interception : ses signaux (lui) et les tiens (toi)",
+     "columns": [
+      "Qui",
+      "Signal",
+      "Sens"
+     ],
+     "rows": [
+      [
+       "Lui",
+       "balance les ailes, puis virage lent en palier, normalement à gauche",
+       "« Suivez-moi » : balance les ailes et suis-le"
+      ],
+      [
+       "Lui",
+       "dégagement brusque en montée (90° ou plus)",
+       "« Vous pouvez continuer »"
+      ],
+      [
+       "Lui",
+       "train sorti, phares allumés, au-dessus de la piste",
+       "« Atterrissez ici »"
+      ],
+      [
+       "Toi",
+       "train rentré, phares clignotants au-dessus de la piste",
+       "« Ce terrain ne convient pas »"
+      ],
+      [
+       "Toi",
+       "tous tes feux allumés et éteints régulièrement",
+       "« Je ne peux pas obéir »"
+      ]
+     ]
+    },
+    {
+     "type": "key",
+     "title": "Si tu es intercepté",
+     "text": "Suis ses instructions, appelle sur **121,5 MHz** (identité, nature du vol), préviens l’ATS si possible et affiche **7700**, sauf instruction contraire de l’ATS."
+    }
+   ]
+  },
+  {
+   "title": "Aérodromes et information aéronautique",
+   "summary": "Au sol, tout est codé (couleurs, panneaux, manche à air) ; la carte VAC, l’AIP et les NOTAM disent le reste.",
+   "blocks": [
+    {
+     "type": "formula",
+     "label": "Numéro de piste",
+     "formula": "N° = orientation magnétique de l’axe (QFU) ÷ 10, arrondi",
+     "example": "Axe au 047° → 4,7 → piste **05** ; l’autre bout (227°) → **23**. On arrondit, on ne tronque pas. Pistes parallèles : L, C, R."
+    },
+    {
+     "type": "bullets",
+     "title": "Près d’un aérodrome (SERA.3225) et types de terrains",
+     "items": [
+      "Observe la circulation, puis intègre-toi au circuit ou évite-le.",
+      "Sauf indication contraire, virages **à gauche** (tour de piste **main gauche**), à l’approche et après le décollage.",
+      "Décolle et atterris **face au vent**, sauf raison de sécurité, de piste ou de trafic.",
+      "Terrain **contrôlé** : clairances de la tour (TWR). **AFIS** (information de vol d’aérodrome) : information et alerte, **aucune clairance**.",
+      "**Auto-information** (A/A) : personne au sol, chaque pilote s’annonce sur la fréquence publiée, ou **123,5 MHz** à défaut."
+     ]
+    },
+    {
+     "type": "example",
+     "text": "La manche à air s’étire **là où va** le vent. Elle pointe vers l’ouest : le vent **vient de l’est**, tu prends la piste **09**.\nPiste 27 en main gauche : le circuit est au **sud** de la piste ; vent arrière au cap 090°."
+    },
+    {
+     "type": "table",
+     "caption": "Marques, panneaux et feux (annexe 14)",
+     "columns": [
+      "Élément",
+      "À retenir"
+     ],
+     "rows": [
+      [
+       "Marques",
+       "piste : **blanches** ; voies de circulation : **jaunes**. Croix : piste ou voie **fermée**"
+      ],
+      [
+       "Point d’attente",
+       "2 lignes continues côté voie, 2 discontinues côté piste : arrête-toi **avant les continues**"
+      ],
+      [
+       "Seuil décalé",
+       "flèches blanches avant la barre : roulage et décollage permis, **pas de toucher** avant le seuil"
+      ],
+      [
+       "Chevrons jaunes",
+       "surface **inutilisable** : ni roulage, ni décollage, ni atterrissage"
+      ],
+      [
+       "Panneaux",
+       "blanc sur rouge : **obligation** ; jaune sur noir : où tu es ; noir sur jaune : direction"
+      ],
+      [
+       "Barre d’arrêt",
+       "feux rouges en travers de la voie : allumée, tu t’arrêtes, **même autorisé**"
+      ],
+      [
+       "Feux",
+       "piste : bords **blancs**, seuil **vert**, extrémité **rouge** ; voies : bords **bleus**, axe **vert**"
+      ],
+      [
+       "PAPI",
+       "4 feux à gauche de la piste : **2 rouges, 2 blancs** = sur le plan ; plus de rouge = trop bas"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "L’aire à signaux",
+     "columns": [
+      "Signal au sol",
+      "Signification"
+     ],
+     "rows": [
+      [
+       "Carré rouge à **deux** diagonales jaunes",
+       "atterrissage interdit"
+      ],
+      [
+       "Carré rouge à **une** diagonale jaune",
+       "précautions spéciales à l’approche et à l’atterrissage"
+      ],
+      [
+       "Haltère blanche",
+       "décollages, atterrissages et roulage sur pistes et voies uniquement"
+      ],
+      [
+       "T blanc ou orange",
+       "atterris parallèlement au fût du T, vers la barre transversale"
+      ],
+      [
+       "Double croix blanche",
+       "vols de planeurs en cours"
+      ],
+      [
+       "Flèche coudée vers la droite",
+       "virages à droite : tour de piste **main droite**"
+      ],
+      [
+       "Lettre C noire sur fond jaune",
+       "bureau de piste"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Où trouver l’information aéronautique (SIA)",
+     "columns": [
+      "Quoi",
+      "Contenu"
+     ],
+     "rows": [
+      [
+       "AIP (eAIP)",
+       "information permanente : **GEN** (généralités), **ENR** (en route : espaces, zones P, R, D), **AD** (aérodromes) ; amendée selon le cycle **AIRAC** de 28 jours"
+      ],
+      [
+       "Carte VAC",
+       "carte d’approche et d’atterrissage à vue (partie **AD**) : fréquences, tour de piste (altitude, sens), points d’entrée"
+      ],
+      [
+       "NOTAM",
+       "information **temporaire de courte durée** ou urgente, diffusée par télécommunication"
+      ],
+      [
+       "SUP AIP",
+       "modification temporaire **longue** (3 mois ou plus) ou riche en texte et en cartes"
+      ],
+      [
+       "AIC",
+       "circulaire d’information : explications, sujets administratifs"
+      ]
+     ],
+     "note": "Avant chaque vol, même local : NOTAM et SUP AIP (sur SOFIA-Briefing, du SIA) et carte VAC à jour."
+    },
+    {
+     "type": "code",
+     "label": "Lire un NOTAM (exemple fictif)",
+     "text": "A1234/26 NOTAMN\nQ) LFRR/QRTCA/IV/BO/W/000/045/4712N00133W005\nA) LFRR  B) 2606151000  C) 2606151600\nE) ZRT ACTIVE (MANIFESTATION AERIENNE)\nF) SFC  G) 4500FT AMSL",
+     "decode": "**N** : nouveau (R : remplace ; C : annule). **Q)** FIR (région d’information de vol) de Brest ; zone réglementée temporaire (ZRT) activée ; IFR et VFR ; cercle de 5 NM. **B)** et **C)** : début et fin, en **AAMMJJhhmm UTC**. Ici, le 15 juin 2026 de 12 h 00 à 18 h 00 à ta montre (UTC + 2 en été). **F)** et **G)** : de la surface à 4 500 ft AMSL. En C), **EST** = fin estimée."
+    }
+   ]
+  },
+  {
+   "title": "Urgences : alerte, sauvetage, accidents et comptes rendus",
+   "summary": "Quand ça tourne mal, l’alerte déclenche les secours, le BEA enquête pour prévenir, et chaque événement se notifie.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Les trois phases du service d’alerte",
+     "columns": [
+      "Phase",
+      "Exemples de déclenchement"
+     ],
+     "rows": [
+      [
+       "**INCERFA** : incertitude (un doute)",
+       "pas de contact **30 min** après l’heure prévue ; pas arrivé **30 min** après la dernière heure d’arrivée connue"
+      ],
+      [
+       "**ALERFA** : alerte (on s’inquiète)",
+       "recherches INCERFA vaines ; autorisé à atterrir mais pas posé **5 min** après l’heure prévue, sans contact ; intervention illicite"
+      ],
+      [
+       "**DETRESFA** : détresse (danger grave et imminent)",
+       "carburant jugé épuisé ; atterrissage forcé probable ou effectué"
+      ]
+     ],
+     "note": "Exemple : arrivée prévue à 15 h 40, puis annoncée à 16 h 00 en vol ; tu oublies de clôturer. INCERFA possible à **16 h 30**, pas à 16 h 10."
+    },
+    {
+     "type": "bullets",
+     "title": "Recherche et sauvetage (SAR)",
+     "items": [
+      "Coordination en métropole : l’**ARCC** (centre de coordination du sauvetage aéronautique) de Lyon Mont-Verdun. Urgence aéronautique : le **191**.",
+      "Balise **ELT** : **406 MHz** (satellites) et **121,5 MHz** (radioralliement). Avion certifié pour 6 sièges passagers au plus : une balise personnelle (**PLB**) portée par un occupant peut la remplacer.",
+      "Sans plan de vol ni contact radio, personne ne t’attend : seuls ta balise ou tes proches (via le 191) donnent l’alerte."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Code visuel sol-air des survivants",
+     "columns": [
+      "V",
+      "X",
+      "N",
+      "Y",
+      "→"
+     ],
+     "rows": [
+      [
+       "besoin d’assistance",
+       "besoin d’assistance **médicale**",
+       "non",
+       "oui",
+       "nous partons dans cette direction"
+      ]
+     ],
+     "note": "**X** comme la croix de la pharmacie, **V** comme « venez ». Signal compris : l’avion de recherche balance les ailes (de nuit, 2 éclats de phares)."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Accident",
+       "points": [
+        "Personne tuée (décès dans les **30 jours**) ou grièvement blessée (ex. hospitalisée plus de **48 h**)",
+        "Dommage qui altère la structure ou les performances (l’hélice, un pneu ou un saumon d’aile seuls ne suffisent pas)",
+        "Ou aéronef disparu"
+       ]
+      },
+      {
+       "title": "Incident grave",
+       "points": [
+        "Circonstances indiquant une **forte probabilité d’accident**",
+        "Exemple : quasi-abordage, avion évité de justesse sur la piste"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "key",
+     "title": "BEA et règlement (UE) n° 376/2014",
+     "text": "Le **BEA** (Bureau d’enquêtes et d’analyses) enquête sur les accidents et incidents graves **pour prévenir**, jamais pour sanctionner. Tu les lui notifies **sans délai**.\nAutres événements à notification obligatoire : dans les **72 h**, de préférence via ton aéroclub, qui transmet à la DSAC. La « **culture juste** » protège celui qui notifie de bonne foi."
+    },
+    {
+     "type": "trap",
+     "text": "Le BEA ne sanctionne pas et ne coordonne pas les secours (c’est l’ARCC). Sur le site, ne déplace rien, sauf pour secourir un blessé."
+    }
+   ]
+  }
+ ],
+ "key_numbers": [
+  {
+   "value": "16 / 17 ans",
+   "label": "1er solo / délivrance de la licence"
+  },
+  {
+   "value": "2 000 kg",
+   "label": "MTOM maximale en LAPL(A)"
+  },
+  {
+   "value": "3 passagers",
+   "label": "LAPL(A), après 10 h de CdB"
+  },
+  {
+   "value": "30 h / 45 h",
+   "label": "formation mini LAPL(A) / PPL(A)"
+  },
+  {
+   "value": "150 / 270 km",
+   "label": "navigation solo LAPL(A) / PPL(A)"
+  },
+  {
+   "value": "6 personnes",
+   "label": "frais partagés, pilote compris"
+  },
+  {
+   "value": "24 mois",
+   "label": "validité de la qualification SEP"
+  },
+  {
+   "value": "12 h",
+   "label": "prorogation SEP, sur 12 mois"
+  },
+  {
+   "value": "1 h",
+   "label": "avec instructeur (SEP et LAPL)"
+  },
+  {
+   "value": "3 mois",
+   "label": "contrôle de compétences SEP"
+  },
+  {
+   "value": "12 h",
+   "label": "maintien LAPL(A), sur 24 mois"
+  },
+  {
+   "value": "3 en 90 j",
+   "label": "atterrissages avant des passagers"
+  },
+  {
+   "value": "75 %",
+   "label": "par épreuve ; 4 tentatives au plus"
+  },
+  {
+   "value": "18 mois",
+   "label": "pour réussir toutes les épreuves"
+  },
+  {
+   "value": "24 mois",
+   "label": "validité du théorique réussi"
+  },
+  {
+   "value": "60 mois",
+   "label": "médical avant 40 ans (fin à 42 ans)"
+  },
+  {
+   "value": "24 / 12 mois",
+   "label": "classe 2 : 40 à 50 ans / après 50"
+  },
+  {
+   "value": "45 jours",
+   "label": "revalidation médicale sans perte"
+  },
+  {
+   "value": "50 / 30 cm",
+   "label": "lettres sous l’aile / sur le fuselage"
+  },
+  {
+   "value": "500 ft",
+   "label": "hauteur mini en campagne"
+  },
+  {
+   "value": "1 000 ft",
+   "label": "au-dessus des villes (rayon 600 m)"
+  },
+  {
+   "value": "500 m",
+   "label": "France, monomoteur, ville ≤ 1 200 m"
+  },
+  {
+   "value": "1 000 m sol",
+   "label": "cœur des parcs nationaux"
+  },
+  {
+   "value": "8 km",
+   "label": "visibilité VMC dès le FL 100"
+  },
+  {
+   "value": "5 km",
+   "label": "visibilité VMC sous le FL 100"
+  },
+  {
+   "value": "1 500 m",
+   "label": "des nuages, horizontalement"
+  },
+  {
+   "value": "1 000 ft",
+   "label": "des nuages, verticalement"
+  },
+  {
+   "value": "1 500 m",
+   "label": "visibilité en G (jour, ≤ 140 kt)"
+  },
+  {
+   "value": "1 500 ft",
+   "label": "plafond VFR en CTR, et de nuit"
+  },
+  {
+   "value": "600 ft",
+   "label": "plafond mini du VFR spécial"
+  },
+  {
+   "value": "250 kt",
+   "label": "vitesse max VFR sous le FL 100"
+  },
+  {
+   "value": "30 min",
+   "label": "nuit : après coucher, avant lever"
+  },
+  {
+   "value": "7000 / 7500",
+   "label": "VFR / intervention illicite"
+  },
+  {
+   "value": "7600 / 7700",
+   "label": "panne radio / détresse ou urgence"
+  },
+  {
+   "value": "121,5 MHz",
+   "label": "urgence internationale (ELT : aussi 406 MHz)"
+  },
+  {
+   "value": "123,5 MHz",
+   "label": "auto-information commune"
+  },
+  {
+   "value": "60 / 10 min",
+   "label": "plan de vol : avant départ / en vol"
+  },
+  {
+   "value": "28 jours",
+   "label": "cycle AIRAC"
+  },
+  {
+   "value": "30 / 5 min",
+   "label": "INCERFA / ALERFA (pas posé)"
+  },
+  {
+   "value": "72 h",
+   "label": "notification (règlement 376/2014)"
+  },
+  {
+   "value": "191",
+   "label": "numéro d’urgence aéronautique"
+  },
+  {
+   "value": "30 j / 48 h",
+   "label": "blessure mortelle / grave"
+  }
+ ],
+ "glossary": [
+  {
+   "term": "AD / SB",
+   "def": "consigne de navigabilité / bulletin de service"
+  },
+  {
+   "term": "AFIS",
+   "def": "information de vol d’aérodrome, sans clairance"
+  },
+  {
+   "term": "AIP",
+   "def": "publication d’info aéronautique (GEN, ENR, AD)"
+  },
+  {
+   "term": "AIRAC",
+   "def": "cycle de 28 jours des changements de l’AIP"
+  },
+  {
+   "term": "AMC / GM",
+   "def": "moyen de conformité / explication (EASA)"
+  },
+  {
+   "term": "AME / AeMC",
+   "def": "médecin agréé / centre aéromédical"
+  },
+  {
+   "term": "AMSL / ASFC",
+   "def": "au-dessus de la mer / au-dessus du sol"
+  },
+  {
+   "term": "ARC",
+   "def": "examen de navigabilité, valable 1 an"
+  },
+  {
+   "term": "ARCC",
+   "def": "centre de coordination du sauvetage"
+  },
+  {
+   "term": "ATC / ATS",
+   "def": "contrôle / services de circulation aérienne"
+  },
+  {
+   "term": "BEA",
+   "def": "Bureau d’enquêtes et d’analyses (sécurité)"
+  },
+  {
+   "term": "CDN",
+   "def": "certificat de navigabilité de l’avion"
+  },
+  {
+   "term": "CTR",
+   "def": "zone de contrôle, depuis la surface"
+  },
+  {
+   "term": "CTA / TMA",
+   "def": "régions de contrôle, au-dessus du sol"
+  },
+  {
+   "term": "DGAC",
+   "def": "Direction générale de l’aviation civile"
+  },
+  {
+   "term": "DSAC",
+   "def": "Direction de la sécurité de l’aviation civile"
+  },
+  {
+   "term": "DSNA",
+   "def": "Direction des services de la navigation aérienne"
+  },
+  {
+   "term": "EASA",
+   "def": "Agence de l’UE pour la sécurité aérienne"
+  },
+  {
+   "term": "ELT / PLB",
+   "def": "balise de détresse de l’avion / personnelle"
+  },
+  {
+   "term": "FIR",
+   "def": "région d’information de vol"
+  },
+  {
+   "term": "FL",
+   "def": "niveau de vol, en centaines de pieds"
+  },
+  {
+   "term": "INCERFA / ALERFA / DETRESFA",
+   "def": "incertitude / alerte / détresse"
+  },
+  {
+   "term": "LAPL(A)",
+   "def": "licence européenne de pilote d’avion léger"
+  },
+  {
+   "term": "LSA",
+   "def": "licence de station d’aéronef (émetteurs radio)"
+  },
+  {
+   "term": "NOTAM",
+   "def": "avis temporaire ou urgent aux navigants"
+  },
+  {
+   "term": "OACI",
+   "def": "Organisation de l’aviation civile internationale"
+  },
+  {
+   "term": "Part-FCL / MED",
+   "def": "règles des licences / du médical"
+  },
+  {
+   "term": "Part-NCO",
+   "def": "règles du vol non commercial (vol privé)"
+  },
+  {
+   "term": "PPL(A)",
+   "def": "licence de pilote privé avion, conforme OACI"
+  },
+  {
+   "term": "QNH / QFE",
+   "def": "calage altitude / hauteur sur le terrain"
+  },
+  {
+   "term": "RMZ / TMZ",
+   "def": "zone à radio / transpondeur obligatoire"
+  },
+  {
+   "term": "SEP",
+   "def": "classe monomoteur à pistons"
+  },
+  {
+   "term": "SERA",
+   "def": "règles de l’air européennes"
+  },
+  {
+   "term": "SIV",
+   "def": "secteur d’information de vol"
+  },
+  {
+   "term": "SUP AIP",
+   "def": "modification temporaire longue de l’AIP"
+  },
+  {
+   "term": "VAC",
+   "def": "carte d’approche et d’atterrissage à vue"
+  },
+  {
+   "term": "VFR / IFR",
+   "def": "règles de vol à vue / aux instruments"
+  },
+  {
+   "term": "VFR spécial",
+   "def": "VFR en CTR sous minimums, sur clairance"
+  },
+  {
+   "term": "VMC",
+   "def": "conditions météo de vol à vue"
+  },
+  {
+   "term": "Zone P, R, D",
+   "def": "zone interdite, réglementée, dangereuse"
+  }
+ ],
+ "self_test": [
+  {
+   "q": "Combien de passagers au plus avec un LAPL(A), et à quelle condition ?",
+   "a": "3 passagers, après 10 h de CdB depuis la délivrance de la licence."
+  },
+  {
+   "q": "Ta SEP expire le 31 mai 2027. Que faut-il pour la proroger sans examinateur ?",
+   "a": "Du 1er juin 2026 au 31 mai 2027 : 12 h dont 6 h CdB, 12 décollages et atterrissages, 1 h avec instructeur."
+  },
+  {
+   "q": "Validité d’un certificat de classe 2 délivré à 45 ans ? Et à 55 ans ?",
+   "a": "24 mois ; 12 mois."
+  },
+  {
+   "q": "Première épreuve théorique le 10 mars 2026 : date limite pour tout réussir ?",
+   "a": "30 septembre 2027 (fin mars 2026 + 18 mois)."
+  },
+  {
+   "q": "Tours de piste sur ton terrain : quel document doit quand même être à bord ?",
+   "a": "Le manuel de vol (avec les cartes et les procédures d’interception)."
+  },
+  {
+   "q": "Route magnétique 250°, à plus de 3 000 ft sol : quels niveaux VFR ?",
+   "a": "Pairs + 500 ft : FL 45, 65, 85…"
+  },
+  {
+   "q": "En classe D, le VFR a-t-il besoin d’une clairance ? Est-il séparé des IFR ?",
+   "a": "Oui ; non, il reçoit seulement l’information de trafic."
+  },
+  {
+   "q": "Aérodrome en CTR, visibilité 8 km, BKN 1 200 ft : peux-tu décoller en VFR ?",
+   "a": "Non, sauf clairance VFR spécial : le plafond est sous 1 500 ft."
+  },
+  {
+   "q": "Tu es intercepté : quelle fréquence, quel code transpondeur ?",
+   "a": "121,5 MHz et 7700, sauf instruction contraire de l’ATS."
+  },
+  {
+   "q": "NOTAM : B) 2607141300. À quelle heure légale commence-t-il, en juillet ?",
+   "a": "Le 14 juillet à 15 h 00 (UTC + 2 en été)."
+  },
+  {
+   "q": "Avion évité de justesse au décollage, sans dégât : qu’est-ce, et à qui le notifier ?",
+   "a": "Un incident grave, à notifier sans délai au BEA."
+  }
+ ]
+}

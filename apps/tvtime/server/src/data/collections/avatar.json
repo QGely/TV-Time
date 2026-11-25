@@ -1,0 +1,45 @@
+{
+  "id": "avatar",
+  "name": "Avatar (James Cameron)",
+  "description": "Les films Avatar de James Cameron sur Pandora. L'ordre chronologique de l'histoire est identique à l'ordre de sortie.",
+  "icon": "🌊",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Avatar",
+      "title_fr": "Avatar",
+      "year": 2009,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": null,
+      "note": "Jake Sully découvre Pandora et le peuple Na'vi",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Avatar: The Way of Water",
+      "title_fr": "Avatar : La Voie de l'eau",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "Plus de dix ans après : la famille Sully se réfugie chez les Metkayina",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Avatar: Fire and Ash",
+      "title_fr": "Avatar : De feu et de cendres",
+      "year": 2025,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": null,
+      "note": "Suite directe : le peuple des cendres et de nouveaux conflits",
+      "optional": false
+    }
+  ]
+}

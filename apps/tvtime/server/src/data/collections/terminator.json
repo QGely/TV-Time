@@ -1,0 +1,105 @@
+{
+  "id": "terminator",
+  "name": "Terminator",
+  "description": "Tous les films et séries Terminator. Les chronologies divergent après Terminator 2, l'ordre affiché suit donc l'ordre de sortie, avec une note indiquant à quelle branche appartient chaque titre.",
+  "icon": "🤖",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "The Terminator",
+      "title_fr": "Terminator",
+      "year": 1984,
+      "tmdb_id": 218,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Tronc commun",
+      "note": "1984 : point de départ commun à toutes les chronologies.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Terminator 2: Judgment Day",
+      "title_fr": "Terminator 2 : Le Jugement dernier",
+      "year": 1991,
+      "tmdb_id": 280,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Tronc commun",
+      "note": "1995 : suite directe ; les chronologies divergent après ce film.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Terminator 3: Rise of the Machines",
+      "title_fr": "Terminator 3 : Le Soulèvement des machines",
+      "year": 2003,
+      "tmdb_id": 296,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Branche T3 / Renaissance",
+      "note": "Branche A : suite de T2, le Jugement dernier a lieu en 2004.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Terminator: The Sarah Connor Chronicles",
+      "title_fr": "Terminator : Les Chroniques de Sarah Connor",
+      "year": 2008,
+      "tmdb_id": 1740,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Branche Sarah Connor",
+      "note": "Branche B : suite alternative de T2 (2007), ignore T3. Série annulée après 2 saisons.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Terminator Salvation",
+      "title_fr": "Terminator Renaissance",
+      "year": 2009,
+      "tmdb_id": 534,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Branche T3 / Renaissance",
+      "note": "Branche A : 2018, la guerre contre Skynet après T3.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Terminator Genisys",
+      "title_fr": "Terminator Genisys",
+      "year": 2015,
+      "tmdb_id": 87101,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Branche Genisys",
+      "note": "Branche C : reboot qui réécrit les événements de 1984.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Terminator: Dark Fate",
+      "title_fr": "Terminator : Dark Fate",
+      "year": 2019,
+      "tmdb_id": 290859,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Branche Dark Fate",
+      "note": "Branche D : suite directe de T2 (2020), ignore T3, Renaissance et Genisys.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Terminator Zero",
+      "title_fr": "Terminator Zero",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Anime",
+      "note": "Anime Netflix : Tokyo 1997, histoire indépendante des films.",
+      "optional": true
+    }
+  ]
+}

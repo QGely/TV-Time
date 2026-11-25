@@ -1,0 +1,394 @@
+{
+  "id": "it",
+  "title": "Italien",
+  "lang_name": "italien",
+  "flag": "🇮🇹",
+  "tts_lang": "it-IT",
+  "description": "Apprenez l'italien pas à pas, de la ville au voyage, pour vous débrouiller partout.",
+  "units": [
+    {
+      "id": "u4",
+      "title": "En ville",
+      "description": "Se repérer, demander son chemin, réserver un hôtel et prendre les transports.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u4s1",
+          "title": "Se déplacer",
+          "icon": "🚶",
+          "tips": "Le verbe « andare » (aller) est irrégulier : vado, vai, va, andiamo, andate, vanno. Il se construit avec « a » : « Vado a Roma » (Je vais à Rome), et « a + la » devient « alla » : « Vado alla stazione ». Pour demander où se trouve un lieu, on utilise « Dov'è... ? » : « Dov'è la strada? » (Où est la rue ?).",
+          "vocab": [
+            { "term": "la strada", "translation": "la rue, la route", "emoji": "🛣️" },
+            { "term": "la città", "translation": "la ville", "emoji": "🏙️" },
+            { "term": "camminare", "translation": "marcher", "emoji": "🚶" },
+            { "term": "la mappa", "translation": "la carte, le plan", "emoji": "🗺️" },
+            { "term": "lontano", "translation": "loin", "emoji": null },
+            { "term": "vicino", "translation": "près", "emoji": null },
+            { "term": "qui", "translation": "ici", "emoji": "📍" },
+            { "term": "là", "translation": "là-bas", "emoji": null },
+            { "term": "andare", "translation": "aller", "emoji": null },
+            { "term": "attraversare", "translation": "traverser", "emoji": null },
+            { "term": "il ponte", "translation": "le pont", "emoji": "🌉" },
+            { "term": "la piazza", "translation": "la place", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "La città è grande.", "target": "La ville est grande." },
+            { "source": "Cammino per la strada.", "target": "Je marche dans la rue." },
+            { "source": "È lontano?", "target": "Est-ce loin ?" },
+            { "source": "Il ponte è vicino.", "target": "Le pont est près." },
+            { "source": "Andiamo in piazza.", "target": "Nous allons sur la place." },
+            { "source": "Ho una mappa.", "target": "J'ai une carte." },
+            { "source": "La piazza è là.", "target": "La place est là-bas." },
+            { "source": "Attraverso la strada.", "target": "Je traverse la rue." }
+          ]
+        },
+        {
+          "id": "u4s2",
+          "title": "Les directions",
+          "icon": "🧭",
+          "tips": "Pour indiquer un chemin, on utilise l'impératif : « Gira a sinistra » (Tourne à gauche), « Vai sempre dritto » (Va tout droit). Avec « Lei » (vouvoiement), on dit « giri », « vada ». Pour aborder quelqu'un poliment, on commence par « Scusi » : « Scusi, dov'è la fermata? » (Excusez-moi, où est l'arrêt ?). « Accanto a » (à côté de) et « davanti a » (devant) se contractent avec l'article : « davanti al ponte ».",
+          "vocab": [
+            { "term": "a destra", "translation": "à droite", "emoji": "➡️" },
+            { "term": "a sinistra", "translation": "à gauche", "emoji": "⬅️" },
+            { "term": "dritto", "translation": "tout droit", "emoji": "⬆️" },
+            { "term": "girare", "translation": "tourner", "emoji": null },
+            { "term": "l'angolo", "translation": "le coin, l'angle", "emoji": null },
+            { "term": "il semaforo", "translation": "le feu (de signalisation)", "emoji": "🚦" },
+            { "term": "accanto a", "translation": "à côté de", "emoji": null },
+            { "term": "davanti a", "translation": "devant", "emoji": null },
+            { "term": "dietro", "translation": "derrière", "emoji": null },
+            { "term": "la fermata", "translation": "l'arrêt", "emoji": "🚏" },
+            { "term": "l'incrocio", "translation": "le carrefour", "emoji": null },
+            { "term": "scusi", "translation": "excusez-moi", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Gira a destra.", "target": "Tourne à droite." },
+            { "source": "Vai sempre dritto.", "target": "Va tout droit." },
+            { "source": "La fermata è a sinistra.", "target": "L'arrêt est à gauche." },
+            { "source": "Scusi, dov'è il semaforo?", "target": "Excusez-moi, où est le feu ?" },
+            { "source": "Il ponte è dietro la piazza.", "target": "Le pont est derrière la place." },
+            { "source": "Giri all'angolo.", "target": "Tournez au coin." },
+            { "source": "La fermata è davanti al ponte.", "target": "L'arrêt est devant le pont." },
+            { "source": "Attraversa all'incrocio.", "target": "Traverse au carrefour." }
+          ]
+        },
+        {
+          "id": "u4s3",
+          "title": "À l’hôtel",
+          "icon": "🏨",
+          "tips": "Pour réserver, on dit « Vorrei prenotare una camera » (Je voudrais réserver une chambre). « Vorrei » est la forme polie de « volere » (vouloir). On précise la durée avec « per » : « per due notti » (pour deux nuits). Attention : « la camera » désigne la chambre et « il piano » l'étage : « al primo piano » (au premier étage).",
+          "vocab": [
+            { "term": "l'albergo", "translation": "l'hôtel", "emoji": "🏨" },
+            { "term": "la camera", "translation": "la chambre", "emoji": "🛏️" },
+            { "term": "la prenotazione", "translation": "la réservation", "emoji": "📅" },
+            { "term": "prenotare", "translation": "réserver", "emoji": null },
+            { "term": "la chiave", "translation": "la clé", "emoji": "🔑" },
+            { "term": "la notte", "translation": "la nuit", "emoji": "🌙" },
+            { "term": "la colazione", "translation": "le petit-déjeuner", "emoji": "🥐" },
+            { "term": "la reception", "translation": "la réception", "emoji": "🛎️" },
+            { "term": "il bagno", "translation": "la salle de bain", "emoji": "🚿" },
+            { "term": "l'ascensore", "translation": "l'ascenseur", "emoji": "🛗" },
+            { "term": "il piano", "translation": "l'étage", "emoji": null },
+            { "term": "pagare", "translation": "payer", "emoji": "💳" }
+          ],
+          "sentences": [
+            { "source": "Vorrei prenotare una camera.", "target": "Je voudrais réserver une chambre." },
+            { "source": "Ho una prenotazione.", "target": "J'ai une réservation." },
+            { "source": "La camera è al primo piano.", "target": "La chambre est au premier étage." },
+            { "source": "Ecco la chiave.", "target": "Voici la clé." },
+            { "source": "La camera ha il bagno.", "target": "La chambre a une salle de bain." },
+            { "source": "L'ascensore è a destra.", "target": "L'ascenseur est à droite." },
+            { "source": "Pago per due notti.", "target": "Je paie pour deux nuits." },
+            { "source": "La reception è vicino all'ascensore.", "target": "La réception est près de l'ascenseur." }
+          ]
+        },
+        {
+          "id": "u4s4",
+          "title": "Les transports",
+          "icon": "🚆",
+          "tips": "Pour les moyens de transport, on utilise « in » sans article : « in treno », « in autobus », « in macchina » (en train, en bus, en voiture). « Partire » et « arrivare » se conjuguent avec « essere » au passé. « Il binario » désigne la voie ou le quai : « Il treno parte dal binario due » (Le train part de la voie deux).",
+          "vocab": [
+            { "term": "il treno", "translation": "le train", "emoji": "🚆" },
+            { "term": "l'autobus", "translation": "le bus", "emoji": "🚌" },
+            { "term": "la metropolitana", "translation": "le métro", "emoji": "🚇" },
+            { "term": "il biglietto", "translation": "le billet", "emoji": "🎫" },
+            { "term": "la stazione", "translation": "la gare", "emoji": "🚉" },
+            { "term": "l'aeroporto", "translation": "l'aéroport", "emoji": "✈️" },
+            { "term": "il taxi", "translation": "le taxi", "emoji": "🚕" },
+            { "term": "la macchina", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "il binario", "translation": "la voie, le quai", "emoji": null },
+            { "term": "partire", "translation": "partir", "emoji": null },
+            { "term": "arrivare", "translation": "arriver", "emoji": null },
+            { "term": "in ritardo", "translation": "en retard", "emoji": "⏰" }
+          ],
+          "sentences": [
+            { "source": "Vado a Roma in treno.", "target": "Je vais à Rome en train." },
+            { "source": "Un biglietto, per favore.", "target": "Un billet, s'il vous plaît." },
+            { "source": "Il treno è in ritardo.", "target": "Le train est en retard." },
+            { "source": "La stazione è lontana.", "target": "La gare est loin." },
+            { "source": "Prendo l'autobus.", "target": "Je prends le bus." },
+            { "source": "Il taxi arriva all'aeroporto.", "target": "Le taxi arrive à l'aéroport." },
+            { "source": "Il treno parte dal binario due.", "target": "Le train part de la voie deux." },
+            { "source": "La metropolitana è vicina.", "target": "Le métro est proche." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Vie quotidienne",
+      "description": "Parler de sa maison, de son travail, de ses loisirs et de sa santé.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u5s1",
+          "title": "La maison",
+          "icon": "🏠",
+          "tips": "« Abitare » (habiter) est régulier : abito, abiti, abita, abitiamo, abitate, abitano. Il se construit avec « in » ou « a » : « Abito in una casa » (J'habite dans une maison), « Abito a Milano ». Les prépositions contractées sont fréquentes : « in + la » devient « nella » : « nella cucina » (dans la cuisine) ; « su + il » devient « sul » : « sul tavolo » (sur la table).",
+          "vocab": [
+            { "term": "la casa", "translation": "la maison", "emoji": "🏠" },
+            { "term": "la cucina", "translation": "la cuisine", "emoji": "🍳" },
+            { "term": "il soggiorno", "translation": "le salon", "emoji": "🛋️" },
+            { "term": "la camera da letto", "translation": "la chambre (à coucher)", "emoji": "🛏️" },
+            { "term": "il letto", "translation": "le lit", "emoji": "🛌" },
+            { "term": "la porta", "translation": "la porte", "emoji": "🚪" },
+            { "term": "la finestra", "translation": "la fenêtre", "emoji": "🪟" },
+            { "term": "il tavolo", "translation": "la table", "emoji": null },
+            { "term": "la sedia", "translation": "la chaise", "emoji": "🪑" },
+            { "term": "il giardino", "translation": "le jardin", "emoji": "🌳" },
+            { "term": "pulire", "translation": "nettoyer", "emoji": "🧹" },
+            { "term": "abitare", "translation": "habiter", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Abito in una casa grande.", "target": "J'habite dans une grande maison." },
+            { "source": "La cucina è piccola.", "target": "La cuisine est petite." },
+            { "source": "Il letto è nella camera da letto.", "target": "Le lit est dans la chambre." },
+            { "source": "La porta è vicino alla finestra.", "target": "La porte est près de la fenêtre." },
+            { "source": "La chiave è sul tavolo.", "target": "La clé est sur la table." },
+            { "source": "Pulisco la cucina.", "target": "Je nettoie la cuisine." },
+            { "source": "Il giardino è dietro la casa.", "target": "Le jardin est derrière la maison." },
+            { "source": "C'è una sedia nel soggiorno.", "target": "Il y a une chaise dans le salon." }
+          ]
+        },
+        {
+          "id": "u5s2",
+          "title": "Le travail",
+          "icon": "💼",
+          "tips": "« Lavorare » (travailler) est régulier : lavoro, lavori, lavora, lavoriamo, lavorate, lavorano. Attention : « il lavoro » signifie à la fois « le travail » et « l'emploi ». « Il collega » est masculin malgré sa terminaison en -a (féminin : « la collega »). On dit « in ufficio » sans article : « Lavoro in ufficio » (Je travaille au bureau). Pour une profession, pas d'article : « Sono insegnante ».",
+          "vocab": [
+            { "term": "il lavoro", "translation": "le travail", "emoji": "💼" },
+            { "term": "lavorare", "translation": "travailler", "emoji": null },
+            { "term": "l'ufficio", "translation": "le bureau (le lieu)", "emoji": "🏢" },
+            { "term": "il collega", "translation": "le collègue", "emoji": null },
+            { "term": "la riunione", "translation": "la réunion", "emoji": "👥" },
+            { "term": "il capo", "translation": "le chef, le patron", "emoji": null },
+            { "term": "lo stipendio", "translation": "le salaire", "emoji": "💶" },
+            { "term": "il computer", "translation": "l'ordinateur", "emoji": "💻" },
+            { "term": "l'email", "translation": "l'e-mail", "emoji": "📧" },
+            { "term": "il cliente", "translation": "le client", "emoji": null },
+            { "term": "occupato", "translation": "occupé", "emoji": null },
+            { "term": "l'insegnante", "translation": "l'enseignant, l'enseignante", "emoji": "👩‍🏫" }
+          ],
+          "sentences": [
+            { "source": "Lavoro in ufficio.", "target": "Je travaille au bureau." },
+            { "source": "Ho una riunione alle dieci.", "target": "J'ai une réunion à dix heures." },
+            { "source": "Il capo è occupato.", "target": "Le chef est occupé." },
+            { "source": "Scrivo un'email al cliente.", "target": "J'écris un e-mail au client." },
+            { "source": "Il mio collega lavora molto.", "target": "Mon collègue travaille beaucoup." },
+            { "source": "Lo stipendio è buono.", "target": "Le salaire est bon." },
+            { "source": "Il computer è sul tavolo.", "target": "L'ordinateur est sur la table." },
+            { "source": "Sono insegnante.", "target": "Je suis enseignant." }
+          ]
+        },
+        {
+          "id": "u5s3",
+          "title": "Les loisirs",
+          "icon": "🎨",
+          "tips": "Pour parler de ses loisirs, « mi piace » (j'aime) est suivi de l'infinitif : « Mi piace leggere » (J'aime lire). « Giocare » se construit avec « a » : « giocare a calcio » (jouer au football). Les verbes en -are (cantare, ballare, nuotare) suivent le même modèle : canto, canti, canta, cantiamo, cantate, cantano. « Nel tempo libero » signifie « pendant son temps libre ».",
+          "vocab": [
+            { "term": "il tempo libero", "translation": "le temps libre", "emoji": "⏳" },
+            { "term": "leggere", "translation": "lire", "emoji": "📖" },
+            { "term": "la musica", "translation": "la musique", "emoji": "🎵" },
+            { "term": "cantare", "translation": "chanter", "emoji": "🎤" },
+            { "term": "ballare", "translation": "danser", "emoji": "💃" },
+            { "term": "il cinema", "translation": "le cinéma", "emoji": "🎬" },
+            { "term": "il film", "translation": "le film", "emoji": "🎞️" },
+            { "term": "la partita", "translation": "le match", "emoji": "🏟️" },
+            { "term": "giocare", "translation": "jouer", "emoji": "🎮" },
+            { "term": "nuotare", "translation": "nager", "emoji": "🏊" },
+            { "term": "il calcio", "translation": "le football", "emoji": "⚽" },
+            { "term": "la festa", "translation": "la fête", "emoji": "🎉" }
+          ],
+          "sentences": [
+            { "source": "Mi piace leggere.", "target": "J'aime lire." },
+            { "source": "Mi piace cantare.", "target": "J'aime chanter." },
+            { "source": "Andiamo al cinema.", "target": "Nous allons au cinéma." },
+            { "source": "Il film è bello.", "target": "Le film est beau." },
+            { "source": "Guardo la partita.", "target": "Je regarde le match." },
+            { "source": "Balliamo alla festa.", "target": "Nous dansons à la fête." },
+            { "source": "Nuoto nel tempo libero.", "target": "Je nage pendant mon temps libre." },
+            { "source": "Gioco a calcio.", "target": "Je joue au football." }
+          ]
+        },
+        {
+          "id": "u5s4",
+          "title": "La santé",
+          "icon": "🩺",
+          "tips": "Pour dire où l'on a mal, on utilise « avere mal di » : « Ho mal di testa » (J'ai mal à la tête), « Ho mal di gola » (J'ai mal à la gorge). Pour demander comment va quelqu'un : « Come stai? », et on répond avec « stare » : « Sto bene » (Je vais bien), « Sto male » (Je vais mal). Les adjectifs « malato » et « stanco » s'accordent : « malata », « stanca » au féminin.",
+          "vocab": [
+            { "term": "la salute", "translation": "la santé", "emoji": "❤️" },
+            { "term": "il medico", "translation": "le médecin", "emoji": "🩺" },
+            { "term": "l'ospedale", "translation": "l'hôpital", "emoji": "🏥" },
+            { "term": "la farmacia", "translation": "la pharmacie", "emoji": "⚕️" },
+            { "term": "la medicina", "translation": "le médicament", "emoji": "💊" },
+            { "term": "malato", "translation": "malade", "emoji": "🤒" },
+            { "term": "il mal di testa", "translation": "le mal de tête", "emoji": "🤕" },
+            { "term": "la febbre", "translation": "la fièvre", "emoji": "🌡️" },
+            { "term": "il raffreddore", "translation": "le rhume", "emoji": "🤧" },
+            { "term": "stanco", "translation": "fatigué", "emoji": "😴" },
+            { "term": "il dolore", "translation": "la douleur", "emoji": null },
+            { "term": "stare bene", "translation": "aller bien", "emoji": "😊" }
+          ],
+          "sentences": [
+            { "source": "Sono malato.", "target": "Je suis malade." },
+            { "source": "Ho mal di testa.", "target": "J'ai mal à la tête." },
+            { "source": "Ho la febbre.", "target": "J'ai de la fièvre." },
+            { "source": "Vado dal medico.", "target": "Je vais chez le médecin." },
+            { "source": "La farmacia è vicina.", "target": "La pharmacie est proche." },
+            { "source": "Sono stanca oggi.", "target": "Je suis fatiguée aujourd'hui." },
+            { "source": "Ho il raffreddore.", "target": "J'ai un rhume." },
+            { "source": "Sto bene, grazie.", "target": "Je vais bien, merci." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Conversation",
+      "description": "Raconter le passé, parler de l'avenir, donner son avis et voyager.",
+      "color": "#ff9600",
+      "skills": [
+        {
+          "id": "u6s1",
+          "title": "Le passé",
+          "icon": "⏮️",
+          "tips": "Le passé composé (passato prossimo) se forme avec « avere » ou « essere » + participe passé : « ho mangiato » (j'ai mangé), « sono andato » (je suis allé). Participes réguliers : -are → -ato, -ere → -uto, -ire → -ito. Avec « essere », le participe s'accorde : « sono andata » (je suis allée), « siamo andati ». Quelques participes irréguliers : « fatto » (fare), « visto » (vedere).",
+          "vocab": [
+            { "term": "ieri", "translation": "hier", "emoji": "📅" },
+            { "term": "ieri sera", "translation": "hier soir", "emoji": "🌆" },
+            { "term": "la settimana scorsa", "translation": "la semaine dernière", "emoji": "🗓️" },
+            { "term": "l'anno scorso", "translation": "l'année dernière", "emoji": null },
+            { "term": "ho mangiato", "translation": "j'ai mangé", "emoji": "🍽️" },
+            { "term": "ho visto", "translation": "j'ai vu", "emoji": "👀" },
+            { "term": "ho fatto", "translation": "j'ai fait", "emoji": null },
+            { "term": "sono andato", "translation": "je suis allé", "emoji": null },
+            { "term": "sono arrivato", "translation": "je suis arrivé", "emoji": null },
+            { "term": "ho comprato", "translation": "j'ai acheté", "emoji": "🛍️" },
+            { "term": "ho dormito", "translation": "j'ai dormi", "emoji": "😴" },
+            { "term": "già", "translation": "déjà", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Ieri ho mangiato una pizza.", "target": "Hier, j'ai mangé une pizza." },
+            { "source": "Ho visto un film ieri sera.", "target": "J'ai vu un film hier soir." },
+            { "source": "L'anno scorso sono andato a Roma.", "target": "L'année dernière, je suis allé à Rome." },
+            { "source": "La settimana scorsa ho lavorato molto.", "target": "La semaine dernière, j'ai beaucoup travaillé." },
+            { "source": "Ho comprato un biglietto.", "target": "J'ai acheté un billet." },
+            { "source": "Sono arrivata in ritardo.", "target": "Je suis arrivée en retard." },
+            { "source": "Ho dormito bene.", "target": "J'ai bien dormi." },
+            { "source": "Ho già fatto colazione.", "target": "J'ai déjà pris le petit-déjeuner." }
+          ]
+        },
+        {
+          "id": "u6s2",
+          "title": "Le futur",
+          "icon": "⏭️",
+          "tips": "Le futur simple se forme sur l'infinitif sans le -e final + les terminaisons -ò, -ai, -à, -emo, -ete, -anno : « partirò » (je partirai), « partirai », « partirà ». Les verbes en -are changent le a en e : « mangerò ». Quelques futurs irréguliers : « andrò » (aller), « farò » (faire), « sarò » (être), « avrò » (avoir), « vedrò » (voir). Souvent, l'italien utilise aussi le présent avec un marqueur de temps : « Domani parto » (Demain je pars).",
+          "vocab": [
+            { "term": "domani", "translation": "demain", "emoji": "📅" },
+            { "term": "la settimana prossima", "translation": "la semaine prochaine", "emoji": "🗓️" },
+            { "term": "l'anno prossimo", "translation": "l'année prochaine", "emoji": null },
+            { "term": "andrò", "translation": "j'irai", "emoji": null },
+            { "term": "farò", "translation": "je ferai", "emoji": null },
+            { "term": "sarò", "translation": "je serai", "emoji": null },
+            { "term": "avrò", "translation": "j'aurai", "emoji": null },
+            { "term": "mangerò", "translation": "je mangerai", "emoji": "🍽️" },
+            { "term": "partirò", "translation": "je partirai", "emoji": "🧳" },
+            { "term": "vedrò", "translation": "je verrai", "emoji": "👀" },
+            { "term": "presto", "translation": "bientôt, tôt", "emoji": "⏰" },
+            { "term": "forse", "translation": "peut-être", "emoji": "🤔" }
+          ],
+          "sentences": [
+            { "source": "Domani andrò al cinema.", "target": "Demain, j'irai au cinéma." },
+            { "source": "La settimana prossima partirò.", "target": "La semaine prochaine, je partirai." },
+            { "source": "L'anno prossimo sarò a Roma.", "target": "L'année prochaine, je serai à Rome." },
+            { "source": "Farò colazione presto.", "target": "Je prendrai le petit-déjeuner tôt." },
+            { "source": "Avrò una riunione domani.", "target": "J'aurai une réunion demain." },
+            { "source": "Mangerò una pizza.", "target": "Je mangerai une pizza." },
+            { "source": "Forse vedrò un film.", "target": "Je verrai peut-être un film." },
+            { "source": "Partirò presto.", "target": "Je partirai bientôt." }
+          ]
+        },
+        {
+          "id": "u6s3",
+          "title": "Donner son avis",
+          "icon": "💬",
+          "tips": "Pour donner son avis : « Secondo me » (À mon avis), « Penso che... » (Je pense que...), « Credo che... » (Je crois que...). Après « penso che » et « credo che », l'italien utilise le subjonctif : « Penso che sia interessante » (Je pense que c'est intéressant). « Preferire » est un verbe en -isc : preferisco, preferisci, preferisce. Pour approuver : « Sono d'accordo » (Je suis d'accord), « Hai ragione » (Tu as raison).",
+          "vocab": [
+            { "term": "penso che", "translation": "je pense que", "emoji": "💭" },
+            { "term": "secondo me", "translation": "à mon avis", "emoji": null },
+            { "term": "credo", "translation": "je crois", "emoji": null },
+            { "term": "d'accordo", "translation": "d'accord", "emoji": "👍" },
+            { "term": "avere ragione", "translation": "avoir raison", "emoji": "✅" },
+            { "term": "avere torto", "translation": "avoir tort", "emoji": "❌" },
+            { "term": "interessante", "translation": "intéressant", "emoji": null },
+            { "term": "noioso", "translation": "ennuyeux", "emoji": "😑" },
+            { "term": "preferire", "translation": "préférer", "emoji": null },
+            { "term": "l'opinione", "translation": "l'opinion, l'avis", "emoji": "💬" },
+            { "term": "davvero", "translation": "vraiment", "emoji": null },
+            { "term": "importante", "translation": "important", "emoji": "❗" }
+          ],
+          "sentences": [
+            { "source": "Secondo me è interessante.", "target": "À mon avis, c'est intéressant." },
+            { "source": "Sono d'accordo.", "target": "Je suis d'accord." },
+            { "source": "Hai ragione.", "target": "Tu as raison." },
+            { "source": "Il film è davvero noioso.", "target": "Le film est vraiment ennuyeux." },
+            { "source": "Preferisco il treno.", "target": "Je préfère le train." },
+            { "source": "Penso che sia importante.", "target": "Je pense que c'est important." },
+            { "source": "Lui ha torto.", "target": "Il a tort." },
+            { "source": "La tua opinione è importante.", "target": "Ton avis est important." }
+          ]
+        },
+        {
+          "id": "u6s4",
+          "title": "Voyager",
+          "icon": "🧳",
+          "tips": "« Viaggiare » est régulier : viaggio, viaggi, viaggia... Attention, « il viaggio » (le voyage) et « viaggio » (je voyage) s'écrivent pareil ! « Le vacanze » est généralement au pluriel, mais on dit « andare in vacanza » (partir en vacances). Avec « mare » et « montagna », on utilise « al mare » et « in montagna » : « Vado al mare » (Je vais à la mer), « Vado in montagna » (Je vais à la montagne).",
+          "vocab": [
+            { "term": "il viaggio", "translation": "le voyage", "emoji": "🗺️" },
+            { "term": "viaggiare", "translation": "voyager", "emoji": null },
+            { "term": "la valigia", "translation": "la valise", "emoji": "🧳" },
+            { "term": "il passaporto", "translation": "le passeport", "emoji": "🛂" },
+            { "term": "le vacanze", "translation": "les vacances", "emoji": "🌴" },
+            { "term": "il mare", "translation": "la mer", "emoji": "🌊" },
+            { "term": "la montagna", "translation": "la montagne", "emoji": "🏔️" },
+            { "term": "la spiaggia", "translation": "la plage", "emoji": "🏖️" },
+            { "term": "il volo", "translation": "le vol", "emoji": "✈️" },
+            { "term": "all'estero", "translation": "à l'étranger", "emoji": "🌍" },
+            { "term": "il turista", "translation": "le touriste", "emoji": "📸" },
+            { "term": "il souvenir", "translation": "le souvenir (objet)", "emoji": "🎁" }
+          ],
+          "sentences": [
+            { "source": "Mi piace viaggiare.", "target": "J'aime voyager." },
+            { "source": "Ho il passaporto nella valigia.", "target": "J'ai le passeport dans la valise." },
+            { "source": "Il volo parte domani.", "target": "Le vol part demain." },
+            { "source": "Andiamo al mare.", "target": "Nous allons à la mer." },
+            { "source": "La spiaggia è bella.", "target": "La plage est belle." },
+            { "source": "L'anno prossimo andrò in montagna.", "target": "L'année prochaine, j'irai à la montagne." },
+            { "source": "Il turista compra un souvenir.", "target": "Le touriste achète un souvenir." },
+            { "source": "Vado in vacanza all'estero.", "target": "Je pars en vacances à l'étranger." }
+          ]
+        }
+      ]
+    }
+  ]
+}

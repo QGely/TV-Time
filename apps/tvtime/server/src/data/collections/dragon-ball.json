@@ -1,0 +1,129 @@
+{
+  "id": "dragon-ball",
+  "name": "Dragon Ball",
+  "description": "La saga Dragon Ball d'Akira Toriyama dans l'ordre de l'histoire : Dragon Ball, Z, Daima, les films Battle of Gods et Résurrection F, Super et ses films. Kai (version remontée de Z) et GT (suite alternative) sont en option.",
+  "icon": "🐉",
+  "category": "animation",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Dragon Ball",
+      "title_fr": "Dragon Ball",
+      "year": 1986,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Série originale",
+      "note": "L'enfance de Son Goku, 153 épisodes",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragon Ball Z",
+      "title_fr": "Dragon Ball Z",
+      "year": 1989,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Z",
+      "note": "Des Saiyans à Majin Buu, 291 épisodes",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragon Ball Z Kai",
+      "title_fr": "Dragon Ball Z Kai",
+      "year": 2009,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 4,
+      "group": "Z",
+      "note": "Version remontée et raccourcie de Z : alternative à la série Z",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragon Ball Daima",
+      "title_fr": "Dragon Ball Daima",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 10,
+      "group": "Après Buu",
+      "note": "Se déroule juste après Majin Buu : Goku redevenu enfant",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Dragon Ball Z: Battle of Gods",
+      "title_fr": "Dragon Ball Z : Battle of Gods",
+      "year": 2013,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Super",
+      "note": "Beerus, le dieu de la destruction ; prélude à Super",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Dragon Ball Z: Resurrection 'F'",
+      "title_fr": "Dragon Ball Z : La Résurrection de 'F'",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Super",
+      "note": "Le retour de Freezer",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragon Ball Super",
+      "title_fr": "Dragon Ball Super",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Super",
+      "note": "Reprend les deux films puis le Tournoi du Pouvoir, 131 épisodes",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Dragon Ball Super: Broly",
+      "title_fr": "Dragon Ball Super : Broly",
+      "year": 2018,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Super",
+      "note": "Après le Tournoi du Pouvoir : Broly, le Saiyan légendaire",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Dragon Ball Super: Super Hero",
+      "title_fr": "Dragon Ball Super : Super Hero",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 9,
+      "release_order": 9,
+      "group": "Super",
+      "note": "Gohan et Piccolo face à l'Armée du Ruban Rouge",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Dragon Ball GT",
+      "title_fr": "Dragon Ball GT",
+      "year": 1996,
+      "tmdb_id": null,
+      "chronological_order": 10,
+      "release_order": 3,
+      "group": "Alternatif",
+      "note": "Suite non issue du manga, chronologie alternative après Z",
+      "optional": true
+    }
+  ]
+}

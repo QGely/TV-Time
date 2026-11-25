@@ -1,0 +1,760 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u5",
+   "title": "Navigation",
+   "description": "Navigation à l'estime et radionavigation : la Terre, les cartes, le magnétisme, le triangle des vitesses, les calculs de navigation et de carburant, le VOR, l'ADF et le GNSS (examen : 20 questions, 50 min).",
+   "skills": [
+    {
+     "id": "u5s10",
+     "title": "Navigation à vue et égarement",
+     "icon": "🔍",
+     "tips": "La navigation à vue recoupe sans cesse trois éléments : le cap (conservateur recalé sur le compas), le temps (montre) et la carte, comparée au sol. L'estime dit où l'avion devrait être ; l'observation du sol le confirme.\n\nOrienter la carte :\n• Pliez la carte sur la branche en cours, avec 10 à 15 NM de part et d'autre du trait.\n• Tenez-la orientée dans le sens de la route (« route en haut ») : ce qui est à droite sur la carte est à droite dehors. Tant pis si les inscriptions se lisent à l'envers.\n• Suivez votre position du doigt sur le trait gradué ; notez l'heure de chaque point sûr.\n\nMéthode montre – carte – sol :\n• La montre : temps écoulé depuis le dernier point sûr. À 120 kt, 2 NM par minute : 6 min après le top, vous êtes à 12 NM.\n• La carte : à cet endroit du trait, qu'allez-vous voir ? Une voie ferrée à franchir, une ville à gauche, un lac devant.\n• Le sol : cherchez ces éléments à l'heure prévue.\nOn va de la carte vers le sol, pas l'inverse. Partir d'un élément vu et chercher sur la carte « ce qui lui ressemble » mène aux fausses identifications : l'esprit fait coller le paysage à ce qu'il attend. Un point n'est confirmé que par plusieurs indices concordants (forme, taille, éléments voisins, heure de passage).\n\nChoix des repères en vol :\n• Les lignes (autoroute, voie ferrée, grand fleuve, canal, côte, ligne à haute tension) se voient de loin et ne se manquent pas : elles encadrent la route ou la coupent.\n• Les points (ville, lac, confluent, barrage, croisement autoroute–voie ferrée) fixent la position le long de la ligne.\n• Pièges : routes récentes absentes de la carte, plans d'eau asséchés, villages semblables, voie ferrée qui longe une rivière.\n\nLignes de sécurité et de recalage :\n• Ligne de recalage : élément linéaire étendu qui coupe la route près d'un point tournant ou de la destination. En l'atteignant, on sait que l'on est à hauteur du point : on la suit du bon côté.\n• Ligne de sécurité : grande ligne choisie à la préparation, d'un côté de la route, qui marque une limite à ne pas franchir (TMA, zone, massif) et sert de refuge pour un cap sécurisant.\n• Ligne d'arrêt : ligne située au-delà de la destination ; l'atteindre signifie qu'on l'a dépassée.\n• Visée décalée (erreur volontaire) : pour rejoindre un point situé sur une ligne, on vise volontairement un côté. Ex. : visée de 6° à gauche sur 30 NM → la ligne est atteinte environ 3 NM à gauche du point (6 × 30 / 60) ; on tourne à droite.\n\nTenue du cap et du temps :\n• Un écart de cap de 5° décale l'avion de 1 NM tous les 12 NM ; 6° représentent 10 % de la distance parcourue.\n• À chaque repère, comparez l'heure réelle à l'estimée : un retard révèle une vitesse sol plus faible, à reporter sur les heures suivantes. Un écart latéral révèle une dérive mal estimée : corrigez le cap (1 sur 60).\n• Plus le dernier point sûr est ancien, plus la zone de position possible s'élargit : confirmez souvent.\n\nNavigation par mauvaise visibilité :\n• Fixez au sol vos limites (visibilité, plafond) et l'endroit où vous ferez demi-tour ; engagez-le dès que la limite est atteinte, tant que vous voyez assez pour virer à vue.\n• Réduisez la vitesse, dans la configuration prévue par le manuel de vol : plus de temps pour voir, et un rayon de virage plus petit (il varie comme le carré de la vitesse).\n• Ordre de grandeur : 1 500 m de visibilité à 90 kt (≈ 2,8 km/min) laissent une trentaine de secondes entre l'apparition d'un repère et son survol.\n• Suivez de grandes lignes, mais respectez les hauteurs minimales et méfiez-vous des pylônes, des câbles et des vallées qui montent dans les nuages. La brume réduit surtout la visibilité horizontale et à contre-jour : on voit le sol sous l'avion bien mieux que loin devant.\n\nÉgarement : la procédure :\nAgissez tôt, avant que carburant, jour ou météo ne deviennent critiques.\n• Garder son calme et piloter : ailes horizontales, cap et altitude tenus, heure notée. Ne pas tourner au hasard, ce qui ruine l'estime.\n• Faire le point : cap réellement tenu (conservateur recalé ?), temps et vitesse sol depuis le dernier point sûr. On en déduit une zone de position probable.\n• Chercher dans cette zone une ligne, puis un point, de la carte vers le sol.\n• Monter si le plafond et les espaces le permettent : on voit plus loin, la portée radio et radar augmente.\n• Se signaler sur la fréquence en cours ou au SIV de la zone (sinon 121,5 MHz) : position incertaine, dernier point sûr et son heure, cap, altitude, autonomie. Transpondeur sur le code attribué, IDENT à la demande. Selon SERA.11010, l'organisme ATS qui sait un aéronef égaré l'aide et cherche à déterminer sa position. En cas d'urgence : PAN PAN ou MAYDAY ; 7700 si aucun code n'est attribué (sinon on garde le code, sauf raison de préférer 7700).\n• Se recaler avec la radio : radiale VOR, distance DME, GNSS, toujours recoupés avec le sol.\n• À défaut : cap sécurisant vers une ligne de sécurité impossible à manquer, loin des zones et du relief, puis la suivre jusqu'à un point identifiable.\n• Fixer une heure limite : si le doute persiste, atterrissage de précaution avant la nuit et avant d'entamer la réserve finale. Ex. : 40 l à 20 l/h, réserve de jour 30 min = 10 l : 30 l, soit 1 h 30 de vol, atterrissage compris.\n\nEspaces et zones :\n• Repérez à la préparation les espaces contrôlés, les zones P, R et D et leurs limites verticales ; les zones temporaires (ZIT, ZRT, ZDT) sont publiées par NOTAM ou SUP AIP.\n• Passez à distance des limites : près d'elles, un doute de position devient vite une pénétration non autorisée. Monter ne dispense jamais de clairance.\n\nGPS : utilisation raisonnée :\n• Préparez la navigation sur la carte d'abord ; le GPS vient en contrôle. Vérifiez la base de données (cycle AIRAC de 28 jours) et la saisie des points.\n• Une route « direct to » ignore relief, zones et espaces : contrôlez-la sur la carte.\n• Gardez le regard dehors : anticollision et météo d'abord.\n• Prévoyez la panne (batterie, surchauffe, fixation) et sachez poursuivre à l'estime.",
+     "vocab": [
+      {
+       "term": "Montre – carte – sol",
+       "translation": "Temps écoulé, repère attendu sur la carte, puis recherche au sol"
+      },
+      {
+       "term": "Point sûr",
+       "translation": "Dernière position confirmée par plusieurs indices concordants"
+      },
+      {
+       "term": "Ligne de recalage",
+       "translation": "Ligne étendue qui coupe la route près du point recherché"
+      },
+      {
+       "term": "Ligne de sécurité",
+       "translation": "Grande ligne qui borne une limite et sert de refuge en cas de doute"
+      },
+      {
+       "term": "Ligne d'arrêt",
+       "translation": "Ligne située au-delà du but : l'atteindre signale un dépassement"
+      },
+      {
+       "term": "Visée décalée",
+       "translation": "Viser exprès un côté du but situé sur une ligne (erreur volontaire)"
+      },
+      {
+       "term": "Cap sécurisant",
+       "translation": "Cap vers une ligne sûre, impossible à manquer, loin des dangers"
+      },
+      {
+       "term": "Zone de position probable",
+       "translation": "Zone où peut être l'avion d'après cap, temps et vitesse sol"
+      },
+      {
+       "term": "Égarement",
+       "translation": "Situation du pilote qui ne peut plus situer son avion avec certitude"
+      },
+      {
+       "term": "SIV",
+       "translation": "Secteur d'information de vol : information et alerte, sans clairance"
+      },
+      {
+       "term": "121,5 MHz",
+       "translation": "Fréquence internationale d'urgence, veillée par de nombreux organismes"
+      },
+      {
+       "term": "IDENT",
+       "translation": "Fonction du transpondeur qui fait ressortir le plot sur l'écran radar"
+      },
+      {
+       "term": "ZIT, ZRT, ZDT",
+       "translation": "Zones interdite, réglementée, dangereuse temporaires (NOTAM, SUP AIP)"
+      },
+      {
+       "term": "Atterrissage de précaution",
+       "translation": "Atterrissage choisi avant que la situation ne devienne critique"
+      },
+      {
+       "term": "Direct to",
+       "translation": "Fonction GPS de route directe, qui ignore relief, zones et espaces"
+      },
+      {
+       "term": "Cycle AIRAC",
+       "translation": "Cycle de 28 jours de mise à jour des données aéronautiques"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Visée décalée et lignes de recalage",
+       "svg": "<svg viewBox=\"0 0 700 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u5s10f1a\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#ea580c\"/></marker><marker id=\"u5s10f1n\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#0f172a\"/></marker><pattern id=\"u5s10f1h\" width=\"12\" height=\"12\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><rect width=\"12\" height=\"12\" fill=\"#fef2f2\"/><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"12\" stroke=\"#fca5a5\" stroke-width=\"4\"/></pattern></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"440\" fill=\"#f8fafc\"/><rect x=\"0\" y=\"372\" width=\"700\" height=\"68\" fill=\"url(#u5s10f1h)\"/><line x1=\"0\" y1=\"372\" x2=\"700\" y2=\"372\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"10 6\"/><line x1=\"0\" y1=\"351\" x2=\"700\" y2=\"351\" stroke=\"#475569\" stroke-width=\"3\"/><line x1=\"0\" y1=\"360\" x2=\"700\" y2=\"360\" stroke=\"#475569\" stroke-width=\"3\"/><line x1=\"560\" y1=\"0\" x2=\"560\" y2=\"440\" stroke=\"#111827\" stroke-width=\"2.5\"/><path d=\"M552,12 L568,12 M552,30 L568,30 M552,48 L568,48 M552,66 L568,66 M552,84 L568,84 M552,102 L568,102 M552,120 L568,120 M552,138 L568,138 M552,156 L568,156 M552,174 L568,174 M552,192 L568,192 M552,210 L568,210 M552,228 L568,228 M552,246 L568,246 M552,264 L568,264 M552,282 L568,282 M552,300 L568,300 M552,318 L568,318 M552,336 L568,336 M552,354 L568,354 M552,372 L568,372 M552,390 L568,390 M552,408 L568,408 M552,426 L568,426\" stroke=\"#111827\" stroke-width=\"2\"/><path d=\"M470,0 C485,45 485,80 482,110 C479,150 470,200 476,240 C482,280 492,305 486,335 C480,365 474,400 478,440\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"270\" x2=\"476\" y2=\"240\" stroke=\"#64748b\" stroke-width=\"2.5\" stroke-dasharray=\"9 7\"/><line x1=\"70\" y1=\"270\" x2=\"480\" y2=\"111\" stroke=\"#ea580c\" stroke-width=\"3.5\"/><path d=\"M472,116 C469,152 460,198 464,226\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"3.5\" marker-end=\"url(#u5s10f1a)\"/><circle cx=\"481\" cy=\"111\" r=\"6\" fill=\"#ffffff\" stroke=\"#ea580c\" stroke-width=\"3\"/><circle cx=\"70\" cy=\"270\" r=\"7\" fill=\"#0f172a\"/><circle cx=\"476\" cy=\"240\" r=\"11\" fill=\"#facc15\" stroke=\"#a16207\" stroke-width=\"2.5\"/><line x1=\"38\" y1=\"80\" x2=\"38\" y2=\"34\" stroke=\"#0f172a\" stroke-width=\"3\" marker-end=\"url(#u5s10f1n)\"/><text x=\"38.0\" y=\"24.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">N</text><text x=\"70.0\" y=\"296.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Départ</text><text x=\"250.0\" y=\"290.0\" font-size=\"16\" fill=\"#475569\" text-anchor=\"start\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Route directe</text><text x=\"84.0\" y=\"128.0\" font-size=\"16\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Route visée, décalée vers la gauche</text><text x=\"84.0\" y=\"149.0\" font-size=\"16\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">(erreur volontaire)</text><text x=\"458.0\" y=\"40.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Fleuve : ligne de recalage</text><text x=\"450.0\" y=\"205.0\" font-size=\"14\" fill=\"#c2410c\" text-anchor=\"end\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">On atteint le fleuve :</text><text x=\"450.0\" y=\"225.0\" font-size=\"14\" fill=\"#c2410c\" text-anchor=\"end\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">on tourne à droite</text><text x=\"458.0\" y=\"270.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Destination</text><text x=\"574.0\" y=\"200.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Voie ferrée :</text><text x=\"574.0\" y=\"221.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">ligne d'arrêt</text><text x=\"30.0\" y=\"319.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Visée de 6° à 30 NM : écart ≈ 3 NM (1 sur 60)</text><text x=\"30.0\" y=\"342.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Autoroute : ligne de sécurité</text><rect x=\"40\" y=\"388\" width=\"390\" height=\"34\" rx=\"6\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"56.0\" y=\"411.0\" font-size=\"16\" fill=\"#b91c1c\" text-anchor=\"start\" font-weight=\"bold\">Zone R : rester au nord de l'autoroute</text></svg>",
+       "caption": "Vue de dessus, angles exagérés : en visant volontairement à gauche de la destination, on atteint le fleuve (ligne de recalage) à gauche d'elle et l'on sait qu'il faut tourner à droite. L'autoroute sert de ligne de sécurité, la voie ferrée de ligne d'arrêt au-delà du but."
+      },
+      {
+       "title": "Égarement : l'ordre des actions",
+       "svg": "<svg viewBox=\"0 0 640 610\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"610\" fill=\"#ffffff\"/><text x=\"320.0\" y=\"30.0\" font-size=\"17\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\">Agir tôt, tant que carburant, jour et météo le permettent</text><line x1=\"34\" y1=\"79\" x2=\"34\" y2=\"569\" stroke=\"#94a3b8\" stroke-width=\"3\"/><rect x=\"62\" y=\"50\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"79\" r=\"19\" fill=\"#1d4ed8\"/><text x=\"34.0\" y=\"85.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">1</text><text x=\"78.0\" y=\"74.0\" font-size=\"18\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\">Piloter</text><text x=\"78.0\" y=\"97.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">Ailes horizontales, cap et altitude tenus, heure notée</text><rect x=\"62\" y=\"120\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"149\" r=\"19\" fill=\"#1d4ed8\"/><text x=\"34.0\" y=\"155.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">2</text><text x=\"78.0\" y=\"144.0\" font-size=\"18\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\">Faire le point</text><text x=\"78.0\" y=\"167.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">Cap tenu, temps et vitesse sol depuis le dernier point sûr</text><rect x=\"62\" y=\"190\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"219\" r=\"19\" fill=\"#1d4ed8\"/><text x=\"34.0\" y=\"225.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">3</text><text x=\"78.0\" y=\"214.0\" font-size=\"18\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\">Chercher, de la carte vers le sol</text><text x=\"78.0\" y=\"237.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">Une grande ligne, puis un point ; recouper les indices</text><rect x=\"62\" y=\"260\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"289\" r=\"19\" fill=\"#0f766e\"/><text x=\"34.0\" y=\"295.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">4</text><text x=\"78.0\" y=\"284.0\" font-size=\"18\" fill=\"#0f766e\" text-anchor=\"start\" font-weight=\"bold\">Monter, si plafond et espaces le permettent</text><text x=\"78.0\" y=\"307.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">On voit plus loin, la portée radio et radar augmente</text><rect x=\"62\" y=\"330\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"359\" r=\"19\" fill=\"#0f766e\"/><text x=\"34.0\" y=\"365.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">5</text><text x=\"78.0\" y=\"354.0\" font-size=\"18\" fill=\"#0f766e\" text-anchor=\"start\" font-weight=\"bold\">Se signaler</text><text x=\"78.0\" y=\"377.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">Fréquence en cours ou SIV, sinon 121,5 ; transpondeur</text><rect x=\"62\" y=\"400\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"429\" r=\"19\" fill=\"#0f766e\"/><text x=\"34.0\" y=\"435.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">6</text><text x=\"78.0\" y=\"424.0\" font-size=\"18\" fill=\"#0f766e\" text-anchor=\"start\" font-weight=\"bold\">Se recaler avec la radio</text><text x=\"78.0\" y=\"447.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">VOR, DME, GNSS : toujours recoupés avec le sol</text><rect x=\"62\" y=\"470\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"499\" r=\"19\" fill=\"#c2410c\"/><text x=\"34.0\" y=\"505.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"78.0\" y=\"494.0\" font-size=\"18\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"bold\">Sinon : cap sécurisant</text><text x=\"78.0\" y=\"517.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">Rejoindre une ligne de sécurité, puis la suivre</text><rect x=\"62\" y=\"540\" width=\"572\" height=\"58\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"569\" r=\"19\" fill=\"#c2410c\"/><text x=\"34.0\" y=\"575.0\" font-size=\"18\" fill=\"#ffffff\" text-anchor=\"middle\" font-weight=\"bold\">8</text><text x=\"78.0\" y=\"564.0\" font-size=\"18\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"bold\">Heure limite</text><text x=\"78.0\" y=\"587.0\" font-size=\"17\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">Se poser par précaution avant la nuit ou la réserve finale</text></svg>",
+       "caption": "Face à un doute de position : d'abord piloter et conserver l'estime, puis chercher, monter, se signaler et se recaler ; à défaut, rejoindre une ligne de sécurité et se poser avant que la situation ne devienne critique."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u5s10q01",
+       "q": "Pourquoi conseille-t-on de tenir la carte orientée dans le sens de la route pendant le vol ?",
+       "choices": [
+        "Pour que ce qui est à droite sur la carte soit aussi à droite dehors",
+        "Pour lire les noms des villes et des balises dans le bon sens de lecture",
+        "Pour aligner les méridiens de la carte sur le nord magnétique",
+        "Pour mesurer la route vraie en vol sans sortir le rapporteur"
+       ],
+       "answer": 0,
+       "explanation": "Carte orientée « route en haut », la gauche et la droite du papier correspondent à celles du paysage : on compare directement ce que l'on voit à ce qui est dessiné. Les inscriptions se lisent alors parfois à l'envers, ce qui est sans importance ; l'orientation ne change rien aux méridiens ni à la mesure des routes."
+      },
+      {
+       "id": "u5s10q02",
+       "q": "En navigation à vue, quelle méthode de lecture de carte limite le risque de se tromper de repère ?",
+       "choices": [
+        "Repérer un élément au sol, puis chercher sur la carte ce qui lui ressemble",
+        "Suivre la trace du GPS et n'ouvrir la carte qu'aux points tournants",
+        "Voler plus bas pour lire les panneaux et les noms des villages",
+        "Prévoir sur la carte ce que l'on doit voir, puis le chercher au sol"
+       ],
+       "answer": 3,
+       "explanation": "On va de la carte vers le sol : à l'heure prévue, on sait ce qui doit apparaître et où le chercher. Partir du sol pour trouver sur la carte « ce qui ressemble » conduit à faire coller le paysage à ce que l'on attend, cause classique d'égarement."
+      },
+      {
+       "id": "u5s10q03",
+       "q": "Qu'appelle-t-on ligne de recalage en navigation à vue ?",
+       "choices": [
+        "Le trait de route tracé sur la carte entre deux points tournants",
+        "Une isogone reportée sur la carte pour corriger la déclinaison",
+        "La limite latérale d'un espace contrôlé, à contourner par l'extérieur",
+        "Un élément linéaire étendu qui coupe la route près du point recherché"
+       ],
+       "answer": 3,
+       "explanation": "Une ligne de recalage (fleuve, autoroute, voie ferrée, côte) coupe la route près d'un point tournant ou de la destination : impossible à manquer, elle signale que l'on est arrivé à hauteur du point, que l'on rejoint en la suivant. Le trait de route n'existe que sur la carte, pas au sol."
+      },
+      {
+       "id": "u5s10q04",
+       "q": "Par visibilité moyenne, quel type de repère a le plus de chances d'être vu à temps et sans ambiguïté ?",
+       "choices": [
+        "Un village isolé au milieu d'une vaste plaine agricole uniforme",
+        "Un petit étang au milieu d'une forêt étendue",
+        "Une grande ligne, comme une autoroute, un fleuve ou une côte",
+        "Le carrefour de deux routes départementales"
+       ],
+       "answer": 2,
+       "explanation": "Les grandes lignes se voient de loin, se prolongent sur des dizaines de kilomètres et ne se manquent pas : elles encadrent ou coupent la route. Villages, étangs et routes secondaires se confondent avec leurs voisins et peuvent être passés sans être vus."
+      },
+      {
+       "id": "u5s10q05",
+       "q": "Vous réalisez que vous ne savez plus situer votre avion avec certitude. Quelle est la première chose à faire ?",
+       "choices": [
+        "Piloter : ailes horizontales, altitude et cap tenus, heure notée",
+        "Faire un tour complet sur place pour chercher un repère connu",
+        "Descendre près du sol pour lire le nom des villages survolés",
+        "Afficher 7600 au transpondeur pour alerter vite le contrôle radar"
+       ],
+       "answer": 0,
+       "explanation": "Avant tout, on pilote et l'on fige les éléments de l'estime : cap tenu et heure. Tourner au hasard brouille l'estime ; descendre réduit la portée visuelle et radio et rapproche des obstacles. Le code 7600 signale une panne radio, pas un égarement."
+      },
+      {
+       "id": "u5s10q06",
+       "q": "Lorsque l'on est égaré, pourquoi est-il conseillé de monter, si le plafond et les espaces aériens le permettent ?",
+       "choices": [
+        "Pour voir plus loin et améliorer la portée radio et radar",
+        "Pour que le compas soit moins perturbé par le relief survolé",
+        "Pour bénéficier de minimums de visibilité réduits en altitude",
+        "Pour réduire la dérive, le vent faiblissant avec l'altitude"
+       ],
+       "answer": 0,
+       "explanation": "Plus haut, l'horizon visible recule et la portée VHF, qui est optique, augmente : on joint mieux les organismes et l'on est mieux vu des radars. Le vent ne faiblit pas en général avec l'altitude, et les minimums VMC ne sont pas allégés en montant."
+      },
+      {
+       "id": "u5s10q07",
+       "q": "En classe G, vous n'êtes plus sûr de votre position. Quel organisme appelez-vous de préférence ?",
+       "choices": [
+        "La tour de l'aérodrome de destination, même hors de portée radio",
+        "Celui que vous avez déjà contacté ou, à défaut, le SIV de la zone",
+        "Le BEA, qui est chargé de déclencher et conduire les recherches",
+        "Le bureau de piste de l'aérodrome de départ, joint par téléphone portable"
+       ],
+       "answer": 1,
+       "explanation": "On s'adresse d'abord à l'organisme déjà contacté, sinon au SIV de la zone, qui rend l'information de vol et l'alerte ; sans réponse, le 121,5 MHz reste disponible. Le BEA enquête sur les accidents et incidents, il ne conduit pas les recherches."
+      },
+      {
+       "id": "u5s10q08",
+       "q": "En quoi consiste la visée décalée, appelée aussi erreur volontaire ?",
+       "choices": [
+        "Viser un côté d'un point situé sur une ligne pour savoir où tourner",
+        "Prendre un cap décalé du côté du vent pour compenser la dérive",
+        "Laisser au conservateur de cap un écart connu, corrigé plus tard",
+        "Contourner un espace aérien en se tenant à 2 NM de sa limite"
+       ],
+       "answer": 0,
+       "explanation": "Si la destination est sur une ligne (fleuve, côte, autoroute), on vise volontairement d'un côté : en atteignant la ligne, on sait sans hésiter de quel côté tourner. Viser droit sur le point laisse un doute entre gauche et droite. La correction de dérive, elle, sert à tenir la route."
+      },
+      {
+       "id": "u5s10q09",
+       "q": "Pourquoi l'identification d'un repère faite « du sol vers la carte » est-elle risquée ?",
+       "choices": [
+        "Parce que la carte au 1/500 000 ne figure pas les éléments linéaires",
+        "Parce que l'esprit fait coller le paysage à ce qu'il s'attend à voir",
+        "Parce que les repères changent de forme selon l'altitude de vol",
+        "Parce que cette méthode oblige à voler sous 1 000 ft au-dessus du sol"
+       ],
+       "answer": 1,
+       "explanation": "Partant d'un élément vu, on trouve presque toujours sur la carte quelque chose qui lui ressemble : c'est le biais de confirmation. On confirme un point par plusieurs indices concordants, en partant de la carte. La carte au 1/500 000 figure bien routes, voies ferrées et cours d'eau."
+      },
+      {
+       "id": "u5s10q10",
+       "q": "Votre GPS signale une base de données aéronautique périmée depuis deux cycles AIRAC. Quelle conséquence en tirez-vous ?",
+       "choices": [
+        "La position calculée devient moins précise, mais les espaces affichés restent justes",
+        "Espaces, zones et fréquences affichés peuvent être faux : la carte et les NOTAM font foi",
+        "Le récepteur cesse de calculer sa position jusqu'à la mise à jour de la base",
+        "Les fréquences peuvent avoir changé, mais les limites des espaces aériens restent figées"
+       ],
+       "answer": 1,
+       "explanation": "La base suit le cycle AIRAC de 28 jours : périmée, elle peut afficher des limites, des zones ou des fréquences qui ont changé. La position satellitaire n'est pas dégradée pour autant, et le récepteur continue en général de fonctionner : c'est au pilote de ne pas s'y fier pour l'espace aérien."
+      },
+      {
+       "id": "u5s10q11",
+       "q": "Lors de la préparation, vous repérez une voie ferrée 3 NM au-delà de la destination, perpendiculaire à votre route. À quoi peut-elle servir ?",
+       "choices": [
+        "De ligne d'arrêt : l'atteindre signifie que la destination est dépassée",
+        "De ligne de recalage : on la suit pour arriver jusqu'à la destination",
+        "De ligne de sécurité : elle marque la limite latérale d'une zone",
+        "De point de report obligatoire avant l'entrée dans le circuit"
+       ],
+       "answer": 0,
+       "explanation": "Une ligne placée au-delà du but sert de butée : l'atteindre signifie que l'on a passé la destination sans la voir, et il faut revenir en arrière. Une ligne de recalage passe par le point recherché ou tout près ; une voie ferrée n'est pas un point de report obligatoire."
+      },
+      {
+       "id": "u5s10q12",
+       "q": "Par visibilité réduite, pourquoi est-il judicieux de réduire la vitesse, dans la configuration prévue par le manuel de vol ?",
+       "choices": [
+        "La dérive diminue nettement, ce qui rend la route bien plus facile à tenir",
+        "La consommation chute au point de doubler l'autonomie",
+        "On a plus de temps pour voir les repères et le rayon de virage diminue",
+        "Le conservateur de cap dérive moins vite à basse vitesse"
+       ],
+       "answer": 2,
+       "explanation": "À vitesse réduite, chaque repère reste plus longtemps dans le champ de visibilité, et le rayon de virage, proportionnel au carré de la vitesse, diminue : le demi-tour tient dans un espace plus petit. La dérive, elle, augmente quand la vitesse propre diminue (Xmax = Vw × 60 / Vp)."
+      },
+      {
+       "id": "u5s10q13",
+       "q": "Dans la brume, comment la visibilité varie-t-elle habituellement selon la direction du regard ?",
+       "choices": [
+        "On voit mieux le sol sous l'avion que loin devant, surtout à contre-jour",
+        "On voit mieux loin devant que le sol situé à la verticale de l'avion",
+        "Elle ne dépend ni de l'inclinaison du regard ni de la position du soleil",
+        "Elle est meilleure face au soleil, qui éclaire davantage le relief"
+       ],
+       "answer": 0,
+       "explanation": "Le regard vers le bas traverse une couche de brume bien plus mince que le regard horizontal : le sol sous l'avion reste visible alors que l'horizon a disparu. À contre-jour, la lumière diffusée par la brume masque davantage les repères. Voir le sol à la verticale ne prouve donc pas que la visibilité vers l'avant est suffisante."
+      },
+      {
+       "id": "u5s10q14",
+       "q": "Vous avez décidé au sol de faire demi-tour si la visibilité tombe sous 5 km. En vol, elle passe à 4 km et continue de baisser. Que faites-vous ?",
+       "choices": [
+        "Poursuivre jusqu'au prochain point tournant pour garder la cohérence du log",
+        "Poursuivre en descendant pour rester sous la brume jusqu'à destination",
+        "Demi-tour maintenant, tant que l'on voit encore assez pour virer à vue",
+        "Demander au SIV l'autorisation de faire demi-tour, puis attendre sa réponse"
+       ],
+       "answer": 2,
+       "explanation": "Une limite fixée au sol ne vaut que si on l'applique : le demi-tour s'engage dès qu'elle est atteinte, quand on voit encore assez pour virer et retrouver la zone de bonne visibilité. Le SIV ne délivre pas d'autorisation en classe G, et descendre sous la brume rapproche du relief et des obstacles."
+      },
+      {
+       "id": "u5s10q15",
+       "q": "Égaré, mais sans urgence, vous appelez le SIV. Quelles informations rendent votre message le plus utile pour qu'il vous situe ?",
+       "choices": [
+        "Dernier point sûr et heure de passage, cap tenu, altitude et autonomie restante",
+        "Aérodrome de départ, heure de décollage, destination et nombre de personnes à bord",
+        "Nom du village que vous pensez survoler et heure d'arrivée prévue à destination",
+        "Immatriculation, type d'avion, couleur de la cellule et nom du commandant de bord"
+       ],
+       "answer": 0,
+       "explanation": "Le dernier point sûr, son heure et le cap tenu permettent au SIV d'estimer la zone où vous êtes ; l'altitude aide à vous trouver au radar et l'autonomie dit de combien de temps vous disposez. Un village « que l'on pense survoler » est justement l'hypothèse douteuse ; départ, passagers ou couleur servent aux recherches, pas à vous situer."
+      },
+      {
+       "id": "u5s10q16",
+       "q": "Que prévoit le règlement SERA lorsqu'un organisme de la circulation aérienne apprend qu'un aéronef est égaré ?",
+       "choices": [
+        "Il déclenche d'emblée la phase de détresse (DETRESFA)",
+        "Il lui ordonne de se poser sur l'aérodrome ouvert le plus proche",
+        "Il se borne à signaler l'événement au BEA pour enquête",
+        "Il prend les mesures utiles pour l'aider et déterminer sa position"
+       ],
+       "answer": 3,
+       "explanation": "SERA.11010 charge l'organisme ATS informé d'un aéronef égaré de tout faire pour l'aider et protéger son vol, notamment en cherchant à déterminer sa position et en prévenant les organismes voisins. La phase de détresse correspond à un danger grave et imminent, pas à une simple incertitude de position."
+      },
+      {
+       "id": "u5s10q17",
+       "q": "Votre destination est une ville située sur un fleuve qui coupe votre route à angle droit, 40 NM devant vous. Vous visez volontairement 6° à gauche. Où atteindrez-vous le fleuve et de quel côté tournerez-vous ?",
+       "choices": [
+        "Environ 4 NM à gauche de la ville ; vous tournez à gauche",
+        "Environ 6 NM à gauche de la ville ; vous tournez à droite",
+        "Environ 4 NM à gauche de la ville ; vous tournez à droite",
+        "Environ 2 NM à gauche de la ville ; vous tournez à droite"
+       ],
+       "answer": 2,
+       "explanation": "Règle du 1 sur 60 : écart = 6 × 40 / 60 = 4 NM. Ayant visé à gauche, on arrive sur le fleuve à gauche de la ville : on tourne à droite pour le suivre jusqu'à elle. 6 NM confond degrés et milles ; 2 NM divise à tort par deux."
+      },
+      {
+       "id": "u5s10q18",
+       "q": "Votre dernier point sûr remonte à 20 min, à une vitesse sol de 105 kt, et vous estimez avoir tenu le cap à ± 6° près. Jusqu'à quelle distance de part et d'autre de la route prévue pouvez-vous vous trouver ?",
+       "choices": [
+        "≈ 6 NM",
+        "≈ 3,5 NM",
+        "≈ 2 NM",
+        "≈ 7 NM"
+       ],
+       "answer": 1,
+       "explanation": "Distance parcourue : 105 × 20 / 60 = 35 NM. Un écart de cap de 6° décale l'avion de 6 × 35 / 60 = 3,5 NM (règle du 1 sur 60), soit 10 % de la distance. 7 NM est la largeur totale de la zone (± 3,5 NM) ; 6 NM confond degrés et milles."
+      },
+      {
+       "id": "u5s10q19",
+       "q": "Visibilité 2 km dans la brume, vitesse sol 100 kt. Combien de temps s'écoule entre l'apparition d'un repère droit devant et son survol ?",
+       "choices": [
+        "≈ 1 min 10 s",
+        "≈ 20 s",
+        "≈ 2 min",
+        "≈ 40 s"
+       ],
+       "answer": 3,
+       "explanation": "100 kt = 185 km/h, soit environ 3,1 km par minute : 2 km sont parcourus en 2 / 3,1 ≈ 0,65 min, environ 40 s. Prendre 100 kt pour 100 km/h donne 1 min 10 s. Ce délai très court justifie de réduire la vitesse et d'anticiper les repères sur la carte."
+      },
+      {
+       "id": "u5s10q20",
+       "q": "Classe G, 2 500 ft QNH, relief bas, plafond 5 000 ft, 1 h 30 d'autonomie : depuis 10 min, vous ne reconnaissez plus le paysage. Quelle conduite est la plus appropriée ?",
+       "choices": [
+        "Tourner autour du dernier village vu jusqu'à le retrouver sur la carte",
+        "Descendre à 500 ft sol pour lire les panneaux et le nom des villages",
+        "Tenir le cap, monter de 1 000 ft et appeler le SIV : position incertaine",
+        "Afficher 7600 et poursuivre au même cap jusqu'à l'heure d'arrivée"
+       ],
+       "answer": 2,
+       "explanation": "Avec du carburant et un plafond confortable, on garde l'estime (cap tenu), on monte pour voir plus loin et porter plus loin à la radio, puis on se signale. Tourner en rond fait perdre l'estime, descendre réduit la vue et rapproche des obstacles, et 7600 signale une panne radio."
+      },
+      {
+       "id": "u5s10q21",
+       "q": "Après plusieurs tentatives de recalage sans succès, vous décidez de prendre un cap sécurisant. Lequel de ces choix convient le mieux ?",
+       "choices": [
+        "Un cap vers une grande autoroute impossible à manquer, loin des zones et du relief",
+        "Le cap inverse, pour revenir sur la trajectoire déjà parcourue depuis le départ",
+        "Un cap vers une zone réglementée, bien visible sur la carte, pour s'y situer vite",
+        "Un cap choisi au hasard, tenu jusqu'à ce qu'un repère connu apparaisse"
+       ],
+       "answer": 0,
+       "explanation": "Le cap sécurisant mène vers une ligne étendue que l'on ne peut pas manquer et qui ne conduit vers aucun danger (relief, espace, zone) ; on la suit ensuite jusqu'à un point identifiable. Le cap inverse ne ramène pas exactement sur la trajectoire suivie : la dérive due au vent, mal connue, s'ajoute au lieu de s'annuler, et rien ne garantit qu'il mène vers un repère facile à reconnaître."
+      },
+      {
+       "id": "u5s10q22",
+       "q": "En fin d'été, le grand lac de retenue attendu à l'heure prévue reste introuvable, alors que l'autoroute et la voie ferrée annoncées par la carte sont bien là. Quelle conclusion est la plus raisonnable ?",
+       "choices": [
+        "Vous êtes égaré : faites demi-tour vers le dernier point sûr",
+        "Le lac a pu baisser : les autres indices confirment la position",
+        "Votre heure est fausse : attendez le lac avant de valider le point",
+        "Votre carte est périmée : suivez le GPS sans tenir compte du lac"
+       ],
+       "answer": 1,
+       "explanation": "Un plan d'eau varie avec les saisons : un lac de retenue peut baisser fortement, voire s'assécher, et devenir méconnaissable. Un point se confirme par plusieurs indices concordants ; ici l'autoroute, la voie ferrée et l'heure de passage concordent. Se croire égaré pour un seul repère absent fait perdre une position sûre, attendre le lac laisse filer l'estime, et en VFR la carte reste la référence, le GPS n'étant qu'une aide."
+      },
+      {
+       "id": "u5s10q23",
+       "q": "Incertain de votre position, vous volez à 2 300 ft QNH près d'une TMA de classe D dont le plancher est à 2 500 ft QNH. Que faites-vous ?",
+       "choices": [
+        "Rester sous le plancher, s'écarter de la limite et appeler l'organisme",
+        "Monter au-dessus du plancher pour voir plus loin, même sans clairance",
+        "Afficher 7000 et traverser la TMA au plus court pour en ressortir",
+        "Éteindre le transpondeur pour ne pas encombrer l'écran du contrôleur"
+       ],
+       "answer": 0,
+       "explanation": "Le conseil de monter cède devant les espaces : la classe D exige une clairance. On reste dessous, on s'éloigne de la limite et l'on demande de l'aide, transpondeur en marche pour être localisé. Pénétrer sans clairance crée un risque de collision avec le trafic contrôlé."
+      },
+      {
+       "id": "u5s10q24",
+       "q": "Avant le départ, vous programmez une route « direct to » vers la destination sur votre GPS. Que devez-vous vérifier avant de la suivre ?",
+       "choices": [
+        "Que la route du GPS est identique au cap compas inscrit au log",
+        "Sur la carte, qu'elle ne coupe ni zone, ni espace contrôlé, ni relief",
+        "Que l'altitude GPS affichée est bien égale à celle de l'altimètre au QNH",
+        "Que sa distance égale la somme des branches portées au log"
+       ],
+       "answer": 1,
+       "explanation": "Une route directe ignore le relief, les zones et les espaces : elle se contrôle sur la carte et les NOTAM du jour, puis se modifie si besoin. Route et cap diffèrent normalement de la dérive et de la déclinaison ; une route directe est plus courte que la somme des branches ; l'altitude GPS, géométrique, ne se compare pas à l'altimètre."
+      }
+     ]
+    },
+    {
+     "id": "u5s11",
+     "title": "VOR, ADF et DME en pratique",
+     "icon": "📻",
+     "tips": "Rappels : une radiale de VOR (QDR) est un relèvement magnétique compté depuis la station, avec le nord magnétique de la station ; QDM = QDR ± 180°. L'ADF montre le gisement d'une balise NDB ; le DME donne une distance oblique. On identifie toujours l'indicatif morse avant usage. Un VOR inexploitable fait apparaître un drapeau d'alarme ; l'ADF n'a pas d'alarme : écoutez l'indicatif tant que vous utilisez la balise.\n\nVOR : principe et portée :\n• La station émet un signal de référence et un signal variable dont le déphasage dépend de la direction de l'avion : le récepteur en déduit la radiale, sans tenir compte du cap.\n• Q-codes : QDM, route magnétique vers la station ; QDR, relèvement magnétique depuis la station ; QUJ, route vraie vers la station ; QTE, relèvement vrai depuis la station. QTE = QDR + Dm (Est positive), avec la déclinaison de la station.\n• Portée optique : D (NM) ≈ 1,23 × √h (h en ft). À 2 500 ft au-dessus de la station, environ 60 NM ; derrière un relief, beaucoup moins.\n\nOBS, CDI et TO/FROM :\n• On affiche une route à l'OBS. TO/FROM indique si cette route, suivie, rapproche (TO) ou éloigne (FROM) de la station. L'indication bascule sur la perpendiculaire à la route affichée passant par la station, où le drapeau devient ambigu.\n• En volant un cap voisin de la route affichée, l'aiguille montre le côté où elle se trouve : aiguille à droite, route à droite. Pleine déviation : 10° ou plus ; sur un CDI à 5 points, 1 point ≈ 2°.\n• Écart latéral (1 sur 60) = déviation (°) × distance à la station (NM) / 60. Ex. : 3 points (6°) à 40 NM → 4 NM.\n• Pour se situer, tournez l'OBS jusqu'à centrer l'aiguille : avec TO, la valeur lue est le QDM ; avec FROM, la radiale.\n• Indication inversée : en volant à l'opposé de la route affichée, l'aiguille se lit à l'envers. Affichez toujours la route que vous suivez.\n• Lecture par quadrants, OBS 360 : TO au sud de la station, FROM au nord ; aiguille à droite à l'ouest de la ligne radiale 360–180, à gauche à l'est.\n\nIntercepter et suivre une radiale :\n• Affichez la route à suivre (TO pour rejoindre la station, FROM pour s'en éloigner).\n• Prenez un cap d'interception du côté de l'aiguille, en général 30 à 45°, jusqu'à 90° loin de la route. Ex. : rejoindre le QDM 120 sous 30°, aiguille à gauche → cap 090.\n• Quand l'aiguille revient, virez pour vous établir, puis cherchez le cap qui la garde centrée : l'écart entre ce cap et la route est la dérive. Cap 085 pour tenir le QDM 075 : correction à droite, le vent vient de la droite.\n• Près de la station, l'aiguille devient très sensible : tenez le cap au lieu de la poursuivre.\n• Verticale : au-dessus de la station, dans le cône de silence (ou de confusion), aiguille et drapeau sont instables. Tenez le cap jusqu'à la bascule TO → FROM, notez l'heure, puis affichez la radiale sortante.\n\nADF et NDB :\n• Sur l'ADF à rose fixe, l'aiguille donne le gisement G, compté de 0 à 360° depuis le nez, dans le sens horaire.\n• QDM = Cm + G (moins 360 si nécessaire) ; QDR = QDM ± 180°. Ex. : Cm 050, G 310 → QDM 360, la balise est plein nord.\n• Le RMI, dont la rose suit le cap, affiche le QDM en tête d'aiguille et le QDR en queue.\n• Pour tracer un relèvement NDB, convertissez le QDM en vrai avec la déclinaison du lieu de l'avion (QUJ = QDM + Dm) ; pour un VOR, avec celle de la station.\n• Ralliement (homing) : garder l'aiguille sur le nez mène à la balise par une courbe, en finissant face au vent. Pour suivre un QDM, on corrige la dérive : QDM 090, vent du nord, cap 084 → G 006, balise 6° à droite du nez.\n• Interception : en cap 160 vers le QDM 130, on est sur la route quand G = 130 − 160 + 360 = 330.\n• En éloignement sur un QDR, la balise est derrière, G voisin de 180°. Ex. : QDR 300 (QDM 120), cap 306 → G = 120 − 306 + 360 = 174°.\n• Erreurs : effet de nuit (ondes réfléchies par l'ionosphère), effet de côte (réfraction quand le signal traverse la côte sous un angle faible), orages (l'aiguille pointe vers les éclairs), relief (réflexions), inclinaison en virage. Lisez l'ADF ailes horizontales.\n• Temps jusqu'à la balise, en volant perpendiculairement au relèvement : temps (min) = secondes écoulées / degrés de variation du gisement. Ex. : 10° en 120 s → 12 min.\n\nDME :\n• Distance oblique : à la verticale, le DME affiche la hauteur (6 000 ft ≈ 1 NM). L'écart avec la distance au sol devient négligeable à partir d'environ 1 NM de la station par 1 000 ft de hauteur.\n• Vitesse et temps calculés par le DME ne sont justes qu'en route directe vers ou depuis la station ; sur un arc DME, la vitesse affichée tombe vers zéro.\n\nPosition par recoupement :\n• Deux radiales, une radiale et une distance DME, ou un VOR et une NDB : la position est à l'intersection des lignes de position.\n• Meilleur angle de recoupement : voisin de 90°. Deux lignes presque parallèles donnent une position très imprécise.\n• Tracez les relèvements en vrai, ou avec la rose VOR de la carte orientée sur le nord magnétique, et notez l'heure du point.",
+     "vocab": [
+      {
+       "term": "QTE",
+       "translation": "Relèvement vrai de l'avion depuis la station (QDR + Dm de la station)"
+      },
+      {
+       "term": "QUJ",
+       "translation": "Route vraie pour rejoindre la station"
+      },
+      {
+       "term": "TO / FROM",
+       "translation": "Dit si la route affichée à l'OBS rapproche ou éloigne de la station"
+      },
+      {
+       "term": "Ligne d'ambiguïté",
+       "translation": "Perpendiculaire à la route affichée, par la station : TO/FROM bascule"
+      },
+      {
+       "term": "Pleine déviation",
+       "translation": "Aiguille du CDI en butée : écart d'au moins 10° avec la route"
+      },
+      {
+       "term": "Indication inversée",
+       "translation": "Aiguille lue à l'envers en volant à l'opposé de la route affichée"
+      },
+      {
+       "term": "Cône de silence",
+       "translation": "Zone au-dessus du VOR où aiguille et drapeau sont instables"
+      },
+      {
+       "term": "Cap d'interception",
+       "translation": "Cap qui coupe la route voulue sous 30 à 90°, du côté de l'aiguille"
+      },
+      {
+       "term": "RMI",
+       "translation": "Indicateur à rose asservie au cap : l'aiguille donne le QDM"
+      },
+      {
+       "term": "Ralliement (homing)",
+       "translation": "Vol aiguille ADF sur le nez : trajectoire courbe vers la balise"
+      },
+      {
+       "term": "Effet de nuit",
+       "translation": "Erreur ADF due aux ondes réfléchies par l'ionosphère"
+      },
+      {
+       "term": "Effet de côte",
+       "translation": "Réfraction du signal NDB qui traverse une côte sous un angle faible"
+      },
+      {
+       "term": "Distance oblique",
+       "translation": "Distance DME en ligne droite avion–station, et non au sol"
+      },
+      {
+       "term": "Arc DME",
+       "translation": "Trajectoire à distance DME constante autour d'une station"
+      },
+      {
+       "term": "Recoupement",
+       "translation": "Position à l'intersection de deux lignes de position"
+      },
+      {
+       "term": "Portée optique",
+       "translation": "Portée VHF ou UHF : D (NM) ≈ 1,23 × √h (h en ft)"
+      }
+     ],
+     "figures": [
+      {
+       "title": "VOR : lecture par quadrants (OBS 360)",
+       "svg": "<svg viewBox=\"0 0 680 520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u5s11f1n\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#0f172a\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"680\" height=\"260\" fill=\"#fff7ed\"/><rect x=\"0\" y=\"260\" width=\"680\" height=\"260\" fill=\"#ecfdf5\"/><line x1=\"340\" y1=\"18\" x2=\"340\" y2=\"502\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><line x1=\"16\" y1=\"260\" x2=\"664\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"9 7\"/><polygon points=\"354.0,260.0 347.0,272.1 333.0,272.1 326.0,260.0 333.0,247.9 347.0,247.9\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"340\" cy=\"260\" r=\"3\" fill=\"#1d4ed8\"/><text x=\"362.0\" y=\"288.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">VOR</text><text x=\"350.0\" y=\"42.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Radiale 360</text><text x=\"350.0\" y=\"494.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Radiale 180 = QDM 360</text><text x=\"24.0\" y=\"249.0\" font-size=\"15\" fill=\"#475569\" text-anchor=\"start\" font-weight=\"normal\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Ligne d'ambiguïté : TO/FROM bascule</text><line x1=\"38\" y1=\"84\" x2=\"38\" y2=\"38\" stroke=\"#0f172a\" stroke-width=\"3\" marker-end=\"url(#u5s11f1n)\"/><text x=\"38.0\" y=\"28.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">N</text><rect x=\"500\" y=\"16\" width=\"164\" height=\"34\" rx=\"6\" fill=\"#ffffff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"582.0\" y=\"39.0\" font-size=\"16\" fill=\"#1d4ed8\" text-anchor=\"middle\" font-weight=\"bold\">OBS affiché : 360</text><circle cx=\"110\" cy=\"150\" r=\"32\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"82.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"88.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"93.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"99.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"104.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"115.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"126.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"132.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"137.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"110\" cy=\"150\" r=\"3.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"125\" y1=\"126\" x2=\"125\" y2=\"174\" stroke=\"#ea580c\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"144.0\" font-size=\"18\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"bold\">FROM</text><text x=\"160.0\" y=\"169.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">aiguille à droite</text><circle cx=\"430\" cy=\"150\" r=\"32\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"402.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"408.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"413.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"419.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"424.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"435.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"441.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"446.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"452.0\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"457.5\" cy=\"150\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"430\" cy=\"150\" r=\"3.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"415\" y1=\"126\" x2=\"415\" y2=\"174\" stroke=\"#ea580c\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"480.0\" y=\"144.0\" font-size=\"18\" fill=\"#c2410c\" text-anchor=\"start\" font-weight=\"bold\">FROM</text><text x=\"480.0\" y=\"169.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">aiguille à gauche</text><circle cx=\"110\" cy=\"375\" r=\"32\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"82.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"88.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"93.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"99.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"104.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"115.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"121.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"126.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"132.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"137.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"110\" cy=\"375\" r=\"3.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"125\" y1=\"351\" x2=\"125\" y2=\"399\" stroke=\"#ea580c\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"160.0\" y=\"369.0\" font-size=\"18\" fill=\"#047857\" text-anchor=\"start\" font-weight=\"bold\">TO</text><text x=\"160.0\" y=\"394.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">aiguille à droite</text><circle cx=\"430\" cy=\"375\" r=\"32\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2.5\"/><circle cx=\"402.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"408.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"413.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"419.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"424.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"435.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"441.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"446.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"452.0\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"457.5\" cy=\"375\" r=\"1.7\" fill=\"#334155\"/><circle cx=\"430\" cy=\"375\" r=\"3.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"415\" y1=\"351\" x2=\"415\" y2=\"399\" stroke=\"#ea580c\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"480.0\" y=\"369.0\" font-size=\"18\" fill=\"#047857\" text-anchor=\"start\" font-weight=\"bold\">TO</text><text x=\"480.0\" y=\"394.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">aiguille à gauche</text><text x=\"24.0\" y=\"450.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"normal\">Avion en cap voisin de 360</text><text x=\"24.0\" y=\"471.0\" font-size=\"16\" fill=\"#334155\" text-anchor=\"start\" font-weight=\"normal\">(sens de la route affichée)</text></svg>",
+       "caption": "Station vue de dessus, OBS sur 360 et avion en cap voisin de 360 : TO au sud de la ligne d'ambiguïté, FROM au nord ; l'aiguille montre de quel côté se trouve la ligne radiale 360–180."
+      },
+      {
+       "title": "ADF : du gisement au QDM",
+       "svg": "<svg viewBox=\"0 0 700 420\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><defs><marker id=\"u5s11f2a\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#ea580c\"/></marker><marker id=\"u5s11f2g\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#475569\"/></marker></defs><rect x=\"0\" y=\"0\" width=\"700\" height=\"420\" fill=\"#ffffff\"/><line x1=\"360\" y1=\"16\" x2=\"360\" y2=\"404\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"175\" cy=\"200\" r=\"140\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"175.0\" y1=\"80.0\" x2=\"175.0\" y2=\"61.0\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"197.4\" y1=\"73.0\" x2=\"199.1\" y2=\"63.1\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"219.1\" y1=\"78.8\" x2=\"222.5\" y2=\"69.4\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"235.0\" y1=\"96.1\" x2=\"244.5\" y2=\"79.6\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"257.9\" y1=\"101.2\" x2=\"264.3\" y2=\"93.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"273.8\" y1=\"117.1\" x2=\"281.5\" y2=\"110.7\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"278.9\" y1=\"140.0\" x2=\"295.4\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"296.2\" y1=\"155.9\" x2=\"305.6\" y2=\"152.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"302.0\" y1=\"177.6\" x2=\"311.9\" y2=\"175.9\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"295.0\" y1=\"200.0\" x2=\"314.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"302.0\" y1=\"222.4\" x2=\"311.9\" y2=\"224.1\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"296.2\" y1=\"244.1\" x2=\"305.6\" y2=\"247.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"278.9\" y1=\"260.0\" x2=\"295.4\" y2=\"269.5\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"273.8\" y1=\"282.9\" x2=\"281.5\" y2=\"289.3\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"257.9\" y1=\"298.8\" x2=\"264.3\" y2=\"306.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"235.0\" y1=\"303.9\" x2=\"244.5\" y2=\"320.4\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"219.1\" y1=\"321.2\" x2=\"222.5\" y2=\"330.6\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"197.4\" y1=\"327.0\" x2=\"199.1\" y2=\"336.9\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"175.0\" y1=\"320.0\" x2=\"175.0\" y2=\"339.0\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"152.6\" y1=\"327.0\" x2=\"150.9\" y2=\"336.9\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"130.9\" y1=\"321.2\" x2=\"127.5\" y2=\"330.6\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"115.0\" y1=\"303.9\" x2=\"105.5\" y2=\"320.4\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"92.1\" y1=\"298.8\" x2=\"85.7\" y2=\"306.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"76.2\" y1=\"282.9\" x2=\"68.5\" y2=\"289.3\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"71.1\" y1=\"260.0\" x2=\"54.6\" y2=\"269.5\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"53.8\" y1=\"244.1\" x2=\"44.4\" y2=\"247.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"48.0\" y1=\"222.4\" x2=\"38.1\" y2=\"224.1\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"55.0\" y1=\"200.0\" x2=\"36.0\" y2=\"200.0\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"48.0\" y1=\"177.6\" x2=\"38.1\" y2=\"175.9\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"53.8\" y1=\"155.9\" x2=\"44.4\" y2=\"152.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"71.1\" y1=\"140.0\" x2=\"54.6\" y2=\"130.5\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"76.2\" y1=\"117.1\" x2=\"68.5\" y2=\"110.7\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"92.1\" y1=\"101.2\" x2=\"85.7\" y2=\"93.5\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"115.0\" y1=\"96.1\" x2=\"105.5\" y2=\"79.6\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"130.9\" y1=\"78.8\" x2=\"127.5\" y2=\"69.4\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"152.6\" y1=\"73.0\" x2=\"150.9\" y2=\"63.1\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"175.0\" y=\"101.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">0</text><text x=\"227.0\" y=\"114.9\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">30</text><text x=\"265.1\" y=\"153.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">60</text><text x=\"279.0\" y=\"205.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">90</text><text x=\"265.1\" y=\"257.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">120</text><text x=\"227.0\" y=\"295.1\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">150</text><text x=\"175.0\" y=\"309.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">180</text><text x=\"123.0\" y=\"295.1\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">210</text><text x=\"84.9\" y=\"257.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">240</text><text x=\"71.0\" y=\"205.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">270</text><text x=\"84.9\" y=\"153.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">300</text><text x=\"123.0\" y=\"114.9\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">330</text><g transform=\"translate(175,200) scale(1.7)\"><path d=\"M0,-24 L3,-18 L3,-6 L22,0 L22,5 L3,3 L3,15 L9,19 L9,22 L0,20 L-9,22 L-9,19 L-3,15 L-3,3 L-22,5 L-22,0 L-3,-6 L-3,-18 Z\" fill=\"#0f172a\"/></g><line x1=\"219.4\" y1=\"237.3\" x2=\"104.5\" y2=\"140.9\" stroke=\"#ea580c\" stroke-width=\"5\" stroke-linecap=\"round\" marker-end=\"url(#u5s11f2a)\"/><circle cx=\"175\" cy=\"200\" r=\"6\" fill=\"#ea580c\"/><text x=\"175.0\" y=\"372.0\" font-size=\"16\" fill=\"#0f172a\" text-anchor=\"middle\" font-weight=\"bold\">ADF à rose fixe : gisement G = 310°</text><text x=\"175.0\" y=\"395.0\" font-size=\"15\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"normal\">(balise 50° à gauche du nez)</text><line x1=\"520\" y1=\"250\" x2=\"520\" y2=\"44\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"7 6\"/><text x=\"520.0\" y=\"34.0\" font-size=\"15\" fill=\"#475569\" text-anchor=\"middle\" font-weight=\"bold\">Nm</text><line x1=\"520\" y1=\"224\" x2=\"520\" y2=\"112\" stroke=\"#ea580c\" stroke-width=\"4\" marker-end=\"url(#u5s11f2a)\"/><circle cx=\"520\" cy=\"95\" r=\"12\" fill=\"#ffffff\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-dasharray=\"2 3\"/><circle cx=\"520\" cy=\"95\" r=\"3.5\" fill=\"#7c3aed\"/><text x=\"540.0\" y=\"100.0\" font-size=\"15\" fill=\"#6d28d9\" text-anchor=\"start\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">NDB</text><text x=\"510.0\" y=\"170.0\" font-size=\"15\" fill=\"#c2410c\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">QDM 360°</text><line x1=\"541.4\" y1=\"232.0\" x2=\"615.8\" y2=\"169.7\" stroke=\"#475569\" stroke-width=\"2.5\" marker-end=\"url(#u5s11f2g)\"/><text x=\"613.8\" y=\"155.7\" font-size=\"15\" fill=\"#334155\" text-anchor=\"middle\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">Cap 050°</text><g transform=\"translate(520,250) rotate(50)\"><path d=\"M0,-24 L3,-18 L3,-6 L22,0 L22,5 L3,3 L3,15 L9,19 L9,22 L0,20 L-9,22 L-9,19 L-3,15 L-3,3 L-22,5 L-22,0 L-3,-6 L-3,-18 Z\" fill=\"#0f172a\"/></g><path d=\"M553.7,221.7 A44,44 0 1 1 513.9,206.4\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.5\" stroke-dasharray=\"6 4\" marker-end=\"url(#u5s11f2a)\"/><text x=\"468.0\" y=\"272.0\" font-size=\"17\" fill=\"#c2410c\" text-anchor=\"end\" font-weight=\"bold\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"4\" stroke-linejoin=\"round\">G = 310°</text><rect x=\"396\" y=\"332\" width=\"292\" height=\"72\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"2\"/><text x=\"410.0\" y=\"361.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"bold\">QDM = Cm + G = 050 + 310 = 360°</text><text x=\"410.0\" y=\"389.0\" font-size=\"15\" fill=\"#0f172a\" text-anchor=\"start\" font-weight=\"normal\">QDR = 360 − 180 = 180°</text></svg>",
+       "caption": "À gauche, l'ADF à rose fixe donne le gisement, compté depuis le nez dans le sens horaire. À droite, la même situation vue de dessus : en cap 050°, un gisement de 310° place la balise plein nord, QDM 360° et QDR 180°."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u5s11q01",
+       "q": "Par rapport à quelle référence les radiales d'un VOR sont-elles orientées ?",
+       "choices": [
+        "Le nord vrai, donné par le méridien de la station",
+        "Le nord magnétique au lieu où se trouve l'avion",
+        "Le nord compas de l'avion qui reçoit le signal",
+        "Le nord magnétique au lieu de la station"
+       ],
+       "answer": 3,
+       "explanation": "Une radiale est un relèvement magnétique compté depuis la station, avec la déclinaison du lieu de la station : on la trace sur la carte avec cette déclinaison, ou avec la rose VOR orientée sur le nord magnétique. Le cap et le compas de l'avion n'interviennent pas."
+      },
+      {
+       "id": "u5s11q02",
+       "q": "Que signifie l'indication FROM sur l'indicateur d'un récepteur VOR ?",
+       "choices": [
+        "Que l'avion a le nez tourné à l'opposé de la direction de la station",
+        "Que le signal reçu est trop faible pour être exploité en navigation",
+        "Que l'avion vient de survoler la station il y a moins d'une minute environ",
+        "Que la route affichée à l'OBS, si on la suit, éloigne l'avion de la station"
+       ],
+       "answer": 3,
+       "explanation": "TO/FROM se rapporte à la route affichée et à la position de l'avion, jamais à son cap : FROM indique que cette route éloigne de la station. Un signal inexploitable fait apparaître le drapeau d'alarme, et l'indication bascule de TO à FROM au passage de la verticale ou de la ligne d'ambiguïté."
+      },
+      {
+       "id": "u5s11q03",
+       "q": "Sur un CDI à 5 points de chaque côté, l'aiguille est déviée de 3 points. Quel écart angulaire avec la route affichée cela représente-t-il ?",
+       "choices": [
+        "≈ 3°",
+        "≈ 6°",
+        "≈ 10°",
+        "≈ 15°"
+       ],
+       "answer": 1,
+       "explanation": "La pleine déviation (5 points) correspond à 10° : chaque point vaut environ 2°, donc 3 points ≈ 6°. 10° serait la pleine échelle ; 15° compterait 5° par point."
+      },
+      {
+       "id": "u5s11q04",
+       "q": "Vous passez à la verticale d'un VOR. Que montre l'indicateur ?",
+       "choices": [
+        "Une aiguille figée au centre et un DME qui affiche 0 NM",
+        "Le passage de FROM à TO, l'aiguille restant stable et centrée",
+        "Une aiguille et un drapeau instables, puis le passage de TO à FROM",
+        "La dernière radiale reçue, mémorisée jusqu'à la sortie du cône"
+       ],
+       "answer": 2,
+       "explanation": "Au-dessus de la station, dans le cône de silence (ou de confusion), le signal n'est plus exploitable : aiguille et drapeau oscillent, puis l'indication bascule de TO à FROM, ce qui confirme le passage. On tient le cap pendant ce temps. À la verticale, un DME affiche la hauteur, pas 0."
+      },
+      {
+       "id": "u5s11q05",
+       "q": "Sur un RMI, que lit-on en tête et en queue de l'aiguille associée à l'ADF ?",
+       "choices": [
+        "Le QDR en tête et le QDM en queue",
+        "Le gisement en tête et le cap en queue",
+        "Le QTE en tête et le QUJ en queue",
+        "Le QDM en tête et le QDR en queue"
+       ],
+       "answer": 3,
+       "explanation": "La rose du RMI est asservie au cap magnétique : la tête de l'aiguille, pointée vers la balise, indique directement le QDM, et la queue le QDR. Sur un ADF à rose fixe, l'aiguille donne seulement le gisement, qu'il faut ajouter au cap."
+      },
+      {
+       "id": "u5s11q06",
+       "q": "Laquelle de ces erreurs affecte l'ADF et non le VOR ?",
+       "choices": [
+        "L'ambiguïté TO/FROM sur la perpendiculaire à la route affichée",
+        "L'indication inversée quand on vole à l'opposé de la route affichée",
+        "L'erreur de distance oblique à proximité de la station",
+        "L'effet de côte"
+       ],
+       "answer": 3,
+       "explanation": "L'onde de la NDB est réfractée en traversant une côte, d'autant plus que l'angle avec la côte est faible : l'aiguille dévie. L'ambiguïté TO/FROM et l'indication inversée concernent le VOR, la distance oblique le DME."
+      },
+      {
+       "id": "u5s11q07",
+       "q": "L'ADF ne dispose d'aucune alarme de panne. Quelle précaution faut-il prendre en l'utilisant ?",
+       "choices": [
+        "Vérifier que le drapeau OFF a bien disparu de l'écran de l'indicateur",
+        "Identifier l'indicatif morse de la NDB et l'écouter tant qu'on l'utilise",
+        "Afficher sur le sélecteur OBS la route que l'on veut suivre",
+        "Comparer la distance affichée avec celle mesurée sur la carte"
+       ],
+       "answer": 1,
+       "explanation": "Une NDB en panne ou un récepteur mal réglé peuvent laisser l'aiguille immobile, sans alarme. Seule l'écoute de l'indicatif garantit que l'on suit la bonne balise et qu'elle émet. Drapeau d'alarme et OBS appartiennent au VOR, la distance au DME."
+      },
+      {
+       "id": "u5s11q08",
+       "q": "En tournant l'OBS, vous centrez l'aiguille avec l'indication TO sur 245. Sur quelle radiale vous trouvez-vous ?",
+       "choices": [
+        "245",
+        "155",
+        "065",
+        "335"
+       ],
+       "answer": 2,
+       "explanation": "Avec TO, la valeur centrée est le QDM, route pour rejoindre la station : 245°. La radiale est l'inverse : 245 − 180 = 065, l'avion est au nord-est de la station. On lirait la radiale directement si l'indication était FROM."
+      },
+      {
+       "id": "u5s11q09",
+       "q": "OBS 360, indication TO, aiguille à droite, cap voisin de 360. Dans quel secteur par rapport à la station l'avion se trouve-t-il ?",
+       "choices": [
+        "Au sud-ouest",
+        "Au sud-est",
+        "Au nord-ouest",
+        "Au nord-est"
+       ],
+       "answer": 0,
+       "explanation": "TO avec OBS 360 : la route 360 rapproche de la station, l'avion est donc au sud de la ligne est-ouest qui passe par elle. Aiguille à droite : la ligne radiale 180 est à droite de l'avion, qui se trouve donc à l'ouest. Secteur sud-ouest."
+      },
+      {
+       "id": "u5s11q10",
+       "q": "OBS 310, indication TO : pour garder l'aiguille centrée, vous devez tenir le cap 300. D'où vient le vent ?",
+       "choices": [
+        "De la droite de la route, secteur nord-est",
+        "De l'arrière de l'avion, secteur sud-est",
+        "De la gauche de la route, secteur sud-ouest",
+        "De face, secteur nord-ouest"
+       ],
+       "answer": 2,
+       "explanation": "Pour tenir la route 310, il faut un cap de 300, décalé de 10° vers la gauche : on corrige du côté d'où vient le vent. Le vent vient donc de la gauche de la route, du sud-ouest ; la dérive est droite. Un vent de face ou arrière n'imposerait pas de correction."
+      },
+      {
+       "id": "u5s11q11",
+       "q": "À 30 NM d'un VOR, l'aiguille de votre CDI (2° par point) est déviée de 2 points. À quelle distance latérale de la route affichée êtes-vous ?",
+       "choices": [
+        "≈ 1 NM",
+        "≈ 2 NM",
+        "≈ 4 NM",
+        "≈ 6 NM"
+       ],
+       "answer": 1,
+       "explanation": "2 points = 4°. Règle du 1 sur 60 : écart = 4 × 30 / 60 = 2 NM. 4 NM prendrait les degrés pour des milles ; 1 NM ne compte qu'un point. Un même écart angulaire représente une distance d'autant plus grande que l'on est loin de la station."
+      },
+      {
+       "id": "u5s11q12",
+       "q": "Quelle est la portée théorique d'un VOR pour un avion volant 3 600 ft au-dessus de la station, sans relief masquant ?",
+       "choices": [
+        "≈ 60 NM",
+        "≈ 74 NM",
+        "≈ 36 NM",
+        "≈ 150 NM"
+       ],
+       "answer": 1,
+       "explanation": "La portée VHF est optique : D (NM) ≈ 1,23 × √h (h en ft) = 1,23 × √3 600 = 1,23 × 60 ≈ 74 NM. 60 NM oublie le coefficient 1,23. En pratique, le relief et la puissance de la station la réduisent souvent."
+      },
+      {
+       "id": "u5s11q13",
+       "q": "Vous volez 5 000 ft au-dessus d'une station DME. À partir de quelle distance l'écart entre distance oblique et distance au sol devient-il négligeable ?",
+       "choices": [
+        "≈ 1 NM",
+        "≈ 0,8 NM",
+        "≈ 5 NM",
+        "≈ 50 NM"
+       ],
+       "answer": 2,
+       "explanation": "On retient qu'à 1 NM de la station ou plus par tranche de 1 000 ft de hauteur, la distance oblique se confond pratiquement avec la distance au sol : 5 000 ft → 5 NM. Plus près, l'écart grandit ; à la verticale, le DME affiche la hauteur, ici environ 0,8 NM."
+      },
+      {
+       "id": "u5s11q14",
+       "q": "Vous volez un arc à 12 NM DME constants autour d'une station. Qu'affiche l'indication de vitesse sol du DME ?",
+       "choices": [
+        "Votre vitesse sol réelle",
+        "Votre vitesse propre",
+        "Le vent traversier",
+        "Une valeur proche de zéro"
+       ],
+       "answer": 3,
+       "explanation": "Le DME calcule la vitesse à partir de la variation de la distance oblique. Sur un arc, cette distance ne change pas : la vitesse affichée tombe vers zéro. Vitesse et temps DME ne sont justes qu'en route directe vers ou depuis la station."
+      },
+      {
+       "id": "u5s11q15",
+       "q": "Pour tracer sur la carte un relèvement obtenu à l'ADF, quelle déclinaison faut-il appliquer au QDM ?",
+       "choices": [
+        "Celle du lieu où se trouve la balise",
+        "Celle de l'aérodrome de départ, inscrite au log",
+        "Celle du lieu où se trouve l'avion",
+        "La moyenne des déclinaisons de la balise et de l'avion"
+       ],
+       "answer": 2,
+       "explanation": "Le QDM tiré de l'ADF combine le gisement et le cap magnétique de l'avion : il est référencé au nord magnétique du lieu de l'avion, dont on prend la déclinaison. Pour un VOR, c'est l'inverse : les radiales sont orientées sur le nord magnétique de la station."
+      },
+      {
+       "id": "u5s11q16",
+       "q": "Après avoir passé une NDB, vous vous en éloignez sur le QDR 240 ; le cap qui stabilise la route est 235°. Quel gisement l'ADF indique-t-il ?",
+       "choices": [
+        "175°",
+        "005°",
+        "185°",
+        "180°"
+       ],
+       "answer": 2,
+       "explanation": "En éloignement, la balise est derrière : QDM = 240 − 180 = 060°. G = QDM − Cm = 060 − 235 + 360 = 185° : la balise est juste derrière, légèrement à gauche, car le nez est tourné 5° à gauche de la route. 005° vient du QDR pris à la place du QDM ; 180° oublie la correction de dérive ; 175° place la balise du mauvais côté."
+      },
+      {
+       "id": "u5s11q17",
+       "q": "Vous rejoignez une NDB en suivant le QDM 360 par vent d'est ; le cap qui stabilise la route est 008°. Quel gisement l'ADF indique-t-il alors ?",
+       "choices": [
+        "008°",
+        "000°",
+        "172°",
+        "352°"
+       ],
+       "answer": 3,
+       "explanation": "G = QDM − Cm = 360 − 008 = 352° : la balise est 8° à gauche du nez. Le vent d'est pousse vers l'ouest, on corrige à droite (cap 008) et l'on garde la balise légèrement à gauche. Garder l'aiguille sur le nez (000°) serait du ralliement, qui décrit une courbe."
+      },
+      {
+       "id": "u5s11q18",
+       "q": "En cap 060°, vous interceptez le QDM 090 d'une NDB. Quel gisement indiquera que vous êtes sur la route ?",
+       "choices": [
+        "330°",
+        "090°",
+        "150°",
+        "030°"
+       ],
+       "answer": 3,
+       "explanation": "Sur la route, QDM = Cm + G, donc G = 090 − 060 = 030° : la balise apparaît 30° à droite du nez. On vire alors au cap 090, en anticipant un peu. 330° placerait la balise à gauche ; 150° correspondrait à un QDM de 210°."
+      },
+      {
+       "id": "u5s11q19",
+       "q": "OBS 030, indication TO, cap 030 : l'aiguille est déviée de 2 points à droite (2° par point). Quel affichage d'OBS centrerait l'aiguille avec TO ?",
+       "choices": [
+        "026",
+        "214",
+        "034",
+        "206"
+       ],
+       "answer": 2,
+       "explanation": "Aiguille à droite : la route 030 est à droite de l'avion, qui se trouve à gauche, sur la radiale 214 environ (2 points = 4°). Son QDM est donc 034 : l'aiguille se centre avec TO sur 034. Afficher 214 la centrerait avec FROM ; 026 est l'erreur de côté."
+      },
+      {
+       "id": "u5s11q20",
+       "q": "De retour vers un VOR en cap 180, vous avez laissé l'OBS sur 360 (indication FROM). L'aiguille est à gauche. De quel côté se trouve la radiale 360 ?",
+       "choices": [
+        "À votre droite, car l'aiguille se lit à l'envers",
+        "À votre gauche, du côté de l'aiguille",
+        "Droit devant, car la station est toute proche",
+        "Derrière vous, comme l'indique le FROM"
+       ],
+       "answer": 0,
+       "explanation": "Avec l'OBS sur 360, aiguille à gauche signifie que l'avion est à l'est de la radiale 360. En cap 180, l'ouest est à votre droite : la radiale est à droite, à l'opposé de l'aiguille. D'où la règle : affichez à l'OBS la route suivie, ici 180 avec TO, pour une lecture directe."
+      },
+      {
+       "id": "u5s11q21",
+       "q": "Vous voulez rejoindre le QDM 045 d'un VOR. OBS 045, indication TO, aiguille en butée à droite. Quel cap prenez-vous pour intercepter la route sous 45° ?",
+       "choices": [
+        "360°",
+        "090°",
+        "045°",
+        "135°"
+       ],
+       "answer": 1,
+       "explanation": "Aiguille à droite : la route est à droite, on vire vers elle. Cap d'interception = 045 + 45 = 090°. 360° éloignerait de la route, 045° la longerait sans la rejoindre, et 135° l'intercepterait sous 90°."
+      },
+      {
+       "id": "u5s11q22",
+       "q": "En cap magnétique 070°, l'ADF indique un gisement de 040°. La déclinaison vaut 2° W au lieu de l'avion et 1° E au lieu de la balise. Quel relèvement vrai tracez-vous depuis la balise pour obtenir votre ligne de position ?",
+       "choices": [
+        "288°",
+        "291°",
+        "292°",
+        "290°"
+       ],
+       "answer": 0,
+       "explanation": "QDM = 070 + 040 = 110°. On le convertit en vrai avec la déclinaison au lieu de l'avion : 110 − 2 = 108° (QUJ). Depuis la balise, la ligne de position part à 108 + 180 = 288° vrai (QTE). 291° utilise la déclinaison de la balise ; 292° applique 2° W dans le mauvais sens."
+      },
+      {
+       "id": "u5s11q23",
+       "q": "Une NDB B est située 20 NM plein est d'un VOR A. Vous êtes sur la radiale 135 de A et, en cap magnétique 345°, l'ADF indique un gisement de 060°. On néglige la déclinaison. Où êtes-vous ?",
+       "choices": [
+        "À environ 10 NM au nord du milieu du segment AB",
+        "À environ 14 NM plein sud du VOR A",
+        "À environ 20 NM au sud-est de la NDB B",
+        "À environ 10 NM au sud du milieu du segment AB"
+       ],
+       "answer": 3,
+       "explanation": "QDM de B = 345 + 060 = 405 − 360 = 045° : B est au nord-est de l'avion, qui est sur le QDR 225 de B. La radiale 135 de A et le QDR 225 de B se coupent à angle droit, 10 NM au sud du milieu de AB (à 14 NM de A et de B). Le point situé 10 NM au nord du milieu serait sur la radiale 045 de A, pas sur la radiale 135."
+      },
+      {
+       "id": "u5s11q24",
+       "q": "En palier, une NDB est par le travers droit (gisement 090°). Le gisement passe de 090° à 100° en 90 s, à une vitesse sol de 120 kt. À quelle distance environ êtes-vous de la balise ?",
+       "choices": [
+        "≈ 9 NM",
+        "≈ 18 NM",
+        "≈ 36 NM",
+        "≈ 3 NM"
+       ],
+       "answer": 1,
+       "explanation": "Temps jusqu'à la balise (min) = secondes écoulées / degrés de variation = 90 / 10 = 9 min, conséquence de la règle du 1 sur 60. À 120 kt, soit 2 NM/min, la distance vaut 9 × 2 = 18 NM. 9 NM confond minutes et milles ; 3 NM ne compte que les 90 s de mesure."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

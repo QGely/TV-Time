@@ -1,0 +1,1186 @@
+{
+ "unit": "u3",
+ "title": "Météorologie",
+ "exam": {
+  "questions": 20,
+  "minutes": 30
+ },
+ "pitch": "La météo décide de presque tous tes vols VFR (vol à vue). Ce chapitre couvre l’atmosphère, l’altimétrie, les nuages, le vent et les fronts. Il détaille aussi les dangers (orages, givrage, brouillard) et les messages et cartes à consulter avant de partir.",
+ "essentials": [
+  "**ISA** (atmosphère standard) : 15 °C et 1 013,25 hPa au niveau de la mer, −2 °C par 1 000 ft.",
+  "**QNH** → altitude (posé : altitude du terrain) ; **QFE** → hauteur (posé : 0) ; **1013** → niveau de vol.",
+  "**Du chaud vers le froid, des hautes vers les basses pressions : tu es plus bas qu’indiqué** (28 ft par hPa).",
+  "Chaud, haut, humide : **altitude-densité** élevée, décollage plus long, montée plus faible.",
+  "Air qui monte : −3 °C/1 000 ft sec, −1,5 °C/1 000 ft saturé. Base des cumulus ≈ 400 ft × (T − point de rosée).",
+  "Air **stable** : nuages en couches, brume, air calme. Air **instable** : cumulus, averses, turbulence, bonne visibilité.",
+  "Nuit claire, vent faible, air presque saturé : **brouillard de rayonnement**. Air doux sur une surface froide : **advection**, même avec du vent.",
+  "**Buys-Ballot** : dos au vent, basses pressions à gauche. Vent fort sur une crête : **ondes, lenticulaires et rotors** sous le vent.",
+  "Front chaud : cirrus, cirrostratus, altostratus, puis nimbostratus et pluie continue. Front froid : cumulonimbus (Cb), averses, rafales. Après chaque front, le vent tourne à droite.",
+  "Un **Cb** se contourne largement, jamais par-dessous. **Givrage** = eau surfondue + avion sous 0 °C.",
+  "**CAVOK** : visibilité ≥ 10 km, aucun nuage sous 5 000 ft, ni Cb ni cumulus bourgeonnant, pas de temps significatif. **TAF** (prévision) : BECMG durable, TEMPO < 1 h, FM remplace tout."
+ ],
+ "sections": [
+  {
+   "title": "Atmosphère, température et atmosphère standard",
+   "summary": "L’air se refroidit en montant ; l’atmosphère standard (ISA) en donne le modèle moyen qu’utilise ton altimètre.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Les couches utiles au pilote",
+     "columns": [
+      "Couche",
+      "Où",
+      "Température",
+      "À retenir"
+     ],
+     "rows": [
+      [
+       "**Troposphère**",
+       "Sol à ≈ 11 km (36 000 ft) ; ≈ 16 km à l’équateur, ≈ 8 km aux pôles",
+       "Baisse avec l’altitude",
+       "Presque toute la vapeur d’eau : nuages, « temps »"
+      ],
+      [
+       "**Tropopause**",
+       "Sommet de la troposphère",
+       "−56,5 °C en ISA",
+       "La température cesse de baisser"
+      ],
+      [
+       "**Stratosphère**",
+       "Jusqu’à ≈ 50 km",
+       "Constante, puis en hausse (ozone)",
+       "Air sec et stable"
+      ]
+     ],
+     "note": "Air sec : 78 % d’azote, 21 % d’oxygène. Le soleil chauffe le **sol**, qui chauffe l’air : l’air se refroidit donc en montant. Au sol, le plus froid est vers le lever du soleil."
+    },
+    {
+     "type": "key",
+     "title": "L’atmosphère standard (ISA, *International Standard Atmosphere*)",
+     "text": "Au niveau de la mer : **15 °C**, **1 013,25 hPa**, masse volumique **1,225 kg/m³**.\nTempérature : **−6,5 °C par km**, soit **−2 °C par 1 000 ft**, jusqu’à **11 km (36 089 ft)**, où elle vaut **−56,5 °C** ; constante au-dessus.\nPression : **1 hPa de moins tous les 28 ft** près du sol ; **500 hPa vers 18 000 ft** (la moitié)."
+    },
+    {
+     "type": "formula",
+     "label": "Température standard et écart ISA",
+     "formula": "T ISA ≈ 15 − 2 × (altitude en milliers de ft)\nÉcart ISA = T réelle − T ISA à la même altitude",
+     "example": "Terrain à 3 000 ft, 17 °C : T ISA = 15 − 6 = 9 °C, écart **ISA + 8**. Et non ISA + 2 : on compare **à la même altitude**."
+    },
+    {
+     "type": "bullets",
+     "title": "Les inversions : la température monte avec l’altitude (couche très stable, qui bloque la convection et piège brume et fumées)",
+     "items": [
+      "**De rayonnement** : la nuit, par ciel clair, le sol refroidit l’air à son contact ; brouillard au petit matin.",
+      "**De subsidence** : sous un anticyclone, l’air qui descend se réchauffe ; cumulus aux sommets alignés, brume dessous.",
+      "**Frontale** : l’air chaud passe au-dessus de l’air froid ; l’hiver, pluie verglaçante possible.",
+      "**Isothermie** (température constante avec l’altitude) : couche stable elle aussi."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Pression, altimétrie et altitude-densité",
+   "summary": "Ton altimètre est un baromètre : il se trompe dès que l’air s’écarte de l’ISA, surtout vers le froid et les basses pressions.",
+   "blocks": [
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "QNH",
+       "points": [
+        "**Altitude** (au-dessus de la mer)",
+        "Posé : altitude du terrain",
+        "Sous l’altitude de transition (TA)"
+       ]
+      },
+      {
+       "title": "QFE",
+       "points": [
+        "**Hauteur** (au-dessus du terrain)",
+        "Posé : 0",
+        "QFE ≈ QNH − altitude (ft) ÷ 28"
+       ]
+      },
+      {
+       "title": "1013 (standard)",
+       "points": [
+        "**Niveau de vol** : FL 55 = 5 500 ft",
+        "Affiché en montée à la TA",
+        "QNH repris au niveau de transition"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "Vers les basses pressions, sans recalage : tu descends sans le savoir",
+     "svg": "<svg viewBox=\"0 12 720 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"270\" fill=\"#ffffff\"/>\n<defs><marker id=\"u3ma\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#14213d\"/></marker>\n<marker id=\"u3mr\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker></defs>\n<rect x=\"20\" y=\"190\" width=\"690\" height=\"72\" fill=\"#e3f0f7\"/>\n<polygon points=\"280,190 340,152 375,130 400,136 450,172 480,190\" fill=\"#d9c9a8\" stroke=\"#7a5c2e\" stroke-width=\"1.5\"/>\n<line x1=\"20\" y1=\"190\" x2=\"710\" y2=\"190\" stroke=\"#2b7a9b\" stroke-width=\"2\"/>\n<line x1=\"20\" y1=\"190\" x2=\"710\" y2=\"236.0\" stroke=\"#b0177a\" stroke-width=\"3\" stroke-dasharray=\"10 6\"/>\n<text x=\"28\" y=\"224\" font-size=\"13\" fill=\"#2b7a9b\">niveau moyen de la mer (0 ft)</text>\n<text x=\"704\" y=\"254\" font-size=\"13\" font-weight=\"700\" fill=\"#b0177a\" text-anchor=\"end\">surface 1 018 hPa : 280 ft sous la mer en zone B</text>\n<text x=\"24\" y=\"30\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">Zone A : QNH 1 018 hPa (haute pression)</text>\n<text x=\"700\" y=\"30\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">Zone B : QNH 1 008 hPa (basse pression)</text>\n<text x=\"360\" y=\"52\" font-size=\"13\" font-style=\"italic\" fill=\"#3d4a66\" text-anchor=\"middle\">Altimètre resté calé sur 1 018 hPa : il suit la surface 1 018 hPa</text>\n<line x1=\"124\" y1=\"78.9\" x2=\"636\" y2=\"113.1\" stroke=\"#14213d\" stroke-width=\"2\" stroke-dasharray=\"6 5\" marker-end=\"url(#u3ma)\"/>\n<ellipse cx=\"100\" cy=\"77.3\" rx=\"22\" ry=\"6\" fill=\"#14213d\"/><polygon points=\"80,75.3 70,62.3 77,62.3 88,74.3\" fill=\"#14213d\"/><ellipse cx=\"102\" cy=\"78.3\" rx=\"10\" ry=\"2.6\" fill=\"#e85d2a\"/>\n<ellipse cx=\"664\" cy=\"114.9\" rx=\"22\" ry=\"6\" fill=\"#14213d\"/><polygon points=\"644,112.9 634,99.9 641,99.9 652,111.9\" fill=\"#14213d\"/><ellipse cx=\"666\" cy=\"115.9\" rx=\"10\" ry=\"2.6\" fill=\"#e85d2a\"/>\n<line x1=\"150\" y1=\"186\" x2=\"150\" y2=\"86.7\" stroke=\"#14213d\" stroke-width=\"2\" marker-start=\"url(#u3ma)\" marker-end=\"url(#u3ma)\"/>\n<text x=\"162\" y=\"130\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">3 000 ft lus</text>\n<text x=\"162\" y=\"149\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">= 3 000 ft réels</text>\n<line x1=\"612\" y1=\"186\" x2=\"612\" y2=\"117.5\" stroke=\"#c0392b\" stroke-width=\"2\" marker-start=\"url(#u3mr)\" marker-end=\"url(#u3mr)\"/>\n<text x=\"600\" y=\"142\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">3 000 ft lus</text>\n<text x=\"600\" y=\"161\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"end\">mais 2 720 ft réels</text>\n<text x=\"378\" y=\"119\" font-size=\"13\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">marge réduite sur le relief</text>\n</svg>",
+     "caption": "Échelle verticale exagérée. L’altimètre mesure la hauteur au-dessus de la surface 1 018 hPa, qui s’abaisse vers la basse pression. L’air froid produit le même effet. (Les isobares des cartes, elles, utilisent le QFF : la pression ramenée au niveau de la mer avec la température réelle.)"
+    },
+    {
+     "type": "formula",
+     "label": "Erreurs d’altimètre : pression et température",
+     "formula": "Pression : écart ≈ (QNH affiché − QNH réel) × 28 ft\nAir froid : écart ≈ 4 % × hauteur au-dessus de la station × (écart ISA ÷ 10)",
+     "example": "Calé sur 1 018 hPa, à 3 000 ft indiqués, vers une zone à 1 008 hPa : 10 × 28 = 280 ft, tu es à **2 720 ft**.\nÀ 2 500 ft au-dessus du terrain par ISA − 20 : 0,04 × 2 500 × 2 = **200 ft** plus bas qu’indiqué."
+    },
+    {
+     "type": "memo",
+     "title": "« Du chaud vers le froid, des hautes vers les basses pressions : danger ! »",
+     "text": "L’altimètre **surestime** alors ton altitude : tu es plus bas qu’il ne le dit (*« From high to low, look out below »*). Dans l’autre sens, tu es plus haut."
+    },
+    {
+     "type": "formula",
+     "label": "Altitude-pression : l’altitude lue avec 1013 affiché",
+     "formula": "Altitude-pression ≈ altitude du terrain + (1 013 − QNH) × 28 ft",
+     "example": "Terrain à 1 200 ft, QNH 1 003 hPa : 1 200 + 10 × 28 = **1 480 ft**."
+    },
+    {
+     "type": "formula",
+     "label": "Altitude-densité : l’altitude ISA de même masse volumique que l’air réel (elle règle les performances)",
+     "formula": "Altitude-densité ≈ altitude-pression + 120 ft × écart ISA",
+     "example": "Altitude-pression 2 000 ft, 26 °C : T ISA = 11 °C, écart +15. 2 000 + 15 × 120 = **3 800 ft**."
+    },
+    {
+     "type": "trap",
+     "title": "Piège classique : chaud, haut, humide",
+     "text": "Croire que l’air chaud « porte mieux ». Chaleur, altitude et humidité réduisent la masse volumique : **roulage plus long, montée plus faible**, même avec un QNH de 1 013 hPa."
+    }
+   ]
+  },
+  {
+   "title": "Humidité, stabilité et nuages",
+   "summary": "Un nuage, c’est de l’air humide refroidi jusqu’à son point de rosée ; la stabilité décide s’il pousse en tour ou s’étale en couche.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "items": [
+      "**Saturation** : l’air contient le maximum de vapeur possible (plus il est chaud, plus il en contient). On l’atteint en refroidissant l’air ou en lui ajoutant de la vapeur.",
+      "**Humidité relative (HR)** : vapeur contenue ÷ vapeur maximale, en %. Elle monte quand l’air se refroidit.",
+      "**Point de rosée (Td)** : température à laquelle il faut refroidir l’air pour le saturer. Il ne dépend que de la quantité de vapeur.",
+      "**Chaleur latente** : condensation et congélation libèrent de la chaleur ; évaporation et fusion en absorbent."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Les gradients à ne pas confondre",
+     "columns": [
+      "Gradient",
+      "Valeur",
+      "Ce que c’est"
+     ],
+     "rows": [
+      [
+       "**Adiabatique sec**",
+       "−3 °C/1 000 ft (1 °C/100 m)",
+       "Particule non saturée qui monte : elle se détend et refroidit"
+      ],
+      [
+       "**Adiabatique saturé**",
+       "≈ −1,5 °C/1 000 ft",
+       "Plus faible : la condensation libère de la chaleur"
+      ],
+      [
+       "**Td de la particule**",
+       "−0,5 °C/1 000 ft",
+       "L’écart T − Td fond de 2,5 °C par 1 000 ft"
+      ],
+      [
+       "**Gradient réel**",
+       "Mesuré, variable",
+       "Celui de l’air ambiant ce jour-là ; l’ISA n’en est que la moyenne"
+      ]
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Base des cumulus",
+     "formula": "Base (ft au-dessus du sol) ≈ 400 × (T − Td) au sol",
+     "example": "25 °C et Td 16 °C : 400 × 9 = **3 600 ft** sol. Terrain à 900 ft : base à **4 500 ft** d’altitude."
+    },
+    {
+     "type": "trap",
+     "text": "Prendre 2 °C/1 000 ft (ISA) pour une particule qui monte. Non saturée, elle perd **3 °C/1 000 ft** : 2 000 ft de montée = **−6 °C**. Autre piège : oublier d’ajouter l’altitude du terrain à la hauteur de la base."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Air stable",
+       "points": [
+        "Gradient réel < 1,5 °C/1 000 ft, isothermie, inversion",
+        "Particule soulevée : elle **redescend**",
+        "Nuages en couches (St, Sc, As, Ns) ; brume, visibilité médiocre ; bruine ou pluie continue"
+       ]
+      },
+      {
+       "title": "Air instable",
+       "points": [
+        "Gradient réel > 3 °C/1 000 ft",
+        "Particule soulevée : elle **continue de monter**",
+        "Cumulus, Cb ; averses, orages, turbulence ; bonne visibilité hors averses"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "key",
+     "title": "Instabilité conditionnelle",
+     "text": "Gradient réel entre **1,5 et 3 °C/1 000 ft** : stable tant que l’air est sec, **instable une fois saturé**. C’est le cas le plus courant, l’ISA (2 °C/1 000 ft) comprise.\nExactement 3 °C/1 000 ft : équilibre **neutre** pour l’air sec. Au-delà (par exemple 3,5) : **absolument instable**."
+    },
+    {
+     "type": "example",
+     "title": "Exemple : la méthode de la particule",
+     "text": "Gradient réel 2,5 °C/1 000 ft, 20 °C au sol : à 2 000 ft, l’air est à 15 °C. Une particule non saturée soulevée jusque-là arrive à 14 °C : plus froide, elle redescend. Saturée, elle arrive à 17 °C : plus chaude, elle monte."
+    },
+    {
+     "type": "table",
+     "caption": "Les 10 genres de nuages",
+     "columns": [
+      "Étage",
+      "Genres",
+      "Allure et temps"
+     ],
+     "rows": [
+      [
+       "**Supérieur** (≈ 5 à 13 km), glace",
+       "Cirrus (Ci), cirrocumulus (Cc), cirrostratus (Cs)",
+       "Filaments, flocons, voile à **halo** ; annoncent un front chaud"
+      ],
+      [
+       "**Moyen** (≈ 2 à 7 km)",
+       "Altocumulus (Ac), altostratus (As)",
+       "Bancs de galets ; voile gris, soleil dépoli"
+      ],
+      [
+       "**Inférieur** (sol à ≈ 2 km)",
+       "Stratocumulus (Sc), stratus (St)",
+       "Rouleaux gris ; couche basse, bruine"
+      ],
+      [
+       "**Extension verticale**",
+       "Cumulus (Cu), cumulonimbus (Cb), nimbostratus (Ns)",
+       "Tours ; orage et enclume ; couche sombre à pluie continue"
+      ]
+     ],
+     "note": "Étages des latitudes moyennes (Atlas international des nuages de l’Organisation météorologique mondiale). Le cumulus bourgeonnant est noté **TCU** dans les messages."
+    },
+    {
+     "type": "memo",
+     "title": "Les noms disent tout",
+     "text": "**Cirro-** = haut, en glace ; **alto-** = moyen ; **strato-** = en couche ; **cumulo-** = en tas ; **nimbo-** = qui donne de la pluie."
+    }
+   ]
+  },
+  {
+   "title": "Précipitations, visibilité, brumes et brouillards",
+   "summary": "La précipitation trahit le nuage qui la donne ; l’écart entre température et point de rosée t’annonce le brouillard.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Le brouillard est un nuage posé sur le sol. L’air s’y sature, soit parce qu’il se refroidit jusqu’à son point de rosée, soit parce qu’il reçoit de la vapeur."
+    },
+    {
+     "type": "table",
+     "caption": "Précipitations et codes des messages",
+     "columns": [
+      "Type",
+      "Code",
+      "Nuage",
+      "Allure"
+     ],
+     "rows": [
+      [
+       "Bruine",
+       "`DZ`",
+       "St",
+       "Fines gouttes, visibilité médiocre"
+      ],
+      [
+       "Pluie, neige continues",
+       "`RA` `SN`",
+       "Ns, As épais",
+       "Des heures, sur une large zone"
+      ],
+      [
+       "Averses, grésil, grêle",
+       "`SHRA` `SHSN` `GS` `GR`",
+       "Cu bourgeonnants, Cb",
+       "Débutent et cessent **brusquement** ; grêle jusque sous l’enclume"
+      ],
+      [
+       "Pluie, bruine verglaçantes",
+       "`FZRA` `FZDZ`",
+       "Ns, As d’un front chaud ; St, Sc sous 0 °C",
+       "Gèlent au contact : verglas immédiat"
+      ]
+     ]
+    },
+    {
+     "type": "key",
+     "title": "Visibilité réduite : qui est qui ?",
+     "text": "**Brouillard** `FG` : gouttelettes, visibilité **sous 1 000 m** ; `FZFG` givrant, `MIFG` mince, `BCFG` en bancs, `PRFG` partiel.\n**Brume** `BR` : gouttelettes, **1 000 à 5 000 m**. **Brume sèche** `HZ`, fumée `FU` : particules sèches, **5 000 m ou moins**.\n**Visibilité dominante** : atteinte sur au moins la moitié de l’horizon (`2500 0900NE` : 2 500 m, 900 m au nord-est).\n**Visibilité oblique** : au-dessus d’un brouillard mince, tu vois la piste à la verticale, mais tu la perds en finale."
+    },
+    {
+     "type": "table",
+     "caption": "Les quatre brouillards",
+     "columns": [
+      "Brouillard",
+      "Formation",
+      "Conditions et comportement"
+     ],
+     "rows": [
+      [
+       "**Rayonnement**",
+       "Le sol se refroidit la nuit et refroidit l’air à son contact",
+       "Nuit claire, **vent faible**, air humide ; automne et hiver ; se dissipe en général dans la matinée"
+      ],
+      [
+       "**Advection**",
+       "Air doux et humide sur une surface plus froide (mer, sol froid ou enneigé)",
+       "**Avec du vent**, de jour comme de nuit ; étendu et durable"
+      ],
+      [
+       "**Évaporation**",
+       "Eau plus chaude qui s’évapore dans l’air froid, ou pluie tiède dans l’air froid",
+       "Au-dessus d’un lac ou d’une rivière ; à l’avant d’un front chaud (brouillard frontal)"
+      ],
+      [
+       "**Orographique** (de pente)",
+       "L’air humide monte une pente et se refroidit jusqu’à saturation",
+       "Vent poussant l’air humide vers le relief ; masque pentes et crêtes"
+      ]
+     ],
+     "note": "Vent plus fort : **stratus bas** plutôt que brouillard. **Mélange** : deux airs humides de températures différentes (ton haleine en hiver)."
+    },
+    {
+     "type": "trap",
+     "text": "Confondre rayonnement et advection. Le brouillard de rayonnement exige un **vent faible** et ne se forme pas en pleine mer. Un air doux sur une mer froide donne du brouillard d’**advection**, même par vent modéré et en plein jour."
+    },
+    {
+     "type": "example",
+     "title": "Exemple : le brouillard qui s’annonce",
+     "text": "METAR de la soirée : `14/10`, puis `11/09`, puis `09/08`. Ciel clair, vent calme. L’écart T − Td fond de 4 à 1 °C : **brouillard de rayonnement probable** à l’aube. Rentre tôt, ou décale ton départ."
+    }
+   ]
+  },
+  {
+   "title": "Le vent et le relief",
+   "summary": "Le vent naît des écarts de pression, tourne avec la rotation de la Terre et se déforme près du sol et du relief.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "title": "Les forces qui font le vent",
+     "items": [
+      "**Pression** : pousse l’air des hautes vers les basses pressions. Isobares serrées = vent fort.",
+      "**Coriolis** : dévie l’air vers la droite (hémisphère nord). Nulle à l’équateur, maximale aux pôles, proportionnelle à la vitesse.",
+      "**Frottement** : sous 2 000 à 3 000 ft, il ralentit l’air, qui traverse les isobares vers les basses pressions.",
+      "Plus haut, pression et Coriolis s’équilibrent : **vent géostrophique**, parallèle aux isobares. En montant, le vent **tourne donc à droite et se renforce**."
+     ]
+    },
+    {
+     "type": "key",
+     "title": "Loi de Buys-Ballot (hémisphère nord)",
+     "text": "Dos au vent, les **basses pressions sont à gauche**. Un vent venant de ta gauche (dérive à droite) t’emmène vers les basses pressions : ton altimètre surestime ton altitude."
+    },
+    {
+     "type": "formula",
+     "label": "Du vent à 2 000 ft au vent au sol (sur terre ; sur mer, 10° seulement)",
+     "formula": "Vent au sol ≈ ½ vent à 2 000 ft, tourné de 30° à gauche",
+     "example": "270°/30 kt à 2 000 ft : 270 − 30 = 240°, 30 ÷ 2 = 15 kt. Au sol : **240°/15 kt**."
+    },
+    {
+     "type": "trap",
+     "text": "`09015KT` : vent qui **vient** de l’est (090°), à 15 kt, pas qui va vers l’est. `24018G32KT` : rafales (G) à 32 kt, qu’on n’ajoute pas aux 18 kt. Nord **vrai** dans les messages écrits, **magnétique** à la tour et à l’ATIS (message enregistré de l’aérodrome)."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Brise de mer / brise de terre",
+       "points": [
+        "**Jour** : la terre chauffe plus vite ; l’air va **de la mer vers la terre** (rarement au-delà de 40 à 50 km)",
+        "**Nuit** : brise de terre, plus faible, de la terre vers la mer"
+       ]
+      },
+      {
+       "title": "Brise de vallée / brise de montagne",
+       "points": [
+        "**Jour** : l’air **monte** le long des pentes ensoleillées et remonte la vallée",
+        "**Nuit** : l’air refroidi **descend** les pentes et s’accumule au fond (brouillard de vallée)"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Effet de foehn",
+     "formula": "Montée : −3 °C/1 000 ft (sec), puis −1,5 °C/1 000 ft (saturé)\nDescente sous le vent : +3 °C/1 000 ft",
+     "example": "15 °C à 1 000 ft, saturation à 3 000 ft : 9 °C. Crête à 7 000 ft : 9 − 4 × 1,5 = 3 °C. Descente de 6 000 ft : 3 + 18 = **21 °C** à 1 000 ft."
+    },
+    {
+     "type": "diagram",
+     "title": "Foehn, ondes de ressaut et rotor",
+     "svg": "<svg viewBox=\"0 8 720 288\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"300\" fill=\"#ffffff\"/>\n<defs><marker id=\"u3mb\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2b7a9b\"/></marker>\n<marker id=\"u3mc\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker></defs>\n<text x=\"130\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">AU VENT</text>\n<text x=\"130\" y=\"44\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">air soulevé : nuages, pluie</text>\n<text x=\"590\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">SOUS LE VENT</text>\n<text x=\"590\" y=\"44\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">air descendant : plus chaud, plus sec</text>\n<path d=\"M20,262 C120,262 190,250 236,222 C280,190 300,80 345,80 C395,80 420,200 455,238 C480,262 505,190 540,148 C568,118 600,150 630,190 C650,215 690,180 714,160\" fill=\"none\" stroke=\"#2b7a9b\" stroke-width=\"3\" marker-end=\"url(#u3mb)\"/>\n<polygon points=\"190,290 270,195 320,110 340,98 362,112 420,200 490,290\" fill=\"#d9c9a8\" stroke=\"#7a5c2e\" stroke-width=\"1.5\"/>\n<path d=\"M200,226 L244,226 L270,195 L320,110 L340,98 L362,112 L374,128 Q394,116 388,98 Q384,74 358,76 Q344,62 318,68 Q294,62 286,82 Q260,86 260,108 Q234,118 240,142 Q212,156 222,180 Q198,196 200,226 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<g stroke=\"#2b7a9b\" stroke-width=\"2\"><line x1=\"206\" y1=\"232\" x2=\"201\" y2=\"256\"/><line x1=\"216\" y1=\"232\" x2=\"212\" y2=\"250\"/><line x1=\"226\" y1=\"232\" x2=\"223\" y2=\"243\"/></g>\n<line x1=\"40\" y1=\"226\" x2=\"200\" y2=\"226\" stroke=\"#2b7a9b\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n<text x=\"40\" y=\"200\" font-size=\"13\" fill=\"#2b7a9b\">saturation</text>\n<text x=\"40\" y=\"219\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">3 000 ft : 9 °C</text>\n<text x=\"24\" y=\"250\" font-size=\"14\" font-weight=\"700\" fill=\"#2b7a9b\">vent fort</text>\n<text x=\"24\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">1 000 ft : 15 °C</text>\n<text x=\"341\" y=\"54\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">7 000 ft : 3 °C</text>\n<ellipse cx=\"552\" cy=\"108\" rx=\"44\" ry=\"10\" fill=\"#ffffff\" stroke=\"#8a96ad\" stroke-width=\"2\"/>\n<ellipse cx=\"556\" cy=\"82\" rx=\"32\" ry=\"8\" fill=\"#ffffff\" stroke=\"#8a96ad\" stroke-width=\"2\"/>\n<text x=\"608\" y=\"86\" font-size=\"13\" fill=\"#14213d\">nuages</text>\n<text x=\"608\" y=\"102\" font-size=\"13\" fill=\"#14213d\">lenticulaires</text>\n<path d=\"M564,248 A16,16 0 1,1 548,232\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\" marker-end=\"url(#u3mc)\"/>\n<text x=\"574\" y=\"246\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\">rotor :</text>\n<text x=\"574\" y=\"263\" font-size=\"13\" fill=\"#c0392b\">turbulence sévère</text>\n<line x1=\"0\" y1=\"290\" x2=\"720\" y2=\"290\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"712\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">1 000 ft : 21 °C, air sec</text>\n</svg>",
+     "caption": "L’air laisse son humidité en pluie au vent. Il redescend sous le vent à 3 °C/1 000 ft : il arrive plus chaud et plus sec, sous un ciel dégagé."
+    },
+    {
+     "type": "bullets",
+     "title": "Relief, ondes de ressaut et rotors",
+     "items": [
+      "**Effet venturi** dans un col ou une vallée qui se resserre ; **canalisation** du vent dans l’axe des vallées.",
+      "**Ondes de ressaut** (orographiques) : vent fort à peu près perpendiculaire à la crête, couche stable au-dessus.",
+      "**Indices** : lenticulaires immobiles ; nuages de rotor bas et déchiquetés sous le vent.",
+      "**Dangers** : rotors (turbulence sévère) ; descendances plus fortes que ta montée (600 ft/min de montée dans 1 000 ft/min de descendance : −400 ft/min).",
+      "**Parade** : crête abordée **à 45° environ**, avec marge de hauteur. Pris dans une descendance, vire vers le terrain bas."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Masses d’air, fronts, centres d’action et climat",
+   "summary": "Le temps change quand une masse d’air en remplace une autre : sache lire un front, et tu sauras quel ciel t’attend.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Les masses d’air qui touchent la France",
+     "columns": [
+      "Masse d’air",
+      "Propriétés",
+      "Temps typique"
+     ],
+     "rows": [
+      [
+       "**Polaire maritime**",
+       "Froide, humide ; réchauffée par la base : **instable**",
+       "Cu, Cb, averses, très bonne visibilité"
+      ],
+      [
+       "**Tropicale maritime**",
+       "Chaude, humide ; refroidie par la base : **stable**",
+       "St, bruine, brouillard d’advection"
+      ],
+      [
+       "**Continentale**",
+       "Sèche",
+       "Froide l’hiver ; chaude et brumeuse l’été"
+      ],
+      [
+       "**Arctique**",
+       "Très froide",
+       "Coups de froid, averses de neige"
+      ]
+     ],
+     "note": "Réchauffée par la base, une masse d’air devient instable ; refroidie par la base, stable."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Dépression (D ou L)",
+       "points": [
+        "Vent **anti-horaire** et convergent (hémisphère nord)",
+        "L’air **monte** : nuages, précipitations, vent"
+       ]
+      },
+      {
+       "title": "Anticyclone (A ou H)",
+       "points": [
+        "Vent **horaire** et divergent ; l’air **descend** (subsidence)",
+        "Calme et sec ; l’hiver, inversion, stratus, brouillards"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "Coupe d’une perturbation : front froid, secteur chaud, front chaud",
+     "svg": "<svg viewBox=\"0 8 720 302\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"312\" fill=\"#ffffff\"/>\n<defs><marker id=\"u3md\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#14213d\"/></marker></defs>\n<line x1=\"300\" y1=\"20\" x2=\"420\" y2=\"20\" stroke=\"#14213d\" stroke-width=\"2.5\" marker-end=\"url(#u3md)\"/>\n<text x=\"432\" y=\"25\" font-size=\"13\" font-style=\"italic\" fill=\"#3d4a66\">la perturbation avance vers l’est</text>\n<path d=\"M35,212 L88,212 Q96,200 84,192 Q86,174 68,176 Q60,164 46,174 Q30,176 34,192 Q24,202 35,212 Z\" fill=\"#eef1f6\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<path d=\"M96,186 L136,186 Q142,176 132,170 Q132,156 118,158 Q110,148 100,158 Q88,160 92,172 Q86,180 96,186 Z\" fill=\"#eef1f6\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<g stroke=\"#2b7a9b\" stroke-width=\"2\"><line x1=\"48\" y1=\"216\" x2=\"45\" y2=\"236\"/><line x1=\"58\" y1=\"216\" x2=\"55\" y2=\"236\"/><line x1=\"68\" y1=\"216\" x2=\"65\" y2=\"236\"/><line x1=\"78\" y1=\"216\" x2=\"75\" y2=\"236\"/><line x1=\"182\" y1=\"240\" x2=\"178\" y2=\"258\"/><line x1=\"192\" y1=\"240\" x2=\"188\" y2=\"258\"/><line x1=\"202\" y1=\"240\" x2=\"198\" y2=\"258\"/><line x1=\"212\" y1=\"240\" x2=\"208\" y2=\"258\"/><line x1=\"222\" y1=\"240\" x2=\"218\" y2=\"258\"/><line x1=\"232\" y1=\"240\" x2=\"228\" y2=\"258\"/><line x1=\"242\" y1=\"240\" x2=\"238\" y2=\"258\"/><line x1=\"252\" y1=\"240\" x2=\"248\" y2=\"258\"/><line x1=\"462\" y1=\"249.6\" x2=\"457\" y2=\"258\"/><line x1=\"474\" y1=\"241.9\" x2=\"469\" y2=\"258\"/><line x1=\"486\" y1=\"234.3\" x2=\"481\" y2=\"258\"/><line x1=\"498\" y1=\"226.6\" x2=\"493\" y2=\"258\"/><line x1=\"510\" y1=\"219.0\" x2=\"505\" y2=\"258\"/><line x1=\"522\" y1=\"211.3\" x2=\"517\" y2=\"258\"/><line x1=\"534\" y1=\"203.6\" x2=\"529\" y2=\"258\"/><line x1=\"546\" y1=\"196.0\" x2=\"541\" y2=\"258\"/><line x1=\"558\" y1=\"188.3\" x2=\"553\" y2=\"258\"/><line x1=\"570\" y1=\"180.7\" x2=\"565\" y2=\"258\"/><line x1=\"582\" y1=\"173.0\" x2=\"577\" y2=\"258\"/><line x1=\"594\" y1=\"165.4\" x2=\"589\" y2=\"258\"/></g>\n<path d=\"M170,236 L262,236 Q276,206 262,178 Q282,150 260,120 Q274,90 252,66 L304,56 L304,46 L130,46 L130,56 L186,66 Q166,92 180,120 Q158,150 176,178 Q156,206 170,236 Z\" fill=\"#dfe4ec\" stroke=\"#5e6b84\" stroke-width=\"1.5\"/>\n<text x=\"216\" y=\"166\" font-size=\"16\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Cb</text>\n<rect x=\"270\" y=\"200\" width=\"140\" height=\"20\" rx=\"10\" fill=\"#eef1f6\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<text x=\"340\" y=\"215\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">St</text>\n<g fill=\"#2b7a9b\"><circle cx=\"284\" cy=\"232\" r=\"1.6\"/><circle cx=\"284\" cy=\"244\" r=\"1.6\"/><circle cx=\"284\" cy=\"256\" r=\"1.6\"/><circle cx=\"298\" cy=\"232\" r=\"1.6\"/><circle cx=\"298\" cy=\"244\" r=\"1.6\"/><circle cx=\"298\" cy=\"256\" r=\"1.6\"/><circle cx=\"312\" cy=\"232\" r=\"1.6\"/><circle cx=\"312\" cy=\"244\" r=\"1.6\"/><circle cx=\"312\" cy=\"256\" r=\"1.6\"/><circle cx=\"326\" cy=\"232\" r=\"1.6\"/><circle cx=\"326\" cy=\"244\" r=\"1.6\"/><circle cx=\"326\" cy=\"256\" r=\"1.6\"/><circle cx=\"340\" cy=\"232\" r=\"1.6\"/><circle cx=\"340\" cy=\"244\" r=\"1.6\"/><circle cx=\"340\" cy=\"256\" r=\"1.6\"/><circle cx=\"354\" cy=\"232\" r=\"1.6\"/><circle cx=\"354\" cy=\"244\" r=\"1.6\"/><circle cx=\"354\" cy=\"256\" r=\"1.6\"/><circle cx=\"368\" cy=\"232\" r=\"1.6\"/><circle cx=\"368\" cy=\"244\" r=\"1.6\"/><circle cx=\"368\" cy=\"256\" r=\"1.6\"/><circle cx=\"382\" cy=\"232\" r=\"1.6\"/><circle cx=\"382\" cy=\"244\" r=\"1.6\"/><circle cx=\"382\" cy=\"256\" r=\"1.6\"/><circle cx=\"396\" cy=\"232\" r=\"1.6\"/><circle cx=\"396\" cy=\"244\" r=\"1.6\"/><circle cx=\"396\" cy=\"256\" r=\"1.6\"/></g>\n<path d=\"M405,236 Q398,200 408,170 Q404,140 428,128 L548,118 L548,186.7 L440,255.6 Q418,252 405,236 Z\" fill=\"#e6eaf1\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<path d=\"M548,112 Q596,100 640,104 L640,128.0 L548,186.7 Z\" fill=\"#eef1f6\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<path d=\"M640,98 Q670,84 702,78 L702,88.5 L640,128.0 Z\" fill=\"#f4f6fa\" stroke=\"#8a96ad\" stroke-width=\"1.5\"/>\n<g stroke=\"#8a96ad\" stroke-width=\"2\" fill=\"none\"><path d=\"M660,62 q20,-10 42,-4\"/><path d=\"M672,72 q18,-8 38,-2\"/></g>\n<text x=\"480\" y=\"180\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Ns</text>\n<text x=\"590\" y=\"148\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">As</text>\n<text x=\"660\" y=\"110\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Cs</text>\n<text x=\"648\" y=\"62\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">Ci</text>\n<line x1=\"215\" y1=\"262\" x2=\"150\" y2=\"95\" stroke=\"#1d5fbf\" stroke-width=\"3.5\"/>\n<line x1=\"430\" y1=\"262\" x2=\"712\" y2=\"82.1\" stroke=\"#c0392b\" stroke-width=\"3.5\"/>\n<text x=\"70\" y=\"112\" font-size=\"14\" font-weight=\"700\" fill=\"#1d5fbf\" text-anchor=\"middle\">AIR FROID</text>\n<text x=\"345\" y=\"150\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">AIR CHAUD</text>\n<text x=\"652\" y=\"232\" font-size=\"14\" font-weight=\"700\" fill=\"#1d5fbf\" text-anchor=\"middle\">AIR FROID</text>\n<line x1=\"0\" y1=\"262\" x2=\"720\" y2=\"262\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"70\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">traîne</text>\n<text x=\"70\" y=\"302\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">averses</text>\n<text x=\"212\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#1d5fbf\" text-anchor=\"middle\">front froid</text>\n<text x=\"212\" y=\"302\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">orages, rafales</text>\n<text x=\"330\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">secteur chaud</text>\n<text x=\"330\" y=\"302\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">St, bruine</text>\n<text x=\"446\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">front chaud</text>\n<text x=\"590\" y=\"284\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">pluie continue</text>\n<text x=\"590\" y=\"302\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">plafonds en baisse</text>\n</svg>",
+     "caption": "Échelle non respectée : le front chaud s’annonce des centaines de kilomètres à l’avance. Au sol, tu vois arriver Ci, Cs, As, Ns et la pluie, puis le secteur chaud, le front froid et la traîne."
+    },
+    {
+     "type": "table",
+     "caption": "Le passage d’un front",
+     "columns": [
+      "",
+      "Front chaud",
+      "Front froid"
+     ],
+     "rows": [
+      [
+       "**Mécanisme**",
+       "L’air chaud glisse lentement sur l’air froid ; pente faible",
+       "L’air froid soulève vivement l’air chaud ; pente forte"
+      ],
+      [
+       "**Nuages, temps**",
+       "Ci, Cs (halo), As, Ns ; pluie continue sur une large bande, plafonds en baisse ; pluie verglaçante possible l’hiver",
+       "Cu, Cb sur une bande étroite ; averses, orages, rafales, turbulence, cisaillement"
+      ],
+      [
+       "**Au passage**",
+       "La pression cesse de baisser ; T et Td montent",
+       "La pression remonte ; T et Td baissent"
+      ],
+      [
+       "**Vent**",
+       "Tourne à droite (sud → sud-ouest)",
+       "Tourne à droite (sud-ouest → nord-ouest)"
+      ],
+      [
+       "**Symbole**",
+       "Demi-cercles rouges",
+       "Triangles bleus"
+      ]
+     ]
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "**Secteur chaud** : air tropical maritime doux et humide : stratus, bruine, visibilité médiocre.",
+      "**Traîne** : air froid instable : Cu et Cb épars, averses parfois de grésil, excellente visibilité entre elles.",
+      "**Occlusion** (violet, triangles et demi-cercles **du même côté**) : le front froid rattrape le front chaud et rejette l’air chaud en altitude. Temps des deux fronts, Cb parfois noyés.",
+      "**Front stationnaire** : demi-cercles rouges et triangles bleus alternés, **de part et d’autre** de la ligne."
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Croire que le vent tourne à gauche après un front froid : après **n’importe quel front** (logé dans un creux de pression), il tourne **à droite**."
+    },
+    {
+     "type": "bullets",
+     "title": "Autres centres d’action",
+     "items": [
+      "**Talweg** : creux de basses pressions, temps instable, fronts. **Dorsale** : avancée de hautes pressions, temps plutôt calme.",
+      "**Marais barométrique** : pression presque uniforme, vent faible ; l’été, orages isolés l’après-midi.",
+      "**Dépression thermique** : petite dépression sans front, créée l’été par un sol très chaud ; elle peut déclencher des orages.",
+      "**Goutte froide** : poche d’air froid en altitude, qui rend l’air instable : orages d’été."
+     ]
+    },
+    {
+     "type": "bullets",
+     "title": "Les climats de la France",
+     "items": [
+      "**Océanique** (ouest) : hivers doux, perturbations atlantiques en série. **Semi-continental** (nord-est) : l’hiver, brouillards et stratus tenaces sous l’anticyclone.",
+      "**Méditerranéen** : étés secs ; à l’automne, **épisodes méditerranéens** (pluies diluviennes, orages). **Montagnard** : brises, ondes, orages d’été l’après-midi.",
+      "**Vents régionaux** : **mistral** (nord, vallée du Rhône) et **tramontane** (nord-ouest, Roussillon), froids, secs, en rafales ; **autan** (sud-est, Toulousain) ; **bise** (nord-est, vers le Léman) ; **marin** (sud-est, humide)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Orages, turbulence, cisaillement et givrage",
+   "summary": "Orages, cisaillement et givrage sont les pièges météo les plus graves : reconnais-les de loin et n’y entre jamais.",
+   "blocks": [
+    {
+     "type": "key",
+     "title": "Les trois ingrédients d’un orage",
+     "text": "**Air instable** sur une grande épaisseur + **humidité abondante** + **déclencheur** : échauffement du sol l’après-midi, front froid, relief ou convergence."
+    },
+    {
+     "type": "table",
+     "caption": "La vie d’une cellule orageuse",
+     "columns": [
+      "Stade",
+      "Ce qui se passe",
+      "Danger"
+     ],
+     "rows": [
+      [
+       "**Cumulus** (développement)",
+       "Ascendances partout ; le nuage grandit (TCU) ; pas encore de pluie au sol",
+       "Fortes ascendances, turbulence, givrage"
+      ],
+      [
+       "**Maturité**",
+       "Débute quand les précipitations atteignent le sol ; ascendances et descendances coexistent ; enclume",
+       "**Maximal** : grêle, foudre, rafales, turbulence sévère, givrage"
+      ],
+      [
+       "**Dissipation**",
+       "Descendances dominantes ; la pluie faiblit, l’enclume de glace persiste",
+       "En baisse ; grêle encore possible sous l’enclume"
+      ]
+     ],
+     "note": "Une cellule isolée vit 30 min à 1 h ; un orage multicellulaire, des heures."
+    },
+    {
+     "type": "bullets",
+     "title": "Types, dangers et indices",
+     "items": [
+      "**Types** : de masse d’air (été, fin d’après-midi), frontaux (en ligne), orographiques. **Ligne de grains** : mur d’orages, ne la traverse pas.",
+      "**Dangers** : turbulence sévère, foudre, **grêle** (même sous l’enclume), givrage fort, **front de rafales** à plusieurs km devant l’orage.",
+      "**Microrafale** : moins de 4 km, rarement plus de 15 min. En finale : vent de face, descendance, puis vent arrière. **Pleine puissance, remise de gaz**.",
+      "**Indices** : sommet fibreux en enclume (le TCU devient Cb), mammatus. Tonnerre 3 s après l’éclair : 1 km."
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Passer **sous** un Cb isolé à base haute : rafales descendantes et cisaillement y sont maximaux. Contourne **largement**, côté au vent, loin de l’enclume."
+    },
+    {
+     "type": "bullets",
+     "title": "Turbulence et cisaillement",
+     "items": [
+      "**Mécanique** : vent fort sur le relief et les obstacles (hangars, haies, rotors). **Thermique** : air instable, sous les cumulus, l’après-midi.",
+      "**En air clair** (CAT) : en altitude, sans nuage, près des **courants-jets** (60 kt et plus).",
+      "**Cisaillement** : variation brusque du vent (orage, front, inversion nocturne). En finale, 15 kt de vent de face perdus = 15 kt de vitesse en moins.",
+      "Intensités : légère, **modérée** (contrôle conservé), **forte** (perte de contrôle momentanée), extrême. En air agité : vitesse du manuel (au plus VA, vitesse de manœuvre), ailes horizontales."
+     ]
+    },
+    {
+     "type": "key",
+     "title": "Givrage = eau surfondue + avion sous 0 °C",
+     "text": "L’**eau surfondue** est restée liquide sous 0 °C, en nuage ou en précipitation. Givrage le plus fréquent entre **0 et −15 °C** environ, fort dans les Cu et Cb.\nAu-dessus de l’**isotherme 0 °C** (carte TEMSI), nuages et pluie peuvent givrer. Ciel clair ou nuage de glace : risque faible."
+    },
+    {
+     "type": "table",
+     "caption": "Les dépôts de glace",
+     "columns": [
+      "Dépôt",
+      "Formation",
+      "Aspect et gravité"
+     ],
+     "rows": [
+      [
+       "**Givre blanc**",
+       "Petites gouttelettes qui gèlent instantanément",
+       "Opaque, rugueux, friable"
+      ],
+      [
+       "**Givre transparent**",
+       "Grosses gouttes qui s’étalent avant de geler",
+       "Verglas lourd et adhérent, en cornes : **le plus dangereux**"
+      ],
+      [
+       "**Pluie verglaçante** (`FZRA`)",
+       "Pluie tombant d’une couche positive dans une couche négative (avant un front chaud, l’hiver)",
+       "Verglas immédiat, même hors nuage : **sors de la zone**"
+      ],
+      [
+       "**Gelée blanche**",
+       "Vapeur déposée en cristaux sur une surface négative (avion dehors par nuit claire)",
+       "Portance dégradée : **tout enlever** avant le vol"
+      ]
+     ],
+     "note": "Granules de glace `PL` : gouttes regelées en tombant ; ils signalent de l’air positif au-dessus, donc de la pluie verglaçante proche."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Givrage de la cellule",
+       "points": [
+        "Eau surfondue, température négative",
+        "Masse et traînée en hausse, profil déformé : **décrochage plus tôt**, avertisseur parfois muet",
+        "Avion non certifié (Part-NCO) : on n’y entre pas ; s’il survient, on en sort sans délai"
+       ]
+      },
+      {
+       "title": "Givrage du carburateur",
+       "points": [
+        "Détente dans le venturi + évaporation de l’essence : jusqu’à **30 °C** de refroidissement",
+        "Air humide, d’environ **−10 à +30 °C**, même par ciel clair ; cas typique : **15 °C, air très humide, descente moteur réduit**",
+        "Réchauffage à fond, avant de réduire"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "METAR, SPECI et TAF",
+   "summary": "METAR et TAF suivent un code fixe : apprends une fois l’ordre des groupes, et tu les liras aussi vite qu’une phrase.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "**METAR** : observation d’aérodrome, toutes les 30 min ou toutes les heures. **SPECI** : observation spéciale, après un changement significatif. Heures en **UTC** (temps universel) : heure légale = UTC + 1 l’hiver, + 2 l’été."
+    },
+    {
+     "type": "key",
+     "title": "Plafond et CAVOK",
+     "text": "**Plafond** : base de la plus basse couche **BKN ou OVC** sous 20 000 ft. `FEW006 SCT012 BKN025 OVC080` : plafond à **2 500 ft**.\n**CAVOK** (« plafond et visibilité OK ») remplace visibilité, temps présent et nuages. Il faut une visibilité de **10 km ou plus**, ni CB ni TCU, et **aucun temps significatif**. Aucun nuage sous **5 000 ft**, ou sous l’altitude minimale de secteur la plus haute si elle est supérieure."
+    },
+    {
+     "type": "code",
+     "label": "METAR : décodage complet",
+     "text": "METAR LFBO 171030Z 27012G25KT 240V300 6000 -SHRA\n      FEW015 BKN030CB 14/09 Q1008 TEMPO TSRA",
+     "decode": "`LFBO` indicatif à 4 lettres de l’aérodrome (Toulouse-Blagnac) · `171030Z` le 17 à 10 h 30 UTC\n`27012G25KT` vent du 270° vrai, 12 kt, rafales à 25 kt (G si 10 kt ou plus au-dessus de la moyenne)\n`240V300` direction variant de 60° ou plus, vent d’au moins 3 kt. `VRB` : vent de moins de 3 kt qui varie, ou variation de 180° ou plus\n`6000` visibilité 6 000 m (`9999` = 10 km ou plus) · `-SHRA` faibles averses de pluie\n`FEW015` 1 à 2 octas à 1 500 ft · `BKN030CB` 5 à 7 octas de cumulonimbus à 3 000 ft\n`14/09` température 14 °C, point de rosée 9 °C (`M02` = −2 °C) · `Q1008` QNH 1 008 hPa\n`TEMPO TSRA` tendance sur 2 h : orages temporaires. **NOSIG** = aucun changement significatif prévu dans les 2 h"
+    },
+    {
+     "type": "table",
+     "caption": "Les codes du ciel et du temps présent",
+     "columns": [
+      "Code",
+      "Sens",
+      "Code",
+      "Sens"
+     ],
+     "rows": [
+      [
+       "`FEW` `SCT`",
+       "1 à 2, 3 à 4 octas (huitièmes de ciel)",
+       "`NSC`",
+       "Aucun nuage significatif"
+      ],
+      [
+       "`BKN` `OVC`",
+       "5 à 7, 8 octas",
+       "`NCD`",
+       "Aucun nuage détecté (station automatique, `AUTO`)"
+      ],
+      [
+       "`CB` `TCU`",
+       "Cumulonimbus, cumulus bourgeonnant",
+       "`VV002`",
+       "Ciel invisible, visibilité verticale 200 ft"
+      ],
+      [
+       "`-` `+`",
+       "Faible, fort (sans signe : modéré)",
+       "`RA` `DZ`",
+       "Pluie, bruine"
+      ],
+      [
+       "`VC`",
+       "Au voisinage de l’aérodrome",
+       "`SN` `GS` `GR`",
+       "Neige, grésil, grêle"
+      ],
+      [
+       "`SH` `TS`",
+       "Averse, orage",
+       "`FG` `BR`",
+       "Brouillard, brume"
+      ],
+      [
+       "`FZ`",
+       "Se congelant (surfondu)",
+       "`HZ` `FU`",
+       "Brume sèche, fumée"
+      ]
+     ],
+     "note": "Bases en centaines de pieds **au-dessus du terrain** : `BKN008` = 5 à 7 octas à 800 ft. `+TSRA` = orage avec forte pluie ; `VCTS` = orage au voisinage ; `RETSRA` = orage récent, terminé ; `WS` = cisaillement signalé. `R21/0550` = RVR (portée visuelle de piste) de 550 m en piste 21, donnée sous 1 500 m."
+    },
+    {
+     "type": "code",
+     "label": "TAF (prévision d’aérodrome) : court 9 h, long 24 ou 30 h",
+     "text": "TAF LFBO 170500Z 1706/1812 24010KT 9999 SCT030\n    TEMPO 1714/1718 3000 SHRA BKN015\n    PROB30 TEMPO 1715/1719 TSRA BKN025CB\n    BECMG 1720/1722 30015G25KT\n    FM180600 32008KT CAVOK",
+     "decode": "`1706/1812` valable du 17 à 06 h au 18 à 12 h UTC (30 h) · `24010KT 9999 SCT030` conditions de base\n`TEMPO 1714/1718` **temporaire** : de 14 à 18 h UTC, épisodes de moins d’1 h à 3 000 m sous averses, plafond 1 500 ft. Au total, moins de la moitié de la période\n`PROB30 TEMPO 1715/1719` 30 % de risque d’orages par épisodes (seules valeurs : 30 et 40 %)\n`BECMG 1720/1722` **durable** : entre 20 et 22 h UTC, le vent passe au 300°/15 kt, rafales 25 kt\n`FM180600` dès le 18 à 06 h UTC, **tout** ce qui précède est remplacé : 320°/8 kt, CAVOK\n`NSW` = fin du temps significatif (pas CAVOK) · `AMD` = TAF amendé · `TX`/`TN` = températures maximale et minimale"
+    },
+    {
+     "type": "key",
+     "title": "Lire un TAF à ton heure d’arrivée",
+     "text": "Conditions de base + **BECMG terminés** (pendant un BECMG, les deux états sont possibles) ; le dernier **FM** remplace tout. Ajoute les **TEMPO et PROB** qui couvrent ton heure : retiens le **pire**.\nCi-dessus, arrivée le 17 à 16 h UTC : 3 000 m sous averses, plafond 1 500 ft, 30 % de risque d’orage.\nPièges : lire un TEMPO comme durable, ou l’heure UTC comme l’heure locale."
+    }
+   ]
+  },
+  {
+   "title": "Cartes, avertissements et décision avant le vol",
+   "summary": "Les cartes te donnent la route, METAR et TAF les terrains, les avertissements les pièges : ensemble, ils décident du départ ou du report.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Les cartes",
+     "columns": [
+      "Produit",
+      "Contenu",
+      "Usage"
+     ],
+     "rows": [
+      [
+       "**TEMSI France**",
+       "Temps significatif prévu, de la surface au FL 150, pour une heure donnée : fronts, zones nuageuses, orages, givrage, turbulence, isotherme 0 °C",
+       "Situation sur ta route"
+      ],
+      [
+       "**WINTEM**",
+       "Vents et températures prévus en des points, à plusieurs niveaux (FL 020, 050, 100 et au-dessus)",
+       "Dérive, vitesse sol, carburant"
+      ]
+     ],
+     "note": "**TEMSI** : zones entourées de **festons**, base/sommet en centaines de pieds (`025/080`, `XXX` = au-dessus du FL 150), `MOD` modéré, `SEV` fort. Cb `ISOL` (moins de 50 % de la zone), `OCNL` (50 à 75 %), `FRQ` (plus de 75 %), `EMBD` (noyés).\n**WINTEM** : la hampe pointe vers la direction **d’où vient** le vent. Hampe vers l’ouest, deux barbules et demie : **270°/25 kt**."
+    },
+    {
+     "type": "bullets",
+     "title": "Avertissements, messages et sources",
+     "items": [
+      "**SIGMET** : avertissement d’un centre de veille météorologique (orages `EMBD`, `FRQ` ou en ligne de grains `SQL TS`, turbulence ou givrage forts, ondes fortes, cendres). Valable 4 h au plus (6 h pour les cendres). Avant et pendant le vol, VFR compris.",
+      "**AIRMET** : avertissement pour les vols sous le FL 100 (FL 150 en montagne). Il signale des phénomènes absents du **GAMET**, la prévision de zone pour la basse altitude.",
+      "**ATIS** : message d’aérodrome enregistré, identifié par une lettre, à écouter avant le premier contact. **VOLMET** : diffusion radio de METAR, TAF et SIGMET pour les avions en vol.",
+      "**Aéroweb** (aviation.meteo.fr) : site aéronautique de Météo-France, avec tout ton dossier météo."
+     ]
+    },
+    {
+     "type": "steps",
+     "title": "Décider avant le vol",
+     "items": [
+      "**Situation générale** : TEMSI, fronts, orages, isotherme 0 °C.",
+      "**Route** : WINTEM au niveau prévu ; SIGMET et AIRMET éventuels.",
+      "**Terrains** : METAR et TAF du départ, de la destination et des dégagements, sur toute la durée du vol.",
+      "**Compare** aux minimums VMC, de vol à vue (en zone de contrôle CTR, 5 km et plafond 1 500 ft pour décoller ou atterrir). Puis à **tes minima** et au vent de travers démontré ; prépare un **plan B**.",
+      "**En vol** : ATIS, information de vol ; révise ta décision dès que le ciel diffère de la prévision."
+     ]
+    },
+    {
+     "type": "trap",
+     "title": "Les signaux du report",
+     "text": "Orages sur la route ou à l’arrivée · pluie verglaçante ou givrage prévus · plafond bas sur le relief · brouillard probable à l’arrivée · vent hors de tes limites. Un METAR seul ne suffit jamais : c’est une photo du passé.\n**Part-NCO** : tu ne pars ou ne continues en VFR que si la météo la plus récente annonce au moins les minimums VFR, sur la route et à destination."
+    }
+   ]
+  }
+ ],
+ "key_numbers": [
+  {
+   "value": "15 °C",
+   "label": "température ISA (mer)"
+  },
+  {
+   "value": "1 013,25 hPa",
+   "label": "pression ISA (mer)"
+  },
+  {
+   "value": "1,225 kg/m³",
+   "label": "masse volumique ISA (mer)"
+  },
+  {
+   "value": "−2 °C",
+   "label": "par 1 000 ft : gradient ISA"
+  },
+  {
+   "value": "11 km",
+   "label": "tropopause ISA, −56,5 °C"
+  },
+  {
+   "value": "16 / 8 km",
+   "label": "tropopause : équateur / pôles"
+  },
+  {
+   "value": "28 ft",
+   "label": "par hPa près du sol"
+  },
+  {
+   "value": "18 000 ft",
+   "label": "≈ 500 hPa (la moitié)"
+  },
+  {
+   "value": "4 %",
+   "label": "par 10 °C sous l’ISA (altimètre)"
+  },
+  {
+   "value": "120 ft",
+   "label": "par °C d’écart : altitude-densité"
+  },
+  {
+   "value": "3 °C",
+   "label": "par 1 000 ft : adiabatique sèche"
+  },
+  {
+   "value": "1,5 °C",
+   "label": "par 1 000 ft : adiabatique saturée"
+  },
+  {
+   "value": "400 ft",
+   "label": "× (T − Td) : base des cumulus"
+  },
+  {
+   "value": "7 500 ft",
+   "label": "isotherme 0 °C en ISA"
+  },
+  {
+   "value": "½ / 30°",
+   "label": "vent au sol : moitié, 30° à gauche"
+  },
+  {
+   "value": "40 à 50 km",
+   "label": "portée de la brise de mer"
+  },
+  {
+   "value": "60 kt",
+   "label": "seuil du courant-jet"
+  },
+  {
+   "value": "1 000 m",
+   "label": "brouillard (FG) en dessous"
+  },
+  {
+   "value": "5 000 m",
+   "label": "limite haute de BR et HZ"
+  },
+  {
+   "value": "1 500 m",
+   "label": "RVR donnée en dessous"
+  },
+  {
+   "value": "30 min à 1 h",
+   "label": "vie d’une cellule orageuse"
+  },
+  {
+   "value": "< 4 km",
+   "label": "largeur d’une microrafale"
+  },
+  {
+   "value": "3 s",
+   "label": "entre éclair et tonnerre : 1 km"
+  },
+  {
+   "value": "0 à −15 °C",
+   "label": "givrage le plus fréquent"
+  },
+  {
+   "value": "−10 à +30 °C",
+   "label": "givrage carburateur"
+  },
+  {
+   "value": "2 h",
+   "label": "tendance du METAR"
+  },
+  {
+   "value": "10 kt",
+   "label": "écart qui fait coder une rafale"
+  },
+  {
+   "value": "9 / 24 / 30 h",
+   "label": "durées des TAF"
+  },
+  {
+   "value": "30 / 40 %",
+   "label": "seules valeurs de PROB"
+  },
+  {
+   "value": "10 km",
+   "label": "CAVOK : visibilité minimale"
+  },
+  {
+   "value": "5 000 ft",
+   "label": "CAVOK : aucun nuage dessous"
+  },
+  {
+   "value": "5 à 7 / 8",
+   "label": "octas BKN / OVC (plafond)"
+  },
+  {
+   "value": "20 000 ft",
+   "label": "plafond : couche sous ce niveau"
+  },
+  {
+   "value": "FL 150",
+   "label": "sommet de la TEMSI France"
+  },
+  {
+   "value": "4 h",
+   "label": "validité d’un SIGMET (cendres : 6 h)"
+  },
+  {
+   "value": "FL 100",
+   "label": "AIRMET (FL 150 en montagne)"
+  },
+  {
+   "value": "10 / 5 / 50 kt",
+   "label": "barbule / demi-barbule / fanion"
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Adiabatique",
+   "def": "sans échange de chaleur avec l’extérieur"
+  },
+  {
+   "term": "Advection",
+   "def": "déplacement horizontal d’une masse d’air"
+  },
+  {
+   "term": "AIRMET",
+   "def": "avertissement pour les vols à basse altitude"
+  },
+  {
+   "term": "ATIS",
+   "def": "message d’aérodrome enregistré, en continu"
+  },
+  {
+   "term": "BECMG",
+   "def": "changement durable (TAF, tendance)"
+  },
+  {
+   "term": "CAT",
+   "def": "turbulence en air clair, en altitude"
+  },
+  {
+   "term": "CAVOK",
+   "def": "plafond et visibilité OK (voir 3.8)"
+  },
+  {
+   "term": "Cisaillement",
+   "def": "variation brusque du vent"
+  },
+  {
+   "term": "Courant-jet",
+   "def": "vent étroit de 60 kt ou plus, en altitude"
+  },
+  {
+   "term": "Dorsale",
+   "def": "avancée de hautes pressions"
+  },
+  {
+   "term": "Eau surfondue",
+   "def": "eau restée liquide sous 0 °C"
+  },
+  {
+   "term": "Foehn",
+   "def": "air chaud et sec sous le vent d’un relief"
+  },
+  {
+   "term": "GAMET",
+   "def": "prévision de zone pour la basse altitude"
+  },
+  {
+   "term": "Inversion",
+   "def": "couche où la température monte avec l’altitude"
+  },
+  {
+   "term": "ISA",
+   "def": "atmosphère standard (15 °C, 1 013,25 hPa)"
+  },
+  {
+   "term": "METAR",
+   "def": "observation régulière d’aérodrome"
+  },
+  {
+   "term": "Microrafale",
+   "def": "descendance violente et localisée sous un Cb"
+  },
+  {
+   "term": "NOSIG",
+   "def": "rien de significatif prévu dans les 2 h"
+  },
+  {
+   "term": "Occlusion",
+   "def": "front froid qui a rattrapé le front chaud"
+  },
+  {
+   "term": "Plafond",
+   "def": "base de la plus basse couche BKN ou OVC"
+  },
+  {
+   "term": "QFE",
+   "def": "calage : hauteur au-dessus du terrain"
+  },
+  {
+   "term": "QFF",
+   "def": "pression au niveau de la mer des cartes"
+  },
+  {
+   "term": "QNH",
+   "def": "calage : altitude au-dessus de la mer"
+  },
+  {
+   "term": "Rotor",
+   "def": "tourbillon très turbulent sous le vent d’un relief"
+  },
+  {
+   "term": "RVR",
+   "def": "portée visuelle de piste"
+  },
+  {
+   "term": "SIGMET",
+   "def": "avertissement de dangers en route"
+  },
+  {
+   "term": "SPECI",
+   "def": "observation spéciale entre deux METAR"
+  },
+  {
+   "term": "Subsidence",
+   "def": "air qui descend et se réchauffe"
+  },
+  {
+   "term": "TAF",
+   "def": "prévision d’aérodrome"
+  },
+  {
+   "term": "Talweg",
+   "def": "creux de basses pressions"
+  },
+  {
+   "term": "TCU",
+   "def": "cumulus bourgeonnant, en tours (en physiologie : temps de conscience utile)"
+  },
+  {
+   "term": "TEMPO",
+   "def": "fluctuations temporaires de moins d’1 h"
+  },
+  {
+   "term": "TEMSI",
+   "def": "carte du temps significatif prévu"
+  },
+  {
+   "term": "Traîne",
+   "def": "air froid instable à averses, derrière le front froid"
+  },
+  {
+   "term": "UTC",
+   "def": "temps universel, heure des messages"
+  },
+  {
+   "term": "Virga",
+   "def": "pluie qui s’évapore avant d’atteindre le sol"
+  },
+  {
+   "term": "VOLMET",
+   "def": "diffusion radio de METAR, TAF, SIGMET"
+  },
+  {
+   "term": "VV",
+   "def": "visibilité verticale (ciel invisible)"
+  },
+  {
+   "term": "WINTEM",
+   "def": "vents et températures en altitude"
+  }
+ ],
+ "self_test": [
+  {
+   "q": "Quelle est la température ISA à 4 000 ft ?",
+   "a": "7 °C (15 − 4 × 2)."
+  },
+  {
+   "q": "Terrain à 800 ft, QNH 1 008 hPa : quelle altitude-pression ?",
+   "a": "940 ft (800 + 5 × 28)."
+  },
+  {
+   "q": "Au sol, T = 22 °C et Td = 12 °C : où sera la base des cumulus ?",
+   "a": "Vers 4 000 ft au-dessus du sol (400 × 10)."
+  },
+  {
+   "q": "Gradient réel de 2 °C/1 000 ft : comment qualifier l’air ?",
+   "a": "Conditionnellement instable (entre 1,5 et 3 °C/1 000 ft)."
+  },
+  {
+   "q": "Vent à 2 000 ft au-dessus d’une plaine : 300°/20 kt. Vent au sol probable ?",
+   "a": "Environ 270°/10 kt."
+  },
+  {
+   "q": "Quel brouillard peut se former en plein jour, par vent modéré ?",
+   "a": "Le brouillard d’advection."
+  },
+  {
+   "q": "Après le passage d’un front froid : pression, température, vent ?",
+   "a": "Pression en hausse, température en baisse, vent qui tourne à droite."
+  },
+  {
+   "q": "Quel événement marque le stade de maturité d’un orage ?",
+   "a": "L’arrivée des précipitations au sol : c’est le stade le plus dangereux."
+  },
+  {
+   "q": "Givrage carburateur possible par 15 °C, ciel clair et air très humide ?",
+   "a": "Oui, surtout moteur réduit en descente."
+  },
+  {
+   "q": "Que signifie `BKN008` dans un METAR ?",
+   "a": "5 à 7 octas, base à 800 ft au-dessus du terrain."
+  },
+  {
+   "q": "Que signifie `PROB30 TEMPO 1715/1719 TSRA` ?",
+   "a": "30 % de risque d’orages temporaires, le 17 de 15 à 19 h UTC."
+  }
+ ]
+}

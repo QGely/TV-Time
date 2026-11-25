@@ -1,0 +1,69 @@
+{
+  "id": "die-hard",
+  "name": "Die Hard (Piège de cristal)",
+  "description": "Les cinq films de la saga John McClane, du Nakatomi Plaza à Moscou. L'ordre chronologique de l'histoire est identique à l'ordre de sortie en salles.",
+  "icon": "🏢",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Die Hard",
+      "title_fr": "Piège de cristal",
+      "year": 1988,
+      "tmdb_id": 562,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": null,
+      "note": "Noël au Nakatomi Plaza : McClane face à Hans Gruber.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Die Hard 2",
+      "title_fr": "58 minutes pour vivre",
+      "year": 1990,
+      "tmdb_id": 1573,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "Un an plus tard, prise d'otages à l'aéroport de Washington.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Die Hard: With a Vengeance",
+      "title_fr": "Une journée en enfer",
+      "year": 1995,
+      "tmdb_id": 1572,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": null,
+      "note": "New York : Simon Gruber venge son frère, avec Samuel L. Jackson.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Live Free or Die Hard",
+      "title_fr": "Die Hard 4 : Retour en enfer",
+      "year": 2007,
+      "tmdb_id": 1571,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": null,
+      "note": "Cyberattaque nationale ; McClane fait équipe avec un hacker.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "A Good Day to Die Hard",
+      "title_fr": "Die Hard : Belle journée pour mourir",
+      "year": 2013,
+      "tmdb_id": 47964,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": null,
+      "note": "Moscou : McClane rejoint son fils Jack, agent de la CIA.",
+      "optional": false
+    }
+  ]
+}

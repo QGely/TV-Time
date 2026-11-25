@@ -1,0 +1,141 @@
+{
+  "id": "arrowverse",
+  "name": "Arrowverse",
+  "description": "Toutes les séries du CW Arrowverse, d'Arrow à Superman & Lois, avec Constantine et les webséries animées en option. L'ordre affiché par défaut est l'ordre de visionnage conseillé, qui correspond ici à l'ordre de première diffusion.",
+  "icon": "🏹",
+  "category": "dc",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Arrow",
+      "title_fr": "Arrow",
+      "year": 2012,
+      "tmdb_id": 1412,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Séries principales",
+      "note": "Point de départ de l'univers, diffusée dès octobre 2012",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Flash",
+      "title_fr": "Flash",
+      "year": 2014,
+      "tmdb_id": 60735,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Séries principales",
+      "note": "Spin-off d'Arrow ; Barry Allen apparaît d'abord dans Arrow saison 2",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Constantine",
+      "title_fr": "Constantine",
+      "year": 2014,
+      "tmdb_id": 60866,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Spin-offs et séries optionnelles",
+      "note": "Diffusée sur NBC ; John Constantine rejoint ensuite Arrow puis Legends",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Vixen",
+      "title_fr": "Vixen",
+      "year": 2015,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": "Spin-offs et séries optionnelles",
+      "note": "Websérie animée CW Seed, deux saisons d'épisodes courts",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Supergirl",
+      "title_fr": "Supergirl",
+      "year": 2015,
+      "tmdb_id": 62688,
+      "chronological_order": 5,
+      "release_order": 5,
+      "group": "Séries principales",
+      "note": "Débute sur CBS, rejoint la CW et les crossovers dès la saison 2",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "DC's Legends of Tomorrow",
+      "title_fr": "DC's Legends of Tomorrow",
+      "year": 2016,
+      "tmdb_id": 62643,
+      "chronological_order": 6,
+      "release_order": 6,
+      "group": "Séries principales",
+      "note": "Réunit des personnages secondaires d'Arrow et de Flash",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Freedom Fighters: The Ray",
+      "title_fr": "Freedom Fighters: The Ray",
+      "year": 2017,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 7,
+      "group": "Spin-offs et séries optionnelles",
+      "note": "Websérie animée CW Seed liée au crossover Crisis on Earth-X",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Black Lightning",
+      "title_fr": "Black Lightning",
+      "year": 2018,
+      "tmdb_id": 71663,
+      "chronological_order": 8,
+      "release_order": 8,
+      "group": "Séries principales",
+      "note": "Indépendante jusqu'au crossover Crisis on Infinite Earths (2019)",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Batwoman",
+      "title_fr": "Batwoman",
+      "year": 2019,
+      "tmdb_id": 89247,
+      "chronological_order": 9,
+      "release_order": 9,
+      "group": "Séries principales",
+      "note": "Kate Kane apparaît d'abord dans le crossover Elseworlds (2018)",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Stargirl",
+      "title_fr": "Stargirl",
+      "year": 2020,
+      "tmdb_id": 80986,
+      "chronological_order": 10,
+      "release_order": 10,
+      "group": "Spin-offs et séries optionnelles",
+      "note": "Se déroule sur Terre-2 après Crisis ; largement indépendante",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Superman & Lois",
+      "title_fr": "Superman & Lois",
+      "year": 2021,
+      "tmdb_id": 95057,
+      "chronological_order": 11,
+      "release_order": 11,
+      "group": "Séries principales",
+      "note": "Dernière série de l'univers, située sur sa propre Terre",
+      "optional": false
+    }
+  ]
+}

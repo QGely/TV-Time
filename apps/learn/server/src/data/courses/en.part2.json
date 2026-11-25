@@ -1,0 +1,394 @@
+{
+  "id": "en",
+  "title": "Anglais",
+  "lang_name": "anglais",
+  "flag": "🇬🇧",
+  "tts_lang": "en-US",
+  "description": "Apprenez l'anglais pas à pas, de la ville au voyage, pour vous débrouiller partout.",
+  "units": [
+    {
+      "id": "u4",
+      "title": "En ville",
+      "description": "Se repérer, demander son chemin, réserver un hôtel et prendre les transports.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u4s1",
+          "title": "Se déplacer",
+          "icon": "🚶",
+          "tips": "Le verbe « to go » (aller) est irrégulier au présent : I go, you go, he/she goes. Pour demander où se trouve un lieu, on utilise « Where is... ? » (Où est... ?). « Far » (loin) et « near » (près) indiquent la distance : « It is far » (C'est loin), « The bridge is near » (Le pont est près).",
+          "vocab": [
+            { "term": "street", "translation": "la rue", "emoji": "🛣️" },
+            { "term": "city", "translation": "la ville", "emoji": "🏙️" },
+            { "term": "to walk", "translation": "marcher", "emoji": "🚶" },
+            { "term": "map", "translation": "la carte, le plan", "emoji": "🗺️" },
+            { "term": "far", "translation": "loin", "emoji": null },
+            { "term": "near", "translation": "près", "emoji": null },
+            { "term": "here", "translation": "ici", "emoji": "📍" },
+            { "term": "there", "translation": "là-bas", "emoji": null },
+            { "term": "to go", "translation": "aller", "emoji": null },
+            { "term": "to cross", "translation": "traverser", "emoji": null },
+            { "term": "bridge", "translation": "le pont", "emoji": "🌉" },
+            { "term": "square", "translation": "la place", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "The city is big.", "target": "La ville est grande." },
+            { "source": "I walk in the street.", "target": "Je marche dans la rue." },
+            { "source": "Is it far?", "target": "Est-ce loin ?" },
+            { "source": "The bridge is near.", "target": "Le pont est près." },
+            { "source": "We go to the square.", "target": "Nous allons à la place." },
+            { "source": "I have a map.", "target": "J'ai une carte." },
+            { "source": "The square is there.", "target": "La place est là-bas." },
+            { "source": "I cross the street.", "target": "Je traverse la rue." }
+          ]
+        },
+        {
+          "id": "u4s2",
+          "title": "Les directions",
+          "icon": "🧭",
+          "tips": "Pour indiquer un chemin, on utilise l'impératif, sans sujet : « Turn left » (Tournez à gauche), « Go straight ahead » (Allez tout droit). « Next to » (à côté de), « in front of » (devant) et « behind » (derrière) sont des prépositions de lieu : « The hotel is next to the bridge ».",
+          "vocab": [
+            { "term": "left", "translation": "à gauche", "emoji": "⬅️" },
+            { "term": "right", "translation": "à droite", "emoji": "➡️" },
+            { "term": "straight ahead", "translation": "tout droit", "emoji": "⬆️" },
+            { "term": "to turn", "translation": "tourner", "emoji": "↪️" },
+            { "term": "corner", "translation": "le coin", "emoji": null },
+            { "term": "next to", "translation": "à côté de", "emoji": null },
+            { "term": "in front of", "translation": "devant", "emoji": null },
+            { "term": "behind", "translation": "derrière", "emoji": null },
+            { "term": "traffic light", "translation": "le feu (de circulation)", "emoji": "🚦" },
+            { "term": "crossroads", "translation": "le carrefour", "emoji": null },
+            { "term": "lost", "translation": "perdu", "emoji": "😵" },
+            { "term": "to take", "translation": "prendre", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Turn left here.", "target": "Tournez à gauche ici." },
+            { "source": "Go straight ahead.", "target": "Allez tout droit." },
+            { "source": "Turn right at the corner.", "target": "Tournez à droite au coin." },
+            { "source": "I am lost.", "target": "Je suis perdu." },
+            { "source": "The square is behind you.", "target": "La place est derrière vous." },
+            { "source": "Take the street on the right.", "target": "Prenez la rue à droite." },
+            { "source": "Turn at the traffic light.", "target": "Tournez au feu." },
+            { "source": "The bridge is in front of you.", "target": "Le pont est devant vous." }
+          ]
+        },
+        {
+          "id": "u4s3",
+          "title": "À l’hôtel",
+          "icon": "🏨",
+          "tips": "« To book a room » signifie réserver une chambre. Pour la durée du séjour, on dit « for two nights » (pour deux nuits). Attention au mot « floor » : il désigne l'étage, et au Royaume-Uni le rez-de-chaussée s'appelle « ground floor », tandis que « first floor » est le premier étage.",
+          "vocab": [
+            { "term": "hotel", "translation": "l'hôtel", "emoji": "🏨" },
+            { "term": "room", "translation": "la chambre", "emoji": "🛏️" },
+            { "term": "key", "translation": "la clé", "emoji": "🔑" },
+            { "term": "reception", "translation": "la réception", "emoji": "🛎️" },
+            { "term": "to book", "translation": "réserver", "emoji": "📅" },
+            { "term": "night", "translation": "la nuit", "emoji": "🌙" },
+            { "term": "bed", "translation": "le lit", "emoji": "🛏️" },
+            { "term": "shower", "translation": "la douche", "emoji": "🚿" },
+            { "term": "breakfast", "translation": "le petit-déjeuner", "emoji": "🥐" },
+            { "term": "floor", "translation": "l'étage", "emoji": null },
+            { "term": "elevator", "translation": "l'ascenseur", "emoji": "🛗" },
+            { "term": "to stay", "translation": "rester, séjourner", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "I want to book a room.", "target": "Je veux réserver une chambre." },
+            { "source": "Here is your key.", "target": "Voici votre clé." },
+            { "source": "The room has a shower.", "target": "La chambre a une douche." },
+            { "source": "The bed is big.", "target": "Le lit est grand." },
+            { "source": "The elevator is on the right.", "target": "L'ascenseur est à droite." },
+            { "source": "My room is on this floor.", "target": "Ma chambre est à cet étage." },
+            { "source": "The reception is here.", "target": "La réception est ici." },
+            { "source": "We stay two nights.", "target": "Nous restons deux nuits." }
+          ]
+        },
+        {
+          "id": "u4s4",
+          "title": "Les transports",
+          "icon": "🚌",
+          "tips": "« Station » désigne la gare ou la station de métro ; l'aéroport se dit « airport ». Le métro se dit « subway » aux États-Unis et « underground » ou « tube » à Londres. Pour prendre un moyen de transport, on utilise « to take » : « I take the bus » (Je prends le bus).",
+          "vocab": [
+            { "term": "bus", "translation": "le bus", "emoji": "🚌" },
+            { "term": "train", "translation": "le train", "emoji": "🚆" },
+            { "term": "station", "translation": "la gare, la station", "emoji": "🚉" },
+            { "term": "ticket", "translation": "le billet", "emoji": "🎫" },
+            { "term": "subway", "translation": "le métro", "emoji": "🚇" },
+            { "term": "taxi", "translation": "le taxi", "emoji": "🚕" },
+            { "term": "airport", "translation": "l'aéroport", "emoji": "🛫" },
+            { "term": "plane", "translation": "l'avion", "emoji": "✈️" },
+            { "term": "bike", "translation": "le vélo", "emoji": "🚲" },
+            { "term": "car", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "to wait", "translation": "attendre", "emoji": "⏳" },
+            { "term": "to leave", "translation": "partir", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "I take the bus.", "target": "Je prends le bus." },
+            { "source": "The train leaves now.", "target": "Le train part maintenant." },
+            { "source": "Where is the station?", "target": "Où est la gare ?" },
+            { "source": "I want a ticket, please.", "target": "Je veux un billet, s'il vous plaît." },
+            { "source": "We wait for the taxi.", "target": "Nous attendons le taxi." },
+            { "source": "The airport is far.", "target": "L'aéroport est loin." },
+            { "source": "She goes by bike.", "target": "Elle va à vélo." },
+            { "source": "The subway is near the hotel.", "target": "Le métro est près de l'hôtel." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Vie quotidienne",
+      "description": "Parler de sa maison, de son travail, de ses loisirs et de sa santé.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u5s1",
+          "title": "La maison",
+          "icon": "🏠",
+          "tips": "En anglais, « room » veut dire « pièce » et sert à former « bedroom » (chambre), « bathroom » (salle de bain) et « living room » (salon). On utilise « in » pour dire qu'on se trouve dans une pièce : « I am in the kitchen » (Je suis dans la cuisine). « To cook » signifie cuisiner et « to clean » nettoyer.",
+          "vocab": [
+            { "term": "house", "translation": "la maison", "emoji": "🏠" },
+            { "term": "kitchen", "translation": "la cuisine", "emoji": "🍳" },
+            { "term": "bedroom", "translation": "la chambre (à coucher)", "emoji": "🛌" },
+            { "term": "living room", "translation": "le salon", "emoji": "🛋️" },
+            { "term": "bathroom", "translation": "la salle de bain", "emoji": "🛁" },
+            { "term": "door", "translation": "la porte", "emoji": "🚪" },
+            { "term": "window", "translation": "la fenêtre", "emoji": "🪟" },
+            { "term": "table", "translation": "la table", "emoji": null },
+            { "term": "garden", "translation": "le jardin", "emoji": "🌳" },
+            { "term": "to clean", "translation": "nettoyer", "emoji": "🧹" },
+            { "term": "to cook", "translation": "cuisiner", "emoji": "👩‍🍳" },
+            { "term": "to open", "translation": "ouvrir", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "The house has a garden.", "target": "La maison a un jardin." },
+            { "source": "I cook in the kitchen.", "target": "Je cuisine dans la cuisine." },
+            { "source": "The table is in the living room.", "target": "La table est dans le salon." },
+            { "source": "I open the door.", "target": "J'ouvre la porte." },
+            { "source": "She cleans the bathroom.", "target": "Elle nettoie la salle de bain." },
+            { "source": "The bedroom is small.", "target": "La chambre est petite." },
+            { "source": "The window is big.", "target": "La fenêtre est grande." },
+            { "source": "The garden is behind the house.", "target": "Le jardin est derrière la maison." }
+          ]
+        },
+        {
+          "id": "u5s2",
+          "title": "Le travail",
+          "icon": "💼",
+          "tips": "« Work » est à la fois un verbe (travailler) et un nom indénombrable (le travail) ; pour un emploi précis, on dit « a job ». « Office » désigne le bureau en tant que lieu, tandis que le meuble se dit « desk ». « Busy » signifie occupé : « My boss is busy » (Mon patron est occupé).",
+          "vocab": [
+            { "term": "job", "translation": "le travail, l'emploi", "emoji": "💼" },
+            { "term": "office", "translation": "le bureau", "emoji": "🏢" },
+            { "term": "meeting", "translation": "la réunion", "emoji": "🗓️" },
+            { "term": "boss", "translation": "le patron, la patronne", "emoji": "👔" },
+            { "term": "colleague", "translation": "le collègue, la collègue", "emoji": "🧑‍💼" },
+            { "term": "to work", "translation": "travailler", "emoji": null },
+            { "term": "computer", "translation": "l'ordinateur", "emoji": "💻" },
+            { "term": "email", "translation": "l'e-mail, le courriel", "emoji": "📧" },
+            { "term": "to send", "translation": "envoyer", "emoji": "📤" },
+            { "term": "busy", "translation": "occupé", "emoji": null },
+            { "term": "salary", "translation": "le salaire", "emoji": "💰" },
+            { "term": "company", "translation": "l'entreprise", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "I work in an office.", "target": "Je travaille dans un bureau." },
+            { "source": "My boss is busy.", "target": "Mon patron est occupé." },
+            { "source": "We have a meeting today.", "target": "Nous avons une réunion aujourd'hui." },
+            { "source": "I send an email.", "target": "J'envoie un e-mail." },
+            { "source": "My colleague has a computer.", "target": "Mon collègue a un ordinateur." },
+            { "source": "She has a good job.", "target": "Elle a un bon travail." },
+            { "source": "The company is big.", "target": "L'entreprise est grande." },
+            { "source": "The salary is good.", "target": "Le salaire est bon." }
+          ]
+        },
+        {
+          "id": "u5s3",
+          "title": "Les loisirs",
+          "icon": "🎨",
+          "tips": "« To play » s'emploie pour les jeux, les sports et les instruments : « play a game », « play football », « play the guitar ». « To listen » est toujours suivi de « to » : « I listen to music » (J'écoute de la musique). « To watch » sert pour la télévision et les films : « watch a movie ».",
+          "vocab": [
+            { "term": "hobby", "translation": "le passe-temps", "emoji": "🎨" },
+            { "term": "music", "translation": "la musique", "emoji": "🎵" },
+            { "term": "to play", "translation": "jouer", "emoji": "🎮" },
+            { "term": "to read", "translation": "lire", "emoji": "📖" },
+            { "term": "book", "translation": "le livre", "emoji": "📚" },
+            { "term": "movie", "translation": "le film", "emoji": "🎬" },
+            { "term": "to sing", "translation": "chanter", "emoji": "🎤" },
+            { "term": "to dance", "translation": "danser", "emoji": "💃" },
+            { "term": "game", "translation": "le jeu", "emoji": "🎲" },
+            { "term": "to listen", "translation": "écouter", "emoji": "🎧" },
+            { "term": "to watch", "translation": "regarder", "emoji": "📺" },
+            { "term": "weekend", "translation": "le week-end", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "I listen to music.", "target": "J'écoute de la musique." },
+            { "source": "We watch a movie.", "target": "Nous regardons un film." },
+            { "source": "She reads a book.", "target": "Elle lit un livre." },
+            { "source": "They play a game.", "target": "Ils jouent à un jeu." },
+            { "source": "He sings and dances.", "target": "Il chante et danse." },
+            { "source": "My hobby is music.", "target": "Mon passe-temps, c'est la musique." },
+            { "source": "I read on the weekend.", "target": "Je lis le week-end." },
+            { "source": "Do you like to dance?", "target": "Aimes-tu danser ?" }
+          ]
+        },
+        {
+          "id": "u5s4",
+          "title": "La santé",
+          "icon": "🩺",
+          "tips": "Pour dire qu'on a mal, on utilise le verbe « to hurt » : « My head hurts » (J'ai mal à la tête). « Sick » (américain) et « ill » (britannique) signifient tous deux « malade ». « Medicine » désigne un médicament ; la pharmacie se dit « pharmacy », ou « chemist's » au Royaume-Uni.",
+          "vocab": [
+            { "term": "doctor", "translation": "le médecin", "emoji": "🩺" },
+            { "term": "sick", "translation": "malade", "emoji": "🤒" },
+            { "term": "hospital", "translation": "l'hôpital", "emoji": "🏥" },
+            { "term": "medicine", "translation": "le médicament", "emoji": "💊" },
+            { "term": "to hurt", "translation": "faire mal", "emoji": null },
+            { "term": "head", "translation": "la tête", "emoji": null },
+            { "term": "stomach", "translation": "le ventre, l'estomac", "emoji": null },
+            { "term": "tired", "translation": "fatigué", "emoji": "😴" },
+            { "term": "to rest", "translation": "se reposer", "emoji": null },
+            { "term": "pharmacy", "translation": "la pharmacie", "emoji": "💊" },
+            { "term": "fever", "translation": "la fièvre", "emoji": "🌡️" },
+            { "term": "healthy", "translation": "en bonne santé", "emoji": "💪" }
+          ],
+          "sentences": [
+            { "source": "I am sick today.", "target": "Je suis malade aujourd'hui." },
+            { "source": "My head hurts.", "target": "J'ai mal à la tête." },
+            { "source": "I go to the doctor.", "target": "Je vais chez le médecin." },
+            { "source": "She has a fever.", "target": "Elle a de la fièvre." },
+            { "source": "The pharmacy is near the hospital.", "target": "La pharmacie est près de l'hôpital." },
+            { "source": "I rest in the bedroom.", "target": "Je me repose dans la chambre." },
+            { "source": "He takes his medicine.", "target": "Il prend son médicament." },
+            { "source": "I am healthy.", "target": "Je suis en bonne santé." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Conversation",
+      "description": "Raconter le passé, parler de l'avenir, donner son avis et voyager.",
+      "color": "#ff9600",
+      "skills": [
+        {
+          "id": "u6s1",
+          "title": "Le passé",
+          "icon": "🕰️",
+          "tips": "Le prétérit (simple past) exprime une action terminée. Les verbes réguliers prennent « -ed » : « visit → visited ». Beaucoup de verbes courants sont irréguliers : « go → went », « see → saw », « eat → ate », « have → had », « do → did ». « To be » devient « was » (I, he, she, it) ou « were » (you, we, they).",
+          "vocab": [
+            { "term": "yesterday", "translation": "hier", "emoji": "📆" },
+            { "term": "last week", "translation": "la semaine dernière", "emoji": null },
+            { "term": "last night", "translation": "hier soir", "emoji": "🌃" },
+            { "term": "ago", "translation": "il y a (temps écoulé)", "emoji": null },
+            { "term": "was", "translation": "étais, était (passé de be)", "emoji": null },
+            { "term": "were", "translation": "étions, étiez, étaient (passé de be)", "emoji": null },
+            { "term": "went", "translation": "suis allé(e), est allé(e) (passé de go)", "emoji": null },
+            { "term": "saw", "translation": "ai vu, a vu (passé de see)", "emoji": "👀" },
+            { "term": "ate", "translation": "ai mangé, a mangé (passé de eat)", "emoji": "🍽️" },
+            { "term": "had", "translation": "ai eu, a eu (passé de have)", "emoji": null },
+            { "term": "did", "translation": "ai fait, a fait (passé de do)", "emoji": null },
+            { "term": "visited", "translation": "ai visité, a visité (passé de visit)", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "Yesterday I went to the city.", "target": "Hier, je suis allé en ville." },
+            { "source": "We saw a movie last night.", "target": "Nous avons vu un film hier soir." },
+            { "source": "She was tired.", "target": "Elle était fatiguée." },
+            { "source": "They were at the hotel.", "target": "Ils étaient à l'hôtel." },
+            { "source": "I visited my colleague last week.", "target": "J'ai rendu visite à mon collègue la semaine dernière." },
+            { "source": "I had a meeting yesterday.", "target": "J'ai eu une réunion hier." },
+            { "source": "What did you do?", "target": "Qu'est-ce que tu as fait ?" },
+            { "source": "I was sick two days ago.", "target": "J'étais malade il y a deux jours." }
+          ]
+        },
+        {
+          "id": "u6s2",
+          "title": "Le futur",
+          "icon": "🔮",
+          "tips": "Le futur se forme avec « will » + verbe : « I will go » (J'irai). Pour une intention ou un projet déjà décidé, on emploie « going to » : « I am going to book a room » (Je vais réserver une chambre). Les contractions sont très courantes : « I'll », « you'll », « won't » (will not).",
+          "vocab": [
+            { "term": "tomorrow", "translation": "demain", "emoji": "🌅" },
+            { "term": "next week", "translation": "la semaine prochaine", "emoji": null },
+            { "term": "next month", "translation": "le mois prochain", "emoji": null },
+            { "term": "next year", "translation": "l'année prochaine", "emoji": null },
+            { "term": "tonight", "translation": "ce soir", "emoji": "🌙" },
+            { "term": "will", "translation": "marque du futur (-rai, -ras, -ra...)", "emoji": null },
+            { "term": "going to", "translation": "aller + verbe (futur proche)", "emoji": null },
+            { "term": "soon", "translation": "bientôt", "emoji": "⏰" },
+            { "term": "later", "translation": "plus tard", "emoji": null },
+            { "term": "maybe", "translation": "peut-être", "emoji": "🤔" },
+            { "term": "to hope", "translation": "espérer", "emoji": "🤞" },
+            { "term": "plan", "translation": "le projet, le plan", "emoji": "📝" }
+          ],
+          "sentences": [
+            { "source": "Tomorrow I will work.", "target": "Demain, je travaillerai." },
+            { "source": "We will go to the airport.", "target": "Nous irons à l'aéroport." },
+            { "source": "I am going to book a room.", "target": "Je vais réserver une chambre." },
+            { "source": "I will send the email later.", "target": "J'enverrai l'e-mail plus tard." },
+            { "source": "Next week we will take the train.", "target": "La semaine prochaine, nous prendrons le train." },
+            { "source": "Maybe I will go tonight.", "target": "Peut-être que j'irai ce soir." },
+            { "source": "I hope to see you soon.", "target": "J'espère te voir bientôt." },
+            { "source": "What is your plan for next year?", "target": "Quel est ton projet pour l'année prochaine ?" }
+          ]
+        },
+        {
+          "id": "u6s3",
+          "title": "Donner son avis",
+          "icon": "💬",
+          "tips": "Pour donner son avis, on commence souvent par « I think (that)... » ou « In my opinion... ». « I agree » signifie « je suis d'accord » et ne prend pas « to be » en anglais : on ne dit jamais « I am agree ». Les comparatifs « better » et « worse » sont irréguliers : « good → better », « bad → worse ».",
+          "vocab": [
+            { "term": "I think", "translation": "je pense", "emoji": "💭" },
+            { "term": "opinion", "translation": "l'avis, l'opinion", "emoji": null },
+            { "term": "in my opinion", "translation": "à mon avis", "emoji": null },
+            { "term": "to agree", "translation": "être d'accord", "emoji": "👍" },
+            { "term": "to disagree", "translation": "ne pas être d'accord", "emoji": "👎" },
+            { "term": "interesting", "translation": "intéressant", "emoji": null },
+            { "term": "boring", "translation": "ennuyeux", "emoji": "🥱" },
+            { "term": "better", "translation": "meilleur, mieux", "emoji": null },
+            { "term": "worse", "translation": "pire", "emoji": null },
+            { "term": "I prefer", "translation": "je préfère", "emoji": null },
+            { "term": "really", "translation": "vraiment", "emoji": null },
+            { "term": "of course", "translation": "bien sûr", "emoji": "✅" }
+          ],
+          "sentences": [
+            { "source": "I think the movie is boring.", "target": "Je pense que le film est ennuyeux." },
+            { "source": "I agree with you.", "target": "Je suis d'accord avec toi." },
+            { "source": "In my opinion, the train is better.", "target": "À mon avis, le train est mieux." },
+            { "source": "The book is really interesting.", "target": "Le livre est vraiment intéressant." },
+            { "source": "I prefer the bus.", "target": "Je préfère le bus." },
+            { "source": "Of course, I agree.", "target": "Bien sûr, je suis d'accord." },
+            { "source": "I disagree with my boss.", "target": "Je ne suis pas d'accord avec mon patron." },
+            { "source": "What is your opinion?", "target": "Quel est ton avis ?" }
+          ]
+        },
+        {
+          "id": "u6s4",
+          "title": "Voyager",
+          "icon": "✈️",
+          "tips": "« Holiday » (britannique) et « vacation » (américain) signifient tous deux « vacances » ; « on holiday » = en vacances. « Trip » désigne un voyage précis, tandis que « to travel » est le verbe (voyager). « Abroad » s'emploie sans préposition : « I travel abroad » (Je voyage à l'étranger).",
+          "vocab": [
+            { "term": "trip", "translation": "le voyage", "emoji": "🧳" },
+            { "term": "to travel", "translation": "voyager", "emoji": "🌍" },
+            { "term": "passport", "translation": "le passeport", "emoji": "🛂" },
+            { "term": "suitcase", "translation": "la valise", "emoji": "🧳" },
+            { "term": "country", "translation": "le pays", "emoji": "🗺️" },
+            { "term": "abroad", "translation": "à l'étranger", "emoji": null },
+            { "term": "beach", "translation": "la plage", "emoji": "🏖️" },
+            { "term": "museum", "translation": "le musée", "emoji": "🏛️" },
+            { "term": "tourist", "translation": "le touriste, la touriste", "emoji": "📸" },
+            { "term": "holiday", "translation": "les vacances", "emoji": "🌴" },
+            { "term": "to pack", "translation": "faire sa valise", "emoji": null },
+            { "term": "to arrive", "translation": "arriver", "emoji": null }
+          ],
+          "sentences": [
+            { "source": "I like to travel.", "target": "J'aime voyager." },
+            { "source": "Where is my passport?", "target": "Où est mon passeport ?" },
+            { "source": "We are going to travel abroad.", "target": "Nous allons voyager à l'étranger." },
+            { "source": "I pack my suitcase.", "target": "Je fais ma valise." },
+            { "source": "The beach is near the hotel.", "target": "La plage est près de l'hôtel." },
+            { "source": "The tourists are at the museum.", "target": "Les touristes sont au musée." },
+            { "source": "We arrived yesterday.", "target": "Nous sommes arrivés hier." },
+            { "source": "Have a good trip!", "target": "Bon voyage !" }
+          ]
+        }
+      ]
+    }
+  ]
+}

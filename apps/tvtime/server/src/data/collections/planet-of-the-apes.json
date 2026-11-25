@@ -1,0 +1,129 @@
+{
+  "id": "planet-of-the-apes",
+  "name": "La Planète des singes",
+  "description": "La saga reboot (des Origines au Nouveau Royaume), puis la saga originale de 1968-1973 et le film de Tim Burton en option. L'ordre affiché par défaut regroupe chaque saga dans l'ordre de son histoire.",
+  "icon": "🐒",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Rise of the Planet of the Apes",
+      "title_fr": "La Planète des singes : Les Origines",
+      "year": 2011,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 7,
+      "group": "Saga reboot",
+      "note": "César, premier singe intelligent, se révolte à San Francisco",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Dawn of the Planet of the Apes",
+      "title_fr": "La Planète des singes : L'Affrontement",
+      "year": 2014,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 8,
+      "group": "Saga reboot",
+      "note": "Dix ans après le virus simien, humains et singes s'affrontent",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "War for the Planet of the Apes",
+      "title_fr": "La Planète des singes : Suprématie",
+      "year": 2017,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 9,
+      "group": "Saga reboot",
+      "note": "La dernière guerre de César contre le Colonel",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Kingdom of the Planet of the Apes",
+      "title_fr": "La Planète des singes : Le Nouveau Royaume",
+      "year": 2024,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 10,
+      "group": "Saga reboot",
+      "note": "Plusieurs générations après César : le royaume de Proximus",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Planet of the Apes",
+      "title_fr": "La Planète des singes",
+      "year": 1968,
+      "tmdb_id": null,
+      "chronological_order": 5,
+      "release_order": 1,
+      "group": "Saga originale",
+      "note": "Le classique avec Charlton Heston et sa fin célèbre",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Beneath the Planet of the Apes",
+      "title_fr": "Le Secret de la planète des singes",
+      "year": 1970,
+      "tmdb_id": null,
+      "chronological_order": 6,
+      "release_order": 2,
+      "group": "Saga originale",
+      "note": "Suite directe : les mutants de la Cité interdite",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Escape from the Planet of the Apes",
+      "title_fr": "Les Évadés de la planète des singes",
+      "year": 1971,
+      "tmdb_id": null,
+      "chronological_order": 7,
+      "release_order": 3,
+      "group": "Saga originale",
+      "note": "Cornelius et Zira remontent le temps jusqu'en 1973",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Conquest of the Planet of the Apes",
+      "title_fr": "La Conquête de la planète des singes",
+      "year": 1972,
+      "tmdb_id": null,
+      "chronological_order": 8,
+      "release_order": 4,
+      "group": "Saga originale",
+      "note": "1991 : César mène la révolte des singes",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Battle for the Planet of the Apes",
+      "title_fr": "La Bataille de la planète des singes",
+      "year": 1973,
+      "tmdb_id": null,
+      "chronological_order": 9,
+      "release_order": 5,
+      "group": "Saga originale",
+      "note": "Conclusion de la saga originale, après la guerre nucléaire",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Planet of the Apes",
+      "title_fr": "La Planète des singes",
+      "year": 2001,
+      "tmdb_id": null,
+      "chronological_order": 10,
+      "release_order": 6,
+      "group": "Tim Burton",
+      "note": "Remake indépendant de Tim Burton avec Mark Wahlberg",
+      "optional": true
+    }
+  ]
+}

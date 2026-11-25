@@ -1,0 +1,820 @@
+[
+  {
+    "id": "squat-barre",
+    "name": "Squat à la barre",
+    "name_en": "Barbell Back Squat",
+    "category": "jambes",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["hamstrings", "lower_back", "abs", "adductors"],
+    "instructions": [
+      "Place la barre sur le haut du dos, pieds écartés largeur d'épaules, pointes légèrement vers l'extérieur.",
+      "Sors la barre du rack et stabilise-toi, regard droit devant.",
+      "Inspire, gaine le tronc puis descends en poussant les hanches en arrière et en pliant les genoux.",
+      "Descends au moins jusqu'à ce que les cuisses soient parallèles au sol.",
+      "Pousse dans les talons pour remonter en expirant, sans verrouiller brutalement les genoux."
+    ],
+    "tips": "Garde les genoux dans l'axe des pieds et le dos neutre ; monte le poids seulement quand la technique est stable.",
+    "mistakes": [
+      "Genoux qui rentrent vers l'intérieur",
+      "Dos qui s'arrondit en bas du mouvement",
+      "Talons qui décollent du sol"
+    ]
+  },
+  {
+    "id": "squat-gobelet",
+    "name": "Squat gobelet",
+    "name_en": "Goblet Squat",
+    "category": "jambes",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["abs", "adductors", "upper_back"],
+    "instructions": [
+      "Tiens un haltère verticalement contre la poitrine, coudes serrés.",
+      "Place les pieds largeur d'épaules, pointes légèrement ouvertes.",
+      "Descends en gardant le buste droit, les coudes passent entre les genoux.",
+      "Marque un temps en bas puis remonte en poussant dans les talons."
+    ],
+    "tips": "Idéal pour apprendre le squat : le poids tenu devant oblige à garder le buste droit.",
+    "mistakes": [
+      "Buste qui s'incline trop vers l'avant",
+      "Descente trop courte"
+    ]
+  },
+  {
+    "id": "fentes",
+    "name": "Fentes",
+    "name_en": "Lunges",
+    "category": "jambes",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["hamstrings", "calves", "abs"],
+    "instructions": [
+      "Debout, pieds largeur de hanches, mains sur les hanches.",
+      "Fais un grand pas en avant et descends jusqu'à ce que le genou arrière frôle le sol.",
+      "Le genou avant reste au-dessus de la cheville, le buste droit.",
+      "Pousse sur le talon avant pour revenir à la position de départ.",
+      "Alterne les jambes à chaque répétition."
+    ],
+    "tips": "Ajoute des haltères dans les mains quand le mouvement au poids du corps devient facile.",
+    "mistakes": [
+      "Genou avant qui dépasse largement la pointe du pied",
+      "Pas trop court qui surcharge le genou",
+      "Buste penché vers l'avant"
+    ]
+  },
+  {
+    "id": "fentes-bulgares",
+    "name": "Fentes bulgares",
+    "name_en": "Bulgarian Split Squat",
+    "category": "jambes",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["hamstrings", "adductors", "abs"],
+    "instructions": [
+      "Place le pied arrière sur un banc ou une chaise, l'autre pied environ un grand pas devant.",
+      "Tiens un haltère dans chaque main, bras le long du corps.",
+      "Descends en pliant le genou avant jusqu'à ce que la cuisse soit parallèle au sol.",
+      "Garde le buste droit et le poids sur le pied avant.",
+      "Remonte en poussant dans le talon avant, puis change de jambe après la série."
+    ],
+    "tips": "Commence sans charge pour trouver la bonne distance du banc : ni trop près, ni trop loin.",
+    "mistakes": [
+      "Pied avant trop proche du banc",
+      "Genou avant qui part vers l'intérieur",
+      "Appui excessif sur le pied arrière"
+    ]
+  },
+  {
+    "id": "souleve-de-terre",
+    "name": "Soulevé de terre",
+    "name_en": "Deadlift",
+    "category": "jambes",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["hamstrings", "glutes", "lower_back"],
+    "secondary_muscles": ["quads", "traps", "upper_back", "forearms", "abs"],
+    "instructions": [
+      "Place la barre au-dessus du milieu des pieds, pieds largeur de hanches.",
+      "Saisis la barre juste à l'extérieur des jambes, bras tendus, dos plat et poitrine ouverte.",
+      "Inspire, gaine le tronc puis pousse le sol avec les jambes en gardant la barre collée aux tibias.",
+      "Termine debout en contractant les fessiers, sans partir en hyperextension.",
+      "Redescends en contrôlant, hanches en arrière, jusqu'à poser la barre."
+    ],
+    "tips": "Pense à « pousser le sol » plutôt qu'à « tirer la barre » : les hanches et les épaules montent ensemble.",
+    "mistakes": [
+      "Dos arrondi au départ",
+      "Barre qui s'éloigne des jambes",
+      "Hanches qui montent avant les épaules"
+    ]
+  },
+  {
+    "id": "souleve-de-terre-roumain",
+    "name": "Soulevé de terre roumain",
+    "name_en": "Romanian Deadlift",
+    "category": "jambes",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["hamstrings", "glutes"],
+    "secondary_muscles": ["lower_back", "forearms", "upper_back"],
+    "instructions": [
+      "Debout, barre en mains devant les cuisses, genoux légèrement fléchis.",
+      "Pousse les hanches vers l'arrière en laissant la barre glisser le long des cuisses.",
+      "Descends jusqu'à sentir l'étirement des ischio-jambiers, dos toujours plat.",
+      "Remonte en serrant les fessiers pour ramener les hanches vers l'avant."
+    ],
+    "tips": "Les genoux bougent très peu : c'est une charnière de hanche, pas un squat.",
+    "mistakes": [
+      "Genoux qui plient trop (ça devient un squat)",
+      "Dos qui s'arrondit en bas",
+      "Barre qui s'éloigne du corps"
+    ]
+  },
+  {
+    "id": "presse-a-cuisses",
+    "name": "Presse à cuisses",
+    "name_en": "Leg Press",
+    "category": "jambes",
+    "equipment": "machine",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["hamstrings", "adductors", "calves"],
+    "instructions": [
+      "Assieds-toi, dos et bassin bien plaqués contre le dossier.",
+      "Place les pieds sur la plateforme, largeur d'épaules, à mi-hauteur.",
+      "Déverrouille les sécurités et descends la plateforme en contrôlant jusqu'à 90° de flexion.",
+      "Pousse dans toute la surface du pied pour revenir, sans verrouiller les genoux."
+    ],
+    "tips": "Si le bas du dos décolle du siège en bas du mouvement, tu descends trop : réduis l'amplitude.",
+    "mistakes": [
+      "Bassin qui bascule et décolle du dossier",
+      "Genoux verrouillés en haut",
+      "Amplitude trop courte avec une charge trop lourde"
+    ]
+  },
+  {
+    "id": "leg-extension",
+    "name": "Leg extension",
+    "name_en": "Leg Extension",
+    "category": "jambes",
+    "equipment": "machine",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["quads"],
+    "secondary_muscles": [],
+    "instructions": [
+      "Règle le siège pour que les genoux soient alignés avec l'axe de rotation de la machine.",
+      "Place le coussin sur le bas des tibias, juste au-dessus des chevilles.",
+      "Tends les jambes en contrôlant jusqu'à l'extension complète et contracte les quadriceps.",
+      "Redescends lentement sans laisser la charge retomber."
+    ],
+    "tips": "Un tempo lent à la descente rend l'exercice bien plus efficace qu'une charge lourde balancée.",
+    "mistakes": [
+      "Mouvement balancé avec élan",
+      "Fesses qui décollent du siège",
+      "Charge qui retombe à la descente"
+    ]
+  },
+  {
+    "id": "leg-curl",
+    "name": "Leg curl allongé",
+    "name_en": "Lying Leg Curl",
+    "category": "jambes",
+    "equipment": "machine",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["hamstrings"],
+    "secondary_muscles": ["calves", "glutes"],
+    "instructions": [
+      "Allonge-toi sur le ventre, coussin placé juste au-dessus des chevilles.",
+      "Garde les hanches plaquées sur le banc et tiens les poignées.",
+      "Ramène les talons vers les fessiers en contractant les ischio-jambiers.",
+      "Redescends en contrôlant jusqu'à l'extension presque complète."
+    ],
+    "tips": "Garde les hanches collées au banc : si elles se soulèvent, la charge est trop lourde.",
+    "mistakes": [
+      "Hanches qui se soulèvent pendant la flexion",
+      "Descente trop rapide"
+    ]
+  },
+  {
+    "id": "hip-thrust",
+    "name": "Hip thrust",
+    "name_en": "Barbell Hip Thrust",
+    "category": "jambes",
+    "equipment": "barre",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["glutes"],
+    "secondary_muscles": ["hamstrings", "abs", "quads"],
+    "instructions": [
+      "Adosse le haut du dos à un banc, barre posée sur le pli des hanches (utilise un coussin).",
+      "Pieds à plat, largeur de hanches, genoux pliés à environ 90°.",
+      "Pousse dans les talons pour monter les hanches jusqu'à l'alignement épaules-hanches-genoux.",
+      "Serre fort les fessiers en haut, menton rentré, puis redescends en contrôlant."
+    ],
+    "tips": "En haut, les tibias doivent être verticaux : ajuste la position des pieds si ce n'est pas le cas.",
+    "mistakes": [
+      "Hyperextension du bas du dos en haut",
+      "Pieds trop loin ou trop près du banc",
+      "Regard vers le plafond qui cambre la nuque"
+    ]
+  },
+  {
+    "id": "mollets-debout",
+    "name": "Mollets debout",
+    "name_en": "Standing Calf Raise",
+    "category": "jambes",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["calves"],
+    "secondary_muscles": [],
+    "instructions": [
+      "Place l'avant des pieds sur le bord d'une marche, talons dans le vide.",
+      "Tiens-toi à un support pour l'équilibre.",
+      "Monte sur la pointe des pieds le plus haut possible et marque un temps.",
+      "Redescends lentement en laissant les talons passer sous le niveau de la marche."
+    ],
+    "tips": "Pour progresser, fais l'exercice sur une jambe ou tiens un haltère dans la main libre.",
+    "mistakes": [
+      "Rebond rapide sans contrôle",
+      "Amplitude trop courte en bas"
+    ]
+  },
+  {
+    "id": "step-up",
+    "name": "Step-up",
+    "name_en": "Dumbbell Step-Up",
+    "category": "jambes",
+    "equipment": "halteres",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["hamstrings", "calves", "abs"],
+    "instructions": [
+      "Place-toi face à un banc ou une marche stable, un haltère dans chaque main.",
+      "Pose le pied entier sur la marche et pousse dans le talon pour monter.",
+      "Monte sans donner d'élan avec la jambe arrière.",
+      "Redescends lentement sur la même jambe, puis alterne."
+    ],
+    "tips": "Choisis une hauteur qui met le genou à peu près au niveau de la hanche, pas plus.",
+    "mistakes": [
+      "Élan donné avec la jambe au sol",
+      "Genou qui rentre vers l'intérieur",
+      "Pied à moitié posé sur la marche"
+    ]
+  },
+  {
+    "id": "squat-sumo",
+    "name": "Squat sumo",
+    "name_en": "Sumo Squat",
+    "category": "jambes",
+    "equipment": "kettlebell",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes", "adductors"],
+    "secondary_muscles": ["hamstrings", "abs"],
+    "instructions": [
+      "Pieds bien plus larges que les épaules, pointes ouvertes à environ 45°.",
+      "Tiens une kettlebell à deux mains devant toi, bras tendus.",
+      "Descends en ouvrant les genoux dans la direction des pieds, buste droit.",
+      "Remonte en serrant les fessiers et l'intérieur des cuisses."
+    ],
+    "tips": "Pousse les genoux vers l'extérieur pendant toute la descente pour bien cibler les adducteurs.",
+    "mistakes": [
+      "Genoux qui rentrent vers l'intérieur",
+      "Buste qui se penche en avant"
+    ]
+  },
+  {
+    "id": "pistol-squat",
+    "name": "Pistol squat",
+    "name_en": "Pistol Squat",
+    "category": "jambes",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "avance",
+    "primary_muscles": ["quads", "glutes"],
+    "secondary_muscles": ["hamstrings", "calves", "abs", "hip_flexors"],
+    "instructions": [
+      "Debout sur une jambe, l'autre tendue devant toi, bras tendus pour l'équilibre.",
+      "Descends lentement en pliant la jambe d'appui, la jambe libre reste décollée du sol.",
+      "Va le plus bas possible en gardant le talon au sol.",
+      "Remonte en poussant dans le talon sans t'aider de l'autre jambe.",
+      "Si nécessaire, tiens-toi à un support ou descends sur une box."
+    ],
+    "tips": "Progresse par étapes : squat sur box, puis assisté avec un élastique ou un support, avant le mouvement libre.",
+    "mistakes": [
+      "Talon qui décolle du sol",
+      "Descente non contrôlée en chute",
+      "Genou qui s'effondre vers l'intérieur"
+    ]
+  },
+  {
+    "id": "crunch",
+    "name": "Crunch",
+    "name_en": "Crunch",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["abs"],
+    "secondary_muscles": ["obliques"],
+    "instructions": [
+      "Allongé sur le dos, genoux pliés, pieds à plat, mains sur les tempes.",
+      "Expire en décollant les épaules du sol, le bas du dos reste plaqué.",
+      "Marque un temps en haut en contractant les abdos.",
+      "Redescends lentement sans reposer complètement la tête."
+    ],
+    "tips": "Le mouvement est court : tu enroules le haut du dos, tu ne te relèves pas jusqu'aux genoux.",
+    "mistakes": [
+      "Tirer sur la nuque avec les mains",
+      "Mouvement balancé avec élan",
+      "Menton collé à la poitrine"
+    ]
+  },
+  {
+    "id": "planche",
+    "name": "Planche",
+    "name_en": "Plank",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "time",
+    "level": "debutant",
+    "primary_muscles": ["abs"],
+    "secondary_muscles": ["obliques", "lower_back", "front_delts", "glutes"],
+    "instructions": [
+      "En appui sur les avant-bras et la pointe des pieds, coudes sous les épaules.",
+      "Aligne tête, épaules, hanches et talons sur une même ligne.",
+      "Serre les fessiers et rentre le nombril pour éviter de cambrer.",
+      "Respire normalement et tiens la position le temps prévu."
+    ],
+    "tips": "Mieux vaut 30 secondes parfaites que 2 minutes avec les hanches qui tombent.",
+    "mistakes": [
+      "Hanches qui s'affaissent",
+      "Fesses trop hautes",
+      "Retenir sa respiration"
+    ]
+  },
+  {
+    "id": "planche-laterale",
+    "name": "Planche latérale",
+    "name_en": "Side Plank",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "time",
+    "level": "debutant",
+    "primary_muscles": ["obliques"],
+    "secondary_muscles": ["abs", "abductors", "side_delts"],
+    "instructions": [
+      "Allongé sur le côté, coude sous l'épaule, jambes tendues l'une sur l'autre.",
+      "Soulève les hanches pour former une ligne droite de la tête aux pieds.",
+      "Garde le bassin vers l'avant, sans le laisser basculer.",
+      "Tiens le temps prévu puis change de côté."
+    ],
+    "tips": "Trop dur ? Pose le genou du bas au sol en gardant les hanches alignées.",
+    "mistakes": [
+      "Hanches qui redescendent",
+      "Bassin qui tourne vers l'arrière",
+      "Épaule qui s'affaisse vers l'oreille"
+    ]
+  },
+  {
+    "id": "releve-de-jambes",
+    "name": "Relevé de jambes",
+    "name_en": "Lying Leg Raise",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["abs", "hip_flexors"],
+    "secondary_muscles": ["obliques", "quads"],
+    "instructions": [
+      "Allongé sur le dos, mains sous les fesses ou le long du corps, jambes tendues.",
+      "Plaque le bas du dos au sol et lève les jambes jusqu'à la verticale.",
+      "Redescends lentement sans que le bas du dos ne décolle.",
+      "Arrête-toi juste avant que les talons touchent le sol."
+    ],
+    "tips": "Si le bas du dos se cambre à la descente, plie légèrement les genoux ou réduis l'amplitude.",
+    "mistakes": [
+      "Bas du dos qui se cambre",
+      "Jambes qui retombent avec élan",
+      "Amplitude incomplète en haut"
+    ]
+  },
+  {
+    "id": "mountain-climbers",
+    "name": "Mountain climbers",
+    "name_en": "Mountain Climbers",
+    "category": "abdos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "time",
+    "level": "debutant",
+    "primary_muscles": ["abs", "hip_flexors"],
+    "secondary_muscles": ["front_delts", "quads", "obliques"],
+    "instructions": [
+      "En position de pompe, mains sous les épaules, corps aligné.",
+      "Ramène un genou vers la poitrine puis change de jambe rapidement.",
+      "Garde les hanches basses et le dos plat pendant tout l'exercice.",
+      "Maintiens le rythme le temps prévu en respirant régulièrement."
+    ],
+    "tips": "Commence lentement pour garder les hanches stables, puis accélère progressivement.",
+    "mistakes": [
+      "Fesses qui montent vers le plafond",
+      "Épaules qui reculent derrière les mains"
+    ]
+  },
+  {
+    "id": "russian-twist",
+    "name": "Russian twist",
+    "name_en": "Russian Twist",
+    "category": "abdos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["obliques", "abs"],
+    "secondary_muscles": ["hip_flexors"],
+    "instructions": [
+      "Assis, genoux pliés, buste incliné en arrière à environ 45°, dos droit.",
+      "Décolle les pieds du sol pour plus de difficulté, ou garde-les posés.",
+      "Tourne le buste d'un côté en amenant les mains vers le sol, puis de l'autre.",
+      "Compte une répétition par côté et garde un rythme contrôlé."
+    ],
+    "tips": "La rotation vient du buste, pas des bras : regarde dans la direction de tes mains.",
+    "mistakes": [
+      "Dos arrondi",
+      "Bras qui bougent sans rotation du tronc",
+      "Mouvement trop rapide avec élan"
+    ]
+  },
+  {
+    "id": "dead-bug",
+    "name": "Dead bug",
+    "name_en": "Dead Bug",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "reps",
+    "level": "debutant",
+    "primary_muscles": ["abs"],
+    "secondary_muscles": ["hip_flexors", "obliques"],
+    "instructions": [
+      "Allongé sur le dos, bras tendus vers le plafond, genoux pliés à 90° au-dessus des hanches.",
+      "Plaque le bas du dos au sol en expirant.",
+      "Tends lentement une jambe vers l'avant et le bras opposé derrière la tête.",
+      "Reviens à la position de départ et alterne."
+    ],
+    "tips": "Va aussi loin que possible sans que le bas du dos décolle du sol : c'est tout l'intérêt de l'exercice.",
+    "mistakes": [
+      "Bas du dos qui se cambre",
+      "Mouvement trop rapide"
+    ]
+  },
+  {
+    "id": "hollow-hold",
+    "name": "Hollow hold",
+    "name_en": "Hollow Body Hold",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "time",
+    "level": "intermediaire",
+    "primary_muscles": ["abs"],
+    "secondary_muscles": ["hip_flexors", "quads", "obliques"],
+    "instructions": [
+      "Allongé sur le dos, bras tendus derrière la tête, jambes tendues.",
+      "Plaque le bas du dos au sol et décolle épaules et jambes de quelques centimètres.",
+      "Forme une légère banane, menton rentré, et tiens la position.",
+      "Pour régresser, plie les genoux ou ramène les bras le long du corps."
+    ],
+    "tips": "La position est correcte si tu peux à peine glisser une main sous le bas du dos, pas plus.",
+    "mistakes": [
+      "Bas du dos qui se cambre",
+      "Jambes trop hautes (trop facile)",
+      "Nuque tendue vers l'arrière"
+    ]
+  },
+  {
+    "id": "roue-abdominale",
+    "name": "Roue abdominale",
+    "name_en": "Ab Wheel Rollout",
+    "category": "abdos",
+    "equipment": "poids-du-corps",
+    "type": "strength",
+    "unit": "reps",
+    "level": "avance",
+    "primary_muscles": ["abs"],
+    "secondary_muscles": ["lats", "obliques", "triceps"],
+    "instructions": [
+      "À genoux, roue abdominale sous les épaules, bras tendus.",
+      "Gaine les abdos, rentre le bassin et déroule la roue vers l'avant.",
+      "Avance jusqu'à ce que le tronc soit presque parallèle au sol, sans cambrer.",
+      "Ramène la roue vers les genoux en contractant les abdos."
+    ],
+    "tips": "Limite l'amplitude au départ : commence face à un mur pour bloquer la roue avant la cambrure.",
+    "mistakes": [
+      "Bas du dos qui se cambre en bout de course",
+      "Hanches qui plient au lieu de rester dans l'alignement",
+      "Bras qui se plient"
+    ]
+  },
+  {
+    "id": "gainage-dynamique",
+    "name": "Gainage dynamique",
+    "name_en": "Plank Up-Down",
+    "category": "abdos",
+    "equipment": "tapis",
+    "type": "strength",
+    "unit": "reps",
+    "level": "intermediaire",
+    "primary_muscles": ["abs"],
+    "secondary_muscles": ["triceps", "front_delts", "obliques", "chest"],
+    "instructions": [
+      "Commence en planche sur les avant-bras, corps aligné.",
+      "Pose une main au sol puis l'autre pour passer en planche bras tendus.",
+      "Redescends sur un avant-bras puis sur l'autre.",
+      "Alterne la main qui commence à chaque répétition en gardant les hanches stables."
+    ],
+    "tips": "Écarte un peu les pieds pour limiter le balancement des hanches pendant les transitions.",
+    "mistakes": [
+      "Hanches qui balancent d'un côté à l'autre",
+      "Fesses trop hautes",
+      "Mouvement précipité"
+    ]
+  },
+  {
+    "id": "course-a-pied",
+    "name": "Course à pied",
+    "name_en": "Running",
+    "category": "cardio",
+    "equipment": "aucun",
+    "type": "cardio",
+    "unit": "distance",
+    "level": "intermediaire",
+    "primary_muscles": ["quads", "hamstrings", "calves", "glutes"],
+    "secondary_muscles": ["hip_flexors", "abs"],
+    "instructions": [
+      "Commence par 5 minutes de marche rapide ou de footing très lent pour t'échauffer.",
+      "Cours à une allure où tu peux encore parler par phrases courtes.",
+      "Garde le buste droit, le regard loin devant et les bras relâchés à 90°.",
+      "Vise des pas courts et fréquents, avec le pied qui se pose sous le corps.",
+      "Termine par quelques minutes de marche pour récupérer."
+    ],
+    "tips": "Augmente le volume hebdomadaire de 10 % maximum pour éviter les blessures.",
+    "mistakes": [
+      "Partir trop vite dès le début",
+      "Foulée trop longue avec attaque talon loin devant",
+      "Augmenter trop vite le kilométrage"
+    ]
+  },
+  {
+    "id": "marche-rapide",
+    "name": "Marche rapide",
+    "name_en": "Brisk Walking",
+    "category": "cardio",
+    "equipment": "aucun",
+    "type": "cardio",
+    "unit": "distance",
+    "level": "debutant",
+    "primary_muscles": ["quads", "calves", "glutes", "hamstrings"],
+    "secondary_muscles": ["abs"],
+    "instructions": [
+      "Marche à une allure soutenue, plus rapide que ta marche habituelle.",
+      "Tiens-toi droit, épaules basses, regard devant.",
+      "Balance activement les bras, coudes légèrement pliés.",
+      "Déroule le pied du talon vers la pointe à chaque pas."
+    ],
+    "tips": "Une bonne allure : tu respires plus fort mais tu peux encore tenir une conversation.",
+    "mistakes": [
+      "Regard vers le sol et dos voûté",
+      "Bras immobiles le long du corps"
+    ]
+  },
+  {
+    "id": "velo",
+    "name": "Vélo",
+    "name_en": "Cycling",
+    "category": "cardio",
+    "equipment": "velo",
+    "type": "cardio",
+    "unit": "distance",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes", "hamstrings", "calves"],
+    "secondary_muscles": ["abs"],
+    "instructions": [
+      "Règle la hauteur de selle : jambe presque tendue quand la pédale est en bas.",
+      "Pédale à une cadence régulière d'environ 80 à 90 tours par minute.",
+      "Garde les épaules relâchées et les coudes légèrement pliés.",
+      "Change de braquet pour maintenir la cadence plutôt que de forcer."
+    ],
+    "tips": "Sur vélo d'appartement, commence par 20 minutes à intensité modérée et allonge progressivement.",
+    "mistakes": [
+      "Selle trop basse qui fatigue les genoux",
+      "Pédalage en force à faible cadence"
+    ]
+  },
+  {
+    "id": "rameur",
+    "name": "Rameur",
+    "name_en": "Rowing Machine",
+    "category": "cardio",
+    "equipment": "machine",
+    "type": "cardio",
+    "unit": "distance",
+    "level": "intermediaire",
+    "primary_muscles": ["quads", "lats", "upper_back", "glutes"],
+    "secondary_muscles": ["hamstrings", "biceps", "forearms", "abs", "lower_back"],
+    "instructions": [
+      "Attache les pieds, saisis la poignée, genoux pliés et buste légèrement incliné en avant.",
+      "Pousse d'abord avec les jambes, puis bascule le buste en arrière, puis tire la poignée vers le bas des côtes.",
+      "Reviens dans l'ordre inverse : bras, buste, puis jambes.",
+      "Vise un rythme de 20 à 26 coups par minute à intensité modérée."
+    ],
+    "tips": "Séquence à retenir : jambes, dos, bras à l'aller ; bras, dos, jambes au retour.",
+    "mistakes": [
+      "Tirer avec les bras avant d'avoir poussé avec les jambes",
+      "Dos arrondi en position de départ",
+      "Cadence trop élevée au détriment de la puissance"
+    ]
+  },
+  {
+    "id": "corde-a-sauter",
+    "name": "Corde à sauter",
+    "name_en": "Jump Rope",
+    "category": "cardio",
+    "equipment": "corde",
+    "type": "cardio",
+    "unit": "time",
+    "level": "debutant",
+    "primary_muscles": ["calves"],
+    "secondary_muscles": ["quads", "front_delts", "forearms", "abs"],
+    "instructions": [
+      "Règle la corde : poignées à hauteur des aisselles quand tu marches dessus.",
+      "Saute sur la pointe des pieds, à quelques centimètres du sol seulement.",
+      "Fais tourner la corde avec les poignets, coudes près du corps.",
+      "Garde le buste droit et le regard devant.",
+      "Travaille par intervalles : 30 secondes de saut, 30 secondes de récupération."
+    ],
+    "tips": "Les sauts doivent être petits et souples : tu amortis sur la pointe des pieds, jamais à plat.",
+    "mistakes": [
+      "Sauts trop hauts qui épuisent vite",
+      "Bras qui tournent en grand au lieu des poignets",
+      "Atterrissage à plat sur les talons"
+    ]
+  },
+  {
+    "id": "burpees",
+    "name": "Burpees",
+    "name_en": "Burpees",
+    "category": "cardio",
+    "equipment": "poids-du-corps",
+    "type": "cardio",
+    "unit": "time",
+    "level": "intermediaire",
+    "primary_muscles": ["quads", "chest", "abs"],
+    "secondary_muscles": ["glutes", "triceps", "front_delts", "calves", "hamstrings"],
+    "instructions": [
+      "Debout, descends en squat et pose les mains au sol.",
+      "Envoie les pieds en arrière en position de planche.",
+      "Fais une pompe (optionnel), puis ramène les pieds vers les mains.",
+      "Saute en l'air bras tendus et enchaîne.",
+      "Maintiens un rythme régulier le temps prévu."
+    ],
+    "tips": "Version débutant : remplace le saut par une simple extension et enlève la pompe.",
+    "mistakes": [
+      "Dos qui se cambre en planche",
+      "Genoux qui rentrent à la réception du saut",
+      "Rythme trop rapide avec une technique dégradée"
+    ]
+  },
+  {
+    "id": "jumping-jacks",
+    "name": "Jumping jacks",
+    "name_en": "Jumping Jacks",
+    "category": "cardio",
+    "equipment": "poids-du-corps",
+    "type": "cardio",
+    "unit": "time",
+    "level": "debutant",
+    "primary_muscles": ["calves", "quads"],
+    "secondary_muscles": ["side_delts", "glutes", "abductors", "adductors"],
+    "instructions": [
+      "Debout, pieds joints, bras le long du corps.",
+      "Saute en écartant les jambes et en levant les bras au-dessus de la tête.",
+      "Saute à nouveau pour revenir à la position de départ.",
+      "Garde un rythme régulier et atterris en souplesse."
+    ],
+    "tips": "Parfait en échauffement : 2 à 3 séries de 30 à 60 secondes avant une séance.",
+    "mistakes": [
+      "Atterrissage lourd sur les talons",
+      "Bras qui ne montent pas complètement"
+    ]
+  },
+  {
+    "id": "hiit-sur-place",
+    "name": "HIIT sur place",
+    "name_en": "Bodyweight HIIT",
+    "category": "cardio",
+    "equipment": "poids-du-corps",
+    "type": "cardio",
+    "unit": "time",
+    "level": "intermediaire",
+    "primary_muscles": ["quads", "glutes", "abs"],
+    "secondary_muscles": ["calves", "chest", "front_delts", "hamstrings"],
+    "instructions": [
+      "Échauffe-toi 3 à 5 minutes avec de la marche sur place et des jumping jacks.",
+      "Enchaîne 4 exercices : squats sautés, mountain climbers, burpees, montées de genoux.",
+      "Travaille 30 à 40 secondes à intensité maximale, récupère 20 à 30 secondes.",
+      "Répète le circuit 3 à 5 fois selon ton niveau.",
+      "Termine par quelques minutes de marche et d'étirements."
+    ],
+    "tips": "Le HIIT est exigeant : 2 à 3 séances par semaine suffisent, jamais deux jours de suite.",
+    "mistakes": [
+      "Sauter l'échauffement",
+      "Récupérations trop longues qui cassent l'intensité",
+      "Technique bâclée quand la fatigue arrive"
+    ]
+  },
+  {
+    "id": "velo-elliptique",
+    "name": "Vélo elliptique",
+    "name_en": "Elliptical Trainer",
+    "category": "cardio",
+    "equipment": "machine",
+    "type": "cardio",
+    "unit": "time",
+    "level": "debutant",
+    "primary_muscles": ["quads", "glutes", "hamstrings"],
+    "secondary_muscles": ["calves", "upper_back", "chest", "abs"],
+    "instructions": [
+      "Monte sur les pédales et saisis les poignées mobiles.",
+      "Pousse avec les jambes en gardant les pieds à plat sur les pédales.",
+      "Pousse et tire les poignées en coordination avec les jambes.",
+      "Garde le buste droit, sans t'appuyer sur les poignées.",
+      "Règle la résistance pour maintenir un effort modéré et régulier."
+    ],
+    "tips": "Sans impact sur les articulations : idéal pour reprendre le cardio ou en récupération active.",
+    "mistakes": [
+      "S'appuyer de tout son poids sur les poignées",
+      "Talons qui décollent des pédales",
+      "Résistance trop faible : les jambes tournent dans le vide"
+    ]
+  },
+  {
+    "id": "natation",
+    "name": "Natation",
+    "name_en": "Swimming",
+    "category": "cardio",
+    "equipment": "aucun",
+    "type": "cardio",
+    "unit": "distance",
+    "level": "intermediaire",
+    "primary_muscles": ["lats", "chest", "front_delts", "upper_back"],
+    "secondary_muscles": ["triceps", "quads", "glutes", "abs", "hamstrings"],
+    "instructions": [
+      "Échauffe-toi avec 100 à 200 mètres en nage lente.",
+      "Alterne les nages (crawl, brasse, dos) pour varier les muscles sollicités.",
+      "Expire dans l'eau et inspire brièvement hors de l'eau à chaque cycle.",
+      "Garde le corps le plus horizontal possible pour limiter la résistance.",
+      "Termine par quelques longueurs lentes pour récupérer."
+    ],
+    "tips": "Travaille par séries (ex. 8 × 50 m avec 20 secondes de repos) plutôt qu'en continu pour progresser.",
+    "mistakes": [
+      "Retenir sa respiration au lieu d'expirer dans l'eau",
+      "Tête trop haute qui fait couler les jambes",
+      "Partir trop vite sur les premières longueurs"
+    ]
+  }
+]

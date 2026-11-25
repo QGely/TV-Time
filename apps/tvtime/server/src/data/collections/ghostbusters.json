@@ -1,0 +1,81 @@
+{
+  "id": "ghostbusters",
+  "name": "SOS Fantômes",
+  "description": "La saga SOS Fantômes : la continuité originale de 1984 à La Menace de glace, la série animée et le reboot de 2016. L'ordre affiché par défaut est l'ordre de l'histoire (le reboot est placé à la fin), différent de l'ordre de sortie.",
+  "icon": "👻",
+  "category": "action",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Ghostbusters",
+      "title_fr": "SOS Fantômes",
+      "year": 1984,
+      "tmdb_id": 620,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": "Saga originale",
+      "note": "Le film original : les débuts des chasseurs de fantômes à New York.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Real Ghostbusters",
+      "title_fr": "SOS Fantômes",
+      "year": 1986,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": "Série animée",
+      "note": "Série animée dans la foulée du premier film. Hors continuité, facultative.",
+      "optional": true
+    },
+    {
+      "type": "movie",
+      "title_en": "Ghostbusters II",
+      "title_fr": "SOS Fantômes 2",
+      "year": 1989,
+      "tmdb_id": 2978,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Saga originale",
+      "note": "Cinq ans après le premier film.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ghostbusters: Afterlife",
+      "title_fr": "SOS Fantômes : L'Héritage",
+      "year": 2021,
+      "tmdb_id": 425909,
+      "chronological_order": 4,
+      "release_order": 5,
+      "group": "Saga originale",
+      "note": "Suite directe de SOS Fantômes 2, trente ans plus tard.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ghostbusters: Frozen Empire",
+      "title_fr": "SOS Fantômes : La Menace de glace",
+      "year": 2024,
+      "tmdb_id": 967847,
+      "chronological_order": 5,
+      "release_order": 6,
+      "group": "Saga originale",
+      "note": "Suite directe de L'Héritage, retour à New York.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Ghostbusters",
+      "title_fr": "SOS Fantômes",
+      "year": 2016,
+      "tmdb_id": 43074,
+      "chronological_order": 6,
+      "release_order": 4,
+      "group": "Reboot",
+      "note": "Reboot indépendant, sans lien avec la saga originale. À voir à part.",
+      "optional": true
+    }
+  ]
+}

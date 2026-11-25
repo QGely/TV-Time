@@ -1,0 +1,394 @@
+{
+  "id": "en",
+  "title": "Anglais",
+  "lang_name": "anglais",
+  "flag": "🇬🇧",
+  "tts_lang": "en-US",
+  "description": "Apprends l'anglais pas à pas : salutations, nombres, famille, nourriture, courses et vêtements.",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Les bases 1",
+      "description": "Se présenter, saluer, dire oui ou non et rester poli.",
+      "color": "#58cc02",
+      "skills": [
+        {
+          "id": "u1s1",
+          "title": "Salutations",
+          "icon": "👋",
+          "tips": "En anglais, « hello » marche à toute heure, tandis que « hi » est plus familier. On dit « good morning » le matin, « good evening » le soir et « good night » seulement pour dire bonne nuit avant d'aller dormir. « How are you? » est la question standard, et la réponse la plus courante est « I'm fine, and you? ».",
+          "vocab": [
+            { "term": "hello", "translation": "bonjour", "emoji": "👋" },
+            { "term": "hi", "translation": "salut", "emoji": "🙋" },
+            { "term": "good morning", "translation": "bonjour (le matin)", "emoji": "🌅" },
+            { "term": "good evening", "translation": "bonsoir", "emoji": "🌆" },
+            { "term": "good night", "translation": "bonne nuit", "emoji": "🌙" },
+            { "term": "goodbye", "translation": "au revoir", "emoji": "👋" },
+            { "term": "see you later", "translation": "à plus tard", "emoji": "⏰" },
+            { "term": "yes", "translation": "oui", "emoji": "✅" },
+            { "term": "no", "translation": "non", "emoji": "❌" },
+            { "term": "how are you?", "translation": "comment vas-tu ? / comment allez-vous ?", "emoji": "❓" },
+            { "term": "I'm fine", "translation": "je vais bien", "emoji": "😊" },
+            { "term": "and you?", "translation": "et toi ? / et vous ?", "emoji": "🔁" }
+          ],
+          "sentences": [
+            { "source": "Hello, how are you?", "target": "Bonjour, comment vas-tu ?" },
+            { "source": "I'm fine, and you?", "target": "Je vais bien, et toi ?" },
+            { "source": "Good morning, see you later.", "target": "Bonjour, à plus tard." },
+            { "source": "Yes, I'm fine.", "target": "Oui, je vais bien." },
+            { "source": "Good evening, how are you?", "target": "Bonsoir, comment allez-vous ?" },
+            { "source": "Goodbye, good night.", "target": "Au revoir, bonne nuit." },
+            { "source": "Hi, how are you?", "target": "Salut, comment vas-tu ?" },
+            { "source": "Hello, yes, I'm fine.", "target": "Bonjour, oui, je vais bien." }
+          ]
+        },
+        {
+          "id": "u1s2",
+          "title": "Se présenter",
+          "icon": "🙂",
+          "tips": "Pour se présenter, on utilise « My name is... » (je m'appelle) ou simplement « I am... » (je suis). Le pronom « I » (je) s'écrit toujours avec une majuscule. Les adjectifs de nationalité prennent aussi une majuscule : « I am French », « I am English ». Pour dire d'où l'on vient : « I am from France ».",
+          "vocab": [
+            { "term": "I", "translation": "je", "emoji": "🙋" },
+            { "term": "my name is", "translation": "je m'appelle", "emoji": "🏷️" },
+            { "term": "what is your name?", "translation": "comment t'appelles-tu ?", "emoji": "❓" },
+            { "term": "nice to meet you", "translation": "enchanté(e)", "emoji": "🤝" },
+            { "term": "I am", "translation": "je suis", "emoji": "👤" },
+            { "term": "I am from", "translation": "je viens de", "emoji": "📍" },
+            { "term": "France", "translation": "la France", "emoji": "🇫🇷" },
+            { "term": "England", "translation": "l'Angleterre", "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
+            { "term": "French", "translation": "français(e)", "emoji": "🥖" },
+            { "term": "English", "translation": "anglais(e)", "emoji": "☕" },
+            { "term": "a student", "translation": "un étudiant / une étudiante", "emoji": "🎓" },
+            { "term": "a teacher", "translation": "un professeur / une professeure", "emoji": "👩‍🏫" }
+          ],
+          "sentences": [
+            { "source": "My name is Paul.", "target": "Je m'appelle Paul." },
+            { "source": "What is your name?", "target": "Comment t'appelles-tu ?" },
+            { "source": "Nice to meet you!", "target": "Enchanté !" },
+            { "source": "I am from France.", "target": "Je viens de France." },
+            { "source": "I am French.", "target": "Je suis français." },
+            { "source": "I am a student.", "target": "Je suis étudiant." },
+            { "source": "Hello, my name is Anna.", "target": "Bonjour, je m'appelle Anna." },
+            { "source": "I am English, and you?", "target": "Je suis anglais, et toi ?" }
+          ]
+        },
+        {
+          "id": "u1s3",
+          "title": "Les nombres 0-20",
+          "icon": "🔢",
+          "tips": "Les nombres de 0 à 10 s'apprennent par cœur. De 13 à 19, on ajoute « -teen » : thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen. Attention aux exceptions : eleven (11) et twelve (12). Pour donner son âge, on utilise « I am » : « I am twenty » = « J'ai vingt ans ».",
+          "vocab": [
+            { "term": "zero", "translation": "zéro", "emoji": "0️⃣" },
+            { "term": "one", "translation": "un", "emoji": "1️⃣" },
+            { "term": "two", "translation": "deux", "emoji": "2️⃣" },
+            { "term": "three", "translation": "trois", "emoji": "3️⃣" },
+            { "term": "four", "translation": "quatre", "emoji": "4️⃣" },
+            { "term": "five", "translation": "cinq", "emoji": "5️⃣" },
+            { "term": "six", "translation": "six", "emoji": "6️⃣" },
+            { "term": "seven", "translation": "sept", "emoji": "7️⃣" },
+            { "term": "eight", "translation": "huit", "emoji": "8️⃣" },
+            { "term": "nine", "translation": "neuf", "emoji": "9️⃣" },
+            { "term": "ten", "translation": "dix", "emoji": "🔟" },
+            { "term": "twenty", "translation": "vingt", "emoji": "2️⃣0️⃣" }
+          ],
+          "sentences": [
+            { "source": "One, two, three, four.", "target": "Un, deux, trois, quatre." },
+            { "source": "Five, six, seven, eight.", "target": "Cinq, six, sept, huit." },
+            { "source": "Nine, ten, twenty.", "target": "Neuf, dix, vingt." },
+            { "source": "I am twenty.", "target": "J'ai vingt ans." },
+            { "source": "I am ten, and you?", "target": "J'ai dix ans, et toi ?" },
+            { "source": "Zero, one, two.", "target": "Zéro, un, deux." },
+            { "source": "Yes, I am eight.", "target": "Oui, j'ai huit ans." },
+            { "source": "No, I am nine.", "target": "Non, j'ai neuf ans." }
+          ]
+        },
+        {
+          "id": "u1s4",
+          "title": "Politesse",
+          "icon": "🙏",
+          "tips": "Les Anglais utilisent « please » et « thank you » très souvent, bien plus qu'en français. « Excuse me » sert à attirer l'attention ou à demander pardon pour passer, alors que « sorry » sert à s'excuser d'une faute. « Sir » et « Madam » sont très formels, on les utilise surtout dans les commerces et les restaurants.",
+          "vocab": [
+            { "term": "please", "translation": "s'il vous plaît / s'il te plaît", "emoji": "🙏" },
+            { "term": "thank you", "translation": "merci", "emoji": "😊" },
+            { "term": "thank you very much", "translation": "merci beaucoup", "emoji": "🙌" },
+            { "term": "you're welcome", "translation": "de rien", "emoji": "👍" },
+            { "term": "sorry", "translation": "désolé(e) / pardon", "emoji": "😔" },
+            { "term": "excuse me", "translation": "excusez-moi", "emoji": "✋" },
+            { "term": "Sir", "translation": "Monsieur", "emoji": "🎩" },
+            { "term": "Madam", "translation": "Madame", "emoji": "👒" },
+            { "term": "welcome", "translation": "bienvenue", "emoji": "🏠" },
+            { "term": "have a nice day", "translation": "bonne journée", "emoji": "☀️" },
+            { "term": "no problem", "translation": "pas de problème", "emoji": "👌" },
+            { "term": "of course", "translation": "bien sûr", "emoji": "💯" }
+          ],
+          "sentences": [
+            { "source": "Thank you very much, Sir.", "target": "Merci beaucoup, Monsieur." },
+            { "source": "You're welcome, Madam.", "target": "De rien, Madame." },
+            { "source": "Excuse me, please.", "target": "Excusez-moi, s'il vous plaît." },
+            { "source": "Thank you, have a nice day!", "target": "Merci, bonne journée !" },
+            { "source": "Welcome, nice to meet you.", "target": "Bienvenue, enchanté." },
+            { "source": "Yes, of course.", "target": "Oui, bien sûr." },
+            { "source": "I am sorry, Sir.", "target": "Je suis désolé, Monsieur." },
+            { "source": "No problem, see you later.", "target": "Pas de problème, à plus tard." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Les bases 2",
+      "description": "La famille, les couleurs, les jours, la météo et les questions simples.",
+      "color": "#1cb0f6",
+      "skills": [
+        {
+          "id": "u2s1",
+          "title": "La famille",
+          "icon": "👨‍👩‍👧‍👦",
+          "tips": "Le possessif « my » (mon, ma, mes) ne change jamais en anglais : « my mother », « my father », « my parents ». Pour présenter quelqu'un, on dit « This is my sister » (voici ma sœur). Le verbe « to be » à la troisième personne est « is » : « My brother is ten » = « Mon frère a dix ans ».",
+          "vocab": [
+            { "term": "family", "translation": "la famille", "emoji": "👨‍👩‍👧" },
+            { "term": "mother", "translation": "la mère", "emoji": "👩" },
+            { "term": "father", "translation": "le père", "emoji": "👨" },
+            { "term": "parents", "translation": "les parents", "emoji": "👫" },
+            { "term": "brother", "translation": "le frère", "emoji": "👦" },
+            { "term": "sister", "translation": "la sœur", "emoji": "👧" },
+            { "term": "son", "translation": "le fils", "emoji": "🧒" },
+            { "term": "daughter", "translation": "la fille", "emoji": "👧" },
+            { "term": "grandmother", "translation": "la grand-mère", "emoji": "👵" },
+            { "term": "grandfather", "translation": "le grand-père", "emoji": "👴" },
+            { "term": "my", "translation": "mon / ma / mes", "emoji": "🫵" },
+            { "term": "this is", "translation": "voici / c'est", "emoji": "👉" }
+          ],
+          "sentences": [
+            { "source": "This is my family.", "target": "Voici ma famille." },
+            { "source": "This is my mother.", "target": "Voici ma mère." },
+            { "source": "My father is French.", "target": "Mon père est français." },
+            { "source": "My sister is a student.", "target": "Ma sœur est étudiante." },
+            { "source": "My brother is ten.", "target": "Mon frère a dix ans." },
+            { "source": "This is my daughter, Anna.", "target": "Voici ma fille, Anna." },
+            { "source": "My grandfather is a teacher.", "target": "Mon grand-père est professeur." },
+            { "source": "My grandmother is from France.", "target": "Ma grand-mère vient de France." }
+          ]
+        },
+        {
+          "id": "u2s2",
+          "title": "Les couleurs",
+          "icon": "🎨",
+          "tips": "En anglais, l'adjectif de couleur est invariable et se place avant le nom : « a red car » (une voiture rouge). Avec le verbe « to be », il vient après : « The car is red ». Pour demander la couleur, on dit « What color is it? ». Notez que « orange » et « pink » s'écrivent comme en français ou presque.",
+          "vocab": [
+            { "term": "red", "translation": "rouge", "emoji": "🔴" },
+            { "term": "blue", "translation": "bleu(e)", "emoji": "🔵" },
+            { "term": "green", "translation": "vert(e)", "emoji": "🟢" },
+            { "term": "yellow", "translation": "jaune", "emoji": "🟡" },
+            { "term": "black", "translation": "noir(e)", "emoji": "⚫" },
+            { "term": "white", "translation": "blanc / blanche", "emoji": "⚪" },
+            { "term": "orange", "translation": "orange", "emoji": "🟠" },
+            { "term": "pink", "translation": "rose", "emoji": "🌸" },
+            { "term": "grey", "translation": "gris(e)", "emoji": "🩶" },
+            { "term": "brown", "translation": "marron / brun(e)", "emoji": "🟤" },
+            { "term": "the car", "translation": "la voiture", "emoji": "🚗" },
+            { "term": "what color is it?", "translation": "de quelle couleur est-ce ?", "emoji": "❓" }
+          ],
+          "sentences": [
+            { "source": "What color is it?", "target": "De quelle couleur est-ce ?" },
+            { "source": "It is red.", "target": "C'est rouge." },
+            { "source": "The car is blue.", "target": "La voiture est bleue." },
+            { "source": "My car is black.", "target": "Ma voiture est noire." },
+            { "source": "It is green and yellow.", "target": "C'est vert et jaune." },
+            { "source": "Is it white?", "target": "Est-ce blanc ?" },
+            { "source": "It is pink and orange.", "target": "C'est rose et orange." },
+            { "source": "The car is grey.", "target": "La voiture est grise." }
+          ]
+        },
+        {
+          "id": "u2s3",
+          "title": "Les jours et le temps",
+          "icon": "📅",
+          "tips": "Les jours de la semaine prennent toujours une majuscule en anglais : Monday, Tuesday... Pour parler de la météo, on utilise « it » : « It is sunny » (il y a du soleil), « It is raining » (il pleut). « Today » signifie aujourd'hui et « tomorrow » demain : « Today is Monday ».",
+          "vocab": [
+            { "term": "Monday", "translation": "lundi", "emoji": "1️⃣" },
+            { "term": "Tuesday", "translation": "mardi", "emoji": "2️⃣" },
+            { "term": "Wednesday", "translation": "mercredi", "emoji": "3️⃣" },
+            { "term": "Thursday", "translation": "jeudi", "emoji": "4️⃣" },
+            { "term": "Friday", "translation": "vendredi", "emoji": "5️⃣" },
+            { "term": "Saturday", "translation": "samedi", "emoji": "6️⃣" },
+            { "term": "Sunday", "translation": "dimanche", "emoji": "7️⃣" },
+            { "term": "today", "translation": "aujourd'hui", "emoji": "📍" },
+            { "term": "tomorrow", "translation": "demain", "emoji": "⏭️" },
+            { "term": "what day is it?", "translation": "quel jour sommes-nous ?", "emoji": "❓" },
+            { "term": "it is sunny", "translation": "il y a du soleil", "emoji": "☀️" },
+            { "term": "it is raining", "translation": "il pleut", "emoji": "🌧️" }
+          ],
+          "sentences": [
+            { "source": "What day is it?", "target": "Quel jour sommes-nous ?" },
+            { "source": "Today is Monday.", "target": "Aujourd'hui, c'est lundi." },
+            { "source": "Tomorrow is Tuesday.", "target": "Demain, c'est mardi." },
+            { "source": "It is sunny today.", "target": "Il y a du soleil aujourd'hui." },
+            { "source": "It is raining today.", "target": "Il pleut aujourd'hui." },
+            { "source": "Is it Friday?", "target": "C'est vendredi ?" },
+            { "source": "Today is Saturday, tomorrow is Sunday.", "target": "Aujourd'hui c'est samedi, demain c'est dimanche." },
+            { "source": "Wednesday, Thursday, Friday.", "target": "Mercredi, jeudi, vendredi." }
+          ]
+        },
+        {
+          "id": "u2s4",
+          "title": "Questions simples",
+          "icon": "❓",
+          "tips": "Les mots interrogatifs anglais commencent presque tous par « wh- » : what (quoi), who (qui), where (où), when (quand), why (pourquoi). « How » (comment) est l'exception. « How much » s'emploie pour un prix ou une quantité non comptable, « how many » pour ce que l'on peut compter. Pour répondre à « why? », on utilise « because » (parce que).",
+          "vocab": [
+            { "term": "what", "translation": "quoi / que", "emoji": "❓" },
+            { "term": "who", "translation": "qui", "emoji": "👤" },
+            { "term": "where", "translation": "où", "emoji": "📍" },
+            { "term": "when", "translation": "quand", "emoji": "🕐" },
+            { "term": "why", "translation": "pourquoi", "emoji": "🤔" },
+            { "term": "how", "translation": "comment", "emoji": "🛠️" },
+            { "term": "how much", "translation": "combien (prix, quantité)", "emoji": "💶" },
+            { "term": "how many", "translation": "combien (nombre)", "emoji": "🔢" },
+            { "term": "what is it?", "translation": "qu'est-ce que c'est ?", "emoji": "🔍" },
+            { "term": "who is it?", "translation": "qui est-ce ?", "emoji": "🚪" },
+            { "term": "I don't know", "translation": "je ne sais pas", "emoji": "🤷" },
+            { "term": "because", "translation": "parce que", "emoji": "💡" }
+          ],
+          "sentences": [
+            { "source": "What is it?", "target": "Qu'est-ce que c'est ?" },
+            { "source": "Who is it?", "target": "Qui est-ce ?" },
+            { "source": "Where is my car?", "target": "Où est ma voiture ?" },
+            { "source": "I don't know.", "target": "Je ne sais pas." },
+            { "source": "Why? Because it is Sunday.", "target": "Pourquoi ? Parce que c'est dimanche." },
+            { "source": "Where is my mother?", "target": "Où est ma mère ?" },
+            { "source": "How are you today?", "target": "Comment vas-tu aujourd'hui ?" },
+            { "source": "How much is it?", "target": "Combien ça coûte ?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Au quotidien",
+      "description": "Manger, commander au restaurant, faire les courses et parler de ses vêtements.",
+      "color": "#ce82ff",
+      "skills": [
+        {
+          "id": "u3s1",
+          "title": "La nourriture",
+          "icon": "🍎",
+          "tips": "Beaucoup d'aliments sont indénombrables en anglais et s'utilisent sans article : « I eat bread » (je mange du pain), « I drink water » (je bois de l'eau). Le « du / de la » français ne se traduit pas. Pour les choses comptables, on met « a » ou « an » devant une voyelle : « an apple ». « I like » (j'aime) se construit aussi sans article : « I like cheese ».",
+          "vocab": [
+            { "term": "bread", "translation": "le pain", "emoji": "🍞" },
+            { "term": "water", "translation": "l'eau", "emoji": "💧" },
+            { "term": "milk", "translation": "le lait", "emoji": "🥛" },
+            { "term": "cheese", "translation": "le fromage", "emoji": "🧀" },
+            { "term": "an apple", "translation": "une pomme", "emoji": "🍎" },
+            { "term": "meat", "translation": "la viande", "emoji": "🥩" },
+            { "term": "fish", "translation": "le poisson", "emoji": "🐟" },
+            { "term": "rice", "translation": "le riz", "emoji": "🍚" },
+            { "term": "coffee", "translation": "le café", "emoji": "☕" },
+            { "term": "I eat", "translation": "je mange", "emoji": "🍽️" },
+            { "term": "I drink", "translation": "je bois", "emoji": "🥤" },
+            { "term": "I like", "translation": "j'aime", "emoji": "❤️" }
+          ],
+          "sentences": [
+            { "source": "I eat bread.", "target": "Je mange du pain." },
+            { "source": "I drink water.", "target": "Je bois de l'eau." },
+            { "source": "I like cheese.", "target": "J'aime le fromage." },
+            { "source": "I eat an apple.", "target": "Je mange une pomme." },
+            { "source": "I drink milk.", "target": "Je bois du lait." },
+            { "source": "I like fish and rice.", "target": "J'aime le poisson et le riz." },
+            { "source": "I eat meat today.", "target": "Je mange de la viande aujourd'hui." },
+            { "source": "My brother likes coffee.", "target": "Mon frère aime le café." }
+          ]
+        },
+        {
+          "id": "u3s2",
+          "title": "Au restaurant",
+          "icon": "🍽️",
+          "tips": "Pour commander poliment, on utilise « I would like... » (je voudrais), souvent contracté en « I'd like ». On demande « a table for two » (une table pour deux) et, à la fin, « the bill, please » (l'addition, s'il vous plaît). Aux États-Unis, on dit plutôt « the check ». « Enjoy your meal! » correspond à « bon appétit ».",
+          "vocab": [
+            { "term": "a restaurant", "translation": "un restaurant", "emoji": "🍴" },
+            { "term": "the menu", "translation": "le menu / la carte", "emoji": "📋" },
+            { "term": "a table for two", "translation": "une table pour deux", "emoji": "🪑" },
+            { "term": "the bill", "translation": "l'addition", "emoji": "🧾" },
+            { "term": "the waiter", "translation": "le serveur", "emoji": "🤵" },
+            { "term": "I would like", "translation": "je voudrais", "emoji": "🙋" },
+            { "term": "a glass of", "translation": "un verre de", "emoji": "🥛" },
+            { "term": "a cup of", "translation": "une tasse de", "emoji": "☕" },
+            { "term": "delicious", "translation": "délicieux / délicieuse", "emoji": "😋" },
+            { "term": "a dessert", "translation": "un dessert", "emoji": "🍰" },
+            { "term": "the soup", "translation": "la soupe", "emoji": "🥣" },
+            { "term": "enjoy your meal", "translation": "bon appétit", "emoji": "🍽️" }
+          ],
+          "sentences": [
+            { "source": "A table for two, please.", "target": "Une table pour deux, s'il vous plaît." },
+            { "source": "Where is the waiter?", "target": "Où est le serveur ?" },
+            { "source": "I would like a glass of water.", "target": "Je voudrais un verre d'eau." },
+            { "source": "I would like a cup of coffee.", "target": "Je voudrais une tasse de café." },
+            { "source": "The soup is delicious.", "target": "La soupe est délicieuse." },
+            { "source": "The bill, please.", "target": "L'addition, s'il vous plaît." },
+            { "source": "Enjoy your meal, Sir.", "target": "Bon appétit, Monsieur." },
+            { "source": "I would like a dessert.", "target": "Je voudrais un dessert." }
+          ]
+        },
+        {
+          "id": "u3s3",
+          "title": "Les courses",
+          "icon": "🛒",
+          "tips": "Pour demander un prix, on dit « How much does it cost? » ou plus simplement « How much is it? ». La réponse utilise « It costs... » : « It costs ten euros ». « Expensive » signifie cher et « cheap » bon marché. « I need » (j'ai besoin de) se construit directement avec le nom : « I need money ».",
+          "vocab": [
+            { "term": "a shop", "translation": "un magasin", "emoji": "🏪" },
+            { "term": "the market", "translation": "le marché", "emoji": "🧺" },
+            { "term": "the supermarket", "translation": "le supermarché", "emoji": "🛒" },
+            { "term": "I buy", "translation": "j'achète", "emoji": "💳" },
+            { "term": "how much does it cost?", "translation": "combien ça coûte ?", "emoji": "❓" },
+            { "term": "it costs", "translation": "ça coûte", "emoji": "🏷️" },
+            { "term": "expensive", "translation": "cher / chère", "emoji": "💎" },
+            { "term": "cheap", "translation": "bon marché / pas cher", "emoji": "🪙" },
+            { "term": "money", "translation": "l'argent", "emoji": "💰" },
+            { "term": "euros", "translation": "des euros", "emoji": "💶" },
+            { "term": "a kilo of", "translation": "un kilo de", "emoji": "⚖️" },
+            { "term": "I need", "translation": "j'ai besoin de", "emoji": "📝" }
+          ],
+          "sentences": [
+            { "source": "How much does it cost?", "target": "Combien ça coûte ?" },
+            { "source": "It costs ten euros.", "target": "Ça coûte dix euros." },
+            { "source": "It is expensive!", "target": "C'est cher !" },
+            { "source": "It is cheap.", "target": "C'est bon marché." },
+            { "source": "I buy bread and cheese.", "target": "J'achète du pain et du fromage." },
+            { "source": "I need a kilo of apples.", "target": "J'ai besoin d'un kilo de pommes." },
+            { "source": "Where is the supermarket?", "target": "Où est le supermarché ?" },
+            { "source": "I need money.", "target": "J'ai besoin d'argent." }
+          ]
+        },
+        {
+          "id": "u3s4",
+          "title": "Les vêtements",
+          "icon": "👕",
+          "tips": "« I wear » signifie « je porte » (un vêtement). Certains vêtements sont toujours au pluriel en anglais : « trousers » (un pantalon), « shoes » (des chaussures), « socks » (des chaussettes). Aux États-Unis, on dit « pants » au lieu de « trousers ». La couleur se place avant le nom : « a blue shirt » (une chemise bleue).",
+          "vocab": [
+            { "term": "clothes", "translation": "les vêtements", "emoji": "👚" },
+            { "term": "a shirt", "translation": "une chemise", "emoji": "👔" },
+            { "term": "a t-shirt", "translation": "un t-shirt", "emoji": "👕" },
+            { "term": "trousers", "translation": "un pantalon", "emoji": "👖" },
+            { "term": "a dress", "translation": "une robe", "emoji": "👗" },
+            { "term": "a jacket", "translation": "une veste", "emoji": "🧥" },
+            { "term": "a coat", "translation": "un manteau", "emoji": "🧥" },
+            { "term": "shoes", "translation": "des chaussures", "emoji": "👟" },
+            { "term": "a hat", "translation": "un chapeau", "emoji": "🎩" },
+            { "term": "socks", "translation": "des chaussettes", "emoji": "🧦" },
+            { "term": "I wear", "translation": "je porte", "emoji": "🪞" },
+            { "term": "the size", "translation": "la taille", "emoji": "📏" }
+          ],
+          "sentences": [
+            { "source": "I wear a blue shirt.", "target": "Je porte une chemise bleue." },
+            { "source": "My dress is red.", "target": "Ma robe est rouge." },
+            { "source": "I wear a black jacket.", "target": "Je porte une veste noire." },
+            { "source": "Where are my shoes?", "target": "Où sont mes chaussures ?" },
+            { "source": "I need a coat.", "target": "J'ai besoin d'un manteau." },
+            { "source": "I buy a hat.", "target": "J'achète un chapeau." },
+            { "source": "The t-shirt is white.", "target": "Le t-shirt est blanc." },
+            { "source": "What size is it?", "target": "C'est quelle taille ?" }
+          ]
+        }
+      ]
+    }
+  ]
+}

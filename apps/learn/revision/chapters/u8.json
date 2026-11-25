@@ -1,0 +1,1027 @@
+{
+ "unit": "u8",
+ "title": "Performances et préparation du vol",
+ "exam": {
+  "questions": 12,
+  "minutes": 18
+ },
+ "pitch": "Ton avion peut-il décoller, monter, aller et revenir avec ce que tu as chargé ? Masse et centrage, distances, montée, croisière, carburant et préparation du vol. Beaucoup de petits calculs : refais chaque exemple, crayon en main.",
+ "essentials": [
+  "**Charge utile = MTOM − masse à vide** (MTOM : masse maximale au décollage). **AVGAS** (essence aviation) **≈ 0,72 kg/L** : 108 kg = **150 L**.",
+  "**CG = ΣM ÷ Σm** (moment = masse × bras ; CG : centre de gravité). Il doit rester **dans l’enveloppe**, au décollage **et** à l’atterrissage.",
+  "Centrage **avant** : stable, lourd à cabrer. Centrage **arrière** : moins stable ; au-delà de la limite, vrille parfois irrécupérable : **le plus dangereux**.",
+  "Distances du manuel : passage à **15 m (50 ft)**. Corrige-les, puis **× 1,33** au décollage et **× 1,43** à l’atterrissage. Compare aux distances disponibles (**TODA**, **LDA**).",
+  "Allongent le décollage : **masse** (+10 % → +20 %), **chaleur, altitude, humidité**, **vent arrière**, **herbe**, pente montante. Les corrections **se multiplient**.",
+  "**Altitude-densité ≈ altitude-pression + 120 ft par °C** au-dessus de l’ISA (atmosphère standard : 15 °C, −2 °C par 1 000 ft).",
+  "**Vx** : meilleur **angle** (obstacle). **Vy** : meilleur **taux** (montée normale). Le vent change la pente sol, **pas le taux**.",
+  "Attendre : **puissance nécessaire minimale**. Aller loin : **finesse maximale**. Le vent change la distance sol, **jamais l’autonomie** en heures.",
+  "**Réserve finale** (Part-NCO, vols non commerciaux) : **30 min** de jour, **45 min** de nuit, **10 min** en vol local de jour.",
+  "Préparation : météo, NOTAM (avis aux navigants), cartes à jour, carburant, masse et centrage, performances, plan B. En vol : **restant ≥ besoin + réserve**, sinon **déroute tôt**."
+ ],
+ "sections": [
+  {
+   "title": "Les masses et le carburant",
+   "summary": "Tout ce que tu embarques se paie en masse : connais les masses limites et convertis bien le carburant.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "items": [
+      "**Masse à vide** : avion équipé, avec le carburant inutilisable, l’huile et les fluides prévus. Elle figure, avec son bras, sur la **fiche de pesée**.",
+      "**MTOM** (*Maximum Take-Off Mass*) : masse maximale au début du roulement au décollage. À ne **jamais** dépasser.",
+      "**MLM** (*Maximum Landing Mass*) : masse maximale à l’atterrissage. Souvent égale à la MTOM, parfois **inférieure**.",
+      "**Masse sans carburant** (ZFM, *Zero Fuel Mass*) = masse à vide + occupants + bagages. Sa limite, la **MZFM**, protège l’emplanture des ailes ; elle est rare sur avion léger.",
+      "**Charge utile = MTOM − masse à vide** : occupants, bagages et carburant s’y partagent."
+     ],
+     "title": "Les masses du manuel de vol"
+    },
+    {
+     "type": "formula",
+     "label": "Masse du carburant",
+     "formula": "Masse (kg) = volume (L) × densité ; volume = masse ÷ densité\nAVGAS 100LL : 0,72 kg/L · Jet A-1 (kérosène, moteurs diesel) : 0,80 kg/L\n1 USG (gallon US) ≈ 3,785 L ≈ 2,7 kg d’AVGAS · 1 lb (livre) ≈ 0,454 kg",
+     "example": "MTOM 1 000 kg ; masse sans carburant (avion vide, occupants, bagages) : 892 kg. Il reste 108 kg, soit 108 ÷ 0,72 = **150 L** d’AVGAS. Le plein ne passe pas ? Moins d’essence, ou moins de passagers."
+    },
+    {
+     "type": "trap",
+     "text": "Confondre **litres et kilos** : 108 kg font 150 L, pas 108 L. Autre piège : oublier la MLM. 1 400 kg au départ − 45 kg brûlés = 1 355 kg. MLM de 1 340 kg : il faut alléger de 15 kg."
+    }
+   ]
+  },
+  {
+   "title": "Le centrage : bras, moments et enveloppe",
+   "summary": "Le centre de gravité (CG) est le point d’équilibre de l’avion chargé : tu le calcules avec les moments.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "items": [
+      "**Référence** (*datum*) : point fixe choisi par le constructeur, par exemple la cloison pare-feu.",
+      "**Bras de levier** d : distance d’une masse à la référence, donnée pour chaque siège, soute et réservoir.",
+      "**Moment** M = m × d, en kg·m. Comme sur une **balançoire**, 20 kg à 2 m pèsent autant que 40 kg à 1 m.",
+      "**CG = ΣM ÷ Σm** (Σ : somme), en m depuis la référence."
+     ]
+    },
+    {
+     "type": "table",
+     "caption": "Devis de masse et centrage (exemple)",
+     "columns": [
+      "Poste",
+      "Masse (kg)",
+      "Bras (m)",
+      "Moment (kg·m)"
+     ],
+     "rows": [
+      [
+       "Avion à vide",
+       "700",
+       "0,90",
+       "630"
+      ],
+      [
+       "Pilote et passager",
+       "180",
+       "1,00",
+       "180"
+      ],
+      [
+       "Carburant : 100 L × 0,72",
+       "72",
+       "1,25",
+       "90"
+      ],
+      [
+       "Bagages",
+       "48",
+       "2,50",
+       "120"
+      ],
+      [
+       "**Total**",
+       "**1 000**",
+       "**CG 1,02**",
+       "**1 020**"
+      ]
+     ],
+     "note": "CG = 1 020 ÷ 1 000 = **1,02 m**. Vérifie aussi masse ≤ MTOM et chaque soute ≤ sa limite, puis reporte le point sur l’enveloppe."
+    },
+    {
+     "type": "diagram",
+     "svg": "<svg viewBox=\"0 40 680 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"340\" fill=\"#ffffff\"/><defs><marker id=\"u8ea\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"11\" markerHeight=\"11\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker></defs><line x1=\"160.0\" y1=\"55\" x2=\"160.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"230.0\" y1=\"55\" x2=\"230.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"300.0\" y1=\"55\" x2=\"300.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"370.0\" y1=\"55\" x2=\"370.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"440.0\" y1=\"55\" x2=\"440.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"510.0\" y1=\"55\" x2=\"510.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"580.0\" y1=\"55\" x2=\"580.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"650.0\" y1=\"55\" x2=\"650.0\" y2=\"280\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"90\" y1=\"255.0\" x2=\"650\" y2=\"255.0\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"90\" y1=\"205.0\" x2=\"650\" y2=\"205.0\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"90\" y1=\"155.0\" x2=\"650\" y2=\"155.0\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"90\" y1=\"105.0\" x2=\"650\" y2=\"105.0\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><line x1=\"90\" y1=\"55.0\" x2=\"650\" y2=\"55.0\" stroke=\"#e6e9f0\" stroke-width=\"1\"/><polygon points=\"160.0,280.0 160.0,180.0 272.0,80.0 510.0,80.0 510.0,280.0\" fill=\"#e3f4e8\" stroke=\"#2e7d4f\" stroke-width=\"2.6\"/><line x1=\"90\" y1=\"280\" x2=\"650\" y2=\"280\" stroke=\"#14213d\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"55\" x2=\"90\" y2=\"280\" stroke=\"#14213d\" stroke-width=\"1.6\"/><text x=\"90.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">0,85</text><text x=\"160.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">0,90</text><text x=\"230.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">0,95</text><text x=\"300.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">1,00</text><text x=\"370.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">1,05</text><text x=\"440.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">1,10</text><text x=\"510.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">1,15</text><text x=\"580.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">1,20</text><text x=\"650.0\" y=\"299\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">1,25</text><text x=\"82\" y=\"259.5\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">700</text><text x=\"82\" y=\"209.5\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">800</text><text x=\"82\" y=\"159.5\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">900</text><text x=\"82\" y=\"109.5\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">1 000</text><text x=\"82\" y=\"59.5\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">1 100</text><text x=\"370\" y=\"322\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">Position du CG (m depuis la référence)</text><text transform=\"translate(24,168) rotate(-90)\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">Masse (kg)</text><text x=\"391\" y=\"72\" font-size=\"13\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">MTOM 1 050 kg</text><text x=\"400\" y=\"228\" font-size=\"16\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">Vol autorisé</text><text x=\"172\" y=\"270\" font-size=\"13\" fill=\"#2e7d4f\" text-anchor=\"start\">limite avant</text><text x=\"498\" y=\"270\" font-size=\"13\" fill=\"#2e7d4f\" text-anchor=\"end\">limite arrière</text><line x1=\"325.0\" y1=\"111.0\" x2=\"311.9\" y2=\"126.80000000000001\" stroke=\"#1d4e89\" stroke-width=\"2\" marker-end=\"url(#u8ea)\"/><circle cx=\"328.0\" cy=\"105.0\" r=\"6\" fill=\"#1d4e89\"/><circle cx=\"308.4\" cy=\"133.8\" r=\"6\" fill=\"#1d4e89\"/><text x=\"340.0\" y=\"102.0\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\">Décollage</text><text x=\"340.0\" y=\"118.0\" font-size=\"13\" fill=\"#14213d\">1 000 kg · 1,02 m</text><text x=\"320.4\" y=\"147.8\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\">Atterrissage</text><text x=\"320.4\" y=\"163.8\" font-size=\"13\" fill=\"#14213d\">942 kg · 1,01 m</text><circle cx=\"538.0\" cy=\"125.0\" r=\"6\" fill=\"#c0392b\"/><text x=\"550.0\" y=\"123.0\" font-size=\"13\" font-weight=\"700\" fill=\"#c0392b\">hors limite</text><text x=\"550.0\" y=\"139.0\" font-size=\"13\" font-weight=\"700\" fill=\"#c0392b\">arrière</text><circle cx=\"188.0\" cy=\"95.0\" r=\"6\" fill=\"#c0392b\"/><text x=\"188.0\" y=\"83.0\" font-size=\"13\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">hors limite avant</text></svg>",
+     "title": "Vérifier sur l’enveloppe (limites fictives de l’exemple)",
+     "caption": "Après 80 L brûlés (57,6 kg à 1,25 m) : 942 kg, CG ≈ 1,01 m. Le réservoir est derrière le CG, donc le CG **avance**. Seule l’enveloppe de **ton** manuel fait foi."
+    },
+    {
+     "type": "formula",
+     "label": "Ajouter ou déplacer une masse",
+     "formula": "Ajout : nouveau CG = (ΣM + m × d) ÷ (Σm + m)\nDéplacement : ΔCG = m × Δd ÷ masse totale",
+     "example": "800 kg, CG 0,90 m, plus 40 kg à 2,00 m : (720 + 80) ÷ 840 ≈ **0,95 m**. Sur 900 kg, un sac de 18 kg passe de 2,50 à 1,00 m : ΔCG = 18 × (−1,50) ÷ 900 = **−0,03 m**."
+    },
+    {
+     "type": "key",
+     "text": "Réservoir **derrière** le CG : le CG **avance** en vol ; **devant** : il **recule**. Refais donc le calcul pour l’**atterrissage**.\nEnveloppe tracée en **masse / moment** : reporte directement Σm et ΣM, sans diviser.\nCatégorie **utilitaire**, si le manuel la prévoit : enveloppe plus petite, limite arrière plus avancée. Une vrille autorisée exige d’être chargé dans cette enveloppe."
+    },
+    {
+     "type": "trap",
+     "text": "Mesurer les bras depuis le CG à vide ou depuis les roues : ils partent tous de la **référence du constructeur**. Autre piège : croire que le CG reste fixe pendant le vol."
+    }
+   ]
+  },
+  {
+   "title": "Centrage avant, centrage arrière, surcharge",
+   "summary": "Un avion mal chargé vole encore, mais il décolle long, devient lourd aux commandes ou incontrôlable.",
+   "blocks": [
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Centrage avant",
+       "points": [
+        "Avion **plus stable**, efforts à cabrer **plus forts**.",
+        "L’empennage déporte plus : **vitesse de décrochage et consommation un peu plus élevées**.",
+        "Au-delà de la limite : profondeur insuffisante à la **rotation** ou à l’**arrondi**."
+       ]
+      },
+      {
+       "title": "Centrage arrière",
+       "points": [
+        "Commandes **légères**, stabilité **réduite**.",
+        "Vitesse de décrochage et traînée un peu plus faibles.",
+        "Au-delà de la limite : stabilité insuffisante, voire nulle ; **vrille parfois irrécupérable**. **Le plus dangereux.**"
+       ]
+      }
+     ]
+    },
+    {
+     "type": "memo",
+     "text": "Une **fléchette** vole droit parce que sa masse est **devant** ses plumes. Lestée à l’arrière, elle part en culbute : ton avion aussi."
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "Décollage et atterrissage plus longs (+10 % de masse ≈ +20 % au décollage, ≈ +10 % à l’atterrissage), montée plus faible.",
+      "Vitesse de décrochage plus élevée : elle croît comme √masse (masse × 1,21 → vitesse × 1,1).",
+      "Structure surchargée : les facteurs de charge limites valent à la MTOM. Hors limites, **on ne part pas**."
+     ],
+     "title": "Ce que coûte une masse excessive"
+    },
+    {
+     "type": "trap",
+     "text": "Attribuer au centrage **arrière** le manque d’autorité à cabrer : c’est le défaut du centrage **avant**. L’arrière menace la stabilité et la sortie de vrille."
+    }
+   ]
+  },
+  {
+   "title": "Décollage et atterrissage : distances et facteurs",
+   "summary": "Le manuel donne des distances idéales ; masse, air chaud, vent, pente et herbe les modifient.",
+   "blocks": [
+    {
+     "type": "bullets",
+     "items": [
+      "**Décollage** : roulement (jusqu’à l’envol) et distance jusqu’au passage de **15 m (50 ft)**. Roulement ≤ **TORA** ; distance de décollage ≤ **TODA**.",
+      "**Atterrissage** : distance depuis le passage de 15 m jusqu’à l’arrêt complet, et roulement. Distance d’atterrissage ≤ **LDA**."
+     ],
+     "title": "Les distances du manuel"
+    },
+    {
+     "type": "diagram",
+     "svg": "<svg viewBox=\"0 14 700 258\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"272\" fill=\"#ffffff\"/><defs><marker id=\"u8dlda\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#6a4c93\"/></marker><marker id=\"u8dtora\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#14213d\"/></marker><marker id=\"u8dasda\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#b3401a\"/></marker><marker id=\"u8dtoda\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2b7a9b\"/></marker><marker id=\"u8ddir\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#3d4a66\"/></marker><marker id=\"u8dw\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto-start-reverse\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#ffffff\"/></marker></defs><line x1=\"100\" y1=\"26\" x2=\"236\" y2=\"26\" stroke=\"#3d4a66\" stroke-width=\"2.2\" marker-end=\"url(#u8ddir)\"/><text x=\"248\" y=\"31\" font-size=\"13\" fill=\"#3d4a66\">sens du décollage</text><rect x=\"480\" y=\"94\" width=\"150\" height=\"64\" fill=\"#eaf4f8\" stroke=\"#2b7a9b\" stroke-width=\"2\" stroke-dasharray=\"7 4\"/><rect x=\"100\" y=\"110\" width=\"380\" height=\"32\" fill=\"#5b6475\"/><line x1=\"200\" y1=\"126\" x2=\"470\" y2=\"126\" stroke=\"#ffffff\" stroke-width=\"2.2\" stroke-dasharray=\"14 10\"/><line x1=\"110\" y1=\"126\" x2=\"170\" y2=\"126\" stroke=\"#ffffff\" stroke-width=\"2.4\" marker-end=\"url(#u8dw)\"/><rect x=\"180\" y=\"112\" width=\"6\" height=\"28\" fill=\"#ffffff\"/><rect x=\"480\" y=\"110\" width=\"70\" height=\"32\" fill=\"#f2c14e\" stroke=\"#9a7414\" stroke-width=\"1.4\"/><path d=\"M488 142 L506 110 M502 142 L520 110 M516 142 L534 110 M530 142 L548 110\" fill=\"none\" stroke=\"#9a7414\" stroke-width=\"1.6\"/><text x=\"143\" y=\"100\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">seuil décalé</text><text x=\"630\" y=\"58\" font-size=\"13\" fill=\"#2b7a9b\" text-anchor=\"end\"><tspan font-weight=\"700\">prolongement dégagé (CWY)</tspan> : sans obstacle</text><line x1=\"604\" y1=\"63\" x2=\"604\" y2=\"94\" stroke=\"#2b7a9b\" stroke-width=\"1.4\"/><text x=\"546\" y=\"82\" font-size=\"13\" fill=\"#9a7414\" text-anchor=\"end\"><tspan font-weight=\"700\">prolongement d’arrêt (SWY)</tspan></text><line x1=\"515\" y1=\"86\" x2=\"515\" y2=\"110\" stroke=\"#9a7414\" stroke-width=\"1.4\"/><line x1=\"100\" y1=\"142\" x2=\"100\" y2=\"262\" stroke=\"#9aa2b4\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"186\" y1=\"142\" x2=\"186\" y2=\"178\" stroke=\"#9aa2b4\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"480\" y1=\"158\" x2=\"480\" y2=\"206\" stroke=\"#9aa2b4\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"550\" y1=\"142\" x2=\"550\" y2=\"234\" stroke=\"#9aa2b4\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"630\" y1=\"158\" x2=\"630\" y2=\"262\" stroke=\"#9aa2b4\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><line x1=\"187\" y1=\"178\" x2=\"479\" y2=\"178\" stroke=\"#6a4c93\" stroke-width=\"2\" marker-start=\"url(#u8dlda)\" marker-end=\"url(#u8dlda)\"/><text x=\"333.0\" y=\"172\" font-size=\"13\" fill=\"#6a4c93\" text-anchor=\"middle\"><tspan font-weight=\"700\">LDA</tspan> : atterrissage, après le seuil</text><line x1=\"101\" y1=\"206\" x2=\"479\" y2=\"206\" stroke=\"#14213d\" stroke-width=\"2\" marker-start=\"url(#u8dtora)\" marker-end=\"url(#u8dtora)\"/><text x=\"290.0\" y=\"200\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\"><tspan font-weight=\"700\">TORA</tspan> : roulement au décollage</text><line x1=\"101\" y1=\"234\" x2=\"549\" y2=\"234\" stroke=\"#b3401a\" stroke-width=\"2\" marker-start=\"url(#u8dasda)\" marker-end=\"url(#u8dasda)\"/><text x=\"325.0\" y=\"228\" font-size=\"13\" fill=\"#b3401a\" text-anchor=\"middle\"><tspan font-weight=\"700\">ASDA</tspan> = TORA + SWY</text><line x1=\"101\" y1=\"262\" x2=\"629\" y2=\"262\" stroke=\"#2b7a9b\" stroke-width=\"2\" marker-start=\"url(#u8dtoda)\" marker-end=\"url(#u8dtoda)\"/><text x=\"365.0\" y=\"256\" font-size=\"13\" fill=\"#2b7a9b\" text-anchor=\"middle\"><tspan font-weight=\"700\">TODA</tspan> = TORA + CWY : décollage jusqu’à 15 m</text></svg>",
+     "title": "Les distances déclarées, publiées sur la carte VAC (approche à vue)",
+     "caption": "**TORA** : *take-off run available*. **TODA** : *take-off distance available*. **ASDA** : *accelerate-stop distance available*. **LDA** : *landing distance available*. La zone avant un seuil décalé reste en général utilisable au décollage."
+    },
+    {
+     "type": "formula",
+     "label": "Altitude-pression et altitude-densité",
+     "formula": "Altitude-pression ≈ altitude du terrain + (1 013 − QNH) × 28 ft\nTempérature ISA = 15 °C − 2 °C par 1 000 ft\nAltitude-densité ≈ altitude-pression + 120 ft × (T réelle − T ISA)",
+     "example": "Terrain à 1 720 ft, QNH (calage altimétrique) 1 003 hPa, 25 °C. Altitude-pression ≈ 1 720 + 10 × 28 = 2 000 ft. ISA à 2 000 ft : 11 °C, soit ISA + 14. Altitude-densité ≈ 2 000 + 14 × 120 = **3 680 ft**."
+    },
+    {
+     "type": "table",
+     "caption": "Ce qui change les distances (majorations indicatives, si le manuel ne dit rien)",
+     "columns": [
+      "Facteur",
+      "Décollage",
+      "Atterrissage",
+      "Pourquoi"
+     ],
+     "rows": [
+      [
+       "Masse + 10 %",
+       "≈ +20 %",
+       "≈ +10 %",
+       "vitesses plus grandes"
+      ],
+      [
+       "+10 °C ou +1 000 ft",
+       "+10 %",
+       "+5 %",
+       "air moins dense"
+      ],
+      [
+       "Air humide",
+       "plus long",
+       "plus long",
+       "**moins dense** que l’air sec"
+      ],
+      [
+       "Vent de face",
+       "plus court",
+       "plus court",
+       "vitesse sol plus faible"
+      ],
+      [
+       "Vent arrière (*)",
+       "≈ +20 %",
+       "nettement plus long",
+       "vitesse sol plus grande"
+      ],
+      [
+       "Pente de 2 %",
+       "+10 % (montante)",
+       "+10 % (descendante)",
+       "le poids freine ou pousse"
+      ],
+      [
+       "Herbe sèche",
+       "+20 %",
+       "+15 %",
+       "roulement et freinage moins bons"
+      ],
+      [
+       "Herbe mouillée",
+       "+30 %",
+       "+35 % (courte : jusqu’à +60 %)",
+       "freinage très médiocre"
+      ],
+      [
+       "Sol mou, neige",
+       "+25 % ou plus",
+       "+25 % ou plus",
+       "roulement freiné"
+      ]
+     ],
+     "note": "(*) Vent arrière égal à 10 % de la vitesse d’envol. Les corrections **se multiplient**. Ne compte pas deux fois ce que l’abaque intègre déjà (température, altitude, vent)."
+    },
+    {
+     "type": "formula",
+     "label": "Vent de face et vent de travers",
+     "formula": "Vent de face = vent × cos α ; vent de travers = vent × sin α\nα : angle entre le vent et l’axe de piste ; cos α = sin (90° − α)\nsin 30° = 0,5 · sin 45° ≈ 0,7 · sin 60° ≈ 0,87",
+     "example": "Piste 27 (270°), vent 300°/20 kt (nœuds : milles nautiques par heure) : α = 30°. Travers : 20 × 0,5 = **10 kt**. Face : 20 × 0,87 ≈ **17 kt**. Compare le travers au maximum démontré du manuel et à tes minima."
+    },
+    {
+     "type": "trap",
+     "text": "Croire que le vent arrière « pousse » l’avion. Il s’envole à une vitesse **par rapport à l’air** : vent arrière, sa vitesse sol d’envol est plus grande. Et l’air humide est **moins** dense, pas plus."
+    },
+    {
+     "type": "memo",
+     "text": "« **Chaud, haut, humide, lourd** » : les quatre ennemis du décollage. Leurs effets se multiplient."
+    }
+   ]
+  },
+  {
+   "title": "Lire le manuel, corriger, garder des marges",
+   "summary": "Tu lis l’abaque dans l’ordre, tu appliques les corrections puis le coefficient de sécurité, et tu compares à la piste.",
+   "blocks": [
+    {
+     "type": "steps",
+     "items": [
+      "Entre par la **température** extérieure ; monte jusqu’à l’**altitude-pression** du terrain.",
+      "Pars à l’horizontale jusqu’à la **ligne de référence** de la grille masse. Suis les **courbes guides** jusqu’à ta masse.",
+      "Fais de même pour le **vent** (face ou arrière), puis pour l’**obstacle de 15 m**. Lis la distance.",
+      "Entre deux courbes ou deux lignes, **interpole** ; dans le doute, arrondis du côté défavorable."
+     ],
+     "title": "Lire un abaque de décollage"
+    },
+    {
+     "type": "formula",
+     "label": "Interpoler dans un tableau",
+     "formula": "D = D1 + (x − x1) ÷ (x2 − x1) × (D2 − D1)",
+     "example": "450 m à 0 ft, 530 m à 2 000 ft. À 1 000 ft : 450 + (1 000 ÷ 2 000) × 80 = **490 m**. N’extrapole pas hors du tableau."
+    },
+    {
+     "type": "formula",
+     "label": "Distance à comparer à la piste",
+     "formula": "Distance retenue = distance du manuel × corrections × coefficient\nDécollage : × 1,33, à comparer à la TODA\nAtterrissage : × 1,43, à comparer à la LDA",
+     "example": "Manuel : 400 m (15 m) à 15 °C. Il fait 25 °C (× 1,10), herbe mouillée (× 1,30), pente montante de 2 % (× 1,10). 400 × 1,10 × 1,30 × 1,10 × 1,33 ≈ **837 m**. TODA de 800 m : **tu ne pars pas**."
+    },
+    {
+     "type": "key",
+     "text": "Le manuel suppose un avion **neuf**, un **pilote d’essai** et une piste en dur **sèche et horizontale** : d’où les marges.\n× 1,43 = n’utiliser que **70 %** de la LDA. Manuel 450 m, LDA 600 m : 450 × 1,43 ≈ 644 m > 600 m, **refusé**.\n× 1,33 = n’utiliser qu’environ **75 %** de la TODA."
+    },
+    {
+     "type": "trap",
+     "text": "**Additionner** les pourcentages : 500 × (1 + 0,20 + 0,33) = 765 m, faux. Les corrections **se multiplient** : 500 × 1,20 × 1,33 ≈ 800 m."
+    }
+   ]
+  },
+  {
+   "title": "La montée : Vx, Vy et plafonds",
+   "summary": "Vx te fait monter raide pour passer l’obstacle, Vy te fait monter vite pour gagner du temps.",
+   "blocks": [
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Vx : meilleur angle",
+       "points": [
+        "Le plus de hauteur par **distance** parcourue.",
+        "Excédent de **traction** maximal.",
+        "Pour **franchir un obstacle** ; ensuite, accélère à Vy."
+       ]
+      },
+      {
+       "title": "Vy : meilleur taux",
+       "points": [
+        "Le plus de hauteur par **minute** (ft/min).",
+        "Excédent de **puissance** maximal.",
+        "Vitesse de **montée normale**. Toujours **Vx < Vy**."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "svg": "<svg viewBox=\"0 26 700 246\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"272\" fill=\"#ffffff\"/><rect x=\"20\" y=\"240\" width=\"660\" height=\"9\" fill=\"#ece3d3\"/><line x1=\"20\" y1=\"240\" x2=\"680\" y2=\"240\" stroke=\"#7a5c2e\" stroke-width=\"2\"/><rect x=\"20\" y=\"235\" width=\"62\" height=\"8\" fill=\"#5b6475\"/><text x=\"51\" y=\"264\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">piste</text><polygon points=\"312,240 330,120 348,240\" fill=\"#2e7d4f\"/><polygon points=\"340,240 356,132 372,240\" fill=\"#3f9a63\"/><text x=\"342\" y=\"264\" font-size=\"13\" fill=\"#2e7d4f\" text-anchor=\"middle\">obstacle</text><line x1=\"80\" y1=\"240\" x2=\"400\" y2=\"64.0\" stroke=\"#1d4e89\" stroke-width=\"3.2\"/><line x1=\"80\" y1=\"240\" x2=\"540\" y2=\"46.8\" stroke=\"#d35400\" stroke-width=\"3.2\"/><path d=\"M323 128.0 L337 142.0 M337 128.0 L323 142.0\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"384\" y=\"196\" font-size=\"13\" font-weight=\"700\" fill=\"#c0392b\">Vy : trop bas pour l’obstacle</text><line x1=\"340\" y1=\"97.0\" x2=\"660\" y2=\"97.0\" stroke=\"#1d4e89\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><line x1=\"500\" y1=\"63.6\" x2=\"660\" y2=\"63.6\" stroke=\"#d35400\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><circle cx=\"340\" cy=\"97.0\" r=\"6\" fill=\"#1d4e89\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"500\" cy=\"63.6\" r=\"6\" fill=\"#d35400\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><text x=\"328\" y=\"89.0\" font-size=\"13\" fill=\"#1d4e89\" text-anchor=\"end\">après 1 min</text><text x=\"488\" y=\"54.6\" font-size=\"13\" fill=\"#d35400\" text-anchor=\"end\">après 1 min</text><line x1=\"652\" y1=\"63.6\" x2=\"652\" y2=\"97.0\" stroke=\"#14213d\" stroke-width=\"1.6\"/><text x=\"644\" y=\"85.3\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">Vy plus haut</text><text x=\"392\" y=\"54\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"end\">Vx : meilleur angle</text><text x=\"548\" y=\"44\" font-size=\"14\" font-weight=\"700\" fill=\"#d35400\">Vy : meilleur taux</text></svg>",
+     "title": "Vx contre Vy (schéma exagéré)",
+     "caption": "À distance égale, Vx monte plus haut : lui seul passe l’obstacle. Au bout d’une minute, Vy, plus rapide, est plus haut."
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "**Masse** plus forte : taux et pente diminuent.",
+      "**Altitude** ou **chaleur** : le moteur atmosphérique perd de la puissance ; taux et pente diminuent aussi.",
+      "**Vent** : taux **inchangé**. Pente sol plus forte face au vent, plus faible vent arrière.",
+      "En vitesse indiquée, **Vx augmente** un peu et **Vy diminue** avec l’altitude : elles se rejoignent au plafond absolu.",
+      "**Plafond pratique** : taux maximal de **100 ft/min** (0,5 m/s). **Plafond absolu** : taux **nul**, jamais atteint. Tous deux baissent avec la masse et la chaleur."
+     ],
+     "title": "Ce qui change la montée"
+    },
+    {
+     "type": "formula",
+     "label": "Taux, pente et hauteur gagnée",
+     "formula": "Pente (%) ≈ Vz (ft/min) ÷ Vs (kt)\nHauteur gagnée par NM (ft) = Vz × 60 ÷ Vs\nVz : vitesse verticale · Vs : vitesse sol · 1 kt ≈ 101 ft/min\nNM : mille nautique = 1 852 m ≈ 6 076 ft",
+     "example": "600 ft/min à Vs 80 kt : pente ≈ 7,5 %, soit 450 ft par NM. Avec 20 kt de face, Vs 60 kt : même taux, mais **600 ft par NM** (10 %)."
+    },
+    {
+     "type": "memo",
+     "text": "Le **X** a plus d’**angles** que le Y : Vx, meilleur angle. Et x vient avant y dans l’alphabet : **Vx < Vy**."
+    },
+    {
+     "type": "trap",
+     "text": "Confondre **taux** et **angle** : Vy donne le plus de ft/min, Vx le plus de hauteur par mètre. Et croire que le vent de face améliore le taux : il ne change que la pente sol."
+    }
+   ]
+  },
+  {
+   "title": "Croisière, autonomie, rayon d’action et plané",
+   "summary": "En croisière, tu échanges vitesse contre carburant ; le vent change la distance, pas l’autonomie.",
+   "blocks": [
+    {
+     "type": "table",
+     "caption": "Lire un tableau de croisière (valeurs d’école, à une altitude donnée)",
+     "columns": [
+      "Puissance",
+      "Régime",
+      "Vitesse vraie",
+      "Consommation",
+      "NM par litre"
+     ],
+     "rows": [
+      [
+       "55 %",
+       "2 300 tr/min",
+       "104 kt",
+       "24 L/h",
+       "4,3"
+      ],
+      [
+       "65 %",
+       "2 450 tr/min",
+       "110 kt",
+       "28 L/h",
+       "3,9"
+      ],
+      [
+       "75 %",
+       "2 600 tr/min",
+       "115 kt",
+       "33 L/h",
+       "3,5"
+      ]
+     ],
+     "note": "+36 % de puissance pour +11 % de vitesse : la puissance nécessaire croît comme **V³** environ. **Appauvris** le mélange, selon le manuel."
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Autonomie maximale : rester en l’air",
+       "points": [
+        "**Puissance nécessaire minimale**.",
+        "Consommation **horaire** minimale (L/h).",
+        "Pour **attendre** ; la plus **lente** des deux."
+       ]
+      },
+      {
+       "title": "Distance maximale : aller loin",
+       "points": [
+        "**Finesse maximale** (traînée minimale), avion à hélice.",
+        "Consommation **par NM** minimale.",
+        "Vent de face : un peu **plus vite** ; arrière : moins."
+       ]
+      }
+     ]
+    },
+    {
+     "type": "formula",
+     "label": "Autonomie, distance et rayon d’action",
+     "formula": "Autonomie (h) = carburant utilisable (L) ÷ consommation (L/h)\nDistance franchissable (NM) = autonomie × Vs\nRayon d’action : t aller = autonomie × Vs retour ÷ (Vs aller + Vs retour)\npuis rayon R = t aller × Vs aller",
+     "example": "120 L hors réserve à 30 L/h : 4 h, soit **360 NM** à Vs 90 kt. Rayon : 3 h, Vp (vitesse propre) 100 kt, 20 kt de face à l’aller (Vs 80 puis 120 kt). t aller = 3 × 120 ÷ 200 = 1,8 h ; R = 1,8 × 80 = **144 NM**. Sans vent : 150 NM ; **tout vent le réduit**."
+    },
+    {
+     "type": "formula",
+     "label": "Descente et plané",
+     "formula": "Plané : distance = hauteur × finesse (air calme)\nFinesse 10 : 1 000 ft de hauteur ≈ 1,6 NM\nDescente moteur à 5 % (≈ 3°) : 300 ft par NM ; taux ≈ Vs × 5",
+     "example": "Panne à 3 000 ft sol, finesse 9 : 27 000 ft ≈ **4,4 NM** en air calme, moins face au vent. De 4 500 à 1 500 ft à Vs 100 kt : 10 NM, environ 500 ft/min."
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "Plane à la **vitesse de finesse maximale** : plus lourd, même distance mais plus vite. Volets et hélice en moulinet dégradent la finesse."
+     ]
+    },
+    {
+     "type": "trap",
+     "text": "Confondre les deux vitesses : **attendre** = puissance minimale, la plus lente ; **aller loin** = finesse maximale, plus rapide. Et croire que voler vite économise l’essence « parce qu’on arrive plus tôt »."
+    }
+   ]
+  },
+  {
+   "title": "Préparer le vol : informations, route, documents",
+   "summary": "Avant de partir : informations à jour, route sûre, plan B et documents en règle.",
+   "blocks": [
+    {
+     "type": "key",
+     "text": "Avant tout vol, le commandant de bord prend connaissance de **toutes les informations utiles**. S’il quitte les abords de l’aérodrome : météo à jour, **carburant nécessaire** et **solution de rechange**.",
+     "title": "La règle (SERA.2010, règles de l’air européennes)"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "**Météo** et **NOTAM** d’abord : le vol tient-il dans tes minima ? Sinon, reporte.",
+      "**Route** : contourne les zones **P** (interdites) et **R** (réglementées) actives ; évite les **D** (dangereuses), le relief et les régions sans terrain.",
+      "**Points tournants** uniques, visibles de loin, espacés de 10 à 15 min de vol.",
+      "**Altitude de sécurité** : point le plus haut à 5 NM de part et d’autre du trait, + 500 ft au moins. Croisière au-dessus, en VMC (conditions de vol à vue) ; règle semi-circulaire au-dessus de 3 000 ft sol.",
+      "**Log et carburant** (section suivante), **masse et centrage**, **performances** au départ et à l’arrivée.",
+      "**Déroutement** préparé (terrain, route, distance, temps), **plan de vol** si besoin, **documents** à bord."
+     ],
+     "title": "Préparer la navigation, dans l’ordre"
+    },
+    {
+     "type": "table",
+     "caption": "Où trouver quoi",
+     "columns": [
+      "Besoin",
+      "Source",
+      "Ce que tu y trouves"
+     ],
+     "rows": [
+      [
+       "Météo",
+       "Aéroweb (Météo-France)",
+       "METAR (observation), TAF (prévision d’aérodrome), TEMSI (temps significatif), WINTEM (vent et température en altitude), SIGMET (phénomène dangereux)"
+      ],
+      [
+       "Permanent",
+       "AIP France (publication d’information aéronautique) du SIA (Service de l’information aéronautique)",
+       "GEN (généralités), ENR (en route : espaces, zones), AD (aérodromes)"
+      ],
+      [
+       "Temporaire",
+       "NOTAM, SUP AIP (suppléments) ; SOFIA-Briefing, service en ligne du SIA",
+       "ZRT (zones réglementées temporaires), zones activées, travaux, pistes fermées"
+      ],
+      [
+       "Terrain",
+       "Carte VAC en vigueur",
+       "Distances déclarées, tour de piste, cheminements, fréquences"
+      ],
+      [
+       "Route",
+       "Carte OACI au 1/500 000 en vigueur",
+       "Relief, obstacles, espaces, zones P, R, D et leurs limites"
+      ]
+     ],
+     "note": "OACI : Organisation de l’aviation civile internationale. AIP mise à jour à dates fixes, au cycle AIRAC de **28 jours**. Heures des NOTAM en **UTC** (temps universel) : heure légale = UTC + 2 l’été, UTC + 1 l’hiver."
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "Obligatoire notamment : vol **contrôlé**, **passage de frontière**, vol **de nuit** quittant les abords de l’aérodrome.",
+      "Pour une clairance demandée en vol, l’appel radio tient lieu de **plan de vol abrégé**.",
+      "Pas exigé pour un vol VFR (règles de vol à vue) de jour en espace non contrôlé, **quelle que soit sa durée**.",
+      "Dépôt au moins **60 min** avant le départ (en France, **30 min** pour un vol VFR intérieur). À l’arrivée, **clôture-le vite** : sans nouvelles 30 min après l’heure prévue, l’alerte démarre (**INCERFA**)."
+     ],
+     "title": "Plan de vol (SERA.4001)"
+    },
+    {
+     "type": "table",
+     "caption": "Les documents",
+     "columns": [
+      "Pour qui",
+      "Ce qu’il faut à bord",
+      "À savoir"
+     ],
+     "rows": [
+      [
+       "**Pilote** (FCL.045)",
+       "Licence, certificat médical valide, pièce d’identité avec photo",
+       "Carnet de vol : au sol, présenté sur demande"
+      ],
+      [
+       "**Avion** (NCO.GEN.135)",
+       "Manuel de vol ; certificats d’immatriculation et de navigabilité (originaux) ; assurance ; carnet de route ; cartes à jour ; procédures d’interception ; certificat acoustique et LSA (licence de station d’aéronef), le cas échéant",
+       "Vol local : certificats, LSA, assurance et carnet de route peuvent rester au terrain"
+      ]
+     ]
+    },
+    {
+     "type": "memo",
+     "text": "**PAVE** avant chaque vol : **P**ilote (forme, entraînement), **A**vion (documents, carburant), en**V**ironnement (météo, terrain), pressions **E**xtérieures (horaire, passagers)."
+    },
+    {
+     "type": "trap",
+     "text": "Tes **minima personnels** (fixés à froid, plus stricts que la loi) disent 10 kt de vent de travers ; on prévoit 15 kt. Partir parce que le manuel a **démontré** 17 kt est une faute : reporte, ou change de destination."
+    }
+   ]
+  },
+  {
+   "title": "Bilan carburant et suivi en vol",
+   "summary": "Tu pars avec l’étape, un éventuel dégagement et la réserve finale, puis tu vérifies le carburant tout au long du vol.",
+   "blocks": [
+    {
+     "type": "formula",
+     "label": "Carburant minimal au départ",
+     "formula": "Départ = roulage + étape + dégagement éventuel + réserve finale + marge\nÉtape (délestage) = consommation horaire × temps de vol (avec la Vs)",
+     "example": "1 h 40 de vol à 24 L/h, roulage 4 L, VFR de jour. Étape : 1 h 40 = 5/3 h, × 24 = 40 L. Réserve 30 min : 12 L. Minimum : 4 + 40 + 12 = **56 L** (62 L de nuit), soit environ 40 kg."
+    },
+    {
+     "type": "key",
+     "text": "**30 min** de jour, **45 min** de nuit, en vitesse d’attente à **1 500 ft** au-dessus de la destination. Vol local de jour (même terrain, toujours en vue) : **10 min** à la puissance maximale continue de croisière.\nEn vigueur depuis le 30 octobre 2022 (règlement (UE) 2021/1296). Elle ne se consomme pas en exploitation normale ; l’inutilisable ne compte jamais.",
+     "title": "Réserve finale (Part-NCO, AMC1 NCO.OP.125(b))"
+    },
+    {
+     "type": "table",
+     "caption": "Mini-log : 28 L/h, 70 L utilisables au départ",
+     "columns": [
+      "Branche",
+      "Distance",
+      "Vs",
+      "Temps",
+      "Carburant",
+      "Restant"
+     ],
+     "rows": [
+      [
+       "Mise en route, roulage",
+       "–",
+       "–",
+       "–",
+       "3 L",
+       "67 L"
+      ],
+      [
+       "A → B",
+       "60 NM",
+       "80 kt",
+       "45 min",
+       "21 L",
+       "46 L"
+      ],
+      [
+       "B → C",
+       "30 NM",
+       "100 kt",
+       "18 min",
+       "8,4 L",
+       "37,6 L"
+      ],
+      [
+       "**Réserve finale 30 min**",
+       "",
+       "",
+       "",
+       "**14 L**",
+       "marge **23,6 L**"
+      ]
+     ],
+     "note": "Temps = distance × 60 ÷ Vs ; carburant = 28 × temps ÷ 60. Caps, heures et fréquences : voir le log en 5.7."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Note l’heure du décollage : le temps écoulé est ton premier indicateur de consommation.",
+      "À chaque repère, **recale** : heure réelle (HR) contre heure estimée (HE). Corrige Vs, heures, et le cap (règle du 1 sur 60).",
+      "Carburant restant = départ − consommation × temps écoulé. Compare aux jauges, **garde la valeur la plus défavorable**.",
+      "Compare au besoin : fin du vol **+ réserve finale**. Écart inexpliqué : pense **fuite** ou consommation anormale.",
+      "Change de réservoir selon le manuel, en croisière, loin du sol.",
+      "Le restant ne couvre plus étape + réserve ? **Déroute tôt**, depuis un repère sûr, et préviens l’organisme en contact."
+     ],
+     "title": "Suivre le vol : recalages et carburant (voir 5.8)"
+    },
+    {
+     "type": "key",
+     "text": "Engagé vers un terrain, tout nouveau retard te ferait atterrir sous la réserve finale : **« MINIMUM FUEL »** (pas encore une urgence).\nCarburant prévu à l’atterrissage, au terrain sûr le plus proche, **sous la réserve finale** : **« MAYDAY MAYDAY MAYDAY FUEL »**.",
+     "title": "Carburant critique : les mots à dire"
+    },
+    {
+     "type": "trap",
+     "text": "Calculer le carburant avec la **Vp** au lieu de la Vs, ou écrire 1 h 40 = 1,4 h : c’est **1,67 h**. Et compter la réserve finale dans le temps disponible pour le trajet."
+    }
+   ]
+  }
+ ],
+ "key_numbers": [
+  {
+   "value": "0,72 kg/L",
+   "label": "AVGAS 100LL (150 L = 108 kg)"
+  },
+  {
+   "value": "0,80 kg/L",
+   "label": "Jet A-1 (kérosène, moteurs diesel)"
+  },
+  {
+   "value": "3,785 L",
+   "label": "1 USG ≈ 2,7 kg d’AVGAS"
+  },
+  {
+   "value": "0,454 kg",
+   "label": "1 lb (livre)"
+  },
+  {
+   "value": "15 m",
+   "label": "50 ft : hauteur des distances du manuel"
+  },
+  {
+   "value": "+20 %",
+   "label": "décollage pour +10 % de masse"
+  },
+  {
+   "value": "× 1,1",
+   "label": "décrochage, si masse × 1,21"
+  },
+  {
+   "value": "28 ft/hPa",
+   "label": "altitude-pression : (1 013 − QNH) × 28"
+  },
+  {
+   "value": "120 ft/°C",
+   "label": "altitude-densité au-dessus de l’ISA"
+  },
+  {
+   "value": "15 °C",
+   "label": "ISA au niveau de la mer, −2 °C/1 000 ft"
+  },
+  {
+   "value": "+10 %",
+   "label": "décollage : +10 °C ou +1 000 ft"
+  },
+  {
+   "value": "+10 %",
+   "label": "pente de 2 % dans le mauvais sens"
+  },
+  {
+   "value": "+20 %",
+   "label": "vent arrière = 10 % de V d’envol"
+  },
+  {
+   "value": "+20 / +15 %",
+   "label": "herbe sèche : décollage / atterrissage"
+  },
+  {
+   "value": "+30 / +35 %",
+   "label": "herbe mouillée : décollage / atterrissage"
+  },
+  {
+   "value": "+60 %",
+   "label": "atterrissage, herbe courte mouillée"
+  },
+  {
+   "value": "+25 %",
+   "label": "sol mou ou neige (ou plus)"
+  },
+  {
+   "value": "× 1,33",
+   "label": "décollage (≈ 75 % de la TODA)"
+  },
+  {
+   "value": "× 1,43",
+   "label": "atterrissage (70 % de la LDA)"
+  },
+  {
+   "value": "0,5",
+   "label": "sin 30° (sin 45° ≈ 0,7 ; sin 60° ≈ 0,87)"
+  },
+  {
+   "value": "100 ft/min",
+   "label": "plafond pratique (absolu : 0)"
+  },
+  {
+   "value": "101 ft/min",
+   "label": "1 kt ; 1 NM = 1 852 m ≈ 6 076 ft"
+  },
+  {
+   "value": "55 à 75 %",
+   "label": "puissance de croisière usuelle"
+  },
+  {
+   "value": "≈ V³",
+   "label": "puissance nécessaire en croisière"
+  },
+  {
+   "value": "1,6 NM",
+   "label": "plané par 1 000 ft, finesse 10"
+  },
+  {
+   "value": "300 ft/NM",
+   "label": "descente à 5 % (≈ 3°) ; taux ≈ Vs × 5"
+  },
+  {
+   "value": "30 / 45 min",
+   "label": "réserve finale jour / nuit, à 1 500 ft"
+  },
+  {
+   "value": "10 min",
+   "label": "réserve, vol local de jour"
+  },
+  {
+   "value": "5 NM / 500 ft",
+   "label": "bande et marge de l’altitude de sécurité"
+  },
+  {
+   "value": "3 000 ft sol",
+   "label": "au-dessus : règle semi-circulaire"
+  },
+  {
+   "value": "60 min",
+   "label": "dépôt du plan de vol (VFR intérieur en France : 30 min)"
+  },
+  {
+   "value": "30 min",
+   "label": "sans nouvelles : phase INCERFA"
+  },
+  {
+   "value": "28 jours",
+   "label": "cycle AIRAC de mise à jour de l’AIP"
+  },
+  {
+   "value": "UTC + 2",
+   "label": "heure légale l’été (UTC + 1 l’hiver)"
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Masse à vide",
+   "def": "avion équipé, sans carburant utilisable"
+  },
+  {
+   "term": "MTOM, MLM",
+   "def": "masse maximale au décollage, à l’atterrissage"
+  },
+  {
+   "term": "ZFM, MZFM",
+   "def": "masse sans carburant ; sa limite maximale"
+  },
+  {
+   "term": "Charge utile",
+   "def": "MTOM − masse à vide"
+  },
+  {
+   "term": "AVGAS 100LL",
+   "def": "essence aviation bleue, peu plombée"
+  },
+  {
+   "term": "Référence (datum)",
+   "def": "origine de tous les bras de levier"
+  },
+  {
+   "term": "Bras de levier",
+   "def": "distance d’une masse à la référence"
+  },
+  {
+   "term": "Moment",
+   "def": "masse × bras de levier, en kg·m"
+  },
+  {
+   "term": "CG",
+   "def": "centre de gravité : ΣM ÷ Σm"
+  },
+  {
+   "term": "Enveloppe de centrage",
+   "def": "zone masse/CG autorisée"
+  },
+  {
+   "term": "Catégorie utilitaire",
+   "def": "voltige limitée (vrilles si approuvées), enveloppe réduite"
+  },
+  {
+   "term": "Délestage (carburant)",
+   "def": "carburant consommé pendant le vol"
+  },
+  {
+   "term": "TORA",
+   "def": "longueur utilisable pour le roulement au décollage"
+  },
+  {
+   "term": "TODA",
+   "def": "TORA + prolongement dégagé"
+  },
+  {
+   "term": "ASDA",
+   "def": "TORA + prolongement d’arrêt"
+  },
+  {
+   "term": "LDA",
+   "def": "longueur utilisable pour l’atterrissage"
+  },
+  {
+   "term": "CWY, SWY",
+   "def": "prolongement dégagé ; prolongement d’arrêt"
+  },
+  {
+   "term": "Seuil décalé",
+   "def": "seuil en retrait : il réduit la LDA"
+  },
+  {
+   "term": "ISA",
+   "def": "atmosphère standard : 15 °C, 1 013,25 hPa"
+  },
+  {
+   "term": "Altitude-pression",
+   "def": "altitude lue au calage 1 013 hPa"
+  },
+  {
+   "term": "Altitude-densité",
+   "def": "altitude ISA de même densité d’air"
+  },
+  {
+   "term": "Coefficient de sécurité",
+   "def": "× 1,33 décollage ; × 1,43 atterrissage"
+  },
+  {
+   "term": "Vx, Vy",
+   "def": "meilleur angle ; meilleur taux de montée"
+  },
+  {
+   "term": "Vp",
+   "def": "vitesse propre (vraie), par rapport à l’air"
+  },
+  {
+   "term": "Vs",
+   "def": "ici, vitesse sol (la vitesse de décrochage s’écrit VS)"
+  },
+  {
+   "term": "NM, kt",
+   "def": "mille nautique (1 852 m) ; nœud (1 NM par heure)"
+  },
+  {
+   "term": "Plafond pratique / absolu",
+   "def": "taux de montée maximal de 100 ft/min / nul"
+  },
+  {
+   "term": "Autonomie",
+   "def": "temps de vol possible avec le carburant"
+  },
+  {
+   "term": "Distance franchissable",
+   "def": "distance possible avec le carburant"
+  },
+  {
+   "term": "Rayon d’action",
+   "def": "aller-retour possible, réserve exclue"
+  },
+  {
+   "term": "Finesse",
+   "def": "distance parcourue ÷ hauteur perdue"
+  },
+  {
+   "term": "SERA",
+   "def": "règles de l’air européennes"
+  },
+  {
+   "term": "Part-NCO",
+   "def": "règles des vols non commerciaux"
+  },
+  {
+   "term": "AMC",
+   "def": "moyen acceptable de conformité (texte EASA)"
+  },
+  {
+   "term": "SIA",
+   "def": "Service de l’information aéronautique"
+  },
+  {
+   "term": "AIP",
+   "def": "publication d’information aéronautique"
+  },
+  {
+   "term": "AIRAC",
+   "def": "dates communes de mise à jour, tous les 28 jours"
+  },
+  {
+   "term": "NOTAM",
+   "def": "avis aux navigants : information temporaire"
+  },
+  {
+   "term": "SUP AIP",
+   "def": "supplément temporaire à l’AIP"
+  },
+  {
+   "term": "SOFIA-Briefing",
+   "def": "service du SIA : NOTAM et briefing"
+  },
+  {
+   "term": "ZRT",
+   "def": "zone réglementée temporaire (NOTAM, SUP AIP)"
+  },
+  {
+   "term": "Carte VAC",
+   "def": "carte d’approche à vue d’un aérodrome"
+  },
+  {
+   "term": "Altitude de sécurité",
+   "def": "plus haut point près du trait + 500 ft"
+  },
+  {
+   "term": "Log de navigation",
+   "def": "cap, temps, carburant par branche"
+  },
+  {
+   "term": "INCERFA",
+   "def": "phase d’incertitude : alerte faute de nouvelles"
+  },
+  {
+   "term": "Réserve finale",
+   "def": "carburant à garder à l’arrivée"
+  },
+  {
+   "term": "Minima personnels",
+   "def": "tes limites, plus strictes que la loi"
+  },
+  {
+   "term": "PAVE",
+   "def": "Pilote, Avion, enVironnement, pressions Extérieures"
+  },
+  {
+   "term": "MINIMUM FUEL",
+   "def": "tout retard entamerait la réserve finale"
+  }
+ ],
+ "self_test": [
+  {
+   "q": "Comment calcule-t-on la charge utile ?",
+   "a": "MTOM − masse à vide."
+  },
+  {
+   "q": "Il reste 90 kg de marge : combien de litres d’AVGAS ?",
+   "a": "90 ÷ 0,72 = 125 L."
+  },
+  {
+   "q": "900 kg, CG 1,00 m ; 18 kg passent de 2,50 m à 1,00 m. Nouveau CG ?",
+   "a": "18 × (−1,5) ÷ 900 = −0,03 m : 0,97 m."
+  },
+  {
+   "q": "Quel centrage est le plus dangereux ?",
+   "a": "L’arrière : stabilité insuffisante, vrille parfois irrécupérable."
+  },
+  {
+   "q": "Que vaut la TODA ?",
+   "a": "TORA + prolongement dégagé."
+  },
+  {
+   "q": "Altitude-pression 2 000 ft, 21 °C : altitude-densité ?",
+   "a": "ISA + 10 : environ 3 200 ft."
+  },
+  {
+   "q": "Manuel 500 m, herbe sèche, coefficient 1,33 : distance retenue ?",
+   "a": "500 × 1,2 × 1,33 ≈ 800 m."
+  },
+  {
+   "q": "Des arbres en bout de piste : à quelle vitesse montes-tu ?",
+   "a": "Vx, puis Vy après l’obstacle."
+  },
+  {
+   "q": "Pour attendre le plus longtemps possible ?",
+   "a": "Puissance nécessaire minimale."
+  },
+  {
+   "q": "Vent de face de 20 kt tout le vol : que change-t-il ?",
+   "a": "La distance sol ; ni l’autonomie en heures, ni le taux de montée."
+  },
+  {
+   "q": "Une ZRT d’un meeting manque sur ta carte : où la trouver ?",
+   "a": "Dans les NOTAM et les SUP AIP (SOFIA-Briefing)."
+  },
+  {
+   "q": "Réserve finale VFR : jour, nuit, vol local de jour ?",
+   "a": "30 min, 45 min, 10 min."
+  }
+ ]
+}

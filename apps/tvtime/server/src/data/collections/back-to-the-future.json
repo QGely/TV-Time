@@ -1,0 +1,57 @@
+{
+  "id": "back-to-the-future",
+  "name": "Retour vers le futur",
+  "description": "La trilogie de Robert Zemeckis, suivie de la série animée en option. L'ordre de l'histoire correspond à l'ordre de sortie.",
+  "icon": "⏰",
+  "category": "scifi",
+  "items": [
+    {
+      "type": "movie",
+      "title_en": "Back to the Future",
+      "title_fr": "Retour vers le futur",
+      "year": 1985,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": null,
+      "note": "Marty McFly propulsé en 1955 par la DeLorean de Doc",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Back to the Future Part II",
+      "title_fr": "Retour vers le futur II",
+      "year": 1989,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "2015, puis un 1985 alternatif et retour en 1955",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "Back to the Future Part III",
+      "title_fr": "Retour vers le futur III",
+      "year": 1990,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": null,
+      "note": "Le Far West de 1885 ; conclusion de la trilogie",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Back to the Future",
+      "title_fr": "Retour vers le futur (série animée)",
+      "year": 1991,
+      "tmdb_id": null,
+      "chronological_order": 4,
+      "release_order": 4,
+      "group": null,
+      "note": "Série animée située après le troisième film",
+      "optional": true
+    }
+  ]
+}

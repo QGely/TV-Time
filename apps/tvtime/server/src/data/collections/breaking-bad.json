@@ -1,0 +1,45 @@
+{
+  "id": "breaking-bad",
+  "name": "Breaking Bad",
+  "description": "L'univers de Vince Gilligan au complet : Better Call Saul, Breaking Bad et El Camino. L'ordre affiché par défaut est l'ordre chronologique de l'histoire, qui diffère de l'ordre de diffusion.",
+  "icon": "🧪",
+  "category": "series",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Better Call Saul",
+      "title_fr": "Better Call Saul",
+      "year": 2015,
+      "tmdb_id": 60059,
+      "chronological_order": 1,
+      "release_order": 2,
+      "group": "Préquelle",
+      "note": "Se déroule de 2002 à 2008, avant Breaking Bad ; les scènes de Gene se situent après.",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Breaking Bad",
+      "title_fr": "Breaking Bad",
+      "year": 2008,
+      "tmdb_id": 1396,
+      "chronological_order": 2,
+      "release_order": 1,
+      "group": "Série principale",
+      "note": "Se déroule de 2008 à 2010 : l'histoire de Walter White et Jesse Pinkman.",
+      "optional": false
+    },
+    {
+      "type": "movie",
+      "title_en": "El Camino: A Breaking Bad Movie",
+      "title_fr": "El Camino : Un film Breaking Bad",
+      "year": 2019,
+      "tmdb_id": 559969,
+      "chronological_order": 3,
+      "release_order": 3,
+      "group": "Épilogue",
+      "note": "Suite directe du final de Breaking Bad (2010) ; suit la fuite de Jesse Pinkman.",
+      "optional": false
+    }
+  ]
+}

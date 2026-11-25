@@ -1,0 +1,33 @@
+{
+  "id": "vikings",
+  "name": "Vikings",
+  "description": "Vikings puis Vikings : Valhalla, qui se déroule un siècle plus tard. L'ordre de l'histoire correspond à l'ordre de diffusion.",
+  "icon": "⚔️",
+  "category": "series",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Vikings",
+      "title_fr": "Vikings",
+      "year": 2013,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 1,
+      "group": null,
+      "note": "Ragnar Lothbrok et ses fils, du VIIIe au IXe siècle",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "Vikings: Valhalla",
+      "title_fr": "Vikings : Valhalla",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 2,
+      "release_order": 2,
+      "group": null,
+      "note": "Cent ans plus tard : Leif Erikson, Freydis et Harald Hardrada",
+      "optional": false
+    }
+  ]
+}

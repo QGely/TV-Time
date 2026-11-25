@@ -1,0 +1,57 @@
+{
+  "id": "the-boys",
+  "name": "The Boys",
+  "description": "L'univers The Boys sur Prime Video : la série principale, son anthologie animée, le spin-off Gen V et le préquel Vought Rising. L'ordre affiché par défaut suit la chronologie de l'histoire, qui diffère de l'ordre de sortie.",
+  "icon": "🩸",
+  "category": "series",
+  "items": [
+    {
+      "type": "tv",
+      "title_en": "Vought Rising",
+      "title_fr": "Vought Rising",
+      "year": 2026,
+      "tmdb_id": null,
+      "chronological_order": 1,
+      "release_order": 4,
+      "group": "Préquel",
+      "note": "Préquel années 1950 (Soldier Boy, Stormfront) ; à voir après The Boys",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "The Boys",
+      "title_fr": "The Boys",
+      "year": 2019,
+      "tmdb_id": 76479,
+      "chronological_order": 2,
+      "release_order": 1,
+      "group": "Série principale",
+      "note": "Série principale ; Gen V s'intercale entre les saisons 3 et 4",
+      "optional": false
+    },
+    {
+      "type": "tv",
+      "title_en": "The Boys Presents: Diabolical",
+      "title_fr": "The Boys Présentent : Diabolical",
+      "year": 2022,
+      "tmdb_id": null,
+      "chronological_order": 3,
+      "release_order": 2,
+      "group": "Spin-offs",
+      "note": "Anthologie animée sortie entre les saisons 2 et 3 ; épisodes majoritairement hors canon",
+      "optional": true
+    },
+    {
+      "type": "tv",
+      "title_en": "Gen V",
+      "title_fr": "Gen V",
+      "year": 2023,
+      "tmdb_id": 205715,
+      "chronological_order": 4,
+      "release_order": 3,
+      "group": "Spin-offs",
+      "note": "S1 entre les saisons 3 et 4 de The Boys ; S2 entre les saisons 4 et 5",
+      "optional": false
+    }
+  ]
+}
