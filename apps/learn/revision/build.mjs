@@ -522,6 +522,12 @@ if (ONLY) {
   await render(pageHtml(chapters, first.map), OUT);
   const second = markers(OUT);
   const moved = Object.keys(first.map).filter((k) => first.map[k] !== second.map[k]);
-  if (moved.length) { await render(pageHtml(chapters, second.map), OUT); }
-  console.log(`✓ ${OUT} : ${second.pages} pages, ${chapters.length} matières`);
+  const finalMap = moved.length ? second.map : first.map;
+  // Rendu final sans les marqueurs (positionnés en absolu : la mise en page ne bouge pas),
+  // pour qu'ils n'apparaissent ni à la recherche, ni au copier-coller, ni à la lecture vocale.
+  const clean = pageHtml(chapters, finalMap).replace(/<span class="marker">⟦[^⟧]*⟧<\/span>/g, '');
+  await render(clean, OUT);
+  const pages = Number((execFileSync('pdfinfo', [OUT]).toString().match(/^Pages:\s+(\d+)/m) || [])[1]);
+  if (pages !== second.pages) { console.error(`Le nombre de pages a changé sans les marqueurs (${second.pages} → ${pages}).`); process.exit(1); }
+  console.log(`✓ ${OUT} : ${pages} pages, ${chapters.length} matières`);
 }
