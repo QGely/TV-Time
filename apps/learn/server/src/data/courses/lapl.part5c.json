@@ -344,15 +344,15 @@
       },
       {
        "id": "u5s10q22",
-       "q": "Égaré, vous faites le point à 16:40 : il reste 38 l utilisables, débit 24 l/h, vol VFR de jour. Vous voulez être posé sans entamer la réserve finale, en gardant 10 min pour reconnaître un terrain et vous poser. Jusqu'à quelle heure au plus tard pouvez-vous chercher à vous recaler ?",
+       "q": "En fin d'été, le grand lac de retenue attendu à l'heure prévue reste introuvable, alors que l'autoroute et la voie ferrée annoncées par la carte sont bien là. Quelle conclusion est la plus raisonnable ?",
        "choices": [
-        "17:45",
-        "17:35",
-        "18:05",
-        "17:20"
+        "Vous êtes égaré : faites demi-tour vers le dernier point sûr",
+        "Le lac a pu baisser : les autres indices confirment la position",
+        "Votre heure est fausse : attendez le lac avant de valider le point",
+        "Votre carte est périmée : suivez le GPS sans tenir compte du lac"
        ],
        "answer": 1,
-       "explanation": "Réserve finale VFR de jour : 30 min, soit 12 l à 24 l/h. Carburant utilisable avant la réserve : 38 − 12 = 26 l, soit 26 / 24 h = 65 min : 16:40 + 65 min = 17:45. Moins les 10 min gardées pour l'atterrissage de précaution : 17:35. 17:45 ne garde pas ce temps ; 18:05 oublie la réserve finale ; 17:20 applique la réserve de nuit (45 min)."
+       "explanation": "Un plan d'eau varie avec les saisons : un lac de retenue peut baisser fortement, voire s'assécher, et devenir méconnaissable. Un point se confirme par plusieurs indices concordants ; ici l'autoroute, la voie ferrée et l'heure de passage concordent. Se croire égaré pour un seul repère absent fait perdre une position sûre, attendre le lac laisse filer l'estime, et en VFR la carte reste la référence, le GPS n'étant qu'une aide."
       },
       {
        "id": "u5s10q23",

@@ -11,7 +11,7 @@
      "id": "u3s1",
      "title": "Atmosphère, température et pression",
      "icon": "🌡️",
-     "tips": "L'atmosphère est un mélange de gaz : l'air sec contient environ 78 % d'azote, 21 % d'oxygène et 1 % d'argon et d'autres gaz. La vapeur d'eau, en proportion variable, est celle qui fait le « temps ». L'atmosphère se divise en couches selon l'évolution de la température.\n• Troposphère : du sol à la tropopause. La température y baisse avec l'altitude et elle contient presque toute la vapeur d'eau : c'est là que se forment les nuages et le « temps ». Épaisseur d'environ 11 km (36 000 ft) aux latitudes moyennes, davantage à l'équateur (≈ 16 km), moins aux pôles (≈ 8 km).\n• Tropopause : limite au-dessus de laquelle la température cesse de décroître.\n• Stratosphère : température constante puis croissante (absorption par l'ozone), air sec et stable.\n\nComment l'air se réchauffe :\n• Le rayonnement solaire traverse l'air en grande partie et chauffe surtout le sol : l'atmosphère est chauffée par le bas, d'où la baisse de la température avec l'altitude dans la troposphère.\n• Conduction : échange de chaleur au contact du sol, limité aux toutes premières couches d'air.\n• Convection : l'air chauffé au contact du sol devient plus léger et s'élève (thermiques).\n• Advection : transport horizontal de chaleur ou de froid par le vent, lors de l'arrivée d'une autre masse d'air.\n• Variation diurne : le minimum de température survient en général quelques dizaines de minutes après le lever du soleil ; le maximum en milieu d'après-midi, deux à trois heures après le passage du soleil au plus haut. Les nuages et le vent réduisent l'écart entre minimum et maximum ; ciel clair et vent calme l'augmentent (nuits froides, gelées).\n\nAtmosphère standard (ISA), référence pour l'étalonnage des altimètres et les performances :\n• au niveau de la mer : 15 °C, 1013,25 hPa, masse volumique 1,225 kg/m³ ;\n• température : −6,5 °C par km, soit environ −2 °C par 1 000 ft, jusqu'à la tropopause à 11 km (36 089 ft), où elle vaut −56,5 °C, puis constante au-dessus ;\n• repères : 5 °C à 5 000 ft, −5 °C à 10 000 ft, environ −21 °C à 18 000 ft ;\n• pression : environ 1 hPa de moins tous les 28 ft près du sol, mais tous les 50 ft environ vers 18 000 ft, où l'on atteint 500 hPa. La pression décroît de moins en moins vite, car l'air est de moins en moins dense.\nÉcart ISA = température réelle − température standard à la même altitude. Ex. : 21 °C à 2 000 ft, standard 11 °C : ISA +10. Au FL 80, la WINTEM prévoit −3 °C ; standard 15 − 16 = −1 °C : ISA −2.\n\nPressions de référence et calages altimétriques :\n• QFE : pression au niveau de l'aérodrome. Calé au QFE, l'altimètre indique la hauteur au-dessus du terrain ; posé, il affiche 0.\n• QNH : pression ramenée au niveau de la mer avec l'atmosphère standard. Calé au QNH, l'altimètre indique l'altitude (au-dessus du niveau moyen de la mer) ; posé, il affiche l'altitude du terrain. Les METAR le donnent arrondi à l'hectopascal inférieur.\n• QFF : pression ramenée au niveau de la mer avec la température réelle. Elle sert à tracer les isobares des cartes météo, pas à caler l'altimètre.\n• 1013 (calage standard) : l'altimètre indique un niveau de vol (FL 55 = 5 500 ft au-dessus de la surface isobare 1013,25 hPa). En montée, on affiche 1013 en passant l'altitude de transition ; en descente, le QNH en passant le niveau de transition.\n• Relation pratique : QFE ≈ QNH − altitude du terrain / 28. Ex. : terrain à 560 ft, QNH 1015 : QFE ≈ 1015 − 20 = 995 hPa.\n\nErreurs de l'altimètre :\n• Vers une zone de pression plus basse, sans recalage, l'avion est plus bas qu'indiqué : environ 28 ft par hPa d'écart.\n• Dans un air plus froid que l'ISA, même avec le bon QNH, l'avion est aussi plus bas qu'indiqué (ordre de grandeur : 4 % de la hauteur au-dessus de la station par tranche de 10 °C d'écart).\n• Mémo : « du chaud vers le froid, des hautes vers les basses pressions : danger », l'altimètre surestime. Dans le sens inverse, l'avion est plus haut qu'indiqué.\n\nAltitude-pression et altitude-densité :\n• Altitude-pression : altitude lue avec le calage 1013. Altitude-pression ≈ altitude du terrain + (1013 − QNH) × 28 ft. Avec un QNH supérieur à 1013, elle est inférieure à l'altitude du terrain.\n• Altitude-densité : altitude, en atmosphère standard, où la masse volumique est celle de l'air réel. Elle augmente avec la température, l'altitude et l'humidité. Formule approchée : altitude-densité ≈ altitude-pression + 120 ft × écart ISA. Plus elle est élevée, plus le moteur, l'hélice et l'aile perdent en efficacité : décollage plus long et taux de montée plus faible (« chaud, haut, humide »).\n\nMéthodes résolues pas à pas :\n• Niveau de vol en altitude : FL 45 avec un QNH de 1023 hPa. La surface 1013 hPa est (1023 − 1013) × 28 = 280 ft au-dessus du niveau de la mer : altitude ≈ 4 500 + 280 = 4 780 ft. Avec un QNH inférieur à 1013, on retranche.\n• Correction de froid : 3 000 ft au-dessus de la station, ISA −10 : erreur ≈ 4 % × 3 000 = 120 ft ; l'avion est vers 2 880 ft au-dessus de la station alors que l'altimètre indique 3 000 ft.\n• Altitude-densité : terrain à 1 000 ft, QNH 1008, 28 °C. Altitude-pression = 1 000 + 5 × 28 = 1 140 ft ; température standard ≈ 15 − 2,3 = 12,7 °C ; écart ≈ +15 ; altitude-densité ≈ 1 140 + 15 × 120 ≈ 2 940 ft, soit environ 3 000 ft.\n\nPièges classiques :\n• Comparer la température à 15 °C au lieu de la température standard du niveau considéré.\n• Confondre hauteur (au-dessus du sol, QFE) et altitude (au-dessus de la mer, QNH).\n• Se tromper de sens : QNH inférieur à 1013, la surface 1013 est sous le niveau de la mer et un niveau de vol correspond à une altitude plus basse.\n• Prolonger la baisse de 2 °C par 1 000 ft au-dessus de la tropopause : la température y reste à −56,5 °C en ISA.\n• L'altitude-densité ne se lit pas à l'altimètre : elle se calcule ou se lit sur un abaque.",
+     "tips": "L'atmosphère est un mélange de gaz : l'air sec contient environ 78 % d'azote, 21 % d'oxygène et 1 % d'argon et d'autres gaz. La vapeur d'eau, en proportion variable, est celle qui fait le « temps ». L'atmosphère se divise en couches selon l'évolution de la température.\n• Troposphère : du sol à la tropopause. La température y baisse avec l'altitude et elle contient presque toute la vapeur d'eau : c'est là que se forment les nuages et le « temps ». Épaisseur d'environ 11 km (36 000 ft) aux latitudes moyennes, davantage à l'équateur (≈ 16 km), moins aux pôles (≈ 8 km).\n• Tropopause : limite au-dessus de laquelle la température cesse de décroître.\n• Stratosphère : température constante puis croissante (absorption par l'ozone), air sec et stable.\n\nComment l'air se réchauffe :\n• Le rayonnement solaire traverse l'air en grande partie et chauffe surtout le sol : l'atmosphère est chauffée par le bas, d'où la baisse de la température avec l'altitude dans la troposphère.\n• Conduction : échange de chaleur au contact du sol, limité aux toutes premières couches d'air.\n• Convection : l'air chauffé au contact du sol devient plus léger et s'élève (thermiques).\n• Advection : transport horizontal de chaleur ou de froid par le vent, lors de l'arrivée d'une autre masse d'air.\n• Variation diurne : le minimum de température survient en général quelques dizaines de minutes après le lever du soleil ; le maximum en milieu d'après-midi, deux à trois heures après le passage du soleil au plus haut. Les nuages et le vent réduisent l'écart entre minimum et maximum ; ciel clair et vent calme l'augmentent (nuits froides, gelées).\n\nAtmosphère standard (ISA), référence pour l'étalonnage des altimètres et les performances :\n• au niveau de la mer : 15 °C, 1013,25 hPa, masse volumique 1,225 kg/m³ ;\n• température : −6,5 °C par km, soit environ −2 °C par 1 000 ft, jusqu'à la tropopause à 11 km (36 089 ft), où elle vaut −56,5 °C, puis constante au-dessus ;\n• repères : 5 °C à 5 000 ft, −5 °C à 10 000 ft, environ −21 °C à 18 000 ft ;\n• pression : environ 1 hPa de moins tous les 28 ft près du sol, mais tous les 50 ft environ vers 18 000 ft, où l'on atteint 500 hPa. La pression décroît de moins en moins vite, car l'air est de moins en moins dense.\nÉcart ISA = température réelle − température standard à la même altitude. Ex. : 21 °C à 2 000 ft, standard 11 °C : ISA +10. Au FL 50, la WINTEM prévoit 2 °C ; standard 15 − 10 = 5 °C : ISA −3.\n\nPressions de référence et calages altimétriques :\n• QFE : pression au niveau de l'aérodrome. Calé au QFE, l'altimètre indique la hauteur au-dessus du terrain ; posé, il affiche 0.\n• QNH : pression ramenée au niveau de la mer avec l'atmosphère standard. Calé au QNH, l'altimètre indique l'altitude (au-dessus du niveau moyen de la mer) ; posé, il affiche l'altitude du terrain. Les METAR le donnent arrondi à l'hectopascal inférieur.\n• QFF : pression ramenée au niveau de la mer avec la température réelle. Elle sert à tracer les isobares des cartes météo, pas à caler l'altimètre.\n• 1013 (calage standard) : l'altimètre indique un niveau de vol (FL 55 = 5 500 ft au-dessus de la surface isobare 1013,25 hPa). En montée, on affiche 1013 en passant l'altitude de transition ; en descente, le QNH en passant le niveau de transition.\n• Relation pratique : QFE ≈ QNH − altitude du terrain / 28. Ex. : terrain à 560 ft, QNH 1015 : QFE ≈ 1015 − 20 = 995 hPa.\n\nErreurs de l'altimètre :\n• Vers une zone de pression plus basse, sans recalage, l'avion est plus bas qu'indiqué : environ 28 ft par hPa d'écart.\n• Dans un air plus froid que l'ISA, même avec le bon QNH, l'avion est aussi plus bas qu'indiqué (ordre de grandeur : 4 % de la hauteur au-dessus de la station par tranche de 10 °C d'écart).\n• Mémo : « du chaud vers le froid, des hautes vers les basses pressions : danger », l'altimètre surestime. Dans le sens inverse, l'avion est plus haut qu'indiqué.\n\nAltitude-pression et altitude-densité :\n• Altitude-pression : altitude lue avec le calage 1013. Altitude-pression ≈ altitude du terrain + (1013 − QNH) × 28 ft. Avec un QNH supérieur à 1013, elle est inférieure à l'altitude du terrain.\n• Altitude-densité : altitude, en atmosphère standard, où la masse volumique est celle de l'air réel. Elle augmente avec la température, l'altitude et l'humidité. Formule approchée : altitude-densité ≈ altitude-pression + 120 ft × écart ISA. Plus elle est élevée, plus le moteur, l'hélice et l'aile perdent en efficacité : décollage plus long et taux de montée plus faible (« chaud, haut, humide »).\n\nMéthodes résolues pas à pas :\n• Niveau de vol en altitude : FL 45 avec un QNH de 1023 hPa. La surface 1013 hPa est (1023 − 1013) × 28 = 280 ft au-dessus du niveau de la mer : altitude ≈ 4 500 + 280 = 4 780 ft. Avec un QNH inférieur à 1013, on retranche.\n• Correction de froid : 3 000 ft au-dessus de la station, ISA −10 : erreur ≈ 4 % × 3 000 = 120 ft ; l'avion est vers 2 880 ft au-dessus de la station alors que l'altimètre indique 3 000 ft.\n• Altitude-densité : terrain à 1 000 ft, QNH 1008, 28 °C. Altitude-pression = 1 000 + 5 × 28 = 1 140 ft ; température standard ≈ 15 − 2,3 = 12,7 °C ; écart ≈ +15 ; altitude-densité ≈ 1 140 + 15 × 120 ≈ 2 940 ft, soit environ 3 000 ft.\n\nPièges classiques :\n• Comparer la température à 15 °C au lieu de la température standard du niveau considéré.\n• Confondre hauteur (au-dessus du sol, QFE) et altitude (au-dessus de la mer, QNH).\n• Se tromper de sens : QNH inférieur à 1013, la surface 1013 est sous le niveau de la mer et un niveau de vol correspond à une altitude plus basse.\n• Prolonger la baisse de 2 °C par 1 000 ft au-dessus de la tropopause : la température y reste à −56,5 °C en ISA.\n• L'altitude-densité ne se lit pas à l'altimètre : elle se calcule ou se lit sur un abaque.",
      "vocab": [
       {
        "term": "ISA",
@@ -193,15 +193,15 @@
       },
       {
        "id": "u3s1q10",
-       "q": "Sur un terrain d'altitude-pression 2 000 ft, la température est de 26 °C. Avec la règle de 120 ft par degré d'écart ISA, quelle est l'altitude-densité approximative ?",
+       "q": "Dans la troposphère, pourquoi la température baisse-t-elle en général quand on s'élève ?",
        "choices": [
-        "2 000 ft",
-        "3 320 ft",
-        "5 120 ft",
-        "3 800 ft"
+        "L'air d'altitude, plus éloigné du Soleil, reçoit moins de rayonnement",
+        "La vapeur d'eau, plus abondante en altitude, y rayonne sa chaleur vers l'espace",
+        "L'ozone, concentré près du sol, y absorbe la plus grande part du rayonnement",
+        "Le rayonnement solaire chauffe surtout le sol, qui réchauffe l'air par le bas"
        ],
        "answer": 3,
-       "explanation": "Température standard à 2 000 ft : 15 − 4 = 11 °C ; écart ISA = 26 − 11 = +15 °C. Altitude-densité ≈ 2 000 + 15 × 120 = 3 800 ft."
+       "explanation": "L'air laisse passer l'essentiel du rayonnement solaire, qui chauffe le sol ; le sol réchauffe ensuite l'air à son contact (conduction, puis convection). L'atmosphère est donc chauffée par le bas, d'où la baisse de la température avec l'altitude. Quelques kilomètres ne changent rien à la distance au Soleil ; la vapeur d'eau est au contraire plus abondante près du sol, et l'ozone, surtout présent dans la stratosphère, réchauffe l'air au-dessus de la tropopause."
       },
       {
        "id": "u3s1q11",
@@ -229,15 +229,15 @@
       },
       {
        "id": "u3s1q13",
-       "q": "Vous volez au FL 65. Le QNH de la région est de 998 hPa. En prenant 1 hPa ≈ 28 ft, quelle est votre altitude approximative au-dessus du niveau de la mer ?",
+       "q": "Au-dessus de la tropopause, la température cesse de baisser, puis augmente plus haut dans la stratosphère. Quelle en est la cause ?",
        "choices": [
-        "Environ 6 920 ft",
-        "Environ 6 080 ft",
-        "6 500 ft",
-        "Environ 6 220 ft"
+        "L'air y est très humide et libère de la chaleur latente en se condensant",
+        "L'ozone y absorbe une partie du rayonnement ultraviolet du Soleil",
+        "L'air y descend lentement et se réchauffe par compression",
+        "La chaleur du sol y parvient par convection, au-dessus des nuages"
        ],
        "answer": 1,
-       "explanation": "Avec un QNH de 998 hPa, la surface 1013 hPa se trouve (1013 − 998) × 28 = 420 ft sous le niveau de la mer. Le FL 65 est à 6 500 ft au-dessus de cette surface, donc vers 6 500 − 420 ≈ 6 080 ft d'altitude. Ajouter les 420 ft (6 920 ft) inverse le sens de la correction : par QNH bas, un niveau de vol est plus bas qu'il n'y paraît."
+       "explanation": "La stratosphère contient l'essentiel de l'ozone de l'atmosphère, qui absorbe une partie du rayonnement ultraviolet solaire et réchauffe l'air : en ISA, la température reste à −56,5 °C de la tropopause jusque vers 20 km, puis augmente. L'air y est très sec, sans nuages ni chaleur latente à libérer, et la convection partie du sol s'arrête sous la tropopause, très stable : c'est là que le sommet des cumulonimbus s'étale en enclume."
       },
       {
        "id": "u3s1q14",
@@ -337,15 +337,15 @@
       },
       {
        "id": "u3s1q22",
-       "q": "Un terrain est à 1 500 ft d'altitude ; QNH 1003 hPa, température 30 °C. Avec 1 hPa ≈ 28 ft et 120 ft par degré d'écart ISA, quelle est l'altitude-densité approximative ?",
+       "q": "Deux terrains ont le même QNH de 1013 hPa : A est à 500 ft et il y fait 35 °C ; B est à 2 000 ft et il y fait 15 °C. Avec 120 ft par degré d'écart ISA, lequel a l'altitude-densité la plus élevée ?",
        "choices": [
-        "Environ 3 660 ft",
-        "Environ 4 000 ft",
-        "Environ 1 780 ft",
-        "Environ 3 580 ft"
+        "B, vers 2 500 ft : son altitude l'emporte sur la chaleur de A",
+        "A, vers 3 000 ft : sa chaleur l'emporte sur sa faible altitude",
+        "Les deux, vers 2 000 ft : un QNH de 1013 hPa annule l'effet de la chaleur",
+        "B, vers 2 000 ft : l'altitude-densité suit l'altitude du terrain"
        ],
        "answer": 1,
-       "explanation": "Altitude-pression : 1 500 + (1013 − 1003) × 28 = 1 780 ft. Température standard à 1 780 ft : 15 − 3,6 ≈ 11,4 °C ; écart ≈ +18,6 °C. Altitude-densité ≈ 1 780 + 18,6 × 120 ≈ 4 010 ft. Oublier le QNH donne 3 660 ft ; comparer 30 °C à 15 °C donne 3 580 ft ; 1 780 ft n'est que l'altitude-pression."
+       "explanation": "Avec un QNH de 1013 hPa, l'altitude-pression égale l'altitude du terrain. A : température standard à 500 ft ≈ 14 °C, écart ≈ +21 °C, altitude-densité ≈ 500 + 21 × 120 ≈ 3 000 ft. B : standard à 2 000 ft = 11 °C, écart +4 °C, altitude-densité ≈ 2 000 + 4 × 120 ≈ 2 500 ft. Le terrain le plus bas, mais très chaud, offre ici les moins bonnes performances : B est bien vers 2 500 ft, mais A le dépasse. Le QNH de 1013 hPa ne fait qu'égaler altitude-pression et altitude du terrain ; il n'annule pas l'effet de la chaleur."
       },
       {
        "id": "u3s1q23",
@@ -965,15 +965,15 @@
       },
       {
        "id": "u3s3q12",
-       "q": "Un METAR indique « 24018G32KT ». Comment le lire ?",
+       "q": "Par effet de foehn, l'air qui a franchi un relief arrive sous le vent plus chaud qu'il ne l'était, à la même altitude, du côté au vent. D'où vient ce gain de température ?",
        "choices": [
-        "Vent soufflant vers le 240°, 18 kt, rafales à 32 kt",
-        "Vent du 240°, 18 kt, avec des rafales atteignant 50 kt",
-        "Vent du 240°, vitesse moyenne 18 kt, rafales à 32 kt",
-        "Vent du 240°, 18 kt, direction variable sur 32°"
+        "D'une compression plus forte à la descente que la détente subie à la montée",
+        "Du soleil, qui chauffe davantage le versant sous le vent, resté dégagé",
+        "De la chaleur latente que la condensation libère sur le versant au vent",
+        "Du frottement de l'air sur les pentes, qui le réchauffe pendant la descente"
        ],
        "answer": 2,
-       "explanation": "Le groupe donne la direction d'où vient le vent (240°), sa vitesse moyenne (18 kt) puis, après la lettre G, la vitesse maximale des rafales (32 kt). Les rafales ne s'ajoutent pas à la vitesse moyenne."
+       "explanation": "En montant au vent, l'air se refroidit d'abord à 3 °C/1 000 ft, puis à environ 1,5 °C/1 000 ft une fois saturé : la condensation libère de la chaleur latente, et l'eau condensée tombe en précipitations sur le versant au vent. Redescendu sans nuage, il se réchauffe à 3 °C/1 000 ft sur toute la descente : il arrive plus chaud et plus sec. La descente ne comprime pas l'air plus que la montée ne l'a détendu : pour un air sec, les deux suivent le même gradient (3 °C/1 000 ft) et, sans condensation au vent, il n'y aurait pas de gain."
       },
       {
        "id": "u3s3q13",
@@ -1037,15 +1037,15 @@
       },
       {
        "id": "u3s3q18",
-       "q": "La piste 09 est en service et le METAR donne « 31012KT ». En négligeant la déclinaison, quelle composante longitudinale subissez-vous à l'atterrissage ?",
+       "q": "Un anémomètre installé à 2 m du sol, derrière un hangar, indique un vent bien plus faible que celui du METAR au même moment. Quelle en est l'explication la plus probable ?",
        "choices": [
-        "Un vent de face d'environ 9 kt",
-        "Un vent de face d'environ 12 kt",
-        "Ni face ni arrière : le vent est plein travers",
-        "Un vent arrière d'environ 9 kt"
+        "Le METAR donne le vent à 2 000 ft, au-dessus de la couche de frottement",
+        "Le METAR donne la rafale maximale de la période, et non le vent moyen",
+        "Le METAR est corrigé de la déclinaison magnétique, ce qui majore la vitesse",
+        "Le METAR mesure le vent vers 10 m, sur un mât dégagé, où il est moins freiné"
        ],
        "answer": 3,
-       "explanation": "La piste 09 est orientée au 090°. Le vent du 310° fait avec l'axe un angle de 140° : il vient de l'arrière gauche. Composante arrière = 12 × cos 40° ≈ 12 × 0,77 ≈ 9 kt, et travers ≈ 12 × 0,64 ≈ 8 kt. La piste 27 serait plus adaptée."
+       "explanation": "Le vent de surface des messages est mesuré vers 10 m au-dessus du sol, à l'écart des obstacles, et moyenné sur 10 minutes ; une rafale éventuelle est notée à part, après la lettre G. Plus bas, et sous le vent d'un hangar, le frottement et les tourbillons ralentissent fortement l'air : c'est le même gradient de vent qui fait perdre de la vitesse dans les derniers pieds d'une finale. Le vent à 2 000 ft n'apparaît pas dans un METAR, et la déclinaison ne modifie que la direction."
       },
       {
        "id": "u3s3q19",

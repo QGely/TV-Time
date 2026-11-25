@@ -674,15 +674,15 @@
       },
       {
        "id": "u5s8q20",
-       "q": "Vous descendez de 6 500 ft à 2 000 ft à 500 ft/min, à une vitesse sol de 120 kt. À quelle distance du point visé devez-vous commencer la descente ?",
+       "q": "Le vent fait un angle de 80° avec votre route. Quelle approximation retenez-vous pour le calcul mental de la dérive et du vent effectif ?",
        "choices": [
-        "15 NM",
-        "9 NM",
-        "22 NM",
-        "18 NM"
+        "Une dérive presque nulle et un vent effectif voisin de la force du vent",
+        "La moitié de Xmax pour la dérive et la moitié du vent en vent effectif",
+        "Environ 0,7 × Xmax pour la dérive et 0,7 × le vent en vent effectif",
+        "Une dérive voisine de Xmax et un vent effectif faible, proche de zéro"
        ],
        "answer": 3,
-       "explanation": "Hauteur à perdre : 4 500 ft, soit 9 min à 500 ft/min. À 2 NM/min, l'avion parcourt 18 NM pendant la descente. 15 NM supposerait 300 ft/NM, c'est-à-dire 600 ft/min à cette vitesse ; 9 NM confond minutes et NM."
+       "explanation": "Au-delà de 70°, sin α ≈ 1 (sin 80° ≈ 0,98) : la dérive est pratiquement la dérive maximale. Comme cos 80° ≈ 0,17, le vent effectif ne vaut qu'environ un sixième de la force du vent : c'est presque un vent de travers. Une dérive presque nulle avec tout le vent en effectif inverse sinus et cosinus : c'est le cas d'un vent presque dans l'axe de la route. Les coefficients 0,5 et 0,7 valent pour des angles plus faibles : 0,5 × Xmax à 30°, 0,7 et 0,7 à 45°."
       },
       {
        "id": "u5s8q21",

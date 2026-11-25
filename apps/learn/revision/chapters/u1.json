@@ -77,7 +77,7 @@
        "Sûreté (actes illicites)"
       ]
      ],
-     "note": "Chaque État applique ces **SARPs** (normes et pratiques recommandées) ou notifie ses **différences** (AIP GEN 1.7). Exemple : la Part-FCL exige 25 h en double pour le PPL(A), l’annexe 1 seulement 20 h."
+     "note": "Chaque État applique ces **SARPs** (normes et pratiques recommandées) ou notifie ses **différences** (AIP GEN 1.7). Une règle peut aussi être plus exigeante : 45 h d’instruction en vol pour le PPL(A) en Part-FCL, 40 h de vol (35 h en formation agréée) dans l’annexe 1."
     },
     {
      "type": "compare",
@@ -584,7 +584,7 @@
      "title": "Le plan de vol (SERA.4001 et 4020)",
      "items": [
       "Obligatoire notamment pour un vol **contrôlé** (un appel radio vaut plan de vol abrégé), un passage de **frontière**, un vol **de nuit** quittant les abords.",
-      "Dépose-le au moins **60 min** avant le départ. Déposé en vol : il doit arriver **10 min** avant l’entrée en région de contrôle.",
+      "Dépose-le au moins **60 min** avant le départ (en France, **30 min** pour un vol VFR intérieur). Déposé en vol : il doit arriver **10 min** avant l’entrée en région de contrôle.",
       "À l’arrivée, **clôture-le** au plus vite, auprès de l’organisme ATS le plus proche s’il n’y en a pas sur le terrain.",
       "Si la tour t’a vu atterrir, rien à faire. Sinon, personne ne le clôture à ta place : sans nouvelles, l’alerte démarre."
      ]
@@ -913,7 +913,7 @@
     {
      "type": "key",
      "title": "BEA et règlement (UE) n° 376/2014",
-     "text": "Le **BEA** (Bureau d’enquêtes et d’analyses) enquête sur les accidents et incidents graves **pour prévenir**, jamais pour sanctionner. Tu les lui notifies **sans délai**.\nAutres événements à notification obligatoire : dans les **72 h**, via ton aéroclub, qui transmet à la DSAC. La « **culture juste** » protège celui qui notifie de bonne foi."
+     "text": "Le **BEA** (Bureau d’enquêtes et d’analyses) enquête sur les accidents et incidents graves **pour prévenir**, jamais pour sanctionner. Tu les lui notifies **sans délai**.\nAutres événements à notification obligatoire : dans les **72 h**, de préférence via ton aéroclub, qui transmet à la DSAC. La « **culture juste** » protège celui qui notifie de bonne foi."
     },
     {
      "type": "trap",

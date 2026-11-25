@@ -398,7 +398,7 @@
       {
        "title": "Brise de mer / brise de terre",
        "points": [
-        "**Jour** : la terre chauffe plus vite ; l’air va **de la mer vers la terre** (40 à 50 km au plus)",
+        "**Jour** : la terre chauffe plus vite ; l’air va **de la mer vers la terre** (rarement au-delà de 40 à 50 km)",
         "**Nuit** : brise de terre, plus faible, de la terre vers la mer"
        ]
       },
@@ -609,7 +609,7 @@
      "items": [
       "**Types** : de masse d’air (été, fin d’après-midi), frontaux (en ligne), orographiques. **Ligne de grains** : mur d’orages, ne la traverse pas.",
       "**Dangers** : turbulence sévère, foudre, **grêle** (même sous l’enclume), givrage fort, **front de rafales** à plusieurs km devant l’orage.",
-      "**Microrafale** : moins de 4 km, moins de 15 min. En finale : vent de face, descendance, puis vent arrière. **Pleine puissance, remise de gaz**.",
+      "**Microrafale** : moins de 4 km, rarement plus de 15 min. En finale : vent de face, descendance, puis vent arrière. **Pleine puissance, remise de gaz**.",
       "**Indices** : sommet fibreux en enclume (le TCU devient Cb), mammatus. Tonnerre 3 s après l’éclair : 1 km."
      ]
     },

@@ -247,7 +247,7 @@
      "type": "steps",
      "title": "Le balayage anticollision",
      "items": [
-      "Balaye le ciel par secteurs d’environ **10 à 15°**, avec un arrêt d’**au moins 1 s** sur chacun : l’œil voit mal en mouvement.",
+      "Balaye le ciel par secteurs d’environ **10°**, avec un arrêt d’**au moins 1 s** sur chacun : l’œil voit mal en mouvement.",
       "Par ciel vide (bleu uniforme, brume), l’œil se règle à quelques mètres (**myopie du champ vide**) : fixe souvent un objet lointain.",
       "Un point **immobile** dans le pare-brise est en route de collision : petit longtemps, il **grossit brutalement** à la fin."
      ]
@@ -419,7 +419,7 @@
     {
      "type": "key",
      "title": "La parade : crois tes instruments, et eux seuls",
-     "text": "La désorientation la plus dangereuse est celle que tu ne sens pas. En VFR (vol à vue), n’entre pas dans les nuages : sans entraînement, on y perd le contrôle en 3 min en moyenne (étude de 1954). Si c’est fait : ailes à plat et assiette aux instruments, puis **demi-tour au taux standard** : 3°/s (180° en 1 min), inclinaison ≈ 15 % de la Vp en kt (≈ 16° à 110 kt), tête immobile."
+     "text": "La désorientation la plus dangereuse est celle que tu ne sens pas. En VFR (vol à vue), n’entre pas dans les nuages : sans entraînement, on y perd le contrôle en 3 min en moyenne (étude de 1954). Si c’est fait : ailes à plat et assiette aux instruments, puis **demi-tour au taux standard** : 3°/s (180° en 1 min), inclinaison ≈ 15 % de la Vp en kt (≈ 17° à 110 kt), tête immobile."
     }
    ]
   },
@@ -440,7 +440,7 @@
     {
      "type": "key",
      "title": "Alcool : zéro avant le vol",
-     "text": "**SERA.2020** : aucune fonction critique pour la sécurité sous l’influence d’une substance psychoactive (alcool, drogues). Ta règle : **zéro alcool**, et **8 h** au strict minimum après le dernier verre. En vol, l’alcool ajoute une hypoxie **histotoxique** et trouble l’oreille interne."
+     "text": "**SERA.2020** : aucune fonction critique pour la sécurité sous l’influence d’une substance psychoactive (alcool, drogues). Ta règle : **zéro alcool**, et **8 h** au strict minimum après le dernier verre. En vol, l’alcool ajoute une hypoxie **histotoxique** et trouble l’oreille interne, parfois plus de 24 h."
     },
     {
      "type": "formula",
@@ -830,8 +830,8 @@
    "label": "adaptation de l’œil à l’obscurité"
   },
   {
-   "value": "10 à 15°",
-   "label": "secteur de balayage (arrêt 1 s)"
+   "value": "≈ 10°",
+   "label": "secteur de balayage (arrêt ≥ 1 s)"
   },
   {
    "value": "12,5 s",
