@@ -1,611 +1,1493 @@
 {
-  "id": "lapl",
-  "units": [
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u7",
+   "title": "Procédures opérationnelles",
+   "description": "Procédures normales et d'urgence, phénomènes dangereux en vol, sécurité, survie, sauvetage et réserves de carburant réglementaires pour conduire un vol VFR en sécurité (examen : 12 questions, 18 min).",
+   "color": "#00a5a5",
+   "skills": [
     {
-      "id": "u7",
-      "title": "Procédures opérationnelles",
-      "description": "Procédures normales et d'urgence, phénomènes dangereux en vol, sécurité, survie, sauvetage et réserves de carburant réglementaires pour conduire un vol VFR en sécurité (examen : 12 questions, 18 min).",
-      "color": "#00a5a5",
-      "skills": [
-        {
-          "id": "u7s1",
-          "title": "Procédures normales",
-          "icon": "✅",
-          "tips": "Les check-lists évitent les oublis, quelle que soit la charge de travail. La référence reste le manuel de vol (AFM/POH) de l'avion.\n• Au sol, on lit chaque item puis on l'exécute (« lire-faire ») ; en vol, on enchaîne souvent les actions de mémoire puis on vérifie avec la liste (« faire-vérifier »).\n• En urgence, les actions réflexes sont faites de mémoire, puis vérifiées avec la check-list.\n\nBriefing passagers (Part-NCO) : le commandant de bord s'assure qu'avant le vol, ou pendant si nécessaire, les passagers sont informés des procédures d'urgence et de l'utilisation des équipements de secours. En pratique : ceintures, ouverture des portes, position de sécurité, extincteur, gilets s'ils sont emportés, sans oublier de ne pas toucher aux commandes.\n\nTour de piste : sauf indication contraire (carte VAC, ATC), tous les virages se font à gauche (SERA). Branches : montée initiale, vent traversier, vent arrière (parallèle à la piste, en sens inverse de l'atterrissage), étape de base, finale. La hauteur du circuit figure sur la carte VAC.\n\nVent de travers : composante traversière = vent × sin(angle vent/piste).\n• 30° → 0,5 ; 45° → 0,7 ; 60° → 0,9 ; 90° → 1.\n• Respecter la composante maximale démontrée du manuel de vol.\n• Décollage : ailerons braqués côté vent, braquage réduit quand la vitesse augmente ; axe tenu aux palonniers.\n• Atterrissage : approche en crabe puis décrabage avant le toucher, ou aile basse côté vent avec pied opposé.\n\nTurbulence de sillage : les tourbillons marginaux, issus de la portance, sont les plus forts derrière un avion lourd, lent et en configuration lisse. Ils descendent derrière lui et, près du sol, s'écartent latéralement ; un vent traversier faible peut en maintenir un sur la piste.\n• Catégories OACI (masse maximale au décollage) : L jusqu'à 7 000 kg ; M de plus de 7 000 kg à moins de 136 000 kg ; H à partir de 136 000 kg ; J (super) : A380.\n• Minimums OACI au départ : 2 min pour un L ou un M derrière un H, ou un L derrière un M ; 3 min en décollant d'une intersection.\n• Rester au-dessus de la trajectoire de l'avion lourd : décoller avant son point de rotation, se poser au-delà de son point de toucher.\n\nPistes contaminées (eau stagnante, neige fondante, neige, glace) : au décollage, le contaminant freine l'accélération et allonge la distance ; à l'atterrissage, le freinage est dégradé. Hydroplanage dynamique possible au-delà de V ≈ 9 √P (V en kt, P pression des pneus en psi).\n\nRemise de gaz : décision précoce dès que l'approche n'est pas stabilisée. Pleine puissance (réchauffage carburateur coupé selon le manuel), assiette de montée en contrant la tendance à cabrer et le lacet, volets rentrés par étapes selon le manuel (jamais tous d'un coup près du sol), puis annonce radio.",
-          "vocab": [
-            { "term": "Check-list", "translation": "Liste d'actions et de vérifications propre à chaque phase du vol" },
-            { "term": "Actions réflexes", "translation": "Premières actions d'urgence faites de mémoire, puis vérifiées" },
-            { "term": "Vent arrière", "translation": "Branche du circuit parallèle à la piste, sens inverse d'atterrissage" },
-            { "term": "Composante traversière", "translation": "Part du vent perpendiculaire à la piste : vent × sin(angle)" },
-            { "term": "Turbulence de sillage", "translation": "Tourbillons marginaux laissés par un avion, surtout lourd et lent" },
-            { "term": "Hydroplanage", "translation": "Pneu soulevé par un film d'eau : freinage et guidage quasi nuls" },
-            { "term": "Approche stabilisée", "translation": "Trajectoire, vitesse et configuration établies et stables en finale" },
-            { "term": "Remise de gaz", "translation": "Approche interrompue : pleine puissance, montée, nouveau circuit" }
-          ],
-          "questions": [
-            {
-              "id": "u7s1q01",
-              "q": "Une urgence survient en vol. Comment utilise-t-on la check-list d'urgence ?",
-              "choices": [
-                "On lit d'abord toute la check-list avant d'entreprendre la moindre action",
-                "On effectue de mémoire les actions réflexes, puis on les vérifie avec la check-list",
-                "On applique la check-list normale en sautant les items qui ne s'appliquent pas",
-                "On ne s'en sert pas en vol : elle sert à analyser l'incident une fois au sol"
-              ],
-              "answer": 1,
-              "explanation": "Les premières actions vitales sont apprises par cœur, car le temps manque. La check-list du manuel de vol sert ensuite à vérifier qu'aucune action n'a été oubliée et à compléter la procédure."
-            },
-            {
-              "id": "u7s1q02",
-              "q": "Selon le Part-NCO, qui doit s'assurer que les passagers reçoivent un briefing sur les procédures et les équipements de secours ?",
-              "choices": [
-                "L'exploitant de l'aérodrome de départ",
-                "Chaque passager, en lisant la notice placée à bord",
-                "Le service d'information de vol, lors du dépôt du plan de vol",
-                "Le commandant de bord, avant le vol ou pendant si nécessaire"
-              ],
-              "answer": 3,
-              "explanation": "Le Part-NCO charge le commandant de bord de veiller à ce que, avant le vol ou, si nécessaire, pendant le vol, les passagers soient informés des procédures d'urgence et de l'utilisation des équipements de secours (ceintures, portes, extincteur, gilets…)."
-            },
-            {
-              "id": "u7s1q03",
-              "q": "Sauf indication contraire de la carte VAC ou instruction du contrôle, dans quel sens s'effectue le tour de piste ?",
-              "choices": [
-                "Main gauche : tous les virages se font à gauche",
-                "Main droite : tous les virages se font à droite",
-                "Du côté opposé au vent dominant de l'aérodrome",
-                "Du côté de la piste où se trouvent les installations"
-              ],
-              "answer": 0,
-              "explanation": "Les règles de l'air (SERA) prévoient que, sauf indication contraire ou instruction ATC, tous les virages se font à gauche à l'approche et après le décollage. Les circuits main droite sont publiés sur la carte VAC."
-            },
-            {
-              "id": "u7s1q04",
-              "q": "Vous effectuez un tour de piste main gauche pour la piste 27, vent calme. Quel est le cap approximatif en vent arrière ?",
-              "choices": ["270°", "180°", "090°", "360°"],
-              "answer": 2,
-              "explanation": "La branche vent arrière est parallèle à la piste, en sens inverse de l'atterrissage : 270° − 180° = 090°. Le cap 180° correspond à la branche vent traversier de ce circuit main gauche."
-            },
-            {
-              "id": "u7s1q05",
-              "q": "Piste 27, la tour annonce un vent du 300° pour 16 kt. Quelle est la composante de vent traversier ?",
-              "choices": ["16 kt", "8 kt", "14 kt", "11 kt"],
-              "answer": 1,
-              "explanation": "Écart vent/piste : 300° − 270° = 30°. Composante traversière = 16 × sin 30° = 16 × 0,5 = 8 kt (la composante de face vaut 16 × cos 30° ≈ 14 kt)."
-            },
-            {
-              "id": "u7s1q06",
-              "q": "Au début du roulement au décollage, le vent de travers vient de la gauche. Comment positionner le manche en roulis ?",
-              "choices": [
-                "Braqué à gauche, côté vent, puis réduit à mesure que la vitesse augmente",
-                "Braqué à droite, à l'opposé du vent, pour soulager l'aile gauche au vent",
-                "Au neutre : au sol, le palonnier suffit à corriger l'effet du vent de travers",
-                "Braqué à gauche, en augmentant le braquage à mesure que la vitesse augmente"
-              ],
-              "answer": 0,
-              "explanation": "Ailerons braqués côté vent, l'aile au vent ne peut pas être soulevée. Leur efficacité croissant avec la vitesse, on réduit le braquage pendant l'accélération (l'augmenter ferait au contraire incliner l'avion) ; l'axe est tenu aux palonniers."
-            },
-            {
-              "id": "u7s1q07",
-              "q": "Dans quelle situation un avion génère-t-il la turbulence de sillage la plus forte ?",
-              "choices": [
-                "Lourd, rapide, volets sortis",
-                "Léger, lent, volets sortis",
-                "Léger, rapide, configuration lisse",
-                "Lourd, lent, configuration lisse"
-              ],
-              "answer": 3,
-              "explanation": "Les tourbillons marginaux naissent de la portance : ils sont d'autant plus intenses que l'avion est lourd et vole lentement, donc à grande incidence. La configuration lisse donne les tourbillons les plus concentrés (« heavy, clean, slow »)."
-            },
-            {
-              "id": "u7s1q08",
-              "q": "Selon la classification OACI de turbulence de sillage, à quelle catégorie appartient un avion de ligne dont la masse maximale au décollage est de 78 000 kg ?",
-              "choices": ["L (léger)", "H (lourd)", "M (moyen)", "J (super)"],
-              "answer": 2,
-              "explanation": "Catégories OACI : L jusqu'à 7 000 kg ; M de plus de 7 000 kg à moins de 136 000 kg ; H à partir de 136 000 kg ; J pour l'A380. Un avion de 78 t est donc de catégorie M."
-            },
-            {
-              "id": "u7s1q09",
-              "q": "Vous êtes en finale derrière un avion lourd qui vient de se poser sur la même piste. Comment éviter sa turbulence de sillage ?",
-              "choices": [
-                "Viser un point d'aboutissement avant son point de toucher, pour garder plus de piste",
-                "Rester au-dessus de sa trajectoire et se poser au-delà de son point de toucher",
-                "Se placer sous sa trajectoire, où l'air a été stabilisé par son passage",
-                "Se poser exactement à son point de toucher, où les tourbillons ont été détruits"
-              ],
-              "answer": 1,
-              "explanation": "Les tourbillons, produits tant que l'avion porte, descendent sous sa trajectoire et cessent au toucher. En restant au-dessus et en se posant plus loin (si la longueur de piste le permet), on les évite. Au départ, on décolle avant son point de rotation."
-            },
-            {
-              "id": "u7s1q10",
-              "q": "Quel est l'effet d'une couche de neige fondante sur la piste au décollage ?",
-              "choices": [
-                "La distance de décollage augmente, car le contaminant freine l'accélération",
-                "La distance de décollage diminue, car les roues frottent moins sur la piste",
-                "Elle n'affecte que l'atterrissage, en dégradant le freinage",
-                "Elle impose une vitesse de rotation plus faible pour quitter le sol plus tôt"
-              ],
-              "answer": 0,
-              "explanation": "Eau stagnante et neige fondante freinent les roues (résistance du contaminant, projections) : l'accélération diminue et la distance de décollage s'allonge. À l'atterrissage, c'est le freinage qui est dégradé."
-            },
-            {
-              "id": "u7s1q11",
-              "q": "D'après la formule approchée V ≈ 9 √P (V en kt, P en psi), à partir de quelle vitesse un avion dont les pneus sont gonflés à 36 psi risque-t-il l'hydroplanage dynamique ?",
-              "choices": ["36 kt", "60 kt", "45 kt", "54 kt"],
-              "answer": 3,
-              "explanation": "√36 = 6, donc V ≈ 9 × 6 = 54 kt. Au-delà, sur une piste couverte d'eau, le pneu peut se soulever sur un film d'eau : freinage et contrôle directionnel deviennent presque nuls."
-            },
-            {
-              "id": "u7s1q12",
-              "q": "En courte finale, volets complètement sortis, vous décidez de remettre les gaz. Quelle séquence est correcte ?",
-              "choices": [
-                "Rentrer d'abord tous les volets, puis afficher la pleine puissance",
-                "Afficher la pleine puissance et laisser l'avion cabrer sous l'effet du compensateur",
-                "Pleine puissance, assiette de montée tenue, puis volets rentrés par étapes",
-                "Garder la puissance d'approche et rentrer les volets pour accélérer avant de monter"
-              ],
-              "answer": 2,
-              "explanation": "La puissance d'abord, en tenant l'assiette : compensé pour l'approche, l'avion tend à cabrer fortement, et le lacet doit être contré. Rentrer tous les volets d'un coup près du sol ferait perdre de la portance : on les rentre par étapes, selon le manuel de vol, en surveillant la vitesse."
-            }
-          ]
-        },
-        {
-          "id": "u7s2",
-          "title": "Procédures d'urgence",
-          "icon": "🔥",
-          "tips": "Règle d'or : piloter, naviguer, communiquer. On tient d'abord l'avion et sa vitesse, puis on applique les actions réflexes et la check-list du manuel de vol, seule référence pour un avion donné.\n\nPanne moteur au décollage :\n• Rendre la main immédiatement : en montée, la vitesse chute en quelques secondes. Afficher la vitesse de plané.\n• À basse hauteur, se poser à peu près droit devant, en ne s'écartant que modérément de l'axe pour éviter les obstacles.\n• Ne pas faire demi-tour : en virage, le facteur de charge augmente la vitesse de décrochage et le taux de chute ; il faut bien plus de 180° pour rejoindre l'axe et l'on arriverait vent arrière. Risque de décrochage-vrille.\n• S'il reste du temps : carburant, magnétos et contact général coupés selon le manuel, portes déverrouillées, MAYDAY.\n\nPanne moteur en vol, atterrissage forcé :\n• Vitesse de plané, avion compensé, choix d'un terrain atteignable : face au vent, assez long, plat ou en légère montée, surface ferme, sans obstacle en approche (lignes électriques). Champ labouré : se poser le long des sillons.\n• Si la hauteur le permet, rechercher la cause : réchauffage carburateur, sélecteur de réservoir, pompe électrique, mélange, magnétos.\n• Distance de plané en air calme = hauteur × finesse (1 000 m × 8 = 8 km). Le vent de face la réduit, le vent arrière l'augmente.\n\nFeu moteur en vol : couper l'arrivée de carburant (robinet fermé, mélange sur étouffoir), fermer le chauffage cabine (son air est réchauffé autour de l'échappement), couper l'électricité selon le manuel et effectuer un atterrissage forcé. Ne jamais redémarrer un moteur qui a pris feu.\n\nFeu électrique, fumée : odeur d'isolant brûlé. Couper le contact général, fermer le chauffage, utiliser l'extincteur si nécessaire puis aérer, se poser dès que possible. Ne pas réarmer un disjoncteur qui a sauté pendant un feu.\n\nMonoxyde de carbone (fuite d'échappement dans le chauffage) : maux de tête, somnolence. Fermer le chauffage, ouvrir les aérations, se poser.\n\nPanne d'alternateur : voyant allumé, ampèremètre en décharge. Vérifier interrupteur et disjoncteur (un seul réarmement), délester les équipements non essentiels et écourter le vol : la batterie seule ne tient qu'un temps limité. Le moteur continue de tourner, car les magnétos sont indépendantes du circuit électrique.\n\nOuverture de porte en vol : bruyante mais rarement dangereuse. Piloter d'abord, réduire la vitesse, ne pas tenter de refermer si le manuel ne le prévoit pas, revenir se poser.\n\nDétresse : MAYDAY sur la fréquence en cours ou sur 121,5 MHz, transpondeur 7700.",
-          "vocab": [
-            { "term": "Finesse", "translation": "Rapport distance parcourue / hauteur perdue en vol plané" },
-            { "term": "Vitesse de finesse max", "translation": "Vitesse donnant la plus grande distance de plané en air calme" },
-            { "term": "Atterrissage forcé", "translation": "Atterrissage imposé par une panne, souvent hors aérodrome" },
-            { "term": "Étouffoir", "translation": "Position du mélange qui coupe l'essence et arrête le moteur" },
-            { "term": "Contact général", "translation": "Interrupteur qui coupe batterie et alternateur du circuit de bord" },
-            { "term": "Magnéto", "translation": "Générateur autonome du courant d'allumage, entraîné par le moteur" },
-            { "term": "Délestage", "translation": "Coupure des équipements électriques non essentiels" },
-            { "term": "MAYDAY", "translation": "Message de détresse : danger grave et imminent, aide immédiate" }
-          ],
-          "questions": [
-            {
-              "id": "u7s2q01",
-              "q": "Le moteur s'arrête en montée initiale, à 300 ft au-dessus de la piste. Quelle est la toute première action ?",
-              "choices": [
-                "Virer de 180° pour revenir se poser sur la piste",
-                "Actionner le démarreur pour tenter de relancer le moteur",
-                "Rendre la main pour conserver la vitesse de plané",
-                "Lancer un message MAYDAY avant toute autre action"
-              ],
-              "answer": 2,
-              "explanation": "En montée, l'assiette est forte : sans traction, la vitesse chute en quelques secondes. Il faut d'abord baisser le nez pour garder la vitesse de plané et éviter le décrochage ; le choix du terrain, les actions moteur et le message viennent ensuite."
-            },
-            {
-              "id": "u7s2q02",
-              "q": "Pourquoi ne faut-il pas tenter de revenir vers la piste après une panne moteur à basse hauteur ?",
-              "choices": [
-                "Le virage accroît le taux de chute et la vitesse de décrochage ; on arriverait vent arrière",
-                "La réglementation interdit tout virage à moins de 500 ft au-dessus de la piste",
-                "Sans moteur, les ailerons perdent leur efficacité et l'avion ne peut plus virer",
-                "Le virage réduit la vitesse de décrochage, ce qui incite à voler beaucoup trop lentement"
-              ],
-              "answer": 0,
-              "explanation": "Ce n'est pas une interdiction réglementaire : en virage, le facteur de charge augmente (et non réduit) la vitesse de décrochage et la perte de hauteur ; rejoindre l'axe demande bien plus de 180° et l'on se poserait vent arrière. Se poser à peu près droit devant est la solution la plus sûre."
-            },
-            {
-              "id": "u7s2q03",
-              "q": "La finesse de votre avion est de 10. Le moteur s'arrête à 900 m au-dessus du sol, en air calme. Quelle distance maximale pouvez-vous parcourir en plané ?",
-              "choices": ["4,5 km", "18 km", "9 km", "0,9 km"],
-              "answer": 2,
-              "explanation": "Distance de plané = hauteur × finesse = 900 m × 10 = 9 000 m, soit 9 km en air calme, à la vitesse de finesse max. Le vent de face la réduit, le vent arrière l'augmente."
-            },
-            {
-              "id": "u7s2q04",
-              "q": "Pour un atterrissage forcé, vous hésitez entre plusieurs champs atteignables et assez longs. Lequel choisir ?",
-              "choices": [
-                "Un champ en pente descendante dans le sens de l'atterrissage, face au vent",
-                "Un champ moissonné, plat, abordable face au vent, sans obstacle en approche",
-                "Un champ de maïs haut et plat, abordable vent arrière",
-                "Une prairie plate, abordable vent de travers, avec une ligne électrique en finale"
-              ],
-              "answer": 1,
-              "explanation": "On recherche un terrain plat ou légèrement montant, à surface ferme et dégagée, abordable face au vent (vitesse sol et distance d'arrêt réduites) et sans obstacle sur la trajectoire d'approche."
-            },
-            {
-              "id": "u7s2q05",
-              "q": "Lors d'un feu moteur en vol, pourquoi ferme-t-on le chauffage cabine ?",
-              "choices": [
-                "Pour réserver toute l'énergie électrique à la radio et au transpondeur",
-                "Son circuit renvoie de l'air chaud vers le moteur, ce qui attiserait le feu",
-                "Pour éviter le givrage du carburateur pendant la descente vers le terrain choisi",
-                "Son air, réchauffé autour de l'échappement, amènerait fumées et flammes en cabine"
-              ],
-              "answer": 3,
-              "explanation": "Sur la plupart des avions légers, l'air de chauffage est réchauffé par un échangeur autour du pot d'échappement, dans le compartiment moteur. En cas de feu, il ferait entrer fumées et gaz toxiques dans la cabine."
-            },
-            {
-              "id": "u7s2q06",
-              "q": "Un feu moteur se déclare en croisière. Quel est le principe général de la procédure, à appliquer selon le manuel de vol ?",
-              "choices": [
-                "Couper le carburant, fermer le chauffage, préparer un atterrissage forcé sans redémarrer",
-                "Enrichir le mélange et augmenter la puissance pour chasser les flammes vers l'arrière",
-                "Couper puis rallumer les magnétos pour relancer le moteur une fois le feu éteint",
-                "Ouvrir le chauffage cabine pour évacuer la fumée du compartiment moteur"
-              ],
-              "answer": 0,
-              "explanation": "On prive le feu de carburant (robinet fermé, mélange sur étouffoir), on protège la cabine et on se pose au plus vite. On ne redémarre jamais un moteur qui a pris feu."
-            },
-            {
-              "id": "u7s2q07",
-              "q": "Une odeur d'isolant brûlé et de la fumée apparaissent derrière le tableau de bord. Quelle est la première mesure générale ?",
-              "choices": [
-                "Ouvrir le chauffage cabine pour dissiper la fumée",
-                "Couper le contact général (batterie et alternateur)",
-                "Couper les magnétos pour arrêter le moteur",
-                "Réarmer les disjoncteurs qui ont sauté"
-              ],
-              "answer": 1,
-              "explanation": "L'odeur d'isolant signe un feu électrique : couper l'alimentation supprime la source d'échauffement. On utilise l'extincteur si nécessaire, on aère une fois le feu éteint et on se pose dès que possible. Un disjoncteur sauté lors d'un feu ne se réarme pas."
-            },
-            {
-              "id": "u7s2q08",
-              "q": "En hiver, chauffage cabine ouvert, vous ressentez maux de tête et somnolence. Que suspecter et que faire ?",
-              "choices": [
-                "Le mal des transports : fixer l'horizon et poursuivre le vol",
-                "Un givrage carburateur : tirer le réchauffage et poursuivre",
-                "Une simple fatigue : augmenter le chauffage pour rester éveillé",
-                "Du monoxyde de carbone : fermer le chauffage, aérer et se poser"
-              ],
-              "answer": 3,
-              "explanation": "Une fuite de l'échappement dans l'échangeur du chauffage peut introduire du monoxyde de carbone, gaz incolore et inodore. On ferme le chauffage, on ventile à l'air frais et on se pose au plus vite ; un détecteur de CO aide à le repérer."
-            },
-            {
-              "id": "u7s2q09",
-              "q": "Sur un avion léger classique à moteur à pistons, l'alternateur tombe en panne. Pourquoi le moteur continue-t-il de tourner ?",
-              "choices": [
-                "Parce que la batterie prend le relais et alimente directement les bougies",
-                "Parce qu'un alternateur de secours, entraîné par l'hélice, prend le relais",
-                "Parce que l'allumage vient des magnétos, indépendantes du circuit électrique",
-                "Parce que le moteur ne s'arrêtera qu'une fois la batterie entièrement déchargée"
-              ],
-              "answer": 2,
-              "explanation": "Les magnétos, entraînées par le moteur, produisent elles-mêmes le courant d'allumage. La panne d'alternateur prive seulement l'avion de recharge : la batterie alimente les équipements électriques pour un temps limité."
-            },
-            {
-              "id": "u7s2q10",
-              "q": "La panne d'alternateur est confirmée, le réarmement du disjoncteur est resté sans effet. Quelle est la conduite à tenir ?",
-              "choices": [
-                "Délester les équipements non essentiels et écourter le vol",
-                "Poursuivre le vol prévu sans changement, la batterie suffisant",
-                "Allumer tous les équipements pour vérifier lesquels fonctionnent encore",
-                "Réarmer le disjoncteur à intervalles réguliers jusqu'à l'arrivée"
-              ],
-              "answer": 0,
-              "explanation": "La batterie seule ne tient qu'un temps limité. On garde l'indispensable (radio, transpondeur), on anticipe la perte des équipements électriques (volets, jauges, éclairage) et on se pose dès que possible, selon le manuel de vol."
-            },
-            {
-              "id": "u7s2q11",
-              "q": "Juste après le décollage, la porte passager s'entrouvre. Quelle est la conduite à tenir ?",
-              "choices": [
-                "Lâcher les commandes un instant pour la claquer à deux mains, puis poursuivre",
-                "Accélérer au maximum pour que le flux d'air plaque la porte contre le fuselage",
-                "Couper le moteur et se poser droit devant, dans le premier champ venu",
-                "Piloter d'abord, faire un tour de piste et se poser pour la refermer au sol"
-              ],
-              "answer": 3,
-              "explanation": "Une porte ouverte est surtout bruyante : l'avion reste pilotable. Le vrai danger est la distraction ; on pilote d'abord, on réduit la vitesse selon le manuel et on revient se poser pour la refermer au sol."
-            },
-            {
-              "id": "u7s2q12",
-              "q": "En croisière, le régime baisse puis le moteur devient irrégulier. Quelles vérifications font partie des actions habituelles avant d'envisager un atterrissage forcé ?",
-              "choices": [
-                "Couper la pompe électrique et appauvrir le mélange au maximum",
-                "Réchauffage carburateur, sélecteur de réservoir, mélange et magnétos",
-                "Réduire au ralenti, puis couper le contact général et les magnétos",
-                "Ouvrir le chauffage cabine, sortir les volets et réduire les gaz"
-              ],
-              "answer": 1,
-              "explanation": "Les causes les plus fréquentes sont le givrage carburateur et un problème d'alimentation (réservoir vide, sélecteur mal placé, mélange). La check-list du manuel prévoit typiquement : réchauffage, changement de réservoir, pompe électrique, mélange, essai des magnétos."
-            }
-          ]
-        },
-        {
-          "id": "u7s3",
-          "title": "Phénomènes et risques en vol",
-          "icon": "🌩️",
-          "tips": "Cisaillement de vent : variation brutale du vent en force ou en direction sur une courte distance (orage, front, relief, obstacles près de la piste). Par inertie, l'avion garde d'abord sa vitesse sol :\n• perte de vent de face : la vitesse indiquée chute, l'avion s'enfonce sous le plan ;\n• hausse du vent de face : la vitesse indiquée augmente, l'avion passe au-dessus du plan.\nUne microrafale (courant descendant sous un orage) donne successivement vent de face, descendance puis vent arrière. Réaction : pleine puissance et remise de gaz.\n\nGivrage cellule : en nuage ou dans les précipitations à température négative (eau surfondue), la pluie verglaçante étant la plus dangereuse. Le givre augmente masse et traînée, déforme le profil et élève la vitesse de décrochage. Un avion non certifié pour le givrage doit quitter ces conditions sans attendre (demi-tour, changement d'altitude).\n\nGivrage carburateur : la détente dans le venturi et l'évaporation de l'essence peuvent refroidir l'air de 30 °C environ. Risque par air humide, d'environ −10 °C à +30 °C, maximal à puissance réduite.\n• Symptômes (hélice à pas fixe) : baisse de régime, puis moteur irrégulier.\n• Réchauffage : tout ou rien. Le régime baisse (air chaud moins dense), puis remonte s'il y avait de la glace.\n• L'appliquer avant de réduire pour une descente prolongée. Air chaud non filtré : l'éviter au roulage sur sol poussiéreux.\n\nOrages : turbulence, grêle, foudre, givrage, cisaillement. Les contourner très largement, ne passer ni sous la base (rafales descendantes) ni sous l'enclume (grêle). Ne pas décoller ni atterrir à l'approche d'un orage (front de rafales).\n\nPerte de références visuelles : la désorientation spatiale s'installe vite. Passer sur les instruments, ailes à plat, puis demi-tour au taux standard (3°/s, soit 1 min pour 180°) à inclinaison modérée vers la zone VMC quittée. Ne pas descendre sous l'altitude de sécurité ; demander l'aide de l'ATC.\n\nVol au-dessus de l'eau : voler haut pour rester en distance de plané d'une côte, choisir la traversée la plus courte, emporter les gilets. L'horizon peut disparaître dans la brume et la hauteur est difficile à estimer au-dessus d'une mer calme.\n\nVol en montagne (notions) : franchir les crêtes avec une marge de hauteur et sous 45° environ, pour pouvoir s'en écarter ; se méfier du côté sous le vent (descendances, rotors) ; voler sur un côté de la vallée pour garder la place d'un demi-tour ; performances réduites par l'altitude-densité.\n\nOiseaux : collisions surtout à basse hauteur, près des aérodromes, à l'aube, au crépuscule et en période de migration. L'énergie de l'impact est proportionnelle au carré de la vitesse : à vitesse double, énergie × 4. Consulter les NOTAM et déclarer toute collision.",
-          "vocab": [
-            { "term": "Cisaillement de vent", "translation": "Variation brutale du vent en force ou direction sur peu de distance" },
-            { "term": "Microrafale", "translation": "Violent courant descendant sous un orage, qui diverge près du sol" },
-            { "term": "Eau surfondue", "translation": "Eau restée liquide sous 0 °C, qui gèle au contact de l'avion" },
-            { "term": "Pluie verglaçante", "translation": "Pluie surfondue qui gèle à l'impact : givrage très rapide" },
-            { "term": "Réchauffage carburateur", "translation": "Air chauffé par l'échappement admis au carburateur contre la glace" },
-            { "term": "Taux standard", "translation": "Virage à 3°/s : 180° en 1 min, 360° en 2 min" },
-            { "term": "Désorientation spatiale", "translation": "Perception fausse de l'attitude de l'avion sans références" },
-            { "term": "Côté sous le vent", "translation": "Versant abrité du vent, siège de descendances et de rotors" }
-          ],
-          "questions": [
-            {
-              "id": "u7s3q01",
-              "q": "En finale, le vent de face diminue brusquement. Quel est l'effet immédiat sur l'avion ?",
-              "choices": [
-                "La vitesse indiquée augmente et l'avion passe au-dessus du plan",
-                "La vitesse indiquée reste constante, seule la vitesse sol varie",
-                "La vitesse sol diminue aussitôt, sans effet sur la vitesse indiquée",
-                "La vitesse indiquée diminue et l'avion s'enfonce sous le plan"
-              ],
-              "answer": 3,
-              "explanation": "Par inertie, l'avion conserve d'abord sa vitesse sol : si le vent de face diminue, sa vitesse par rapport à l'air chute, la portance baisse et il passe sous le plan. Il faut ajouter de la puissance, voire remettre les gaz."
-            },
-            {
-              "id": "u7s3q02",
-              "q": "En approche, vous traversez une microrafale sous un cumulonimbus. Dans quel ordre en subissez-vous les effets ?",
-              "choices": [
-                "Vent arrière, puis courant descendant, puis vent de face",
-                "Courant ascendant, puis vent de face, puis vent arrière",
-                "Vent de face, puis courant descendant, puis vent arrière",
-                "Courant descendant seul, sans variation du vent horizontal"
-              ],
-              "answer": 2,
-              "explanation": "L'air descendant s'étale au sol en divergeant : un vent de face améliore d'abord les performances et peut tromper le pilote, puis viennent la descendance et un vent arrière qui fait chuter la vitesse près du sol. Si l'on est pris, remise de gaz immédiate à pleine puissance."
-            },
-            {
-              "id": "u7s3q03",
-              "q": "Dans quelles conditions le risque de givrage carburateur est-il le plus élevé ?",
-              "choices": [
-                "Air sec à −20 °C, pleine puissance en montée",
-                "Air humide à +15 °C, puissance réduite en descente",
-                "Air sec à +30 °C, puissance de croisière",
-                "Air sec à −5 °C, pleine puissance au décollage"
-              ],
-              "answer": 1,
-              "explanation": "La détente dans le venturi et l'évaporation de l'essence peuvent refroidir l'air d'environ 30 °C : la glace se forme par air humide, même par température extérieure positive, surtout papillon presque fermé."
-            },
-            {
-              "id": "u7s3q04",
-              "q": "Hélice à pas fixe, en croisière : vous tirez le réchauffage carburateur. Le régime baisse, puis remonte progressivement. Qu'en concluez-vous ?",
-              "choices": [
-                "De la glace s'était formée et elle est en train de fondre",
-                "Il n'y avait pas de glace : seule la densité de l'air a changé",
-                "Le réchauffage est défectueux et doit être repoussé aussitôt",
-                "Le mélange était trop riche et le réchauffage l'a appauvri"
-              ],
-              "answer": 0,
-              "explanation": "L'air chaud, moins dense, enrichit le mélange et fait baisser le régime. Si celui-ci remonte ensuite, c'est que la glace fond et libère le passage ; sans glace, le régime baisse puis reste stable."
-            },
-            {
-              "id": "u7s3q05",
-              "q": "Sauf indication contraire du manuel de vol, comment utilise-t-on le réchauffage carburateur ?",
-              "choices": [
-                "En position intermédiaire, en permanence pendant tout le vol",
-                "Uniquement au sol, lors des essais moteur",
-                "À fond, et avant de réduire la puissance pour une descente prolongée",
-                "Seulement après l'arrêt du moteur, pour faciliter son redémarrage"
-              ],
-              "answer": 2,
-              "explanation": "Un réchauffage partiel peut amener l'air dans la plage la plus givrante : on l'utilise à fond. Le risque étant maximal à faible puissance, on l'applique avant la réduction, quand le moteur fournit encore assez de chaleur."
-            },
-            {
-              "id": "u7s3q06",
-              "q": "Pourquoi le givrage de la cellule est-il dangereux pour un avion léger ?",
-              "choices": [
-                "Il épaissit le profil, ce qui augmente la portance mais aussi la traînée",
-                "Il alourdit l'avion, mais la vitesse de décrochage reste celle du manuel de vol",
-                "Il réduit surtout la traction de l'hélice, la portance de l'aile restant intacte",
-                "Il alourdit l'avion, augmente la traînée et élève la vitesse de décrochage"
-              ],
-              "answer": 3,
-              "explanation": "Quelques millimètres de givre déforment le profil et dégradent fortement la portance, alors que masse et traînée augmentent : la vitesse de décrochage s'élève au-dessus des valeurs du manuel de vol. Un avion non certifié pour le givrage doit quitter ces conditions sans attendre."
-            },
-            {
-              "id": "u7s3q07",
-              "q": "Vous devez traverser un bras de mer à bord d'un monomoteur. Quelle mesure améliore le plus votre sécurité ?",
-              "choices": [
-                "Voler bas pour mieux surveiller la surface de l'eau",
-                "Voler plus haut pour réduire la portion du trajet hors de plané d'une côte",
-                "Suivre la route directe, même si elle allonge le trajet au-dessus de l'eau",
-                "Réduire la puissance au minimum pour économiser le carburant"
-              ],
-              "answer": 1,
-              "explanation": "La hauteur, c'est de la distance de plané : plus on vole haut, plus courte est la portion de trajet hors de portée d'une côte. On choisit aussi la traversée la plus courte et on emporte gilets et moyens de signalisation."
-            },
-            {
-              "id": "u7s3q08",
-              "q": "Comment un pilote VFR doit-il éviter un cumulonimbus isolé ?",
-              "choices": [
-                "En le contournant très largement, sans passer sous sa base ni sous son enclume",
-                "En passant sous sa base, où la visibilité reste souvent bonne hors averses",
-                "En passant sous l'enclume, à l'écart des précipitations du cœur de l'orage",
-                "En le traversant par le plus court chemin, à la vitesse maximale autorisée"
-              ],
-              "answer": 0,
-              "explanation": "Sous la base règnent rafales descendantes et cisaillement ; de la grêle peut tomber de l'enclume, loin du cœur de l'orage. Turbulence, foudre et givrage complètent les dangers : seul un large contournement est sûr."
-            },
-            {
-              "id": "u7s3q09",
-              "q": "En VFR, vous entrez par inadvertance dans un nuage. Quelle est la conduite recommandée ?",
-              "choices": [
-                "Réduire, puis descendre rapidement pour retrouver au plus vite la vue du sol",
-                "Passer aux instruments, ailes à plat, puis faire demi-tour à inclinaison modérée",
-                "Virer serré, à forte inclinaison, pour ressortir du nuage au plus vite",
-                "Poursuivre tout droit en montée jusqu'à sortir au-dessus de la couche"
-              ],
-              "answer": 1,
-              "explanation": "Sans références extérieures, l'oreille interne trompe rapidement le pilote. On fait confiance aux instruments, on stabilise l'avion puis on vire de 180° au taux standard ou moins pour retrouver les conditions VMC quittées, sans descendre sous l'altitude de sécurité."
-            },
-            {
-              "id": "u7s3q10",
-              "q": "Pour contourner une averse, vous virez par la gauche du cap 030° au cap 300°, au taux standard (3° par seconde). Combien de temps dure le virage ?",
-              "choices": ["1 min 30 s", "1 min", "2 min", "30 s"],
-              "answer": 3,
-              "explanation": "Par la gauche, de 030° à 300° : 30° jusqu'au 360°, puis 60°, soit 90° au total. Durée = 90° ÷ 3°/s = 30 s ; par la droite, il aurait fallu virer de 270°, soit 1 min 30 s."
-            },
-            {
-              "id": "u7s3q11",
-              "q": "Le vent souffle perpendiculairement à une crête que vous devez franchir. Quelle technique est recommandée ?",
-              "choices": [
-                "Aborder la crête à environ 45°, avec une marge de hauteur, pour pouvoir s'en écarter",
-                "Aborder la crête perpendiculairement, au ras du sommet, pour la franchir au plus vite",
-                "Longer la crête du côté sous le vent, où l'air est plus calme",
-                "Franchir la crête en descente pour prendre de la vitesse"
-              ],
-              "answer": 0,
-              "explanation": "Côté sous le vent, les descendances et les rotors peuvent dépasser les capacités de montée d'un avion léger. Un abord oblique avec de la marge permet de s'écarter vers la vallée sans avoir à virer face au relief."
-            },
-            {
-              "id": "u7s3q12",
-              "q": "Vous volez à vitesse double. Par combien est multipliée l'énergie d'une éventuelle collision avec un oiseau ?",
-              "choices": ["Par 2", "Par 3", "Par 4", "Par 8"],
-              "answer": 2,
-              "explanation": "L'énergie cinétique vaut ½ m v² : elle est proportionnelle au carré de la vitesse. Doubler la vitesse multiplie l'énergie de l'impact par 2² = 4 ; réduire la vitesse dans une zone à oiseaux limite les dégâts."
-            }
-          ]
-        },
-        {
-          "id": "u7s4",
-          "title": "Sécurité, survie et sauvetage",
-          "icon": "🛟",
-          "tips": "Balise de détresse (ELT) : déclenchement automatique au choc, ou manuel.\n• 406 MHz : signal numérique capté par les satellites Cospas-Sarsat ; il contient l'identité de la balise (enregistrée) et souvent sa position GNSS.\n• 121,5 MHz : signal de radioralliement sur lequel se guident les moyens de recherche. Les satellites ne le traitent plus depuis 2009.\n• Part-NCO : ELT et balises personnelles (PLB) émettent simultanément sur 121,5 et 406 MHz ; un avion certifié pour 6 sièges passagers au plus peut se contenter d'une ELT de survie ou d'une PLB portée par un occupant.\n• Déclenchement intempestif : prévenir l'ATC. Après un atterrissage dur, écouter le 121,5 MHz.\n\nRecherche et sauvetage (SAR) : phases INCERFA (incertitude), ALERFA (alerte), DETRESFA (détresse). La phase d'incertitude est déclarée notamment si un aéronef n'arrive pas dans les 30 min suivant sa dernière heure d'arrivée prévue. Avec un plan de vol, faire un compte rendu d'arrivée ; sans organisme ATS sur place, le transmettre au plus vite à l'organisme le plus proche.\n\nSurvie : rester près de l'avion, plus visible qu'une personne isolée. Signaux sol-air : V = besoin d'assistance ; X = besoin d'assistance médicale ; N = non ; Y = oui ; flèche = direction suivie. Au-dessus des zones où le SAR serait difficile, emporter des moyens de signalisation (fusées, miroir) et de survie (eau, couverture).\n\nAmerrissage : portes déverrouillées avant l'impact, ceintures serrées, train escamotable rentré ; toucher à la vitesse la plus faible possible, assiette cabrée, parallèlement à la houle si elle est forte. Le gilet s'enfile avant, mais ne se gonfle qu'une fois sorti de l'avion. Part-NCO : gilet pour chaque occupant d'un monomoteur terrestre survolant l'eau au-delà de la distance de plané de la terre, ou si la trajectoire de décollage ou d'approche rend un amerrissage probable.\n\nCarburant VFR (Part-NCO, NCO.OP.125 et AMC1 NCO.OP.125(b), avions) : de quoi rejoindre la destination en conservant une réserve finale d'au moins 30 min de vol de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination (10 min à la puissance maximale de croisière continue pour un vol local de jour : décollage et atterrissage au même aérodrome, en restant en vue de celui-ci). Cette réserve finale ne doit pas être entamée en exploitation normale. Ex. : 1 h 30 de vol de jour à 24 L/h → (1,5 + 0,5) × 24 = 48 L, plus roulage et carburant inutilisable (calculer la réserve avec la consommation de croisière va dans le sens de la sécurité).\n\nÉvacuation : couper carburant et contact général, évacuer sans délai, emporter si possible l'équipement de survie et s'éloigner en remontant le vent.\n\nExtincteurs, classes de feu :\n• A : solides formant des braises (bois, papier, tissus) ;\n• B : liquides ou solides liquéfiables (essence, huile) ;\n• C : gaz ; D : métaux ; F : huiles de cuisson.\n• Feu électrique : agent non conducteur (halon ou substitut, CO₂). Jamais de jet d'eau sur un feu électrique ni sur un feu d'essence. Viser la base des flammes, puis aérer la cabine.",
-          "vocab": [
-            { "term": "ELT", "translation": "Balise de détresse d'aéronef, émettant sur 406 et 121,5 MHz" },
-            { "term": "PLB", "translation": "Balise de détresse personnelle, portée par une personne" },
-            { "term": "Cospas-Sarsat", "translation": "Système satellitaire international de détection des balises" },
-            { "term": "Radioralliement", "translation": "Guidage des secours vers la balise grâce à son signal 121,5 MHz" },
-            { "term": "SAR", "translation": "Search And Rescue : recherche et sauvetage" },
-            { "term": "INCERFA / ALERFA / DETRESFA", "translation": "Phases d'urgence successives : incertitude, alerte, détresse" },
-            { "term": "Réserve finale (VFR)", "translation": "Avion, Part-NCO : 30 min de jour, 45 min de nuit (attente, 1 500 ft)" },
-            { "term": "Feu de classe B", "translation": "Feu de liquides ou solides liquéfiables : essence, huile" }
-          ],
-          "questions": [
-            {
-              "id": "u7s4q01",
-              "q": "Quel est l'intérêt principal de l'émission d'une balise ELT sur 406 MHz ?",
-              "choices": [
-                "Captée par les satellites Cospas-Sarsat, elle transmet l'identité codée de la balise",
-                "Elle permet au pilote de dialoguer en phonie avec les secours depuis l'épave",
-                "Elle est relayée sur la fréquence de travail des avions qui survolent la zone",
-                "Elle affiche la position de l'épave sur le radar du contrôleur, avec le code 7700"
-              ],
-              "answer": 0,
-              "explanation": "Le signal numérique sur 406 MHz est relayé par les satellites vers les centres de secours ; il contient l'identité de la balise, enregistrée, et souvent une position GNSS. Le 121,5 MHz sert au radioralliement final."
-            },
-            {
-              "id": "u7s4q02",
-              "q": "À quoi sert principalement l'émission simultanée de la balise sur 121,5 MHz ?",
-              "choices": [
-                "À transmettre la position GNSS de l'épave aux satellites",
-                "Au radioralliement : les moyens de recherche se guident sur ce signal",
-                "À prévenir automatiquement le contrôleur de la fréquence en cours",
-                "À afficher automatiquement le code 7700 sur le transpondeur"
-              ],
-              "answer": 1,
-              "explanation": "Les satellites ne traitent plus le 121,5 MHz depuis 2009 : l'alerte vient du 406 MHz. Sur zone, avions et hélicoptères de recherche se dirigent ensuite sur le signal 121,5 MHz pour localiser précisément l'épave."
-            },
-            {
-              "id": "u7s4q03",
-              "q": "Un aéronef n'est pas arrivé dans les 30 minutes suivant sa dernière heure d'arrivée prévue, sans autre information. Que déclenchent les services de la circulation aérienne ?",
-              "choices": [
-                "La phase de détresse (DETRESFA), avec envoi immédiat des secours",
-                "La phase d'alerte (ALERFA)",
-                "La phase d'incertitude (INCERFA)",
-                "Seulement un appel radio, une phase n'étant déclarée qu'après 1 heure de retard"
-              ],
-              "answer": 2,
-              "explanation": "Les trois phases successives sont INCERFA (incertitude), ALERFA (alerte) et DETRESFA (détresse). L'absence d'arrivée dans les 30 min qui suivent la dernière heure d'arrivée prévue déclenche la phase d'incertitude."
-            },
-            {
-              "id": "u7s4q04",
-              "q": "Vous avez déposé un plan de vol VFR et vous vous posez sur un aérodrome dépourvu d'organisme des services de la circulation aérienne (ATS). Que devez-vous faire ?",
-              "choices": [
-                "Rien : le plan de vol se clôture automatiquement à l'heure d'arrivée prévue",
-                "Envoyer au plus vite un compte rendu d'arrivée à l'organisme ATS le plus proche",
-                "Clôturer le plan de vol plus tard, lors du dépôt de votre prochain plan de vol",
-                "Confier à votre aéroclub la clôture du plan de vol, à sa réouverture le lendemain"
-              ],
-              "answer": 1,
-              "explanation": "Les règles de l'air (SERA) imposent un compte rendu d'arrivée dès que possible après l'atterrissage. Sans organisme sur place, on le transmet par le moyen le plus rapide à l'organisme ATS le plus proche ; attendre le lendemain ou le prochain plan de vol risquerait de déclencher des recherches inutiles."
-            },
-            {
-              "id": "u7s4q05",
-              "q": "Après un atterrissage forcé, un occupant est blessé. Quel symbole tracer au sol pour demander une assistance médicale ?",
-              "choices": ["V", "N", "Y", "X"],
-              "answer": 3,
-              "explanation": "Code visuel sol-air de l'OACI pour les survivants : V = besoin d'assistance, X = besoin d'assistance médicale, N = non, Y = oui, flèche = direction suivie. Les symboles doivent être grands et bien contrastés."
-            },
-            {
-              "id": "u7s4q06",
-              "q": "Après un atterrissage forcé en zone isolée, sans blessé grave, quelle est la meilleure décision en attendant les secours ?",
-              "choices": [
-                "Rester près de l'avion et préparer les moyens de signalisation",
-                "Partir aussitôt à pied à la recherche d'une route",
-                "Couper la balise de détresse pour préserver sa batterie",
-                "Se disperser autour de l'épave pour être aperçus de plus loin"
-              ],
-              "answer": 0,
-              "explanation": "L'épave est bien plus visible du ciel qu'une personne isolée et la balise y guide les secours. On s'abrite, on prépare fusées, miroir ou signaux au sol, et on ne quitte l'avion que si y rester est dangereux."
-            },
-            {
-              "id": "u7s4q07",
-              "q": "Lors d'un amerrissage, à quel moment faut-il gonfler son gilet de sauvetage ?",
-              "choices": [
-                "Avant l'impact, pour amortir le choc",
-                "Dès l'arrêt de l'avion, encore assis à son siège",
-                "Seulement une fois sorti de l'avion",
-                "Pendant la descente, dès que la décision d'amerrir est prise"
-              ],
-              "answer": 2,
-              "explanation": "Gonflé dans la cabine, le gilet gêne les mouvements et peut plaquer son porteur contre le plafond quand l'eau entre, empêchant l'évacuation. On l'enfile avant l'amerrissage, portes déverrouillées, mais on ne le gonfle qu'à l'extérieur."
-            },
-            {
-              "id": "u7s4q08",
-              "q": "Après un atterrissage forcé, un début d'incendie apparaît au moteur. Comment évacuer ?",
-              "choices": [
-                "Rester attaché à son siège, portes fermées, jusqu'à l'arrivée des secours",
-                "Couper carburant et contact, évacuer et se regrouper sous le vent, près de l'aile",
-                "Couper carburant et contact général, évacuer et s'éloigner en remontant le vent",
-                "Tenter de redémarrer le moteur pour souffler les flammes avec l'hélice"
-              ],
-              "answer": 2,
-              "explanation": "On coupe ce qui alimente le feu (carburant, électricité), on évacue sans délai et on s'éloigne en remontant le vent : sous le vent de l'avion, on serait exposé aux flammes et aux fumées poussées par celui-ci."
-            },
-            {
-              "id": "u7s4q09",
-              "q": "Selon le Part-NCO, dans quel cas un monomoteur terrestre doit-il emporter un gilet de sauvetage pour chaque personne à bord ?",
-              "choices": [
-                "Dès qu'il survole un plan d'eau, quelle que soit la distance de la rive",
-                "Uniquement lorsqu'il vole à plus de 100 NM des côtes",
-                "Uniquement lors d'un vol de nuit au-dessus de la mer",
-                "Lorsqu'il survole l'eau au-delà de la distance de plané de la terre"
-              ],
-              "answer": 3,
-              "explanation": "Le Part-NCO impose un gilet (ou un dispositif de flottaison pour un enfant de moins de 24 mois) par occupant d'un monomoteur terrestre survolant l'eau au-delà de la distance de plané de la terre, ou lorsque la trajectoire de décollage ou d'approche rend un amerrissage probable."
-            },
-            {
-              "id": "u7s4q10",
-              "q": "Vol VFR de jour de 1 h 20 jusqu'à destination, consommation 30 L/h (retenue aussi pour la réserve). Hors roulage et carburant inutilisable, quelle quantité minimale de carburant faut-il emporter selon le Part-NCO ?",
-              "choices": ["40 L", "62,5 L", "45 L", "55 L"],
-              "answer": 3,
-              "explanation": "De jour, il faut conserver une réserve finale de 30 min (AMC1 NCO.OP.125(b) : en vitesse d'attente à 1 500 ft au-dessus de la destination ; la calculer avec la consommation de croisière va dans le sens de la sécurité) : 1 h 20 + 0 h 30 = 1 h 50, soit 110 min × 0,5 L/min = 55 L. Roulage et carburant inutilisable s'y ajoutent."
-            },
-            {
-              "id": "u7s4q11",
-              "q": "En avion, pour un vol VFR de nuit, quelle réserve finale minimale de carburant le Part-NCO prévoit-il à l'arrivée à destination ?",
-              "choices": [
-                "45 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
-                "30 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
-                "60 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
-                "20 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination"
-              ],
-              "answer": 0,
-              "explanation": "Depuis le 30 octobre 2022 (règlement (UE) 2021/1296), le Part-NCO impose une réserve finale. Pour un avion en VFR, l'AMC1 NCO.OP.125(b) la fixe à 30 min de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination."
-            },
-            {
-              "id": "u7s4q12",
-              "q": "De l'essence répandue près de l'avion prend feu. À quelle classe de feu appartient ce feu ?",
-              "choices": ["Classe A", "Classe B", "Classe C", "Classe D"],
-              "answer": 1,
-              "explanation": "Classe A : solides formant des braises (bois, papier, tissus) ; classe B : liquides ou solides liquéfiables (essence, huile) ; classe C : gaz ; classe D : métaux. L'eau en jet est à proscrire sur un feu d'hydrocarbure."
-            }
-          ]
-        }
-      ]
+     "id": "u7s1",
+     "title": "Procédures normales",
+     "icon": "✅",
+     "tips": "Les check-lists évitent les oublis, quelle que soit la charge de travail. La référence reste le manuel de vol (AFM/POH) de l'avion.\n• Au sol, on lit chaque item puis on l'exécute (« lire-faire ») ; en vol, on enchaîne souvent les actions de mémoire puis on vérifie avec la liste (« faire-vérifier »).\n• En urgence, les actions réflexes sont faites de mémoire, puis vérifiées avec la check-list.\n• Le manuel de vol regroupe limitations, procédures d'urgence, procédures normales, performances, masse et centrage, description des systèmes et suppléments des équipements optionnels. La check-list du club en est un résumé : en cas de doute, le manuel fait foi.\n• Le Part-NCO (NCO.GEN.105) rend le commandant de bord responsable de la sécurité de l'avion et des personnes à bord, et du respect des procédures et des check-lists.\n• Check-list interrompue (appel radio, question d'un passager) : la reprendre à un point sûr situé avant l'interruption, jamais de mémoire « là où l'on croit être ». C'est ainsi que naissent les oublis de volets, de réservoir ou de réchauffage.\n\nBriefing passagers (Part-NCO) : le commandant de bord s'assure qu'avant le vol, ou pendant si nécessaire, les passagers sont informés des procédures d'urgence et de l'utilisation des équipements de secours. En pratique : ceintures, ouverture des portes, position de sécurité, extincteur, gilets s'ils sont emportés, sans oublier de ne pas toucher aux commandes.\n\nRoulage :\n• Vitesse modérée, adaptée à l'encombrement ; essai des freins dès les premiers mètres.\n• Vent de face de trois quarts (train tricycle) : manche tourné vers le vent, profondeur au neutre, pour que l'aile au vent ne se soulève pas.\n• Vent arrière de trois quarts : manche tourné à l'opposé du vent et poussé, pour que le vent ne passe ni sous l'aile ni sous la queue. Moyen mnémotechnique : face au vent, on « monte » vers lui ; vent arrière, on « pique » en s'en éloignant.\n• Train classique : par vent de face, manche tiré pour plaquer la roulette de queue.\n\nTour de piste : sauf indication contraire (carte VAC, ATC), tous les virages se font à gauche (SERA). Branches : montée initiale, vent traversier, vent arrière (parallèle à la piste, en sens inverse de l'atterrissage), étape de base, finale. La hauteur du circuit figure sur la carte VAC.\n• On décolle et on atterrit face au vent, sauf si la sécurité, la configuration des pistes ou la circulation imposent un autre sens.\n• Caps : chaque branche est à 90° de la précédente. Piste 27 main gauche : 270°, 180°, 090°, 360°, puis finale 270°. Main droite : 270°, 360°, 090°, 180°, 270°.\n• Spécificité française (arrêté du 12 juillet 2019) : sur un aérodrome non contrôlé, on s'intègre en début de vent arrière, à la hauteur du circuit, après un passage à la verticale ou directement si l'on connaît déjà la piste en service. Ni directe, ni semi-directe, ni intégration en milieu de vent arrière, sauf consigne publiée sur la carte VAC.\n\nVent de travers : composante traversière = vent × sin(angle vent/piste) ; composante de face = vent × cos(angle).\n• 30° → 0,5 ; 45° → 0,7 ; 60° → 0,9 ; 90° → 1 (cosinus : 30° → 0,9 ; 45° → 0,7 ; 60° → 0,5).\n• Exemple : piste 22, vent 250°/18 kt → angle 30° ; travers 18 × 0,5 = 9 kt ; face 18 × 0,87 ≈ 16 kt. Au-delà de 90° d'écart, la composante longitudinale devient arrière.\n• Respecter la composante maximale démontrée du manuel de vol. Elle correspond aux essais de certification : souvent présentée comme non limitative, elle n'est pas une garantie, et la limite pratique du pilote ou du club peut être plus basse.\n• Décollage : ailerons braqués côté vent, braquage réduit quand la vitesse augmente ; axe tenu aux palonniers.\n• Atterrissage : approche en crabe puis décrabage avant le toucher, ou aile basse côté vent avec pied opposé (vent de la droite : inclinaison à droite, pied à gauche, toucher d'abord sur la roue au vent).\n\nApproche stabilisée :\n• Vitesse d'approche : celle du manuel de vol ; à défaut, la FAA retient 1,3 VS0.\n• La Flight Safety Foundation (transport aérien) veut l'approche stabilisée au plus tard à 500 ft en VMC (1 000 ft en IMC) : trajectoire, vitesse, configuration et taux de descente établis, check-list faite. Sous cette porte, une approche non stabilisée impose la remise de gaz. La même logique vaut en aviation légère.\n\nTurbulence de sillage : les tourbillons marginaux, issus de la portance, sont les plus forts derrière un avion lourd, lent et en configuration lisse. Ils descendent derrière lui et, près du sol, s'écartent latéralement ; un vent traversier faible peut en maintenir un sur la piste.\n• Catégories OACI (masse maximale au décollage) : L jusqu'à 7 000 kg ; M de plus de 7 000 kg à moins de 136 000 kg ; H à partir de 136 000 kg ; J (super) : A380.\n• Minimums OACI au départ : 2 min pour un L ou un M derrière un H, ou un L derrière un M ; 3 min en décollant d'une intersection.\n• Rester au-dessus de la trajectoire de l'avion lourd : décoller avant son point de rotation, se poser au-delà de son point de toucher.\n\nPistes contaminées (eau stagnante, neige fondante, neige, glace) : au décollage, le contaminant freine l'accélération et allonge la distance ; à l'atterrissage, le freinage est dégradé. Hydroplanage dynamique possible au-delà de V ≈ 9 √P (V en kt, P pression des pneus en psi).\n\nRemise de gaz : décision précoce dès que l'approche n'est pas stabilisée. Pleine puissance (réchauffage carburateur coupé selon le manuel), assiette de montée en contrant la tendance à cabrer et le lacet, volets rentrés par étapes selon le manuel (jamais tous d'un coup près du sol), puis annonce radio.\n\nMoindre bruit :\n• Respecter les trajectoires, hauteurs et zones à éviter de la carte VAC ; ne pas survoler les habitations à basse hauteur.\n• Sur un avion léger, le bruit vient surtout de l'hélice et croît avec la vitesse en bout de pale : réduire le régime (hélice à pas variable) dès que la sécurité le permet le diminue nettement, au prix d'un peu de performance de montée. La sécurité passe avant l'abattement du bruit.\n• Spécificité française : la DGAC classe les avions légers selon leur performance sonore (classement CALIPSO, refondu en 2024) ; certains aérodromes sensibles modulent leurs restrictions, comme les créneaux de tours de piste, selon cette classe.",
+     "vocab": [
+      {
+       "term": "Check-list",
+       "translation": "Liste d'actions et de vérifications propre à chaque phase du vol"
+      },
+      {
+       "term": "Actions réflexes",
+       "translation": "Premières actions d'urgence faites de mémoire, puis vérifiées"
+      },
+      {
+       "term": "Vent arrière",
+       "translation": "Branche du circuit parallèle à la piste, sens inverse d'atterrissage"
+      },
+      {
+       "term": "Composante traversière",
+       "translation": "Part du vent perpendiculaire à la piste : vent × sin(angle)"
+      },
+      {
+       "term": "Turbulence de sillage",
+       "translation": "Tourbillons marginaux laissés par un avion, surtout lourd et lent"
+      },
+      {
+       "term": "Hydroplanage",
+       "translation": "Pneu soulevé par un film d'eau : freinage et guidage quasi nuls"
+      },
+      {
+       "term": "Approche stabilisée",
+       "translation": "Trajectoire, vitesse et configuration établies et stables en finale"
+      },
+      {
+       "term": "Remise de gaz",
+       "translation": "Approche interrompue : pleine puissance, montée, nouveau circuit"
+      },
+      {
+       "term": "Lire-faire",
+       "translation": "Méthode : lire un item de la check-list, puis l'exécuter"
+      },
+      {
+       "term": "Faire-vérifier",
+       "translation": "Méthode : actions faites de mémoire, puis contrôlées sur la liste"
+      },
+      {
+       "term": "Intégration",
+       "translation": "Entrée dans le circuit (France, non contrôlé : début de vent arrière)"
+      },
+      {
+       "term": "QFU",
+       "translation": "Orientation magnétique de la piste en service, en degrés"
+      },
+      {
+       "term": "Composante démontrée",
+       "translation": "Vent traversier atteint en certification, souvent non limitatif"
+      },
+      {
+       "term": "Porte de stabilisation",
+       "translation": "Hauteur où l'approche doit être stable, sinon remise de gaz"
+      },
+      {
+       "term": "CALIPSO",
+       "translation": "Classement de la DGAC des avions légers selon leur bruit"
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s1q01",
+       "q": "Une urgence survient en vol. Comment utilise-t-on la check-list d'urgence ?",
+       "choices": [
+        "On lit d'abord toute la check-list avant d'entreprendre la moindre action",
+        "On effectue de mémoire les actions réflexes, puis on les vérifie avec la check-list",
+        "On applique la check-list normale en sautant les items qui ne s'appliquent pas",
+        "On ne s'en sert pas en vol : elle sert à analyser l'incident une fois au sol"
+       ],
+       "answer": 1,
+       "explanation": "Les premières actions vitales sont apprises par cœur, car le temps manque. La check-list du manuel de vol sert ensuite à vérifier qu'aucune action n'a été oubliée et à compléter la procédure."
+      },
+      {
+       "id": "u7s1q02",
+       "q": "Selon le Part-NCO, qui doit s'assurer que les passagers reçoivent un briefing sur les procédures et les équipements de secours ?",
+       "choices": [
+        "L'exploitant de l'aérodrome de départ",
+        "Chaque passager, en lisant la notice placée à bord",
+        "Le service d'information de vol, lors du dépôt du plan de vol",
+        "Le commandant de bord, avant le vol ou pendant si nécessaire"
+       ],
+       "answer": 3,
+       "explanation": "Le Part-NCO charge le commandant de bord de veiller à ce que, avant le vol ou, si nécessaire, pendant le vol, les passagers soient informés des procédures d'urgence et de l'utilisation des équipements de secours (ceintures, portes, extincteur, gilets…)."
+      },
+      {
+       "id": "u7s1q03",
+       "q": "Sauf indication contraire de la carte VAC ou instruction du contrôle, dans quel sens s'effectue le tour de piste ?",
+       "choices": [
+        "Main gauche : tous les virages se font à gauche",
+        "Main droite : tous les virages se font à droite",
+        "Du côté opposé au vent dominant de l'aérodrome",
+        "Du côté de la piste où se trouvent les installations"
+       ],
+       "answer": 0,
+       "explanation": "Les règles de l'air (SERA) prévoient que, sauf indication contraire ou instruction ATC, tous les virages se font à gauche à l'approche et après le décollage. Les circuits main droite sont publiés sur la carte VAC."
+      },
+      {
+       "id": "u7s1q04",
+       "q": "Vous effectuez un tour de piste main gauche pour la piste 27, vent calme. Quel est le cap approximatif en vent arrière ?",
+       "choices": [
+        "270°",
+        "180°",
+        "090°",
+        "360°"
+       ],
+       "answer": 2,
+       "explanation": "La branche vent arrière est parallèle à la piste, en sens inverse de l'atterrissage : 270° − 180° = 090°. Le cap 180° correspond à la branche vent traversier de ce circuit main gauche."
+      },
+      {
+       "id": "u7s1q05",
+       "q": "Piste 27, la tour annonce un vent du 300° pour 16 kt. Quelle est la composante de vent traversier ?",
+       "choices": [
+        "16 kt",
+        "8 kt",
+        "14 kt",
+        "11 kt"
+       ],
+       "answer": 1,
+       "explanation": "Écart vent/piste : 300° − 270° = 30°. Composante traversière = 16 × sin 30° = 16 × 0,5 = 8 kt (la composante de face vaut 16 × cos 30° ≈ 14 kt)."
+      },
+      {
+       "id": "u7s1q06",
+       "q": "Au début du roulement au décollage, le vent de travers vient de la gauche. Comment positionner le manche en roulis ?",
+       "choices": [
+        "Braqué à gauche, côté vent, puis réduit à mesure que la vitesse augmente",
+        "Braqué à droite, à l'opposé du vent, pour soulager l'aile gauche au vent",
+        "Au neutre : au sol, le palonnier suffit à corriger l'effet du vent de travers",
+        "Braqué à gauche, en augmentant le braquage à mesure que la vitesse augmente"
+       ],
+       "answer": 0,
+       "explanation": "Ailerons braqués côté vent, l'aile au vent ne peut pas être soulevée. Leur efficacité croissant avec la vitesse, on réduit le braquage pendant l'accélération (l'augmenter ferait au contraire incliner l'avion) ; l'axe est tenu aux palonniers."
+      },
+      {
+       "id": "u7s1q07",
+       "q": "Dans quelle situation un avion génère-t-il la turbulence de sillage la plus forte ?",
+       "choices": [
+        "Lourd, rapide, volets sortis",
+        "Léger, lent, volets sortis",
+        "Léger, rapide, configuration lisse",
+        "Lourd, lent, configuration lisse"
+       ],
+       "answer": 3,
+       "explanation": "Les tourbillons marginaux naissent de la portance : ils sont d'autant plus intenses que l'avion est lourd et vole lentement, donc à grande incidence. La configuration lisse donne les tourbillons les plus concentrés (« heavy, clean, slow »)."
+      },
+      {
+       "id": "u7s1q08",
+       "q": "Selon la classification OACI de turbulence de sillage, à quelle catégorie appartient un avion de ligne dont la masse maximale au décollage est de 78 000 kg ?",
+       "choices": [
+        "L (léger)",
+        "H (lourd)",
+        "M (moyen)",
+        "J (super)"
+       ],
+       "answer": 2,
+       "explanation": "Catégories OACI : L jusqu'à 7 000 kg ; M de plus de 7 000 kg à moins de 136 000 kg ; H à partir de 136 000 kg ; J pour l'A380. Un avion de 78 t est donc de catégorie M."
+      },
+      {
+       "id": "u7s1q09",
+       "q": "Vous êtes en finale derrière un avion lourd qui vient de se poser sur la même piste. Comment éviter sa turbulence de sillage ?",
+       "choices": [
+        "Viser un point d'aboutissement avant son point de toucher, pour garder plus de piste",
+        "Rester au-dessus de sa trajectoire et se poser au-delà de son point de toucher",
+        "Se placer sous sa trajectoire, où l'air a été stabilisé par son passage",
+        "Se poser exactement à son point de toucher, où les tourbillons ont été détruits"
+       ],
+       "answer": 1,
+       "explanation": "Les tourbillons, produits tant que l'avion porte, descendent sous sa trajectoire et cessent au toucher. En restant au-dessus et en se posant plus loin (si la longueur de piste le permet), on les évite. Au départ, on décolle avant son point de rotation."
+      },
+      {
+       "id": "u7s1q10",
+       "q": "Quel est l'effet d'une couche de neige fondante sur la piste au décollage ?",
+       "choices": [
+        "La distance de décollage augmente, car le contaminant freine l'accélération",
+        "La distance de décollage diminue, car les roues frottent moins sur la piste",
+        "Elle n'affecte que l'atterrissage, en dégradant le freinage",
+        "Elle impose une vitesse de rotation plus faible pour quitter le sol plus tôt"
+       ],
+       "answer": 0,
+       "explanation": "Eau stagnante et neige fondante freinent les roues (résistance du contaminant, projections) : l'accélération diminue et la distance de décollage s'allonge. À l'atterrissage, c'est le freinage qui est dégradé."
+      },
+      {
+       "id": "u7s1q11",
+       "q": "D'après la formule approchée V ≈ 9 √P (V en kt, P en psi), à partir de quelle vitesse un avion dont les pneus sont gonflés à 36 psi risque-t-il l'hydroplanage dynamique ?",
+       "choices": [
+        "36 kt",
+        "60 kt",
+        "45 kt",
+        "54 kt"
+       ],
+       "answer": 3,
+       "explanation": "√36 = 6, donc V ≈ 9 × 6 = 54 kt. Au-delà, sur une piste couverte d'eau, le pneu peut se soulever sur un film d'eau : freinage et contrôle directionnel deviennent presque nuls."
+      },
+      {
+       "id": "u7s1q12",
+       "q": "En courte finale, volets complètement sortis, vous décidez de remettre les gaz. Quelle séquence est correcte ?",
+       "choices": [
+        "Rentrer d'abord tous les volets, puis afficher la pleine puissance",
+        "Afficher la pleine puissance et laisser l'avion cabrer sous l'effet du compensateur",
+        "Pleine puissance, assiette de montée tenue, puis volets rentrés par étapes",
+        "Garder la puissance d'approche et rentrer les volets pour accélérer avant de monter"
+       ],
+       "answer": 2,
+       "explanation": "La puissance d'abord, en tenant l'assiette : compensé pour l'approche, l'avion tend à cabrer fortement, et le lacet doit être contré. Rentrer tous les volets d'un coup près du sol ferait perdre de la portance : on les rentre par étapes, selon le manuel de vol, en surveillant la vitesse."
+      },
+      {
+       "id": "u7s1q13",
+       "q": "Piste 04, la tour annonce un vent du 090° pour 20 kt. Quelle est la composante de vent traversier ?",
+       "choices": [
+        "Environ 13 kt",
+        "Environ 15 kt",
+        "Environ 10 kt",
+        "20 kt"
+       ],
+       "answer": 1,
+       "explanation": "Écart vent/piste : 090° − 040° = 50°. Composante traversière = 20 × sin 50° ≈ 20 × 0,77 ≈ 15 kt. Le piège est 13 kt : c'est la composante de face (20 × cos 50° ≈ 12,9 kt), obtenue en confondant sinus et cosinus."
+      },
+      {
+       "id": "u7s1q14",
+       "q": "Vent annoncé : 200°/15 kt. L'aérodrome dispose des pistes 05/23 et 14/32. Quelle piste offre la plus faible composante traversière avec du vent de face ?",
+       "choices": [
+        "Piste 14",
+        "Piste 05",
+        "Piste 23",
+        "Piste 32"
+       ],
+       "answer": 2,
+       "explanation": "Piste 23 : écart de 30°, travers 15 × 0,5 ≈ 8 kt et environ 13 kt de face. Piste 14 : écart de 60°, travers ≈ 13 kt. La piste 05 a le même travers que la 23, mais avec 13 kt de vent arrière ; la 32 est aussi vent arrière."
+      },
+      {
+       "id": "u7s1q15",
+       "q": "Piste 09, vent du 300° pour 12 kt. Quelle composante longitudinale subissez-vous ?",
+       "choices": [
+        "Environ 10 kt de vent arrière",
+        "Environ 10 kt de vent de face",
+        "Environ 6 kt de vent arrière",
+        "Environ 6 kt de vent de face"
+       ],
+       "answer": 0,
+       "explanation": "Le vent du 300° fait 150° avec l'axe 090° : il souffle par l'arrière. Composante longitudinale = 12 × cos 30° ≈ 10 kt arrière ; travers = 12 × sin 30° = 6 kt. La piste 27, face au vent, donnerait environ 10 kt de face : c'est elle qu'il faut préférer."
+      },
+      {
+       "id": "u7s1q16",
+       "q": "Circuit main droite pour la piste 33, vent calme. Quel cap tenez-vous en étape de base ?",
+       "choices": [
+        "060°",
+        "150°",
+        "240°",
+        "330°"
+       ],
+       "answer": 2,
+       "explanation": "Main droite, chaque virage ajoute 90° : montée 330°, vent traversier 060°, vent arrière 150°, base 240°, finale 330°. Le piège, 060°, serait le cap de base d'un circuit main gauche (ou celui du vent traversier main droite)."
+      },
+      {
+       "id": "u7s1q17",
+       "q": "Vous arrivez sur un aérodrome non contrôlé dont vous connaissez déjà la piste en service, sans consigne particulière sur la carte VAC. Comment vous intégrez-vous selon la réglementation française ?",
+       "choices": [
+        "Par une finale directe, en annonçant votre position à 5 NM",
+        "En milieu de vent arrière, pour vous insérer plus vite",
+        "Par une verticale obligatoire, 500 ft au-dessus du circuit",
+        "En début de vent arrière, à la hauteur du circuit"
+       ],
+       "answer": 3,
+       "explanation": "L'arrêté du 12 juillet 2019, applicable depuis le 2 septembre 2019, impose sur un aérodrome non contrôlé l'intégration en début de vent arrière, à la hauteur du circuit. Le passage à la verticale n'est pas obligatoire quand on connaît déjà la piste en service ; directe, semi-directe et intégration en milieu de vent arrière ne sont pas prévues."
+      },
+      {
+       "id": "u7s1q18",
+       "q": "Au roulage, train tricycle, le vent vient de l'arrière gauche, de trois quarts. Comment placez-vous les commandes ?",
+       "choices": [
+        "Manche tourné à gauche, vers le vent, profondeur au neutre",
+        "Manche tourné à droite et poussé vers l'avant",
+        "Manche tourné à gauche et tiré vers l'arrière",
+        "Manche au neutre, le palonnier corrigeant le vent"
+       ],
+       "answer": 1,
+       "explanation": "Vent arrière de trois quarts : on tourne le manche à l'opposé du vent, ce qui baisse l'aileron gauche, côté vent, et on le pousse pour baisser la gouverne de profondeur : le vent ne peut ni soulever l'aile ni passer sous la queue. Manche vers le vent et profondeur au neutre, c'est la position par vent de face de trois quarts."
+      },
+      {
+       "id": "u7s1q19",
+       "q": "En finale, le vent de travers vient de la droite et vous utilisez la méthode de l'aile basse. Quelle combinaison appliquez-vous ?",
+       "choices": [
+        "Inclinaison à gauche, pied à droite",
+        "Inclinaison à droite, pied à droite",
+        "Ailes horizontales, pied à gauche",
+        "Inclinaison à droite, pied à gauche"
+       ],
+       "answer": 3,
+       "explanation": "L'aile basse côté vent (à droite) compense la dérive ; le pied opposé (à gauche) empêche l'avion de virer et garde le fuselage dans l'axe. On touche d'abord sur la roue au vent. Pied et inclinaison du même côté feraient virer l'avion vers la droite."
+      },
+      {
+       "id": "u7s1q20",
+       "q": "À 300 ft en finale, vous êtes nettement trop haut et 15 kt au-dessus de la vitesse d'approche. Que faites-vous ?",
+       "choices": [
+        "Vous réduisez au ralenti et poussez sur le manche pour rejoindre le plan",
+        "Vous remettez les gaz, faute d'être stabilisé à cette hauteur",
+        "Vous continuez et comptez sur un freinage énergique après le toucher",
+        "Vous sortez les volets au-delà de leur vitesse limite pour freiner"
+       ],
+       "answer": 1,
+       "explanation": "Sous la porte de stabilisation (500 ft en VMC selon la Flight Safety Foundation), une approche trop haute et trop rapide finit souvent en atterrissage long ou en sortie de piste : on remet les gaz et on refait un circuit. Pousser sur le manche accélère encore l'avion, et dépasser la vitesse limite des volets peut les endommager."
+      },
+      {
+       "id": "u7s1q21",
+       "q": "Hélice à pas variable : pourquoi réduire le régime après le décollage, dès que la sécurité le permet, diminue-t-il nettement le bruit perçu au sol ?",
+       "choices": [
+        "Le moteur cesse alors de produire du bruit d'échappement",
+        "L'avion monte plus vite et s'éloigne aussitôt du sol",
+        "La vitesse propre augmente et réduit le temps de survol",
+        "Le bruit naît surtout en bout de pale, qui tourne moins vite"
+       ],
+       "answer": 3,
+       "explanation": "Sur un avion léger, l'hélice est la principale source de bruit, qui dépend fortement de la vitesse en bout de pale : réduire le régime la diminue. Le gain se paie d'un peu de performance de montée (l'avion ne monte pas plus vite) ; la sécurité passe d'abord, puis l'on applique les consignes de la carte VAC."
+      },
+      {
+       "id": "u7s1q22",
+       "q": "Que désigne le classement CALIPSO, propre à la France ?",
+       "choices": [
+        "La classe de bruit d'un avion léger, attribuée par la DGAC",
+        "La catégorie de turbulence de sillage d'un avion léger",
+        "Le niveau de formation exigé pour voler sur un aérodrome",
+        "La classe d'espace aérien d'un aérodrome non contrôlé"
+       ],
+       "answer": 0,
+       "explanation": "CALIPSO classe les avions légers selon leur indice de performance sonore. Le classement n'est pas obligatoire, mais certains aérodromes sensibles modulent leurs restrictions (créneaux de tours de piste) selon cette classe ; il a été refondu par un arrêté du 17 juillet 2024. La catégorie de sillage, elle, dépend de la masse (L, M, H, J)."
+      },
+      {
+       "id": "u7s1q23",
+       "q": "Pendant la check-list avant décollage, le contrôleur vous appelle et vous lui répondez. Comment reprenez-vous ensuite la check-list ?",
+       "choices": [
+        "Là où vous pensez vous être arrêté, de mémoire",
+        "Par la fin, en remontant vers les premiers items",
+        "À un point sûr situé avant l'interruption",
+        "Vous la terminez une fois aligné sur la piste"
+       ],
+       "answer": 2,
+       "explanation": "Une interruption est la cause classique d'un item oublié (volets, réservoir, réchauffage) : on reprend à un point dont on est certain, situé avant l'interruption. Reprendre de mémoire « là où l'on croit être » est précisément le piège ; la terminer une fois aligné, c'est la faire au pire moment."
+      },
+      {
+       "id": "u7s1q24",
+       "q": "Le manuel de vol indique une composante de vent traversier maximale démontrée de 15 kt. Comment l'interpréter ?",
+       "choices": [
+        "La valeur atteinte lors des essais, souvent dite non limitative",
+        "Une limite structurale, au-delà de laquelle le train casse",
+        "Une limite réglementaire fixée par le Part-NCO",
+        "La valeur garantie pour un pilote débutant"
+       ],
+       "answer": 0,
+       "explanation": "La composante démontrée est le vent traversier atteint lors des essais en vol de certification ; le manuel la présente souvent comme non limitative. Ce n'est ni une limite du Part-NCO ni une garantie : selon votre expérience et les consignes du club, votre limite pratique peut être plus basse."
+      }
+     ],
+     "figures": [
+      {
+       "title": "Tour de piste main gauche, piste 27",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"470\" fill=\"#ffffff\"/><text x=\"20\" y=\"28\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Vent du 270°</text><line x1=\"20\" y1=\"45\" x2=\"112\" y2=\"45\" stroke=\"#0f766e\" stroke-width=\"4\"/><polygon points=\"126.0,45.0 110.0,53.0 110.0,37.0\" fill=\"#0f766e\"/><line x1=\"685\" y1=\"72\" x2=\"685\" y2=\"32\" stroke=\"#0f172a\" stroke-width=\"3\"/><polygon points=\"685.0,18.0 693.0,34.0 677.0,34.0\" fill=\"#0f172a\"/><text x=\"685\" y=\"92\" font-size=\"16\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">N</text><rect x=\"260\" y=\"120\" width=\"210\" height=\"22\" fill=\"#4b5563\"/><line x1=\"300\" y1=\"131\" x2=\"430\" y2=\"131\" stroke=\"#ffffff\" stroke-width=\"2\" stroke-dasharray=\"12 8\"/><text x=\"279\" y=\"136\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">09</text><text x=\"451\" y=\"136\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">27</text><path d=\"M 260 131 L 145 131 Q 120 131 120 156 L 120 335 Q 120 360 145 360 L 575 360 Q 600 360 600 335 L 600 156 Q 600 131 575 131 L 470 131\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><polygon points=\"186.0,131.0 201.0,123.5 201.0,138.5\" fill=\"#1d4ed8\"/><polygon points=\"120.0,262.0 112.5,247.0 127.5,247.0\" fill=\"#1d4ed8\"/><polygon points=\"372.0,360.0 357.0,367.5 357.0,352.5\" fill=\"#1d4ed8\"/><polygon points=\"600.0,238.0 607.5,253.0 592.5,253.0\" fill=\"#1d4ed8\"/><polygon points=\"524.0,131.0 539.0,123.5 539.0,138.5\" fill=\"#1d4ed8\"/><text x=\"190\" y=\"96\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Montée initiale</text><text x=\"190\" y=\"113\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1d4ed8\">270°</text><text x=\"60\" y=\"230\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Vent</text><text x=\"60\" y=\"248\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">traversier</text><text x=\"60\" y=\"266\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1d4ed8\">180°</text><text x=\"400\" y=\"340\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Vent arrière <tspan font-weight=\"bold\" fill=\"#1d4ed8\">090°</tspan> (sens opposé à l'atterrissage)</text><text x=\"660\" y=\"230\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Étape</text><text x=\"660\" y=\"248\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">de base</text><text x=\"660\" y=\"266\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1d4ed8\">360°</text><text x=\"535\" y=\"110\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Finale <tspan font-weight=\"bold\" fill=\"#1d4ed8\">270°</tspan></text><text x=\"360\" y=\"205\" font-size=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">Tous les virages à gauche (SERA),</text><text x=\"360\" y=\"225\" font-size=\"15\" text-anchor=\"middle\" fill=\"#0f172a\">sauf indication contraire (VAC, ATC)</text><text x=\"360\" y=\"258\" font-size=\"15\" text-anchor=\"middle\" fill=\"#475569\">Hauteur du circuit : carte VAC</text><line x1=\"88\" y1=\"452\" x2=\"172\" y2=\"368\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"9 6\"/><polygon points=\"182.0,358.0 176.3,375.0 165.0,363.7\" fill=\"#d97706\"/><text x=\"200\" y=\"428\" font-size=\"14\" font-weight=\"bold\" fill=\"#b45309\">Intégration à 45° en début de vent arrière</text><text x=\"200\" y=\"450\" font-size=\"14\" fill=\"#b45309\">(France, aérodrome non contrôlé : arrêté du 12 juillet 2019)</text></svg>",
+       "caption": "Vue de dessus, nord en haut : chaque branche est à 90° de la précédente et le vent arrière est parallèle à la piste, en sens inverse de l'atterrissage. En France, sur un aérodrome non contrôlé, on rejoint le circuit en début de vent arrière."
+      },
+      {
+       "title": "Position des commandes au roulage selon le vent",
+       "svg": "<svg viewBox=\"0 0 720 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"470\" fill=\"#ffffff\"/><rect x=\"15\" y=\"15\" width=\"240\" height=\"92\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#0e7490\" stroke-width=\"2\"/><text x=\"135\" y=\"42\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0e7490\">Vent de face, avant gauche</text><text x=\"135\" y=\"67\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Manche tourné à gauche</text><text x=\"135\" y=\"91\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Profondeur au neutre</text><rect x=\"465\" y=\"15\" width=\"240\" height=\"92\" rx=\"8\" fill=\"#ecfeff\" stroke=\"#0e7490\" stroke-width=\"2\"/><text x=\"585\" y=\"42\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0e7490\">Vent de face, avant droit</text><text x=\"585\" y=\"67\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Manche tourné à droite</text><text x=\"585\" y=\"91\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Profondeur au neutre</text><rect x=\"15\" y=\"325\" width=\"240\" height=\"92\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"135\" y=\"352\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#c2410c\">Vent arrière, arrière gauche</text><text x=\"135\" y=\"377\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Manche tourné à droite</text><text x=\"135\" y=\"401\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Manche poussé (à piquer)</text><rect x=\"465\" y=\"325\" width=\"240\" height=\"92\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"585\" y=\"352\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#c2410c\">Vent arrière, arrière droit</text><text x=\"585\" y=\"377\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Manche tourné à gauche</text><text x=\"585\" y=\"401\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Manche poussé (à piquer)</text><rect x=\"250\" y=\"200\" width=\"220\" height=\"24\" rx=\"6\" fill=\"#1e3a8a\"/><rect x=\"348\" y=\"150\" width=\"24\" height=\"170\" rx=\"10\" fill=\"#1e3a8a\"/><rect x=\"315\" y=\"296\" width=\"90\" height=\"14\" rx=\"4\" fill=\"#1e3a8a\"/><line x1=\"330\" y1=\"146\" x2=\"390\" y2=\"146\" stroke=\"#0f172a\" stroke-width=\"4\"/><line x1=\"360\" y1=\"134\" x2=\"360\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"3\"/><polygon points=\"360.0,96.0 367.0,110.0 353.0,110.0\" fill=\"#0f172a\"/><text x=\"360\" y=\"82\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Sens du roulage</text><line x1=\"215\" y1=\"118\" x2=\"276\" y2=\"179\" stroke=\"#0e7490\" stroke-width=\"5\"/><polygon points=\"290.0,193.0 270.9,186.6 283.6,173.9\" fill=\"#0e7490\"/><line x1=\"505\" y1=\"118\" x2=\"444\" y2=\"179\" stroke=\"#0e7490\" stroke-width=\"5\"/><polygon points=\"430.0,193.0 436.4,173.9 449.1,186.6\" fill=\"#0e7490\"/><line x1=\"220\" y1=\"318\" x2=\"279\" y2=\"259\" stroke=\"#c2410c\" stroke-width=\"5\"/><polygon points=\"293.0,245.0 286.6,264.1 273.9,251.4\" fill=\"#c2410c\"/><line x1=\"500\" y1=\"318\" x2=\"441\" y2=\"259\" stroke=\"#c2410c\" stroke-width=\"5\"/><polygon points=\"427.0,245.0 446.1,251.4 433.4,264.1\" fill=\"#c2410c\"/><text x=\"360\" y=\"440\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Vent de face : manche vers le vent. Vent arrière : manche à l'opposé du vent, poussé.</text><text x=\"360\" y=\"461\" font-size=\"14\" text-anchor=\"middle\" fill=\"#475569\">Train classique : par vent de face, manche tiré pour plaquer la roulette de queue.</text></svg>",
+       "caption": "Train tricycle, avion vu de dessus. Par vent de face de trois quarts, on tourne le manche vers le vent ; par vent arrière de trois quarts, on le tourne à l'opposé et on le pousse, pour que le vent ne soulève ni l'aile ni la queue."
+      }
+     ]
+    },
+    {
+     "id": "u7s2",
+     "title": "Procédures d'urgence",
+     "icon": "🔥",
+     "tips": "Règle d'or : piloter, naviguer, communiquer. On tient d'abord l'avion et sa vitesse, puis on applique les actions réflexes et la check-list du manuel de vol, seule référence pour un avion donné.\n\nPanne moteur au décollage :\n• Rendre la main immédiatement : en montée, la vitesse chute en quelques secondes. Afficher la vitesse de plané.\n• À basse hauteur, se poser à peu près droit devant, en ne s'écartant que modérément de l'axe pour éviter les obstacles.\n• Ne pas faire demi-tour : en virage, le facteur de charge augmente la vitesse de décrochage et le taux de chute ; il faut bien plus de 180° pour rejoindre l'axe et l'on arriverait vent arrière. Risque de décrochage-vrille.\n• S'il reste du temps : carburant, magnétos et contact général coupés selon le manuel, portes déverrouillées, MAYDAY.\n\nPanne moteur en vol, atterrissage forcé :\n• Vitesse de plané, avion compensé, choix d'un terrain atteignable : face au vent, assez long, plat ou en légère montée, surface ferme, sans obstacle en approche (lignes électriques). Champ labouré : se poser le long des sillons.\n• Si la hauteur le permet, rechercher la cause : réchauffage carburateur, sélecteur de réservoir, pompe électrique, mélange, magnétos.\n• Distance de plané en air calme = hauteur × finesse (1 000 m × 8 = 8 km). Le vent de face la réduit, le vent arrière l'augmente.\n\nFeu moteur en vol : couper l'arrivée de carburant (robinet fermé, mélange sur étouffoir), fermer le chauffage cabine (son air est réchauffé autour de l'échappement), couper l'électricité selon le manuel et effectuer un atterrissage forcé. Ne jamais redémarrer un moteur qui a pris feu.\n\nFeu électrique, fumée : odeur d'isolant brûlé. Couper le contact général, fermer le chauffage, utiliser l'extincteur si nécessaire puis aérer, se poser dès que possible. Ne pas réarmer un disjoncteur qui a sauté pendant un feu.\n\nMonoxyde de carbone (fuite d'échappement dans le chauffage) : maux de tête, somnolence. Fermer le chauffage, ouvrir les aérations, se poser.\n\nPanne d'alternateur : voyant allumé, ampèremètre en décharge. Vérifier interrupteur et disjoncteur (un seul réarmement), délester les équipements non essentiels et écourter le vol : la batterie seule ne tient qu'un temps limité. Le moteur continue de tourner, car les magnétos sont indépendantes du circuit électrique.\n• Autonomie théorique = capacité disponible (Ah) ÷ consommation (A). Ex. : 18 Ah et 6 A après délestage → 3 h. En pratique bien moins : batterie rarement pleine, capacité réduite par le froid et l'âge.\n• Disjoncteur sauté sans odeur ni fumée : le laisser refroidir quelques instants, le réarmer une seule fois ; s'il saute de nouveau, le laisser.\n\nPanne de dépression : sur la plupart des avions légers, horizon artificiel et conservateur de cap sont entraînés par la pompe à vide, l'indicateur de virage est électrique. Indices : dépressiomètre bas, horizon qui penche lentement, cap qui dérive. En VMC, piloter avec les références extérieures, en recoupant indicateur de virage, compas, altimètre, variomètre et anémomètre.\n\nPrise statique obstruée (givre, insecte, adhésif oublié) : altimètre et variomètre figés, anémomètre faux (il sous-estime en montée, surestime en descente). La prise statique de secours, souvent en cabine où la pression est un peu plus faible, fait indiquer un peu trop à l'altimètre et à l'anémomètre ; le variomètre marque une brève montée. Le manuel donne les corrections.\n\nVrille, procédure type si le manuel n'en prévoit pas d'autre : gaz réduits, ailerons au neutre, palonnier à fond du côté opposé à la rotation, manche en avant jusqu'à l'arrêt de la rotation ; puis palonnier au neutre et ressource douce, sans dépasser les limitations (« PARE » en anglais).\n\nAtterrissage sans volets : vitesse d'approche plus élevée (celle du manuel), assiette plus cabrée, arrondi qui flotte, distance d'atterrissage plus longue. Choisir la piste la plus longue et allonger la finale.\n\nOuverture de porte en vol : bruyante mais rarement dangereuse. Piloter d'abord, réduire la vitesse, ne pas tenter de refermer si le manuel ne le prévoit pas, revenir se poser.\n\nPanne radio (VFR) :\n• Vérifier volume, silencieux (squelch), fréquence, alternat, casque et prise jack, disjoncteur ; essayer une autre fréquence ou la deuxième radio.\n• SERA.14083 : afficher 7600, rester en VMC, se poser sur l'aérodrome approprié le plus proche et signaler son arrivée au plus vite à l'organisme ATC. Émettre à l'aveugle positions et intentions : le récepteur fonctionne peut-être encore.\n• Ne pas entrer dans un espace contrôlé sans clairance ; les cartes VAC des aérodromes contrôlés publient souvent une procédure de panne radio.\n\nDétresse et urgence :\n• MAYDAY (détresse) : danger grave et imminent, aide immédiate nécessaire (panne moteur, feu). PAN PAN (urgence) : difficulté sérieuse sans besoin d'aide immédiate (panne d'alternateur, passager malade). Chaque mot est prononcé trois fois.\n• Message de détresse (SERA.14095) : station appelée, indicatif, nature de la détresse, intentions du commandant de bord, position, niveau et cap ; puis toute information utile (personnes à bord, autonomie).\n• Sur la fréquence en cours ; sans réponse, sur 121,5 MHz. Transpondeur 7700, sauf si l'ATC a déjà attribué un code : on le garde alors, quitte à afficher 7700 si l'on juge que c'est préférable (SERA.13005).\n• Quand la situation est rétablie, on annule le message de détresse.",
+     "vocab": [
+      {
+       "term": "Finesse",
+       "translation": "Rapport distance parcourue / hauteur perdue en vol plané"
+      },
+      {
+       "term": "Vitesse de finesse max",
+       "translation": "Vitesse donnant la plus grande distance de plané en air calme"
+      },
+      {
+       "term": "Atterrissage forcé",
+       "translation": "Atterrissage imposé par une panne, souvent hors aérodrome"
+      },
+      {
+       "term": "Étouffoir",
+       "translation": "Position du mélange qui coupe l'essence et arrête le moteur"
+      },
+      {
+       "term": "Contact général",
+       "translation": "Interrupteur qui coupe batterie et alternateur du circuit de bord"
+      },
+      {
+       "term": "Magnéto",
+       "translation": "Générateur autonome du courant d'allumage, entraîné par le moteur"
+      },
+      {
+       "term": "Délestage",
+       "translation": "Coupure des équipements électriques non essentiels"
+      },
+      {
+       "term": "MAYDAY",
+       "translation": "Message de détresse : danger grave et imminent, aide immédiate"
+      },
+      {
+       "term": "PAN PAN",
+       "translation": "Message d'urgence : difficulté sérieuse, sans aide immédiate requise"
+      },
+      {
+       "term": "7700 / 7600",
+       "translation": "Codes transpondeur : 7700 situation d'urgence, 7600 panne radio"
+      },
+      {
+       "term": "Émission à l'aveugle",
+       "translation": "Message émis sans accusé de réception, en cas de panne radio"
+      },
+      {
+       "term": "Dépressiomètre",
+       "translation": "Indique la dépression qui entraîne les gyroscopes pneumatiques"
+      },
+      {
+       "term": "Prise statique de secours",
+       "translation": "Source de pression statique en cabine si la prise extérieure se bouche"
+      },
+      {
+       "term": "Disjoncteur",
+       "translation": "Coupe un circuit en surintensité ; un seul réarmement en vol"
+      },
+      {
+       "term": "Vrille",
+       "translation": "Décrochage dissymétrique entretenu : l'avion tourne en descendant"
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s2q01",
+       "q": "Le moteur s'arrête en montée initiale, à 300 ft au-dessus de la piste. Quelle est la toute première action ?",
+       "choices": [
+        "Virer de 180° pour revenir se poser sur la piste",
+        "Actionner le démarreur pour tenter de relancer le moteur",
+        "Rendre la main pour conserver la vitesse de plané",
+        "Lancer un message MAYDAY avant toute autre action"
+       ],
+       "answer": 2,
+       "explanation": "En montée, l'assiette est forte : sans traction, la vitesse chute en quelques secondes. Il faut d'abord baisser le nez pour garder la vitesse de plané et éviter le décrochage ; le choix du terrain, les actions moteur et le message viennent ensuite."
+      },
+      {
+       "id": "u7s2q02",
+       "q": "Pourquoi ne faut-il pas tenter de revenir vers la piste après une panne moteur à basse hauteur ?",
+       "choices": [
+        "Le virage accroît le taux de chute et la vitesse de décrochage ; on arriverait vent arrière",
+        "La réglementation interdit tout virage à moins de 500 ft au-dessus de la piste",
+        "Sans moteur, les ailerons perdent leur efficacité et l'avion ne peut plus virer",
+        "Le virage réduit la vitesse de décrochage, ce qui incite à voler beaucoup trop lentement"
+       ],
+       "answer": 0,
+       "explanation": "Ce n'est pas une interdiction réglementaire : en virage, le facteur de charge augmente (et non réduit) la vitesse de décrochage et la perte de hauteur ; rejoindre l'axe demande bien plus de 180° et l'on se poserait vent arrière. Se poser à peu près droit devant est la solution la plus sûre."
+      },
+      {
+       "id": "u7s2q03",
+       "q": "La finesse de votre avion est de 10. Le moteur s'arrête à 900 m au-dessus du sol, en air calme. Quelle distance maximale pouvez-vous parcourir en plané ?",
+       "choices": [
+        "4,5 km",
+        "18 km",
+        "9 km",
+        "0,9 km"
+       ],
+       "answer": 2,
+       "explanation": "Distance de plané = hauteur × finesse = 900 m × 10 = 9 000 m, soit 9 km en air calme, à la vitesse de finesse max. Le vent de face la réduit, le vent arrière l'augmente."
+      },
+      {
+       "id": "u7s2q04",
+       "q": "Pour un atterrissage forcé, vous hésitez entre plusieurs champs atteignables et assez longs. Lequel choisir ?",
+       "choices": [
+        "Un champ en pente descendante dans le sens de l'atterrissage, face au vent",
+        "Un champ moissonné, plat, abordable face au vent, sans obstacle en approche",
+        "Un champ de maïs haut et plat, abordable vent arrière",
+        "Une prairie plate, abordable vent de travers, avec une ligne électrique en finale"
+       ],
+       "answer": 1,
+       "explanation": "On recherche un terrain plat ou légèrement montant, à surface ferme et dégagée, abordable face au vent (vitesse sol et distance d'arrêt réduites) et sans obstacle sur la trajectoire d'approche."
+      },
+      {
+       "id": "u7s2q05",
+       "q": "Lors d'un feu moteur en vol, pourquoi ferme-t-on le chauffage cabine ?",
+       "choices": [
+        "Pour réserver toute l'énergie électrique à la radio et au transpondeur",
+        "Son circuit renvoie de l'air chaud vers le moteur, ce qui attiserait le feu",
+        "Pour éviter le givrage du carburateur pendant la descente vers le terrain choisi",
+        "Son air, réchauffé autour de l'échappement, amènerait fumées et flammes en cabine"
+       ],
+       "answer": 3,
+       "explanation": "Sur la plupart des avions légers, l'air de chauffage est réchauffé par un échangeur autour du pot d'échappement, dans le compartiment moteur. En cas de feu, il ferait entrer fumées et gaz toxiques dans la cabine."
+      },
+      {
+       "id": "u7s2q06",
+       "q": "Un feu moteur se déclare en croisière. Quel est le principe général de la procédure, à appliquer selon le manuel de vol ?",
+       "choices": [
+        "Couper le carburant, fermer le chauffage, préparer un atterrissage forcé sans redémarrer",
+        "Enrichir le mélange et augmenter la puissance pour chasser les flammes vers l'arrière",
+        "Couper puis rallumer les magnétos pour relancer le moteur une fois le feu éteint",
+        "Ouvrir le chauffage cabine pour évacuer la fumée du compartiment moteur"
+       ],
+       "answer": 0,
+       "explanation": "On prive le feu de carburant (robinet fermé, mélange sur étouffoir), on protège la cabine et on se pose au plus vite. On ne redémarre jamais un moteur qui a pris feu."
+      },
+      {
+       "id": "u7s2q07",
+       "q": "Une odeur d'isolant brûlé et de la fumée apparaissent derrière le tableau de bord. Quelle est la première mesure générale ?",
+       "choices": [
+        "Ouvrir le chauffage cabine pour dissiper la fumée",
+        "Couper le contact général (batterie et alternateur)",
+        "Couper les magnétos pour arrêter le moteur",
+        "Réarmer les disjoncteurs qui ont sauté"
+       ],
+       "answer": 1,
+       "explanation": "L'odeur d'isolant signe un feu électrique : couper l'alimentation supprime la source d'échauffement. On utilise l'extincteur si nécessaire, on aère une fois le feu éteint et on se pose dès que possible. Un disjoncteur sauté lors d'un feu ne se réarme pas."
+      },
+      {
+       "id": "u7s2q08",
+       "q": "En hiver, chauffage cabine ouvert, vous ressentez maux de tête et somnolence. Que suspecter et que faire ?",
+       "choices": [
+        "Le mal des transports : fixer l'horizon et poursuivre le vol",
+        "Un givrage carburateur : tirer le réchauffage et poursuivre",
+        "Une simple fatigue : augmenter le chauffage pour rester éveillé",
+        "Du monoxyde de carbone : fermer le chauffage, aérer et se poser"
+       ],
+       "answer": 3,
+       "explanation": "Une fuite de l'échappement dans l'échangeur du chauffage peut introduire du monoxyde de carbone, gaz incolore et inodore. On ferme le chauffage, on ventile à l'air frais et on se pose au plus vite ; un détecteur de CO aide à le repérer."
+      },
+      {
+       "id": "u7s2q09",
+       "q": "Sur un avion léger classique à moteur à pistons, l'alternateur tombe en panne. Pourquoi le moteur continue-t-il de tourner ?",
+       "choices": [
+        "Parce que la batterie prend le relais et alimente directement les bougies",
+        "Parce qu'un alternateur de secours, entraîné par l'hélice, prend le relais",
+        "Parce que l'allumage vient des magnétos, indépendantes du circuit électrique",
+        "Parce que le moteur ne s'arrêtera qu'une fois la batterie entièrement déchargée"
+       ],
+       "answer": 2,
+       "explanation": "Les magnétos, entraînées par le moteur, produisent elles-mêmes le courant d'allumage. La panne d'alternateur prive seulement l'avion de recharge : la batterie alimente les équipements électriques pour un temps limité."
+      },
+      {
+       "id": "u7s2q10",
+       "q": "La panne d'alternateur est confirmée, le réarmement du disjoncteur est resté sans effet. Quelle est la conduite à tenir ?",
+       "choices": [
+        "Délester les équipements non essentiels et écourter le vol",
+        "Poursuivre le vol prévu sans changement, la batterie suffisant",
+        "Allumer tous les équipements pour vérifier lesquels fonctionnent encore",
+        "Réarmer le disjoncteur à intervalles réguliers jusqu'à l'arrivée"
+       ],
+       "answer": 0,
+       "explanation": "La batterie seule ne tient qu'un temps limité. On garde l'indispensable (radio, transpondeur), on anticipe la perte des équipements électriques (volets, jauges, éclairage) et on se pose dès que possible, selon le manuel de vol."
+      },
+      {
+       "id": "u7s2q11",
+       "q": "Juste après le décollage, la porte passager s'entrouvre. Quelle est la conduite à tenir ?",
+       "choices": [
+        "Lâcher les commandes un instant pour la claquer à deux mains, puis poursuivre",
+        "Accélérer au maximum pour que le flux d'air plaque la porte contre le fuselage",
+        "Couper le moteur et se poser droit devant, dans le premier champ venu",
+        "Piloter d'abord, faire un tour de piste et se poser pour la refermer au sol"
+       ],
+       "answer": 3,
+       "explanation": "Une porte ouverte est surtout bruyante : l'avion reste pilotable. Le vrai danger est la distraction ; on pilote d'abord, on réduit la vitesse selon le manuel et on revient se poser pour la refermer au sol."
+      },
+      {
+       "id": "u7s2q12",
+       "q": "En croisière, le régime baisse puis le moteur devient irrégulier. Quelles vérifications font partie des actions habituelles avant d'envisager un atterrissage forcé ?",
+       "choices": [
+        "Couper la pompe électrique et appauvrir le mélange au maximum",
+        "Réchauffage carburateur, sélecteur de réservoir, mélange et magnétos",
+        "Réduire au ralenti, puis couper le contact général et les magnétos",
+        "Ouvrir le chauffage cabine, sortir les volets et réduire les gaz"
+       ],
+       "answer": 1,
+       "explanation": "Les causes les plus fréquentes sont le givrage carburateur et un problème d'alimentation (réservoir vide, sélecteur mal placé, mélange). La check-list du manuel prévoit typiquement : réchauffage, changement de réservoir, pompe électrique, mélange, essai des magnétos."
+      },
+      {
+       "id": "u7s2q13",
+       "q": "Après une panne d'alternateur, vous estimez disposer de 16 Ah dans la batterie. Radio et transpondeur consomment 4 A, les autres équipements encore allumés 4 A. Quelle autonomie théorique obtenez-vous en ne gardant que la radio et le transpondeur ?",
+       "choices": [
+        "2 h",
+        "4 h",
+        "1 h",
+        "8 h"
+       ],
+       "answer": 1,
+       "explanation": "Autonomie = capacité ÷ intensité. Tout allumé : 16 Ah ÷ 8 A = 2 h ; radio et transpondeur seuls : 16 ÷ 4 = 4 h. C'est un maximum théorique : la batterie est rarement pleine et sa capacité baisse au froid et avec l'âge. On écourte donc le vol."
+      },
+      {
+       "id": "u7s2q14",
+       "q": "En croisière, sans odeur ni fumée, le disjoncteur de la radio saute. Quelle est la conduite habituelle ?",
+       "choices": [
+        "Le réarmer aussitôt, puis autant de fois que nécessaire",
+        "Le maintenir enfoncé à la main pour garder la radio",
+        "Attendre un peu, le réarmer une fois ; s'il ressaute, le laisser",
+        "Couper le contact général et les magnétos jusqu'à l'atterrissage"
+       ],
+       "answer": 2,
+       "explanation": "Un disjoncteur protège le circuit d'une surintensité. On le laisse refroidir quelques instants puis on le réarme une seule fois ; s'il saute de nouveau, le défaut persiste et le forcer risque un échauffement, voire un feu. Couper les magnétos arrêterait le moteur, sans aucun rapport avec la panne."
+      },
+      {
+       "id": "u7s2q15",
+       "q": "En VMC, le dépressiomètre indique zéro, l'horizon artificiel penche lentement et le conservateur de cap dérive. Quel instrument gyroscopique reste en général fiable sur un avion léger ?",
+       "choices": [
+        "L'indicateur de virage, à entraînement électrique",
+        "L'horizon artificiel, qui a sa propre batterie",
+        "Le conservateur de cap, recalé sur le compas",
+        "Le variomètre, entraîné par la pompe à vide"
+       ],
+       "answer": 0,
+       "explanation": "Sur la plupart des avions légers, horizon artificiel et conservateur de cap sont entraînés par la pompe à vide, l'indicateur de virage est électrique. Recaler le conservateur ne sert à rien sans dépression, et le variomètre n'est pas gyroscopique : il fonctionne avec la pression statique. En VMC, on pilote d'abord avec les références extérieures."
+      },
+      {
+       "id": "u7s2q16",
+       "q": "Vous soupçonnez une prise statique obstruée et sélectionnez la prise statique de secours, située dans la cabine. Comment évoluent les indications ?",
+       "choices": [
+        "Altimètre et anémomètre indiquent un peu moins que la réalité",
+        "Altimètre et anémomètre indiquent un peu plus que la réalité",
+        "L'anémomètre reste exact, l'altimètre se fige",
+        "Les indications redeviennent exactes, sans correction"
+       ],
+       "answer": 1,
+       "explanation": "La pression dans la cabine est en général un peu inférieure à la pression extérieure, à cause de l'écoulement autour du fuselage : altimètre et anémomètre indiquent légèrement trop, et le variomètre marque une brève montée. Le manuel de vol donne les corrections selon la position des aérations et des fenêtres."
+      },
+      {
+       "id": "u7s2q17",
+       "q": "En VFR, en VMC, votre radio tombe en panne malgré toutes les vérifications. Selon SERA, que faites-vous ?",
+       "choices": [
+        "7700 et poursuivre en VMC vers la destination prévue",
+        "7600 et entrer en zone contrôlée sans clairance, le code suffisant",
+        "7500 et attendre en vol l'arrivée d'un avion d'escorte",
+        "7600, rester en VMC, se poser sur l'aérodrome approprié le plus proche"
+       ],
+       "answer": 3,
+       "explanation": "SERA.14083 : le pilote continue en VMC, se pose sur l'aérodrome approprié le plus proche et signale son arrivée au plus vite à l'organisme ATC ; le code 7600 signale la panne radio, le 7500 une intervention illicite. On n'entre pas dans un espace contrôlé sans clairance ; les cartes VAC donnent souvent une procédure de panne radio."
+      },
+      {
+       "id": "u7s2q18",
+       "q": "Le contrôle d'approche vous a attribué le code transpondeur 4521. Le moteur s'arrête et vous lancez un MAYDAY. Que prévoit SERA pour le transpondeur ?",
+       "choices": [
+        "Garder 4521, quitte à afficher 7700 si c'est préférable",
+        "Afficher 7700 sans délai, le code 4521 devenant caduc",
+        "Afficher 7600, code réservé aux pannes moteur",
+        "Couper le transpondeur pour économiser la batterie"
+       ],
+       "answer": 0,
+       "explanation": "SERA.13005 : en situation d'urgence, on affiche 7700, sauf si l'ATC a déjà attribué un code ; on le conserve alors, puisque le contrôleur vous identifie déjà, en gardant la possibilité d'afficher 7700 si l'on a une raison de penser que c'est préférable. Le 7600 signale une panne radio, pas une panne moteur."
+      },
+      {
+       "id": "u7s2q19",
+       "q": "Après « MAYDAY, MAYDAY, MAYDAY », dans quel ordre le message de détresse donne-t-il les éléments, selon SERA ?",
+       "choices": [
+        "Indicatif, position, niveau, intentions, nature, station appelée",
+        "Nature, personnes à bord, autonomie, indicatif, station appelée",
+        "Station appelée, indicatif, nature, intentions, position, niveau, cap",
+        "Position, niveau, cap, indicatif, station appelée, nature, intentions"
+       ],
+       "answer": 2,
+       "explanation": "SERA.14095 : station appelée (si le temps le permet), identification de l'aéronef, nature de la détresse, intentions du commandant de bord, puis position, niveau et cap. Les autres informations utiles (personnes à bord, autonomie) suivent si possible. Commencer par la position fait souvent oublier l'indicatif."
+      },
+      {
+       "id": "u7s2q20",
+       "q": "En croisière de jour, en VMC, la panne d'alternateur est confirmée ; l'aérodrome le plus proche est à 15 minutes. Quel message convient pour prévenir l'ATC ?",
+       "choices": [
+        "Un message de détresse, MAYDAY prononcé trois fois",
+        "Un message d'urgence, PAN PAN prononcé trois fois",
+        "Un simple compte rendu de position, sans priorité",
+        "Un message de routine, sur la fréquence 121,5 MHz"
+       ],
+       "answer": 1,
+       "explanation": "La panne d'alternateur est une difficulté sérieuse, sans danger grave et imminent : c'est une urgence (PAN PAN), qui donne priorité au message sans exiger une aide immédiate. MAYDAY est réservé à la détresse (panne moteur, feu). Le 121,5 MHz est la fréquence de détresse et d'urgence, pas celle des messages de routine."
+      },
+      {
+       "id": "u7s2q21",
+       "q": "Vous entrez involontairement en vrille et le manuel de vol ne prévoit pas de procédure particulière. Quelle séquence type appliquez-vous ?",
+       "choices": [
+        "Plein gaz, manche tiré, palonnier du côté de la rotation",
+        "Réduire, ailerons contre la rotation, manche tiré à fond",
+        "Plein gaz, ailerons au neutre, palonnier au neutre, manche avant",
+        "Réduire, ailerons au neutre, pied contre la rotation, manche avant"
+       ],
+       "answer": 3,
+       "explanation": "Procédure type (« PARE » en anglais) : puissance réduite, ailerons au neutre, palonnier à fond du côté opposé à la rotation, manche en avant jusqu'à l'arrêt de la rotation ; puis palonnier au neutre et ressource douce. Des ailerons contre la rotation peuvent aggraver la vrille. Le manuel de vol fait foi quand il prévoit autre chose."
+      },
+      {
+       "id": "u7s2q22",
+       "q": "Les volets électriques refusent de sortir en vent arrière. Que devez-vous prévoir pour l'atterrissage ?",
+       "choices": [
+        "Vitesse plus faible, la traînée des volets n'existant plus",
+        "Assiette plus piquée et distance d'atterrissage raccourcie",
+        "Vitesse plus élevée, assiette plus cabrée, roulage plus long",
+        "Les mêmes vitesses, car les volets servent surtout au décollage"
+       ],
+       "answer": 2,
+       "explanation": "Sans volets, la vitesse de décrochage est plus élevée : on approche plus vite (vitesse du manuel), l'assiette est plus cabrée pour une même vitesse, l'avion flotte à l'arrondi et la distance d'atterrissage s'allonge. On choisit la piste la plus longue et l'on prévoit une finale plus longue."
+      },
+      {
+       "id": "u7s2q23",
+       "q": "Vous lancez un MAYDAY sur la fréquence du SIV, sans obtenir de réponse. Que faites-vous ensuite ?",
+       "choices": [
+        "Vous le répétez sur 121,5 MHz, la fréquence de détresse",
+        "Vous attendez d'être plus près du sol pour réessayer",
+        "Vous passez sur la fréquence de la tour de destination",
+        "Vous renoncez à émettre pour vous consacrer au pilotage"
+       ],
+       "answer": 0,
+       "explanation": "Le message de détresse s'émet sur la fréquence en cours ; sans réponse, on le répète sur 121,5 MHz, fréquence de détresse et d'urgence veillée par les organismes et souvent par d'autres avions. Descendre réduit au contraire la portée radio, qui dépend de la hauteur ; une tour lointaine a peu de chances de vous entendre."
+      },
+      {
+       "id": "u7s2q24",
+       "q": "Le moteur devient irrégulier alors que l'ATC vous demande votre position et qu'un passager s'inquiète. Quelle priorité appliquez-vous ?",
+       "choices": [
+        "Répondre d'abord au contrôleur, qui attend votre position",
+        "Rassurer d'abord le passager, qui pourrait vous gêner",
+        "Chercher d'abord sur la carte l'aérodrome le plus proche",
+        "Tenir l'avion, puis traiter la panne, puis répondre"
+       ],
+       "answer": 3,
+       "explanation": "Règle d'or : piloter, naviguer, communiquer. On tient d'abord la trajectoire et la vitesse, on applique les actions de la check-list, puis on répond (« attendez » si nécessaire). Un pilote absorbé par la radio, le passager ou la carte laisse filer la vitesse au pire moment."
+      }
+     ],
+     "figures": [
+      {
+       "title": "Circuit électrique simplifié et allumage",
+       "svg": "<svg viewBox=\"0 0 720 450\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"450\" fill=\"#ffffff\"/><rect x=\"20\" y=\"30\" width=\"180\" height=\"58\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"110\" y=\"55\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Alternateur</text><text x=\"110\" y=\"77\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\">entraîné par le moteur</text><rect x=\"20\" y=\"130\" width=\"180\" height=\"58\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"110\" y=\"155\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Batterie</text><text x=\"110\" y=\"177\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\">réserve limitée</text><polyline points=\"200,59 230,59 230,98 245,98\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><polyline points=\"200,159 230,159 230,120 245,120\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><rect x=\"245\" y=\"80\" width=\"150\" height=\"58\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"320\" y=\"105\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Contact général</text><text x=\"320\" y=\"127\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\">BAT et ALT</text><line x1=\"395\" y1=\"109\" x2=\"430\" y2=\"109\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><line x1=\"430\" y1=\"30\" x2=\"430\" y2=\"250\" stroke=\"#1d4ed8\" stroke-width=\"8\"/><text x=\"430\" y=\"272\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Barre</text><text x=\"430\" y=\"290\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">d'alimentation</text><text x=\"476\" y=\"22\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\">Disjoncteurs</text><text x=\"110\" y=\"222\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">Panne : voyant ALT allumé,</text><text x=\"110\" y=\"241\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">ampèremètre en décharge</text><line x1=\"430\" y1=\"47\" x2=\"520\" y2=\"47\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"476\" cy=\"47\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"520\" y=\"30\" width=\"185\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"612\" y=\"53\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Radio</text><line x1=\"430\" y1=\"93\" x2=\"520\" y2=\"93\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"476\" cy=\"93\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"520\" y=\"76\" width=\"185\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"612\" y=\"99\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Transpondeur</text><line x1=\"430\" y1=\"139\" x2=\"520\" y2=\"139\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"476\" cy=\"139\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"520\" y=\"122\" width=\"185\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"612\" y=\"145\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Volets électriques</text><line x1=\"430\" y1=\"185\" x2=\"520\" y2=\"185\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"476\" cy=\"185\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"520\" y=\"168\" width=\"185\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"612\" y=\"191\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Feux et phare</text><line x1=\"430\" y1=\"231\" x2=\"520\" y2=\"231\" stroke=\"#1d4ed8\" stroke-width=\"3\"/><circle cx=\"476\" cy=\"231\" r=\"7\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><rect x=\"520\" y=\"214\" width=\"185\" height=\"34\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"612\" y=\"237\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Jauges et voyants</text><rect x=\"20\" y=\"305\" width=\"685\" height=\"135\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\" stroke-dasharray=\"8 5\"/><text x=\"40\" y=\"330\" font-size=\"15\" font-weight=\"bold\" fill=\"#b45309\">Allumage : indépendant du circuit de bord</text><rect x=\"40\" y=\"350\" width=\"120\" height=\"50\" rx=\"6\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"100\" y=\"381\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Moteur</text><line x1=\"160\" y1=\"375\" x2=\"220\" y2=\"360\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"160\" y1=\"375\" x2=\"220\" y2=\"395\" stroke=\"#b45309\" stroke-width=\"3\"/><rect x=\"220\" y=\"343\" width=\"170\" height=\"30\" rx=\"5\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"305\" y=\"363\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Magnéto gauche</text><rect x=\"220\" y=\"380\" width=\"170\" height=\"30\" rx=\"5\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"305\" y=\"400\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Magnéto droite</text><line x1=\"390\" y1=\"358\" x2=\"450\" y2=\"370\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"390\" y1=\"395\" x2=\"450\" y2=\"383\" stroke=\"#b45309\" stroke-width=\"3\"/><rect x=\"450\" y=\"345\" width=\"160\" height=\"62\" rx=\"6\" fill=\"#ffffff\" stroke=\"#b45309\" stroke-width=\"2\"/><text x=\"530\" y=\"371\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Bougies</text><text x=\"530\" y=\"393\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\">2 par cylindre</text><text x=\"40\" y=\"430\" font-size=\"14\" fill=\"#0f172a\">Sans alternateur ni batterie, les magnétos allument toujours : le moteur continue de tourner.</text></svg>",
+       "caption": "L'alternateur et la batterie alimentent la barre par le contact général, chaque équipement étant protégé par un disjoncteur. L'allumage, assuré par deux magnétos entraînées par le moteur, ne dépend pas de ce circuit : une panne d'alternateur ne coupe pas le moteur."
+      },
+      {
+       "title": "Message de détresse : ordre des éléments",
+       "svg": "<svg viewBox=\"0 0 720 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"440\" fill=\"#ffffff\"/><rect x=\"20\" y=\"15\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#fee2e2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"35\" r=\"13\" fill=\"#b91c1c\"/><text x=\"44\" y=\"40\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">1</text><text x=\"70\" y=\"41\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">MAYDAY, MAYDAY, MAYDAY</text><rect x=\"20\" y=\"64\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"84\" r=\"13\" fill=\"#334155\"/><text x=\"44\" y=\"89\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">2</text><text x=\"70\" y=\"90\" font-size=\"15\" fill=\"#0f172a\">Station appelée (si possible)</text><rect x=\"20\" y=\"113\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"133\" r=\"13\" fill=\"#334155\"/><text x=\"44\" y=\"138\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">3</text><text x=\"70\" y=\"139\" font-size=\"15\" fill=\"#0f172a\">Indicatif de l'avion</text><rect x=\"20\" y=\"162\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"182\" r=\"13\" fill=\"#334155\"/><text x=\"44\" y=\"187\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">4</text><text x=\"70\" y=\"188\" font-size=\"15\" fill=\"#0f172a\">Nature de la détresse</text><rect x=\"20\" y=\"211\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"231\" r=\"13\" fill=\"#334155\"/><text x=\"44\" y=\"236\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">5</text><text x=\"70\" y=\"237\" font-size=\"15\" fill=\"#0f172a\">Intentions du commandant de bord</text><rect x=\"20\" y=\"260\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"280\" r=\"13\" fill=\"#334155\"/><text x=\"44\" y=\"285\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">6</text><text x=\"70\" y=\"286\" font-size=\"15\" fill=\"#0f172a\">Position, niveau et cap</text><rect x=\"20\" y=\"309\" width=\"380\" height=\"40\" rx=\"6\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"44\" cy=\"329\" r=\"13\" fill=\"#334155\"/><text x=\"44\" y=\"334\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">7</text><text x=\"70\" y=\"335\" font-size=\"15\" fill=\"#0f172a\">Puis : personnes à bord, autonomie</text><rect x=\"425\" y=\"15\" width=\"280\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"565\" y=\"41\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1d4ed8\">Fréquence en cours</text><text x=\"565\" y=\"65\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">sans réponse : 121,5 MHz</text><rect x=\"425\" y=\"100\" width=\"280\" height=\"92\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/><text x=\"565\" y=\"126\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1d4ed8\">Transpondeur 7700</text><text x=\"565\" y=\"150\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">code déjà attribué par l'ATC :</text><text x=\"565\" y=\"172\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">le garder (SERA.13005)</text><rect x=\"425\" y=\"207\" width=\"280\" height=\"70\" rx=\"8\" fill=\"#fff7ed\" stroke=\"#c2410c\" stroke-width=\"2\"/><text x=\"565\" y=\"233\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#c2410c\">Urgence : PAN PAN (×3)</text><text x=\"565\" y=\"257\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">difficulté, sans aide immédiate</text><rect x=\"425\" y=\"292\" width=\"280\" height=\"70\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"565\" y=\"318\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#15803d\">Panne radio : 7600</text><text x=\"565\" y=\"342\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">VMC, aérodrome le plus proche</text><text x=\"20\" y=\"400\" font-size=\"14\" fill=\"#475569\">Exemple : « MAYDAY, MAYDAY, MAYDAY, [station], [indicatif], panne moteur,</text><text x=\"20\" y=\"422\" font-size=\"14\" fill=\"#475569\">atterrissage forcé, 5 NM au sud de [repère], 2 000 ft, cap 180 ».</text></svg>",
+       "caption": "Après MAYDAY prononcé trois fois, le message suit l'ordre de SERA.14095, puis donne les informations utiles. Il s'émet sur la fréquence en cours ou, sans réponse, sur 121,5 MHz."
+      }
+     ]
+    },
+    {
+     "id": "u7s3",
+     "title": "Phénomènes et risques en vol",
+     "icon": "🌩️",
+     "tips": "Cisaillement de vent : variation brutale du vent en force ou en direction sur une courte distance (orage, front, relief, obstacles près de la piste). Par inertie, l'avion garde d'abord sa vitesse sol :\n• perte de vent de face : la vitesse indiquée chute, l'avion s'enfonce sous le plan ;\n• hausse du vent de face : la vitesse indiquée augmente, l'avion passe au-dessus du plan.\nUne microrafale (courant descendant sous un orage) donne successivement vent de face, descendance puis vent arrière. Réaction : pleine puissance et remise de gaz.\n• Repères FAA : courant descendant de moins de 1 mile de diamètre, jusqu'à 6 000 ft/min, étalé au sol sur environ 4 km ; une microrafale dure rarement plus de 15 min, ses vents les plus forts 2 à 4 min.\n\nGivrage cellule : en nuage ou dans les précipitations à température négative (eau surfondue), la pluie verglaçante étant la plus dangereuse. Le givre augmente masse et traînée, déforme le profil et élève la vitesse de décrochage. Un avion non certifié pour le givrage doit quitter ces conditions sans attendre (demi-tour, changement d'altitude).\n• Formes : givre blanc (petites gouttelettes qui gèlent aussitôt : dépôt opaque et rugueux au bord d'attaque) ; glace claire ou verglas (grosses gouttes qui s'étalent avant de geler : glace transparente, dense, difficile à éliminer) ; gelée blanche, au sol, par nuit claire.\n• Au sol : ne décoller qu'avec un avion débarrassé de toute gelée, neige ou glace ; même une fine couche rugueuse sur l'extrados réduit fortement la portance.\n• En vol, le Part-NCO (NCO.OP.170) impose de sortir sans délai d'un givrage pour lequel l'avion n'est pas certifié, par un changement de niveau ou de route, en déclarant si nécessaire une urgence.\n\nGivrage carburateur : la détente dans le venturi et l'évaporation de l'essence peuvent refroidir l'air de 30 °C environ. Risque par air humide, d'environ −10 °C à +30 °C, maximal à puissance réduite.\n• Symptômes (hélice à pas fixe) : baisse de régime, puis moteur irrégulier.\n• Réchauffage : tout ou rien. Le régime baisse (air chaud moins dense), puis remonte s'il y avait de la glace.\n• L'appliquer avant de réduire pour une descente prolongée. Air chaud non filtré : l'éviter au roulage sur sol poussiéreux.\n• Le repousser pour le décollage (perte de puissance), sauf indication du manuel. Le bureau australien de la sécurité des transports (ATSB) signale du givrage jusqu'à environ 38 °C.\n\nOrages : turbulence, grêle, foudre, givrage, cisaillement. Les contourner très largement, ne passer ni sous la base (rafales descendantes) ni sous l'enclume (grêle). Ne pas décoller ni atterrir à l'approche d'un orage (front de rafales).\n• La FAA recommande de contourner un orage violent d'au moins 20 NM ; le front de rafales peut précéder les précipitations jusqu'à une quinzaine de milles.\n\nTurbulence :\n• Réduire à la vitesse de manœuvre VA ou à la vitesse de pénétration en turbulence du manuel, ceintures serrées, objets arrimés ; tenir l'assiette et les ailes à plat plutôt que l'altitude.\n• VA diminue avec la masse : VA réduite = VA × √(masse réelle ÷ masse de référence). Ex. : 105 kt à 1 200 kg → à 768 kg : √0,64 = 0,8, soit 84 kt.\n\nPerte de références visuelles : la désorientation spatiale s'installe vite. Passer sur les instruments, ailes à plat, puis demi-tour au taux standard (3°/s, soit 1 min pour 180°) à inclinaison modérée vers la zone VMC quittée. Ne pas descendre sous l'altitude de sécurité ; demander l'aide de l'ATC.\n• Inclinaison au taux standard ≈ vitesse propre ÷ 10 + 7 (à 90 kt : environ 16°).\n\nVol au-dessus de l'eau : voler haut pour rester en distance de plané d'une côte, choisir la traversée la plus courte, emporter les gilets. L'horizon peut disparaître dans la brume et la hauteur est difficile à estimer au-dessus d'une mer calme.\n• Pour rester toujours à portée de plané d'une côte, il faut pouvoir planer depuis le milieu de la traversée : bras de mer de 30 km, finesse 10 → 15 km ÷ 10 = 1 500 m (environ 4 900 ft) en air calme.\n\nVol en montagne (notions) : franchir les crêtes avec une marge de hauteur et sous 45° environ, pour pouvoir s'en écarter ; se méfier du côté sous le vent (descendances, rotors) ; voler sur un côté de la vallée pour garder la place d'un demi-tour ; performances réduites par l'altitude-densité.\n• Repères américains : franchir les crêtes au moins 1 000 ft au-dessus, davantage par vent fort (souvent 2 000 ft au-delà de 20 kt).\n• Qualification montagne (Part-FCL, FCL.815) : exigée pour décoller et atterrir sur les surfaces désignées par l'État (en France, notamment des altiports et altisurfaces), sur roues ou sur skis.\n\nOiseaux : collisions surtout à basse hauteur, près des aérodromes, à l'aube, au crépuscule et en période de migration. L'énergie de l'impact est proportionnelle au carré de la vitesse : à vitesse double, énergie × 4. Consulter les NOTAM et déclarer toute collision.\n• Une collision avec un animal est un événement à notifier (règlement (UE) n° 376/2014) ; la DGAC (STAC) en tient la base nationale. Après un impact : piloter, contrôler les paramètres moteur, se poser dès que possible pour inspection.",
+     "vocab": [
+      {
+       "term": "Cisaillement de vent",
+       "translation": "Variation brutale du vent en force ou direction sur peu de distance"
+      },
+      {
+       "term": "Microrafale",
+       "translation": "Violent courant descendant sous un orage, qui diverge près du sol"
+      },
+      {
+       "term": "Eau surfondue",
+       "translation": "Eau restée liquide sous 0 °C, qui gèle au contact de l'avion"
+      },
+      {
+       "term": "Pluie verglaçante",
+       "translation": "Pluie surfondue qui gèle à l'impact : givrage très rapide"
+      },
+      {
+       "term": "Réchauffage carburateur",
+       "translation": "Air chauffé par l'échappement admis au carburateur contre la glace"
+      },
+      {
+       "term": "Taux standard",
+       "translation": "Virage à 3°/s : 180° en 1 min, 360° en 2 min"
+      },
+      {
+       "term": "Désorientation spatiale",
+       "translation": "Perception fausse de l'attitude de l'avion sans références"
+      },
+      {
+       "term": "Côté sous le vent",
+       "translation": "Versant abrité du vent, siège de descendances et de rotors"
+      },
+      {
+       "term": "Givre blanc",
+       "translation": "Givre opaque et rugueux : petites gouttes surfondues gelant aussitôt"
+      },
+      {
+       "term": "Glace claire",
+       "translation": "Verglas transparent et dense, né de grosses gouttes surfondues"
+      },
+      {
+       "term": "Gelée blanche",
+       "translation": "Dépôt de glace au sol par nuit claire, à ôter avant le vol"
+      },
+      {
+       "term": "Front de rafales",
+       "translation": "Air froid sortant d'un orage, en avance sur les précipitations"
+      },
+      {
+       "term": "VA",
+       "translation": "Vitesse de manœuvre ; elle diminue quand la masse diminue"
+      },
+      {
+       "term": "Enclume",
+       "translation": "Sommet étalé d'un cumulonimbus, sous lequel la grêle peut tomber"
+      },
+      {
+       "term": "Qualification montagne",
+       "translation": "Part-FCL : décollage et atterrissage sur surfaces désignées"
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s3q01",
+       "q": "En finale, le vent de face diminue brusquement. Quel est l'effet immédiat sur l'avion ?",
+       "choices": [
+        "La vitesse indiquée augmente et l'avion passe au-dessus du plan",
+        "La vitesse indiquée reste constante, seule la vitesse sol varie",
+        "La vitesse sol diminue aussitôt, sans effet sur la vitesse indiquée",
+        "La vitesse indiquée diminue et l'avion s'enfonce sous le plan"
+       ],
+       "answer": 3,
+       "explanation": "Par inertie, l'avion conserve d'abord sa vitesse sol : si le vent de face diminue, sa vitesse par rapport à l'air chute, la portance baisse et il passe sous le plan. Il faut ajouter de la puissance, voire remettre les gaz."
+      },
+      {
+       "id": "u7s3q02",
+       "q": "En approche, vous traversez une microrafale sous un cumulonimbus. Dans quel ordre en subissez-vous les effets ?",
+       "choices": [
+        "Vent arrière, puis courant descendant, puis vent de face",
+        "Courant ascendant, puis vent de face, puis vent arrière",
+        "Vent de face, puis courant descendant, puis vent arrière",
+        "Courant descendant seul, sans variation du vent horizontal"
+       ],
+       "answer": 2,
+       "explanation": "L'air descendant s'étale au sol en divergeant : un vent de face améliore d'abord les performances et peut tromper le pilote, puis viennent la descendance et un vent arrière qui fait chuter la vitesse près du sol. Si l'on est pris, remise de gaz immédiate à pleine puissance."
+      },
+      {
+       "id": "u7s3q03",
+       "q": "Dans quelles conditions le risque de givrage carburateur est-il le plus élevé ?",
+       "choices": [
+        "Air sec à −20 °C, pleine puissance en montée",
+        "Air humide à +15 °C, puissance réduite en descente",
+        "Air sec à +30 °C, puissance de croisière",
+        "Air sec à −5 °C, pleine puissance au décollage"
+       ],
+       "answer": 1,
+       "explanation": "La détente dans le venturi et l'évaporation de l'essence peuvent refroidir l'air d'environ 30 °C : la glace se forme par air humide, même par température extérieure positive, surtout papillon presque fermé."
+      },
+      {
+       "id": "u7s3q04",
+       "q": "Hélice à pas fixe, en croisière : vous tirez le réchauffage carburateur. Le régime baisse, puis remonte progressivement. Qu'en concluez-vous ?",
+       "choices": [
+        "De la glace s'était formée et elle est en train de fondre",
+        "Il n'y avait pas de glace : seule la densité de l'air a changé",
+        "Le réchauffage est défectueux et doit être repoussé aussitôt",
+        "Le mélange était trop riche et le réchauffage l'a appauvri"
+       ],
+       "answer": 0,
+       "explanation": "L'air chaud, moins dense, enrichit le mélange et fait baisser le régime. Si celui-ci remonte ensuite, c'est que la glace fond et libère le passage ; sans glace, le régime baisse puis reste stable."
+      },
+      {
+       "id": "u7s3q05",
+       "q": "Sauf indication contraire du manuel de vol, comment utilise-t-on le réchauffage carburateur ?",
+       "choices": [
+        "En position intermédiaire, en permanence pendant tout le vol",
+        "Uniquement au sol, lors des essais moteur",
+        "À fond, et avant de réduire la puissance pour une descente prolongée",
+        "Seulement après l'arrêt du moteur, pour faciliter son redémarrage"
+       ],
+       "answer": 2,
+       "explanation": "Un réchauffage partiel peut amener l'air dans la plage la plus givrante : on l'utilise à fond. Le risque étant maximal à faible puissance, on l'applique avant la réduction, quand le moteur fournit encore assez de chaleur."
+      },
+      {
+       "id": "u7s3q06",
+       "q": "Pourquoi le givrage de la cellule est-il dangereux pour un avion léger ?",
+       "choices": [
+        "Il épaissit le profil, ce qui augmente la portance mais aussi la traînée",
+        "Il alourdit l'avion, mais la vitesse de décrochage reste celle du manuel de vol",
+        "Il réduit surtout la traction de l'hélice, la portance de l'aile restant intacte",
+        "Il alourdit l'avion, augmente la traînée et élève la vitesse de décrochage"
+       ],
+       "answer": 3,
+       "explanation": "Quelques millimètres de givre déforment le profil et dégradent fortement la portance, alors que masse et traînée augmentent : la vitesse de décrochage s'élève au-dessus des valeurs du manuel de vol. Un avion non certifié pour le givrage doit quitter ces conditions sans attendre."
+      },
+      {
+       "id": "u7s3q07",
+       "q": "Vous devez traverser un bras de mer à bord d'un monomoteur. Quelle mesure améliore le plus votre sécurité ?",
+       "choices": [
+        "Voler bas pour mieux surveiller la surface de l'eau",
+        "Voler plus haut pour réduire la portion du trajet hors de plané d'une côte",
+        "Suivre la route directe, même si elle allonge le trajet au-dessus de l'eau",
+        "Réduire la puissance au minimum pour économiser le carburant"
+       ],
+       "answer": 1,
+       "explanation": "La hauteur, c'est de la distance de plané : plus on vole haut, plus courte est la portion de trajet hors de portée d'une côte. On choisit aussi la traversée la plus courte et on emporte gilets et moyens de signalisation."
+      },
+      {
+       "id": "u7s3q08",
+       "q": "Comment un pilote VFR doit-il éviter un cumulonimbus isolé ?",
+       "choices": [
+        "En le contournant très largement, sans passer sous sa base ni sous son enclume",
+        "En passant sous sa base, où la visibilité reste souvent bonne hors averses",
+        "En passant sous l'enclume, à l'écart des précipitations du cœur de l'orage",
+        "En le traversant par le plus court chemin, à la vitesse maximale autorisée"
+       ],
+       "answer": 0,
+       "explanation": "Sous la base règnent rafales descendantes et cisaillement ; de la grêle peut tomber de l'enclume, loin du cœur de l'orage. Turbulence, foudre et givrage complètent les dangers : seul un large contournement est sûr."
+      },
+      {
+       "id": "u7s3q09",
+       "q": "En VFR, vous entrez par inadvertance dans un nuage. Quelle est la conduite recommandée ?",
+       "choices": [
+        "Réduire, puis descendre rapidement pour retrouver au plus vite la vue du sol",
+        "Passer aux instruments, ailes à plat, puis faire demi-tour à inclinaison modérée",
+        "Virer serré, à forte inclinaison, pour ressortir du nuage au plus vite",
+        "Poursuivre tout droit en montée jusqu'à sortir au-dessus de la couche"
+       ],
+       "answer": 1,
+       "explanation": "Sans références extérieures, l'oreille interne trompe rapidement le pilote. On fait confiance aux instruments, on stabilise l'avion puis on vire de 180° au taux standard ou moins pour retrouver les conditions VMC quittées, sans descendre sous l'altitude de sécurité."
+      },
+      {
+       "id": "u7s3q10",
+       "q": "Pour contourner une averse, vous virez par la gauche du cap 030° au cap 300°, au taux standard (3° par seconde). Combien de temps dure le virage ?",
+       "choices": [
+        "1 min 30 s",
+        "1 min",
+        "2 min",
+        "30 s"
+       ],
+       "answer": 3,
+       "explanation": "Par la gauche, de 030° à 300° : 30° jusqu'au 360°, puis 60°, soit 90° au total. Durée = 90° ÷ 3°/s = 30 s ; par la droite, il aurait fallu virer de 270°, soit 1 min 30 s."
+      },
+      {
+       "id": "u7s3q11",
+       "q": "Le vent souffle perpendiculairement à une crête que vous devez franchir. Quelle technique est recommandée ?",
+       "choices": [
+        "Aborder la crête à environ 45°, avec une marge de hauteur, pour pouvoir s'en écarter",
+        "Aborder la crête perpendiculairement, au ras du sommet, pour la franchir au plus vite",
+        "Longer la crête du côté sous le vent, où l'air est plus calme",
+        "Franchir la crête en descente pour prendre de la vitesse"
+       ],
+       "answer": 0,
+       "explanation": "Côté sous le vent, les descendances et les rotors peuvent dépasser les capacités de montée d'un avion léger. Un abord oblique avec de la marge permet de s'écarter vers la vallée sans avoir à virer face au relief."
+      },
+      {
+       "id": "u7s3q12",
+       "q": "Vous volez à vitesse double. Par combien est multipliée l'énergie d'une éventuelle collision avec un oiseau ?",
+       "choices": [
+        "Par 2",
+        "Par 3",
+        "Par 4",
+        "Par 8"
+       ],
+       "answer": 2,
+       "explanation": "L'énergie cinétique vaut ½ m v² : elle est proportionnelle au carré de la vitesse. Doubler la vitesse multiplie l'énergie de l'impact par 2² = 4 ; réduire la vitesse dans une zone à oiseaux limite les dégâts."
+      },
+      {
+       "id": "u7s3q13",
+       "q": "Selon les recommandations de la FAA, à quelle distance minimale faut-il contourner un orage identifié comme violent ?",
+       "choices": [
+        "5 NM",
+        "2 NM",
+        "20 NM",
+        "10 NM"
+       ],
+       "answer": 2,
+       "explanation": "La FAA recommande d'éviter d'au moins 20 NM un orage violent : turbulence, grêle projetée loin du cœur (notamment sous l'enclume), cisaillement et front de rafales s'étendent bien au-delà du nuage visible. À 5 ou 10 NM, on peut déjà subir de la grêle ou des rafales violentes."
+      },
+      {
+       "id": "u7s3q14",
+       "q": "La vitesse de manœuvre VA de votre avion est de 100 kt à 1 000 kg. Vous volez à 810 kg dans une forte turbulence. Quelle VA approximative retenez-vous ?",
+       "choices": [
+        "81 kt",
+        "100 kt",
+        "110 kt",
+        "90 kt"
+       ],
+       "answer": 3,
+       "explanation": "VA varie comme la racine carrée de la masse : 100 × √(810 ÷ 1 000) = 100 × 0,9 = 90 kt. Plus léger, l'avion est accéléré plus fortement par une rafale : à 100 kt, il pourrait dépasser son facteur de charge limite avant de décrocher. 81 kt correspond à une proportionnalité simple, qui est fausse."
+      },
+      {
+       "id": "u7s3q15",
+       "q": "Vous volez à 100 kt de vitesse propre. Avec la règle approchée « vitesse propre ÷ 10 + 7 », quelle inclinaison donne un virage au taux standard ?",
+       "choices": [
+        "Environ 10°",
+        "Environ 17°",
+        "Environ 30°",
+        "Environ 45°"
+       ],
+       "answer": 1,
+       "explanation": "100 ÷ 10 + 7 = 17° ; le calcul exact donne environ 15°, la règle étant volontairement simple. Un demi-tour de 180° dure alors 1 min. À 30° ou 45°, on virerait bien plus vite que le taux standard, avec un risque accru de désorientation sans références extérieures."
+      },
+      {
+       "id": "u7s3q16",
+       "q": "Vous traversez un bras de mer de 36 km entre deux côtes, en air calme, avec un avion de finesse 9. Quelle hauteur minimale vous garde à portée de plané d'une côte pendant toute la traversée ?",
+       "choices": [
+        "1 000 m",
+        "4 000 m",
+        "2 000 m",
+        "3 000 m"
+       ],
+       "answer": 2,
+       "explanation": "Le point le plus éloigné des côtes est le milieu, à 18 km de chacune : hauteur = 18 000 m ÷ 9 = 2 000 m (environ 6 600 ft). 4 000 m permettraient de planer sur toute la largeur, ce qui n'est pas nécessaire. Un vent de face réduirait la distance de plané : il faut alors davantage de marge."
+      },
+      {
+       "id": "u7s3q17",
+       "q": "Un matin de printemps, une fine gelée blanche recouvre l'extrados de l'avion. Que faites-vous ?",
+       "choices": [
+        "Vous décollez : elle disparaîtra dans les premières secondes du roulage",
+        "Vous décollez en ajoutant 5 kt à la vitesse de rotation",
+        "Vous la laissez si elle reste fine et translucide",
+        "Vous l'enlevez entièrement avant le vol"
+       ],
+       "answer": 3,
+       "explanation": "Même fine, une gelée rugueuse sur l'extrados perturbe l'écoulement : la portance diminue et la vitesse de décrochage augmente, parfois au point d'empêcher le décollage. On ne décolle qu'avec un avion débarrassé de tout dépôt de gelée, de neige ou de glace ; elle ne s'envole pas au roulage."
+      },
+      {
+       "id": "u7s3q18",
+       "q": "Avion non certifié pour le givrage : en montée dans un nuage à −4 °C, du givre se forme sur les bords d'attaque. Que prévoit le Part-NCO ?",
+       "choices": [
+        "Poursuivre le vol prévu en surveillant attentivement l'accumulation du givre",
+        "Quitter ces conditions sans délai : demi-tour ou changement de niveau",
+        "Réduire la vitesse pour capter moins d'eau surfondue sur les ailes",
+        "Attendre une épaisseur de 1 cm de givre avant de changer de niveau"
+       ],
+       "answer": 1,
+       "explanation": "NCO.OP.170 : un avion qui rencontre un givrage pour lequel il n'est pas certifié doit en sortir sans délai, par un changement de niveau ou de route (descente vers un air plus chaud, demi-tour), en déclarant si nécessaire une urgence. Attendre ou ralentir laisse le givre s'accumuler et rapproche du décrochage."
+      },
+      {
+       "id": "u7s3q19",
+       "q": "Pourquoi repousse-t-on le réchauffage carburateur pour le décollage, sauf indication contraire du manuel ?",
+       "choices": [
+        "Air chaud moins dense et non filtré : moins de puissance, poussières",
+        "L'air chaud appauvrit le mélange au point d'arrêter le moteur",
+        "Le réchauffage reste sans effet sous 3 000 ft d'altitude",
+        "Il surchauffe l'échappement quand le moteur est à pleine puissance"
+       ],
+       "answer": 0,
+       "explanation": "L'air chaud, moins dense, fait perdre de la puissance au moment où l'on en a le plus besoin, et il n'est pas filtré (poussières au sol). Il enrichit le mélange, il ne l'appauvrit pas. On vérifie le réchauffage lors des essais moteur, puis on le repousse pour le décollage."
+      },
+      {
+       "id": "u7s3q20",
+       "q": "Selon l'AIM de la FAA, combien de temps une microrafale dure-t-elle en général, de son arrivée au sol à sa dissipation ?",
+       "choices": [
+        "Rarement plus de 15 minutes",
+        "Une à deux heures, comme l'orage",
+        "Moins de 10 secondes",
+        "Plusieurs heures par temps chaud"
+       ],
+       "answer": 0,
+       "explanation": "Une microrafale dure rarement plus de 15 min, ses vents les plus forts environ 2 à 4 min. Son courant descendant peut atteindre 6 000 ft/min et son étalement au sol environ 4 km. Brève et très localisée, elle peut frapper l'avion qui atterrit juste après un autre qui n'a rien signalé."
+      },
+      {
+       "id": "u7s3q21",
+       "q": "En approche d'un aérodrome, vous voyez un orage à une quinzaine de kilomètres, ses précipitations encore lointaines. Pourquoi faut-il se méfier dès maintenant ?",
+       "choices": [
+        "La foudre vise de préférence les avions en approche",
+        "Le cisaillement reste confiné sous le cœur de l'orage",
+        "Son front de rafales peut arriver bien avant les averses",
+        "La pression chute et fausse l'altimètre de 1 000 ft"
+       ],
+       "answer": 2,
+       "explanation": "Le front de rafales, air froid qui s'échappe de l'orage, peut précéder les précipitations d'une quinzaine de milles selon la FAA : saute de vent brutale, rafales et cisaillement près du sol. Le cisaillement ne reste donc pas sous le cœur. On ne décolle ni n'atterrit à l'approche d'un orage : on attend son passage ou l'on se déroute."
+      },
+      {
+       "id": "u7s3q22",
+       "q": "Dans une vallée de montagne étroite, pourquoi vole-t-on près d'un des versants plutôt qu'au milieu ?",
+       "choices": [
+        "Pour s'abriter du vent sur le versant sous le vent",
+        "Pour garder toute la largeur pour un demi-tour",
+        "Pour garder la vue sur le fond de la vallée",
+        "Pour mieux capter la radio, masquée au centre"
+       ],
+       "answer": 1,
+       "explanation": "Voler près d'un versant laisse toute la largeur de la vallée pour virer si elle se rétrécit, si le plafond baisse ou si le relief monte plus vite que l'avion. Le versant sous le vent est au contraire le siège des descendances et des rotors : il faut s'en méfier, pas s'y abriter."
+      },
+      {
+       "id": "u7s3q23",
+       "q": "Après une collision avec un oiseau en montée, l'avion semble intact et vous vous êtes posé. Que prévoit la réglementation européenne ?",
+       "choices": [
+        "Une simple mention au carnet de route, sans autre démarche",
+        "Une déclaration à la gendarmerie, comme pour un accident",
+        "Une déclaration réservée aux compagnies aériennes",
+        "Le notifier : c'est un événement à compte rendu obligatoire"
+       ],
+       "answer": 3,
+       "explanation": "Le règlement (UE) n° 376/2014 range les collisions avec des animaux, dont les oiseaux, parmi les événements à notifier, y compris par les pilotes d'aviation générale ; la DGAC (STAC) tient la base nationale des collisions animalières. L'avion doit aussi être inspecté : un impact peut endommager un bord d'attaque ou l'hélice sans trace évidente."
+      },
+      {
+       "id": "u7s3q24",
+       "q": "Au-dessus d'une mer calme, par brume, l'horizon disparaît. Quel danger principal guette le pilote ?",
+       "choices": [
+        "Mal estimer sa hauteur et perdre l'assiette sans s'en rendre compte",
+        "Une corrosion soudaine des câbles de commande par l'air marin salé",
+        "Une surchauffe du moteur provoquée par l'humidité de l'air marin",
+        "Un mirage qui fait apparaître la côte bien plus tôt que prévu"
+       ],
+       "answer": 0,
+       "explanation": "Sur une mer d'huile, par brume, l'eau et le ciel se confondent : sans horizon, l'assiette dérive sans que l'oreille interne le signale, et la hauteur se juge très mal. On vole aux instruments (horizon artificiel, altimètre) avec une hauteur de sécurité suffisante, ou l'on renonce."
+      }
+     ],
+     "figures": [
+      {
+       "title": "Traversée d'une microrafale en approche",
+       "svg": "<svg viewBox=\"0 0 720 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"400\" fill=\"#ffffff\"/><ellipse cx=\"300\" cy=\"58\" rx=\"70\" ry=\"36\" fill=\"#94a3b8\"/><ellipse cx=\"380\" cy=\"46\" rx=\"82\" ry=\"40\" fill=\"#94a3b8\"/><ellipse cx=\"452\" cy=\"62\" rx=\"58\" ry=\"30\" fill=\"#94a3b8\"/><rect x=\"240\" y=\"60\" width=\"270\" height=\"35\" fill=\"#94a3b8\"/><text x=\"375\" y=\"82\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">Cumulonimbus</text><rect x=\"320\" y=\"95\" width=\"90\" height=\"235\" fill=\"#dbeafe\"/><line x1=\"345\" y1=\"108\" x2=\"345\" y2=\"276\" stroke=\"#1d4ed8\" stroke-width=\"4\"/><polygon points=\"345.0,292.0 337.0,276.0 353.0,276.0\" fill=\"#1d4ed8\"/><line x1=\"385\" y1=\"108\" x2=\"385\" y2=\"276\" stroke=\"#1d4ed8\" stroke-width=\"4\"/><polygon points=\"385.0,292.0 377.0,276.0 393.0,276.0\" fill=\"#1d4ed8\"/><path d=\"M 340 300 Q 330 330 300 333 L 238 333\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"4\"/><polygon points=\"224.0,333.0 240.0,325.0 240.0,341.0\" fill=\"#1d4ed8\"/><path d=\"M 390 300 Q 400 330 430 333 L 482 333\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"4\"/><polygon points=\"496.0,333.0 480.0,341.0 480.0,325.0\" fill=\"#1d4ed8\"/><line x1=\"0\" y1=\"341\" x2=\"720\" y2=\"341\" stroke=\"#78716c\" stroke-width=\"3\"/><rect x=\"610\" y=\"336\" width=\"105\" height=\"9\" fill=\"#374151\"/><text x=\"662\" y=\"364\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Piste</text><line x1=\"20\" y1=\"150\" x2=\"620\" y2=\"340\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"8 6\"/><path d=\"M 20 150 L 120 182 C 200 190 280 200 340 232 C 390 262 450 300 545 338\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"237\" cy=\"198\" r=\"11\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"237\" y=\"203\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#dc2626\">1</text><circle cx=\"363\" cy=\"246\" r=\"11\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"363\" y=\"251\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#dc2626\">2</text><circle cx=\"492\" cy=\"315\" r=\"11\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"2.5\"/><text x=\"492\" y=\"320\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#dc2626\">3</text><line x1=\"530\" y1=\"28\" x2=\"565\" y2=\"28\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"8 6\"/><text x=\"574\" y=\"33\" font-size=\"14\" fill=\"#0f172a\">Plan prévu</text><line x1=\"530\" y1=\"52\" x2=\"565\" y2=\"52\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"574\" y=\"57\" font-size=\"14\" fill=\"#0f172a\">Trajectoire subie</text><text x=\"20\" y=\"112\" font-size=\"14\" fill=\"#0f172a\"><tspan font-weight=\"bold\" fill=\"#dc2626\">1</tspan> Vent de face accru : Vi augmente,</text><text x=\"20\" y=\"131\" font-size=\"14\" fill=\"#0f172a\">l'avion passe au-dessus du plan</text><text x=\"420\" y=\"126\" font-size=\"14\" fill=\"#0f172a\"><tspan font-weight=\"bold\" fill=\"#dc2626\">2</tspan> Courant descendant :</text><text x=\"420\" y=\"145\" font-size=\"14\" fill=\"#0f172a\">jusqu'à 6 000 ft/min</text><text x=\"500\" y=\"232\" font-size=\"14\" fill=\"#0f172a\"><tspan font-weight=\"bold\" fill=\"#dc2626\">3</tspan> Vent arrière : Vi chute,</text><text x=\"500\" y=\"251\" font-size=\"14\" fill=\"#0f172a\">l'avion passe sous le plan</text><text x=\"560\" y=\"364\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">Toucher</text><text x=\"560\" y=\"382\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">trop court</text><text x=\"270\" y=\"366\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Écoulement divergent au sol sur environ 4 km</text><text x=\"270\" y=\"388\" font-size=\"14\" text-anchor=\"middle\" fill=\"#475569\">Durée : rarement plus de 15 min (repères FAA)</text></svg>",
+       "caption": "L'air descendant de l'orage s'étale au sol : l'avion rencontre d'abord un vent de face qui le fait passer au-dessus du plan, puis la descendance et un vent arrière qui le plaquent sous le plan. Seule une remise de gaz précoce à pleine puissance évite le toucher trop court."
+      },
+      {
+       "title": "Givrage carburateur : où se forme la glace",
+       "svg": "<svg viewBox=\"0 0 720 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"440\" fill=\"#ffffff\"/><polygon points=\"300,50 420,50 420,190 383,228 383,252 420,290 420,330 300,330 300,290 337,252 337,228 300,190\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"360\" y1=\"318\" x2=\"360\" y2=\"284\" stroke=\"#64748b\" stroke-width=\"3\"/><polygon points=\"360.0,272.0 366.0,284.0 354.0,284.0\" fill=\"#64748b\"/><line x1=\"360\" y1=\"205\" x2=\"360\" y2=\"160\" stroke=\"#64748b\" stroke-width=\"3\"/><polygon points=\"360.0,148.0 366.0,160.0 354.0,160.0\" fill=\"#64748b\"/><line x1=\"360\" y1=\"92\" x2=\"360\" y2=\"34\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"360.0,20.0 367.0,34.0 353.0,34.0\" fill=\"#334155\"/><text x=\"378\" y=\"30\" font-size=\"14\" fill=\"#0f172a\">Vers les cylindres</text><line x1=\"306\" y1=\"128\" x2=\"414\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"5\"/><circle cx=\"360\" cy=\"118\" r=\"5\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\"/><polygon points=\"337,224 348,232 348,248 337,256\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><polygon points=\"383,224 372,232 372,248 383,256\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><ellipse cx=\"311\" cy=\"127\" rx=\"8\" ry=\"6\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><ellipse cx=\"409\" cy=\"109\" rx=\"8\" ry=\"6\" fill=\"#93c5fd\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><rect x=\"130\" y=\"200\" width=\"125\" height=\"70\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/><rect x=\"132\" y=\"232\" width=\"121\" height=\"36\" fill=\"#fcd34d\"/><line x1=\"255\" y1=\"245\" x2=\"360\" y2=\"245\" stroke=\"#b45309\" stroke-width=\"4\"/><line x1=\"360\" y1=\"247\" x2=\"360\" y2=\"236\" stroke=\"#b45309\" stroke-width=\"4\"/><circle cx=\"351\" cy=\"229\" r=\"2.5\" fill=\"#b45309\"/><circle cx=\"360\" cy=\"225\" r=\"2.5\" fill=\"#b45309\"/><circle cx=\"369\" cy=\"229\" r=\"2.5\" fill=\"#b45309\"/><text x=\"192\" y=\"190\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Cuve et gicleur d'essence</text><rect x=\"270\" y=\"330\" width=\"180\" height=\"55\" rx=\"6\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"360\" y=\"353\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Boîte à air</text><text x=\"360\" y=\"374\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">volet du réchauffage</text><rect x=\"40\" y=\"330\" width=\"130\" height=\"55\" rx=\"6\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"105\" y=\"362\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#15803d\">Filtre</text><line x1=\"170\" y1=\"357\" x2=\"256\" y2=\"357\" stroke=\"#15803d\" stroke-width=\"4\"/><polygon points=\"270.0,357.0 256.0,364.0 256.0,350.0\" fill=\"#15803d\"/><text x=\"216\" y=\"346\" font-size=\"14\" text-anchor=\"middle\" fill=\"#15803d\">Air frais</text><text x=\"216\" y=\"378\" font-size=\"14\" text-anchor=\"middle\" fill=\"#15803d\">filtré</text><rect x=\"560\" y=\"330\" width=\"145\" height=\"55\" rx=\"6\" fill=\"#fee2e2\" stroke=\"#b91c1c\" stroke-width=\"2\"/><text x=\"632\" y=\"353\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">Manchon autour</text><text x=\"632\" y=\"374\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">de l'échappement</text><line x1=\"560\" y1=\"357\" x2=\"464\" y2=\"357\" stroke=\"#b91c1c\" stroke-width=\"4\"/><polygon points=\"450.0,357.0 464.0,350.0 464.0,364.0\" fill=\"#b91c1c\"/><text x=\"505\" y=\"346\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">Air chaud</text><text x=\"505\" y=\"378\" font-size=\"14\" text-anchor=\"middle\" fill=\"#b91c1c\">non filtré</text><text x=\"40\" y=\"123\" font-size=\"14\" fill=\"#0f172a\">Papillon des gaz</text><line x1=\"158\" y1=\"119\" x2=\"302\" y2=\"127\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"445\" y=\"150\" font-size=\"14\" font-weight=\"bold\" fill=\"#2563eb\">Glace : venturi et papillon</text><line x1=\"442\" y1=\"144\" x2=\"416\" y2=\"113\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><line x1=\"442\" y1=\"152\" x2=\"378\" y2=\"236\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><text x=\"445\" y=\"214\" font-size=\"14\" fill=\"#0f172a\">Venturi : détente et</text><text x=\"445\" y=\"233\" font-size=\"14\" fill=\"#0f172a\">évaporation de l'essence,</text><text x=\"445\" y=\"252\" font-size=\"14\" fill=\"#0f172a\">jusqu'à environ 30 °C de moins</text><text x=\"360\" y=\"422\" font-size=\"14\" text-anchor=\"middle\" fill=\"#475569\">Risque par air humide, d'environ −10 °C à +30 °C, maximal à puissance réduite</text></svg>",
+       "caption": "Carburateur à flux ascendant, schéma simplifié. La détente dans le venturi et l'évaporation de l'essence refroidissent l'air : la glace se dépose au venturi et autour du papillon. Le réchauffage admet de l'air chauffé autour de l'échappement, non filtré."
+      }
+     ]
+    },
+    {
+     "id": "u7s4",
+     "title": "Sécurité, survie et sauvetage",
+     "icon": "🛟",
+     "tips": "Balise de détresse (ELT) : déclenchement automatique au choc, ou manuel.\n• 406 MHz : signal numérique capté par les satellites Cospas-Sarsat ; il contient l'identité de la balise (enregistrée) et souvent sa position GNSS.\n• 121,5 MHz : signal de radioralliement sur lequel se guident les moyens de recherche. Les satellites ne le traitent plus depuis 2009.\n• Part-NCO : ELT et balises personnelles (PLB) émettent simultanément sur 121,5 et 406 MHz ; un avion certifié pour 6 sièges passagers au plus peut se contenter d'une ELT de survie ou d'une PLB portée par un occupant.\n• Sinon (NCO.IDE.A.170) : ELT de tout type si le premier certificat de navigabilité individuel date du 1er juillet 2008 au plus tard, ELT automatique s'il est postérieur.\n• Déclenchement intempestif : prévenir l'ATC. Après un atterrissage dur, écouter le 121,5 MHz.\n• Spécificité française : chaque balise 406 MHz doit être enregistrée au registre français des balises de détresse (RFBD), tenu par le centre français Cospas-Sarsat (FMCC, CNES), avec des données à jour. Seul l'autotest du constructeur est autorisé : il ne déclenche pas d'alerte.\n\nRecherche et sauvetage (SAR) : phases INCERFA (incertitude), ALERFA (alerte), DETRESFA (détresse). La phase d'incertitude est déclarée notamment si un aéronef n'arrive pas dans les 30 min suivant sa dernière heure d'arrivée prévue. Avec un plan de vol, faire un compte rendu d'arrivée ; sans organisme ATS sur place, le transmettre au plus vite à l'organisme le plus proche.\n• En France, l'ARCC Lyon Mont-Verdun coordonne la recherche et le sauvetage des aéronefs. Le 191, numéro d'urgence aéronautique gratuit et ouvert 24 h/24, permet à un pilote, un témoin ou un proche inquiet de le joindre.\n\nSurvie : rester près de l'avion, plus visible qu'une personne isolée. Signaux sol-air : V = besoin d'assistance ; X = besoin d'assistance médicale ; N = non ; Y = oui ; flèche = direction suivie. Au-dessus des zones où le SAR serait difficile, emporter des moyens de signalisation (fusées, miroir) et de survie (eau, couverture).\n• De jour, l'avion indique qu'il a compris un signal au sol en battant des ailes.\n• Zones où les recherches seraient particulièrement difficiles (NCO.IDE.A.180) : moyens de signalisation et équipement de survie adaptés, dont au moins une ELT(S) ou une PLB (AMC).\n\nAmerrissage : portes déverrouillées avant l'impact, ceintures serrées, train escamotable rentré ; toucher à la vitesse la plus faible possible, assiette cabrée, parallèlement à la houle si elle est forte. Le gilet s'enfile avant, mais ne se gonfle qu'une fois sorti de l'avion. Part-NCO : gilet pour chaque occupant d'un monomoteur terrestre survolant l'eau au-delà de la distance de plané de la terre, ou si la trajectoire de décollage ou d'approche rend un amerrissage probable.\n• Au-delà de 30 min à la vitesse de croisière normale ou de 50 NM de la terre (la plus faible des deux valeurs), le commandant de bord évalue les risques de survie et décide d'emporter radeaux, moyens de signalisation et de survie (NCO.IDE.A.175).\n• Eau froide : le premier danger est le choc thermique (halètement réflexe, hyperventilation) ; la force musculaire décline ensuite en quelques minutes, l'hypothermie vient plus tard. Sortir de l'eau au plus tôt (radeau).\n\nCarburant VFR (Part-NCO, NCO.OP.125 et AMC1 NCO.OP.125(b), avions) : de quoi rejoindre la destination en conservant une réserve finale d'au moins 30 min de vol de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination (10 min à la puissance maximale de croisière continue pour un vol local de jour : décollage et atterrissage au même aérodrome, en restant en vue de celui-ci). Cette réserve finale ne doit pas être entamée en exploitation normale. Ex. : 1 h 30 de vol de jour à 24 L/h → (1,5 + 0,5) × 24 = 48 L, plus roulage et carburant inutilisable (calculer la réserve avec la consommation de croisière va dans le sens de la sécurité).\n• Bilan : temps d'étape = distance ÷ vitesse sol ; carburant d'étape = temps × consommation ; ajouter réserve finale, roulage, inutilisable et une marge pour l'imprévu. Ex. : 90 NM, vitesse propre 105 kt et 15 kt de face → vitesse sol 90 kt, soit 1 h ; à 26 L/h : 26 L + 13 L de réserve de jour + 2 L de roulage = 41 L, plus l'inutilisable.\n• Conversions : 1 US gal ≈ 3,79 L ; AVGAS ≈ 0,72 kg/L.\n\nGestion du carburant en vol (NCO.OP.185) :\n• Depuis le règlement (UE) 2021/1296, vérifier régulièrement que le carburant utilisable permet de rejoindre un aérodrome où se poser avec la réserve finale prévue.\n• « MINIMUM FUEL » : engagé vers un aérodrome, tout changement de clairance risquerait de faire atterrir sous la réserve finale prévue. Ce n'est pas une urgence et cela ne donne pas de priorité.\n• « MAYDAY MAYDAY MAYDAY FUEL » : le carburant utilisable prévu à l'atterrissage sur l'aérodrome le plus proche où l'on peut se poser serait inférieur à la réserve finale prévue.\n• Ces annonces sont obligatoires en vol contrôlé et possibles en vol non contrôlé.\n\nÉvacuation : couper carburant et contact général, évacuer sans délai, emporter si possible l'équipement de survie et s'éloigner en remontant le vent.\n\nExtincteurs, classes de feu :\n• A : solides formant des braises (bois, papier, tissus) ;\n• B : liquides ou solides liquéfiables (essence, huile) ;\n• C : gaz ; D : métaux ; F : huiles de cuisson.\n• Feu électrique : agent non conducteur (halon ou substitut, CO₂). Jamais de jet d'eau sur un feu électrique ni sur un feu d'essence. Viser la base des flammes, puis aérer la cabine.",
+     "vocab": [
+      {
+       "term": "ELT",
+       "translation": "Balise de détresse d'aéronef, émettant sur 406 et 121,5 MHz"
+      },
+      {
+       "term": "PLB",
+       "translation": "Balise de détresse personnelle, portée par une personne"
+      },
+      {
+       "term": "Cospas-Sarsat",
+       "translation": "Système satellitaire international de détection des balises"
+      },
+      {
+       "term": "Radioralliement",
+       "translation": "Guidage des secours vers la balise grâce à son signal 121,5 MHz"
+      },
+      {
+       "term": "SAR",
+       "translation": "Search And Rescue : recherche et sauvetage"
+      },
+      {
+       "term": "INCERFA / ALERFA / DETRESFA",
+       "translation": "Phases d'urgence successives : incertitude, alerte, détresse"
+      },
+      {
+       "term": "Réserve finale (VFR)",
+       "translation": "Avion, Part-NCO : 30 min de jour, 45 min de nuit (attente, 1 500 ft)"
+      },
+      {
+       "term": "Feu de classe B",
+       "translation": "Feu de liquides ou solides liquéfiables : essence, huile"
+      },
+      {
+       "term": "ELT(S)",
+       "translation": "Balise de survie amovible, déclenchée à la main par les survivants"
+      },
+      {
+       "term": "RFBD",
+       "translation": "Registre français des balises 406 MHz, tenu par le CNES (FMCC)"
+      },
+      {
+       "term": "ARCC Lyon",
+       "translation": "Centre de coordination du sauvetage aéronautique en France"
+      },
+      {
+       "term": "191",
+       "translation": "Numéro d'urgence aéronautique français, gratuit, 24 h/24"
+      },
+      {
+       "term": "MINIMUM FUEL",
+       "translation": "Annonce : tout retard ferait atterrir sous la réserve finale"
+      },
+      {
+       "term": "MAYDAY FUEL",
+       "translation": "Détresse : atterrissage prévu sous la réserve finale"
+      },
+      {
+       "term": "Choc thermique",
+       "translation": "Réflexe à l'immersion en eau froide : halètement, hyperventilation"
+      }
+     ],
+     "questions": [
+      {
+       "id": "u7s4q01",
+       "q": "Quel est l'intérêt principal de l'émission d'une balise ELT sur 406 MHz ?",
+       "choices": [
+        "Captée par les satellites Cospas-Sarsat, elle transmet l'identité codée de la balise",
+        "Elle permet au pilote de dialoguer en phonie avec les secours depuis l'épave",
+        "Elle est relayée sur la fréquence de travail des avions qui survolent la zone",
+        "Elle affiche la position de l'épave sur le radar du contrôleur, avec le code 7700"
+       ],
+       "answer": 0,
+       "explanation": "Le signal numérique sur 406 MHz est relayé par les satellites vers les centres de secours ; il contient l'identité de la balise, enregistrée, et souvent une position GNSS. Le 121,5 MHz sert au radioralliement final."
+      },
+      {
+       "id": "u7s4q02",
+       "q": "À quoi sert principalement l'émission simultanée de la balise sur 121,5 MHz ?",
+       "choices": [
+        "À transmettre la position GNSS de l'épave aux satellites",
+        "Au radioralliement : les moyens de recherche se guident sur ce signal",
+        "À prévenir automatiquement le contrôleur de la fréquence en cours",
+        "À afficher automatiquement le code 7700 sur le transpondeur"
+       ],
+       "answer": 1,
+       "explanation": "Les satellites ne traitent plus le 121,5 MHz depuis 2009 : l'alerte vient du 406 MHz. Sur zone, avions et hélicoptères de recherche se dirigent ensuite sur le signal 121,5 MHz pour localiser précisément l'épave."
+      },
+      {
+       "id": "u7s4q03",
+       "q": "Un aéronef n'est pas arrivé dans les 30 minutes suivant sa dernière heure d'arrivée prévue, sans autre information. Que déclenchent les services de la circulation aérienne ?",
+       "choices": [
+        "La phase de détresse (DETRESFA), avec envoi immédiat des secours",
+        "La phase d'alerte (ALERFA)",
+        "La phase d'incertitude (INCERFA)",
+        "Seulement un appel radio, une phase n'étant déclarée qu'après 1 heure de retard"
+       ],
+       "answer": 2,
+       "explanation": "Les trois phases successives sont INCERFA (incertitude), ALERFA (alerte) et DETRESFA (détresse). L'absence d'arrivée dans les 30 min qui suivent la dernière heure d'arrivée prévue déclenche la phase d'incertitude."
+      },
+      {
+       "id": "u7s4q04",
+       "q": "Vous avez déposé un plan de vol VFR et vous vous posez sur un aérodrome dépourvu d'organisme des services de la circulation aérienne (ATS). Que devez-vous faire ?",
+       "choices": [
+        "Rien : le plan de vol se clôture automatiquement à l'heure d'arrivée prévue",
+        "Envoyer au plus vite un compte rendu d'arrivée à l'organisme ATS le plus proche",
+        "Clôturer le plan de vol plus tard, lors du dépôt de votre prochain plan de vol",
+        "Confier à votre aéroclub la clôture du plan de vol, à sa réouverture le lendemain"
+       ],
+       "answer": 1,
+       "explanation": "Les règles de l'air (SERA) imposent un compte rendu d'arrivée dès que possible après l'atterrissage. Sans organisme sur place, on le transmet par le moyen le plus rapide à l'organisme ATS le plus proche ; attendre le lendemain ou le prochain plan de vol risquerait de déclencher des recherches inutiles."
+      },
+      {
+       "id": "u7s4q05",
+       "q": "Après un atterrissage forcé, un occupant est blessé. Quel symbole tracer au sol pour demander une assistance médicale ?",
+       "choices": [
+        "V",
+        "N",
+        "Y",
+        "X"
+       ],
+       "answer": 3,
+       "explanation": "Code visuel sol-air de l'OACI pour les survivants : V = besoin d'assistance, X = besoin d'assistance médicale, N = non, Y = oui, flèche = direction suivie. Les symboles doivent être grands et bien contrastés."
+      },
+      {
+       "id": "u7s4q06",
+       "q": "Après un atterrissage forcé en zone isolée, sans blessé grave, quelle est la meilleure décision en attendant les secours ?",
+       "choices": [
+        "Rester près de l'avion et préparer les moyens de signalisation",
+        "Partir aussitôt à pied à la recherche d'une route",
+        "Couper la balise de détresse pour préserver sa batterie",
+        "Se disperser autour de l'épave pour être aperçus de plus loin"
+       ],
+       "answer": 0,
+       "explanation": "L'épave est bien plus visible du ciel qu'une personne isolée et la balise y guide les secours. On s'abrite, on prépare fusées, miroir ou signaux au sol, et on ne quitte l'avion que si y rester est dangereux."
+      },
+      {
+       "id": "u7s4q07",
+       "q": "Lors d'un amerrissage, à quel moment faut-il gonfler son gilet de sauvetage ?",
+       "choices": [
+        "Avant l'impact, pour amortir le choc",
+        "Dès l'arrêt de l'avion, encore assis à son siège",
+        "Seulement une fois sorti de l'avion",
+        "Pendant la descente, dès que la décision d'amerrir est prise"
+       ],
+       "answer": 2,
+       "explanation": "Gonflé dans la cabine, le gilet gêne les mouvements et peut plaquer son porteur contre le plafond quand l'eau entre, empêchant l'évacuation. On l'enfile avant l'amerrissage, portes déverrouillées, mais on ne le gonfle qu'à l'extérieur."
+      },
+      {
+       "id": "u7s4q08",
+       "q": "Après un atterrissage forcé, un début d'incendie apparaît au moteur. Comment évacuer ?",
+       "choices": [
+        "Rester attaché à son siège, portes fermées, jusqu'à l'arrivée des secours",
+        "Couper carburant et contact, évacuer et se regrouper sous le vent, près de l'aile",
+        "Couper carburant et contact général, évacuer et s'éloigner en remontant le vent",
+        "Tenter de redémarrer le moteur pour souffler les flammes avec l'hélice"
+       ],
+       "answer": 2,
+       "explanation": "On coupe ce qui alimente le feu (carburant, électricité), on évacue sans délai et on s'éloigne en remontant le vent : sous le vent de l'avion, on serait exposé aux flammes et aux fumées poussées par celui-ci."
+      },
+      {
+       "id": "u7s4q09",
+       "q": "Selon le Part-NCO, dans quel cas un monomoteur terrestre doit-il emporter un gilet de sauvetage pour chaque personne à bord ?",
+       "choices": [
+        "Dès qu'il survole un plan d'eau, quelle que soit la distance de la rive",
+        "Uniquement lorsqu'il vole à plus de 100 NM des côtes",
+        "Uniquement lors d'un vol de nuit au-dessus de la mer",
+        "Lorsqu'il survole l'eau au-delà de la distance de plané de la terre"
+       ],
+       "answer": 3,
+       "explanation": "Le Part-NCO impose un gilet (ou un dispositif de flottaison pour un enfant de moins de 24 mois) par occupant d'un monomoteur terrestre survolant l'eau au-delà de la distance de plané de la terre, ou lorsque la trajectoire de décollage ou d'approche rend un amerrissage probable."
+      },
+      {
+       "id": "u7s4q10",
+       "q": "Vol VFR de jour de 1 h 20 jusqu'à destination, consommation 30 L/h (retenue aussi pour la réserve). Hors roulage et carburant inutilisable, quelle quantité minimale de carburant faut-il emporter selon le Part-NCO ?",
+       "choices": [
+        "40 L",
+        "62,5 L",
+        "45 L",
+        "55 L"
+       ],
+       "answer": 3,
+       "explanation": "De jour, il faut conserver une réserve finale de 30 min (AMC1 NCO.OP.125(b) : en vitesse d'attente à 1 500 ft au-dessus de la destination ; la calculer avec la consommation de croisière va dans le sens de la sécurité) : 1 h 20 + 0 h 30 = 1 h 50, soit 110 min × 0,5 L/min = 55 L. Roulage et carburant inutilisable s'y ajoutent."
+      },
+      {
+       "id": "u7s4q11",
+       "q": "En avion, pour un vol VFR de nuit, quelle réserve finale minimale de carburant le Part-NCO prévoit-il à l'arrivée à destination ?",
+       "choices": [
+        "45 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
+        "30 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
+        "60 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination",
+        "20 minutes de vol en vitesse d'attente à 1 500 ft au-dessus de la destination"
+       ],
+       "answer": 0,
+       "explanation": "Depuis le 30 octobre 2022 (règlement (UE) 2021/1296), le Part-NCO impose une réserve finale. Pour un avion en VFR, l'AMC1 NCO.OP.125(b) la fixe à 30 min de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination."
+      },
+      {
+       "id": "u7s4q12",
+       "q": "De l'essence répandue près de l'avion prend feu. À quelle classe de feu appartient ce feu ?",
+       "choices": [
+        "Classe A",
+        "Classe B",
+        "Classe C",
+        "Classe D"
+       ],
+       "answer": 1,
+       "explanation": "Classe A : solides formant des braises (bois, papier, tissus) ; classe B : liquides ou solides liquéfiables (essence, huile) ; classe C : gaz ; classe D : métaux. L'eau en jet est à proscrire sur un feu d'hydrocarbure."
+      },
+      {
+       "id": "u7s4q13",
+       "q": "Étape de 120 NM, vitesse propre 100 kt, vent de face de 20 kt, consommation 28 L/h (retenue aussi pour la réserve), vol VFR de jour, roulage 3 L. Hors carburant inutilisable, quelle quantité minimale emporter selon le Part-NCO ?",
+       "choices": [
+        "51 L",
+        "59 L",
+        "66 L",
+        "45 L"
+       ],
+       "answer": 1,
+       "explanation": "Vitesse sol = 100 − 20 = 80 kt ; temps = 120 ÷ 80 = 1 h 30 ; étape = 1,5 × 28 = 42 L. Réserve finale de jour : 30 min, soit 14 L. Roulage : 3 L. Total : 42 + 14 + 3 = 59 L. Oublier le vent donne 51 L ; une réserve de 45 min (nuit) donnerait 66 L."
+      },
+      {
+       "id": "u7s4q14",
+       "q": "Vol local de jour : décollage et atterrissage au même aérodrome, en restant en vue de celui-ci. Vol prévu : 50 min à 24 L/h ; à la puissance maximale de croisière continue, l'avion consomme 30 L/h. Hors roulage et inutilisable, quel minimum emporter selon l'AMC1 NCO.OP.125 ?",
+       "choices": [
+        "24 L",
+        "32 L",
+        "25 L",
+        "35 L"
+       ],
+       "answer": 2,
+       "explanation": "Pour un vol local de jour en vue de l'aérodrome, la réserve finale est de 10 min à la puissance maximale de croisière continue : 10 × 30 ÷ 60 = 5 L. Étape : 50 × 24 ÷ 60 = 20 L. Total : 25 L. Calculer la réserve à 24 L/h donne 24 L, trop peu ; 32 L correspond à la réserve de 30 min d'un voyage."
+      },
+      {
+       "id": "u7s4q15",
+       "q": "En vol contrôlé, vous annoncez « MINIMUM FUEL ». Qu'indique cette annonce au contrôleur ?",
+       "choices": [
+        "Une détresse : vous demandez une priorité immédiate à l'atterrissage",
+        "Que tout retard risquerait de vous faire atterrir sous la réserve finale",
+        "Que votre réserve finale est déjà entamée depuis plusieurs minutes",
+        "Que vous demandez un avitaillement dès votre arrivée au parking"
+       ],
+       "answer": 1,
+       "explanation": "NCO.OP.185 (depuis le règlement (UE) 2021/1296) : MINIMUM FUEL signifie qu'engagé vers un aérodrome, tout changement de clairance risquerait de vous faire atterrir avec moins que la réserve finale prévue. Ce n'est pas une urgence et cela ne donne pas de priorité. Si la réserve finale ne peut plus être protégée, on déclare MAYDAY MAYDAY MAYDAY FUEL."
+      },
+      {
+       "id": "u7s4q16",
+       "q": "Après une longue attente imposée, vous calculez que le carburant utilisable à l'atterrissage sur l'aérodrome le plus proche serait inférieur à la réserve finale prévue. Que déclarez-vous ?",
+       "choices": [
+        "MINIMUM FUEL, pour obtenir la priorité",
+        "PAN PAN, carburant bas",
+        "Pas d'annonce tant que les jauges ne sont pas vides",
+        "MAYDAY, MAYDAY, MAYDAY, FUEL"
+       ],
+       "answer": 3,
+       "explanation": "Lorsque le carburant prévu à l'atterrissage sur l'aérodrome le plus proche où l'on peut se poser serait inférieur à la réserve finale prévue, le commandant de bord déclare une détresse : « MAYDAY MAYDAY MAYDAY FUEL » (NCO.OP.185). MINIMUM FUEL n'apporte pas de priorité, et attendre des jauges vides revient à risquer la panne sèche."
+      },
+      {
+       "id": "u7s4q17",
+       "q": "Un avion de quatre places, dont le premier certificat de navigabilité date de 2012, n'a pas d'ELT fixe. Que prévoit le Part-NCO pour qu'il puisse voler ?",
+       "choices": [
+        "Une ELT de survie ou une PLB portée par un occupant",
+        "Un poste radio portatif réglé sur 121,5 MHz",
+        "Un transpondeur affichant 7700 dès le décollage",
+        "Une dérogation de la DGAC renouvelée chaque année"
+       ],
+       "answer": 0,
+       "explanation": "NCO.IDE.A.170 : après le 1er juillet 2008, une ELT automatique est la règle, mais un avion (ici 3 sièges passagers) certifié pour 6 sièges passagers au plus peut emporter à la place une ELT de survie (ELT(S)) ou une balise personnelle (PLB) portée par un membre d'équipage ou un passager, émettant sur 121,5 et 406 MHz."
+      },
+      {
+       "id": "u7s4q18",
+       "q": "En France, auprès de quel organisme une balise 406 MHz installée sur un avion doit-elle être enregistrée ?",
+       "choices": [
+        "Au registre national RFBD, tenu par le CNES (FMCC)",
+        "Au BEA, qui enquête sur les accidents d'aviation",
+        "À Météo-France, qui centralise les alertes",
+        "Chez le fabricant, qui transmet les données aux secours"
+       ],
+       "answer": 0,
+       "explanation": "Les balises 406 MHz s'enregistrent au registre français des balises de détresse (RFBD), tenu par le centre français Cospas-Sarsat (FMCC) du CNES, et leurs données (immatriculation, contacts) doivent être tenues à jour : en cas d'alerte, les secours identifient l'avion et appellent les contacts. Le BEA enquête après un accident, il ne gère pas les balises."
+      },
+      {
+       "id": "u7s4q19",
+       "q": "Comment vérifier le bon fonctionnement d'une ELT 406 MHz ?",
+       "choices": [
+        "En l'activant quelques minutes en vol, loin des aérodromes",
+        "En l'activant pendant les 5 premières minutes d'une heure",
+        "Uniquement par l'autotest prévu par le constructeur",
+        "En demandant à la tour de confirmer la réception du signal"
+       ],
+       "answer": 2,
+       "explanation": "Déclencher réellement une balise pour la tester est interdit : son signal 406 MHz déclencherait une alerte de recherche. Seul l'autotest du constructeur est autorisé ; il ne génère pas d'alerte dans le système Cospas-Sarsat. La tolérance des « 5 premières minutes de l'heure » visait les anciennes balises émettant sur 121,5 MHz."
+      },
+      {
+       "id": "u7s4q20",
+       "q": "Après un atterrissage dur, vous écoutez le 121,5 MHz et entendez le signal de votre balise. Que faites-vous ?",
+       "choices": [
+        "Vous la laissez émettre jusqu'à l'arrivée des secours",
+        "Vous démontez sa batterie et attendez le lendemain",
+        "Vous attendez : les satellites ne captent plus le 121,5 MHz",
+        "Vous l'arrêtez et prévenez l'ATC ou l'ARCC sans tarder"
+       ],
+       "answer": 3,
+       "explanation": "Le signal entendu sur 121,5 MHz montre que la balise émet aussi sur 406 MHz : l'alerte est probablement déjà partie vers les satellites. On l'arrête selon la notice et on prévient au plus vite l'organisme ATS ou l'ARCC Lyon (191), pour éviter le déclenchement inutile des recherches."
+      },
+      {
+       "id": "u7s4q21",
+       "q": "Depuis le sol, vous êtes témoin de la chute d'un avion de tourisme. Quel numéro d'urgence spécifiquement aéronautique pouvez-vous composer en France ?",
+       "choices": [
+        "191",
+        "121",
+        "17",
+        "115"
+       ],
+       "answer": 0,
+       "explanation": "Le 191, numéro d'urgence aéronautique gratuit et accessible 24 h/24, aboutit à l'ARCC Lyon Mont-Verdun, chargé en France de la recherche et du sauvetage des aéronefs. Il sert aux personnes en détresse, aux témoins d'un accident et aux proches inquiets d'un avion disparu. « 121 » rappelle la fréquence 121,5 MHz, qui n'est pas un numéro de téléphone."
+      },
+      {
+       "id": "u7s4q22",
+       "q": "Monomoteur, vitesse de croisière normale 120 kt. Selon le Part-NCO, à partir de quel éloignement d'une terre propice à un atterrissage d'urgence le commandant de bord doit-il évaluer les risques de survie en cas d'amerrissage (radeaux, signalisation) ?",
+       "choices": [
+        "60 NM",
+        "50 NM",
+        "30 NM",
+        "100 NM"
+       ],
+       "answer": 1,
+       "explanation": "NCO.IDE.A.175 : au-delà de 30 min à la vitesse de croisière normale ou de 50 NM, la plus faible des deux valeurs, le commandant de bord évalue les risques de survie et décide d'emporter radeaux, moyens de signalisation et de survie. À 120 kt, 30 min = 60 NM : c'est donc 50 NM qui s'applique. Les gilets, eux, sont exigés dès qu'on survole l'eau au-delà de la distance de plané."
+      },
+      {
+       "id": "u7s4q23",
+       "q": "Après un amerrissage, vous vous retrouvez dans une eau à 10 °C avec votre gilet. Quel est le danger principal de la première minute ?",
+       "choices": [
+        "L'hypothermie, qui fait perdre connaissance en une minute",
+        "La déshydratation, aggravée par l'eau salée",
+        "Le choc thermique : halètement réflexe et hyperventilation",
+        "Les crampes d'estomac, si l'on a mangé avant le vol"
+       ],
+       "answer": 2,
+       "explanation": "L'immersion brutale provoque un halètement réflexe et une hyperventilation qui font risquer l'inhalation d'eau : c'est le premier danger, d'où l'intérêt du gilet qui garde la tête hors de l'eau. La force musculaire décline ensuite en quelques minutes ; l'hypothermie, elle, s'installe bien plus tard. Il faut sortir de l'eau (radeau) au plus tôt."
+      },
+      {
+       "id": "u7s4q24",
+       "q": "En survolant des survivants, de jour, vous avez compris le signal qu'ils ont tracé au sol. Comment le leur indiquer ?",
+       "choices": [
+        "En sortant puis rentrant les volets deux fois",
+        "En effectuant un piqué suivi d'une ressource",
+        "En traçant un huit au-dessus d'eux",
+        "En battant des ailes"
+       ],
+       "answer": 3,
+       "explanation": "De jour, un aéronef indique qu'il a compris un signal sol-air en battant des ailes. Les survivants tracent de grands symboles bien contrastés : V (besoin d'assistance), X (assistance médicale), N (non), Y (oui), flèche (direction suivie)."
+      }
+     ],
+     "figures": [
+      {
+       "title": "Code visuel sol-air des survivants",
+       "svg": "<svg viewBox=\"0 0 720 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"300\" fill=\"#ffffff\"/><rect x=\"12\" y=\"15\" width=\"130\" height=\"180\" rx=\"8\" fill=\"#fef9c3\" stroke=\"#a16207\" stroke-width=\"2\"/><polyline points=\"42,40 77,120 112,40\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"77\" y=\"155\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Besoin</text><text x=\"77\" y=\"177\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">d'assistance</text><rect x=\"153\" y=\"15\" width=\"130\" height=\"180\" rx=\"8\" fill=\"#fef9c3\" stroke=\"#a16207\" stroke-width=\"2\"/><line x1=\"185\" y1=\"40\" x2=\"251\" y2=\"120\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"251\" y1=\"40\" x2=\"185\" y2=\"120\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"218\" y=\"155\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Assistance</text><text x=\"218\" y=\"177\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">médicale</text><rect x=\"294\" y=\"15\" width=\"130\" height=\"180\" rx=\"8\" fill=\"#fef9c3\" stroke=\"#a16207\" stroke-width=\"2\"/><polyline points=\"329,120 329,40 389,120 389,40\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"359\" y=\"155\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Non</text><rect x=\"435\" y=\"15\" width=\"130\" height=\"180\" rx=\"8\" fill=\"#fef9c3\" stroke=\"#a16207\" stroke-width=\"2\"/><polyline points=\"465,40 500,82 535,40\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"500\" y1=\"82\" x2=\"500\" y2=\"120\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"500\" y=\"155\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Oui</text><rect x=\"576\" y=\"15\" width=\"130\" height=\"180\" rx=\"8\" fill=\"#fef9c3\" stroke=\"#a16207\" stroke-width=\"2\"/><line x1=\"598\" y1=\"80\" x2=\"680\" y2=\"80\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><polyline points=\"656,55 682,80 656,105\" fill=\"none\" stroke=\"#b91c1c\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"641\" y=\"155\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">Nous partons</text><text x=\"641\" y=\"177\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0f172a\">par là</text><text x=\"360\" y=\"228\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">Symboles grands et contrastés, tracés au sol avec des branches, des pierres, des tissus.</text><text x=\"360\" y=\"252\" font-size=\"14\" text-anchor=\"middle\" fill=\"#0f172a\">De jour, l'avion indique qu'il a compris en battant des ailes.</text><text x=\"360\" y=\"276\" font-size=\"14\" text-anchor=\"middle\" fill=\"#475569\">Rester près de l'épave : elle est plus visible qu'une personne isolée.</text></svg>",
+       "caption": "Les cinq symboles à tracer au sol pour communiquer avec un aéronef de recherche. De jour, l'avion qui a compris le signal bat des ailes."
+      },
+      {
+       "title": "Bilan carburant et réserve finale",
+       "svg": "<svg viewBox=\"0 0 720 330\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Arial, Helvetica, sans-serif\"><rect width=\"720\" height=\"330\" fill=\"#ffffff\"/><text x=\"30\" y=\"30\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Exemple, vol VFR de jour : étape de 1 h 20 à 27 L/h</text><rect x=\"30\" y=\"80\" width=\"24\" height=\"50\" fill=\"#94a3b8\"/><rect x=\"54\" y=\"80\" width=\"428\" height=\"50\" fill=\"#2563eb\"/><rect x=\"482\" y=\"80\" width=\"161\" height=\"50\" fill=\"#dc2626\"/><rect x=\"643\" y=\"80\" width=\"47\" height=\"50\" fill=\"#6b7280\"/><rect x=\"30\" y=\"80\" width=\"660\" height=\"50\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"2\"/><text x=\"268\" y=\"111\" font-size=\"15\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">Étape : 1 h 20 × 27 L/h = 36 L</text><text x=\"562\" y=\"101\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#ffffff\">Réserve finale</text><text x=\"562\" y=\"121\" font-size=\"14\" text-anchor=\"middle\" fill=\"#ffffff\">30 min = 13,5 L</text><line x1=\"42\" y1=\"70\" x2=\"42\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"30\" y=\"64\" font-size=\"14\" fill=\"#0f172a\">Roulage : 2 L</text><line x1=\"666\" y1=\"70\" x2=\"666\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"1.5\"/><text x=\"705\" y=\"64\" font-size=\"14\" text-anchor=\"end\" fill=\"#0f172a\">Inutilisable (manuel) : 4 L</text><text x=\"30\" y=\"160\" font-size=\"15\" font-weight=\"bold\" fill=\"#0f172a\">Total au départ : 2 + 36 + 13,5 + 4 = 55,5 L</text><text x=\"30\" y=\"195\" font-size=\"14\" font-weight=\"bold\" fill=\"#b91c1c\">Réserve finale, avion (AMC1 NCO.OP.125) :</text><text x=\"30\" y=\"217\" font-size=\"14\" fill=\"#0f172a\">• VFR de jour : 30 min en vitesse d'attente à 1 500 ft au-dessus de la destination</text><text x=\"30\" y=\"239\" font-size=\"14\" fill=\"#0f172a\">• VFR de nuit : 45 min, dans les mêmes conditions</text><text x=\"30\" y=\"261\" font-size=\"14\" fill=\"#0f172a\">• Vol local de jour, en vue du terrain : 10 min à la puissance maximale de croisière continue</text><text x=\"30\" y=\"293\" font-size=\"14\" fill=\"#1d4ed8\">En vol (NCO.OP.185) : MINIMUM FUEL si tout retard ferait atterrir sous la réserve finale ;</text><text x=\"30\" y=\"315\" font-size=\"14\" fill=\"#1d4ed8\">MAYDAY MAYDAY MAYDAY FUEL si l'atterrissage se ferait en dessous de cette réserve.</text></svg>",
+       "caption": "Exemple de bilan pour un vol VFR de jour : roulage, étape, réserve finale et carburant inutilisable s'additionnent. La réserve finale ne s'entame pas en exploitation normale ; en vol, NCO.OP.185 prévoit les annonces MINIMUM FUEL et MAYDAY FUEL."
+      }
+     ]
     }
-  ]
+   ]
+  }
+ ]
 }
