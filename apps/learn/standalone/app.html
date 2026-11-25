@@ -78,6 +78,7 @@ svg.i { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor;
 .btn.sm { padding: 7px 12px; font-size: 14px; border-radius: 10px; }
 .btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px; box-shadow: var(--shadow); }
+.dlcard { padding: 16px; margin-bottom: 14px; } .dlcard .row { align-items: flex-start; } .dlrow { margin: 10px 0 0 34px; gap: 8px; } .dlcard .grow > b { font-size: 17px; }
 .pad { padding: 18px; }
 .row { display: flex; gap: 12px; align-items: center; }
 .wrapflex { flex-wrap: wrap; }
@@ -325,6 +326,8 @@ const ICON = {
   cards: '<rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 012 2v12"/>',
   timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/>',
   reset: '<path d="M3 12a9 9 0 109-9 9.7 9.7 0 00-6.7 2.8L3 8"/><path d="M3 3v5h5"/>',
+  download: '<path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 17v3h16v-3"/>',
+  pdf: '<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/>',
 };
 const ic = (n, cls = 'i') => `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -386,6 +389,26 @@ function save(now = false) {
 }
 function setSync(s) { sync.state = s; renderStats(); }
 const use = (n) => (window.claude && typeof window.claude.use === 'function' ? window.claude.use(n) : Promise.resolve(null));
+// Téléchargements : mémento PDF et appli hors ligne, publiés à côté de la page.
+const OFFLINE = !!document.getElementById('lapl-data');
+const DLFILES = { pdf: 'LAPL-PPL-memento.pdf', app: 'Prepa-LAPL-PPL.html' };
+let DL = null;
+if (!OFFLINE) use('downloads').then((d) => { DL = d; if (/^#?ressources/.test(location.hash)) render(); }).catch(() => {});
+async function offerFile(what, btn) {
+  const name = DLFILES[what]; if (!name || !DL) return;
+  if (btn) btn.disabled = true;
+  try {
+    const r = await fetch(name); if (!r.ok) throw { code: 'missing' };
+    await DL.save({ filename: name, data: await r.blob() });
+    toast('Fichier enregistré');
+  } catch (e) {
+    const c = e && e.code;
+    if (c === 'declined') { /* l'utilisateur a refusé */ }
+    else if (c === 'rate_limited') toast('Une demande de téléchargement est déjà ouverte.');
+    else if (c === 'host_unavailable') toast('Cette appli ne peut pas enregistrer de fichier : ouvre la page dans un navigateur.');
+    else toast('Téléchargement impossible ici : utilise le bouton « Ouvrir ».');
+  } finally { if (btn) btn.disabled = false; }
+}
 const withTimeout = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej({ code: 'timeout' }), ms))]);
 async function connect() {
   try {
@@ -1058,6 +1081,12 @@ function viewResources() {
   const safeUrl = (u) => (/^https:\/\//.test(u || '') ? u : null);
   const nFig = D.units.reduce((n, u) => n + u.figs.length, 0);
   return `<h1 class="section-title" style="margin-top:4px">Ressources</h1>
+  ${OFFLINE ? '' : `<div class="card dlcard">
+    <div class="row">${ic('pdf')}<div class="grow"><b>Mémento PDF</b><div class="small muted">Les 9 matières en un seul document à imprimer ou à lire hors ligne : l’essentiel, les chiffres, les formules, les pièges et les schémas.</div></div></div>
+    <div class="row wrapflex dlrow">${DL ? `<button class="btn sm" data-act="dl" data-what="pdf">${ic('download')} Télécharger</button>` : ''}<a class="btn alt sm" href="${DLFILES.pdf}" target="_blank" rel="noopener">Ouvrir ${ic('ext')}</a></div>
+    <div class="row" style="margin-top:14px">${ic('device')}<div class="grow"><b>Appli hors ligne</b><div class="small muted">Un seul fichier HTML avec tout le cours : il s’ouvre dans n’importe quel navigateur, sans connexion. La progression reste alors sur l’appareil.</div></div></div>
+    <div class="row wrapflex dlrow">${DL ? `<button class="btn sm" data-act="dl" data-what="app">${ic('download')} Télécharger</button>` : `<a class="btn alt sm" href="${DLFILES.app}" target="_blank" rel="noopener">Ouvrir ${ic('ext')}</a>`}</div>
+  </div>`}
   ${nFig ? `<a class="card pad row" href="#schemas" style="text-decoration:none;color:inherit;margin-bottom:14px">${ic('grid')}<div class="grow"><b>Tous les schémas</b><div class="small muted">${nFig} schémas classés par matière, à agrandir d'un geste.</div></div>${ic('right')}</a>` : ''}
   <div class="card pad">
     <label class="eyebrow" for="gloss-q">Lexique : chercher un terme dans les 9 matières</label>
@@ -1200,6 +1229,7 @@ document.addEventListener('click', (ev) => {
     case 'exam-finish': finishExam(); break;
     case 'corr': view.corrAll = t.dataset.all === '1'; render(); break;
     case 'lib-lang': view.libLang = t.dataset.lang; render(); break;
+    case 'dl': offerFile(t.dataset.what, t); break;
     case 'lib-toggle': { if (t.tagName === 'INPUT') break; const id = t.dataset.id; if (P.lib[id]) delete P.lib[id]; else P.lib[id] = today(); save(); render(); break; }
     case 'ask-reset': view.confirm = t.dataset.what || null; if (view.sheet) renderOverlay(); else render(); break;
     case 'do-reset': doReset(t.dataset.what); break;
