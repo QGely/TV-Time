@@ -7,38 +7,37 @@
  },
  "pitch": "La radio, c’est ta voix dans le ciel : des mots normalisés pour être compris du premier coup, malgré le bruit et le stress. Seulement 8 questions, mais très « par cœur » : expressions, collationnement, phraséologie, codes, fréquences et procédures d’urgence.",
  "essentials": [
-  "Écoute avant d’émettre et appuie sur l’**alternat** avant de parler. Ton message dit : **qui j’appelle, qui je suis, où je suis, ce que je veux**.",
-  "Premier appel : indicatif **complet** (F-GJLM). L’abrégé (**F-LM**) seulement après que la station au sol l’a employé.",
-  "Chiffres anglais : **tree** (3), **fife** (5), **niner** (9), **decimal**. Caps, QNH et codes chiffre par chiffre ; altitudes en *thousand* et *hundred*.",
-  "Heure toujours en **UTC** (temps universel) : heure légale **− 1 h l’hiver**, **− 2 h l’été** en métropole.",
-  "Collationne (**SERA.8015(e)**, règles de l’air européennes) : autorisations de piste et de route, piste en service, calages, codes, fréquences, caps, niveaux, vitesses, niveau de transition.",
-  "**Roger** = reçu ; **wilco** = je m’y conforme ; **affirm** = oui ; **negative** = non ; **standby** = attendez. « Roger » ne remplace jamais un collationnement.",
-  "« Roulez point d’arrêt » n’autorise pas à entrer sur la piste, « alignez-vous et attendez » pas à décoller. Au point d’arrêt, dis **prêt au départ**.",
-  "Classes C et D : **pas de clairance, pas d’entrée**. Le SIV (secteur d’information de vol) et l’AFIS (information de vol d’aérodrome) n’autorisent rien.",
-  "**MAYDAY** × 3 : danger grave et imminent. **PAN PAN** × 3 : sécurité en jeu, sans aide immédiate. D’abord la **fréquence en usage**, puis **121,5 MHz** ; code **7700**.",
-  "Panne radio : **7600**, messages à l’aveugle **2 fois** ; en VMC (conditions de vol à vue), atterris au plus proche aérodrome approprié et signale ton arrivée.",
-  "La VHF va en **ligne droite** : portée (NM) ≈ **1,23 × √h** (h en ft). Langue : français ou anglais, avec la mention **FCL.055** (niveau 4 minimum)."
+  "Écoute avant d’émettre et appuie sur l’**alternat** avant de parler. Ton message dit : **qui j’appelle, qui je suis, où je suis, ce que je veux**.",
+  "Premier appel : indicatif **complet** (F-GJLM). L’abrégé (**F-LM**) seulement après que la station au sol l’a employé.",
+  "Chiffres anglais : **tree** (3), **fife** (5), **niner** (9), **decimal**. Caps, QNH et codes chiffre par chiffre ; altitudes en *thousand* et *hundred*.",
+  "Heure toujours en **UTC** (temps universel coordonné) : heure légale **− 1 h l’hiver**, **− 2 h l’été** en métropole.",
+  "Collationne (**SERA.8015(e)**, règles de l’air européennes) : autorisations de piste et de route, piste en service, calages, codes, fréquences, caps, niveaux, vitesses, niveau de transition.",
+  "**Roger** = reçu ; **wilco** = je m’y conforme ; **affirm** = oui ; **negative** = non ; **standby** = attendez. « Roger » ne remplace jamais un collationnement.",
+  "« Roulez point d’arrêt » n’autorise pas à entrer sur la piste, « alignez-vous et attendez » pas à décoller. Au point d’arrêt, dis **prêt au départ**.",
+  "Classes C et D : **pas de clairance, pas d’entrée**. Le SIV (secteur d’information de vol) et l’AFIS (information de vol d’aérodrome) n’autorisent rien.",
+  "Terrain sans organisme : **auto-information** sur la fréquence de la VAC (carte d’approche à vue), **123,5 MHz** à défaut. Chaque message commence par le nom du terrain.",
+  "**MAYDAY** × 3 : danger grave et imminent. **PAN PAN** × 3 : sécurité en jeu, sans aide immédiate. D’abord la **fréquence en usage**, puis **121,5 MHz** ; code **7700**.",
+  "Panne radio : **7600**, messages à l’aveugle **2 fois** ; en VMC (conditions de vol à vue), atterris au plus proche aérodrome approprié et signale ton arrivée.",
+  "La VHF va en **ligne droite** : portée (NM) ≈ **1,23 × √h** (h en ft). Langue : français ou anglais, avec la mention **FCL.055** (niveau 4 minimum)."
  ],
  "sections": [
   {
    "title": "Bien émettre et établir le contact",
-   "summary": "Un bon message est préparé, court et bien adressé : il répond à quatre questions, toujours dans le même ordre.",
+   "summary": "Un bon message est préparé, court et bien adressé : il répond à quatre questions, toujours dans le même ordre.",
    "blocks": [
     {
      "type": "steps",
      "title": "Avant et pendant l’émission",
      "items": [
-      "**Écoute** d’abord : n’interromps pas un échange en cours.",
-      "**Prépare** ton message, au besoin par écrit sur ta planchette.",
-      "**Appuie** sur l’alternat (bouton d’émission), *puis* parle : sinon ton indicatif est coupé.",
-      "**Parle** d’un ton égal, sans te presser, micro près des lèvres.",
-      "**Relâche** l’alternat à la fin seulement : un micro bloqué paralyse la fréquence."
+      "**Écoute** d’abord (n’interromps pas un échange) et **prépare** ton message, au besoin par écrit.",
+      "**Appuie** sur l’alternat (bouton d’émission), *puis* parle d’un ton égal : sinon ton indicatif est coupé.",
+      "**Relâche** l’alternat à la fin seulement : un micro bloqué paralyse la fréquence."
      ]
     },
     {
      "type": "diagram",
-     "title": "Le message en 4 questions",
-     "svg": "<svg viewBox=\"0 0 680 142\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"142\" fill=\"#ffffff\"/><rect x=\"5\" y=\"8\" width=\"152\" height=\"128\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M5,16 Q5,8 13,8 L149,8 Q157,8 157,16 L157,42 L5,42 Z\" fill=\"#6a4c93\"/><text x=\"81.0\" y=\"31\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Qui j'appelle ?</text><text x=\"81.0\" y=\"72\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Valmont Tour</text><text x=\"81.0\" y=\"122\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">la station</text><polygon points=\"159,60 172,69 159,78\" fill=\"#6a4c93\"/><rect x=\"175\" y=\"8\" width=\"152\" height=\"128\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M175,16 Q175,8 183,8 L319,8 Q327,8 327,16 L327,42 L175,42 Z\" fill=\"#6a4c93\"/><text x=\"251.0\" y=\"31\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Qui je suis ?</text><text x=\"251.0\" y=\"72\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">F-GJLM</text><text x=\"251.0\" y=\"93\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">DR400</text><text x=\"251.0\" y=\"122\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">indicatif complet</text><polygon points=\"329,60 342,69 329,78\" fill=\"#6a4c93\"/><rect x=\"345\" y=\"8\" width=\"152\" height=\"128\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M345,16 Q345,8 353,8 L489,8 Q497,8 497,16 L497,42 L345,42 Z\" fill=\"#6a4c93\"/><text x=\"421.0\" y=\"31\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Où je suis ?</text><text x=\"421.0\" y=\"72\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">5 NM au nord</text><text x=\"421.0\" y=\"93\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">2 000 ft</text><text x=\"421.0\" y=\"122\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">position, altitude</text><polygon points=\"499,60 512,69 499,78\" fill=\"#6a4c93\"/><rect x=\"515\" y=\"8\" width=\"152\" height=\"128\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M515,16 Q515,8 523,8 L659,8 Q667,8 667,16 L667,42 L515,42 Z\" fill=\"#6a4c93\"/><text x=\"591.0\" y=\"31\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Ce que je veux ?</text><text x=\"591.0\" y=\"72\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">atterrissage</text><text x=\"591.0\" y=\"93\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">avec Delta</text><text x=\"591.0\" y=\"122\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">demande, lettre ATIS</text></svg>",
+     "title": "Le message en 4 questions",
+     "svg": "<svg viewBox=\"0 0 680 104\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"104\" fill=\"#ffffff\"/><rect x=\"5\" y=\"6\" width=\"152\" height=\"92\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M5,14 Q5,6 13,6 L149,6 Q157,6 157,14 L157,38 L5,38 Z\" fill=\"#6a4c93\"/><text x=\"81\" y=\"28\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Qui j’appelle ?</text><text x=\"81\" y=\"70\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Valmont Tour</text><polygon points=\"159,59 172,68 159,77\" fill=\"#6a4c93\"/><rect x=\"175\" y=\"6\" width=\"152\" height=\"92\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M175,14 Q175,6 183,6 L319,6 Q327,6 327,14 L327,38 L175,38 Z\" fill=\"#6a4c93\"/><text x=\"251\" y=\"28\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Qui je suis ?</text><text x=\"251\" y=\"62\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">F-GJLM</text><text x=\"251\" y=\"83\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">DR400</text><polygon points=\"329,59 342,68 329,77\" fill=\"#6a4c93\"/><rect x=\"345\" y=\"6\" width=\"152\" height=\"92\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M345,14 Q345,6 353,6 L489,6 Q497,6 497,14 L497,38 L345,38 Z\" fill=\"#6a4c93\"/><text x=\"421\" y=\"28\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Où je suis ?</text><text x=\"421\" y=\"62\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">5 NM au nord</text><text x=\"421\" y=\"83\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">2 000 ft</text><polygon points=\"499,59 512,68 499,77\" fill=\"#6a4c93\"/><rect x=\"515\" y=\"6\" width=\"152\" height=\"92\" rx=\"8\" fill=\"#f5f1fa\" stroke=\"#6a4c93\" stroke-width=\"1.5\"/><path d=\"M515,14 Q515,6 523,6 L659,6 Q667,6 667,14 L667,38 L515,38 Z\" fill=\"#6a4c93\"/><text x=\"591\" y=\"28\" font-size=\"14\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">Ce que je veux ?</text><text x=\"591\" y=\"62\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">atterrissage</text><text x=\"591\" y=\"83\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">avec Delta</text></svg>",
      "caption": "Au premier contact, ajoute la lettre de l’**ATIS** (message automatique de l’aérodrome, voir 4.4)."
     },
     {
@@ -47,29 +46,29 @@
       {
        "title": "Indicatif complet",
        "points": [
-        "L’immatriculation entière : F-GJLM, épelée « Foxtrot Golf Juliett Lima Mike ».",
-        "Obligatoire au premier appel d’une station.",
-        "Fréquence chargée : appel court (« Valmont Tour, F-GJLM »), puis attends qu’on t’invite à parler."
+        "L’immatriculation entière : F-GJLM, dite « Foxtrot Golf Juliett Lima Mike ».",
+        "Obligatoire au premier appel d’une station, donc après chaque changement de fréquence.",
+        "Fréquence chargée : appel court (« Valmont Tour, F-GJLM »), puis attends qu’on t’invite à parler."
        ]
       },
       {
        "title": "Indicatif abrégé",
        "points": [
-        "1er caractère + au moins les 2 derniers : F-GJLM → **F-LM**.",
-        "Seulement **après** que la station au sol l’a employé, sans risque de confusion.",
-        "Jamais à ton initiative, même sur une fréquence chargée. Et toujours la station appelée **puis** toi."
+        "1er caractère + au moins les 2 derniers : F-GJLM → **F-LM**.",
+        "Seulement **après** que la station au sol l’a employé, jamais à ton initiative.",
+        "Contact établi, tu peux omettre le nom de la station : « F-LM, vent arrière piste 24 »."
        ]
       }
      ]
     },
     {
      "type": "table",
-     "caption": "Qui te répond ? Les indicatifs des stations au sol",
+     "caption": "Qui te répond ? Les indicatifs des stations au sol",
      "columns": [
       "Français",
       "Anglais",
       "Organisme",
-      "Clairances ?"
+      "Clairances ?"
      ],
      "rows": [
       [
@@ -93,21 +92,21 @@
       [
        "**Contrôle**",
        "Control",
-       "contrôle régional : CRNA (centres en route) en France",
+       "contrôle régional : CRNA (centres en route) en France",
        "oui"
       ],
       [
        "**Information**",
        "Information",
-       "SIV, et en général l’AFIS",
-       "**non** : information, alerte"
+       "SIV et AFIS",
+       "**non** : information, alerte"
       ]
      ]
     },
     {
      "type": "key",
-     "title": "Essai radio : l’échelle de lisibilité",
-     "text": "« Comment me recevez-vous ? » (*how do you read?*) → une note de **1 à 5** :\n**1** illisible · **2** lisible par instants · **3** lisible mais difficilement · **4** lisible · **5** parfaitement lisible."
+     "title": "L’essai radio et l’échelle de lisibilité",
+     "text": "Format (SERA.14070) : « Valmont Ground, F-GJLM, radio check one two one decimal eight zero five » → « F-GJLM, Valmont Ground, readability 5 ».\nEn français : « Comment me recevez-vous ? ». Lisibilité : **1** illisible · **2** par instants · **3** difficilement · **4** lisible · **5** parfaitement lisible."
     }
    ]
   },
@@ -165,56 +164,48 @@
        ""
       ]
      ],
-     "note": "Les sigles courants se disent tels quels, sans les épeler : QNH (calage altimétrique), VFR (vol à vue), CAVOK (plafond et visibilité OK)."
+     "note": "Les sigles courants se disent tels quels, sans alphabet phonétique : QNH (calage donnant l’altitude), VFR (vol à vue), CAVOK (plafond et visibilité OK)."
     },
     {
      "type": "key",
      "title": "Les chiffres",
-     "text": "En anglais : **3** tree · **5** fife · **9** niner · virgule **decimal** · **hundred** (centaine) · **thousand** (millier).\nEn français : virgule « décimale » ; nombres comme dans la vie courante, sauf cap, piste, vent et indicatif (chiffre par chiffre)."
+     "text": "En anglais : **3** tree · **5** fife · **9** niner · virgule **decimal** · **hundred** (centaine) · **thousand** (millier).\nEn français : virgule « **décimale** » ; un nombre se dit comme dans la vie courante (3254 : « trente-deux cinquante-quatre ») ou chiffre par chiffre, le **1** devenant « **unité** » (QNH 1022 : « unité zéro deux deux »)."
     },
     {
      "type": "table",
-     "caption": "Comment dire chaque nombre (SERA.14035)",
+     "caption": "Comment dire chaque nombre en anglais (SERA.14035)",
      "columns": [
-      "Donnée",
-      "Règle",
-      "Exemple en anglais"
+      "Donnée : règle",
+      "Exemple"
      ],
      "rows": [
       [
-       "Cap, piste, vent",
-       "chiffre par chiffre",
-       "cap 090 : *heading zero niner zero*"
+       "**Cap, piste, vent** : chiffre par chiffre",
+       "cap 090 : *heading zero niner zero*"
       ],
       [
-       "Calage (QNH)",
-       "chiffre par chiffre (1 000 hPa : *one thousand*)",
-       "QNH 1009 : *one zero zero niner*"
+       "**Calage** : chiffre par chiffre, sauf 1 000 hPa (*one thousand*)",
+       "QNH 1009 : *one zero zero niner*"
       ],
       [
-       "Transpondeur",
-       "chiffre par chiffre (milliers ronds : *thousand*)",
-       "4521 : *four five two one* ; 7000 : *seven thousand*"
+       "**Transpondeur** : chiffre par chiffre, sauf milliers ronds (*thousand*)",
+       "4521 : *four five two one* ; 7000 : *seven thousand*"
       ],
       [
-       "Niveau de vol",
-       "chiffre par chiffre (centaines rondes : *hundred*)",
-       "FL 115 : *one one five* ; FL 100 : *one hundred*"
+       "**Niveau de vol** : chiffre par chiffre, sauf centaines rondes (*hundred*)",
+       "FL 115 : *one one five* ; FL 100 : *one hundred*"
       ],
       [
-       "Altitude, nuages, visibilité",
-       "avec *thousand* et *hundred*",
-       "1 500 ft : *one thousand five hundred* ; 10 000 ft : *one zero thousand*"
+       "**Altitude, nuages, visibilité** : avec *thousand* et *hundred*",
+       "1 500 ft : *one thousand five hundred* ; 10 000 ft : *one zero thousand*"
       ],
       [
-       "Fréquence",
-       "6 chiffres avec *decimal*, sauf 2 zéros finaux",
-       "118,025 : *one one eight decimal zero two five* ; 119,700 : *one one niner decimal seven*"
+       "**Fréquence** : les 6 chiffres avec *decimal*, sauf 2 zéros finaux",
+       "118,025 : *one one eight decimal zero two five* ; 119,700 : *one one niner decimal seven*"
       ],
       [
-       "Heure (UTC)",
-       "les minutes (l’heure entière si doute)",
-       "0920 : *two zero* ou *zero niner two zero*"
+       "**Heure (UTC)** : les minutes (l’heure entière en cas de doute)",
+       "0920 : *two zero* ou *zero niner two zero*"
       ]
      ]
     },
@@ -226,13 +217,13 @@
     },
     {
      "type": "trap",
-     "text": "« Queen », « Roger », « Sugar » (vieil alphabet abandonné) ou « Tokyo » : faux. Orthographe OACI : **Alfa**, **Juliett**.\n« Fifteen hundred feet », « QNH ten zero nine », « one double zero niner » : non conformes. *Thousand* et *hundred* sont pour altitudes, nuages et visibilités."
+     "text": "« Queen », « Roger », « Sugar » (vieil alphabet abandonné) ou « Tokyo » : faux. Orthographe OACI : **Alfa**, **Juliett**.\n« Fifteen hundred feet », « QNH ten zero nine », « one double zero niner » : non conformes. *Thousand* et *hundred* servent aux altitudes, nuages et visibilités, plus trois cas : FL 100, QNH 1 000 et codes ronds (7000)."
     }
    ]
   },
   {
    "title": "Expressions conventionnelles et collationnement",
-   "summary": "Des mots au sens figé remplacent les phrases ; tout ce qui touche à la sécurité se collationne.",
+   "summary": "Des mots au sens figé remplacent les phrases ; tout ce qui touche à la sécurité se collationne.",
    "blocks": [
     {
      "type": "table",
@@ -307,7 +298,7 @@
       [
        "**Cleared** / **Approved**",
        "Autorisé / Approuvé",
-       "Autorisation du contrôle / demande acceptée"
+       "Clairance du contrôle / permission demandée accordée (*start-up approved*)"
       ],
       [
        "**Report**",
@@ -315,70 +306,60 @@
        "Signale (une position, un événement)"
       ],
       [
-       "**Monitor**",
-       "Veillez",
-       "Écoute cette fréquence, sans appeler"
+       "**Acknowledge**",
+       "Accusez réception",
+       "Montre que tu as reçu le message"
       ],
       [
-       "**Break**",
-       "Break",
-       "Sépare les parties d’un message (*break break* : messages à des avions différents)"
+       "**Contact** / **Monitor**",
+       "Contactez / Écoutez",
+       "Appelle cette station / écoute sa fréquence sans appeler"
+      ],
+      [
+       "**I say again**",
+       "Je répète",
+       "Je répète, pour insister"
+      ],
+      [
+       "**Recleared**",
+       "Réautorisé",
+       "Nouvelle clairance, qui remplace l’ancienne"
       ]
-     ]
+     ],
+     "note": "À reconnaître aussi : *words twice* (liaison difficile, chaque mot dit 2 fois), *speak slower* (parlez plus lentement), *break* (sépare deux parties d’un message). *Over* et *out* : normalement pas en VHF."
     },
     {
      "type": "compare",
      "items": [
       {
-       "title": "À collationner toujours (SERA.8015(e))",
+       "title": "Toujours collationner (SERA.8015(e))",
        "points": [
         "Autorisations de route, dont les transits.",
-        "Entrer sur une piste, y atterrir, en décoller, s’arrêter avant, la traverser, y rouler, la remonter.",
+        "Piste : y entrer, y atterrir, en décoller, s’arrêter avant, la traverser, y rouler, la remonter.",
         "Piste en service, calages, codes transpondeur, nouvelles fréquences.",
-        "Niveau, cap, vitesse ; niveau de transition (contrôleur ou ATIS)."
+        "Niveau, cap, vitesse ; niveau de transition (contrôleur ou ATIS)."
        ]
       },
       {
-       "title": "Un accusé de réception suffit",
+       "title": "Le reste : collationne ou accuse réception",
        "points": [
-        "Information de trafic : dis si tu l’as en vue (« trafic en vue »).",
-        "Vent, météo, information de vol.",
-        "Autres instructions (roulage, autorisation conditionnelle) : collationne ou accuse réception, pour montrer que tu as compris et que tu t’y conformes."
+        "Roulage, clairance conditionnelle : collationne, ou accuse réception sans ambiguïté. La piste et le QNH qu’ils contiennent se collationnent toujours.",
+        "Trafic : « trafic en vue » (*traffic in sight*) ou *looking out* (je cherche).",
+        "Vent, météo, information de vol : un accusé de réception suffit.",
+        "Ordre de rappeler un point : *wilco*."
        ]
-      }
-     ]
-    },
-    {
-     "type": "dialog",
-     "title": "Un collationnement correct : les valeurs, puis l’indicatif",
-     "lines": [
-      {
-       "who": "Tour",
-       "text": "F-LM, affichez 4521, QNH 1018."
-      },
-      {
-       "who": "Pilote",
-       "text": "4521, QNH 1018, F-LM."
-      },
-      {
-       "who": "Tour",
-       "text": "F-LM, vent 240 degrés 8 nœuds, piste 24, autorisé atterrissage."
-      },
-      {
-       "who": "Pilote",
-       "text": "Piste 24, autorisé atterrissage, F-LM. (le vent ne se répète pas)"
       }
      ]
     },
     {
      "type": "trap",
-     "text": "« Reçu, 4521 » ou « wilco, QNH 1018 » : incomplets ; répète **toutes** les valeurs, le contrôleur écoute et corrige.\nÀ une question fermée (« confirm… »), réponds **affirm** ou **negative**, jamais « roger » ni « wilco »."
+     "text": "À « F-LM, affichez 4521, QNH 1018 », réponds « 4521, QNH 1018, F-LM ». « Reçu, 4521 » ou « wilco, QNH 1018 » : incomplets.\nÀ une question fermée (« confirm… »), réponds **affirm** ou **negative**, jamais « roger » ni « wilco »."
     }
    ]
   },
   {
-   "title": "Au départ : ATIS, roulage et décollage",
-   "summary": "Du parking à la piste, deux mots-pièges : « point d’arrêt » (tu t’arrêtes) et « décollage » (réservé à la tour).",
+   "title": "Au départ : ATIS, roulage et décollage",
+   "summary": "Du parking à la piste, deux mots-pièges : « point d’arrêt » (tu t’arrêtes) et « décollage » (réservé à la tour).",
    "blocks": [
     {
      "type": "code",
@@ -388,7 +369,7 @@
     },
     {
      "type": "dialog",
-     "title": "Départ en français (avant : mise en route ou roulage selon le terrain)",
+     "title": "Départ en français : chaque collationnement reprend les valeurs, puis l’indicatif",
      "lines": [
       {
        "who": "Pilote",
@@ -408,37 +389,34 @@
       },
       {
        "who": "Tour",
-       "text": "F-LM, alignez-vous et attendez piste 24."
-      },
-      {
-       "who": "Pilote",
-       "text": "Je m’aligne et j’attends piste 24, F-LM."
-      },
-      {
-       "who": "Tour",
        "text": "F-LM, vent 230 degrés 8 nœuds, piste 24, autorisé décollage."
       },
       {
        "who": "Pilote",
-       "text": "Autorisé décollage piste 24, F-LM."
+       "text": "Autorisé décollage piste 24, F-LM. (le vent ne se répète pas)"
       }
      ]
     },
     {
+     "type": "example",
+     "title": "La clairance conditionnelle",
+     "text": "« F-LM, derrière le DR400 en courte finale, alignez-vous et attendez derrière » : collationne **avec la condition**, aligne-toi après son passage.\nDeux avions en finale, ou un doute ? Reste au point d’arrêt et demande confirmation."
+    },
+    {
      "type": "trap",
-     "title": "Les trois pièges du départ",
-     "text": "**Roulez point d’arrêt** n’autorise jamais à entrer sur la piste.\n**Alignez-vous et attendez** (*line up and wait*) : tu t’alignes, tu ne décolles pas.\nDis **prêt au départ** (*ready for departure*) : « décollage » (*take-off*) est réservé à l’autorisation de décollage et à son annulation."
+     "title": "Les quatre pièges du départ",
+     "text": "**Mise en route approuvée** (*start-up approved*) : tu démarres, mais tu ne roules pas.\n**Roulez point d’arrêt** n’autorise jamais à entrer sur la piste.\n**Alignez-vous et attendez** (*line up and wait*) : tu t’alignes, tu ne décolles pas.\nDis **prêt au départ** (*ready for departure*) : *take-off* est réservé à l’autorisation de décollage et à son annulation."
     }
    ]
   },
   {
-   "title": "À l’arrivée : intégration, tour de piste, atterrissage",
-   "summary": "Prépare l’arrivée sur la carte VAC (carte d’approche et d’atterrissage à vue), écoute l’ATIS, annonce où tu es et n’atterris qu’après « autorisé atterrissage ».",
+   "title": "À l’arrivée : intégration, tour de piste, atterrissage",
+   "summary": "Prépare l’arrivée sur la VAC, écoute l’ATIS, annonce où tu es et attends « autorisé atterrissage ».",
    "blocks": [
     {
      "type": "diagram",
      "title": "Le tour de piste et ses annonces (piste 24, main gauche)",
-     "svg": "<svg viewBox=\"0 26 680 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"26\" width=\"680\" height=\"244\" fill=\"#ffffff\"/><path d=\"M220,70 L125,70 Q95,70 95,100 L95,172 Q95,202 125,202 L560,202 Q590,202 590,172 L590,100 Q590,70 560,70 L470,70\" fill=\"none\" stroke=\"#6a4c93\" stroke-width=\"3\"/><rect x=\"220\" y=\"60\" width=\"250\" height=\"20\" rx=\"2\" fill=\"#3d4a66\"/><line x1=\"238\" y1=\"70\" x2=\"425\" y2=\"70\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-dasharray=\"10 8\"/><text x=\"452\" y=\"75\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">24</text><polygon points=\"166,62 151,70 166,78\" fill=\"#6a4c93\"/><polygon points=\"87,129 95,144 103,129\" fill=\"#6a4c93\"/><polygon points=\"333,194 348,202 333,210\" fill=\"#6a4c93\"/><polygon points=\"582,143 590,128 598,143\" fill=\"#6a4c93\"/><polygon points=\"532,62 517,70 532,78\" fill=\"#6a4c93\"/><text x=\"160\" y=\"50\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"middle\">MONTÉE INITIALE</text><text x=\"530\" y=\"50\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"middle\">FINALE</text><text x=\"606\" y=\"141\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"start\">BASE</text><text x=\"340\" y=\"226\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"middle\">VENT ARRIÈRE</text><text x=\"112\" y=\"102\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"start\">Après l’atterrissage :</text><text x=\"112\" y=\"119\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">« piste dégagée »</text><text x=\"575\" y=\"102\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">« F-LM, finale 24 »</text><text x=\"575\" y=\"119\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">→ attends « autorisé atterrissage »</text><text x=\"340\" y=\"152\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">Circuit main gauche : tous les virages se font à gauche</text><text x=\"340\" y=\"185\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">« F-LM, vent arrière piste 24 »</text><line x1=\"50\" y1=\"246\" x2=\"138\" y2=\"205\" stroke=\"#b0177a\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><polygon points=\"40,242 51,261 29,261\" fill=\"#b0177a\"/><text x=\"62\" y=\"261\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\"><tspan font-weight=\"700\">Point d’entrée Sierra</tspan> : « F-LM, Sierra » → la tour te donne l’intégration</text></svg>"
+     "svg": "<svg viewBox=\"0 26 680 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"26\" width=\"680\" height=\"244\" fill=\"#ffffff\"/><path d=\"M220,70 L125,70 Q95,70 95,100 L95,172 Q95,202 125,202 L560,202 Q590,202 590,172 L590,100 Q590,70 560,70 L470,70\" fill=\"none\" stroke=\"#6a4c93\" stroke-width=\"3\"/><rect x=\"220\" y=\"60\" width=\"250\" height=\"20\" rx=\"2\" fill=\"#3d4a66\"/><line x1=\"238\" y1=\"70\" x2=\"425\" y2=\"70\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-dasharray=\"10 8\"/><text x=\"452\" y=\"75\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">24</text><polygon points=\"166,62 151,70 166,78\" fill=\"#6a4c93\"/><polygon points=\"87,129 95,144 103,129\" fill=\"#6a4c93\"/><polygon points=\"333,194 348,202 333,210\" fill=\"#6a4c93\"/><polygon points=\"582,143 590,128 598,143\" fill=\"#6a4c93\"/><polygon points=\"532,62 517,70 532,78\" fill=\"#6a4c93\"/><text x=\"82\" y=\"130\" font-size=\"13\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"end\">VENT</text><text x=\"82\" y=\"146\" font-size=\"13\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"end\">TRAVERSIER</text><text x=\"160\" y=\"50\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"middle\">MONTÉE INITIALE</text><text x=\"530\" y=\"50\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"middle\">FINALE</text><text x=\"606\" y=\"141\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"start\">BASE</text><text x=\"340\" y=\"226\" font-size=\"14\" font-weight=\"700\" fill=\"#6a4c93\" text-anchor=\"middle\">VENT ARRIÈRE</text><text x=\"112\" y=\"102\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"start\">Après l’atterrissage :</text><text x=\"112\" y=\"119\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"start\">« piste dégagée »</text><text x=\"575\" y=\"102\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">« F-LM, finale 24 »</text><text x=\"575\" y=\"119\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">→ attends « autorisé atterrissage »</text><text x=\"340\" y=\"152\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">Circuit main gauche : tous les virages se font à gauche</text><text x=\"340\" y=\"185\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">« F-LM, vent arrière piste 24 »</text><line x1=\"50\" y1=\"246\" x2=\"138\" y2=\"205\" stroke=\"#b0177a\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><polygon points=\"40,242 51,261 29,261\" fill=\"#b0177a\"/><text x=\"62\" y=\"261\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"start\"><tspan font-weight=\"700\">Point d’entrée Sierra</tspan> : « F-LM, Sierra » → la tour te donne l’intégration</text></svg>"
     },
     {
      "type": "dialog",
@@ -457,18 +435,6 @@
        "text": "Join left downwind runway 24, QNH 1016, wilco, F-LM."
       },
       {
-       "who": "Pilot",
-       "text": "F-LM, downwind runway 24."
-      },
-      {
-       "who": "Tower",
-       "text": "F-LM, number 2, follow the Cessna on base."
-      },
-      {
-       "who": "Pilot",
-       "text": "Number 2, traffic in sight, F-LM."
-      },
-      {
        "who": "Tower",
        "text": "F-LM, wind 240 degrees 8 knots, runway 24, cleared to land."
       },
@@ -482,74 +448,61 @@
      "type": "table",
      "caption": "Les phrases clés, du parking au parking",
      "columns": [
-      "Étape",
+      "En français",
+      "In English",
       "En français",
       "In English"
      ],
      "rows": [
       [
-       "Mise en route, roulage",
-       "demande mise en route ; roulez point d’arrêt…",
-       "request start-up ; taxi to holding point…"
+       "demande mise en route",
+       "request start-up",
+       "verticale",
+       "overhead"
       ],
       [
-       "Au point d’arrêt",
+       "roulez point d’arrêt…",
+       "taxi to holding point…",
+       "trafic en vue",
+       "traffic in sight (pas encore vu : *looking out*)"
+      ],
+      [
        "prêt au départ",
-       "ready for departure"
-      ],
-      [
-       "Alignement",
-       "alignez-vous et attendez",
-       "line up and wait"
-      ],
-      [
-       "Décollage",
-       "autorisé décollage",
-       "cleared for take-off"
-      ],
-      [
-       "Position",
-       "rappelez vent arrière",
-       "report downwind"
-      ],
-      [
-       "Atterrissage",
+       "ready for departure",
        "autorisé atterrissage",
        "cleared to land"
       ],
       [
-       "Remise de gaz",
+       "alignez-vous et attendez",
+       "line up and wait",
        "remettez les gaz",
-       "go around"
+       "go around → réponse *going around*"
       ],
       [
-       "Trafic",
-       "trafic en vue",
-       "traffic in sight"
-      ],
-      [
-       "Dégagement",
+       "autorisé décollage",
+       "cleared for take-off",
        "piste dégagée",
        "runway vacated"
+      ],
+      [
+       "remontez la piste",
+       "backtrack",
+       "rappelez vent arrière",
+       "report downwind"
       ]
      ],
-     "note": "À l’arrivée, collationne piste, QNH et autorisation d’atterrissage, pas le vent. En courte finale sans « autorisé atterrissage » : rappelle la tour ; faute d’autorisation, remets les gaz."
+     "note": "À l’arrivée, collationne piste, QNH et autorisation d’atterrissage, pas le vent. Pas d’« autorisé atterrissage » en courte finale : rappelle la tour, sinon remets les gaz."
     }
    ]
   },
   {
-   "title": "En route : transpondeur, CTR, SIV, AFIS, auto-information",
+   "title": "En route : transpondeur, CTR, SIV, AFIS, auto-information",
    "summary": "Retiens qui peut te donner des ordres (le contrôle) et qui ne fait que t’informer (SIV, AFIS, les autres pilotes).",
    "blocks": [
     {
-     "type": "key",
-     "title": "Le transpondeur à la radio",
-     "text": "« Affichez 4521 » (*squawk 4521*) : affiche le code et collationne-le · « Ident » : appuie une fois sur IDENT, ton plot ressort sur l’écran radar.\n*Squawk standby* : position attente (STBY) · *squawk Charlie* : mode C, qui transmet l’altitude-pression · *squawk mayday* : 7700."
-    },
-    {
      "type": "memo",
-     "title": "Les 4 codes réflexes : 75, 76, 77",
-     "text": "**7000** : VFR sans code attribué · **7500** : intervention illicite · **7600** : panne radio · **7700** : détresse ou urgence.\nPour retenir : **75** détourné, **76** muet (radio en panne), **77** en détresse. En changeant de code, évite de passer par 7500, 7600 ou 7700."
+     "title": "Le transpondeur et ses 4 codes réflexes : 75, 76, 77",
+     "text": "« Affichez 4521 » (*squawk 4521*) : affiche et collationne · *ident* : appuie une fois sur IDENT, ton plot ressort à l’écran · *squawk standby* : position STBY · *squawk Charlie* : mode C (altitude-pression).\n**7000** : VFR sans code attribué · **7500** : intervention illicite · **7600** : panne radio · **7700** : détresse ou urgence (*squawk mayday*).\nPour retenir : **75** détourné, **76** muet, **77** en détresse. En changeant de code, évite de passer par 7500, 7600 ou 7700."
     },
     {
      "type": "dialog",
@@ -557,7 +510,7 @@
      "lines": [
       {
        "who": "Pilote",
-       "text": "Valmont Approche, F-GJLM, DR400, 5 NM au nord de November, 2 500 pieds, QNH 1016, demande transit de la CTR par November et Sierra."
+       "text": "Valmont Approche, F-GJLM, DR400, 5 NM au nord de November, 2 500 pieds, de Montbrun vers Saint-Clair, demande transit par November et Sierra."
       },
       {
        "who": "Approche",
@@ -565,58 +518,57 @@
       },
       {
        "who": "Approche",
-       "text": "F-LM, affichez 4521."
+       "text": "F-LM, autorisé transit November Sierra, 2 000 pieds maximum, QNH 1016, affichez 4521."
       },
       {
        "who": "Pilote",
-       "text": "4521, F-LM."
-      },
-      {
-       "who": "Approche",
-       "text": "F-LM, autorisé transit par November et Sierra, 2 000 pieds maximum, QNH 1016."
-      },
-      {
-       "who": "Pilote",
-       "text": "Autorisé transit November Sierra, 2 000 pieds maximum, QNH 1016, F-LM."
+       "text": "Transit November Sierra, 2 000 pieds maximum, QNH 1016, 4521, F-LM."
       }
      ]
     },
     {
      "type": "trap",
-     "text": "« Attendez » (*standby*) n’est ni un oui ni un non : tu restes **hors** de la CTR jusqu’au rappel. En classes C et D : pas de clairance, pas d’entrée ; une fois dedans, écoute permanente."
+     "text": "« Attendez » (*standby*) n’est ni un oui ni un non : tu restes **hors** de la CTR jusqu’au rappel. Une fois dedans, écoute permanente.\n« Pas de trafic connu dans la CTR », dit par le SIV, n’autorise jamais l’entrée : seul l’organisme de contrôle délivre la clairance.\nClasse E : **pas** de clairance pour le VFR ; contact recommandé, obligatoire en RMZ (zone à radio obligatoire)."
+    },
+    {
+     "type": "key",
+     "title": "Changer de fréquence",
+     "text": "En espace contrôlé, ne quitte la fréquence que sur instruction (« contactez… ») ou accord (*frequency change approved*) ; avec le SIV, préviens.\nCollationne la nouvelle fréquence, puis écoute-la avant d’appeler avec l’indicatif **complet**."
     },
     {
      "type": "compare",
      "items": [
       {
-       "title": "SIV (« Information »)",
+       "title": "SIV (« Information »)",
        "points": [
         "Information de vol (trafic connu, météo, zones actives) et alerte.",
-        "Ni clairance ni séparation : l’anticollision reste à toi.",
+        "Ni clairance ni séparation : il ne connaît que les vols en contact ou vus au radar.",
         "Contact en général facultatif, mais vivement recommandé."
        ]
       },
       {
-       "title": "AFIS",
+       "title": "AFIS (« Information »)",
        "points": [
-        "Sur certains terrains non contrôlés : un agent informe et alerte.",
-        "**Aucune autorisation** : tu annonces tes intentions et tu décides."
+        "Sur certains terrains non contrôlés : un agent informe et alerte.",
+        "Ni instruction, ni autorisation, ni interdiction : tu annonces tes intentions et tu décides.",
+        "Hors horaires : procédure de la VAC (l’auto-information, par exemple)."
        ]
       },
       {
        "title": "Auto-information",
        "points": [
-        "Aucun organisme ATS (circulation aérienne) en service.",
-        "Sur la fréquence de la VAC : position et intentions aux points clés (verticale, vent arrière, finale, piste dégagée, alignement…).",
-        "Pas de réponse attendue ; regarde dehors."
+        "Aucun organisme ATS (services de la circulation aérienne) en service.",
+        "Fréquence de la VAC ; sans fréquence propre : **123,5 MHz**.",
+        "Nom du terrain d’abord : « Saint-Clair, F-GJLM, vent arrière piste 24 ».",
+        "Personne ne répond ni n’autorise : regarde dehors."
        ]
       }
      ]
     },
     {
      "type": "key",
-     "title": "Compte rendu de position",
-     "text": "**Identification, position, heure, niveau ou altitude**, puis prochaine position et heure estimée : « F-LM, verticale Romeo à 25, 3 500 pieds, estimée Valmont à 40 »."
+     "title": "Compte rendu de position et information de trafic",
+     "text": "**Identification, position, heure, niveau ou altitude**, puis prochaine position et heure estimée : « F-LM, verticale Romeo à 25, 3 500 pieds, estimée Valmont à 40 ».\nUn trafic se situe en heures d’horloge (12 h = devant toi, 3 h = à droite) : « traffic 2 o’clock, 3 miles » → *traffic in sight* ou *looking out*."
     }
    ]
   },
@@ -671,13 +623,13 @@
     {
      "type": "key",
      "title": "Où et comment émettre",
-     "text": "1re émission sur la **fréquence en usage**, où l’on t’écoute déjà. Sans réponse : **121,5 MHz**, fréquence internationale d’urgence.\nTranspondeur **7700**, surtout si aucun code ne t’a été attribué."
+     "text": "1re émission sur la **fréquence en usage**, où l’on t’écoute déjà ; sans réponse, **121,5 MHz** (urgence internationale).\nTranspondeur **7700**, surtout si aucun code ne t’a été attribué."
     },
     {
      "type": "bullets",
      "title": "La fréquence pendant une détresse",
      "items": [
-      "**Silence** : imposé par l’avion en détresse ou la station qui dirige le trafic, « STOP TRANSMITTING – MAYDAY ». Les autres n’émettent que pour aider.",
+      "**Silence** : « STOP TRANSMITTING – MAYDAY », imposé par l’avion en détresse ou la station qui dirige ; les autres n’émettent que pour aider.",
       "**Relais** : si l’avion en détresse ne peut pas émettre, une autre station relaie : « MAYDAY RELAY » × 3.",
       "**Annulation** : l’avion qui n’est plus en détresse annule son message.",
       "**Fin** : la station qui dirigeait annonce « DISTRESS TRAFFIC ENDED »."
@@ -723,7 +675,7 @@
        "exploitation, entretien, horaires"
       ]
      ],
-     "note": "Pour retenir l’ordre, du plus vital au plus confortable : sauver, localiser, guider, informer, organiser."
+     "note": "Pour retenir l’ordre D, U, R, S, M, R : « **D**eux **U**rgentistes **R**amènent **S**ix **M**alades **R**établis »."
     },
     {
      "type": "trap",
@@ -739,11 +691,11 @@
      "type": "steps",
      "title": "Panne radio : la procédure (SERA.14083)",
      "items": [
-      "**Vérifie** : volume, squelch (seuil du silencieux), fréquence affichée, casque et prises, disjoncteur ; essaie une autre fréquence.",
+      "**Vérifie** volume, squelch (seuil du silencieux), fréquence, casque, prises, disjoncteur ; essaie une autre fréquence.",
       "Affiche **7600** au transpondeur.",
-      "**Émets à l’aveugle** (*transmitting blind*) : chaque message **2 fois**, car seul ton récepteur est peut-être en panne.",
-      "Récepteur en panne avéré : « *transmitting blind due to receiver failure* », message répété et heure du prochain message.",
-      "En VMC : reste en VMC, atterris sur l’**aérodrome approprié le plus proche** et signale ton arrivée à l’ATS par le moyen le plus rapide (ou suis la procédure de la VAC)."
+      "**Émets à l’aveugle** (*transmitting blind*) : chaque message **2 fois**, ton récepteur seul est peut-être en panne.",
+      "Récepteur en panne avéré : « *transmitting blind due to receiver failure* », message répété, heure du prochain message.",
+      "En VMC : reste en VMC, atterris sur l’**aérodrome approprié le plus proche**, signale ton arrivée à l’ATS au plus vite."
      ]
     },
     {
@@ -786,12 +738,12 @@
        "–"
       ]
      ],
-     "note": "Vert fixe = vas-y ; éclats verts = prépare-toi (reviens, roule) ; rouge fixe = attends ; éclats rouges = pas ici. Piège : des éclats verts en vent arrière ne t’autorisent pas à atterrir, le vert fixe suivra."
+     "note": "Vert fixe = vas-y ; éclats verts = reviens ou roule ; rouge fixe = attends ; éclats rouges = pas ici."
     },
     {
      "type": "key",
      "title": "Accuser réception sans radio",
-     "text": "**En vol, de jour** : balance les ailes, sauf en base et en finale. **Au sol, de jour** : bouge les ailerons ou la gouverne de direction (pas la profondeur).\n**De nuit** : fais clignoter **2 fois** les phares ou les feux de navigation."
+     "text": "**En vol, de jour** : balance les ailes, sauf en base et en finale. **Au sol, de jour** : bouge ailerons ou direction, pas la profondeur. **De nuit** : fais clignoter **2 fois** les phares ou les feux de navigation."
     }
    ]
   },
@@ -832,15 +784,21 @@
      "note": "Canaux VHF espacés de 25 kHz ou de 8,33 kHz : 25 ÷ 8,33 ≈ 3, donc 3 canaux de 8,33 kHz dans un canal de 25 kHz."
     },
     {
+     "type": "formula",
+     "label": "Longueur d’onde",
+     "formula": "λ (m) = 300 ÷ f (MHz)",
+     "example": "À 125 MHz : 300 ÷ 125 = **2,4 m** ; à 120 MHz : **2,5 m**. VHF (30 à 300 MHz) = ondes **métriques** (1 à 10 m)."
+    },
+    {
      "type": "key",
      "title": "Les fréquences particulières",
-     "text": "**121,5 MHz** : urgence internationale, veillée par les centres de contrôle et de nombreux organismes.\n**123,1 MHz** : auxiliaire de recherche et sauvetage (SAR) · **123,45 MHz** : air-air.\n**406 MHz** : balises de détresse (ELT de l’avion, PLB personnelle), captées par satellite ; l’ELT émet aussi sur 121,5 MHz pour le radioralliement (NCO.IDE.A.170)."
+     "text": "**121,5 MHz** : urgence internationale, veillée par les centres de contrôle et de nombreux organismes.\n**123,1 MHz** : recherche et sauvetage (SAR) · **123,45 MHz** : air-air · **123,5 MHz** : auto-information par défaut.\n**406 MHz** : balises de détresse (ELT de l’avion, PLB personnelle) captées par satellite ; l’ELT émet aussi sur 121,5 MHz (NCO.IDE.A.170)."
     },
     {
      "type": "diagram",
      "title": "Portée optique : ce qui coupe une liaison VHF",
-     "svg": "<svg viewBox=\"0 0 680 264\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"264\" fill=\"#ffffff\"/><line x1=\"340\" y1=\"10\" x2=\"340\" y2=\"250\" stroke=\"#d6dbe6\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><line x1=\"40\" y1=\"174\" x2=\"300\" y2=\"190\" stroke=\"#c0392b\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><line x1=\"40\" y1=\"174\" x2=\"200\" y2=\"72\" stroke=\"#2e7d4f\" stroke-width=\"3\"/><path d=\"M10,215 Q165,120 320,215 L320,236 L10,236 Z\" fill=\"#dcebd5\" stroke=\"#2e7d4f\" stroke-width=\"2\"/><line x1=\"40\" y1=\"198\" x2=\"40\" y2=\"174\" stroke=\"#14213d\" stroke-width=\"3\"/><polygon points=\"33,198 40,186 47,198\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"40\" cy=\"174\" r=\"4\" fill=\"#14213d\"/><g transform=\"translate(200,72) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><g transform=\"translate(300,190) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><line x1=\"112\" y1=\"172\" x2=\"126\" y2=\"186\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"112\" y1=\"186\" x2=\"126\" y2=\"172\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"214\" y=\"68\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">liaison OK</text><text x=\"318\" y=\"168\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"end\">masqué</text><text x=\"24\" y=\"228\" font-size=\"13\" fill=\"#14213d\">Station</text><text x=\"165\" y=\"256\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">La courbure de la Terre</text><line x1=\"390\" y1=\"185\" x2=\"650\" y2=\"185\" stroke=\"#c0392b\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><line x1=\"420\" y1=\"40\" x2=\"650\" y2=\"185\" stroke=\"#2e7d4f\" stroke-width=\"3\"/><rect x=\"352\" y=\"215\" width=\"326\" height=\"21\" fill=\"#dcebd5\"/><line x1=\"352\" y1=\"215\" x2=\"678\" y2=\"215\" stroke=\"#2e7d4f\" stroke-width=\"2\"/><polygon points=\"455,215 520,125 585,215\" fill=\"#d9c9a8\" stroke=\"#7a5c2e\" stroke-width=\"2\"/><line x1=\"650\" y1=\"215\" x2=\"650\" y2=\"185\" stroke=\"#14213d\" stroke-width=\"3\"/><polygon points=\"643,215 650,203 657,215\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"650\" cy=\"185\" r=\"4\" fill=\"#14213d\"/><g transform=\"translate(420,40) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><g transform=\"translate(390,185) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><line x1=\"470\" y1=\"178\" x2=\"484\" y2=\"192\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"470\" y1=\"192\" x2=\"484\" y2=\"178\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"438\" y=\"34\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">liaison OK</text><text x=\"390\" y=\"208\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">masqué</text><text x=\"650\" y=\"231\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">Station</text><text x=\"520\" y=\"175\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">crête</text><text x=\"515\" y=\"256\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Le relief</text></svg>",
-     "caption": "**Piège** : station à 20 NM derrière une crête, formule à 48 NM, pas de liaison. La VHF n’a ni onde de sol utile ni réflexion sur l’ionosphère : le relief la coupe, quelle que soit la portée calculée. Monte."
+     "svg": "<svg viewBox=\"-20 20 720 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"-20\" y=\"20\" width=\"720\" height=\"244\" fill=\"#ffffff\"/><line x1=\"340\" y1=\"10\" x2=\"340\" y2=\"250\" stroke=\"#d6dbe6\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><line x1=\"40\" y1=\"174\" x2=\"300\" y2=\"190\" stroke=\"#c0392b\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><line x1=\"40\" y1=\"174\" x2=\"200\" y2=\"72\" stroke=\"#2e7d4f\" stroke-width=\"3\"/><path d=\"M10,215 Q165,120 320,215 L320,236 L10,236 Z\" fill=\"#dcebd5\" stroke=\"#2e7d4f\" stroke-width=\"2\"/><line x1=\"40\" y1=\"198\" x2=\"40\" y2=\"174\" stroke=\"#14213d\" stroke-width=\"3\"/><polygon points=\"33,198 40,186 47,198\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"40\" cy=\"174\" r=\"4\" fill=\"#14213d\"/><g transform=\"translate(200,72) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><g transform=\"translate(300,190) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><line x1=\"112\" y1=\"172\" x2=\"126\" y2=\"186\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"112\" y1=\"186\" x2=\"126\" y2=\"172\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"214\" y=\"68\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">liaison OK</text><text x=\"318\" y=\"168\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"end\">masqué</text><text x=\"24\" y=\"228\" font-size=\"13\" fill=\"#14213d\">Station</text><text x=\"165\" y=\"256\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">La courbure de la Terre</text><line x1=\"390\" y1=\"185\" x2=\"650\" y2=\"185\" stroke=\"#c0392b\" stroke-width=\"2.5\" stroke-dasharray=\"7 5\"/><line x1=\"420\" y1=\"40\" x2=\"650\" y2=\"185\" stroke=\"#2e7d4f\" stroke-width=\"3\"/><rect x=\"352\" y=\"215\" width=\"326\" height=\"21\" fill=\"#dcebd5\"/><line x1=\"352\" y1=\"215\" x2=\"678\" y2=\"215\" stroke=\"#2e7d4f\" stroke-width=\"2\"/><polygon points=\"455,215 520,125 585,215\" fill=\"#d9c9a8\" stroke=\"#7a5c2e\" stroke-width=\"2\"/><line x1=\"650\" y1=\"215\" x2=\"650\" y2=\"185\" stroke=\"#14213d\" stroke-width=\"3\"/><polygon points=\"643,215 650,203 657,215\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"650\" cy=\"185\" r=\"4\" fill=\"#14213d\"/><g transform=\"translate(420,40) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><g transform=\"translate(390,185) scale(1.3)\" fill=\"#14213d\"><path d=\"M-16,-2 L9,-2 Q16,0 9,3 L-16,3 Z\"/><path d=\"M-5,0 L3,0 L-3,7 L-8,7 Z\"/><path d=\"M-16,-2 L-13,-10 L-10,-10 L-10,-2 Z\"/></g><line x1=\"470\" y1=\"178\" x2=\"484\" y2=\"192\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"470\" y1=\"192\" x2=\"484\" y2=\"178\" stroke=\"#c0392b\" stroke-width=\"3\"/><text x=\"438\" y=\"34\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">liaison OK</text><text x=\"390\" y=\"208\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">masqué</text><text x=\"650\" y=\"231\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">Station</text><text x=\"520\" y=\"175\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">crête</text><text x=\"515\" y=\"256\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Le relief</text></svg>",
+     "caption": "**Piège** : station à 20 NM derrière une crête, formule à 48 NM : pas de liaison. La VHF n’a ni onde de sol utile ni réflexion ionosphérique : monte."
     },
     {
      "type": "formula",
@@ -849,66 +807,72 @@
      "example": "À 3 600 ft : 1,23 × 60 ≈ **74 NM**. À 6 400 ft, antenne à 400 ft : 1,23 × (80 + 20) = **123 NM** (98 NM si tu oublies l’antenne). À l’envers, pour joindre une station à 49 NM : h ≈ (49 ÷ 1,23)² ≈ 40² = **1 600 ft**."
     },
     {
-     "type": "formula",
-     "label": "Longueur d’onde",
-     "formula": "λ (m) = 300 ÷ f (MHz)",
-     "example": "À 125 MHz : 300 ÷ 125 = **2,4 m** ; à 120 MHz : **2,5 m**. La VHF (30 à 300 MHz) utilise des ondes **métriques** (1 à 10 m)."
-    },
-    {
      "type": "key",
      "title": "Langues et mention linguistique (FCL.055)",
-     "text": "SERA : **anglais** ou **langue de la station au sol** ; l’AIP (publication d’information aéronautique) liste les langues de chaque station. En France : français ou anglais, mais l’anglais n’est pas partout.\nTa licence doit porter une **mention linguistique** dans la langue utilisée (anglais pour parler anglais). Échelle OACI de 1 à 6 : **niveau 4 minimum** ; réévaluation tous les **4 ans** (niveau 4), **6 ans** (niveau 5), jamais au niveau 6."
+     "text": "SERA : **anglais** ou **langue de la station au sol** ; l’AIP (publication d’information aéronautique) liste les langues de chaque station. En France : français ou anglais, mais l’anglais n’est pas partout.\nTa licence porte une **mention linguistique** dans la langue utilisée. Échelle OACI de 1 à 6 : **niveau 4 minimum** ; réévaluation tous les **4 ans** (niveau 4) ou **6 ans** (niveau 5), jamais au niveau 6."
     }
    ]
   }
  ],
  "key_numbers": [
   {
-   "value": "8 q · 12 min",
-   "label": "75 % requis : 6 bonnes réponses"
+   "value": "8 q · 12 min",
+   "label": "75 % requis : 6 bonnes réponses"
   },
   {
    "value": "1 à 5",
-   "label": "échelle de lisibilité"
+   "label": "échelle de lisibilité (5 = parfait)"
   },
   {
-   "value": "UTC +1 / +2",
+   "value": "2 derniers",
+   "label": "caractères de l’abrégé (F-LM)"
+  },
+  {
+   "value": "UTC + 1 / + 2",
    "label": "heure légale hiver / été (métropole)"
   },
   {
    "value": "6 chiffres",
-   "label": "fréquence, sauf 2 zéros finaux"
+   "label": "d’une fréquence, sauf 2 zéros finaux"
   },
   {
-   "value": "1 000 hPa",
-   "label": "seul QNH dit « one thousand »"
+   "value": "1 000 hPa",
+   "label": "seul QNH dit « one thousand »"
   },
   {
    "value": "FL 100",
-   "label": "« flight level one hundred »"
+   "label": "« flight level one hundred »"
   },
   {
-   "value": "× 3",
-   "label": "MAYDAY ou PAN PAN"
+   "value": "× 3",
+   "label": "MAYDAY, PAN PAN, MAYDAY RELAY"
   },
   {
-   "value": "× 2",
-   "label": "chaque message à l’aveugle"
+   "value": "× 2",
+   "label": "chaque message émis à l’aveugle"
   },
   {
-   "value": "121,5 MHz",
+   "value": "6",
+   "label": "catégories de messages"
+  },
+  {
+   "value": "121,5 MHz",
    "label": "urgence internationale"
   },
   {
-   "value": "123,1 MHz",
+   "value": "123,1 MHz",
    "label": "auxiliaire recherche et sauvetage"
   },
   {
-   "value": "123,45 MHz",
+   "value": "123,45 MHz",
    "label": "communications air-air"
   },
   {
-   "value": "406 MHz",
+   "value": "123,5 MHz",
+   "label": "auto-information par défaut"
+  },
+  {
+   "value": "406 MHz",
    "label": "balises de détresse (satellite)"
   },
   {
@@ -929,35 +893,43 @@
   },
   {
    "value": "118–136,975",
-   "label": "MHz : radiotéléphonie VHF"
+   "label": "MHz : radiotéléphonie VHF"
   },
   {
    "value": "108–117,975",
-   "label": "MHz : VOR et ILS"
+   "label": "MHz : VOR et ILS"
   },
   {
-   "value": "3–30 MHz",
+   "value": "30–300 MHz",
+   "label": "bande VHF (ondes de 1 à 10 m)"
+  },
+  {
+   "value": "3–30 MHz",
    "label": "HF, liaisons lointaines"
   },
   {
-   "value": "8,33 kHz",
-   "label": "3 canaux dans 25 kHz"
+   "value": "8,33 kHz",
+   "label": "3 canaux dans 25 kHz"
   },
   {
    "value": "1,23 × √h",
    "label": "portée VHF en NM, h en ft"
   },
   {
+   "value": "300 ÷ f",
+   "label": "longueur d’onde en m, f en MHz"
+  },
+  {
    "value": "niveau 4",
    "label": "minimum FCL.055"
   },
   {
-   "value": "4 / 6 ans",
-   "label": "validité niveau 4 / niveau 5"
+   "value": "4 / 6 ans",
+   "label": "validité niveau 4 / 5 (6 : à vie)"
   },
   {
-   "value": "2 éclats",
-   "label": "accusé de réception de nuit"
+   "value": "2 fois",
+   "label": "phares clignotés : « reçu », de nuit"
   }
  ],
  "glossary": [
@@ -967,11 +939,15 @@
   },
   {
    "term": "SERA",
-   "def": "Règles de l’air européennes."
+   "def": "Règles de l’air européennes (UE 923/2012)."
   },
   {
    "term": "Alternat",
-   "def": "Bouton d’émission : appuyé, tu parles."
+   "def": "Bouton d’émission : appuyé, tu parles."
+  },
+  {
+   "term": "Indicatif abrégé",
+   "def": "F-LM pour F-GJLM, si la station l’a employé."
   },
   {
    "term": "Collationnement",
@@ -982,8 +958,12 @@
    "def": "Autorisation délivrée par le contrôle."
   },
   {
-   "term": "Indicatif abrégé",
-   "def": "F-LM pour F-GJLM, après la station."
+   "term": "Clairance conditionnelle",
+   "def": "Valable une fois la condition remplie."
+  },
+  {
+   "term": "Cleared / Approved",
+   "def": "Autorisé / permission accordée."
   },
   {
    "term": "Roger / Wilco",
@@ -994,24 +974,60 @@
    "def": "Attendez, je vous rappelle."
   },
   {
+   "term": "Unable",
+   "def": "Impossible de me conformer (raison à donner)."
+  },
+  {
+   "term": "Contact / Monitor",
+   "def": "Appelez / écoutez sans appeler."
+  },
+  {
    "term": "UTC",
-   "def": "Temps universel, l’heure de l’aviation."
+   "def": "Temps universel coordonné, l’heure de l’aviation."
+  },
+  {
+   "term": "Estimée",
+   "def": "Heure prévue au prochain point (minutes UTC)."
+  },
+  {
+   "term": "QNH",
+   "def": "Calage qui fait lire l’altitude."
+  },
+  {
+   "term": "CAVOK",
+   "def": "Plafond et visibilité OK."
+  },
+  {
+   "term": "NOTAM",
+   "def": "Avis aux navigants."
   },
   {
    "term": "ATIS",
    "def": "Message d’aérodrome enregistré, avec une lettre."
   },
   {
-   "term": "Point d’arrêt",
-   "def": "Limite à ne pas franchir avant la piste."
-  },
-  {
    "term": "VAC",
    "def": "Carte d’approche et d’atterrissage à vue."
   },
   {
+   "term": "Point d’arrêt",
+   "def": "Limite à ne pas franchir avant la piste."
+  },
+  {
    "term": "CTR",
    "def": "Zone de contrôle autour d’un aérodrome."
+  },
+  {
+   "term": "RMZ",
+   "def": "Zone à radio obligatoire."
+  },
+  {
+   "term": "ATS",
+   "def": "Services de la circulation aérienne."
+  },
+  {
+   "term": "CRNA",
+   "def": "Centre en route (contrôle régional)."
   },
   {
    "term": "SIV",
@@ -1023,15 +1039,7 @@
   },
   {
    "term": "Auto-information",
-   "def": "Annonces entre pilotes, sans ATS."
-  },
-  {
-   "term": "ATS",
-   "def": "Services de la circulation aérienne."
-  },
-  {
-   "term": "CRNA",
-   "def": "Centre en route (contrôle régional)."
+   "def": "Annonces entre pilotes, sans station."
   },
   {
    "term": "Squawk",
@@ -1039,7 +1047,7 @@
   },
   {
    "term": "MAYDAY",
-   "def": "Détresse : aide immédiate nécessaire."
+   "def": "Détresse : aide immédiate nécessaire."
   },
   {
    "term": "PAN PAN",
@@ -1059,7 +1067,7 @@
   },
   {
    "term": "ELT",
-   "def": "Balise de détresse (406 et 121,5 MHz)."
+   "def": "Balise de détresse (406 et 121,5 MHz)."
   },
   {
    "term": "VMC",
@@ -1067,11 +1075,11 @@
   },
   {
    "term": "VHF",
-   "def": "Bande 30-300 MHz ; radio de 118 à 137 MHz."
+   "def": "Bande 30-300 MHz ; radio de 118 à 137 MHz."
   },
   {
    "term": "HF",
-   "def": "Bande 3-30 MHz, portée par l’ionosphère."
+   "def": "Bande 3-30 MHz, portée par l’ionosphère."
   },
   {
    "term": "Portée optique",
@@ -1088,52 +1096,52 @@
  ],
  "self_test": [
   {
-   "q": "Dis en anglais 118,025 MHz, puis le niveau de vol 100.",
-   "a": "One one eight decimal zero two five ; flight level one hundred."
+   "q": "Dis en anglais 118,025 MHz, puis le niveau de vol 100.",
+   "a": "One one eight decimal zero two five ; flight level one hundred."
   },
   {
-   "q": "En juillet, 15 h 40 heure légale : quelle heure UTC ?",
-   "a": "13 h 40 UTC (UTC + 2 en été)."
+   "q": "En juillet, 15 h 40 heure légale : quelle heure UTC ?",
+   "a": "13 h 40 UTC (UTC + 2 en été)."
   },
   {
-   "q": "Indicatif abrégé de F-GJLM, et à partir de quand ?",
-   "a": "F-LM, après que la station au sol l’a employé."
+   "q": "Indicatif abrégé de F-GJLM : lequel, et quand ?",
+   "a": "F-LM, après que la station au sol l’a employé ; sur une nouvelle fréquence, indicatif complet."
   },
   {
-   "q": "« F-LM, affichez 4521, QNH 1018 » : ta réponse ?",
-   "a": "« 4521, QNH 1018, F-LM »."
+   "q": "« F-LM, affichez 4521, QNH 1018 » : ta réponse ?",
+   "a": "« 4521, QNH 1018, F-LM »."
   },
   {
-   "q": "Au point d’arrêt, prêt à partir : que dis-tu en anglais ?",
-   "a": "« Ready for departure », jamais « take-off »."
+   "q": "Au point d’arrêt, prêt à partir : que dis-tu en anglais ?",
+   "a": "« Ready for departure », jamais « take-off »."
   },
   {
-   "q": "Tu demandes un transit, on te répond « standby ». Que fais-tu ?",
-   "a": "Tu restes hors de la CTR jusqu’au rappel."
+   "q": "L’AFIS dit « piste 24, vent 230 degrés 10 nœuds ». Autorisation ?",
+   "a": "Non, une information : tu décides et annonces tes intentions."
   },
   {
-   "q": "L’AFIS dit « piste 24, vent 230 degrés 10 nœuds ». Autorisation ?",
-   "a": "Non, une information : tu décides et annonces tes intentions."
+   "q": "Terrain non contrôlé sans fréquence publiée : quelle fréquence, et par quoi commence ton message ?",
+   "a": "123,5 MHz ; par le nom du terrain."
   },
   {
-   "q": "Après MAYDAY × 3, dans quel ordre parles-tu ?",
+   "q": "Après MAYDAY × 3, dans quel ordre parles-tu ?",
    "a": "Station, indicatif, nature, intentions, position-niveau-cap."
   },
   {
-   "q": "Moteur qui vibre, palier tenu : MAYDAY ou PAN PAN ?",
-   "a": "PAN PAN (urgence)."
+   "q": "Moteur qui vibre, palier tenu : quel message, et sur quelle fréquence d’abord ?",
+   "a": "PAN PAN (urgence), sur la fréquence en usage ; 121,5 MHz si pas de réponse."
   },
   {
-   "q": "Panne radio en VMC : quelles 4 actions ?",
+   "q": "Panne radio en VMC : quelles 4 actions ?",
    "a": "7600, rester en VMC, aérodrome approprié le plus proche, signaler l’arrivée."
   },
   {
-   "q": "Éclats verts de la tour, en vent arrière ?",
+   "q": "Éclats verts de la tour, en vent arrière ?",
    "a": "Revenez pour atterrir (le vert fixe autorisera l’atterrissage)."
   },
   {
-   "q": "Portée VHF théorique à 3 600 ft en terrain plat ?",
-   "a": "≈ 74 NM (1,23 × 60)."
+   "q": "Portée VHF théorique à 3 600 ft en terrain plat ?",
+   "a": "≈ 74 NM (1,23 × 60)."
   }
  ]
 }

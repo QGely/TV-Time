@@ -5,53 +5,48 @@
   "questions": 12,
   "minutes": 18
  },
- "pitch": "Ce que tu fais quand tout va bien (check-lists, circuit, carburant) et surtout quand ça va mal : panne moteur, feu, météo dangereuse, piste glissante. Peu de calculs, beaucoup de réflexes : l’ordre des actions compte autant que les actions.",
+ "pitch": "Ce que tu fais quand tout va bien (préparation, carburant, circuit) et surtout quand ça va mal : panne moteur, feu, météo dangereuse, piste glissante. Peu de calculs, beaucoup de réflexes : l’ordre des actions compte autant que les actions.",
  "essentials": [
-  "**Piloter, naviguer, communiquer** : en urgence, tiens d’abord l’avion et sa vitesse. Actions réflexes de mémoire, puis check-list du manuel de vol.",
-  "Part-NCO : le **commandant de bord** répond de la sécurité, de la préparation du vol (météo, carburant, plan B) et du **briefing des passagers**.",
-  "Réserve finale (avion, VFR) : **30 min de jour**, **45 min de nuit**, en vitesse d’attente à 1 500 ft au-dessus de la destination ; **10 min** en vol local de jour.",
-  "Panne au décollage : **rends la main** et pose-toi à peu près **droit devant**. Jamais de demi-tour à basse hauteur.",
-  "Atterrissage forcé : vitesse de plané, champ **face au vent**, long, plat, ferme, **sans ligne électrique**. Distance de plané = hauteur × finesse.",
-  "Feu moteur : **essence coupée, chauffage fermé**, jamais de redémarrage. Feu électrique : **contact général coupé**. Feu d’essence = **classe B** : jamais d’eau.",
-  "Sillage : pire derrière un avion **lourd, lent, lisse**. Reste **au-dessus** de sa trajectoire : décolle avant sa rotation, pose-toi après son toucher.",
-  "Microrafale : vent de face, descendance, puis vent arrière. Réponse : **pleine puissance, remise de gaz**. Contourne les orages très largement.",
-  "Givrage carburateur possible de **−10 à +30 °C** par air humide, surtout moteur réduit : réchauffage **à fond**, **avant** de réduire.",
+  "**Piloter, naviguer, communiquer** : tiens d’abord l’avion et sa vitesse. Réflexes de mémoire, puis check-list.",
+  "Le **commandant de bord** répond de la sécurité, de la préparation du vol et du **briefing des passagers**.",
+  "Réserve finale (avion, VFR : vol à vue) : **30 min de jour**, **45 min de nuit** ; **10 min** en vol local de jour.",
+  "Panne au décollage : **rends la main**, pose-toi à peu près **droit devant**. Pas de demi-tour à basse hauteur.",
+  "Atterrissage forcé : champ **face au vent**, long, plat, ferme, **sans ligne électrique**.",
+  "Feu moteur : **essence coupée, chauffage fermé**, pas de redémarrage. Électrique : **contact général coupé**.",
+  "Sillage (avion **lourd, lent, lisse**) : décolle **avant** sa rotation, pose-toi **après** son toucher.",
+  "Microrafale : vent de face, descendance, vent arrière. Réponse : **pleine puissance, remise de gaz**.",
+  "Givrage carburateur par air humide, de **−10 à +30 °C**, moteur réduit : réchauffage **à fond**, **avant** de réduire.",
   "Aquaplanage dynamique au-delà de **V ≈ 9 √P** (V en kt, P en psi) : pneus à 36 psi → 54 kt.",
-  "Balise ELT : **406 MHz** pour l’alerte satellite, **121,5 MHz** pour le radioralliement. Gilet (monomoteur) au-delà de la **distance de plané** de la terre, gonflé **une fois sorti**.",
-  "Marchandises dangereuses : le commandant de bord empêche leur emport involontaire. Événement à notifier dans les **72 h** ; accident et incident grave au BEA sans délai."
+  "Balise (ELT) : **406 MHz** pour l’alerte satellite, **121,5 MHz** pour le radioralliement. Gilet gonflé **une fois sorti**.",
+  "Accident, incident grave : **sans délai** au BEA (Bureau d’enquêtes et d’analyses). Autre événement : **72 h**."
  ],
  "sections": [
   {
    "title": "Le cadre Part-NCO : commandant de bord, préparation, passagers",
-   "summary": "Ton vol d’aéroclub relève de la Part-NCO : le commandant de bord y porte toutes les responsabilités, de la préparation au briefing des passagers.",
+   "summary": "La Part-NCO (annexe VII du règlement (UE) n° 965/2012) régit les vols non commerciaux sur avion non complexe : ton vol d’aéroclub.",
    "blocks": [
     {
-     "type": "text",
-     "text": "La **Part-NCO** (annexe VII du règlement (UE) n° 965/2012) régit les vols **non commerciaux** sur avion **non complexe**, comme ton vol en aéroclub."
-    },
-    {
      "type": "bullets",
-     "title": "Le commandant de bord, ou CdB (NCO.GEN.105)",
      "items": [
       "Il répond de la sécurité de l’avion et de **tous** ses occupants. Il décide d’**entreprendre**, de **poursuivre**, d’**interrompre** ou de **dérouter** le vol.",
       "Avant le vol : avion **navigable**, équipements en état, **masse et centrage** dans les limites, bagages **arrimés**.",
-      "**Check-lists** du **manuel de vol** (AFM ou POH) : *lire-faire* au sol, *faire-vérifier* en vol ; en urgence, **actions réflexes** de mémoire d’abord.",
+      "**Check-lists** du **manuel de vol** (AFM ou POH) : *lire-faire* au sol, *faire-vérifier* en vol.",
       "Inapte (fatigue, maladie, médicaments), il ne vole pas. Alcool : **zéro**. En **urgence**, il peut s’écarter des règles."
-     ]
+     ],
+     "title": "Le commandant de bord, ou CdB (NCO.GEN.105)"
     },
     {
      "type": "steps",
-     "title": "Préparer le vol (règles de l’air SERA et Part-NCO)",
      "items": [
-      "**Météo** sur le trajet et à destination (au moins les minimums VFR, vol à vue), **NOTAM** (avis aux navigants), cartes à jour.",
-      "**Carburant** avec réserve finale (section 7.2), **performances**, **masse et centrage**.",
+      "**Météo** sur le trajet et à destination, compatible avec le vol à vue ; **NOTAM** (avis aux navigants) ; cartes à jour.",
+      "**Carburant** et réserve finale (section 7.2), **performances**, **masse et centrage**.",
       "**Plan B** : un déroutement prévu si la météo empêche de finir le vol.",
       "**Briefing des passagers**, avant le vol (ou pendant si nécessaire) : ceintures, portes, position de sécurité, extincteur, gilets, **ne pas toucher aux commandes**."
-     ]
+     ],
+     "title": "Préparer le vol (règles de l’air SERA et Part-NCO)"
     },
     {
      "type": "table",
-     "caption": "D’autres règles Part-NCO à connaître",
      "columns": [
       "Situation",
       "Règle"
@@ -59,7 +54,7 @@
      "rows": [
       [
        "Avitaillement en **AVGAS** (essence avion)",
-       "**interdit** pendant l’embarquement, passagers à bord ou pendant le débarquement"
+       "**interdit** si des passagers embarquent, sont à bord ou débarquent"
       ],
       [
        "Tabac",
@@ -71,13 +66,14 @@
       ],
       [
        "Passagers ou fret à bord",
-       "**aucune panne simulée**, aucun vol simulé en IMC (conditions de vol aux instruments)"
+       "**ni panne ni IMC simulés** (IMC : conditions de vol aux instruments)"
       ],
       [
        "Givre ou neige sur l’avion ; conditions givrantes",
-       "pas de décollage avant nettoyage ; vol en conditions givrantes seulement si l’avion est **certifié et équipé**"
+       "pas de décollage avant nettoyage ; givrage en vol seulement si l’avion est **certifié et équipé**"
       ]
-     ]
+     ],
+     "caption": "D’autres règles Part-NCO à connaître"
     },
     {
      "type": "trap",
@@ -87,11 +83,10 @@
   },
   {
    "title": "Carburant : réserve finale et gestion en vol",
-   "summary": "Tu pars avec de quoi rejoindre ta destination et y arriver avec une réserve finale intacte : 30 min de jour, 45 min de nuit.",
+   "summary": "Tu pars avec de quoi rejoindre ta destination et y arriver avec une réserve finale intacte.",
    "blocks": [
     {
      "type": "table",
-     "caption": "Réserve finale (avion, VFR) : AMC1 NCO.OP.125(b), règlement (UE) 2021/1296, depuis le 30 octobre 2022",
      "columns": [
       "Vol",
       "Durée",
@@ -114,37 +109,39 @@
        "même aérodrome au départ et à l’arrivée, toujours en vue ; puissance maximale de croisière continue"
       ]
      ],
+     "caption": "Réserve finale (avion, VFR) : AMC1 NCO.OP.125(b), règlement (UE) 2021/1296, depuis le 30 octobre 2022",
      "note": "AMC : moyen acceptable de conformité. La réserve finale ne s’entame pas en exploitation normale : c’est ta marge pour l’imprévu."
     },
     {
      "type": "formula",
      "label": "Carburant minimal à emporter (VFR)",
      "formula": "Carburant = consommation × (temps de vol + réserve finale)\n+ roulage + carburant inutilisable",
-     "example": "Jour, 1 h 20 à 30 L/h : 1 h 20 + 0 h 30 = 110 min × 0,5 L/min = **55 L**, plus roulage et inutilisable (de nuit : **62,5 L**). Compter la réserve à la consommation de croisière va dans le sens de la sécurité."
+     "example": "Jour, 1 h 20 à 30 L/h : 1 h 20 + 0 h 30 = 110 min × 0,5 L/min = **55 L**, plus roulage et inutilisable. Compter la réserve à la consommation de croisière est plus prudent."
     },
     {
      "type": "bullets",
-     "title": "En vol (NCO.OP.185)",
      "items": [
-      "Vérifie **régulièrement** que tu te poseras avec la réserve finale intacte ; sinon, déroute-toi.",
+      "Avant le vol : **contrôle visuel** du carburant (ne te fie pas aux jauges) et **purge** de chaque réservoir contre l’eau.",
+      "En vol (NCO.OP.185), vérifie **régulièrement** que tu te poseras avec la réserve finale intacte ; sinon, déroute-toi.",
       "Vol contrôlé, engagé vers un terrain : « **MINIMUM FUEL** » si un changement de clairance te ferait atterrir sous la réserve finale.",
       "Atterrissage prévu **sous** la réserve finale : détresse, « **MAYDAY MAYDAY MAYDAY FUEL** »."
-     ]
+     ],
+     "title": "Gestion du carburant"
     },
     {
      "type": "trap",
-     "text": "1 h 20 de jour à 30 L/h : **40 L** oublie la réserve, **62,5 L** applique celle de nuit ; la bonne réponse est **55 L**."
+     "text": "Erreurs classiques sur l’exemple : **40 L** oublie la réserve, **62,5 L** prend celle de nuit. Et « MINIMUM FUEL » n’est pas une détresse : c’est un avertissement."
     }
    ]
   },
   {
    "title": "Circuit, vent de travers, remise de gaz et bruit",
-   "summary": "Les procédures normales reviennent à chaque vol : circuit à gauche, correction du vent de travers, remise de gaz sans hésiter, respect des riverains.",
+   "summary": "À chaque vol : circuit à gauche, vent de travers corrigé, remise de gaz sans hésiter, riverains respectés.",
    "blocks": [
     {
      "type": "diagram",
-     "title": "Le tour de piste main gauche, piste 27",
      "svg": "<svg viewBox=\"0 0 720 300\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"300\" fill=\"#ffffff\"/>\n<defs>\n<marker id=\"u7ca\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"14\" markerHeight=\"14\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#d35400\"/></marker>\n<marker id=\"u7ck\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"12\" markerHeight=\"12\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#14213d\"/></marker>\n<marker id=\"u7cw\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2b7a9b\"/></marker>\n</defs>\n<text x=\"140\" y=\"31\" font-size=\"14\" font-weight=\"700\" fill=\"#2b7a9b\">vent du 270°</text>\n<line x1=\"30\" y1=\"26\" x2=\"128\" y2=\"26\" stroke=\"#2b7a9b\" stroke-width=\"3\" marker-end=\"url(#u7cw)\"/>\n<line x1=\"690\" y1=\"72\" x2=\"690\" y2=\"34\" stroke=\"#14213d\" stroke-width=\"2\" marker-end=\"url(#u7ck)\"/>\n<text x=\"690\" y=\"24\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">N</text>\n<rect x=\"200\" y=\"72\" width=\"330\" height=\"20\" rx=\"2\" fill=\"#5b6478\"/>\n<line x1=\"250\" y1=\"82\" x2=\"480\" y2=\"82\" stroke=\"#ffffff\" stroke-width=\"1.6\" stroke-dasharray=\"10 8\"/>\n<text x=\"224\" y=\"87\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">09</text>\n<text x=\"506\" y=\"87\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\" text-anchor=\"middle\">27</text>\n<g fill=\"none\" stroke=\"#d35400\" stroke-width=\"3.2\">\n<line x1=\"196\" y1=\"82\" x2=\"134\" y2=\"82\" marker-end=\"url(#u7ca)\"/>\n<path d=\"M134,82 Q110,82 110,106\"/>\n<line x1=\"110\" y1=\"106\" x2=\"110\" y2=\"220\" marker-end=\"url(#u7ca)\"/>\n<path d=\"M110,220 Q110,244 134,244\"/>\n<line x1=\"134\" y1=\"244\" x2=\"596\" y2=\"244\" marker-end=\"url(#u7ca)\"/>\n<path d=\"M596,244 Q620,244 620,220\"/>\n<line x1=\"620\" y1=\"220\" x2=\"620\" y2=\"106\" marker-end=\"url(#u7ca)\"/>\n<path d=\"M620,106 Q620,82 596,82\"/>\n<line x1=\"596\" y1=\"82\" x2=\"536\" y2=\"82\" marker-end=\"url(#u7ca)\"/>\n</g>\n<text x=\"194\" y=\"62\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">Montée initiale · 270°</text>\n<text x=\"540\" y=\"62\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">Finale · 270°</text>\n<text x=\"98\" y=\"148\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">Vent</text>\n<text x=\"98\" y=\"166\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">traversier</text>\n<text x=\"98\" y=\"184\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"end\">cap 180°</text>\n<text x=\"632\" y=\"148\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">Étape</text>\n<text x=\"632\" y=\"166\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">de base</text>\n<text x=\"632\" y=\"184\" font-size=\"14\" fill=\"#14213d\">cap 360°</text>\n<text x=\"365\" y=\"270\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Vent arrière · cap 090°</text>\n<text x=\"365\" y=\"290\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">parallèle à la piste, en sens inverse de l’atterrissage</text>\n<text x=\"365\" y=\"114\" font-size=\"13\" font-style=\"italic\" fill=\"#6b7489\" text-anchor=\"middle\">décollage et atterrissage face au vent, vers l’ouest</text>\n<text x=\"365\" y=\"150\" font-size=\"15\" font-weight=\"700\" fill=\"#d35400\" text-anchor=\"middle\">Circuit main gauche</text>\n<text x=\"365\" y=\"171\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">tous les virages à gauche (SERA),</text>\n<text x=\"365\" y=\"189\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">sauf consigne de la VAC ou de l’ATC</text>\n<text x=\"365\" y=\"212\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">hauteur du circuit : sur la carte VAC</text>\n</svg>",
+     "title": "Le tour de piste main gauche, piste 27",
      "caption": "VAC : carte d’approche et d’atterrissage à vue ; ATC : contrôle aérien. Cap en vent arrière = orientation de la piste ± 180°."
     },
     {
@@ -174,21 +171,20 @@
     },
     {
      "type": "steps",
-     "title": "Remise de gaz",
      "items": [
-      "Décide **tôt** : approche non stabilisée = remise de gaz.",
-      "**Pleine puissance** (réchauffage carburateur coupé selon le manuel).",
+      "Décide **tôt** : approche non stabilisée = remise de gaz. **Pleine puissance**, réchauffage carburateur coupé.",
       "Tiens l’**assiette de montée** : compensé pour l’approche, l’avion veut cabrer fort. Contre le lacet.",
       "Volets rentrés **par étapes**, jamais d’un coup près du sol ; puis annonce radio."
-     ]
+     ],
+     "title": "Remise de gaz"
     },
     {
      "type": "bullets",
-     "title": "Atténuation du bruit",
      "items": [
-      "Part-NCO : applique les **procédures antibruit publiées** (VAC : zones à éviter, circuits, horaires), mais la **sécurité passe avant**. Évite villages, hôpitaux, élevages.",
-      "France : la classification **CALIPSO** de la DGAC (Direction générale de l’aviation civile) range les avions légers en **5 classes** sonores, qui modulent certaines restrictions."
-     ]
+      "Applique les **procédures antibruit publiées** (VAC : zones à éviter, circuits, horaires), mais la **sécurité passe avant**. Évite de survoler bas villages, hôpitaux, élevages.",
+      "En France, la DGAC (Direction générale de l’aviation civile) classe les avions légers selon leur bruit : **CALIPSO**. Certains aérodromes modulent leurs restrictions selon cette classe."
+     ],
+     "title": "Atténuation du bruit"
     },
     {
      "type": "trap",
@@ -198,7 +194,7 @@
   },
   {
    "title": "Panne moteur, atterrissage forcé et amerrissage",
-   "summary": "Moteur en panne : **piloter** (vitesse de plané), **naviguer** (terrain), puis **communiquer** (MAYDAY, 7700), dans cet ordre.",
+   "summary": "Moteur en panne, dans l’ordre : **piloter** (plané), **naviguer** (champ), **communiquer** (MAYDAY, 7700).",
    "blocks": [
     {
      "type": "compare",
@@ -206,32 +202,32 @@
       {
        "title": "Panne au décollage",
        "points": [
-        "Au sol : réduis et freine. En montée : **rends la main** aussitôt, la vitesse chute en quelques secondes.",
-        "Pose-toi à peu près **droit devant**, en t’écartant modérément des obstacles."
+        "Au roulement : réduis, freine, reste sur la piste.",
+        "En montée : **rends la main** aussitôt, la vitesse chute en quelques secondes. Pose-toi à peu près **droit devant**, en virages faibles.",
+        "Briefe-le au point d’attente, avec ta **hauteur de sécurité** (fixée avec l’instructeur)."
        ]
       },
       {
        "title": "Panne en vol",
        "points": [
-        "Vitesse de **finesse max**, avion compensé, terrain choisi.",
-        "Puis recherche de panne : réchauffage carburateur, réservoir, pompe, mélange, magnétos."
+        "Vitesse de **finesse max**, avion compensé.",
+        "Choisis un champ à portée, **puis** cherche la cause : réchauffage carburateur, réservoir, pompe, mélange, magnétos."
        ]
       }
      ]
     },
     {
      "type": "trap",
-     "text": "Le demi-tour vers la piste n’est pas *interdit* : il est **dangereux**. En virage, le facteur de charge **augmente** la vitesse de décrochage et le taux de chute ; il faut bien plus de 180° et l’on arrive vent arrière. Risque de vrille."
+     "text": "Le demi-tour vers la piste n’est pas *interdit* : il est **dangereux**. En virage, le facteur de charge **augmente** la vitesse de décrochage et le taux de chute. Il faut bien plus de 180° et l’on arrive vent arrière. Risque de vrille."
     },
     {
      "type": "formula",
      "label": "Distance de plané (air calme)",
      "formula": "Distance = hauteur × finesse",
-     "example": "Finesse 10, panne à 900 m sol : **9 km**. En pieds : 3 000 ft × 10 = 30 000 ft ≈ **5 NM** (milles nautiques). Vent de face : moins loin ; vent arrière : plus loin."
+     "example": "Finesse 10, panne à 900 m sol : **9 km**. En pieds : 3 000 ft × 10 = 30 000 ft ≈ **5 NM** (milles nautiques de 6 076 ft). Vent de face : moins loin ; vent arrière : plus loin."
     },
     {
      "type": "table",
-     "caption": "Choisir le champ",
      "columns": [
       "Critère",
       "Ce que tu cherches"
@@ -243,7 +239,7 @@
       ],
       [
        "**Taille, pente**",
-       "assez long, à portée de plané ; plat ou légèrement **montant**"
+       "assez long, à portée de plané ; plat ou légèrement **montant** (la montée raccourcit l’arrêt)"
       ],
       [
        "**Surface**",
@@ -253,30 +249,45 @@
        "**Abords**",
        "**aucune ligne électrique** ni obstacle en approche"
       ]
-     ]
+     ],
+     "caption": "Choisir le champ"
     },
     {
      "type": "steps",
-     "title": "Atterrissage forcé : la séquence",
      "items": [
-      "Terrain choisi, puis **tiens-t’y** : ne change pas d’avis en finale. **MAYDAY**, **7700**.",
+      "Champ choisi, puis **tiens-t’y**. **MAYDAY** ; transpondeur **7700**, ou garde le code déjà donné par l’ATC.",
       "Vise le **premier tiers** du champ : mieux vaut un peu haut que court, les volets corrigent l’excès.",
       "Terrain assuré : essence, magnétos et contact général coupés (après les volets électriques), portes déverrouillées, ceintures serrées."
+     ],
+     "title": "Atterrissage forcé : la séquence"
+    },
+    {
+     "type": "compare",
+     "items": [
+      {
+       "title": "Atterrissage forcé",
+       "points": [
+        "Imposé par la panne : **un seul essai**, pas de remise de gaz.",
+        "Hors aérodrome, on parle d’**atterrissage en campagne**."
+       ]
+      },
+      {
+       "title": "Atterrissage de précaution",
+       "points": [
+        "Choisi **moteur en marche** : météo qui se ferme, nuit, carburant juste, malaise. Tu peux reconnaître le champ en passant dessus."
+       ]
+      }
      ]
     },
     {
-     "type": "text",
-     "text": "L’**atterrissage de précaution**, lui, se fait **moteur en marche** : météo qui se dégrade, nuit, carburant juste, malaise. Tu peux reconnaître le champ par un ou plusieurs passages avant de te poser."
-    },
-    {
      "type": "steps",
-     "title": "Amerrissage",
      "items": [
       "MAYDAY, 7700, balise déclenchée. Gilets **enfilés, non gonflés**, ceintures serrées.",
       "Portes **déverrouillées** (une cellule déformée peut les bloquer), train escamotable **rentré**.",
       "Toucher le plus lentement possible, **assiette cabrée** ; houle forte : **parallèlement** à la houle.",
       "Évacue sans attendre ; gonfle le gilet **une fois sorti**."
-     ]
+     ],
+     "title": "Amerrissage"
     },
     {
      "type": "trap",
@@ -286,37 +297,36 @@
   },
   {
    "title": "Feu, fumée, évacuation et pannes à bord",
-   "summary": "Un feu se combat en lui coupant ce qui le nourrit : l’essence pour un feu moteur, le courant pour un feu électrique.",
+   "summary": "Coupe ce qui nourrit le feu : l’essence, le courant électrique et, tant qu’il brûle, l’air.",
    "blocks": [
     {
      "type": "table",
-     "caption": "Les feux : actions de principe (applique toujours ton manuel de vol)",
      "columns": [
       "Situation",
       "Actions"
      ],
      "rows": [
       [
-       "Feu au **démarrage** (souvent trop d’essence injectée)",
+       "Feu au **démarrage** (souvent trop d’injections d’essence)",
        "Sur beaucoup d’avions (ex. Cessna 172) : **continue de lancer** le moteur, qui aspire les flammes. Sinon : essence et contact coupés, extincteur, évacuation."
       ],
       [
        "Feu **moteur en vol**",
-       "**Essence coupée** (robinet, mélange sur étouffoir), **chauffage fermé** (son air passe autour de l’échappement), atterrissage forcé. **Jamais** de redémarrage."
+       "**Essence coupée** (robinet, mélange sur étouffoir), **chauffage fermé** (son air passe autour de l’échappement), MAYDAY, atterrissage forcé. **Jamais** de redémarrage."
       ],
       [
-       "Feu **électrique**, fumée à odeur d’isolant brûlé",
-       "**Contact général coupé**, chauffage fermé, extincteur si besoin, aérer, se poser. **Aucun** disjoncteur réarmé."
+       "Feu **électrique** : odeur d’isolant brûlé",
+       "**Contact général coupé**, chauffage fermé, extincteur si besoin, se poser. **Aucun** disjoncteur réarmé."
       ],
       [
-       "Feu en **cabine**",
-       "Aérations fermées le temps d’éteindre, extincteur à la **base des flammes**, puis aérer et se poser."
+       "Feu en **cabine**, **fumée**",
+       "Aérations **fermées** tant que ça brûle, extincteur à la **base des flammes**. Feu éteint : **aère** pour chasser la fumée, pose-toi."
       ]
-     ]
+     ],
+     "caption": "Les feux : actions de principe (applique toujours ton manuel de vol)"
     },
     {
      "type": "table",
-     "caption": "Classes de feu et agents d’extinction",
      "columns": [
       "Classe",
       "Ce qui brûle",
@@ -331,7 +341,7 @@
       [
        "**B**",
        "liquides : **essence**, huile",
-       "poudre, CO₂, halon ; **jamais de jet d’eau**"
+       "poudre, CO₂, mousse, halon ; **jamais de jet d’eau**"
       ],
       [
        "**C**",
@@ -344,11 +354,12 @@
        "extincteurs spéciaux"
       ]
      ],
-     "note": "Feu électrique : agent **non conducteur** (CO₂, halon ou substitut). En cabine, la poudre masque la vue ; après un agent gazeux, **aère**."
+     "caption": "Classes de feu et agents d’extinction",
+     "note": "Feu électrique : agent **non conducteur** (CO₂, halon). La poudre masque la vue. Prévol : extincteur plombé, aiguille au vert."
     },
     {
      "type": "memo",
-     "text": "**A** comme « arbre », **B** comme « bidon » d’essence, **C** comme « camping-gaz », **D** comme « dur » (métal), **F** comme « friteuse »."
+     "text": "**A** « arbre », **B** « bidon » d’essence, **C** « camping-gaz », **D** « dur » (métal), **F** « friteuse »."
     },
     {
      "type": "compare",
@@ -378,8 +389,8 @@
     },
     {
      "type": "key",
-     "title": "Évacuation au sol",
-     "text": "Avion arrêté : **essence et contact général coupés**, sortie comme prévu au briefing (extincteur et survie si possible), puis éloigne-toi en **remontant le vent** : sous le vent, tu prendrais flammes et fumées."
+     "text": "Avion arrêté : **essence et contact général coupés**, sortie comme au briefing, avec extincteur et survie si possible. Éloigne-toi en **remontant le vent** : sous le vent, flammes et fumées t’atteignent.",
+     "title": "Évacuation au sol"
     },
     {
      "type": "trap",
@@ -393,18 +404,17 @@
    "blocks": [
     {
      "type": "diagram",
-     "title": "Éviter la turbulence de sillage : reste au-dessus",
      "svg": "<svg viewBox=\"0 0 720 352\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"352\" fill=\"#ffffff\"/>\n<text x=\"20\" y=\"26\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">Au décollage, derrière un avion lourd</text>\n<polygon points=\"330,150 690,50 690,104 520,150\" fill=\"#fbe0d5\"/>\n<line x1=\"20\" y1=\"150\" x2=\"700\" y2=\"150\" stroke=\"#14213d\" stroke-width=\"2.2\"/>\n<line x1=\"60\" y1=\"150\" x2=\"330\" y2=\"150\" stroke=\"#6b7489\" stroke-width=\"5\" stroke-dasharray=\"10 7\"/>\n<line x1=\"330\" y1=\"150\" x2=\"690\" y2=\"50\" stroke=\"#6b7489\" stroke-width=\"5\"/>\n<circle cx=\"420\" cy=\"137\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M416,137 A4,4 0 1,1 420,141\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><circle cx=\"500\" cy=\"115\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M496,115 A4,4 0 1,1 500,119\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><circle cx=\"580\" cy=\"93\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M576,93 A4,4 0 1,1 580,97\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><circle cx=\"655\" cy=\"72\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M651,72 A4,4 0 1,1 655,76\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/>\n<line x1=\"240\" y1=\"150\" x2=\"586\" y2=\"35\" stroke=\"#2e7d4f\" stroke-width=\"3.6\"/>\n<circle cx=\"586\" cy=\"35\" r=\"5\" fill=\"#2e7d4f\"/>\n<line x1=\"330\" y1=\"143\" x2=\"330\" y2=\"158\" stroke=\"#14213d\" stroke-width=\"2.4\"/>\n<line x1=\"240\" y1=\"143\" x2=\"240\" y2=\"158\" stroke=\"#2e7d4f\" stroke-width=\"2.4\"/>\n<text x=\"232\" y=\"174\" font-size=\"13\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"end\">ta rotation, avant R</text>\n<text x=\"338\" y=\"174\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\">R : rotation du gros porteur</text>\n<text x=\"700\" y=\"174\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"end\">tourbillons</text>\n<text x=\"470\" y=\"58\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"end\">tu montes au-dessus de sa trajectoire</text>\n<text x=\"640\" y=\"126\" font-size=\"13\" fill=\"#6b7489\" text-anchor=\"middle\">gros porteur</text>\n<line x1=\"20\" y1=\"178\" x2=\"700\" y2=\"178\" stroke=\"#d6dbe6\" stroke-width=\"1.2\"/>\n<text x=\"20\" y=\"204\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">À l’atterrissage, derrière un avion lourd</text>\n<polygon points=\"30,232 420,316 330,316 30,266\" fill=\"#fbe0d5\"/>\n<line x1=\"20\" y1=\"316\" x2=\"700\" y2=\"316\" stroke=\"#14213d\" stroke-width=\"2.2\"/>\n<line x1=\"30\" y1=\"232\" x2=\"420\" y2=\"316\" stroke=\"#6b7489\" stroke-width=\"5\"/>\n<line x1=\"420\" y1=\"316\" x2=\"560\" y2=\"316\" stroke=\"#6b7489\" stroke-width=\"5\" stroke-dasharray=\"10 7\"/>\n<circle cx=\"95\" cy=\"258\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M91,258 A4,4 0 1,1 95,262\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><circle cx=\"175\" cy=\"276\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M171,276 A4,4 0 1,1 175,280\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><circle cx=\"255\" cy=\"293\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M251,293 A4,4 0 1,1 255,297\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><circle cx=\"322\" cy=\"306\" r=\"8\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><path d=\"M318,306 A4,4 0 1,1 322,310\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/>\n<line x1=\"60\" y1=\"218\" x2=\"540\" y2=\"316\" stroke=\"#2e7d4f\" stroke-width=\"3.6\"/>\n<circle cx=\"60\" cy=\"218\" r=\"5\" fill=\"#2e7d4f\"/>\n<line x1=\"420\" y1=\"309\" x2=\"420\" y2=\"324\" stroke=\"#14213d\" stroke-width=\"2.4\"/>\n<line x1=\"540\" y1=\"309\" x2=\"540\" y2=\"324\" stroke=\"#2e7d4f\" stroke-width=\"2.4\"/>\n<text x=\"428\" y=\"340\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">T : toucher du gros porteur</text>\n<text x=\"532\" y=\"340\" font-size=\"13\" font-weight=\"700\" fill=\"#2e7d4f\">ton toucher, après T</text>\n<text x=\"24\" y=\"340\" font-size=\"13\" fill=\"#c0392b\">tourbillons</text>\n<text x=\"300\" y=\"234\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">tu restes au-dessus de son plan</text>\n</svg>",
-     "caption": "Les **tourbillons marginaux** sont les plus forts derrière un avion **lourd, lent et lisse** (*heavy, clean, slow*). Ils naissent à la rotation, descendent de plusieurs centaines de ft/min et cessent au toucher : décolle avant R, pose-toi après T."
+     "title": "Éviter la turbulence de sillage : reste au-dessus",
+     "caption": "Les **tourbillons marginaux** (bouts d’aile) sont les plus forts derrière un avion **lourd, lent et lisse** (*heavy, clean, slow*). Ils naissent à la rotation, descendent de plusieurs centaines de ft/min et cessent au toucher."
     },
     {
      "type": "key",
-     "title": "Catégories de sillage OACI (masse maximale au décollage)",
-     "text": "**L** (léger) : jusqu’à 7 000 kg, ton avion · **M** (moyen) : plus de 7 000 kg et moins de 136 000 kg, un A320 (78 t) · **H** (lourd) : 136 000 kg et plus · **J** (super) : l’A380.\nOACI : Organisation de l’aviation civile internationale."
+     "text": "**L** (léger) : jusqu’à 7 000 kg, comme ton avion.\n**M** (moyen) : plus de 7 000 kg et moins de 136 000 kg, comme un A320 (environ 78 t).\n**H** (lourd) : 136 000 kg et plus. **J** (super) : l’A380.\nOACI : Organisation de l’aviation civile internationale.",
+     "title": "Catégories de sillage OACI (masse maximale au décollage)"
     },
     {
      "type": "table",
-     "caption": "Espacements minimaux OACI, appliqués par le contrôle",
      "columns": [
       "Situation",
       "Minimum"
@@ -422,40 +432,41 @@
        "Radar : H, M, L derrière un H · L derrière un M",
        "**4, 5, 6 NM** · **5 NM**"
       ]
-     ]
+     ],
+     "caption": "Espacements minimaux OACI, appliqués par le contrôle"
     },
     {
      "type": "bullets",
-     "title": "Précautions",
      "items": [
       "Atterrissage derrière un avion qui **décolle** : pose-toi **avant son point de rotation**.",
-      "Près du sol, les tourbillons s’écartent à **2 ou 3 kt** ; un vent traversier de **1 à 5 kt** peut en garder un sur la piste, un vent arrière les ramener vers le toucher."
-     ]
+      "Près du sol, les tourbillons s’écartent à **2 ou 3 kt**. Un vent traversier de **1 à 5 kt** peut en garder un sur la piste ; un vent arrière les ramène vers le toucher."
+     ],
+     "title": "Précautions"
     },
     {
      "type": "key",
-     "title": "Cisaillement de vent",
-     "text": "Variation brutale du vent sur peu de distance : orage, front, inversion nocturne, relief, obstacles. Par **inertie**, l’avion garde d’abord sa vitesse sol.\n**Perte de vent de face** : vitesse indiquée en baisse, avion **sous le plan**. **Gain** : vitesse en hausse, au-dessus."
+     "text": "Variation brutale du vent sur peu de distance : orage, front, inversion nocturne, relief. Par **inertie**, l’avion garde d’abord sa vitesse sol.\n**Perte de vent de face** : vitesse indiquée en baisse, avion **sous le plan**. **Gain** : l’inverse.",
+     "title": "Cisaillement de vent"
     },
     {
      "type": "diagram",
+     "svg": "<svg viewBox=\"0 0 720 318\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"318\" fill=\"#ffffff\"/>\n<defs>\n<marker id=\"u7mb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"14\" markerHeight=\"14\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker>\n</defs>\n<g fill=\"#cfd6e2\">\n<ellipse cx=\"300\" cy=\"52\" rx=\"92\" ry=\"32\"/>\n<ellipse cx=\"385\" cy=\"40\" rx=\"100\" ry=\"36\"/>\n<ellipse cx=\"465\" cy=\"56\" rx=\"82\" ry=\"30\"/>\n<rect x=\"230\" y=\"52\" width=\"300\" height=\"34\" rx=\"12\"/>\n</g>\n<text x=\"380\" y=\"56\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">cumulonimbus</text>\n<g stroke=\"#1d4e89\" stroke-width=\"4\" fill=\"none\">\n<line x1=\"340\" y1=\"92\" x2=\"340\" y2=\"196\" marker-end=\"url(#u7mb)\"/>\n<line x1=\"380\" y1=\"92\" x2=\"380\" y2=\"206\" marker-end=\"url(#u7mb)\"/>\n<line x1=\"420\" y1=\"92\" x2=\"420\" y2=\"196\" marker-end=\"url(#u7mb)\"/>\n<path d=\"M360,214 Q330,238 214,240\" marker-end=\"url(#u7mb)\"/>\n<path d=\"M400,214 Q430,238 546,240\" marker-end=\"url(#u7mb)\"/>\n</g>\n<line x1=\"20\" y1=\"252\" x2=\"700\" y2=\"252\" stroke=\"#14213d\" stroke-width=\"2.2\"/>\n<rect x=\"600\" y=\"248\" width=\"100\" height=\"8\" fill=\"#5b6478\"/>\n<line x1=\"30\" y1=\"100\" x2=\"610\" y2=\"248\" stroke=\"#6b7489\" stroke-width=\"2.4\" stroke-dasharray=\"9 7\"/>\n<path d=\"M30,100 C120,112 170,116 210,124 C280,138 330,168 380,196 C430,222 468,238 520,248\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3.6\"/>\n<g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">\n<circle cx=\"210\" cy=\"124\" r=\"12\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2.4\"/><text x=\"210\" y=\"129\" fill=\"#c0392b\">1</text>\n<circle cx=\"380\" cy=\"196\" r=\"12\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2.4\"/><text x=\"380\" y=\"201\" fill=\"#c0392b\">2</text>\n<circle cx=\"498\" cy=\"241\" r=\"12\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2.4\"/><text x=\"498\" y=\"246\" fill=\"#c0392b\">3</text>\n</g>\n<line x1=\"30\" y1=\"26\" x2=\"66\" y2=\"26\" stroke=\"#6b7489\" stroke-width=\"2.4\" stroke-dasharray=\"9 7\"/>\n<text x=\"74\" y=\"31\" font-size=\"13\" fill=\"#6b7489\">plan prévu</text>\n<line x1=\"30\" y1=\"48\" x2=\"66\" y2=\"48\" stroke=\"#c0392b\" stroke-width=\"3.6\"/>\n<text x=\"74\" y=\"53\" font-size=\"13\" fill=\"#c0392b\">trajectoire réelle</text>\n<text x=\"630\" y=\"240\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">piste</text>\n<text x=\"200\" y=\"278\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">1 · Vent de face</text>\n<text x=\"200\" y=\"298\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">vitesse ↑, au-dessus du plan</text>\n<text x=\"380\" y=\"278\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">2 · Descendance</text>\n<text x=\"380\" y=\"298\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">l’avion s’enfonce</text>\n<text x=\"566\" y=\"278\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">3 · Vent arrière</text>\n<text x=\"566\" y=\"298\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">vitesse ↓, sous le plan</text>\n</svg>",
      "title": "La microrafale en finale",
-     "svg": "<svg viewBox=\"0 0 720 318\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"318\" fill=\"#ffffff\"/>\n<defs>\n<marker id=\"u7mb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"14\" markerHeight=\"14\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker>\n</defs>\n<g fill=\"#cfd6e2\">\n<ellipse cx=\"300\" cy=\"52\" rx=\"92\" ry=\"32\"/>\n<ellipse cx=\"385\" cy=\"40\" rx=\"100\" ry=\"36\"/>\n<ellipse cx=\"465\" cy=\"56\" rx=\"82\" ry=\"30\"/>\n<rect x=\"230\" y=\"52\" width=\"300\" height=\"34\" rx=\"12\"/>\n</g>\n<text x=\"380\" y=\"56\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">cumulonimbus</text>\n<g stroke=\"#1d4e89\" stroke-width=\"4\" fill=\"none\">\n<line x1=\"340\" y1=\"92\" x2=\"340\" y2=\"196\" marker-end=\"url(#u7mb)\"/>\n<line x1=\"380\" y1=\"92\" x2=\"380\" y2=\"206\" marker-end=\"url(#u7mb)\"/>\n<line x1=\"420\" y1=\"92\" x2=\"420\" y2=\"196\" marker-end=\"url(#u7mb)\"/>\n<path d=\"M360,214 Q330,238 214,240\" marker-end=\"url(#u7mb)\"/>\n<path d=\"M400,214 Q430,238 546,240\" marker-end=\"url(#u7mb)\"/>\n</g>\n<line x1=\"20\" y1=\"252\" x2=\"700\" y2=\"252\" stroke=\"#14213d\" stroke-width=\"2.2\"/>\n<rect x=\"600\" y=\"248\" width=\"100\" height=\"8\" fill=\"#5b6478\"/>\n<line x1=\"30\" y1=\"100\" x2=\"610\" y2=\"248\" stroke=\"#6b7489\" stroke-width=\"2.4\" stroke-dasharray=\"9 7\"/>\n<path d=\"M30,100 C120,112 170,116 210,124 C280,138 330,168 380,196 C430,222 468,238 520,248\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3.6\"/>\n<g font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">\n<circle cx=\"210\" cy=\"124\" r=\"12\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2.4\"/><text x=\"210\" y=\"129\" fill=\"#c0392b\">1</text>\n<circle cx=\"380\" cy=\"196\" r=\"12\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2.4\"/><text x=\"380\" y=\"201\" fill=\"#c0392b\">2</text>\n<circle cx=\"498\" cy=\"241\" r=\"12\" fill=\"#ffffff\" stroke=\"#c0392b\" stroke-width=\"2.4\"/><text x=\"498\" y=\"246\" fill=\"#c0392b\">3</text>\n</g>\n<line x1=\"30\" y1=\"26\" x2=\"66\" y2=\"26\" stroke=\"#6b7489\" stroke-width=\"2.4\" stroke-dasharray=\"9 7\"/>\n<text x=\"74\" y=\"31\" font-size=\"13\" fill=\"#6b7489\">plan prévu</text>\n<line x1=\"30\" y1=\"48\" x2=\"66\" y2=\"48\" stroke=\"#c0392b\" stroke-width=\"3.6\"/>\n<text x=\"74\" y=\"53\" font-size=\"13\" fill=\"#c0392b\">trajectoire réelle</text>\n<text x=\"630\" y=\"240\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">piste</text>\n<text x=\"120\" y=\"278\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">1 · Vent de face</text>\n<text x=\"120\" y=\"298\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">vitesse ↑, au-dessus du plan</text>\n<text x=\"360\" y=\"278\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">2 · Descendance</text>\n<text x=\"360\" y=\"298\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">l’avion s’enfonce</text>\n<text x=\"600\" y=\"278\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">3 · Vent arrière</text>\n<text x=\"600\" y=\"298\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"middle\">vitesse ↓, sous le plan</text>\n</svg>",
-     "caption": "FAA (administration américaine) : descendance jusqu’à 6 000 ft/min, 4 km de diamètre au plus, rarement plus de 15 min."
+     "caption": "FAA (administration américaine) : descendance jusqu’à 6 000 ft/min. Au sol, l’écoulement s’étale sur 4 km environ au plus. Durée : rarement plus de 15 min."
     },
     {
      "type": "formula",
-     "label": "Vitesse d’approche (Vapp) par vent en rafales",
+     "label": "Vitesse d’approche (Vapp) par vent en rafales (règle pratique)",
      "formula": "Vapp = Vapp normale + ½ × (rafale − vent moyen)",
      "example": "Vent 240°/15 kt, rafales 25 kt : écart 10 kt → **+ 5 kt**. Si le manuel de vol dit autre chose, il prime."
     },
     {
      "type": "bullets",
-     "title": "Orages (cumulonimbus, Cb)",
      "items": [
       "Turbulence, grêle, foudre, givrage : contourne **très largement** (FAA : au moins 20 milles d’un orage violent).",
       "Ni **sous la base** (rafales descendantes), ni **sous l’enclume** (grêle). Ni décollage ni atterrissage à son approche : le **front de rafales** le précède."
-     ]
+     ],
+     "title": "Orages (cumulonimbus, Cb)"
     },
     {
      "type": "trap",
@@ -473,7 +484,7 @@
       {
        "title": "Givrage du carburateur",
        "points": [
-        "Détente + évaporation de l’essence : jusqu’à **30 °C** de refroidissement.",
+        "Détente + évaporation de l’essence : jusqu’à **30 °C** de refroidissement environ.",
         "Air humide, d’environ **−10 à +30 °C**, surtout **moteur réduit**.",
         "Hélice à pas fixe : régime en baisse, puis moteur irrégulier."
        ]
@@ -490,82 +501,96 @@
     },
     {
      "type": "steps",
-     "title": "Réchauffage carburateur : le mode d’emploi",
      "items": [
       "**À fond** : tout ou rien, une position intermédiaire peut aggraver le givrage.",
       "**Avant** de réduire pour une longue descente, quand le moteur chauffe encore.",
       "Régime qui baisse puis **remonte** : la glace fond. Qui baisse puis **reste stable** : pas de glace (l’air chaud, moins dense, enrichit le mélange).",
       "Évite-le au roulage sur sol poussiéreux : l’air chaud n’est pas filtré."
-     ]
+     ],
+     "title": "Réchauffage carburateur : le mode d’emploi"
     },
     {
      "type": "trap",
      "text": "Le givrage carburateur n’a pas besoin de froid : **+15 °C, air humide, moteur réduit**, c’est le cas typique. Air sec à −20 °C : risque faible."
     },
     {
-     "type": "text",
-     "text": "Une piste est **mouillée** avec 3 mm d’eau au plus, **contaminée** quand plus de **25 %** de sa surface porte eau ou neige fondante de plus de 3 mm, neige ou glace. Au décollage, le contaminant freine l’accélération : distance **plus longue**. À l’atterrissage, freinage et contrôle se dégradent."
+     "type": "compare",
+     "items": [
+      {
+       "title": "Piste mouillée",
+       "points": [
+        "Humidité visible ou eau jusqu’à **3 mm** : freinage moins bon (RWYCC 5)."
+       ]
+      },
+      {
+       "title": "Piste contaminée",
+       "points": [
+        "Plus de **25 %** sous eau ou neige fondante (plus de 3 mm), neige ou glace : décollage plus **long**, freinage dégradé."
+       ]
+      }
+     ]
     },
     {
      "type": "formula",
      "label": "Vitesse d’aquaplanage dynamique (formule approchée)",
      "formula": "V (kt) ≈ 9 × √P   (P : pression des pneus en psi)",
-     "example": "Pneus à 36 psi : √36 = 6 → V ≈ **54 kt**. À 25 psi : 9 × 5 = **45 kt**. Au-delà, sur eau stagnante, freinage et guidage deviennent presque nuls. Autres formes : **visqueux** (film d’eau sur zone lisse ou gommée, même lentement) et par **dévulcanisation** (roue bloquée)."
+     "example": "Pneus à 36 psi : √36 = 6 → V ≈ **54 kt**. À 25 psi : 9 × 5 = **45 kt**. Au-delà, sur eau stagnante, freinage et guidage deviennent presque nuls."
     },
     {
      "type": "bullets",
-     "title": "Freinage",
      "items": [
-      "Code d’état de piste **RWYCC**, de **6** (sèche) à **0** (freinage quasi nul) : 5 mouillée, 2 eau stagnante ou neige fondante, 1 glace. Il vient de l’ATIS (message automatique), du contrôle ou d’un SNOWTAM (NOTAM sur l’état des pistes).",
-      "Pose-toi à la bonne vitesse, sans toucher long ; freine **progressivement**, sans bloquer les roues : une roue bloquée ne guide plus."
-     ]
+      "Autres aquaplanages : **visqueux** (film d’eau sur zone lisse, même lentement), **gomme réversée** (roue bloquée).",
+      "Code d’état de piste **RWYCC**, donné par tiers de piste : de **6** (sèche) à **0** (freinage quasi nul). Ex. : 5 mouillée, 2 eau stagnante ou neige fondante, 1 glace. Il vient de l’ATIS (message enregistré de l’aérodrome), du contrôle ou d’un SNOWTAM (NOTAM sur l’état des pistes).",
+      "Pose-toi à la bonne vitesse, sans toucher long ; freine **progressivement**, sans bloquer les roues."
+     ],
+     "title": "Aquaplanage et freinage"
     }
    ]
   },
   {
    "title": "Montagne, eau, oiseaux et perte de références",
-   "summary": "Le relief, la mer, les oiseaux et le nuage imprévu ont un point commun : on s’en protège par la marge et l’anticipation.",
+   "summary": "Relief, mer, oiseaux, nuage imprévu : on s’en protège par la marge et l’anticipation.",
    "blocks": [
     {
      "type": "bullets",
-     "title": "Vol en montagne : les bases",
      "items": [
       "Performances réduites par l’**altitude-densité** (altitude, chaleur) : montée plus faible, roulements plus longs.",
       "Franchis les crêtes avec une **marge de hauteur**, sous un angle d’environ **45°**, pour pouvoir t’en écarter.",
-      "Évite le versant **sous le vent** (descendances, rotors) ; le versant au vent porte des ascendances.",
-      "En vallée, vole sur **un côté** pour garder la place d’un demi-tour. En France, altiports et altisurfaces exigent la **qualification montagne** (FCL.815)."
-     ]
+      "Évite le versant **sous le vent** (descendances, rotors). En vallée, vole sur **un côté** : place pour un demi-tour.",
+      "Altiport en pente : pose-toi **en montée**, décolle **en descente**. Altiports et altisurfaces : **qualification montagne** (FCL.815)."
+     ],
+     "title": "Vol en montagne : les bases"
     },
     {
      "type": "formula",
      "label": "Énergie d’un choc avec un oiseau",
      "formula": "E = ½ × m × V²   →   vitesse × 2 = énergie × 4",
-     "example": "Le même oiseau heurté à 120 kt frappe **4 fois** plus fort qu’à 60 kt. Risque maximal à basse hauteur, près des aérodromes, à l’aube, au crépuscule et pendant les **migrations** : consulte les NOTAM et **déclare** toute collision."
+     "example": "Le même oiseau heurté à 120 kt apporte **4 fois** plus d’énergie qu’à 60 kt. Risque maximal à basse hauteur, près des aérodromes, à l’aube, au crépuscule, pendant les **migrations**. **Déclare** toute collision."
     },
     {
      "type": "steps",
-     "title": "Entrée involontaire en nuage",
      "items": [
-      "**Passe aux instruments** : ailes à plat, assiette normale. Ne te fie pas à tes sensations (**désorientation spatiale**).",
+      "**Passe aux instruments** : ailes à plat, assiette normale. Ignore tes sensations (**désorientation spatiale**).",
       "**Demi-tour** au taux standard (3°/s), inclinaison modérée, vers la zone claire quittée.",
       "Ne descends pas sous l’**altitude de sécurité** ; demande l’aide de l’ATC ou du SIV."
-     ]
+     ],
+     "title": "Entrée involontaire en nuage"
     },
     {
      "type": "formula",
      "label": "Durée d’un virage au taux standard",
      "formula": "Durée (s) = angle à virer (°) ÷ 3",
-     "example": "Demi-tour : 180 ÷ 3 = **60 s**. Du cap 030° au cap 300° par la gauche : 90° → **30 s** ; par la droite, 270° → 1 min 30 s."
+     "example": "Demi-tour : 180 ÷ 3 = **60 s**. Du cap 030° au 300° par la gauche : 90° → **30 s** (par la droite : 270° → 90 s)."
     },
     {
      "type": "trap",
-     "text": "Au-dessus de l’eau, voler **bas** « pour mieux voir » est un piège : vole **haut** (la hauteur, c’est du plané vers la côte) et prends la traversée la plus courte ; brume et mer calme effacent l’horizon. En nuage, virer **serré** ou plonger vers le sol mène à la perte de contrôle."
+     "text": "Au-dessus de l’eau, voler **bas** « pour mieux voir » est un piège : vole **haut**, la hauteur c’est du plané vers la côte. En nuage, virer **serré** ou plonger mène à la perte de contrôle."
     }
    ]
   },
   {
    "title": "Secours, marchandises dangereuses, panne radio et comptes rendus",
-   "summary": "Si tout tourne mal, la balise et le service d’alerte déclenchent les secours ; ensuite, chaque événement se déclare pour que d’autres l’évitent.",
+   "summary": "La balise et le service d’alerte déclenchent les secours ; chaque événement se déclare pour que d’autres l’évitent.",
    "blocks": [
     {
      "type": "compare",
@@ -588,15 +613,19 @@
     },
     {
      "type": "bullets",
-     "title": "Équipements de secours (Part-NCO)",
      "items": [
       "ELT et **PLB** (balise personnelle) émettent sur **121,5 et 406 MHz**. Avion certifié pour **6 sièges passagers** au plus : une ELT de survie ou une PLB portée par un occupant peut suffire.",
-      "Monomoteur terrestre au-delà de la **distance de plané** de la terre (ou décollage et approche au-dessus de l’eau) : un **gilet** par occupant (dispositif de flottaison sous 24 mois). Zones où les secours seraient difficiles : **signalisation** et **survie**."
-     ]
+      "**Gilet** par occupant d’un monomoteur terrestre au-delà de la **distance de plané** de la terre. Idem si le décollage ou l’approche rend un amerrissage probable. Moins de **24 mois** : dispositif de flottaison.",
+      "Zones où les secours seraient difficiles : moyens de **signalisation** et de **survie**."
+     ],
+     "title": "Équipements de secours (Part-NCO)"
+    },
+    {
+     "type": "trap",
+     "text": "Le gilet n’est pas exigé « dès qu’on survole l’eau », ni seulement « à plus de 100 NM des côtes ». La limite, c’est la **distance de plané** de la terre."
     },
     {
      "type": "table",
-     "caption": "Phases du service d’alerte (SAR : recherche et sauvetage)",
      "columns": [
       "INCERFA : incertitude",
       "ALERFA : alerte",
@@ -605,25 +634,41 @@
      "rows": [
       [
        "avion non arrivé **30 min** après sa dernière heure d’arrivée prévue",
-       "tentatives de contact restées vaines",
-       "carburant épuisé, atterrissage forcé probable"
+       "recherches vaines, ou autorisé à atterrir et pas posé **5 min** après l’heure prévue, sans contact",
+       "recherches vaines, carburant épuisé, atterrissage forcé probable ou effectué"
       ]
      ],
-     "note": "Plan de vol déposé : **compte rendu d’arrivée** au plus vite (sans organisme sur place, à l’organisme ATS, de la circulation aérienne, le plus proche), sinon les recherches démarrent pour rien."
+     "caption": "Phases du service d’alerte (SAR : recherche et sauvetage)",
+     "note": "Plan de vol déposé : **compte rendu d’arrivée** au plus vite, sinon les recherches démarrent pour rien. Sans organisme sur place : à l’organisme ATS (circulation aérienne) le plus proche."
     },
     {
      "type": "memo",
-     "text": "Signaux sol-air : **V** comme « venez » (assistance), **X** comme la croix de pharmacie (aide **médicale**), **N** = *no*, **Y** = *yes*, **flèche** = direction suivie. Reste près de l’avion : il se voit mieux qu’une personne seule."
+     "text": "Signaux sol-air : **V** comme « venez » (assistance), **X** comme une croix de soins (aide **médicale**), **N** = *no*, **Y** = *yes*, **flèche** = direction suivie. Reste près de l’avion : il se voit mieux qu’une personne seule."
     },
     {
      "type": "key",
-     "title": "Marchandises dangereuses (Part-NCO)",
-     "text": "Elles suivent l’annexe 18 de l’OACI et les **Instructions techniques** (Doc 9284) ; hors exceptions (objets personnels autorisés), il faut un exploitant agréé. **9 classes** : explosifs, gaz, liquides inflammables (jerrican d’essence), solides inflammables, comburants, toxiques, radioactifs, corrosifs, divers (batteries au lithium).\nLe CdB évite leur **emport involontaire**, informe les passagers et notifie tout incident lié."
+     "text": "Annexe 18 de l’OACI et **Instructions techniques** (Doc 9284). Hors exceptions (objets permis aux passagers), il faut un exploitant agréé. **9 classes** : explosifs, gaz, liquides inflammables (jerrican d’essence), solides inflammables, comburants, toxiques, radioactifs, corrosifs, divers (batteries au lithium).\nLe CdB évite leur **emport involontaire**, informe les passagers, notifie tout incident.",
+     "title": "Marchandises dangereuses (Part-NCO)"
     },
     {
-     "type": "key",
-     "title": "Panne radio et urgence dans le circuit",
-     "text": "**Panne radio** : vérifie volume, fréquence, casque ; transpondeur **7600** ; émets **à l’aveugle** (chaque message deux fois). En VMC (conditions de vol à vue), pose-toi sur l’aérodrome approprié le plus proche ou suis la VAC, et signale ton arrivée ; en terrain contrôlé, suis les **signaux lumineux** de la tour.\n**Panne moteur** en vent arrière ou en base : vire vers la piste et raccourcis. **MAYDAY** (détresse) ou **PAN PAN** (urgence sans aide immédiate) ; **7700**, et **7500** en cas d’intervention illicite."
+     "type": "compare",
+     "items": [
+      {
+       "title": "Panne radio en VFR",
+       "points": [
+        "Vérifie volume, fréquence, casque. Transpondeur **7600**.",
+        "Émets **à l’aveugle**, chaque message répété.",
+        "Reste en VMC (conditions de vol à vue), pose-toi sur l’**aérodrome approprié le plus proche**, signale ton arrivée. Terrain contrôlé : **signaux lumineux** de la tour."
+       ]
+      },
+      {
+       "title": "Urgence dans le circuit",
+       "points": [
+        "Panne moteur en vent arrière ou en base : vire vers la piste et raccourcis.",
+        "**MAYDAY** (détresse, aide immédiate) ou **PAN PAN** (urgence) ; **7700**. Intervention illicite : **7500**."
+       ]
+      }
+     ]
     },
     {
      "type": "compare",
@@ -631,15 +676,15 @@
       {
        "title": "Accident · incident grave",
        "points": [
-        "Accident : mort ou blessé grave, avion très endommagé ou disparu. Incident grave : **forte probabilité d’accident**.",
-        "**Sans délai** au **BEA** (Bureau d’enquêtes et d’analyses), qui enquête pour **prévenir**, jamais pour sanctionner."
+        "Accident : mort ou blessé grave, dommage important à l’avion, ou avion disparu. Incident grave : **forte probabilité d’accident**.",
+        "**Sans délai** au **BEA**, qui enquête pour **prévenir**, jamais pour sanctionner."
        ]
       },
       {
        "title": "Autre événement de sécurité",
        "points": [
-        "Compte rendu dans les **72 h** (règlement (UE) n° 376/2014), via l’aéroclub ou à la DSAC (sécurité de la DGAC).",
-        "Formulaire **CRESAG** (compte rendu d’événement de sécurité en aviation générale). La **culture juste** protège qui notifie de bonne foi."
+        "Notification obligatoire dans les **72 h** (règlement (UE) n° 376/2014).",
+        "En aéroclub, via ta structure, qui transmet à la DSAC (sécurité de la DGAC). La **culture juste** protège qui notifie de bonne foi."
        ]
       }
      ]
@@ -649,44 +694,48 @@
  ],
  "key_numbers": [
   {
-   "value": "30 min",
-   "label": "réserve finale VFR de jour (avion)"
-  },
-  {
-   "value": "45 min",
-   "label": "réserve finale VFR de nuit"
+   "value": "30 · 45 min",
+   "label": "réserve finale VFR : jour · nuit"
   },
   {
    "value": "10 min",
-   "label": "réserve finale, vol local de jour"
+   "label": "réserve, vol local de jour"
   },
   {
    "value": "1 500 ft",
-   "label": "attente au-dessus de la destination"
+   "label": "réserve : attente sur destination"
   },
   {
    "value": "0,5·0,7·0,9",
-   "label": "part traversière à 30°, 45°, 60° (sin)"
+   "label": "sin 30°, 45°, 60° (traversier)"
   },
   {
    "value": "7 000 kg",
-   "label": "sillage : limite entre L et M"
+   "label": "sillage : L jusque-là, M au-delà"
   },
   {
    "value": "136 000 kg",
-   "label": "sillage : catégorie H à partir de là"
+   "label": "sillage : H à partir de là"
   },
   {
    "value": "2 min",
-   "label": "départ L ou M derrière H, L derrière M"
+   "label": "sillage : départ derrière plus lourd"
   },
   {
    "value": "3 min",
-   "label": "intersection ; L arrivant derrière M, H"
+   "label": "intersection ; L à l’arrivée"
   },
   {
    "value": "4·5·6 NM",
    "label": "radar : H, M, L derrière un H"
+  },
+  {
+   "value": "2 à 3 kt",
+   "label": "dérive des tourbillons au sol"
+  },
+  {
+   "value": "6 000 ft/min",
+   "label": "descendance max d’une microrafale"
   },
   {
    "value": "20 milles",
@@ -694,15 +743,15 @@
   },
   {
    "value": "30 °C",
-   "label": "refroidissement dans le carburateur"
+   "label": "refroidissement au carburateur"
   },
   {
    "value": "−10 à +30 °C",
-   "label": "givrage carburateur, par air humide"
+   "label": "givrage carburateur (air humide)"
   },
   {
    "value": "9 √P",
-   "label": "aquaplanage (V en kt, P en psi)"
+   "label": "aquaplanage (kt, psi)"
   },
   {
    "value": "3 mm",
@@ -710,7 +759,15 @@
   },
   {
    "value": "25 %",
-   "label": "de surface couverte : piste contaminée"
+   "label": "de surface : piste contaminée"
+  },
+  {
+   "value": "6 → 0",
+   "label": "RWYCC : sèche → freinage quasi nul"
+  },
+  {
+   "value": "45°",
+   "label": "angle d’abord d’une crête"
   },
   {
    "value": "3°/s",
@@ -718,27 +775,35 @@
   },
   {
    "value": "× 4",
-   "label": "énergie d’impact à vitesse double"
+   "label": "énergie à vitesse double"
   },
   {
    "value": "406 MHz",
-   "label": "ELT : alerte satellite Cospas-Sarsat"
+   "label": "ELT : alerte satellite"
   },
   {
    "value": "121,5 MHz",
-   "label": "radioralliement, fréquence d’urgence"
+   "label": "radioralliement, urgence"
   },
   {
    "value": "6 sièges",
-   "label": "passagers au plus : PLB ou ELT de survie"
+   "label": "au plus : PLB ou ELT de survie"
+  },
+  {
+   "value": "24 mois",
+   "label": "en dessous : dispositif de flottaison"
   },
   {
    "value": "30 min",
-   "label": "après l’arrivée prévue : INCERFA"
+   "label": "de retard : INCERFA"
+  },
+  {
+   "value": "5 min",
+   "label": "pas posé après autorisation : ALERFA"
   },
   {
    "value": "7700",
-   "label": "transpondeur : détresse"
+   "label": "transpondeur : urgence, détresse"
   },
   {
    "value": "7600 · 7500",
@@ -746,93 +811,157 @@
   },
   {
    "value": "72 h",
-   "label": "compte rendu d’événement (376/2014)"
+   "label": "compte rendu (UE) 376/2014"
   },
   {
    "value": "9 classes",
-   "label": "de marchandises dangereuses (OACI)"
+   "label": "de marchandises dangereuses"
   }
  ],
  "glossary": [
   {
    "term": "Part-NCO",
-   "def": "Vols non commerciaux sur aéronef non complexe (UE)"
+   "def": "Vols non commerciaux, avion non complexe"
   },
   {
    "term": "CdB",
-   "def": "Commandant de bord, responsable de la sécurité du vol"
+   "def": "Commandant de bord, responsable du vol"
   },
   {
    "term": "AFM / POH",
-   "def": "Manuel de vol de l’avion"
+   "def": "Manuel de vol de l’avion : il fait foi"
+  },
+  {
+   "term": "Actions réflexes",
+   "def": "Gestes d’urgence faits de mémoire"
+  },
+  {
+   "term": "AMC",
+   "def": "Moyen acceptable de conformité (UE)"
   },
   {
    "term": "Réserve finale",
-   "def": "Carburant à garder : 30 min de jour, 45 min de nuit"
+   "def": "Carburant qui doit rester à l’arrivée"
   },
   {
    "term": "MINIMUM FUEL",
-   "def": "Tout changement ferait atterrir sous la réserve finale"
+   "def": "Avertissement : réserve finale menacée"
   },
   {
-   "term": "CALIPSO",
-   "def": "Classement sonore des avions légers par la DGAC"
+   "term": "Vent arrière",
+   "def": "Branche parallèle à la piste, sens inverse"
+  },
+  {
+   "term": "Approche stabilisée",
+   "def": "Plan, vitesse et volets stables"
   },
   {
    "term": "VAC",
    "def": "Carte d’approche et d’atterrissage à vue"
   },
   {
-   "term": "Atterrissage de précaution",
-   "def": "Hors aérodrome, choisi, moteur en marche"
+   "term": "CALIPSO",
+   "def": "Classement sonore des avions légers (DGAC)"
+  },
+  {
+   "term": "Finesse",
+   "def": "Distance parcourue ÷ hauteur perdue en plané"
+  },
+  {
+   "term": "Hauteur de sécurité",
+   "def": "Sous elle, panne = pas de demi-tour"
+  },
+  {
+   "term": "Atterrissage en campagne",
+   "def": "Posé hors aérodrome"
+  },
+  {
+   "term": "Étouffoir",
+   "def": "Position du mélange qui arrête le moteur"
   },
   {
    "term": "Contact général",
-   "def": "Coupe batterie et alternateur du circuit de bord"
+   "def": "Coupe batterie et alternateur"
   },
   {
    "term": "Magnéto",
-   "def": "Génératrice d’allumage autonome, entraînée par le moteur"
+   "def": "Génératrice d’allumage autonome"
+  },
+  {
+   "term": "Délestage",
+   "def": "Coupure des équipements non essentiels"
   },
   {
    "term": "CO",
-   "def": "Monoxyde de carbone : gaz d’échappement incolore, inodore, toxique"
+   "def": "Monoxyde de carbone : incolore, inodore"
+  },
+  {
+   "term": "Tourbillons marginaux",
+   "def": "Tourbillons de bout d’aile : le sillage"
   },
   {
    "term": "Cisaillement de vent",
-   "def": "Variation brutale du vent sur peu de distance"
+   "def": "Variation brutale du vent"
   },
   {
    "term": "Microrafale",
-   "def": "Violente descendance sous un orage, qui diverge au sol"
+   "def": "Violente descendance sous un orage"
   },
   {
-   "term": "Réchauffage carburateur",
-   "def": "Air chaud admis au carburateur contre la glace"
+   "term": "Front de rafales",
+   "def": "Rafales poussées devant l’orage"
+  },
+  {
+   "term": "Eau surfondue",
+   "def": "Liquide sous 0 °C, gèle au contact"
   },
   {
    "term": "Piste contaminée",
-   "def": "Plus de 25 % couverts d’eau de plus de 3 mm, de neige ou de glace"
+   "def": "Plus de 25 % sous eau, neige ou glace"
   },
   {
    "term": "Aquaplanage",
-   "def": "Pneu soulevé par l’eau : ni freinage ni guidage"
+   "def": "Pneu soulevé par l’eau : ni frein ni guidage"
   },
   {
    "term": "RWYCC",
    "def": "Code d’état de piste, de 6 (sèche) à 0"
   },
   {
+   "term": "SNOWTAM",
+   "def": "NOTAM sur l’état des pistes"
+  },
+  {
+   "term": "Altitude-densité",
+   "def": "Altitude « ressentie » par l’avion"
+  },
+  {
+   "term": "Côté sous le vent",
+   "def": "Versant abrité : descendances, rotors"
+  },
+  {
+   "term": "Taux standard",
+   "def": "Virage à 3°/s : 180° en 1 min"
+  },
+  {
    "term": "Désorientation spatiale",
-   "def": "Fausse perception de l’attitude de l’avion"
+   "def": "Fausse perception de l’attitude"
   },
   {
    "term": "ELT / PLB",
    "def": "Balise de détresse de l’avion / personnelle"
   },
   {
+   "term": "Cospas-Sarsat",
+   "def": "Satellites qui captent les balises"
+  },
+  {
    "term": "Radioralliement",
-   "def": "Guidage des secours sur le signal 121,5 MHz"
+   "def": "Guidage des secours sur le 121,5 MHz"
+  },
+  {
+   "term": "SAR",
+   "def": "Recherche et sauvetage"
   },
   {
    "term": "INCERFA / ALERFA / DETRESFA",
@@ -840,19 +969,23 @@
   },
   {
    "term": "Instructions techniques",
-   "def": "Doc 9284 de l’OACI : marchandises dangereuses"
+   "def": "Doc 9284 de l’OACI"
   },
   {
-   "term": "Émission à l’aveugle",
-   "def": "Message émis sans réponse, répété deux fois"
+   "term": "MAYDAY / PAN PAN",
+   "def": "Détresse / urgence"
   },
   {
    "term": "BEA",
-   "def": "Bureau d’enquêtes et d’analyses : prévenir, pas sanctionner"
+   "def": "Bureau d’enquêtes et d’analyses (prévention)"
+  },
+  {
+   "term": "DSAC",
+   "def": "Direction de la sécurité de l’aviation civile"
   },
   {
    "term": "Culture juste",
-   "def": "Protège celui qui notifie de bonne foi"
+   "def": "Protège qui notifie de bonne foi"
   }
  ],
  "self_test": [
@@ -870,15 +1003,19 @@
   },
   {
    "q": "Panne moteur à 300 ft après le décollage : première action ?",
-   "a": "Rendre la main pour garder la vitesse de plané, puis se poser à peu près droit devant."
+   "a": "Rendre la main (vitesse de plané), puis se poser à peu près droit devant."
   },
   {
    "q": "Feu moteur en vol : les deux premières mesures ?",
-   "a": "Couper l’essence (robinet, étouffoir) et fermer le chauffage cabine."
+   "a": "Couper l’essence (robinet, étouffoir), fermer le chauffage cabine."
+  },
+  {
+   "q": "De l’essence brûle : classe de feu, et quel agent proscrire ?",
+   "a": "Classe B ; jamais de jet d’eau."
   },
   {
    "q": "Comment éviter le sillage d’un gros porteur qui vient d’atterrir ?",
-   "a": "Rester au-dessus de son plan et se poser après son point de toucher."
+   "a": "Rester au-dessus de son plan, se poser après son point de toucher."
   },
   {
    "q": "Réchauffage carburateur tiré : le régime baisse puis remonte. Conclusion ?",
@@ -893,8 +1030,8 @@
    "a": "Une fois sorti de l’avion."
   },
   {
-   "q": "Délai pour notifier un événement de sécurité ?",
-   "a": "72 h (règlement (UE) n° 376/2014) ; accident et incident grave : sans délai au BEA."
+   "q": "Délai pour notifier un événement de sécurité ? Et un accident ?",
+   "a": "72 h (règlement (UE) n° 376/2014) ; accident : sans délai au BEA."
   }
  ]
 }

@@ -5,39 +5,38 @@
   "questions": 12,
   "minutes": 18
  },
- "pitch": "Ton corps et ton cerveau sont le premier équipement de l'avion, avec des limites précises. Ce chapitre couvre la physiologie (altitude, vision, oreille, santé) et la psychologie (attention, erreurs, décision, stress).",
+ "pitch": "Ton corps et ton cerveau sont le premier équipement de l'avion, avec des limites précises. Ce chapitre couvre la physiologie (altitude, vision, oreille, santé) et la psychologie (attention, fatigue, stress, erreurs, décision).",
  "essentials": [
-  "L'air contient toujours **21 % d'oxygène** : seule la **pression** baisse (divisée par 2 vers 18 000 ft).",
-  "L'**hypoxie** ne prévient pas (euphorie, aucune douleur). La vision de nuit baisse dès **5 000 ft**.",
+  "L'air garde **21 % d'oxygène** à toute altitude : seule la **pression** baisse, divisée par 2 vers **18 000 ft**.",
+  "L'**hypoxie** ne prévient pas : euphorie, aucune douleur. La vision de nuit baisse dès **5 000 ft**.",
   "**NCO.OP.190** : O2 pour l'équipage au-delà de **30 min entre 10 000 et 13 000 ft**, pour **tous au-dessus de 13 000 ft**.",
-  "Maux de tête, somnolence, chauffage en marche : **monoxyde de carbone (CO)**. Chauffage coupé, aérations ouvertes, atterris vite.",
-  "L'oreille souffre **en descente**. Pas de vol enrhumé, ni moins de **12 h / 24 h** après une plongée.",
-  "De nuit, regarde **à côté**. Un avion en collision **ne bouge pas** dans le pare-brise : il grossit.",
+  "Maux de tête, chauffage en marche : pense **monoxyde de carbone (CO)**. Chauffage coupé, aérations ouvertes, atterris vite.",
+  "Oreilles et sinus souffrent **en descente** : pas de vol enrhumé. Après une plongée : **12 h** (sans palier) ou **24 h** (avec paliers).",
+  "De nuit, regarde **à côté**. Un avion en route de collision **ne bouge pas** dans le pare-brise : il grossit.",
   "Sans repères visuels, l'oreille interne te trompe (leans, spirale, Coriolis…) : **crois tes instruments**.",
-  "**MED.A.020** : certificat valide ou pas, tu ne voles pas si ton aptitude baisse. **Zéro alcool**.",
-  "Vigilance au plus bas vers **3 h – 5 h**. Mémoire de travail : **7 ± 2 éléments** ; note et collationne.",
-  "Performance maximale à **éveil moyen**. Connais les **5 attitudes dangereuses** ; fixe tes minima **au sol**."
+  "**MED.A.020** : même avec un certificat valide, pas de vol si ton aptitude baisse. **Zéro alcool**.",
+  "Vigilance au plus bas vers **3 h – 5 h**. Mémoire de travail : **7 ± 2 éléments**, alors note et collationne.",
+  "Performance maximale à **éveil moyen**. Connais les **5 attitudes dangereuses** ; fixe tes minima **au sol**."
  ],
  "sections": [
   {
    "title": "Atmosphère, respiration et hypoxie",
-   "summary": "En montant, l'oxygène ne disparaît pas : il est moins « poussé » dans tes poumons, et ton cerveau en manque sans te prévenir.",
+   "summary": "En montant, l'air garde la même proportion d'oxygène, mais sa pression baisse : ton sang en capte moins, et ton cerveau ne te prévient pas.",
    "blocks": [
     {
      "type": "text",
-     "text": "L'air sec contient **78 % d'azote** et **21 % d'oxygène**, à toutes les altitudes. C'est la pression qui baisse, donc la quantité d'O2 qui passe dans le sang."
+     "text": "L'air sec contient **78 % d'azote**, **21 % d'oxygène** (O2) et 1 % d'autres gaz, à toutes les altitudes où tu voles. En montant, seule la **pression** baisse : chaque inspiration apporte moins d'O2 au sang, où l'**hémoglobine** le transporte."
     },
     {
      "type": "formula",
-     "label": "Loi de Dalton : pression partielle d'oxygène",
+     "label": "Loi de Dalton : pression partielle d'oxygène (PO2)",
      "formula": "PO2 = 0,21 × P",
-     "example": "Au niveau de la mer, 0,21 × 1 013 ≈ **213 hPa**. Vers 18 000 ft (≈ 500 hPa), 0,21 × 500 = **105 hPa** : la moitié."
+     "example": "Au sol : 0,21 × 1 013 ≈ **213 hPa**. À 10 000 ft (697 hPa) : **146 hPa**, soit 69 % de la valeur au sol. Vers 18 000 ft (≈ 500 hPa) : **105 hPa**, la moitié."
     },
     {
-     "type": "formula",
-     "label": "Loi de Boyle-Mariotte : un gaz piégé gonfle en montée",
-     "formula": "P1 × V1 = P2 × V2, donc V2 = V1 × P1 ÷ P2",
-     "example": "300 ml de gaz dans l'intestin à 1 000 hPa. À 750 hPa : 300 × 1 000 ÷ 750 = **400 ml**."
+     "type": "trap",
+     "title": "Piège classique : l'hypoxie ne prévient pas",
+     "text": "Signes : **euphorie**, excès de confiance, jugement altéré, maux de tête, somnolence, fourmillements, **cyanose** (lèvres et ongles bleutés), vision réduite. **Ni douleur ni essoufflement** : l'envie de respirer vient du CO2, pas du manque d'O2. Tu te crois performant."
     },
     {
      "type": "table",
@@ -68,32 +67,29 @@
        "Les cellules utilisent mal l'O2",
        "Alcool, drogues"
       ]
-     ]
-    },
-    {
-     "type": "memo",
-     "text": "Suis le trajet de l'oxygène : l'**air** (hypoxique) → le **sang** (hypémique) → les **tuyaux** (stagnante) → la **cellule** (histotoxique)."
-    },
-    {
-     "type": "trap",
-     "title": "Piège classique : l'hypoxie ne prévient pas",
-     "text": "Symptômes : euphorie, excès de confiance, jugement altéré, maux de tête, somnolence, fourmillements, **cyanose** (lèvres et ongles bleutés), vision réduite. **Ni douleur ni essoufflement** : l'envie de respirer vient du CO2. Le pilote se croit performant."
+     ],
+     "note": "**Astuce** : suis le trajet de l'oxygène. L'air (hypoxique) → le sang (hypémique) → les tuyaux (stagnante) → la cellule (histotoxique)."
     },
     {
      "type": "diagram",
      "title": "L'altitude et l'oxygène en un coup d'œil",
-     "svg": "<svg viewBox=\"-20 0 720 252\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"680\" height=\"252\" fill=\"#ffffff\"/>\n<rect x=\"110\" y=\"25.0\" width=\"560\" height=\"117.9\" fill=\"#fbe3e6\"/>\n<rect x=\"110\" y=\"142.9\" width=\"560\" height=\"20.8\" fill=\"#fde9d3\"/>\n<rect x=\"110\" y=\"163.7\" width=\"560\" height=\"69.3\" fill=\"#e8f0fb\"/>\n<line x1=\"110\" y1=\"233.0\" x2=\"110\" y2=\"17.0\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<polygon points=\"104,19.0 110,7.0 116,19.0\" fill=\"#14213d\"/>\n<line x1=\"102\" y1=\"233.0\" x2=\"118\" y2=\"233.0\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"238.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">0 ft</text>\n<line x1=\"102\" y1=\"198.3\" x2=\"118\" y2=\"198.3\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"203.3\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">5 000 ft</text>\n<line x1=\"102\" y1=\"163.7\" x2=\"118\" y2=\"163.7\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"168.7\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">10 000 ft</text>\n<line x1=\"102\" y1=\"142.9\" x2=\"118\" y2=\"142.9\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"147.9\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">13 000 ft</text>\n<line x1=\"102\" y1=\"108.2\" x2=\"118\" y2=\"108.2\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"113.2\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">18 000 ft</text>\n<line x1=\"102\" y1=\"59.7\" x2=\"118\" y2=\"59.7\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"64.7\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">25 000 ft</text>\n<line x1=\"102\" y1=\"25.0\" x2=\"118\" y2=\"25.0\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"96\" y=\"30.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">30 000 ft</text>\n<text x=\"128\" y=\"30.0\" font-size=\"14\" fill=\"#14213d\"><tspan font-weight=\"700\">TCU ≈ 1 à 2 min</tspan></text>\n<text x=\"128\" y=\"64.7\" font-size=\"14\" fill=\"#14213d\"><tspan font-weight=\"700\">TCU ≈ 3 à 5 min</tspan></text>\n<text x=\"128\" y=\"113.2\" font-size=\"14\" fill=\"#14213d\">Pression ≈ 500 hPa (divisée par 2) · <tspan font-weight=\"700\">TCU ≈ 20 à 30 min</tspan></text>\n<text x=\"128\" y=\"130.6\" font-size=\"14\" fill=\"#14213d\"><tspan font-weight=\"700\">Tous les occupants</tspan> sous oxygène, quelle que soit la durée</text><text x=\"660\" y=\"130.6\" font-size=\"13\" font-weight=\"700\" fill=\"#a3122b\" text-anchor=\"end\">NCO.OP.190</text>\n<text x=\"128\" y=\"158.3\" font-size=\"14\" fill=\"#14213d\"><tspan font-weight=\"700\">Équipage</tspan> sous oxygène si plus de 30 min</text><text x=\"660\" y=\"158.3\" font-size=\"13\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"end\">NCO.OP.190</text>\n<text x=\"128\" y=\"203.3\" font-size=\"14\" fill=\"#14213d\">La <tspan font-weight=\"700\">vision de nuit</tspan> commence à baisser (4 000 à 5 000 ft)</text>\n<text x=\"128\" y=\"225.0\" font-size=\"14\" fill=\"#14213d\">Niveau de la mer : 1 013 hPa · PO<tspan font-size=\"11\" dy=\"3\">2</tspan><tspan dy=\"-3\"> ≈ 213 hPa</tspan></text>\n</svg>",
-     "caption": "**TCU** (temps de conscience utile) : temps pour agir encore utilement sans O2 (masque, descente), bien avant l'évanouissement. NCO.OP.190 : cas où le commandant de bord ne peut pas évaluer l'effet du manque d'O2. **Exemple** : 45 min au FL 115 (11 500 ft d'altitude-pression) → oxygène pour l'équipage."
+     "svg": "<svg viewBox=\"0 0 720 240\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"240\" fill=\"#ffffff\"/>\n<text x=\"88\" y=\"14\" font-size=\"13\" font-weight=\"700\" fill=\"#6b7489\" text-anchor=\"end\">Altitude</text>\n<text x=\"104\" y=\"14\" font-size=\"13\" font-weight=\"700\" fill=\"#6b7489\">Pression</text>\n<text x=\"263\" y=\"14\" font-size=\"13\" font-weight=\"700\" fill=\"#6b7489\" text-anchor=\"middle\">Stade d’hypoxie (FAA)</text>\n<text x=\"354\" y=\"14\" font-size=\"13\" font-weight=\"700\" fill=\"#6b7489\">Oxygène en NCO et TCU</text>\n<rect x=\"188\" y=\"158.0\" width=\"150\" height=\"76.0\" fill=\"#dff0e4\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<text x=\"263\" y=\"189\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Indifférent</text>\n<text x=\"263\" y=\"204\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">0 – 10 000 ft</text>\n<rect x=\"188\" y=\"126.0\" width=\"150\" height=\"32.0\" fill=\"#fbf0c4\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<text x=\"263\" y=\"141\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Compensation</text>\n<text x=\"263\" y=\"156\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">10 000 – 15 000 ft</text>\n<rect x=\"188\" y=\"94.0\" width=\"150\" height=\"32.0\" fill=\"#fddcbf\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<text x=\"263\" y=\"109\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Troubles</text>\n<text x=\"263\" y=\"124\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">15 000 – 20 000 ft</text>\n<rect x=\"188\" y=\"18.5\" width=\"150\" height=\"75.5\" fill=\"#f7cfd4\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<text x=\"263\" y=\"61\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Critique</text>\n<text x=\"263\" y=\"76\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">au-dessus de 20 000 ft</text>\n<rect x=\"346\" y=\"18.5\" width=\"370\" height=\"120.3\" fill=\"#fbe3e6\"/>\n<rect x=\"346\" y=\"138.8\" width=\"370\" height=\"19.2\" fill=\"#fde9d3\"/>\n<rect x=\"346\" y=\"158.0\" width=\"370\" height=\"76.0\" fill=\"#e8f0fb\"/>\n<line x1=\"96\" y1=\"228.0\" x2=\"96\" y2=\"18.5\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<polygon points=\"90,20.5 96,9.5 102,20.5\" fill=\"#14213d\"/>\n<line x1=\"90\" y1=\"222.0\" x2=\"102\" y2=\"222.0\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"227.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">0 ft</text>\n<text x=\"106\" y=\"227.0\" font-size=\"13\" fill=\"#3d4a66\">1 013 hPa</text>\n<line x1=\"90\" y1=\"190.0\" x2=\"102\" y2=\"190.0\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"195.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">5 000 ft</text>\n<text x=\"106\" y=\"195.0\" font-size=\"13\" fill=\"#3d4a66\">843 hPa</text>\n<line x1=\"90\" y1=\"158.0\" x2=\"102\" y2=\"158.0\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"163.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">10 000 ft</text>\n<text x=\"106\" y=\"163.0\" font-size=\"13\" fill=\"#3d4a66\">697 hPa</text>\n<line x1=\"90\" y1=\"138.8\" x2=\"102\" y2=\"138.8\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"143.8\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">13 000 ft</text>\n<line x1=\"90\" y1=\"106.8\" x2=\"102\" y2=\"106.8\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"111.8\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">18 000 ft</text>\n<text x=\"106\" y=\"111.8\" font-size=\"13\" fill=\"#3d4a66\">506 hPa</text>\n<line x1=\"90\" y1=\"81.2\" x2=\"102\" y2=\"81.2\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"86.2\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">22 000 ft</text>\n<line x1=\"90\" y1=\"62.0\" x2=\"102\" y2=\"62.0\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"67.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">25 000 ft</text>\n<text x=\"106\" y=\"67.0\" font-size=\"13\" fill=\"#3d4a66\">376 hPa</text>\n<line x1=\"90\" y1=\"30.0\" x2=\"102\" y2=\"30.0\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<text x=\"86\" y=\"35.0\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">30 000 ft</text>\n<text x=\"106\" y=\"35.0\" font-size=\"13\" fill=\"#3d4a66\">301 hPa</text>\n<text x=\"354\" y=\"35.0\" font-size=\"14\" fill=\"#14213d\">TCU ≈ <tspan font-weight=\"700\">1 à 2 min</tspan></text>\n<text x=\"354\" y=\"67.0\" font-size=\"14\" fill=\"#14213d\">TCU ≈ <tspan font-weight=\"700\">3 à 5 min</tspan></text>\n<text x=\"354\" y=\"86.2\" font-size=\"14\" fill=\"#14213d\">TCU ≈ <tspan font-weight=\"700\">5 à 10 min</tspan></text>\n<text x=\"354\" y=\"111.8\" font-size=\"14\" fill=\"#14213d\">TCU ≈ <tspan font-weight=\"700\">20 à 30 min</tspan> · PO<tspan font-size=\"11\" dy=\"3\">2</tspan><tspan dy=\"-3\"> divisée par 2</tspan></text>\n<text x=\"354\" y=\"131.8\" font-size=\"14\" fill=\"#14213d\"><tspan font-weight=\"700\">Tous les occupants</tspan> sous O<tspan font-size=\"11\" dy=\"3\">2</tspan><tspan dy=\"-3\"></tspan></text>\n<text x=\"708\" y=\"131.8\" font-size=\"13\" font-weight=\"700\" fill=\"#a3122b\" text-anchor=\"end\">NCO.OP.190</text>\n<text x=\"354\" y=\"153.4\" font-size=\"14\" fill=\"#14213d\"><tspan font-weight=\"700\">Équipage</tspan> sous O<tspan font-size=\"11\" dy=\"3\">2</tspan><tspan dy=\"-3\"> si plus de 30 min</tspan></text>\n<text x=\"708\" y=\"153.4\" font-size=\"13\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"end\">NCO.OP.190</text>\n<text x=\"354\" y=\"195.0\" font-size=\"14\" fill=\"#14213d\">La <tspan font-weight=\"700\">vision de nuit</tspan> commence à baisser</text>\n<text x=\"354\" y=\"227.0\" font-size=\"14\" fill=\"#14213d\">Niveau de la mer : PO<tspan font-size=\"11\" dy=\"3\">2</tspan><tspan dy=\"-3\"> ≈ 213 hPa</tspan></text>\n</svg>",
+     "caption": "Pressions de l'atmosphère standard (ISA). **TCU** (temps de conscience utile) : temps pour agir encore utilement sans O2 (masque, descente) ; l'effort le raccourcit. Stade de compensation : pouls et respiration accélèrent, mais le jugement baisse déjà."
+    },
+    {
+     "type": "key",
+     "title": "NCO.OP.190 : l'oxygène en vol non commercial",
+     "text": "Le commandant de bord évalue le besoin d'O2. **S'il ne peut pas évaluer** son effet sur les occupants : l'**équipage** l'utilise au-delà de **30 min entre 10 000 et 13 000 ft** ; **tous les occupants** l'utilisent **au-dessus de 13 000 ft**, quelle que soit la durée. Les seuils sont en altitude-pression cabine.\n*Exemples* : 45 min au FL 115 → équipage. 25 min au FL 120 → aucune obligation. 5 min à 13 500 ft → tous."
     }
    ]
   },
   {
    "title": "Hyperventilation, monoxyde de carbone, gaz piégés et plongée",
-   "summary": "Trop de souffle, un gaz invisible, de l'air coincé dans le corps : trois pièges à reconnaître.",
+   "summary": "Un souffle trop rapide, un gaz invisible, de l'air coincé dans le corps : trois pièges à reconnaître vite.",
    "blocks": [
     {
      "type": "table",
-     "caption": "Trois malaises à ne pas confondre",
+     "caption": "Deux malaises à reconnaître",
      "columns": [
       "Malaise",
       "Cause",
@@ -102,32 +98,33 @@
      ],
      "rows": [
       [
-       "**Hypoxie**",
-       "Manque d'O2 (altitude)",
-       "Euphorie, jugement altéré, cyanose",
-       "Oxygène, descendre"
+       "**Hyper­ventilation**",
+       "Stress : tu respires trop vite, le CO2 du sang chute",
+       "Vertiges, fourmillements (doigts, bouche)",
+       "Ralentir ta respiration, parler"
       ],
       [
-       "**Hyperventilation**",
-       "Stress, peur : on respire trop vite et le CO2 du sang chute",
-       "Vertiges, fourmillements des doigts et autour de la bouche",
-       "Ralentir la respiration, parler à voix haute"
-      ],
-      [
-       "**Monoxyde de carbone (CO)**",
-       "Gaz d'échappement entré par le chauffage (échangeur fissuré)",
+       "**CO**",
+       "Échappement entré par le chauffage (échangeur fissuré)",
        "Maux de tête, nausées, somnolence",
-       "Chauffage coupé, aérations ouvertes, O2 si possible, se poser vite"
+       "Chauffage coupé, aérer, O2, se poser"
       ]
      ]
     },
     {
      "type": "trap",
-     "text": "En altitude, si tu hésites entre hypoxie et hyperventilation, **traite d'abord l'hypoxie**. Mais à 2 500 ft, chauffage coupé, un élève stressé aux doigts qui fourmillent fait une **hyperventilation**."
+     "text": "En altitude, fourmillements et vertiges : si tu hésites entre hypoxie et hyperventilation, **traite d'abord l'hypoxie** (O2, descente). Mais à 2 500 ft, chauffage coupé, un élève stressé aux doigts qui fourmillent fait une **hyperventilation**."
     },
     {
      "type": "key",
-     "text": "Le CO est **incolore et inodore**. Il se fixe sur l'hémoglobine **plus de 200 fois plus facilement** que l'O2 (hypoxie **hypémique**). Ne monte jamais pour « trouver un air plus pur ». Une pastille détectrice fonce à son contact."
+     "title": "Monoxyde de carbone",
+     "text": "**Incolore et inodore**, il se fixe sur l'hémoglobine **plus de 200 fois plus facilement** que l'O2 (hypoxie **hypémique**) ; demi-vie de **4 à 6 h**. Ne monte pas pour « trouver un air plus pur ». **Piège** : l'oxymètre de pouls le prend pour de l'O2 et affiche 97 %. Préfère un détecteur de CO électronique."
+    },
+    {
+     "type": "formula",
+     "label": "Loi de Boyle-Mariotte : un gaz piégé gonfle en montée",
+     "formula": "P1 × V1 = P2 × V2, donc V2 = V1 × P1 ÷ P2",
+     "example": "300 ml de gaz dans l'intestin à 1 000 hPa. À 750 hPa : 300 × 1 000 ÷ 750 = **400 ml**. Vers 18 000 ft, il **double**."
     },
     {
      "type": "table",
@@ -140,40 +137,37 @@
      "rows": [
       [
        "**Oreille moyenne**",
-       "Surtout **en descente** : la trompe d'Eustache laisse mal entrer l'air",
-       "Déglutir, bâiller, **Valsalva** (souffler nez pincé, bouche fermée)"
+       "**En descente** : l'air rentre mal par la trompe d'Eustache",
+       "Déglutir, bâiller, **Valsalva** (souffler nez pincé)"
       ],
       [
        "**Sinus**",
-       "Surtout en descente, si un rhume bouche leurs orifices",
+       "**En descente**, si un rhume bouche leurs orifices",
        "Ne pas voler enrhumé"
       ],
       [
        "**Dents**",
-       "En montée : air piégé sous une carie ou un plombage abîmé",
+       "Plutôt **en montée** : gaz piégé sous un soin abîmé",
        "Soins dentaires à jour"
       ],
       [
        "**Intestins**",
-       "En montée : les gaz se dilatent",
-       "Éviter les boissons gazeuses avant le vol"
+       "**En montée** : les gaz se dilatent",
+       "Pas de boissons gazeuses"
       ]
-     ]
-    },
-    {
-     "type": "memo",
-     "text": "**En montée, l'air sort tout seul ; en descente, il faut le faire entrer.** Si l'oreille bloque, n'accélère jamais la descente : remonte un peu, puis redescends lentement en rééquilibrant."
+     ],
+     "note": "**Retiens : en montée, l'air sort tout seul ; en descente, il faut le faire entrer.** Oreille bloquée : remonte un peu, puis redescends lentement. Les derniers milliers de pieds sont les pires."
     },
     {
      "type": "key",
-     "title": "Plongée sous-marine et décompression",
-     "text": "**Loi de Henry** : le gaz dissous dans un liquide est proportionnel à sa pression. En plongée, le corps se charge d'azote ; si la pression baisse trop tôt, il forme des bulles (**accident de décompression**). Attends au moins **12 h** après une plongée **sans palier**, **24 h** **avec paliers**."
+     "title": "Plongée et accident de décompression",
+     "text": "**Loi de Henry** : la quantité de gaz dissous dans un liquide est proportionnelle à sa **pression partielle**. Après une plongée, ton corps est chargé d'azote ; en altitude, il forme des **bulles**. Attends **12 h** après une plongée **sans palier**, **24 h** **avec paliers**. Sans plongée, le risque devient réel au-dessus de 18 000 ft (douleur articulaire : O2, descente, médecin)."
     }
    ]
   },
   {
    "title": "Circulation et facteur de charge",
-   "summary": "Plaqué dans ton siège, ton sang est attiré vers les jambes : la rétine, puis le cerveau, manquent d'oxygène.",
+   "summary": "Plaqué dans ton siège, ton sang descend vers les jambes : la rétine, puis le cerveau, manquent d'oxygène.",
    "blocks": [
     {
      "type": "formula",
@@ -185,43 +179,38 @@
      "type": "table",
      "caption": "Ce que tu ressens quand les g augmentent",
      "columns": [
-      "Facteur de charge",
+      "Charge",
       "Effet",
       "Pourquoi"
      ],
      "rows": [
       [
-       "≈ **3 à 4 g**",
-       "**Voile gris** : vision terne, champ visuel qui se rétrécit",
-       "La rétine est moins irriguée"
+       "Dès ≈ **3,5 g**",
+       "**Voile gris** : couleurs pâles, champ visuel rétréci",
+       "Rétine moins irriguée"
       ],
       [
-       "≈ **5 g**",
-       "**Voile noir** : plus aucune vision, mais encore conscient",
-       "Le sang n'arrive plus à la rétine"
-      ],
-      [
-       "Au-delà",
-       "**Perte de connaissance** (G-LOC), puis confusion au réveil",
-       "Le cerveau manque d'O2 (hypoxie stagnante)"
+       "Vers **4 à 6 g**",
+       "**Voile noir** (conscient), puis **perte de connaissance**",
+       "Rétine, puis cerveau privés d'O2"
       ],
       [
        "**Négatif**",
-       "**Voile rouge**, tête congestionnée (vol dos, poussée)",
+       "**Voile rouge**, tête congestionnée (vol dos)",
        "Le sang afflue vers la tête"
       ]
      ],
-     "note": "Valeurs moyennes, pilote non entraîné. Fatigue, chaleur, déshydratation, alcool et don de sang abaissent ta tolérance."
+     "note": "Repères pour un pilote non entraîné. Fatigue, chaleur, déshydratation, alcool et don de sang abaissent ta tolérance. Perte de connaissance due aux g : G-LOC (hypoxie stagnante)."
     },
     {
      "type": "trap",
-     "text": "Le **voile noir n'est pas** la perte de connaissance : tu peux ne plus rien voir et rester conscient. Mais si les g montent très vite, tu peux perdre connaissance **sans voile préalable**."
+     "text": "Le **voile noir n'est pas** la perte de connaissance : tu ne vois plus rien, mais tu es encore conscient. Si les g montent très vite, tu peux perdre connaissance **sans voile préalable**. Parade : **relâche la traction** sur le manche."
     }
    ]
   },
   {
    "title": "Vision, anticollision et illusions visuelles",
-   "summary": "Ton œil a deux systèmes : un pour le jour et le détail, un pour la nuit et le mouvement. Chacun a ses pièges.",
+   "summary": "Ton œil a deux systèmes : l'un pour le jour et le détail, l'autre pour la nuit et le mouvement. Chacun a ses pièges.",
    "blocks": [
     {
      "type": "compare",
@@ -229,18 +218,18 @@
       {
        "title": "Cônes : Centre et Couleurs",
        "points": [
-        "Au centre de la rétine (**fovéa**)",
-        "Acuité et couleurs, mais besoin de lumière : vision de jour",
-        "De nuit, la fovéa devient une tache aveugle"
+        "Au centre de la rétine, dans la **fovéa**",
+        "Acuité et couleurs, avec de la lumière : vision de **jour**",
+        "De nuit, la fovéa devient une **tache aveugle** centrale"
        ]
       },
       {
        "title": "Bâtonnets : les Bords, la nuit",
        "points": [
-        "En périphérie de la rétine, sensibles à la faible lumière et au mouvement, sans couleurs",
-        "De nuit, regarde **légèrement à côté** de l'objet (vision décalée)",
-        "Adaptation au noir : **30 min** ; une lumière vive l'annule en quelques secondes",
-        "Hypoxie et tabac la dégradent : garde un éclairage cabine faible"
+        "En périphérie : faible lumière et **mouvement**, sans couleurs",
+        "De nuit, regarde **légèrement à côté** (vision décalée)",
+        "Adaptation au noir : **30 min** ; une lumière vive l’annule",
+        "Cabine peu éclairée ; le rouge efface les tracés rouges"
        ]
       }
      ]
@@ -249,16 +238,16 @@
      "type": "bullets",
      "title": "Les autres notions sur l'œil",
      "items": [
-      "**Accommodation** : le cristallin se déforme pour la mise au point ; elle diminue avec l'âge (**presbytie**).",
-      "**Point aveugle** : sortie du nerf optique, sans photorécepteurs. Si un montant de verrière masque l'autre œil, bouge la tête.",
-      "Verres correcteurs imposés par ton certificat : emporte une **paire de rechange**. Lunettes de soleil grises, **non polarisantes**."
+      "**Vision nette** : environ **2°** autour du point fixé. **Point aveugle** : sortie du nerf optique ; si un montant de verrière masque l'autre œil, bouge la tête.",
+      "**Myopie** : flou de loin (verres divergents). **Hypermétropie** : image en arrière de la rétine (verres convergents). **Presbytie** : flou de près vers 40 à 45 ans (verres convergents).",
+      "Limitation **VDL** (verres pour la vision de loin) : porte-les et garde une **paire de rechange**. Lunettes de soleil **gris neutre**, ni polarisantes ni photochromiques."
      ]
     },
     {
      "type": "steps",
      "title": "Le balayage anticollision",
      "items": [
-      "Balaye le ciel par secteurs d'environ **10 à 15°**, avec un arrêt d'**au moins 1 s** sur chacun.",
+      "Balaye le ciel par secteurs d'environ **10 à 15°**, avec un arrêt d'**au moins 1 s** sur chacun : l'œil voit mal en mouvement.",
       "Par ciel vide (bleu uniforme, brume), l'œil se règle à quelques mètres (**myopie du champ vide**) : fixe souvent un objet lointain.",
       "Un point **immobile** dans le pare-brise est en route de collision : petit longtemps, il **grossit brutalement** à la fin."
      ]
@@ -267,7 +256,7 @@
      "type": "formula",
      "label": "Temps avant collision (face à face)",
      "formula": "temps = distance ÷ (V1 + V2)",
-     "example": "100 kt + 140 kt = 240 kt, soit **4 NM par minute**. Repérés à 2 NM : 2 ÷ 4 = 0,5 min = **30 s**, temps de réaction compris."
+     "example": "100 kt + 140 kt = 240 kt, soit **4 NM par minute**. Repérés à 2 NM : 2 ÷ 4 = 0,5 min = **30 s** pour tout faire. Avec les **12,5 s** comptées par la FAA de la détection à la réponse de l'avion, repère-le à plus de **0,8 NM**."
     },
     {
      "type": "table",
@@ -279,50 +268,51 @@
      ],
      "rows": [
       [
-       "Piste **montante** ou plus **étroite** que d'habitude",
+       "Piste **montante** ou plus **étroite** que d’habitude",
        "Être trop haut",
-       "Approche trop basse, atterrissage court"
+       "Approche basse, atterrissage court"
       ],
       [
-       "Piste **descendante** ou plus **large** que d'habitude",
+       "Piste **descendante** ou plus **large** que d’habitude",
        "Être trop bas",
-       "Approche et arrondi trop hauts, atterrissage long"
+       "Approche et arrondi hauts, atterrissage long"
       ],
       [
-       "**Trou noir** : de nuit, aucune lumière avant la piste (mer, forêt)",
+       "**Trou noir** : de nuit, aucune lumière avant la piste",
        "Être trop haut",
        "Descente sous le plan, atterrissage court"
       ],
       [
        "Pluie sur le pare-brise, brume",
-       "Être plus haut ou plus loin",
-       "Approche trop basse"
+       "Être plus haut, plus loin",
+       "Descente trop tôt, approche basse"
       ]
      ],
-     "note": "Parade : suis le PAPI, indicateur lumineux de plan d'approche (2 rouges et 2 blancs = sur le plan). Sinon, vise un plan de 3° : environ 300 ft par NM."
+     "note": "**Retiens : tu fais l'inverse de ce que tu crois.** « Je suis haut » → tu passes bas ; « je suis bas » → tu passes haut."
     },
     {
-     "type": "memo",
-     "text": "La piste te ment **dans le sens de sa forme**. Montante ou étroite : tu te crois haut, tu passes **bas**. Descendante ou large : tu te crois bas, tu passes **haut**."
+     "type": "key",
+     "title": "La parade : des repères chiffrés",
+     "text": "**PAPI** (indicateur lumineux de plan d'approche) : 2 rouges + 2 blancs = sur le plan ; 3 rouges = un peu bas ; 4 rouges = trop bas ; 3 blancs = un peu haut ; 4 blancs = trop haut.\nSans PAPI : plan de 3° ≈ **300 ft par NM** (318 exactement), soit ≈ **900 ft** à 3 NM du seuil. Le PAPI prime sur ta sensation."
     },
     {
      "type": "bullets",
      "title": "Autres illusions visuelles",
      "items": [
-      "**Autocinèse** : de nuit, une lumière fixe regardée plusieurs secondes semble bouger. Déplace ton regard.",
-      "**Faux horizon** : couche de nuages inclinée, ou lumières au sol prises pour des étoiles. Vérifie l'horizon artificiel.",
-      "**Flicker vertigo** : lumière hachée par l'hélice (environ 4 à 20 éclats par seconde), qui donne malaise et vertiges."
+      "**Autocinèse** : de nuit, une lumière fixe regardée plusieurs secondes semble bouger. Garde le regard mobile.",
+      "**Faux horizon** : sommet de nuages incliné, lumières au sol prises pour des étoiles. **Jour blanc** : neige et ciel blancs effacent le relief.",
+      "**Flicker vertigo** : lumière hachée par l'hélice ou un feu à éclats (environ 4 à 20 éclats par seconde) ; malaise et vertiges."
      ]
     }
    ]
   },
   {
    "title": "Audition, équilibre et désorientation spatiale",
-   "summary": "L'oreille entend et sert aussi de centrale d'équilibre ; sans repères visuels, cette centrale te trompe.",
+   "summary": "L'oreille entend et sert aussi de centrale d'équilibre ; sans repères visuels, cette centrale te trompe.",
    "blocks": [
     {
      "type": "text",
-     "text": "L'**oreille externe** (conduit, tympan) capte le son. L'**oreille moyenne** (osselets) est reliée à la gorge par la trompe d'Eustache. L'**oreille interne** contient la **cochlée** pour entendre et le **vestibule** pour l'équilibre."
+     "text": "L'**oreille externe** (pavillon, conduit) mène au **tympan**. L'**oreille moyenne** (osselets) communique avec la gorge par la **trompe d'Eustache**. L'**oreille interne** réunit la **cochlée** (audition) et le **vestibule** (équilibre)."
     },
     {
      "type": "table",
@@ -334,27 +324,21 @@
      ],
      "rows": [
       [
-       "**De transmission**",
+       "**Transmission**",
        "Conduit, tympan ou oreille moyenne",
        "Souvent soignable"
       ],
       [
-       "**De perception**",
-       "Cochlée : bruit prolongé au-delà d'environ **85 dB(A)**, âge (**presbyacousie**)",
-       "**Définitive**, touche d'abord les **aigus** (vers 4 000 Hz)"
+       "**Perception**",
+       "Cochlée : bruit au-delà d’environ **85 dB(A)**, âge",
+       "**Définitive**, d’abord les **aigus** (4 000 Hz)"
       ]
      ],
-     "note": "Protège-toi : casque antibruit à chaque vol."
-    },
-    {
-     "type": "formula",
-     "label": "Échelle des décibels (logarithmique)",
-     "formula": "+3 dB = énergie × 2 ; +10 dB = énergie × 10",
-     "example": "De 85 à 88 dB, l'énergie sonore **double** (et non + 3,5 %). De 85 à 95 dB, elle est multipliée par **10**."
+     "note": "Décibels : échelle logarithmique. **+3 dB = énergie × 2** (de 85 à 88 dB, elle double, et non + 3,5 %) ; +10 dB = énergie × 10. Même dose : 85 dB(A) 8 h = 88 dB(A) 4 h = 91 dB(A) 2 h. Sons étouffés ou sifflements après un vol : fatigue auditive. Casque antibruit à chaque vol."
     },
     {
      "type": "text",
-     "text": "La **vue** fournit environ **80 %** de l'orientation. Elle disparaît dans les nuages (IMC, conditions de vol aux instruments) ou de nuit sans repères. Restent l'oreille interne et les capteurs du corps : ils te trompent."
+     "text": "La **vue** fournit environ **80 %** de ton orientation. Elle disparaît dans les nuages (**IMC** : conditions météo imposant le vol aux instruments) ou de nuit sans repères. Restent l'oreille interne et les capteurs du corps : ils te trompent."
     },
     {
      "type": "compare",
@@ -362,28 +346,30 @@
       {
        "title": "Canaux semi-circulaires",
        "points": [
-        "3 canaux perpendiculaires, remplis d'endolymphe",
-        "Détectent les accélérations **angulaires** : début et fin d'une rotation",
-        "Rotation constante oubliée en **10 à 20 s** ; rotation très lente non perçue"
+        "3 canaux perpendiculaires, remplis d’un liquide (**endolymphe**)",
+        "Détectent les accélérations **angulaires** : début et fin d’une rotation",
+        "Rotation constante oubliée en **10 à 20 s** ; mise en rotation très lente non perçue"
        ]
       },
       {
        "title": "Otolithes (utricule, saccule)",
        "points": [
         "Détectent les accélérations **linéaires** et la pesanteur",
-        "Confondent une accélération avec une tête penchée en arrière"
+        "Confondent une accélération avec une tête penchée en arrière : accélérer = cabrer, freiner = piquer"
        ]
       }
      ]
     },
     {
-     "type": "trap",
-     "title": "Piège classique : le mal de l'air",
-     "text": "La **cinétose** naît d'un conflit entre la vue et l'oreille interne. Fais regarder l'horizon, aère, pilote en douceur ; **ne fais pas lire la carte**. Les médicaments contre le mal des transports endorment : à proscrire pour le pilote."
+     "type": "bullets",
+     "items": [
+      "**Mal de l'air** (cinétose) : conflit entre la vue et l'oreille interne. Fais regarder l'horizon, aère, pilote en douceur, **ne fais pas lire**. Les médicaments contre le mal des transports endorment : interdits au pilote.",
+      "**Vertige alternobare** : en descente, une oreille s'équilibre et pas l'autre ; vertige bref. Rééquilibre doucement, descends moins vite."
+     ]
     },
     {
      "type": "table",
-     "caption": "Les quatre illusions vestibulaires",
+     "caption": "Les illusions vestibulaires",
      "columns": [
       "Illusion",
       "Situation",
@@ -393,76 +379,85 @@
      "rows": [
       [
        "**Leans**",
-       "Inclinaison lente non perçue, puis retour rapide à plat",
-       "Une inclinaison du côté opposé",
-       "Tu te penches et réinclines l'avion"
+       "Inclinaison lente non perçue, retour brusque à plat",
+       "Inclinaison opposée",
+       "Tu réinclines l'avion"
       ],
       [
        "**Spirale**",
-       "Virage prolongé : la sensation de virage disparaît",
-       "Un vol droit qui perd de l'altitude",
-       "Tu tires : la spirale se resserre"
+       "Virage prolongé qu’on ne sent plus",
+       "Vol droit qui descend",
+       "Tu tires : ça se resserre"
       ],
       [
-       "**Somatogravique**",
-       "Forte accélération (décollage, remise de gaz) de nuit ou en IMC",
-       "Un cabré qui n'existe pas",
-       "Tu rends la main et vas vers le sol"
+       "**Somato­gravique**",
+       "Forte accélération (remise de gaz) de nuit, en IMC",
+       "Cabré inexistant",
+       "Tu rends la main"
+      ],
+      [
+       "**Inversion**",
+       "Passage brutal de la montée au palier",
+       "Bascule en arrière",
+       "Tu pousses"
+      ],
+      [
+       "**Ascenseur**",
+       "Forte ascendance soudaine",
+       "Montée",
+       "Tu pousses"
       ],
       [
        "**Coriolis**",
-       "Mouvement de tête pendant un virage prolongé",
-       "Une culbute violente",
-       "La désorientation la plus brutale"
+       "Tête qui bouge pendant un virage prolongé",
+       "Culbute violente",
+       "La pire désorientation"
       ]
      ],
-     "note": "Leans : virage lent à droite non perçu, retour brusque à plat. Tu ressens une inclinaison à gauche et tu te penches à droite."
+     "note": "Leans : virage lent à droite non perçu, retour brusque à plat → tu ressens une inclinaison à gauche et tu te penches à droite. Spirale : ailes à plat d'abord, assiette ensuite."
     },
     {
      "type": "key",
-     "title": "La parade",
-     "text": "Sans repères visuels, **crois tes instruments, et eux seuls**. En vol à vue (VFR), n'entre pas dans les nuages : un pilote non entraîné y perd le contrôle en quelques minutes. Si c'est fait : stabilise aux instruments, puis **demi-tour en douceur**."
+     "title": "La parade : crois tes instruments, et eux seuls",
+     "text": "La désorientation la plus dangereuse est celle que tu ne sens pas. En VFR (vol à vue), n'entre pas dans les nuages : sans entraînement, on y perd le contrôle en 3 min en moyenne (étude de 1954). Si c'est fait : ailes à plat et assiette aux instruments, puis **demi-tour au taux standard** : 3°/s (180° en 1 min), inclinaison ≈ Vp ÷ 10 + 7 (18° à 110 kt), tête immobile."
     }
    ]
   },
   {
-   "title": "Santé, hygiène de vie et aptitude au vol",
+   "title": "Santé, alcool, médicaments et aptitude au vol",
    "summary": "Un certificat médical valide ne suffit pas : ton aptitude se vérifie avant chaque vol.",
    "blocks": [
     {
      "type": "key",
      "title": "MED.A.020 (Part-MED) : baisse d'aptitude",
-     "text": "Tu ne voles pas si tu sens ton **aptitude baisser**, ni si un **médicament** (prescrit ou non) ou un **traitement** peut nuire à la sécurité.\nDemande sans délai l'avis d'un **médecin aéronautique** après : opération, début d'un médicament **régulier**, blessure ou maladie importante, hospitalisation, grossesse, **premier besoin de verres correcteurs**."
+     "text": "Tu ne voles pas si tu sens ton **aptitude baisser**, si tu prends un **médicament** (prescrit ou non) qui peut nuire à la sécurité, ou si tu suis un **traitement** risqué pour le vol.\nDemande sans délai l'avis d'un **médecin aéronautique** après : opération, début d'un médicament **régulier**, blessure ou maladie importante, hospitalisation, grossesse, **premier besoin de verres correcteurs**."
     },
     {
      "type": "memo",
-     "title": "IMSAFE (« I'M SAFE » : je suis en sécurité), avant chaque vol",
-     "text": "**I**llness : suis-je malade ? · **M**edication : ai-je pris des médicaments ? · **S**tress : suis-je préoccupé ?\n**A**lcohol : ai-je bu ? · **F**atigue : suis-je reposé ? · **E**motion ou Eating : suis-je serein, ai-je mangé ?\nUne seule lettre qui coince, et tu ne pars pas."
+     "title": "IMSAFE (« I’m safe » : je suis en sécurité), avant chaque vol",
+     "text": "**I**llness : suis-je malade ? · **M**edication : ai-je pris des médicaments ? · **S**tress : suis-je préoccupé ?\n**A**lcohol : ai-je bu ? · **F**atigue : suis-je reposé ? · **E**motion ou **E**ating : suis-je serein, ai-je mangé ?\nUne seule lettre qui coince, et tu reportes ou simplifies le vol."
     },
     {
      "type": "key",
-     "title": "Alcool",
-     "text": "**SERA.2020** interdit d'exercer une fonction critique pour la sécurité sous l'influence d'une substance psychoactive qui altère les performances. Ta règle : **zéro alcool avant le vol**, **8 h** au strict minimum après le dernier verre. En vol, l'alcool ajoute une hypoxie **histotoxique** et perturbe l'oreille interne pendant des heures."
+     "title": "Alcool : zéro avant le vol",
+     "text": "**SERA.2020** : aucune fonction critique pour la sécurité sous l'influence d'une substance psychoactive (alcool, drogues). Ta règle : **zéro alcool**, et **8 h** au strict minimum après le dernier verre. En vol, l'alcool ajoute une hypoxie **histotoxique** et trouble l'oreille interne."
     },
     {
      "type": "formula",
-     "label": "Temps pour éliminer l'alcool",
-     "formula": "durée (h) = alcoolémie (g/l) ÷ 0,10 à 0,15 g/l par heure",
-     "example": "0,90 g/l à minuit : 0,90 ÷ 0,15 = 6 h, soit **06 h 00** au mieux. À 0,10 g/l par heure : **09 h 00**. Retiens la valeur lente."
+     "label": "Alcool : estimer l'alcoolémie (Widmark), puis le temps d'élimination",
+     "formula": "alcoolémie (g/l) ≈ alcool (g) ÷ (masse (kg) × 0,7 homme ou 0,6 femme)\ndurée (h) = alcoolémie ÷ 0,10 à 0,15 g/l par heure",
+     "example": "Verre standard ≈ **10 g** d'alcool (250 ml de bière à 5 % : 250 × 0,05 × 0,8). Homme de 70 kg, 4 verres : 40 ÷ 49 ≈ **0,8 g/l**. Retour à zéro : 0,8 ÷ 0,15 ≈ **5 h 20** au mieux, 0,8 ÷ 0,10 = **8 h** au pire, après le pic."
     },
     {
      "type": "trap",
-     "text": "**Ni café, ni douche, ni sport** n'accélèrent l'élimination. Et 8 h après une forte soirée, tu n'es **pas forcément apte** : l'alcool restant et la « gueule de bois » rendent inapte."
+     "text": "**Ni café, ni douche, ni sport** n'accélèrent l'élimination : ils masquent seulement la somnolence. Et 8 h après une forte soirée, tu n'es **pas forcément apte** : l'alcool restant et la « gueule de bois » rendent inapte."
     },
     {
      "type": "bullets",
-     "title": "Médicaments, fatigue et sommeil",
+     "title": "Médicaments",
      "items": [
-      "**Pas d'automédication** : beaucoup de médicaments endorment, et la maladie traitée peut à elle seule rendre inapte.",
-      "Pictogramme triangulaire sur la boîte (niveau 1 jaune, 2 orange, 3 rouge) : risque pour la conduite, demande un avis médical.",
-      "Le sommeil va par **cycles d'environ 90 min**. La **dette de sommeil** s'accumule et favorise erreurs et **micro-sommeils**.",
-      "**Rythme circadien** (horloge d'environ 24 h, réglée par la lumière) : vigilance au plus bas vers **3 h – 5 h**.",
-      "Décalage horaire : voyager vers l'**est** est en général plus dur, car ta journée raccourcit."
+      "**Pas d'automédication** : antihistaminiques, somnifères, décongestionnants, anti-mal des transports endorment. « Sans ordonnance » ≠ « sans effet ».",
+      "Pictogramme triangulaire sur la boîte : niveau 1 jaune (prudence), 2 orange (pas de conduite sans avis médical), 3 rouge (ne pas conduire). Pour toi : avis d'un médecin aéronautique."
      ]
     },
     {
@@ -476,40 +471,88 @@
      "rows": [
       [
        "**Don de sang**",
-       "Moins de sang pour transporter l'O2 (hypoxie hypémique)",
-       "Pas de vol dans les **24 h**"
+       "Moins de globules rouges (hypoxie hypémique)",
+       "**24 h** sans voler"
       ],
       [
        "**Repas sauté**",
-       "Hypoglycémie : concentration en baisse, voire malaise",
-       "Repas léger avant, collation à bord"
+       "Hypoglycémie : concentration en baisse, malaise",
+       "Repas léger"
       ],
       [
        "**Déshydratation**",
-       "Fatigue, maux de tête ; la soif arrive tard",
-       "Boire régulièrement"
+       "Maux de tête, fatigue ; la soif arrive tard",
+       "Boire souvent"
       ],
       [
        "**Tabac**",
-       "Le CO bloque une partie de l'hémoglobine : au sol, un fumeur est déjà comme à plusieurs milliers de pieds",
-       "Ne pas fumer avant le vol"
+       "Gros fumeur : jusqu'à 10 % d'hémoglobine bloquée par le CO ; il tolère moins l'altitude",
+       "Pas avant le vol"
       ]
-     ]
+     ],
+     "note": "Hypertension : ≥ 140/90 mmHg. Indice de masse corporelle (masse ÷ taille²) : surpoids dès 25, obésité dès 30. Une incapacité **insidieuse** (hypoxie, CO) est plus traîtresse qu'un malaise brutal."
     }
    ]
   },
   {
-   "title": "Information, mémoire, attention et conscience de la situation",
-   "summary": "Ton cerveau traite l'information par un goulot étroit : connaître ses limites t'évite de le saturer.",
+   "title": "Fatigue, sommeil, stress et charge de travail",
+   "summary": "Fatigue et stress grignotent ta marge sans bruit : apprends à les repérer avant d’être débordé.",
    "blocks": [
     {
+     "type": "text",
+     "text": "La **fatigue aiguë** suit une journée chargée : une bonne nuit l'efface. La **fatigue chronique** s'accumule sur des jours ou des semaines (**dette de sommeil**) : il faut un repos prolongé."
+    },
+    {
+     "type": "trap",
+     "title": "Piège classique : le pilote fatigué ne se sent pas fatigué",
+     "text": "Signes : réactions lentes, oublis, irritabilité, « ça ira », **micro-sommeils**. Fie-toi à tes heures de sommeil, pas à ton ressenti. **NCO.GEN.105** : inapte, par fatigue notamment, le commandant de bord ne part pas."
+    },
+    {
+     "type": "bullets",
+     "title": "Sommeil et horloge interne",
+     "items": [
+      "Il te faut **au moins 7 h** de sommeil par nuit. Le sommeil va par **cycles d'environ 90 min** : profond en début de nuit, **paradoxal** (les rêves) en fin de nuit.",
+      "Sieste : **10 à 20 min**. Plus longue, tu risques l'**inertie du sommeil** : esprit embrumé jusqu'à 30 min.",
+      "**Rythme circadien** (horloge d'environ 24 h, réglée par la lumière) : vigilance au plus bas vers **3 h – 5 h**, et un peu en début d'après-midi.",
+      "**Décalage horaire** : 1 jour de récupération par fuseau, plus vers l'**est**. Rentré de Montréal (– 6 h), ton creux tombe vers **8 h – 12 h** à Paris."
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Le **stress** naît quand une demande semble dépasser tes ressources (Lazarus) : l'entraînement le réduit. **Aigu** (panne) ou **chronique** (soucis qui durent), il s'additionne : bruit, chaleur, faim, fatigue, charge, deuil…"
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "Réaction **« combat ou fuite »** : **adrénaline** en secondes (cœur et respiration accélèrent), puis **cortisol**. Stress prolongé (Selye) : **alarme**, **résistance**, **épuisement**.",
+      "Effets en vol : tunnel attentionnel, mémoire réduite, décisions hâtives ou blocage, **retour aux vieux automatismes**.",
+      "**Effet de surprise** : tu te figes ou tu agis trop vite. Respire, pilote d'abord, analyse ensuite."
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "La loi de Yerkes-Dodson : une courbe en U inversé",
+     "svg": "<svg viewBox=\"0 0 720 180\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"720\" height=\"180\" fill=\"#ffffff\"/>\n<rect x=\"92\" y=\"18\" width=\"150\" height=\"122\" fill=\"#fdeee6\"/>\n<rect x=\"242\" y=\"18\" width=\"256\" height=\"122\" fill=\"#eaf6ee\"/>\n<rect x=\"498\" y=\"18\" width=\"152\" height=\"122\" fill=\"#fdeee6\"/>\n<line x1=\"90\" y1=\"140\" x2=\"652\" y2=\"140\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<polygon points=\"652,134 664,140 652,146\" fill=\"#14213d\"/>\n<line x1=\"90\" y1=\"140\" x2=\"90\" y2=\"16\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<polygon points=\"84,16 90,4 96,16\" fill=\"#14213d\"/>\n<path d=\"M100,136 C250,-4 490,-4 640,136\" fill=\"none\" stroke=\"#a23b72\" stroke-width=\"4\"/>\n<text x=\"150\" y=\"36\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">Sous-charge</text>\n<text x=\"150\" y=\"53\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">ennui, routine</text>\n<text x=\"590\" y=\"36\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">Surcharge</text>\n<text x=\"590\" y=\"53\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">stress, panique</text>\n<text x=\"370\" y=\"92\" font-size=\"15\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">Performance maximale</text>\n<text x=\"370\" y=\"110\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">pour un éveil moyen</text>\n<text x=\"140\" y=\"157\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">faible</text>\n<text x=\"370\" y=\"157\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">moyen</text>\n<text x=\"600\" y=\"157\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">élevé</text>\n<text x=\"370\" y=\"176\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Niveau d’éveil (stress, charge de travail)</text>\n<text x=\"52\" y=\"80\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\" transform=\"rotate(-90 52 80)\">Performance</text>\n</svg>",
+     "caption": "**Sous-charge** (croisière calme, nuit) : vigilance en baisse dès 30 min ; planifie des tâches. **Surcharge** (approche, panne) : oublis, tâches abandonnées ; prépare tout au sol. Tâche complexe : l'éveil idéal est plus bas."
+    },
+    {
      "type": "key",
-     "title": "Le trajet d'une information",
-     "text": "**Sens** → mémoire sensorielle → **attention** (le filtre) → **perception** → **mémoire de travail** → décision → **action** → retour d'information.\nLa perception s'appuie sur l'expérience : on voit parfois ce qu'on s'attend à voir."
+     "title": "Priorités : aviate, navigate, communicate",
+     "text": "**Piloter**, puis **naviguer**, puis **communiquer**. Au contrôleur qui t'appelle en plein virage : « attendez » (*stand-by*). En 1972, l'équipage d'Eastern 401, absorbé par une ampoule de train grillée, n'a pas vu son avion descendre jusqu'au sol."
+    }
+   ]
+  },
+  {
+   "title": "Information, mémoire, attention et décision",
+   "summary": "Ton cerveau traite l'information par un goulot étroit : connaître ses limites et ses biais t'aide à décider à temps.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Trajet d'une information : **sens** → mémoire sensorielle → **attention** (le filtre) → **perception** → **mémoire de travail** → décision → **action** → retour d'information. La perception s'appuie sur l'expérience : tu perçois parfois ce que tu attends."
     },
     {
      "type": "table",
-     "caption": "Les trois mémoires",
+     "caption": "Les trois mémoires (la mémoire de travail est la mémoire à court terme)",
      "columns": [
       "Mémoire",
       "Capacité et durée",
@@ -518,139 +561,42 @@
      "rows": [
       [
        "**Sensorielle**",
-       "Très brève",
-       "L'image ou le son brut, avant le tri"
+       "Une fraction de seconde (image), **2 à 4 s** (son)",
+       "Le signal brut, avant le tri"
       ],
       [
-       "**De travail** (court terme)",
-       "**7 ± 2 éléments**, perdus en **20 s** environ",
-       "Noter, collationner, regrouper les chiffres"
+       "**De travail**",
+       "**7 ± 2 éléments**, perdus en **20 s** environ",
+       "Noter, collationner, regrouper"
       ],
       [
        "**À long terme**",
        "Très grande et durable",
-       "Connaissances, souvenirs, savoir-faire (procédurale)"
+       "Connaissances, souvenirs, savoir-faire"
       ]
-     ]
-    },
-    {
-     "type": "example",
-     "text": "« Cap 270, montez 3 500 ft, transpondeur 4521, contactez 119,250. » : 4 informations et 17 chiffres, bien plus que 7 éléments. **Note tout de suite**, puis collationne."
+     ],
+     "note": "Exemple : « cap 270, montez 3 500 pieds, transpondeur 4521, contactez 119,250 » fait 17 chiffres, bien plus que 7 éléments. **Note tout de suite**, puis collationne."
     },
     {
      "type": "trap",
      "title": "Piège classique : le tunnel attentionnel",
-     "text": "On ne traite **consciemment qu'une tâche à la fois** ; l'attention partagée repose sur les automatismes. En finale, une alarme t'absorbe et la vitesse chute : c'est le **tunnel attentionnel**. Priorité : **piloter**, puis naviguer, puis communiquer."
+     "text": "Tu ne traites **consciemment qu'une tâche à la fois** (le reste passe par les automatismes). En finale, une alarme t'absorbe et la vitesse chute : **tunnel attentionnel**. Pilote d'abord."
     },
     {
-     "type": "compare",
-     "items": [
-      {
-       "title": "1. Percevoir",
-       "points": [
-        "Voir les éléments",
-        "*Le vent forcit à destination.*"
-       ]
-      },
-      {
-       "title": "2. Comprendre",
-       "points": [
-        "Leur donner un sens",
-        "*Le travers approche ma limite.*"
-       ]
-      },
-      {
-       "title": "3. Anticiper",
-       "points": [
-        "Prévoir la suite : ce niveau fait décider à temps",
-        "*Je prépare le déroutement.*"
-       ]
-      }
-     ]
+     "type": "key",
+     "title": "Conscience de la situation",
+     "text": "Elle a 3 niveaux : **percevoir** (le vent forcit), **comprendre** (le travers approche ma limite), **anticiper** (je prépare le déroutement). Elle se perd sans bruit : deux sources qui divergent, un point manqué. Stabilise, fais le point, recoupe."
     },
     {
      "type": "bullets",
-     "title": "Biais et automatismes",
+     "title": "Les biais qui faussent ton jugement",
      "items": [
-      "**Biais d'attente** : on entend la clairance qu'on attend. Collationne mot à mot.",
-      "**Biais de confirmation** : on ne retient que les indices qui confirment son plan.",
-      "**Complaisance** : on surveille trop peu le GPS ou le pilote automatique. Recoupe avec la carte et le sol."
+      "**Biais d'attente** : tu entends la piste habituelle (27) au lieu de celle annoncée (09). Collationne mot à mot.",
+      "**Confirmation** : tu retiens les éclaircies et écartes le METAR défavorable. **Ancrage** : tu restes sur le plafond du briefing.",
+      "**Continuation**, nourrie par le **coût irrécupérable** (« j'ai déjà fait 1 h 30 ») : tu poursuis ton plan, surtout près du but.",
+      "**Normalisation de la déviance** : un écart répété sans conséquence finit par paraître normal.",
+      "**Complaisance** : confiance excessive dans le GPS ou le pilote automatique. Recoupe avec la carte et le sol."
      ]
-    }
-   ]
-  },
-  {
-   "title": "Erreurs, menaces et prise de décision",
-   "summary": "Tout le monde se trompe : l'enjeu est de repérer et rattraper l'erreur avant qu'elle ne devienne un accident.",
-   "blocks": [
-    {
-     "type": "table",
-     "caption": "Erreurs et violations",
-     "columns": [
-      "Type",
-      "Définition",
-      "Exemple"
-     ],
-     "rows": [
-      [
-       "**Raté**",
-       "Bonne intention, mauvaise exécution",
-       "Sélecteur tourné sur le réservoir droit au lieu du gauche"
-      ],
-      [
-       "**Oubli**",
-       "Défaillance de mémoire : action omise",
-       "Volets pas sortis"
-      ],
-      [
-       "**Faute**",
-       "Plan ou décision erronés",
-       "Contourner un orage par le côté où il grossit"
-      ],
-      [
-       "**Violation**",
-       "Écart **volontaire** à une règle",
-       "Check-list sautée pour gagner du temps"
-      ]
-     ],
-     "note": "Ratés, oublis et fautes sont involontaires ; seule la violation est volontaire."
-    },
-    {
-     "type": "table",
-     "caption": "TEM : gestion des menaces et des erreurs (Threat and Error Management)",
-     "columns": [
-      "Élément",
-      "Définition",
-      "Exemples"
-     ],
-     "rows": [
-      [
-       "**Menace**",
-       "Extérieure au pilote, elle complique le vol",
-       "Orage sur la route, relief, trafic, panne"
-      ],
-      [
-       "**Erreur**",
-       "Vient du pilote",
-       "Mauvais calage altimétrique, check-list oubliée"
-      ],
-      [
-       "**État indésirable**",
-       "Situation de l'avion qui réduit les marges",
-       "Vitesse trop élevée en courte finale"
-      ]
-     ],
-     "note": "On anticipe les menaces au briefing ; on détecte et corrige les erreurs avant l'état indésirable."
-    },
-    {
-     "type": "diagram",
-     "title": "Le modèle de Reason, dit du « fromage suisse »",
-     "svg": "<svg viewBox=\"-20 0 720 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"680\" height=\"200\" fill=\"#ffffff\"/>\n<defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker></defs>\n<text x=\"18\" y=\"77\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\">Danger</text>\n<text x=\"662\" y=\"77\" font-size=\"15\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"end\">Accident</text>\n<polygon points=\"145,32 205,20 205,113 145,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"175\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"169\" cy=\"40\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"183\" cy=\"104\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<polygon points=\"265,32 325,20 325,113 265,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"295\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"302\" cy=\"42\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"287\" cy=\"102\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<polygon points=\"385,32 445,20 445,113 385,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"415\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"408\" cy=\"38\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"421\" cy=\"105\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<polygon points=\"505,32 565,20 565,113 505,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"535\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"543\" cy=\"40\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"529\" cy=\"103\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<line x1=\"82\" y1=\"72\" x2=\"588\" y2=\"72\" stroke=\"#c0392b\" stroke-width=\"4\" marker-end=\"url(#ah)\"/>\n<text x=\"175\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Organisation</text><text x=\"175\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">(règles, club)</text>\n<text x=\"295\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Formation,</text><text x=\"295\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">encadrement</text>\n<text x=\"415\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Conditions</text><text x=\"415\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">(fatigue, météo)</text>\n<text x=\"535\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Actes</text><text x=\"535\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">du pilote</text>\n<path d=\"M130,170 L130,176 L460,176 L460,170\" fill=\"none\" stroke=\"#5b3f8c\" stroke-width=\"2\"/>\n<text x=\"295\" y=\"194\" font-size=\"14\" font-weight=\"700\" fill=\"#5b3f8c\" text-anchor=\"middle\">Conditions latentes</text>\n<path d=\"M495,170 L495,176 L575,176 L575,170\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/>\n<text x=\"535\" y=\"194\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">Défaillances actives</text>\n</svg>",
-     "caption": "Chaque couche de défense a des trous. L'accident survient quand ils s'alignent ; boucher un seul trou arrête la flèche."
-    },
-    {
-     "type": "text",
-     "text": "Selon **James Reason**, un accident a rarement une seule cause. Les **défaillances actives** sont les actes du pilote, aux effets immédiats. Les **conditions latentes** dorment dans le système (règles, formation, organisation)."
     },
     {
      "type": "compare",
@@ -663,39 +609,98 @@
        ]
       },
       {
-       "title": "FOR-DEC (Lufthansa et DLR, centre aérospatial allemand)",
+       "title": "FOR-DEC (Lufthansa et centre aérospatial allemand)",
        "points": [
-        "**F**acts (les faits), **O**ptions, **R**isques et bénéfices",
-        "**D**écision, **E**xécution, **C**heck (vérifier que ça marche)"
+        "**F**aits, **O**ptions, **R**isques et bénéfices",
+        "**D**écision, **E**xécution, **C**ontrôle (ça marche ?)"
        ]
       }
      ]
     },
     {
-     "type": "key",
-     "title": "Pression d'objectif (« get-there-itis »)",
-     "text": "Vouloir arriver à tout prix (rendez-vous, passagers, avion à rendre) pousse à continuer malgré la météo ou le carburant. Parades : **minima personnels fixés au sol**, **point de décision** prévu sur la route, **plan B** (demi-tour, déroutement) préparé avant le départ."
+     "type": "memo",
+     "title": "PAVE : évaluer le risque avant le vol",
+     "text": "Méthode de la FAA (l'autorité américaine). **P**ilote : IMSAFE, entraînement récent. **A**vion : état, carburant, performances. en**V**ironnement : météo, relief, espaces. pressions **E**xtérieures : horaire, passagers. **Risque = probabilité × gravité**."
     },
     {
-     "type": "memo",
-     "title": "Tes check-lists personnelles : IMSAFE pour toi, PAVE pour le vol",
-     "text": "**PAVE**, méthode de la FAA (l'autorité américaine). **P**ilote : IMSAFE, entraînement récent. **A**vion : état, carburant, performances. en**V**ironnement : météo, relief, espaces aériens. **E**xternal pressures : horaire, passagers."
+     "type": "key",
+     "title": "Pression d'objectif (« get-there-itis »)",
+     "text": "Vouloir arriver à tout prix (rendez-vous, passagers, avion à rendre, copains qui partent) pousse à continuer malgré la météo ou le carburant. Parades : **minima personnels fixés au sol**, **point de décision** sur la route, **plan B** prêt avant le départ (déroutement, train, nuit sur place)."
     }
    ]
   },
   {
-   "title": "Stress, attitudes, personnalité et communication",
-   "summary": "Ni trop, ni trop peu : ton niveau d'éveil, ton caractère et ta façon de communiquer pèsent sur chaque décision.",
+   "title": "Erreurs, sécurité, attitudes et communication",
+   "summary": "Tout le monde se trompe : l'enjeu est de prévenir, repérer et rattraper l'erreur avant qu'elle ne devienne un accident.",
    "blocks": [
     {
-     "type": "text",
-     "text": "Le **stress** peut être **physique** (bruit, chaleur), **physiologique** (faim, fatigue) ou **psychologique** (soucis, peur). Il rétrécit le champ d'attention. S'il dure, le corps passe par l'**alarme**, la **résistance**, puis l'**épuisement** (modèle de Selye)."
+     "type": "table",
+     "caption": "Erreurs et violations (classement de Reason)",
+     "columns": [
+      "Type",
+      "Définition",
+      "Exemple"
+     ],
+     "rows": [
+      [
+       "**Raté**",
+       "Bonne intention, mauvaise exécution",
+       "Réservoir droit sélectionné au lieu du gauche"
+      ],
+      [
+       "**Lapsus**",
+       "Oubli, souvent après une interruption",
+       "Volets laissés sortis après un appel radio"
+      ],
+      [
+       "**Faute**",
+       "Le plan lui-même est mauvais",
+       "Tour de piste à 1 000 ft, la VAC dit 700 ft"
+      ],
+      [
+       "**Violation**",
+       "Écart **volontaire** (de routine, optimisante…)",
+       "Prévol bâclée que tout le club tolère"
+      ]
+     ],
+     "note": "Ratés, lapsus et fautes sont involontaires. Rasmussen distingue 3 niveaux (automatismes, règles, connaissances) : ratés et lapsus naissent des automatismes, les fautes des règles ou des connaissances. Check-list interrompue : reprends la section **depuis son début**."
     },
     {
      "type": "diagram",
-     "title": "La loi de Yerkes-Dodson : une courbe en U inversé",
-     "svg": "<svg viewBox=\"-20 0 720 268\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"680\" height=\"268\" fill=\"#ffffff\"/>\n<rect x=\"92\" y=\"32\" width=\"158\" height=\"188\" fill=\"#fdeee6\"/>\n<rect x=\"250\" y=\"32\" width=\"240\" height=\"188\" fill=\"#eaf6ee\"/>\n<rect x=\"490\" y=\"32\" width=\"160\" height=\"188\" fill=\"#fdeee6\"/>\n<line x1=\"90\" y1=\"220\" x2=\"652\" y2=\"220\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<polygon points=\"652,214 664,220 652,226\" fill=\"#14213d\"/>\n<line x1=\"90\" y1=\"220\" x2=\"90\" y2=\"30\" stroke=\"#14213d\" stroke-width=\"2\"/>\n<polygon points=\"84,30 90,18 96,30\" fill=\"#14213d\"/>\n<path d=\"M100,212 C260,0 480,0 640,212\" fill=\"none\" stroke=\"#a23b72\" stroke-width=\"4\"/>\n<text x=\"166\" y=\"52\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">Sous-charge</text>\n<text x=\"166\" y=\"69\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">ennui, routine,</text>\n<text x=\"166\" y=\"85\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">vigilance en baisse</text>\n<text x=\"574\" y=\"52\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">Surcharge</text>\n<text x=\"574\" y=\"69\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">stress, tunnel</text>\n<text x=\"574\" y=\"85\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">attentionnel, panique</text>\n<text x=\"370\" y=\"128\" font-size=\"15\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">Performance maximale</text>\n<text x=\"370\" y=\"147\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">pour un éveil moyen</text>\n<text x=\"140\" y=\"238\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">faible</text>\n<text x=\"370\" y=\"238\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">moyen</text>\n<text x=\"600\" y=\"238\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">élevé</text>\n<text x=\"370\" y=\"261\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Niveau d'éveil (stress, charge de travail)</text>\n<text x=\"52\" y=\"126\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\" transform=\"rotate(-90 52 126)\">Performance</text>\n</svg>",
-     "caption": "Trop peu d'éveil (routine) ou trop (panne, météo) : la performance chute. Parades : anticiper, check-lists, priorités."
+     "title": "Le modèle de Reason, dit du « fromage suisse »",
+     "svg": "<svg viewBox=\"-20 0 720 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"680\" height=\"200\" fill=\"#ffffff\"/>\n<defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"5\" markerHeight=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker></defs>\n<text x=\"18\" y=\"77\" font-size=\"15\" font-weight=\"700\" fill=\"#b3401a\">Danger</text>\n<text x=\"662\" y=\"77\" font-size=\"15\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"end\">Accident</text>\n<polygon points=\"145,32 205,20 205,113 145,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"175\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"169\" cy=\"40\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"183\" cy=\"104\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<polygon points=\"265,32 325,20 325,113 265,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"295\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"302\" cy=\"42\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"287\" cy=\"102\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<polygon points=\"385,32 445,20 445,113 385,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"415\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"408\" cy=\"38\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"421\" cy=\"105\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<polygon points=\"505,32 565,20 565,113 505,125\" fill=\"#f6c945\" stroke=\"#a87a00\" stroke-width=\"1.5\"/><ellipse cx=\"535\" cy=\"72\" rx=\"11\" ry=\"13\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"543\" cy=\"40\" rx=\"7\" ry=\"8\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/><ellipse cx=\"529\" cy=\"103\" rx=\"8\" ry=\"9\" fill=\"#ffffff\" stroke=\"#a87a00\" stroke-width=\"1.2\"/>\n<line x1=\"82\" y1=\"72\" x2=\"588\" y2=\"72\" stroke=\"#c0392b\" stroke-width=\"4\" marker-end=\"url(#ah)\"/>\n<text x=\"175\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Organisation</text><text x=\"175\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">(règles, club)</text>\n<text x=\"295\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Formation,</text><text x=\"295\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">encadrement</text>\n<text x=\"415\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Conditions</text><text x=\"415\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">(fatigue, météo)</text>\n<text x=\"535\" y=\"146\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Actes</text><text x=\"535\" y=\"162\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\">du pilote</text>\n<path d=\"M130,170 L130,176 L460,176 L460,170\" fill=\"none\" stroke=\"#5b3f8c\" stroke-width=\"2\"/>\n<text x=\"295\" y=\"194\" font-size=\"14\" font-weight=\"700\" fill=\"#5b3f8c\" text-anchor=\"middle\">Conditions latentes</text>\n<path d=\"M495,170 L495,176 L575,176 L575,170\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/>\n<text x=\"535\" y=\"194\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\" text-anchor=\"middle\">Défaillances actives</text>\n</svg>",
+     "caption": "Chaque barrière de défense a des trous, qui bougent. L'accident survient quand ils s'alignent ; boucher un seul trou arrête la flèche."
+    },
+    {
+     "type": "text",
+     "text": "Les **défaillances actives** sont les actes de la première ligne, aux effets immédiats. Les **conditions latentes**, créées en amont (organisation, procédures), dorment parfois des années. Cherche **pourquoi**, pas **qui**."
+    },
+    {
+     "type": "table",
+     "caption": "TEM : gestion des menaces et des erreurs (*Threat and Error Management*)",
+     "columns": [
+      "Élément",
+      "Définition",
+      "Exemples"
+     ],
+     "rows": [
+      [
+       "**Menace**",
+       "Extérieure : attendue, inattendue, latente",
+       "Orage prévu, panne, check-list mal conçue"
+      ],
+      [
+       "**Erreur**",
+       "Du pilote : manipulation, procédure, communication",
+       "Mauvais calage, QNH mal collationné"
+      ],
+      [
+       "**État indésirable**",
+       "L'avion sort de ses marges",
+       "Trop vite en finale, mauvaise configuration"
+      ]
+     ],
+     "note": "Menaces : anticipe-les au briefing. Erreurs : détecte-les, corrige-les. État indésirable : **rétablis l'avion d'abord** (remise de gaz), analyse au sol."
     },
     {
      "type": "table",
@@ -713,13 +718,13 @@
       ],
       [
        "**Impulsivité**",
-       "« Vite, il faut agir ! »",
-       "« Pas si vite, réfléchis d'abord. »"
+       "« Vite, il faut agir ! »",
+       "« Pas si vite, réfléchis d’abord. »"
       ],
       [
        "**Invulnérabilité**",
-       "« Ça n'arrive qu'aux autres. »",
-       "« Ça peut m'arriver à moi aussi. »"
+       "« Ça n’arrive qu’aux autres. »",
+       "« Ça peut m’arriver à moi aussi. »"
       ],
       [
        "**Machisme**",
@@ -728,34 +733,20 @@
       ],
       [
        "**Résignation**",
-       "« À quoi bon ? »",
+       "« À quoi bon ? »",
        "« Je ne suis pas impuissant, je peux agir. »"
       ]
-     ]
-    },
-    {
-     "type": "compare",
-     "items": [
-      {
-       "title": "Personnalité",
-       "points": [
-        "Traits stables, construits tôt, qui évoluent peu (ex. : introverti ou extraverti)"
-       ]
-      },
-      {
-       "title": "Attitudes",
-       "points": [
-        "Façons de réagir qui s'apprennent et se corrigent : c'est le but de la formation"
-       ]
-      }
-     ]
+     ],
+     "note": "La **personnalité** (traits stables, comme être introverti) évolue peu ; les **attitudes** s'apprennent et se corrigent : c'est le but de la formation."
     },
     {
      "type": "bullets",
-     "title": "Bien communiquer",
+     "title": "Communiquer, gérer tes ressources, partager tes erreurs",
      "items": [
-      "Un message va d'un **émetteur** à un **récepteur** ; le **retour** (collationnement, reformulation) prouve qu'il est compris.",
-      "Elle est **verbale** (mots, ton) et **non verbale** (gestes, regard). Obstacles : bruit, jargon, fatigue, biais d'attente. Dis clairement ce que tu vois et ce que tu proposes."
+      "Le **collationnement**, écouté par le contrôleur (*hear-back*), prouve que le message est compris. Doute : **fais répéter**. En 1989, « two four zero zero » compris « to 400 » n'a pas été corrigé.",
+      "**SHELL** (OACI) : le pilote (L) face aux procédures (S), au matériel (H), à l'environnement (E), aux autres (L). Deux manettes jumelles (L-H) font des ratés.",
+      "**SRM** (le **CRM** des équipages, pour le pilote seul) : utilise contrôle, SIV (service d'information de vol), GPS, passagers briefés.",
+      "**Culture juste** : l'erreur de bonne foi n'est pas sanctionnée, la violation délibérée oui. Notifie tes incidents (règlement (UE) n° 376/2014) et partage-les : c'est le **REX** (retour d'expérience)."
      ]
     }
    ]
@@ -763,7 +754,7 @@
  ],
  "key_numbers": [
   {
-   "value": "12 q · 18 min",
+   "value": "12 q · 18 min",
    "label": "75 % requis : 9 bonnes réponses"
   },
   {
@@ -776,23 +767,27 @@
   },
   {
    "value": "18 000 ft",
-   "label": "≈ 500 hPa : pression divisée par 2"
+   "label": "≈ 500 hPa : PO2 divisée par 2"
   },
   {
    "value": "5 000 ft",
-   "label": "la vision de nuit commence à baisser"
+   "label": "la vision de nuit baisse"
   },
   {
-   "value": "> 10 000 ft",
-   "label": "O2 équipage au-delà de 30 min (NCO)"
+   "value": "> 30 min",
+   "label": "10 000 – 13 000 ft : O2 équipage"
   },
   {
    "value": "> 13 000 ft",
-   "label": "O2 pour tous les occupants (NCO)"
+   "label": "O2 pour tous les occupants"
   },
   {
    "value": "20 – 30 min",
    "label": "TCU à 18 000 ft"
+  },
+  {
+   "value": "5 – 10 min",
+   "label": "TCU à 22 000 ft"
   },
   {
    "value": "3 – 5 min",
@@ -803,28 +798,32 @@
    "label": "TCU à 30 000 ft"
   },
   {
-   "value": "> 200 fois",
+   "value": "> 200 fois",
    "label": "affinité du CO pour l'hémoglobine"
   },
   {
+   "value": "4 – 6 h",
+   "label": "demi-vie du CO à l’air libre"
+  },
+  {
    "value": "12 h / 24 h",
-   "label": "plongée sans palier / avec paliers"
+   "label": "plongée sans / avec paliers"
   },
   {
    "value": "24 h",
-   "label": "sans voler après un don de sang"
+   "label": "sans vol après un don de sang"
   },
   {
-   "value": "≈ 3 à 4 g",
-   "label": "voile gris"
+   "value": "≈ 3,5 g",
+   "label": "début du voile gris"
   },
   {
-   "value": "≈ 5 g",
-   "label": "voile noir (encore conscient)"
+   "value": "4 – 6 g",
+   "label": "voile noir, puis G-LOC"
   },
   {
    "value": "2 g",
-   "label": "virage à 60° d'inclinaison"
+   "label": "virage en palier à 60°"
   },
   {
    "value": "30 min",
@@ -832,7 +831,11 @@
   },
   {
    "value": "10 – 15°",
-   "label": "secteur de balayage, 1 s d'arrêt"
+   "label": "secteur de balayage (arrêt 1 s)"
+  },
+  {
+   "value": "12,5 s",
+   "label": "de la détection à la réponse de l’avion"
   },
   {
    "value": "240 kt",
@@ -840,7 +843,7 @@
   },
   {
    "value": "300 ft/NM",
-   "label": "plan d'approche de 3°"
+   "label": "plan de 3° (318 exactement)"
   },
   {
    "value": "4 – 20 Hz",
@@ -848,15 +851,11 @@
   },
   {
    "value": "85 dB(A)",
-   "label": "seuil de risque pour l'audition"
+   "label": "seuil de danger pour l’oreille"
   },
   {
    "value": "+3 dB",
-   "label": "énergie sonore × 2 (+10 dB : × 10)"
-  },
-  {
-   "value": "4 000 Hz",
-   "label": "aigus touchés en premier par le bruit"
+   "label": "énergie sonore × 2"
   },
   {
    "value": "80 %",
@@ -864,7 +863,7 @@
   },
   {
    "value": "10 – 20 s",
-   "label": "rotation constante, puis plus ressentie"
+   "label": "rotation constante qu’on ne sent plus"
   },
   {
    "value": "8 h",
@@ -873,6 +872,10 @@
   {
    "value": "0,10 – 0,15",
    "label": "g/l d'alcool éliminés par heure"
+  },
+  {
+   "value": "7 h",
+   "label": "de sommeil par nuit, au minimum"
   },
   {
    "value": "90 min",
@@ -884,45 +887,37 @@
   },
   {
    "value": "7 ± 2",
-   "label": "éléments en mémoire de travail (20 s)"
+   "label": "éléments en mémoire de travail"
   }
  ],
  "glossary": [
   {
    "term": "Hypoxie",
-   "def": "manque d'oxygène dans les tissus"
-  },
-  {
-   "term": "Pression partielle",
-   "def": "PO2 ≈ 0,21 × P (loi de Dalton)"
-  },
-  {
-   "term": "TCU",
-   "def": "temps de conscience utile"
-  },
-  {
-   "term": "NCO.OP.190",
-   "def": "oxygène en vol non commercial"
+   "def": "manque d'O2 dans les tissus (4 types)"
   },
   {
    "term": "Cyanose",
    "def": "lèvres et ongles bleutés"
   },
   {
+   "term": "TCU",
+   "def": "temps de conscience utile sans O2"
+  },
+  {
    "term": "Hyperventilation",
-   "def": "trop de souffle, CO2 en baisse"
+   "def": "souffle excessif, CO2 en baisse"
   },
   {
    "term": "CO",
    "def": "monoxyde de carbone, bloque l'hémoglobine"
   },
   {
-   "term": "Barotraumatisme",
-   "def": "lésion par écart de pression"
+   "term": "Trompe d'Eustache",
+   "def": "relie l’oreille moyenne à la gorge"
   },
   {
-   "term": "Trompe d'Eustache",
-   "def": "relie oreille moyenne et gorge"
+   "term": "Loi de Henry",
+   "def": "gaz dissous selon sa pression partielle"
   },
   {
    "term": "G-LOC",
@@ -930,15 +925,15 @@
   },
   {
    "term": "Cônes / bâtonnets",
-   "def": "vision de jour / vision de nuit"
+   "def": "vision de jour / de nuit"
   },
   {
-   "term": "Point aveugle",
-   "def": "sortie du nerf optique"
+   "term": "VDL",
+   "def": "verres de loin + paire de rechange"
   },
   {
    "term": "Myopie du champ vide",
-   "def": "œil réglé de près"
+   "def": "œil réglé de près, faute de repère"
   },
   {
    "term": "Autocinèse",
@@ -946,19 +941,23 @@
   },
   {
    "term": "PAPI",
-   "def": "feux du plan d'approche"
+   "def": "feux indiquant le plan d'approche"
+  },
+  {
+   "term": "Surdité de perception",
+   "def": "atteinte définitive de la cochlée"
   },
   {
    "term": "Canaux semi-circulaires",
    "def": "capteurs des rotations"
   },
   {
-   "term": "Otolithes",
-   "def": "accélérations linéaires, pesanteur"
+   "term": "IMC",
+   "def": "conditions météo du vol aux instruments"
   },
   {
-   "term": "IMC",
-   "def": "vol aux instruments (nuages)"
+   "term": "Leans",
+   "def": "fausse inclinaison après retour à plat"
   },
   {
    "term": "Somatogravique",
@@ -969,44 +968,40 @@
    "def": "culbute si la tête bouge en virage"
   },
   {
-   "term": "Leans",
-   "def": "fausse inclinaison après retour à plat"
-  },
-  {
    "term": "Cinétose",
    "def": "mal des transports"
-  },
-  {
-   "term": "Flicker vertigo",
-   "def": "malaise, lumière hachée"
   },
   {
    "term": "MED.A.020",
    "def": "pas de vol si l'aptitude baisse"
   },
   {
-   "term": "SERA.2020",
-   "def": "pas de vol sous substance psychoactive"
-  },
-  {
    "term": "IMSAFE",
-   "def": "check-list d'aptitude personnelle"
-  },
-  {
-   "term": "Rythme circadien",
-   "def": "horloge interne d'environ 24 h"
+   "def": "check-list d'aptitude du pilote"
   },
   {
    "term": "Dette de sommeil",
    "def": "manque de sommeil cumulé"
   },
   {
-   "term": "Tunnel attentionnel",
-   "def": "focalisation excessive"
+   "term": "Rythme circadien",
+   "def": "horloge interne d’environ 24 h"
   },
   {
-   "term": "Conscience de la situation",
-   "def": "voir, comprendre, prévoir"
+   "term": "Yerkes-Dodson",
+   "def": "performance maximale à éveil moyen"
+  },
+  {
+   "term": "Tunnel attentionnel",
+   "def": "focalisation qui fait oublier le reste"
+  },
+  {
+   "term": "Conscience de situation",
+   "def": "percevoir, comprendre, anticiper"
+  },
+  {
+   "term": "Raté / lapsus / faute",
+   "def": "exécution / mémoire / plan"
   },
   {
    "term": "Violation",
@@ -1017,70 +1012,70 @@
    "def": "trous alignés = accident"
   },
   {
+   "term": "SHELL",
+   "def": "le pilote et ses interfaces (OACI)"
+  },
+  {
    "term": "TEM",
    "def": "gestion des menaces et des erreurs"
   },
   {
    "term": "DECIDE, FOR-DEC",
-   "def": "modèles de décision en 6 étapes"
+   "def": "méthodes de décision en 6 étapes"
   },
   {
    "term": "Get-there-itis",
-   "def": "arriver à tout prix"
+   "def": "vouloir arriver à tout prix"
   },
   {
    "term": "PAVE",
-   "def": "Pilote, Avion, enVironnement, External"
+   "def": "Pilote, Avion, enVironnement, pressions Extérieures"
   },
   {
-   "term": "Yerkes-Dodson",
-   "def": "performance max. à éveil moyen"
+   "term": "SRM / CRM",
+   "def": "gestion des ressources (seul / équipage)"
   }
  ],
  "self_test": [
   {
-   "q": "Quel type d'hypoxie provoque le monoxyde de carbone ?",
-   "a": "Hypémique : le sang transporte moins d'O2."
+   "q": "Quel type d’hypoxie provoque le monoxyde de carbone ?",
+   "a": "Hypémique : le sang transporte moins d’O2."
   },
   {
-   "q": "45 min au FL 115, effet du manque d'O2 non évaluable : que prévoit NCO.OP.190 ?",
-   "a": "L'oxygène pour l'équipage (plus de 30 min entre 10 000 et 13 000 ft)."
+   "q": "45 min au FL 115, effet du manque d'O2 non évaluable : que prévoit NCO.OP.190 ?",
+   "a": "L'O2 pour l'équipage (plus de 30 min entre 10 000 et 13 000 ft)."
   },
   {
-   "q": "À 2 500 ft, un élève stressé a des fourmillements autour de la bouche. Cause probable ?",
+   "q": "À 2 500 ft, un élève stressé a des fourmillements autour de la bouche. Cause ?",
    "a": "Une hyperventilation : il ralentit sa respiration."
   },
   {
-   "q": "Délai avant de voler après une plongée avec paliers ?",
+   "q": "Délai avant de voler après une plongée avec paliers ?",
    "a": "Au moins 24 h (12 h sans palier)."
   },
   {
-   "q": "De nuit, comment repérer un avion peu éclairé ?",
-   "a": "En regardant légèrement à côté (bâtonnets)."
-  },
-  {
-   "q": "Piste plus large que d'habitude : quelle erreur guette ?",
+   "q": "Piste plus large que d'habitude : quelle erreur guette ?",
    "a": "Se croire trop bas : approche et arrondi trop hauts."
   },
   {
-   "q": "Remise de gaz de nuit, sensation de cabré : quelle illusion ?",
-   "a": "Somatogravique ; risque de rendre la main vers le sol."
+   "q": "Remise de gaz de nuit, sensation de cabré : quelle illusion ?",
+   "a": "Somatogravique ; risque de rendre la main vers le sol."
   },
   {
-   "q": "0,90 g/l à minuit, 0,15 g/l éliminé par heure : alcoolémie nulle à quelle heure ?",
+   "q": "0,90 g/l à minuit, 0,15 g/l éliminé par heure : alcoolémie nulle à quelle heure ?",
    "a": "06 h 00 au mieux (09 h 00 à 0,10 g/l par heure)."
   },
   {
-   "q": "Quelle est la capacité de la mémoire de travail ?",
-   "a": "7 ± 2 éléments, pendant 20 s environ."
+   "q": "Trois semaines de nuits de 5 h, puis une nuit de 8 h : fatigue effacée ?",
+   "a": "Non : fatigue chronique, une nuit ne suffit pas."
   },
   {
-   "q": "Un orage sur ta route : menace, erreur ou état indésirable ?",
-   "a": "Une menace : elle est extérieure au pilote."
+   "q": "Courte finale trop rapide, volets oubliés : que fais-tu d’abord ?",
+   "a": "Remise de gaz : rétablir l'avion avant d'analyser l'erreur."
   },
   {
-   "q": "Quel est l'antidote de l'invulnérabilité ?",
-   "a": "« Ça peut m'arriver à moi aussi. »"
+   "q": "« Je vais leur montrer » : quelle attitude, quel antidote ?",
+   "a": "Machisme : « Prendre des risques inutiles est stupide. »"
   }
  ]
 }

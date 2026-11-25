@@ -10,7 +10,7 @@
      "id": "u5s10",
      "title": "Navigation à vue et égarement",
      "icon": "🔍",
-     "tips": "La navigation à vue recoupe sans cesse trois éléments : le cap (conservateur recalé sur le compas), le temps (montre) et la carte, comparée au sol. L'estime dit où l'avion devrait être ; l'observation du sol le confirme.\n\nOrienter la carte :\n• Pliez la carte sur la branche en cours, avec 10 à 15 NM de part et d'autre du trait.\n• Tenez-la orientée dans le sens de la route (« route en haut ») : ce qui est à droite sur la carte est à droite dehors. Tant pis si les inscriptions se lisent à l'envers.\n• Suivez votre position du doigt sur le trait gradué et notez l'heure de chaque point confirmé.\n\nMéthode montre – carte – sol :\n• La montre : temps écoulé depuis le dernier point sûr. À 120 kt, 2 NM par minute : 6 min après le top, vous êtes à 12 NM.\n• La carte : à cet endroit du trait, qu'allez-vous voir ? Une voie ferrée à franchir, une ville à gauche, un lac devant.\n• Le sol : cherchez ces éléments à l'heure prévue.\nOn va de la carte vers le sol, pas l'inverse. Partir d'un élément vu et chercher sur la carte « ce qui lui ressemble » mène aux fausses identifications : l'esprit fait coller le paysage à ce qu'il attend. Un point n'est confirmé que par plusieurs indices concordants (forme, taille, éléments voisins, heure de passage).\n\nChoix des repères en vol :\n• Les lignes (autoroute, voie ferrée, grand fleuve, canal, côte, ligne à haute tension) se voient de loin et ne se manquent pas : elles encadrent la route ou la coupent.\n• Les points (ville, lac, confluent, barrage, croisement autoroute–voie ferrée) fixent la position le long de la ligne.\n• Pièges : routes récentes absentes de la carte, plans d'eau asséchés, villages semblables, voie ferrée qui longe une rivière.\n\nLignes de sécurité et de recalage :\n• Ligne de recalage : élément linéaire étendu qui coupe la route près d'un point tournant ou de la destination. En l'atteignant, on sait que l'on est à hauteur du point : on la suit du bon côté.\n• Ligne de sécurité : grande ligne choisie à la préparation, d'un côté de la route, qui marque une limite à ne pas franchir (TMA, zone, massif) et sert de refuge pour un cap sécurisant.\n• Ligne d'arrêt : ligne située au-delà de la destination ; l'atteindre signifie qu'on l'a dépassée.\n• Visée décalée (erreur volontaire) : pour rejoindre un point situé sur une ligne, on vise volontairement un côté. Ex. : visée de 6° à gauche sur 30 NM → la ligne est atteinte environ 3 NM à gauche du point (6 × 30 / 60) ; on tourne à droite.\n\nTenue du cap et du temps :\n• Un écart de cap de 5° décale l'avion de 1 NM tous les 12 NM ; 6° représentent 10 % de la distance parcourue.\n• Déclenchez le chronomètre (« top ») à la verticale du point de départ de la branche.\n• À chaque repère, comparez l'heure réelle à l'estimée : un retard révèle une vitesse sol plus faible, à reporter sur les heures suivantes. Un écart latéral révèle une dérive mal estimée : corrigez le cap (1 sur 60).\n• Plus le dernier point sûr est ancien, plus la zone de position possible s'élargit : confirmez souvent.\n\nNavigation par mauvaise visibilité :\n• Fixez au sol vos limites (visibilité, plafond) et l'endroit où vous ferez demi-tour ; engagez-le dès que la limite est atteinte, tant que vous voyez assez pour virer à vue.\n• Réduisez la vitesse, dans la configuration prévue par le manuel de vol : plus de temps pour voir, et un rayon de virage plus petit (il varie comme le carré de la vitesse).\n• Ordre de grandeur : 1 500 m de visibilité à 90 kt (≈ 2,8 km/min) laissent une trentaine de secondes entre l'apparition d'un repère et son survol.\n• Suivez de grandes lignes, mais respectez les hauteurs minimales et méfiez-vous des pylônes, des câbles et des vallées qui montent dans les nuages. La brume réduit surtout la visibilité horizontale et à contre-jour : on voit le sol sous l'avion bien mieux que loin devant.\n\nÉgarement : la procédure :\nAgissez tôt, avant que carburant, jour ou météo ne deviennent critiques.\n• Garder son calme et piloter : ailes horizontales, cap et altitude tenus, heure notée. Ne pas tourner au hasard, ce qui ruine l'estime.\n• Faire le point : cap réellement tenu (conservateur recalé ?), temps et vitesse sol depuis le dernier point sûr. On en déduit une zone de position probable.\n• Chercher dans cette zone une ligne, puis un point, de la carte vers le sol.\n• Monter si le plafond et les espaces le permettent : on voit plus loin, la portée radio et radar augmente.\n• Se signaler sur la fréquence en cours ou au SIV de la zone (sinon 121,5 MHz), en annonçant une position incertaine ; transpondeur sur le code attribué, IDENT à la demande. Selon SERA.11010, l'organisme ATS qui sait un aéronef égaré l'aide et cherche à déterminer sa position. Si la situation devient une urgence : PAN PAN ou MAYDAY, et 7700 si aucun code n'a été attribué ou à la demande de l'organisme.\n• Se recaler avec la radio : radiale VOR, distance DME, GNSS, toujours recoupés avec le sol.\n• À défaut : cap sécurisant vers une ligne de sécurité impossible à manquer, loin des zones et du relief, puis la suivre jusqu'à un point identifiable.\n• Fixer une heure limite : si le doute persiste, atterrissage de précaution avant la nuit et avant d'entamer la réserve finale.\n\nEspaces et zones :\n• Repérez à la préparation les espaces contrôlés, les zones P, R et D et leurs limites verticales ; les zones temporaires (ZIT, ZRT, ZDT) sont publiées par NOTAM ou SUP AIP.\n• Passez à distance des limites : près d'elles, un doute de position devient vite une pénétration non autorisée. Monter ne dispense jamais de clairance.\n\nGPS : utilisation raisonnée :\n• Préparez la navigation sur la carte d'abord ; le GPS vient en contrôle. Vérifiez la base de données (cycle AIRAC de 28 jours) et la saisie des points.\n• Une route « direct to » ignore relief, zones et espaces : contrôlez-la sur la carte.\n• Gardez le regard dehors : l'écran fait oublier l'anticollision et la météo devant.\n• Prévoyez la panne (batterie, surchauffe, fixation) et sachez poursuivre à l'estime.",
+     "tips": "La navigation à vue recoupe sans cesse trois éléments : le cap (conservateur recalé sur le compas), le temps (montre) et la carte, comparée au sol. L'estime dit où l'avion devrait être ; l'observation du sol le confirme.\n\nOrienter la carte :\n• Pliez la carte sur la branche en cours, avec 10 à 15 NM de part et d'autre du trait.\n• Tenez-la orientée dans le sens de la route (« route en haut ») : ce qui est à droite sur la carte est à droite dehors. Tant pis si les inscriptions se lisent à l'envers.\n• Suivez votre position du doigt sur le trait gradué ; notez l'heure de chaque point sûr.\n\nMéthode montre – carte – sol :\n• La montre : temps écoulé depuis le dernier point sûr. À 120 kt, 2 NM par minute : 6 min après le top, vous êtes à 12 NM.\n• La carte : à cet endroit du trait, qu'allez-vous voir ? Une voie ferrée à franchir, une ville à gauche, un lac devant.\n• Le sol : cherchez ces éléments à l'heure prévue.\nOn va de la carte vers le sol, pas l'inverse. Partir d'un élément vu et chercher sur la carte « ce qui lui ressemble » mène aux fausses identifications : l'esprit fait coller le paysage à ce qu'il attend. Un point n'est confirmé que par plusieurs indices concordants (forme, taille, éléments voisins, heure de passage).\n\nChoix des repères en vol :\n• Les lignes (autoroute, voie ferrée, grand fleuve, canal, côte, ligne à haute tension) se voient de loin et ne se manquent pas : elles encadrent la route ou la coupent.\n• Les points (ville, lac, confluent, barrage, croisement autoroute–voie ferrée) fixent la position le long de la ligne.\n• Pièges : routes récentes absentes de la carte, plans d'eau asséchés, villages semblables, voie ferrée qui longe une rivière.\n\nLignes de sécurité et de recalage :\n• Ligne de recalage : élément linéaire étendu qui coupe la route près d'un point tournant ou de la destination. En l'atteignant, on sait que l'on est à hauteur du point : on la suit du bon côté.\n• Ligne de sécurité : grande ligne choisie à la préparation, d'un côté de la route, qui marque une limite à ne pas franchir (TMA, zone, massif) et sert de refuge pour un cap sécurisant.\n• Ligne d'arrêt : ligne située au-delà de la destination ; l'atteindre signifie qu'on l'a dépassée.\n• Visée décalée (erreur volontaire) : pour rejoindre un point situé sur une ligne, on vise volontairement un côté. Ex. : visée de 6° à gauche sur 30 NM → la ligne est atteinte environ 3 NM à gauche du point (6 × 30 / 60) ; on tourne à droite.\n\nTenue du cap et du temps :\n• Un écart de cap de 5° décale l'avion de 1 NM tous les 12 NM ; 6° représentent 10 % de la distance parcourue.\n• À chaque repère, comparez l'heure réelle à l'estimée : un retard révèle une vitesse sol plus faible, à reporter sur les heures suivantes. Un écart latéral révèle une dérive mal estimée : corrigez le cap (1 sur 60).\n• Plus le dernier point sûr est ancien, plus la zone de position possible s'élargit : confirmez souvent.\n\nNavigation par mauvaise visibilité :\n• Fixez au sol vos limites (visibilité, plafond) et l'endroit où vous ferez demi-tour ; engagez-le dès que la limite est atteinte, tant que vous voyez assez pour virer à vue.\n• Réduisez la vitesse, dans la configuration prévue par le manuel de vol : plus de temps pour voir, et un rayon de virage plus petit (il varie comme le carré de la vitesse).\n• Ordre de grandeur : 1 500 m de visibilité à 90 kt (≈ 2,8 km/min) laissent une trentaine de secondes entre l'apparition d'un repère et son survol.\n• Suivez de grandes lignes, mais respectez les hauteurs minimales et méfiez-vous des pylônes, des câbles et des vallées qui montent dans les nuages. La brume réduit surtout la visibilité horizontale et à contre-jour : on voit le sol sous l'avion bien mieux que loin devant.\n\nÉgarement : la procédure :\nAgissez tôt, avant que carburant, jour ou météo ne deviennent critiques.\n• Garder son calme et piloter : ailes horizontales, cap et altitude tenus, heure notée. Ne pas tourner au hasard, ce qui ruine l'estime.\n• Faire le point : cap réellement tenu (conservateur recalé ?), temps et vitesse sol depuis le dernier point sûr. On en déduit une zone de position probable.\n• Chercher dans cette zone une ligne, puis un point, de la carte vers le sol.\n• Monter si le plafond et les espaces le permettent : on voit plus loin, la portée radio et radar augmente.\n• Se signaler sur la fréquence en cours ou au SIV de la zone (sinon 121,5 MHz) : position incertaine, dernier point sûr et son heure, cap, altitude, autonomie. Transpondeur sur le code attribué, IDENT à la demande. Selon SERA.11010, l'organisme ATS qui sait un aéronef égaré l'aide et cherche à déterminer sa position. En cas d'urgence : PAN PAN ou MAYDAY ; 7700 si aucun code n'est attribué (sinon on garde le code, sauf raison de préférer 7700).\n• Se recaler avec la radio : radiale VOR, distance DME, GNSS, toujours recoupés avec le sol.\n• À défaut : cap sécurisant vers une ligne de sécurité impossible à manquer, loin des zones et du relief, puis la suivre jusqu'à un point identifiable.\n• Fixer une heure limite : si le doute persiste, atterrissage de précaution avant la nuit et avant d'entamer la réserve finale. Ex. : 40 l à 20 l/h, réserve de jour 30 min = 10 l : 30 l, soit 1 h 30 de vol, atterrissage compris.\n\nEspaces et zones :\n• Repérez à la préparation les espaces contrôlés, les zones P, R et D et leurs limites verticales ; les zones temporaires (ZIT, ZRT, ZDT) sont publiées par NOTAM ou SUP AIP.\n• Passez à distance des limites : près d'elles, un doute de position devient vite une pénétration non autorisée. Monter ne dispense jamais de clairance.\n\nGPS : utilisation raisonnée :\n• Préparez la navigation sur la carte d'abord ; le GPS vient en contrôle. Vérifiez la base de données (cycle AIRAC de 28 jours) et la saisie des points.\n• Une route « direct to » ignore relief, zones et espaces : contrôlez-la sur la carte.\n• Gardez le regard dehors : anticollision et météo d'abord.\n• Prévoyez la panne (batterie, surchauffe, fixation) et sachez poursuivre à l'estime.",
      "vocab": [
       {
        "term": "Montre – carte – sol",
@@ -145,7 +145,7 @@
         "Piloter : ailes horizontales, altitude et cap tenus, heure notée",
         "Faire un tour complet sur place pour chercher un repère connu",
         "Descendre près du sol pour lire le nom des villages survolés",
-        "Afficher 7600 au transpondeur pour alerter le contrôle radar"
+        "Afficher 7600 au transpondeur pour alerter vite le contrôle radar"
        ],
        "answer": 0,
        "explanation": "Avant tout, on pilote et l'on fige les éléments de l'estime : cap tenu et heure. Tourner au hasard brouille l'estime ; descendre réduit la portée visuelle et radio et rapproche des obstacles. Le code 7600 signale une panne radio, pas un égarement."
@@ -167,7 +167,7 @@
        "q": "En classe G, vous n'êtes plus sûr de votre position. Quel organisme appelez-vous de préférence ?",
        "choices": [
         "La tour de l'aérodrome de destination, même hors de portée radio",
-        "Celui avec lequel vous êtes en contact ou, à défaut, le SIV de la zone",
+        "Celui que vous avez déjà contacté ou, à défaut, le SIV de la zone",
         "Le BEA, qui est chargé de déclencher et conduire les recherches",
         "Le bureau de piste de l'aérodrome de départ, joint par téléphone portable"
        ],
@@ -205,7 +205,7 @@
         "La position calculée devient moins précise, mais les espaces affichés restent justes",
         "Espaces, zones et fréquences affichés peuvent être faux : la carte et les NOTAM font foi",
         "Le récepteur cesse de calculer sa position jusqu'à la mise à jour de la base",
-        "Les fréquences peuvent avoir changé, mais les limites d'espaces sont figées"
+        "Les fréquences peuvent avoir changé, mais les limites des espaces aériens restent figées"
        ],
        "answer": 1,
        "explanation": "La base suit le cycle AIRAC de 28 jours : périmée, elle peut afficher des limites, des zones ou des fréquences qui ont changé. La position satellitaire n'est pas dégradée pour autant, et le récepteur continue en général de fonctionner : c'est au pilote de ne pas s'y fier pour l'espace aérien."
@@ -260,15 +260,15 @@
       },
       {
        "id": "u5s10q15",
-       "q": "Vous vous êtes signalé au SIV comme incertain de votre position. Le contrôleur vous demande « IDENT ». Que faites-vous ?",
+       "q": "Égaré, mais sans urgence, vous appelez le SIV. Quelles informations rendent votre message le plus utile pour qu'il vous situe ?",
        "choices": [
-        "Vous appuyez sur la touche IDENT du transpondeur, sans changer de code",
-        "Vous affichez 7000 et annoncez à nouveau votre immatriculation",
-        "Vous affichez 7600 pour confirmer que vous êtes en difficulté",
-        "Vous répétez votre indicatif complet, ce que signifie IDENT à la radio"
+        "Dernier point sûr et heure de passage, cap tenu, altitude et autonomie restante",
+        "Aérodrome de départ, heure de décollage, destination et nombre de personnes à bord",
+        "Nom du village que vous pensez survoler et heure d'arrivée prévue à destination",
+        "Immatriculation, type d'avion, couleur de la cellule et nom du commandant de bord"
        ],
        "answer": 0,
-       "explanation": "« IDENT » demande d'activer la fonction d'identification du transpondeur, qui fait ressortir votre plot sur l'écran radar et permet de vous localiser. On ne change pas le code affiché sans instruction ; 7600 signale une panne radio."
+       "explanation": "Le dernier point sûr, son heure et le cap tenu permettent au SIV d'estimer la zone où vous êtes ; l'altitude aide à vous trouver au radar et l'autonomie dit de combien de temps vous disposez. Un village « que l'on pense survoler » est justement l'hypothèse douteuse ; départ, passagers ou couleur servent aux recherches, pas à vous situer."
       },
       {
        "id": "u5s10q16",
@@ -340,19 +340,19 @@
         "Un cap choisi au hasard, tenu jusqu'à ce qu'un repère connu apparaisse"
        ],
        "answer": 0,
-       "explanation": "Le cap sécurisant mène vers une ligne étendue que l'on ne peut pas manquer et qui ne conduit vers aucun danger (relief, espace, zone) ; on la suit ensuite jusqu'à un point identifiable. Le cap inverse ne ramène pas sur la trajectoire suivie, puisque le vent et l'erreur de cap restent inconnus."
+       "explanation": "Le cap sécurisant mène vers une ligne étendue que l'on ne peut pas manquer et qui ne conduit vers aucun danger (relief, espace, zone) ; on la suit ensuite jusqu'à un point identifiable. Le cap inverse ne ramène pas exactement sur la trajectoire suivie : la dérive due au vent, mal connue, s'ajoute au lieu de s'annuler, et rien ne garantit qu'il mène vers un repère facile à reconnaître."
       },
       {
        "id": "u5s10q22",
-       "q": "Une branche de 36 NM est prévue en 18 min. Vous passez le repère de mi-branche (18 NM) 10 min après le top. Quelle durée totale de branche estimez-vous désormais ?",
+       "q": "Égaré, vous faites le point à 16:40 : il reste 38 l utilisables, débit 24 l/h, vol VFR de jour. Vous voulez être posé sans entamer la réserve finale, en gardant 10 min pour reconnaître un terrain et vous poser. Jusqu'à quelle heure au plus tard pouvez-vous chercher à vous recaler ?",
        "choices": [
-        "18 min",
-        "20 min",
-        "19 min",
-        "22 min"
+        "17:45",
+        "17:35",
+        "18:05",
+        "17:20"
        ],
        "answer": 1,
-       "explanation": "Prévision : 120 kt. Réalité : 18 NM en 10 min, soit 108 kt. Les 18 NM restants demandent donc 10 min aussi : 20 min au total : l'heure prévue en fin de branche recule de 2 min. 19 min ne reporterait que la moitié du retard ; 22 min supposerait qu'il s'aggrave."
+       "explanation": "Réserve finale VFR de jour : 30 min, soit 12 l à 24 l/h. Carburant utilisable avant la réserve : 38 − 12 = 26 l, soit 26 / 24 h = 65 min : 16:40 + 65 min = 17:45. Moins les 10 min gardées pour l'atterrissage de précaution : 17:35. 17:45 ne garde pas ce temps ; 18:05 oublie la réserve finale ; 17:20 applique la réserve de nuit (45 min)."
       },
       {
        "id": "u5s10q23",
@@ -368,15 +368,15 @@
       },
       {
        "id": "u5s10q24",
-       "q": "Avant le départ, vous programmez une route « direct to » vers la destination sur votre GPS. Quelle vérification est indispensable ?",
+       "q": "Avant le départ, vous programmez une route « direct to » vers la destination sur votre GPS. Que devez-vous vérifier avant de la suivre ?",
        "choices": [
-        "Vérifier que la route du GPS est identique au cap compas inscrit au log",
-        "Vérifier sur la carte qu'elle ne coupe ni zone, ni espace contrôlé, ni relief",
-        "Vérifier que l'altitude GPS affichée est celle de l'altimètre calé au QNH",
-        "Vérifier que la tablette affiche un niveau de charge supérieur à 50 %"
+        "Que la route du GPS est identique au cap compas inscrit au log",
+        "Sur la carte, qu'elle ne coupe ni zone, ni espace contrôlé, ni relief",
+        "Que l'altitude GPS affichée est bien égale à celle de l'altimètre au QNH",
+        "Que sa distance égale la somme des branches portées au log"
        ],
        "answer": 1,
-       "explanation": "Une route directe ignore le relief, les zones et les espaces : elle se contrôle sur la carte et les NOTAM du jour, puis se modifie si besoin. Route et cap diffèrent normalement de la dérive et de la déclinaison, et l'altitude GPS, géométrique, ne se compare pas à l'altimètre."
+       "explanation": "Une route directe ignore le relief, les zones et les espaces : elle se contrôle sur la carte et les NOTAM du jour, puis se modifie si besoin. Route et cap diffèrent normalement de la dérive et de la déclinaison ; une route directe est plus courte que la somme des branches ; l'altitude GPS, géométrique, ne se compare pas à l'altimètre."
       }
      ]
     },
@@ -384,7 +384,7 @@
      "id": "u5s11",
      "title": "VOR, ADF et DME en pratique",
      "icon": "📻",
-     "tips": "Rappels : une radiale de VOR (QDR) est un relèvement magnétique compté depuis la station, avec le nord magnétique de la station ; QDM = QDR ± 180°. L'ADF montre le gisement d'une balise NDB ; le DME donne une distance oblique. On identifie toujours l'indicatif morse avant usage. Un VOR inexploitable fait apparaître un drapeau d'alarme ; l'ADF n'a pas d'alarme : écoutez l'indicatif tant que vous utilisez la balise.\n\nVOR : principe et portée :\n• La station émet un signal de référence et un signal variable dont le déphasage dépend de la direction de l'avion : le récepteur en déduit la radiale, sans tenir compte du cap.\n• Q-codes : QDM, route magnétique vers la station ; QDR, relèvement magnétique depuis la station ; QUJ, route vraie vers la station ; QTE, relèvement vrai depuis la station. QTE = QDR + Dm, avec la déclinaison de la station.\n• Portée optique : D (NM) ≈ 1,23 × √h (h en ft). À 2 500 ft au-dessus de la station, environ 60 NM ; derrière un relief, beaucoup moins.\n\nOBS, CDI et TO/FROM :\n• On affiche une route à l'OBS. TO/FROM indique si cette route, suivie, rapproche (TO) ou éloigne (FROM) de la station. L'indication bascule sur la perpendiculaire à la route affichée passant par la station, où le drapeau devient ambigu.\n• En volant un cap voisin de la route affichée, l'aiguille montre le côté où elle se trouve : aiguille à droite, route à droite. Pleine déviation : 10° ou plus ; sur un CDI à 5 points, 1 point ≈ 2°.\n• Écart latéral (1 sur 60) = déviation (°) × distance à la station (NM) / 60. Ex. : 2 points (4°) à 30 NM → 2 NM.\n• Pour se situer, tournez l'OBS jusqu'à centrer l'aiguille : avec TO, la valeur lue est le QDM ; avec FROM, la radiale.\n• Indication inversée : en volant à l'opposé de la route affichée, l'aiguille se lit à l'envers. Affichez toujours la route que vous suivez.\n• Lecture par quadrants, OBS 360 : TO au sud de la station, FROM au nord ; aiguille à droite à l'ouest de la ligne radiale 360–180, à gauche à l'est.\n\nIntercepter et suivre une radiale :\n• Affichez la route à suivre (TO pour rejoindre la station, FROM pour s'en éloigner).\n• Prenez un cap d'interception du côté de l'aiguille, en général 30 à 45°, jusqu'à 90° loin de la route. Ex. : rejoindre le QDM 045 sous 45°, aiguille à droite → cap 090.\n• Quand l'aiguille revient, virez pour vous établir, puis cherchez le cap qui la garde centrée : l'écart entre ce cap et la route est la dérive. Cap 300 pour tenir le QDM 310 : correction à gauche, le vent vient de la gauche.\n• Près de la station, l'aiguille devient très sensible : tenez le cap au lieu de la poursuivre.\n• Verticale : au-dessus de la station, dans le cône de silence (ou de confusion), aiguille et drapeau sont instables. Tenez le cap jusqu'à la bascule TO → FROM, notez l'heure, puis affichez la radiale sortante.\n\nADF et NDB :\n• Sur l'ADF à rose fixe, l'aiguille donne le gisement G, compté de 0 à 360° depuis le nez, dans le sens horaire.\n• QDM = Cm + G (moins 360 si nécessaire) ; QDR = QDM ± 180°. Ex. : Cm 050, G 310 → QDM 360, la balise est plein nord.\n• Le RMI, dont la rose suit le cap, affiche le QDM en tête d'aiguille et le QDR en queue.\n• Pour tracer un relèvement NDB, convertissez le QDM en vrai avec la déclinaison du lieu de l'avion (QUJ = QDM + Dm) ; pour un VOR, avec celle de la station.\n• Ralliement (homing) : garder l'aiguille sur le nez mène à la balise par une courbe, en finissant face au vent. Pour suivre un QDM, on corrige la dérive : QDM 360, vent d'est, cap 008 → G 352, balise 8° à gauche du nez.\n• Interception : en cap 060 vers le QDM 090, on est sur la route quand G = 090 − 060 = 030.\n• Erreurs : effet de nuit (ondes réfléchies par l'ionosphère), effet de côte (réfraction quand le signal traverse la côte sous un angle faible), orages (l'aiguille pointe vers les éclairs), relief (réflexions), inclinaison en virage. Lisez l'ADF ailes horizontales.\n• Temps jusqu'à la balise, en volant perpendiculairement au relèvement : temps (min) = secondes écoulées / degrés de variation du gisement. Ex. : 10° en 120 s → 12 min.\n\nDME :\n• Distance oblique : à la verticale, le DME affiche la hauteur (6 000 ft ≈ 1 NM). L'écart avec la distance au sol devient négligeable à partir d'environ 1 NM de la station par 1 000 ft de hauteur.\n• Vitesse et temps calculés par le DME ne sont justes qu'en route directe vers ou depuis la station ; sur un arc DME, la vitesse affichée tombe vers zéro.\n\nPosition par recoupement :\n• Deux radiales, une radiale et une distance DME, ou un VOR et une NDB : la position est à l'intersection des lignes de position.\n• Meilleur angle de recoupement : voisin de 90°. Deux lignes presque parallèles donnent une position très imprécise.\n• Tracez les relèvements en vrai, ou avec la rose VOR de la carte orientée sur le nord magnétique, et notez l'heure du point.",
+     "tips": "Rappels : une radiale de VOR (QDR) est un relèvement magnétique compté depuis la station, avec le nord magnétique de la station ; QDM = QDR ± 180°. L'ADF montre le gisement d'une balise NDB ; le DME donne une distance oblique. On identifie toujours l'indicatif morse avant usage. Un VOR inexploitable fait apparaître un drapeau d'alarme ; l'ADF n'a pas d'alarme : écoutez l'indicatif tant que vous utilisez la balise.\n\nVOR : principe et portée :\n• La station émet un signal de référence et un signal variable dont le déphasage dépend de la direction de l'avion : le récepteur en déduit la radiale, sans tenir compte du cap.\n• Q-codes : QDM, route magnétique vers la station ; QDR, relèvement magnétique depuis la station ; QUJ, route vraie vers la station ; QTE, relèvement vrai depuis la station. QTE = QDR + Dm (Est positive), avec la déclinaison de la station.\n• Portée optique : D (NM) ≈ 1,23 × √h (h en ft). À 2 500 ft au-dessus de la station, environ 60 NM ; derrière un relief, beaucoup moins.\n\nOBS, CDI et TO/FROM :\n• On affiche une route à l'OBS. TO/FROM indique si cette route, suivie, rapproche (TO) ou éloigne (FROM) de la station. L'indication bascule sur la perpendiculaire à la route affichée passant par la station, où le drapeau devient ambigu.\n• En volant un cap voisin de la route affichée, l'aiguille montre le côté où elle se trouve : aiguille à droite, route à droite. Pleine déviation : 10° ou plus ; sur un CDI à 5 points, 1 point ≈ 2°.\n• Écart latéral (1 sur 60) = déviation (°) × distance à la station (NM) / 60. Ex. : 3 points (6°) à 40 NM → 4 NM.\n• Pour se situer, tournez l'OBS jusqu'à centrer l'aiguille : avec TO, la valeur lue est le QDM ; avec FROM, la radiale.\n• Indication inversée : en volant à l'opposé de la route affichée, l'aiguille se lit à l'envers. Affichez toujours la route que vous suivez.\n• Lecture par quadrants, OBS 360 : TO au sud de la station, FROM au nord ; aiguille à droite à l'ouest de la ligne radiale 360–180, à gauche à l'est.\n\nIntercepter et suivre une radiale :\n• Affichez la route à suivre (TO pour rejoindre la station, FROM pour s'en éloigner).\n• Prenez un cap d'interception du côté de l'aiguille, en général 30 à 45°, jusqu'à 90° loin de la route. Ex. : rejoindre le QDM 120 sous 30°, aiguille à gauche → cap 090.\n• Quand l'aiguille revient, virez pour vous établir, puis cherchez le cap qui la garde centrée : l'écart entre ce cap et la route est la dérive. Cap 085 pour tenir le QDM 075 : correction à droite, le vent vient de la droite.\n• Près de la station, l'aiguille devient très sensible : tenez le cap au lieu de la poursuivre.\n• Verticale : au-dessus de la station, dans le cône de silence (ou de confusion), aiguille et drapeau sont instables. Tenez le cap jusqu'à la bascule TO → FROM, notez l'heure, puis affichez la radiale sortante.\n\nADF et NDB :\n• Sur l'ADF à rose fixe, l'aiguille donne le gisement G, compté de 0 à 360° depuis le nez, dans le sens horaire.\n• QDM = Cm + G (moins 360 si nécessaire) ; QDR = QDM ± 180°. Ex. : Cm 050, G 310 → QDM 360, la balise est plein nord.\n• Le RMI, dont la rose suit le cap, affiche le QDM en tête d'aiguille et le QDR en queue.\n• Pour tracer un relèvement NDB, convertissez le QDM en vrai avec la déclinaison du lieu de l'avion (QUJ = QDM + Dm) ; pour un VOR, avec celle de la station.\n• Ralliement (homing) : garder l'aiguille sur le nez mène à la balise par une courbe, en finissant face au vent. Pour suivre un QDM, on corrige la dérive : QDM 090, vent du nord, cap 084 → G 006, balise 6° à droite du nez.\n• Interception : en cap 160 vers le QDM 130, on est sur la route quand G = 130 − 160 + 360 = 330.\n• En éloignement sur un QDR, la balise est derrière, G voisin de 180°. Ex. : QDR 300 (QDM 120), cap 306 → G = 120 − 306 + 360 = 174°.\n• Erreurs : effet de nuit (ondes réfléchies par l'ionosphère), effet de côte (réfraction quand le signal traverse la côte sous un angle faible), orages (l'aiguille pointe vers les éclairs), relief (réflexions), inclinaison en virage. Lisez l'ADF ailes horizontales.\n• Temps jusqu'à la balise, en volant perpendiculairement au relèvement : temps (min) = secondes écoulées / degrés de variation du gisement. Ex. : 10° en 120 s → 12 min.\n\nDME :\n• Distance oblique : à la verticale, le DME affiche la hauteur (6 000 ft ≈ 1 NM). L'écart avec la distance au sol devient négligeable à partir d'environ 1 NM de la station par 1 000 ft de hauteur.\n• Vitesse et temps calculés par le DME ne sont justes qu'en route directe vers ou depuis la station ; sur un arc DME, la vitesse affichée tombe vers zéro.\n\nPosition par recoupement :\n• Deux radiales, une radiale et une distance DME, ou un VOR et une NDB : la position est à l'intersection des lignes de position.\n• Meilleur angle de recoupement : voisin de 90°. Deux lignes presque parallèles donnent une position très imprécise.\n• Tracez les relèvements en vrai, ou avec la rose VOR de la carte orientée sur le nord magnétique, et notez l'heure du point.",
      "vocab": [
       {
        "term": "QTE",
@@ -400,7 +400,7 @@
       },
       {
        "term": "Ligne d'ambiguïté",
-       "translation": "Perpendiculaire à la route affichée où TO/FROM bascule"
+       "translation": "Perpendiculaire à la route affichée, par la station : TO/FROM bascule"
       },
       {
        "term": "Pleine déviation",
@@ -540,7 +540,7 @@
        "id": "u5s11q07",
        "q": "L'ADF ne dispose d'aucune alarme de panne. Quelle précaution faut-il prendre en l'utilisant ?",
        "choices": [
-        "Vérifier que le drapeau OFF a bien disparu de la fenêtre de l'indicateur ADF",
+        "Vérifier que le drapeau OFF a bien disparu de l'écran de l'indicateur",
         "Identifier l'indicatif morse de la NDB et l'écouter tant qu'on l'utilise",
         "Afficher sur le sélecteur OBS la route que l'on veut suivre",
         "Comparer la distance affichée avec celle mesurée sur la carte"
@@ -626,7 +626,7 @@
        "choices": [
         "Votre vitesse sol réelle",
         "Votre vitesse propre",
-        "La composante de vent traversier",
+        "Le vent traversier",
         "Une valeur proche de zéro"
        ],
        "answer": 3,
@@ -646,15 +646,15 @@
       },
       {
        "id": "u5s11q16",
-       "q": "Cap magnétique 300°, l'aiguille de l'ADF indique un gisement de 135°. Quels sont le QDM et le QDR de la balise ?",
+       "q": "Après avoir passé une NDB, vous vous en éloignez sur le QDR 240 ; le cap qui stabilise la route est 235°. Quel gisement l'ADF indique-t-il ?",
        "choices": [
-        "QDM 165°, QDR 345°",
-        "QDM 255°, QDR 075°",
-        "QDM 075°, QDR 255°",
-        "QDM 135°, QDR 315°"
+        "175°",
+        "005°",
+        "185°",
+        "180°"
        ],
        "answer": 2,
-       "explanation": "QDM = Cm + G = 300 + 135 = 435, moins 360 = 075°. QDR = 075 + 180 = 255°. 165° vient d'une soustraction du gisement ; inverser QDM et QDR est l'autre erreur classique. Le gisement seul ne donne pas le QDM."
+       "explanation": "En éloignement, la balise est derrière : QDM = 240 − 180 = 060°. G = QDM − Cm = 060 − 235 + 360 = 185° : la balise est juste derrière, légèrement à gauche, car le nez est tourné 5° à gauche de la route. 005° vient du QDR pris à la place du QDM ; 180° oublie la correction de dérive ; 175° place la balise du mauvais côté."
       },
       {
        "id": "u5s11q17",
@@ -698,8 +698,8 @@
        "choices": [
         "À votre droite, car l'aiguille se lit à l'envers",
         "À votre gauche, du côté de l'aiguille",
-        "Droit devant, le passage de la station étant proche",
-        "Derrière vous, comme le montre l'indication FROM"
+        "Droit devant, car la station est toute proche",
+        "Derrière vous, comme l'indique le FROM"
        ],
        "answer": 0,
        "explanation": "Avec l'OBS sur 360, aiguille à gauche signifie que l'avion est à l'est de la radiale 360. En cap 180, l'ouest est à votre droite : la radiale est à droite, à l'opposé de l'aiguille. D'où la règle : affichez à l'OBS la route suivie, ici 180 avec TO, pour une lecture directe."
@@ -738,7 +738,7 @@
         "À environ 10 NM au sud du milieu du segment AB"
        ],
        "answer": 3,
-       "explanation": "QDM de B = 345 + 060 = 405 − 360 = 045° : B est au nord-est de l'avion, qui est sur le QDR 225 de B. La radiale 135 de A et le QDR 225 de B se coupent à angle droit, 10 NM au sud du milieu de AB (à 14 NM de A et de B). Prendre le QDM pour un QDR placerait l'avion au nord-est de B."
+       "explanation": "QDM de B = 345 + 060 = 405 − 360 = 045° : B est au nord-est de l'avion, qui est sur le QDR 225 de B. La radiale 135 de A et le QDR 225 de B se coupent à angle droit, 10 NM au sud du milieu de AB (à 14 NM de A et de B). Le point situé 10 NM au nord du milieu serait sur la radiale 045 de A, pas sur la radiale 135."
       },
       {
        "id": "u5s11q24",

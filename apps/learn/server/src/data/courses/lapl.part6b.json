@@ -1,0 +1,1114 @@
+{
+ "id": "lapl",
+ "units": [
+  {
+   "id": "u6",
+   "title": "Principes du vol",
+   "description": "Aérodynamique de l'avion léger : écoulement de l'air, portance et traînée, décrochage et vrille, virage et facteur de charge, stabilité, commandes et effets de l'hélice (examen : 12 questions, 18 min).",
+   "skills": [
+    {
+     "id": "u6s6",
+     "title": "Hélice et effets moteur",
+     "icon": "🌀",
+     "tips": "Une pale d'hélice est une aile qui tourne. Sa « portance », dirigée vers l'avant, est la traction ; sa « traînée », dans le plan de rotation, forme le couple résistant que le moteur doit vaincre. La face bombée de la pale (le dos) regarde vers l'avant.\n\nVitesses et angles d'une section de pale :\n• Vitesse de rotation U = 2π × r × N (r : distance à l'axe en m ; N : régime en tours par seconde). Elle croît du moyeu vers l'extrémité.\n• Vitesse d'avancement V : celle de l'avion. La vitesse résultante W combine U et V ; le vent relatif de la pale lui est opposé.\n• Calage β : angle entre la corde du profil et le plan de rotation.\n• Angle de la vitesse résultante φ : tan φ = V / U.\n• Incidence de la pale : α = β − φ.\nExemple : à r = 0,675 m et 2 400 tr/min (40 tr/s), U = 2π × 0,675 × 40 ≈ 170 m/s. À V = 50 m/s (≈ 97 kt), tan φ ≈ 0,29 et φ ≈ 16°. Avec un calage de 22°, l'incidence vaut environ 6°. Au point fixe (V = 0), φ = 0 et, en négligeant l'air aspiré par l'hélice, l'incidence atteint 22° : la pale travaille près du décrochage.\nÀ calage fixe, l'incidence diminue quand la vitesse de l'avion augmente ou quand le régime baisse. Le vrillage (calage plus fort au pied qu'en bout de pale) compense la hausse de U avec le rayon.\nBout de pale : à r = 0,9 m et 2 400 tr/min, U ≈ 226 m/s, soit environ Mach 0,66. Près de Mach 1, le rendement chute et le bruit augmente : cela limite diamètre et régime.\n\nPas géométrique, pas effectif, recul :\n• Pas géométrique : distance dont l'hélice avancerait en un tour, comme une vis dans un écrou (H = 2πr × tan β, mesuré vers 0,7 du rayon).\n• Pas effectif (avance par tour) : V / N, distance réellement parcourue en un tour.\n• Recul = pas géométrique − pas effectif. C'est lui qui donne l'incidence, donc la traction.\nExemple : pas géométrique 1,5 m à 40 tr/s, soit une avance théorique de 60 m/s. À 50 m/s, pas effectif 1,25 m, recul 0,25 m (environ 17 %).\n\nRendement :\n• η = puissance utile / puissance moteur = (traction × V) / P.\n• Il est nul au point fixe (V = 0), où la traction est pourtant maximale ; il atteint au mieux 0,8 environ.\nExemple : moteur de 100 kW, traction 1 600 N à 50 m/s : 1 600 × 50 = 80 000 W, η = 0,8.\n\nHélice à pas fixe :\n• Petit calage (hélice « de montée ») : le moteur prend vite son régime ; décollage et montée meilleurs, croisière plus lente, survitesse moteur rapide en descente.\n• Grand calage (hélice « de croisière ») : meilleur rendement à grande vitesse ; à basse vitesse, les pales travaillent à forte incidence et freinent le moteur : décollage plus long, montée plus faible.\n• Plein gaz au point fixe, le régime est plus bas qu'en vol : la vitesse « décharge » l'hélice.\n• En descente plein gaz, l'hélice entraîne le moteur : surveiller le trait rouge du compte-tours et réduire.\n\nHélice à vitesse constante :\n• La manette d'hélice (souvent bleue) affiche un régime ; le régulateur (masselottes et pression d'huile) adapte le calage pour le tenir. Si la vitesse ou la puissance augmente, le calage augmente.\n• La manette des gaz règle la pression d'admission (manomètre d'admission).\n• Pour augmenter la puissance : d'abord le régime, puis la pression d'admission. Pour la réduire : d'abord la pression d'admission, puis le régime. On évite ainsi une forte pression d'admission à bas régime.\n• Moteur en panne, la check-list prévoit souvent la manette sur bas régime (grand pas) : l'hélice en moulinet freine moins, le plané s'allonge.\n\nEffets moteur, hélice tournant à droite (sens horaire vue du pilote) :\n• Couple de renversement : réaction au couple qui entraîne l'hélice, il incline l'avion à gauche. Au roulement, la roue gauche plus chargée freine davantage. Correction : ailerons.\n• Souffle hélicoïdal : l'air brassé s'enroule autour du fuselage et frappe la dérive par la gauche : lacet à gauche, fort plein gaz à basse vitesse. Correction : pied à droite. Une dérive ou un moteur légèrement décalés l'annulent en croisière, pas aux autres régimes.\n• Facteur P : à grande incidence, le disque est incliné sur l'écoulement ; la pale descendante (à droite) rencontre l'air plus vite et sous une plus forte incidence que la pale montante. La traction se décentre à droite : lacet à gauche. Fort en montée lente plein gaz et au roulement d'un train classique queue basse ; négligeable en croisière.\n• Effet gyroscopique : une force qui bascule le disque produit son effet 90° plus loin dans le sens de rotation. Lever la queue (nez qui descend) : lacet à gauche. Cabrer : lacet à droite. Lacet à gauche : tendance à cabrer ; lacet à droite : à piquer. Il n'existe que pendant le basculement.\n\nQuand ces effets sont forts :\n• Mise en puissance au décollage : pied droit progressif pour tenir l'axe, surtout sur train classique quand la queue se lève.\n• Remise de gaz, avion compensé pour l'approche : lacet et roulis à gauche et tendance à cabrer. Pied droit, tenir l'assiette, recompenser.\n• Montée à Vx ou Vy : pied droit pour garder la bille au centre ; en réduisant pour le palier, relâcher ce pied.\nSi l'hélice tourne dans l'autre sens, tous les effets s'inversent : on corrige au pied gauche.\n\nPièges : le couple agit d'abord en roulis, le souffle et le facteur P en lacet ; l'effet gyroscopique n'apparaît que lors d'un changement d'assiette ou de cap.",
+     "vocab": [
+      {
+       "term": "Calage (β)",
+       "translation": "Angle entre la corde de la pale et le plan de rotation"
+      },
+      {
+       "term": "Incidence de la pale",
+       "translation": "Angle entre la corde et la vitesse résultante : α = β − φ"
+      },
+      {
+       "term": "Vitesse résultante (W)",
+       "translation": "Combinaison de la vitesse de rotation et de l'avancement"
+      },
+      {
+       "term": "Vrillage",
+       "translation": "Calage qui diminue du moyeu vers le bout de pale"
+      },
+      {
+       "term": "Pas géométrique",
+       "translation": "Avance théorique de l'hélice en un tour, comme une vis"
+      },
+      {
+       "term": "Pas effectif",
+       "translation": "Avance réelle par tour : vitesse divisée par le régime"
+      },
+      {
+       "term": "Recul",
+       "translation": "Pas géométrique moins pas effectif ; il crée la traction"
+      },
+      {
+       "term": "Rendement (η)",
+       "translation": "Traction × vitesse / puissance moteur ; nul au point fixe"
+      },
+      {
+       "term": "Régulateur",
+       "translation": "Organe qui ajuste le calage pour tenir le régime affiché"
+      },
+      {
+       "term": "Hélice de montée",
+       "translation": "Pas fixe à petit calage : bonne traction à basse vitesse"
+      },
+      {
+       "term": "Hélice de croisière",
+       "translation": "Pas fixe à grand calage : bon rendement à grande vitesse"
+      },
+      {
+       "term": "Couple de renversement",
+       "translation": "Réaction au couple moteur : roulis opposé à la rotation"
+      },
+      {
+       "term": "Souffle hélicoïdal",
+       "translation": "Air brassé enroulé autour du fuselage, qui frappe la dérive"
+      },
+      {
+       "term": "Facteur P",
+       "translation": "Traction décentrée vers la pale descendante à grande incidence"
+      },
+      {
+       "term": "Précession gyroscopique",
+       "translation": "Effet d'une force décalé de 90° dans le sens de rotation"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Vitesses et angles d'une section de pale",
+       "svg": "<svg viewBox=\"0 0 640 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"640\" height=\"440\" fill=\"#ffffff\"/><g transform=\"translate(0 -60)\"><line x1=\"30\" y1=\"250\" x2=\"600\" y2=\"250\" stroke=\"#8a94a6\" stroke-width=\"1.6\" stroke-dasharray=\"7 5\"/><text x=\"30\" y=\"240\" font-size=\"14\" fill=\"#46516a\">Plan de rotation</text><path d=\"M 0 0 C -4 -12, -30 -19, -60 -18 C -110 -16, -165 -7, -200 0 C -160 3, -70 5, -25 4 C -10 3, -2 2, 0 0 Z\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"2\" transform=\"translate(290 250) rotate(-26)\" stroke-linejoin=\"round\"/><line x1=\"110.2\" y1=\"337.7\" x2=\"600.1\" y2=\"98.8\" stroke=\"#1f5fa8\" stroke-width=\"1.6\" stroke-dasharray=\"6 4\"/><text x=\"560.1\" y=\"86.8\" font-size=\"14\" fill=\"#1f5fa8\">corde</text><line x1=\"290\" y1=\"250\" x2=\"530\" y2=\"250\" stroke=\"#d35400\" stroke-width=\"3\"/><polygon points=\"540,250 528,256 528,244\" fill=\"#d35400\"/><line x1=\"540\" y1=\"250\" x2=\"540\" y2=\"188.3\" stroke=\"#2e7d32\" stroke-width=\"3\"/><polygon points=\"540,178.3 546,190.3 534,190.3\" fill=\"#2e7d32\"/><line x1=\"290\" y1=\"250\" x2=\"530.4\" y2=\"181.1\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"540,178.3 530.1,187.4 526.8,175.9\" fill=\"#c0392b\"/><text x=\"415\" y=\"274\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">U = 2πrN (rotation)</text><text x=\"549\" y=\"220.2\" font-size=\"16\" fill=\"#2e7d32\" font-weight=\"bold\">V</text><text x=\"510\" y=\"220\" font-size=\"16\" fill=\"#c0392b\" font-weight=\"bold\">W</text><polyline points=\"400,250 400,249.2 400,248.5 400,247.7 400,246.9 399.9,246.2 399.9,245.4 399.9,244.6 399.8,243.9 399.8,243.1 399.7,242.3 399.7,241.6 399.6,240.8 399.5,240 399.5,239.3 399.4,238.5 399.3,237.7 399.2,237 399.1,236.2 399,235.5 398.9,234.7 398.8,233.9 398.7,233.2 398.6,232.4 398.5,231.7 398.3,230.9 398.2,230.1 398.1,229.4 397.9,228.6 397.8,227.9 397.6,227.1 397.4,226.4 397.3,225.6 397.1,224.9 396.9,224.1 396.7,223.4 396.5,222.6 396.4,221.9 396.2,221.2 395.9,220.4 395.7,219.7\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"420\" y=\"240\" font-size=\"16\" fill=\"#c0392b\" font-weight=\"bold\">φ</text><polyline points=\"458.2,201.8 458,201 457.8,200.3 457.6,199.6 457.4,198.8 457.1,198.1 456.9,197.4 456.7,196.6 456.4,195.9 456.2,195.2 456,194.5 455.7,193.7 455.5,193 455.2,192.3 455,191.6 454.7,190.9 454.4,190.1 454.2,189.4 453.9,188.7 453.6,188 453.4,187.3 453.1,186.6 452.8,185.9 452.5,185.2 452.3,184.4 452,183.7 451.7,183 451.4,182.3 451.1,181.6 450.8,180.9 450.5,180.2 450.2,179.5 449.9,178.8 449.6,178.1 449.2,177.4 448.9,176.7 448.6,176 448.3,175.4 448,174.7 447.6,174 447.3,173.3\" fill=\"none\" stroke=\"#6a3d9a\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><text x=\"474\" y=\"186\" font-size=\"16\" fill=\"#6a3d9a\" font-weight=\"bold\">α</text><polyline points=\"620,250 620,246.3 619.9,242.5 619.8,238.8 619.7,235 619.5,231.3 619.2,227.6 619,223.8 618.6,220.1 618.3,216.4 617.9,212.6 617.4,208.9 616.9,205.2 616.4,201.5 615.8,197.8 615.2,194.1 614.6,190.4 613.9,186.8 613.1,183.1 612.4,179.4 611.5,175.8 610.7,172.1 609.8,168.5 608.8,164.9 607.8,161.3 606.8,157.7 605.7,154.1 604.6,150.5 603.5,146.9 602.3,143.4 601.1,139.8 599.8,136.3 598.5,132.8 597.1,129.3 595.8,125.8 594.3,122.4 592.9,118.9 591.4,115.5 589.8,112.1 588.2,108.7 586.6,105.3\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><text x=\"622\" y=\"184\" font-size=\"16\" fill=\"#1f5fa8\" font-weight=\"bold\">β</text><line x1=\"60\" y1=\"215\" x2=\"60\" y2=\"105\" stroke=\"#14213d\" stroke-width=\"3\"/><polygon points=\"60,95 66,107 54,107\" fill=\"#14213d\"/><text x=\"74\" y=\"108\" font-size=\"14\" fill=\"#14213d\">Avancement de l&#x27;avion</text><line x1=\"110\" y1=\"372\" x2=\"240\" y2=\"372\" stroke=\"#d35400\" stroke-width=\"2.5\"/><polygon points=\"250,372 238,378 238,366\" fill=\"#d35400\"/><text x=\"100\" y=\"396\" font-size=\"14\" fill=\"#d35400\">Sens de rotation de la pale</text><rect x=\"20\" y=\"412\" width=\"600\" height=\"80\" rx=\"8\" fill=\"#f4f6fa\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"34\" y=\"434\" font-size=\"15\" fill=\"#14213d\">U : rotation · V : avancement · W : vitesse résultante</text><text x=\"34\" y=\"457\" font-size=\"15\" fill=\"#14213d\">β : calage (corde / plan de rotation) · tan φ = V / U</text><text x=\"34\" y=\"480\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">α = β − φ : incidence de la pale (entre la corde et W)</text></g></svg>",
+       "caption": "La section avance (V) en tournant (U) : sa vitesse résultante W fait l'angle φ avec le plan de rotation, et l'incidence de la pale vaut α = β − φ. À régime constant, plus l'avion va vite, plus φ grandit et plus α diminue."
+      },
+      {
+       "title": "Les quatre effets moteur",
+       "svg": "<svg viewBox=\"0 0 680 670\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"670\" fill=\"#ffffff\"/><rect x=\"10\" y=\"40\" width=\"320\" height=\"300\" rx=\"10\" fill=\"#fbfcfe\" stroke=\"#d5dbe5\" stroke-width=\"1.2\"/><text x=\"26\" y=\"68\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Couple de renversement</text><rect x=\"45\" y=\"176\" width=\"250\" height=\"8\" rx=\"3\" fill=\"#3d4a63\"/><rect x=\"166\" y=\"118\" width=\"8\" height=\"44\" rx=\"2\" fill=\"#3d4a63\"/><circle cx=\"170\" cy=\"180\" r=\"19\" fill=\"#ffffff\" stroke=\"#3d4a63\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"180\" r=\"48\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><polyline points=\"142.5,140.7 144.2,139.5 146,138.4 147.8,137.4 149.7,136.5 151.6,135.7 153.6,134.9 155.6,134.2 157.6,133.6 159.6,133.1 161.7,132.7 163.7,132.4 165.8,132.2 167.9,132 170,132 172.1,132 174.2,132.2 176.3,132.4 178.3,132.7 180.4,133.1 182.4,133.6 184.4,134.2 186.4,134.9 188.4,135.7 190.3,136.5 192.2,137.4 194,138.4 195.8,139.5 197.5,140.7 199.2,141.9 200.9,143.2 202.4,144.6 203.9,146.1 205.4,147.6 206.8,149.1 208.1,150.8 209.3,152.5 210.5,154.2 211.6,156 212.6,157.8\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><polygon points=\"213.5,159.7 203.5,152.5 213.3,147.4\" fill=\"#1f5fa8\"/><polyline points=\"229.1,109.5 226.6,107.5 224.1,105.6 221.4,103.7 218.8,102 216,100.3 213.2,98.8 210.3,97.3 207.4,96 204.5,94.7 201.5,93.5 198.4,92.5 195.4,91.6 192.3,90.7 189.1,90 186,89.4 182.8,88.9 179.6,88.5 176.4,88.2 173.2,88.1 170,88 166.8,88.1 163.6,88.2 160.4,88.5 157.2,88.9 154,89.4 150.9,90 147.7,90.7 144.6,91.6 141.6,92.5 138.5,93.5 135.5,94.7 132.6,96 129.7,97.3 126.8,98.8 124,100.3 121.2,102 118.6,103.7 115.9,105.6 113.4,107.5\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"110.9,109.5 116.1,98.4 122.9,107.1\" fill=\"#c0392b\"/><text x=\"45\" y=\"210\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">gauche</text><text x=\"295\" y=\"210\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">droite</text><text x=\"316\" y=\"250\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\" font-style=\"italic\">vue de l&#x27;arrière</text><text x=\"26\" y=\"276\" font-size=\"15\" fill=\"#c0392b\" font-weight=\"bold\">Réaction au couple : roulis à gauche</text><text x=\"26\" y=\"299\" font-size=\"14\" fill=\"#14213d\">Au sol, la roue gauche est plus chargée</text><text x=\"26\" y=\"321\" font-size=\"14\" fill=\"#14213d\">Correction : ailerons</text><rect x=\"350\" y=\"40\" width=\"320\" height=\"300\" rx=\"10\" fill=\"#fbfcfe\" stroke=\"#d5dbe5\" stroke-width=\"1.2\"/><text x=\"366\" y=\"68\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Souffle hélicoïdal</text><polygon points=\"512,120 538,120 537,168 530,258 520,258 513,168\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"405\" y=\"150\" width=\"240\" height=\"22\" rx=\"3\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\"/><rect x=\"481\" y=\"244\" width=\"88\" height=\"12\" rx=\"2\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\"/><rect x=\"522.5\" y=\"228\" width=\"5\" height=\"34\" fill=\"#3d4a63\"/><line x1=\"483\" y1=\"112\" x2=\"567\" y2=\"112\" stroke=\"#3d4a63\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"525\" y1=\"112\" x2=\"525\" y2=\"120\" stroke=\"#3d4a63\" stroke-width=\"3\"/><polyline points=\"532.1,178 538.8,179.4 544.2,180.8 547.7,182.2 549,183.6 547.9,185 544.6,186.4 539.4,187.8 532.7,189.2 525.3,190.6 517.9,192 511.2,193.4 505.8,194.8 502.3,196.2 501,197.6 502.1,199 505.4,200.4 510.6,201.8 517.3,203.2 524.7,204.6 532.1,206 538.8,207.4 544.2,208.8 547.7,210.2 549,211.6 547.9,213 544.6,214.4 539.4,215.8 532.7,217.2 525.3,218.6 517.9,220 511.2,221.4 505.8,222.8 502.3,224.2 501,225.6 502.1,227 505.4,228.4 510.6,229.8 517.3,231.2 524.7,232.6 532.1,234\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2.2\" stroke-dasharray=\"5 3\" stroke-linejoin=\"round\"/><line x1=\"485\" y1=\"234\" x2=\"511.1\" y2=\"238.6\" stroke=\"#1f5fa8\" stroke-width=\"2.6\"/><polygon points=\"519,240 508.3,243.2 510,233.3\" fill=\"#1f5fa8\"/><polyline points=\"544.2,105 543.1,104.7 542.1,104.4 541,104.1 540,103.8 538.9,103.6 537.9,103.4 536.8,103.1 535.8,102.9 534.7,102.8 533.6,102.6 532.6,102.5 531.5,102.3 530.4,102.2 529.3,102.2 528.2,102.1 527.2,102 526.1,102 525,102 523.9,102 522.8,102 521.8,102.1 520.7,102.2 519.6,102.2 518.5,102.3 517.4,102.5 516.4,102.6 515.3,102.8 514.2,102.9 513.2,103.1 512.1,103.4 511.1,103.6 510,103.8 509,104.1 507.9,104.4 506.9,104.7 505.8,105 504.8,105.4 503.8,105.7 502.8,106.1\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"501.8,106.5 510.1,97.4 514,107.7\" fill=\"#c0392b\"/><text x=\"473\" y=\"94\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">lacet à gauche</text><text x=\"366\" y=\"276\" font-size=\"15\" fill=\"#1f5fa8\" font-weight=\"bold\">Le souffle frappe la dérive par la gauche</text><text x=\"366\" y=\"299\" font-size=\"14\" fill=\"#14213d\">Fort plein gaz à basse vitesse</text><text x=\"366\" y=\"321\" font-size=\"14\" fill=\"#14213d\">Correction : pied à droite</text><rect x=\"10\" y=\"360\" width=\"320\" height=\"300\" rx=\"10\" fill=\"#fbfcfe\" stroke=\"#d5dbe5\" stroke-width=\"1.2\"/><text x=\"26\" y=\"388\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Facteur P (grande incidence)</text><polygon points=\"157,460 183,460 182,508 175,598 165,598 158,508\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><rect x=\"50\" y=\"490\" width=\"240\" height=\"22\" rx=\"3\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\"/><rect x=\"126\" y=\"584\" width=\"88\" height=\"12\" rx=\"2\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\"/><rect x=\"167.5\" y=\"568\" width=\"5\" height=\"34\" fill=\"#3d4a63\"/><line x1=\"100\" y1=\"452\" x2=\"240\" y2=\"452\" stroke=\"#3d4a63\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"170\" y1=\"452\" x2=\"170\" y2=\"460\" stroke=\"#3d4a63\" stroke-width=\"3\"/><line x1=\"118\" y1=\"448\" x2=\"118\" y2=\"431\" stroke=\"#2e7d32\" stroke-width=\"3.2\"/><polygon points=\"118,422 123.5,433 112.5,433\" fill=\"#2e7d32\"/><line x1=\"222\" y1=\"448\" x2=\"222\" y2=\"409\" stroke=\"#2e7d32\" stroke-width=\"3.2\"/><polygon points=\"222,400 227.5,411 216.5,411\" fill=\"#2e7d32\"/><text x=\"108\" y=\"428\" font-size=\"14\" fill=\"#2e7d32\" text-anchor=\"end\">pale</text><text x=\"108\" y=\"445\" font-size=\"14\" fill=\"#2e7d32\" text-anchor=\"end\">montante</text><text x=\"232\" y=\"418\" font-size=\"14\" fill=\"#2e7d32\">pale</text><text x=\"232\" y=\"435\" font-size=\"14\" fill=\"#2e7d32\">descendante</text><polyline points=\"192.5,479.6 191.5,479.1 190.4,478.6 189.4,478.1 188.3,477.6 187.2,477.2 186.1,476.8 185,476.4 183.9,476 182.7,475.7 181.6,475.4 180.5,475.2 179.3,474.9 178.2,474.7 177,474.5 175.8,474.4 174.7,474.2 173.5,474.1 172.3,474.1 171.2,474 170,474 168.8,474 167.7,474.1 166.5,474.1 165.3,474.2 164.2,474.4 163,474.5 161.8,474.7 160.7,474.9 159.5,475.2 158.4,475.4 157.3,475.7 156.1,476 155,476.4 153.9,476.8 152.8,477.2 151.7,477.6 150.6,478.1 149.6,478.6 148.5,479.1\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"147.5,479.6 154.8,469.8 159.8,479.6\" fill=\"#c0392b\"/><text x=\"26\" y=\"616\" font-size=\"15\" fill=\"#2e7d32\" font-weight=\"bold\">La pale descendante (à droite) tire plus</text><text x=\"26\" y=\"639\" font-size=\"14\" fill=\"#14213d\">Lacet à gauche · correction : pied à droite</text><rect x=\"350\" y=\"360\" width=\"320\" height=\"300\" rx=\"10\" fill=\"#fbfcfe\" stroke=\"#d5dbe5\" stroke-width=\"1.2\"/><text x=\"366\" y=\"388\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Effet gyroscopique</text><circle cx=\"500\" cy=\"496\" r=\"62\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2\"/><polyline points=\"438.9,485.2 439.2,483.9 439.5,482.6 439.8,481.3 440.1,480 440.5,478.7 440.9,477.4 441.3,476.1 441.7,474.8 442.2,473.5 442.7,472.3 443.3,471 443.8,469.8 444.4,468.6 445,467.4 445.6,466.2 446.3,465 447,463.8 447.7,462.7 448.4,461.6 449.2,460.4 450,459.3 450.8,458.3 451.6,457.2 452.5,456.1 453.4,455.1 454.3,454.1 455.2,453.1 456.2,452.2 457.1,451.2 458.1,450.3 459.1,449.4 460.1,448.5 461.2,447.6 462.3,446.8 463.3,446 464.4,445.2 465.6,444.4 466.7,443.7 467.8,443\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><polygon points=\"469,442.3 462.4,452.7 456.7,443.3\" fill=\"#1f5fa8\"/><polyline points=\"508.4,416.4 511.1,416.8 513.8,417.2 516.4,417.7 519.1,418.3 521.7,419 524.3,419.8 526.9,420.7 529.4,421.6 532,422.7 534.4,423.8 536.9,425 539.3,426.3 541.6,427.7 543.9,429.1 546.2,430.7 548.4,432.3 550.5,434 552.6,435.7 554.6,437.5 556.6,439.4 558.5,441.4 560.3,443.4 562,445.5 563.7,447.6 565.3,449.8 566.9,452.1 568.3,454.4 569.7,456.7 571,459.1 572.2,461.6 573.3,464 574.4,466.6 575.3,469.1 576.2,471.7 577,474.3 577.7,476.9 578.3,479.6 578.8,482.2 579.2,484.9 579.6,487.6\" fill=\"none\" stroke=\"#8a94a6\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"579.6,487.6 575.6,477.2 585.6,478.2\" fill=\"#8a94a6\"/><text x=\"564\" y=\"434\" font-size=\"15\" fill=\"#8a94a6\" font-weight=\"bold\">90°</text><circle cx=\"500\" cy=\"434\" r=\"11\" fill=\"#ffffff\" stroke=\"#d35400\" stroke-width=\"2.2\"/><line x1=\"493.2\" y1=\"427.2\" x2=\"506.8\" y2=\"440.8\" stroke=\"#d35400\" stroke-width=\"2.2\"/><line x1=\"493.2\" y1=\"440.8\" x2=\"506.8\" y2=\"427.2\" stroke=\"#d35400\" stroke-width=\"2.2\"/><text x=\"484\" y=\"408\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">effort</text><text x=\"484\" y=\"425\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"end\">(queue levée)</text><circle cx=\"562\" cy=\"496\" r=\"11\" fill=\"#ffffff\" stroke=\"#2e7d32\" stroke-width=\"2.2\"/><line x1=\"555.2\" y1=\"489.2\" x2=\"568.8\" y2=\"502.8\" stroke=\"#2e7d32\" stroke-width=\"2.2\"/><line x1=\"555.2\" y1=\"502.8\" x2=\"568.8\" y2=\"489.2\" stroke=\"#2e7d32\" stroke-width=\"2.2\"/><text x=\"580\" y=\"501\" font-size=\"14\" fill=\"#2e7d32\" font-weight=\"bold\">effet</text><circle cx=\"376\" cy=\"574\" r=\"8\" fill=\"#ffffff\" stroke=\"#46516a\" stroke-width=\"2.2\"/><line x1=\"371\" y1=\"569\" x2=\"381\" y2=\"579\" stroke=\"#46516a\" stroke-width=\"2.2\"/><line x1=\"371\" y1=\"579\" x2=\"381\" y2=\"569\" stroke=\"#46516a\" stroke-width=\"2.2\"/><text x=\"390\" y=\"579\" font-size=\"14\" fill=\"#46516a\">: poussé vers l&#x27;avant (vue de l&#x27;arrière)</text><text x=\"366\" y=\"616\" font-size=\"15\" fill=\"#d35400\" font-weight=\"bold\">Lever la queue : lacet à gauche</text><text x=\"366\" y=\"639\" font-size=\"14\" fill=\"#14213d\">Cabrer : lacet à droite</text><text x=\"340\" y=\"26\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Hélice tournant à droite (sens horaire vue du pilote)</text></svg>",
+       "caption": "Hélice tournant à droite vue du pilote : couple, souffle hélicoïdal et facteur P poussent le nez ou l'aile vers la gauche ; l'effet gyroscopique dépend du sens du basculement (queue levée : lacet à gauche). Si l'hélice tourne dans l'autre sens, tout s'inverse."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u6s6q01",
+       "q": "Que représente la traction d'une hélice ?",
+       "choices": [
+        "La composante vers l'avant de la force aérodynamique des pales",
+        "La réaction de l'air brassé par l'hélice sur la dérive de l'avion",
+        "Le couple moteur transmis par l'arbre au moyeu de l'hélice",
+        "La composante des forces des pales dans le plan de rotation"
+       ],
+       "answer": 0,
+       "explanation": "Chaque pale est une aile tournante : sa force aérodynamique se décompose en une composante vers l'avant, la traction (l'équivalent de la portance), et une composante dans le plan de rotation, qui s'oppose à la rotation et forme le couple résistant. Cette dernière est la « traînée » de la pale, pas la traction."
+      },
+      {
+       "id": "u6s6q02",
+       "q": "Comment définit-on l'incidence d'un profil de pale d'hélice ?",
+       "choices": [
+        "L'angle entre la corde et le plan de rotation de l'hélice",
+        "L'angle entre le plan de rotation et la vitesse résultante",
+        "L'angle entre la corde et la vitesse résultante de la section",
+        "L'angle entre l'axe de l'hélice et la trajectoire de l'avion"
+       ],
+       "answer": 2,
+       "explanation": "Comme pour une aile, l'incidence se mesure entre la corde et le vent relatif, opposé ici à la vitesse résultante (rotation et avancement combinés). L'angle entre la corde et le plan de rotation est le calage ; celui entre le plan de rotation et la vitesse résultante est l'angle φ, avec α = β − φ."
+      },
+      {
+       "id": "u6s6q03",
+       "q": "Une hélice à pas fixe tourne à régime constant et la vitesse de l'avion augmente. Comment évolue l'incidence de ses pales ?",
+       "choices": [
+        "Elle augmente, car la vitesse résultante de chaque section s'accroît",
+        "Elle diminue, car la vitesse résultante s'oriente davantage vers l'avant",
+        "Elle reste égale au calage, qui ne change pas avec la vitesse",
+        "Elle ne varie pas, car le régime de l'hélice reste le même"
+       ],
+       "answer": 1,
+       "explanation": "α = β − φ, avec tan φ = V / U. À régime constant, U ne change pas ; si V augmente, φ augmente et, le calage étant fixe, l'incidence diminue. La vitesse résultante grandit bien, mais c'est son orientation qui fixe l'incidence."
+      },
+      {
+       "id": "u6s6q04",
+       "q": "Qu'appelle-t-on le pas géométrique d'une hélice ?",
+       "choices": [
+        "La distance réellement parcourue par l'avion pendant un tour d'hélice",
+        "La différence entre l'avance théorique et l'avance réelle en un tour",
+        "Le diamètre du cercle balayé par les extrémités des pales en un tour",
+        "La distance dont elle avancerait en un tour, comme une vis dans un écrou"
+       ],
+       "answer": 3,
+       "explanation": "Le pas géométrique est l'avance théorique par tour, sans glissement, fixée par le calage (H = 2πr × tan β). L'avance réelle par tour est le pas effectif ; leur différence est le recul, qui donne l'incidence de la pale."
+      },
+      {
+       "id": "u6s6q05",
+       "q": "Avion immobile, moteur plein gaz au point fixe : que vaut le rendement de l'hélice ?",
+       "choices": [
+        "Il est maximal, la traction étant alors la plus forte",
+        "Il est nul, la puissance utile traction × vitesse étant nulle",
+        "Il vaut environ 0,8, comme en montée à la vitesse Vy",
+        "Il dépasse 1, grâce au souffle qui s'ajoute sur la cellule"
+       ],
+       "answer": 1,
+       "explanation": "Le rendement est le rapport traction × vitesse / puissance moteur. À vitesse nulle, la puissance utile est nulle même si la traction est alors maximale : le rendement est nul. Il atteint au mieux 0,8 environ en vol et ne peut pas dépasser 1."
+      },
+      {
+       "id": "u6s6q06",
+       "q": "L'hélice tourne dans le sens horaire vue du pilote. Dans quel sens le couple de renversement incline-t-il l'avion ?",
+       "choices": [
+        "Vers la gauche, à l'opposé de la rotation de l'hélice",
+        "Vers la droite, dans le même sens que l'hélice",
+        "À cabrer, autour de l'axe transversal de l'avion",
+        "À piquer, autour de l'axe transversal de l'avion"
+       ],
+       "answer": 0,
+       "explanation": "Le moteur fait tourner l'hélice dans le sens horaire ; par réaction, la cellule tend à tourner en sens inverse autour de l'axe longitudinal : roulis à gauche. Ce couple n'agit pas en tangage."
+      },
+      {
+       "id": "u6s6q07",
+       "q": "Qu'est-ce que le souffle hélicoïdal ?",
+       "choices": [
+        "La dissymétrie de traction entre pales montante et descendante",
+        "La réaction de la cellule au couple qui entraîne l'hélice",
+        "La précession du disque de l'hélice lors d'un basculement",
+        "L'air brassé par l'hélice qui s'enroule autour du fuselage"
+       ],
+       "answer": 3,
+       "explanation": "Le souffle hélicoïdal est le flux d'air chassé vers l'arrière par l'hélice, qui garde un mouvement de rotation et s'enroule autour du fuselage ; pour une hélice tournant à droite, il frappe la dérive par la gauche. Les autres propositions décrivent le facteur P, le couple de renversement et l'effet gyroscopique."
+      },
+      {
+       "id": "u6s6q08",
+       "q": "D'après le principe de la précession gyroscopique, une force qui fait basculer le disque d'une hélice produit son effet :",
+       "choices": [
+        "décalé de 90° dans le sens opposé à la rotation",
+        "à l'opposé du point d'application, soit à 180°",
+        "décalé de 90° dans le sens de rotation",
+        "au point même où la force a été appliquée"
+       ],
+       "answer": 2,
+       "explanation": "Un gyroscope réagit à une force qui le bascule comme si elle était appliquée 90° plus loin dans le sens de rotation : c'est la précession. Lever la queue d'un train classique pousse le haut du disque vers l'avant ; l'effet apparaît sur le côté droit (hélice tournant à droite), qui avance : lacet à gauche."
+      },
+      {
+       "id": "u6s6q09",
+       "q": "Par rapport à une hélice « de montée », pourquoi une hélice à pas fixe « de croisière » allonge-t-elle la distance de décollage ?",
+       "choices": [
+        "À basse vitesse, ses pales peu calées entraînent le moteur en survitesse",
+        "Son souffle hélicoïdal plus faible rend la gouverne de direction moins efficace",
+        "Son couple de renversement plus fort impose de freiner pour tenir l'axe de piste",
+        "À basse vitesse, ses pales très calées freinent le moteur et limitent son régime"
+       ],
+       "answer": 3,
+       "explanation": "Une hélice de croisière a un grand calage : à basse vitesse, l'angle φ est faible et l'incidence des pales devient grande, proche du décrochage. Le couple résistant élevé empêche le moteur de prendre son régime : moins de puissance, moins de traction. Les pales peu calées et la survitesse caractérisent au contraire l'hélice de montée en descente."
+      },
+      {
+       "id": "u6s6q10",
+       "q": "Hélice à pas fixe : 2 700 tr/min et pas géométrique de 1,6 m. L'avion vole à 54 m/s. Quel est le recul de l'hélice ?",
+       "choices": [
+        "1,20 m par tour, soit 75 % du pas géométrique",
+        "0,40 m par tour, soit 25 % du pas géométrique",
+        "0,20 m par tour, soit 12,5 % du pas géométrique",
+        "0,60 m par tour, soit 37,5 % du pas géométrique"
+       ],
+       "answer": 1,
+       "explanation": "2 700 tr/min = 45 tr/s. Pas effectif = V / N = 54 / 45 = 1,2 m. Recul = 1,6 − 1,2 = 0,4 m, soit 0,4 / 1,6 = 25 %. 1,2 m est le pas effectif, pas le recul."
+      },
+      {
+       "id": "u6s6q11",
+       "q": "Le moteur fournit 120 kW à l'hélice. En montée à 40 m/s, la traction vaut 2 400 N. Quel est le rendement de l'hélice ?",
+       "choices": [
+        "0,5",
+        "1,25",
+        "0,8",
+        "0,96"
+       ],
+       "answer": 2,
+       "explanation": "Puissance utile = traction × vitesse = 2 400 × 40 = 96 000 W = 96 kW. η = 96 / 120 = 0,8. 1,25 est le rapport inverse (un rendement ne dépasse pas 1) et 0,96 divise par 100 kW au lieu de 120 kW."
+      },
+      {
+       "id": "u6s6q12",
+       "q": "Avion à hélice à vitesse constante, en montée : vous voulez augmenter la puissance. Dans quel ordre agissez-vous, sauf indication contraire du manuel de vol ?",
+       "choices": [
+        "Régime d'abord (manette d'hélice), puis pression d'admission (gaz)",
+        "Pression d'admission d'abord (gaz), puis régime (manette d'hélice)",
+        "Les deux manettes ensemble, jusqu'en butée avant, en même temps",
+        "Les gaz, sans toucher à l'hélice : le régulateur monte le régime"
+       ],
+       "answer": 0,
+       "explanation": "Pour augmenter la puissance, on augmente d'abord le régime puis la pression d'admission ; pour la réduire, on réduit d'abord les gaz puis le régime. On évite ainsi une forte pression d'admission à bas régime. Le régulateur maintient le régime affiché : il ne l'augmente pas de lui-même quand on ouvre les gaz."
+      },
+      {
+       "id": "u6s6q13",
+       "q": "Au roulement, la roue gauche d'un avion dont l'hélice tourne à droite (vue du pilote) est plus chargée que la droite. Pourquoi ?",
+       "choices": [
+        "Le facteur P décentre la traction de l'hélice vers la gauche",
+        "Le souffle hélicoïdal soulève l'aile droite par-dessous",
+        "Le couple de renversement fait rouler la cellule vers la gauche",
+        "L'effet gyroscopique fait pivoter l'avion sur sa roue gauche"
+       ],
+       "answer": 2,
+       "explanation": "En réaction au couple moteur, la cellule tend à rouler à gauche : au sol, la roue gauche est plus chargée, et son frottement accru accentue la tendance à tourner à gauche. Le facteur P décentre la traction vers la droite (pale descendante) : il fait lacer à gauche mais ne charge pas une roue."
+      },
+      {
+       "id": "u6s6q14",
+       "q": "Sur un avion à train classique, au début du roulement queue basse, pourquoi le facteur P est-il marqué ?",
+       "choices": [
+        "La queue basse dirige le souffle de l'hélice sous la gouverne de direction",
+        "Le couple de renversement augmente quand la roulette touche le sol",
+        "Le régime de l'hélice est plus élevé tant que la queue reste basse",
+        "L'axe de l'hélice est cabré : le disque est incliné sur la trajectoire"
+       ],
+       "answer": 3,
+       "explanation": "Queue basse, l'axe de l'hélice est cabré par rapport à la trajectoire horizontale : le disque est incliné, et la pale descendante (à droite pour une hélice tournant à droite) attaque l'air sous une plus forte incidence que la pale montante. La traction se décentre à droite : lacet à gauche, contré au pied droit."
+      },
+      {
+       "id": "u6s6q15",
+       "q": "Avion à train classique, hélice tournant à droite vue du pilote : vous levez la queue franchement au décollage. Quel effet gyroscopique apparaît ?",
+       "choices": [
+        "Un lacet à gauche, à contrer au pied droit",
+        "Un lacet à droite, à contrer au pied gauche",
+        "Un roulis à gauche, à contrer aux ailerons",
+        "Une tendance à cabrer, à contrer au manche"
+       ],
+       "answer": 0,
+       "explanation": "Lever la queue fait basculer le disque : son sommet part vers l'avant. Par précession, l'effet apparaît 90° plus loin dans le sens de rotation, sur le côté droit, qui avance : le nez part à gauche. Plus la queue est levée vite, plus l'effet est fort."
+      },
+      {
+       "id": "u6s6q16",
+       "q": "Hélice à vitesse constante, en croisière : vous réduisez les gaz sans toucher à la manette d'hélice. Que montrent le compte-tours et le manomètre d'admission ?",
+       "choices": [
+        "Le régime baisse, la pression d'admission reste la même",
+        "Le régime reste le même, la pression d'admission baisse",
+        "Le régime et la pression d'admission baissent ensemble",
+        "Le régime monte, la pression d'admission baisse"
+       ],
+       "answer": 1,
+       "explanation": "La manette des gaz règle la pression d'admission, qui baisse. Le régulateur diminue le calage pour garder le régime affiché par la manette d'hélice, tant que les pales n'atteignent pas la butée de petit pas. Sur ce type d'avion, la puissance se lit donc surtout au manomètre d'admission : le compte-tours seul ne l'indique plus. C'est avec une hélice à pas fixe que le régime baisserait avec les gaz."
+      },
+      {
+       "id": "u6s6q17",
+       "q": "Moteur en panne en plané, sur un avion à hélice à vitesse constante : que prévoit en général la check-list pour la manette d'hélice, et pourquoi ?",
+       "choices": [
+        "Plein régime (petit pas) : l'hélice en moulinet freine moins l'avion",
+        "Bas régime (grand pas) : l'hélice en moulinet freine moins l'avion",
+        "Plein régime (petit pas) : l'hélice entraînée relance le moteur",
+        "Position médiane : le régulateur garde alors un calage moyen"
+       ],
+       "answer": 1,
+       "explanation": "En moulinet, une hélice au petit pas freine fortement ; la placer au grand pas (bas régime) réduit sa traînée et allonge le plané. Le petit pas est réservé au décollage et à la remise de gaz. La check-list du manuel de vol reste la référence."
+      },
+      {
+       "id": "u6s6q18",
+       "q": "Une section de pale située à 0,7 m de l'axe est calée à 20°. Régime : 2 500 tr/min ; vitesse de l'avion : 46 m/s. Quelle est environ l'incidence de cette section ?",
+       "choices": [
+        "≈ 14°",
+        "≈ 34°",
+        "≈ 20°",
+        "≈ 6°"
+       ],
+       "answer": 3,
+       "explanation": "U = 2π × 0,7 × (2 500 / 60) ≈ 2π × 0,7 × 41,7 ≈ 183 m/s. tan φ = 46 / 183 ≈ 0,25, soit φ ≈ 14°. α = β − φ ≈ 20 − 14 = 6°. 14° est l'angle de la vitesse résultante, et 34° vient d'une addition au lieu d'une soustraction."
+      },
+      {
+       "id": "u6s6q19",
+       "q": "Une hélice de 1,90 m de diamètre tourne à 2 700 tr/min. Quelle est environ la vitesse de rotation des extrémités de ses pales ?",
+       "choices": [
+        "≈ 270 m/s",
+        "≈ 135 m/s",
+        "≈ 540 m/s",
+        "≈ 16 100 m/s"
+       ],
+       "answer": 0,
+       "explanation": "Rayon = 0,95 m ; 2 700 tr/min = 45 tr/s. U = 2π × 0,95 × 45 ≈ 269 m/s, soit près de Mach 0,8 : on approche des limites de rendement et de bruit. 540 m/s prend le diamètre pour le rayon ; 16 100 m/s oublie de convertir le régime en tours par seconde."
+      },
+      {
+       "id": "u6s6q20",
+       "q": "Avion à hélice à pas fixe, en palier plein gaz au régime maximal. Vous passez en descente sans toucher à la manette des gaz. Que risquez-vous et que faites-vous ?",
+       "choices": [
+        "Une chute de régime : vous enrichissez le mélange pour relever le régime",
+        "Une survitesse moteur : vous tirez la manette d'hélice vers le bas régime",
+        "Une survitesse moteur : vous réduisez les gaz pour rester sous le trait rouge",
+        "Un décrochage des pales : vous cabrez pour réduire la vitesse de l'avion"
+       ],
+       "answer": 2,
+       "explanation": "En descente, la vitesse augmente : l'incidence des pales diminue, leur couple résistant aussi, et le moteur accélère. Avec une hélice à pas fixe, le régime suit la vitesse : il faut réduire les gaz pour ne pas dépasser le trait rouge. Une hélice à pas fixe n'a pas de manette d'hélice."
+      },
+      {
+       "id": "u6s6q21",
+       "q": "Remise de gaz en courte finale, avion compensé pour l'approche, hélice tournant à droite vue du pilote. À quoi devez-vous vous attendre en affichant la pleine puissance ?",
+       "choices": [
+        "À un lacet à droite et à une nette tendance à piquer",
+        "À un roulis à droite, sans effet en lacet à cette vitesse",
+        "À un lacet et un roulis à gauche, et à une tendance à cabrer",
+        "À un lacet à gauche, sans effet en tangage ni en roulis"
+       ],
+       "answer": 2,
+       "explanation": "À basse vitesse et pleine puissance, le souffle hélicoïdal et le facteur P font lacer à gauche et le couple fait rouler à gauche. L'avion, compensé pour une approche lente moteur réduit, tend en plus à cabrer quand la puissance arrive : on tient l'assiette, pied droit, puis on recompense."
+      },
+      {
+       "id": "u6s6q22",
+       "q": "Au décollage, l'avion (hélice tournant à droite vue du pilote) part à gauche dès la mise en puissance. Le pilote corrige aux ailerons, manche à droite, sans toucher au palonnier. Qu'en pensez-vous ?",
+       "choices": [
+        "La correction est inadaptée : ce lacet se contre au pied droit",
+        "La correction est adaptée : le couple de renversement explique ce départ",
+        "La correction est inadaptée : il faudrait braquer le manche à gauche",
+        "La correction est adaptée : elle réduit le facteur P de la pale droite"
+       ],
+       "answer": 0,
+       "explanation": "Le départ à gauche au roulement vient surtout du souffle hélicoïdal, du frottement accru de la roue gauche (effet du couple) et, sur train classique, du facteur P : c'est un lacet, que l'on contre au palonnier droit. Les ailerons agissent en roulis ; ils servent à contrer le couple ou le vent de travers, pas à tenir l'axe de piste."
+      },
+      {
+       "id": "u6s6q23",
+       "q": "En montée à Vy, plein gaz, vous gardez la bille centrée par un appui au pied droit. Vous réduisez la puissance pour vous mettre en palier sans modifier cet appui. Où part la bille et que faites-vous ?",
+       "choices": [
+        "À droite : vous ajoutez du pied droit pour la recentrer",
+        "À gauche : vous ajoutez du pied droit pour la recentrer",
+        "Au centre : la dérive compense la baisse de puissance",
+        "À gauche : vous relâchez le pied droit pour la recentrer"
+       ],
+       "answer": 3,
+       "explanation": "En réduisant, le souffle et le facteur P diminuent : l'appui au pied droit devient excessif, le nez part à droite et la bille part à gauche. Le pied chasse la bille : on relâche le pied droit (ou l'on appuie à gauche) jusqu'à la recentrer."
+      },
+      {
+       "id": "u6s6q24",
+       "q": "Habitué à un avion dont l'hélice tourne à droite (vue du pilote), vous passez sur un avion dont l'hélice tourne à gauche. Au décollage, que devez-vous anticiper ?",
+       "choices": [
+        "Un départ à gauche, à contrer au pied droit",
+        "Un départ à droite, à contrer au pied gauche",
+        "Un départ à droite, à contrer au pied droit",
+        "Un roulis à gauche, à contrer au manche à droite"
+       ],
+       "answer": 1,
+       "explanation": "Tous les effets moteur dépendent du sens de rotation : si l'hélice tourne à gauche vue du pilote, couple, souffle, facteur P et effet gyroscopique s'inversent. L'avion tend à partir à droite et l'on tient l'axe au pied gauche. Garder le réflexe « pied droit » de l'autre avion aggraverait l'écart."
+      }
+     ]
+    },
+    {
+     "id": "u6s7",
+     "title": "Hypersustentateurs, effet de sol et domaine de vol",
+     "icon": "🛬",
+     "tips": "Pourquoi des hypersustentateurs :\nEn palier, portance = poids : ½ρSV²Cz = m × g. La vitesse minimale de vol vaut donc Vs = √(2mg / (ρ S Cz max)). Pour décoller et se poser lentement, il faut augmenter le Cz max (et, avec un volet Fowler, la surface S).\n• Vs varie comme 1 / √(Cz max).\nExemple : Cz max 1,5 en lisse et 2,0 volets sortis. Vs × √(1,5 / 2,0) = Vs × 0,87 : un avion qui décroche à 55 kt en lisse décroche vers 48 kt volets sortis.\n\nLes volets de bord de fuite :\n• Volet de courbure (simple) : l'arrière de l'aile pivote vers le bas, la cambrure augmente.\n• Volet d'intrados : seule la face inférieure s'abaisse ; très traînant, il est peu utilisé aujourd'hui.\n• Volet à fente : en s'abaissant, il ouvre une fente par laquelle l'air de l'intrados souffle sur son extrados. La couche limite, réénergisée, reste collée : le gain de Cz max dépasse nettement celui du volet simple.\n• Volet Fowler : il recule puis s'abaisse ; il augmente la surface et la cambrure, souvent avec une ou plusieurs fentes. C'est lui qui donne le plus fort gain de Cz max.\n\nEffets de la sortie des volets :\n• Cz max plus grand : Vs plus faible (VS0 inférieure à VS1).\n• À une même incidence, la portance est plus grande : à vitesse égale, l'avion vole à une incidence plus faible, donc à une assiette plus basse. La visibilité vers l'avant s'améliore en approche.\n• Incidence de décrochage légèrement plus faible avec des volets de bord de fuite.\n• Traînée plus forte et finesse plus faible : à vitesse égale, la pente de descente augmente.\n• Changement d'équilibre en tangage (à cabrer ou à piquer selon l'avion) : on tient l'assiette et l'on recompense.\n• Rentrée des volets : le Cz max diminue et Vs augmente. Sans reprise d'incidence et de vitesse, l'avion s'enfonce ; près du sol, on les rentre par étapes, à vitesse suffisante.\n• Au-delà de VFE (haut de l'arc blanc), volets et ferrures risquent d'être endommagés. Certains avions ont une VFE par braquage.\n\nUsage au décollage et à l'atterrissage :\n• Les premiers degrés de braquage apportent surtout de la portance pour peu de traînée ; les derniers surtout de la traînée.\n• Décollage : volets rentrés ou braquage réduit, selon le manuel de vol. Vitesse de décollage et roulement réduits ; trop de volets dégrade l'accélération et la montée.\n• Atterrissage : en général braquage complet. Approche plus lente et plus pentue, assiette plus basse, distance plus courte. Par fort vent de travers ou en rafales, certains manuels recommandent un braquage réduit.\n• Vitesse d'approche : celle du manuel ; à défaut, on retient couramment 1,3 VS0 à la masse réelle.\n\nBecs et fentes de bord d'attaque :\n• Le bec mobile ou la fente fixe fait passer l'air de l'intrados vers l'extrados : la couche limite décolle plus tard.\n• Effets : incidence critique et Cz max plus grands, mais l'assiette au décrochage devient très forte.\n• Sur certains avions, comme le Rallye, les becs sont automatiques : ils sortent seuls à basse vitesse et se rentrent à grande vitesse.\n\nEffet de sol :\n• À moins d'une envergure environ, le sol gêne les tourbillons marginaux et la déflexion de l'air vers le bas. L'incidence induite et la traînée induite diminuent : à Cz constant, environ −1,4 % à une envergure, −23,5 % au quart d'envergure, −47,6 % au dixième d'envergure (chiffres FAA).\n• Pour la même portance, il faut moins d'incidence ; à incidence égale, la portance augmente.\n• Atterrissage : un avion trop rapide flotte longtemps au-dessus de la piste et se pose long.\n• Décollage : l'avion peut quitter le sol trop lentement. En sortant de l'effet de sol, la traînée induite augmente et il faut plus d'incidence : il s'enfonce, retouche ou décroche. On accélère d'abord jusqu'à la vitesse recommandée.\n• Terrain mou : on quitte le sol au plus tôt et l'on accélère en palier dans l'effet de sol.\n• À hauteur de roues égale, une aile basse, plus près du sol, y est plus sensible qu'une aile haute.\n• Le plus souvent, la pression à la prise statique augmente près du sol : anémomètre et altimètre indiquent un peu moins.\n\nDomaine de vol, le diagramme de manœuvre (V-n) :\n• En abscisse la vitesse, en ordonnée le facteur de charge n. L'avion doit rester dans l'enveloppe.\n• À gauche, la courbe de décrochage : le facteur de charge maximal que l'aile peut produire vaut (V / Vs)². Ex. : Vs 50 kt ; à 100 kt, n maximal = 4.\n• En haut et en bas, les facteurs de charge limites : catégorie normale +3,8 et −1,52 ; utilitaire +4,4 et −1,76 ; acrobatique +6 et −3. La limite négative vaut 0,4 fois la positive (0,5 en acrobatique). Au-delà de la limite, déformation permanente possible ; la structure doit tenir sans rupture jusqu'au facteur extrême (1,5 × limite).\n• Point de manœuvre : la courbe de décrochage coupe la limite positive à VA = Vs × √n. Ex. : Vs 52 kt et n = 3,8 : √3,8 ≈ 1,95, VA ≈ 101 kt. Au-dessous de VA, une traction brutale fait décrocher l'avion avant la limite ; au-dessus, elle peut la dépasser.\n• À droite, VD, vitesse de piqué de calcul ; la VNE (trait rouge) vaut au plus 0,9 VD.\n• Catégorie normale : pas de voltige, virages jusqu'à 60° d'inclinaison. Utilitaire : en plus, vrilles si elles sont approuvées et virages de 60 à 90°.\n\nArcs de l'anémomètre :\n• Arc blanc de VS0 à VFE ; arc vert de VS1 à VNO ; arc jaune de VNO à VNE, en air calme ; trait rouge à VNE.\n• VA ne figure pas sur l'anémomètre : elle est au manuel de vol ou sur une plaquette, et diminue avec la masse.\n• Train rentrant : VLO (manœuvre du train) et VLE (train sorti).\n\nPièges : les volets de bord de fuite abaissent un peu l'incidence critique, les becs l'augmentent ; VFE est le haut de l'arc blanc, pas son début.",
+     "vocab": [
+      {
+       "term": "Volet de courbure",
+       "translation": "Volet simple qui pivote vers le bas et augmente la cambrure"
+      },
+      {
+       "term": "Volet d'intrados",
+       "translation": "Volet qui abaisse la seule face inférieure de l'aile"
+      },
+      {
+       "term": "Volet à fente",
+       "translation": "Volet dont la fente souffle l'extrados et retarde le décollement"
+      },
+      {
+       "term": "Volet Fowler",
+       "translation": "Volet qui recule puis s'abaisse : surface et cambrure accrues"
+      },
+      {
+       "term": "Bec de bord d'attaque",
+       "translation": "Élément avant qui ouvre une fente et accroît l'incidence critique"
+      },
+      {
+       "term": "Déflexion (downwash)",
+       "translation": "Air dévié vers le bas derrière l'aile, réduit près du sol"
+      },
+      {
+       "term": "Flotter (à l'arrondi)",
+       "translation": "Planer au-dessus de la piste, trop vite, porté par l'effet de sol"
+      },
+      {
+       "term": "Diagramme V-n",
+       "translation": "Enveloppe vitesse / facteur de charge à respecter en vol"
+      },
+      {
+       "term": "Courbe de décrochage",
+       "translation": "Facteur de charge maximal possible : n = (V / Vs)²"
+      },
+      {
+       "term": "Facteur extrême",
+       "translation": "1,5 fois le facteur limite : la structure ne doit pas rompre"
+      },
+      {
+       "term": "VA",
+       "translation": "Vitesse de manœuvre : VA = Vs × √n limite"
+      },
+      {
+       "term": "VFE",
+       "translation": "Vitesse maximale volets sortis : haut de l'arc blanc"
+      },
+      {
+       "term": "VNO",
+       "translation": "Vitesse maximale en croisière normale : fin de l'arc vert"
+      },
+      {
+       "term": "VNE",
+       "translation": "Vitesse à ne jamais dépasser : trait rouge de l'anémomètre"
+      },
+      {
+       "term": "VD",
+       "translation": "Vitesse de piqué de calcul ; la VNE en vaut au plus 0,9"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Volets et bec en coupe",
+       "svg": "<svg viewBox=\"0 0 680 560\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"560\" fill=\"#ffffff\"/><polyline points=\"30,70 30,69.4 30.1,68.7 30.2,68.1 30.5,67.5 30.9,66.8 31.3,66.2 31.8,65.6 32.5,64.9 33.2,64.3 34,63.7 34.9,63 36,62.4 37,61.8 38.2,61.1 39.5,60.5 40.9,59.9 42.3,59.3 43.9,58.7 45.5,58.1 47.2,57.5 49,57 50.9,56.4 52.8,55.9 54.8,55.3 57,54.8 59.1,54.3 61.4,53.8 63.7,53.4 66.2,52.9 68.6,52.5 71.2,52.1 73.8,51.7 76.5,51.3 79.2,50.9 82,50.6 84.9,50.3 87.8,50 90.8,49.8 93.8,49.5 96.9,49.3 100,49.2 103.2,49 106.4,48.9 109.7,48.8 113,48.7 116.3,48.6 119.7,48.6 123.1,48.6 126.5,48.7 129.9,48.7 133.4,48.8 136.9,48.9 140.4,49 143.9,49.2 147.4,49.4 151,49.5 154.5,49.8 158.1,50 161.6,50.2 165.2,50.5 168.7,50.8 172.3,51 175.8,51.3 179.3,51.7 182.9,52 186.4,52.3 189.9,52.7 193.3,53 196.8,53.4 200.2,53.8 203.6,54.2 207,54.6 210.4,55 213.7,55.4 217,55.8 220.2,56.3 223.4,56.7 226.6,57.1 229.7,57.6 232.8,58 235.9,58.5 238.8,58.9 241.8,59.4 244.7,59.8 247.5,60.3 250.3,60.7 253,61.1 255.6,61.6 258.2,62 260.7,62.4 263.2,62.9 265.6,63.3 267.9,63.7 270.1,64.1 272.3,64.5 274.4,64.9 276.4,65.3 278.4,65.6 280.3,66 282.1,66.3 283.8,66.7 285.4,67 287,67.3 288.4,67.6 289.8,67.9 291.1,68.1 292.3,68.4 293.5,68.6 294.5,68.8 295.4,69 296.3,69.2 297.1,69.4 297.8,69.5 298.4,69.6 298.9,69.8 299.3,69.8 299.6,69.9 299.8,70 300,70 300,70 300,70 300,70 299.8,70 299.6,70 299.3,70.1 298.8,70.1 298.3,70.1 297.7,70.2 297,70.2 296.2,70.3 295.4,70.4 294.4,70.4 293.3,70.5 292.2,70.6 291,70.7 289.6,70.8 288.2,70.9 286.7,71 285.2,71.1 283.5,71.2 281.8,71.4 279.9,71.5 278,71.6 276.1,71.8 274,71.9 271.9,72.1 269.7,72.3 267.4,72.4 265.1,72.6 262.7,72.8 260.2,72.9 257.7,73.1 255,73.3 252.4,73.5 249.7,73.7 246.9,73.9 244,74 241.1,74.2 238.2,74.4 235.2,74.7 232.2,74.9 229.1,75.1 226,75.3 222.8,75.5 219.6,75.7 216.3,75.9 213.1,76.1 209.7,76.3 206.4,76.6 203,76.8 199.6,77 196.2,77.2 192.8,77.4 189.3,77.6 185.9,77.8 182.4,78 178.9,78.2 175.4,78.4 171.9,78.6 168.4,78.8 164.8,79 161.3,79.2 157.8,79.4 154.3,79.6 150.8,79.7 147.3,79.9 143.8,80 140.4,80.2 136.9,80.3 133.6,80.4 130.2,80.5 126.8,80.7 123.5,80.8 120.2,80.9 116.9,81 113.7,81.1 110.5,81.2 107.3,81.2 104.2,81.3 101.1,81.3 98.1,81.4 95.1,81.4 92.2,81.4 89.3,81.4 86.4,81.4 83.6,81.4 80.9,81.4 78.2,81.3 75.5,81.3 73,81.2 70.4,81.1 68,81 65.6,80.8 63.3,80.7 61,80.5 58.8,80.3 56.7,80.1 54.7,79.9 52.7,79.7 50.8,79.4 49,79.1 47.2,78.9 45.6,78.5 44,78.2 42.5,77.9 41,77.5 39.7,77.1 38.4,76.7 37.3,76.3 36.2,75.9 35.2,75.4 34.2,75 33.4,74.5 32.7,74 32,73.5 31.5,72.9 31,72.4 30.6,71.8 30.3,71.2 30.1,70.6 30,70\" fill=\"none\" stroke=\"#8a94a6\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"228.2,58 226.9,57.5 225.5,57.3 224,57.4 222.6,57.7 221.2,58.3 219.9,59.1 218.8,60.2 217.8,61.4 217,62.8 216.4,64.2 216.1,65.8 216.1,67.3 216.3,68.8 216.7,70.3 217.4,71.6 218.3,72.7 219.3,73.7 220.6,74.4 222,75.1 224.9,76.2 227.8,77.3 230.6,78.4 233.4,79.5 236.2,80.6 238.9,81.6 241.5,82.6 244.1,83.6 246.7,84.6 249.2,85.6 251.6,86.5 254,87.4 256.3,88.3 258.6,89.2 260.8,90 262.9,90.8 265,91.6 266.9,92.4 268.9,93.1 270.7,93.8 272.5,94.5 274.2,95.1 275.8,95.8 277.4,96.3 278.9,96.9 280.3,97.4 281.6,97.9 282.8,98.4 284,98.8 285.1,99.2 286,99.6 287,100 287.8,100.3 288.5,100.5 289.2,100.8 289.7,101 290.2,101.2 290.6,101.3 290.9,101.4 291.1,101.5 291.3,101.6 291.3,101.6 291.3,101.6 291.3,101.6 291.2,101.5 291,101.3 290.7,101.1 290.4,100.9 290,100.6 289.5,100.2 288.9,99.8 288.3,99.3 287.6,98.8 286.8,98.2 286,97.6 285,96.9 284,96.2 283,95.4 281.8,94.5 280.6,93.6 279.4,92.7 278,91.7 276.6,90.7 275.1,89.6 273.6,88.5 272,87.4 270.3,86.2 268.5,84.9 266.7,83.6 264.9,82.3 262.9,81 261,79.6 258.9,78.1 256.8,76.7 254.6,75.2 252.4,73.7 250.2,72.1 247.8,70.6 245.5,69 243,67.3 240.6,65.7 238.1,64 235.5,62.3 232.9,60.6 230.2,58.9\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"30,70 30,69.4 30.1,68.7 30.2,68.1 30.5,67.5 30.9,66.8 31.3,66.2 31.8,65.6 32.5,64.9 33.2,64.3 34,63.7 34.9,63 36,62.4 37,61.8 38.2,61.1 39.5,60.5 40.9,59.9 42.3,59.3 43.9,58.7 45.5,58.1 47.2,57.5 49,57 50.9,56.4 52.8,55.9 54.8,55.3 57,54.8 59.1,54.3 61.4,53.8 63.7,53.4 66.2,52.9 68.6,52.5 71.2,52.1 73.8,51.7 76.5,51.3 79.2,50.9 82,50.6 84.9,50.3 87.8,50 90.8,49.8 93.8,49.5 96.9,49.3 100,49.2 103.2,49 106.4,48.9 109.7,48.8 113,48.7 116.3,48.6 119.7,48.6 123.1,48.6 126.5,48.7 129.9,48.7 133.4,48.8 136.9,48.9 140.4,49 143.9,49.2 147.4,49.4 151,49.5 154.5,49.8 158.1,50 161.6,50.2 165.2,50.5 168.7,50.8 172.3,51 175.8,51.3 179.3,51.7 182.9,52 186.4,52.3 189.9,52.7 193.3,53 196.8,53.4 200.2,53.8 203.6,54.2 207,54.6 210.4,55 213.7,55.4 217,55.8 220.2,56.3 223.4,56.7 222.8,75.5 219.6,75.7 216.3,75.9 213.1,76.1 209.7,76.3 206.4,76.6 203,76.8 199.6,77 196.2,77.2 192.8,77.4 189.3,77.6 185.9,77.8 182.4,78 178.9,78.2 175.4,78.4 171.9,78.6 168.4,78.8 164.8,79 161.3,79.2 157.8,79.4 154.3,79.6 150.8,79.7 147.3,79.9 143.8,80 140.4,80.2 136.9,80.3 133.6,80.4 130.2,80.5 126.8,80.7 123.5,80.8 120.2,80.9 116.9,81 113.7,81.1 110.5,81.2 107.3,81.2 104.2,81.3 101.1,81.3 98.1,81.4 95.1,81.4 92.2,81.4 89.3,81.4 86.4,81.4 83.6,81.4 80.9,81.4 78.2,81.3 75.5,81.3 73,81.2 70.4,81.1 68,81 65.6,80.8 63.3,80.7 61,80.5 58.8,80.3 56.7,80.1 54.7,79.9 52.7,79.7 50.8,79.4 49,79.1 47.2,78.9 45.6,78.5 44,78.2 42.5,77.9 41,77.5 39.7,77.1 38.4,76.7 37.3,76.3 36.2,75.9 35.2,75.4 34.2,75 33.4,74.5 32.7,74 32,73.5 31.5,72.9 31,72.4 30.6,71.8 30.3,71.2 30.1,70.6 30,70\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polyline points=\"30,200 30,199.4 30.1,198.7 30.2,198.1 30.5,197.5 30.9,196.8 31.3,196.2 31.8,195.6 32.5,194.9 33.2,194.3 34,193.7 34.9,193 36,192.4 37,191.8 38.2,191.1 39.5,190.5 40.9,189.9 42.3,189.3 43.9,188.7 45.5,188.1 47.2,187.5 49,187 50.9,186.4 52.8,185.9 54.8,185.3 57,184.8 59.1,184.3 61.4,183.8 63.7,183.4 66.2,182.9 68.6,182.5 71.2,182.1 73.8,181.7 76.5,181.3 79.2,180.9 82,180.6 84.9,180.3 87.8,180 90.8,179.8 93.8,179.5 96.9,179.3 100,179.2 103.2,179 106.4,178.9 109.7,178.8 113,178.7 116.3,178.6 119.7,178.6 123.1,178.6 126.5,178.7 129.9,178.7 133.4,178.8 136.9,178.9 140.4,179 143.9,179.2 147.4,179.4 151,179.5 154.5,179.8 158.1,180 161.6,180.2 165.2,180.5 168.7,180.8 172.3,181 175.8,181.3 179.3,181.7 182.9,182 186.4,182.3 189.9,182.7 193.3,183 196.8,183.4 200.2,183.8 203.6,184.2 207,184.6 210.4,185 213.7,185.4 217,185.8 220.2,186.3 223.4,186.7 226.6,187.1 229.7,187.6 232.8,188 235.9,188.5 238.8,188.9 241.8,189.4 244.7,189.8 247.5,190.3 250.3,190.7 253,191.1 255.6,191.6 258.2,192 260.7,192.4 263.2,192.9 265.6,193.3 267.9,193.7 270.1,194.1 272.3,194.5 274.4,194.9 276.4,195.3 278.4,195.6 280.3,196 282.1,196.3 283.8,196.7 285.4,197 287,197.3 288.4,197.6 289.8,197.9 291.1,198.1 292.3,198.4 293.5,198.6 294.5,198.8 295.4,199 296.3,199.2 297.1,199.4 297.8,199.5 298.4,199.6 298.9,199.8 299.3,199.8 299.6,199.9 299.8,200 300,200 300,200 300,200 300,200 299.8,200 299.6,200 299.3,200.1 298.8,200.1 298.3,200.1 297.7,200.2 297,200.2 296.2,200.3 295.4,200.4 294.4,200.4 293.3,200.5 292.2,200.6 291,200.7 289.6,200.8 288.2,200.9 286.7,201 285.2,201.1 283.5,201.2 281.8,201.4 279.9,201.5 278,201.6 276.1,201.8 274,201.9 271.9,202.1 269.7,202.3 267.4,202.4 265.1,202.6 262.7,202.8 260.2,202.9 257.7,203.1 255,203.3 252.4,203.5 249.7,203.7 246.9,203.9 244,204 241.1,204.2 238.2,204.4 235.2,204.7 232.2,204.9 229.1,205.1 226,205.3 222.8,205.5 219.6,205.7 216.3,205.9 213.1,206.1 209.7,206.3 206.4,206.6 203,206.8 199.6,207 196.2,207.2 192.8,207.4 189.3,207.6 185.9,207.8 182.4,208 178.9,208.2 175.4,208.4 171.9,208.6 168.4,208.8 164.8,209 161.3,209.2 157.8,209.4 154.3,209.6 150.8,209.7 147.3,209.9 143.8,210 140.4,210.2 136.9,210.3 133.6,210.4 130.2,210.5 126.8,210.7 123.5,210.8 120.2,210.9 116.9,211 113.7,211.1 110.5,211.2 107.3,211.2 104.2,211.3 101.1,211.3 98.1,211.4 95.1,211.4 92.2,211.4 89.3,211.4 86.4,211.4 83.6,211.4 80.9,211.4 78.2,211.3 75.5,211.3 73,211.2 70.4,211.1 68,211 65.6,210.8 63.3,210.7 61,210.5 58.8,210.3 56.7,210.1 54.7,209.9 52.7,209.7 50.8,209.4 49,209.1 47.2,208.9 45.6,208.5 44,208.2 42.5,207.9 41,207.5 39.7,207.1 38.4,206.7 37.3,206.3 36.2,205.9 35.2,205.4 34.2,205 33.4,204.5 32.7,204 32,203.5 31.5,202.9 31,202.4 30.6,201.8 30.3,201.2 30.1,200.6 30,200\" fill=\"none\" stroke=\"#8a94a6\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"246,215.7 246.3,215.2 246.9,214.8 247.7,214.5 248.7,214.3 250,214.3 251.4,214.4 253,214.7 254.8,215.1 256.8,215.7 258.9,216.4 261.2,217.2 263.5,218.3 266,219.4 268.5,220.7 271.1,222.2 273.7,223.7 276.3,225.4 278.9,227.1 281.6,228.8 284.2,230.6 286.8,232.5 289.4,234.4 291.9,236.2 294.4,238.1 296.8,239.9 299.1,241.7 301.3,243.5 303.3,245.1 305.3,246.8 307.1,248.3 308.8,249.7 310.3,251 311.6,252.1 312.8,253.2 313.8,254.1 314.7,254.8 315.3,255.4 315.8,255.8 316.1,256.1 316.1,256.2 316,256.1 315.7,256 315.1,255.7 314.3,255.3 313.3,254.9 312.1,254.3 310.7,253.6 309,252.9 307.2,252.1 305.3,251.1 303.1,250.1 300.9,249.1 298.5,247.9 295.9,246.7 293.3,245.5 290.6,244.2 287.9,242.8 285.1,241.4 282.3,240 279.4,238.6 276.6,237.2 273.8,235.7 271.1,234.2 268.4,232.8 265.8,231.3 263.4,229.9 261.1,228.5 258.8,227.2 256.8,226 254.8,224.7 253,223.6 251.4,222.4 250,221.4 248.8,220.4 247.8,219.4 247,218.5 246.4,217.7 246,216.9 245.9,216.3 246,215.7\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"30,200 30,199.4 30.1,198.7 30.2,198.1 30.5,197.5 30.9,196.8 31.3,196.2 31.8,195.6 32.5,194.9 33.2,194.3 34,193.7 34.9,193 36,192.4 37,191.8 38.2,191.1 39.5,190.5 40.9,189.9 42.3,189.3 43.9,188.7 45.5,188.1 47.2,187.5 49,187 50.9,186.4 52.8,185.9 54.8,185.3 57,184.8 59.1,184.3 61.4,183.8 63.7,183.4 66.2,182.9 68.6,182.5 71.2,182.1 73.8,181.7 76.5,181.3 79.2,180.9 82,180.6 84.9,180.3 87.8,180 90.8,179.8 93.8,179.5 96.9,179.3 100,179.2 103.2,179 106.4,178.9 109.7,178.8 113,178.7 116.3,178.6 119.7,178.6 123.1,178.6 126.5,178.7 129.9,178.7 133.4,178.8 136.9,178.9 140.4,179 143.9,179.2 147.4,179.4 151,179.5 154.5,179.8 158.1,180 161.6,180.2 165.2,180.5 168.7,180.8 172.3,181 175.8,181.3 179.3,181.7 182.9,182 186.4,182.3 189.9,182.7 193.3,183 196.8,183.4 200.2,183.8 203.6,184.2 207,184.6 210.4,185 213.7,185.4 217,185.8 220.2,186.3 223.4,186.7 226.6,187.1 229.7,187.6 232.8,188 235.9,188.5 238.8,188.9 241.8,189.4 244.7,189.8 247.5,190.3 250.3,190.7 253,191.1 255.6,191.6 258.2,192 260.7,192.4 229.1,205.1 226,205.3 222.8,205.5 219.6,205.7 216.3,205.9 213.1,206.1 209.7,206.3 206.4,206.6 203,206.8 199.6,207 196.2,207.2 192.8,207.4 189.3,207.6 185.9,207.8 182.4,208 178.9,208.2 175.4,208.4 171.9,208.6 168.4,208.8 164.8,209 161.3,209.2 157.8,209.4 154.3,209.6 150.8,209.7 147.3,209.9 143.8,210 140.4,210.2 136.9,210.3 133.6,210.4 130.2,210.5 126.8,210.7 123.5,210.8 120.2,210.9 116.9,211 113.7,211.1 110.5,211.2 107.3,211.2 104.2,211.3 101.1,211.3 98.1,211.4 95.1,211.4 92.2,211.4 89.3,211.4 86.4,211.4 83.6,211.4 80.9,211.4 78.2,211.3 75.5,211.3 73,211.2 70.4,211.1 68,211 65.6,210.8 63.3,210.7 61,210.5 58.8,210.3 56.7,210.1 54.7,209.9 52.7,209.7 50.8,209.4 49,209.1 47.2,208.9 45.6,208.5 44,208.2 42.5,207.9 41,207.5 39.7,207.1 38.4,206.7 37.3,206.3 36.2,205.9 35.2,205.4 34.2,205 33.4,204.5 32.7,204 32,203.5 31.5,202.9 31,202.4 30.6,201.8 30.3,201.2 30.1,200.6 30,200\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M 202.8 245.9 Q 235.2 205.4 289.2 213.5\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polygon points=\"289.2,213.5 278.6,217 280.1,207.1\" fill=\"#2e7d32\"/><polyline points=\"30,330 30,329.4 30.1,328.7 30.2,328.1 30.5,327.5 30.9,326.8 31.3,326.2 31.8,325.6 32.5,324.9 33.2,324.3 34,323.7 34.9,323 36,322.4 37,321.8 38.2,321.1 39.5,320.5 40.9,319.9 42.3,319.3 43.9,318.7 45.5,318.1 47.2,317.5 49,317 50.9,316.4 52.8,315.9 54.8,315.3 57,314.8 59.1,314.3 61.4,313.8 63.7,313.4 66.2,312.9 68.6,312.5 71.2,312.1 73.8,311.7 76.5,311.3 79.2,310.9 82,310.6 84.9,310.3 87.8,310 90.8,309.8 93.8,309.5 96.9,309.3 100,309.2 103.2,309 106.4,308.9 109.7,308.8 113,308.7 116.3,308.6 119.7,308.6 123.1,308.6 126.5,308.7 129.9,308.7 133.4,308.8 136.9,308.9 140.4,309 143.9,309.2 147.4,309.4 151,309.5 154.5,309.8 158.1,310 161.6,310.2 165.2,310.5 168.7,310.8 172.3,311 175.8,311.3 179.3,311.7 182.9,312 186.4,312.3 189.9,312.7 193.3,313 196.8,313.4 200.2,313.8 203.6,314.2 207,314.6 210.4,315 213.7,315.4 217,315.8 220.2,316.3 223.4,316.7 226.6,317.1 229.7,317.6 232.8,318 235.9,318.5 238.8,318.9 241.8,319.4 244.7,319.8 247.5,320.3 250.3,320.7 253,321.1 255.6,321.6 258.2,322 260.7,322.4 263.2,322.9 265.6,323.3 267.9,323.7 270.1,324.1 272.3,324.5 274.4,324.9 276.4,325.3 278.4,325.6 280.3,326 282.1,326.3 283.8,326.7 285.4,327 287,327.3 288.4,327.6 289.8,327.9 291.1,328.1 292.3,328.4 293.5,328.6 294.5,328.8 295.4,329 296.3,329.2 297.1,329.4 297.8,329.5 298.4,329.6 298.9,329.8 299.3,329.8 299.6,329.9 299.8,330 300,330 300,330 300,330 300,330 299.8,330 299.6,330 299.3,330.1 298.8,330.1 298.3,330.1 297.7,330.2 297,330.2 296.2,330.3 295.4,330.4 294.4,330.4 293.3,330.5 292.2,330.6 291,330.7 289.6,330.8 288.2,330.9 286.7,331 285.2,331.1 283.5,331.2 281.8,331.4 279.9,331.5 278,331.6 276.1,331.8 274,331.9 271.9,332.1 269.7,332.3 267.4,332.4 265.1,332.6 262.7,332.8 260.2,332.9 257.7,333.1 255,333.3 252.4,333.5 249.7,333.7 246.9,333.9 244,334 241.1,334.2 238.2,334.4 235.2,334.7 232.2,334.9 229.1,335.1 226,335.3 222.8,335.5 219.6,335.7 216.3,335.9 213.1,336.1 209.7,336.3 206.4,336.6 203,336.8 199.6,337 196.2,337.2 192.8,337.4 189.3,337.6 185.9,337.8 182.4,338 178.9,338.2 175.4,338.4 171.9,338.6 168.4,338.8 164.8,339 161.3,339.2 157.8,339.4 154.3,339.6 150.8,339.7 147.3,339.9 143.8,340 140.4,340.2 136.9,340.3 133.6,340.4 130.2,340.5 126.8,340.7 123.5,340.8 120.2,340.9 116.9,341 113.7,341.1 110.5,341.2 107.3,341.2 104.2,341.3 101.1,341.3 98.1,341.4 95.1,341.4 92.2,341.4 89.3,341.4 86.4,341.4 83.6,341.4 80.9,341.4 78.2,341.3 75.5,341.3 73,341.2 70.4,341.1 68,341 65.6,340.8 63.3,340.7 61,340.5 58.8,340.3 56.7,340.1 54.7,339.9 52.7,339.7 50.8,339.4 49,339.1 47.2,338.9 45.6,338.5 44,338.2 42.5,337.9 41,337.5 39.7,337.1 38.4,336.7 37.3,336.3 36.2,335.9 35.2,335.4 34.2,335 33.4,334.5 32.7,334 32,333.5 31.5,332.9 31,332.4 30.6,331.8 30.3,331.2 30.1,330.6 30,330\" fill=\"none\" stroke=\"#8a94a6\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"286.5,343.5 286.8,342.9 287.3,342.5 288,342.1 289,341.8 290.2,341.6 291.7,341.5 293.3,341.6 295.2,341.7 297.2,342 299.4,342.4 301.7,342.9 304.2,343.6 306.8,344.4 309.5,345.4 312.3,346.5 315,347.6 317.8,348.9 320.7,350.2 323.6,351.6 326.4,353 329.3,354.5 332.1,356 334.8,357.5 337.5,359 340.2,360.5 342.7,361.9 345.1,363.3 347.4,364.7 349.5,366 351.5,367.3 353.4,368.4 355.1,369.5 356.6,370.5 357.9,371.4 359,372.1 359.9,372.7 360.7,373.2 361.2,373.6 361.5,373.8 361.6,373.8 361.5,373.8 361.1,373.7 360.5,373.5 359.7,373.3 358.6,373 357.3,372.6 355.8,372.1 354.1,371.6 352.2,371 350.1,370.4 347.9,369.7 345.5,368.9 342.9,368.2 340.3,367.3 337.5,366.4 334.7,365.5 331.8,364.6 328.8,363.6 325.8,362.6 322.8,361.6 319.8,360.5 316.8,359.5 313.9,358.4 311.1,357.3 308.3,356.2 305.7,355.2 303.2,354.2 300.8,353.2 298.6,352.2 296.5,351.3 294.6,350.3 292.8,349.5 291.3,348.6 289.9,347.8 288.8,347 287.8,346.2 287.1,345.5 286.7,344.8 286.5,344.1 286.5,343.5\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"30,330 30,329.4 30.1,328.7 30.2,328.1 30.5,327.5 30.9,326.8 31.3,326.2 31.8,325.6 32.5,324.9 33.2,324.3 34,323.7 34.9,323 36,322.4 37,321.8 38.2,321.1 39.5,320.5 40.9,319.9 42.3,319.3 43.9,318.7 45.5,318.1 47.2,317.5 49,317 50.9,316.4 52.8,315.9 54.8,315.3 57,314.8 59.1,314.3 61.4,313.8 63.7,313.4 66.2,312.9 68.6,312.5 71.2,312.1 73.8,311.7 76.5,311.3 79.2,310.9 82,310.6 84.9,310.3 87.8,310 90.8,309.8 93.8,309.5 96.9,309.3 100,309.2 103.2,309 106.4,308.9 109.7,308.8 113,308.7 116.3,308.6 119.7,308.6 123.1,308.6 126.5,308.7 129.9,308.7 133.4,308.8 136.9,308.9 140.4,309 143.9,309.2 147.4,309.4 151,309.5 154.5,309.8 158.1,310 161.6,310.2 165.2,310.5 168.7,310.8 172.3,311 175.8,311.3 179.3,311.7 182.9,312 186.4,312.3 189.9,312.7 193.3,313 196.8,313.4 200.2,313.8 203.6,314.2 207,314.6 210.4,315 213.7,315.4 217,315.8 220.2,316.3 223.4,316.7 226.6,317.1 229.7,317.6 232.8,318 235.9,318.5 238.8,318.9 241.8,319.4 244.7,319.8 247.5,320.3 250.3,320.7 253,321.1 255.6,321.6 258.2,322 260.7,322.4 229.1,335.1 226,335.3 222.8,335.5 219.6,335.7 216.3,335.9 213.1,336.1 209.7,336.3 206.4,336.6 203,336.8 199.6,337 196.2,337.2 192.8,337.4 189.3,337.6 185.9,337.8 182.4,338 178.9,338.2 175.4,338.4 171.9,338.6 168.4,338.8 164.8,339 161.3,339.2 157.8,339.4 154.3,339.6 150.8,339.7 147.3,339.9 143.8,340 140.4,340.2 136.9,340.3 133.6,340.4 130.2,340.5 126.8,340.7 123.5,340.8 120.2,340.9 116.9,341 113.7,341.1 110.5,341.2 107.3,341.2 104.2,341.3 101.1,341.3 98.1,341.4 95.1,341.4 92.2,341.4 89.3,341.4 86.4,341.4 83.6,341.4 80.9,341.4 78.2,341.3 75.5,341.3 73,341.2 70.4,341.1 68,341 65.6,340.8 63.3,340.7 61,340.5 58.8,340.3 56.7,340.1 54.7,339.9 52.7,339.7 50.8,339.4 49,339.1 47.2,338.9 45.6,338.5 44,338.2 42.5,337.9 41,337.5 39.7,337.1 38.4,336.7 37.3,336.3 36.2,335.9 35.2,335.4 34.2,335 33.4,334.5 32.7,334 32,333.5 31.5,332.9 31,332.4 30.6,331.8 30.3,331.2 30.1,330.6 30,330\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M 246.0 373.2 Q 273.0 335.4 321.6 343.5\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polygon points=\"321.6,343.5 310.9,346.8 312.6,336.9\" fill=\"#2e7d32\"/><line x1=\"246\" y1=\"376\" x2=\"297.4\" y2=\"376\" stroke=\"#d35400\" stroke-width=\"2.4\"/><polygon points=\"305.4,376 295.4,381 295.4,371\" fill=\"#d35400\"/><text x=\"246\" y=\"396\" font-size=\"14\" fill=\"#d35400\">recul</text><polyline points=\"30,460 30,459.4 30.1,458.7 30.2,458.1 30.5,457.5 30.9,456.8 31.3,456.2 31.8,455.6 32.5,454.9 33.2,454.3 34,453.7 34.9,453 36,452.4 37,451.8 38.2,451.1 39.5,450.5 40.9,449.9 42.3,449.3 43.9,448.7 45.5,448.1 47.2,447.5 49,447 50.9,446.4 52.8,445.9 54.8,445.3 57,444.8 59.1,444.3 61.4,443.8 63.7,443.4 66.2,442.9 68.6,442.5 71.2,442.1 73.8,441.7 76.5,441.3 79.2,440.9 82,440.6 84.9,440.3 87.8,440 90.8,439.8 93.8,439.5 96.9,439.3 100,439.2 103.2,439 106.4,438.9 109.7,438.8 113,438.7 116.3,438.6 119.7,438.6 123.1,438.6 126.5,438.7 129.9,438.7 133.4,438.8 136.9,438.9 140.4,439 143.9,439.2 147.4,439.4 151,439.5 154.5,439.8 158.1,440 161.6,440.2 165.2,440.5 168.7,440.8 172.3,441 175.8,441.3 179.3,441.7 182.9,442 186.4,442.3 189.9,442.7 193.3,443 196.8,443.4 200.2,443.8 203.6,444.2 207,444.6 210.4,445 213.7,445.4 217,445.8 220.2,446.3 223.4,446.7 226.6,447.1 229.7,447.6 232.8,448 235.9,448.5 238.8,448.9 241.8,449.4 244.7,449.8 247.5,450.3 250.3,450.7 253,451.1 255.6,451.6 258.2,452 260.7,452.4 263.2,452.9 265.6,453.3 267.9,453.7 270.1,454.1 272.3,454.5 274.4,454.9 276.4,455.3 278.4,455.6 280.3,456 282.1,456.3 283.8,456.7 285.4,457 287,457.3 288.4,457.6 289.8,457.9 291.1,458.1 292.3,458.4 293.5,458.6 294.5,458.8 295.4,459 296.3,459.2 297.1,459.4 297.8,459.5 298.4,459.6 298.9,459.8 299.3,459.8 299.6,459.9 299.8,460 300,460 300,460 300,460 300,460 299.8,460 299.6,460 299.3,460.1 298.8,460.1 298.3,460.1 297.7,460.2 297,460.2 296.2,460.3 295.4,460.4 294.4,460.4 293.3,460.5 292.2,460.6 291,460.7 289.6,460.8 288.2,460.9 286.7,461 285.2,461.1 283.5,461.2 281.8,461.4 279.9,461.5 278,461.6 276.1,461.8 274,461.9 271.9,462.1 269.7,462.3 267.4,462.4 265.1,462.6 262.7,462.8 260.2,462.9 257.7,463.1 255,463.3 252.4,463.5 249.7,463.7 246.9,463.9 244,464 241.1,464.2 238.2,464.4 235.2,464.7 232.2,464.9 229.1,465.1 226,465.3 222.8,465.5 219.6,465.7 216.3,465.9 213.1,466.1 209.7,466.3 206.4,466.6 203,466.8 199.6,467 196.2,467.2 192.8,467.4 189.3,467.6 185.9,467.8 182.4,468 178.9,468.2 175.4,468.4 171.9,468.6 168.4,468.8 164.8,469 161.3,469.2 157.8,469.4 154.3,469.6 150.8,469.7 147.3,469.9 143.8,470 140.4,470.2 136.9,470.3 133.6,470.4 130.2,470.5 126.8,470.7 123.5,470.8 120.2,470.9 116.9,471 113.7,471.1 110.5,471.2 107.3,471.2 104.2,471.3 101.1,471.3 98.1,471.4 95.1,471.4 92.2,471.4 89.3,471.4 86.4,471.4 83.6,471.4 80.9,471.4 78.2,471.3 75.5,471.3 73,471.2 70.4,471.1 68,471 65.6,470.8 63.3,470.7 61,470.5 58.8,470.3 56.7,470.1 54.7,469.9 52.7,469.7 50.8,469.4 49,469.1 47.2,468.9 45.6,468.5 44,468.2 42.5,467.9 41,467.5 39.7,467.1 38.4,466.7 37.3,466.3 36.2,465.9 35.2,465.4 34.2,465 33.4,464.5 32.7,464 32,463.5 31.5,462.9 31,462.4 30.6,461.8 30.3,461.2 30.1,460.6 30,460\" fill=\"none\" stroke=\"#8a94a6\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\" stroke-linejoin=\"round\"/><polygon points=\"68.6,442.5 71.2,442.1 73.8,441.7 76.5,441.3 79.2,440.9 82,440.6 84.9,440.3 87.8,440 90.8,439.8 93.8,439.5 96.9,439.3 100,439.2 103.2,439 106.4,438.9 109.7,438.8 113,438.7 116.3,438.6 119.7,438.6 123.1,438.6 126.5,438.7 129.9,438.7 133.4,438.8 136.9,438.9 140.4,439 143.9,439.2 147.4,439.4 151,439.5 154.5,439.8 158.1,440 161.6,440.2 165.2,440.5 168.7,440.8 172.3,441 175.8,441.3 179.3,441.7 182.9,442 186.4,442.3 189.9,442.7 193.3,443 196.8,443.4 200.2,443.8 203.6,444.2 207,444.6 210.4,445 213.7,445.4 217,445.8 220.2,446.3 223.4,446.7 226.6,447.1 229.7,447.6 232.8,448 235.9,448.5 238.8,448.9 241.8,449.4 244.7,449.8 247.5,450.3 250.3,450.7 253,451.1 255.6,451.6 258.2,452 260.7,452.4 263.2,452.9 265.6,453.3 267.9,453.7 270.1,454.1 272.3,454.5 274.4,454.9 276.4,455.3 278.4,455.6 280.3,456 282.1,456.3 283.8,456.7 285.4,457 287,457.3 288.4,457.6 289.8,457.9 291.1,458.1 292.3,458.4 293.5,458.6 294.5,458.8 295.4,459 296.3,459.2 297.1,459.4 297.8,459.5 298.4,459.6 298.9,459.8 299.3,459.8 299.6,459.9 299.8,460 300,460 300,460 300,460 300,460 299.8,460 299.6,460 299.3,460.1 298.8,460.1 298.3,460.1 297.7,460.2 297,460.2 296.2,460.3 295.4,460.4 294.4,460.4 293.3,460.5 292.2,460.6 291,460.7 289.6,460.8 288.2,460.9 286.7,461 285.2,461.1 283.5,461.2 281.8,461.4 279.9,461.5 278,461.6 276.1,461.8 274,461.9 271.9,462.1 269.7,462.3 267.4,462.4 265.1,462.6 262.7,462.8 260.2,462.9 257.7,463.1 255,463.3 252.4,463.5 249.7,463.7 246.9,463.9 244,464 241.1,464.2 238.2,464.4 235.2,464.7 232.2,464.9 229.1,465.1 226,465.3 222.8,465.5 219.6,465.7 216.3,465.9 213.1,466.1 209.7,466.3 206.4,466.6 203,466.8 199.6,467 196.2,467.2 192.8,467.4 189.3,467.6 185.9,467.8 182.4,468 178.9,468.2 175.4,468.4 171.9,468.6 168.4,468.8 164.8,469 161.3,469.2 157.8,469.4 154.3,469.6 150.8,469.7 147.3,469.9 143.8,470 140.4,470.2 136.9,470.3 133.6,470.4 130.2,470.5 126.8,470.7 123.5,470.8 120.2,470.9 116.9,471 113.7,471.1 110.5,471.2 107.3,471.2 104.2,471.3 101.1,471.3 98.1,471.4 95.1,471.4 92.2,471.4 89.3,471.4 86.4,471.4 83.6,471.4 80.9,471.4 78.2,471.3 75.5,471.3 73,471.2 70.4,471.1 68,471 65.6,470.8 63.3,470.7 61,470.5 58.8,470.3 56.7,470.1 54.7,469.9 52.7,469.7 50.8,469.4 49,469.1 47.2,468.9 45.6,468.5 44,468.2 42.6,467.8 41.9,467.3 41.3,466.7 40.8,465.9 40.5,465.1 40.3,464.2 40.3,463.2 40.3,462.1 40.5,461 40.8,459.9 41.2,458.7 41.8,457.4 42.4,456.2 43.1,455 44,453.7 45,452.5 46,451.3 47.2,450.1 48.5,449 49.8,447.9 51.2,446.9 52.8,446 54.4,445.2 56.1,444.4 57.8,443.8 59.7,443.2 61.6,442.8 63.6,442.6 65.7,442.4\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"52.6,443.4 50.2,443.1 47.8,442.9 45.5,442.6 43.3,442.4 41.1,442.3 39,442.1 37,442.1 35,442 33.1,442 31.3,442 29.6,442.1 28,442.2 26.4,442.3 24.9,442.5 23.5,442.7 22.2,442.9 20.9,443.2 19.8,443.4 18.7,443.8 17.8,444.1 16.9,444.5 16.1,444.9 15.3,445.3 14.7,445.8 14.2,446.3 13.7,446.8 13.4,447.4 13.1,447.9 12.9,448.5 12.8,449.2 12.8,449.8 12.9,450.4 13.1,451.1 13.4,451.8 13.8,452.5 14.2,453.2 14.8,453.9 15.4,454.6 16.2,455.3 20.7,459.7 20,459.1 19.4,458.3 19,457.6 18.8,456.7 18.8,455.8 18.9,454.9 19.1,453.9 19.5,452.9 20,451.9 20.7,450.9 21.4,449.9 22.3,448.9 23.3,447.9 24.4,447 25.6,446.1 26.9,445.2 28.3,444.4 29.8,443.6 31.3,443 32.9,442.4 34.6,441.8 36.3,441.4 38.1,441.1 40,440.9 41.9,440.9 43.8,440.9 45.7,441.2 47.7,441.5 49.7,442 51.7,442.7\" fill=\"#dbe7f6\" stroke=\"#1f5fa8\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><path d=\"M 33.2 507.3 Q 2.3 454.7 84.0 428.9\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><polygon points=\"84,428.9 76,436.7 73,427.2\" fill=\"#2e7d32\"/><text x=\"405\" y=\"54\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Volet de courbure (simple)</text><text x=\"405\" y=\"76\" font-size=\"14\" fill=\"#46516a\">L&#x27;arrière de l&#x27;aile pivote vers le bas :</text><text x=\"405\" y=\"96\" font-size=\"14\" fill=\"#46516a\">cambrure, Cz max et traînée en hausse</text><text x=\"405\" y=\"184\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Volet à fente</text><text x=\"405\" y=\"206\" font-size=\"14\" fill=\"#46516a\">La fente souffle l&#x27;air de l&#x27;intrados sur</text><text x=\"405\" y=\"226\" font-size=\"14\" fill=\"#46516a\">le volet : gain de Cz max plus grand</text><text x=\"405\" y=\"314\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Volet Fowler</text><text x=\"405\" y=\"336\" font-size=\"14\" fill=\"#46516a\">Il recule puis s&#x27;abaisse : surface et</text><text x=\"405\" y=\"356\" font-size=\"14\" fill=\"#46516a\">cambrure augmentent, plus fort gain</text><text x=\"405\" y=\"444\" font-size=\"16\" fill=\"#14213d\" font-weight=\"bold\">Bec de bord d&#x27;attaque</text><text x=\"405\" y=\"466\" font-size=\"14\" fill=\"#46516a\">Il avance et ouvre une fente qui retarde</text><text x=\"405\" y=\"486\" font-size=\"14\" fill=\"#46516a\">le décollement : incidence critique ↑</text><line x1=\"20\" y1=\"535\" x2=\"46\" y2=\"535\" stroke=\"#8a94a6\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><text x=\"54\" y=\"540\" font-size=\"14\" fill=\"#46516a\">profil lisse de référence</text><line x1=\"260\" y1=\"535\" x2=\"290\" y2=\"535\" stroke=\"#2e7d32\" stroke-width=\"2.4\"/><text x=\"298\" y=\"540\" font-size=\"14\" fill=\"#46516a\">air soufflé par la fente</text></svg>",
+       "caption": "En pointillé, le profil lisse. Chaque dispositif augmente le Cz max : le volet simple par la cambrure, le volet à fente et le Fowler en soufflant l'extrados du volet (le Fowler augmente aussi la surface), le bec en retardant le décollement au bord d'attaque."
+      },
+      {
+       "title": "Diagramme de manœuvre (V-n)",
+       "svg": "<svg viewBox=\"0 0 700 520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"520\" fill=\"#ffffff\"/><polygon points=\"80,271.5 85,271.5 89.9,271.3 94.9,271.1 99.8,270.7 104.8,270.2 109.8,269.7 114.7,269 119.7,268.2 124.6,267.3 129.6,266.3 134.5,265.3 139.5,264.1 144.5,262.8 149.4,261.4 154.4,259.8 159.3,258.2 164.3,256.5 169.3,254.7 174.2,252.8 179.2,250.8 184.1,248.6 189.1,246.4 194.1,244 199,241.6 204,239.1 208.9,236.4 213.9,233.7 218.8,230.8 223.8,227.8 228.8,224.8 233.7,221.6 238.7,218.3 243.6,214.9 248.6,211.5 253.6,207.9 258.5,204.2 263.5,200.4 268.4,196.5 273.4,192.5 278.4,188.4 283.3,184.2 288.3,179.9 293.2,175.5 298.2,170.9 303.2,166.3 308.1,161.6 313.1,156.7 318,151.8 323,146.8 327.9,141.6 332.9,136.4 337.9,131 342.8,125.6 347.8,120 352.7,114.3 357.7,108.6 362.7,102.7 367.6,96.7 372.6,90.6 377.5,84.5 589.8,84.5 589.8,346.4 313.3,346.4 313.3,346.4 307.5,342.7 301.7,339.1 295.8,335.6 290,332.2 284.2,328.8 278.3,325.6 272.5,322.5 266.7,319.4 260.8,316.5 255,313.6 249.2,310.9 243.3,308.2 237.5,305.6 231.7,303.2 225.8,300.8 220,298.5 214.2,296.3 208.3,294.2 202.5,292.2 196.7,290.2 190.8,288.4 185,286.7 179.2,285.1 173.3,283.5 167.5,282.1 161.7,280.7 155.8,279.4 150,278.3 144.2,277.2 138.3,276.2 132.5,275.3 126.7,274.5 120.8,273.8 115,273.2 109.2,272.7 103.3,272.3 97.5,272 91.7,271.7 85.8,271.6 80,271.5\" fill=\"#e6f4ea\" stroke-linejoin=\"round\"/><polygon points=\"80,50 80,271.5 85,271.5 89.9,271.3 94.9,271.1 99.8,270.7 104.8,270.2 109.8,269.7 114.7,269 119.7,268.2 124.6,267.3 129.6,266.3 134.5,265.3 139.5,264.1 144.5,262.8 149.4,261.4 154.4,259.8 159.3,258.2 164.3,256.5 169.3,254.7 174.2,252.8 179.2,250.8 184.1,248.6 189.1,246.4 194.1,244 199,241.6 204,239.1 208.9,236.4 213.9,233.7 218.8,230.8 223.8,227.8 228.8,224.8 233.7,221.6 238.7,218.3 243.6,214.9 248.6,211.5 253.6,207.9 258.5,204.2 263.5,200.4 268.4,196.5 273.4,192.5 278.4,188.4 283.3,184.2 288.3,179.9 293.2,175.5 298.2,170.9 303.2,166.3 308.1,161.6 313.1,156.7 318,151.8 323,146.8 327.9,141.6 332.9,136.4 337.9,131 342.8,125.6 347.8,120 352.7,114.3 357.7,108.6 362.7,102.7 367.6,96.7 372.6,90.6 377.5,84.5 377.5,50\" fill=\"#fdecec\" stroke-linejoin=\"round\"/><polygon points=\"377.5,84.5 589.8,84.5 589.8,50 377.5,50\" fill=\"#fff1df\" stroke-linejoin=\"round\"/><line x1=\"80\" y1=\"370\" x2=\"660\" y2=\"370\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"375\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">−2</text><line x1=\"80\" y1=\"320.8\" x2=\"660\" y2=\"320.8\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"325.8\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">−1</text><line x1=\"80\" y1=\"271.5\" x2=\"660\" y2=\"271.5\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"276.5\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">0</text><line x1=\"80\" y1=\"222.3\" x2=\"660\" y2=\"222.3\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"227.3\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">+1</text><line x1=\"80\" y1=\"173.1\" x2=\"660\" y2=\"173.1\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"178.1\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">+2</text><line x1=\"80\" y1=\"123.8\" x2=\"660\" y2=\"123.8\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"128.8\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">+3</text><line x1=\"80\" y1=\"74.6\" x2=\"660\" y2=\"74.6\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"79.6\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">+4</text><line x1=\"80\" y1=\"271.5\" x2=\"660\" y2=\"271.5\" stroke=\"#46516a\" stroke-width=\"1.8\"/><line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"370\" stroke=\"#46516a\" stroke-width=\"1.8\"/><text x=\"70\" y=\"34\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">n (g)</text><text x=\"660\" y=\"263.5\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">Vi (kt)</text><polyline points=\"80,271.5 85,271.5 89.9,271.3 94.9,271.1 99.8,270.7 104.8,270.2 109.8,269.7 114.7,269 119.7,268.2 124.6,267.3 129.6,266.3 134.5,265.3 139.5,264.1 144.5,262.8 149.4,261.4 154.4,259.8 159.3,258.2 164.3,256.5 169.3,254.7 174.2,252.8 179.2,250.8 184.1,248.6 189.1,246.4 194.1,244 199,241.6 204,239.1 208.9,236.4 213.9,233.7 218.8,230.8 223.8,227.8 228.8,224.8 233.7,221.6 238.7,218.3 243.6,214.9 248.6,211.5 253.6,207.9 258.5,204.2 263.5,200.4 268.4,196.5 273.4,192.5 278.4,188.4 283.3,184.2 288.3,179.9 293.2,175.5 298.2,170.9 303.2,166.3 308.1,161.6 313.1,156.7 318,151.8 323,146.8 327.9,141.6 332.9,136.4 337.9,131 342.8,125.6 347.8,120 352.7,114.3 357.7,108.6 362.7,102.7 367.6,96.7 372.6,90.6 377.5,84.5\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><polyline points=\"80,271.5 85.8,271.6 91.7,271.7 97.5,272 103.3,272.3 109.2,272.7 115,273.2 120.8,273.8 126.7,274.5 132.5,275.3 138.3,276.2 144.2,277.2 150,278.3 155.8,279.4 161.7,280.7 167.5,282.1 173.3,283.5 179.2,285.1 185,286.7 190.8,288.4 196.7,290.2 202.5,292.2 208.3,294.2 214.2,296.3 220,298.5 225.8,300.8 231.7,303.2 237.5,305.6 243.3,308.2 249.2,310.9 255,313.6 260.8,316.5 266.7,319.4 272.5,322.5 278.3,325.6 284.2,328.8 290,332.2 295.8,335.6 301.7,339.1 307.5,342.7 313.3,346.4\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><polyline points=\"377.5,84.5 589.8,84.5 589.8,346.4 313.3,346.4\" fill=\"none\" stroke=\"#1f5fa8\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"232.6\" y1=\"50\" x2=\"232.6\" y2=\"370\" stroke=\"#8a94a6\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"232.6\" y=\"390\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VS1</text><text x=\"232.6\" y=\"408\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">50</text><line x1=\"377.5\" y1=\"50\" x2=\"377.5\" y2=\"370\" stroke=\"#8a94a6\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"377.5\" y=\"390\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VA</text><text x=\"377.5\" y=\"408\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">97</text><line x1=\"461.6\" y1=\"50\" x2=\"461.6\" y2=\"370\" stroke=\"#8a94a6\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"461.6\" y=\"390\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VNO</text><text x=\"461.6\" y=\"408\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">125</text><line x1=\"537.9\" y1=\"50\" x2=\"537.9\" y2=\"370\" stroke=\"#8a94a6\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"537.9\" y=\"390\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VNE</text><text x=\"537.9\" y=\"408\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">150</text><line x1=\"589.8\" y1=\"50\" x2=\"589.8\" y2=\"370\" stroke=\"#8a94a6\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/><text x=\"589.8\" y=\"390\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VD</text><text x=\"589.8\" y=\"408\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">167</text><circle cx=\"377.5\" cy=\"84.5\" r=\"5\" fill=\"#c0392b\" stroke=\"#c0392b\" stroke-width=\"1\"/><circle cx=\"232.6\" cy=\"222.3\" r=\"4.5\" fill=\"#c0392b\" stroke=\"#c0392b\" stroke-width=\"1\"/><text x=\"581.8\" y=\"104.5\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"end\" font-weight=\"bold\">+3,8 (limite)</text><text x=\"581.8\" y=\"366.4\" font-size=\"14\" fill=\"#1f5fa8\" text-anchor=\"end\" font-weight=\"bold\">−1,52 (limite)</text><text x=\"122.7\" y=\"123.8\" font-size=\"15\" fill=\"#c0392b\" font-weight=\"bold\">Décrochage</text><text x=\"122.7\" y=\"142.8\" font-size=\"14\" fill=\"#c0392b\">n &gt; (V/Vs)²</text><text x=\"482.9\" y=\"62.3\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"bold\">Dommages structuraux</text><text x=\"440.2\" y=\"178\" font-size=\"16\" fill=\"#2e7d32\" text-anchor=\"middle\" font-weight=\"bold\">Domaine de vol</text><text x=\"365.5\" y=\"82.5\" font-size=\"14\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">VA = Vs × √3,8</text><text x=\"80\" y=\"426\" font-size=\"14\" fill=\"#14213d\" font-weight=\"bold\">Arcs de l&#x27;anémomètre</text><rect x=\"217.4\" y=\"436\" width=\"122.1\" height=\"10\" fill=\"#ffffff\" stroke=\"#7f8796\" stroke-width=\"1.4\"/><rect x=\"232.6\" y=\"450\" width=\"228.9\" height=\"10\" fill=\"#2e9e4f\"/><rect x=\"461.6\" y=\"450\" width=\"76.3\" height=\"10\" fill=\"#f2c200\"/><rect x=\"535.9\" y=\"432\" width=\"4\" height=\"32\" fill=\"#d32f2f\"/><text x=\"217.4\" y=\"482\" font-size=\"14\" fill=\"#46516a\">blanc : VS0 (45) → VFE (85)</text><text x=\"498.2\" y=\"482\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">jaune : VNO → VNE</text><text x=\"232.6\" y=\"502\" font-size=\"14\" fill=\"#46516a\">vert : VS1 (50) → VNO (125)</text><text x=\"537.9\" y=\"502\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">trait rouge : VNE</text></svg>",
+       "caption": "Exemple d'avion de catégorie normale (VS1 50 kt) : à gauche, la courbe de décrochage n = (V / Vs)² coupe la limite +3,8 à VA. Schéma simplifié du côté négatif ; les arcs de l'anémomètre sont reportés sous l'axe des vitesses."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u6s7q01",
+       "q": "Par rapport à un volet de courbure simple, qu'est-ce qui caractérise un volet Fowler ?",
+       "choices": [
+        "Il s'abaisse sans reculer et ne modifie que la cambrure",
+        "Il recule en s'abaissant et augmente aussi la surface alaire",
+        "Il se déploie au bord d'attaque et augmente l'incidence critique",
+        "Il abaisse la face inférieure de l'aile, l'extrados restant fixe"
+       ],
+       "answer": 1,
+       "explanation": "Le volet Fowler recule puis s'abaisse : il augmente la surface et la cambrure, d'où le plus fort gain de Cz max des volets courants. Le volet simple s'abaisse sans reculer, le volet d'intrados n'abaisse que la face inférieure et le bec agit au bord d'attaque."
+      },
+      {
+       "id": "u6s7q02",
+       "q": "À quoi sert la fente d'un volet à fente ?",
+       "choices": [
+        "À faire passer l'air de l'extrados vers l'intrados et réduire la portance",
+        "À diminuer la traînée de l'aile en croisière, volets rentrés",
+        "À évacuer vers l'arrière l'air de refroidissement du moteur",
+        "À réénergiser la couche limite de son extrados pour retarder le décollement"
+       ],
+       "answer": 3,
+       "explanation": "La fente laisse passer de l'air à haute énergie de l'intrados vers l'extrados du volet : la couche limite reste collée malgré le fort braquage et le gain de Cz max est plus grand qu'avec un volet simple. L'air circule de l'intrados (surpression) vers l'extrados, pas l'inverse."
+      },
+      {
+       "id": "u6s7q03",
+       "q": "Volets sortis, à la même vitesse indiquée qu'en lisse, comment évolue l'assiette en palier ?",
+       "choices": [
+        "Elle est plus basse, car l'incidence nécessaire diminue",
+        "Elle est plus haute, car la traînée des volets freine l'avion",
+        "Elle reste identique, car la vitesse indiquée est la même",
+        "Elle est plus haute, car l'incidence de décrochage diminue"
+       ],
+       "answer": 0,
+       "explanation": "Les volets augmentent le Cz à toute incidence : pour porter le même poids à la même vitesse, il faut moins d'incidence, donc une assiette plus basse en palier. C'est l'un des intérêts des volets en approche : une meilleure visibilité vers l'avant."
+      },
+      {
+       "id": "u6s7q04",
+       "q": "Quel est l'effet des volets de bord de fuite sur l'incidence de décrochage de l'aile ?",
+       "choices": [
+        "Elle augmente nettement",
+        "Elle ne change pas",
+        "Elle diminue légèrement",
+        "Elle double environ"
+       ],
+       "answer": 2,
+       "explanation": "Les volets de bord de fuite augmentent le Cz max, mais l'aile décroche à une incidence un peu plus faible. Ce sont les becs et les fentes de bord d'attaque qui augmentent l'incidence critique."
+      },
+      {
+       "id": "u6s7q05",
+       "q": "Pourquoi l'arc vert de l'anémomètre commence-t-il à une vitesse plus élevée que l'arc blanc ?",
+       "choices": [
+        "VS1 est mesurée à la masse minimale, VS0 à la masse maximale",
+        "L'arc vert intègre une marge de 30 % au-dessus du décrochage",
+        "VS1, décrochage en lisse, est supérieure à VS0, volets sortis",
+        "L'arc blanc est gradué en vitesse vraie, l'arc vert en indiquée"
+       ],
+       "answer": 2,
+       "explanation": "Le début de l'arc blanc est VS0, vitesse de décrochage en configuration d'atterrissage ; celui de l'arc vert est VS1, en général en lisse. Les volets augmentant le Cz max, VS0 est plus faible que VS1. Les deux arcs sont gradués de la même façon."
+      },
+      {
+       "id": "u6s7q06",
+       "q": "À partir de quelle hauteur environ l'effet de sol commence-t-il à se faire sentir ?",
+       "choices": [
+        "Environ une envergure",
+        "Environ dix envergures",
+        "Environ 500 ft",
+        "Environ la hauteur du train"
+       ],
+       "answer": 0,
+       "explanation": "L'effet de sol apparaît à moins d'une envergure environ du sol ; il est faible à cette hauteur (environ 1,4 % de traînée induite en moins), devient marqué sous une demi-envergure et fort très près du sol (près de 48 % au dixième d'envergure)."
+      },
+      {
+       "id": "u6s7q07",
+       "q": "Pourquoi la traînée induite diminue-t-elle dans l'effet de sol ?",
+       "choices": [
+        "L'air comprimé sous l'aile augmente la pression dynamique locale",
+        "Le sol gêne les tourbillons marginaux et la déflexion de l'air vers le bas",
+        "La couche limite devient laminaire au contact de l'air calme près du sol",
+        "Le souffle de l'hélice rebondit sur la piste et soulève l'aile"
+       ],
+       "answer": 1,
+       "explanation": "Près du sol, les tourbillons marginaux ne peuvent pas se développer librement et l'écoulement est moins dévié vers le bas : l'incidence induite diminue, et avec elle la traînée induite. Il ne s'agit ni d'un effet de pression dynamique ni d'un effet du souffle de l'hélice."
+      },
+      {
+       "id": "u6s7q08",
+       "q": "Sur le diagramme de manœuvre (V-n), que représente la courbe qui part de l'origine et borne l'enveloppe à gauche ?",
+       "choices": [
+        "La limite de résistance de la structure aux rafales",
+        "La vitesse maximale autorisée selon le braquage des volets",
+        "Le facteur de charge en virage selon l'inclinaison",
+        "Le facteur de charge maximal possible avant le décrochage"
+       ],
+       "answer": 3,
+       "explanation": "À gauche, l'enveloppe est bornée par la courbe de décrochage n = (V / Vs)² : à une vitesse donnée, l'aile ne peut pas produire plus de portance qu'au Cz max. Plus l'avion est lent, plus le facteur de charge possible est faible."
+      },
+      {
+       "id": "u6s7q09",
+       "q": "Un avion décroche à 60 kt en lisse. Son Cz max passe de 1,6 en lisse à 2,5 volets sortis. Quelle est sa vitesse de décrochage volets sortis ?",
+       "choices": [
+        "48 kt",
+        "38 kt",
+        "54 kt",
+        "75 kt"
+       ],
+       "answer": 0,
+       "explanation": "Vs varie comme 1 / √(Cz max) : Vs volets = 60 × √(1,6 / 2,5) = 60 × √0,64 = 60 × 0,8 = 48 kt. 38 kt oublie la racine carrée ; 75 kt inverse le rapport."
+      },
+      {
+       "id": "u6s7q10",
+       "q": "Pourquoi sort-on peu de volets, ou aucun, au décollage, alors qu'on les sort en grand à l'atterrissage ?",
+       "choices": [
+        "Les premiers degrés apportent surtout de la traînée, les derniers surtout de la portance",
+        "Les grands braquages augmentent l'incidence critique et retardent la rotation",
+        "Les grands braquages ne sont efficaces qu'au-dessus de la VFE de l'avion",
+        "Les premiers degrés apportent surtout de la portance, les derniers surtout de la traînée"
+       ],
+       "answer": 3,
+       "explanation": "Les premiers degrés de braquage augmentent surtout le Cz max pour peu de traînée : utile au décollage pour réduire la vitesse et le roulement. Les derniers ajoutent surtout de la traînée : gênant pour accélérer et monter, utile pour une approche lente et pentue. Le manuel de vol fixe le braquage."
+      },
+      {
+       "id": "u6s7q11",
+       "q": "En finale, volets complètement sortis, pourquoi la pente de descente est-elle plus forte qu'en lisse, à la même vitesse et à la même puissance ?",
+       "choices": [
+        "La portance baisse, car la cambrure de l'aile est plus forte",
+        "La traînée augmente plus que la portance : la finesse diminue",
+        "Le poids apparent augmente, car le facteur de charge croît",
+        "La finesse augmente, ce qui accroît la vitesse de descente"
+       ],
+       "answer": 1,
+       "explanation": "À puissance réduite, la pente dépend surtout de la finesse. Les volets pleins ajoutent beaucoup de traînée : la finesse baisse et la pente augmente, ce qui permet une approche plus raide sans prendre de vitesse."
+      },
+      {
+       "id": "u6s7q12",
+       "q": "Au décollage, l'avion quitte le sol dans l'effet de sol à une vitesse inférieure à la vitesse recommandée. Quel est le risque si vous montez aussitôt ?",
+       "choices": [
+        "Hors de l'effet de sol, la portance augmente et l'avion se cabre de lui-même",
+        "Hors de l'effet de sol, la vitesse de décrochage diminue brutalement",
+        "Hors de l'effet de sol, la traînée induite augmente et l'avion s'enfonce",
+        "Hors de l'effet de sol, l'air moins dense fait chuter la puissance"
+       ],
+       "answer": 2,
+       "explanation": "Dans l'effet de sol, la traînée induite est réduite et l'avion peut voler à une vitesse qui ne lui permet pas de monter. En le quittant, la traînée induite augmente et il faut plus d'incidence pour la même portance : l'avion s'enfonce, peut retoucher ou décrocher. On accélère d'abord en palier près du sol."
+      },
+      {
+       "id": "u6s7q13",
+       "q": "Décollage d'un terrain en herbe détrempée. Quelle technique tire parti de l'effet de sol ?",
+       "choices": [
+        "Garder la roulette au sol jusqu'à Vy, puis cabrer fort",
+        "Rouler volets rentrés jusqu'à la vitesse de montée, puis tirer",
+        "Monter tout de suite à Vx pour sortir vite de l'effet de sol",
+        "Quitter le sol tôt, puis accélérer en palier tout près du sol"
+       ],
+       "answer": 3,
+       "explanation": "Sur terrain mou, le frottement au sol freine l'accélération : on soulage tôt la roulette de nez et l'on quitte le sol dès que possible. L'avion accélère alors mieux en palier dans l'effet de sol, où la traînée induite est réduite, avant de monter à la vitesse recommandée."
+      },
+      {
+       "id": "u6s7q14",
+       "q": "Dans l'effet de sol, que montrent le plus souvent l'anémomètre et l'altimètre ?",
+       "choices": [
+        "Un peu plus que la réalité : la pression à la prise statique diminue",
+        "Un peu moins que la réalité : la pression à la prise statique augmente",
+        "Des valeurs exactes : l'effet de sol ne change pas l'écoulement local",
+        "Une vitesse exacte et une altitude trop forte d'une centaine de pieds"
+       ],
+       "answer": 1,
+       "explanation": "Dans la plupart des cas, l'effet de sol augmente la pression à la prise statique : l'anémomètre (pression totale moins statique) et l'altimètre indiquent un peu moins. En sortant de l'effet de sol au décollage, la vitesse indiquée augmente un peu."
+      },
+      {
+       "id": "u6s7q15",
+       "q": "Un avion léger de catégorie normale (facteur limite +3,8) a une Vs de 54 kt. Quelle est approximativement sa vitesse de manœuvre VA ?",
+       "choices": [
+        "≈ 105 kt",
+        "≈ 205 kt",
+        "≈ 81 kt",
+        "≈ 130 kt"
+       ],
+       "answer": 0,
+       "explanation": "Le point de manœuvre est l'intersection de la courbe de décrochage et de la limite : (VA / Vs)² = 3,8, d'où VA = Vs × √3,8 ≈ 54 × 1,95 ≈ 105 kt. 205 kt multiplie par 3,8 sans racine carrée et 81 kt multiplie par 1,5."
+      },
+      {
+       "id": "u6s7q16",
+       "q": "Quel facteur de charge limite négatif retient-on pour un avion de catégorie utilitaire dont la limite positive est +4,4 ?",
+       "choices": [
+        "−4,4",
+        "−2,2",
+        "−1,76",
+        "−1,52"
+       ],
+       "answer": 2,
+       "explanation": "En catégories normale et utilitaire, la limite négative vaut au moins 0,4 fois la limite positive : 0,4 × 4,4 = 1,76, soit −1,76. −1,52 est la valeur de la catégorie normale (0,4 × 3,8) et −2,2 applique le coefficient 0,5 de la catégorie acrobatique."
+      },
+      {
+       "id": "u6s7q17",
+       "q": "Vs = 50 kt en palier. D'après la courbe de décrochage du diagramme V-n, quel facteur de charge maximal l'aile peut-elle produire à 80 kt ?",
+       "choices": [
+        "2,56",
+        "1,6",
+        "3,8",
+        "1,26"
+       ],
+       "answer": 0,
+       "explanation": "n maximal = (V / Vs)² = (80 / 50)² = 1,6² = 2,56. À 80 kt, une traction brutale fait donc décrocher l'avion sous 2,56 g, avant la limite de 3,8 g. 1,6 oublie le carré."
+      },
+      {
+       "id": "u6s7q18",
+       "q": "Volets à 40° en courte finale, vous remettez les gaz et rentrez tous les volets d'un coup à 65 kt, près du sol. Quel est le risque ?",
+       "choices": [
+        "Un dépassement de VFE, les volets rentrant sous forte charge",
+        "Un cabré violent, la portance augmentant brusquement",
+        "Un enfoncement, la vitesse de décrochage remontant brusquement",
+        "Une survitesse, la traînée de l'avion chutant brutalement"
+       ],
+       "answer": 2,
+       "explanation": "Rentrer tous les volets fait chuter le Cz max : Vs remonte (de VS0 vers VS1) et, à incidence égale, la portance diminue. Près du sol et à faible vitesse, l'avion s'enfonce et peut décrocher ; on rentre les volets par étapes, à vitesse suffisante, selon le manuel."
+      },
+      {
+       "id": "u6s7q19",
+       "q": "Pourquoi un avion muni de becs de bord d'attaque a-t-il une assiette très cabrée au moment du décrochage ?",
+       "choices": [
+        "Les becs abaissent l'incidence critique, ce qui impose de cabrer davantage",
+        "Les becs repoussent l'incidence critique vers une valeur bien plus grande",
+        "Les becs augmentent la traînée, ce qui oblige à cabrer pour tenir le palier",
+        "Les becs reculent le foyer de l'avion, qui devient instable en tangage"
+       ],
+       "answer": 1,
+       "explanation": "Les becs retardent le décollement de la couche limite : l'aile porte jusqu'à une incidence plus grande. Le décrochage survient donc à une incidence, et à une assiette, nettement plus fortes, ce qui peut gêner la visibilité à l'atterrissage."
+      },
+      {
+       "id": "u6s7q20",
+       "q": "En virage en palier, à quelle inclinaison correspond le facteur de charge limite de +3,8 de la catégorie normale ?",
+       "choices": [
+        "Environ 60°",
+        "Environ 45°",
+        "Environ 85°",
+        "Environ 75°"
+       ],
+       "answer": 3,
+       "explanation": "n = 1 / cos φ, donc cos φ = 1 / 3,8 ≈ 0,26 et φ ≈ 75°. 60° ne donne que 2 g. Les manœuvres de la catégorie normale restent toutefois limitées à 60° d'inclinaison."
+      },
+      {
+       "id": "u6s7q21",
+       "q": "VS1 = 58 kt et VS0 = 49 kt à la masse du jour. Faute d'indication du manuel de vol, quelle vitesse d'approche finale retenez-vous avec la règle de 1,3 VS0 ?",
+       "choices": [
+        "≈ 75 kt",
+        "≈ 64 kt",
+        "≈ 59 kt",
+        "≈ 70 kt"
+       ],
+       "answer": 1,
+       "explanation": "1,3 × VS0 = 1,3 × 49 ≈ 64 kt. La règle part de VS0, vitesse de décrochage en configuration d'atterrissage ; 75 kt l'applique à VS1, vitesse de décrochage en lisse, et 59 kt correspond à 1,2 VS0."
+      },
+      {
+       "id": "u6s7q22",
+       "q": "Avion de catégorie normale, Vs = 55 kt, VA = 107 kt. Vous volez à 120 kt. Quel est le danger d'une traction brutale et complète sur le manche ?",
+       "choices": [
+        "Décrocher l'aile avant d'atteindre le facteur de charge limite",
+        "Dépasser la VNE sous l'effet de la ressource brutale",
+        "Atteindre la limite négative, l'aile étant chargée vers le bas",
+        "Dépasser le facteur de charge limite avant que l'aile ne décroche"
+       ],
+       "answer": 3,
+       "explanation": "Au-dessus de VA, l'aile peut produire plus que le facteur de charge limite avant de décrocher : à 120 kt, (120 / 55)² ≈ 4,8, au-delà de 3,8. Une traction complète peut donc endommager la structure. Au-dessous de VA, l'avion décrocherait avant la limite."
+      },
+      {
+       "id": "u6s7q23",
+       "q": "Deux avions de même envergure, l'un à aile basse et l'autre à aile haute, arrivent à l'arrondi à la même vitesse et à la même hauteur de roues. Lequel ressent le plus l'effet de sol ?",
+       "choices": [
+        "L'aile haute, mieux dégagée du sol",
+        "Aile basse et aile haute de la même façon",
+        "L'aile basse, plus proche du sol",
+        "L'aile haute, mieux soufflée"
+       ],
+       "answer": 2,
+       "explanation": "L'effet de sol dépend du rapport entre la hauteur de l'aile et son envergure. À hauteur de roues égale, l'aile basse est plus près du sol : la réduction de traînée induite est plus forte et la tendance à flotter plus marquée."
+      },
+      {
+       "id": "u6s7q24",
+       "q": "Le manuel de vol donne une VFE de 110 kt pour 10° de volets et de 85 kt pour 20 à 40°. En approche à 95 kt, que faites-vous ?",
+       "choices": [
+        "Vous sortez 10°, puis réduisez sous 85 kt avant d'en sortir davantage",
+        "Vous sortez 40° d'un coup, la vitesse étant inférieure à 110 kt",
+        "Vous gardez les volets rentrés : 95 kt dépasse la VFE",
+        "Vous sortez 20° aussitôt, car ce braquage freine bien plus l'avion"
+       ],
+       "answer": 0,
+       "explanation": "À 95 kt, on est sous la VFE de 10° (110 kt) mais au-dessus de celle des braquages de 20 à 40° (85 kt). On sort donc le premier cran, puis on réduit sous 85 kt avant de braquer davantage. Sortir un grand braquage au-dessus de sa VFE surcharge volets et ferrures ; garder les volets rentrés repose sur une erreur de lecture, 95 kt étant sous la VFE du premier cran."
+      }
+     ]
+    },
+    {
+     "id": "u6s8",
+     "title": "Montée, descente et plané",
+     "icon": "📈",
+     "tips": "Montée rectiligne stabilisée :\nÀ vitesse constante, les forces s'équilibrent. On décompose le poids P selon la trajectoire de pente γ :\n• perpendiculairement à la trajectoire : portance Fz = P × cos γ, un peu inférieure au poids ;\n• le long de la trajectoire : traction T = traînée Fx + P × sin γ.\nD'où sin γ = (T − Fx) / P : l'angle de montée dépend de l'excédent de traction. Le taux de montée Vz = V × sin γ = (puissance disponible − puissance nécessaire) / P dépend de l'excédent de puissance.\nExemple : avion de 1 000 kg (P ≈ 10 000 N), traction 2 000 N, traînée 1 200 N à 35 m/s. sin γ = 800 / 10 000 = 0,08, soit γ ≈ 4,6° ; Vz = 35 × 0,08 = 2,8 m/s, environ 550 ft/min.\n\nVx et Vy (voir aussi « Performances ») :\n• Vx, meilleur angle : excédent de traction maximal. Vy, meilleur taux : excédent de puissance maximal. Vx est inférieure à Vy.\n• Sur la courbe du taux de montée en fonction de la vitesse, Vy est au sommet ; Vx est au point de contact de la tangente menée depuis l'origine (meilleur rapport Vz / V).\n• Avec l'altitude, l'excédent de puissance d'un moteur atmosphérique diminue : taux et angle baissent. En vitesse indiquée, Vy diminue et Vx augmente légèrement ; elles se rejoignent au plafond absolu, où seul le palier est possible.\n• Masse plus élevée : la traînée induite augmente et l'excédent est divisé par un poids plus grand. Angle et taux diminuent.\n\nPente et taux, avec ou sans vent :\n• Notations : Vp, vitesse propre (par rapport à l'air) ; Vs, vitesse sol (à ne pas confondre ici avec la vitesse de décrochage).\n• Pente (%) = hauteur gagnée / distance horizontale × 100 ; le taux s'exprime en ft/min.\n• Par rapport au sol : hauteur par NM = Vz (ft/min) × 60 / Vs (kt) ; pente (%) ≈ Vz (ft/min) / Vs (kt).\nExemple : 600 ft/min à 75 kt de vitesse sol : 600 × 60 / 75 = 480 ft/NM, pente ≈ 8 %.\n• Le vent ne change pas le taux (montée dans la masse d'air) mais change la pente sol. Ex. : 500 ft/min à Vp 70 kt ; 20 kt de vent de face : Vs 50 kt, 600 ft/NM ; 20 kt de vent arrière : Vs 90 kt, environ 330 ft/NM.\n• Une ascendance s'ajoute au taux, une descendance s'en retranche.\n\nLe plané (traction nulle) :\n• Portance Fz = P × cos γ et traînée Fx = P × sin γ. D'où tan γ = Fx / Fz = 1 / f : la pente de plané vaut l'inverse de la finesse.\n• f = 10 donne une pente de 10 %, soit γ ≈ 5,7°.\n• Distance de plané en air calme = hauteur × finesse. Ex. : 3 000 ft avec f = 9 : 27 000 ft, soit 4,4 NM (8,2 km). En NM : hauteur (ft) × f / 6 076.\n• Taux de chute = vitesse / finesse. Ex. : 70 kt (environ 7 100 ft/min) et f = 9 : environ 790 ft/min ; depuis 3 000 ft, il reste moins de 4 minutes.\n• Vitesse de finesse maximale : plus grande distance en air calme. Plus lent ou plus vite, on va moins loin ; tirer sur le manche pour « allonger » le plané fait l'inverse.\n• Vitesse de taux de chute minimal, plus faible : plus grande durée de vol, mais distance moindre.\n\nEffet de la masse :\n• La finesse maximale ne dépend pas de la masse : en air calme, même distance.\n• La vitesse de finesse maximale et le taux de chute varient comme √m : l'avion lourd plane plus vite et moins longtemps. Ex. : masse × 0,81, vitesse × 0,9 (70 kt deviennent 63 kt).\n\nEffet du vent :\n• Distance sol = distance air × Vs / Vp. Ex. : f = 10 depuis 600 m : 6 km en air calme ; à Vp 65 kt, 20 kt de vent de face donnent 6 × 45 / 65 ≈ 4,2 km, et 20 kt de vent arrière 6 × 85 / 65 ≈ 7,8 km.\n• Vitesse à afficher : par vent de face ou en air descendant, un peu plus vite que la vitesse de finesse maximale ; par vent arrière, un peu moins vite, sans descendre sous la vitesse de taux de chute minimal.\n• Face au vent, l'avion lourd, plus rapide, est moins pénalisé que l'avion léger.\n• Volets, train et hélice au petit pas en moulinet augmentent la traînée et réduisent la finesse : on reste lisse tant que le terrain n'est pas assuré.\n\nLa polaire des vitesses :\n• C'est la courbe du taux de chute en fonction de la vitesse, moteur réduit.\n• Son sommet donne le taux de chute minimal ; la tangente issue de l'origine donne la finesse maximale (meilleur rapport V / Vz).\n• Par vent de face, on mène la tangente depuis le point de l'axe des vitesses égal au vent : le contact se fait à une vitesse plus grande. Par vent arrière, on décale l'origine dans l'autre sens.\n• Une masse plus grande déplace la courbe vers les vitesses et les taux de chute plus grands ; la tangente issue de l'origine garde la même pente : même finesse.\n\nDescente moteur et second régime :\n• En descente stabilisée : T + P × sin γ = Fx. À vitesse constante, moins de traction donne une pente plus forte.\n• Au-dessous de la vitesse de puissance minimale (second régime), ralentir demande plus de puissance. Si l'on ne remet pas de puissance, la vitesse continue de baisser : approche trop lente, instable.\n\nPièges : confondre pente (angle, ft/NM) et taux (ft/min) ; croire que l'avion lourd plane moins loin en air calme ; oublier les unités (1 NM = 6 076 ft = 1 852 m ; 1 kt ≈ 101 ft/min ≈ 0,51 m/s).",
+     "vocab": [
+      {
+       "term": "Pente (γ)",
+       "translation": "Angle entre la trajectoire et l'horizontale, en degrés ou en %"
+      },
+      {
+       "term": "Taux de montée (Vz)",
+       "translation": "Vitesse verticale en ft/min : V × sin γ"
+      },
+      {
+       "term": "Excédent de traction",
+       "translation": "Traction moins traînée ; il fixe l'angle de montée"
+      },
+      {
+       "term": "Excédent de puissance",
+       "translation": "Puissance disponible moins nécessaire ; il fixe le taux"
+      },
+      {
+       "term": "Vx",
+       "translation": "Vitesse de meilleur angle de montée"
+      },
+      {
+       "term": "Vy",
+       "translation": "Vitesse de meilleur taux de montée"
+      },
+      {
+       "term": "Plafond absolu",
+       "translation": "Altitude où le taux de montée maximal devient nul"
+      },
+      {
+       "term": "Pente de plané",
+       "translation": "Inverse de la finesse : f = 10 donne 10 %"
+      },
+      {
+       "term": "Vitesse de finesse max",
+       "translation": "Vitesse de plus grande distance de plané ; varie comme √m"
+      },
+      {
+       "term": "Taux de chute minimal",
+       "translation": "Plus faible vitesse verticale en plané : durée maximale"
+      },
+      {
+       "term": "Polaire des vitesses",
+       "translation": "Courbe du taux de chute en fonction de la vitesse"
+      },
+      {
+       "term": "Distance de plané",
+       "translation": "Hauteur × finesse en air calme ; × Vs / Vp avec du vent"
+      },
+      {
+       "term": "Second régime",
+       "translation": "Plage où ralentir demande plus de puissance"
+      }
+     ],
+     "figures": [
+      {
+       "title": "Forces en montée et en plané",
+       "svg": "<svg viewBox=\"0 0 700 440\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"440\" fill=\"#ffffff\"/><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"380\" stroke=\"#d5dbe5\" stroke-width=\"1.5\"/><text x=\"20\" y=\"32\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Montée stabilisée</text><line x1=\"40.1\" y1=\"263.8\" x2=\"344.4\" y2=\"182.3\" stroke=\"#8a94a6\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\"/><line x1=\"40.1\" y1=\"263.8\" x2=\"160.1\" y2=\"263.8\" stroke=\"#8a94a6\" stroke-width=\"1.4\"/><polyline points=\"90.1,263.8 90.1,263.5 90.1,263.2 90.1,262.8 90.1,262.5 90.1,262.2 90.1,261.9 90.1,261.5 90,261.2 90,260.9 90,260.6 90,260.2 90,259.9 89.9,259.6 89.9,259.2 89.9,258.9 89.8,258.6 89.8,258.3 89.8,257.9 89.7,257.6 89.7,257.3 89.6,257 89.6,256.6 89.5,256.3 89.5,256 89.4,255.7 89.4,255.4 89.3,255 89.3,254.7 89.2,254.4 89.2,254.1 89.1,253.7 89,253.4 88.9,253.1 88.9,252.8 88.8,252.5 88.7,252.2 88.7,251.8 88.6,251.5 88.5,251.2 88.4,250.9\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"96.1\" y=\"258.8\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">γ</text><path d=\"M -38 0 C -30 -6, -10 -8, 14 -7 C 26 -6, 34 -3, 38 0 C 34 3, 24 5, 10 5 L -30 3 Z M -36 -1 L -44 -16 L -36 -16 L -26 -3 Z\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\" transform=\"translate(185.0 225.0) rotate(-15.0)\" stroke-linejoin=\"round\"/><line x1=\"181\" y1=\"225\" x2=\"191\" y2=\"225\" stroke=\"#3d4a63\" stroke-width=\"0\"/><line x1=\"185\" y1=\"225\" x2=\"155.1\" y2=\"113.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"152.5,103.7 161.4,113.7 149.8,116.9\" fill=\"#1f5fa8\"/><line x1=\"185\" y1=\"225\" x2=\"251.3\" y2=\"207.2\" stroke=\"#2e7d32\" stroke-width=\"3\"/><polygon points=\"261,204.6 250.9,213.5 247.8,202\" fill=\"#2e7d32\"/><line x1=\"185\" y1=\"225\" x2=\"151.2\" y2=\"234.1\" stroke=\"#d35400\" stroke-width=\"3\"/><polygon points=\"141.5,236.6 151.6,227.7 154.7,239.3\" fill=\"#d35400\"/><line x1=\"185\" y1=\"225\" x2=\"185\" y2=\"345\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"185,355 179,343 191,343\" fill=\"#c0392b\"/><line x1=\"185\" y1=\"225\" x2=\"217.5\" y2=\"346.3\" stroke=\"#c0392b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"217.5\" y1=\"346.3\" x2=\"185\" y2=\"355\" stroke=\"#c0392b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><text x=\"144.5\" y=\"107.7\" font-size=\"16\" fill=\"#1f5fa8\" text-anchor=\"end\" font-weight=\"bold\">Fz</text><text x=\"267\" y=\"194.6\" font-size=\"16\" fill=\"#2e7d32\" font-weight=\"bold\">T</text><text x=\"133.5\" y=\"258.6\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">Fx</text><text x=\"175\" y=\"359\" font-size=\"16\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">P</text><text x=\"225.5\" y=\"295.6\" font-size=\"14\" fill=\"#c0392b\">P cos γ</text><text x=\"223.5\" y=\"362.3\" font-size=\"14\" fill=\"#c0392b\">P sin γ</text><text x=\"20\" y=\"402\" font-size=\"15\" fill=\"#14213d\">Fz = P cos γ (un peu moins que P)</text><text x=\"20\" y=\"424\" font-size=\"15\" fill=\"#14213d\">T = Fx + P sin γ</text><text x=\"370\" y=\"32\" font-size=\"17\" fill=\"#14213d\" font-weight=\"bold\">Plané stabilisé (traction nulle)</text><line x1=\"383.1\" y1=\"136.2\" x2=\"672.9\" y2=\"213.8\" stroke=\"#8a94a6\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\"/><line x1=\"383.1\" y1=\"136.2\" x2=\"493.1\" y2=\"136.2\" stroke=\"#8a94a6\" stroke-width=\"1.4\"/><polyline points=\"441.1,136.2 441.1,136.6 441.1,136.9 441.1,137.3 441.1,137.7 441.1,138.1 441.1,138.5 441.1,138.8 441,139.2 441,139.6 441,140 441,140.3 440.9,140.7 440.9,141.1 440.9,141.5 440.8,141.9 440.8,142.2 440.8,142.6 440.7,143 440.7,143.4 440.6,143.7 440.6,144.1 440.5,144.5 440.5,144.9 440.4,145.3 440.3,145.6 440.3,146 440.2,146.4 440.1,146.7 440.1,147.1 440,147.5 439.9,147.9 439.8,148.2 439.8,148.6 439.7,149 439.6,149.3 439.5,149.7 439.4,150.1 439.3,150.5 439.2,150.8 439.1,151.2\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"447.1\" y=\"160.2\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">γ</text><path d=\"M -38 0 C -30 -6, -10 -8, 14 -7 C 26 -6, 34 -3, 38 0 C 34 3, 24 5, 10 5 L -30 3 Z M -36 -1 L -44 -16 L -36 -16 L -26 -3 Z\" fill=\"#e9edf4\" stroke=\"#3d4a63\" stroke-width=\"1.5\" transform=\"translate(528.0 175.0) rotate(15.0)\" stroke-linejoin=\"round\"/><line x1=\"524\" y1=\"175\" x2=\"534\" y2=\"175\" stroke=\"#3d4a63\" stroke-width=\"0\"/><line x1=\"528\" y1=\"175\" x2=\"528\" y2=\"53\" stroke=\"#6a3d9a\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><polygon points=\"528,45 533,55 523,55\" fill=\"#6a3d9a\"/><line x1=\"528\" y1=\"175\" x2=\"557.9\" y2=\"63.4\" stroke=\"#1f5fa8\" stroke-width=\"3\"/><polygon points=\"560.5,53.7 563.2,66.9 551.6,63.7\" fill=\"#1f5fa8\"/><line x1=\"528\" y1=\"175\" x2=\"505.2\" y2=\"168.9\" stroke=\"#d35400\" stroke-width=\"3\"/><polygon points=\"495.5,166.3 508.6,163.6 505.5,175.2\" fill=\"#d35400\"/><line x1=\"528\" y1=\"175\" x2=\"528\" y2=\"295\" stroke=\"#c0392b\" stroke-width=\"3\"/><polygon points=\"528,305 522,293 534,293\" fill=\"#c0392b\"/><line x1=\"560.5\" y1=\"53.7\" x2=\"528\" y2=\"45\" stroke=\"#6a3d9a\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/><polyline points=\"528,127 528.3,127 528.6,127 528.9,127 529.3,127 529.6,127 529.9,127 530.2,127.1 530.5,127.1 530.8,127.1 531.1,127.1 531.5,127.1 531.8,127.1 532.1,127.2 532.4,127.2 532.7,127.2 533,127.3 533.3,127.3 533.6,127.3 534,127.4 534.3,127.4 534.6,127.5 534.9,127.5 535.2,127.5 535.5,127.6 535.8,127.6 536.1,127.7 536.4,127.7 536.7,127.8 537.1,127.9 537.4,127.9 537.7,128 538,128 538.3,128.1 538.6,128.2 538.9,128.3 539.2,128.3 539.5,128.4 539.8,128.5 540.1,128.6 540.4,128.6\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><text x=\"542\" y=\"121\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">γ</text><text x=\"570.5\" y=\"67.7\" font-size=\"16\" fill=\"#1f5fa8\" font-weight=\"bold\">Fz</text><text x=\"520\" y=\"53\" font-size=\"16\" fill=\"#6a3d9a\" text-anchor=\"end\" font-weight=\"bold\">R</text><text x=\"493.5\" y=\"152.3\" font-size=\"16\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">Fx</text><text x=\"538\" y=\"309\" font-size=\"16\" fill=\"#c0392b\" font-weight=\"bold\">P</text><text x=\"370\" y=\"336\" font-size=\"14\" fill=\"#6a3d9a\">R : résultante de Fz et Fx, opposée à P</text><text x=\"370\" y=\"380\" font-size=\"15\" fill=\"#14213d\">Fz = P cos γ ; Fx = P sin γ</text><text x=\"370\" y=\"402\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">tan γ = Fx / Fz = 1 / finesse</text><text x=\"370\" y=\"424\" font-size=\"15\" fill=\"#14213d\">f = 10 : pente de 10 %, γ ≈ 5,7°</text></svg>",
+       "caption": "En montée, la traction équilibre la traînée et la composante P sin γ du poids ; la portance ne vaut que P cos γ. En plané, la résultante de la portance et de la traînée équilibre le poids, d'où tan γ = 1 / finesse (angles exagérés)."
+      },
+      {
+       "title": "Polaire des vitesses en plané",
+       "svg": "<svg viewBox=\"0 0 680 470\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"470\" fill=\"#ffffff\"/><line x1=\"80\" y1=\"80\" x2=\"640\" y2=\"80\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"85\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">0</text><line x1=\"80\" y1=\"165\" x2=\"640\" y2=\"165\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"170\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">400</text><line x1=\"80\" y1=\"250\" x2=\"640\" y2=\"250\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"255\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">800</text><line x1=\"80\" y1=\"335\" x2=\"640\" y2=\"335\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"340\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">1 200</text><line x1=\"80\" y1=\"420\" x2=\"640\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"70\" y=\"425\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"end\">1 600</text><line x1=\"80\" y1=\"80\" x2=\"80\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"80\" y=\"70\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">0</text><line x1=\"181.8\" y1=\"80\" x2=\"181.8\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"181.8\" y=\"70\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">20</text><line x1=\"283.6\" y1=\"80\" x2=\"283.6\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"283.6\" y=\"70\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">40</text><line x1=\"385.5\" y1=\"80\" x2=\"385.5\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"385.5\" y=\"70\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">60</text><line x1=\"487.3\" y1=\"80\" x2=\"487.3\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"487.3\" y=\"70\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">80</text><line x1=\"589.1\" y1=\"80\" x2=\"589.1\" y2=\"420\" stroke=\"#d5dbe5\" stroke-width=\"1\"/><text x=\"589.1\" y=\"70\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">100</text><line x1=\"80\" y1=\"80\" x2=\"640\" y2=\"80\" stroke=\"#46516a\" stroke-width=\"1.8\"/><line x1=\"80\" y1=\"80\" x2=\"80\" y2=\"420\" stroke=\"#46516a\" stroke-width=\"1.8\"/><text x=\"640\" y=\"46\" font-size=\"15\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"bold\">Vitesse sur trajectoire (kt) →</text><text x=\"20\" y=\"46\" font-size=\"15\" fill=\"#14213d\" font-weight=\"bold\">Taux de chute (ft/min) ↓</text><line x1=\"80\" y1=\"80\" x2=\"589.1\" y2=\"319.1\" stroke=\"#1f5fa8\" stroke-width=\"2\" stroke-dasharray=\"7 4\"/><line x1=\"181.8\" y1=\"80\" x2=\"609.5\" y2=\"356.3\" stroke=\"#d35400\" stroke-width=\"2\" stroke-dasharray=\"7 4\"/><polyline points=\"324.4,229 326.9,228.6 329.5,228.3 332,227.9 334.5,227.7 337.1,227.4 339.6,227.2 342.2,227.1 344.7,227 347.3,226.9 349.8,226.9 352.4,226.9 354.9,226.9 357.5,227 360,227.1 362.5,227.3 365.1,227.5 367.6,227.7 370.2,228 372.7,228.3 375.3,228.6 377.8,229 380.4,229.4 382.9,229.9 385.5,230.3 388,230.9 390.5,231.4 393.1,232 395.6,232.6 398.2,233.3 400.7,234 403.3,234.7 405.8,235.5 408.4,236.3 410.9,237.1 413.5,238 416,238.9 418.5,239.8 421.1,240.8 423.6,241.8 426.2,242.9 428.7,243.9 431.3,245.1 433.8,246.2 436.4,247.4 438.9,248.6 441.5,249.8 444,251.1 446.5,252.4 449.1,253.8 451.6,255.2 454.2,256.6 456.7,258 459.3,259.5 461.8,261 464.4,262.6 466.9,264.2 469.5,265.8 472,267.5 474.5,269.2 477.1,270.9 479.6,272.7 482.2,274.5 484.7,276.3 487.3,278.2 489.8,280.1 492.4,282 494.9,284 497.5,286 500,288 502.5,290.1 505.1,292.2 507.6,294.4 510.2,296.5 512.7,298.8 515.3,301 517.8,303.3 520.4,305.6 522.9,308 525.5,310.4 528,312.8 530.5,315.3 533.1,317.8 535.6,320.4 538.2,323 540.7,325.6 543.3,328.2 545.8,330.9 548.4,333.7 550.9,336.4 553.5,339.3 556,342.1 558.5,345 561.1,347.9 563.6,350.9 566.2,353.9 568.7,356.9 571.3,360 573.8,363.1 576.4,366.2 578.9,369.4 581.5,372.7 584,375.9 586.5,379.2 589.1,382.6 591.6,386 594.2,389.4 596.7,392.9 599.3,396.4 601.8,399.9 604.4,403.5 606.9,407.1 609.5,410.8 612,414.5 614.5,418.3\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"350.8\" cy=\"226.9\" r=\"5.5\" fill=\"#2e7d32\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"436.4\" cy=\"247.4\" r=\"5.5\" fill=\"#1f5fa8\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"469.7\" cy=\"265.9\" r=\"5.5\" fill=\"#d35400\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"181.8\" cy=\"80\" r=\"5\" fill=\"#d35400\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><text x=\"92\" y=\"272\" font-size=\"15\" fill=\"#2e7d32\" font-weight=\"bold\">Taux de chute minimal</text><text x=\"92\" y=\"292\" font-size=\"14\" fill=\"#2e7d32\">≈ 690 ft/min à 53 kt</text><text x=\"92\" y=\"312\" font-size=\"14\" fill=\"#2e7d32\">durée de plané maximale</text><text x=\"324.4\" y=\"357.4\" font-size=\"15\" fill=\"#1f5fa8\" font-weight=\"bold\">Finesse max ≈ 9 à 70 kt</text><text x=\"324.4\" y=\"377.4\" font-size=\"14\" fill=\"#1f5fa8\">tangente issue de l&#x27;origine</text><text x=\"640\" y=\"196\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">Vent de face 20 kt : ≈ 77 kt</text><text x=\"640\" y=\"216\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"end\">tangente issue du point 20 kt</text></svg>",
+       "caption": "Exemple d'avion léger de finesse 9 : le sommet de la courbe donne le taux de chute minimal, la tangente issue de l'origine la finesse maximale. Par vent de face, la tangente part du point égal au vent et désigne une vitesse plus élevée."
+      }
+     ],
+     "questions": [
+      {
+       "id": "u6s8q01",
+       "q": "En montée rectiligne stabilisée, comment la portance se compare-t-elle au poids ?",
+       "choices": [
+        "Elle est un peu supérieure : Fz = P / cos γ",
+        "Elle lui est égale, comme en vol en palier",
+        "Elle est un peu inférieure : Fz = P × cos γ",
+        "Elle le dépasse de l'excédent de traction"
+       ],
+       "answer": 2,
+       "explanation": "Le poids se décompose selon la trajectoire : P × sin γ s'ajoute à la traînée et P × cos γ s'oppose à la portance. En montée stabilisée, Fz = P × cos γ, un peu moins que le poids ; c'est la traction qui fournit l'effort de montée. Fz = P / cos γ est la relation du virage en palier."
+      },
+      {
+       "id": "u6s8q02",
+       "q": "En montée stabilisée, de quoi dépend directement l'angle de montée ?",
+       "choices": [
+        "De l'excédent de traction rapporté au poids",
+        "De l'excédent de portance rapporté au poids",
+        "De l'excédent de puissance rapporté à la traînée",
+        "Du rapport entre la portance et la traînée"
+       ],
+       "answer": 0,
+       "explanation": "Le long de la trajectoire, T = Fx + P × sin γ, donc sin γ = (T − Fx) / P : l'angle dépend de l'excédent de traction divisé par le poids. C'est le taux de montée qui dépend de l'excédent de puissance. Il n'y a pas d'excédent de portance en montée stabilisée."
+      },
+      {
+       "id": "u6s8q03",
+       "q": "Sur la courbe du taux de montée en fonction de la vitesse, où lit-on Vx ?",
+       "choices": [
+        "Au sommet de la courbe, là où le taux est le plus grand",
+        "À l'intersection de la courbe avec l'axe des vitesses",
+        "Au milieu de l'intervalle entre la vitesse de décrochage et Vy",
+        "Au point de contact de la tangente menée depuis l'origine"
+       ],
+       "answer": 3,
+       "explanation": "Vx maximise l'angle, donc le rapport Vz / V : c'est la pente de la droite issue de l'origine, maximale quand elle devient tangente à la courbe. Le sommet donne Vy (taux maximal), à une vitesse plus élevée que Vx."
+      },
+      {
+       "id": "u6s8q04",
+       "q": "En air calme, comment la pente de plané d'un avion est-elle liée à sa finesse ?",
+       "choices": [
+        "Pente = finesse / 10 : f = 10 donne 1 %",
+        "Pente = 1 / finesse : f = 10 donne 10 %",
+        "Pente = finesse en degrés : f = 10 donne 10°",
+        "Pente = 1 / finesse² : f = 10 donne 1 %"
+       ],
+       "answer": 1,
+       "explanation": "En plané stabilisé, tan γ = Fx / Fz = 1 / f. Une finesse de 10 donne une pente de 1/10, soit 10 % (environ 5,7°) : 100 m de hauteur perdus pour 1 km parcouru."
+      },
+      {
+       "id": "u6s8q05",
+       "q": "À puissance égale, comment une masse plus élevée modifie-t-elle la montée ?",
+       "choices": [
+        "L'angle diminue mais le taux de montée augmente",
+        "Le taux diminue mais l'angle de montée ne change pas",
+        "Angle et taux sont inchangés si la vitesse est la même",
+        "L'angle et le taux de montée diminuent tous les deux"
+       ],
+       "answer": 3,
+       "explanation": "sin γ = (T − Fx) / P et Vz = (puissance disponible − puissance nécessaire) / P : un poids plus grand divise l'excédent par une valeur plus grande, et la traînée induite augmente. L'angle et le taux diminuent : les performances de montée du manuel de vol sont données en fonction de la masse."
+      },
+      {
+       "id": "u6s8q06",
+       "q": "En plané stabilisé, moteur réduit, quelle force équilibre la composante du poids le long de la trajectoire ?",
+       "choices": [
+        "La portance",
+        "La traînée",
+        "La traction de l'hélice",
+        "La force centripète"
+       ],
+       "answer": 1,
+       "explanation": "Sans traction, le poids se décompose en P × cos γ, équilibré par la portance, et P × sin γ, dirigé vers l'avant le long de la trajectoire et équilibré par la traînée. C'est cette composante du poids qui entretient la vitesse en plané."
+      },
+      {
+       "id": "u6s8q07",
+       "q": "Deux avions identiques, l'un à la masse maximale et l'autre allégé, planent en air calme depuis la même hauteur, chacun à sa vitesse de finesse maximale. Que constate-t-on ?",
+       "choices": [
+        "Le plus léger va plus loin ; le plus lourd touche le sol le premier",
+        "Le plus lourd va plus loin, grâce à sa vitesse de plané plus élevée",
+        "Ils parcourent la même distance ; le plus lourd touche le sol le premier",
+        "Ils parcourent la même distance et touchent le sol au même moment"
+       ],
+       "answer": 2,
+       "explanation": "La finesse maximale ne dépend pas de la masse : en air calme, même distance. Mais la vitesse de finesse maximale et le taux de chute croissent comme √m : l'avion lourd plane plus vite, descend plus vite et touche le sol le premier."
+      },
+      {
+       "id": "u6s8q08",
+       "q": "Que représente la polaire des vitesses d'un avion en plané ?",
+       "choices": [
+        "Le taux de chute en fonction de la vitesse",
+        "Le Cz de l'aile en fonction de son Cx",
+        "La finesse en fonction de la masse",
+        "La traction en fonction de la vitesse"
+       ],
+       "answer": 0,
+       "explanation": "La polaire des vitesses donne le taux de chute (Vz) en fonction de la vitesse sur trajectoire, moteur réduit. On y lit le taux de chute minimal (au sommet) et la finesse maximale (tangente issue de l'origine). La courbe Cz en fonction de Cx est la polaire aérodynamique de l'aile."
+      },
+      {
+       "id": "u6s8q09",
+       "q": "Un avion monte à 600 ft/min avec une vitesse sol de 80 kt. Quelle hauteur gagne-t-il par NM parcouru ?",
+       "choices": [
+        "450 ft/NM",
+        "800 ft/NM",
+        "600 ft/NM",
+        "300 ft/NM"
+       ],
+       "answer": 0,
+       "explanation": "À 80 kt, 1 NM prend 60 / 80 = 0,75 min. Hauteur gagnée : 600 × 0,75 = 450 ft par NM, soit une pente d'environ 7,5 %. 800 ft/NM inverse le rapport des vitesses (600 × 80 / 60)."
+      },
+      {
+       "id": "u6s8q10",
+       "q": "Avion de 1 100 kg (poids ≈ 11 000 N). À Vx, la traction vaut 2 100 N et la traînée 1 330 N. Quelle est environ la pente de montée ?",
+       "choices": [
+        "≈ 19 %",
+        "≈ 7 %",
+        "≈ 12 %",
+        "≈ 0,7 %"
+       ],
+       "answer": 1,
+       "explanation": "sin γ = (T − Fx) / P = (2 100 − 1 330) / 11 000 = 770 / 11 000 = 0,07 : pente d'environ 7 % (γ ≈ 4°). 19 % oublie de retrancher la traînée et 12 % divise la traînée seule par le poids."
+      },
+      {
+       "id": "u6s8q11",
+       "q": "Votre avion monte à 650 ft/min à Vp 75 kt. Quelle hauteur gagne-t-il par NM parcouru au sol, avec 15 kt de vent arrière ?",
+       "choices": [
+        "≈ 520 ft/NM",
+        "≈ 650 ft/NM",
+        "≈ 390 ft/NM",
+        "≈ 430 ft/NM"
+       ],
+       "answer": 3,
+       "explanation": "Le vent ne change pas le taux de montée, mais la vitesse sol : 75 + 15 = 90 kt. Hauteur par NM = 650 × 60 / 90 ≈ 433 ft. Sans vent, on aurait 520 ft/NM ; 650 ft/NM correspond à un vent de face de 15 kt."
+      },
+      {
+       "id": "u6s8q12",
+       "q": "Finesse 8, air calme. Quelle hauteur minimale au-dessus du sol vous faut-il pour rejoindre en plané un terrain situé à 6 NM, sans marge ?",
+       "choices": [
+        "≈ 2 500 ft",
+        "≈ 1 400 ft",
+        "≈ 4 600 ft",
+        "≈ 4 000 ft"
+       ],
+       "answer": 2,
+       "explanation": "Hauteur = distance / finesse. 6 NM = 6 × 6 076 ≈ 36 500 ft ; 36 500 / 8 ≈ 4 560 ft, soit environ 4 600 ft (1 390 m), sans compter l'approche. 1 400 ft confond mètres et pieds, 4 000 ft prend le mile terrestre (5 280 ft) et 2 500 ft compte 6 km au lieu de 6 NM. En pratique, on ajoute une marge pour le vent et le circuit."
+      },
+      {
+       "id": "u6s8q13",
+       "q": "Finesse 10, plané à 65 kt. Quel est environ le taux de chute ?",
+       "choices": [
+        "≈ 65 ft/min",
+        "≈ 660 ft/min",
+        "≈ 1 300 ft/min",
+        "≈ 330 ft/min"
+       ],
+       "answer": 1,
+       "explanation": "65 kt ≈ 65 × 101 ≈ 6 600 ft/min de vitesse sur trajectoire. Taux de chute = V / f ≈ 6 600 / 10 ≈ 660 ft/min. 65 ft/min oublie de convertir les nœuds en ft/min."
+      },
+      {
+       "id": "u6s8q14",
+       "q": "Moteur en panne, vous planez avec un vent arrière de 20 kt vers un champ éloigné. Pour aller le plus loin possible par rapport au sol, quelle vitesse affichez-vous ?",
+       "choices": [
+        "Un peu plus que la vitesse de finesse maximale",
+        "La vitesse de finesse maximale, que le vent ne modifie pas",
+        "Un peu moins que la vitesse de finesse maximale",
+        "Un peu moins que la vitesse de taux de chute minimal"
+       ],
+       "answer": 2,
+       "explanation": "Par vent arrière, le vent porte l'avion tant qu'il reste en l'air : on gagne à réduire un peu le taux de chute en volant un peu moins vite que la vitesse de finesse maximale. Sur la polaire, la tangente part du point −20 kt de l'axe des vitesses. Sous la vitesse de taux de chute minimal, on perdrait à la fois durée et distance. Voler plus vite convient au vent de face."
+      },
+      {
+       "id": "u6s8q15",
+       "q": "Finesse 10, 600 m de hauteur, plané à 65 kt avec 25 kt de vent arrière. Quelle distance pouvez-vous parcourir par rapport au sol ?",
+       "choices": [
+        "≈ 8,3 km",
+        "≈ 3,7 km",
+        "≈ 6,0 km",
+        "≈ 10,6 km"
+       ],
+       "answer": 0,
+       "explanation": "En air calme : 600 × 10 = 6 km. Vs = 65 + 25 = 90 kt, d'où une distance sol de 6 × 90 / 65 ≈ 8,3 km. 3,7 km correspond à un vent de face de 25 kt et 6 km oublie le vent."
+      },
+      {
+       "id": "u6s8q16",
+       "q": "Un avion lourd et le même avion allégé planent chacun à sa vitesse de finesse maximale, face à un vent fort. Lequel parcourt la plus grande distance sol ?",
+       "choices": [
+        "L'avion léger, dont le taux de chute est plus faible",
+        "Les deux autant : lourd ou léger, même finesse",
+        "L'avion léger, dont la vitesse sol est la plus grande",
+        "L'avion lourd, dont la vitesse de plané est plus grande"
+       ],
+       "answer": 3,
+       "explanation": "En air calme, les deux iraient aussi loin. Face au vent, distance sol = distance air × Vs / Vp : l'avion lourd, plus rapide, perd une part plus faible de sa vitesse à cause du vent et va plus loin, même s'il reste moins longtemps en l'air."
+      },
+      {
+       "id": "u6s8q17",
+       "q": "Moteur en panne à 2 500 ft sol, finesse 8. Le champ choisi est à 3 NM, face à un vent qui réduit votre vitesse sol de 70 à 50 kt. Pouvez-vous l'atteindre ?",
+       "choices": [
+        "Oui : environ 3,3 NM, avec une petite marge",
+        "Oui : environ 4,6 NM, le vent allongeant le plané",
+        "Non : environ 1,2 NM, la finesse étant divisée par 2",
+        "Non : environ 2,4 NM au sol, c'est trop court"
+       ],
+       "answer": 3,
+       "explanation": "Distance air = 2 500 × 8 = 20 000 ft ≈ 3,3 NM. Face au vent, distance sol = 3,3 × 50 / 70 ≈ 2,4 NM : le champ, à 3 NM, est hors d'atteinte. 3,3 NM oublie le vent et 4,6 NM l'applique à l'envers."
+      },
+      {
+       "id": "u6s8q18",
+       "q": "En plané, un pilote tire sur le manche pour « allonger » sa trajectoire vers un champ trop éloigné et passe sous la vitesse de finesse maximale. Quel est le résultat ?",
+       "choices": [
+        "La finesse baisse : il va moins loin et risque de décrocher",
+        "La finesse augmente : il gagne la distance qui lui manquait",
+        "La distance est inchangée, mais la durée du plané augmente",
+        "Le taux de chute diminue, donc la distance parcourue augmente"
+       ],
+       "answer": 0,
+       "explanation": "Au-dessous de la vitesse de finesse maximale, la finesse se dégrade : la pente de plané augmente et la distance diminue, avec en plus un risque de décrochage. Le taux de chute peut d'abord baisser un peu, jusqu'à la vitesse de taux de chute minimal, mais la vitesse baisse proportionnellement davantage : la distance diminue quand même. Il faut tenir la vitesse de finesse maximale et choisir un champ plus proche."
+      },
+      {
+       "id": "u6s8q19",
+       "q": "La vitesse de finesse maximale de votre avion vaut 72 kt à 1 150 kg. Quelle vitesse adoptez-vous à 930 kg ?",
+       "choices": [
+        "≈ 58 kt",
+        "≈ 72 kt",
+        "≈ 65 kt",
+        "≈ 80 kt"
+       ],
+       "answer": 2,
+       "explanation": "La vitesse de finesse maximale varie comme la racine carrée de la masse : 930 / 1 150 ≈ 0,81 et √0,81 = 0,9, soit 72 × 0,9 ≈ 65 kt. 58 kt applique le rapport des masses sans racine carrée ; la finesse, elle, ne change pas."
+      },
+      {
+       "id": "u6s8q20",
+       "q": "Sur la polaire des vitesses de votre avion, la tangente issue de l'origine touche la courbe à 70 kt. Par 20 kt de vent de face, comment trouvez-vous la vitesse de plané optimale ?",
+       "choices": [
+        "Tangente menée depuis le point −20 kt de l'axe des vitesses",
+        "Tangente menée depuis le point 20 kt de l'axe des vitesses",
+        "Sommet de la courbe, puisque le temps de plané compte",
+        "Vitesse de 70 kt diminuée du vent, soit environ 50 kt"
+       ],
+       "answer": 1,
+       "explanation": "Par vent de face, on raisonne en vitesse sol : on décale l'origine de la valeur du vent, au point 20 kt de l'axe des vitesses, et l'on mène la tangente depuis ce point. Elle touche la courbe à une vitesse supérieure à 70 kt (environ 77 kt sur le schéma). Un décalage vers −20 kt correspond à un vent arrière."
+      },
+      {
+       "id": "u6s8q21",
+       "q": "En approche, vous êtes au second régime, sous la vitesse de puissance minimale. La vitesse diminue lentement. Que se passe-t-il si vous ne touchez pas à la puissance ?",
+       "choices": [
+        "La puissance nécessaire augmente : la vitesse continue de baisser",
+        "La puissance nécessaire diminue : l'avion se stabilise de lui-même",
+        "La vitesse remonte d'elle-même, l'avion étant stable à ce régime",
+        "Le taux de descente diminue, car la portance augmente à basse vitesse"
+       ],
+       "answer": 0,
+       "explanation": "Au second régime, ralentir augmente la puissance nécessaire : sans puissance supplémentaire, la vitesse continue de baisser et le taux de descente augmente. Il faut remettre de la puissance et reprendre la vitesse prévue."
+      },
+      {
+       "id": "u6s8q22",
+       "q": "Une crête culmine 1 200 ft au-dessus du terrain, à 2,5 NM du point où vous commencez votre montée. Votre avion monte à 600 ft/min à Vp 70 kt, avec 10 kt de vent de face. Passez-vous, et avec quelle marge ?",
+       "choices": [
+        "Oui, avec environ 85 ft de marge",
+        "Non, il manque environ 75 ft",
+        "Oui, avec environ 600 ft de marge",
+        "Oui, avec environ 300 ft de marge"
+       ],
+       "answer": 3,
+       "explanation": "Vs = 70 − 10 = 60 kt, soit 1 NM/min : 2,5 NM prennent 2,5 min, d'où 600 × 2,5 = 1 500 ft, 300 ft au-dessus de la crête. Sans le vent, on trouverait environ 85 ft de marge ; avec le vent ajouté au lieu d'être retranché, il manquerait environ 75 ft."
+      },
+      {
+       "id": "u6s8q23",
+       "q": "En descente stabilisée à 90 kt avec un peu de puissance, vous réduisez encore la traction en gardant la même vitesse. Comment évoluent la pente et le taux de descente ?",
+       "choices": [
+        "Ils diminuent tous les deux",
+        "Ils augmentent tous les deux",
+        "La pente augmente, le taux reste égal",
+        "La pente reste égale, le taux augmente"
+       ],
+       "answer": 1,
+       "explanation": "En descente stabilisée, T + P × sin γ = Fx. À vitesse constante, la traînée ne change pas : si la traction diminue, P × sin γ doit augmenter, donc la pente. À vitesse égale, une pente plus forte donne un taux de descente plus fort."
+      },
+      {
+       "id": "u6s8q24",
+       "q": "Polaire des vitesses de votre avion : taux de chute minimal de 650 ft/min à 55 kt ; finesse maximale de 9 à 70 kt. Moteur en panne à 2 000 ft sol, au-dessus d'un champ, vous voulez le plus de temps possible pour tenter un redémarrage. Quelle vitesse et quelle durée ?",
+       "choices": [
+        "70 kt, environ 2 min 30 s de plané",
+        "70 kt, environ 4 min de plané",
+        "55 kt, environ 3 min de plané",
+        "55 kt, environ 1 min 30 s de plané"
+       ],
+       "answer": 2,
+       "explanation": "Pour durer, on vole au taux de chute minimal : 2 000 / 650 ≈ 3,1 min à 55 kt. À 70 kt, le taux de chute vaut environ 70 × 101 / 9 ≈ 790 ft/min, soit 2 min 30 s environ : on irait plus loin, mais moins longtemps."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
