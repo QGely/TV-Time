@@ -39,7 +39,7 @@
      "type": "steps",
      "items": [
       "**Météo** sur le trajet et à destination, compatible avec le vol à vue ; **NOTAM** (avis aux navigants) ; cartes à jour.",
-      "**Carburant** et réserve finale (section 7.2), **performances**, **masse et centrage**.",
+      "**Carburant** et réserve finale (voir 7.2), **performances**, **masse et centrage**.",
       "**Plan B** : un déroutement prévu si la météo empêche de finir le vol.",
       "**Briefing des passagers**, avant le vol (ou pendant si nécessaire) : ceintures, portes, position de sécurité, extincteur, gilets, **ne pas toucher aux commandes**."
      ],
@@ -147,7 +147,7 @@
     {
      "type": "formula",
      "label": "Composantes du vent sur la piste",
-     "formula": "Vent traversier = vent × sin(angle vent/piste)\nVent de face = vent × cos(angle vent/piste)\nsin 30° = 0,5 · sin 45° ≈ 0,7 · sin 60° ≈ 0,9 · sin 90° = 1",
+     "formula": "Vent traversier = vent × sin(angle vent/piste)\nVent de face = vent × cos(angle vent/piste)\nsin 30° = 0,5 · sin 45° ≈ 0,7 · sin 60° ≈ 0,87 · sin 90° = 1",
      "example": "Piste 27, vent 300°/16 kt : angle 30°, traversier = 16 × 0,5 = **8 kt** ; face = 16 × 0,87 ≈ **14 kt**. Respecte le vent traversier maximal démontré du manuel."
     },
     {
@@ -341,7 +341,7 @@
       [
        "**B**",
        "liquides : **essence**, huile",
-       "poudre, CO₂, mousse, halon ; **jamais de jet d’eau**"
+       "poudre, CO2, mousse, halon ; **jamais de jet d’eau**"
       ],
       [
        "**C**",
@@ -355,7 +355,7 @@
       ]
      ],
      "caption": "Classes de feu et agents d’extinction",
-     "note": "Feu électrique : agent **non conducteur** (CO₂, halon). La poudre masque la vue. Prévol : extincteur plombé, aiguille au vert."
+     "note": "Feu électrique : agent **non conducteur** (CO2, halon). La poudre masque la vue. Prévol : extincteur plombé, aiguille au vert."
     },
     {
      "type": "memo",
@@ -694,8 +694,8 @@
  ],
  "key_numbers": [
   {
-   "value": "30 · 45 min",
-   "label": "réserve finale VFR : jour · nuit"
+   "value": "30 / 45 min",
+   "label": "réserve finale VFR : jour / nuit"
   },
   {
    "value": "10 min",
@@ -706,8 +706,8 @@
    "label": "réserve : attente sur destination"
   },
   {
-   "value": "0,5·0,7·0,9",
-   "label": "sin 30°, 45°, 60° (traversier)"
+   "value": "0,5 / 0,7 / 0,87",
+   "label": "sin 30° / 45° / 60° (traversier)"
   },
   {
    "value": "7 000 kg",
@@ -726,7 +726,7 @@
    "label": "intersection ; L à l’arrivée"
   },
   {
-   "value": "4·5·6 NM",
+   "value": "4 / 5 / 6 NM",
    "label": "radar : H, M, L derrière un H"
   },
   {
@@ -803,11 +803,11 @@
   },
   {
    "value": "7700",
-   "label": "transpondeur : urgence, détresse"
+   "label": "transpondeur : détresse ou urgence"
   },
   {
-   "value": "7600 · 7500",
-   "label": "panne radio · intervention illicite"
+   "value": "7600 / 7500",
+   "label": "panne radio / intervention illicite"
   },
   {
    "value": "72 h",
@@ -821,111 +821,111 @@
  "glossary": [
   {
    "term": "Part-NCO",
-   "def": "Vols non commerciaux, avion non complexe"
+   "def": "vols non commerciaux, avion non complexe"
   },
   {
    "term": "CdB",
-   "def": "Commandant de bord, responsable du vol"
+   "def": "commandant de bord, responsable du vol"
   },
   {
    "term": "AFM / POH",
-   "def": "Manuel de vol de l’avion : il fait foi"
+   "def": "manuel de vol de l’avion : il fait foi"
   },
   {
    "term": "Actions réflexes",
-   "def": "Gestes d’urgence faits de mémoire"
+   "def": "gestes d’urgence faits de mémoire"
   },
   {
    "term": "AMC",
-   "def": "Moyen acceptable de conformité (UE)"
+   "def": "moyen acceptable de conformité (EASA)"
   },
   {
    "term": "Réserve finale",
-   "def": "Carburant qui doit rester à l’arrivée"
+   "def": "carburant qui doit rester à l’arrivée"
   },
   {
    "term": "MINIMUM FUEL",
-   "def": "Avertissement : réserve finale menacée"
+   "def": "avertissement : réserve finale menacée"
   },
   {
    "term": "Vent arrière",
-   "def": "Branche parallèle à la piste, sens inverse"
+   "def": "branche parallèle à la piste, sens inverse"
   },
   {
    "term": "Approche stabilisée",
-   "def": "Plan, vitesse et volets stables"
+   "def": "plan, vitesse et volets stables"
   },
   {
    "term": "VAC",
-   "def": "Carte d’approche et d’atterrissage à vue"
+   "def": "carte d’approche et d’atterrissage à vue"
   },
   {
    "term": "CALIPSO",
-   "def": "Classement sonore des avions légers (DGAC)"
+   "def": "classement sonore des avions légers (DGAC)"
   },
   {
    "term": "Finesse",
-   "def": "Distance parcourue ÷ hauteur perdue en plané"
+   "def": "distance parcourue ÷ hauteur perdue en plané"
   },
   {
    "term": "Hauteur de sécurité",
-   "def": "Sous elle, panne = pas de demi-tour"
+   "def": "sous elle, panne = pas de demi-tour"
   },
   {
    "term": "Atterrissage en campagne",
-   "def": "Posé hors aérodrome"
+   "def": "posé hors aérodrome"
   },
   {
    "term": "Étouffoir",
-   "def": "Position du mélange qui arrête le moteur"
+   "def": "position du mélange qui arrête le moteur"
   },
   {
    "term": "Contact général",
-   "def": "Coupe batterie et alternateur"
+   "def": "coupe batterie et alternateur"
   },
   {
    "term": "Magnéto",
-   "def": "Génératrice d’allumage autonome"
+   "def": "génératrice d’allumage autonome"
   },
   {
-   "term": "Délestage",
-   "def": "Coupure des équipements non essentiels"
+   "term": "Délestage (électrique)",
+   "def": "coupure des équipements non essentiels"
   },
   {
    "term": "CO",
-   "def": "Monoxyde de carbone : incolore, inodore"
+   "def": "monoxyde de carbone : incolore, inodore"
   },
   {
    "term": "Tourbillons marginaux",
-   "def": "Tourbillons de bout d’aile : le sillage"
+   "def": "tourbillons de bout d’aile : le sillage"
   },
   {
    "term": "Cisaillement de vent",
-   "def": "Variation brutale du vent"
+   "def": "variation brutale du vent"
   },
   {
    "term": "Microrafale",
-   "def": "Violente descendance sous un orage"
+   "def": "violente descendance sous un orage"
   },
   {
    "term": "Front de rafales",
-   "def": "Rafales poussées devant l’orage"
+   "def": "rafales poussées devant l’orage"
   },
   {
    "term": "Eau surfondue",
-   "def": "Liquide sous 0 °C, gèle au contact"
+   "def": "liquide sous 0 °C, gèle au contact"
   },
   {
    "term": "Piste contaminée",
-   "def": "Plus de 25 % sous eau, neige ou glace"
+   "def": "plus de 25 % sous eau, neige ou glace"
   },
   {
    "term": "Aquaplanage",
-   "def": "Pneu soulevé par l’eau : ni frein ni guidage"
+   "def": "pneu soulevé par l’eau : ni frein ni guidage"
   },
   {
    "term": "RWYCC",
-   "def": "Code d’état de piste, de 6 (sèche) à 0"
+   "def": "code d’état de piste, de 6 (sèche) à 0"
   },
   {
    "term": "SNOWTAM",
@@ -933,39 +933,39 @@
   },
   {
    "term": "Altitude-densité",
-   "def": "Altitude « ressentie » par l’avion"
+   "def": "altitude ISA de même densité que l’air réel"
   },
   {
    "term": "Côté sous le vent",
-   "def": "Versant abrité : descendances, rotors"
+   "def": "versant abrité : descendances, rotors"
   },
   {
    "term": "Taux standard",
-   "def": "Virage à 3°/s : 180° en 1 min"
+   "def": "virage à 3°/s : 180° en 1 min"
   },
   {
    "term": "Désorientation spatiale",
-   "def": "Fausse perception de l’attitude"
+   "def": "fausse perception de l’attitude"
   },
   {
    "term": "ELT / PLB",
-   "def": "Balise de détresse de l’avion / personnelle"
+   "def": "balise de détresse de l’avion / personnelle"
   },
   {
    "term": "Cospas-Sarsat",
-   "def": "Satellites qui captent les balises"
+   "def": "satellites qui captent les balises"
   },
   {
    "term": "Radioralliement",
-   "def": "Guidage des secours sur le 121,5 MHz"
+   "def": "guidage des secours sur le 121,5 MHz"
   },
   {
    "term": "SAR",
-   "def": "Recherche et sauvetage"
+   "def": "recherche et sauvetage"
   },
   {
    "term": "INCERFA / ALERFA / DETRESFA",
-   "def": "Incertitude, alerte, détresse"
+   "def": "incertitude, alerte, détresse"
   },
   {
    "term": "Instructions techniques",
@@ -973,7 +973,7 @@
   },
   {
    "term": "MAYDAY / PAN PAN",
-   "def": "Détresse / urgence"
+   "def": "détresse / urgence"
   },
   {
    "term": "BEA",
@@ -985,7 +985,7 @@
   },
   {
    "term": "Culture juste",
-   "def": "Protège qui notifie de bonne foi"
+   "def": "protège qui notifie de bonne foi"
   }
  ],
  "self_test": [

@@ -37,7 +37,7 @@
     {
      "type": "formula",
      "label": "Masse du carburant",
-     "formula": "Masse (kg) = volume (L) × densité ; volume = masse ÷ densité\nAVGAS 100LL : 0,72 kg/L · Jet A1 (kérosène, moteurs diesel) : 0,80 kg/L\n1 USG (gallon US) ≈ 3,785 L ≈ 2,7 kg d’AVGAS · 1 lb (livre) ≈ 0,454 kg",
+     "formula": "Masse (kg) = volume (L) × densité ; volume = masse ÷ densité\nAVGAS 100LL : 0,72 kg/L · Jet A-1 (kérosène, moteurs diesel) : 0,80 kg/L\n1 USG (gallon US) ≈ 3,785 L ≈ 2,7 kg d’AVGAS · 1 lb (livre) ≈ 0,454 kg",
      "example": "MTOM 1 000 kg ; masse sans carburant (avion vide, occupants, bagages) : 892 kg. Il reste 108 kg, soit 108 ÷ 0,72 = **150 L** d’AVGAS. Le plein ne passe pas ? Moins d’essence, ou moins de passagers."
     },
     {
@@ -322,7 +322,7 @@
        "title": "Vx : meilleur angle",
        "points": [
         "Le plus de hauteur par **distance** parcourue.",
-        "Excès de **poussée** maximal.",
+        "Excédent de **traction** maximal.",
         "Pour **franchir un obstacle** ; ensuite, accélère à Vy."
        ]
       },
@@ -330,7 +330,7 @@
        "title": "Vy : meilleur taux",
        "points": [
         "Le plus de hauteur par **minute** (ft/min).",
-        "Excès de **puissance** maximal.",
+        "Excédent de **puissance** maximal.",
         "Vitesse de **montée normale**. Toujours **Vx < Vy**."
        ]
       }
@@ -538,7 +538,7 @@
       [
        "**Avion** (NCO.GEN.135)",
        "Manuel de vol ; certificats d’immatriculation et de navigabilité (originaux) ; assurance ; carnet de route ; cartes à jour ; procédures d’interception ; certificat acoustique et LSA (licence de station d’aéronef), le cas échéant",
-       "Vol local : certificats, assurance et carnet de route peuvent rester au terrain"
+       "Vol local : certificats, LSA, assurance et carnet de route peuvent rester au terrain"
       ]
      ]
     },
@@ -612,7 +612,7 @@
        "marge **23,6 L**"
       ]
      ],
-     "note": "Temps = distance × 60 ÷ Vs ; carburant = 28 × temps ÷ 60. Caps, heures et fréquences : voir le log du chapitre Navigation."
+     "note": "Temps = distance × 60 ÷ Vs ; carburant = 28 × temps ÷ 60. Caps, heures et fréquences : voir le log en 5.7."
     },
     {
      "type": "steps",
@@ -624,7 +624,7 @@
       "Change de réservoir selon le manuel, en croisière, loin du sol.",
       "Le restant ne couvre plus étape + réserve ? **Déroute tôt**, depuis un repère sûr, et préviens l’organisme en contact."
      ],
-     "title": "Suivre le vol : recalages et carburant (détails : chapitre Navigation)"
+     "title": "Suivre le vol : recalages et carburant (voir 5.8)"
     },
     {
      "type": "key",
@@ -645,7 +645,7 @@
   },
   {
    "value": "0,80 kg/L",
-   "label": "Jet A1 (kérosène, moteurs diesel)"
+   "label": "Jet A-1 (kérosène, moteurs diesel)"
   },
   {
    "value": "3,785 L",
@@ -779,15 +779,15 @@
  "glossary": [
   {
    "term": "Masse à vide",
-   "def": "Avion équipé, sans carburant utilisable"
+   "def": "avion équipé, sans carburant utilisable"
   },
   {
    "term": "MTOM, MLM",
-   "def": "Masse maximale au décollage, à l’atterrissage"
+   "def": "masse maximale au décollage, à l’atterrissage"
   },
   {
    "term": "ZFM, MZFM",
-   "def": "Masse sans carburant ; sa limite maximale"
+   "def": "masse sans carburant ; sa limite maximale"
   },
   {
    "term": "Charge utile",
@@ -795,39 +795,39 @@
   },
   {
    "term": "AVGAS 100LL",
-   "def": "Essence aviation bleue, peu plombée"
+   "def": "essence aviation bleue, peu plombée"
   },
   {
    "term": "Référence (datum)",
-   "def": "Origine de tous les bras de levier"
+   "def": "origine de tous les bras de levier"
   },
   {
    "term": "Bras de levier",
-   "def": "Distance d’une masse à la référence"
+   "def": "distance d’une masse à la référence"
   },
   {
    "term": "Moment",
-   "def": "Masse × bras de levier, en kg·m"
+   "def": "masse × bras de levier, en kg·m"
   },
   {
    "term": "CG",
-   "def": "Centre de gravité : ΣM ÷ Σm"
+   "def": "centre de gravité : ΣM ÷ Σm"
   },
   {
    "term": "Enveloppe de centrage",
-   "def": "Zone masse/CG autorisée"
+   "def": "zone masse/CG autorisée"
   },
   {
    "term": "Catégorie utilitaire",
-   "def": "Enveloppe réduite (vrilles)"
+   "def": "enveloppe réduite (vrilles)"
   },
   {
-   "term": "Délestage",
-   "def": "Carburant consommé pendant le vol"
+   "term": "Délestage (carburant)",
+   "def": "carburant consommé pendant le vol"
   },
   {
    "term": "TORA",
-   "def": "Longueur utilisable pour le roulement au décollage"
+   "def": "longueur utilisable pour le roulement au décollage"
   },
   {
    "term": "TODA",
@@ -839,27 +839,27 @@
   },
   {
    "term": "LDA",
-   "def": "Longueur utilisable pour l’atterrissage"
+   "def": "longueur utilisable pour l’atterrissage"
   },
   {
    "term": "CWY, SWY",
-   "def": "Prolongement dégagé ; prolongement d’arrêt"
+   "def": "prolongement dégagé ; prolongement d’arrêt"
   },
   {
    "term": "Seuil décalé",
-   "def": "Seuil en retrait : il réduit la LDA"
+   "def": "seuil en retrait : il réduit la LDA"
   },
   {
    "term": "ISA",
-   "def": "Atmosphère standard : 15 °C, 1 013,25 hPa"
+   "def": "atmosphère standard : 15 °C, 1 013,25 hPa"
   },
   {
    "term": "Altitude-pression",
-   "def": "Altitude lue au calage 1 013 hPa"
+   "def": "altitude lue au calage 1 013 hPa"
   },
   {
    "term": "Altitude-densité",
-   "def": "Altitude ISA de même densité d’air"
+   "def": "altitude ISA de même densité d’air"
   },
   {
    "term": "Coefficient de sécurité",
@@ -867,51 +867,51 @@
   },
   {
    "term": "Vx, Vy",
-   "def": "Meilleur angle ; meilleur taux de montée"
+   "def": "meilleur angle ; meilleur taux de montée"
   },
   {
    "term": "Vp",
-   "def": "Vitesse propre (vraie), par rapport à l’air"
+   "def": "vitesse propre (vraie), par rapport à l’air"
   },
   {
    "term": "Vs",
-   "def": "Ici, vitesse sol (pas la vitesse de décrochage)"
+   "def": "ici, vitesse sol (la vitesse de décrochage s’écrit VS)"
   },
   {
    "term": "NM, kt",
-   "def": "Mille nautique (1 852 m) ; nœud (1 NM par heure)"
+   "def": "mille nautique (1 852 m) ; nœud (1 NM par heure)"
   },
   {
-   "term": "Plafonds",
-   "def": "Taux max de 100 ft/min (pratique) ou nul (absolu)"
+   "term": "Plafond pratique / absolu",
+   "def": "taux de montée maximal de 100 ft/min / nul"
   },
   {
    "term": "Autonomie",
-   "def": "Temps de vol possible avec le carburant"
+   "def": "temps de vol possible avec le carburant"
   },
   {
    "term": "Distance franchissable",
-   "def": "Distance possible avec le carburant"
+   "def": "distance possible avec le carburant"
   },
   {
    "term": "Rayon d’action",
-   "def": "Aller-retour possible, réserve exclue"
+   "def": "aller-retour possible, réserve exclue"
   },
   {
    "term": "Finesse",
-   "def": "Distance parcourue ÷ hauteur perdue"
+   "def": "distance parcourue ÷ hauteur perdue"
   },
   {
    "term": "SERA",
-   "def": "Règles de l’air européennes"
+   "def": "règles de l’air européennes"
   },
   {
    "term": "Part-NCO",
-   "def": "Règles des vols non commerciaux"
+   "def": "règles des vols non commerciaux"
   },
   {
    "term": "AMC",
-   "def": "Moyen acceptable de conformité (texte EASA)"
+   "def": "moyen acceptable de conformité (texte EASA)"
   },
   {
    "term": "SIA",
@@ -919,51 +919,51 @@
   },
   {
    "term": "AIP",
-   "def": "Publication d’information aéronautique"
+   "def": "publication d’information aéronautique"
   },
   {
    "term": "AIRAC",
-   "def": "Dates communes de mise à jour, tous les 28 jours"
+   "def": "dates communes de mise à jour, tous les 28 jours"
   },
   {
    "term": "NOTAM",
-   "def": "Avis aux navigants : information temporaire"
+   "def": "avis aux navigants : information temporaire"
   },
   {
    "term": "SUP AIP",
-   "def": "Supplément temporaire à l’AIP"
+   "def": "supplément temporaire à l’AIP"
   },
   {
    "term": "SOFIA-Briefing",
-   "def": "Service du SIA : NOTAM et briefing"
+   "def": "service du SIA : NOTAM et briefing"
   },
   {
    "term": "ZRT",
-   "def": "Zone réglementée temporaire (NOTAM, SUP AIP)"
+   "def": "zone réglementée temporaire (NOTAM, SUP AIP)"
   },
   {
    "term": "Carte VAC",
-   "def": "Carte d’approche à vue d’un aérodrome"
+   "def": "carte d’approche à vue d’un aérodrome"
   },
   {
    "term": "Altitude de sécurité",
-   "def": "Plus haut point près du trait + 500 ft"
+   "def": "plus haut point près du trait + 500 ft"
   },
   {
    "term": "Log de navigation",
-   "def": "Cap, temps, carburant par branche"
+   "def": "cap, temps, carburant par branche"
   },
   {
    "term": "INCERFA",
-   "def": "Phase d’incertitude : alerte faute de nouvelles"
+   "def": "phase d’incertitude : alerte faute de nouvelles"
   },
   {
    "term": "Réserve finale",
-   "def": "Carburant à garder à l’arrivée"
+   "def": "carburant à garder à l’arrivée"
   },
   {
    "term": "Minima personnels",
-   "def": "Tes limites, plus strictes que la loi"
+   "def": "tes limites, plus strictes que la loi"
   },
   {
    "term": "PAVE",
@@ -971,7 +971,7 @@
   },
   {
    "term": "MINIMUM FUEL",
-   "def": "Tout retard entamerait la réserve finale"
+   "def": "tout retard entamerait la réserve finale"
   }
  ],
  "self_test": [

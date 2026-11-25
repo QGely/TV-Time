@@ -573,7 +573,7 @@
      "items": [
       "**Contrôle (ATC)** : clairances et séparation selon la classe ; tour (TWR), approche, contrôle régional.",
       "**Information de vol (FIS)** : trafic, météo, zones actives ; rendue par les SIV et les AFIS.",
-      "**Alerte** : prévient les secours et les seconde (phases INCERFA, ALERFA, DETRESFA, § 1.9).",
+      "**Alerte** : prévient les secours et les seconde (phases INCERFA, ALERFA, DETRESFA, voir 1.9).",
       "**ATIS** : message automatique de l’aérodrome, identifié par une lettre. Annonce cette lettre au premier contact.",
       "**Clairance** : tu la **collationnes** (tu la répètes) : piste, calage, code, fréquence, niveau, cap, vitesse. Une information de trafic s’accuse simplement.",
       "Une clairance te ferait sortir des VMC ? Dis-le et demande autre chose : tu restes responsable."
@@ -829,7 +829,7 @@
      "type": "code",
      "label": "Lire un NOTAM (exemple fictif)",
      "text": "A1234/26 NOTAMN\nQ) LFRR/QRTCA/IV/BO/W/000/045/4712N00133W005\nA) LFRR  B) 2606151000  C) 2606151600\nE) ZRT ACTIVE (MANIFESTATION AERIENNE)\nF) SFC  G) 4500FT AMSL",
-     "decode": "**N** : nouveau (R : remplace ; C : annule). **Q)** FIR (région d’information de vol) de Brest ; zone réglementée temporaire (ZRT) activée ; IFR et VFR ; cercle de 5 NM. **B)** et **C)** : début et fin, en **AAMMJJhhmm UTC**. Ici, le 15 juin 2026 de 12 h 00 à 18 h 00 à ta montre (UTC + 2 en été). **F)** et **G)** : de la surface à 4 500 ft AMSL. En C), **EST** = fin estimée."
+     "decode": "**N** : nouveau (R : remplace ; C : annule). **Q)** FIR (région d’information de vol) de Brest ; zone réglementée temporaire (ZRT) activée ; IFR et VFR ; cercle de 5 NM. **B)** et **C)** : début et fin, en **AAMMJJhhmm UTC**. Ici, le 15 juin 2026 de 12 h 00 à 18 h 00 à ta montre (UTC + 2 en été). **F)** et **G)** : de la surface à 4 500 ft AMSL. En C), **EST** = fin estimée."
     }
    ]
   },
@@ -858,14 +858,14 @@
        "carburant jugé épuisé ; atterrissage forcé probable ou effectué"
       ]
      ],
-     "note": "Exemple : arrivée prévue à 15 h 40, puis annoncée à 16 h 00 en vol ; tu oublies de clôturer. INCERFA possible à **16 h 30**, pas à 16 h 10."
+     "note": "Exemple : arrivée prévue à 15 h 40, puis annoncée à 16 h 00 en vol ; tu oublies de clôturer. INCERFA possible à **16 h 30**, pas à 16 h 10."
     },
     {
      "type": "bullets",
      "title": "Recherche et sauvetage (SAR)",
      "items": [
       "Coordination en métropole : l’**ARCC** (centre de coordination du sauvetage aéronautique) de Lyon Mont-Verdun. Urgence aéronautique : le **191**.",
-      "Balise **ELT** : **406 MHz** (satellites) et **121,5 MHz** (radioralliement). Avion de 6 passagers au plus : une balise personnelle (**PLB**) portée à bord peut la remplacer.",
+      "Balise **ELT** : **406 MHz** (satellites) et **121,5 MHz** (radioralliement). Avion certifié pour 6 sièges passagers au plus : une balise personnelle (**PLB**) portée par un occupant peut la remplacer.",
       "Sans plan de vol ni contact radio, personne ne t’attend : seuls ta balise ou tes proches (via le 191) donnent l’alerte."
      ]
     },
@@ -1057,11 +1057,11 @@
   },
   {
    "value": "7600 / 7700",
-   "label": "panne radio / détresse"
+   "label": "panne radio / détresse ou urgence"
   },
   {
    "value": "121,5 MHz",
-   "label": "détresse (ELT : aussi 406 MHz)"
+   "label": "urgence internationale (ELT : aussi 406 MHz)"
   },
   {
    "value": "123,5 MHz",
@@ -1095,43 +1095,43 @@
  "glossary": [
   {
    "term": "AD / SB",
-   "def": "Consigne de navigabilité / bulletin de service"
+   "def": "consigne de navigabilité / bulletin de service"
   },
   {
    "term": "AFIS",
-   "def": "Information de vol d’aérodrome, sans clairance"
+   "def": "information de vol d’aérodrome, sans clairance"
   },
   {
    "term": "AIP",
-   "def": "Publication d’info aéronautique (GEN, ENR, AD)"
+   "def": "publication d’info aéronautique (GEN, ENR, AD)"
   },
   {
    "term": "AIRAC",
-   "def": "Cycle de 28 jours des changements de l’AIP"
+   "def": "cycle de 28 jours des changements de l’AIP"
   },
   {
    "term": "AMC / GM",
-   "def": "Moyen de conformité / explication (EASA)"
+   "def": "moyen de conformité / explication (EASA)"
   },
   {
    "term": "AME / AeMC",
-   "def": "Médecin agréé / centre aéromédical"
+   "def": "médecin agréé / centre aéromédical"
   },
   {
    "term": "AMSL / ASFC",
-   "def": "Au-dessus de la mer / au-dessus du sol"
+   "def": "au-dessus de la mer / au-dessus du sol"
   },
   {
    "term": "ARC",
-   "def": "Examen de navigabilité, valable 1 an"
+   "def": "examen de navigabilité, valable 1 an"
   },
   {
    "term": "ARCC",
-   "def": "Centre de coordination du sauvetage"
+   "def": "centre de coordination du sauvetage"
   },
   {
    "term": "ATC / ATS",
-   "def": "Contrôle / services de circulation aérienne"
+   "def": "contrôle / services de circulation aérienne"
   },
   {
    "term": "BEA",
@@ -1139,15 +1139,15 @@
   },
   {
    "term": "CDN",
-   "def": "Certificat de navigabilité de l’avion"
+   "def": "certificat de navigabilité de l’avion"
   },
   {
    "term": "CTR",
-   "def": "Zone de contrôle, depuis la surface"
+   "def": "zone de contrôle, depuis la surface"
   },
   {
    "term": "CTA / TMA",
-   "def": "Régions de contrôle, au-dessus du sol"
+   "def": "régions de contrôle, au-dessus du sol"
   },
   {
    "term": "DGAC",
@@ -1167,31 +1167,31 @@
   },
   {
    "term": "ELT / PLB",
-   "def": "Balise de détresse de l’avion / personnelle"
+   "def": "balise de détresse de l’avion / personnelle"
   },
   {
    "term": "FIR",
-   "def": "Région d’information de vol"
+   "def": "région d’information de vol"
   },
   {
    "term": "FL",
-   "def": "Niveau de vol, en centaines de pieds"
+   "def": "niveau de vol, en centaines de pieds"
   },
   {
    "term": "INCERFA / ALERFA / DETRESFA",
-   "def": "Incertitude / alerte / détresse"
+   "def": "incertitude / alerte / détresse"
   },
   {
    "term": "LAPL(A)",
-   "def": "Licence européenne de pilote d’avion léger"
+   "def": "licence européenne de pilote d’avion léger"
   },
   {
    "term": "LSA",
-   "def": "Licence de station d’aéronef (émetteurs radio)"
+   "def": "licence de station d’aéronef (émetteurs radio)"
   },
   {
    "term": "NOTAM",
-   "def": "Avis temporaire ou urgent aux navigants"
+   "def": "avis temporaire ou urgent aux navigants"
   },
   {
    "term": "OACI",
@@ -1199,47 +1199,47 @@
   },
   {
    "term": "Part-FCL / MED",
-   "def": "Règles des licences / du médical"
+   "def": "règles des licences / du médical"
   },
   {
    "term": "Part-NCO",
-   "def": "Règles du vol non commercial (vol privé)"
+   "def": "règles du vol non commercial (vol privé)"
   },
   {
    "term": "PPL(A)",
-   "def": "Licence de pilote privé avion, conforme OACI"
+   "def": "licence de pilote privé avion, conforme OACI"
   },
   {
    "term": "QNH / QFE",
-   "def": "Calage altitude / hauteur sur le terrain"
+   "def": "calage altitude / hauteur sur le terrain"
   },
   {
    "term": "RMZ / TMZ",
-   "def": "Zone à radio / transpondeur obligatoire"
+   "def": "zone à radio / transpondeur obligatoire"
   },
   {
    "term": "SEP",
-   "def": "Classe monomoteur à pistons"
+   "def": "classe monomoteur à pistons"
   },
   {
    "term": "SERA",
-   "def": "Règles de l’air européennes"
+   "def": "règles de l’air européennes"
   },
   {
    "term": "SIV",
-   "def": "Secteur d’information de vol"
+   "def": "secteur d’information de vol"
   },
   {
    "term": "SUP AIP",
-   "def": "Modification temporaire longue de l’AIP"
+   "def": "modification temporaire longue de l’AIP"
   },
   {
    "term": "VAC",
-   "def": "Carte d’approche et d’atterrissage à vue"
+   "def": "carte d’approche et d’atterrissage à vue"
   },
   {
    "term": "VFR / IFR",
-   "def": "Règles de vol à vue / aux instruments"
+   "def": "règles de vol à vue / aux instruments"
   },
   {
    "term": "VFR spécial",
@@ -1247,11 +1247,11 @@
   },
   {
    "term": "VMC",
-   "def": "Conditions météo de vol à vue"
+   "def": "conditions météo de vol à vue"
   },
   {
    "term": "Zone P, R, D",
-   "def": "Zone interdite, réglementée, dangereuse"
+   "def": "zone interdite, réglementée, dangereuse"
   }
  ],
  "self_test": [
@@ -1293,7 +1293,7 @@
   },
   {
    "q": "NOTAM : B) 2607141300. À quelle heure légale commence-t-il, en juillet ?",
-   "a": "Le 14 juillet à 15 h 00 (UTC + 2 en été)."
+   "a": "Le 14 juillet à 15 h 00 (UTC + 2 en été)."
   },
   {
    "q": "Avion évité de justesse au décollage, sans dégât : qu’est-ce, et à qui le notifier ?",

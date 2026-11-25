@@ -10,10 +10,10 @@
   "**Bernoulli** : l’air qui accélère perd de la **pression statique**. Le **Pitot** mesure la pression totale.",
   "**Portance : Fz = ½ ρ S V² Cz** (ρ : masse volumique de l’air, S : surface alaire, V : vitesse, Cz : coefficient de portance). Vitesse × 2 → portance × 4.",
   "**Incidence** α : angle entre la corde et le vent relatif. **Assiette** θ : entre l’axe de l’avion et l’horizon. **Pente** γ : entre la trajectoire et l’horizon. **θ = α + γ**.",
-  "Traînée **induite** (tourbillons marginaux) : forte à basse vitesse. **Parasite** : croît comme V². **Finesse** = distance / hauteur : f = 10 → 10 km pour 1 000 m.",
+  "Traînée **induite** (tourbillons marginaux) : forte à basse vitesse. **Parasite** : croît comme V². **Finesse** = distance / hauteur : f = 10 → 10 km pour 1 000 m.",
   "On **décroche** par excès d’**incidence** (critique : 15 à 18°), à toute vitesse. Sortie : **rends la main** d’abord. Vrille : **PARE**.",
-  "**Vs** (vitesse de décrochage) : × √n en virage ; masse × 0,81 → Vs × 0,9. **Volets** : Vs ↓. **Becs** : incidence critique ↑.",
-  "Virage en palier, inclinaison φ : **n = 1 / cos φ** → **1,15** à 30°, **1,41** à 45°, **2** à 60°. Vs × 1,19 à 45°, × 1,41 à 60°.",
+  "**VS** (vitesse de décrochage ; ne la confonds pas avec Vs, la vitesse sol) : × √n en virage ; masse × 0,81 → VS × 0,9. **Volets** : VS ↓. **Becs** : incidence critique ↑.",
+  "Virage en palier, inclinaison φ : **n = 1 / cos φ** → **1,15** à 30°, **1,41** à 45°, **2** à 60°. VS × 1,19 à 45°, × 1,41 à 60°.",
   "Stabilité en tangage : **centre de gravité (CG) en avant du foyer**. Hélice horaire vue du poste : le nez part **à gauche**, **pied droit**.",
   "**VS0** / **VS1** : décrochage volets sortis / lisse. Arc **blanc** VS0 → VFE (max volets), **vert** VS1 → VNO (max croisière), **jaune** jusqu’à **VNE** (jamais dépasser).",
   "Facteurs de charge limites : **+3,8 g** en normale, **+4,4 g** en utilitaire, **+6 g** en acrobatique. La structure doit tenir **1,5 fois** plus sans casser."
@@ -33,7 +33,7 @@
      "type": "formula",
      "label": "Théorème de Bernoulli (le long d’un filet d’air)",
      "formula": "Ps + ½ ρ V² = Pt = constante\nq = ½ ρ V²   (pression dynamique, en Pa)",
-     "example": "ρ (rhô), masse volumique : 1,225 kg/m³ au niveau de la mer. À 40 m/s : q = 0,5 × 1,225 × 1 600 = **980 Pa**. À 80 m/s : 3 920 Pa, soit **× 4**. Au col d’un **Venturi**, V monte donc Ps baisse."
+     "example": "ρ (rhô), masse volumique : 1,225 kg/m³ au niveau de la mer. À 40 m/s : q = 0,5 × 1,225 × 1 600 = **980 Pa**. À 80 m/s : 3 920 Pa, soit **× 4**. Au col d’un **Venturi**, V monte donc Ps baisse."
     },
     {
      "type": "table",
@@ -68,7 +68,7 @@
     },
     {
      "type": "trap",
-     "text": "Le Pitot mesure la pression **totale**, pas la dynamique.\nρ = 1,2 kg/m³ et V = 50 m/s : q = **1 500 Pa**. Sans le ½ : 3 000 Pa ; sans le carré : 30 Pa."
+     "text": "Le Pitot mesure la pression **totale**, pas la dynamique.\nρ = 1,2 kg/m³ et V = 50 m/s : q = **1 500 Pa**. Sans le ½ : 3 000 Pa ; sans le carré : 30 Pa."
     }
    ]
   },
@@ -123,13 +123,13 @@
   },
   {
    "title": "Portance et traînée",
-   "summary": "Deux formules jumelles décrivent les forces de l’aile ; presque tout le reste en découle.",
+   "summary": "Deux formules jumelles décrivent les forces de l’aile ; presque tout le reste en découle.",
    "blocks": [
     {
      "type": "formula",
      "label": "Portance Fz (⊥ au vent relatif) et traînée Fx (∥ au vent relatif)",
-     "formula": "Fz = ½ ρ S V² Cz ;  Fx = ½ ρ S V² Cx\n(ρ : kg/m³ ; S : m² ; V vraie : m/s ; Cz, Cx : selon l’incidence)",
-     "example": "Avion de 1 000 kg (poids ≈ 9 810 N), S = 15 m², 50 m/s (≈ 97 kt) au niveau de la mer. En palier : Cz = 2 × 9 810 / (1,225 × 15 × 2 500) ≈ **0,43**."
+     "formula": "Fz = ½ ρ S V² Cz ;  Fx = ½ ρ S V² Cx\n(ρ : kg/m³ ; S : m² ; V vraie : m/s ; Cz, Cx : selon l’incidence)",
+     "example": "Avion de 1 000 kg (poids ≈ 9 810 N), S = 15 m², 50 m/s (≈ 97 kt) au niveau de la mer. En palier : Cz = 2 × 9 810 / (1,225 × 15 × 2 500) ≈ **0,43**."
     },
     {
      "type": "text",
@@ -180,13 +180,13 @@
   },
   {
    "title": "Polaire, finesse, plané et effet de sol",
-   "summary": "La finesse dit jusqu’où tu planes ; deux courbes montrent où elle est la meilleure.",
+   "summary": "La finesse dit jusqu’où tu planes ; deux courbes montrent où elle est la meilleure.",
    "blocks": [
     {
      "type": "formula",
      "label": "Finesse et plané (sans vent)",
-     "formula": "f = Fz / Fx = Cz / Cx = distance / hauteur\ndistance = f × hauteur ;  tan γ = 1 / f",
-     "example": "f = 10, panne moteur à 2 000 ft sol (≈ 600 m) : 10 × 600 m = **6 km**. C’est un peu plus de 3 NM (milles nautiques), à la vitesse de finesse max."
+     "formula": "f = Fz / Fx = Cz / Cx = distance / hauteur\ndistance = f × hauteur ;  tan γ = 1 / f",
+     "example": "f = 10, panne moteur à 2 000 ft sol (≈ 600 m) : 10 × 600 m = **6 km**. C’est un peu plus de 3 NM (milles nautiques), à la vitesse de finesse max."
     },
     {
      "type": "diagram",
@@ -198,7 +198,7 @@
      "type": "bullets",
      "items": [
       "**Masse** : finesse max inchangée, mais vitesse de finesse max plus élevée (× √masse).",
-      "**Vent** : finesse air inchangée. Vent de face : moins de distance sol, plane un peu plus vite ; vent arrière : plus de distance, un peu moins vite.",
+      "**Vent** : finesse air inchangée. Vent de face : moins de distance sol, plane un peu plus vite ; vent arrière : plus de distance, un peu moins vite.",
       "**Taux de chute mini** : vitesse un peu plus lente. Tu tiens plus longtemps, mais tu vas moins loin."
      ],
      "title": "La finesse en pratique"
@@ -207,7 +207,7 @@
      "type": "formula",
      "label": "Allongement : plus il est grand, moins de traînée induite",
      "formula": "λ = b² / S   (aile rectangulaire : envergure / corde)",
-     "example": "b = 10 m, S = 12,5 m² : λ = 100 / 12,5 = **8**. Avion léger : 5 à 8 ; planeur : 15 à plus de 30."
+     "example": "b = 10 m, S = 12,5 m² : λ = 100 / 12,5 = **8**. Avion léger : 5 à 8 ; planeur : 15 à plus de 30."
     },
     {
      "type": "key",
@@ -222,7 +222,7 @@
   },
   {
    "title": "Décrochage, vrille et hypersustentateurs",
-   "summary": "On décroche par excès d’incidence, à n’importe quelle vitesse ; volets et becs repoussent la limite, la vrille punit l’erreur.",
+   "summary": "On décroche par excès d’incidence, à n’importe quelle vitesse ; volets et becs repoussent la limite, la vrille punit l’erreur.",
    "blocks": [
     {
      "type": "key",
@@ -231,27 +231,27 @@
     {
      "type": "formula",
      "label": "Vitesse de décrochage",
-     "formula": "Vs ∝ √masse\nVs (sous n g) = Vs × √n",
-     "example": "Vs = 50 kt à la masse max. À 81 % de cette masse : 50 × √0,81 = 50 × 0,9 = **45 kt**. En ressource sous 2,25 g : 50 × 1,5 = **75 kt**. À 90 kt, une ressource brutale à (90 / 50)² ≈ **3,2 g** suffit pour décrocher."
+     "formula": "VS ∝ √masse\nVS (sous n g) = VS × √n",
+     "example": "VS = 50 kt à la masse max. À 81 % de cette masse : 50 × √0,81 = 50 × 0,9 = **45 kt**. En ressource sous 2,25 g : 50 × 1,5 = **75 kt**. À 90 kt, une ressource brutale à (90 / 50)² ≈ **3,2 g** suffit pour décrocher."
     },
     {
      "type": "compare",
      "items": [
       {
-       "title": "Vs augmente avec…",
+       "title": "VS augmente avec…",
        "points": [
-        "la **masse** (× √masse) ;",
-        "le **facteur de charge** n (× √n) : virage, ressource ;",
-        "le **givre**, la neige, les insectes (Cz max ↓) ;",
+        "la **masse** (× √masse) ;",
+        "le **facteur de charge** n (× √n) : virage, ressource ;",
+        "le **givre**, la neige, les insectes (Cz max ↓) ;",
         "un **centrage avant** (un peu)."
        ]
       },
       {
-       "title": "Vs diminue ou ne change pas",
+       "title": "VS diminue ou ne change pas",
        "points": [
         "**Volets sortis** : Cz max ↑, donc VS0 < VS1.",
-        "**Masse plus faible** : Vs ↓ (× √masse).",
-        "**Altitude** : Vs **indiquée** inchangée (l’anémomètre mesure ½ ρ V²)."
+        "**Masse plus faible** : VS ↓ (× √masse).",
+        "**Altitude** : VS **indiquée** inchangée (l’anémomètre mesure ½ ρ V²)."
        ]
       }
      ]
@@ -265,7 +265,7 @@
      "items": [
       "**Rends la main** (manche vers l’avant) : l’incidence diminue. C’est l’action prioritaire.",
       "**Ajuste la puissance**.",
-      "**Remets les ailes à plat** une fois l’incidence réduite ; bille au centre au palonnier.",
+      "**Remets les ailes à plat** une fois l’incidence réduite ; bille au centre au palonnier.",
       "**Ressource douce**, sans redécrocher."
      ],
      "title": "Sortie de décrochage"
@@ -295,7 +295,7 @@
       "**P**uissance réduite.",
       "**A**ilerons au neutre.",
       "Palonnier (**R**udder) à fond du côté **opposé à la rotation**.",
-      "Profondeur (**E**levator) vers l’avant jusqu’à l’arrêt de la rotation ; puis palonnier au neutre et ressource douce."
+      "Profondeur (**E**levator) vers l’avant jusqu’à l’arrêt de la rotation ; puis palonnier au neutre et ressource douce."
      ],
      "title": "Sortie de vrille générique « PARE » (le manuel de vol prime toujours)"
     },
@@ -306,8 +306,8 @@
        "title": "Volets de bord de fuite",
        "points": [
         "Courbure, à fente, Fowler : **cambrure ↑** (surface aussi pour le Fowler).",
-        "**Cz max ↑, Vs ↓** ; traînée ↑, finesse ↓.",
-        "Incidence critique **un peu ↓** ; approche plus pentue, assiette plus basse."
+        "**Cz max ↑, VS ↓** ; traînée ↑, finesse ↓.",
+        "Incidence critique **un peu ↓** ; approche plus pentue, assiette plus basse."
        ]
       },
       {
@@ -322,13 +322,13 @@
     },
     {
      "type": "trap",
-     "text": "Les volets n’augmentent **pas** l’incidence critique : ce sont les **becs**. Vs varie comme la **racine** de la masse : 45 kt, pas 40,5 kt.\nUn coup de pied droit au décrochage fait partir en vrille **à droite** : garde la bille au centre."
+     "text": "Les volets n’augmentent **pas** l’incidence critique : ce sont les **becs**. VS varie comme la **racine** de la masse : 45 kt, pas 40,5 kt.\nUn coup de pied droit au décrochage fait partir en vrille **à droite** : garde la bille au centre."
     }
    ]
   },
   {
    "title": "Les forces en vol : palier, montée, descente, virage",
-   "summary": "En vol stabilisé, les forces s’équilibrent ; en virage, la portance doit en plus courber la trajectoire.",
+   "summary": "En vol stabilisé, les forces s’équilibrent ; en virage, la portance doit en plus courber la trajectoire.",
    "blocks": [
     {
      "type": "table",
@@ -369,21 +369,21 @@
     },
     {
      "type": "text",
-     "text": "En virage, la portance s’incline avec les ailes. Sa part **verticale** (Fz × cos φ) porte le poids ; sa part **horizontale** (Fz × sin φ) courbe la trajectoire. Pour tenir le palier : tire et remets de la puissance."
+     "text": "En virage, la portance s’incline avec les ailes. Sa part **verticale** (Fz × cos φ) porte le poids ; sa part **horizontale** (Fz × sin φ) courbe la trajectoire. Pour tenir le palier : tire et remets de la puissance."
     },
     {
      "type": "formula",
      "label": "Facteur de charge en virage en palier",
-     "formula": "n = Fz / P = 1 / cos φ\nVs (virage) = Vs × √n",
-     "example": "φ = 45° : n = 1 / 0,707 ≈ **1,41**. Un pilote de 80 daN appuie sur son siège avec ≈ **113 daN**. Vs × √1,41 = Vs × **1,19**."
+     "formula": "n = Fz / P = 1 / cos φ\nVS (virage) = VS × √n",
+     "example": "φ = 45° : n = 1 / 0,707 ≈ **1,41**. Un pilote de 80 daN appuie sur son siège avec ≈ **113 daN**. VS × √1,41 = VS × **1,19**."
     },
     {
      "type": "table",
      "columns": [
       "Inclinaison",
       "Facteur de charge",
-      "Vs multipliée par",
-      "Si Vs vaut 60 kt"
+      "VS multipliée par",
+      "Si VS vaut 60 kt"
      ],
      "rows": [
       [
@@ -417,8 +417,8 @@
     {
      "type": "formula",
      "label": "Rayon et taux de virage",
-     "formula": "R = V² / (g × tan φ)   (V en m/s, R en m)\nTaux (°/s) ≈ 1 091 × tan φ / V (kt)",
-     "example": "100 kt ≈ 51,4 m/s, φ = 30° : R = 51,4² / (9,81 × 0,577) ≈ **467 m**. Taux ≈ 1 091 × 0,577 / 100 ≈ **6,3°/s**. À 200 kt : rayon × 4, taux ÷ 2."
+     "formula": "R = V² / (g × tan φ)   (V en m/s, R en m)\nTaux (°/s) ≈ 1 091 × tan φ / V (kt)",
+     "example": "100 kt ≈ 51,4 m/s, φ = 30° : R = 51,4² / (9,81 × 0,577) ≈ **467 m**. Taux ≈ 1 091 × 0,577 / 100 ≈ **6,3°/s**. À 200 kt : rayon × 4, taux ÷ 2."
     },
     {
      "type": "key",
@@ -432,13 +432,13 @@
     },
     {
      "type": "trap",
-     "text": "Multiplier Vs par **n** au lieu de **√n** : à 45°, 64 kt donne 76 kt, pas 90 kt.\nIncliner à 30° sans tirer : l’avion **descend** (cos 30° ≈ 0,87 : 13 % de portance verticale en moins).\nDernier virage trop lent et trop incliné : **décrochage**. S’il est **dérapé**, départ en **vrille**."
+     "text": "Multiplier VS par **n** au lieu de **√n** : à 45°, 64 kt donne 76 kt, pas 90 kt.\nIncliner à 30° sans tirer : l’avion **descend** (cos 30° ≈ 0,87 : 13 % de portance verticale en moins).\nDernier virage trop lent et trop incliné : **décrochage**. S’il est **dérapé**, départ en **vrille**."
     }
    ]
   },
   {
    "title": "Stabilité et centrage",
-   "summary": "Un avion stable revient seul à l’équilibre ; la position du centre de gravité décide de cette stabilité.",
+   "summary": "Un avion stable revient seul à l’équilibre ; la position du centre de gravité décide de cette stabilité.",
    "blocks": [
     {
      "type": "compare",
@@ -447,7 +447,7 @@
        "title": "Stabilité statique",
        "points": [
         "La tendance **initiale** après une perturbation.",
-        "**Stable** : revient ; **neutre** : garde sa nouvelle position ; **instable** : s’en écarte."
+        "**Stable** : revient ; **neutre** : garde sa nouvelle position ; **instable** : s’en écarte."
        ]
       },
       {
@@ -461,12 +461,12 @@
     },
     {
      "type": "key",
-     "text": "**Foyer** : point où s’appliquent les **variations** de portance ; il ne bouge pas avec l’incidence (vers 25 % de la corde pour un profil).\n**Centre de poussée** : point d’application de la résultante ; il **avance** quand l’incidence augmente.\n**Règle d’or : CG en avant du foyer** = avion stable en tangage.",
+     "text": "**Foyer** : point où s’appliquent les **variations** de portance ; il ne bouge pas avec l’incidence (vers 25 % de la corde pour un profil).\n**Centre de poussée** : point d’application de la résultante ; il **avance** quand l’incidence augmente.\n**Règle d’or : CG en avant du foyer** = avion stable en tangage.",
      "title": "Foyer, centre de poussée, CG"
     },
     {
      "type": "text",
-     "text": "Une rafale augmente l’incidence ? Le surcroît de portance s’applique au foyer, **derrière le CG** : l’avion pique et l’incidence revient. L’empennage horizontal recule le foyer de l’avion, comme les plumes d’une flèche."
+     "text": "Une rafale augmente l’incidence ? Le surcroît de portance s’applique au foyer, **derrière le CG** : l’avion pique et l’incidence revient. L’empennage horizontal recule le foyer de l’avion, comme les plumes d’une flèche."
     },
     {
      "type": "compare",
@@ -476,7 +476,7 @@
        "points": [
         "Avion **très stable**.",
         "Profondeur **lourde** : elle peut manquer à l’arrondi.",
-        "**Vs un peu plus élevée** : l’empennage déporte plus, l’aile doit porter plus."
+        "**VS un peu plus élevée** : l’empennage déporte plus, l’aile doit porter plus."
        ]
       },
       {
@@ -484,7 +484,7 @@
        "points": [
         "Avion **moins stable**, commandes légères et sensibles.",
         "Sortie de vrille **plus difficile**.",
-        "CG sur le foyer : stabilité neutre ; **derrière** : avion instable."
+        "CG sur le foyer : stabilité neutre ; **derrière** : avion instable."
        ]
       }
      ]
@@ -528,7 +528,7 @@
   },
   {
    "title": "Commandes de vol, hélice et effets moteur",
-   "summary": "Les gouvernes et les compensateurs pilotent l’avion ; l’hélice le tire, mais elle le fait aussi partir à gauche.",
+   "summary": "Les gouvernes et les compensateurs pilotent l’avion ; l’hélice le tire, mais elle le fait aussi partir à gauche.",
    "blocks": [
     {
      "type": "table",
@@ -573,7 +573,7 @@
     },
     {
      "type": "text",
-     "text": "**Équilibrage des gouvernes** : une **masse** en avant de l’articulation évite le **flottement** (*flutter*, vibration destructrice) ; une **corne débordante** allège l’effort."
+     "text": "**Équilibrage des gouvernes** : une **masse** en avant de l’articulation évite le **flottement** (*flutter*, vibration destructrice) ; une **corne débordante** allège l’effort."
     },
     {
      "type": "table",
@@ -588,7 +588,7 @@
       ],
       [
        "**Pas géométrique**",
-       "avance théorique en un tour, comme une vis ; l’avance réelle (**pas effectif**) est plus faible"
+       "avance théorique en un tour, comme une vis ; l’avance réelle (**pas effectif**) est plus faible"
       ],
       [
        "**Vrillage** de la pale",
@@ -596,7 +596,7 @@
       ],
       [
        "**Pas fixe / variable**",
-       "fixe : compromis (petit pas : montée ; grand pas : croisière). À vitesse constante, un régulateur règle le calage"
+       "fixe : compromis (petit pas : montée ; grand pas : croisière). À vitesse constante, un régulateur règle le calage"
       ]
      ],
      "caption": "Le vocabulaire de l’hélice"
@@ -651,13 +651,13 @@
   },
   {
    "title": "Enveloppe de vol et vitesses limites",
-   "summary": "Trop lent, l’avion décroche ; trop vite ou trop chargé, sa structure souffre.",
+   "summary": "Trop lent, l’avion décroche ; trop vite ou trop chargé, sa structure souffre.",
    "blocks": [
     {
      "type": "diagram",
      "svg": "<svg viewBox=\"0 0 680 278\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, InterWeb, sans-serif\"><rect x=\"0\" y=\"0\" width=\"680\" height=\"278\" fill=\"#ffffff\"/><path d=\"M78,132.6 L82,132 L86,131.4 L90,130.8 L94,130.2 L98,129.5 L102,128.8 L106,128.1 L110,127.4 L114,126.7 L118,125.9 L122,125.2 L126,124.4 L130,123.5 L134,122.7 L138,121.9 L142,121 L146,120.1 L150,119.2 L154,118.3 L158,117.3 L162,116.4 L166,115.4 L170,114.4 L174,113.4 L178,112.3 L182,111.3 L186,110.2 L190,109.1 L194,108 L198,106.9 L202,105.7 L206,104.5 L210,103.3 L214,102.1 L218,100.9 L222,99.6 L226,98.4 L230,97.1 L234,95.8 L238,94.5 L242,93.1 L246,91.8 L250,90.4 L254,89 L258,87.5 L262,86.1 L266,84.6 L270,83.2 L274,81.7 L278,80.2 L282,78.6 L286,77.1 L290,75.5 L294,73.9 L298,72.3 L302,70.7 L306,69 L310,67.3 L314,65.7 L318,64 L322,62.2 L326,60.5 L330,58.7 L334,56.9 L338,55.1 L342,53.3 L346,51.5 L347.9,50.6 L578,50.6 L578,177.4 L263.8,177.4 L263.8,177.4 L259.8,176.5 L255.8,175.5 L251.8,174.6 L247.8,173.7 L243.8,172.8 L239.8,171.9 L235.8,171.1 L231.8,170.2 L227.8,169.4 L223.8,168.5 L219.8,167.7 L215.8,166.9 L211.8,166.1 L207.8,165.4 L203.8,164.6 L199.8,163.8 L195.8,163.1 L191.8,162.4 L187.8,161.6 L183.8,160.9 L179.8,160.2 L175.8,159.6 L171.8,158.9 L167.8,158.2 L163.8,157.6 L159.8,157 L155.8,156.3 L151.8,155.7 L147.8,155.1 L143.8,154.6 L139.8,154 L135.8,153.4 L131.8,152.9 L127.8,152.3 L123.8,151.8 L119.8,151.3 L115.8,150.8 L111.8,150.3 L107.8,149.9 L103.8,149.4 L99.8,149 L95.8,148.5 L91.8,148.1 L87.8,147.7 L83.8,147.3 L79.8,146.9 L78,146.8 Z\" fill=\"#e3f2e8\" stroke=\"#2e7d4f\" stroke-width=\"2.6\"/><line x1=\"78\" y1=\"141.2\" x2=\"658\" y2=\"141.2\" stroke=\"#14213d\" stroke-width=\"1.4\"/><line x1=\"78\" y1=\"200\" x2=\"78\" y2=\"16.8\" stroke=\"#14213d\" stroke-width=\"1.6\"/><polygon points=\"78,12 82,18.9 74,18.9\" fill=\"#14213d\"/><line x1=\"78\" y1=\"117.3\" x2=\"578\" y2=\"117.3\" stroke=\"#3d4a66\" stroke-width=\"1\" stroke-dasharray=\"3 4\"/><line x1=\"73\" y1=\"50.6\" x2=\"78\" y2=\"50.6\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"70\" y=\"55.6\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"600\">+3,8</text><line x1=\"73\" y1=\"117.3\" x2=\"78\" y2=\"117.3\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"70\" y=\"122.3\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"600\">+1</text><line x1=\"73\" y1=\"141.2\" x2=\"78\" y2=\"141.2\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"70\" y=\"146.2\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"600\">0</text><line x1=\"73\" y1=\"177.4\" x2=\"78\" y2=\"177.4\" stroke=\"#14213d\" stroke-width=\"1.4\"/><text x=\"70\" y=\"182.4\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"600\">−1,52</text><text x=\"86\" y=\"20\" font-size=\"13\" fill=\"#3d4a66\" font-weight=\"600\">n (g)</text><circle cx=\"158\" cy=\"117.3\" r=\"4.5\" fill=\"#14213d\"/><text x=\"150\" y=\"109.3\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"700\">VS1</text><line x1=\"347.9\" y1=\"50.6\" x2=\"347.9\" y2=\"141.2\" stroke=\"#3d4a66\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"347.9\" cy=\"50.6\" r=\"4.5\" fill=\"#14213d\"/><text x=\"353.9\" y=\"134.2\" font-size=\"13\" fill=\"#14213d\" font-weight=\"700\">VA</text><text x=\"178\" y=\"57.8\" font-size=\"14\" fill=\"#d35400\" text-anchor=\"middle\" font-weight=\"700\">Décrochage</text><text x=\"178\" y=\"74.8\" font-size=\"12.5\" fill=\"#d35400\" text-anchor=\"middle\">(Cz max atteint)</text><text x=\"430\" y=\"37.5\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"700\">Au-delà de +3,8 g : déformation permanente possible</text><text x=\"446\" y=\"91.1\" font-size=\"14\" fill=\"#2e7d4f\" text-anchor=\"middle\" font-weight=\"700\">Domaine de vol autorisé</text><text x=\"446\" y=\"110.3\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">palier : 1 g</text><text x=\"618\" y=\"81.6\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"700\">Au-delà</text><text x=\"618\" y=\"98.6\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"middle\" font-weight=\"700\">de VNE :</text><text x=\"618\" y=\"115.6\" font-size=\"12.5\" fill=\"#c0392b\" text-anchor=\"middle\">flottement,</text><text x=\"618\" y=\"132.6\" font-size=\"12.5\" fill=\"#c0392b\" text-anchor=\"middle\">rupture</text><text x=\"390\" y=\"163.8\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">Facteur négatif (vol dos, rafale descendante)</text><line x1=\"118\" y1=\"198\" x2=\"118\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"118\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">40</text><line x1=\"198\" y1=\"198\" x2=\"198\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"198\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">60</text><line x1=\"278\" y1=\"198\" x2=\"278\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"278\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">80</text><line x1=\"358\" y1=\"198\" x2=\"358\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"358\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">100</text><line x1=\"438\" y1=\"198\" x2=\"438\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"438\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">120</text><line x1=\"518\" y1=\"198\" x2=\"518\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"518\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">140</text><line x1=\"598\" y1=\"198\" x2=\"598\" y2=\"202\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"598\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"middle\">160</text><line x1=\"78\" y1=\"198\" x2=\"658\" y2=\"198\" stroke=\"#3d4a66\" stroke-width=\"1\"/><text x=\"658\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"end\">kt</text><text x=\"70\" y=\"214\" font-size=\"12.5\" fill=\"#3d4a66\" text-anchor=\"end\" font-weight=\"600\">Vi</text><text x=\"70\" y=\"252\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"700\">Arcs</text><rect x=\"138\" y=\"226\" width=\"160\" height=\"10\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.4\"/><rect x=\"158\" y=\"242\" width=\"300\" height=\"12\" fill=\"#2e9e4f\"/><rect x=\"458\" y=\"242\" width=\"120\" height=\"12\" fill=\"#f2c230\"/><rect x=\"576\" y=\"224\" width=\"5\" height=\"32\" fill=\"#d62828\"/><line x1=\"458\" y1=\"230\" x2=\"458\" y2=\"242\" stroke=\"#14213d\" stroke-width=\"1.2\"/><text x=\"132\" y=\"236\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"700\">VS0</text><text x=\"304\" y=\"236\" font-size=\"13\" fill=\"#14213d\" font-weight=\"700\">VFE</text><text x=\"338\" y=\"236\" font-size=\"12.5\" fill=\"#3d4a66\">blanc : volets</text><text x=\"458\" y=\"228\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"700\">VNO</text><text x=\"585\" y=\"236\" font-size=\"13\" fill=\"#b3401a\" font-weight=\"700\">VNE</text><text x=\"152\" y=\"253\" font-size=\"13\" fill=\"#14213d\" text-anchor=\"end\" font-weight=\"700\">VS1</text><text x=\"308\" y=\"271\" font-size=\"12.5\" fill=\"#2e7d4f\" text-anchor=\"middle\" font-weight=\"600\">vert : utilisation normale</text><text x=\"518\" y=\"271\" font-size=\"12.5\" fill=\"#8a6d00\" text-anchor=\"middle\" font-weight=\"600\">jaune : air calme</text></svg>",
      "title": "L’enveloppe de vol d’un avion de catégorie normale",
-     "caption": "Exemple simplifié. Vi : vitesse indiquée. Décrochage : n = (V / Vs)² ; VA au croisement avec +3,8 g. En bas : les arcs."
+     "caption": "Exemple simplifié. Vi : vitesse indiquée. Décrochage : n = (V / VS)² ; VA au croisement avec +3,8 g. En bas : les arcs."
     },
     {
      "type": "table",
@@ -684,7 +684,7 @@
       ],
       [
        "**VNO**",
-       "vitesse max en croisière normale ; au-delà, air calme seulement",
+       "vitesse max en croisière normale ; au-delà, air calme seulement",
        "fin du vert, début du **jaune**"
       ],
       [
@@ -713,7 +713,7 @@
        "**Normale**",
        "**+3,8 g**",
        "−1,52 g",
-       "pas de voltige ; virages jusqu’à 60°"
+       "pas de voltige ; virages jusqu’à 60°"
       ],
       [
        "**Utilitaire**",
@@ -739,8 +739,8 @@
     {
      "type": "formula",
      "label": "Vitesse de manœuvre et masse",
-     "formula": "VA ≈ Vs × √(n limite)\nVA (masse réduite) = VA publiée × √(masse / masse max)",
-     "example": "Catégorie normale, Vs = 50 kt : VA ≈ 50 × √3,8 ≈ **97 kt**. À 80 % de la masse max : 97 × √0,8 ≈ **87 kt**. Plus léger, VA **baisse**."
+     "formula": "VA ≈ VS × √(n limite)\nVA (masse réduite) = VA publiée × √(masse / masse max)",
+     "example": "Catégorie normale, VS = 50 kt : VA ≈ 50 × √3,8 ≈ **97 kt**. À 80 % de la masse max : 97 × √0,8 ≈ **87 kt**. Plus léger, VA **baisse**."
     },
     {
      "type": "trap",
@@ -760,7 +760,7 @@
   },
   {
    "value": "0,514 m/s",
-   "label": "1 kt (nœud) ; 1 NM = 1 852 m"
+   "label": "1 kt (nœud) ; 1 NM = 1 852 m"
   },
   {
    "value": "9,81 m/s²",
@@ -792,7 +792,7 @@
   },
   {
    "value": "× 0,9",
-   "label": "Vs si la masse est multipliée par 0,81"
+   "label": "VS si la masse est multipliée par 0,81"
   },
   {
    "value": "≈ 3,2 g",
@@ -800,23 +800,23 @@
   },
   {
    "value": "× √n",
-   "label": "Vs sous un facteur de charge n"
+   "label": "VS sous un facteur de charge n"
   },
   {
    "value": "1,15 g",
-   "label": "n à 30° d’inclinaison (Vs × 1,07)"
+   "label": "n à 30° d’inclinaison (VS × 1,07)"
   },
   {
    "value": "1,41 g",
-   "label": "n à 45° (Vs × 1,19)"
+   "label": "n à 45° (VS × 1,19)"
   },
   {
    "value": "2 g",
-   "label": "n à 60° (Vs × 1,41)"
+   "label": "n à 60° (VS × 1,41)"
   },
   {
    "value": "≈ 2,9 g",
-   "label": "n à 70° (Vs × 1,7)"
+   "label": "n à 70° (VS × 1,7)"
   },
   {
    "value": "≈ 75°",
@@ -856,7 +856,7 @@
   },
   {
    "value": "≈ 97 kt",
-   "label": "VA si Vs = 50 kt (50 × √3,8)"
+   "label": "VA si VS = 50 kt (50 × √3,8)"
   },
   {
    "value": "− 10 %",
@@ -866,253 +866,253 @@
  "glossary": [
   {
    "term": "Ps",
-   "def": "pression statique, celle de l’air au repos."
+   "def": "pression statique, celle de l’air au repos"
   },
   {
    "term": "q",
-   "def": "pression dynamique, ½ ρ V²."
+   "def": "pression dynamique, ½ ρ V²"
   },
   {
    "term": "Pt",
-   "def": "pression totale Ps + q (tube de Pitot)."
+   "def": "pression totale Ps + q (tube de Pitot)"
   },
   {
    "term": "Couche limite",
-   "def": "air freiné au contact de la paroi."
+   "def": "air freiné au contact de la paroi"
   },
   {
    "term": "Extrados / intrados",
-   "def": "dessus / dessous de l’aile."
+   "def": "dessus / dessous de l’aile"
   },
   {
    "term": "Corde",
-   "def": "segment bord d’attaque – bord de fuite."
+   "def": "segment bord d’attaque – bord de fuite"
   },
   {
    "term": "Cambrure",
-   "def": "écart max entre ligne moyenne et corde."
+   "def": "écart max entre ligne moyenne et corde"
   },
   {
    "term": "Épaisseur relative",
-   "def": "épaisseur max ÷ corde, en %."
+   "def": "épaisseur max ÷ corde, en %"
   },
   {
    "term": "Incidence α",
-   "def": "angle entre la corde et le vent relatif."
+   "def": "angle entre la corde et le vent relatif"
   },
   {
    "term": "Vent relatif",
-   "def": "air vu de l’avion, opposé à sa trajectoire."
+   "def": "air vu de l’avion, opposé à sa trajectoire"
   },
   {
    "term": "Assiette θ",
-   "def": "angle entre l’axe de l’avion et l’horizontale."
+   "def": "angle entre l’axe de l’avion et l’horizontale"
   },
   {
    "term": "Pente γ",
-   "def": "angle entre la trajectoire et l’horizontale."
+   "def": "angle entre la trajectoire et l’horizontale"
   },
   {
-   "term": "Calage",
-   "def": "angle fixe entre la corde de l’aile et l’axe avion."
+   "term": "Calage (aile)",
+   "def": "angle fixe entre la corde de l’aile et l’axe avion"
   },
   {
    "term": "Centre de poussée",
-   "def": "point d’application de la résultante."
+   "def": "point d’application de la résultante"
   },
   {
    "term": "Foyer",
-   "def": "point fixe des variations de portance."
+   "def": "point fixe des variations de portance"
   },
   {
    "term": "Fz / Fx",
-   "def": "portance ⊥ / traînée ∥ au vent relatif."
+   "def": "portance ⊥ / traînée ∥ au vent relatif"
   },
   {
    "term": "Traînée parasite",
-   "def": "frottement + forme + interférence."
+   "def": "frottement + forme + interférence"
   },
   {
    "term": "Traînée induite",
-   "def": "née des tourbillons marginaux."
+   "def": "née des tourbillons marginaux"
   },
   {
    "term": "Finesse f",
-   "def": "Fz / Fx = distance / hauteur en plané."
+   "def": "Fz / Fx = distance / hauteur en plané"
   },
   {
    "term": "Polaire",
-   "def": "courbe Cz en fonction de Cx."
+   "def": "courbe Cz en fonction de Cx"
   },
   {
    "term": "Allongement λ",
-   "def": "b² / S (envergure² / surface)."
+   "def": "b² / S (envergure² / surface)"
   },
   {
    "term": "Charge alaire",
-   "def": "masse de l’avion ÷ surface alaire."
+   "def": "masse de l’avion ÷ surface alaire"
   },
   {
    "term": "Effet de sol",
-   "def": "moins de traînée induite près du sol."
+   "def": "moins de traînée induite près du sol"
   },
   {
    "term": "Incidence critique",
-   "def": "celle du Cz max (décrochage)."
+   "def": "celle du Cz max (décrochage)"
   },
   {
    "term": "Buffeting",
-   "def": "vibrations annonçant le décrochage."
+   "def": "vibrations annonçant le décrochage"
   },
   {
    "term": "Abattée",
-   "def": "chute du nez au décrochage."
+   "def": "chute du nez au décrochage"
   },
   {
    "term": "Autorotation",
-   "def": "rotation auto-entretenue de la vrille."
+   "def": "rotation auto-entretenue de la vrille"
   },
   {
    "term": "Spirale engagée",
-   "def": "virage piqué non décroché, vitesse ↑."
+   "def": "virage piqué non décroché, vitesse ↑"
   },
   {
    "term": "Hypersustentateurs",
-   "def": "volets et becs : Cz max ↑."
+   "def": "volets et becs : Cz max ↑"
   },
   {
    "term": "Facteur de charge n",
-   "def": "portance / poids, en g."
+   "def": "portance / poids, en g"
   },
   {
    "term": "Force centripète",
-   "def": "part horizontale de la portance en virage."
+   "def": "part horizontale de la portance en virage"
   },
   {
    "term": "Taux standard",
-   "def": "3°/s (taux 1), un tour en 2 min."
+   "def": "3°/s (taux 1), un tour en 2 min"
   },
   {
    "term": "Glissade / dérapage",
-   "def": "bille côté intérieur / extérieur."
+   "def": "bille côté intérieur / extérieur"
   },
   {
    "term": "Stabilité statique",
-   "def": "tendance initiale à revenir à l’équilibre."
+   "def": "tendance initiale à revenir à l’équilibre"
   },
   {
    "term": "Stabilité dynamique",
-   "def": "oscillations amorties ou amplifiées."
+   "def": "oscillations amorties ou amplifiées"
   },
   {
    "term": "Phugoïde",
-   "def": "lente oscillation vitesse / altitude."
+   "def": "lente oscillation vitesse / altitude"
   },
   {
    "term": "Dièdre",
-   "def": "ailes relevées en V : stabilité en roulis."
+   "def": "ailes relevées en V : stabilité en roulis"
   },
   {
    "term": "Roulis hollandais",
-   "def": "oscillation couplée roulis-lacet."
+   "def": "oscillation couplée roulis-lacet"
   },
   {
    "term": "Centrage",
-   "def": "position du CG, dans les limites du manuel."
+   "def": "position du CG, dans les limites du manuel"
   },
   {
    "term": "Compensateur (trim)",
-   "def": "tab qui annule l’effort au manche."
+   "def": "tab qui annule l’effort au manche"
   },
   {
    "term": "Lacet inverse",
-   "def": "lacet opposé au virage (aileron baissé)."
+   "def": "lacet opposé au virage (aileron baissé)"
   },
   {
    "term": "Flottement (flutter)",
-   "def": "vibration destructrice d’une gouverne."
+   "def": "vibration destructrice d’une gouverne"
   },
   {
    "term": "Pas géométrique",
-   "def": "avance théorique de l’hélice par tour."
+   "def": "avance théorique de l’hélice par tour"
   },
   {
    "term": "Souffle hélicoïdal",
-   "def": "flux d’hélice qui frappe la dérive."
+   "def": "flux d’hélice qui frappe la dérive"
   },
   {
    "term": "Facteur P",
-   "def": "la pale descendante tire plus."
+   "def": "la pale descendante tire plus"
   },
   {
    "term": "VS0 / VS1",
-   "def": "décrochage volets sortis / lisse."
+   "def": "décrochage volets sortis / en lisse"
   },
   {
    "term": "VFE / VNO / VNE",
-   "def": "max volets / croisière / jamais dépasser."
+   "def": "max volets sortis / max en croisière normale / à ne jamais dépasser"
   },
   {
    "term": "VA",
-   "def": "vitesse de manœuvre ; baisse avec la masse."
+   "def": "vitesse de manœuvre ; baisse avec la masse"
   },
   {
    "term": "Vx / Vy",
-   "def": "meilleure pente / meilleur taux."
+   "def": "meilleur angle / meilleur taux de montée"
   },
   {
    "term": "Facteur limite",
-   "def": "à ne pas dépasser ; extrême = × 1,5."
+   "def": "à ne pas dépasser ; extrême = × 1,5"
   }
  ],
  "self_test": [
   {
-   "q": "Au col d’un Venturi, que devient la pression statique de l’air ?",
+   "q": "Au col d’un Venturi, que devient la pression statique de l’air ?",
    "a": "Elle diminue (l’air accélère)."
   },
   {
-   "q": "À incidence constante, la vitesse passe de 100 à 150 kt. La portance est multipliée par ?",
+   "q": "À incidence constante, la vitesse passe de 100 à 150 kt. La portance est multipliée par ?",
    "a": "2,25 (1,5²)."
   },
   {
-   "q": "Assiette +12°, pente +5°, calage négligé : quelle incidence ?",
+   "q": "Assiette +12°, pente +5°, calage négligé : quelle incidence ?",
    "a": "7° (12 − 5)."
   },
   {
-   "q": "Finesse 12, hauteur 500 m, sans vent : quelle distance de plané ?",
+   "q": "Finesse 12, hauteur 500 m, sans vent : quelle distance de plané ?",
    "a": "6 km (12 × 500 m)."
   },
   {
-   "q": "Vs = 60 kt ailes à plat. Vs en virage en palier à 60° ?",
+   "q": "VS = 60 kt ailes à plat. VS en virage en palier à 60° ?",
    "a": "≈ 85 kt (60 × 1,41)."
   },
   {
-   "q": "Volets ou becs : lequel augmente l’incidence critique ?",
+   "q": "Volets ou becs : lequel augmente l’incidence critique ?",
    "a": "Les becs. Les volets augmentent le Cz max, pas l’incidence critique."
   },
   {
-   "q": "Vrille à gauche : quel pied, après réduction et ailerons au neutre ?",
+   "q": "Vrille à gauche : quel pied, après réduction et ailerons au neutre ?",
    "a": "Pied droit à fond (opposé à la rotation), puis manche vers l’avant."
   },
   {
-   "q": "À l’arrondi, un avion trop rapide flotte longtemps. Quel phénomène ?",
+   "q": "À l’arrondi, un avion trop rapide flotte longtemps. Quel phénomène ?",
    "a": "L’effet de sol : la traînée induite diminue."
   },
   {
-   "q": "Où doit être le CG pour que l’avion soit stable en tangage ?",
+   "q": "Où doit être le CG pour que l’avion soit stable en tangage ?",
    "a": "En avant du foyer."
   },
   {
-   "q": "Décollage, hélice horaire vue du poste : de quel côté part le nez ?",
+   "q": "Décollage, hélice horaire vue du poste : de quel côté part le nez ?",
    "a": "À gauche : on contre au pied droit."
   },
   {
-   "q": "Que signifie l’arc jaune de l’anémomètre ?",
+   "q": "Que signifie l’arc jaune de l’anémomètre ?",
    "a": "De VNO à VNE : à utiliser en air calme seulement."
   },
   {
-   "q": "Facteur de charge limite positif d’un avion de catégorie normale ? Et le facteur extrême ?",
-   "a": "+3,8 g ; extrême : 1,5 × 3,8 = 5,7 g."
+   "q": "Facteur de charge limite positif d’un avion de catégorie normale ? Et le facteur extrême ?",
+   "a": "+3,8 g ; extrême : 1,5 × 3,8 = 5,7 g."
   }
  ]
 }

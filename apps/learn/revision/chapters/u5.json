@@ -5,33 +5,33 @@
   "questions": 20,
   "minutes": 50
  },
- "pitch": "Savoir où tu es, où tu vas et quand tu arrives : coordonnées, cartes, compas, vent, calcul mental, carburant, heures et radionavigation. C'est la matière la plus calculatoire : refais chaque exemple, crayon et computer en main.",
+ "pitch": "Savoir où tu es, où tu vas et quand tu arrives : coordonnées, cartes, compas, vent, calcul mental, carburant, heures et radionavigation. C’est la matière la plus calculatoire : refais chaque exemple, crayon et computer en main.",
  "essentials": [
   "**1 NM (mille nautique) = 1 852 m = 1′ de méridien** : 1° de latitude = 60 NM ≈ 111 km.",
   "**Orthodromie** : grand cercle, le plus court. **Loxodromie** : route vraie constante. Une droite : orthodromie sur la Lambert, loxodromie sur la Mercator.",
-  "Carte OACI (Organisation de l'aviation civile internationale) au **1/500 000** : 1 cm = 5 km, altitudes en pieds. Route vraie mesurée au **méridien du milieu**.",
-  "**Rv = Rm + Dm** et **Cm = Cc + d** : déclinaison (Dm) et déviation (d) + à l'Est, − à l'Ouest. R route, C cap ; v vrai, m magnétique, c compas.",
+  "Carte OACI (Organisation de l’aviation civile internationale) au **1/500 000** : 1 cm = 5 km, altitudes en pieds. Route vraie mesurée au **méridien du milieu**.",
+  "**Rv = Rm + Dm** et **Cm = Cc + d** : déclinaison (Dm) et déviation (d) + à l’Est, − à l’Ouest. R route, C cap ; v vrai, m magnétique, c compas.",
   "Compas, hémisphère nord : virage **vers le nord, sors avant ; vers le sud, après**. **ANDS** : accélération nord, décélération sud.",
-  "**Vp + vent = Vs** : la vitesse propre (Vp, dans l'air) suit le cap, la vitesse sol (Vs) la route. Corrige le cap **vers** le vent.",
+  "**Vp + vent = Vs** : la vitesse propre (Vp, dans l’air) suit le cap, la vitesse sol (Vs) la route. Corrige le cap **vers** le vent.",
   "**Fb = 60 / Vp** et **Xmax = vent × Fb** (dérive maximale). Dérive = Xmax × sin α ; vent effectif = vent × cos α (α : angle route–vent).",
-  "**T (min) = D × 60 / Vs** (1 h 12 min = 1,2 h). **1 sur 60** : 1 NM d'écart à 60 NM = 1° ; corrige de l'erreur de route **plus** la convergence.",
-  "**Réserve finale** (Part-NCO, vols non commerciaux) : 30 min de jour, 45 min de nuit. AVGAS (essence aviation) ≈ 0,72 kg/l ; 1 USG (gallon US) ≈ 3,785 l.",
+  "**T (min) = D × 60 / Vs** (1 h 12 min = 1,2 h). **1 sur 60** : 1 NM d’écart à 60 NM = 1° ; corrige de l’erreur de route **plus** la convergence.",
+  "**Réserve finale** (Part-NCO, vols non commerciaux) : 30 min de jour, 45 min de nuit. AVGAS (essence aviation) ≈ 0,72 kg/L ; 1 USG (gallon US) ≈ 3,785 L.",
   "**UTC** (temps universel coordonné, noté Z) = heure légale − 1 h en hiver, − 2 h en été (métropole). **Nuit** : du coucher + 30 min au lever − 30 min.",
   "**Vi → Vc → Vp → Vs** : indiquée, conventionnelle, propre, sol. **Vp ≈ Vc + 1 % par 600 ft**.",
-  "**VOR** (radiophare VHF, très haute fréquence) : radiale = QDR, qui s'éloigne ; QDM = QDR ± 180°. **ADF** (radiocompas) : QDM = Cm + gisement.",
+  "**VOR** (radiophare VHF, très haute fréquence) : radiale = QDR, qui s’éloigne ; QDM = QDR ± 180°. **ADF** (radiocompas) : QDM = Cm + gisement.",
   "**DME** (mesure de distance) : distance oblique. **GNSS** (positionnement par satellites) : 4 satellites pour une position 3D.",
-  "En vol, va **de la carte vers le sol** et confirme chaque point par deux indices. Égaré : cap tenu, monte si possible, appelle le **SIV** (secteur d'information de vol)."
+  "En vol, va **de la carte vers le sol** et confirme chaque point par deux indices. Égaré : cap tenu, monte si possible, appelle le **SIV** (secteur d’information de vol)."
  ],
  "sections": [
   {
    "title": "La Terre, les coordonnées et les distances",
-   "summary": "La latitude te place au nord ou au sud, la longitude à l'est ou à l'ouest.",
+   "summary": "La latitude te place au nord ou au sud, la longitude à l’est ou à l’ouest.",
    "blocks": [
     {
      "type": "bullets",
      "items": [
       "**Forme** : sphère aplatie aux pôles ; coordonnées et GNSS en référentiel **WGS 84** (système géodésique mondial).",
-      "**Grand cercle** : son plan passe par le centre de la Terre (l'équateur, un méridien et son opposé). Les autres parallèles sont des *petits cercles*.",
+      "**Grand cercle** : son plan passe par le centre de la Terre (l’équateur, un méridien et son opposé). Les autres parallèles sont des *petits cercles*.",
       "**Méridien** : de pôle à pôle, il donne le **nord vrai**. **Parallèle** : points de même latitude. Tour de la Terre : **21 600 NM ≈ 40 000 km**."
      ]
     },
@@ -46,7 +46,7 @@
      "rows": [
       [
        "Comptée depuis",
-       "l'**équateur** : 0 à **90° N ou S**",
+       "l’**équateur** : 0 à **90° N ou S**",
        "le méridien de **Greenwich** : 0 à **180° E ou W**"
       ],
       [
@@ -57,16 +57,16 @@
       [
        "1′ vaut",
        "**1 NM**, partout",
-       "1 NM à l'équateur, **cos(latitude)** NM ailleurs"
+       "1 NM à l’équateur, **cos(latitude)** NM ailleurs"
       ]
      ],
-     "note": "Latitude d'abord, en degrés et minutes (1° = 60′) : 48°43′N 002°23′E."
+     "note": "Latitude d’abord, en degrés et minutes (1° = 60′) : 48°43′N 002°23′E."
     },
     {
      "type": "formula",
      "label": "Distance sur un méridien ou un parallèle",
      "formula": "Méridien : D (NM) = écart de latitude en minutes\nParallèle : D (NM) = écart de longitude en minutes × cos(latitude)\nMêmes noms (E et E, W et W) : soustraire ; noms contraires : additionner",
-     "example": "45°00′N et 47°30′N sur un même méridien : 2°30′ = 150′, soit **150 NM**. À 60° N, 2° de longitude : 120′ × 0,5 = **60 NM**. Sur l'équateur, de 008°20′W à 006°50′W : 1°30′ = **90 NM**."
+     "example": "45°00′N et 47°30′N sur un même méridien : 2°30′ = 150′, soit **150 NM**. À 60° N, 2° de longitude : 120′ × 0,5 = **60 NM**. Sur l’équateur, de 008°20′W à 006°50′W : 1°30′ = **90 NM**."
     },
     {
      "type": "table",
@@ -78,7 +78,7 @@
      ],
      "rows": [
       [
-       "Ce que c'est",
+       "Ce que c’est",
        "Arc de **grand cercle**",
        "Coupe les méridiens sous le **même angle**"
       ],
@@ -107,7 +107,7 @@
   },
   {
    "title": "Unités, conversions et heures",
-   "summary": "Les erreurs d'unités et d'heures sont les pièges les plus fréquents de l'examen.",
+   "summary": "Les erreurs d’unités et d’heures sont les pièges les plus fréquents de l’examen.",
    "blocks": [
     {
      "type": "table",
@@ -148,12 +148,12 @@
       [
        "USG → litres",
        "× 3,785",
-       "20 USG ≈ 76 l"
+       "20 USG ≈ 76 L"
       ],
       [
-       "litres d'AVGAS → kg",
+       "litres d’AVGAS → kg",
        "× 0,72",
-       "150 l ≈ 108 kg"
+       "150 L ≈ 108 kg"
       ],
       [
        "°F → °C ; °C → °F",
@@ -161,35 +161,35 @@
        "86 °F = 30 °C ; 15 °C = 59 °F"
       ]
      ],
-     "note": "**Heures décimales** : 0,1 h = 6 min, donc 0,35 h = 21 min et 1,2 h = 1 h 12. Le gallon impérial (4,55 l) et le mille terrestre (1 609 m) ne servent pas ici."
+     "note": "**Heures décimales** : 0,1 h = 6 min, donc 0,35 h = 21 min et 1,2 h = 1 h 12. Le gallon impérial (4,55 L) et le mille terrestre (1 609 m) ne servent pas ici."
     },
     {
      "type": "formula",
      "label": "Heures : UTC, heure légale et longitude",
-     "formula": "UTC = heure légale − 1 h (hiver) ou − 2 h (été), en métropole\n15° de longitude = 1 h ; 1° = 4 min\nLe lieu le plus à l'est voit le soleil passer plus tôt",
-     "example": "Décollage à 16 h 30 en juillet : **14:30 UTC**. METAR (observation d'aérodrome) de janvier à 0930Z : **10 h 30** à ta montre. Entre 004°30′W et 007°30′E : 12° × 4 = **48 min** d'écart solaire."
+     "formula": "UTC = heure légale − 1 h (hiver) ou − 2 h (été), en métropole\n15° de longitude = 1 h ; 1° = 4 min\nLe lieu le plus à l’est voit le soleil passer plus tôt",
+     "example": "Décollage à 16 h 30 en juillet : **14 h 30 UTC**. METAR (observation d’aérodrome) de janvier à 0930Z : **10 h 30** à ta montre. Entre 004°30′W et 007°30′E : 12° × 4 = **48 min** d’écart solaire."
     },
     {
      "type": "bullets",
      "items": [
-      "**En UTC** : plans de vol, METAR, TAF (prévision d'aérodrome), NOTAM (avis aux navigants) et éphémérides (lever et coucher du soleil).",
-      "**Heure d'été** (UTC + 2) : du dernier dimanche de mars au dernier dimanche d'octobre."
+      "**En UTC** : plans de vol, METAR, TAF (prévision d’aérodrome), NOTAM (avis aux navigants) et éphémérides (lever et coucher du soleil).",
+      "**Heure d’été** (UTC + 2) : du dernier dimanche de mars au dernier dimanche d’octobre."
      ]
     },
     {
      "type": "key",
-     "text": "**SERA** (règles de l'air européennes) : de la fin du crépuscule civil du soir au début de celui du matin ; il finit quand le centre du soleil est à **6° sous l'horizon**.\nEn France métropolitaine : **coucher + 30 min** et **lever − 30 min**. Ex. : coucher à 19:40 UTC en juillet, nuit à **20:10 UTC**, soit 22 h 10 à ta montre. Sans qualification de vol de nuit, sois posé avant.",
+     "text": "**SERA** (règles de l’air européennes) : de la fin du crépuscule civil du soir au début de celui du matin ; il finit quand le centre du soleil est à **6° sous l’horizon**.\nEn France métropolitaine : **coucher + 30 min** et **lever − 30 min**. Ex. : coucher à 19 h 40 UTC en juillet, nuit à **20 h 10 UTC**, soit 22 h 10 à ta montre. Sans qualification de vol de nuit, sois posé avant.",
      "title": "Nuit aéronautique"
     },
     {
      "type": "trap",
-     "text": "Diviser au lieu de multiplier : 150 l × 0,72 = 108 kg, pas 208 kg. Ajouter le décalage horaire au lieu de le retrancher : 16 h 30 locale en été donne 14:30 UTC, pas 18:30. Croire que la nuit commence au coucher du soleil : c'est **30 min après**."
+     "text": "Diviser au lieu de multiplier : 150 L × 0,72 = 108 kg, pas 208 kg. Ajouter le décalage horaire au lieu de le retrancher : 16 h 30 locale en été donne 14 h 30 UTC, pas 18 h 30. Croire que la nuit commence au coucher du soleil : c’est **30 min après**."
     }
    ]
   },
   {
    "title": "Les nords, la déclinaison et le compas",
-   "summary": "Trois nords : vrai sur la carte, magnétique pour l'aimant, compas sur ton tableau de bord.",
+   "summary": "Trois nords : vrai sur la carte, magnétique pour l’aimant, compas sur ton tableau de bord.",
    "blocks": [
     {
      "type": "text",
@@ -200,7 +200,7 @@
      "caption": "Les trois nords",
      "columns": [
       "Nord",
-      "Ce que c'est",
+      "Ce que c’est",
       "Écart avec le précédent",
       "Référence de…"
      ],
@@ -213,14 +213,14 @@
       ],
       [
        "**Magnétique (Nm)**",
-       "Direction d'une **boussole**",
+       "Direction d’une **boussole**",
        "**Déclinaison (Dm)** : selon le **lieu** ; **isogones** (agonique : 0°)",
        "Pistes, VOR, vent de la tour"
       ],
       [
        "**Compas (Nc)**",
        "Lu sur **ton compas**",
-       "**Déviation (d)** : selon l'**avion** et le **cap**",
+       "**Déviation (d)** : selon l’**avion** et le **cap**",
        "Cap à afficher"
       ]
      ],
@@ -235,7 +235,7 @@
     {
      "type": "memo",
      "text": "Pour aller **du vrai vers le magnétique** (ou du magnétique vers le compas). Rv 135°, Dm 2° E → **Rm 133°**. Rv 010°, Dm 3° W → **Rm 013°**. Déclinaison Est : le magnétique est plus petit que le vrai.",
-     "title": "Est, je l'enlève ; Ouest, je l'ajoute"
+     "title": "Est, je l’enlève ; Ouest, je l’ajoute"
     },
     {
      "type": "table",
@@ -260,7 +260,7 @@
        "Accélération : virage apparent vers le **nord**. Décélération : vers le **sud**."
       ]
      ],
-     "note": "Retiens **« au nord avant, au sud après »** et **ANDS** (Accélération Nord, Décélération Sud). Cause : l'inclinaison magnétique (angle du champ avec l'horizontale), forte en France. Lis le compas en ligne droite, ailes à plat, vitesse constante."
+     "note": "Retiens **« au nord avant, au sud après »** et **ANDS** (Accélération Nord, Décélération Sud). Cause : l’inclinaison magnétique (angle du champ avec l’horizontale), forte en France. Lis le compas en ligne droite, ailes à plat, vitesse constante."
     },
     {
      "type": "key",
@@ -269,7 +269,7 @@
     },
     {
      "type": "trap",
-     "text": "Croire que la déviation dépend du lieu : c'est la **déclinaison**. Poser un téléphone ou une tablette près du compas : déviation inconnue, même éteint. Recaler le conservateur de cap en virage, ou sur la route vraie de la carte."
+     "text": "Croire que la déviation dépend du lieu : c’est la **déclinaison**. Poser un téléphone ou une tablette près du compas : déviation inconnue, même éteint. Recaler le conservateur de cap en virage, ou sur la route vraie de la carte."
     }
    ]
   },
@@ -281,9 +281,9 @@
      "type": "bullets",
      "items": [
       "Carte VFR de référence en France : **4 feuilles**, **rééditée chaque année**. Vérifie ton édition.",
-      "Altitudes en **pieds**, relief en **teintes hypsométriques**. Obstacle **1 150 (420)** : sommet à 1 150 ft d'altitude, 420 ft au-dessus du sol.",
+      "Altitudes en **pieds**, relief en **teintes hypsométriques**. Obstacle **1 150 (420)** : sommet à 1 150 ft d’altitude, 420 ft au-dessus du sol.",
       "Zones **P** (interdites), **R** (réglementées), **D** (dangereuses), espaces, aérodromes, balises, isogones : lis la **légende** de ton édition.",
-      "**Points de report** : uniques, visibles de loin (croisement autoroute–voie ferrée, confluent, lac), tous les **10 à 15 min**. Pas le village parmi d'autres."
+      "**Points de report** : uniques, visibles de loin (croisement autoroute–voie ferrée, confluent, lac), tous les **10 à 15 min**. Pas le village parmi d’autres."
      ],
      "title": "Lire la carte OACI au 1/500 000"
     },
@@ -299,7 +299,7 @@
       [
        "Principe",
        "Cône **sécant** le long de 2 parallèles",
-       "Cylindre **tangent** à l'équateur"
+       "Cylindre **tangent** à l’équateur"
       ],
       [
        "Angles",
@@ -318,41 +318,41 @@
       ],
       [
        "Une droite",
-       "≈ **orthodromie** : c'est la carte OACI",
+       "≈ **orthodromie** : c’est la carte OACI",
        "= **loxodromie**"
       ]
      ]
     },
     {
      "type": "formula",
-     "label": "Échelle d'une carte",
-     "formula": "Distance réelle = distance mesurée × dénominateur de l'échelle\n1/500 000 : 1 cm = 5 km ≈ 2,7 NM ; 10 NM ≈ 3,7 cm\n1/1 000 000 : 1 cm = 10 km ; 1/250 000 : 1 cm = 2,5 km",
+     "label": "Échelle d’une carte",
+     "formula": "Distance réelle = distance mesurée × dénominateur de l’échelle\n1/500 000 : 1 cm = 5 km ≈ 2,7 NM ; 10 NM ≈ 3,7 cm\n1/1 000 000 : 1 cm = 10 km ; 1/250 000 : 1 cm = 2,5 km",
      "example": "18,5 cm au 1/500 000 : 18,5 × 5 = 92,5 km, puis 92,5 / 1,852 ≈ **50 NM**. 92 « NM » oublie la conversion ; 25 NM correspond au 1/250 000."
     },
     {
      "type": "key",
-     "text": "La **VAC** (carte d'approche et d'atterrissage à vue), une par aérodrome, est publiée par le **SIA** (Service de l'information aéronautique) dans l'**AIP** (publication d'information aéronautique). Tour de piste, altitudes, points d'entrée, fréquences : prends la version en vigueur.",
+     "text": "La **VAC** (carte d’approche et d’atterrissage à vue), une par aérodrome, est publiée par le **SIA** (Service de l’information aéronautique) dans l’**AIP** (publication d’information aéronautique). Tour de piste, altitudes, points d’entrée, fréquences : prends la version en vigueur.",
      "title": "La carte VAC"
     },
     {
      "type": "steps",
      "items": [
       "Trace à la règle chaque segment entre deux points tournants.",
-      "Mesure la **route vraie** au rapporteur sur le **méridien du milieu** : les méridiens convergent, l'angle varie le long du trait.",
-      "Mesure la distance à la règle graduée, ou au compas à pointes sèches sur l'**échelle des latitudes** (1′ = 1 NM).",
-      "Relève relief, obstacles et espaces de part et d'autre, gradue le trait (tous les 10 NM ou 5 min), puis reporte tout sur le log."
+      "Mesure la **route vraie** au rapporteur sur le **méridien du milieu** : les méridiens convergent, l’angle varie le long du trait.",
+      "Mesure la distance à la règle graduée, ou au compas à pointes sèches sur l’**échelle des latitudes** (1′ = 1 NM).",
+      "Relève relief, obstacles et espaces de part et d’autre, gradue le trait (tous les 10 NM ou 5 min), puis reporte tout sur le log."
      ],
      "title": "Tracer et mesurer une branche"
     },
     {
      "type": "trap",
-     "text": "Multiplier par 1,852 au lieu de diviser : 171 « NM » pour 92,5 km. Mesurer sur l'échelle des longitudes. Prendre le nombre entre parenthèses d'un obstacle pour son altitude : c'est sa **hauteur**."
+     "text": "Multiplier par 1,852 au lieu de diviser : 171 « NM » pour 92,5 km. Mesurer sur l’échelle des longitudes. Prendre le nombre entre parenthèses d’un obstacle pour son altitude : c’est sa **hauteur**."
     }
    ]
   },
   {
    "title": "Vitesses et altitudes",
-   "summary": "Anémomètre et altimètre mesurent l'air, pas le sol : il faut corriger leurs indications.",
+   "summary": "Anémomètre et altimètre mesurent l’air, pas le sol : il faut corriger leurs indications.",
    "blocks": [
     {
      "type": "table",
@@ -360,26 +360,26 @@
      "columns": [
       "Vitesse",
       "Sigle",
-      "Ce que c'est",
-      "Comment l'obtenir"
+      "Ce que c’est",
+      "Comment l’obtenir"
      ],
      "rows": [
       [
        "Indiquée",
        "Vi (IAS)",
-       "Lue sur l'anémomètre",
+       "Lue sur l’anémomètre",
        "Lecture directe"
       ],
       [
        "Conventionnelle",
        "Vc (CAS)",
-       "Vi corrigée des erreurs d'instrument et d'installation",
+       "Vi corrigée des erreurs d’instrument et d’installation",
        "Table du manuel de vol"
       ],
       [
        "Propre (vraie)",
        "Vp (TAS)",
-       "Vitesse par rapport à l'air",
+       "Vitesse par rapport à l’air",
        "Vc corrigée de la densité"
       ],
       [
@@ -389,24 +389,24 @@
        "Vp + vent"
       ]
      ],
-     "note": "IAS, CAS, TAS, GS : *indicated, calibrated, true, ground speed*. En avion léger, la vitesse équivalente (Ve) se confond avec la Vc. **Tu pilotes en Vi** : l'avion décroche à la même Vi en altitude, avec une Vp plus forte."
+     "note": "IAS, CAS, TAS, GS : *indicated, calibrated, true, ground speed*. En avion léger, la vitesse équivalente (Ve) se confond avec la Vc. **Tu pilotes en Vi** : l’avion décroche à la même Vi en altitude, avec une Vp plus forte."
     },
     {
      "type": "formula",
      "label": "Vitesse propre (règle pratique)",
-     "formula": "ISA (atmosphère standard) : 15 °C au niveau de la mer, − 2 °C par 1 000 ft\nVp ≈ Vc + 1 % par tranche de 600 ft d'altitude-pression\n+ 1 % par 5 °C au-dessus de l'ISA, − 1 % par 5 °C au-dessous\nTempérature : celle de l'altitude de vol ; pour être précis : le computer",
-     "example": "Vc 100 kt à 6 000 ft d'altitude-pression, ISA + 10 °C : + 10 % (10 tranches) + 2 % (chaleur), **Vp ≈ 112 kt** (exact : 111 kt). En sens inverse, on divise : Vp 120 kt à 6 000 ft en ISA → Vc ≈ 120 / 1,10 ≈ **109 kt**."
+     "formula": "ISA (atmosphère standard) : 15 °C au niveau de la mer, −2 °C par 1 000 ft\nVp ≈ Vc + 1 % par tranche de 600 ft d’altitude-pression\n+ 1 % par 5 °C au-dessus de l’ISA, − 1 % par 5 °C au-dessous\nTempérature : celle de l’altitude de vol ; pour être précis : le computer",
+     "example": "Vc 100 kt à 6 000 ft d’altitude-pression, ISA + 10 °C : + 10 % (10 tranches) + 2 % (chaleur), **Vp ≈ 112 kt** (exact : 111 kt). En sens inverse, on divise : Vp 120 kt à 6 000 ft en ISA → Vc ≈ 120 / 1,10 ≈ **109 kt**."
     },
     {
      "type": "trap",
-     "text": "Mettre la Vi au lieu de la Vp dans le triangle des vitesses. Prendre la température **au sol** au lieu de celle de l'altitude de vol. Croire l'altimètre par grand froid : tu es plus bas qu'il ne l'indique."
+     "text": "Mettre la Vi au lieu de la Vp dans le triangle des vitesses. Prendre la température **au sol** au lieu de celle de l’altitude de vol. Croire l’altimètre par grand froid : tu es plus bas qu’il ne l’indique."
     },
     {
      "type": "table",
      "caption": "Altitudes et hauteur",
      "columns": [
       "Grandeur",
-      "Ce que c'est",
+      "Ce que c’est",
       "À retenir"
      ],
      "rows": [
@@ -417,8 +417,8 @@
       ],
       [
        "Hauteur",
-       "Au-dessus du sol ou d'un terrain",
-       "Calé au **QFE**, l'altimètre lit 0 sur le terrain"
+       "Au-dessus du sol ou d’un terrain",
+       "Calé au **QFE**, l’altimètre lit 0 sur le terrain"
       ],
       [
        "Pression (Zp)",
@@ -428,42 +428,42 @@
       [
        "Densité (Zd)",
        "Altitude ISA de même **densité**",
-       "≈ Zp + 120 ft par °C d'écart ISA : **performances**"
+       "≈ Zp + 120 ft par °C d’écart ISA : **performances**"
       ],
       [
        "Vraie",
        "Réelle, **au-dessus de la mer**",
-       "Air froid : **plus bas** qu'indiqué (≈ 4 % par 10 °C sous l'ISA)"
+       "Air froid : **plus bas** qu’indiqué (≈ 4 % par 10 °C sous l’ISA)"
       ]
      ],
      "note": "Les 4 % portent sur la hauteur au-dessus de la station qui donne le QNH. Exemple : terrain à 1 200 ft, QNH 1 003 hPa, 26 °C → Zp ≈ 1 480 ft, Zd ≈ 3 160 ft."
     },
     {
      "type": "memo",
-     "text": "**« Du chaud vers le froid, des hautes vers les basses pressions : plus bas qu'indiqué. »** Calé sur 1 020 hPa quand le QNH local est 1 010, tu es environ **280 ft plus bas** qu'affiché (28 ft par hPa)."
+     "text": "**« Du chaud vers le froid, des hautes vers les basses pressions : plus bas qu’indiqué. »** Calé sur 1 020 hPa quand le QNH local est 1 010, tu es environ **280 ft plus bas** qu’affiché (28 ft par hPa)."
     }
    ]
   },
   {
    "title": "Triangle des vitesses et calcul mental",
-   "summary": "Le vent s'ajoute à l'avion : tu décales ton cap vers le vent, et ta vitesse sol change.",
+   "summary": "Le vent s’ajoute à l’avion : tu décales ton cap vers le vent, et ta vitesse sol change.",
    "blocks": [
     {
      "type": "bullets",
      "items": [
-      "**Vent (Vw)** : direction **d'où il vient** et force. **Vrai** dans les METAR, TAF et cartes de vents en altitude (WINTEM) ; **magnétique** à la tour et à l'ATIS (message enregistré de l'aérodrome).",
-      "**Dérive (X)** : angle entre cap et route. Vent de gauche → dérive droite. **Angle au vent (α)** : entre la route et la direction d'où vient le vent."
+      "**Vent (Vw)** : direction **d’où il vient** et force. **Vrai** dans les METAR, TAF et cartes de vents en altitude (WINTEM) ; **magnétique** à la tour et à l’ATIS (message enregistré de l’aérodrome).",
+      "**Dérive (X)** : angle entre cap et route. Vent de gauche → dérive droite. **Angle au vent (α)** : entre la route et la direction d’où vient le vent."
      ]
     },
     {
      "type": "key",
-     "text": "Dérive **maximale** vent de travers, **nulle** vent de face ou arrière, qui ne change que la Vs. Sur un aller-retour, le vent **allonge toujours** la durée : 2 × 100 NM à 100 kt avec 20 kt dans l'axe, 2 h 05 au lieu de 2 h.\nContrôle chaque calcul : la Vs ne dépasse jamais Vp + vent."
+     "text": "Dérive **maximale** vent de travers, **nulle** vent de face ou arrière, qui ne change que la Vs. Sur un aller-retour, le vent **allonge toujours** la durée : 2 × 100 NM à 100 kt avec 20 kt dans l’axe, 2 h 05 au lieu de 2 h.\nContrôle chaque calcul : la Vs ne dépasse jamais Vp + vent."
     },
     {
      "type": "diagram",
      "title": "Le triangle des vitesses",
-     "svg": "<svg viewBox=\"0 0 720 246\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"246\" fill=\"#ffffff\"/><g transform=\"translate(0,-44)\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"300\" fill=\"#ffffff\"/><defs><marker id=\"u5tb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker><marker id=\"u5tr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker><marker id=\"u5tk\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#14213d\"/></marker></defs><line x1=\"70\" y1=\"240\" x2=\"70\" y2=\"152\" stroke=\"#14213d\" stroke-width=\"1.6\" marker-end=\"url(#u5tk)\"/><text x=\"70\" y=\"140\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Nv</text><line x1=\"475.6\" y1=\"130.9\" x2=\"556\" y2=\"130.9\" stroke=\"#6b7489\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><text x=\"562\" y=\"135\" font-size=\"13\" font-style=\"italic\" fill=\"#6b7489\">axe de la route</text><line x1=\"475.6\" y1=\"130.9\" x2=\"517.6\" y2=\"58.2\" stroke=\"#c0392b\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><text x=\"526\" y=\"66\" font-size=\"13\" font-style=\"italic\" fill=\"#c0392b\">le vent vient d'ici</text><path d=\"M 509.6 130.9 A 34 34 0 0 0 492.6 101.5\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"514\" y=\"112\" font-size=\"16\" font-weight=\"700\" fill=\"#c0392b\">α</text><line x1=\"70\" y1=\"240\" x2=\"475.6\" y2=\"130.9\" stroke=\"#1d4e89\" stroke-width=\"3.2\" marker-end=\"url(#u5tb)\"/><line x1=\"475.6\" y1=\"130.9\" x2=\"412.6\" y2=\"240\" stroke=\"#c0392b\" stroke-width=\"3.2\" marker-end=\"url(#u5tr)\"/><line x1=\"70\" y1=\"240\" x2=\"412.6\" y2=\"240\" stroke=\"#14213d\" stroke-width=\"3.6\" marker-end=\"url(#u5tk)\"/><path d=\"M 190 240 A 120 120 0 0 0 185.9 208.8\" fill=\"none\" stroke=\"#d35400\" stroke-width=\"2.4\"/><text x=\"198\" y=\"233\" font-size=\"14\" font-weight=\"700\" fill=\"#d35400\">X (dérive)</text><text transform=\"translate(268,171) rotate(-15.06)\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">Vp (TAS) : vitesse propre, sur le cap Cv</text><text x=\"241\" y=\"264\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Vs (GS) : vitesse sol, sur la route Rv</text><text x=\"452\" y=\"196\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\">Vw : vent</text><rect x=\"548\" y=\"160\" width=\"164\" height=\"124\" rx=\"6\" fill=\"#f3f5f9\" stroke=\"#d6dbe6\"/><text x=\"560\" y=\"186\" font-size=\"16\" font-weight=\"700\" fill=\"#14213d\">Vp + Vw = Vs</text><text x=\"560\" y=\"210\" font-size=\"13\" fill=\"#14213d\">Vp : sur le cap Cv</text><text x=\"560\" y=\"230\" font-size=\"13\" fill=\"#14213d\">Vs : sur la route Rv</text><text x=\"560\" y=\"250\" font-size=\"13\" fill=\"#d35400\">X : angle cap–route</text><text x=\"560\" y=\"270\" font-size=\"13\" fill=\"#c0392b\">α : angle route–vent</text></g></svg>",
-     "caption": "À l'échelle : Vp 100 kt, vent de 30 kt venant de 60° à gauche de la route. Exact : X ≈ 15°, Vs ≈ 82 kt ; de tête : 16° et 85 kt."
+     "svg": "<svg viewBox=\"0 0 720 246\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"246\" fill=\"#ffffff\"/><g transform=\"translate(0,-44)\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"300\" fill=\"#ffffff\"/><defs><marker id=\"u5tb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker><marker id=\"u5tr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker><marker id=\"u5tk\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#14213d\"/></marker></defs><line x1=\"70\" y1=\"240\" x2=\"70\" y2=\"152\" stroke=\"#14213d\" stroke-width=\"1.6\" marker-end=\"url(#u5tk)\"/><text x=\"70\" y=\"140\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Nv</text><line x1=\"475.6\" y1=\"130.9\" x2=\"556\" y2=\"130.9\" stroke=\"#6b7489\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><text x=\"562\" y=\"135\" font-size=\"13\" font-style=\"italic\" fill=\"#6b7489\">axe de la route</text><line x1=\"475.6\" y1=\"130.9\" x2=\"517.6\" y2=\"58.2\" stroke=\"#c0392b\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><text x=\"526\" y=\"66\" font-size=\"13\" font-style=\"italic\" fill=\"#c0392b\">le vent vient d’ici</text><path d=\"M 509.6 130.9 A 34 34 0 0 0 492.6 101.5\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"514\" y=\"112\" font-size=\"16\" font-weight=\"700\" fill=\"#c0392b\">α</text><line x1=\"70\" y1=\"240\" x2=\"475.6\" y2=\"130.9\" stroke=\"#1d4e89\" stroke-width=\"3.2\" marker-end=\"url(#u5tb)\"/><line x1=\"475.6\" y1=\"130.9\" x2=\"412.6\" y2=\"240\" stroke=\"#c0392b\" stroke-width=\"3.2\" marker-end=\"url(#u5tr)\"/><line x1=\"70\" y1=\"240\" x2=\"412.6\" y2=\"240\" stroke=\"#14213d\" stroke-width=\"3.6\" marker-end=\"url(#u5tk)\"/><path d=\"M 190 240 A 120 120 0 0 0 185.9 208.8\" fill=\"none\" stroke=\"#d35400\" stroke-width=\"2.4\"/><text x=\"198\" y=\"233\" font-size=\"14\" font-weight=\"700\" fill=\"#d35400\">X (dérive)</text><text transform=\"translate(268,171) rotate(-15.06)\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">Vp (TAS) : vitesse propre, sur le cap Cv</text><text x=\"241\" y=\"264\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">Vs (GS) : vitesse sol, sur la route Rv</text><text x=\"452\" y=\"196\" font-size=\"14\" font-weight=\"700\" fill=\"#c0392b\">Vw : vent</text><rect x=\"548\" y=\"160\" width=\"164\" height=\"124\" rx=\"6\" fill=\"#f3f5f9\" stroke=\"#d6dbe6\"/><text x=\"560\" y=\"186\" font-size=\"16\" font-weight=\"700\" fill=\"#14213d\">Vp + Vw = Vs</text><text x=\"560\" y=\"210\" font-size=\"13\" fill=\"#14213d\">Vp : sur le cap Cv</text><text x=\"560\" y=\"230\" font-size=\"13\" fill=\"#14213d\">Vs : sur la route Rv</text><text x=\"560\" y=\"250\" font-size=\"13\" fill=\"#d35400\">X : angle cap–route</text><text x=\"560\" y=\"270\" font-size=\"13\" fill=\"#c0392b\">α : angle route–vent</text></g></svg>",
+     "caption": "À l’échelle : Vp 100 kt, vent de 30 kt venant de 60° à gauche de la route. Exact : X ≈ 15°, Vs ≈ 82 kt ; de tête : 16° et 85 kt."
     },
     {
      "type": "formula",
@@ -524,13 +524,13 @@
   },
   {
    "title": "Préparer la navigation : log, carburant et computer",
-   "summary": "Au sol, tu transformes la carte en caps, temps et carburant : c'est le log de navigation.",
+   "summary": "Au sol, tu transformes la carte en caps, temps et carburant : c’est le log de navigation.",
    "blocks": [
     {
      "type": "formula",
      "label": "Temps, distance, vitesse",
      "formula": "T (min) = D (NM) × 60 / Vs (kt)\nVs (kt) = D × 60 / T (min) ; D (NM) = Vs × T (min) / 60\nNM par minute = Vs / 60 : 90 kt → 1,5 ; 120 kt → 2",
-     "example": "75 NM à 90 kt : 75 × 60 / 90 = **50 min**. Repères distants de 18 NM passés à 10:12 et 10:21 : 18 × 60 / 9 = **120 kt**."
+     "example": "75 NM à 90 kt : 75 × 60 / 90 = **50 min**. Repères distants de 18 NM passés à 10 h 12 et 10 h 21 : 18 × 60 / 9 = **120 kt**."
     },
     {
      "type": "table",
@@ -570,40 +570,40 @@
     },
     {
      "type": "formula",
-     "label": "Altitude de sécurité d'une branche",
+     "label": "Altitude de sécurité d’une branche",
      "formula": "Point le plus haut dans une bande autour du trait (par ex. ± 5 NM)\n+ marge choisie : au moins 500 ft, davantage en relief ou par air froid",
      "example": "Sommet coté 1 640 ft et pylône 1 380 (420) dans la bande. Le pylône culmine à 1 380 ft : le point le plus haut est le sommet. Marge 1 000 ft : **2 640 ft**."
     },
     {
      "type": "bullets",
      "items": [
-      "Au-dessus de l'altitude de sécurité et des hauteurs minimales SERA, sous les espaces à éviter et les nuages.",
+      "Au-dessus de l’altitude de sécurité et des hauteurs minimales SERA, sous les espaces à éviter et les nuages.",
       "Au-dessus de 3 000 ft **par rapport au sol**, règle semi-circulaire sur la **route magnétique** : 000 à 179°, milliers impairs + 500 ft (3 500, 5 500 ft…) ; 180 à 359°, milliers pairs + 500 ft (4 500, 6 500 ft…).",
       "**WINTEM** : vérifie la validité, interpole. 270°/15 kt au FL 020 et 290°/25 kt au FL 050 → ≈ 280°/20 kt vers 3 500 ft."
      ],
-     "title": "Choisir l'altitude de croisière et le vent"
+     "title": "Choisir l’altitude de croisière et le vent"
     },
     {
      "type": "formula",
      "label": "Carburant et autonomie",
-     "formula": "Carburant d'étape = consommation horaire × temps (calculé avec la Vs)\nAutonomie = carburant utilisable / consommation horaire\nAu départ = roulage + étape + déroutement + réserve finale + marge\nDans les réservoirs : ce total + le carburant inutilisable",
-     "example": "120 NM à Vs 100 kt = 1,2 h ; 1,2 × 30 l/h = 36 l ; réserve 30 min = 15 l : **51 l** hors roulage. 90 l à 30 l/h = 3 h d'autonomie, dont **2 h 30** pour le trajet."
+     "formula": "Carburant d’étape = consommation horaire × temps (calculé avec la Vs)\nAutonomie = carburant utilisable / consommation horaire\nAu départ = roulage + étape + déroutement + réserve finale + marge\nDans les réservoirs : ce total + le carburant inutilisable",
+     "example": "120 NM à Vs 100 kt = 1,2 h ; 1,2 × 30 L/h = 36 L ; réserve 30 min = 15 L : **51 L** hors roulage. 90 L à 30 L/h = 3 h d’autonomie, dont **2 h 30** pour le trajet."
     },
     {
      "type": "key",
-     "text": "Avion en VFR : **30 min de jour**, **45 min de nuit**, en vitesse d'attente à 1 500 ft au-dessus de la destination. **10 min** en vol local de jour, toujours en vue du terrain, à la puissance maximale de croisière continue. Depuis le 30 octobre 2022 (règlement (UE) 2021/1296). Le carburant **inutilisable** ne compte jamais.",
+     "text": "Avion en VFR : **30 min de jour**, **45 min de nuit**, en vitesse d’attente à 1 500 ft au-dessus de la destination. **10 min** en vol local de jour, toujours en vue du terrain, à la puissance maximale de croisière continue. Depuis le 30 octobre 2022 (règlement (UE) 2021/1296). Le carburant **inutilisable** ne compte jamais.",
      "title": "Réserve finale (Part-NCO, AMC1 NCO.OP.125(b))"
     },
     {
      "type": "trap",
-     "text": "Calculer le carburant avec la Vp au lieu de la Vs. Écrire 1 h 12 min = 1,12 h (48,6 l au lieu de 51 l). Oublier de retrancher la réserve de l'autonomie. Prendre le vent de l'ATIS (magnétique) avec une route vraie."
+     "text": "Calculer le carburant avec la Vp au lieu de la Vs. Écrire 1 h 12 min = 1,12 h (48,6 L au lieu de 51 L). Oublier de retrancher la réserve de l’autonomie. Prendre le vent de l’ATIS (magnétique) avec une route vraie."
     },
     {
      "type": "steps",
      "items": [
-      "Place le **repère 60** (index des heures, souvent une flèche) de l'échelle intérieure face à la **Vs**. Lis la **distance** (extérieur) en face du **temps** (intérieur).",
+      "Place le **repère 60** (index des heures, souvent une flèche) de l’échelle intérieure face à la **Vs**. Lis la **distance** (extérieur) en face du **temps** (intérieur).",
       "Carburant : **consommation horaire** face au repère 60, carburant lu en face du temps. Vp : dans la fenêtre, altitude-pression sur température, Vp lue en face de la Vc.",
-      "Pas de virgule : « 12 » vaut 1,2, 12 ou 120. **Estime l'ordre de grandeur de tête.** La face vent résout le triangle des vitesses."
+      "Pas de virgule : « 12 » vaut 1,2, 12 ou 120. **Estime l’ordre de grandeur de tête.** La face vent résout le triangle des vitesses."
      ],
      "title": "Le computer de navigation (CRP-5, E6B)"
     }
@@ -611,13 +611,13 @@
   },
   {
    "title": "En vol : navigation à vue, recalage et déroutement",
-   "summary": "Tu navigues à l'estime, tu contrôles sur des repères au sol et tu corriges cap et heures.",
+   "summary": "Tu navigues à l’estime, tu contrôles sur des repères au sol et tu corriges cap et heures.",
    "blocks": [
     {
      "type": "steps",
      "items": [
-      "Carte tenue **route en haut**. **Top** à la verticale du départ : note l'heure, prends le cap, calcule les HE.",
-      "**Montre, carte, sol** : le temps te place sur le trait, la carte dit quoi voir, tu le cherches dehors. **De la carte vers le sol**, jamais l'inverse.",
+      "Carte tenue **route en haut**. **Top** à la verticale du départ : note l’heure, prends le cap, calcule les HE.",
+      "**Montre, carte, sol** : le temps te place sur le trait, la carte dit quoi voir, tu le cherches dehors. **De la carte vers le sol**, jamais l’inverse.",
       "À chaque repère, compare HR et HE, recalcule Vs et HE (**recalage en distance**). À côté de la route ? Confirme par deux repères, corrige au 1 sur 60 (**recalage en direction**).",
       "À chaque point tournant, compare carburant restant (jauges et calcul) et besoin ; retiens la valeur **la plus faible**."
      ],
@@ -625,20 +625,20 @@
     },
     {
      "type": "example",
-     "text": "Branche de 42 NM prévue à Vs 105 kt (24 min), top à 13:40. Tu passes le repère des 14 NM à 13:50 au lieu de 13:48. Vs réelle : 14 × 60 / 10 = **84 kt**. Restent 28 NM, soit 20 min : nouvelle HE **14:10** au lieu de 14:04.",
+     "text": "Branche de 42 NM prévue à Vs 105 kt (24 min), top à 13 h 40. Tu passes le repère des 14 NM à 13 h 50 au lieu de 13 h 48. Vs réelle : 14 × 60 / 10 = **84 kt**. Restent 28 NM, soit 20 min : nouvelle HE **14 h 10** au lieu de 14 h 04.",
      "title": "Recalage en distance"
     },
     {
      "type": "diagram",
      "title": "La règle du 1 sur 60",
      "svg": "<svg viewBox=\"0 0 720 140\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"140\" fill=\"#ffffff\"/><g transform=\"translate(0,-44)\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"240\" fill=\"#ffffff\"/><defs><marker id=\"u5sr\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#c0392b\"/></marker><marker id=\"u5sg\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2e7d4f\"/></marker></defs><line x1=\"80\" y1=\"80\" x2=\"640\" y2=\"80\" stroke=\"#14213d\" stroke-width=\"2.6\"/><line x1=\"360\" y1=\"72\" x2=\"360\" y2=\"88\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"220\" y=\"64\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">route prévue · 30 NM parcourus</text><text x=\"500\" y=\"64\" font-size=\"14\" fill=\"#14213d\" text-anchor=\"middle\">30 NM restants</text><circle cx=\"80\" cy=\"80\" r=\"5.5\" fill=\"#14213d\"/><circle cx=\"640\" cy=\"80\" r=\"5.5\" fill=\"#14213d\"/><text x=\"66\" y=\"85\" font-size=\"16\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"end\">A</text><text x=\"66\" y=\"104\" font-size=\"13\" fill=\"#3d4a66\" text-anchor=\"end\">départ</text><text x=\"654\" y=\"85\" font-size=\"16\" font-weight=\"700\" fill=\"#14213d\">B</text><text x=\"654\" y=\"104\" font-size=\"13\" fill=\"#3d4a66\">arrivée</text><line x1=\"360\" y1=\"136\" x2=\"490\" y2=\"162\" stroke=\"#c0392b\" stroke-width=\"1.8\" stroke-dasharray=\"6 5\"/><text x=\"498\" y=\"170\" font-size=\"13\" font-style=\"italic\" fill=\"#c0392b\">sans correction</text><line x1=\"80\" y1=\"80\" x2=\"356\" y2=\"135.2\" stroke=\"#c0392b\" stroke-width=\"3.2\" marker-end=\"url(#u5sr)\"/><line x1=\"360\" y1=\"136\" x2=\"633\" y2=\"81.4\" stroke=\"#2e7d4f\" stroke-width=\"3.2\" marker-end=\"url(#u5sg)\"/><circle cx=\"360\" cy=\"136\" r=\"5\" fill=\"#c0392b\"/><text x=\"360\" y=\"160\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"middle\">ta position</text><text transform=\"translate(212,123) rotate(11.31)\" font-size=\"13\" fill=\"#c0392b\" text-anchor=\"middle\">route réellement suivie</text><text transform=\"translate(563,114) rotate(-11.31)\" font-size=\"13\" fill=\"#2e7d4f\" text-anchor=\"middle\">nouveau cap vers B</text><line x1=\"360\" y1=\"84\" x2=\"360\" y2=\"130\" stroke=\"#3d4a66\" stroke-width=\"1.4\" stroke-dasharray=\"3 3\"/><text x=\"368\" y=\"112\" font-size=\"14\" font-weight=\"700\" fill=\"#14213d\">écart 3 NM</text><path d=\"M 190 80 A 110 110 0 0 1 187.9 101.6\" fill=\"none\" stroke=\"#d35400\" stroke-width=\"2.4\"/><text x=\"196\" y=\"98\" font-size=\"14\" font-weight=\"700\" fill=\"#d35400\">6°</text><path d=\"M 530 80 A 110 110 0 0 0 532.1 101.6\" fill=\"none\" stroke=\"#d35400\" stroke-width=\"2.4\"/><text x=\"522\" y=\"98\" font-size=\"14\" font-weight=\"700\" fill=\"#d35400\" text-anchor=\"end\">6°</text><path d=\"M 409 126.2 A 50 50 0 0 1 409 145.8\" fill=\"none\" stroke=\"#2e7d4f\" stroke-width=\"2.4\"/><text x=\"420\" y=\"141\" font-size=\"14\" font-weight=\"700\" fill=\"#2e7d4f\">12°</text></g></svg>",
-     "caption": "3 NM à droite après 30 NM, 30 NM restants : 6° d'erreur + 6° de convergence = 12° à gauche. Écart exagéré pour la lisibilité ; en ne corrigeant que de 6°, tu volerais parallèle à la route."
+     "caption": "3 NM à droite après 30 NM, 30 NM restants : 6° d’erreur + 6° de convergence = 12° à gauche. Écart exagéré pour la lisibilité ; en ne corrigeant que de 6°, tu volerais parallèle à la route."
     },
     {
      "type": "formula",
      "label": "Règle du 1 sur 60",
      "formula": "Écart (NM) = angle (°) × distance (NM) / 60\nErreur de route (°) = écart × 60 / distance parcourue\nConvergence (°) = écart × 60 / distance restante\nVers la destination : corrige de erreur + convergence\nRejoindre la route : 2 × erreur, puis 1 × erreur une fois dessus",
-     "example": "2 NM à gauche après 20 NM, 30 NM restants : erreur 2 × 60 / 20 = 6°, convergence 2 × 60 / 30 = 4° → **10° à droite**. Un cap faux de 4° pendant 45 NM : 4 × 45 / 60 = **3 NM** d'écart."
+     "example": "2 NM à gauche après 20 NM, 30 NM restants : erreur 2 × 60 / 20 = 6°, convergence 2 × 60 / 30 = 4° → **10° à droite**. Un cap faux de 4° pendant 45 NM : 4 × 45 / 60 = **3 NM** d’écart."
     },
     {
      "type": "formula",
@@ -666,13 +666,13 @@
        "Tu es à hauteur du point"
       ],
       [
-       "**Ligne d'arrêt**",
+       "**Ligne d’arrêt**",
        "Au-delà de la destination",
        "But dépassé : reviens"
       ],
       [
        "**Ligne de sécurité**",
-       "D'un côté de la route, choisie au sol",
+       "D’un côté de la route, choisie au sol",
        "Limite à ne pas franchir ; refuge en cas de doute"
       ],
       [
@@ -685,25 +685,25 @@
     {
      "type": "steps",
      "items": [
-      "Décide **tôt** : dès qu'une limite fixée au sol est atteinte (visibilité, plafond, carburant, nuit), fais demi-tour ou déroute-toi, tant que tu vois assez pour virer.",
+      "Décide **tôt** : dès qu’une limite fixée au sol est atteinte (visibilité, plafond, carburant, nuit), fais demi-tour ou déroute-toi, tant que tu vois assez pour virer.",
       "Sur un repère identifié, vise le terrain préparé au sol (ou un autre) par un cap estimé. Par visibilité réduite, ralentis : plus de temps pour voir.",
-      "Estime distance, Vs, temps, carburant et altitude de sécurité. Préviens l'ATS (services de la circulation aérienne), par exemple le SIV."
+      "Estime distance, Vs, temps, carburant et altitude de sécurité. Préviens l’ATS (services de la circulation aérienne), par exemple le SIV."
      ],
      "title": "Faire demi-tour ou se dérouter"
     },
     {
      "type": "steps",
      "items": [
-      "**Pilote** : ailes à plat, cap et altitude tenus, heure notée. Ne tourne pas au hasard : tu ruinerais l'estime.",
+      "**Pilote** : ailes à plat, cap et altitude tenus, heure notée. Ne tourne pas au hasard : tu ruinerais l’estime.",
       "Cap, temps et Vs depuis le dernier point sûr donnent une zone probable : cherches-y une ligne, puis un point. **Monte** si plafond et espaces le permettent.",
-      "Appelle tôt l'organisme en contact ou le **SIV**, sinon **121,5 MHz** : « position incertaine ». Urgence : PAN PAN ou MAYDAY, **7700** si aucun code attribué.",
+      "Appelle tôt l’organisme en contact ou le **SIV**, sinon **121,5 MHz** : « position incertaine ». Urgence : PAN PAN ou MAYDAY, **7700** si aucun code attribué.",
       "Toujours perdu : **cap sécurisant** vers la ligne de sécurité, puis suis-la. Fixe une heure limite : atterrissage de précaution avant la nuit et avant la réserve finale."
      ],
      "title": "Si tu es égaré"
     },
     {
      "type": "trap",
-     "text": "Ne corriger que de l'erreur de route : tu voles parallèle à la route. Garder les HE prévues malgré un retard : l'erreur grandit. Identifier un repère du sol vers la carte. Croire le GNSS contre des repères sûrs et recoupés : **crois tes yeux**, puis vérifie sa saisie."
+     "text": "Ne corriger que de l’erreur de route : tu voles parallèle à la route. Garder les HE prévues malgré un retard : l’erreur grandit. Identifier un repère du sol vers la carte. Croire le GNSS contre des repères sûrs et recoupés : **crois tes yeux**, puis vérifie sa saisie."
     }
    ]
   },
@@ -714,15 +714,15 @@
     {
      "type": "bullets",
      "items": [
-      "**Radiale = QDR** : route magnétique qui **s'éloigne** de la station ; le **QDM** y ramène. À l'OBS (sélecteur de route), affiche la route à suivre.",
-      "**TO** : la route affichée rapproche de la station ; **FROM** : elle en éloigne. OBS 090, FROM, aiguille centrée : tu es **sur la radiale 090**, à l'est.",
-      "Identifie la station par son **indicatif morse** ; un signal inexploitable fait apparaître le **drapeau** d'alarme. Portée VHF ≈ 1,23 × √(hauteur en ft) NM : à 4 900 ft, ≈ 86 NM."
+      "**Radiale = QDR** : route magnétique qui **s’éloigne** de la station ; le **QDM** y ramène. À l’OBS (sélecteur de route), affiche la route à suivre.",
+      "**TO** : la route affichée rapproche de la station ; **FROM** : elle en éloigne. OBS 090, FROM, aiguille centrée : tu es **sur la radiale 090**, à l’est.",
+      "Identifie la station par son **indicatif morse** ; un signal inexploitable fait apparaître le **drapeau** d’alarme. Portée VHF ≈ 1,23 × √(hauteur en ft) NM : à 4 900 ft, ≈ 86 NM."
      ]
     },
     {
      "type": "formula",
      "label": "QDR, QDM, gisement",
-     "formula": "QDM = QDR ± 180°\nADF : QDM = Cm + gisement (− 360 si besoin)\nQTE (vrai, depuis la station) = QDR + Dm\nQUJ (vrai, vers la station) = QDM + Dm\nDm : celle de la station pour un VOR, celle de l'avion pour un NDB",
+     "formula": "QDM = QDR ± 180°\nADF : QDM = Cm + gisement (− 360 si besoin)\nQTE (vrai, depuis la station) = QDR + Dm\nQUJ (vrai, vers la station) = QDM + Dm\nDm : celle de la station pour un VOR, celle de l’avion pour un NDB",
      "example": "Sur la radiale 240, QDM **060°**. Cm 060°, gisement 330° : 390 − 360 = **QDM 030°**, QDR 210°."
     },
     {
@@ -731,7 +731,7 @@
      "columns": [
       "Moyen",
       "Bande",
-      "Ce qu'il donne, ses limites"
+      "Ce qu’il donne, ses limites"
      ],
      "rows": [
       [
@@ -765,15 +765,15 @@
     {
      "type": "diagram",
      "title": "Lire un VOR : TO, FROM et aiguille",
-     "svg": "<svg viewBox=\"0 0 720 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"244\" fill=\"#ffffff\"/><g transform=\"translate(0,-14)\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"320\" fill=\"#ffffff\"/><defs><marker id=\"u5vb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker><marker id=\"u5vg\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2e7d4f\"/></marker></defs><rect x=\"20\" y=\"20\" width=\"420\" height=\"115\" fill=\"#fdeee6\"/><rect x=\"20\" y=\"135\" width=\"420\" height=\"115\" fill=\"#e8f0fb\"/><text x=\"32\" y=\"44\" font-size=\"16\" font-weight=\"700\" fill=\"#b3401a\">Zone FROM</text><text x=\"32\" y=\"242\" font-size=\"16\" font-weight=\"700\" fill=\"#1d4e89\">Zone TO</text><line x1=\"20\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#6b7489\" stroke-width=\"1.4\" stroke-dasharray=\"6 5\"/><line x1=\"230\" y1=\"246\" x2=\"230\" y2=\"30\" stroke=\"#1d4e89\" stroke-width=\"2.6\" marker-end=\"url(#u5vb)\"/><text x=\"238\" y=\"44\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\">route affichée : 360</text><polygon points=\"240,135 235,143.7 225,143.7 220,135 225,126.3 235,126.3\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"135\" r=\"2.5\" fill=\"#14213d\"/><text x=\"246\" y=\"157\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\">VOR</text><path transform=\"translate(110,80) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"165\" cy=\"80\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"149\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"157\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"173\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"181\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"165\" cy=\"80\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"177\" y1=\"64\" x2=\"177\" y2=\"96\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"165\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">FROM</text><path transform=\"translate(330,80) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"385\" cy=\"80\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"369\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"377\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"393\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"401\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"385\" cy=\"80\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"373\" y1=\"64\" x2=\"373\" y2=\"96\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"385\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">FROM</text><path transform=\"translate(110,190) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"165\" cy=\"190\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"149\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"157\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"173\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"181\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"165\" cy=\"190\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"177\" y1=\"174\" x2=\"177\" y2=\"206\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"165\" y=\"230\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">TO</text><path transform=\"translate(330,190) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"385\" cy=\"190\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"369\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"377\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"393\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"401\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"385\" cy=\"190\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"373\" y1=\"174\" x2=\"373\" y2=\"206\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"385\" y=\"230\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">TO</text><text x=\"456\" y=\"36\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">Radiale et QDM</text><polygon points=\"482,82 477,90.7 467,90.7 462,82 467,73.3 477,73.3\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"472\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">VOR</text><line x1=\"488\" y1=\"74\" x2=\"668\" y2=\"74\" stroke=\"#1d4e89\" stroke-width=\"2.6\" marker-end=\"url(#u5vb)\"/><text x=\"578\" y=\"62\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">radiale 090 = QDR 090</text><line x1=\"668\" y1=\"90\" x2=\"488\" y2=\"90\" stroke=\"#2e7d4f\" stroke-width=\"2.6\" marker-end=\"url(#u5vg)\"/><text x=\"578\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">QDM 270 pour rejoindre</text><path transform=\"translate(694,82) rotate(-90)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><text x=\"456\" y=\"140\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">À retenir</text><text x=\"456\" y=\"162\" font-size=\"13\" fill=\"#14213d\">• TO ou FROM : selon ta position</text><text x=\"456\" y=\"182\" font-size=\"13\" fill=\"#14213d\">• aiguille : côté de la route</text><text x=\"468\" y=\"200\" font-size=\"13\" fill=\"#3d4a66\">(cap voisin de l'OBS)</text><text x=\"456\" y=\"220\" font-size=\"13\" fill=\"#14213d\">• demi-tour : rien ne change</text><text x=\"456\" y=\"240\" font-size=\"13\" fill=\"#14213d\">• 1 point de CDI ≈ 2°</text></g></svg>",
-     "caption": "Les quatre avions sont au cap 360, OBS sur 360. Le CDI (indicateur d'écart de route) dépend de leur seule position, pas de leur cap."
+     "svg": "<svg viewBox=\"0 0 720 244\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, sans-serif\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"244\" fill=\"#ffffff\"/><g transform=\"translate(0,-14)\"><rect x=\"0\" y=\"0\" width=\"720\" height=\"320\" fill=\"#ffffff\"/><defs><marker id=\"u5vb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#1d4e89\"/></marker><marker id=\"u5vg\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"13\" markerHeight=\"13\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#2e7d4f\"/></marker></defs><rect x=\"20\" y=\"20\" width=\"420\" height=\"115\" fill=\"#fdeee6\"/><rect x=\"20\" y=\"135\" width=\"420\" height=\"115\" fill=\"#e8f0fb\"/><text x=\"32\" y=\"44\" font-size=\"16\" font-weight=\"700\" fill=\"#b3401a\">Zone FROM</text><text x=\"32\" y=\"242\" font-size=\"16\" font-weight=\"700\" fill=\"#1d4e89\">Zone TO</text><line x1=\"20\" y1=\"135\" x2=\"440\" y2=\"135\" stroke=\"#6b7489\" stroke-width=\"1.4\" stroke-dasharray=\"6 5\"/><line x1=\"230\" y1=\"246\" x2=\"230\" y2=\"30\" stroke=\"#1d4e89\" stroke-width=\"2.6\" marker-end=\"url(#u5vb)\"/><text x=\"238\" y=\"44\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\">route affichée : 360</text><polygon points=\"240,135 235,143.7 225,143.7 220,135 225,126.3 235,126.3\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"135\" r=\"2.5\" fill=\"#14213d\"/><text x=\"246\" y=\"157\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\">VOR</text><path transform=\"translate(110,80) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"165\" cy=\"80\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"149\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"157\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"173\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"181\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"165\" cy=\"80\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"177\" y1=\"64\" x2=\"177\" y2=\"96\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"165\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">FROM</text><path transform=\"translate(330,80) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"385\" cy=\"80\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"369\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"377\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"393\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"401\" cy=\"80\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"385\" cy=\"80\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"373\" y1=\"64\" x2=\"373\" y2=\"96\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"385\" y=\"120\" font-size=\"13\" font-weight=\"700\" fill=\"#b3401a\" text-anchor=\"middle\">FROM</text><path transform=\"translate(110,190) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"165\" cy=\"190\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"149\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"157\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"173\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"181\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"165\" cy=\"190\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"177\" y1=\"174\" x2=\"177\" y2=\"206\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"165\" y=\"230\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">TO</text><path transform=\"translate(330,190) rotate(0)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><circle cx=\"385\" cy=\"190\" r=\"22\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"1.6\"/><circle cx=\"369\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"377\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"393\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"401\" cy=\"190\" r=\"1.8\" fill=\"#14213d\"/><circle cx=\"385\" cy=\"190\" r=\"3\" fill=\"none\" stroke=\"#14213d\" stroke-width=\"1.2\"/><line x1=\"373\" y1=\"174\" x2=\"373\" y2=\"206\" stroke=\"#c0392b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"385\" y=\"230\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">TO</text><text x=\"456\" y=\"36\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">Radiale et QDM</text><polygon points=\"482,82 477,90.7 467,90.7 462,82 467,73.3 477,73.3\" fill=\"#ffffff\" stroke=\"#14213d\" stroke-width=\"2\"/><text x=\"472\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#14213d\" text-anchor=\"middle\">VOR</text><line x1=\"488\" y1=\"74\" x2=\"668\" y2=\"74\" stroke=\"#1d4e89\" stroke-width=\"2.6\" marker-end=\"url(#u5vb)\"/><text x=\"578\" y=\"62\" font-size=\"13\" font-weight=\"700\" fill=\"#1d4e89\" text-anchor=\"middle\">radiale 090 = QDR 090</text><line x1=\"668\" y1=\"90\" x2=\"488\" y2=\"90\" stroke=\"#2e7d4f\" stroke-width=\"2.6\" marker-end=\"url(#u5vg)\"/><text x=\"578\" y=\"112\" font-size=\"13\" font-weight=\"700\" fill=\"#2e7d4f\" text-anchor=\"middle\">QDM 270 pour rejoindre</text><path transform=\"translate(694,82) rotate(-90)\" fill=\"#14213d\" d=\"M0,-16 C2.2,-16 2.8,-13 2.8,-9 L2.8,-4 L16,2.5 L16,5.5 L2.8,2.5 L2.8,9 L7.5,12.5 L7.5,15 L0,13.5 L-7.5,15 L-7.5,12.5 L-2.8,9 L-2.8,2.5 L-16,5.5 L-16,2.5 L-2.8,-4 L-2.8,-9 C-2.8,-13 -2.2,-16 0,-16 Z\"/><text x=\"456\" y=\"140\" font-size=\"15\" font-weight=\"700\" fill=\"#14213d\">À retenir</text><text x=\"456\" y=\"162\" font-size=\"13\" fill=\"#14213d\">• TO ou FROM : selon ta position</text><text x=\"456\" y=\"182\" font-size=\"13\" fill=\"#14213d\">• aiguille : côté de la route</text><text x=\"468\" y=\"200\" font-size=\"13\" fill=\"#3d4a66\">(cap voisin de l’OBS)</text><text x=\"456\" y=\"220\" font-size=\"13\" fill=\"#14213d\">• demi-tour : rien ne change</text><text x=\"456\" y=\"240\" font-size=\"13\" fill=\"#14213d\">• 1 point de CDI ≈ 2°</text></g></svg>",
+     "caption": "Les quatre avions sont au cap 360, OBS sur 360. Le CDI (indicateur d’écart de route) dépend de leur seule position, pas de leur cap."
     },
     {
      "type": "steps",
      "items": [
-      "**Te situer** : tourne l'OBS jusqu'à centrer l'aiguille. Avec **TO**, tu lis ton **QDM** ; avec **FROM**, ta **radiale**.",
-      "**Rejoindre une route** : affiche-la (TO vers la station, FROM pour t'en éloigner), puis prends un cap d'interception de **30 à 45°** du côté de l'aiguille.",
-      "**La suivre** : le cap qui garde l'aiguille centrée donne ta dérive. Près de la station, tiens le cap. À la verticale (cône de silence), aiguille et drapeau s'agitent jusqu'à la bascule TO → FROM."
+      "**Te situer** : tourne l’OBS jusqu’à centrer l’aiguille. Avec **TO**, tu lis ton **QDM** ; avec **FROM**, ta **radiale**.",
+      "**Rejoindre une route** : affiche-la (TO vers la station, FROM pour t’en éloigner), puis prends un cap d’interception de **30 à 45°** du côté de l’aiguille.",
+      "**La suivre** : le cap qui garde l’aiguille centrée donne ta dérive. Près de la station, tiens le cap. À la verticale (cône de silence), aiguille et drapeau s’agitent jusqu’à la bascule TO → FROM."
      ],
      "title": "Te situer et suivre une route au VOR"
     },
@@ -786,29 +786,29 @@
     {
      "type": "bullets",
      "items": [
-      "**ADF** : aiguille = gisement ; le **RMI** (rose asservie au cap) donne le QDM en tête, le QDR en queue. **Aucune alarme** : écoute l'indicatif. Aiguille sur le nez (ralliement) : trajectoire **courbe**.",
+      "**ADF** : aiguille = gisement ; le **RMI** (rose asservie au cap) donne le QDM en tête, le QDR en queue. **Aucune alarme** : écoute l’indicatif. Aiguille sur le nez (ralliement) : trajectoire **courbe**.",
       "**DME** : oblique ≈ sol dès que tu es à plus de **1 NM par 1 000 ft** de hauteur. Vitesse juste en route directe vers ou depuis la station ; sur un arc, ≈ 0. **Recoupement** : deux lignes de position, idéalement à **90°**."
      ],
      "title": "ADF, DME et recoupement"
     },
     {
      "type": "key",
-     "text": "Mode A : code à 4 chiffres. Mode C : en plus, l'**altitude-pression** (réf. 1 013,25 hPa, quel que soit ton calage). Mode S : adresse de l'avion.\nCodes : **7000** VFR, **7500** intervention illicite, **7600** panne radio, **7700** détresse. **IDENT** fait ressortir ton plot sur l'écran radar.",
+     "text": "Mode A : code à 4 chiffres. Mode C : en plus, l’**altitude-pression** (réf. 1 013,25 hPa, quel que soit ton calage). Mode S : adresse de l’avion.\nCodes : **7000** VFR, **7500** intervention illicite, **7600** panne radio, **7700** détresse ou urgence. **IDENT** fait ressortir ton plot sur l’écran radar.",
      "title": "Transpondeur"
     },
     {
      "type": "bullets",
      "items": [
       "Une **aide** : en VFR, la **carte et le sol** font foi ; sache naviguer sans lui.",
-      "**4 satellites** pour une position 3D (3 coordonnées + l'heure). **RAIM** (contrôle d'intégrité par le récepteur) : au moins **5**. **SBAS** (renforcement satellitaire, EGNOS) : corrections par satellites géostationnaires.",
-      "Limites : brouillage, masquage, saisie fausse, base périmée (cycle **AIRAC** de 28 jours). Une route « direct to » ignore relief, zones et espaces.",
-      "Altitude GNSS **géométrique** : jamais pour les limites d'espaces, qui se lisent à l'altimètre calé (QNH ou 1013)."
+      "**4 satellites** pour une position 3D (3 coordonnées + l’heure). **RAIM** (contrôle d’intégrité par le récepteur) : au moins **5**. **SBAS** (renforcement satellitaire, EGNOS) : corrections par satellites géostationnaires.",
+      "Limites : brouillage, masquage, saisie fausse, base périmée (cycle **AIRAC** de 28 jours). Une route « direct to » ignore relief, zones et espaces.",
+      "Altitude GNSS **géométrique** : jamais pour les limites d’espaces, qui se lisent à l’altimètre calé (QNH ou 1013)."
      ],
      "title": "GNSS (positionnement par satellites)"
     },
     {
      "type": "trap",
-     "text": "Confondre radiale et QDM : sur la radiale 240, tu rejoins la station au **060°**. Croire qu'un demi-tour inverse TO et FROM. Voler à l'opposé de la route affichée : l'aiguille se lit à l'envers. Croire que le mode C transmet l'altitude QNH."
+     "text": "Confondre radiale et QDM : sur la radiale 240, tu rejoins la station au **060°**. Croire qu’un demi-tour inverse TO et FROM. Voler à l’opposé de la route affichée : l’aiguille se lit à l’envers. Croire que le mode C transmet l’altitude QNH."
     }
    ]
   }
@@ -831,12 +831,12 @@
    "label": "1 kt (100 kt ≈ 185 km/h)"
   },
   {
-   "value": "3,785 l",
+   "value": "3,785 L",
    "label": "1 USG (gallon US)"
   },
   {
-   "value": "0,72 kg/l",
-   "label": "AVGAS (100 l ≈ 72 kg)"
+   "value": "0,72 kg/L",
+   "label": "AVGAS (100 L ≈ 72 kg)"
   },
   {
    "value": "1 cm = 5 km",
@@ -872,11 +872,11 @@
   },
   {
    "value": "28 ft/hPa",
-   "label": "écart d'altitude par hPa"
+   "label": "écart d’altitude par hPa"
   },
   {
    "value": "4 % / 10 °C",
-   "label": "air froid : plus bas qu'indiqué"
+   "label": "air froid : plus bas qu’indiqué"
   },
   {
    "value": "30 / 45 min",
@@ -911,12 +911,12 @@
    "label": "satellites : position 3D / RAIM"
   },
   {
-   "value": "7000 · 7500",
-   "label": "VFR · intervention illicite"
+   "value": "7000 / 7500",
+   "label": "VFR / intervention illicite"
   },
   {
-   "value": "7600 · 7700",
-   "label": "panne radio · détresse"
+   "value": "7600 / 7700",
+   "label": "panne radio / détresse ou urgence"
   },
   {
    "value": "1 013,25 hPa",
@@ -924,77 +924,77 @@
   },
   {
    "value": "121,5 MHz",
-   "label": "fréquence d'urgence"
+   "label": "fréquence d’urgence"
   }
  ],
  "glossary": [
   {
    "term": "Latitude, longitude",
-   "def": "Depuis l'équateur ; depuis Greenwich"
+   "def": "depuis l’équateur ; depuis Greenwich"
   },
   {
    "term": "Méridien, parallèle",
-   "def": "Pôle à pôle ; cercle de même latitude"
+   "def": "pôle à pôle ; cercle de même latitude"
   },
   {
    "term": "Orthodromie, loxodromie",
-   "def": "Plus court ; route constante"
+   "def": "plus court ; route constante"
   },
   {
    "term": "NM, kt",
-   "def": "Mille nautique (1 852 m) ; nœud"
+   "def": "mille nautique (1 852 m) ; nœud"
   },
   {
    "term": "UTC (Z)",
-   "def": "Temps universel, heure aéronautique"
+   "def": "temps universel, heure aéronautique"
   },
   {
    "term": "Déclinaison (Dm)",
-   "def": "Angle Nv–Nm, selon le lieu"
+   "def": "angle Nv–Nm, selon le lieu"
   },
   {
    "term": "Déviation (d)",
-   "def": "Angle Nm–Nc, selon l'avion et le cap"
+   "def": "angle Nm–Nc, selon l’avion et le cap"
   },
   {
    "term": "Isogone",
-   "def": "Ligne d'égale déclinaison (agonique : 0°)"
+   "def": "ligne d’égale déclinaison (agonique : 0°)"
   },
   {
    "term": "Conservateur de cap",
-   "def": "Gyro de cap, recalé sur le compas"
+   "def": "gyro de cap, recalé sur le compas"
   },
   {
    "term": "Lambert, Mercator",
-   "def": "Projections conique, cylindrique"
+   "def": "projections conique, cylindrique"
   },
   {
    "term": "VAC",
-   "def": "Carte d'approche et d'atterrissage à vue"
+   "def": "carte d’approche et d’atterrissage à vue"
   },
   {
    "term": "SIA, AIP",
-   "def": "Service, publication d'info aéronautique"
+   "def": "service, publication d’info aéronautique"
   },
   {
    "term": "Vi, Vc, Vp, Vs",
-   "def": "Indiquée, conventionnelle, propre, sol"
+   "def": "indiquée, conventionnelle, propre, sol"
   },
   {
    "term": "ISA",
-   "def": "Atmosphère standard (15 °C, 1 013,25 hPa)"
+   "def": "atmosphère standard (15 °C, 1 013,25 hPa)"
   },
   {
    "term": "QNH, QFE",
-   "def": "Calages : altitude, hauteur du terrain"
+   "def": "calages : altitude, hauteur du terrain"
   },
   {
    "term": "Dérive (X)",
-   "def": "Angle entre le cap et la route"
+   "def": "angle entre le cap et la route"
   },
   {
    "term": "Angle au vent (α)",
-   "def": "Angle route – origine du vent"
+   "def": "angle route – origine du vent"
   },
   {
    "term": "Vent effectif, traversier",
@@ -1002,63 +1002,63 @@
   },
   {
    "term": "WINTEM",
-   "def": "Vents (vrais) et températures en altitude"
+   "def": "vents (vrais) et températures en altitude"
   },
   {
    "term": "Estime",
-   "def": "Position par cap, Vs et temps"
+   "def": "position par cap, Vs et temps"
   },
   {
    "term": "HE, HR",
-   "def": "Heure estimée, heure réelle de passage"
+   "def": "heure estimée, heure réelle de passage"
   },
   {
    "term": "SIV",
-   "def": "Secteur d'information de vol"
+   "def": "secteur d’information de vol"
   },
   {
    "term": "VOR",
-   "def": "Radiophare VHF, 360 radiales"
+   "def": "radiophare VHF, 360 radiales"
   },
   {
    "term": "QDR, QDM",
-   "def": "Route magnétique depuis, vers la station"
+   "def": "route magnétique depuis, vers la station"
   },
   {
    "term": "QTE, QUJ",
-   "def": "Relèvement vrai depuis, route vraie vers"
+   "def": "relèvement vrai depuis, route vraie vers"
   },
   {
    "term": "OBS, CDI",
-   "def": "Sélecteur de route, indicateur d'écart"
+   "def": "sélecteur de route, indicateur d’écart"
   },
   {
    "term": "NDB, ADF",
-   "def": "Balise non directionnelle, radiocompas"
+   "def": "balise non directionnelle, radiocompas"
   },
   {
    "term": "Gisement",
-   "def": "Angle nez → balise, sens horaire"
+   "def": "angle nez → balise, sens horaire"
   },
   {
    "term": "RMI",
-   "def": "Rose asservie au cap : aiguille = QDM"
+   "def": "rose asservie au cap : aiguille = QDM"
   },
   {
    "term": "DME",
-   "def": "Mesure de distance oblique"
+   "def": "mesure de distance oblique"
   },
   {
    "term": "GNSS",
-   "def": "Positionnement par satellites"
+   "def": "positionnement par satellites"
   },
   {
    "term": "RAIM, SBAS",
-   "def": "Contrôle d'intégrité ; corrections GNSS"
+   "def": "contrôle d’intégrité ; corrections GNSS"
   },
   {
    "term": "AIRAC",
-   "def": "Cycle de mise à jour de 28 jours"
+   "def": "cycle de mise à jour de 28 jours"
   }
  ],
  "self_test": [
@@ -1067,8 +1067,8 @@
    "a": "90 NM (1°30′ = 90′)."
   },
   {
-   "q": "Coucher du soleil à 16:10 UTC en décembre : à quelle heure légale commence la nuit aéronautique ?",
-   "a": "16:40 UTC, soit 17 h 40 (hiver : UTC + 1)."
+   "q": "Coucher du soleil à 16 h 10 UTC en décembre : à quelle heure légale commence la nuit aéronautique ?",
+   "a": "16 h 40 UTC, soit 17 h 40 (hiver : UTC + 1)."
   },
   {
    "q": "Projection de la carte OACI au 1/500 000, et que représente une droite ?",
@@ -1083,7 +1083,7 @@
    "a": "≈ 187° (Xmax 12°, α 40°, X ≈ 7°, vent de droite)."
   },
   {
-   "q": "Vc 100 kt à 6 000 ft d'altitude-pression, en ISA : vitesse propre ?",
+   "q": "Vc 100 kt à 6 000 ft d’altitude-pression, en ISA : vitesse propre ?",
    "a": "≈ 110 kt (10 tranches de 600 ft : + 10 %)."
   },
   {
@@ -1091,16 +1091,16 @@
    "a": "18° à droite (6° + 12°)."
   },
   {
-   "q": "90 NM à Vs 100 kt, 25 l/h, VFR de jour : temps et carburant minimum hors roulage ?",
-   "a": "54 min ; 22,5 l + 12,5 l de réserve = 35 l."
+   "q": "90 NM à Vs 100 kt, 25 L/h, VFR de jour : temps et carburant minimum hors roulage ?",
+   "a": "54 min ; 22,5 L + 12,5 L de réserve = 35 L."
   },
   {
-   "q": "Radiale 135 d'un VOR : QDM ? Puis ADF, Cm 090° et gisement 270° : QDM ?",
+   "q": "Radiale 135 d’un VOR : QDM ? Puis ADF, Cm 090° et gisement 270° : QDM ?",
    "a": "315° ; puis 360°."
   },
   {
    "q": "Que transmet le transpondeur en mode C ?",
-   "a": "L'altitude-pression (réf. 1 013,25 hPa), quel que soit ton calage."
+   "a": "L’altitude-pression (réf. 1 013,25 hPa), quel que soit ton calage."
   }
  ]
 }
