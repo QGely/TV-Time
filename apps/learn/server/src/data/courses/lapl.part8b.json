@@ -120,7 +120,7 @@
         "520 × 1,33 ≈ 692 m"
        ],
        "answer": 2,
-       "explanation": "La TODA (TORA + prolongement dégagé) se compare à la distance de passage des 15 m, ici 520 m ; le roulement de 290 m se compare à la TORA. Additionner les deux n'aurait pas de sens, puisque la distance des 15 m contient déjà le roulement, et le coefficient de 1,33 est déjà appliqué : le reprendre (692 m) le compterait deux fois."
+       "explanation": "La TODA (TORA + prolongement dégagé) se compare à la distance de passage des 15 m, ici 520 m ; le roulement de 290 m se compare à la TORA. L'écart entre les deux (230 m) ne se compare à aucune distance déclarée, et le coefficient de 1,33 est déjà appliqué : le reprendre (692 m) le compterait deux fois."
       },
       {
        "id": "u8s5q04",
@@ -340,15 +340,15 @@
       },
       {
        "id": "u8s5q22",
-       "q": "Étape de 180 NM avec 15 kt de vent de face. Tableau : 75 % → 115 kt et 33 L/h ; 60 % → 104 kt et 26 L/h. Combien de carburant le réglage à 60 % économise-t-il environ sur l'étape ?",
+       "q": "Étape de 270 NM avec 15 kt de vent de face. Tableau : 75 % → 115 kt et 33 L/h ; 60 % → 104 kt et 26 L/h. Combien de carburant le réglage à 60 % économise-t-il environ sur l'étape ?",
        "choices": [
-        "Environ 3 L",
         "Environ 7 L",
-        "Environ 12 L",
-        "Environ 15 L"
+        "Environ 10 L",
+        "Environ 14 L",
+        "Environ 19 L"
        ],
        "answer": 1,
-       "explanation": "À 75 % : Vs 100 kt, 180 / 100 = 1,8 h, soit 59,4 L. À 60 % : Vs 89 kt, 180 / 89 ≈ 2,02 h, soit environ 52,6 L. L'économie est d'environ 7 L, pour 13 minutes de vol en plus. Comparer les débits sans tenir compte des temps de vol ne répond pas à la question."
+       "explanation": "À 75 % : Vs 100 kt, 270 / 100 = 2,7 h, soit 89,1 L. À 60 % : Vs 89 kt, 270 / 89 ≈ 3,03 h, soit environ 78,9 L. L'économie est d'environ 10 L, pour 20 minutes de vol en plus. L'écart de débit (7 L/h) n'est pas une économie sur l'étape, et le multiplier par 2,7 h (19 L) oublie que le vol à 60 % dure plus longtemps."
       },
       {
        "id": "u8s5q23",
@@ -380,7 +380,7 @@
      "id": "u8s6",
      "title": "Exercices de masse et centrage",
      "icon": "🧮",
-     "tips": "Un devis de masse et centrage se remplit avant chaque vol dont le chargement change. Il vérifie deux choses, au décollage puis à l'atterrissage : la masse ne dépasse aucun maximum (MTOM, MLM, limite de chaque soute) et le centre de gravité reste dans l'enveloppe du manuel de vol. Les données viennent de la fiche de pesée (masse à vide équipée et son bras, ou son moment) et du manuel (bras des sièges, de la soute et des réservoirs, limites).\n\nMéthode en cinq étapes :\n• 1. Lister chaque élément : masse à vide équipée (carburant inutilisable et huile compris), pilote, passagers, bagages, carburant utilisable.\n• 2. Convertir le carburant : masse (kg) = volume (L) × 0,72.\n• 3. Calculer chaque moment : M = m × bras, en kg·m.\n• 4. Additionner masses et moments, puis CG = ΣM / Σm.\n• 5. Vérifier la masse et placer le point dans l'enveloppe, puis refaire le total en retirant le carburant consommé : sa masse et son moment, calculé au bras des réservoirs.\n\nExemple résolu A (avion fictif, référence à la cloison pare-feu, MTOM 1 050 kg) :\n• Masse à vide 650 kg à 0,95 m : 617,5 kg·m.\n• Pilote et passager avant 170 kg à 1,00 m : 170 kg·m.\n• Passager arrière 75 kg à 1,85 m : 138,75 kg·m.\n• Bagages 20 kg à 2,40 m : 48 kg·m.\n• Carburant 100 L = 72 kg à 0,80 m : 57,6 kg·m.\n• Total : 987 kg et 1 031,85 kg·m ; CG = 1 031,85 / 987 ≈ 1,045 m.\n• Atterrissage après 70 L consommés (50,4 kg ; 50,4 × 0,80 = 40,32 kg·m) : 936,6 kg et 991,53 kg·m, CG ≈ 1,059 m. Le réservoir étant en avant du CG, le CG recule au fil du vol.\nChargement B, même avion : pilote seul à l'avant (75 kg), deux passagers à l'arrière (160 kg), 10 kg de bagages, 90 L de carburant. Au décollage : 959,8 kg, CG ≈ 1,109 m, dans l'enveloppe. Après 75 L consommés : 905,8 kg, CG ≈ 1,127 m, en arrière de la limite de 1,12 m. Le vol n'est pas possible ainsi.\n\nAjouter, retirer, déplacer :\n• Ajouter ou retirer une masse : on ajoute ou on retranche sa masse et son moment, puis on redivise. Ex. : 1 000 kg, CG 1,08 m ; un passager arrière de 80 kg (1,85 m) descend : (1 080 − 148) / 920 ≈ 1,013 m.\n• Déplacer une masse sans changer la masse totale : ΔCG = m × Δd / M. Pour recentrer de ΔCG, la masse à déplacer vaut m = M × ΔCG / Δd. Ex. : 1 000 kg, CG 1,135 m, limite arrière 1,12 m ; un sac passe de la soute (2,40 m) au siège avant (1,00 m), Δd = 1,40 m : m = 1 000 × 0,015 / 1,40 ≈ 11 kg au minimum.\n• Échanger deux occupants : le moment varie de (différence de masse) × (différence de bras). 95 kg et 60 kg sur des sièges distants de 0,85 m : 35 × 0,85 ≈ 30 kg·m, soit 3 cm de CG à 1 000 kg.\n• Lest : la masse nécessaire vaut m = M × (CG visé − CG actuel) / (bras du lest − CG visé). Ex. : 1 000 kg, CG 0,94 m, limite avant 0,95 m, lest en soute à 2,40 m : m = 1 000 × 0,01 / 1,45 ≈ 7 kg, arrimés, en vérifiant la MTOM et la limite de soute.\n\nLire l'enveloppe :\n• Graphique masse/CG : masse en ordonnée, CG en abscisse ; le point doit rester à l'intérieur au décollage et à l'atterrissage.\n• La limite avant peut être inclinée, comme sur l'enveloppe fictive de cette leçon : elle recule quand la masse augmente. On l'interpole à la masse réelle. Ex. : 0,90 m jusqu'à 850 kg, puis 0,98 m à 1 050 kg → à 1 000 kg : 0,90 + 0,08 × 150/200 = 0,96 m.\n• Graphique masse/moment : même principe, en comparant le moment total aux moments admis à cette masse ; CG = moment / masse.\n• Bras négatif : si la référence est au bord d'attaque, un élément situé en avant (moteur, batterie) a un bras et un moment négatifs.\n\nConséquences d'un chargement hors limites :\n• Masse excessive : distances de décollage et d'atterrissage plus longues, montée dégradée, vitesse de décrochage plus élevée. À facteur de charge égal, les efforts sur la structure augmentent avec la masse : au-delà de la MTOM, la marge prévue n'est plus assurée.\n• Centrage avant : profondeur insuffisante pour la rotation ou l'arrondi, vitesse de décrochage un peu plus élevée.\n• Centrage arrière : stabilité en tangage réduite, tendance à cabrer, efforts au manche très légers ; sortie de décrochage ou de vrille compromise. C'est le cas le plus dangereux.\n• Limite de soute : limite structurale du compartiment (plancher, fixations), indépendante du centrage ; elle s'applique même si la masse totale et le CG sont corrects.\n\nPièges classiques :\n• Inscrire des litres comme des kilogrammes (100 L = 72 kg).\n• Oublier le centrage à l'atterrissage, surtout avec des passagers à l'arrière et un réservoir en avant du CG.\n• Retirer le carburant consommé au bras du CG au lieu du bras des réservoirs.\n• Croire qu'échanger pilote et passager avant change le centrage : même bras, même moment.\n• Réduire le carburant pour « alléger » sans voir que, réservoir en avant du CG, cela recule le CG.",
+     "tips": "Avant chaque vol, le pilote s'assure que la masse et le centrage restent dans les limites : il remplit un devis de masse et centrage, ou reprend un devis déjà établi pour un chargement identique (occupants, bagages, carburant). Il vérifie deux choses, au décollage puis à l'atterrissage : la masse ne dépasse aucun maximum (MTOM, MLM, limite de chaque soute) et le centre de gravité reste dans l'enveloppe du manuel de vol. Les données viennent de la fiche de pesée (masse à vide équipée et son bras, ou son moment) et du manuel (bras des sièges, de la soute et des réservoirs, limites).\n\nMéthode en cinq étapes :\n• 1. Lister chaque élément : masse à vide équipée (carburant inutilisable et huile compris), pilote, passagers, bagages, carburant utilisable.\n• 2. Convertir le carburant : masse (kg) = volume (L) × 0,72.\n• 3. Calculer chaque moment : M = m × bras, en kg·m.\n• 4. Additionner masses et moments, puis CG = ΣM / Σm.\n• 5. Vérifier la masse et placer le point dans l'enveloppe, puis refaire le total en retirant le carburant consommé : sa masse et son moment, calculé au bras des réservoirs.\n\nExemple résolu A (avion fictif, référence à la cloison pare-feu, MTOM 1 050 kg) :\n• Masse à vide 650 kg à 0,95 m : 617,5 kg·m.\n• Pilote et passager avant 170 kg à 1,00 m : 170 kg·m.\n• Passager arrière 75 kg à 1,85 m : 138,75 kg·m.\n• Bagages 20 kg à 2,40 m : 48 kg·m.\n• Carburant 100 L = 72 kg à 0,80 m : 57,6 kg·m.\n• Total : 987 kg et 1 031,85 kg·m ; CG = 1 031,85 / 987 ≈ 1,045 m.\n• Atterrissage après 70 L consommés (50,4 kg ; 50,4 × 0,80 = 40,32 kg·m) : 936,6 kg et 991,53 kg·m, CG ≈ 1,059 m. Le réservoir étant en avant du CG, le CG recule au fil du vol.\nChargement B, même avion : pilote seul à l'avant (75 kg), deux passagers à l'arrière (160 kg), 10 kg de bagages, 90 L de carburant. Au décollage : 959,8 kg, CG ≈ 1,109 m, dans l'enveloppe. Après 75 L consommés : 905,8 kg, CG ≈ 1,127 m, en arrière de la limite de 1,12 m. Le vol n'est pas possible ainsi.\n\nAjouter, retirer, déplacer :\n• Ajouter ou retirer une masse : on ajoute ou on retranche sa masse et son moment, puis on redivise. Ex. : 1 000 kg, CG 1,08 m ; un passager arrière de 80 kg (1,85 m) descend : (1 080 − 148) / 920 ≈ 1,013 m.\n• Déplacer une masse sans changer la masse totale : ΔCG = m × Δd / M. Pour recentrer de ΔCG, la masse à déplacer vaut m = M × ΔCG / Δd. Ex. : 1 000 kg, CG 1,135 m, limite arrière 1,12 m ; un sac passe de la soute (2,40 m) au siège avant (1,00 m), Δd = 1,40 m : m = 1 000 × 0,015 / 1,40 ≈ 11 kg au minimum.\n• Carburant consommable avant d'atteindre une limite : on résout (ΣM − m × bras des réservoirs) / (Σm − m) = limite, soit m = Σm × (limite − CG) / (limite − bras des réservoirs), en kilogrammes (÷ 0,72 pour des litres).\n• Échanger deux occupants : le moment varie de (différence de masse) × (différence de bras). 95 kg et 60 kg sur des sièges distants de 0,85 m : 35 × 0,85 ≈ 30 kg·m, soit 3 cm de CG à 1 000 kg.\n• Lest : la masse nécessaire vaut m = M × (CG visé − CG actuel) / (bras du lest − CG visé). Ex. : 1 000 kg, CG 0,94 m, limite avant 0,95 m, lest en soute à 2,40 m : m = 1 000 × 0,01 / 1,45 ≈ 7 kg, arrimés, en vérifiant la MTOM et la limite de soute.\n\nLire l'enveloppe :\n• Graphique masse/CG : masse en ordonnée, CG en abscisse ; le point doit rester à l'intérieur au décollage et à l'atterrissage.\n• La limite avant peut être inclinée, comme sur l'enveloppe fictive de cette leçon : elle recule quand la masse augmente. On l'interpole à la masse réelle. Ex. : 0,90 m jusqu'à 850 kg, puis 0,98 m à 1 050 kg → à 1 000 kg : 0,90 + 0,08 × 150/200 = 0,96 m.\n• Graphique masse/moment : même principe, en comparant le moment total aux moments admis à cette masse ; CG = moment / masse.\n• Bras négatif : si la référence est au bord d'attaque, un élément situé en avant (moteur, batterie) a un bras et un moment négatifs.\n\nConséquences d'un chargement hors limites :\n• Masse excessive : distances de décollage et d'atterrissage plus longues, montée dégradée, vitesse de décrochage plus élevée. À facteur de charge égal, les efforts sur la structure augmentent avec la masse : au-delà de la MTOM, la marge prévue n'est plus assurée.\n• Centrage avant : profondeur insuffisante pour la rotation ou l'arrondi, vitesse de décrochage un peu plus élevée.\n• Centrage arrière : stabilité en tangage réduite, tendance à cabrer, efforts au manche très légers ; sortie de décrochage ou de vrille compromise. C'est le cas le plus dangereux.\n• Limite de soute : limite structurale du compartiment (plancher, fixations), indépendante du centrage ; elle s'applique même si la masse totale et le CG sont corrects.\n\nPièges classiques :\n• Inscrire des litres comme des kilogrammes (100 L = 72 kg).\n• Oublier le centrage à l'atterrissage, surtout avec des passagers à l'arrière et un réservoir en avant du CG.\n• Retirer le carburant consommé au bras du CG au lieu du bras des réservoirs.\n• Croire qu'échanger pilote et passager avant change le centrage : même bras, même moment.\n• Réduire le carburant pour « alléger » sans voir que, réservoir en avant du CG, cela recule le CG.",
      "vocab": [
       {
        "term": "Devis de masse et centrage",
@@ -542,19 +542,19 @@
       },
       {
        "id": "u8s6q08",
-       "q": "Avion chargé : 1 000 kg, CG à 1,08 m. Un passager arrière de 80 kg (bras 1,85 m) descend. Où se trouve le nouveau CG ?",
+       "q": "Avion chargé : 1 020 kg, CG à 1,10 m. Un passager arrière de 85 kg (bras 1,85 m) descend. Où se trouve le nouveau CG ?",
        "choices": [
-        "Environ 0,93 m",
-        "Environ 1,01 m",
-        "1,08 m",
-        "Environ 1,14 m"
+        "Environ 0,95 m",
+        "Environ 1,03 m",
+        "1,10 m",
+        "Environ 1,16 m"
        ],
        "answer": 1,
-       "explanation": "Moment : 1 000 × 1,08 = 1 080 kg·m ; on retire 80 × 1,85 = 148 kg·m et 80 kg. CG = 932 / 920 ≈ 1,01 m : retirer une masse située en arrière du CG le fait avancer. 0,93 m vient d'une division par l'ancienne masse."
+       "explanation": "Moment : 1 020 × 1,10 = 1 122 kg·m ; on retire 85 × 1,85 ≈ 157 kg·m et 85 kg. CG = 965 / 935 ≈ 1,03 m : retirer une masse située en arrière du CG le fait avancer. 0,95 m vient d'une division par l'ancienne masse ; 1,16 m ajouterait le passager au lieu de le retirer."
       },
       {
        "id": "u8s6q09",
-       "q": "MTOM 1 000 kg ; masse à vide 620 kg ; occupants 240 kg ; bagages 25 kg. Les réservoirs contiennent 110 L utilisables. Pouvez-vous faire le plein ?",
+       "q": "MTOM 1 000 kg ; masse à vide 620 kg ; occupants 240 kg ; bagages 25 kg. Les réservoirs ont une capacité de 110 L utilisables. Pouvez-vous faire le plein ?",
        "choices": [
         "Oui, il reste environ 36 kg de marge sous la MTOM",
         "Oui, mais il ne reste qu'environ 5 kg de marge",
@@ -590,15 +590,15 @@
       },
       {
        "id": "u8s6q12",
-       "q": "Avion de 1 000 kg, CG à 1,135 m, limite arrière 1,12 m. Quelle masse minimale devez-vous déplacer de la soute (bras 2,40 m) vers le siège avant libre (bras 1,00 m) ?",
+       "q": "Avion de 960 kg, CG à 1,14 m, limite arrière 1,12 m. Quelle masse minimale devez-vous déplacer de la soute (bras 2,40 m) vers le siège avant libre (bras 1,00 m) ?",
        "choices": [
-        "Environ 6 kg",
-        "Environ 11 kg",
-        "Environ 15 kg",
-        "Environ 21 kg"
+        "Environ 8 kg",
+        "Environ 14 kg",
+        "Environ 19 kg",
+        "Environ 27 kg"
        ],
        "answer": 1,
-       "explanation": "Il faut avancer le CG de 0,015 m, la masse totale restant la même : m = M × ΔCG / Δd = 1 000 × 0,015 / 1,40 ≈ 10,7 kg, soit environ 11 kg. Diviser par le bras de la soute (2,40 m) au lieu de la distance parcourue (1,40 m) donne 6 kg, insuffisant."
+       "explanation": "Il faut avancer le CG de 0,02 m, la masse totale restant la même : m = M × ΔCG / Δd = 960 × 0,02 / 1,40 ≈ 13,7 kg, soit environ 14 kg. Diviser par le bras de la soute (2,40 m) au lieu de la distance parcourue (1,40 m) donne 8 kg, insuffisant ; diviser par le bras du siège (1,00 m) donne 19 kg, plus que nécessaire."
       },
       {
        "id": "u8s6q13",
@@ -638,15 +638,15 @@
       },
       {
        "id": "u8s6q16",
-       "q": "Deux occupants lourds à l'avant, soute vide : 1 000 kg, CG à 0,94 m. La limite avant vaut 0,95 m jusqu'à 1 050 kg. Quelle masse minimale de lest placez-vous en soute (bras 2,40 m) ?",
+       "q": "Deux occupants lourds à l'avant, soute vide : 990 kg, CG à 0,935 m. La limite avant vaut 0,95 m jusqu'à 1 050 kg. Quelle masse minimale de lest placez-vous en soute (bras 2,40 m) ?",
        "choices": [
-        "Environ 4 kg",
-        "Environ 7 kg",
+        "Environ 6 kg",
         "Environ 10 kg",
-        "Environ 14 kg"
+        "Environ 15 kg",
+        "Environ 21 kg"
        ],
        "answer": 1,
-       "explanation": "On cherche m tel que (940 + 2,40 × m) / (1 000 + m) = 0,95, soit m = 1 000 × 0,01 / (2,40 − 0,95) ≈ 6,9 kg : environ 7 kg, arrimés, en vérifiant la MTOM et la limite de soute. Diviser par 2,40 m au lieu de la distance entre la soute et le CG visé (1,45 m) donne 4 kg, insuffisant."
+       "explanation": "On cherche m tel que (925,65 + 2,40 × m) / (990 + m) = 0,95, soit m = 990 × 0,015 / (2,40 − 0,95) ≈ 10,2 kg : environ 10 kg, arrimés, en vérifiant la MTOM et la limite de soute. Diviser par 2,40 m au lieu de la distance entre la soute et le CG visé (1,45 m) donne 6 kg, insuffisant."
       },
       {
        "id": "u8s6q17",
@@ -698,15 +698,15 @@
       },
       {
        "id": "u8s6q21",
-       "q": "Le CG est proche de la limite arrière. Deux passagers de 95 kg et de 60 kg vous accompagnent : l'un à l'avant (1,00 m), l'autre à l'arrière (1,85 m). Masse totale 1 000 kg. Quel placement choisissez-vous ?",
+       "q": "Au décollage : 1 000 kg, CG à 1,10 m ; la limite arrière vaut 1,12 m à ces masses. Le réservoir, au bras 0,80 m, contient 100 L utilisables. Quelle quantité de carburant pouvez-vous consommer au plus avant que le CG n'atteigne la limite arrière ?",
        "choices": [
-        "Le plus lourd à l'avant : CG environ 3 cm plus en avant que l'inverse",
-        "Le plus lourd à l'arrière : CG environ 3 cm plus en avant que l'inverse",
-        "Le plus lourd à l'avant : CG environ 1,5 cm plus en avant que l'inverse",
-        "Indifférent : la masse totale ne change pas, donc le CG non plus"
+        "Environ 87 L",
+        "Environ 93 L",
+        "Environ 62 L",
+        "Environ 45 L"
        ],
        "answer": 0,
-       "explanation": "Échanger les deux passagers déplace 35 kg de 0,85 m : 35 × 0,85 ≈ 30 kg·m, soit environ 3 cm de CG à 1 000 kg. Le plus lourd à l'avant éloigne le CG de la limite arrière. Même masse totale ne veut pas dire même centrage."
+       "explanation": "On cherche m tel que (1 100 − 0,80 × m) / (1 000 − m) = 1,12, soit m = 1 000 × 0,02 / (1,12 − 0,80) = 62,5 kg, c'est-à-dire 62,5 / 0,72 ≈ 87 L : il faut se poser avec au moins 13 L, sinon le CG passe en arrière de la limite. 62 L confond kilogrammes et litres, 45 L multiplie par 0,72 au lieu de diviser, et 93 L néglige la baisse de la masse totale (1 000 × 0,02 / 0,30 kg)."
       },
       {
        "id": "u8s6q22",
@@ -722,15 +722,15 @@
       },
       {
        "id": "u8s6q23",
-       "q": "Enveloppe : limite avant de 0,90 m jusqu'à 850 kg, variant ensuite linéairement jusqu'à 0,98 m à 1 050 kg ; limite arrière 1,12 m. Votre point : 1 000 kg et CG à 0,955 m. Que concluez-vous ?",
+       "q": "Enveloppe : limite avant de 0,90 m jusqu'à 850 kg, variant ensuite linéairement jusqu'à 0,98 m à 1 050 kg ; limite arrière 1,12 m. Votre point : 950 kg et CG à 0,935 m. Que concluez-vous ?",
        "choices": [
         "Dans les limites : la limite avant vaut 0,90 m",
-        "Dans les limites : 0,955 m est compris entre 0,90 et 1,12 m",
-        "Hors limites : à 1 000 kg, la limite avant vaut 0,98 m",
-        "Hors limites : à 1 000 kg, la limite avant vaut 0,96 m"
+        "Dans les limites : 0,935 m est compris entre 0,90 et 1,12 m",
+        "Hors limites : à 950 kg, la limite avant vaut 0,98 m",
+        "Hors limites : à 950 kg, la limite avant vaut 0,94 m"
        ],
        "answer": 3,
-       "explanation": "La limite avant s'interpole à la masse réelle : 0,90 + (0,98 − 0,90) × (1 000 − 850) / (1 050 − 850) = 0,96 m. Avec 0,955 m, le CG est 5 mm trop en avant. La valeur de 0,90 m ne vaut que jusqu'à 850 kg, celle de 0,98 m qu'à la MTOM."
+       "explanation": "La limite avant s'interpole à la masse réelle : 0,90 + (0,98 − 0,90) × (950 − 850) / (1 050 − 850) = 0,94 m. Avec 0,935 m, le CG est 5 mm trop en avant. La valeur de 0,90 m ne vaut que jusqu'à 850 kg, celle de 0,98 m qu'à la MTOM."
       },
       {
        "id": "u8s6q24",
@@ -750,7 +750,7 @@
      "id": "u8s7",
      "title": "Bilan carburant, autonomie et déroutement",
      "icon": "⛽",
-     "tips": "Le bilan carburant répond à une question simple : avec la quantité embarquée, arriverai-je à destination, ou à mon terrain de déroutement, en conservant intacte la réserve finale ? Il se prépare au sol et se tient à jour en vol.\n\nLes composantes du bilan :\n• Roulage : mise en route, roulage et point fixe, quelques litres selon l'avion et le terrain.\n• Étape (délestage) : temps de vol prévu × consommation horaire. Le temps se calcule avec la vitesse sol, vent compris, et la montée, faite à forte puissance, consomme davantage.\n• Déroutement : carburant pour rejoindre, depuis la destination ou un point de décision, le terrain de dégagement choisi à la préparation.\n• Réserve finale (Part-NCO, AMC1 NCO.OP.125, depuis le règlement (UE) 2021/1296, applicable au 30 octobre 2022) : pour un avion en VFR, 30 min de vol de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination ; 10 min pour un vol local de jour (décollage et atterrissage au même aérodrome, toujours en vue de celui-ci), à la puissance maximale continue de croisière à 1 500 ft. Elle ne doit pas être consommée en exploitation normale.\n• Marge personnelle : vent plus fort que prévu, attente, remise de gaz, déroutement plus long. C'est le pilote qui la fixe.\n• Carburant inutilisable : il reste dans les réservoirs et les canalisations, ne compte jamais dans l'autonomie, et fait partie de la masse à vide.\nLa réserve se calcule avec la consommation en attente si le manuel la donne ; la calculer avec la consommation de croisière, plus forte, va dans le sens de la sécurité.\n\nExemple résolu (VFR de jour, 26 L/h, roulage 3 L) :\n• Étape 1 h 15 = 1,25 h → 32,5 L.\n• Déroutement prévu 25 min → 10,8 L.\n• Réserve finale 30 min → 13 L.\n• Marge personnelle 15 min → 6,5 L.\n• Total utilisable : 3 + 32,5 + 10,8 + 13 + 6,5 ≈ 66 L ; avec 5 L inutilisables, il faut 71 L dans les réservoirs.\n\nConsommation, autonomie et conversions :\n• Autonomie (h) = carburant utilisable ÷ consommation horaire. Temps disponible pour le trajet = autonomie − réserve finale − marge.\n• 1 USG ≈ 3,785 L ; 1 L d'AVGAS ≈ 0,72 kg, donc 1 USG ≈ 2,72 kg. Ex. : 8 USG/h ≈ 30,3 L/h ≈ 21,8 kg/h.\n• Pour un avitaillement en gallons : 68 L ÷ 3,785 ≈ 18 USG.\n• Heures décimales : 1 h 36 min = 1,6 h ; 0,45 h = 27 min ; 3,14 h ≈ 3 h 08.\n• En kg/h, la consommation sert au devis de masse : 30 L/h ≈ 21,6 kg/h.\n\nRayon d'action et point de non-retour :\n• Rayon d'action (aller puis retour au départ) : temps aller t = E × Vs retour / (Vs aller + Vs retour), avec E l'autonomie hors réserve ; rayon = t × Vs aller.\n• Point de non-retour (PNR) sur une route aller simple : point au-delà duquel le carburant ne permet plus de revenir au départ en gardant la réserve. Il se calcule avec la même formule ; on y décide de poursuivre ou de faire demi-tour.\n• Ex. : E = 3 h hors réserve, Vp 120 kt, 20 kt de vent de face à l'aller : Vs aller 100 kt, Vs retour 140 kt. t = 3 × 140 / 240 = 1,75 h : PNR à 175 NM, atteint après 1 h 45 ; retour 175 / 140 = 1,25 h. Sans vent, on irait jusqu'à 180 NM : le vent réduit le rayon d'action.\n• Avec du vent arrière à l'aller, le PNR arrive avant la moitié de l'autonomie : le retour se fera vent de face.\n\nDéroutement :\n• À la préparation : choisir au moins un terrain de dégagement accessible (horaires, piste compatible, carburant disponible si besoin), relever route, distance, temps et carburant depuis la destination ou depuis un point de la route.\n• En vol, décider tôt : météo qui se dégrade, retard important, consommation anormale, nuit qui approche. Le bon moment est celui où le carburant laisse encore le choix.\n• Recalculer distance, vitesse sol, temps et carburant, et vérifier qu'il restera la réserve finale à l'arrivée ; prévenir l'organisme avec lequel on est en contact et, si un plan de vol a été déposé, le clôturer à l'arrivée.\n• Attente à destination : temps d'attente possible = (restant − déroutement − réserve finale) ÷ consommation. Ex. : 30 L, 8 L de déroutement, 12 L de réserve, 24 L/h → 10 L, soit 25 min.\n\nGestion en vol :\n• Noter sur le log l'heure de décollage, la quantité et chaque changement de réservoir. À chaque point tournant, comparer le restant calculé (départ − débit × temps) aux jauges et retenir la valeur la plus défavorable.\n• Une consommation plus forte que prévu (jauges qui baissent trop vite, écart qui grandit) fait suspecter une fuite, un bouchon mal fermé ou un mélange mal réglé : on se pose ou l'on se déroute sans attendre.\n• Réservoirs : suivre le manuel de vol. Sur un avion à deux réservoirs d'aile sélectionnés séparément, alterner à intervalles réguliers (par exemple toutes les 30 min) limite le déséquilibre latéral ; changer en croisière, loin du sol, en surveillant la pression d'essence ; si le moteur s'arrête juste après, revenir sur le réservoir précédent.\n• Panne sèche : l'épuisement signifie qu'il ne reste plus de carburant utilisable ; l'interruption d'alimentation, qu'il en reste, mais qu'il n'arrive pas au moteur (réservoir vide sélectionné, évent bouché). Moteur arrêté : vitesse de plané d'abord, puis réservoir plein et check-list de remise en route.\n• Si l'arrivée avec la réserve finale n'est plus assurée, on se pose au plus tôt sur le terrain adapté le plus proche, en déclarant l'urgence si nécessaire.\n\nPièges classiques :\n• Calculer le temps avec la vitesse propre au lieu de la vitesse sol.\n• Compter le carburant inutilisable dans l'autonomie.\n• Oublier le roulage ou le déroutement.\n• Confondre litres, gallons US et kilogrammes, ou 1,24 h et 1 h 24.\n• Considérer la réserve finale comme du carburant d'étape.",
+     "tips": "Le bilan carburant répond à une question simple : avec la quantité embarquée, arriverai-je à destination, ou à mon terrain de déroutement, en conservant intacte la réserve finale ? Il se prépare au sol et se tient à jour en vol.\n\nLes composantes du bilan :\n• Roulage : mise en route, roulage et point fixe, quelques litres selon l'avion et le terrain.\n• Étape (délestage) : temps de vol prévu × consommation horaire. Le temps se calcule avec la vitesse sol, vent compris, et la montée, faite à forte puissance, consomme davantage.\n• Déroutement : carburant pour rejoindre, depuis la destination ou un point de décision, le terrain de dégagement choisi à la préparation.\n• Réserve finale (Part-NCO, AMC1 NCO.OP.125, depuis le règlement (UE) 2021/1296, applicable au 30 octobre 2022) : pour un avion en VFR, 30 min de vol de jour et 45 min de nuit, en vitesse d'attente à 1 500 ft au-dessus de la destination ; 10 min pour un vol local de jour (décollage et atterrissage au même aérodrome, toujours en vue de celui-ci), à la puissance maximale continue de croisière à 1 500 ft. Elle ne doit pas être consommée en exploitation normale.\n• Marge personnelle : vent plus fort que prévu, attente, remise de gaz, déroutement plus long. C'est le pilote qui la fixe.\n• Carburant inutilisable : il reste dans les réservoirs et les canalisations, ne compte jamais dans l'autonomie, et fait partie de la masse à vide.\nLa réserve se calcule avec la consommation en attente si le manuel la donne ; la calculer avec la consommation de croisière, plus forte, va dans le sens de la sécurité.\n\nExemple résolu (VFR de jour, 26 L/h, roulage 3 L) :\n• Étape 1 h 15 = 1,25 h → 32,5 L.\n• Déroutement prévu 25 min → 10,8 L.\n• Réserve finale 30 min → 13 L.\n• Marge personnelle 15 min → 6,5 L.\n• Total utilisable : 3 + 32,5 + 10,8 + 13 + 6,5 ≈ 66 L ; avec 5 L inutilisables, il faut 71 L dans les réservoirs.\n\nConsommation, autonomie et conversions :\n• Autonomie (h) = carburant utilisable ÷ consommation horaire. Temps disponible pour le trajet = autonomie − réserve finale − marge.\n• 1 USG ≈ 3,785 L ; 1 L d'AVGAS ≈ 0,72 kg, donc 1 USG ≈ 2,72 kg. Ex. : 8 USG/h ≈ 30,3 L/h ≈ 21,8 kg/h.\n• Pour un avitaillement en gallons : 68 L ÷ 3,785 ≈ 18 USG.\n• Heures décimales : 1 h 36 min = 1,6 h ; 0,45 h = 27 min ; 2,7 h = 2 h 42.\n• En kg/h, la consommation sert au devis de masse : 30 L/h ≈ 21,6 kg/h.\n\nRayon d'action et point de non-retour :\n• Rayon d'action (aller puis retour au départ) : temps aller t = E × Vs retour / (Vs aller + Vs retour), avec E l'autonomie hors réserve ; rayon = t × Vs aller.\n• Point de non-retour (PNR) sur une route aller simple : point au-delà duquel le carburant ne permet plus de revenir au départ en gardant la réserve. Il se calcule avec la même formule ; on y décide de poursuivre ou de faire demi-tour.\n• Ex. : E = 3 h hors réserve, Vp 120 kt, 20 kt de vent de face à l'aller : Vs aller 100 kt, Vs retour 140 kt. t = 3 × 140 / 240 = 1,75 h : PNR à 175 NM, atteint après 1 h 45 ; retour 175 / 140 = 1,25 h. Sans vent, on irait jusqu'à 180 NM : le vent réduit le rayon d'action.\n• Avec du vent arrière à l'aller, le PNR arrive avant la moitié de l'autonomie : le retour se fera vent de face.\n\nDéroutement :\n• À la préparation : choisir au moins un terrain de dégagement accessible (horaires, piste compatible, carburant disponible si besoin), relever route, distance, temps et carburant depuis la destination ou depuis un point de la route.\n• En vol, décider tôt : météo qui se dégrade, retard important, consommation anormale, nuit qui approche. Le bon moment est celui où le carburant laisse encore le choix.\n• Recalculer distance, vitesse sol, temps et carburant, et vérifier qu'il restera la réserve finale à l'arrivée ; prévenir l'organisme avec lequel on est en contact et, si un plan de vol a été déposé, le clôturer à l'arrivée.\n• Attente à destination : temps d'attente possible = (restant − déroutement − réserve finale) ÷ consommation. Ex. : 30 L, 8 L de déroutement, 12 L de réserve, 24 L/h → 10 L, soit 25 min.\n\nGestion en vol :\n• Noter sur le log l'heure de décollage, la quantité et chaque changement de réservoir. À chaque point tournant, comparer le restant calculé (départ − débit × temps) aux jauges et retenir la valeur la plus défavorable.\n• Une consommation plus forte que prévu (jauges qui baissent trop vite, écart qui grandit) fait suspecter une fuite, un bouchon mal fermé ou un mélange mal réglé : on se pose ou l'on se déroute sans attendre.\n• Réservoirs : suivre le manuel de vol. Sur un avion à deux réservoirs d'aile sélectionnés séparément, alterner à intervalles réguliers (par exemple toutes les 30 min) limite le déséquilibre latéral ; changer en croisière, loin du sol, en surveillant la pression d'essence ; si le moteur s'arrête juste après, revenir sur le réservoir précédent.\n• Arrêt moteur lié au carburant : l'épuisement signifie qu'il ne reste plus de carburant utilisable ; l'interruption d'alimentation, qu'il en reste, mais qu'il n'arrive pas au moteur (réservoir vide sélectionné, évent bouché). Moteur arrêté : vitesse de plané d'abord, puis réservoir plein et check-list de remise en route.\n• Si l'arrivée avec la réserve finale n'est plus assurée, on se pose au plus tôt sur le terrain adapté le plus proche, en déclarant l'urgence si nécessaire.\n\nPièges classiques :\n• Calculer le temps avec la vitesse propre au lieu de la vitesse sol.\n• Compter le carburant inutilisable dans l'autonomie.\n• Oublier le roulage ou le déroutement.\n• Confondre litres, gallons US et kilogrammes, ou 1,24 h et 1 h 24.\n• Considérer la réserve finale comme du carburant d'étape.",
      "vocab": [
       {
        "term": "Bilan carburant",
@@ -770,7 +770,7 @@
       },
       {
        "term": "Vitesse d'attente",
-       "translation": "Vitesse de référence de la réserve finale, à 1 500 ft"
+       "translation": "Vitesse de référence des réserves de 30 et 45 min, à 1 500 ft"
       },
       {
        "term": "Carburant inutilisable",
@@ -948,15 +948,15 @@
       },
       {
        "id": "u8s7q11",
-       "q": "Vous devez embarquer 68 L d'AVGAS et la pompe de l'aérodrome est graduée en gallons US. Combien de gallons demandez-vous ?",
+       "q": "Vous devez embarquer 95 L d'AVGAS et la pompe de l'aérodrome est graduée en gallons US. Combien de gallons demandez-vous ?",
        "choices": [
-        "Environ 13 USG",
         "Environ 18 USG",
         "Environ 25 USG",
-        "Environ 49 USG"
+        "Environ 35 USG",
+        "Environ 68 USG"
        ],
        "answer": 1,
-       "explanation": "68 / 3,785 ≈ 18 USG. Le résultat de 25 vient d'une division par 2,72 (masse d'un gallon en kg), celui de 49 de la conversion des litres en kilogrammes (68 × 0,72)."
+       "explanation": "95 / 3,785 ≈ 25 USG. Le résultat de 35 vient d'une division par 2,72 (masse d'un gallon en kg), celui de 68 de la conversion des litres en kilogrammes (95 × 0,72), et 18 applique en plus la densité aux gallons (25 × 0,72)."
       },
       {
        "id": "u8s7q12",
@@ -980,7 +980,7 @@
         "Environ 3 h 09 min"
        ],
        "answer": 1,
-       "explanation": "22 / 7 ≈ 3,14 h, soit environ 3 h 09 (0,14 h × 60 ≈ 9 min). Moins 30 min de réserve de jour : environ 2 h 39. Lire 3,14 h comme 3 h 14 donne 2 h 44, l'erreur classique des heures décimales."
+       "explanation": "22 / 7 ≈ 3,143 h, soit environ 3 h 09 (0,143 h × 60 ≈ 8,6 min). Moins 30 min de réserve de jour : environ 2 h 39. Lire 3,14 h comme 3 h 14 donne 2 h 44, l'erreur classique des heures décimales ; 2 h 24 retrancherait la réserve de nuit (45 min)."
       },
       {
        "id": "u8s7q14",
@@ -1104,15 +1104,15 @@
       },
       {
        "id": "u8s7q24",
-       "q": "À la verticale de la destination à 11:00, la piste est momentanément bloquée. Il vous reste 30 L utilisables ; débit 24 L/h ; votre dégagement est à 20 min de vol ; vol de jour. Jusqu'à quelle heure pouvez-vous attendre avant de partir vers le dégagement ?",
+       "q": "À la verticale de la destination à 11:00, la piste est momentanément bloquée. Il vous reste 36 L utilisables ; débit 24 L/h ; votre dégagement est à 25 min de vol ; vol de jour. Jusqu'à quelle heure pouvez-vous attendre avant de partir vers le dégagement ?",
        "choices": [
-        "11:10",
-        "11:25",
-        "11:45",
-        "11:55"
+        "11:20",
+        "11:35",
+        "12:00",
+        "12:05"
        ],
        "answer": 1,
-       "explanation": "Il faut garder 8 L pour les 20 min de déroutement et 12 L de réserve finale (30 min, comptées par prudence à 24 L/h) : 30 − 20 = 10 L, soit 25 min d'attente. Départ au plus tard vers 11:25. Oublier le déroutement mènerait à 11:45, avec un dégagement atteint sur la réserve."
+       "explanation": "Il faut garder 10 L pour les 25 min de déroutement et 12 L de réserve finale (30 min, comptées par prudence à 24 L/h) : 36 − 22 = 14 L, soit 35 min d'attente. Départ au plus tard vers 11:35. Oublier le déroutement mènerait à 12:00, avec un dégagement atteint sur la réserve ; 11:20 appliquerait la réserve de nuit (45 min)."
       }
      ]
     }

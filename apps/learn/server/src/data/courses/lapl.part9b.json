@@ -10,7 +10,7 @@
      "id": "u9s6",
      "title": "Système Pitot-statique et ses pannes",
      "icon": "💨",
-     "tips": "Trois instruments de base fonctionnent avec la pression de l'air : l'anémomètre, l'altimètre et le variomètre. Avec leurs prises et leurs canalisations, ils forment le système Pitot-statique, indépendant du circuit de dépression ; seul le réchauffage Pitot est électrique.\n\nLes prises :\n• Tube Pitot : orifice ouvert face à l'écoulement, souvent sous l'aile. L'air s'y arrête : le tube capte la pression totale, somme de la pression statique et de la pression dynamique ½ρV². Un petit orifice de purge, au point bas, laisse s'écouler l'eau de pluie ou de condensation.\n• Prises statiques : orifices affleurant le revêtement, perpendiculaires à l'écoulement, qui captent la pression statique ambiante. Elles sont souvent placées de chaque côté du fuselage et reliées entre elles : en vol dissymétrique, la surpression d'un côté et la dépression de l'autre se compensent en partie.\n• Source statique de secours : robinet, sous le tableau de bord, qui relie les instruments à l'air de la cabine quand les prises extérieures sont bouchées.\n\nAnémomètre :\n• Une capsule reçoit la pression totale du Pitot, le boîtier étanche la pression statique. La capsule se déforme sous l'effet de la différence, la pression dynamique, et l'aiguille affiche la vitesse indiquée (Vi).\n• La pression dynamique varie comme le carré de la vitesse : à vitesse doublée, elle est multipliée par 4.\n• Repères : arc blanc de VS0 à VFE (volets sortis), arc vert de VS1 à VNO (utilisation normale), arc jaune de VNO à VNE (air calme seulement), trait rouge à VNE. VS0 et VS1 sont établies à la masse maximale : moins chargé, l'avion décroche un peu sous le début des arcs.\n\nAltimètre :\n• Le boîtier, relié à la prise statique, contient une ou plusieurs capsules anéroïdes, vidées d'air et scellées. Quand l'avion monte, la pression statique baisse, les capsules se dilatent et un mécanisme fait tourner les aiguilles.\n• La fenêtre de calage affiche la pression de référence : QNH pour l'altitude, QFE pour la hauteur au-dessus du terrain, 1013 hPa pour le niveau de vol. Augmenter le calage augmente l'indication d'environ 28 ft par hPa ; le diminuer la réduit d'autant. Exemple : de 1013 à 1008 hPa, l'indication perd environ 5 × 28 = 140 ft.\n• Sur un altimètre à trois aiguilles, la grande compte les centaines de pieds, la moyenne les milliers, la petite les dizaines de milliers : une confusion coûte 1 000 ft ou plus.\n• Erreurs : instrument (frottements, hystérésis, léger retard), position (emplacement de la prise, incidence, volets), calage faux ou périmé, température (air froid : avion plus bas qu'indiqué).\n• Au sol, calé au QNH, l'altimètre doit indiquer l'altitude du terrain : un écart important rend l'instrument suspect.\n\nVariomètre :\n• La capsule est reliée directement à la prise statique, le boîtier seulement à travers une fuite calibrée. En montée, la pression baisse aussitôt dans la capsule mais plus lentement dans le boîtier : la différence fait dévier l'aiguille vers le haut. En palier, les deux pressions s'égalisent et l'aiguille revient à zéro.\n• L'aiguille part tout de suite dans le bon sens, mais la valeur stabilisée n'apparaît qu'après quelques secondes : c'est le retard du variomètre. En air agité, elle oscille : on tient le palier à l'altimètre et à l'assiette, sans courir après l'aiguille.\n\nObstructions et pannes :\nCauses : givre, insectes ou nid dans le tube, housse oubliée, eau, ruban adhésif laissé après un lavage ou une peinture.\n• Pitot bouché, purge libre : la pression piégée s'évacue par la purge jusqu'à la pression statique ; l'anémomètre tombe à zéro. Altimètre et variomètre restent justes.\n• Pitot et purge bouchés : la pression totale est piégée. En palier, la Vi reste figée quelle que soit la vitesse réelle ; en montée elle augmente, en descente elle diminue : l'anémomètre se comporte comme un altimètre. Piège : une Vi qui grimpe en montée pousse à cabrer, jusqu'au décrochage.\n• Prise statique bouchée : la pression de l'altitude où s'est produite l'obstruction reste piégée. Altimètre figé, variomètre à zéro. En palier, rien ne paraît anormal. En montée, l'anémomètre indique trop peu (risque de survitesse en rendant la main) ; en descente, il indique trop (risque de voler trop lentement).\n• Pitot et prises statiques bouchés ensemble : les trois instruments sont figés, le variomètre à zéro.\nIndices : instruments discordants, Vi incohérente avec l'assiette et la puissance, altimètre immobile alors que l'avion monte ou descend.\n\nSource statique de secours :\n• En cas de prise statique bouchée, on ouvre la source de secours selon la check-list. L'air de la cabine est en général en légère dépression par rapport à l'extérieur, à cause de l'écoulement autour du fuselage.\n• Conséquences : l'altimètre indique un peu trop haut et l'anémomètre un peu trop vite ; à l'ouverture, la pression baisse d'un coup et le variomètre montre brièvement une montée, puis redevient juste.\n• L'avion vole donc un peu plus bas et un peu plus lentement qu'indiqué : prenez des marges. Le manuel de vol précise la position des aérateurs, du chauffage et des fenêtres (ils modifient la pression cabine) et donne parfois une table de correction.\n\nRéchauffage Pitot :\n• Une résistance électrique chauffe le tube : on l'enclenche avant d'entrer dans l'humidité visible (nuage, pluie, bruine) par température voisine de 0 °C ou négative. Il ne protège que le tube et ne rend pas l'avion apte au vol en conditions givrantes.\n• Au sol, essai bref (ampèremètre ou voyant) : le tube devient très chaud. En délestage électrique, hors risque de givrage, on le coupe.\n\nVisite pré-vol et pièges :\n• Retirer la housse du Pitot, vérifier que l'orifice et la purge sont dégagés, que les prises statiques sont propres, sans ruban ni produit. Ne soufflez jamais dans le tube ni dans une prise : les capsules des instruments peuvent être endommagées.\n• Un Pitot bouché ne fige pas toujours l'anémomètre : tout dépend de la purge.",
+     "tips": "Trois instruments de base fonctionnent avec la pression de l'air : l'anémomètre, l'altimètre et le variomètre. Avec leurs prises et leurs canalisations, ils forment le système Pitot-statique, indépendant du circuit de dépression ; seul le réchauffage Pitot est électrique.\n\nLes prises :\n• Tube Pitot : orifice ouvert face à l'écoulement, souvent sous l'aile. L'air s'y arrête : le tube capte la pression totale, somme de la pression statique et de la pression dynamique ½ρV². Un petit orifice de purge, au point bas, laisse s'écouler l'eau de pluie ou de condensation.\n• Prises statiques : orifices affleurant le revêtement, perpendiculaires à l'écoulement, qui captent la pression statique ambiante. Elles sont souvent placées de chaque côté du fuselage et reliées entre elles : en vol dissymétrique, la surpression d'un côté et la dépression de l'autre se compensent en partie.\n• Source statique de secours : robinet, souvent sous le tableau de bord, qui relie les instruments à l'air de la cabine quand les prises extérieures sont bouchées.\n\nAnémomètre :\n• Une capsule reçoit la pression totale du Pitot, le boîtier étanche la pression statique. La capsule se déforme sous l'effet de la différence, la pression dynamique, et l'aiguille affiche la vitesse indiquée (Vi).\n• La pression dynamique varie comme le carré de la vitesse : à vitesse doublée, elle est multipliée par 4.\n• Repères : arc blanc de VS0 à VFE (volets sortis), arc vert de VS1 à VNO (utilisation normale), arc jaune de VNO à VNE (air calme seulement), trait rouge à VNE. VS0 et VS1 sont établies à la masse maximale : moins chargé, l'avion décroche un peu sous le début des arcs.\n\nAltimètre :\n• Le boîtier, relié à la prise statique, contient une ou plusieurs capsules anéroïdes, vidées d'air et scellées. Quand l'avion monte, la pression statique baisse, les capsules se dilatent et un mécanisme fait tourner les aiguilles.\n• La fenêtre de calage affiche la pression de référence : QNH pour l'altitude, QFE pour la hauteur au-dessus du terrain, 1013 hPa pour le niveau de vol. Augmenter le calage augmente l'indication d'environ 28 ft par hPa ; le diminuer la réduit d'autant. Exemple : de 1013 à 1008 hPa, l'indication perd environ 5 × 28 = 140 ft.\n• Sur un altimètre à trois aiguilles, la grande compte les centaines de pieds, la moyenne les milliers, la petite les dizaines de milliers : une confusion coûte 1 000 ft ou plus.\n• Erreurs : instrument (frottements, hystérésis, léger retard), position (emplacement de la prise, incidence, volets), calage faux ou périmé, température (air froid : avion plus bas qu'indiqué).\n• Au sol, calé au QNH, l'altimètre doit indiquer l'altitude du terrain : un écart important rend l'instrument suspect.\n\nVariomètre :\n• La capsule est reliée directement à la prise statique, le boîtier seulement à travers une fuite calibrée. En montée, la pression baisse aussitôt dans la capsule mais plus lentement dans le boîtier : la différence fait dévier l'aiguille vers le haut. En palier, les deux pressions s'égalisent et l'aiguille revient à zéro.\n• L'aiguille part tout de suite dans le bon sens, mais la valeur stabilisée n'apparaît qu'après quelques secondes : c'est le retard du variomètre. En air agité, elle oscille : on tient le palier à l'altimètre et à l'assiette, sans courir après l'aiguille.\n\nObstructions et pannes :\nCauses : givre, insectes ou nid dans le tube, housse oubliée, eau, ruban adhésif laissé après un lavage ou une peinture.\n• Pitot bouché, purge libre : la pression piégée s'évacue par la purge jusqu'à la pression statique ; l'anémomètre tombe à zéro. Altimètre et variomètre restent justes.\n• Pitot et purge bouchés : la pression totale est piégée. En palier, la Vi reste figée quelle que soit la vitesse réelle ; en montée elle augmente, en descente elle diminue : l'anémomètre se comporte comme un altimètre. Piège : une Vi qui grimpe en montée pousse à cabrer, jusqu'au décrochage.\n• Prise statique bouchée : la pression de l'altitude où s'est produite l'obstruction reste piégée. Altimètre figé, variomètre à zéro. Tant que l'avion reste à l'altitude de l'obstruction, rien ne paraît anormal. En montée, l'anémomètre indique trop peu (risque de survitesse en rendant la main) ; en descente, il indique trop (risque de voler trop lentement).\n• Pitot et prises statiques bouchés ensemble : les trois instruments sont figés, le variomètre à zéro.\nIndices : instruments discordants, Vi incohérente avec l'assiette et la puissance, altimètre immobile alors que l'avion monte ou descend.\n\nSource statique de secours :\n• En cas de prise statique bouchée, on ouvre la source de secours selon la check-list. L'air de la cabine est en général en légère dépression par rapport à l'extérieur, à cause de l'écoulement autour du fuselage.\n• Conséquences : l'altimètre indique un peu trop haut et l'anémomètre un peu trop vite ; à l'ouverture, la pression baisse d'un coup et le variomètre montre brièvement une montée, puis redevient juste.\n• L'avion vole donc un peu plus bas et un peu plus lentement qu'indiqué : prenez des marges. Le manuel de vol précise la position des aérateurs, du chauffage et des fenêtres (ils modifient la pression cabine) et donne parfois une table de correction.\n\nRéchauffage Pitot :\n• Une résistance électrique chauffe le tube : on l'enclenche avant d'entrer dans l'humidité visible (nuage, pluie, bruine) par température voisine de 0 °C ou négative. Il ne protège que le tube et ne rend pas l'avion apte au vol en conditions givrantes.\n• Au sol, essai bref (ampèremètre ou voyant) : le tube devient très chaud. En délestage électrique, hors risque de givrage, on le coupe.\n\nVisite pré-vol et pièges :\n• Retirer la housse du Pitot, vérifier que l'orifice et la purge sont dégagés, que les prises statiques sont propres, sans ruban ni produit. Ne soufflez jamais dans le tube ni dans une prise : les capsules des instruments peuvent être endommagées.\n• Un Pitot bouché ne fige pas toujours l'anémomètre : tout dépend de la purge.",
      "vocab": [
       {
        "term": "Tube Pitot",
@@ -210,7 +210,7 @@
        "id": "u9s6q11",
        "q": "En palier, le tube Pitot et sa purge se bouchent par le givre. Vous réduisez la puissance et la vitesse réelle diminue de 20 kt. Que montre l'anémomètre ?",
        "choices": [
-        "Une vitesse nulle, faute de pression",
+        "Une vitesse à zéro, faute de pression",
         "La même vitesse qu'avant la réduction",
         "Une vitesse plus faible de 20 kt",
         "Une vitesse plus forte de 20 kt"
@@ -225,7 +225,7 @@
         "L'anémomètre, qui chute rapidement vers zéro",
         "L'altimètre, qui revient à l'altitude du terrain",
         "Le variomètre, qui indique une montée continue",
-        "Aucune, tant que l'altitude ne change pas"
+        "Aucune : la pression piégée reste la bonne"
        ],
        "answer": 3,
        "explanation": "La pression piégée est celle de l'altitude de l'obstruction, égale à la pression réelle tant que l'avion reste en palier : les trois instruments restent justes. Dès que l'altitude change, l'altimètre se fige, le variomètre reste à zéro et l'anémomètre devient faux."
@@ -280,7 +280,7 @@
       },
       {
        "id": "u9s6q17",
-       "q": "Montée initiale sous la bruine par + 2 °C, réchauffage Pitot oublié. Assiette et puissance n'ont pas changé, mais la vitesse indiquée augmente régulièrement. Quelle hypothèse et quelle réaction retenez-vous ?",
+       "q": "En montée sous la bruine, la température extérieure passe de + 2 °C à − 1 °C ; le réchauffage Pitot a été oublié. Assiette et puissance n'ont pas changé, mais la vitesse indiquée augmente régulièrement. Quelle hypothèse et quelle réaction retenez-vous ?",
        "choices": [
         "Une ascendance : augmenter l'assiette pour revenir à la vitesse de montée",
         "Un vent arrière qui forcit : réduire la puissance pour garder la vitesse",
@@ -288,7 +288,7 @@
         "Une prise statique givrée : enclencher le réchauffage et cabrer"
        ],
        "answer": 2,
-       "explanation": "Une Vi qui croît en montée à assiette et puissance constantes est la signature d'un Pitot dont l'entrée et la purge sont bouchées : l'anémomètre se comporte comme un altimètre. Cabrer pour la réduire mène au décrochage. Le vent ne change pas la Vi, et une prise statique bouchée ferait au contraire indiquer trop peu en montée."
+       "explanation": "Une Vi qui croît en montée à assiette et puissance constantes est la signature d'un Pitot dont l'entrée et la purge sont bouchées : l'anémomètre se comporte comme un altimètre. Cabrer pour la réduire mène au décrochage : on garde assiette et puissance, on enclenche le réchauffage et l'on sort de la bruine au plus tôt. Un vent établi ne fait pas croître la Vi, et une prise statique bouchée ferait au contraire indiquer trop peu en montée."
       },
       {
        "id": "u9s6q18",
@@ -320,11 +320,11 @@
        "choices": [
         "Plus de 100 kt : risque de cabrer jusqu'au décrochage",
         "Moins de 100 kt : risque de piquer jusqu'à la survitesse",
-        "100 kt, l'indication restant figée quelle que soit l'altitude",
+        "100 kt : l'indication reste figée, la purge étant bouchée",
         "Zéro, la pression totale s'étant évacuée par la purge"
        ],
        "answer": 1,
-       "explanation": "La pression totale piégée est celle de 5 000 ft ; en descente, la pression statique augmente, donc la différence mesurée diminue : l'anémomètre indique moins que la vitesse réelle. Le pilote qui veut retrouver 100 kt pique et accélère réellement, jusqu'à la survitesse. L'effet inverse, plus de 100 kt, se produirait en montée."
+       "explanation": "La pression totale piégée est celle de 5 000 ft ; en descente, la pression statique augmente, donc la différence mesurée diminue : l'anémomètre indique moins que la vitesse réelle. Le pilote qui veut retrouver 100 kt pique et accélère réellement, jusqu'à la survitesse. L'effet inverse, plus de 100 kt, se produirait en montée ; l'indication ne reste figée qu'en palier."
       },
       {
        "id": "u9s6q21",
@@ -340,7 +340,7 @@
       },
       {
        "id": "u9s6q22",
-       "q": "La source statique de secours est ouverte et, selon le manuel, l'anémomètre lit alors 4 kt de trop dans votre configuration. Quelle vitesse indiquée tenez-vous pour voler réellement à 65 kt en finale ?",
+       "q": "La source statique de secours est ouverte et, selon le manuel, l'anémomètre lit alors 4 kt de trop dans votre configuration. Votre vitesse d'approche finale est de 65 kt : quelle vitesse indiquée tenez-vous ?",
        "choices": [
         "73 kt",
         "61 kt",
@@ -348,7 +348,7 @@
         "65 kt"
        ],
        "answer": 2,
-       "explanation": "L'anémomètre indique 4 kt de plus que la vitesse réelle : pour voler à 65 kt, il faut lire 65 + 4 = 69 kt. Tenir 61 kt indiqués reviendrait à voler à 57 kt, trop près du décrochage ; 65 kt ignore la correction."
+       "explanation": "L'anémomètre indique 4 kt de plus qu'avec la prise statique normale : pour voler à la vitesse prévue de 65 kt, il faut lire 65 + 4 = 69 kt. Tenir 61 kt indiqués reviendrait à voler à 57 kt, trop près du décrochage ; tenir 65 kt ignore la correction."
       },
       {
        "id": "u9s6q23",
@@ -364,15 +364,15 @@
       },
       {
        "id": "u9s6q24",
-       "q": "En montée, l'altimètre reste bloqué sur 3 200 ft, le variomètre indique zéro et la vitesse indiquée baisse alors que l'assiette n'a pas changé. Quelle panne et quelle conduite retenez-vous ?",
+       "q": "En descente vers le terrain, l'altimètre reste bloqué sur 3 200 ft, le variomètre indique zéro et la vitesse indiquée augmente alors que l'assiette et la puissance n'ont pas changé. Quelle panne et quelle conduite retenez-vous ?",
        "choices": [
-        "Pitot et purge bouchés : réchauffage Pitot, puis assiette un peu réduite",
-        "Perte de puissance : réduire l'assiette pour reprendre de la vitesse",
+        "Pitot et purge bouchés : réchauffage Pitot, puis réduire la puissance",
+        "Survitesse réelle : réduire la puissance et augmenter l'assiette",
         "Prise statique bouchée : source de secours, assiette et puissance connues",
         "Panne de dépression : horizon à recouper avec le compas et la bille"
        ],
        "answer": 2,
-       "explanation": "Altimètre figé et variomètre à zéro désignent la statique ; en montée, une prise statique bouchée fait indiquer trop peu à l'anémomètre. On ouvre la source de secours et l'on tient l'assiette et la puissance connues, sans piquer pour rattraper une vitesse qui n'a pas réellement baissé. Un Pitot bouché ne figerait pas l'altimètre."
+       "explanation": "Altimètre figé et variomètre à zéro désignent la statique ; en descente, une prise statique bouchée fait indiquer trop à l'anémomètre. On ouvre la source de secours et l'on tient l'assiette et la puissance connues : cabrer ou réduire pour corriger une vitesse qui n'a pas réellement augmenté ferait voler l'avion trop lentement, jusqu'au décrochage. Un Pitot bouché ne figerait pas l'altimètre et ferait au contraire baisser la Vi en descente."
       }
      ]
     },
@@ -582,27 +582,27 @@
       },
       {
        "id": "u9s7q11",
-       "q": "Quelle inclinaison faut-il prendre environ pour virer au taux 1 à 90 kt de vitesse propre ?",
+       "q": "En virage symétrique au taux 1, comment l'inclinaison nécessaire varie-t-elle avec la vitesse propre ?",
        "choices": [
-        "≈ 25°",
-        "≈ 9°",
-        "≈ 14°",
-        "≈ 30°"
+        "Elle reste voisine de 15°, à 80 kt comme à 120 kt",
+        "Elle diminue : environ 18° à 80 kt, 12° à 120 kt",
+        "Elle augmente : environ 12° à 80 kt, 18° à 120 kt",
+        "Elle augmente : environ 15° à 80 kt, 30° à 120 kt"
        ],
        "answer": 2,
-       "explanation": "Règle pratique : environ 15 % de la Vp en kt, soit 0,15 × 90 ≈ 14° ; le calcul exact (tan φ = ω × V / g) donne 13,9°. La règle Vp/10 + 7 donne 16°, un peu fort. Entre 25 et 30°, le taux de virage approcherait le double du taux 1."
+       "explanation": "Au taux 1, tan φ = ω × V / g : à taux constant, l'inclinaison croît avec la vitesse propre. La règle des 15 % de la Vp donne 0,15 × 80 = 12° et 0,15 × 120 = 18°. Une inclinaison de 15° ne convient que vers 100 kt ; 30° à 120 kt donneraient environ 5°/s, bien plus que le taux 1."
       },
       {
        "id": "u9s7q12",
-       "q": "Avec le compas pour seule référence de cap, vous virez par la droite du cap 360 au cap 120, au taux 1. Combien de temps dure le virage ?",
+       "q": "Pourquoi l'indicateur de virage est-il souvent électrique, alors que l'horizon et le conservateur de cap sont pneumatiques ?",
        "choices": [
-        "60 s",
-        "40 s",
-        "30 s",
-        "80 s"
+        "Parce que la pompe à vide serait trop faible pour un troisième rotor",
+        "Pour qu'une panne de dépression laisse une référence gyroscopique",
+        "Parce qu'un gyroscope électrique ne dérive pas avec le temps",
+        "Parce que le ressort de rappel exige un rotor entraîné électriquement"
        ],
        "answer": 1,
-       "explanation": "Écart de cap : 120° ; au taux 1 (3°/s), 120 / 3 = 40 s. On sort du virage au chronomètre, puis on lit le compas en vol stabilisé et on corrige : on évite ainsi les erreurs de virage, fortes au départ du cap nord."
+       "explanation": "Horizon et conservateur dépendent tous deux de la dépression : si elle disparaît, ils ralentissent et dérivent ensemble. Un indicateur de virage électrique reste alors disponible, avec le compas et la bille, pour tenir les ailes à plat et le cap. Un gyroscope électrique dérive lui aussi, et le ressort de rappel ne dépend pas du mode d'entraînement."
       },
       {
        "id": "u9s7q13",
@@ -630,27 +630,27 @@
       },
       {
        "id": "u9s7q15",
-       "q": "Dans l'hémisphère Nord, vous virez par la droite du cap 090 vers le cap 180 en vous servant du compas. Quand sortez-vous du virage ?",
+       "q": "Dans un indicateur de virage à aiguille, comment le gyroscope est-il monté ?",
        "choices": [
-        "Avant que le compas n'indique 180",
-        "Une fois que le compas a dépassé 180",
-        "Quand le compas indique juste 180",
-        "Après 45 s au taux 1, sans compas"
+        "Axe de rotation vertical, deux cardans, dispositif d'érection",
+        "Axe de rotation transversal, un cardan d'axe longitudinal, ressort",
+        "Axe de rotation horizontal, deux cardans, rose de cap entraînée",
+        "Axe de rotation longitudinal, un cardan d'axe vertical, sans ressort"
        ],
        "answer": 1,
-       "explanation": "Vers le sud, le compas est en avance sur le cap réel : quand il indique 180, l'avion n'y est pas encore. On attend qu'il ait dépassé 180 pour sortir (au sud après). Sortir avant convient au virage vers le nord, et 90° au taux 1 demandent 30 s, pas 45."
+       "explanation": "Le rotor tourne autour d'un axe parallèle aux ailes. Quand l'avion tourne en lacet, la précession fait basculer le cardan autour de l'axe longitudinal, contre le ressort : la déviation de l'aiguille mesure le taux de virage. L'axe vertical et le dispositif d'érection sont ceux de l'horizon ; l'axe horizontal entraînant une rose est celui du conservateur de cap."
       },
       {
        "id": "u9s7q16",
-       "q": "Dans l'hémisphère Nord, à quels caps une accélération en palier ne fausse-t-elle pas le compas ?",
+       "q": "En turbulence modérée, ailes horizontales et vitesse constante, la rose du compas oscille entre 080 et 100. Comment l'exploitez-vous ?",
        "choices": [
-        "Aux caps nord et sud",
-        "Aux caps est et ouest",
-        "Aux caps 045, 135, 225 et 315",
-        "Aux caps nord et est"
+        "Vous retenez la moyenne, vers 090, et tenez le cap au conservateur",
+        "Vous retenez la valeur lue quand la rose s'immobilise un instant",
+        "Vous corrigez le cap à chaque oscillation pour ramener la rose",
+        "Vous attendez un virage, où l'inclinaison stabilise la rose"
        ],
        "answer": 0,
-       "explanation": "L'erreur d'accélération est maximale aux caps est et ouest et nulle aux caps nord et sud. À l'inverse, les erreurs de virage sont maximales vers le nord et le sud et nulles vers l'est et l'ouest."
+       "explanation": "En turbulence, la rose oscille autour du cap réel : on retient la moyenne des oscillations, ici 090, et l'on tient le cap au conservateur. La rose ne s'immobilise qu'au bout de chaque oscillation, donc sur une valeur extrême ; corriger à chaque oscillation fait zigzaguer l'avion, et le virage ajoute ses propres erreurs."
       },
       {
        "id": "u9s7q17",
@@ -754,7 +754,7 @@
      "id": "u9s8",
      "title": "Entretien et visite pré-vol",
      "icon": "🔧",
-     "tips": "Un avion n'est prêt à voler que s'il est entretenu selon son programme et si la visite pré-vol, dont le commandant de bord est chargé, n'a rien révélé d'anormal. Le pilote n'est pas mécanicien, mais c'est lui qui décide de décoller.\n\nProgramme d'entretien et visites périodiques :\n• Sous le Part-ML, le propriétaire répond du maintien de la navigabilité, dont il confie souvent la gestion à un organisme agréé (CAMO ou CAO), comme en aéroclub.\n• Le programme d'entretien (AMP) fixe les visites et les travaux : visites périodiques échelonnées en heures de vol et en durée calendaire, remplacement des pièces à durée limitée, contrôles des équipements. En règle générale, une visite est due à la première des deux échéances atteinte.\n• Chaque intervention est consignée ; l'approbation pour remise en service est signée par un mécanicien ou un organisme habilité.\n• Un propriétaire-pilote titulaire d'une licence valable sur l'avion peut effectuer et certifier certaines tâches simples listées par le règlement ; hors de ce cadre, le pilote ne répare pas : il signale.\nExemple : programme prévoyant une visite toutes les 50 h ; dernière visite à 1 238 h, donc prochaine à 1 288 h. Le compteur indique 1 279 h : il reste 9 h. Une navigation de 3 h aller et 3 h retour tient dans l'échéance ; un voyage de 12 h la dépasserait.\n\nPotentiel :\n• Le potentiel est la durée d'utilisation fixée entre deux révisions générales d'un moteur, d'une hélice ou d'un équipement. Il s'exprime en heures de fonctionnement et peut comporter une limite calendaire : c'est la première échéance atteinte qui compte.\n• Potentiel restant = potentiel − heures effectuées depuis la dernière révision générale.\nExemple : potentiel de 2 000 h ; révision faite quand la cellule totalisait 2 460 h ; cellule à 4 105 h. Depuis la révision : 4 105 − 2 460 = 1 645 h ; potentiel restant : 2 000 − 1 645 = 355 h.\n\nConsignes de navigabilité :\n• Publiées par l'EASA (ou par l'État de conception) quand un défaut dangereux est découvert, elles sont obligatoires, avec un délai en heures, en cycles ou en date. Un avion dont une consigne applicable n'a pas été faite dans le délai n'est plus navigable. Un bulletin de service (SB) n'est qu'une recommandation.\n• Une consigne peut être ponctuelle ou répétitive : inspection à refaire à intervalle fixe. Exemple : toutes les 50 h, dernière application à 3 020 h, prochaine à 3 070 h.\n\nCarnet de route et compte rendu de défauts :\n• Le carnet de route appartient à l'avion : date, équipage, lieux et heures, temps de vol, anomalies constatées.\n• Avant le vol, consultez-le : défauts signalés et suite donnée par le mécanicien, heures restantes avant la prochaine visite. Après le vol, reportez-y les heures et toute anomalie, même mineure ou intermittente : c'est ainsi qu'elle parvient au mécanicien.\n• Une remarque non traitée ne devient pas acceptable parce qu'un autre pilote a volé avec : c'est le mécanicien qui la lève, en approuvant la remise en service.\n\nVisite pré-vol :\nElle suit la check-list du manuel de vol, dans le même ordre à chaque fois ; tout ce qui sort de l'ordinaire se vérifie.\n• Documents : certificats en original, ARC valide, assurance, carnet de route, manuel de vol.\n• Cabine : magnétos sur OFF, contact général pour lire les jauges et essayer les feux et l'avertisseur de décrochage, puis coupé ; blocage des commandes retiré, commandes libres.\n• Carburant : quantité contrôlée visuellement ou à la réglette graduée, sans se fier aux seules jauges ; bouchons fermés, évents dégagés. Couleur conforme au carburant prévu (AVGAS 100LL : bleue). Purge à chaque point de purge, dans un récipient transparent, avant le premier vol du jour et après chaque avitaillement : on purge jusqu'à n'obtenir que du carburant propre, puis on vérifie que la purge se referme sans goutter.\n• Huile : niveau à la jauge entre minimum et maximum, huile du type prescrit, bouchon serré, trappe fermée, pas de coulure fraîche.\n• Train : pneus sans coupure ni usure jusqu'à la toile, gonflage correct, repères de glissement pneu-jante alignés ; disques, plaquettes, pas de fuite de liquide ; amortisseurs.\n• Cellule et gouvernes : revêtement (chocs, criques, rivets), gouvernes libres et débattant dans le bon sens, charnières, goupilles et freins-filets en place, compensateur.\n• Pitot et prises statiques : housse retirée, orifices dégagés. Feux de navigation, anticollision et phare ; antennes.\n• Moteur et hélice : pales sans entaille ni crique, cône fixé, entrées d'air dégagées (nids), capots verrouillés. L'hélice est toujours considérée comme dangereuse : une magnéto peut rester « chaude ».\n• Autour : cales, attaches et housses retirées et rangées.\nSi la visite est interrompue (appel, passager), reprenez-la au point interrompu, en refaisant ce point.\n\nTemps froid :\n• Givre, gelée blanche ou neige sur les ailes, les empennages et les gouvernes s'enlèvent entièrement avant le vol : même une fine couche rugueuse diminue l'incidence de décrochage et augmente la vitesse de décrochage.\n• Vérifiez que neige et glace ne bloquent ni les gouvernes et leurs charnières, ni les évents, ni le Pitot et les prises statiques, ni les entrées d'air.\n• L'eau peut geler dans un puisard : une purge qui ne coule pas, ou sans eau visible, ne prouve pas l'absence d'eau.\n• Par grand froid, huile épaisse et batterie affaiblie rendent le démarrage difficile : suivez le manuel de vol.\n\nAnomalie avant le vol :\n• Un doute sur la navigabilité se tranche au sol : pas de vol sans l'avis d'un mécanicien en cas de dommage douteux (entaille d'hélice, crique, pneu entaillé, fuite).\n• Inscrivez l'anomalie au carnet de route, prévenez le responsable technique ou le mécanicien, et signalez clairement l'avion comme indisponible pour le pilote suivant.\n• Un équipement exigé pour le vol prévu (radio, transpondeur, feux de nuit...) qui tombe en panne rend ce vol impossible tel quel.\n• Pas de bricolage : effacer une remarque du carnet de route ne remet pas l'avion en service.",
+     "tips": "Un avion n'est prêt à voler que s'il est entretenu selon son programme et si la visite pré-vol, dont le commandant de bord est chargé, n'a rien révélé d'anormal.\n\nProgramme d'entretien et visites périodiques :\n• Sous le Part-ML, le propriétaire répond du maintien de la navigabilité, dont il confie souvent la gestion à un organisme agréé (CAMO ou CAO), comme en aéroclub.\n• Le programme d'entretien (AMP) fixe les visites et les travaux : visites périodiques en heures de vol et en durée calendaire, remplacement des pièces à durée limitée, contrôles des équipements. En règle générale, une visite est due à la première des deux échéances atteinte.\n• Chaque intervention est consignée ; l'approbation pour remise en service est signée par un mécanicien ou un organisme habilité.\n• Un propriétaire-pilote titulaire d'une licence valable sur l'avion peut effectuer et certifier certaines tâches simples listées par le règlement ; hors de ce cadre, le pilote ne répare pas : il signale.\nExemple : visite toutes les 50 h, dernière à 1 238 h, donc prochaine à 1 288 h. Compteur à 1 279 h : il reste 9 h, assez pour 3 h aller et 3 h retour, pas pour un voyage de 12 h.\n\nPotentiel :\n• Le potentiel est la durée d'utilisation fixée entre deux révisions générales d'un moteur, d'une hélice ou d'un équipement. Il s'exprime en heures de fonctionnement et peut comporter une limite calendaire : c'est la première échéance atteinte qui compte.\n• Potentiel restant = potentiel − heures effectuées depuis la dernière révision générale.\nExemple : potentiel de 2 000 h ; révision faite quand la cellule totalisait 2 460 h ; cellule à 4 105 h. Depuis la révision : 4 105 − 2 460 = 1 645 h ; potentiel restant : 2 000 − 1 645 = 355 h.\n\nConsignes de navigabilité :\n• Publiées par l'EASA (ou par l'État de conception) quand un défaut dangereux est découvert, elles sont obligatoires, avec un délai en heures, en cycles ou en date. Un avion dont une consigne applicable n'a pas été faite dans le délai n'est plus navigable. Un bulletin de service (SB) n'est qu'une recommandation.\n• Une consigne peut être ponctuelle ou répétitive : inspection à refaire à intervalle fixe.\n\nCarnet de route et compte rendu de défauts :\n• Le carnet de route appartient à l'avion : date, équipage, lieux et heures, temps de vol, anomalies constatées.\n• Avant le vol, consultez-le : défauts signalés et suite donnée par le mécanicien, heures restantes avant la prochaine visite. Après le vol, reportez-y les heures et toute anomalie, même mineure ou intermittente : c'est ainsi qu'elle parvient au mécanicien.\n• Une remarque non traitée ne devient pas acceptable parce qu'un autre pilote a volé avec : elle reste ouverte jusqu'à sa réparation (approbation pour remise en service) ou à un report conforme au Part-ML, inscrit au dossier. Un défaut qui met sérieusement en danger la sécurité se répare avant le vol ; en aéroclub, on s'en remet au mécanicien.\n\nVisite pré-vol :\nElle suit la check-list du manuel de vol, dans le même ordre à chaque fois ; tout ce qui sort de l'ordinaire se vérifie.\n• Documents : certificats d'immatriculation et de navigabilité en original, ARC valide, assurance, carnet de route, manuel de vol.\n• Cabine : magnétos sur OFF, contact général pour lire les jauges et essayer les feux et l'avertisseur de décrochage, puis coupé ; blocage des commandes retiré, commandes libres.\n• Carburant : quantité contrôlée visuellement ou à la réglette graduée, sans se fier aux seules jauges ; bouchons fermés, évents dégagés (un évent bouché peut arrêter le moteur). Couleur conforme au carburant prévu (AVGAS 100LL : bleue). Purge à chaque point de purge, dans un récipient transparent, avant le premier vol du jour et après chaque avitaillement : on purge jusqu'à n'obtenir que du carburant propre, puis on vérifie que la purge se referme sans goutter.\n• Huile : niveau à la jauge entre minimum et maximum, huile du type prescrit, bouchon serré, trappe fermée, pas de coulure fraîche.\n• Train : pneus sans coupure ni usure jusqu'à la toile, gonflage correct, repères de glissement pneu-jante alignés ; disques, plaquettes, pas de fuite de liquide ; amortisseurs.\n• Cellule et gouvernes : revêtement (chocs, criques, rivets), gouvernes libres et débattant dans le bon sens, charnières, goupilles et fils à freiner en place, compensateur.\n• Pitot et prises statiques : housse retirée, orifices dégagés. Feux de navigation, anticollision et phare ; antennes.\n• Moteur et hélice : pales sans entaille ni crique, cône fixé, entrées d'air dégagées (nids), capots verrouillés. L'hélice est toujours considérée comme dangereuse : une magnéto peut rester « chaude ».\n• Autour : cales, attaches et housses retirées et rangées.\nSi la visite est interrompue (appel, passager), reprenez-la au point interrompu, en refaisant ce point.\n\nTemps froid :\n• Givre, gelée blanche ou neige sur les ailes, les empennages et les gouvernes s'enlèvent entièrement avant le vol : même une fine couche rugueuse diminue l'incidence de décrochage et augmente la vitesse de décrochage.\n• Vérifiez que neige et glace ne bloquent ni les gouvernes et leurs charnières, ni les évents, ni le Pitot et les prises statiques, ni les entrées d'air.\n• L'eau peut geler dans un puisard : une purge qui ne coule pas, ou sans eau visible, ne prouve pas l'absence d'eau.\n• Par grand froid, huile épaisse et batterie faible gênent le démarrage : suivez le manuel de vol.\n\nAnomalie avant le vol :\n• Un doute sur la navigabilité se tranche au sol : pas de vol sans l'avis d'un mécanicien en cas de dommage douteux (entaille d'hélice, crique, pneu entaillé, fuite).\n• Inscrivez l'anomalie au carnet de route, prévenez le responsable technique ou le mécanicien, et signalez clairement l'avion comme indisponible pour le pilote suivant.\n• Un équipement exigé pour le vol prévu (radio, transpondeur, feux de nuit...) qui tombe en panne rend ce vol impossible tel quel.\n• Pas de bricolage : effacer une remarque du carnet de route ne remet pas l'avion en service.",
      "vocab": [
       {
        "term": "Programme d'entretien (AMP)",
@@ -809,8 +809,8 @@
        "translation": "Traits peints sur pneu et jante qui révèlent un pneu qui a tourné"
       },
       {
-       "term": "Frein-filet",
-       "translation": "Fil de sécurité qui empêche une vis ou un écrou de se desserrer"
+       "term": "Fil à freiner",
+       "translation": "Fil métallique qui empêche une vis ou un écrou de se desserrer"
       },
       {
        "term": "Gelée blanche",
@@ -920,15 +920,15 @@
       },
       {
        "id": "u9s8q08",
-       "q": "Après une nuit claire et froide, une fine gelée blanche couvre les ailes de l'avion. Que faites-vous ?",
+       "q": "Pendant la visite pré-vol, pourquoi vérifiez-vous que les évents des réservoirs sont dégagés ?",
        "choices": [
-        "Vous décollez avec une rotation plus rapide",
-        "Vous décollez : elle disparaîtra au roulement",
-        "Vous l'enlevez entièrement avant le vol",
-        "Vous dégagez le bord d'attaque et laissez l'extrados"
+        "Pour que l'eau de condensation s'évacue hors du réservoir",
+        "Pour refroidir le carburant et limiter la formation de bulles de vapeur",
+        "Pour que l'air remplace le carburant consommé, sans dépression",
+        "Pour permettre la lecture correcte des jauges électriques"
        ],
        "answer": 2,
-       "explanation": "Même fine, la gelée blanche rend l'aile rugueuse : l'incidence de décrochage diminue et la vitesse de décrochage augmente, au moment le plus critique. Elle ne s'envole pas au roulement ; on décolle avec des surfaces propres, ailes, empennages et gouvernes compris."
+       "explanation": "L'évent laisse entrer l'air à mesure que le carburant est consommé. Bouché par un nid, des insectes ou de la glace, il laisse une dépression se former dans le réservoir : le débit baisse, jusqu'à l'arrêt du moteur alors qu'il reste du carburant. L'eau s'évacue par la purge, au point bas, et les jauges ne dépendent pas de l'évent."
       },
       {
        "id": "u9s8q09",
@@ -1007,12 +1007,12 @@
        "q": "Par − 8 °C, la purge d'un réservoir ne laisse rien couler. Qu'en concluez-vous ?",
        "choices": [
         "Par grand froid, l'air est sec : la purge devient alors inutile",
-        "L'eau gelée peut boucher la purge : rien ne prouve l'absence d'eau",
+        "L'eau gelée peut obstruer la purge et rester dans le réservoir",
         "Le puisard est sec : le réservoir ne contient pas d'eau à purger",
         "Le réservoir est vide : il faut avitailler avant de purger"
        ],
        "answer": 1,
-       "explanation": "Par température négative, l'eau déposée au point bas peut geler et obstruer la purge. Rien ne coule ne veut donc pas dire « pas d'eau » : on contrôle la quantité de carburant et l'on demande conseil au mécanicien, par exemple pour rentrer l'avion au chaud avant de purger à nouveau."
+       "explanation": "Par température négative, l'eau déposée au point bas peut geler et obstruer la purge. Une purge qui ne coule pas ne prouve donc pas l'absence d'eau : on contrôle la quantité de carburant et l'on demande conseil au mécanicien, par exemple pour rentrer l'avion au chaud avant de purger à nouveau."
       },
       {
        "id": "u9s8q16",
@@ -1036,7 +1036,7 @@
         "Vous partez, l'anomalie étant déjà inscrite au carnet de route"
        ],
        "answer": 0,
-       "explanation": "Une remarque non traitée reste ouverte, même si un autre pilote a volé avec. La radio est indispensable au transit prévu : vous la faites examiner et l'essayez avant de décider. C'est le mécanicien qui lève la remarque ; la barrer vous-même ferait disparaître l'information."
+       "explanation": "Une remarque non traitée reste ouverte, même si un autre pilote a volé avec. La radio est indispensable au transit prévu : vous la faites examiner et l'essayez avant de décider. Un équipement exigé pour le vol ne se reporte pas de votre propre chef : c'est un mécanicien habilité qui traite la remarque, et la barrer vous-même ferait disparaître l'information."
       },
       {
        "id": "u9s8q18",
@@ -1054,7 +1054,7 @@
        "id": "u9s8q19",
        "q": "Le programme fixe le potentiel du moteur à 2 000 h ou 12 ans, à la première échéance. Le moteur a été révisé en mars 2014 et a tourné 1 150 h depuis. Nous sommes en novembre 2026. Que concluez-vous ?",
        "choices": [
-        "Le potentiel est échu en mars 2026, malgré 850 h restantes",
+        "Le potentiel est échu en mars dernier, malgré 850 h restantes",
         "Le potentiel ne sera échu qu'en mars 2027, dans quatre mois",
         "Le potentiel sera échu à 2 000 h, la date étant indicative",
         "Il reste 850 h : le moteur est encore dans son potentiel"
