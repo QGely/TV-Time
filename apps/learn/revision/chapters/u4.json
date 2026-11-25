@@ -13,9 +13,9 @@
   "Heure toujours en **UTC** (temps universel coordonné) : heure légale **− 1 h l’hiver**, **− 2 h l’été** en métropole.",
   "Collationne (**SERA.8015(e)**, règles de l’air européennes) : autorisations de piste et de route, piste en service, calages, codes, fréquences, caps, niveaux, vitesses, niveau de transition.",
   "**Roger** = reçu ; **wilco** = je m’y conforme ; **affirm** = oui ; **negative** = non ; **standby** = attendez. « Roger » ne remplace jamais un collationnement.",
-  "« Roulez point d’arrêt » n’autorise pas à entrer sur la piste, « alignez-vous et attendez » pas à décoller. Au point d’arrêt, dis **prêt au départ**.",
+  "« Roulez point d’attente » n’autorise pas à entrer sur la piste, « alignez-vous et attendez » pas à décoller. Au point d’attente, dis **prêt au départ**.",
   "Classes C et D : **pas de clairance, pas d’entrée**. Le SIV (secteur d’information de vol) et l’AFIS (information de vol d’aérodrome) n’autorisent rien.",
-  "Terrain sans organisme : **auto-information** sur la fréquence de la VAC (carte d’approche à vue), **123,5 MHz** à défaut. Chaque message commence par le nom du terrain.",
+  "Terrain sans organisme : **auto-information** sur la fréquence de la VAC (carte d’approche à vue), **123,5 MHz** à défaut. Commence chaque message par le nom du terrain.",
   "**MAYDAY** × 3 : danger grave et/ou imminent. **PAN PAN** × 3 : sécurité en jeu, sans aide immédiate. D’abord la **fréquence en usage**, puis **121,5 MHz** ; code **7700**.",
   "Panne radio : **7600**, messages à l’aveugle **2 fois** ; en VMC (conditions de vol à vue), atterris au plus proche aérodrome approprié et signale ton arrivée.",
   "La VHF va en **ligne droite** : portée (NM) ≈ **1,23 × √h** (h en ft). Langue : français ou anglais, avec la mention **FCL.055** (niveau 4 minimum)."
@@ -308,7 +308,7 @@
       [
        "**Acknowledge**",
        "Accusez réception",
-       "Montre que tu as reçu le message"
+       "Montre que tu as reçu et compris le message"
       ],
       [
        "**Contact** / **Monitor**",
@@ -318,7 +318,7 @@
       [
        "**I say again**",
        "Je répète",
-       "Je répète, pour insister"
+       "Je répète, pour être clair ou insister"
       ],
       [
        "**Recleared**",
@@ -359,7 +359,7 @@
   },
   {
    "title": "Au départ : ATIS, roulage et décollage",
-   "summary": "Du parking à la piste, deux mots-pièges : « point d’arrêt » (tu t’arrêtes) et « décollage » (réservé à la tour).",
+   "summary": "Du parking à la piste, deux mots-pièges : « point d’attente » (tu t’y arrêtes) et « décollage » (réservé à la tour).",
    "blocks": [
     {
      "type": "code",
@@ -377,15 +377,15 @@
       },
       {
        "who": "Sol",
-       "text": "F-LM, roulez point d’arrêt Alpha piste 24, QNH 1016."
+       "text": "F-LM, roulez point d’attente Alpha piste 24, QNH 1016."
       },
       {
        "who": "Pilote",
-       "text": "Point d’arrêt Alpha piste 24, QNH 1016, F-LM."
+       "text": "Point d’attente Alpha piste 24, QNH 1016, F-LM."
       },
       {
        "who": "Pilote",
-       "text": "Valmont Tour, F-GJLM, point d’arrêt Alpha, prêt au départ."
+       "text": "Valmont Tour, F-GJLM, point d’attente Alpha, prêt au départ."
       },
       {
        "who": "Tour",
@@ -393,19 +393,19 @@
       },
       {
        "who": "Pilote",
-       "text": "Autorisé décollage piste 24, F-LM. (le vent ne se répète pas)"
+       "text": "Piste 24, autorisé décollage, F-LM. (le vent ne se répète pas)"
       }
      ]
     },
     {
      "type": "example",
      "title": "La clairance conditionnelle",
-     "text": "« F-LM, derrière le DR400 en courte finale, alignez-vous et attendez derrière » : collationne **avec la condition**, aligne-toi après son passage.\nDeux avions en finale, ou un doute ? Reste au point d’arrêt et demande confirmation."
+     "text": "« F-LM, derrière le DR400 en courte finale, alignez-vous et attendez derrière » : collationne **avec la condition**, aligne-toi après son passage.\nDeux avions en finale, ou un doute ? Reste au point d’attente et demande confirmation."
     },
     {
      "type": "trap",
      "title": "Les quatre pièges du départ",
-     "text": "**Mise en route approuvée** (*start-up approved*) : tu démarres, mais tu ne roules pas.\n**Roulez point d’arrêt** n’autorise jamais à entrer sur la piste.\n**Alignez-vous et attendez** (*line up and wait*) : tu t’alignes, tu ne décolles pas.\nDis **prêt au départ** (*ready for departure*) : *take-off* est réservé à l’autorisation de décollage et à son annulation."
+     "text": "**Mise en route approuvée** (*start-up approved*) : tu démarres, mais tu ne roules pas.\n**Roulez point d’attente** n’autorise jamais à entrer sur la piste.\n**Alignez-vous et attendez** (*line up and wait*) : tu t’alignes, tu ne décolles pas.\nDis **prêt au départ** (*ready for departure*) : *take-off* est réservé à l’autorisation de décollage et à son annulation."
     }
    ]
   },
@@ -440,7 +440,7 @@
       },
       {
        "who": "Pilot",
-       "text": "Cleared to land runway 24, F-LM."
+       "text": "Runway 24, cleared to land, F-LM."
       }
      ]
     },
@@ -461,7 +461,7 @@
        "overhead"
       ],
       [
-       "roulez point d’arrêt…",
+       "roulez point d’attente…",
        "taxi to holding point…",
        "trafic en vue",
        "traffic in sight (pas encore vu : *looking out*)"
@@ -568,7 +568,7 @@
     {
      "type": "key",
      "title": "Compte rendu de position et information de trafic",
-     "text": "**Identification, position, heure, niveau ou altitude**, puis prochaine position et heure estimée : « F-LM, verticale Romeo à 25, 3 500 pieds, estimée Valmont à 40 ».\nUn trafic se situe en heures d’horloge (12 h = devant toi, 3 h = à droite) : « traffic 2 o’clock, 3 miles » → *traffic in sight* ou *looking out*."
+     "text": "**Identification, position, heure, niveau ou altitude**, puis prochaine position et heure estimée : « F-LM, verticale Romeo à 25, 3 500 pieds, estimons Valmont à 40 ».\nUn trafic se situe en heures d’horloge (12 h = devant toi, 3 h = à droite) : « traffic 2 o’clock, 3 miles » → *traffic in sight* ou *looking out*."
     }
    ]
   },
@@ -630,7 +630,7 @@
      "title": "La fréquence pendant une détresse",
      "items": [
       "**Silence** : « STOP TRANSMITTING – MAYDAY », imposé par l’avion en détresse ou la station qui dirige ; les autres n’émettent que pour aider.",
-      "**Relais** : si l’avion en détresse ne peut pas émettre, une autre station relaie : « MAYDAY RELAY » × 3.",
+      "**Relais** : un MAYDAY resté sans réponse peut être relayé par une autre station, qui annonce « MAYDAY RELAY ».",
       "**Annulation** : l’avion qui n’est plus en détresse annule son message.",
       "**Fin** : la station qui dirigeait annonce « DISTRESS TRAFFIC ENDED »."
      ]
@@ -767,7 +767,7 @@
       ],
       [
        "**VHF** NAV",
-       "108 à 117,95 MHz",
+       "108 à 117,975 MHz",
        "VOR, ILS (radionavigation)"
       ],
       [
@@ -825,7 +825,7 @@
   },
   {
    "value": "2 derniers",
-   "label": "caractères de l’abrégé (F-LM)"
+   "label": "au moins, après le 1er caractère (F-LM)"
   },
   {
    "value": "UTC + 1 / + 2",
@@ -845,7 +845,7 @@
   },
   {
    "value": "× 3",
-   "label": "MAYDAY, PAN PAN, MAYDAY RELAY"
+   "label": "MAYDAY, PAN PAN (de préférence)"
   },
   {
    "value": "× 2",
@@ -896,7 +896,7 @@
    "label": "MHz : radiotéléphonie VHF"
   },
   {
-   "value": "108–117,95",
+   "value": "108–117,975",
    "label": "MHz : VOR et ILS"
   },
   {
@@ -1010,7 +1010,7 @@
    "def": "carte d’approche et d’atterrissage à vue"
   },
   {
-   "term": "Point d’arrêt",
+   "term": "Point d’attente",
    "def": "limite à ne pas franchir avant la piste"
   },
   {
@@ -1112,7 +1112,7 @@
    "a": "« 4521, QNH 1018, F-LM »."
   },
   {
-   "q": "Au point d’arrêt, prêt à partir : que dis-tu en anglais ?",
+   "q": "Au point d’attente, prêt à partir : que dis-tu en anglais ?",
    "a": "« Ready for departure », jamais « take-off »."
   },
   {

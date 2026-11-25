@@ -156,7 +156,7 @@
     {
      "type": "bullets",
      "items": [
-      "Décollage et atterrissage plus longs (+10 % de masse ≈ +20 % au décollage), montée plus faible.",
+      "Décollage et atterrissage plus longs (+10 % de masse ≈ +20 % au décollage, ≈ +10 % à l’atterrissage), montée plus faible.",
       "Vitesse de décrochage plus élevée : elle croît comme √masse (masse × 1,21 → vitesse × 1,1).",
       "Structure surchargée : les facteurs de charge limites valent à la MTOM. Hors limites, **on ne part pas**."
      ],
@@ -205,13 +205,13 @@
       [
        "Masse + 10 %",
        "≈ +20 %",
-       "plus long",
+       "≈ +10 %",
        "vitesses plus grandes"
       ],
       [
        "+10 °C ou +1 000 ft",
        "+10 %",
-       "plus long",
+       "+5 %",
        "air moins dense"
       ],
       [
@@ -517,7 +517,7 @@
       "Obligatoire notamment : vol **contrôlé**, **passage de frontière**, vol **de nuit** quittant les abords de l’aérodrome.",
       "Pour une clairance demandée en vol, l’appel radio tient lieu de **plan de vol abrégé**.",
       "Pas exigé pour un vol VFR (règles de vol à vue) de jour en espace non contrôlé, **quelle que soit sa durée**.",
-      "Dépôt au moins **60 min** avant le départ. À l’arrivée, **clôture-le vite** : sans nouvelles 30 min après l’heure prévue, l’alerte démarre (**INCERFA**)."
+      "Dépôt au moins **60 min** avant le départ (en France, **30 min** pour un vol VFR intérieur). À l’arrivée, **clôture-le vite** : sans nouvelles 30 min après l’heure prévue, l’alerte démarre (**INCERFA**)."
      ],
      "title": "Plan de vol (SERA.4001)"
     },
@@ -761,7 +761,7 @@
   },
   {
    "value": "60 min",
-   "label": "dépôt du plan de vol avant départ"
+   "label": "dépôt du plan de vol (VFR intérieur en France : 30 min)"
   },
   {
    "value": "30 min",
@@ -819,7 +819,7 @@
   },
   {
    "term": "Catégorie utilitaire",
-   "def": "enveloppe réduite (vrilles)"
+   "def": "voltige limitée (vrilles si approuvées), enveloppe réduite"
   },
   {
    "term": "Délestage (carburant)",

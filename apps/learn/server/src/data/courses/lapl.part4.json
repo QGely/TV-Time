@@ -137,15 +137,15 @@
       },
       {
        "id": "u4s1q06",
-       "q": "En janvier, un NOTAM annonce l'activation d'une zone réglementée de 0930 à 1130 UTC. En heure légale française (métropole), la zone est active :",
+       "q": "Un avion de ligne s'annonce « Fictair 512 » (exploitant fictif) : indicatif téléphonique de l'exploitant suivi du numéro de vol. Quelle forme abrégée la station au sol peut-elle employer ?",
        "choices": [
-        "de 8 h 30 à 10 h 30",
-        "de 9 h 30 à 11 h 30",
-        "de 10 h 30 à 12 h 30",
-        "de 11 h 30 à 13 h 30"
+        "Fictair 12, avec les deux derniers chiffres",
+        "F512, avec l'initiale de l'exploitant",
+        "Aucune : on le dit en entier",
+        "Fictair, sans le numéro de vol"
        ],
        "answer": 2,
-       "explanation": "En hiver, l'heure légale vaut UTC + 1 : 0930 UTC = 10 h 30 et 1130 UTC = 12 h 30. NOTAM, plans de vol et messages radio sont toujours exprimés en UTC."
+       "explanation": "SERA.14050 distingue trois types d'indicatifs. L'immatriculation (type a) s'abrège en gardant le premier caractère et au moins les deux derniers, et l'indicatif de l'exploitant suivi des derniers caractères de l'immatriculation (type b) s'abrège aussi. L'indicatif de l'exploitant suivi du numéro de vol (type c) n'a pas de forme abrégée : « Fictair 12 » applique à tort la règle de l'immatriculation et pourrait désigner un autre vol."
       },
       {
        "id": "u4s1q07",
@@ -257,15 +257,15 @@
       },
       {
        "id": "u4s1q16",
-       "q": "Le 10 juillet, un NOTAM annonce une zone réglementée de 1300 à 1500 UTC. Vous prévoyez de la traverser à 16 h 30, heure légale. Qu'en concluez-vous ?",
+       "q": "Le 10 juillet, un NOTAM annonce une zone réglementée de 1300 à 1500 UTC. Vous prévoyez de la traverser à 16 h 50, heure légale. Qu'en concluez-vous ?",
        "choices": [
-        "Elle sera libre : 16 h 30 légales font 15 h 30 UTC",
-        "Elle sera libre : 16 h 30 légales font 18 h 30 UTC",
-        "Elle sera active : 16 h 30 légales font 14 h 30 UTC",
+        "Elle sera libre : 16 h 50 légales font 15 h 50 UTC",
+        "Elle sera libre : 16 h 50 légales font 18 h 50 UTC",
+        "Elle sera active : 16 h 50 légales font 14 h 50 UTC",
         "Elle sera libre : un NOTAM se lit en heure légale"
        ],
        "answer": 2,
-       "explanation": "En juillet, l'heure légale vaut UTC + 2 : 16 h 30 légales = 14 h 30 UTC, en plein créneau 1300-1500 UTC, donc la zone sera active. Retrancher une seule heure, comme en hiver, donnerait à tort 15 h 30 ; les NOTAM sont toujours rédigés en UTC."
+       "explanation": "En juillet, l'heure légale vaut UTC + 2 : 16 h 50 légales = 14 h 50 UTC, dans le créneau 1300-1500 UTC, donc la zone sera active. Retrancher une seule heure, comme en hiver, donnerait à tort 15 h 50 ; les NOTAM sont toujours rédigés en UTC."
       },
       {
        "id": "u4s1q17",
@@ -381,7 +381,7 @@
      "id": "u4s2",
      "title": "Phraséologie VFR",
      "icon": "🗣️",
-     "tips": "Un message radio répond toujours à quatre questions : qui j'appelle, qui je suis, où je suis, ce que je veux. Il doit être bref, préparé et conforme à la phraséologie.\n\nAvant le premier appel :\n• écoutez l'ATIS et notez la lettre, la piste, le QNH et les consignes ;\n• repérez sur la carte VAC les fréquences, les points d'entrée et de sortie et l'altitude du circuit ;\n• gardez de quoi écrire : une clairance se note au fur et à mesure.\n\nPremier contact : indicatif de la station, indicatif complet de l'avion, puis type d'avion, position, altitude, lettre ATIS reçue et demande. Sur une fréquence chargée, on peut se limiter d'abord à un appel court (« Toussus Tour, F-GJLM ») et attendre d'être invité à poursuivre. Au premier contact avec l'approche, la tour ou l'AFIS, on accuse réception de l'ATIS en donnant sa lettre (SERA.9010).\n\nDépart :\n• demande de mise en route ou de roulage : position au parking, lettre ATIS, intentions (tours de piste, vol local, navigation vers…) ;\n• « roulez point d'attente A piste 24 » n'autorise jamais à entrer sur la piste : on s'arrête au point d'attente. Depuis le 12 octobre 2017, la phraséologie française dit « point d'attente » et non plus « point d'arrêt » ;\n• au point d'attente, on se déclare « prêt au départ » (ready for departure) : le mot « décollage » est réservé à l'autorisation de décollage et à son annulation ;\n• « alignez-vous et attendez » (line up and wait) n'autorise pas à décoller.\nOn collationne mot pour mot « piste 24, autorisé décollage » et « piste 24, autorisé atterrissage » : depuis 2017, la piste est citée avant l'autorisation.\n\nDécollage annulé :\n• avion encore immobile : « F-LM, maintenez position, annulez le décollage, je répète, annulez le décollage » ; on reste sur place et on le confirme (« holding » en anglais) ;\n• course au décollage commencée : « F-LM, stop immediately » ; on interrompt le décollage et l'on répond « stopping ».\n\nArrivée : on rejoint les points d'entrée publiés sur la carte VAC, on s'intègre dans le circuit selon les instructions reçues (vent arrière, base, finale directe…) et on rappelle les positions demandées (« rappelez vent arrière »).\n\nDans le circuit, le contrôleur règle l'espacement :\n• « extend downwind » : prolongez la vent arrière au-delà du point habituel de virage en base ;\n• « make one orbit left » (ou right) : faites un tour complet de 360° du côté indiqué, puis reprenez le circuit ;\n• « continue approach » : poursuivez l'approche, sans être encore autorisé à atterrir ; soyez prêt à remettre les gaz ;\n• « cleared touch and go » autorise le toucher-décollage ; « make full stop » impose un atterrissage complet ;\n• « remettez les gaz » (go around) s'exécute aussitôt, puis s'annonce.\n\nCompte rendu de position (ordre OACI) : identification, position, heure, niveau ou altitude, puis prochaine position et heure estimée. En vol contrôlé, une estimée qui s'avère fausse de plus de 2 minutes se corrige dès que possible (SERA.8020).\n\nTransit en espace contrôlé : en classes C et D, le vol VFR doit obtenir une clairance avant d'entrer et garder l'écoute permanente ; on collationne la route, l'altitude, le QNH et le code transpondeur. Sans clairance, on reste dehors.\n\nTranspondeur : « affichez 4521 » se collationne ; « squawk ident » demande d'appuyer une fois sur IDENT, sans changer de code. La fonction IDENT ne s'emploie que sur demande.\n\nExpressions conventionnelles :\n• Roger (reçu) : j'ai reçu tout votre dernier message\n• Wilco : compris, je vais m'y conformer\n• Affirm (affirme) : oui\n• Negative (négatif) : non, permission refusée, ou ce n'est pas correct\n• Standby (attendez) : attendez, je vous rappelle ; ni accord ni refus\n• Say again (répétez) : répétez tout ou partie de votre message\n• Confirm (confirmez) : je demande la vérification de…\n• Correction : une erreur a été commise, la version correcte est…\nLe langage clair, en phrases courtes, ne sert que lorsque la phraséologie ne prévoit rien. Un doute sur une valeur : « confirmez 1 500 ft ». Une clairance ne se devine pas.\n\nAuto-information : sur un aérodrome sans organisme ATS en service, chaque pilote annonce sur la fréquence publiée sa position et ses intentions aux points clés (arrivée, verticale, vent arrière, base, finale, piste dégagée ; roulage, alignement et décollage, sortie du circuit). Ces messages s'adressent à tous, n'appellent pas de réponse et ne dispensent jamais de la surveillance visuelle.\n\nPièges classiques :\n• prendre « continue approach » pour une autorisation d'atterrir ;\n• se croire autorisé sur la piste par une instruction de roulage ;\n• répondre « wilco » ou « roger » à une question fermée, au lieu d'« affirm » ou « negative » ;\n• exécuter une clairance mal comprise au lieu de la faire confirmer.",
+     "tips": "Un message radio répond toujours à quatre questions : qui j'appelle, qui je suis, où je suis, ce que je veux. Il doit être bref, préparé et conforme à la phraséologie.\n\nAvant le premier appel :\n• écoutez l'ATIS et notez la lettre, la piste, le QNH et les consignes ;\n• repérez sur la carte VAC les fréquences, les points d'entrée et de sortie et l'altitude du circuit ;\n• gardez de quoi écrire : une clairance se note au fur et à mesure.\n\nPremier contact : indicatif de la station, indicatif complet de l'avion, puis type d'avion, position, altitude, lettre ATIS reçue et demande. Sur une fréquence chargée, on peut se limiter d'abord à un appel court (« Toussus Tour, F-GJLM ») et attendre d'être invité à poursuivre. Au premier contact avec l'approche, la tour ou l'AFIS, on accuse réception de l'ATIS en donnant sa lettre (SERA.9010).\n\nDépart :\n• demande de mise en route ou de roulage : position au parking, lettre ATIS, intentions (tours de piste, vol local, navigation vers…) ;\n• « roulez point d'attente A piste 24 » n'autorise jamais à entrer sur la piste : on s'arrête au point d'attente. Depuis le 12 octobre 2017, la phraséologie française dit « point d'attente » et non plus « point d'arrêt » ;\n• au point d'attente, on se déclare « prêt au départ » (ready for departure) : le mot « décollage » est réservé à l'autorisation de décollage et à son annulation ;\n• « alignez-vous et attendez » (line up and wait) n'autorise pas à décoller.\nLe contrôleur dit « piste 24, autorisé décollage » ou « piste 24, autorisé atterrissage » : depuis 2017, la piste est citée avant l'autorisation. On collationne la piste et l'autorisation, suivies de l'indicatif : « piste 24, autorisé décollage, F-LM ».\n\nDécollage annulé :\n• avion encore immobile : « F-LM, maintenez position, annulez le décollage, je répète, annulez le décollage » ; on reste sur place et on le confirme (« holding » en anglais) ;\n• course au décollage commencée : « F-LM, stop immediately » ; on interrompt le décollage et l'on répond « stopping ».\n\nArrivée : on rejoint les points d'entrée publiés sur la carte VAC, on s'intègre dans le circuit selon les instructions reçues (vent arrière, base, finale directe…) et on rappelle les positions demandées (« rappelez vent arrière »).\n\nDans le circuit, le contrôleur règle l'espacement :\n• « extend downwind » : prolongez la vent arrière au-delà du point habituel de virage en base ;\n• « make one orbit left » (ou right) : faites un tour complet de 360° du côté indiqué, puis reprenez le circuit ;\n• « continue approach » : poursuivez l'approche, sans être encore autorisé à atterrir ; soyez prêt à remettre les gaz ;\n• « cleared touch and go » autorise le toucher-décollage ; « make full stop » impose un atterrissage complet ;\n• « remettez les gaz » (go around) s'exécute aussitôt, puis s'annonce.\n\nCompte rendu de position (ordre OACI) : identification, position, heure, niveau ou altitude, puis prochaine position et heure estimée. En vol contrôlé, une estimée qui s'avère fausse de plus de 2 minutes se corrige dès que possible (SERA.8020).\n\nTransit en espace contrôlé : en classes C et D, le vol VFR doit obtenir une clairance avant d'entrer et garder l'écoute permanente ; on collationne la route, l'altitude, le QNH et le code transpondeur. Sans clairance, on reste dehors.\n\nTranspondeur : « affichez 4521 » se collationne ; « squawk ident » demande d'appuyer une fois sur IDENT, sans changer de code. La fonction IDENT ne s'emploie que sur demande.\n\nExpressions conventionnelles :\n• Roger (reçu) : j'ai reçu tout votre dernier message\n• Wilco : compris, je vais m'y conformer\n• Affirm (affirme) : oui\n• Negative (négatif) : non, permission refusée, ou ce n'est pas correct\n• Standby (attendez) : attendez, je vous rappelle ; ni accord ni refus\n• Say again (répétez) : répétez tout ou partie de votre message\n• Confirm (confirmez) : je demande la vérification de…\n• Correction : une erreur a été commise, la version correcte est…\nLe langage clair, en phrases courtes, ne sert que lorsque la phraséologie ne prévoit rien. Un doute sur une valeur : « confirmez 1 500 ft ». Une clairance ne se devine pas.\n\nAuto-information : sur un aérodrome sans organisme ATS en service, chaque pilote annonce sur la fréquence publiée sa position et ses intentions aux points clés (arrivée, verticale, vent arrière, base, finale, piste dégagée ; roulage, alignement et décollage, sortie du circuit). Ces messages s'adressent à tous, n'appellent pas de réponse et ne dispensent jamais de la surveillance visuelle.\n\nPièges classiques :\n• prendre « continue approach » pour une autorisation d'atterrir ;\n• se croire autorisé sur la piste par une instruction de roulage ;\n• répondre « wilco » ou « roger » à une question fermée, au lieu d'« affirm » ou « negative » ;\n• exécuter une clairance mal comprise au lieu de la faire confirmer.",
      "vocab": [
       {
        "term": "Roger",
@@ -1219,15 +1219,15 @@
       },
       {
        "id": "u4s4q03",
-       "q": "Un avion vole à 3 600 ft au-dessus d'une région plate ; l'antenne de la station est au niveau du sol. Quelle est la portée VHF théorique ? (portée en NM ≈ 1,23 × √h, h en ft)",
+       "q": "Au-dessus de l'océan, loin de toute station VHF, un équipage garde le contact radio avec le contrôle en HF. Pourquoi la HF porte-t-elle aussi loin ?",
        "choices": [
-        "Environ 7 NM",
-        "Environ 41 NM",
-        "Environ 74 NM",
-        "Environ 148 NM"
+        "Parce qu'elle traverse le relief sans être affaiblie",
+        "Parce que ses stations ont des antennes plus hautes",
+        "Parce que l'ionosphère renvoie ses ondes vers le sol",
+        "Parce qu'un satellite relaie chaque message émis"
        ],
        "answer": 2,
-       "explanation": "√3 600 = 60 ; 1,23 × 60 = 73,8 NM, soit environ 74 NM. En VHF, la portée croît avec la racine carrée de la hauteur."
+       "explanation": "Les ondes HF (3 à 30 MHz) sont renvoyées vers le sol par l'ionosphère, ce qui leur permet de porter bien au-delà de l'horizon : d'où leur emploi pour les liaisons à grande distance. La VHF, au contraire, reste limitée à la portée optique. Ni la hauteur des antennes ni un relais par satellite n'expliquent cette portée, et la HF n'a pas la propriété de traverser le relief."
       },
       {
        "id": "u4s4q04",

@@ -726,27 +726,27 @@
       },
       {
        "id": "u9s7q23",
-       "q": "Votre conservateur est en panne. Dans l'hémisphère Nord, vous devez passer du cap 300 au cap 210 par la gauche avec le compas. Quelle méthode retenez-vous ?",
+       "q": "Votre conservateur est en panne. Dans l'hémisphère Nord, vous devez passer du cap 300 au cap 165 par la gauche avec le compas. Quelle méthode retenez-vous ?",
        "choices": [
-        "Virer jusqu'à lire 220 au compas : vers le sud, on sort avant",
-        "Virer 60 s au taux 1, puis lire le compas pendant le virage",
-        "Virer 30 s au taux 1, puis lire le compas stabilisé et corriger",
-        "Virer jusqu'à lire 210 au compas, sans tenir compte des erreurs"
+        "Virer jusqu'à lire 175 au compas : vers le sud, on sort avant",
+        "Virer 90 s au taux 1, puis lire le compas pendant le virage",
+        "Virer 45 s au taux 1, puis lire le compas stabilisé et corriger",
+        "Virer jusqu'à lire 165 au compas, sans tenir compte des erreurs"
        ],
        "answer": 2,
-       "explanation": "L'écart est de 90° : au taux 1, 90 / 3 = 30 s. Le virage chronométré évite les erreurs de virage du compas, qui est en avance vers le sud : il faudrait au contraire sortir après 210. On lit ensuite le compas ailes horizontales, à vitesse constante, et on corrige."
+       "explanation": "L'écart est de 300 − 165 = 135° : au taux 1, 135 / 3 = 45 s (90 s correspondrait à un demi-taux). Le virage chronométré évite les erreurs de virage du compas, qui est en avance vers le sud : il faudrait au contraire sortir après 165. On lit ensuite le compas ailes horizontales, à vitesse constante, et on corrige ; en virage, sa lecture est fausse."
       },
       {
        "id": "u9s7q24",
-       "q": "Au cap 270, dans l'hémisphère Nord, vous passez de la croisière à la montée : la vitesse diminue de 100 à 70 kt et le compas lit brièvement 260. Que faites-vous ?",
+       "q": "Au cap 090, dans l'hémisphère Nord, vous passez de la croisière à la montée : la vitesse diminue de 100 à 70 kt et le compas lit brièvement 100. Que faites-vous ?",
        "choices": [
         "Vous gardez le cap : l'erreur cessera en vol stabilisé",
-        "Vous corrigez au palonnier jusqu'à relire 270 au compas",
-        "Vous recalez aussitôt le conservateur de cap sur la valeur 260",
-        "Vous virez de 10° à droite pour ramener le compas sur 270"
+        "Vous corrigez au palonnier jusqu'à relire 090 au compas",
+        "Vous recalez aussitôt le conservateur de cap sur la valeur 100",
+        "Vous virez de 10° à gauche pour ramener le compas sur 090"
        ],
        "answer": 0,
-       "explanation": "Au cap ouest, une décélération fait indiquer un virage apparent vers le sud, donc un cap plus faible (ANDS) : 260 au lieu de 270. Le cap réel n'a pas changé : on le tient au conservateur et aux repères extérieurs, et l'on ne lit le compas qu'une fois la vitesse stabilisée. Recaler le conservateur pendant la décélération y introduirait l'erreur."
+       "explanation": "Au cap est, une décélération fait indiquer un virage apparent vers le sud, donc un cap plus fort (ANDS) : 100 au lieu de 090. Le cap réel n'a pas changé : on le tient au conservateur et aux repères extérieurs, et l'on ne lit le compas qu'une fois la vitesse stabilisée. Virer de 10° à gauche ferait réellement quitter le cap, et recaler le conservateur pendant la décélération y introduirait l'erreur."
       }
      ]
     },

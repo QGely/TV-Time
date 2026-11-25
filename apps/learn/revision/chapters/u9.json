@@ -13,7 +13,7 @@
   "**Deux magnétos** : le moteur tourne sans batterie. Aucune chute à l’essai : fil de masse coupé.",
   "**Givrage carburateur** : air humide, **−10 à +30 °C**, moteur réduit. Remède : réchauffage **plein chaud**.",
   "En montée, le mélange **s’enrichit** : appauvris. Trop pauvre à forte puissance : **détonation**.",
-  "**AVGAS 100LL** (essence aviation) **bleue**, densité **0,72**. Jet A-1 interdit. Purge avant le 1er vol du jour.",
+  "**AVGAS 100LL** (essence aviation) **bleue**, densité **0,72**. Jet A-1 interdit dans un moteur à essence. Purge avant le 1er vol du jour.",
   "Puissance : **compte-tours** en pas fixe ; **pression d’admission** (et régime) en pas variable.",
   "Huile : pression **basse** + température **haute** = pose-toi vite. Alternateur en panne : **déleste** et écourte.",
   "Statique bouchée : **altimètre figé**, **variomètre à zéro**. Pitot et purge givrés : vitesse **qui monte en montée**.",
@@ -467,7 +467,7 @@
      "title": "Les trois instruments",
      "items": [
       "**Anémomètre** (pitot + statique) : il mesure la pression **dynamique** (totale − statique) et l’affiche en **vitesse indiquée** (Vi), en kt (nœuds).",
-      "En altitude, l’air est moins dense : la **vitesse propre** (Vp, vitesse vraie) dépasse la Vi d’environ **1 % par 600 ft**. Exemple : Vi 100 kt à 6 000 ft, Vp ≈ 110 kt.",
+      "En altitude, l’air est moins dense : la **vitesse propre** (Vp, vitesse vraie) dépasse la Vc (Vi corrigée des erreurs) d’environ **1 % par 600 ft**. Exemple : Vc 100 kt à 6 000 ft, Vp ≈ 110 kt.",
       "**Altimètre** (statique seule) : une **capsule anéroïde** (vide d’air) mesure la pression. Son affichage dépend du **calage**. QNH (pression ramenée au niveau de la mer) → altitude ; QFE (pression au terrain) → hauteur ; 1 013 hPa → niveau de vol.",
       "**Variomètre** (statique seule) : avec une **fuite calibrée**, il mesure la **variation** de pression, en ft/min (léger retard)."
      ]
@@ -697,8 +697,8 @@
     },
     {
      "type": "key",
-     "title": "Le manuel de vol : 9 sections au format standard GAMA",
-     "text": "1 Généralités · 2 **Limitations** · 3 Procédures d’**urgence** · 4 Procédures **normales** · 5 **Performances** · 6 Masse et centrage · 7 Systèmes · 8 Entretien · 9 **Suppléments** (équipements optionnels).\nGAMA : association des constructeurs d’aviation générale."
+     "title": "Le manuel de vol au format standard GAMA",
+     "text": "1 Généralités · 2 **Limitations** · 3 Procédures d’**urgence** · 4 Procédures **normales** · 5 **Performances** · 6 Masse et centrage · 7 Systèmes · 8 Entretien · 9 **Suppléments** (options) · 10 Sécurité (facultative).\nGAMA : association des constructeurs d’aviation générale."
     },
     {
      "type": "bullets",
@@ -744,7 +744,7 @@
   },
   {
    "value": "0,80",
-   "label": "densité Jet A-1 (interdit ; pistolet noir)"
+   "label": "densité Jet A-1 (diesels ; pistolet noir)"
   },
   {
    "value": "30 / 45 min",
@@ -784,7 +784,7 @@
   },
   {
    "value": "+1 % / 600 ft",
-   "label": "Vp au-dessus de la Vi, en altitude"
+   "label": "Vp au-dessus de la Vc, en altitude"
   },
   {
    "value": "3°/s",
@@ -831,8 +831,8 @@
    "label": "validité de l’ARC"
   },
   {
-   "value": "9",
-   "label": "sections du manuel de vol"
+   "value": "9 (+1)",
+   "label": "sections du manuel de vol GAMA"
   }
  ],
  "glossary": [
