@@ -11,7 +11,7 @@
      "id": "u5s1",
      "title": "La Terre, coordonnées et temps",
      "icon": "🌍",
-     "tips": "La Terre et ses repères :\n• La Terre tourne d'ouest en est autour de l'axe des pôles, en 24 h environ. C'est un ellipsoïde légèrement aplati (rayon d'environ 6 378 km à l'équateur et 6 357 km aux pôles) ; en navigation VFR, on la traite comme une sphère.\n• Grand cercle : cercle dont le plan passe par le centre de la Terre (l'équateur, chaque paire de méridiens opposés). Petit cercle : tout autre cercle, comme un parallèle autre que l'équateur.\n\nCoordonnées géographiques :\n• Latitude (φ) : angle compté depuis l'équateur, de 0 à 90° Nord ou Sud. Les points de même latitude forment un parallèle.\n• Longitude (λ) : angle compté depuis le méridien origine de Greenwich, de 0 à 180° Est ou Ouest. Les méridiens sont des demi-grands cercles qui joignent les pôles.\n• Notation en degrés et minutes (1° = 60′), parfois en secondes (1′ = 60″) ou en minutes décimales : 48°43′N 002°23′E.\n• Écart de latitude ou de longitude : deux valeurs de même nom (deux N, deux E…) → on soustrait ; de noms contraires (de part et d'autre de l'équateur ou de Greenwich) → on additionne. Ex. : de 02°10′S à 01°20′N, l'écart vaut 3°30′.\n• Milieu de deux positions proches : moyenne des latitudes et moyenne des longitudes, en comptant l'Ouest (et le Sud) en négatif.\n\nDistances :\n• Le mille nautique (NM) vaut 1 852 m : c'est la longueur d'une minute d'arc de méridien (et de tout grand cercle).\n• Le long d'un méridien : 1′ de latitude = 1 NM et 1° = 60 NM ≈ 111 km. Ex. : de 43°20′N à 44°50′N, 1°30′ = 90′ = 90 NM.\n• Du pôle à l'équateur : 90 × 60 = 5 400 NM, soit environ 10 000 km ; le tour de la Terre par les pôles fait 21 600 NM, environ 40 000 km.\n• Le long de l'équateur, qui est un grand cercle : 1′ de longitude = 1 NM.\n• Le long d'un autre parallèle, les méridiens se rapprochent : le rayon du parallèle vaut R × cos φ, donc 1′ de longitude vaut cos(latitude) NM. Pour 1° de longitude : 60 NM à l'équateur, 52 NM à 30°, 42 NM à 45°, 40 NM à 48° (Paris), 30 NM à 60°.\n• Méthode : distance (NM) = écart de longitude en minutes × cos φ. Ex. : à 45° N, de 001°00′W à 001°30′E : 2°30′ = 150′, et 150 × 0,71 ≈ 106 NM.\n\nOrthodromie et loxodromie :\n• Orthodromie : arc de grand cercle, plus court chemin entre deux points. Elle coupe les méridiens sous des angles qui varient (sauf le long d'un méridien ou de l'équateur).\n• Loxodromie : ligne qui coupe tous les méridiens sous le même angle, donc à route vraie constante. Elle est plus longue que l'orthodromie, mais l'écart est négligeable sur les distances d'un vol VFR.\n• Un parallèle (hors équateur) est une loxodromie de route 090° ou 270°, pas une orthodromie. Dans l'hémisphère nord, l'orthodromie passe du côté du pôle.\n• Ex. calculé : entre deux points du parallèle 48° N distants de 12° de longitude (≈ 482 NM), l'orthodromie ne fait gagner que 0,5 NM, mais sa route vraie passe d'environ 085° au départ à 090° au milieu, puis 095° à l'arrivée.\n\nLe temps :\n• L'heure aéronautique est l'heure UTC, notée Z (0930Z). Plans de vol, METAR, TAF et NOTAM sont rédigés en UTC.\n• Heure légale en France métropolitaine : UTC+1 en hiver, UTC+2 en été. L'heure d'été court du dernier dimanche de mars au dernier dimanche d'octobre, le changement ayant lieu à 1 h UTC. Ex. : 10 h 15 locale en août = 08:15 UTC.\n• Méthode : convertissez d'abord toutes les heures en UTC, puis calculez.\n• La Terre tourne de 360° en 24 h : 15° de longitude = 1 heure, 1° = 4 min, 15′ = 1 min.\n• Heure solaire moyenne locale (LMT) : LMT = UTC + longitude convertie en temps, l'Est s'ajoutant et l'Ouest se retranchant. Ex. : à 004°30′W, LMT = UTC − 18 min. Un lieu situé plus à l'est voit le soleil passer au méridien plus tôt : 5° d'écart de longitude = 20 min d'écart d'heure solaire.\n• Selon la date, le passage réel du soleil au méridien s'écarte de 12 h LMT de −14 à +16 min environ (équation du temps) : les éphémérides en tiennent compte.\n\nSoleil et saisons :\n• L'axe de la Terre est incliné d'environ 23,4° sur le plan de son orbite : la hauteur du soleil et la durée du jour changent avec les saisons. À Paris, le jour dure environ 16 h 10 au solstice de juin et 8 h 15 au solstice de décembre.\n• À la même date et à la même latitude, le soleil se lève et se couche plus tôt (en UTC) à l'est qu'à l'ouest : 4 min par degré de longitude.\n\nNuit aéronautique (SERA) : période comprise entre la fin du crépuscule civil du soir et le début du crépuscule civil du matin, le crépuscule civil prenant fin quand le centre du soleil est à 6° sous l'horizon (12° pour le crépuscule nautique). En France métropolitaine, on retient en pratique le coucher du soleil + 30 min et le lever du soleil − 30 min, heures données en UTC par les éphémérides.\n• En métropole, le crépuscule civil dure de 30 à 45 min environ : davantage en été et vers le nord.\n• Ex. : le 20 mars à Paris, coucher du soleil à 18:03 UTC → nuit à partir de 18:33 UTC, soit 19 h 33 heure légale (encore l'heure d'hiver).\n\nPièges classiques :\n• Confondre NM et km : 1° de latitude = 60 NM ≈ 111 km.\n• Lire 2°30′ comme 2,3° au lieu de 2,5°.\n• Soustraire deux longitudes de noms contraires au lieu de les additionner.\n• Ajouter le décalage horaire au lieu de le retrancher : UTC = heure légale − 1 h en hiver, − 2 h en été.",
+     "tips": "La Terre et ses repères :\n• La Terre tourne d'ouest en est autour de l'axe des pôles, en 24 h environ. C'est un ellipsoïde légèrement aplati (rayon d'environ 6 378 km à l'équateur et 6 357 km aux pôles) ; en navigation VFR, on la traite comme une sphère.\n• Grand cercle : cercle dont le plan passe par le centre de la Terre (l'équateur, chaque paire de méridiens opposés). Petit cercle : tout autre cercle, comme un parallèle autre que l'équateur.\n\nCoordonnées géographiques :\n• Latitude (φ) : angle compté depuis l'équateur, de 0 à 90° Nord ou Sud. Les points de même latitude forment un parallèle.\n• Longitude (λ) : angle compté depuis le méridien origine de Greenwich, de 0 à 180° Est ou Ouest. Les méridiens sont des demi-grands cercles qui joignent les pôles.\n• Notation en degrés et minutes (1° = 60′), parfois en secondes (1′ = 60″) ou en minutes décimales : 48°43′N 002°23′E.\n• Écart de latitude ou de longitude : deux valeurs de même nom (deux N, deux E…) → on soustrait ; de noms contraires (de part et d'autre de l'équateur ou de Greenwich) → on additionne. Ex. : de 02°10′S à 01°20′N, l'écart vaut 3°30′.\n• Milieu de deux positions proches : moyenne des latitudes et moyenne des longitudes, en comptant l'Ouest (et le Sud) en négatif.\n\nDistances :\n• Le mille nautique (NM) vaut 1 852 m : c'est la longueur d'une minute d'arc de méridien (et de tout grand cercle).\n• Le long d'un méridien : 1′ de latitude = 1 NM et 1° = 60 NM ≈ 111 km. Ex. : de 43°20′N à 44°50′N, 1°30′ = 90′ = 90 NM.\n• Du pôle à l'équateur : 90 × 60 = 5 400 NM, soit environ 10 000 km ; le tour de la Terre par les pôles fait 21 600 NM, environ 40 000 km.\n• Le long de l'équateur, qui est un grand cercle : 1′ de longitude = 1 NM.\n• Le long d'un autre parallèle, les méridiens se rapprochent : le rayon du parallèle vaut R × cos φ, donc 1′ de longitude vaut cos(latitude) NM. Pour 1° de longitude : 60 NM à l'équateur, 52 NM à 30°, 42 NM à 45°, 40 NM à 48° (Paris), 30 NM à 60°.\n• Méthode : distance (NM) = écart de longitude en minutes × cos φ. Ex. : à 45° N, de 001°00′W à 001°30′E : 2°30′ = 150′, et 150 × 0,71 ≈ 106 NM.\n\nOrthodromie et loxodromie :\n• Orthodromie : arc de grand cercle, plus court chemin entre deux points. Elle coupe les méridiens sous des angles qui varient (sauf le long d'un méridien ou de l'équateur).\n• Loxodromie : ligne qui coupe tous les méridiens sous le même angle, donc à route vraie constante. Elle est plus longue que l'orthodromie, mais l'écart est négligeable sur les distances d'un vol VFR.\n• Un parallèle (hors équateur) est une loxodromie de route 090° ou 270°, pas une orthodromie. Dans l'hémisphère nord, l'orthodromie passe du côté du pôle.\n• Ex. calculé : entre deux points du parallèle 48° N distants de 12° de longitude (≈ 482 NM), l'orthodromie ne fait gagner que 0,5 NM, mais sa route vraie passe d'environ 085° au départ à 090° au milieu, puis 095° à l'arrivée.\n\nLe temps :\n• L'heure aéronautique est l'heure UTC, notée Z (0930Z). Plans de vol, METAR, TAF et NOTAM sont rédigés en UTC.\n• Heure légale en France métropolitaine : UTC+1 en hiver, UTC+2 en été. L'heure d'été court du dernier dimanche de mars au dernier dimanche d'octobre, le changement ayant lieu à 1 h UTC. Ex. : 10 h 15 locale en août = 08:15 UTC.\n• Méthode : convertissez d'abord toutes les heures en UTC, puis calculez.\n• La Terre tourne de 360° en 24 h : 15° de longitude = 1 heure, 1° = 4 min, 15′ = 1 min.\n• Heure solaire moyenne locale (LMT) : LMT = UTC + longitude convertie en temps, l'Est s'ajoutant et l'Ouest se retranchant. Ex. : à 004°30′W, LMT = UTC − 18 min. Un lieu situé plus à l'est voit le soleil passer au méridien plus tôt : 5° d'écart de longitude = 20 min d'écart d'heure solaire.\n• Selon la date, le passage réel du soleil au méridien s'écarte de 12 h LMT (équation du temps) : jusqu'à 14 min plus tard vers la mi-février et 16 min plus tôt début novembre. Les éphémérides en tiennent compte.\n\nSoleil et saisons :\n• L'axe de la Terre est incliné d'environ 23,4° sur le plan de son orbite : la hauteur du soleil et la durée du jour changent avec les saisons. À Paris, le jour dure environ 16 h 10 au solstice de juin et 8 h 15 au solstice de décembre.\n• À la même date et à la même latitude, le soleil se lève et se couche plus tôt (en UTC) à l'est qu'à l'ouest : 4 min par degré de longitude.\n\nNuit aéronautique (SERA) : période comprise entre la fin du crépuscule civil du soir et le début du crépuscule civil du matin, le crépuscule civil prenant fin quand le centre du soleil est à 6° sous l'horizon (12° pour le crépuscule nautique). En France métropolitaine, on retient en pratique le coucher du soleil + 30 min et le lever du soleil − 30 min, heures données en UTC par les éphémérides.\n• En métropole, le crépuscule civil dure de 30 à 45 min environ : davantage en été et vers le nord.\n• Ex. : le 20 mars à Paris, coucher du soleil à 18:03 UTC → nuit à partir de 18:33 UTC, soit 19 h 33 heure légale (encore l'heure d'hiver).\n\nPièges classiques :\n• Confondre NM et km : 1° de latitude = 60 NM ≈ 111 km.\n• Lire 2°30′ comme 2,3° au lieu de 2,5°.\n• Soustraire deux longitudes de noms contraires au lieu de les additionner.\n• Ajouter le décalage horaire au lieu de le retrancher : UTC = heure légale − 1 h en hiver, − 2 h en été.",
      "vocab": [
       {
        "term": "Latitude",
@@ -71,7 +71,7 @@
       },
       {
        "term": "Équation du temps",
-       "translation": "Écart du midi solaire vrai avec 12 h LMT, de −14 à +16 min"
+       "translation": "Écart entre midi solaire vrai et 12 h LMT, au plus 16 min environ"
       }
      ],
      "figures": [
@@ -281,15 +281,15 @@
       },
       {
        "id": "u5s1q17",
-       "q": "Strasbourg (007°45′E) et Brest (004°30′W) sont pratiquement sur le même parallèle. Le même jour, quelle ville voit le soleil se coucher la première, et avec quel écart ?",
+       "q": "Parmi ces cercles tracés sur la Terre, lequel est un grand cercle ?",
        "choices": [
-        "Brest, environ 49 min plus tôt",
-        "Strasbourg, environ 49 min plus tôt",
-        "En même temps : même heure légale",
-        "Strasbourg, 12 min plus tôt"
+        "Le parallèle 45° N",
+        "Les méridiens 0° et 180° réunis",
+        "Le tropique du Cancer",
+        "Le cercle polaire, à 66,6° N"
        ],
        "answer": 1,
-       "explanation": "Écart de longitude : 7°45′ + 4°30′ = 12°15′, soit 12,25 × 4 ≈ 49 min. Le soleil se couche d'abord à l'est : à Strasbourg, environ 49 min avant Brest. L'heure légale, commune à toute la métropole, ne change rien au mouvement du soleil ; 12 min confond degrés de longitude et minutes de temps."
+       "explanation": "Un grand cercle a son plan qui passe par le centre de la Terre : c'est le cas de l'équateur et d'un méridien réuni au méridien opposé (0° et 180°), qui forment ensemble un cercle passant par les deux pôles. Le parallèle 45° N, le tropique du Cancer (vers 23,4° N) et le cercle polaire sont des parallèles autres que l'équateur, donc des petits cercles : leur plan ne passe pas par le centre."
       },
       {
        "id": "u5s1q18",
@@ -679,19 +679,19 @@
         "Parce que l'échelle y croît vers les pôles"
        ],
        "answer": 3,
-       "explanation": "Sur la Mercator, l'échelle croît comme 1 / cos φ : à 60° N, les longueurs sont agrandies d'environ 50 % de plus qu'à 40° N. En reportant la distance sur l'échelle des latitudes à la même hauteur, on lit des minutes de latitude, donc des NM, avec le même agrandissement. Les méridiens qui convergent et les deux parallèles exacts sont ceux de la Lambert."
+       "explanation": "Sur la Mercator, l'échelle croît comme 1 / cos φ : à 60° N, l'échelle est environ 1,5 fois plus grande qu'à 40° N (1 / cos 60° = 2, contre 1 / cos 40° ≈ 1,3). En reportant la distance sur l'échelle des latitudes à la même hauteur, on lit des minutes de latitude, donc des NM, avec le même agrandissement. Les méridiens qui convergent et les deux parallèles exacts sont ceux de la Lambert."
       },
       {
        "id": "u5s2q20",
-       "q": "Sur une carte Mercator de l'hémisphère nord, comment apparaît l'orthodromie entre deux points éloignés ?",
+       "q": "Sur la carte Lambert au 1/500 000, la convergence des méridiens vaut environ 0,7° par degré de longitude. Un long segment droit tracé vers l'est s'étend sur 6° de longitude. De combien sa route vraie varie-t-elle entre le méridien de départ et celui d'arrivée ?",
        "choices": [
-        "Une droite, plus courte que la loxodromie",
-        "Une courbe bombée vers l'équateur",
-        "Une courbe bombée vers le pôle",
-        "Une droite parallèle à l'équateur"
+        "0°",
+        "≈ 6°",
+        "≈ 4°",
+        "≈ 9°"
        ],
        "answer": 2,
-       "explanation": "Sur la Mercator, la droite est la loxodromie. L'orthodromie, plus courte, passe du côté du pôle : elle apparaît comme une courbe bombée vers le pôle. Une droite parallèle à l'équateur représente un parallèle, donc une loxodromie."
+       "explanation": "Deux méridiens de la carte font entre eux un angle d'environ 0,7° par degré de longitude : sur 6°, 6 × 0,7 ≈ 4°. La route vraie de la droite augmente donc d'environ 4° d'ouest en est ; mesurée au méridien médian, elle n'est fausse que d'environ 2° aux extrémités. 0° vaudrait pour une droite tracée sur une Mercator, qui est une loxodromie ; 6° oublie le facteur 0,7 et 9° divise par 0,7 au lieu de multiplier."
       },
       {
        "id": "u5s2q21",
@@ -710,16 +710,16 @@
        "q": "Au compas à pointes sèches, l'écartement entre A et B, reporté sur l'échelle des latitudes, va de 47°10′ à 47°52′. Quelle est la distance AB ?",
        "choices": [
         "42 NM",
-        "≈ 78 NM",
-        "≈ 25 NM",
-        "≈ 29 NM"
+        "78 NM",
+        "25 NM",
+        "28 NM"
        ],
        "answer": 0,
-       "explanation": "47°52′ − 47°10′ = 42′. Sur l'échelle des latitudes, 1′ = 1 NM : AB = 42 NM, soit environ 78 km (78 est donc la valeur en kilomètres). 25 NM lit 0,42° au lieu de 42′ ; 29 NM applique à tort le cosinus de la latitude, réservé aux minutes de longitude."
+       "explanation": "47°52′ − 47°10′ = 42′. Sur l'échelle des latitudes, 1′ = 1 NM : AB = 42 NM, soit environ 78 km (78 est donc la valeur en kilomètres). 25 NM lit 0,42° au lieu de 42′ ; 28 NM applique à tort le cosinus de la latitude (42 × cos 47,5° ≈ 28), réservé aux minutes de longitude."
       },
       {
        "id": "u5s2q23",
-       "q": "Le point B est au sud-ouest du point A. Posé sur le méridien médian, le rapporteur se lit 045° ou 225° selon le sens. Quelle route vraie portez-vous pour aller de A vers B ?",
+       "q": "Le point B est au sud-ouest du point A. Rapporteur centré sur le méridien médian et aligné sur le trait, vous lisez d'abord la graduation 045. Quelle route vraie portez-vous pour aller de A vers B ?",
        "choices": [
         "045°",
         "135°",
@@ -727,7 +727,7 @@
         "225°"
        ],
        "answer": 3,
-       "explanation": "La route se lit dans le sens du vol : vers le sud-ouest, elle est comprise entre 180° et 270°, donc 225°. 045° est la route inverse, de B vers A. Vérifiez l'ordre de grandeur avant de reporter une route sur le log."
+       "explanation": "La route se lit dans le sens du vol : vers le sud-ouest, elle est comprise entre 180° et 270°, donc 225°. La graduation 045 lue en premier est la route inverse, de B vers A ; 135° et 315° ne correspondent pas à l'orientation du trait. Vérifiez l'ordre de grandeur avant de reporter une route sur le log."
       },
       {
        "id": "u5s2q24",
@@ -1018,10 +1018,10 @@
         "≈ 2° E",
         "0,5° E",
         "≈ 1° W",
-        "≈ 15° E"
+        "≈ 0,7° E"
        ],
        "answer": 0,
-       "explanation": "En dix ans, la déclinaison a augmenté d'environ 10 × 0,15 = 1,5° : 0,5 + 1,5 ≈ 2° E, ordre de grandeur actuel en France (WMM 2025). Garder 0,5° E néglige l'évolution, 1° W retranche l'évolution au lieu de l'ajouter, 15° E multiplie par 100 au lieu de 10."
+       "explanation": "En dix ans, la déclinaison a augmenté d'environ 10 × 0,15 = 1,5° : 0,5 + 1,5 ≈ 2° E, ordre de grandeur actuel en France (WMM 2025). Garder 0,5° E néglige l'évolution, 1° W retranche l'évolution au lieu de l'ajouter, 0,7° E n'ajoute qu'une seule année d'évolution."
       },
       {
        "id": "u5s3q18",
@@ -1353,7 +1353,7 @@
        "id": "u5s4q15",
        "q": "Cap vrai 180°, Vp 100 kt, vent 270°/20 kt. Le pilote ne corrige pas la dérive. Quelles route et vitesse sol obtient-il ?",
        "choices": [
-        "Rv ≈ 191°, Vs 102 kt",
+        "Rv ≈ 191°, Vs ≈ 102 kt",
         "Rv 180°, Vs 100 kt",
         "Rv ≈ 169°, Vs ≈ 102 kt",
         "Rv ≈ 169°, Vs ≈ 98 kt"
@@ -1717,7 +1717,7 @@
       },
       {
        "id": "u5s5q15",
-       "q": "Les jauges indiquent 50 l, dont 5 l inutilisables selon le manuel de vol. Consommation 25 l/h, vol VFR de jour. De combien de temps disposez-vous avant d'entamer la réserve finale ?",
+       "q": "Vous avez contrôlé visuellement 50 l dans les réservoirs, dont 5 l inutilisables selon le manuel de vol. Consommation 25 l/h, vol VFR de jour. De combien de temps disposez-vous avant d'entamer la réserve finale ?",
        "choices": [
         "1 h 18 min",
         "1 h 30 min",
@@ -1903,7 +1903,7 @@
      "figures": [
       {
        "title": "Les bandes de fréquences de la radionavigation",
-       "svg": "<svg viewBox=\"0 0 700 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"400\" fill=\"#ffffff\"/><text x=\"350\" y=\"28\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Où émettent les moyens radio (échelle logarithmique)</text><rect x=\"40\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#e8eef7\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"103\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">LF</text><rect x=\"166\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#dfe8f4\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"229\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">MF</text><rect x=\"292\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#e8eef7\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"355\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">HF</text><rect x=\"418\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#dfe8f4\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"481\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VHF</text><rect x=\"544\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#e8eef7\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"607\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">UHF</text><line x1=\"40\" y1=\"104\" x2=\"40\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"40\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">30 kHz</text><line x1=\"166\" y1=\"104\" x2=\"166\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"166\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">300 kHz</text><line x1=\"292\" y1=\"104\" x2=\"292\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"292\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">3 MHz</text><line x1=\"418\" y1=\"104\" x2=\"418\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"418\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">30 MHz</text><line x1=\"544\" y1=\"104\" x2=\"544\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"544\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">300 MHz</text><line x1=\"670\" y1=\"104\" x2=\"670\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"670\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">3 GHz</text><rect x=\"141\" y=\"156\" width=\"121.5\" height=\"18\" rx=\"2\" fill=\"#1f5fa8\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"141\" y1=\"140\" x2=\"141\" y2=\"156\" stroke=\"#1f5fa8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"272.5\" y=\"170\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">NDB (ADF) : 190 à 1 750 kHz</text><rect x=\"488.1\" y=\"208\" width=\"6\" height=\"18\" rx=\"2\" fill=\"#2e7d32\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"488.1\" y1=\"140\" x2=\"488.1\" y2=\"208\" stroke=\"#2e7d32\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"478.1\" y=\"222\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"end\" font-weight=\"bold\">VOR : 108,00 à 117,95 MHz</text><rect x=\"492.9\" y=\"260\" width=\"8.2\" height=\"18\" rx=\"2\" fill=\"#d35400\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"492.9\" y1=\"140\" x2=\"492.9\" y2=\"260\" stroke=\"#d35400\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"482.9\" y=\"274\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">Radio VHF : 118 à 136,975 MHz</text><rect x=\"607.8\" y=\"312\" width=\"12.7\" height=\"18\" rx=\"2\" fill=\"#c0392b\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"607.8\" y1=\"140\" x2=\"607.8\" y2=\"312\" stroke=\"#c0392b\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"597.8\" y=\"326\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">DME : 962 à 1 213 MHz</text><text x=\"40\" y=\"378\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"start\">LF/MF : onde de sol. VHF/UHF : portée optique, ≈ 1,23 × √h (h en ft).</text></svg>",
+       "svg": "<svg viewBox=\"0 0 700 400\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"Inter, Arial, sans-serif\"><rect x=\"0\" y=\"0\" width=\"700\" height=\"400\" fill=\"#ffffff\"/><text x=\"350\" y=\"28\" font-size=\"17\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">Où émettent les moyens radio (échelle logarithmique)</text><rect x=\"40\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#e8eef7\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"103\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">LF</text><rect x=\"166\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#dfe8f4\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"229\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">MF</text><rect x=\"292\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#e8eef7\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"355\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">HF</text><rect x=\"418\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#dfe8f4\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"481\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">VHF</text><rect x=\"544\" y=\"64\" width=\"126\" height=\"40\" rx=\"0\" fill=\"#e8eef7\" stroke=\"#46516a\" stroke-width=\"1\"/><text x=\"607\" y=\"90\" font-size=\"16\" fill=\"#14213d\" text-anchor=\"middle\" font-weight=\"bold\">UHF</text><line x1=\"40\" y1=\"104\" x2=\"40\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"40\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">30 kHz</text><line x1=\"166\" y1=\"104\" x2=\"166\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"166\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">300 kHz</text><line x1=\"292\" y1=\"104\" x2=\"292\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"292\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">3 MHz</text><line x1=\"418\" y1=\"104\" x2=\"418\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"418\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">30 MHz</text><line x1=\"544\" y1=\"104\" x2=\"544\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"544\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">300 MHz</text><line x1=\"670\" y1=\"104\" x2=\"670\" y2=\"114\" stroke=\"#46516a\" stroke-width=\"1.5\"/><text x=\"670\" y=\"132\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"middle\">3 GHz</text><rect x=\"141\" y=\"156\" width=\"121.5\" height=\"18\" rx=\"2\" fill=\"#1f5fa8\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"141\" y1=\"140\" x2=\"141\" y2=\"156\" stroke=\"#1f5fa8\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"272.5\" y=\"170\" font-size=\"15\" fill=\"#1f5fa8\" text-anchor=\"start\" font-weight=\"bold\">NDB (ADF) : 190 à 1 750 kHz</text><rect x=\"488.1\" y=\"208\" width=\"6\" height=\"18\" rx=\"2\" fill=\"#2e7d32\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"488.1\" y1=\"140\" x2=\"488.1\" y2=\"208\" stroke=\"#2e7d32\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"478.1\" y=\"222\" font-size=\"15\" fill=\"#2e7d32\" text-anchor=\"end\" font-weight=\"bold\">VOR : 108,00 à 117,95 MHz</text><rect x=\"492.9\" y=\"260\" width=\"8.2\" height=\"18\" rx=\"2\" fill=\"#d35400\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"492.9\" y1=\"140\" x2=\"492.9\" y2=\"260\" stroke=\"#d35400\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"482.9\" y=\"274\" font-size=\"15\" fill=\"#d35400\" text-anchor=\"end\" font-weight=\"bold\">Radio VHF : 118 à 136,975 MHz</text><rect x=\"607.8\" y=\"312\" width=\"12.7\" height=\"18\" rx=\"2\" fill=\"#c0392b\" stroke=\"none\" stroke-width=\"1\"/><line x1=\"607.8\" y1=\"140\" x2=\"607.8\" y2=\"312\" stroke=\"#c0392b\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"597.8\" y=\"326\" font-size=\"15\" fill=\"#c0392b\" text-anchor=\"end\" font-weight=\"bold\">DME : 962 à 1 213 MHz</text><text x=\"40\" y=\"378\" font-size=\"14\" fill=\"#46516a\" text-anchor=\"start\">LF/MF : onde de sol. VHF/UHF : portée optique, en NM ≈ 1,23 × √h (h en ft).</text></svg>",
        "caption": "Les NDB émettent en LF/MF, les VOR juste sous la bande radio VHF et les DME en UHF. En VHF et UHF, la portée est optique et croît avec la hauteur."
       },
       {
@@ -2159,11 +2159,11 @@
        "choices": [
         "Le GNSS est en panne : il doit afficher l'altitude QNH",
         "Il faut recaler l'altimètre pour lire la même valeur",
-        "Vous êtes plus bas qu'indiqué : marge accrue sur le relief",
+        "Vous êtes plus bas qu'indiqué : majorez la marge au relief",
         "L'altimètre donne une hauteur sol, d'où cet écart"
        ],
        "answer": 2,
-       "explanation": "Par air plus froid que l'atmosphère standard, l'altitude vraie est inférieure à l'altitude indiquée ; l'altitude GNSS, géométrique, s'en rapproche. L'écart est plausible : gardez une marge accrue au-dessus du relief. Les limites d'espaces se respectent avec l'altimètre calé au QNH, que l'on ne recale pas sur le GNSS."
+       "explanation": "Par air plus froid que l'atmosphère standard, l'altitude vraie est inférieure à l'altitude indiquée ; l'altitude GNSS, géométrique, s'en rapproche. L'écart est plausible : majorez votre marge au-dessus du relief. Les limites d'espaces se respectent avec l'altimètre calé au QNH, que l'on ne recale pas sur le GNSS."
       },
       {
        "id": "u5s6q22",
